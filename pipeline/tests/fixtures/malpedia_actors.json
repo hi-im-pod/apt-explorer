@@ -1,0 +1,53 @@
+{
+ "1937CN": {
+  "description": "Synthetic fixture text. Malpedia descriptions are never copied.",
+  "meta": {
+   "country": "CN",
+   "refs": [
+    "https://www.trendmicro.com/en_us/research/23/b/earth-zhulong-familiar-patterns-target-southeast-asian-firms.html",
+    "https://www.recordedfuture.com/international-hacktivism-analysis/",
+    "http://securityaffairs.co/wordpress/49876/hacking/china-1937cn-team-vietnam.html"
+   ]
+  },
+  "uuid": "391573c5-9c21-4984-b6b8-97d42623d6cc",
+  "value": "1937CN"
+ },
+ "APT28": {
+  "description": "Synthetic fixture text. Malpedia descriptions are never copied.",
+  "meta": {
+   "country": "RU",
+   "synonyms": [
+    "Pawn Storm",
+    "FANCY BEAR",
+    "Sednit",
+    "SNAKEMACKEREL",
+    "Tsar Team",
+    "TG-4127",
+    "APT28"
+   ],
+   "cfr-suspected-state-sponsor": "Russian Federation",
+   "cfr-type-of-incident": "Espionage",
+   "cfr-suspected-victims": [
+    "Georgia",
+    "France",
+    "Jordan"
+   ],
+   "cfr-target-category": [
+    "Government",
+    "Military"
+   ],
+   "targeted-sector": [
+    "Military",
+    "Government, Administration",
+    "Security Service"
+   ],
+   "refs": [
+    "https://attack.mitre.org/groups/G0007/",
+    "https://en.wikipedia.org/wiki/Fancy_Bear",
+    "https://en.wikipedia.org/wiki/Sofacy_Group"
+   ]
+  },
+  "uuid": "5b4ee3ea-eee3-4c8e-8323-85ae32658754",
+  "value": "APT28"
+ }
+}

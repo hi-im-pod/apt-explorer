@@ -1,0 +1,74 @@
+{
+ "win.xagent": {
+  "urls": [
+   "https://securelist.com/a-slice-of-2017-sofacy-activity/83930/",
+   "http://www.welivesecurity.com/wp-content/uploads/2016/10/eset-sednit-part-2.pdf"
+  ],
+  "uuid": "e8b38fbd-a7ce-4073-a660-44dfabc1b678",
+  "notes": [],
+  "sources": [],
+  "updated": "2026-03-11",
+  "alt_names": [
+   "splm",
+   "chopstick"
+  ],
+  "attribution": [
+   "APT28"
+  ],
+  "common_name": "X-Agent",
+  "description": "",
+  "library_entries": [
+   "research:20260310:sednit:86e9801",
+   "great:20180220:slice:0f910f7"
+  ]
+ },
+ "win.seduploader": {
+  "urls": [
+   "https://securelist.com/a-slice-of-2017-sofacy-activity/83930/"
+  ],
+  "uuid": "6bd20349-1231-4aaa-ba2a-f4b09d3b344c",
+  "notes": [],
+  "sources": [],
+  "updated": "2024-07-10",
+  "alt_names": [
+   "jhuhugit",
+   "jkeyskw"
+  ],
+  "attribution": [
+   "APT28"
+  ],
+  "common_name": "Seduploader",
+  "description": "",
+  "library_entries": []
+ },
+ "elf.wellmess": {
+  "urls": [
+   "https://blog.talosintelligence.com/2020/08/attribution-puzzle.html"
+  ],
+  "uuid": "b0046a6e-3b8b-45ad-a357-dabc46aba7de",
+  "notes": [],
+  "sources": [],
+  "updated": "2021-12-31",
+  "alt_names": [],
+  "attribution": [
+   "APT 29"
+  ],
+  "common_name": "elf.wellmess",
+  "description": "",
+  "library_entries": []
+ },
+ "win.7ev3n": {
+  "urls": [
+   "https://blog.malwarebytes.com/threat-analysis/2016/05/7ev3n-ransomware/"
+  ],
+  "uuid": "ac2608e9-7851-409f-b842-e265b877a53c",
+  "notes": [],
+  "sources": [],
+  "updated": "2018-01-23",
+  "alt_names": [],
+  "attribution": [],
+  "common_name": "7ev3n",
+  "description": "",
+  "library_entries": []
+ }
+}
