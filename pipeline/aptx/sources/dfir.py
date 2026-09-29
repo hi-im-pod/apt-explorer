@@ -79,21 +79,41 @@ def _feed_items(payload: bytes) -> list[dict]:
     # The payload goes to feedparser as bytes. Given a str, feedparser may
     # treat it as a URL or a path and fetch it itself, outside the polite
     # client.
-    items = []
+    items, dropped = [], 0
     for entry in feedparser.parse(payload).entries:
         title, link = _title(entry), (entry.get("link") or "").strip()
         if _usable(title, link):
             items.append({"title": title, "link": link, "published": _published(entry.get("published"))})
+        else:
+            dropped += 1
+    if dropped:
+        # Dropped items are counted, never skipped silently, so a change in
+        # the feed shows up in the build log.
+        log.warning("dfir: dropped %d feed items without a title or an http link", dropped)
     return items
 
 
-def _previous_items(store: SnapshotStore) -> list[dict]:
+def _stored_items(store: SnapshotStore) -> list[dict]:
+    """The newest snapshot's items, cleaned the same way as fresh feed items.
+
+    Older snapshots may predate a rule or have been edited by hand, so every
+    item is checked again. Unusable items are dropped and counted.
+    """
     raw = store.latest("dfir", SNAPSHOT)
     if raw is None:
         return []
-    data = json.loads(raw.decode("utf-8"))
-    return [i for i in data if isinstance(i, dict)
-            and _usable(_one_line(str(i.get("title") or "")), str(i.get("link") or ""))]
+    items, dropped = [], 0
+    for i in json.loads(raw.decode("utf-8")):
+        title = _one_line(str(i.get("title") or "")) if isinstance(i, dict) else ""
+        link = str(i.get("link") or "").strip() if isinstance(i, dict) else ""
+        if not _usable(title, link):
+            dropped += 1
+            continue
+        published = _calendar_day(parse_date(str(i.get("published") or "")))
+        items.append({"title": title, "link": link, "published": published})
+    if dropped:
+        log.warning("dfir: dropped %d stored items without a title or an http link", dropped)
+    return items
 
 
 def _merge(new: list[dict], old: list[dict]) -> list[dict]:
@@ -131,7 +151,7 @@ class DfirConnector:
             # look fresh although nothing new arrived. Raising lets the CLI
             # mark it stale and keep the last good snapshot.
             raise ValueError("The DFIR Report feed has no usable items")
-        merged = _merge(items, _previous_items(store))
+        merged = _merge(items, _stored_items(store))
         store.save(self.name, SNAPSHOT, json.dumps(merged, ensure_ascii=False, indent=1).encode("utf-8"))
 
     def normalize(self, store: SnapshotStore) -> SourceBundle:
@@ -141,15 +161,15 @@ class DfirConnector:
         # today when this week's fetch failed.
         retrieved_at = store.latest_date(self.name)
         reports: dict[str, ReportRecord] = {}
-        for item in _previous_items(store):
+        for item in _stored_items(store):
             sid = _source_id(item["link"])
             if sid in reports:
                 continue
-            published = _calendar_day(parse_date(item.get("published")))
+            published = item["published"]
             reports[sid] = ReportRecord(
                 source=self.name,
                 source_id=sid,
-                title=_one_line(item["title"]),
+                title=item["title"],
                 published=published,
                 # The contract ties a null date to the "unknown" basis, so a
                 # post without a usable date says so instead of claiming the

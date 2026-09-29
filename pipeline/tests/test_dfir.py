@@ -143,13 +143,28 @@ def test_a_post_without_a_usable_date_is_kept_as_undated(tmp_path, no_wait):
         ("No date", None, "unknown"), ("Bad date", None, "unknown")}
 
 
-def test_items_without_a_title_or_an_http_link_are_skipped(tmp_path, no_wait):
+def test_items_without_a_title_or_an_http_link_are_skipped_and_counted(tmp_path, no_wait, caplog):
     s = SnapshotStore(tmp_path)
-    fetch_feed(s, rss("<title>Kept</title><link>https://thedfirreport.com/kept/</link>",
-                      "<title>  </title><link>https://thedfirreport.com/untitled/</link>",
-                      "<title>No link</title>",
-                      "<title>Odd link</title><link>javascript:alert(1)</link>"))
+    with caplog.at_level("WARNING"):
+        fetch_feed(s, rss("<title>Kept</title><link>https://thedfirreport.com/kept/</link>",
+                          "<title>  </title><link>https://thedfirreport.com/untitled/</link>",
+                          "<title>No link</title>",
+                          "<title>Odd link</title><link>javascript:alert(1)</link>"))
     assert [i["title"] for i in saved_items(s)] == ["Kept"]
+    assert "dfir: dropped 3 feed items" in caplog.text
+
+
+def test_a_damaged_stored_snapshot_is_cleaned_on_normalize(tmp_path, caplog):
+    # An older or hand-edited snapshot is checked again rather than trusted.
+    s = SnapshotStore(tmp_path)
+    seed(s, "2000-01-01", [
+        {"title": " Kept \n post ", "link": " https://thedfirreport.com/k/ ", "published": 20250101},
+        {"title": "No link"}, "not an item", {"title": "Dated", "link": LYNX, "published": "2025-02-30"}])
+    with caplog.at_level("WARNING"):
+        reports = DfirConnector().normalize(s).reports
+    assert [(r.title, r.url, r.published) for r in reports] == [
+        ("Kept post", "https://thedfirreport.com/k/", None), ("Dated", LYNX, None)]
+    assert "dfir: dropped 2 stored items" in caplog.text
 
 
 def test_titles_are_single_trimmed_lines(tmp_path, no_wait):
