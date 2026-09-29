@@ -1,0 +1,196 @@
+# The weekly data refresh and the GitHub Pages deploy.
+#
+# This workflow commits nothing. The pipeline writes data/ inside the runner,
+# the site is built from that copy, and the result goes straight to Pages, so
+# the repository's history holds code only and never a weekly data commit.
+# Raw source snapshots are never committed and never uploaded as an artifact,
+# because artifacts of a public repository can be downloaded by anyone and
+# the snapshots hold report text that this project must not re-host.
+name: build
+
+on:
+  schedule:
+    - cron: "17 3 * * 1" # Mondays at 03:17 UTC, off the hour to avoid the busy minute.
+  workflow_dispatch:
+
+# Every job below declares the few permissions it needs, so the default is none.
+permissions: {}
+
+# One run at a time, and never cancel a deploy that is already going out: a
+# half-finished Pages deployment is worse than a short queue.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  # The snapshot store lives in the workspace so the cache action can find it
+  # by a fixed path. The pipeline reads this variable, see core/snapshot.py.
+  APTX_CACHE: ${{ github.workspace }}/.cache/snapshots
+
+jobs:
+  data:
+    name: fetch and build data
+    # PUBLISH_ENABLED is a repository variable that stays unset until the
+    # publishing gate (telling the first author and the PI, crediting the
+    # paper) is passed. It keeps the cron from calling the source APIs on a
+    # repository that is not meant to be live yet. A manual dispatch always
+    # runs, so the whole chain can be tried before the gate opens.
+    if: github.event_name != 'schedule' || vars.PUBLISH_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    # Stay under the six-hour hosted-runner limit, so the cache-save step
+    # below still gets to run when a cold first run is slow.
+    timeout-minutes: 350
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pipeline/pyproject.toml
+      - name: Install the pipeline
+        run: pip install -e pipeline
+
+      # Restore and save are separate steps for two reasons. The combined
+      # action saves only when the whole job succeeds, but fresh snapshots
+      # are worth keeping even if a later step fails. And a key that is
+      # unique per run means each run writes a new entry, while the prefix in
+      # restore-keys makes the next run load the newest one. A fixed key
+      # would keep serving the first snapshot forever, because a cache entry
+      # can never be overwritten.
+      - name: Restore snapshots
+        id: snapshots
+        uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: .cache/snapshots
+          key: snapshots-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: snapshots-
+
+      # The pipeline writes into an existing data/ without removing files it
+      # no longer produces, so an actor that the committed copy has and the
+      # live data does not would survive into the deployed site. Clear
+      # everything except NOTICE.md, which carries the licence text and has
+      # to stay next to the data.
+      - name: Clear stale generated data
+        run: find data -mindepth 1 -maxdepth 1 ! -name NOTICE.md -exec rm -rf {} +
+
+      # A failing source does not fail this step: the pipeline reuses that
+      # source's last good snapshot and marks it stale. The step fails only
+      # when the output does not validate against the schemas, and then
+      # nothing is written and nothing is deployed.
+      - name: Fetch sources and build data
+        working-directory: pipeline
+        timeout-minutes: 300
+        run: python -m aptx run --out ../data
+
+      - name: Check a sample of report links
+        working-directory: pipeline
+        run: python -m aptx links --sample 300
+
+      # The link results only reach the published data when the data is
+      # assembled again, so rebuild from the snapshots already on disk.
+      - name: Rebuild data with the link results
+        working-directory: pipeline
+        run: python -m aptx run --out ../data --skip-fetch
+
+      # always() so that snapshots fetched before a failure are still kept
+      # for the next run.
+      - name: Save snapshots
+        if: ${{ always() && steps.snapshots.outcome == 'success' }}
+        uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: .cache/snapshots
+          key: ${{ steps.snapshots.outputs.cache-primary-key }}
+
+      # Only the derived data leaves this job. It is the site's input.
+      - name: Upload data
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: data
+          path: data/
+          if-no-files-found: error
+          retention-days: 14
+
+  site:
+    name: build site
+    needs: [data]
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+      # configure-pages reads the Pages settings to learn the base path.
+      pages: read
+    env:
+      # A project site is served under /<repository name>/. Nothing in the
+      # site assumes a root deploy, so this is the only place it is set.
+      BASE_PATH: /${{ github.event.repository.name }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      # Replace the committed data/ with the freshly built copy. Downloading
+      # over the checkout would leave any committed file that the new build
+      # no longer has, so remove the old tree first.
+      - name: Remove the committed data
+        run: rm -rf data
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: data
+          path: data
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - id: pages
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+      # With a custom domain, or a repository named <user>.github.io, Pages
+      # serves from the root and a /<repository> prefix would break every
+      # link. Fail here instead of deploying a site that loads with no styles.
+      - name: Check the base path against the Pages settings
+        env:
+          PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+        run: |
+          if [ "$PAGES_BASE_PATH" != "$BASE_PATH" ]; then
+            echo "::error::Pages serves this site under '$PAGES_BASE_PATH', but BASE_PATH is '$BASE_PATH'. Set BASE_PATH in build.yml to match."
+            exit 1
+          fi
+      - name: Install dependencies
+        working-directory: site
+        run: npm ci
+      # The Playwright specs assert on the hand-made sample data, so they run
+      # in ci.yml against the committed tree and not here against live data.
+      # This build already fails on a broken internal link (prerender is set
+      # to fail), and the checks below catch an empty or partial output.
+      - name: Build the site
+        working-directory: site
+        run: npm run build
+      - name: Check the build output
+        working-directory: site
+        run: |
+          for f in index.html 404.html data/build.json data/NOTICE.md; do
+            test -f "build/$f" || { echo "::error::build/$f is missing"; exit 1; }
+          done
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: site/build
+
+  deploy:
+    name: deploy to Pages
+    needs: [site]
+    # Deploying stays off until the publishing gate is passed, see the data job.
+    if: vars.PUBLISH_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1

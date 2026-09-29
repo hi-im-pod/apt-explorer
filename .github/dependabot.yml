@@ -1,0 +1,12 @@
+# Every action is pinned to a commit SHA, which never updates by itself.
+# Dependabot opens one pull request a week that moves the pins forward and
+# rewrites the version comment beside each SHA.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      actions:
+        patterns: ["*"]
