@@ -22,7 +22,7 @@ from aptx.core.dates import resolve_report_date
 from aptx.core.models import ReportRecord, SourceBundle
 from aptx.core.snapshot import SnapshotStore
 from aptx.extract.ids import find_cves, technique_candidates
-from aptx.sources.base import publish_policy
+from aptx.sources.base import Connector, publish_policy
 
 log = logging.getLogger(__name__)
 
@@ -112,7 +112,7 @@ def _title(entry: dict, url: str | None) -> str:
     return entry["id"]
 
 
-class OrklConnector:
+class OrklConnector(Connector):
     name = NAME
 
     @staticmethod

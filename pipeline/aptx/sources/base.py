@@ -29,12 +29,26 @@ class Connector(Protocol):
     good snapshot. A connector that needs another source's data, such as ORKL
     needing Malpedia's library dates, takes it as extra parameters on
     normalize(), and the CLI passes it in. Connectors never import each other.
+
+    Connectors subclass this protocol explicitly, so they inherit policy().
+    Structural typing alone would not hand them the default body.
     """
     name: str
 
     def fetch(self, store: SnapshotStore) -> None: ...
 
     def normalize(self, store: SnapshotStore) -> SourceBundle: ...
+
+    def policy(self, store: SnapshotStore, sources_md: Path | None = None) -> str:
+        """What may be published from this source, by SOURCES.md.
+
+        The CLI and assembly ask each connector, never publish_policy(name)
+        directly, so a connector can add its own checks. ETDA overrides this
+        with a licence drift check, which a direct publish_policy("etda")
+        call would silently skip. The store is a parameter for that reason;
+        the default ignores it.
+        """
+        return publish_policy(self.name, sources_md)
 
 
 def now_iso() -> str:

@@ -29,6 +29,7 @@ from aptx.core.snapshot import SnapshotStore
 # Re-exported, not redefined: the library side and the report side of every
 # URL join must share one normalizer, or matching reports never meet.
 from aptx.core.urls import norm_url
+from aptx.sources.base import Connector
 
 __all__ = ["MalpediaConnector", "actor_id", "library_dates", "norm_url", "parse_bib", "report_links"]
 
@@ -212,7 +213,7 @@ def _family_name(fid: str, family: dict) -> str:
     return names[0] if names else " ".join(fid.split(".", 1)[-1].replace("_", " ").split()) or fid
 
 
-class MalpediaConnector:
+class MalpediaConnector(Connector):
     name = NAME
 
     def fetch(self, store: SnapshotStore) -> None:

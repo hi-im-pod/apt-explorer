@@ -14,6 +14,7 @@ from aptx.core import http
 from aptx.core.dates import parse_date
 from aptx.core.models import ActorRecord, CampaignRecord, SoftwareRecord, SourceBundle
 from aptx.core.snapshot import SnapshotStore
+from aptx.sources.base import Connector
 
 log = logging.getLogger(__name__)
 
@@ -93,7 +94,7 @@ def _check_bundle(payload: bytes) -> None:
         raise ValueError(f"{NAME}: the bundle holds no intrusion sets; keeping the last snapshot")
 
 
-class AttackConnector:
+class AttackConnector(Connector):
     name = NAME
 
     def fetch(self, store: SnapshotStore) -> None:

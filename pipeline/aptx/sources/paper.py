@@ -18,6 +18,7 @@ from aptx.core import http
 from aptx.core.dates import parse_date
 from aptx.core.models import ReportRecord, SourceBundle
 from aptx.core.snapshot import SnapshotStore
+from aptx.sources.base import Connector
 
 log = logging.getLogger(__name__)
 
@@ -150,7 +151,7 @@ def unresolved_actor_names(store: SnapshotStore) -> list[str]:
     return [n for n in report_actor_names(store) if n.casefold() not in known]
 
 
-class PaperConnector:
+class PaperConnector(Connector):
     name = "paper"
 
     def fetch(self, store: SnapshotStore) -> None:

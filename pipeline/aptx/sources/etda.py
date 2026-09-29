@@ -13,7 +13,7 @@ from aptx.core import http
 from aptx.core.dates import parse_date
 from aptx.core.models import ActorRecord, SourceBundle
 from aptx.core.snapshot import SnapshotStore
-from aptx.sources.base import publish_policy
+from aptx.sources.base import Connector, publish_policy
 
 log = logging.getLogger(__name__)
 
@@ -94,7 +94,7 @@ def last_db_change(store: SnapshotStore) -> str | None:
     return parse_date(data.get("last-db-change")) if isinstance(data, dict) else None
 
 
-class EtdaConnector:
+class EtdaConnector(Connector):
     name = NAME
 
     def fetch(self, store: SnapshotStore) -> None:

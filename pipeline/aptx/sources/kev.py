@@ -11,6 +11,7 @@ from aptx.core import http
 from aptx.core.dates import parse_date
 from aptx.core.models import SourceBundle, VulnRecord
 from aptx.core.snapshot import SnapshotStore
+from aptx.sources.base import Connector
 
 log = logging.getLogger(__name__)
 
@@ -44,7 +45,7 @@ def _label(value) -> str | None:
     return text or None
 
 
-class KevConnector:
+class KevConnector(Connector):
     name = "kev"
 
     def fetch(self, store: SnapshotStore) -> None:

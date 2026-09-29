@@ -10,6 +10,7 @@ import logging
 from aptx.core import http
 from aptx.core.models import ActorRecord, SourceBundle
 from aptx.core.snapshot import SnapshotStore
+from aptx.sources.base import Connector
 
 log = logging.getLogger(__name__)
 
@@ -64,7 +65,7 @@ def _check_cluster(payload: bytes) -> None:
         raise ValueError(f"{NAME}: the cluster holds no values; keeping the last snapshot")
 
 
-class MispConnector:
+class MispConnector(Connector):
     name = NAME
 
     def fetch(self, store: SnapshotStore) -> None:

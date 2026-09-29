@@ -19,6 +19,7 @@ from aptx.core.dates import parse_date
 from aptx.core.models import ReportRecord, SourceBundle
 from aptx.core.snapshot import SnapshotStore
 from aptx.core.urls import norm_url
+from aptx.sources.base import Connector
 
 log = logging.getLogger(__name__)
 
@@ -147,7 +148,7 @@ def _source_id(link: str) -> str:
     return (path if host == HOST and path else key).replace("/", "-")
 
 
-class DfirConnector:
+class DfirConnector(Connector):
     name = "dfir"
 
     def fetch(self, store: SnapshotStore) -> None:
