@@ -1,0 +1,127 @@
+{
+  "id": "operation-shady-rat",
+  "name": "Operation Shady RAT",
+  "aliases": [
+    {
+      "value": "Operation Shady RAT",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "etda"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Canada",
+        "source": "etda"
+      },
+      {
+        "value": "Denmark",
+        "source": "etda"
+      },
+      {
+        "value": "Germany",
+        "source": "etda"
+      },
+      {
+        "value": "Hong Kong",
+        "source": "etda"
+      },
+      {
+        "value": "India",
+        "source": "etda"
+      },
+      {
+        "value": "Indonesia",
+        "source": "etda"
+      },
+      {
+        "value": "Japan",
+        "source": "etda"
+      },
+      {
+        "value": "Singapore",
+        "source": "etda"
+      },
+      {
+        "value": "South Korea",
+        "source": "etda"
+      },
+      {
+        "value": "Switzerland",
+        "source": "etda"
+      },
+      {
+        "value": "Taiwan",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      },
+      {
+        "value": "Vietnam",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Energy",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Industrial",
+        "source": "etda"
+      },
+      {
+        "value": "IT",
+        "source": "etda"
+      },
+      {
+        "value": "Media",
+        "source": "etda"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "etda"
+      },
+      {
+        "value": "Think Tanks",
+        "source": "etda"
+      },
+      {
+        "value": "Non-profit organizations",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 0
+}

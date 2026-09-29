@@ -1,0 +1,151 @@
+{
+  "id": "moskalvzapoe",
+  "name": "Moskalvzapoe",
+  "aliases": [
+    {
+      "value": "Moskalvzapoe",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TA511",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "MAN1",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Financial crime",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Argentina",
+        "source": "etda"
+      },
+      {
+        "value": "Brazil",
+        "source": "etda"
+      },
+      {
+        "value": "Canada",
+        "source": "etda"
+      },
+      {
+        "value": "Germany",
+        "source": "etda"
+      },
+      {
+        "value": "Hong Kong",
+        "source": "etda"
+      },
+      {
+        "value": "India",
+        "source": "etda"
+      },
+      {
+        "value": "Ireland",
+        "source": "etda"
+      },
+      {
+        "value": "Israel",
+        "source": "etda"
+      },
+      {
+        "value": "Italy",
+        "source": "etda"
+      },
+      {
+        "value": "Japan",
+        "source": "etda"
+      },
+      {
+        "value": "Kazakhstan",
+        "source": "etda"
+      },
+      {
+        "value": "Lithuania",
+        "source": "etda"
+      },
+      {
+        "value": "Malaysia",
+        "source": "etda"
+      },
+      {
+        "value": "Netherlands",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "etda"
+      },
+      {
+        "value": "Singapore",
+        "source": "etda"
+      },
+      {
+        "value": "South Africa",
+        "source": "etda"
+      },
+      {
+        "value": "South Korea",
+        "source": "etda"
+      },
+      {
+        "value": "Taiwan",
+        "source": "etda"
+      },
+      {
+        "value": "Thailand",
+        "source": "etda"
+      },
+      {
+        "value": "Türkiye",
+        "source": "etda"
+      },
+      {
+        "value": "Ukraine",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      },
+      {
+        "value": "Vietnam",
+        "source": "etda"
+      }
+    ],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 6
+}

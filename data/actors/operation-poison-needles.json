@@ -1,0 +1,49 @@
+{
+  "id": "operation-poison-needles",
+  "name": "Operation Poison Needles",
+  "aliases": [
+    {
+      "value": "Operation Poison Needles",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "UA",
+      "source": "etda"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Russia",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Healthcare",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 2
+}

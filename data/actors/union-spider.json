@@ -1,0 +1,60 @@
+{
+  "id": "union-spider",
+  "name": "UNION SPIDER",
+  "aliases": [
+    {
+      "value": "UNION SPIDER",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Union Spider",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "RU",
+      "source": "misp"
+    },
+    {
+      "value": "RU",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": [
+      {
+        "value": "Manufacturing",
+        "source": "misp"
+      },
+      {
+        "value": "Industrial",
+        "source": "misp"
+      },
+      {
+        "value": "Manufacturing",
+        "source": "malpedia"
+      },
+      {
+        "value": "Industrial",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 2
+}

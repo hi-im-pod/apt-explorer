@@ -1,0 +1,49 @@
+{
+  "id": "ta499",
+  "name": "TA499",
+  "aliases": [
+    {
+      "value": "TA499",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Vovan",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Lexus",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2023-Q1",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "12f3a174311f611263f75c3b1d62f69b11c53560"
+  ],
+  "conflicts": [],
+  "evidence_count": 3
+}

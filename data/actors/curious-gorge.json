@@ -1,0 +1,152 @@
+{
+  "id": "curious-gorge",
+  "name": "Curious Gorge",
+  "aliases": [
+    {
+      "value": "Curious Gorge",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UNC3742",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "etda"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Ukraine",
+        "source": "misp"
+      },
+      {
+        "value": "Russia",
+        "source": "misp"
+      },
+      {
+        "value": "Kazakhstan",
+        "source": "misp"
+      },
+      {
+        "value": "Mongolia",
+        "source": "misp"
+      },
+      {
+        "value": "Kazakhstan",
+        "source": "etda"
+      },
+      {
+        "value": "Mongolia",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "etda"
+      },
+      {
+        "value": "Ukraine",
+        "source": "etda"
+      },
+      {
+        "value": "Ukraine",
+        "source": "malpedia"
+      },
+      {
+        "value": "Russia",
+        "source": "malpedia"
+      },
+      {
+        "value": "Kazakhstan",
+        "source": "malpedia"
+      },
+      {
+        "value": "Mongolia",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Military",
+        "source": "misp"
+      },
+      {
+        "value": "Logistics",
+        "source": "misp"
+      },
+      {
+        "value": "Defense Contractor",
+        "source": "misp"
+      },
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      },
+      {
+        "value": "Military",
+        "source": "malpedia"
+      },
+      {
+        "value": "Logistics",
+        "source": "malpedia"
+      },
+      {
+        "value": "Defense Contractor",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 3
+}

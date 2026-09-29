@@ -1,0 +1,309 @@
+{
+  "id": "G1057",
+  "name": "ShinyHunters",
+  "aliases": [
+    {
+      "value": "ShinyHunters",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UNC6240",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Bling Libra",
+      "sources": [
+        "attack"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Financial gain",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "Tor",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1016",
+    "T1018",
+    "T1036.005",
+    "T1059.007",
+    "T1059.009",
+    "T1069.003",
+    "T1072",
+    "T1078",
+    "T1078.002",
+    "T1078.004",
+    "T1082",
+    "T1083",
+    "T1090.003",
+    "T1105",
+    "T1110",
+    "T1190",
+    "T1195.001",
+    "T1203",
+    "T1210",
+    "T1213.003",
+    "T1213.006",
+    "T1219",
+    "T1485",
+    "T1491.001",
+    "T1528",
+    "T1530",
+    "T1550.001",
+    "T1552.001",
+    "T1560.002",
+    "T1567",
+    "T1573.002",
+    "T1580",
+    "T1583.001",
+    "T1583.004",
+    "T1585.002",
+    "T1587.004",
+    "T1588.002",
+    "T1588.007",
+    "T1589.001",
+    "T1593.003",
+    "T1595.002",
+    "T1598",
+    "T1598.003",
+    "T1619",
+    "T1657",
+    "T1684"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1210",
+      "count": 2
+    },
+    {
+      "id": "T1213",
+      "count": 2
+    },
+    {
+      "id": "T1528",
+      "count": 2
+    },
+    {
+      "id": "T1003.003",
+      "count": 1
+    },
+    {
+      "id": "T1041",
+      "count": 1
+    },
+    {
+      "id": "T1059.004",
+      "count": 1
+    },
+    {
+      "id": "T1068",
+      "count": 1
+    },
+    {
+      "id": "T1071.001",
+      "count": 1
+    },
+    {
+      "id": "T1072",
+      "count": 1
+    },
+    {
+      "id": "T1074.002",
+      "count": 1
+    },
+    {
+      "id": "T1078",
+      "count": 1
+    },
+    {
+      "id": "T1078.002",
+      "count": 1
+    },
+    {
+      "id": "T1078.004",
+      "count": 1
+    },
+    {
+      "id": "T1090",
+      "count": 1
+    },
+    {
+      "id": "T1102",
+      "count": 1
+    },
+    {
+      "id": "T1110",
+      "count": 1
+    },
+    {
+      "id": "T1111",
+      "count": 1
+    },
+    {
+      "id": "T1119",
+      "count": 1
+    },
+    {
+      "id": "T1133",
+      "count": 1
+    },
+    {
+      "id": "T1136.003",
+      "count": 1
+    },
+    {
+      "id": "T1190",
+      "count": 1
+    },
+    {
+      "id": "T1195",
+      "count": 1
+    },
+    {
+      "id": "T1204.001",
+      "count": 1
+    },
+    {
+      "id": "T1486",
+      "count": 1
+    },
+    {
+      "id": "T1518",
+      "count": 1
+    },
+    {
+      "id": "T1526",
+      "count": 1
+    },
+    {
+      "id": "T1530",
+      "count": 1
+    },
+    {
+      "id": "T1539",
+      "count": 1
+    },
+    {
+      "id": "T1555.006",
+      "count": 1
+    },
+    {
+      "id": "T1565",
+      "count": 1
+    },
+    {
+      "id": "T1566",
+      "count": 1
+    },
+    {
+      "id": "T1566.002",
+      "count": 1
+    },
+    {
+      "id": "T1567",
+      "count": 1
+    },
+    {
+      "id": "T1567.002",
+      "count": 1
+    },
+    {
+      "id": "T1578.005",
+      "count": 1
+    },
+    {
+      "id": "T1580",
+      "count": 1
+    },
+    {
+      "id": "T1583.003",
+      "count": 1
+    },
+    {
+      "id": "T1583.006",
+      "count": 1
+    },
+    {
+      "id": "T1589.001",
+      "count": 1
+    },
+    {
+      "id": "T1589.002",
+      "count": 1
+    },
+    {
+      "id": "T1598",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2021-35587",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-35273",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2021-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q3",
+      "count": 3
+    }
+  ],
+  "reports": [
+    "9c9c752b1c98538e8feb1c41841409fb47829740",
+    "4e23847fe430035318e46a8229b8571a4f97b84f",
+    "cfdf7d895d9ebe4e3f80a8c722f8fa076a9d5915",
+    "07938b102c880350636aaae79cb14d8a1c134f76",
+    "40f468bb7c0eae9c32278463244783e920419f31",
+    "8ae6452064e6535526083d08be54c419543266c8",
+    "b86f2b1e48572ecc373a14786e7ba8319c5b3dcf",
+    "8d41a8e2a1c3d323e9372fe6c6503e7e23d1a978"
+  ],
+  "conflicts": [],
+  "evidence_count": 3
+}

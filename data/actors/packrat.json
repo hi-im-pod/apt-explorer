@@ -1,0 +1,106 @@
+{
+  "id": "packrat",
+  "name": "Packrat",
+  "aliases": [
+    {
+      "value": "Packrat",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Argentina",
+        "source": "etda"
+      },
+      {
+        "value": "Brazil",
+        "source": "etda"
+      },
+      {
+        "value": "Ecuador",
+        "source": "etda"
+      },
+      {
+        "value": "Venezuela",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Activists",
+        "source": "misp"
+      },
+      {
+        "value": "Journalist",
+        "source": "misp"
+      },
+      {
+        "value": "Political party",
+        "source": "misp"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Media",
+        "source": "etda"
+      },
+      {
+        "value": "high profile political figures, journalists, and others",
+        "source": "etda"
+      },
+      {
+        "value": "Activists",
+        "source": "malpedia"
+      },
+      {
+        "value": "Journalist",
+        "source": "malpedia"
+      },
+      {
+        "value": "Political party",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Adzok",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2015-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2017-Q1",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "7a53a9ae6b4445a626e1c2d642703aaa3f01af97",
+    "0732f30d54b0bb6bd260dd3e34889bc6ec89c5ec",
+    "6a6eea4d83efdc3f965d4e41c9da8e2882a53e6d"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

@@ -1,0 +1,38 @@
+{
+  "id": "raspberry-typhoon",
+  "name": "Raspberry Typhoon",
+  "aliases": [
+    {
+      "value": "Raspberry Typhoon",
+      "sources": [
+        "malpedia"
+      ]
+    },
+    {
+      "value": "RADIUM",
+      "sources": [
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 0
+}

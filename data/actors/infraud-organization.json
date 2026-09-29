@@ -1,0 +1,36 @@
+{
+  "id": "infraud-organization",
+  "name": "Infraud Organization",
+  "aliases": [
+    {
+      "value": "Infraud Organization",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Financial crime",
+      "source": "etda"
+    },
+    {
+      "value": "Financial gain",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 0
+}

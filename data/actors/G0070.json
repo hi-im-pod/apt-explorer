@@ -1,0 +1,309 @@
+{
+  "id": "G0070",
+  "name": "Dark Caracal",
+  "aliases": [
+    {
+      "value": "Dark Caracal",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "ATK 27",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "TAG-CT3",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "LB",
+      "source": "misp"
+    },
+    {
+      "value": "LB",
+      "source": "etda"
+    },
+    {
+      "value": "LB",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "China",
+        "source": "etda"
+      },
+      {
+        "value": "France",
+        "source": "etda"
+      },
+      {
+        "value": "Germany",
+        "source": "etda"
+      },
+      {
+        "value": "India",
+        "source": "etda"
+      },
+      {
+        "value": "Italy",
+        "source": "etda"
+      },
+      {
+        "value": "Jordan",
+        "source": "etda"
+      },
+      {
+        "value": "Lebanon",
+        "source": "etda"
+      },
+      {
+        "value": "Nepal",
+        "source": "etda"
+      },
+      {
+        "value": "Netherlands",
+        "source": "etda"
+      },
+      {
+        "value": "Pakistan",
+        "source": "etda"
+      },
+      {
+        "value": "Philippines",
+        "source": "etda"
+      },
+      {
+        "value": "Qatar",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "etda"
+      },
+      {
+        "value": "Saudi Arabia",
+        "source": "etda"
+      },
+      {
+        "value": "South Korea",
+        "source": "etda"
+      },
+      {
+        "value": "Switzerland",
+        "source": "etda"
+      },
+      {
+        "value": "Syria",
+        "source": "etda"
+      },
+      {
+        "value": "Thailand",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      },
+      {
+        "value": "Venezuela",
+        "source": "etda"
+      },
+      {
+        "value": "Vietnam",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Education",
+        "source": "etda"
+      },
+      {
+        "value": "Financial",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Healthcare",
+        "source": "etda"
+      },
+      {
+        "value": "Manufacturing",
+        "source": "etda"
+      },
+      {
+        "value": "Media",
+        "source": "etda"
+      },
+      {
+        "value": "Utilities",
+        "source": "etda"
+      },
+      {
+        "value": "activists, lawyers and journalists",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Bandook",
+      "source": "attack"
+    },
+    {
+      "name": "CrossRAT",
+      "source": "attack"
+    },
+    {
+      "name": "FinFisher",
+      "source": "attack"
+    },
+    {
+      "name": "Bandook",
+      "source": "malpedia"
+    },
+    {
+      "name": "CrossRAT",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1005",
+    "T1027.002",
+    "T1027.013",
+    "T1059.003",
+    "T1071.001",
+    "T1083",
+    "T1113",
+    "T1189",
+    "T1204.002",
+    "T1218.001",
+    "T1547.001",
+    "T1566.003"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1027.002",
+      "count": 1
+    },
+    {
+      "id": "T1027.013",
+      "count": 1
+    },
+    {
+      "id": "T1055",
+      "count": 1
+    },
+    {
+      "id": "T1059.003",
+      "count": 1
+    },
+    {
+      "id": "T1082",
+      "count": 1
+    },
+    {
+      "id": "T1132.001",
+      "count": 1
+    },
+    {
+      "id": "T1204.002",
+      "count": 1
+    },
+    {
+      "id": "T1566.001",
+      "count": 1
+    },
+    {
+      "id": "T1571",
+      "count": 1
+    },
+    {
+      "id": "T1583.003",
+      "count": 1
+    },
+    {
+      "id": "T1588.001",
+      "count": 1
+    },
+    {
+      "id": "T1608.001",
+      "count": 1
+    },
+    {
+      "id": "T1665",
+      "count": 1
+    }
+  ],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2016-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2020-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2021-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2023-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q1",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "6ec884944dedb5c7c1b3052d305183fa60832236",
+    "94306e3bc8d88a5c291cde811d1f924bda5b537b",
+    "a29ecfc9a01ac03e75296566ac5f8b39abf910c8",
+    "dd3af30c6b21e69774d37aa160dc003819c9c5ce",
+    "fb43b76181d62bfbef24e8304eb674a9be4a5e6e",
+    "99af637aa402063462556560e1745ba743af8711",
+    "4a7908808b776487714ffbbde4d9d983f9580e7f",
+    "a3f44470d2ac64e113693e133f0e14e6a388db6f",
+    "d5c605fd42adb5312d17a54d246d8178a6a9094c",
+    "405d12fe2aa12442f0ffe5cf63abdd5b7737badc"
+  ],
+  "conflicts": [],
+  "evidence_count": 5
+}

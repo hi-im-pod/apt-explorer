@@ -1,0 +1,416 @@
+{
+  "id": "teamspy-crew",
+  "name": "TeamSpy Crew",
+  "aliases": [
+    {
+      "value": "TeamSpy Crew",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Team Bear",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Anger Bear",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TeamSpy",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "IRON LYRIC",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "SIG39",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Iron Lyric",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "RU",
+      "source": "misp"
+    },
+    {
+      "value": "RU",
+      "source": "etda"
+    },
+    {
+      "value": "RU",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "Russian Federation",
+      "source": "misp"
+    },
+    {
+      "value": "Russian Federation",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Hungary",
+        "source": "misp"
+      },
+      {
+        "value": "Belarus",
+        "source": "misp"
+      },
+      {
+        "value": "Algeria",
+        "source": "etda"
+      },
+      {
+        "value": "Australia",
+        "source": "etda"
+      },
+      {
+        "value": "Bangladesh",
+        "source": "etda"
+      },
+      {
+        "value": "Belgium",
+        "source": "etda"
+      },
+      {
+        "value": "Benin",
+        "source": "etda"
+      },
+      {
+        "value": "Bhutan",
+        "source": "etda"
+      },
+      {
+        "value": "Brazil",
+        "source": "etda"
+      },
+      {
+        "value": "Cameroon",
+        "source": "etda"
+      },
+      {
+        "value": "Canada",
+        "source": "etda"
+      },
+      {
+        "value": "Central African Republic",
+        "source": "etda"
+      },
+      {
+        "value": "Chad",
+        "source": "etda"
+      },
+      {
+        "value": "China",
+        "source": "etda"
+      },
+      {
+        "value": "Republic of the Congo",
+        "source": "etda"
+      },
+      {
+        "value": "Costa Rica",
+        "source": "etda"
+      },
+      {
+        "value": "Côte d'Ivoire",
+        "source": "etda"
+      },
+      {
+        "value": "Croatia",
+        "source": "etda"
+      },
+      {
+        "value": "Djibouti",
+        "source": "etda"
+      },
+      {
+        "value": "Egypt",
+        "source": "etda"
+      },
+      {
+        "value": "France",
+        "source": "etda"
+      },
+      {
+        "value": "Gabon",
+        "source": "etda"
+      },
+      {
+        "value": "Georgia",
+        "source": "etda"
+      },
+      {
+        "value": "Germany",
+        "source": "etda"
+      },
+      {
+        "value": "Hungary",
+        "source": "etda"
+      },
+      {
+        "value": "India",
+        "source": "etda"
+      },
+      {
+        "value": "Indonesia",
+        "source": "etda"
+      },
+      {
+        "value": "Iran",
+        "source": "etda"
+      },
+      {
+        "value": "Italy",
+        "source": "etda"
+      },
+      {
+        "value": "Japan",
+        "source": "etda"
+      },
+      {
+        "value": "Kazakhstan",
+        "source": "etda"
+      },
+      {
+        "value": "Kenya",
+        "source": "etda"
+      },
+      {
+        "value": "Madagascar",
+        "source": "etda"
+      },
+      {
+        "value": "Mali",
+        "source": "etda"
+      },
+      {
+        "value": "Mauritania",
+        "source": "etda"
+      },
+      {
+        "value": "Mongolia",
+        "source": "etda"
+      },
+      {
+        "value": "Morocco",
+        "source": "etda"
+      },
+      {
+        "value": "Nepal",
+        "source": "etda"
+      },
+      {
+        "value": "Netherlands",
+        "source": "etda"
+      },
+      {
+        "value": "Norway",
+        "source": "etda"
+      },
+      {
+        "value": "Peru",
+        "source": "etda"
+      },
+      {
+        "value": "Philippines",
+        "source": "etda"
+      },
+      {
+        "value": "Portugal",
+        "source": "etda"
+      },
+      {
+        "value": "Romania",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "etda"
+      },
+      {
+        "value": "Saudi Arabia",
+        "source": "etda"
+      },
+      {
+        "value": "Senegal",
+        "source": "etda"
+      },
+      {
+        "value": "Slovakia",
+        "source": "etda"
+      },
+      {
+        "value": "South Africa",
+        "source": "etda"
+      },
+      {
+        "value": "Spain",
+        "source": "etda"
+      },
+      {
+        "value": "Sudan",
+        "source": "etda"
+      },
+      {
+        "value": "Sweden",
+        "source": "etda"
+      },
+      {
+        "value": "Switzerland",
+        "source": "etda"
+      },
+      {
+        "value": "Tanzania",
+        "source": "etda"
+      },
+      {
+        "value": "Thailand",
+        "source": "etda"
+      },
+      {
+        "value": "Tunisia",
+        "source": "etda"
+      },
+      {
+        "value": "Türkiye",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "Ukraine",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      },
+      {
+        "value": "Vietnam",
+        "source": "etda"
+      },
+      {
+        "value": "Hungary",
+        "source": "malpedia"
+      },
+      {
+        "value": "Belarus",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Private sector",
+        "source": "misp"
+      },
+      {
+        "value": "Activists",
+        "source": "misp"
+      },
+      {
+        "value": "Intelligence",
+        "source": "misp"
+      },
+      {
+        "value": "Government, Administration",
+        "source": "misp"
+      },
+      {
+        "value": "Education",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Industrial",
+        "source": "etda"
+      },
+      {
+        "value": "Electronics and high-profile targets",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      },
+      {
+        "value": "Private sector",
+        "source": "malpedia"
+      },
+      {
+        "value": "Activists",
+        "source": "malpedia"
+      },
+      {
+        "value": "Intelligence",
+        "source": "malpedia"
+      },
+      {
+        "value": "Government, Administration",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 9
+}

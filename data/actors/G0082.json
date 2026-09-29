@@ -1,0 +1,547 @@
+{
+  "id": "G0082",
+  "name": "APT38",
+  "aliases": [
+    {
+      "value": "APT38",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "NICKEL GLADSTONE",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "BeagleBoyz",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Bluenoroff",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Stardust Chollima",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Sapphire Sleet",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "COPERNICIUM",
+      "sources": [
+        "attack"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "DarkComet",
+      "source": "attack"
+    },
+    {
+      "name": "ECCENTRICBANDWAGON",
+      "source": "attack"
+    },
+    {
+      "name": "HOPLIGHT",
+      "source": "attack"
+    },
+    {
+      "name": "KillDisk",
+      "source": "attack"
+    },
+    {
+      "name": "Mimikatz",
+      "source": "attack"
+    },
+    {
+      "name": "Net",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1005",
+    "T1027.002",
+    "T1033",
+    "T1036.003",
+    "T1036.006",
+    "T1049",
+    "T1053.003",
+    "T1053.005",
+    "T1055",
+    "T1056.001",
+    "T1057",
+    "T1059.001",
+    "T1059.003",
+    "T1059.005",
+    "T1070.004",
+    "T1070.006",
+    "T1071.001",
+    "T1082",
+    "T1083",
+    "T1105",
+    "T1106",
+    "T1110",
+    "T1112",
+    "T1115",
+    "T1135",
+    "T1140",
+    "T1189",
+    "T1204.001",
+    "T1204.002",
+    "T1217",
+    "T1218.001",
+    "T1218.005",
+    "T1218.007",
+    "T1218.011",
+    "T1480.002",
+    "T1485",
+    "T1486",
+    "T1505.003",
+    "T1518.001",
+    "T1529",
+    "T1543.003",
+    "T1548.002",
+    "T1553.005",
+    "T1561.002",
+    "T1565.001",
+    "T1565.002",
+    "T1565.003",
+    "T1566.001",
+    "T1569.002",
+    "T1583.001",
+    "T1588.002",
+    "T1685",
+    "T1685.005",
+    "T1686",
+    "T1686.002",
+    "T1690"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1005",
+      "count": 1
+    },
+    {
+      "id": "T1010",
+      "count": 1
+    },
+    {
+      "id": "T1012",
+      "count": 1
+    },
+    {
+      "id": "T1014",
+      "count": 1
+    },
+    {
+      "id": "T1016",
+      "count": 1
+    },
+    {
+      "id": "T1020",
+      "count": 1
+    },
+    {
+      "id": "T1021",
+      "count": 1
+    },
+    {
+      "id": "T1021.001",
+      "count": 1
+    },
+    {
+      "id": "T1021.002",
+      "count": 1
+    },
+    {
+      "id": "T1027",
+      "count": 1
+    },
+    {
+      "id": "T1027.005",
+      "count": 1
+    },
+    {
+      "id": "T1033",
+      "count": 1
+    },
+    {
+      "id": "T1036",
+      "count": 1
+    },
+    {
+      "id": "T1041",
+      "count": 1
+    },
+    {
+      "id": "T1049",
+      "count": 1
+    },
+    {
+      "id": "T1053",
+      "count": 1
+    },
+    {
+      "id": "T1053.003",
+      "count": 1
+    },
+    {
+      "id": "T1055",
+      "count": 1
+    },
+    {
+      "id": "T1056",
+      "count": 1
+    },
+    {
+      "id": "T1056.004",
+      "count": 1
+    },
+    {
+      "id": "T1057",
+      "count": 1
+    },
+    {
+      "id": "T1059",
+      "count": 1
+    },
+    {
+      "id": "T1059.001",
+      "count": 1
+    },
+    {
+      "id": "T1059.005",
+      "count": 1
+    },
+    {
+      "id": "T1070.003",
+      "count": 1
+    },
+    {
+      "id": "T1070.004",
+      "count": 1
+    },
+    {
+      "id": "T1070.006",
+      "count": 1
+    },
+    {
+      "id": "T1071",
+      "count": 1
+    },
+    {
+      "id": "T1078",
+      "count": 1
+    },
+    {
+      "id": "T1082",
+      "count": 1
+    },
+    {
+      "id": "T1083",
+      "count": 1
+    },
+    {
+      "id": "T1087",
+      "count": 1
+    },
+    {
+      "id": "T1090",
+      "count": 1
+    },
+    {
+      "id": "T1095",
+      "count": 1
+    },
+    {
+      "id": "T1098",
+      "count": 1
+    },
+    {
+      "id": "T1102",
+      "count": 1
+    },
+    {
+      "id": "T1105",
+      "count": 1
+    },
+    {
+      "id": "T1106",
+      "count": 1
+    },
+    {
+      "id": "T1110",
+      "count": 1
+    },
+    {
+      "id": "T1113",
+      "count": 1
+    },
+    {
+      "id": "T1115",
+      "count": 1
+    },
+    {
+      "id": "T1119",
+      "count": 1
+    },
+    {
+      "id": "T1129",
+      "count": 1
+    },
+    {
+      "id": "T1132.001",
+      "count": 1
+    },
+    {
+      "id": "T1133",
+      "count": 1
+    },
+    {
+      "id": "T1140",
+      "count": 1
+    },
+    {
+      "id": "T1189",
+      "count": 1
+    },
+    {
+      "id": "T1190",
+      "count": 1
+    },
+    {
+      "id": "T1199",
+      "count": 1
+    },
+    {
+      "id": "T1202",
+      "count": 1
+    },
+    {
+      "id": "T1203",
+      "count": 1
+    },
+    {
+      "id": "T1204",
+      "count": 1
+    },
+    {
+      "id": "T1217",
+      "count": 1
+    },
+    {
+      "id": "T1218.001",
+      "count": 1
+    },
+    {
+      "id": "T1219",
+      "count": 1
+    },
+    {
+      "id": "T1485",
+      "count": 1
+    },
+    {
+      "id": "T1486",
+      "count": 1
+    },
+    {
+      "id": "T1489",
+      "count": 1
+    },
+    {
+      "id": "T1505.003",
+      "count": 1
+    },
+    {
+      "id": "T1518.001",
+      "count": 1
+    },
+    {
+      "id": "T1543.003",
+      "count": 1
+    },
+    {
+      "id": "T1547.001",
+      "count": 1
+    },
+    {
+      "id": "T1548.003",
+      "count": 1
+    },
+    {
+      "id": "T1552.004",
+      "count": 1
+    },
+    {
+      "id": "T1553.002",
+      "count": 1
+    },
+    {
+      "id": "T1560",
+      "count": 1
+    },
+    {
+      "id": "T1561.002",
+      "count": 1
+    },
+    {
+      "id": "T1565.001",
+      "count": 1
+    },
+    {
+      "id": "T1565.002",
+      "count": 1
+    },
+    {
+      "id": "T1565.003",
+      "count": 1
+    },
+    {
+      "id": "T1566.001",
+      "count": 1
+    },
+    {
+      "id": "T1569.002",
+      "count": 1
+    },
+    {
+      "id": "T1573",
+      "count": 1
+    },
+    {
+      "id": "T1574.001",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2015-6585",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2015-8651",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2016-0034",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2016-1019",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2016-4117",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-13379",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-0604",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-11510",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-19781",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-0688",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-10189",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-1472",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-2021",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2017-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "7cc6d00e992b5cb07353fe26be042d94fc46eac3",
+    "825df7f8654a1229796a2b6b98e1cd77e73754e0",
+    "a32de70007629718b37895834b71c889798328b0",
+    "paper:AA22-108A%20TraderTraitor%20North%20Korean%20State-Sponsored%20%20APT%20Targets%20Blockchain%20Companies%20(PDF)",
+    "2d98a214de7a8a280ebe92a6883684593e3d33d3",
+    "6d128e3974e14636963b7fcc71493641859d52eb",
+    "a6400050e83a0571c5df8b7feff2617213a3439d",
+    "9a6098c60b1f484550326ece77eb9339ddf2e6fe",
+    "c0b2860bef01e353607bafec0cea12ac7f2215df"
+  ],
+  "conflicts": [],
+  "evidence_count": 0
+}

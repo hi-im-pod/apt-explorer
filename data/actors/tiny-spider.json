@@ -1,0 +1,72 @@
+{
+  "id": "tiny-spider",
+  "name": "TINY SPIDER",
+  "aliases": [
+    {
+      "value": "TINY SPIDER",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Tiny Spider",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Financial crime",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": [
+      {
+        "value": "Retail",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2019-13720",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2015-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2016-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "fed84094f8bd8822542b76820b569235ff6cd98a",
+    "cd2ef9b1a9252d34ff1d07fb91ebb0e964688f00",
+    "bea7c034e32fb313f10b0a6c2971750c2be0b6f7",
+    "b772f6d15d7a3517a373fcb095c7313508e510f8"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

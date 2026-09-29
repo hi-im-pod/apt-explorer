@@ -1,0 +1,815 @@
+[
+  {
+    "id": "8a722d07b6b1aa49d1cb58a9dea830f18545e17e",
+    "title": "End of the Line for the Bredolab Botnet?",
+    "published": "2010-12-20",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://securelist.com/end-of-the-line-for-the-bredolab-botnet/36335/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/8a722d07b6b1aa49d1cb58a9dea830f18545e17e.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2006-0003",
+      "CVE-2008-0655",
+      "CVE-2008-2992",
+      "CVE-2009-0927",
+      "CVE-2009-4324",
+      "CVE-2010-0886"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "87f9c1bed271cc832c0fed2ddcde55e72f9801dd",
+    "title": "The Stuxnet Computer Worm: Harbinger of an Emerging Warfare Capability",
+    "published": "2010-12-09",
+    "date_basis": "file-metadata",
+    "organisation": null,
+    "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2010/2010.12.09.Stuxnet_Worm/R41524.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/87f9c1bed271cc832c0fed2ddcde55e72f9801dd.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "0ea46e6fa462f1817f890b594e98ebec0a82b94a",
+    "title": "2016-09-20 - Meanwhile in Britain, Qadars v3 Hardens Evasion, Targets 18 UK Banks",
+    "published": "2010-11-12",
+    "date_basis": "file-metadata",
+    "organisation": null,
+    "url": "https://www.wired.com/images_blogs/threatlevel/2010/11/w32_stuxnet_dossier.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/0ea46e6fa462f1817f890b594e98ebec0a82b94a.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2010-2568"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "608a54a25982f889e864f3556779bfe1ae9171ff",
+    "title": "Lethic Botnet Returns, Uses \"Realtek\" Identifier | Zscaler",
+    "published": "2010-11-10",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://www.zscaler.com/blogs/security-research/lethic-botnet-returns-uses-realtek-identifier",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/608a54a25982f889e864f3556779bfe1ae9171ff.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2010-2568"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "9e10fdc58360752c085bacc2bbac4238023619c7",
+    "title": "Qakbot Spreads like a Worm, Stings like a Trojan « Speaking of Security – The RSA Blog and Podcast",
+    "published": "2010-10-25",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://web.archive.org/web/20120206174705/http://blogs.rsa.com/rsafarl/businesses-beware-qakbot-spreads-like-a-worm-stings-like-a-trojan/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/9e10fdc58360752c085bacc2bbac4238023619c7.pdf",
+    "actors": [
+      "G0127"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "65a945f04db630840a0454ca6aa9f6e60fdbaf3c",
+    "title": "2016-09-20 - Meanwhile in Britain, Qadars v3 Hardens Evasion, Targets 18 UK Banks",
+    "published": "2010-10-15",
+    "date_basis": "file-metadata",
+    "organisation": null,
+    "url": "https://www.esetnod32.ru/company/viruslab/analytics/doc/Stuxnet_Under_the_Microscope.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/65a945f04db630840a0454ca6aa9f6e60fdbaf3c.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2010-0249",
+      "CVE-2010-2568",
+      "CVE-2010-2772"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "5c0b6cd4105d941f45bb488001880cdfadd4a034",
+    "title": "2016-09-11 - Free Darktrack RAT Has the Potential of Being the Best RAT on the Market Search",
+    "published": "2010-10-14",
+    "date_basis": "file-metadata",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/ICS%20SCADA/Stuxnet/Analysis%20of%20Siemens%20Malware%20Attacks%20v3.1.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/5c0b6cd4105d941f45bb488001880cdfadd4a034.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2008-4250",
+      "CVE-2010-2568",
+      "CVE-2010-2729",
+      "CVE-2010-2772"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "510f1b2342f3ca3dd24179821eb451488d6e9722",
+    "title": "Case Study: Operation Aurora",
+    "published": "2010-09-21",
+    "date_basis": "file-metadata",
+    "organisation": "Triumfant",
+    "url": "https://app.box.com/s/ni4xs2iuol4vskbc25vrxjih2w1ep7p6",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/510f1b2342f3ca3dd24179821eb451488d6e9722.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "5e8139598f5f407225bc6a0498716dc6ec7e3e6c",
+    "title": "SpyEye Botnet’s Bogus Billing Feature",
+    "published": "2010-09-17",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://krebsonsecurity.com/2010/09/spyeye-botnets-bogus-billing-feature/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/5e8139598f5f407225bc6a0498716dc6ec7e3e6c.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "7eebbb189c095fa86bbed9ee26a2cc2946b4f0ba",
+    "title": "Stuxnet",
+    "published": "2010-09-01",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://en.wikipedia.org/wiki/Stuxnet",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/7eebbb189c095fa86bbed9ee26a2cc2946b4f0ba.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2010-2772"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "cfe350f137a4a79195fce4de1abccf12a6cdc89b",
+    "title": "Injection as a way of life",
+    "published": "2010-09-01",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://www.virusbulletin.com/virusbulletin/2010/09/injection-way-life/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/cfe350f137a4a79195fce4de1abccf12a6cdc89b.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "27de8cc561c5a4e2a15beb83b5ad2adcd16df906",
+    "title": "2016-09-21 - Reversing GO binaries like a pro",
+    "published": "2010-08-25",
+    "date_basis": "file-metadata",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/ICS%20SCADA/Stuxnet/Stuxnet%20Worm%20and%20Options%20for%20Remediation.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/27de8cc561c5a4e2a15beb83b5ad2adcd16df906.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "dad63208a602a61b43df73a05ccb83f584085bc6",
+    "title": "TDSS",
+    "published": "2010-08-05",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://securelist.com/tdss/36314/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/dad63208a602a61b43df73a05ccb83f584085bc6.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "70deff7e92069c4e53c66370fda393b42589fb2d",
+    "title": "Minifilters for detection of Malware",
+    "published": "2010-08-03",
+    "date_basis": "file-metadata",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/AV%20Tech/Minifilters%20for%20detection%20of%20Malware.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/70deff7e92069c4e53c66370fda393b42589fb2d.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "f5efc2844ba4966c5ccf5891c965630c887a234d",
+    "title": "CVE-2010-2568 keylogger Win32/Chymine.A",
+    "published": "2010-07-30",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://contagiodump.blogspot.com/2010/07/cve-2010-2568-keylogger-win32chyminea.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/f5efc2844ba4966c5ccf5891c965630c887a234d.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2010-2568",
+      "CVE-2010-2772"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "dff6b382daa307cd7fb212184b082c17ec24ca80",
+    "title": "Black DDoS",
+    "published": "2010-07-15",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://securelist.com/black-ddos/36309/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/dff6b382daa307cd7fb212184b082c17ec24ca80.pdf",
+    "actors": [
+      "G0034"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "6c8e211cb8b0749a93ae5b1ee8387e37c7621793",
+    "title": "Microsoft Word - Getting In Bed With Robin Sage v1.0",
+    "published": "2010-07-14",
+    "date_basis": "file-metadata",
+    "organisation": null,
+    "url": "http://media.blackhat.com/bh-us-10/whitepapers/Ryan/BlackHat-USA-2010-Ryan-Getting-In-Bed-With-Robin-Sage-v1.0.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/6c8e211cb8b0749a93ae5b1ee8387e37c7621793.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "f7dafa6412c4f78f9bf1cfd76dbd58ebc68d1f1d",
+    "title": "ZeuS Version scheme by the trojan author",
+    "published": "2010-07-14",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://contagiodump.blogspot.com/2010/07/zeus-version-scheme-by-trojan-author.html",
+    "url_ok": true,
+    "archive_url": "https://archive.orkl.eu/f7dafa6412c4f78f9bf1cfd76dbd58ebc68d1f1d.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "d28b24b3334b77323b3b7875778b30d11a8f667f",
+    "title": "The Case of TDL3",
+    "published": "2010-06-28",
+    "date_basis": "malpedia-library",
+    "organisation": "F-Secure Corporation",
+    "url": "https://archive.f-secure.com/weblog/archives/The_Case_of__TDL3.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/d28b24b3334b77323b3b7875778b30d11a8f667f.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "6f40c9e8127244f9d77a2d25df60c43af42fbdb0",
+    "title": "Review of the Virus.Win32.Virut.ce Malware Sample",
+    "published": "2010-06-10",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://securelist.com/review-of-the-virus-win32-virut-ce-malware-sample/36305/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/6f40c9e8127244f9d77a2d25df60c43af42fbdb0.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "28ed30a0df8ad4c91be9fd7e1e8cc8730309a346",
+    "title": "Research, News, and Perspectives",
+    "published": "2010-05-31",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/sasfis-malware-uses-a-new-trick/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/28ed30a0df8ad4c91be9fd7e1e8cc8730309a346.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "8c355b1067cdb2639d2e1311011dc79a95e73236",
+    "title": "May 28 CVE-2009-3129 XLS for office 2002-2007 with fud keylogger EIDHR from david@humanright-watch.org",
+    "published": "2010-05-28",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://contagiodump.blogspot.com/2010/06/may-28-cve-2009-3129-xls-for-office.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/8c355b1067cdb2639d2e1311011dc79a95e73236.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2009-3129"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "d6036938100c10036da3c05bf45bfd0e4736b1fb",
+    "title": "Qakbot, Data Thief Unmasked: Part I",
+    "published": "2010-05-11",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://web.archive.org/web/20110909041410/http://www.symantec.com/connect/blogs/qakbot-data-thief-unmasked-part-i",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/d6036938100c10036da3c05bf45bfd0e4736b1fb.pdf",
+    "actors": [
+      "G0127"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "cf717c301211689bdeba2d216f9e69a0b97ec5ad",
+    "title": "Heloag has rather no friends, just a master",
+    "published": "2010-05-03",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://securelist.com/heloag-has-rather-no-friends-just-a-master/29693/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/cf717c301211689bdeba2d216f9e69a0b97ec5ad.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "2fe9add1fab5c5c089b80f48434416fa4fd1353a",
+    "title": "Qakbot Steals 2GB of Confidential Data per Week",
+    "published": "2010-04-22",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://web.archive.org/web/20130530033754/http://www.symantec.com/connect/blogs/qakbot-steals-2gb-confidential-data-week",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/2fe9add1fab5c5c089b80f48434416fa4fd1353a.pdf",
+    "actors": [
+      "G0127"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "9edeaa912354b5945931aa07862edb312e98182c",
+    "title": "gelinasRyan",
+    "published": "2010-04-20",
+    "date_basis": "file-metadata",
+    "organisation": null,
+    "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/historical/gelinasRyan.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/9edeaa912354b5945931aa07862edb312e98182c.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "536eb548053c058e93f1ec62b7cd1c56e5587009",
+    "title": "ZeuS on IRS Scam remains actively exploited",
+    "published": "2010-04-19",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://malwareint.blogspot.com/2010/02/zeus-on-irs-scam-remains-actively.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/536eb548053c058e93f1ec62b7cd1c56e5587009.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "8a982bc5c8303440faa4d5672a38bb7a613c382b",
+    "title": "Shadows In The Cloud: Investigating Cyber Espionage 2.0",
+    "published": "2010-04-06",
+    "date_basis": "malpedia-library",
+    "organisation": "Shadowserver, Information warfare monitor",
+    "url": "https://app.box.com/s/mxffbrs4ju2yeoa47sbeym6n5zm1hnf3",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/8a982bc5c8303440faa4d5672a38bb7a613c382b.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2009-0927"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "71e3f828965b2d7745f303dee5603e558cf70c6c",
+    "title": "SpyEye vs. ZeuS Rivalry",
+    "published": "2010-04-01",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://krebsonsecurity.com/2010/04/spyeye-vs-zeus-rivalry/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/71e3f828965b2d7745f303dee5603e558cf70c6c.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "dc553660c329c77fb4c891980126752f0bdde3f9",
+    "title": "Mariposa Botnet | CISA",
+    "published": "2010-03-31",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://www.us-cert.gov/ics/advisories/ICSA-10-090-01",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/dc553660c329c77fb4c891980126752f0bdde3f9.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "9e1ee60ee1fae0f81bd701a198949acadda20ff8",
+    "title": "New phishing campaign against Facebook led by Zeus",
+    "published": "2010-03-15",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://malwareint.blogspot.com/2010/03/new-phishing-campaign-against-facebook.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/9e1ee60ee1fae0f81bd701a198949acadda20ff8.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "6eb3094ecab54a8b80932f4bec263696f849ca77",
+    "title": "In-Depth Analysis Of Hydraq: The Face Of Cyberwar Enemies Unfolds",
+    "published": "2010-03-12",
+    "date_basis": "file-metadata",
+    "organisation": "CA",
+    "url": "https://app.box.com/s/44e7rbs177n5inhpm9si6gu3lm7fw6bj",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/6eb3094ecab54a8b80932f4bec263696f849ca77.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2010-0249"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "97fedac4397c7028e01edffe0d702029809f37d4",
+    "title": "March 2010 Opachki Trojan update and sample",
+    "published": "2010-03-07",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://contagiodump.blogspot.com/2010/03/march-2010-opachki-trojan-update-and.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/97fedac4397c7028e01edffe0d702029809f37d4.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "9a7a1d3f7719c02dced8633ac0bf43d6e9ec7a1b",
+    "title": "The Command Structure Of The Aurora Botnet",
+    "published": "2010-03-03",
+    "date_basis": "file-metadata",
+    "organisation": "Damballa",
+    "url": "https://app.box.com/s/6jeekvxflthmub9v26nybp5kqw9tjopj",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/9a7a1d3f7719c02dced8633ac0bf43d6e9ec7a1b.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "ace68cd5f90719a18d84ef8a42f90370629fcd22",
+    "title": "Black Energy Crypto",
+    "published": "2010-03-03",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://web.archive.org/web/20140428201836/http://www.fireeye.com/blog/technical/malware-research/2010/03/black-energy-crypto.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/ace68cd5f90719a18d84ef8a42f90370629fcd22.pdf",
+    "actors": [
+      "G0034"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "54f92a9c558401204f4686176d49f66cffa7338e",
+    "title": "Facebook & VISA phishing campaign proposed by ZeuS",
+    "published": "2010-02-20",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://malwareint.blogspot.com/2010/02/facebook-phishing-campaign-proposed-by.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/54f92a9c558401204f4686176d49f66cffa7338e.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2007-5659",
+      "CVE-2008-0015",
+      "CVE-2008-2992",
+      "CVE-2009-0927"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "4d9c8ecae38f217729cf8a9df934e7cc5de2ae1a",
+    "title": "Operation Aurora",
+    "published": "2010-02-08",
+    "date_basis": "file-metadata",
+    "organisation": "HBGary",
+    "url": "https://app.box.com/s/fjb89qr1vnk2ox0vllj68ivadqgyz3an",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/4d9c8ecae38f217729cf8a9df934e7cc5de2ae1a.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "3494bd514034f0658ec66b2f515cd9a60c51a8e7",
+    "title": "Operation Aurora: Detect, Diagnose, Respond",
+    "published": "2010-02-04",
+    "date_basis": "file-metadata",
+    "organisation": "HBGary",
+    "url": "https://app.box.com/s/j36zc0da9nz6q8wnv13slwxcnmiaykul",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/3494bd514034f0658ec66b2f515cd9a60c51a8e7.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "688196da6bb321d988281fffa70d98f3dfd25e90",
+    "title": "ZeuS spreading via Facebook | eternal-todo.com",
+    "published": "2010-02-02",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://eternal-todo.com/blog/zeus-spreading-facebook",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/688196da6bb321d988281fffa70d98f3dfd25e90.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "1001e5c45200e0f138e9e9d508afc31c475d6ce7",
+    "title": "How Can I Tell If I Was Infected By Aurora?",
+    "published": "2010-01-27",
+    "date_basis": "file-metadata",
+    "organisation": "McAfee",
+    "url": "https://app.box.com/s/k0qidf9g1yfehi6pbdodmcxdqag5a9bv",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/1001e5c45200e0f138e9e9d508afc31c475d6ce7.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "7e79084c1687aa6509eae37ed78ba1bd8d9d1d36",
+    "title": "Leveraging ZeuS to send spam through social networks",
+    "published": "2010-01-25",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://malwareint.blogspot.com/2010/01/leveraging-zeus-to-send-spam-through.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/7e79084c1687aa6509eae37ed78ba1bd8d9d1d36.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "41b385e8343972705d81358d07e74eed9830d7ed",
+    "title": "Research, News, and Perspectives",
+    "published": "2010-01-21",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/sasfis-fizzles-in-the-background/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/41b385e8343972705d81358d07e74eed9830d7ed.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "52123660be8b8cad9d46244f669f2cfd96101750",
+    "title": "Combating Aurora",
+    "published": "2010-01-20",
+    "date_basis": "file-metadata",
+    "organisation": "McAfee",
+    "url": "https://app.box.com/s/jhy5k76ox6z8sy6tdjnqqrlz5r2o29h8",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/52123660be8b8cad9d46244f669f2cfd96101750.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2010-0249"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "738907539718dedcc9a08a010f26b105e3e9c5fe",
+    "title": "Jan 17 Trojan Darkmoon.B EXE Haiti relief from santi_nidas@yahoo.com 17 Jan 2010 13:15:02 -0800 PST",
+    "published": "2010-01-17",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://contagiodump.blogspot.com/2010/01/jan-17-trojan-darkmoonb-exe-haiti.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/738907539718dedcc9a08a010f26b105e3e9c5fe.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "08053f420a1b2a1c391deaa23d4c6238ac23b1b4",
+    "title": "Lethic: M86 Security",
+    "published": "2010-01-07",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://web.archive.org/web/20101031045748/http://www.m86security.com/labs/spambotitem.asp?article=1205",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/08053f420a1b2a1c391deaa23d4c6238ac23b1b4.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  }
+]

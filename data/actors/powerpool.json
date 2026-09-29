@@ -1,0 +1,118 @@
+{
+  "id": "powerpool",
+  "name": "PowerPool",
+  "aliases": [
+    {
+      "value": "PowerPool",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "IAmTheKing",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "RU",
+      "source": "etda"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Chile",
+        "source": "etda"
+      },
+      {
+        "value": "Germany",
+        "source": "etda"
+      },
+      {
+        "value": "India",
+        "source": "etda"
+      },
+      {
+        "value": "Philippines",
+        "source": "etda"
+      },
+      {
+        "value": "Poland",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "Ukraine",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      },
+      {
+        "value": "Malaysia",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Education",
+        "source": "etda"
+      },
+      {
+        "value": "Energy",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "SlothfulMedia",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2020-Q4",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "7263b00a040f0f4ef128187ace6d9efb91f02d4c",
+    "fa45f3b24634cd6b910f773692c97e3c3aa492d2"
+  ],
+  "conflicts": [],
+  "evidence_count": 4
+}

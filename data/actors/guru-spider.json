@@ -1,0 +1,88 @@
+{
+  "id": "guru-spider",
+  "name": "GURU SPIDER",
+  "aliases": [
+    {
+      "value": "GURU SPIDER",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Guru Spider",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "RU",
+      "source": "etda"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Financial gain",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2025-68613",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-1731",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2026-20127",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2018-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2018-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "3df5114c66641cb17e201b3b8162071e48ccb87a",
+    "861624ba27cb9d554c6456451a4abaa8e43c2fcf",
+    "df60bb2850cd056f36be17aa79d6bbb0dd02938a",
+    "3fb915d7779742ff4eea68e0e9a934cdbadcbaaa",
+    "78c0410aa20b48a056db0820c1fb9e9931aa7646",
+    "eae50649b4e17bddd0e55909d78404e635ca0866"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

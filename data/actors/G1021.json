@@ -1,0 +1,390 @@
+{
+  "id": "G1021",
+  "name": "Cinnamon Tempest",
+  "aliases": [
+    {
+      "value": "Cinnamon Tempest",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "DEV-0401",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Emperor Dragonfly",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "BRONZE STARLIGHT",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "SLIME34",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "HighGround",
+      "sources": [
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Bronze Starlight",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Operation ChattyGoblin",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "etda"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Philippines",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Casinos and Gambling",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Cheerscrypt",
+      "source": "attack"
+    },
+    {
+      "name": "Cobalt Strike",
+      "source": "attack"
+    },
+    {
+      "name": "HUI Loader",
+      "source": "attack"
+    },
+    {
+      "name": "Impacket",
+      "source": "attack"
+    },
+    {
+      "name": "Pandora",
+      "source": "attack"
+    },
+    {
+      "name": "PlugX",
+      "source": "attack"
+    },
+    {
+      "name": "Rclone",
+      "source": "attack"
+    },
+    {
+      "name": "Sliver",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1021.002",
+    "T1047",
+    "T1059.001",
+    "T1059.003",
+    "T1059.006",
+    "T1078",
+    "T1078.002",
+    "T1080",
+    "T1090",
+    "T1105",
+    "T1140",
+    "T1190",
+    "T1484.001",
+    "T1543.003",
+    "T1567.002",
+    "T1572",
+    "T1574.001",
+    "T1588.002",
+    "T1657"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1016",
+      "count": 1
+    },
+    {
+      "id": "T1021.001",
+      "count": 1
+    },
+    {
+      "id": "T1027.002",
+      "count": 1
+    },
+    {
+      "id": "T1039",
+      "count": 1
+    },
+    {
+      "id": "T1047",
+      "count": 1
+    },
+    {
+      "id": "T1048",
+      "count": 1
+    },
+    {
+      "id": "T1056.001",
+      "count": 1
+    },
+    {
+      "id": "T1059.001",
+      "count": 1
+    },
+    {
+      "id": "T1059.003",
+      "count": 1
+    },
+    {
+      "id": "T1070.004",
+      "count": 1
+    },
+    {
+      "id": "T1071.001",
+      "count": 1
+    },
+    {
+      "id": "T1082",
+      "count": 1
+    },
+    {
+      "id": "T1087.002",
+      "count": 1
+    },
+    {
+      "id": "T1090",
+      "count": 1
+    },
+    {
+      "id": "T1095",
+      "count": 1
+    },
+    {
+      "id": "T1132.001",
+      "count": 1
+    },
+    {
+      "id": "T1135",
+      "count": 1
+    },
+    {
+      "id": "T1190",
+      "count": 1
+    },
+    {
+      "id": "T1486",
+      "count": 1
+    },
+    {
+      "id": "T1543.003",
+      "count": 1
+    },
+    {
+      "id": "T1567.002",
+      "count": 1
+    },
+    {
+      "id": "T1569.002",
+      "count": 1
+    },
+    {
+      "id": "T1570",
+      "count": 1
+    },
+    {
+      "id": "T1572",
+      "count": 1
+    },
+    {
+      "id": "T1573",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2018-13379",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-0604",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-11510",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-19781",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-10189",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-8243",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-8260",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-20016",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-22894",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-22899",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-22900",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-26084",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-31207",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-34473",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-35247",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-40444",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-44228",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-4428",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-44428",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-44832",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-45046",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-45105",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2022-30190",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2026-Q2",
+      "count": 4
+    }
+  ],
+  "reports": [
+    "8b0b2deb396395b9f1b4ea12c379a581ea58c47a",
+    "a4c76293b665b2e59948478b48daffff1269be3f",
+    "bb67f0ad05fd270db8df909b03dbfcb050cfe491",
+    "cc5d7666513f64ca44895b65adb2bd3a09065eb1"
+  ],
+  "conflicts": [],
+  "evidence_count": 14
+}

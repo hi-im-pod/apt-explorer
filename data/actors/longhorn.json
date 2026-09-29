@@ -1,0 +1,368 @@
+{
+  "id": "longhorn",
+  "name": "Longhorn",
+  "aliases": [
+    {
+      "value": "Longhorn",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "APT-C-39",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Lamberts",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "the Lamberts",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "PLATINUM TERMINAL",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "The Lamberts",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Platinum Terminal",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "US",
+      "source": "misp"
+    },
+    {
+      "value": "US",
+      "source": "etda"
+    },
+    {
+      "value": "US",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "United States",
+      "source": "misp"
+    },
+    {
+      "value": "United States",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "China",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Private sector",
+        "source": "misp"
+      },
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Telecoms",
+        "source": "misp"
+      },
+      {
+        "value": "Aerospace",
+        "source": "misp"
+      },
+      {
+        "value": "Energy",
+        "source": "misp"
+      },
+      {
+        "value": "Education",
+        "source": "misp"
+      },
+      {
+        "value": "Government, Administration",
+        "source": "misp"
+      },
+      {
+        "value": "Finance",
+        "source": "misp"
+      },
+      {
+        "value": "News - Media",
+        "source": "misp"
+      },
+      {
+        "value": "Aerospace",
+        "source": "etda"
+      },
+      {
+        "value": "Aviation",
+        "source": "etda"
+      },
+      {
+        "value": "Education",
+        "source": "etda"
+      },
+      {
+        "value": "Energy",
+        "source": "etda"
+      },
+      {
+        "value": "Financial",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "IT",
+        "source": "etda"
+      },
+      {
+        "value": "Oil and gas",
+        "source": "etda"
+      },
+      {
+        "value": "Research",
+        "source": "etda"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "etda"
+      },
+      {
+        "value": "Private sector",
+        "source": "malpedia"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      },
+      {
+        "value": "Telecoms",
+        "source": "malpedia"
+      },
+      {
+        "value": "Aerospace",
+        "source": "malpedia"
+      },
+      {
+        "value": "Energy",
+        "source": "malpedia"
+      },
+      {
+        "value": "Education",
+        "source": "malpedia"
+      },
+      {
+        "value": "Government, Administration",
+        "source": "malpedia"
+      },
+      {
+        "value": "Finance",
+        "source": "malpedia"
+      },
+      {
+        "value": "News - Media",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Hive (Vault 8)",
+      "source": "malpedia"
+    },
+    {
+      "name": "Lambert",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2014-4148",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-20250",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-6055",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2019-0708",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-0797",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-0808",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-0859",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-1132",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-11707",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-11708",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-1367",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-13720",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-1458",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-2215",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-3568",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-5786",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-6225",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2019-7286",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-7287",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-8518",
+      "kev": false,
+      "ransomware": null
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2017-Q2",
+      "count": 4
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "150e5ab22107852f3e42dbdce57188abe6b49255",
+    "d6b452fe46682f1bd964eb8cae720076bf30c592",
+    "f9ec0ec31ccab12f99b03f09a0882b3d30a3365a",
+    "2f7c7eb8a449302be0d4beb6f2e49a02c5428e40",
+    "927f4a570eb2dbe2ed05bbd55d7014e95d84bd43",
+    "152485231a1ee56377c5cc4a2b4e63dda5bf910d",
+    "fc7f3b5e0274380f2dcbf1314e416156782749b2",
+    "5b8fc970a90f09d92c4b13a1bb810895a3885413",
+    "d4ac9a7d29ae849228c231d4a329a0de75db03f5"
+  ],
+  "conflicts": [],
+  "evidence_count": 9
+}

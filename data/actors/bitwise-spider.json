@@ -1,0 +1,70 @@
+{
+  "id": "bitwise-spider",
+  "name": "BITWISE SPIDER",
+  "aliases": [
+    {
+      "value": "BITWISE SPIDER",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "LockBit Gang",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Bitwise Spider",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Financial gain",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": [
+      {
+        "value": "Aviation",
+        "source": "etda"
+      },
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Energy",
+        "source": "etda"
+      },
+      {
+        "value": "Financial",
+        "source": "etda"
+      },
+      {
+        "value": "Healthcare",
+        "source": "etda"
+      },
+      {
+        "value": "Transportation",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 2
+}

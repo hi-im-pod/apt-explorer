@@ -1,0 +1,717 @@
+{
+  "id": "G0130",
+  "name": "Ajax Security Team",
+  "aliases": [
+    {
+      "value": "Ajax Security Team",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Rocket Kitten",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Flying Kitten",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Operation Woolen-Goldfish",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Group 26",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "SaffronRose",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Saffron Rose",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "AjaxSecurityTeam",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Sayad",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TEMP.Beanie",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Operation Woolen Goldfish",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Thamar Reservoir",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Timberworm",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "AjaxTM",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Operation Saffron Rose",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Newscaster",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "NewsBeef",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Group 83",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Parastoo",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IR",
+      "source": "misp"
+    },
+    {
+      "value": "IR",
+      "source": "etda"
+    },
+    {
+      "value": "IR",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "Iran (Islamic Republic of)",
+      "source": "misp"
+    },
+    {
+      "value": "Iran (Islamic Republic of)",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "United States",
+        "source": "misp"
+      },
+      {
+        "value": "Saudi Arabia",
+        "source": "misp"
+      },
+      {
+        "value": "Venezuela",
+        "source": "misp"
+      },
+      {
+        "value": "Afghanistan",
+        "source": "misp"
+      },
+      {
+        "value": "United Arab Emirates",
+        "source": "misp"
+      },
+      {
+        "value": "Iran",
+        "source": "misp"
+      },
+      {
+        "value": "Israel",
+        "source": "misp"
+      },
+      {
+        "value": "Iraq",
+        "source": "misp"
+      },
+      {
+        "value": "Kuwait",
+        "source": "misp"
+      },
+      {
+        "value": "Türkiye",
+        "source": "misp"
+      },
+      {
+        "value": "Canada",
+        "source": "misp"
+      },
+      {
+        "value": "Yemen",
+        "source": "misp"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "misp"
+      },
+      {
+        "value": "Egypt",
+        "source": "misp"
+      },
+      {
+        "value": "Syria",
+        "source": "misp"
+      },
+      {
+        "value": "Jordan",
+        "source": "misp"
+      },
+      {
+        "value": "Algeria",
+        "source": "etda"
+      },
+      {
+        "value": "Brazil",
+        "source": "etda"
+      },
+      {
+        "value": "China",
+        "source": "etda"
+      },
+      {
+        "value": "Germany",
+        "source": "etda"
+      },
+      {
+        "value": "India",
+        "source": "etda"
+      },
+      {
+        "value": "Israel",
+        "source": "etda"
+      },
+      {
+        "value": "Japan",
+        "source": "etda"
+      },
+      {
+        "value": "Kazakhstan",
+        "source": "etda"
+      },
+      {
+        "value": "Romania",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "etda"
+      },
+      {
+        "value": "Türkiye",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "Ukraine",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "malpedia"
+      },
+      {
+        "value": "Saudi Arabia",
+        "source": "malpedia"
+      },
+      {
+        "value": "Venezuela",
+        "source": "malpedia"
+      },
+      {
+        "value": "Afghanistan",
+        "source": "malpedia"
+      },
+      {
+        "value": "United Arab Emirates",
+        "source": "malpedia"
+      },
+      {
+        "value": "Iran",
+        "source": "malpedia"
+      },
+      {
+        "value": "Israel",
+        "source": "malpedia"
+      },
+      {
+        "value": "Iraq",
+        "source": "malpedia"
+      },
+      {
+        "value": "Kuwait",
+        "source": "malpedia"
+      },
+      {
+        "value": "Türkiye",
+        "source": "malpedia"
+      },
+      {
+        "value": "Canada",
+        "source": "malpedia"
+      },
+      {
+        "value": "Yemen",
+        "source": "malpedia"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "malpedia"
+      },
+      {
+        "value": "Egypt",
+        "source": "malpedia"
+      },
+      {
+        "value": "Syria",
+        "source": "malpedia"
+      },
+      {
+        "value": "Jordan",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Military",
+        "source": "misp"
+      },
+      {
+        "value": "Civil society",
+        "source": "misp"
+      },
+      {
+        "value": "Aerospace",
+        "source": "misp"
+      },
+      {
+        "value": "Defense",
+        "source": "misp"
+      },
+      {
+        "value": "Gas",
+        "source": "misp"
+      },
+      {
+        "value": "Oil",
+        "source": "misp"
+      },
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Activists",
+        "source": "misp"
+      },
+      {
+        "value": "Journalist",
+        "source": "misp"
+      },
+      {
+        "value": "Research - Innovation",
+        "source": "misp"
+      },
+      {
+        "value": "Academia - University",
+        "source": "misp"
+      },
+      {
+        "value": "Government, Administration",
+        "source": "misp"
+      },
+      {
+        "value": "Construction",
+        "source": "etda"
+      },
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Education",
+        "source": "etda"
+      },
+      {
+        "value": "Embassies",
+        "source": "etda"
+      },
+      {
+        "value": "Entertainment",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Manufacturing",
+        "source": "etda"
+      },
+      {
+        "value": "Media",
+        "source": "etda"
+      },
+      {
+        "value": "dissidents",
+        "source": "etda"
+      },
+      {
+        "value": "Military",
+        "source": "malpedia"
+      },
+      {
+        "value": "Civil society",
+        "source": "malpedia"
+      },
+      {
+        "value": "Aerospace",
+        "source": "malpedia"
+      },
+      {
+        "value": "Defense",
+        "source": "malpedia"
+      },
+      {
+        "value": "Gas",
+        "source": "malpedia"
+      },
+      {
+        "value": "Oil",
+        "source": "malpedia"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      },
+      {
+        "value": "Activists",
+        "source": "malpedia"
+      },
+      {
+        "value": "Journalist",
+        "source": "malpedia"
+      },
+      {
+        "value": "Research - Innovation",
+        "source": "malpedia"
+      },
+      {
+        "value": "Academia - University",
+        "source": "malpedia"
+      },
+      {
+        "value": "Government, Administration",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Havij",
+      "source": "attack"
+    },
+    {
+      "name": "sqlmap",
+      "source": "attack"
+    },
+    {
+      "name": "FireMalv",
+      "source": "malpedia"
+    },
+    {
+      "name": "Ghole",
+      "source": "malpedia"
+    },
+    {
+      "name": "MPKBot",
+      "source": "malpedia"
+    },
+    {
+      "name": "Matryoshka RAT",
+      "source": "malpedia"
+    },
+    {
+      "name": "TDTESS",
+      "source": "malpedia"
+    },
+    {
+      "name": "Woolger",
+      "source": "malpedia"
+    },
+    {
+      "name": "pupy",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1056.001",
+    "T1105",
+    "T1204.002",
+    "T1555.003",
+    "T1566.001",
+    "T1566.003"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1027.013",
+      "count": 1
+    },
+    {
+      "id": "T1059.001",
+      "count": 1
+    },
+    {
+      "id": "T1071.001",
+      "count": 1
+    },
+    {
+      "id": "T1204.002",
+      "count": 1
+    },
+    {
+      "id": "T1497",
+      "count": 1
+    },
+    {
+      "id": "T1566",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2017-0199",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-0213",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-11774",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-20250",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-17100",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-4034",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-1040",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2022-26134",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2014-Q2",
+      "count": 3
+    },
+    {
+      "quarter": "2014-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2015-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2015-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2015-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2016-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2017-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2018-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2019-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 3
+    },
+    {
+      "quarter": "2023-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "9438e386c33f672058a0037dcaa0cfffa3532533",
+    "26e91765203bac654e095e12371f73f15a07685f",
+    "5e727b4d17e22102c3b642861142269f55db154c",
+    "fc8b9559e36a8486aa19b9fa384500428755eea5",
+    "18c269d1eaa29438861255b754cdf766df09110a",
+    "65aaa1d8d2458c325330efa5bedf63d1d372f3c7",
+    "0bfb2a4fa07e33858de806790cc846d66c3e3a24",
+    "9f03b502e2ad3ec83477d216901b07fd1fe2fe4a",
+    "485364e4a9e693f2f77fae32baff8cde0d2854e9",
+    "30d5a1c22af2711a79fa2251f523cd2e0b4faa1a",
+    "734ae623b5c32fe7a38fb962effa6f2305b6d79e",
+    "1fc6791fb71ecfa5313ee905ad90932325dbacd5",
+    "2de6102a9d42d440a70ae392c49a9845dd2e03a8",
+    "71cb0af91eb32f444cd97f40934b0337e03fd379",
+    "66cf09da9784ced60820933ed72dbeda210f8d54",
+    "62318114dc658c48a61870c4062fd75a860f4f62",
+    "8675bdc6c056bf1b8893b60ecda6aa7e75ca550f",
+    "19a24110ffa0758f2a47a48d5bedb2d47851db29",
+    "523ae1be152df2a4d1de51ee2b3e7f23cad62628",
+    "2674d8703caf59d5b8062acc90e403814ec94621",
+    "73a8169eff8f50cefe587c1097d67fb45e71a046",
+    "paper:wp-operation-woolen-goldfish",
+    "49e8314cf2ce99cabf50545f50f505c0d119c155",
+    "beec09c9b7d2993e12a1354c80866e1ddf0673b7",
+    "paper:Sayad_Flying_Kitten_analysis",
+    "cf3341fee4a3a2c2d4cd379fd6f0fd2217ee13bb",
+    "paper:CrowdStrike_Flying_Kitten",
+    "paper:fireeye-operation-saffron-rose"
+  ],
+  "conflicts": [],
+  "evidence_count": 17
+}

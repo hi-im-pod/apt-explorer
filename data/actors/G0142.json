@@ -1,0 +1,200 @@
+{
+  "id": "G0142",
+  "name": "Confucius",
+  "aliases": [
+    {
+      "value": "Confucius",
+      "sources": [
+        "attack",
+        "etda"
+      ]
+    },
+    {
+      "value": "Confucius APT",
+      "sources": [
+        "attack"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IN",
+      "source": "etda"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Azerbaijan",
+        "source": "etda"
+      },
+      {
+        "value": "Bangladesh",
+        "source": "etda"
+      },
+      {
+        "value": "France",
+        "source": "etda"
+      },
+      {
+        "value": "India",
+        "source": "etda"
+      },
+      {
+        "value": "Indonesia",
+        "source": "etda"
+      },
+      {
+        "value": "Iran",
+        "source": "etda"
+      },
+      {
+        "value": "Italy",
+        "source": "etda"
+      },
+      {
+        "value": "Mongolia",
+        "source": "etda"
+      },
+      {
+        "value": "Pakistan",
+        "source": "etda"
+      },
+      {
+        "value": "Poland",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "etda"
+      },
+      {
+        "value": "Slovakia",
+        "source": "etda"
+      },
+      {
+        "value": "Spain",
+        "source": "etda"
+      },
+      {
+        "value": "Trinidad and Tobago",
+        "source": "etda"
+      },
+      {
+        "value": "United Arab Emirates",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "Ukraine",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      }
+    ],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "WarzoneRAT",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1041",
+    "T1053.005",
+    "T1059.001",
+    "T1059.005",
+    "T1071.001",
+    "T1083",
+    "T1105",
+    "T1119",
+    "T1203",
+    "T1204.001",
+    "T1204.002",
+    "T1218.005",
+    "T1221",
+    "T1547.001",
+    "T1566.001",
+    "T1566.002",
+    "T1567.002",
+    "T1583.006",
+    "T1680"
+  ],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2015-1641",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-11882",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-5689",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-0802",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2016-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 5
+    },
+    {
+      "quarter": "2021-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "71115e8a2d8a4945ef3d59d68218faaa13f604ab",
+    "8aa09365daf1885aba46f3f46d07582ae06754d9",
+    "99f2020eac7ef80a3e840e280c5b307fc741494c",
+    "4b91d90ea50514d038257a729599bddfa7a16bbb",
+    "7f777067bb7c374bc58a37819c510788819ab46c",
+    "63ff68a8dd5eabadd3ba6812d99e973b79011aec",
+    "96d826302a7efc3ed7d0d5aec99c9cfc1646e4fe",
+    "7509866c4e72444927688965b6a1065965727901",
+    "66e3d8ac5d5bd39e335f7248e045e2dd925e2503",
+    "1a0cdfb6c8a5518e7e5f24a70f125e7bc0442e9f",
+    "85b30d108bfd5951bb93730c2656346a967cbe21"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

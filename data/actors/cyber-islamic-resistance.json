@@ -1,0 +1,37 @@
+{
+  "id": "cyber-islamic-resistance",
+  "name": "Cyber Islamic Resistance",
+  "aliases": [
+    {
+      "value": "Cyber Islamic Resistance",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IR",
+      "source": "misp"
+    },
+    {
+      "value": "IR",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 1
+}

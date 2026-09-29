@@ -1,0 +1,209 @@
+{
+  "id": "G0088",
+  "name": "TEMP.Veles",
+  "aliases": [
+    {
+      "value": "TEMP.Veles",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Xenotime",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "ATK91",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "XENOTIME",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "ATK 91",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "RU",
+      "source": "etda"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Sabotage and destruction",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Saudi Arabia",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Critical infrastructure",
+        "source": "etda"
+      },
+      {
+        "value": "Energy",
+        "source": "etda"
+      },
+      {
+        "value": "Manufacturing",
+        "source": "etda"
+      },
+      {
+        "value": "Oil and gas",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Mimikatz",
+      "source": "attack"
+    },
+    {
+      "name": "PsExec",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [
+    {
+      "id": "T1053",
+      "count": 1
+    },
+    {
+      "id": "T1078",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2017-0144",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-0604",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-0708",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-36934",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2017-Q4",
+      "count": 3
+    },
+    {
+      "quarter": "2018-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2026-Q3",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "98a5a6013e530e6026865dbe7fc4c051a3cfc5ea",
+    "52d03ce75c2366b0e57d064f58d72054b3709a27",
+    "91b0f1cc0c9de6ed0a08f421b67c7506b57b4239",
+    "055ba19adf2555a8191068020526947cad083822",
+    "9b0c3db3a626888087822e73a40a30f389a734f8",
+    "fa3146c7d4e1f91891295e6a15cd5a6c68d7192d",
+    "4bd0778aea2c9268cd7ffba520223691878b2ef8",
+    "e7fe796592d6377129bda857d1a121fc06d40c53",
+    "8d4c669ba1eb89136a3c362cf15ad8afc21f48e3",
+    "8c13671830767aa6915d23d636cbb6611c80ed05",
+    "1b9d20cd96eca138bf6e4345f5a4d649e9d7f951",
+    "9a7673f139106112ee7f8b7995ca1ac60c53287e",
+    "4f9ea104937bd8a2b0d1d82ee770973ad959bf74",
+    "5c07af4282c03028d1fb0bbe16a5311e3de8f1ef",
+    "6cfa76cf85bf7d05aee6d9fd9f0990a4ef953c83",
+    "623022af8f5b6f0e1776a3e28b4767079a135bfc",
+    "5d2af87272d8cc9f07fa15a7dbaf65a27d9215be",
+    "d196252b1191a324f856efc63c7241a843399ece",
+    "c9534efcbf1a9c020ba864ee090e0c0b03d32181"
+  ],
+  "conflicts": [],
+  "evidence_count": 10
+}

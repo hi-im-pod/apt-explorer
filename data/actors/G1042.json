@@ -1,0 +1,77 @@
+{
+  "id": "G1042",
+  "name": "RedEcho",
+  "aliases": [
+    {
+      "value": "RedEcho",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "etda"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "India",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Energy",
+        "source": "etda"
+      },
+      {
+        "value": "Maritime and Shipbuilding",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "ShadowPad",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1071.001",
+    "T1568",
+    "T1571",
+    "T1573.002",
+    "T1583.001"
+  ],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2021-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "0b1b32b1d1f2cf93f41966c2eb607df4845a1c5f",
+    "255a4321e5fdaf8d1f88f8efec947a7b0e674947"
+  ],
+  "conflicts": [],
+  "evidence_count": 3
+}

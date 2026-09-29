@@ -1,0 +1,67 @@
+{
+  "id": "the-shadow-brokers",
+  "name": "The Shadow Brokers",
+  "aliases": [
+    {
+      "value": "The Shadow Brokers",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Shadow Brokers",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "The ShadowBrokers",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TSB",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "ShadowBrokers",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "US",
+      "source": "etda"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Financial gain",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 4
+}

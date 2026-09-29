@@ -1,0 +1,44 @@
+{
+  "id": "storm-0473",
+  "name": "Storm-0473",
+  "aliases": [
+    {
+      "value": "Storm-0473",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UNC2849",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "KZ",
+      "source": "misp"
+    },
+    {
+      "value": "KZ",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 2
+}

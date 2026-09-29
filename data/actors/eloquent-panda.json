@@ -1,0 +1,54 @@
+{
+  "id": "eloquent-panda",
+  "name": "ELOQUENT PANDA",
+  "aliases": [
+    {
+      "value": "ELOQUENT PANDA",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Eloquent Panda",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "etda"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2016-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "b9edbab15b408d13e9e0847827122b76a311b016"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

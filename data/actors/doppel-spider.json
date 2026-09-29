@@ -1,0 +1,312 @@
+{
+  "id": "doppel-spider",
+  "name": "DOPPEL SPIDER",
+  "aliases": [
+    {
+      "value": "DOPPEL SPIDER",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "GOLD HERON",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Doppel Spider",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Gold Heron",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Grief Group",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "RU",
+      "source": "etda"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Financial gain",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Austria",
+        "source": "etda"
+      },
+      {
+        "value": "Brazil",
+        "source": "etda"
+      },
+      {
+        "value": "Canada",
+        "source": "etda"
+      },
+      {
+        "value": "Chile",
+        "source": "etda"
+      },
+      {
+        "value": "Dominican Republic",
+        "source": "etda"
+      },
+      {
+        "value": "France",
+        "source": "etda"
+      },
+      {
+        "value": "Germany",
+        "source": "etda"
+      },
+      {
+        "value": "Greece",
+        "source": "etda"
+      },
+      {
+        "value": "Italy",
+        "source": "etda"
+      },
+      {
+        "value": "Mexico",
+        "source": "etda"
+      },
+      {
+        "value": "Portugal",
+        "source": "etda"
+      },
+      {
+        "value": "Spain",
+        "source": "etda"
+      },
+      {
+        "value": "Switzerland",
+        "source": "etda"
+      },
+      {
+        "value": "Thailand",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Manufacturing",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "DoppelDridex",
+      "source": "malpedia"
+    },
+    {
+      "name": "DoppelPaymer",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [
+    {
+      "id": "T1489",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2018-13379",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-0604",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-11510",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-13720",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-19781",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-0688",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-10189",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-1472",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-2021",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-20016",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-30116",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2019-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 6
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q3",
+      "count": 5
+    },
+    {
+      "quarter": "2020-Q4",
+      "count": 10
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 5
+    },
+    {
+      "quarter": "2021-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q3",
+      "count": 7
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 8
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 3
+    },
+    {
+      "quarter": "2023-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "095f0572d9d15258e5d4427ab83e0f175c8d9512",
+    "62b727b0db2f73aeea3a92243a044d78aed98aca",
+    "cde43eaf8ea4c9b58646b372bb7db0a3e1d3edba",
+    "6e9553c0cd65809465809a31b2814f4f26acbefd",
+    "9b0c3db3a626888087822e73a40a30f389a734f8",
+    "fa3146c7d4e1f91891295e6a15cd5a6c68d7192d",
+    "69c39d827a80d7a560dbafc31cce36566ec37c7f",
+    "e9df98f1a03146c9f736ba911bd25a5e2c02f657",
+    "50c174223db9c85056bd626e673e09c5e91ec67e",
+    "91b173de62ca58909fa333c9330161541e241104",
+    "b287bfe3bc1b3f6ee47136d38ff0e0a9aeb9357d",
+    "07de03e7f9a2c7ecb34b0063cfff43aaab5ef451",
+    "57f6da0d4da09abab58be419718a1f5b924a6947",
+    "10ad6789cbd72b0cd159ec6eca0faed42b2f189e",
+    "9ab59d42167eadb9ed93867b6a969aef64e19974",
+    "f674901f61291fdb5d3509566488b1e01d7b39f6",
+    "84fb4151154b1cb5cc9c06eafb1e624e10969ac1",
+    "627d9861677924f7021c1f2c578d131c420c8a7a",
+    "3a9ee924b3e4ad9e217dfe3798b4bd911a589eb5",
+    "4fb9592c517340c4f12e2660a7c66b15f1833261",
+    "5bd333a77d96d1798885f97ce59f70b7949135f5",
+    "1cc77f9344bb3ad42d9cbd8232627273610a599a",
+    "e4045a0b663eaba6bdf1001b87ca47d374e6e3c6",
+    "e6de23329831948f1e3e3a6d28856c64ecd6ccd0",
+    "2d98a214de7a8a280ebe92a6883684593e3d33d3",
+    "5d18e498ed688aa7e38da271bb50c5916d192b5e",
+    "180ba4ad8dab42ac6055202a21ac48f9dfe2939f",
+    "9cf0b062b9605106caa131a6836355dd29e332cc",
+    "7950e3d64d7182e36c994d8c104b28f82763fede",
+    "37c744a782d653d4d2e72e9a979925569dfbd38d",
+    "b3f6ccc1644d3ce4393d9efddde1b132abf3fbd4",
+    "a4094a06cec1cbbd9105dde7bd7ca0d6e85e48c7",
+    "d164d5bea0819c3f3354926187edaca7806a850f",
+    "efe77708bf35a911b07e019db06745486a29b89e",
+    "d0b0eb91c5ec2b3c3dcc356a63b973f2999972ee",
+    "88ea7ade439e8fd523152963df17a05597dbe2e3",
+    "b0770e0e84ea79d934c47c48012fbcd301cc99a5",
+    "2d2ac1b9cb2f5a2d574b253fcdda519b3f4d0b33",
+    "29d124e255755a3dbd1dcb930674916c37bfe7f5",
+    "79177e0137600508d3d1e5edae412fab838681ff",
+    "189332c1f8ca4dcadc277d58113de41f799a60c6",
+    "985c6cff8fec395a6a602f6c5bd679f8da6bce19",
+    "625431897c53431d06113a51de73c30aa9b02da4",
+    "1d4b59706135b329c427a1a1535d02aeb5618e24",
+    "d5fcbf6647c170a9afa7d4131ab8bfba7f51e5dc",
+    "d188680eff339121bbbd3f81218a0bb42e31b5a3",
+    "fed84094f8bd8822542b76820b569235ff6cd98a",
+    "2c3d041bc9a5a3e088a871b32d9583d0199d4f4f",
+    "24ae281f95f31149291a9ebb969090e056483cc4",
+    "89df581576a10b6396827f1645d7c84e524a3305",
+    "93fe4edb367840c2d68f651212ebdc65fb3baf40"
+  ],
+  "conflicts": [],
+  "evidence_count": 4
+}

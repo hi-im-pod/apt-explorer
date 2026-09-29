@@ -1,0 +1,74 @@
+{
+  "id": "G0108",
+  "name": "Blue Mockingbird",
+  "aliases": [
+    {
+      "value": "Blue Mockingbird",
+      "sources": [
+        "attack"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "FRP",
+      "source": "attack"
+    },
+    {
+      "name": "Mimikatz",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1003.001",
+    "T1021.001",
+    "T1021.002",
+    "T1027.013",
+    "T1036.005",
+    "T1047",
+    "T1053.005",
+    "T1059.001",
+    "T1059.003",
+    "T1082",
+    "T1090",
+    "T1112",
+    "T1134",
+    "T1190",
+    "T1218.010",
+    "T1218.011",
+    "T1496.001",
+    "T1543.003",
+    "T1546.003",
+    "T1569.002",
+    "T1574.012",
+    "T1588.002"
+  ],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2019-18935",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2020-Q2",
+      "count": 3
+    }
+  ],
+  "reports": [
+    "792eb038dbd36f553b1cb062a168a57c01f69ee7",
+    "d9e41bb3cd7ad22a358930b9eb53495e4409803a",
+    "03c57228e99df9e0536038c7fe3bf74f77fd4377"
+  ],
+  "conflicts": [],
+  "evidence_count": 0
+}

@@ -1,0 +1,44 @@
+{
+  "id": "blue-tsunami",
+  "name": "Blue Tsunami",
+  "aliases": [
+    {
+      "value": "Blue Tsunami",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Black Cube",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IL",
+      "source": "misp"
+    },
+    {
+      "value": "IL",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 2
+}

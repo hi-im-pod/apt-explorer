@@ -1,0 +1,427 @@
+{
+  "id": "G0121",
+  "name": "Sidewinder",
+  "aliases": [
+    {
+      "value": "Sidewinder",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "T-APT-04",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Rattlesnake",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "SideWinder",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "APT-C-17",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "RAZOR TIGER",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Razor Tiger",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Hardcore Nationalist",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "HN2",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "APT-Q-39",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "BabyElephant",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "GroupA21",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IN",
+      "source": "misp"
+    },
+    {
+      "value": "IN",
+      "source": "etda"
+    },
+    {
+      "value": "IN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "India",
+      "source": "misp"
+    },
+    {
+      "value": "India",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "China",
+        "source": "misp"
+      },
+      {
+        "value": "Pakistan",
+        "source": "misp"
+      },
+      {
+        "value": "Nepal",
+        "source": "misp"
+      },
+      {
+        "value": "Afghanistan",
+        "source": "misp"
+      },
+      {
+        "value": "Afghanistan",
+        "source": "etda"
+      },
+      {
+        "value": "Bangladesh",
+        "source": "etda"
+      },
+      {
+        "value": "Bhutan",
+        "source": "etda"
+      },
+      {
+        "value": "Cambodia",
+        "source": "etda"
+      },
+      {
+        "value": "China",
+        "source": "etda"
+      },
+      {
+        "value": "Djibouti",
+        "source": "etda"
+      },
+      {
+        "value": "Egypt",
+        "source": "etda"
+      },
+      {
+        "value": "Maldives",
+        "source": "etda"
+      },
+      {
+        "value": "Myanmar",
+        "source": "etda"
+      },
+      {
+        "value": "Nepal",
+        "source": "etda"
+      },
+      {
+        "value": "Pakistan",
+        "source": "etda"
+      },
+      {
+        "value": "Qatar",
+        "source": "etda"
+      },
+      {
+        "value": "Sri Lanka",
+        "source": "etda"
+      },
+      {
+        "value": "Türkiye",
+        "source": "etda"
+      },
+      {
+        "value": "United Arab Emirates",
+        "source": "etda"
+      },
+      {
+        "value": "Vietnam",
+        "source": "etda"
+      },
+      {
+        "value": "China",
+        "source": "malpedia"
+      },
+      {
+        "value": "Pakistan",
+        "source": "malpedia"
+      },
+      {
+        "value": "Nepal",
+        "source": "malpedia"
+      },
+      {
+        "value": "Afghanistan",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Military",
+        "source": "misp"
+      },
+      {
+        "value": "Private Sector",
+        "source": "misp"
+      },
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Maritime and Shipbuilding",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      },
+      {
+        "value": "Military",
+        "source": "malpedia"
+      },
+      {
+        "value": "Private Sector",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Koadic",
+      "source": "attack"
+    },
+    {
+      "name": "SideWinder",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1016",
+    "T1020",
+    "T1027.010",
+    "T1027.013",
+    "T1033",
+    "T1036.005",
+    "T1057",
+    "T1059.001",
+    "T1059.005",
+    "T1059.007",
+    "T1071.001",
+    "T1074.001",
+    "T1082",
+    "T1083",
+    "T1105",
+    "T1119",
+    "T1124",
+    "T1203",
+    "T1204.001",
+    "T1204.002",
+    "T1218.005",
+    "T1518",
+    "T1518.001",
+    "T1547.001",
+    "T1559.002",
+    "T1566.001",
+    "T1566.002",
+    "T1574.001",
+    "T1598.002",
+    "T1598.003"
+  ],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2014-0224",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2017-0199",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-11882",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-0798",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-4876",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2018-4878",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-7445",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-2215",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-0674",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2014-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2018-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q4",
+      "count": 3
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "59ef2cc33a40fc9bb40d99da43f637ef8f3c8ef6",
+    "97ef2edc56fa5160e0f89c3caefccd4d0b6c3ea3",
+    "417cf90b80b99d6168d4f464d12984ff6a0146f3",
+    "2e5f6913d6d733eaadbca5616815ec02ae2b3883",
+    "0e32d494558bf8022af8e3647247dd9579f5bc01",
+    "5382813415de82cbb20133022d2365ec7f7d04e6",
+    "ec8f2ac3fba54c46a0da97686bf17ab381efe68f",
+    "459d4afeac4f379012af4f4d6e233c041fdd16c7",
+    "4a4377490bee85f4dca76c6bd53294fcde43e3e9",
+    "5fbc6d29a61db83e0aaa5262e68751d0fc91aae7",
+    "3e00505761f68698ed40985d4e29f73d26cba7d8",
+    "285f30defe400ccd6a007c8d2ec4d01b758c1605",
+    "d33e578b15b89c6fc24a156ddb39ceb449669213",
+    "ad122d87969c575dd5e33baa8fb1d9c81ba87a37",
+    "26c00470bdfb728522161a5cf595371a5c1b43cc",
+    "a63d05371334849b3eba4be4d1bdd15b466cebb7",
+    "71ede3a8ab87fb6c7a347f1f7f1f99cd20a932b1",
+    "paper:fireeye-sidewinder-targeted-attack"
+  ],
+  "conflicts": [],
+  "evidence_count": 13
+}

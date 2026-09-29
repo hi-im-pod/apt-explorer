@@ -1,0 +1,206 @@
+{
+  "id": "bronze-spring",
+  "name": "BRONZE SPRING",
+  "aliases": [
+    {
+      "value": "BRONZE SPRING",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UNC302",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "United States",
+        "source": "misp"
+      },
+      {
+        "value": "Australia",
+        "source": "misp"
+      },
+      {
+        "value": "Belgium",
+        "source": "misp"
+      },
+      {
+        "value": "Germany",
+        "source": "misp"
+      },
+      {
+        "value": "Japan",
+        "source": "misp"
+      },
+      {
+        "value": "Lithuania",
+        "source": "misp"
+      },
+      {
+        "value": "Netherlands",
+        "source": "misp"
+      },
+      {
+        "value": "Spain",
+        "source": "misp"
+      },
+      {
+        "value": "South Korea",
+        "source": "misp"
+      },
+      {
+        "value": "Sweden",
+        "source": "misp"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "misp"
+      },
+      {
+        "value": "United States",
+        "source": "malpedia"
+      },
+      {
+        "value": "Australia",
+        "source": "malpedia"
+      },
+      {
+        "value": "Belgium",
+        "source": "malpedia"
+      },
+      {
+        "value": "Germany",
+        "source": "malpedia"
+      },
+      {
+        "value": "Japan",
+        "source": "malpedia"
+      },
+      {
+        "value": "Lithuania",
+        "source": "malpedia"
+      },
+      {
+        "value": "Netherlands",
+        "source": "malpedia"
+      },
+      {
+        "value": "Spain",
+        "source": "malpedia"
+      },
+      {
+        "value": "South Korea",
+        "source": "malpedia"
+      },
+      {
+        "value": "Sweden",
+        "source": "malpedia"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Information technology",
+        "source": "misp"
+      },
+      {
+        "value": "Medical",
+        "source": "misp"
+      },
+      {
+        "value": "Civil engineering",
+        "source": "misp"
+      },
+      {
+        "value": "Business",
+        "source": "misp"
+      },
+      {
+        "value": "Education",
+        "source": "misp"
+      },
+      {
+        "value": "Gaming",
+        "source": "misp"
+      },
+      {
+        "value": "Energy",
+        "source": "misp"
+      },
+      {
+        "value": "Pharmaceuticals",
+        "source": "misp"
+      },
+      {
+        "value": "Defense industrial base",
+        "source": "misp"
+      },
+      {
+        "value": "Information technology",
+        "source": "malpedia"
+      },
+      {
+        "value": "Medical",
+        "source": "malpedia"
+      },
+      {
+        "value": "Civil engineering",
+        "source": "malpedia"
+      },
+      {
+        "value": "Business",
+        "source": "malpedia"
+      },
+      {
+        "value": "Education",
+        "source": "malpedia"
+      },
+      {
+        "value": "Gaming",
+        "source": "malpedia"
+      },
+      {
+        "value": "Energy",
+        "source": "malpedia"
+      },
+      {
+        "value": "Pharmaceuticals",
+        "source": "malpedia"
+      },
+      {
+        "value": "Defense industrial base",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 2
+}

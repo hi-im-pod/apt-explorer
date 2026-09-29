@@ -1,0 +1,130 @@
+{
+  "id": "unc3569",
+  "name": "UNC3569",
+  "aliases": [
+    {
+      "value": "UNC3569",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "GRAYRABBIT",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2017-15944",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-1207",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2020-16040",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-26855",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-26857",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-27065",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-31195",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-31196",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-31206",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-31207",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-34473",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-34523",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-44228",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-21587",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-47986",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2024-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q1",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "2872378333867bab6b83ad0fd2094406c87b3198",
+    "29646bd71e8daa952efa40cfb3836392f68d7a4b"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

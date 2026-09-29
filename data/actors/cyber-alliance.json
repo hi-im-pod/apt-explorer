@@ -1,0 +1,37 @@
+{
+  "id": "cyber-alliance",
+  "name": "Cyber Alliance",
+  "aliases": [
+    {
+      "value": "Cyber Alliance",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "UA",
+      "source": "misp"
+    },
+    {
+      "value": "UA",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 1
+}

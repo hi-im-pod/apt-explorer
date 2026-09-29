@@ -1,0 +1,100 @@
+{
+  "id": "earth-wendigo",
+  "name": "Earth Wendigo",
+  "aliases": [
+    {
+      "value": "Earth Wendigo",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "etda"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Hong Kong",
+        "source": "misp"
+      },
+      {
+        "value": "Taiwan",
+        "source": "misp"
+      },
+      {
+        "value": "Taiwan",
+        "source": "etda"
+      },
+      {
+        "value": "Hong Kong",
+        "source": "malpedia"
+      },
+      {
+        "value": "Taiwan",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Education",
+        "source": "misp"
+      },
+      {
+        "value": "Education",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      },
+      {
+        "value": "Education",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2021-Q1",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "7ea2f0f7fad95346ee6624677767693dceca75ce"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

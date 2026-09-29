@@ -1,0 +1,87 @@
+{
+  "id": "cyber-berkut",
+  "name": "Cyber Berkut",
+  "aliases": [
+    {
+      "value": "Cyber Berkut",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Kiberberkut",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "RU",
+      "source": "misp"
+    },
+    {
+      "value": "RU",
+      "source": "etda"
+    },
+    {
+      "value": "RU",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Sabotage and destruction",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Estonia",
+        "source": "etda"
+      },
+      {
+        "value": "Germany",
+        "source": "etda"
+      },
+      {
+        "value": "Ukraine",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Financial",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 2
+}

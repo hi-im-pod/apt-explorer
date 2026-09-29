@@ -1,0 +1,47 @@
+{
+  "id": "mythic-likho",
+  "name": "Mythic Likho",
+  "aliases": [
+    {
+      "value": "Mythic Likho",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Arcane Werewolf",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "Loki (Mythic)",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2025-Q4",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "5e03ea2d08d7a521f612245d2b2b137a89aaeac5"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

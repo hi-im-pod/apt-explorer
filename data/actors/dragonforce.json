@@ -1,0 +1,140 @@
+{
+  "id": "dragonforce",
+  "name": "DragonForce",
+  "aliases": [
+    {
+      "value": "DragonForce",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "MY",
+      "source": "misp"
+    },
+    {
+      "value": "MY",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "DEVMAN",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [
+    {
+      "id": "T1486",
+      "count": 2
+    },
+    {
+      "id": "T1003.001",
+      "count": 1
+    },
+    {
+      "id": "T1005",
+      "count": 1
+    },
+    {
+      "id": "T1016",
+      "count": 1
+    },
+    {
+      "id": "T1018",
+      "count": 1
+    },
+    {
+      "id": "T1021.001",
+      "count": 1
+    },
+    {
+      "id": "T1027",
+      "count": 1
+    },
+    {
+      "id": "T1053.005",
+      "count": 1
+    },
+    {
+      "id": "T1059.001",
+      "count": 1
+    },
+    {
+      "id": "T1070",
+      "count": 1
+    },
+    {
+      "id": "T1071.001",
+      "count": 1
+    },
+    {
+      "id": "T1078",
+      "count": 1
+    },
+    {
+      "id": "T1078.002",
+      "count": 1
+    },
+    {
+      "id": "T1082",
+      "count": 1
+    },
+    {
+      "id": "T1083",
+      "count": 1
+    },
+    {
+      "id": "T1135",
+      "count": 1
+    },
+    {
+      "id": "T1204.002",
+      "count": 1
+    },
+    {
+      "id": "T1482",
+      "count": 1
+    },
+    {
+      "id": "T1490",
+      "count": 1
+    },
+    {
+      "id": "T1543.003",
+      "count": 1
+    },
+    {
+      "id": "T1547.001",
+      "count": 1
+    }
+  ],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2024-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q3",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "2e74b32e7bb6718afa38566937336bc5bc1c6c50",
+    "be85714cb00c2f41768cae858da6fac4c5678eb8",
+    "64f9829c09b2bf58ac7b7f43851ae7a2ece1bc48"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

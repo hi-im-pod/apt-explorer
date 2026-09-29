@@ -1,0 +1,37 @@
+{
+  "id": "crimson-collective",
+  "name": "Crimson Collective",
+  "aliases": [
+    {
+      "value": "Crimson Collective",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": [
+      {
+        "value": "Technology",
+        "source": "misp"
+      },
+      {
+        "value": "Technology",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 1
+}

@@ -1,0 +1,260 @@
+{
+  "id": "void-balaur",
+  "name": "Void Balaur",
+  "aliases": [
+    {
+      "value": "Void Balaur",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Rockethack",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Financial gain",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Brazil",
+        "source": "misp"
+      },
+      {
+        "value": "Central African Republic",
+        "source": "misp"
+      },
+      {
+        "value": "Georgia",
+        "source": "misp"
+      },
+      {
+        "value": "Kazakhstan",
+        "source": "misp"
+      },
+      {
+        "value": "Moldova",
+        "source": "misp"
+      },
+      {
+        "value": "Russia",
+        "source": "misp"
+      },
+      {
+        "value": "Spain",
+        "source": "misp"
+      },
+      {
+        "value": "Sudan",
+        "source": "misp"
+      },
+      {
+        "value": "Taiwan",
+        "source": "misp"
+      },
+      {
+        "value": "Ukraine",
+        "source": "misp"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "misp"
+      },
+      {
+        "value": "United States",
+        "source": "misp"
+      },
+      {
+        "value": "Armenia",
+        "source": "etda"
+      },
+      {
+        "value": "Australia",
+        "source": "etda"
+      },
+      {
+        "value": "Belarus",
+        "source": "etda"
+      },
+      {
+        "value": "Belgium",
+        "source": "etda"
+      },
+      {
+        "value": "Brazil",
+        "source": "etda"
+      },
+      {
+        "value": "Canada",
+        "source": "etda"
+      },
+      {
+        "value": "Egypt",
+        "source": "etda"
+      },
+      {
+        "value": "France",
+        "source": "etda"
+      },
+      {
+        "value": "Germany",
+        "source": "etda"
+      },
+      {
+        "value": "India",
+        "source": "etda"
+      },
+      {
+        "value": "Italy",
+        "source": "etda"
+      },
+      {
+        "value": "Japan",
+        "source": "etda"
+      },
+      {
+        "value": "Kazakhstan",
+        "source": "etda"
+      },
+      {
+        "value": "Netherlands",
+        "source": "etda"
+      },
+      {
+        "value": "New Zealand",
+        "source": "etda"
+      },
+      {
+        "value": "Norway",
+        "source": "etda"
+      },
+      {
+        "value": "Poland",
+        "source": "etda"
+      },
+      {
+        "value": "Portugal",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "etda"
+      },
+      {
+        "value": "Slovakia",
+        "source": "etda"
+      },
+      {
+        "value": "South Africa",
+        "source": "etda"
+      },
+      {
+        "value": "Spain",
+        "source": "etda"
+      },
+      {
+        "value": "Sweden",
+        "source": "etda"
+      },
+      {
+        "value": "Türkiye",
+        "source": "etda"
+      },
+      {
+        "value": "United Arab Emirates",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "Ukraine",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      },
+      {
+        "value": "Uzbekistan",
+        "source": "etda"
+      },
+      {
+        "value": "Brazil",
+        "source": "malpedia"
+      },
+      {
+        "value": "Central African Republic",
+        "source": "malpedia"
+      },
+      {
+        "value": "Georgia",
+        "source": "malpedia"
+      },
+      {
+        "value": "Kazakhstan",
+        "source": "malpedia"
+      },
+      {
+        "value": "Moldova",
+        "source": "malpedia"
+      },
+      {
+        "value": "Russia",
+        "source": "malpedia"
+      },
+      {
+        "value": "Spain",
+        "source": "malpedia"
+      },
+      {
+        "value": "Sudan",
+        "source": "malpedia"
+      },
+      {
+        "value": "Taiwan",
+        "source": "malpedia"
+      },
+      {
+        "value": "Ukraine",
+        "source": "malpedia"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "malpedia"
+      },
+      {
+        "value": "United States",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2021-Q4",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "ccc5f2d73b1912c88f9d513670b361b7da83d9ad"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

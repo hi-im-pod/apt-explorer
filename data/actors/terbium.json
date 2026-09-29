@@ -1,0 +1,48 @@
+{
+  "id": "terbium",
+  "name": "TERBIUM",
+  "aliases": [
+    {
+      "value": "TERBIUM",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Terbium",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Sabotage and destruction",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": [
+      {
+        "value": "Energy",
+        "source": "misp"
+      },
+      {
+        "value": "Energy",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 2
+}

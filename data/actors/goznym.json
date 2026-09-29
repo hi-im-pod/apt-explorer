@@ -1,0 +1,35 @@
+{
+  "id": "goznym",
+  "name": "GozNym",
+  "aliases": [
+    {
+      "value": "GozNym",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2016-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "7a436c3b70a5cb5dcbc0112a8b2858e5ce3cefe4"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

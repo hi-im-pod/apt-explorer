@@ -1,0 +1,85 @@
+{
+  "id": "aslan-neferler-tim",
+  "name": "Aslan Neferler Tim",
+  "aliases": [
+    {
+      "value": "Aslan Neferler Tim",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Lion Soldiers Team",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Phantom Turk",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "TR",
+      "source": "misp"
+    },
+    {
+      "value": "TR",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Hacktivists-Nationalists",
+      "source": "misp"
+    },
+    {
+      "value": "Denial of service",
+      "source": "misp"
+    },
+    {
+      "value": "Denial of service",
+      "source": "malpedia"
+    },
+    {
+      "value": "Hacktivists-Nationalists",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": [
+      {
+        "value": "Government, Administration",
+        "source": "misp"
+      },
+      {
+        "value": "News - Media",
+        "source": "misp"
+      },
+      {
+        "value": "Government, Administration",
+        "source": "malpedia"
+      },
+      {
+        "value": "News - Media",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 3
+}

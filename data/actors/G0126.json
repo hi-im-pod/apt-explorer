@@ -1,0 +1,196 @@
+{
+  "id": "G0126",
+  "name": "Higaisa",
+  "aliases": [
+    {
+      "value": "Higaisa",
+      "sources": [
+        "attack"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "PlugX",
+      "source": "attack"
+    },
+    {
+      "name": "certutil",
+      "source": "attack"
+    },
+    {
+      "name": "gh0st RAT",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1001.003",
+    "T1016",
+    "T1027.001",
+    "T1027.013",
+    "T1027.015",
+    "T1029",
+    "T1036.004",
+    "T1041",
+    "T1053.005",
+    "T1057",
+    "T1059.003",
+    "T1059.005",
+    "T1059.007",
+    "T1071.001",
+    "T1082",
+    "T1090.001",
+    "T1106",
+    "T1124",
+    "T1140",
+    "T1203",
+    "T1204.002",
+    "T1220",
+    "T1547.001",
+    "T1564.003",
+    "T1566.001",
+    "T1573.001",
+    "T1574.001",
+    "T1680"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1008",
+      "count": 1
+    },
+    {
+      "id": "T1016",
+      "count": 1
+    },
+    {
+      "id": "T1020",
+      "count": 1
+    },
+    {
+      "id": "T1027",
+      "count": 1
+    },
+    {
+      "id": "T1033",
+      "count": 1
+    },
+    {
+      "id": "T1036",
+      "count": 1
+    },
+    {
+      "id": "T1041",
+      "count": 1
+    },
+    {
+      "id": "T1053",
+      "count": 1
+    },
+    {
+      "id": "T1059",
+      "count": 1
+    },
+    {
+      "id": "T1082",
+      "count": 1
+    },
+    {
+      "id": "T1090",
+      "count": 1
+    },
+    {
+      "id": "T1095",
+      "count": 1
+    },
+    {
+      "id": "T1132",
+      "count": 1
+    },
+    {
+      "id": "T1140",
+      "count": 1
+    },
+    {
+      "id": "T1204",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2017-11882",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-8570",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-0798",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-8174",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-8373",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-1367",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-13720",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-1458",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-17026",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-0674",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2020-Q2",
+      "count": 4
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "c2d126d84639e3321771b89aa487a49259193212",
+    "482fcaea88cec22fa8cd9ec73d5d5ae28e6ce43b",
+    "c94bc354cf2db157a6e99172d3a837a625d91e00",
+    "21d17d8989661a5be08a19a688c6e33dc67b4022",
+    "1b3ad758d95d3cdcda33384c51a1243ce5206751"
+  ],
+  "conflicts": [],
+  "evidence_count": 0
+}

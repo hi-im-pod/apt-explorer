@@ -1,0 +1,37 @@
+{
+  "id": "azzasec",
+  "name": "AzzaSec",
+  "aliases": [
+    {
+      "value": "AzzaSec",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IT",
+      "source": "misp"
+    },
+    {
+      "value": "IT",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 1
+}

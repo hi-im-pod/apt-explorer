@@ -1,0 +1,53 @@
+{
+  "id": "turkhackteam",
+  "name": "TurkHackTeam",
+  "aliases": [
+    {
+      "value": "TurkHackTeam",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Turk Hack Team",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "TR",
+      "source": "misp"
+    },
+    {
+      "value": "TR",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Hacktivists-Nationalists",
+      "source": "misp"
+    },
+    {
+      "value": "Hacktivists-Nationalists",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 2
+}

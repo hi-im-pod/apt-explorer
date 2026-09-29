@@ -1,0 +1,37 @@
+{
+  "id": "tag-56",
+  "name": "TAG-56",
+  "aliases": [
+    {
+      "value": "TAG-56",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IR",
+      "source": "misp"
+    },
+    {
+      "value": "IR",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 1
+}

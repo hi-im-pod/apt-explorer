@@ -1,0 +1,227 @@
+{
+  "id": "noname057-16",
+  "name": "NoName057(16)",
+  "aliases": [
+    {
+      "value": "NoName057(16)",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "NoName057",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "NoName05716",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "05716nnm",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Nnm05716",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Denial of service",
+      "source": "misp"
+    },
+    {
+      "value": "Denial of service",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Czechia",
+        "source": "misp"
+      },
+      {
+        "value": "Denmark",
+        "source": "misp"
+      },
+      {
+        "value": "Estonia",
+        "source": "misp"
+      },
+      {
+        "value": "Lithuania",
+        "source": "misp"
+      },
+      {
+        "value": "Norway",
+        "source": "misp"
+      },
+      {
+        "value": "Poland",
+        "source": "misp"
+      },
+      {
+        "value": "Ukraine",
+        "source": "misp"
+      },
+      {
+        "value": "Czechia",
+        "source": "malpedia"
+      },
+      {
+        "value": "Denmark",
+        "source": "malpedia"
+      },
+      {
+        "value": "Estonia",
+        "source": "malpedia"
+      },
+      {
+        "value": "Lithuania",
+        "source": "malpedia"
+      },
+      {
+        "value": "Norway",
+        "source": "malpedia"
+      },
+      {
+        "value": "Poland",
+        "source": "malpedia"
+      },
+      {
+        "value": "Ukraine",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Financial",
+        "source": "misp"
+      },
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Military",
+        "source": "misp"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "misp"
+      },
+      {
+        "value": "Transportation",
+        "source": "misp"
+      },
+      {
+        "value": "Financial",
+        "source": "malpedia"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      },
+      {
+        "value": "Military",
+        "source": "malpedia"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "malpedia"
+      },
+      {
+        "value": "Transportation",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Dosia",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [
+    {
+      "id": "T1071.001",
+      "count": 1
+    },
+    {
+      "id": "T1082",
+      "count": 1
+    },
+    {
+      "id": "T1105",
+      "count": 1
+    },
+    {
+      "id": "T1498",
+      "count": 1
+    },
+    {
+      "id": "T1499",
+      "count": 1
+    },
+    {
+      "id": "T1499.001",
+      "count": 1
+    },
+    {
+      "id": "T1499.002",
+      "count": 1
+    },
+    {
+      "id": "T1583.003",
+      "count": 1
+    }
+  ],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2023-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q2",
+      "count": 5
+    },
+    {
+      "quarter": "2024-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q3",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "8e8f1aed70127e491f70af48018cdd693434271c",
+    "87349d9c9eeb74ca2113f59932b309d6e4ed75c4",
+    "9b8b5476fa94f41cf884dc8c6601d6a7f2934840",
+    "128916fe29c9aefd387f552be1049b59cda90c5d",
+    "de9bd6d23e60d6a8e6ad55ce5eccd11dc80e56a7",
+    "a5e530e42f16500c2ec71580d45f993d55262d4c",
+    "f6c59a2f44d34452fd83d6dc2f0e623e96933449",
+    "578de845c39282116c1a6dc524794705497e8927"
+  ],
+  "conflicts": [],
+  "evidence_count": 4
+}

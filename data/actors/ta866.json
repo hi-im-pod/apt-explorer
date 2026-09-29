@@ -1,0 +1,155 @@
+{
+  "id": "ta866",
+  "name": "TA866",
+  "aliases": [
+    {
+      "value": "TA866",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "mainly financially motivated, additional espionage objective.",
+      "source": "misp"
+    },
+    {
+      "value": "Financial Theft",
+      "source": "misp"
+    },
+    {
+      "value": "Financial Theft",
+      "source": "malpedia"
+    },
+    {
+      "value": "mainly financially motivated, additional espionage objective.",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "Resident",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [
+    {
+      "id": "T1007",
+      "count": 1
+    },
+    {
+      "id": "T1016",
+      "count": 1
+    },
+    {
+      "id": "T1018",
+      "count": 1
+    },
+    {
+      "id": "T1033",
+      "count": 1
+    },
+    {
+      "id": "T1047",
+      "count": 1
+    },
+    {
+      "id": "T1057",
+      "count": 1
+    },
+    {
+      "id": "T1059.001",
+      "count": 1
+    },
+    {
+      "id": "T1059.003",
+      "count": 1
+    },
+    {
+      "id": "T1069.002",
+      "count": 1
+    },
+    {
+      "id": "T1071.001",
+      "count": 1
+    },
+    {
+      "id": "T1082",
+      "count": 1
+    },
+    {
+      "id": "T1105",
+      "count": 1
+    },
+    {
+      "id": "T1124",
+      "count": 1
+    },
+    {
+      "id": "T1218.007",
+      "count": 1
+    },
+    {
+      "id": "T1219",
+      "count": 1
+    },
+    {
+      "id": "T1482",
+      "count": 1
+    },
+    {
+      "id": "T1518.001",
+      "count": 1
+    },
+    {
+      "id": "T1566",
+      "count": 1
+    },
+    {
+      "id": "T1566.001",
+      "count": 1
+    },
+    {
+      "id": "T1566.002",
+      "count": 1
+    },
+    {
+      "id": "T1586.002",
+      "count": 1
+    },
+    {
+      "id": "T1589.002",
+      "count": 1
+    },
+    {
+      "id": "T1608.006",
+      "count": 1
+    }
+  ],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2023-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q4",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "c0b530039c1ac9f45c0953bfe031a810814df134",
+    "88d7e23d50bdd2004b74e136c76a22034d7d5563"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

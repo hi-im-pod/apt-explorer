@@ -1,0 +1,59 @@
+{
+  "id": "teamxrat",
+  "name": "TeamXRat",
+  "aliases": [
+    {
+      "value": "TeamXRat",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "CorporacaoXRat",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "CorporationXRat",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "Xpan",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2016-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "b498bcceabbb4bfd5f2a286a4fc1a0faceee37b0",
+    "ae6106aecbc8f5e19a01dc23de550976a418a4e5"
+  ],
+  "conflicts": [],
+  "evidence_count": 3
+}

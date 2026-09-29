@@ -1,0 +1,86 @@
+{
+  "id": "passcv",
+  "name": "PassCV",
+  "aliases": [
+    {
+      "value": "PassCV",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "etda"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "China",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "etda"
+      },
+      {
+        "value": "South Korea",
+        "source": "etda"
+      },
+      {
+        "value": "Taiwan",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Online video game companies",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2013-1347",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2017-Q3",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "8f18178e7e830fe97544869badff8d42441ac398"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

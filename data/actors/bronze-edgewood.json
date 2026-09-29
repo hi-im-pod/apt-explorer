@@ -1,0 +1,126 @@
+{
+  "id": "bronze-edgewood",
+  "name": "BRONZE EDGEWOOD",
+  "aliases": [
+    {
+      "value": "BRONZE EDGEWOOD",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Red Hariasa",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "FunnyDream",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Bronze Edgewood",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "TAG-16",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "etda"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Kyrgyzstan",
+        "source": "misp"
+      },
+      {
+        "value": "Malaysia",
+        "source": "misp"
+      },
+      {
+        "value": "Vietnam",
+        "source": "misp"
+      },
+      {
+        "value": "Indonesia",
+        "source": "etda"
+      },
+      {
+        "value": "Malaysia",
+        "source": "etda"
+      },
+      {
+        "value": "Philippines",
+        "source": "etda"
+      },
+      {
+        "value": "Taiwan",
+        "source": "etda"
+      },
+      {
+        "value": "Thailand",
+        "source": "etda"
+      },
+      {
+        "value": "Vietnam",
+        "source": "etda"
+      },
+      {
+        "value": "Kyrgyzstan",
+        "source": "malpedia"
+      },
+      {
+        "value": "Malaysia",
+        "source": "malpedia"
+      },
+      {
+        "value": "Vietnam",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 4
+}

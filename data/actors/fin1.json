@@ -1,0 +1,44 @@
+{
+  "id": "fin1",
+  "name": "FIN1",
+  "aliases": [
+    {
+      "value": "FIN1",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "RU",
+      "source": "misp"
+    },
+    {
+      "value": "RU",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2015-Q4",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "924193affc6bcd25cc2d9b1b952a8c8dcf068669"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

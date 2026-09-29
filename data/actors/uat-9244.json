@@ -1,0 +1,57 @@
+{
+  "id": "uat-9244",
+  "name": "UAT-9244",
+  "aliases": [
+    {
+      "value": "UAT-9244",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "BruteEntry",
+      "source": "malpedia"
+    },
+    {
+      "name": "PeerTime",
+      "source": "malpedia"
+    },
+    {
+      "name": "TernDoor",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2026-Q1",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "ad47b7a304038e0c56d82d325db71d9473b2811a"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

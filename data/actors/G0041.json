@@ -1,0 +1,246 @@
+{
+  "id": "G0041",
+  "name": "Strider",
+  "aliases": [
+    {
+      "value": "Strider",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "ProjectSauron",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Sauron",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Project Sauron",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "US",
+      "source": "misp"
+    },
+    {
+      "value": "US",
+      "source": "etda"
+    },
+    {
+      "value": "US",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "United States",
+      "source": "misp"
+    },
+    {
+      "value": "United States",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Russia",
+        "source": "misp"
+      },
+      {
+        "value": "Iran",
+        "source": "misp"
+      },
+      {
+        "value": "Belgium",
+        "source": "misp"
+      },
+      {
+        "value": "China",
+        "source": "misp"
+      },
+      {
+        "value": "Sweden",
+        "source": "misp"
+      },
+      {
+        "value": "Rwanda",
+        "source": "misp"
+      },
+      {
+        "value": "Belgium",
+        "source": "etda"
+      },
+      {
+        "value": "China",
+        "source": "etda"
+      },
+      {
+        "value": "Iran",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "etda"
+      },
+      {
+        "value": "Rwanda",
+        "source": "etda"
+      },
+      {
+        "value": "Sweden",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "malpedia"
+      },
+      {
+        "value": "Iran",
+        "source": "malpedia"
+      },
+      {
+        "value": "Belgium",
+        "source": "malpedia"
+      },
+      {
+        "value": "China",
+        "source": "malpedia"
+      },
+      {
+        "value": "Sweden",
+        "source": "malpedia"
+      },
+      {
+        "value": "Rwanda",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Military",
+        "source": "misp"
+      },
+      {
+        "value": "Intelligence",
+        "source": "misp"
+      },
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Embassies",
+        "source": "etda"
+      },
+      {
+        "value": "Financial",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "etda"
+      },
+      {
+        "value": "Scientific research centers",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      },
+      {
+        "value": "Military",
+        "source": "malpedia"
+      },
+      {
+        "value": "Intelligence",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Remsec",
+      "source": "attack"
+    },
+    {
+      "name": "Remsec",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1090.001",
+    "T1556.002",
+    "T1564.005"
+  ],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2016-Q3",
+      "count": 5
+    },
+    {
+      "quarter": "2016-Q4",
+      "count": 3
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "5245b0a52f6c56e2f58a327771524bc0bd2d624b",
+    "833f4477e73161c3f2c32ca3bd2972620b169a72",
+    "2fd914b81c3a0a63bb5e80d1e63f0c23e9904809",
+    "cd0761b7417f3e5fb6807ec07f13418df11872fd",
+    "877d7520e4b6fd17e48903f779a48b8619ebe87e",
+    "636c1e89b36e42168df0cd4bd5e2b625db7f7bf8",
+    "6c8608b8efbca2ab69d8406d7d561e67cd7f9df8",
+    "bf2d4ed4b28658d9cb3d5f8787b264395d729961",
+    "2954f154b324e61eae407e7d656a5b4b373fb5cb"
+  ],
+  "conflicts": [],
+  "evidence_count": 9
+}

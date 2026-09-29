@@ -1,0 +1,205 @@
+{
+  "id": "G1007",
+  "name": "Aoqin Dragon",
+  "aliases": [
+    {
+      "value": "Aoqin Dragon",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UNC94",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "etda"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Australia",
+        "source": "misp"
+      },
+      {
+        "value": "Cambodia",
+        "source": "misp"
+      },
+      {
+        "value": "Hong Kong",
+        "source": "misp"
+      },
+      {
+        "value": "Singapore",
+        "source": "misp"
+      },
+      {
+        "value": "Vietnam",
+        "source": "misp"
+      },
+      {
+        "value": "Australia",
+        "source": "etda"
+      },
+      {
+        "value": "Cambodia",
+        "source": "etda"
+      },
+      {
+        "value": "Hong Kong",
+        "source": "etda"
+      },
+      {
+        "value": "Singapore",
+        "source": "etda"
+      },
+      {
+        "value": "Vietnam",
+        "source": "etda"
+      },
+      {
+        "value": "Australia",
+        "source": "malpedia"
+      },
+      {
+        "value": "Cambodia",
+        "source": "malpedia"
+      },
+      {
+        "value": "Hong Kong",
+        "source": "malpedia"
+      },
+      {
+        "value": "Singapore",
+        "source": "malpedia"
+      },
+      {
+        "value": "Vietnam",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Education",
+        "source": "misp"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "misp"
+      },
+      {
+        "value": "Education",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      },
+      {
+        "value": "Education",
+        "source": "malpedia"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Heyoka Backdoor",
+      "source": "attack"
+    },
+    {
+      "name": "Mongall",
+      "source": "attack"
+    },
+    {
+      "name": "heyoka",
+      "source": "malpedia"
+    },
+    {
+      "name": "mongall",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1027.002",
+    "T1036",
+    "T1083",
+    "T1091",
+    "T1203",
+    "T1204.002",
+    "T1570",
+    "T1587.001",
+    "T1588.002"
+  ],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2010-3333",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2012-0158",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2014-6332",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2022-Q2",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "1c6463fdd742e54ca0cf652848751ea29e281b2f",
+    "181819269b8ab845e783402bc9604441bbd14d9a"
+  ],
+  "conflicts": [],
+  "evidence_count": 5
+}

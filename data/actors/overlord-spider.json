@@ -1,0 +1,47 @@
+{
+  "id": "overlord-spider",
+  "name": "OVERLORD SPIDER",
+  "aliases": [
+    {
+      "value": "OVERLORD SPIDER",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TheDarkOverlord",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Overlord Spider",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "The Dark Overlord",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 4
+}

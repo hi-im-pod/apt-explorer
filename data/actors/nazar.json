@@ -1,0 +1,68 @@
+{
+  "id": "nazar",
+  "name": "Nazar",
+  "aliases": [
+    {
+      "value": "Nazar",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "SIG37",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IR",
+      "source": "etda"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "EYService",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2018-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 5
+    }
+  ],
+  "reports": [
+    "86864f605f7035b4d98342f0087a70ea42f42a7f",
+    "8f5591c1ec9f6b2911112c53dc551374a00b66c3",
+    "c25abfe96ca4a52eba67ab1ace24ba85aef324da",
+    "7bdb6c0d46f3d9bfa83353555f2b6afaf3cd142f",
+    "78eb40f97a24af3e776d11fdb72b4dad20c92e7c",
+    "paper:Territorial%20Dispute%20-%20NSA's%20perspective%20on%20APT%20landscape"
+  ],
+  "conflicts": [],
+  "evidence_count": 4
+}

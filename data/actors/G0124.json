@@ -1,0 +1,62 @@
+{
+  "id": "G0124",
+  "name": "Windigo",
+  "aliases": [
+    {
+      "value": "Windigo",
+      "sources": [
+        "attack"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "Ebury",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1005",
+    "T1059",
+    "T1082",
+    "T1083",
+    "T1090",
+    "T1189",
+    "T1518"
+  ],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2014-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "3b0b4a08b5834cedae03ec783879383cadf9ec07",
+    "b418f8a762ec974f7ad7a7d02f01d69e0f3db0dc",
+    "e690f184de1ad5d3d28eea9535b09f11cbc6b4db",
+    "18d4dd5f95289e67238fff8aa36f8fa02e553fb0"
+  ],
+  "conflicts": [],
+  "evidence_count": 0
+}

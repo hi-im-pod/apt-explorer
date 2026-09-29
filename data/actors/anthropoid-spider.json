@@ -1,0 +1,284 @@
+{
+  "id": "anthropoid-spider",
+  "name": "ANTHROPOID SPIDER",
+  "aliases": [
+    {
+      "value": "ANTHROPOID SPIDER",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "CobaltGoblin",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Empire Monkey",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "EmpireMonkey",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Anthropoid Spider",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Financial crime",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Malta",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Finance",
+        "source": "misp"
+      },
+      {
+        "value": "Financial",
+        "source": "etda"
+      },
+      {
+        "value": "Finance",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Ave Maria",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2017-0261",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-1182",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2017-11882",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-0798",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-0802",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-11510",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-19781",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-0688",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-0986",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-10189",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-1380",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-1472",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-1664",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2020-5135",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-5902",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2019-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2020-Q4",
+      "count": 4
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2021-Q3",
+      "count": 6
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 5
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2023-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2023-Q2",
+      "count": 3
+    },
+    {
+      "quarter": "2023-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2023-Q4",
+      "count": 4
+    },
+    {
+      "quarter": "2024-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2024-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "4959e2ab1c400a9c9ffe3e5e3f010e416954513e",
+    "ac0e4cdbe845663d4c463956acaf055f0db7cbb6",
+    "eaf8adb752a9b67ebbddbc8820b6867480601fda",
+    "3c6d9179b11c411033b74522576ac463377e0294",
+    "366fd71c47469498d1a037693c879f632752b5b4",
+    "cc4cd86ab9312376c23ce7dad79b913db1ef5784",
+    "17ec872ca374ca2d0b51255ff10c0bf6b602fd4f",
+    "bc4aba6b0cc36c914ac83997cf606b3845da2de5",
+    "ecd7f6900f8dbbfcf62ca63e795c7d0f3e34c1f2",
+    "fd8d675d1528cf60c20d21218674d81f53866106",
+    "c4b81ca18d218af107d691f307544036d4a1129b",
+    "2059e9884e9b1c429b5ccd41ceefebc54f06d683",
+    "efb90cc230f9f566fd7dc3a0bfbc45a8ecaa65d9",
+    "45ac66f4ab05c43bc5128377779e6673eace06cf",
+    "655f3f998feb6f04bf2bae01718a26eef5af7a34",
+    "3633e29266d2d5dd245da243878fe3e393062521",
+    "7316798a8a2561b7d312c9ca8de4c58b335df047",
+    "99411dadc52675d3d86e217564ae8bb7b900754f",
+    "325471781a0efd42a1f32340e1a5c2915b23580f",
+    "0425666a5dd9ed2cf56ecd7643c007faa4fee1b6",
+    "680612424a9db4506ddc00d93d5c582612e2f97d",
+    "3a8a5c3949a5a4822a7598d2618046df5ccf1cc1",
+    "99e54e66074025c4dea47b6712ab2d5763d0f66f",
+    "20050eb56a7e9ae7822224694f46580fe4f77d47",
+    "3c77997543ef67e002b55b07ac947eb52145a5cb",
+    "a4a698e467acc8ef2673767c7ceee66e8dce124b",
+    "9131efa9ab2445a5b7e794dece34ad9a20f6a9db",
+    "fcc113098c24bccf707288e2876962a475fc38e3",
+    "bc9427cc952696d0cc49504bc987a87015c67c95",
+    "2db1b4e539d976c33c386626df178737c7d40adb",
+    "28d4c998f5da43f7fe9d35f6388b8a5369d8390f",
+    "bcecea6cd429761694a5866c86664e167a247da8",
+    "9b0936b1e3b43ea3afe57dce26d6dbd5dc56d6bc",
+    "cc662469b1ad1ed861a4a842691b08111bace282",
+    "fe88cf32c0db9cf5d15f3202c19793ccb5045fbb",
+    "7509866c4e72444927688965b6a1065965727901",
+    "240edb29479ddabca336042802d16035fc71a6b8",
+    "36933d357cc568dc45f5601b7c4f11041ff4a94f",
+    "ef2c91f5055a015a5ecfb7c8b02e84fe0e35b9f6",
+    "aeeec3e82bad1f1e8973a715f3c9dc737edb92f0",
+    "e206d38ab09e09cf9821d1d49045fa5f4ea2a50b",
+    "8523f13281f31e2c6b8a51b7f56268100a533c69",
+    "ee489051339c5335907d0a3fc5f543146f987509",
+    "66e3d8ac5d5bd39e335f7248e045e2dd925e2503",
+    "9e16dd26cc89fa9f4c871cdc60ba552b01e86db8",
+    "d87ad4f477186057c7943cc45ad163cfd45f6ba2",
+    "1389d428cb38c280e23af926f775ed210e632fec"
+  ],
+  "conflicts": [],
+  "evidence_count": 6
+}

@@ -1,0 +1,94 @@
+{
+  "id": "unc5537",
+  "name": "UNC5537",
+  "aliases": [
+    {
+      "value": "UNC5537",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CA",
+      "source": "etda"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Financial gain",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "MetaStealer",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2026-21236",
+      "kev": false,
+      "ransomware": null
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2022-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "04c05125e04fd02e69ea55921fe79a824f413540",
+    "e26a9ed5895a9ecea7cbc30d8883a947b51314a3",
+    "8f81a5c1abb37ef5db0a577443d7879ea2ef449c",
+    "30efbdc579d3e6c449d7d43d0504d4fcdfe64d5d",
+    "1e7326381361c891ec32f73fca829cf9e3c5fc8f",
+    "0a301a613a0f23047e1406067865d23785d9e5c2",
+    "919509db6b4ee1e84bbf91f87475faef94825fac",
+    "c77421a20a8ec92cd902b93118c96ef4f7b58f45",
+    "41192b6cc5cbb8759035c2f74d8480a9e1cc14e7",
+    "ccc3bcde62e3ba7b658d0901e755d23f828e1770"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

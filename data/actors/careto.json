@@ -1,0 +1,329 @@
+{
+  "id": "careto",
+  "name": "Careto",
+  "aliases": [
+    {
+      "value": "Careto",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "The Mask",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Mask",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Ugly Face",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "ES",
+      "source": "misp"
+    },
+    {
+      "value": "ES",
+      "source": "etda"
+    },
+    {
+      "value": "ES",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "Spain",
+      "source": "misp"
+    },
+    {
+      "value": "Spain",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Morocco",
+        "source": "misp"
+      },
+      {
+        "value": "France",
+        "source": "misp"
+      },
+      {
+        "value": "Libya",
+        "source": "misp"
+      },
+      {
+        "value": "Venezuela",
+        "source": "misp"
+      },
+      {
+        "value": "Poland",
+        "source": "misp"
+      },
+      {
+        "value": "Brazil",
+        "source": "misp"
+      },
+      {
+        "value": "Spain",
+        "source": "misp"
+      },
+      {
+        "value": "United States",
+        "source": "misp"
+      },
+      {
+        "value": "South Africa",
+        "source": "misp"
+      },
+      {
+        "value": "Tunisia",
+        "source": "misp"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "misp"
+      },
+      {
+        "value": "Switzerland",
+        "source": "misp"
+      },
+      {
+        "value": "Iran",
+        "source": "misp"
+      },
+      {
+        "value": "Germany",
+        "source": "misp"
+      },
+      {
+        "value": "Brazil",
+        "source": "etda"
+      },
+      {
+        "value": "France",
+        "source": "etda"
+      },
+      {
+        "value": "Germany",
+        "source": "etda"
+      },
+      {
+        "value": "Iran",
+        "source": "etda"
+      },
+      {
+        "value": "Libya",
+        "source": "etda"
+      },
+      {
+        "value": "Morocco",
+        "source": "etda"
+      },
+      {
+        "value": "Poland",
+        "source": "etda"
+      },
+      {
+        "value": "South Africa",
+        "source": "etda"
+      },
+      {
+        "value": "Spain",
+        "source": "etda"
+      },
+      {
+        "value": "Switzerland",
+        "source": "etda"
+      },
+      {
+        "value": "Tunisia",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      },
+      {
+        "value": "Venezuela",
+        "source": "etda"
+      },
+      {
+        "value": "Morocco",
+        "source": "malpedia"
+      },
+      {
+        "value": "France",
+        "source": "malpedia"
+      },
+      {
+        "value": "Libya",
+        "source": "malpedia"
+      },
+      {
+        "value": "Venezuela",
+        "source": "malpedia"
+      },
+      {
+        "value": "Poland",
+        "source": "malpedia"
+      },
+      {
+        "value": "Brazil",
+        "source": "malpedia"
+      },
+      {
+        "value": "Spain",
+        "source": "malpedia"
+      },
+      {
+        "value": "United States",
+        "source": "malpedia"
+      },
+      {
+        "value": "South Africa",
+        "source": "malpedia"
+      },
+      {
+        "value": "Tunisia",
+        "source": "malpedia"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "malpedia"
+      },
+      {
+        "value": "Switzerland",
+        "source": "malpedia"
+      },
+      {
+        "value": "Iran",
+        "source": "malpedia"
+      },
+      {
+        "value": "Germany",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Private sector",
+        "source": "misp"
+      },
+      {
+        "value": "Education",
+        "source": "etda"
+      },
+      {
+        "value": "Energy",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Diplomatic missions",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      },
+      {
+        "value": "Private sector",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Careto",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2011-3544",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2012-0773",
+      "kev": false,
+      "ransomware": null
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2014-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2024-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "d7ad6011182ace353b1f7c79d6cdb989eade456f",
+    "2696462d5a9d6ecd847fea97689ac194802f7d31",
+    "1a1e46218346ec29349456e34e7ced6da6ecc85e",
+    "5723f67c49c7c6e8c38d9f1f21cd20c66729d45b",
+    "paper:Unveiling%20'Careto'%20-%20The%20Masked%20APT"
+  ],
+  "conflicts": [],
+  "evidence_count": 8
+}

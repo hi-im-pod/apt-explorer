@@ -1,0 +1,56 @@
+{
+  "id": "unc2814",
+  "name": "UNC2814",
+  "aliases": [
+    {
+      "value": "UNC2814",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "DARK CASTLE",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "GRIDTIDE",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2026-Q1",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "b38b5e3b11558ba8ce883301d71620a7926cf27a"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

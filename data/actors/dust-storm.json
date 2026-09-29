@@ -1,0 +1,70 @@
+{
+  "id": "dust-storm",
+  "name": "Dust Storm",
+  "aliases": [
+    {
+      "value": "Dust Storm",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "etda"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Japan",
+        "source": "etda"
+      },
+      {
+        "value": "South Korea",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Energy",
+        "source": "etda"
+      },
+      {
+        "value": "Oil and gas",
+        "source": "etda"
+      },
+      {
+        "value": "Uyghurs",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Misdat",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 4
+}

@@ -1,0 +1,68 @@
+{
+  "id": "unfading-sea-haze",
+  "name": "Unfading Sea Haze",
+  "aliases": [
+    {
+      "value": "Unfading Sea Haze",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "etda"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": [
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "InsidiousGh0st",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2024-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "1806c2cb3e5594b6e1847526298141fd73339ff2"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

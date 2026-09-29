@@ -1,0 +1,58 @@
+{
+  "id": "groundbait",
+  "name": "Groundbait",
+  "aliases": [
+    {
+      "value": "Groundbait",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "UA",
+      "source": "misp"
+    },
+    {
+      "value": "UA",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": [
+      {
+        "value": "Separatists",
+        "source": "misp"
+      },
+      {
+        "value": "Separatists",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Prikormka",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2023-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "cbd7e2979140ce092001446e8d53e287550753a1"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

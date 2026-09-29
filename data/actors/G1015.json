@@ -7,144 +7,274 @@
       "sources": [
         "attack",
         "misp",
+        "etda",
         "malpedia"
-      ]
-    },
-    {
-      "value": "Roasted 0ktapus",
-      "sources": [
-        "attack",
-        "misp"
       ]
     },
     {
       "value": "Octo Tempest",
       "sources": [
         "attack",
-        "misp"
-      ]
-    },
-    {
-      "value": "Storm-0875",
-      "sources": [
-        "attack"
+        "misp",
+        "etda",
+        "malpedia"
       ]
     },
     {
       "value": "UNC3944",
       "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "0ktapus",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Muddled Libra",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Scatter Swine",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Storm-0875",
+      "sources": [
+        "attack",
+        "etda"
+      ]
+    },
+    {
+      "value": "Oktapus",
+      "sources": [
         "misp",
         "malpedia"
       ]
-    }
-  ],
-  "origin": [
-    {
-      "value": "US",
-      "source": "misp"
     },
     {
-      "value": "GB",
-      "source": "malpedia"
+      "value": "Scattered Swine",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Storm-0971",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "DEV-0971",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Starfraud",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Roasted 0ktapus",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "LUCR-3",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Star Fraud",
+      "sources": [
+        "etda"
+      ]
     }
   ],
+  "origin": [],
   "sponsor": [],
   "motivation": [
     {
       "value": "Financial gain",
-      "source": "misp"
+      "source": "etda"
     }
   ],
   "claimed_targets": {
-    "countries": [
-      {
-        "value": "United States",
-        "source": "misp"
-      },
-      {
-        "value": "United Kingdom",
-        "source": "misp"
-      }
-    ],
-    "sectors": [
-      {
-        "value": "Retail",
-        "source": "misp"
-      },
-      {
-        "value": "Telecommunications",
-        "source": "misp"
-      },
-      {
-        "value": "Hospitality",
-        "source": "misp"
-      }
-    ]
+    "countries": [],
+    "sectors": []
   },
   "malware": [
     {
       "name": "BlackCat",
-      "source": "malpedia"
+      "source": "attack"
+    },
+    {
+      "name": "ConnectWise",
+      "source": "attack"
+    },
+    {
+      "name": "LaZagne",
+      "source": "attack"
+    },
+    {
+      "name": "Mimikatz",
+      "source": "attack"
+    },
+    {
+      "name": "Raccoon Stealer",
+      "source": "attack"
+    },
+    {
+      "name": "Rclone",
+      "source": "attack"
+    },
+    {
+      "name": "Tor",
+      "source": "attack"
+    },
+    {
+      "name": "WarzoneRAT",
+      "source": "attack"
+    },
+    {
+      "name": "ngrok",
+      "source": "attack"
     }
   ],
   "techniques_documented": [
-    "T1621",
+    "T1003.003",
+    "T1006",
+    "T1016",
+    "T1018",
+    "T1021.001",
+    "T1021.004",
+    "T1021.007",
+    "T1041",
+    "T1059.001",
+    "T1059.004",
+    "T1068",
+    "T1069",
+    "T1069.002",
+    "T1070.008",
+    "T1074",
     "T1078",
+    "T1078.004",
+    "T1082",
+    "T1083",
+    "T1087",
+    "T1087.002",
+    "T1090",
+    "T1098",
+    "T1098.003",
+    "T1105",
+    "T1114",
+    "T1114.003",
+    "T1133",
+    "T1136",
+    "T1204",
+    "T1213.003",
+    "T1213.005",
+    "T1217",
+    "T1219.002",
+    "T1484.002",
     "T1486",
-    "T1566.004"
+    "T1490",
+    "T1530",
+    "T1538",
+    "T1539",
+    "T1543.002",
+    "T1552.001",
+    "T1552.004",
+    "T1553.002",
+    "T1555.005",
+    "T1556.006",
+    "T1556.009",
+    "T1564.008",
+    "T1567.002",
+    "T1572",
+    "T1578.002",
+    "T1580",
+    "T1583.001",
+    "T1585.001",
+    "T1588.001",
+    "T1588.002",
+    "T1589",
+    "T1598",
+    "T1598.003",
+    "T1598.004",
+    "T1621",
+    "T1657",
+    "T1684.001",
+    "T1685"
   ],
-  "techniques_reported": [
+  "techniques_reported": [],
+  "cves": [
     {
-      "id": "T1621",
-      "count": 3
+      "cve": "CVE-2015-2291",
+      "kev": true,
+      "ransomware": true
     },
     {
-      "id": "T1003.001",
-      "count": 1
-    },
-    {
-      "id": "T1078",
-      "count": 1
-    },
-    {
-      "id": "T1486",
-      "count": 1
+      "cve": "CVE-2021-35464",
+      "kev": true,
+      "ransomware": true
     }
   ],
-  "cves": [],
   "timeline": [
     {
-      "quarter": "2024-Q3",
+      "quarter": "2022-Q4",
       "count": 1
     },
     {
-      "quarter": "2025-Q1",
+      "quarter": "2023-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2025-Q2",
       "count": 1
     },
     {
       "quarter": "2025-Q3",
-      "count": 1
+      "count": 2
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 2
     }
   ],
   "reports": [
-    "dfir:2025-09-hypervisor-encryption-after-a-help-desk-call",
-    "dfir:2025-03-sim-swapping-and-single-sign-on-abuse-in-a-retail-intrusion",
-    "dfir:2024-09-help-desk-social-engineering-to-domain-admin-in-a-day"
+    "a894be235a0f82062b5215e6a4aa1f04d8a5ab89",
+    "df798a27d7b6a19d0066b2d85cda91f0b43ca40d",
+    "39abb567e6ea3fddfdd7909a68b43de2fcd301d6",
+    "8086699f78173ab9f776f278c5eaffd0ccee8b9d",
+    "90711c6f107284847aa046bc281ff741c80286bb",
+    "cc4cd86ab9312376c23ce7dad79b913db1ef5784",
+    "675dd06adff55df31c37dc6376691f0a6600797a",
+    "7982f254f8aca6399775584a96b7906781428bcd"
   ],
-  "conflicts": [
-    {
-      "field": "origin",
-      "values": [
-        {
-          "value": "US",
-          "source": "misp"
-        },
-        {
-          "value": "GB",
-          "source": "malpedia"
-        }
-      ]
-    }
-  ],
-  "evidence_count": 6
+  "conflicts": [],
+  "evidence_count": 22
 }

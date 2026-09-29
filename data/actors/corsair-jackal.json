@@ -1,0 +1,50 @@
+{
+  "id": "corsair-jackal",
+  "name": "Corsair Jackal",
+  "aliases": [
+    {
+      "value": "Corsair Jackal",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TunisianCyberArmy",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "TN",
+      "source": "misp"
+    },
+    {
+      "value": "TN",
+      "source": "etda"
+    },
+    {
+      "value": "TN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 4
+}

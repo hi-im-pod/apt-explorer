@@ -1,0 +1,54 @@
+{
+  "id": "unnamed-group-usa",
+  "name": "[Unnamed group USA]",
+  "aliases": [
+    {
+      "value": "[Unnamed group USA]",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "US",
+      "source": "etda"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "China",
+        "source": "etda"
+      },
+      {
+        "value": "Iran",
+        "source": "etda"
+      },
+      {
+        "value": "North Korea",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "etda"
+      }
+    ],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 0
+}

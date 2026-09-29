@@ -1,0 +1,180 @@
+{
+  "id": "G0139",
+  "name": "TeamTNT",
+  "aliases": [
+    {
+      "value": "TeamTNT",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Adept Libra",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "Hildegard",
+      "source": "attack"
+    },
+    {
+      "name": "LaZagne",
+      "source": "attack"
+    },
+    {
+      "name": "MimiPenguin",
+      "source": "attack"
+    },
+    {
+      "name": "Peirates",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1007",
+    "T1014",
+    "T1016",
+    "T1021.004",
+    "T1027.002",
+    "T1027.013",
+    "T1036",
+    "T1036.005",
+    "T1046",
+    "T1048",
+    "T1049",
+    "T1057",
+    "T1059.001",
+    "T1059.003",
+    "T1059.004",
+    "T1059.009",
+    "T1059.013",
+    "T1070.003",
+    "T1070.004",
+    "T1071",
+    "T1071.001",
+    "T1074.001",
+    "T1082",
+    "T1083",
+    "T1098.004",
+    "T1102",
+    "T1105",
+    "T1120",
+    "T1133",
+    "T1136.001",
+    "T1140",
+    "T1204.003",
+    "T1219",
+    "T1222.002",
+    "T1496.001",
+    "T1518.001",
+    "T1543.002",
+    "T1543.003",
+    "T1547.001",
+    "T1552.001",
+    "T1552.004",
+    "T1552.005",
+    "T1569.003",
+    "T1583.001",
+    "T1587.001",
+    "T1595.001",
+    "T1595.002",
+    "T1608.001",
+    "T1609",
+    "T1610",
+    "T1611",
+    "T1613",
+    "T1680",
+    "T1685",
+    "T1685.006",
+    "T1686"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1098.004",
+      "count": 1
+    },
+    {
+      "id": "T1480",
+      "count": 1
+    },
+    {
+      "id": "T1496",
+      "count": 1
+    },
+    {
+      "id": "T1547",
+      "count": 1
+    },
+    {
+      "id": "T1592.002",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2019-5736",
+      "kev": false,
+      "ransomware": null
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2019-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2021-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 5
+    }
+  ],
+  "reports": [
+    "3aaeec4d214ece4501a1bbc285b20b27df61cdf5",
+    "3adfde82ee8ee76f5b3e78caf3ecdec71325220d",
+    "8332803119bcc8679f311360bca98d6572b5b4af",
+    "a44a575f120ca7935e006a0b1bf6e5f40ee69e17",
+    "e4eb021d70cf2bf95753bfeca34f554da86b8dea",
+    "6e76324fd3b54f11f5eda90ef40c5eb20c7adf7a",
+    "d89fd3072ca54b3027546576a3d11ec24b6af17e",
+    "2fa573dbd31f91e77fb409838bdb4b343c8bf759",
+    "b075b3490db2935c09d7b942e2c1ae079cf0a29f",
+    "d81e73f678a9dc9b12af503559063122ecc78502",
+    "6ac1a1ffa58d5996976af1211c3a62a563b705e2",
+    "31e082a1ca4f7e12ac0cc0a32185d5c7c55752e6",
+    "paper:APT15"
+  ],
+  "conflicts": [],
+  "evidence_count": 3
+}

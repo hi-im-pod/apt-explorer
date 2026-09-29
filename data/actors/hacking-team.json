@@ -1,0 +1,92 @@
+{
+  "id": "hacking-team",
+  "name": "Hacking Team",
+  "aliases": [
+    {
+      "value": "Hacking Team",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IT",
+      "source": "etda"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Financial gain",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "RCS",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2016-4117",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2012-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2012-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q1",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "376d8ca8645a8cae8bf2f979e02a7d86ba3bc756",
+    "f3689f177e84f86339bbf081e256c5279fc9247a",
+    "f2144ce8647afe942d16e8886735e5ef139ce02d",
+    "7c8822e79f18b854a3b9ed2148410cea198c3408",
+    "941d6cac3b97c64bc7280026d2bb5fb1c7db9414",
+    "3cdd5180fbe3168e97ae2da0e4e4d188760525c5",
+    "f7846d9fb1722b5003103c4250930743a32243e4",
+    "f5cd333e3df571e9fcb5b44ec99a494162c68a00"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

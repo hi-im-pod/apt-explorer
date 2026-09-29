@@ -1,0 +1,107 @@
+{
+  "id": "handala",
+  "name": "Handala",
+  "aliases": [
+    {
+      "value": "Handala",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "PS",
+      "source": "misp"
+    },
+    {
+      "value": "PS",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "FlashDevelop",
+      "source": "malpedia"
+    },
+    {
+      "name": "Handala",
+      "source": "malpedia"
+    },
+    {
+      "name": "Hatef",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [
+    {
+      "id": "T1020",
+      "count": 1
+    },
+    {
+      "id": "T1027",
+      "count": 1
+    },
+    {
+      "id": "T1059",
+      "count": 1
+    },
+    {
+      "id": "T1059.010",
+      "count": 1
+    },
+    {
+      "id": "T1068",
+      "count": 1
+    },
+    {
+      "id": "T1218.009",
+      "count": 1
+    },
+    {
+      "id": "T1497.003",
+      "count": 1
+    },
+    {
+      "id": "T1561.002",
+      "count": 1
+    },
+    {
+      "id": "T1566.001",
+      "count": 1
+    },
+    {
+      "id": "T1589",
+      "count": 1
+    },
+    {
+      "id": "T1590",
+      "count": 1
+    }
+  ],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2023-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q3",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "e74f097674517d2e8a12edaecaaef0fbec857ec5",
+    "869364ef84d5105b33f8f2006e3d047998a7565e"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

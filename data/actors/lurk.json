@@ -1,0 +1,51 @@
+{
+  "id": "lurk",
+  "name": "Lurk",
+  "aliases": [
+    {
+      "value": "Lurk",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "RU",
+      "source": "etda"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Financial crime",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Russia",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Financial",
+        "source": "etda"
+      },
+      {
+        "value": "Media",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 0
+}

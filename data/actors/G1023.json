@@ -1,0 +1,497 @@
+{
+  "id": "G1023",
+  "name": "APT5",
+  "aliases": [
+    {
+      "value": "APT5",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Mulberry Typhoon",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "MANGANESE",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "BRONZE FLEETWOOD",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UNC2630",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TEMP.Bottle",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Poisoned Flight",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Keyhole Panda",
+      "sources": [
+        "attack",
+        "etda"
+      ]
+    },
+    {
+      "value": "TG-2754",
+      "sources": [
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "KEYHOLE PANDA",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "BASALT CASTLE",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "APT 5",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Bronze Fleetwood",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Manganese",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "TABCTENG",
+      "sources": [
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Backdoor-DPD",
+      "sources": [
+        "malpedia"
+      ]
+    },
+    {
+      "value": "COVENANT",
+      "sources": [
+        "malpedia"
+      ]
+    },
+    {
+      "value": "CYSERVICE",
+      "sources": [
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Bottle",
+      "sources": [
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Red Horus",
+      "sources": [
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Red Naga",
+      "sources": [
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Auriga",
+      "sources": [
+        "malpedia"
+      ]
+    },
+    {
+      "value": "ATG48",
+      "sources": [
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "etda"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": [
+      {
+        "value": "Electronic",
+        "source": "misp"
+      },
+      {
+        "value": "Telecoms",
+        "source": "misp"
+      },
+      {
+        "value": "Technology",
+        "source": "misp"
+      },
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "High-Tech",
+        "source": "etda"
+      },
+      {
+        "value": "Industrial",
+        "source": "etda"
+      },
+      {
+        "value": "Technology",
+        "source": "etda"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "etda"
+      },
+      {
+        "value": "Electronic",
+        "source": "malpedia"
+      },
+      {
+        "value": "Telecoms",
+        "source": "malpedia"
+      },
+      {
+        "value": "Technology",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Mimikatz",
+      "source": "attack"
+    },
+    {
+      "name": "Net",
+      "source": "attack"
+    },
+    {
+      "name": "PACEMAKER",
+      "source": "attack"
+    },
+    {
+      "name": "PULSECHECK",
+      "source": "attack"
+    },
+    {
+      "name": "PcShare",
+      "source": "attack"
+    },
+    {
+      "name": "PoisonIvy",
+      "source": "attack"
+    },
+    {
+      "name": "RAPIDPULSE",
+      "source": "attack"
+    },
+    {
+      "name": "SLIGHTPULSE",
+      "source": "attack"
+    },
+    {
+      "name": "SLOWPULSE",
+      "source": "attack"
+    },
+    {
+      "name": "Skeleton Key",
+      "source": "attack"
+    },
+    {
+      "name": "Tasklist",
+      "source": "attack"
+    },
+    {
+      "name": "gh0st RAT",
+      "source": "attack"
+    },
+    {
+      "name": "netstat",
+      "source": "attack"
+    },
+    {
+      "name": "Leouncia",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1003.001",
+    "T1003.002",
+    "T1021.001",
+    "T1021.004",
+    "T1036.005",
+    "T1049",
+    "T1053.003",
+    "T1055",
+    "T1056.001",
+    "T1057",
+    "T1059.001",
+    "T1059.003",
+    "T1070",
+    "T1070.003",
+    "T1070.004",
+    "T1070.006",
+    "T1074.001",
+    "T1078.002",
+    "T1078.004",
+    "T1083",
+    "T1098.007",
+    "T1136.001",
+    "T1190",
+    "T1505.003",
+    "T1554",
+    "T1560.001",
+    "T1583.005",
+    "T1654",
+    "T1685"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1003",
+      "count": 1
+    },
+    {
+      "id": "T1016",
+      "count": 1
+    },
+    {
+      "id": "T1021.001",
+      "count": 1
+    },
+    {
+      "id": "T1027",
+      "count": 1
+    },
+    {
+      "id": "T1036.005",
+      "count": 1
+    },
+    {
+      "id": "T1048",
+      "count": 1
+    },
+    {
+      "id": "T1049",
+      "count": 1
+    },
+    {
+      "id": "T1053",
+      "count": 1
+    },
+    {
+      "id": "T1057",
+      "count": 1
+    },
+    {
+      "id": "T1059",
+      "count": 1
+    },
+    {
+      "id": "T1059.003",
+      "count": 1
+    },
+    {
+      "id": "T1070",
+      "count": 1
+    },
+    {
+      "id": "T1070.004",
+      "count": 1
+    },
+    {
+      "id": "T1071.001",
+      "count": 1
+    },
+    {
+      "id": "T1082",
+      "count": 1
+    },
+    {
+      "id": "T1098",
+      "count": 1
+    },
+    {
+      "id": "T1105",
+      "count": 1
+    },
+    {
+      "id": "T1111",
+      "count": 1
+    },
+    {
+      "id": "T1133",
+      "count": 1
+    },
+    {
+      "id": "T1134.001",
+      "count": 1
+    },
+    {
+      "id": "T1136",
+      "count": 1
+    },
+    {
+      "id": "T1140",
+      "count": 1
+    },
+    {
+      "id": "T1190",
+      "count": 1
+    },
+    {
+      "id": "T1505.003",
+      "count": 1
+    },
+    {
+      "id": "T1518",
+      "count": 1
+    },
+    {
+      "id": "T1554",
+      "count": 1
+    },
+    {
+      "id": "T1556.004",
+      "count": 1
+    },
+    {
+      "id": "T1569.002",
+      "count": 1
+    },
+    {
+      "id": "T1574",
+      "count": 1
+    },
+    {
+      "id": "T1592.004",
+      "count": 1
+    },
+    {
+      "id": "T1600",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2021-20021",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-22893",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-27518",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2021-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "2e1f557e18c735ef48576df8ad89e8d7f5f07be2",
+    "7c76cb2a670f26b9777a59ae652fc6cab21bef8d",
+    "2f216e48c38ecae2666eff49ba1caa808e3bc4ef",
+    "398a6fe21e83f09c3d32e8655c319efc4fd75bb0",
+    "0e5fd723ebe89368ea4239c6e24a3127315101ba",
+    "paper:Check%20Your%20Pulse%20Suspected%20APT%20Actors%20Leverage%20Authentication%20Bypass%20Techniques%20and%20Pulse%20Secure%20Zero-Day"
+  ],
+  "conflicts": [],
+  "evidence_count": 22
+}

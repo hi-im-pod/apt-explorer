@@ -1,0 +1,100 @@
+{
+  "id": "cyber-av3ngers",
+  "name": "Cyber Av3ngers",
+  "aliases": [
+    {
+      "value": "Cyber Av3ngers",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "CyberAv3ngers",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Shahid Kaveh Group",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IR",
+      "source": "misp"
+    },
+    {
+      "value": "IR",
+      "source": "etda"
+    },
+    {
+      "value": "IR",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Sabotage and destruction",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Ireland",
+        "source": "etda"
+      },
+      {
+        "value": "Israel",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Industrial",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "elf.iocontrol",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2019-11510",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2024-Q4",
+      "count": 4
+    }
+  ],
+  "reports": [
+    "902388885d898389642d7d6caeda06310a99b286",
+    "7410511a120ebdd2f631f40eb2275ab1a79f20f3",
+    "9a179c9c4b655375808278169fcfa18205479dd4",
+    "00910170047c8ea0d169602b2e5ada04394a3984"
+  ],
+  "conflicts": [],
+  "evidence_count": 3
+}

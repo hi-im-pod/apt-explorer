@@ -1,0 +1,213 @@
+{
+  "id": "G0038",
+  "name": "Stealth Falcon",
+  "aliases": [
+    {
+      "value": "Stealth Falcon",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "FruityArmor",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Project Raven",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "AE",
+      "source": "misp"
+    },
+    {
+      "value": "AE",
+      "source": "etda"
+    },
+    {
+      "value": "AE",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "United Arab Emirates",
+      "source": "misp"
+    },
+    {
+      "value": "United Arab Emirates",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "United Arab Emirates",
+        "source": "misp"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "misp"
+      },
+      {
+        "value": "Netherlands",
+        "source": "etda"
+      },
+      {
+        "value": "Saudi Arabia",
+        "source": "etda"
+      },
+      {
+        "value": "Thailand",
+        "source": "etda"
+      },
+      {
+        "value": "United Arab Emirates",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "United Arab Emirates",
+        "source": "malpedia"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Civil society",
+        "source": "misp"
+      },
+      {
+        "value": "Activists",
+        "source": "misp"
+      },
+      {
+        "value": "Dissidents",
+        "source": "misp"
+      },
+      {
+        "value": "Journalist",
+        "source": "misp"
+      },
+      {
+        "value": "Civil society groups and Emirati journalists, activists and dissidents",
+        "source": "etda"
+      },
+      {
+        "value": "Civil society",
+        "source": "malpedia"
+      },
+      {
+        "value": "Activists",
+        "source": "malpedia"
+      },
+      {
+        "value": "Dissidents",
+        "source": "malpedia"
+      },
+      {
+        "value": "Journalist",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Horus",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1005",
+    "T1012",
+    "T1016",
+    "T1033",
+    "T1041",
+    "T1047",
+    "T1053.005",
+    "T1057",
+    "T1059",
+    "T1059.001",
+    "T1071.001",
+    "T1082",
+    "T1555",
+    "T1555.003",
+    "T1555.004",
+    "T1573.001"
+  ],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2010-3333",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2016-4655",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2016-4656",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2016-4657",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2016-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2016-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "1a19f18f1318931bce9d649307030e643ea25e68",
+    "32c2e322e6e97466dc82e81fc94acc14eee10192",
+    "6060d8839dc4054fd3d57b2935eb79b2876f75d6"
+  ],
+  "conflicts": [],
+  "evidence_count": 7
+}

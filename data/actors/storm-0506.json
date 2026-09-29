@@ -1,0 +1,1387 @@
+{
+  "id": "storm-0506",
+  "name": "Storm-0506",
+  "aliases": [
+    {
+      "value": "Storm-0506",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "Black Basta",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [
+    {
+      "id": "T1033",
+      "count": 5
+    },
+    {
+      "id": "T1059.001",
+      "count": 5
+    },
+    {
+      "id": "T1566.004",
+      "count": 5
+    },
+    {
+      "id": "T1572",
+      "count": 5
+    },
+    {
+      "id": "T1056.001",
+      "count": 4
+    },
+    {
+      "id": "T1068",
+      "count": 4
+    },
+    {
+      "id": "T1140",
+      "count": 4
+    },
+    {
+      "id": "T1219",
+      "count": 4
+    },
+    {
+      "id": "T1055.002",
+      "count": 3
+    },
+    {
+      "id": "T1059.003",
+      "count": 3
+    },
+    {
+      "id": "T1078",
+      "count": 3
+    },
+    {
+      "id": "T1190",
+      "count": 3
+    },
+    {
+      "id": "T1486",
+      "count": 3
+    },
+    {
+      "id": "T1490",
+      "count": 3
+    },
+    {
+      "id": "T1498",
+      "count": 3
+    },
+    {
+      "id": "T1547.001",
+      "count": 3
+    },
+    {
+      "id": "T1570",
+      "count": 3
+    },
+    {
+      "id": "T1016",
+      "count": 2
+    },
+    {
+      "id": "T1018",
+      "count": 2
+    },
+    {
+      "id": "T1021.001",
+      "count": 2
+    },
+    {
+      "id": "T1021.004",
+      "count": 2
+    },
+    {
+      "id": "T1036",
+      "count": 2
+    },
+    {
+      "id": "T1046",
+      "count": 2
+    },
+    {
+      "id": "T1049",
+      "count": 2
+    },
+    {
+      "id": "T1059",
+      "count": 2
+    },
+    {
+      "id": "T1059.004",
+      "count": 2
+    },
+    {
+      "id": "T1070.004",
+      "count": 2
+    },
+    {
+      "id": "T1071.001",
+      "count": 2
+    },
+    {
+      "id": "T1071.004",
+      "count": 2
+    },
+    {
+      "id": "T1078.004",
+      "count": 2
+    },
+    {
+      "id": "T1083",
+      "count": 2
+    },
+    {
+      "id": "T1087",
+      "count": 2
+    },
+    {
+      "id": "T1087.001",
+      "count": 2
+    },
+    {
+      "id": "T1087.002",
+      "count": 2
+    },
+    {
+      "id": "T1090.003",
+      "count": 2
+    },
+    {
+      "id": "T1095",
+      "count": 2
+    },
+    {
+      "id": "T1105",
+      "count": 2
+    },
+    {
+      "id": "T1133",
+      "count": 2
+    },
+    {
+      "id": "T1135",
+      "count": 2
+    },
+    {
+      "id": "T1201",
+      "count": 2
+    },
+    {
+      "id": "T1204",
+      "count": 2
+    },
+    {
+      "id": "T1204.002",
+      "count": 2
+    },
+    {
+      "id": "T1210",
+      "count": 2
+    },
+    {
+      "id": "T1217",
+      "count": 2
+    },
+    {
+      "id": "T1482",
+      "count": 2
+    },
+    {
+      "id": "T1489",
+      "count": 2
+    },
+    {
+      "id": "T1518.001",
+      "count": 2
+    },
+    {
+      "id": "T1543.002",
+      "count": 2
+    },
+    {
+      "id": "T1543.003",
+      "count": 2
+    },
+    {
+      "id": "T1547.009",
+      "count": 2
+    },
+    {
+      "id": "T1558.003",
+      "count": 2
+    },
+    {
+      "id": "T1566",
+      "count": 2
+    },
+    {
+      "id": "T1566.001",
+      "count": 2
+    },
+    {
+      "id": "T1567.002",
+      "count": 2
+    },
+    {
+      "id": "T1573.002",
+      "count": 2
+    },
+    {
+      "id": "T1587.001",
+      "count": 2
+    },
+    {
+      "id": "T1595.002",
+      "count": 2
+    },
+    {
+      "id": "T1620",
+      "count": 2
+    },
+    {
+      "id": "T1003",
+      "count": 1
+    },
+    {
+      "id": "T1003.001",
+      "count": 1
+    },
+    {
+      "id": "T1003.002",
+      "count": 1
+    },
+    {
+      "id": "T1003.003",
+      "count": 1
+    },
+    {
+      "id": "T1005",
+      "count": 1
+    },
+    {
+      "id": "T1007",
+      "count": 1
+    },
+    {
+      "id": "T1008",
+      "count": 1
+    },
+    {
+      "id": "T1010",
+      "count": 1
+    },
+    {
+      "id": "T1012",
+      "count": 1
+    },
+    {
+      "id": "T1016.001",
+      "count": 1
+    },
+    {
+      "id": "T1020",
+      "count": 1
+    },
+    {
+      "id": "T1021",
+      "count": 1
+    },
+    {
+      "id": "T1021.002",
+      "count": 1
+    },
+    {
+      "id": "T1021.005",
+      "count": 1
+    },
+    {
+      "id": "T1021.006",
+      "count": 1
+    },
+    {
+      "id": "T1027",
+      "count": 1
+    },
+    {
+      "id": "T1036.005",
+      "count": 1
+    },
+    {
+      "id": "T1037",
+      "count": 1
+    },
+    {
+      "id": "T1037.001",
+      "count": 1
+    },
+    {
+      "id": "T1039",
+      "count": 1
+    },
+    {
+      "id": "T1040",
+      "count": 1
+    },
+    {
+      "id": "T1041",
+      "count": 1
+    },
+    {
+      "id": "T1047",
+      "count": 1
+    },
+    {
+      "id": "T1048",
+      "count": 1
+    },
+    {
+      "id": "T1048.003",
+      "count": 1
+    },
+    {
+      "id": "T1053",
+      "count": 1
+    },
+    {
+      "id": "T1053.003",
+      "count": 1
+    },
+    {
+      "id": "T1053.005",
+      "count": 1
+    },
+    {
+      "id": "T1055",
+      "count": 1
+    },
+    {
+      "id": "T1055.001",
+      "count": 1
+    },
+    {
+      "id": "T1055.003",
+      "count": 1
+    },
+    {
+      "id": "T1055.004",
+      "count": 1
+    },
+    {
+      "id": "T1055.009",
+      "count": 1
+    },
+    {
+      "id": "T1055.012",
+      "count": 1
+    },
+    {
+      "id": "T1056",
+      "count": 1
+    },
+    {
+      "id": "T1057",
+      "count": 1
+    },
+    {
+      "id": "T1059.002",
+      "count": 1
+    },
+    {
+      "id": "T1059.005",
+      "count": 1
+    },
+    {
+      "id": "T1059.006",
+      "count": 1
+    },
+    {
+      "id": "T1059.007",
+      "count": 1
+    },
+    {
+      "id": "T1059.009",
+      "count": 1
+    },
+    {
+      "id": "T1059.010",
+      "count": 1
+    },
+    {
+      "id": "T1059.011",
+      "count": 1
+    },
+    {
+      "id": "T1069",
+      "count": 1
+    },
+    {
+      "id": "T1069.001",
+      "count": 1
+    },
+    {
+      "id": "T1069.002",
+      "count": 1
+    },
+    {
+      "id": "T1069.003",
+      "count": 1
+    },
+    {
+      "id": "T1070",
+      "count": 1
+    },
+    {
+      "id": "T1071",
+      "count": 1
+    },
+    {
+      "id": "T1071.003",
+      "count": 1
+    },
+    {
+      "id": "T1072",
+      "count": 1
+    },
+    {
+      "id": "T1074",
+      "count": 1
+    },
+    {
+      "id": "T1074.001",
+      "count": 1
+    },
+    {
+      "id": "T1074.002",
+      "count": 1
+    },
+    {
+      "id": "T1078.002",
+      "count": 1
+    },
+    {
+      "id": "T1078.003",
+      "count": 1
+    },
+    {
+      "id": "T1082",
+      "count": 1
+    },
+    {
+      "id": "T1087.004",
+      "count": 1
+    },
+    {
+      "id": "T1090",
+      "count": 1
+    },
+    {
+      "id": "T1090.001",
+      "count": 1
+    },
+    {
+      "id": "T1090.002",
+      "count": 1
+    },
+    {
+      "id": "T1091",
+      "count": 1
+    },
+    {
+      "id": "T1098",
+      "count": 1
+    },
+    {
+      "id": "T1098.001",
+      "count": 1
+    },
+    {
+      "id": "T1098.003",
+      "count": 1
+    },
+    {
+      "id": "T1098.004",
+      "count": 1
+    },
+    {
+      "id": "T1098.005",
+      "count": 1
+    },
+    {
+      "id": "T1098.006",
+      "count": 1
+    },
+    {
+      "id": "T1098.007",
+      "count": 1
+    },
+    {
+      "id": "T1102",
+      "count": 1
+    },
+    {
+      "id": "T1102.002",
+      "count": 1
+    },
+    {
+      "id": "T1104",
+      "count": 1
+    },
+    {
+      "id": "T1110.002",
+      "count": 1
+    },
+    {
+      "id": "T1110.004",
+      "count": 1
+    },
+    {
+      "id": "T1113",
+      "count": 1
+    },
+    {
+      "id": "T1114",
+      "count": 1
+    },
+    {
+      "id": "T1114.001",
+      "count": 1
+    },
+    {
+      "id": "T1114.002",
+      "count": 1
+    },
+    {
+      "id": "T1114.003",
+      "count": 1
+    },
+    {
+      "id": "T1115",
+      "count": 1
+    },
+    {
+      "id": "T1119",
+      "count": 1
+    },
+    {
+      "id": "T1120",
+      "count": 1
+    },
+    {
+      "id": "T1123",
+      "count": 1
+    },
+    {
+      "id": "T1124",
+      "count": 1
+    },
+    {
+      "id": "T1125",
+      "count": 1
+    },
+    {
+      "id": "T1129",
+      "count": 1
+    },
+    {
+      "id": "T1132",
+      "count": 1
+    },
+    {
+      "id": "T1132.001",
+      "count": 1
+    },
+    {
+      "id": "T1134",
+      "count": 1
+    },
+    {
+      "id": "T1134.001",
+      "count": 1
+    },
+    {
+      "id": "T1136",
+      "count": 1
+    },
+    {
+      "id": "T1136.001",
+      "count": 1
+    },
+    {
+      "id": "T1136.002",
+      "count": 1
+    },
+    {
+      "id": "T1137",
+      "count": 1
+    },
+    {
+      "id": "T1137.006",
+      "count": 1
+    },
+    {
+      "id": "T1189",
+      "count": 1
+    },
+    {
+      "id": "T1195",
+      "count": 1
+    },
+    {
+      "id": "T1195.002",
+      "count": 1
+    },
+    {
+      "id": "T1199",
+      "count": 1
+    },
+    {
+      "id": "T1200",
+      "count": 1
+    },
+    {
+      "id": "T1203",
+      "count": 1
+    },
+    {
+      "id": "T1204.001",
+      "count": 1
+    },
+    {
+      "id": "T1213",
+      "count": 1
+    },
+    {
+      "id": "T1213.001",
+      "count": 1
+    },
+    {
+      "id": "T1213.002",
+      "count": 1
+    },
+    {
+      "id": "T1213.003",
+      "count": 1
+    },
+    {
+      "id": "T1222.001",
+      "count": 1
+    },
+    {
+      "id": "T1484",
+      "count": 1
+    },
+    {
+      "id": "T1484.001",
+      "count": 1
+    },
+    {
+      "id": "T1485",
+      "count": 1
+    },
+    {
+      "id": "T1491.002",
+      "count": 1
+    },
+    {
+      "id": "T1496",
+      "count": 1
+    },
+    {
+      "id": "T1497",
+      "count": 1
+    },
+    {
+      "id": "T1497.001",
+      "count": 1
+    },
+    {
+      "id": "T1505",
+      "count": 1
+    },
+    {
+      "id": "T1505.003",
+      "count": 1
+    },
+    {
+      "id": "T1505.004",
+      "count": 1
+    },
+    {
+      "id": "T1518",
+      "count": 1
+    },
+    {
+      "id": "T1529",
+      "count": 1
+    },
+    {
+      "id": "T1530",
+      "count": 1
+    },
+    {
+      "id": "T1534",
+      "count": 1
+    },
+    {
+      "id": "T1537",
+      "count": 1
+    },
+    {
+      "id": "T1538",
+      "count": 1
+    },
+    {
+      "id": "T1543",
+      "count": 1
+    },
+    {
+      "id": "T1543.004",
+      "count": 1
+    },
+    {
+      "id": "T1546",
+      "count": 1
+    },
+    {
+      "id": "T1546.003",
+      "count": 1
+    },
+    {
+      "id": "T1546.004",
+      "count": 1
+    },
+    {
+      "id": "T1546.008",
+      "count": 1
+    },
+    {
+      "id": "T1546.012",
+      "count": 1
+    },
+    {
+      "id": "T1546.015",
+      "count": 1
+    },
+    {
+      "id": "T1547",
+      "count": 1
+    },
+    {
+      "id": "T1547.002",
+      "count": 1
+    },
+    {
+      "id": "T1547.005",
+      "count": 1
+    },
+    {
+      "id": "T1548",
+      "count": 1
+    },
+    {
+      "id": "T1548.002",
+      "count": 1
+    },
+    {
+      "id": "T1550",
+      "count": 1
+    },
+    {
+      "id": "T1550.001",
+      "count": 1
+    },
+    {
+      "id": "T1550.002",
+      "count": 1
+    },
+    {
+      "id": "T1554",
+      "count": 1
+    },
+    {
+      "id": "T1556",
+      "count": 1
+    },
+    {
+      "id": "T1556.006",
+      "count": 1
+    },
+    {
+      "id": "T1556.009",
+      "count": 1
+    },
+    {
+      "id": "T1559",
+      "count": 1
+    },
+    {
+      "id": "T1560",
+      "count": 1
+    },
+    {
+      "id": "T1560.001",
+      "count": 1
+    },
+    {
+      "id": "T1560.002",
+      "count": 1
+    },
+    {
+      "id": "T1565",
+      "count": 1
+    },
+    {
+      "id": "T1565.001",
+      "count": 1
+    },
+    {
+      "id": "T1566.002",
+      "count": 1
+    },
+    {
+      "id": "T1566.003",
+      "count": 1
+    },
+    {
+      "id": "T1567",
+      "count": 1
+    },
+    {
+      "id": "T1567.001",
+      "count": 1
+    },
+    {
+      "id": "T1568.002",
+      "count": 1
+    },
+    {
+      "id": "T1569",
+      "count": 1
+    },
+    {
+      "id": "T1569.002",
+      "count": 1
+    },
+    {
+      "id": "T1571",
+      "count": 1
+    },
+    {
+      "id": "T1573",
+      "count": 1
+    },
+    {
+      "id": "T1573.001",
+      "count": 1
+    },
+    {
+      "id": "T1574",
+      "count": 1
+    },
+    {
+      "id": "T1574.001",
+      "count": 1
+    },
+    {
+      "id": "T1574.011",
+      "count": 1
+    },
+    {
+      "id": "T1578",
+      "count": 1
+    },
+    {
+      "id": "T1580",
+      "count": 1
+    },
+    {
+      "id": "T1583",
+      "count": 1
+    },
+    {
+      "id": "T1583.003",
+      "count": 1
+    },
+    {
+      "id": "T1584",
+      "count": 1
+    },
+    {
+      "id": "T1585",
+      "count": 1
+    },
+    {
+      "id": "T1585.002",
+      "count": 1
+    },
+    {
+      "id": "T1587",
+      "count": 1
+    },
+    {
+      "id": "T1587.003",
+      "count": 1
+    },
+    {
+      "id": "T1588",
+      "count": 1
+    },
+    {
+      "id": "T1588.003",
+      "count": 1
+    },
+    {
+      "id": "T1588.004",
+      "count": 1
+    },
+    {
+      "id": "T1588.007",
+      "count": 1
+    },
+    {
+      "id": "T1590.002",
+      "count": 1
+    },
+    {
+      "id": "T1595",
+      "count": 1
+    },
+    {
+      "id": "T1595.003",
+      "count": 1
+    },
+    {
+      "id": "T1598",
+      "count": 1
+    },
+    {
+      "id": "T1602",
+      "count": 1
+    },
+    {
+      "id": "T1602.001",
+      "count": 1
+    },
+    {
+      "id": "T1602.002",
+      "count": 1
+    },
+    {
+      "id": "T1608",
+      "count": 1
+    },
+    {
+      "id": "T1608.001",
+      "count": 1
+    },
+    {
+      "id": "T1608.002",
+      "count": 1
+    },
+    {
+      "id": "T1608.003",
+      "count": 1
+    },
+    {
+      "id": "T1608.004",
+      "count": 1
+    },
+    {
+      "id": "T1608.005",
+      "count": 1
+    },
+    {
+      "id": "T1608.006",
+      "count": 1
+    },
+    {
+      "id": "T1613",
+      "count": 1
+    },
+    {
+      "id": "T1614",
+      "count": 1
+    },
+    {
+      "id": "T1614.001",
+      "count": 1
+    },
+    {
+      "id": "T1615",
+      "count": 1
+    },
+    {
+      "id": "T1619",
+      "count": 1
+    },
+    {
+      "id": "T1622",
+      "count": 1
+    },
+    {
+      "id": "T1649",
+      "count": 1
+    },
+    {
+      "id": "T1652",
+      "count": 1
+    },
+    {
+      "id": "T1654",
+      "count": 1
+    },
+    {
+      "id": "T1657",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2017-11882",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-1472",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-3529",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-26855",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-28482",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-34527",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-40444",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-42278",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-42287",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-42321",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-44228",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-45046",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-45105",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2022-26923",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2022-30190",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-41040",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-41082",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-0669",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-23397",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2023-27532",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-28252",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-36884",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-38831",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-42115",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2023-46805",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-48788",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-4966",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-0012",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-1709",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-21887",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-21893",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-21983",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2024-23108",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2024-23109",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2024-23113",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2024-24919",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-25600",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2024-26169",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-3400",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-37085",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-47575",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2024-9474",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2026-21236",
+      "kev": false,
+      "ransomware": null
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2022-Q2",
+      "count": 8
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 4
+    },
+    {
+      "quarter": "2022-Q4",
+      "count": 4
+    },
+    {
+      "quarter": "2023-Q1",
+      "count": 4
+    },
+    {
+      "quarter": "2023-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q2",
+      "count": 6
+    },
+    {
+      "quarter": "2024-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2024-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2025-Q1",
+      "count": 14
+    },
+    {
+      "quarter": "2025-Q2",
+      "count": 6
+    },
+    {
+      "quarter": "2026-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "68b011307454a55f51531b244c7e289f6a406658",
+    "6a6519ae34ff623e413cbb29973c04b2085dc256",
+    "485ca080f5d6a75a30057719950065ba80882705",
+    "376d1c6ea268ff8c5558635183fe582a9c20b664",
+    "c5929bca13854a4668823cdf25095d2deefe87ff",
+    "8a81015fdb3bbab6132b580f1cd2630f6963aaac",
+    "202fca2e47663b97aab4968478b48a779a100a67",
+    "358b9454f7213e866c0a93d744b911c9e5aa3201",
+    "b18e613a679661753aefc2b5e84ac8bae9ceec95",
+    "8aff6ae61e5a1d033be605062591cf45e7673814",
+    "faf6dcf1cd6cd82f5d9cde2214eb5a55981f74f7",
+    "a6872c211c58cd0d0c0ee5b2b8234cae5530a544",
+    "9a9850004e3d2b771d2d40881c31475e033a0d58",
+    "0cfda6c5bb896846b2d98a2d6f150b45afa7866a",
+    "81e2bacff84095002321e159120e309d989d3fc8",
+    "9584f894853c32af1a6ccef60a52ef7a16cccdbf",
+    "e5823575ee92d6811cdb515b6e45bac02600636d",
+    "1014fa3191c4dfd82439872ebf2a8cafda7ef6b5",
+    "499e525c6995736b6918eba3760f8210c1e4291e",
+    "d75f5d4fd9b5e6b28be2351193138c2e449f95cb",
+    "85bc8992c6e30f3420a14d18e477242505872058",
+    "112187b03b33e6e8e537b80e95b66b1f0262ed25",
+    "497cf305c68c976b0f8288753816fdabde0c35ae",
+    "dd86612e87e7413ae7e537afcf44d4c9283cc5d4",
+    "2c84786d03a17afeb8e76ba55449ad285045ba8c",
+    "11aff090bd59803ed7a2e8cf4eab0a9233176e67",
+    "ed44daa0c6cc00a02656cecaae622327972cedf3",
+    "a0e2d5f3c4799add5cdff865019e2822015eb71f",
+    "b5ec59b0f99e09f63ec92a4c9ffaa86aa0eef6e3",
+    "55076069098ed4fc83e712519d75d1ac38ab96b6",
+    "aaf0612699ffb591f457564332a92b2b7754ec46",
+    "0589da164ae9a718b325fdc187745159bbaa5397",
+    "a300dd52dd9e5b3082b657768eaf75e67a3f8655",
+    "0abbe3a5e07241fb6f26cafbb7b6f14e05ded38d",
+    "3141e9c74c5c86e8a290f65cc0cd897d797f0537",
+    "c7537abb3de8b03040c12f781c62092851b273aa",
+    "c5b7e04d14bb142f347d50e9f610991a74a6657f",
+    "6141f762d07d0e653a21844c62434306b1bedbdd",
+    "4b3eddafe4361bc33925007f4cb5dac8fe9adb6b",
+    "2f605b35e8edb87b881a3ad3c5f20a59d2052e73",
+    "939f9abd69d090ff0ff48213605ea746c148d19c",
+    "b3e5c608b7fba1f36722b8622aae8c71af5b5db9",
+    "743814c804450067041e2596ceeffcb16d3158c2",
+    "1412d8a5221a15e39b57dad5dc9255194acdff84",
+    "29386e8af2bb845a1ae10bb2ec76ef5b587f302d",
+    "4e9dc573271c5c7df07b5c4835bf52f88f3f357c",
+    "842cdd85aa6e2693e9a84eade221dc4f53232126",
+    "d0b56b2be8cb2e38205e7dcac81d110f18b3a136",
+    "fe6fd8c3c183131ae3ec8cc7a4a2789afefec66a",
+    "14341ad9303f5948fd2311cf84f3dd2d59012afd",
+    "583bbebb37a80fdf52134f10ef31bd02dd148067",
+    "6d9afcf3dfc130ce1069d8165df1da352694597d",
+    "45ccb349fa435b093b58c36613b6a683bd90049f",
+    "41b14b0acaf70aa02a6004fdb3880ad89f2faaea",
+    "698ff8977a18d9c466c65698cb5986b92d62c05b"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

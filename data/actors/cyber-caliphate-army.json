@@ -1,0 +1,126 @@
+{
+  "id": "cyber-caliphate-army",
+  "name": "Cyber Caliphate Army",
+  "aliases": [
+    {
+      "value": "Cyber Caliphate Army",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Islamic State Hacking Division",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "CCA",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "United Cyber Caliphate",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UUC",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "CyberCaliphate",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Cyber Caliphate Army (CCA)",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "United Cyber Caliphate (UCC)",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "ATK 133",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "TAG-CT6",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Sabotage and destruction",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Australia",
+        "source": "etda"
+      },
+      {
+        "value": "Canada",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2015-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "paper:1506306551185339"
+  ],
+  "conflicts": [],
+  "evidence_count": 7
+}

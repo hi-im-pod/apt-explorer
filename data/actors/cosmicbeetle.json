@@ -1,0 +1,144 @@
+{
+  "id": "cosmicbeetle",
+  "name": "CosmicBeetle",
+  "aliases": [
+    {
+      "value": "CosmicBeetle",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "SpaceColon",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [
+    {
+      "id": "T1059.001",
+      "count": 1
+    },
+    {
+      "id": "T1059.003",
+      "count": 1
+    },
+    {
+      "id": "T1078",
+      "count": 1
+    },
+    {
+      "id": "T1110.001",
+      "count": 1
+    },
+    {
+      "id": "T1136.001",
+      "count": 1
+    },
+    {
+      "id": "T1140",
+      "count": 1
+    },
+    {
+      "id": "T1190",
+      "count": 1
+    },
+    {
+      "id": "T1204",
+      "count": 1
+    },
+    {
+      "id": "T1212",
+      "count": 1
+    },
+    {
+      "id": "T1485",
+      "count": 1
+    },
+    {
+      "id": "T1486",
+      "count": 1
+    },
+    {
+      "id": "T1583.001",
+      "count": 1
+    },
+    {
+      "id": "T1587.001",
+      "count": 1
+    },
+    {
+      "id": "T1588.001",
+      "count": 1
+    },
+    {
+      "id": "T1588.002",
+      "count": 1
+    },
+    {
+      "id": "T1588.005",
+      "count": 1
+    },
+    {
+      "id": "T1590.005",
+      "count": 1
+    },
+    {
+      "id": "T1595.002",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2017-0144",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-1472",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-42278",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-42287",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-42475",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-27532",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2024-Q3",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "a740c1b4eaad06e9ed274fb516a40a636672415b"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

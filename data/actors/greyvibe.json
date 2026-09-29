@@ -1,0 +1,53 @@
+{
+  "id": "greyvibe",
+  "name": "GreyVibe",
+  "aliases": [
+    {
+      "value": "GreyVibe",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "RU",
+      "source": "misp"
+    },
+    {
+      "value": "RU",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "LegionRelay",
+      "source": "malpedia"
+    },
+    {
+      "name": "PhantomRelay",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "fd1312beb750f6210a8d4251c11b10229621f265"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

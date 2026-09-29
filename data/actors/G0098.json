@@ -1,0 +1,614 @@
+{
+  "id": "G0098",
+  "name": "BlackTech",
+  "aliases": [
+    {
+      "value": "BlackTech",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Palmerworm",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "T-APT-03",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Red Djinn",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Manga Taurus",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Earth Hundun",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Canary Typhoon",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "CIRCUIT PANDA",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Temp.Overboard",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "HUAPI",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Mobwork",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "CAVERN CASTLE",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "RADIO PANDA",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Shrouded Crossbow",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Circuit Panda",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Radio Panda",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "TEMP.Overboard",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "etda"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "China",
+        "source": "etda"
+      },
+      {
+        "value": "Hong Kong",
+        "source": "etda"
+      },
+      {
+        "value": "Japan",
+        "source": "etda"
+      },
+      {
+        "value": "Taiwan",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Construction",
+        "source": "etda"
+      },
+      {
+        "value": "Financial",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Healthcare",
+        "source": "etda"
+      },
+      {
+        "value": "Media",
+        "source": "etda"
+      },
+      {
+        "value": "Technology",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Flagpro",
+      "source": "attack"
+    },
+    {
+      "name": "Kivars",
+      "source": "attack"
+    },
+    {
+      "name": "PLEAD",
+      "source": "attack"
+    },
+    {
+      "name": "PsExec",
+      "source": "attack"
+    },
+    {
+      "name": "TSCookie",
+      "source": "attack"
+    },
+    {
+      "name": "Waterbear",
+      "source": "attack"
+    },
+    {
+      "name": "BLUETHER",
+      "source": "malpedia"
+    },
+    {
+      "name": "Bifrost",
+      "source": "malpedia"
+    },
+    {
+      "name": "Flagpro",
+      "source": "malpedia"
+    },
+    {
+      "name": "Hipid",
+      "source": "malpedia"
+    },
+    {
+      "name": "IconDown",
+      "source": "malpedia"
+    },
+    {
+      "name": "PLEAD",
+      "source": "malpedia"
+    },
+    {
+      "name": "SPIDERPIG RAT",
+      "source": "malpedia"
+    },
+    {
+      "name": "SelfMake Loader",
+      "source": "malpedia"
+    },
+    {
+      "name": "TSCookie",
+      "source": "malpedia"
+    },
+    {
+      "name": "Waterbear",
+      "source": "malpedia"
+    },
+    {
+      "name": "bifrose",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1021.004",
+    "T1036.002",
+    "T1046",
+    "T1106",
+    "T1190",
+    "T1203",
+    "T1204.001",
+    "T1204.002",
+    "T1566.001",
+    "T1566.002",
+    "T1574.001",
+    "T1588.002",
+    "T1588.003",
+    "T1588.004"
+  ],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2012-0158",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2014-6352",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2015-5119",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-0144",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-0199",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-12824",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2017-15399",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2017-5638",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-7269",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-8291",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-2628",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-0604",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-0708",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-11510",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-18187",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-9489",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2020-1938",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-1472",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-1473",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-20021",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-20022",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-20023",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-2135",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-21975",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-21983",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-22893",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-28149",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-28152",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-28482",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-3019",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2022-1040",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2022-1388",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-27518",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2022-41328",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2022-42475",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-20867",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2023-2868",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-4747",
+      "kev": false,
+      "ransomware": null
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2014-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 4
+    },
+    {
+      "quarter": "2018-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2018-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q2",
+      "count": 3
+    },
+    {
+      "quarter": "2019-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2019-Q4",
+      "count": 3
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 4
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 4
+    },
+    {
+      "quarter": "2020-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2020-Q4",
+      "count": 3
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2021-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 5
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "3e2c93a53f0884a2084346fc97ff4dadfc79a05a",
+    "88a4cfd8e88bd252a570ccceadd2cec23f6ef9e2",
+    "0932877395a2dfe8ef29853de15071e88306878d",
+    "011d85f9602c8af14d9cf5bb0721633c1702f8bc",
+    "eefe398c114ddbed11c97fdc1ab2d684b4193d0e",
+    "df14862e85f709fbba2b4c9a66ed9cf590baf6c9",
+    "d4401ff6a8861b612745ed4acaca8093fb548ed8",
+    "c759a2089f71dd4809d180f16bff0115e96477ea",
+    "393031d781b28cf189c08ec67fb235f912396acb",
+    "d3a9b52a250e4abc5d6e92b3033dcc832e3ce269",
+    "f7f4af75a1514fd3ede9f55d515306ef022c940a",
+    "b29056a7d71a0119d0296a203efe53692c584726",
+    "afbdece55f3c92223b9e8259f93129d6c91ba9c0",
+    "abbc5f734da546dc11ba430aac88119e74b92082",
+    "cd98ff1cf9217495ce3ccc27c189298278841548",
+    "cb5e5cc82efdf44699b86d0eb3385955f209043b",
+    "f7eced39802e8636248b5e0caaf653f00798f91a",
+    "3efa9d0258be1347593ef75ef706181476703351",
+    "57e8d714b5d438ce9e92de0b265e73d7e9f44956",
+    "b7f33ecd7247d20fa23e11250864ab4ccae1f1f2",
+    "6a69ee59f3367889738d04e4802efb3a166ca2d8",
+    "3bdd11d0b197ebbc1542554c51f8796f7c3477a2",
+    "a34f8a68f18d5f0fab426f07d5c837e63e7b8ffc",
+    "61251cc065cb364dbba4585d1d97b0d81062cfc1",
+    "4d2a889ed7776b47a5816895b7f3bedc76491848",
+    "6f75f06c26f671d30e5941ae089af416dc96193a",
+    "1ccd9bed77a597e46da58c0c6c8bd2daba7f633c",
+    "9d6b4577326ac39d5d3bdc410b55ed6fc43274c3",
+    "21c7a362a59f4f75ae9b6c3ff24c56376ef30739",
+    "5007fb82a883c1ba9b478e5e613d028a4538c5b0",
+    "fa9bd0d9a3cb816a856162e187080f5acc63b35c",
+    "f4bdbbe370f56e03edfab1e83985016508bfe76e",
+    "38526774d000095e8b66228e7e1751c06aef5ece",
+    "1b9d20cd96eca138bf6e4345f5a4d649e9d7f951",
+    "e73fd8b9d56f1a9d6fa037f3df40f5f8a25ad5c4",
+    "02581a19776565cd2db685843cdeeb08d8cdeff3",
+    "a0fe7b3d93f31f4b3c43555c0a853e2ab892bd8d",
+    "c7e71326d026cc46c7eb49de77a8193fe131afbb",
+    "642c735584a0d3a74c18024a049b0680aaf21adf",
+    "f53aa3d8c7b6f9185fd3d7957aeb4d6cd1192ffb",
+    "paper:Analysis%20of%20BlackTech's%20latest%20APT%20attack",
+    "359be5d4f63e21ff56c51dd8924b9f9146b2170d",
+    "df18330841082d967b74c11762561c16666ed9a2",
+    "e1d483cd78bc58a07dfd5c56e36cb9fdd4ced452",
+    "425756a436b47fb30bbe7e834928dd1a8a9e6ce6",
+    "b5c45a57d80b706004fa9966a59b9b3486457817",
+    "f4b6fa581d2a5c22cc93842511c6d45bcbe37aa7"
+  ],
+  "conflicts": [],
+  "evidence_count": 28
+}

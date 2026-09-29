@@ -1,0 +1,40 @@
+{
+  "id": "cl-sta-1009",
+  "name": "CL-STA-1009",
+  "aliases": [
+    {
+      "value": "CL-STA-1009",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "Airstalk",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2025-Q4",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "38595b9f8616d668140c579d598e002cf9c84c20"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

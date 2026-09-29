@@ -1,0 +1,44 @@
+{
+  "id": "gold-burlap",
+  "name": "GOLD BURLAP",
+  "aliases": [
+    {
+      "value": "GOLD BURLAP",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "CYBORG SPIDER",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": [
+      {
+        "value": "Healthcare",
+        "source": "misp"
+      },
+      {
+        "value": "Healthcare",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 2
+}

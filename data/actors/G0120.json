@@ -1,0 +1,337 @@
+{
+  "id": "G0120",
+  "name": "Evilnum",
+  "aliases": [
+    {
+      "value": "Evilnum",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "DeathStalker",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Jointworm",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TA4563",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "EvilNum",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "KNOCKOUT SPIDER",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Knockout Spider",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Deceptikons",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Argentina",
+        "source": "etda"
+      },
+      {
+        "value": "China",
+        "source": "etda"
+      },
+      {
+        "value": "Cyprus",
+        "source": "etda"
+      },
+      {
+        "value": "India",
+        "source": "etda"
+      },
+      {
+        "value": "Israel",
+        "source": "etda"
+      },
+      {
+        "value": "Jordan",
+        "source": "etda"
+      },
+      {
+        "value": "Lebanon",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "etda"
+      },
+      {
+        "value": "Switzerland",
+        "source": "etda"
+      },
+      {
+        "value": "Taiwan",
+        "source": "etda"
+      },
+      {
+        "value": "Türkiye",
+        "source": "etda"
+      },
+      {
+        "value": "United Arab Emirates",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "Albania",
+        "source": "etda"
+      },
+      {
+        "value": "Australia",
+        "source": "etda"
+      },
+      {
+        "value": "Belgium",
+        "source": "etda"
+      },
+      {
+        "value": "Canada",
+        "source": "etda"
+      },
+      {
+        "value": "Italy",
+        "source": "etda"
+      },
+      {
+        "value": "Ukraine",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Financial",
+        "source": "etda"
+      },
+      {
+        "value": "law firms",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "EVILNUM",
+      "source": "attack"
+    },
+    {
+      "name": "LaZagne",
+      "source": "attack"
+    },
+    {
+      "name": "More_eggs",
+      "source": "attack"
+    },
+    {
+      "name": "Janicab",
+      "source": "malpedia"
+    },
+    {
+      "name": "PowerPepper",
+      "source": "malpedia"
+    },
+    {
+      "name": "Stormwind",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1059.007",
+    "T1070.004",
+    "T1105",
+    "T1204.001",
+    "T1219.002",
+    "T1497.001",
+    "T1539",
+    "T1548.002",
+    "T1555",
+    "T1566.002",
+    "T1574.001"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1005",
+      "count": 1
+    },
+    {
+      "id": "T1041",
+      "count": 1
+    },
+    {
+      "id": "T1070",
+      "count": 1
+    },
+    {
+      "id": "T1074",
+      "count": 1
+    },
+    {
+      "id": "T1102",
+      "count": 1
+    },
+    {
+      "id": "T1105",
+      "count": 1
+    },
+    {
+      "id": "T1112",
+      "count": 1
+    },
+    {
+      "id": "T1204",
+      "count": 1
+    },
+    {
+      "id": "T1539",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2012-0158",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-1182",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2020-0986",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-1380",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-31979",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-33771",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2013-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2015-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q3",
+      "count": 5
+    },
+    {
+      "quarter": "2020-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 5
+    },
+    {
+      "quarter": "2022-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "1ec7d357992277b87b776d231920ee1e57a0daaa",
+    "26ece7ef66cebd696bc7b333f2296d36d3dfb343",
+    "f2685babe8492778b57591afc206415cb22c6752",
+    "03dcaed4682e313126373ca495588fbabc77c812",
+    "13437464984e3327e18ed864662731d66bdc8236",
+    "b32bfacdbba0816f0138e21186178556ae8b3efa",
+    "114e211cfd0dcb6f34f0481d567f5ba7a25ba957",
+    "eb09d6c749a3a9c2933403d736ac7c18ad73593f",
+    "611e8a04fc3fb54fb5b6f6a2da37885a6672dd5e",
+    "aeeec3e82bad1f1e8973a715f3c9dc737edb92f0",
+    "a61dd692af601982998502a3f199395a118ed59b",
+    "15d4cbcd158a1d481d50df98c0bab7c7320b9204",
+    "570b18f11507f076c46b8428c1ebcb9dbe685bf9",
+    "b2431a336059c7dca596d6f2195b08f084129dc6",
+    "ff1271a4190eb928bbafe0c72a111c10149de009",
+    "abdebb50201dd5cc1667325c5ee413e31b23c0f2",
+    "852f6760619e6c592285b1c61259658a623da620",
+    "9edab33dbc5a2e6710a911dc1fb6e8d53d17a6e4",
+    "ee7f8a7daf18e32bae32566e1d134209836f9d95"
+  ],
+  "conflicts": [],
+  "evidence_count": 11
+}

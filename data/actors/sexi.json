@@ -1,0 +1,42 @@
+{
+  "id": "sexi",
+  "name": "SEXi",
+  "aliases": [
+    {
+      "value": "SEXi",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "SEXi",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2024-Q2",
+      "count": 3
+    }
+  ],
+  "reports": [
+    "811e6bd2f4b0108b5715877ce62ca9838a5e5d25",
+    "3ae6503272e330433f17d24cd2a0caf4f327ba5d",
+    "bee62cc4e2e0809f6967de24e93e637e442ccd67"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

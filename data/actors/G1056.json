@@ -1,0 +1,382 @@
+{
+  "id": "G1056",
+  "name": "TeamPCP",
+  "aliases": [
+    {
+      "value": "TeamPCP",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "ShellForce",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "DeadCatx3",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Altered Spider",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "PCPcat",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "CanisterWorm",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "PCPCat",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "SHADOW-WATER-058",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "UNC6780",
+      "sources": [
+        "attack"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "CanisterWorm",
+      "source": "attack"
+    },
+    {
+      "name": "Mini Shai-Hulud",
+      "source": "attack"
+    },
+    {
+      "name": "TeamPCP Cloud Stealer",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1005",
+    "T1027.003",
+    "T1036.005",
+    "T1059.004",
+    "T1059.006",
+    "T1059.007",
+    "T1059.013",
+    "T1078",
+    "T1078.004",
+    "T1098",
+    "T1105",
+    "T1176.002",
+    "T1190",
+    "T1195.001",
+    "T1485",
+    "T1486",
+    "T1528",
+    "T1543.002",
+    "T1546.016",
+    "T1547.001",
+    "T1550.001",
+    "T1552.004",
+    "T1553.002",
+    "T1555.006",
+    "T1564.001",
+    "T1583",
+    "T1583.001",
+    "T1583.004",
+    "T1583.006",
+    "T1585.001",
+    "T1587.001",
+    "T1608.001",
+    "T1657",
+    "T1677",
+    "T1683.001",
+    "T1684.001"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1041",
+      "count": 3
+    },
+    {
+      "id": "T1059.006",
+      "count": 3
+    },
+    {
+      "id": "T1102.001",
+      "count": 3
+    },
+    {
+      "id": "T1005",
+      "count": 2
+    },
+    {
+      "id": "T1021.007",
+      "count": 2
+    },
+    {
+      "id": "T1027",
+      "count": 2
+    },
+    {
+      "id": "T1070.004",
+      "count": 2
+    },
+    {
+      "id": "T1071.001",
+      "count": 2
+    },
+    {
+      "id": "T1078",
+      "count": 2
+    },
+    {
+      "id": "T1195.001",
+      "count": 2
+    },
+    {
+      "id": "T1485",
+      "count": 2
+    },
+    {
+      "id": "T1552.001",
+      "count": 2
+    },
+    {
+      "id": "T1567.001",
+      "count": 2
+    },
+    {
+      "id": "T1613",
+      "count": 2
+    },
+    {
+      "id": "T1027.014",
+      "count": 1
+    },
+    {
+      "id": "T1027.016",
+      "count": 1
+    },
+    {
+      "id": "T1059",
+      "count": 1
+    },
+    {
+      "id": "T1059.004",
+      "count": 1
+    },
+    {
+      "id": "T1059.007",
+      "count": 1
+    },
+    {
+      "id": "T1074",
+      "count": 1
+    },
+    {
+      "id": "T1090.003",
+      "count": 1
+    },
+    {
+      "id": "T1119",
+      "count": 1
+    },
+    {
+      "id": "T1129",
+      "count": 1
+    },
+    {
+      "id": "T1195.002",
+      "count": 1
+    },
+    {
+      "id": "T1199",
+      "count": 1
+    },
+    {
+      "id": "T1497.001",
+      "count": 1
+    },
+    {
+      "id": "T1526",
+      "count": 1
+    },
+    {
+      "id": "T1528",
+      "count": 1
+    },
+    {
+      "id": "T1530",
+      "count": 1
+    },
+    {
+      "id": "T1543.002",
+      "count": 1
+    },
+    {
+      "id": "T1547",
+      "count": 1
+    },
+    {
+      "id": "T1547.001",
+      "count": 1
+    },
+    {
+      "id": "T1552",
+      "count": 1
+    },
+    {
+      "id": "T1552.005",
+      "count": 1
+    },
+    {
+      "id": "T1552.007",
+      "count": 1
+    },
+    {
+      "id": "T1564.006",
+      "count": 1
+    },
+    {
+      "id": "T1566",
+      "count": 1
+    },
+    {
+      "id": "T1567",
+      "count": 1
+    },
+    {
+      "id": "T1573.002",
+      "count": 1
+    },
+    {
+      "id": "T1580",
+      "count": 1
+    },
+    {
+      "id": "T1587.001",
+      "count": 1
+    },
+    {
+      "id": "T1587.004",
+      "count": 1
+    },
+    {
+      "id": "T1588.002",
+      "count": 1
+    },
+    {
+      "id": "T1588.005",
+      "count": 1
+    },
+    {
+      "id": "T1588.006",
+      "count": 1
+    },
+    {
+      "id": "T1588.007",
+      "count": 1
+    },
+    {
+      "id": "T1591.002",
+      "count": 1
+    },
+    {
+      "id": "T1591.004",
+      "count": 1
+    },
+    {
+      "id": "T1592.001",
+      "count": 1
+    },
+    {
+      "id": "T1609",
+      "count": 1
+    },
+    {
+      "id": "T1657",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2025-55182",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2026-33634",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-45321",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2026-48027",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2026-Q3",
+      "count": 16
+    }
+  ],
+  "reports": [
+    "053f4ecb0184c079715ffd24ab2d434c9f82bc5a",
+    "151bf563f232f0cd8cfd95826f9c34b04f067848",
+    "2206672f013450aa8ad49eefee84da5af92140be",
+    "3a3be7db51b80f49b5c80715c787ee9eab89dead",
+    "501002a97254d8054e52af345fcb1e803a5c2519",
+    "59ad993944484db74a3a1df4c99ba8ea708bab8b",
+    "756b7b15d03dfbf2fe61d85ce92f4f39fe3681dd",
+    "7a26b83049da5072036f9bc2751b72abd5d37e55",
+    "8be68712ef857d5fb7bbc43aa1081c965990efe1",
+    "93e974258dd3f8d0bc17fc30ac2979a7583a448e",
+    "b2386bef6e70b932af44e6bb3f3d3f1cc3cc69ec",
+    "b9dc8c67f6e44e218cfb6ac0c65c640015104916",
+    "e7dc8596f0adebc64c2fa54117c606641f849e00",
+    "f0f10bb200435ea9c0c52727989150fc90807973",
+    "fb9f8e4244b79f06d055a4f4d72d538e61d4bbb0",
+    "cf10f938c88f1abf5b505032183a99625845c131"
+  ],
+  "conflicts": [],
+  "evidence_count": 10
+}

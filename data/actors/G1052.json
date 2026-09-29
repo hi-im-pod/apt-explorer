@@ -1,0 +1,946 @@
+{
+  "id": "G1052",
+  "name": "Contagious Interview",
+  "aliases": [
+    {
+      "value": "Contagious Interview",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "PurpleBravo",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Wagemole",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Nickel Tapestry",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UNC5267",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "WaterPlum",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Tenacious Pungsan",
+      "sources": [
+        "attack",
+        "etda"
+      ]
+    },
+    {
+      "value": "WageMole",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Famous Chollima",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Storm-1877",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Void Dokkaebi",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "DeceptiveDevelopment",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Gwisin Gang",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "DEV#POPPER",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "TAG-121",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Operation Contagious Interview",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Storm-0287",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Jasper Sleet",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "KP",
+      "source": "misp"
+    },
+    {
+      "value": "KP",
+      "source": "etda"
+    },
+    {
+      "value": "KP",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "BeaverTail",
+      "source": "attack"
+    },
+    {
+      "name": "HexEval Loader",
+      "source": "attack"
+    },
+    {
+      "name": "InvisibleFerret",
+      "source": "attack"
+    },
+    {
+      "name": "XORIndex Loader",
+      "source": "attack"
+    },
+    {
+      "name": "AkdoorTea",
+      "source": "malpedia"
+    },
+    {
+      "name": "BeaverTail",
+      "source": "malpedia"
+    },
+    {
+      "name": "Beavertail",
+      "source": "malpedia"
+    },
+    {
+      "name": "FlexibleFerret",
+      "source": "malpedia"
+    },
+    {
+      "name": "FriendlyFerret",
+      "source": "malpedia"
+    },
+    {
+      "name": "FrostyFerret",
+      "source": "malpedia"
+    },
+    {
+      "name": "GolangGhost",
+      "source": "malpedia"
+    },
+    {
+      "name": "InvisibleFerret",
+      "source": "malpedia"
+    },
+    {
+      "name": "JADESNOW",
+      "source": "malpedia"
+    },
+    {
+      "name": "OtterCandy",
+      "source": "malpedia"
+    },
+    {
+      "name": "OtterCookie",
+      "source": "malpedia"
+    },
+    {
+      "name": "PylangGhost",
+      "source": "malpedia"
+    },
+    {
+      "name": "Tropidoor",
+      "source": "malpedia"
+    },
+    {
+      "name": "TsunamiKit",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1027.010",
+    "T1027.013",
+    "T1036",
+    "T1041",
+    "T1048.003",
+    "T1059.003",
+    "T1059.004",
+    "T1059.005",
+    "T1059.006",
+    "T1059.007",
+    "T1070.004",
+    "T1071.003",
+    "T1082",
+    "T1083",
+    "T1090",
+    "T1204.001",
+    "T1204.002",
+    "T1204.004",
+    "T1204.005",
+    "T1219.002",
+    "T1480",
+    "T1497",
+    "T1543.001",
+    "T1546.004",
+    "T1547.001",
+    "T1547.013",
+    "T1555.001",
+    "T1566.003",
+    "T1567",
+    "T1567.002",
+    "T1571",
+    "T1573.001",
+    "T1583",
+    "T1583.001",
+    "T1583.003",
+    "T1583.006",
+    "T1585",
+    "T1585.001",
+    "T1585.002",
+    "T1587",
+    "T1587.001",
+    "T1588.002",
+    "T1588.007",
+    "T1589",
+    "T1593",
+    "T1593.001",
+    "T1593.003",
+    "T1608.001",
+    "T1657",
+    "T1681",
+    "T1683.001",
+    "T1683.002",
+    "T1684.001",
+    "T1685"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1082",
+      "count": 14
+    },
+    {
+      "id": "T1041",
+      "count": 13
+    },
+    {
+      "id": "T1059.007",
+      "count": 11
+    },
+    {
+      "id": "T1083",
+      "count": 10
+    },
+    {
+      "id": "T1204.002",
+      "count": 10
+    },
+    {
+      "id": "T1555.003",
+      "count": 10
+    },
+    {
+      "id": "T1105",
+      "count": 9
+    },
+    {
+      "id": "T1005",
+      "count": 8
+    },
+    {
+      "id": "T1059.006",
+      "count": 8
+    },
+    {
+      "id": "T1027",
+      "count": 7
+    },
+    {
+      "id": "T1027.013",
+      "count": 7
+    },
+    {
+      "id": "T1071.001",
+      "count": 7
+    },
+    {
+      "id": "T1119",
+      "count": 7
+    },
+    {
+      "id": "T1195.002",
+      "count": 7
+    },
+    {
+      "id": "T1217",
+      "count": 7
+    },
+    {
+      "id": "T1555.001",
+      "count": 7
+    },
+    {
+      "id": "T1657",
+      "count": 7
+    },
+    {
+      "id": "T1059",
+      "count": 6
+    },
+    {
+      "id": "T1608.001",
+      "count": 6
+    },
+    {
+      "id": "T1546.016",
+      "count": 5
+    },
+    {
+      "id": "T1056.001",
+      "count": 4
+    },
+    {
+      "id": "T1566.003",
+      "count": 4
+    },
+    {
+      "id": "T1571",
+      "count": 4
+    },
+    {
+      "id": "T1053.005",
+      "count": 3
+    },
+    {
+      "id": "T1059.003",
+      "count": 3
+    },
+    {
+      "id": "T1070.004",
+      "count": 3
+    },
+    {
+      "id": "T1115",
+      "count": 3
+    },
+    {
+      "id": "T1547.001",
+      "count": 3
+    },
+    {
+      "id": "T1555",
+      "count": 3
+    },
+    {
+      "id": "T1560",
+      "count": 3
+    },
+    {
+      "id": "T1566.001",
+      "count": 3
+    },
+    {
+      "id": "T1566.002",
+      "count": 3
+    },
+    {
+      "id": "T1027.010",
+      "count": 2
+    },
+    {
+      "id": "T1033",
+      "count": 2
+    },
+    {
+      "id": "T1036",
+      "count": 2
+    },
+    {
+      "id": "T1036.005",
+      "count": 2
+    },
+    {
+      "id": "T1048",
+      "count": 2
+    },
+    {
+      "id": "T1059.001",
+      "count": 2
+    },
+    {
+      "id": "T1071.002",
+      "count": 2
+    },
+    {
+      "id": "T1078",
+      "count": 2
+    },
+    {
+      "id": "T1095",
+      "count": 2
+    },
+    {
+      "id": "T1102.001",
+      "count": 2
+    },
+    {
+      "id": "T1132",
+      "count": 2
+    },
+    {
+      "id": "T1140",
+      "count": 2
+    },
+    {
+      "id": "T1195",
+      "count": 2
+    },
+    {
+      "id": "T1219",
+      "count": 2
+    },
+    {
+      "id": "T1539",
+      "count": 2
+    },
+    {
+      "id": "T1547",
+      "count": 2
+    },
+    {
+      "id": "T1566",
+      "count": 2
+    },
+    {
+      "id": "T1585.001",
+      "count": 2
+    },
+    {
+      "id": "T1587.001",
+      "count": 2
+    },
+    {
+      "id": "T1001",
+      "count": 1
+    },
+    {
+      "id": "T1003",
+      "count": 1
+    },
+    {
+      "id": "T1010",
+      "count": 1
+    },
+    {
+      "id": "T1012",
+      "count": 1
+    },
+    {
+      "id": "T1016",
+      "count": 1
+    },
+    {
+      "id": "T1020",
+      "count": 1
+    },
+    {
+      "id": "T1021.001",
+      "count": 1
+    },
+    {
+      "id": "T1025",
+      "count": 1
+    },
+    {
+      "id": "T1027.002",
+      "count": 1
+    },
+    {
+      "id": "T1030",
+      "count": 1
+    },
+    {
+      "id": "T1048.003",
+      "count": 1
+    },
+    {
+      "id": "T1053.006",
+      "count": 1
+    },
+    {
+      "id": "T1055",
+      "count": 1
+    },
+    {
+      "id": "T1056",
+      "count": 1
+    },
+    {
+      "id": "T1057",
+      "count": 1
+    },
+    {
+      "id": "T1059.004",
+      "count": 1
+    },
+    {
+      "id": "T1071",
+      "count": 1
+    },
+    {
+      "id": "T1074.001",
+      "count": 1
+    },
+    {
+      "id": "T1087.004",
+      "count": 1
+    },
+    {
+      "id": "T1091",
+      "count": 1
+    },
+    {
+      "id": "T1124",
+      "count": 1
+    },
+    {
+      "id": "T1132.001",
+      "count": 1
+    },
+    {
+      "id": "T1133",
+      "count": 1
+    },
+    {
+      "id": "T1189",
+      "count": 1
+    },
+    {
+      "id": "T1190",
+      "count": 1
+    },
+    {
+      "id": "T1195.001",
+      "count": 1
+    },
+    {
+      "id": "T1199",
+      "count": 1
+    },
+    {
+      "id": "T1204",
+      "count": 1
+    },
+    {
+      "id": "T1204.001",
+      "count": 1
+    },
+    {
+      "id": "T1205",
+      "count": 1
+    },
+    {
+      "id": "T1219.002",
+      "count": 1
+    },
+    {
+      "id": "T1480",
+      "count": 1
+    },
+    {
+      "id": "T1496",
+      "count": 1
+    },
+    {
+      "id": "T1496.001",
+      "count": 1
+    },
+    {
+      "id": "T1497",
+      "count": 1
+    },
+    {
+      "id": "T1497.001",
+      "count": 1
+    },
+    {
+      "id": "T1518",
+      "count": 1
+    },
+    {
+      "id": "T1543.003",
+      "count": 1
+    },
+    {
+      "id": "T1550.004",
+      "count": 1
+    },
+    {
+      "id": "T1552.001",
+      "count": 1
+    },
+    {
+      "id": "T1552.004",
+      "count": 1
+    },
+    {
+      "id": "T1553.002",
+      "count": 1
+    },
+    {
+      "id": "T1555.005",
+      "count": 1
+    },
+    {
+      "id": "T1557",
+      "count": 1
+    },
+    {
+      "id": "T1560.002",
+      "count": 1
+    },
+    {
+      "id": "T1564.001",
+      "count": 1
+    },
+    {
+      "id": "T1564.003",
+      "count": 1
+    },
+    {
+      "id": "T1567",
+      "count": 1
+    },
+    {
+      "id": "T1567.004",
+      "count": 1
+    },
+    {
+      "id": "T1573",
+      "count": 1
+    },
+    {
+      "id": "T1573.001",
+      "count": 1
+    },
+    {
+      "id": "T1573.002",
+      "count": 1
+    },
+    {
+      "id": "T1578.005",
+      "count": 1
+    },
+    {
+      "id": "T1580",
+      "count": 1
+    },
+    {
+      "id": "T1583.003",
+      "count": 1
+    },
+    {
+      "id": "T1583.006",
+      "count": 1
+    },
+    {
+      "id": "T1584.005",
+      "count": 1
+    },
+    {
+      "id": "T1586",
+      "count": 1
+    },
+    {
+      "id": "T1588.003",
+      "count": 1
+    },
+    {
+      "id": "T1589",
+      "count": 1
+    },
+    {
+      "id": "T1589.001",
+      "count": 1
+    },
+    {
+      "id": "T1608",
+      "count": 1
+    },
+    {
+      "id": "T1609",
+      "count": 1
+    },
+    {
+      "id": "T1614",
+      "count": 1
+    },
+    {
+      "id": "T1659",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2021-34523",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-30190",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-36884",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-38831",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-11182",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2024-49039",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-9680",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2023-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q3",
+      "count": 4
+    },
+    {
+      "quarter": "2024-Q4",
+      "count": 10
+    },
+    {
+      "quarter": "2025-Q1",
+      "count": 12
+    },
+    {
+      "quarter": "2025-Q2",
+      "count": 17
+    },
+    {
+      "quarter": "2025-Q3",
+      "count": 11
+    },
+    {
+      "quarter": "2025-Q4",
+      "count": 15
+    },
+    {
+      "quarter": "2026-Q1",
+      "count": 13
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 10
+    },
+    {
+      "quarter": "2026-Q3",
+      "count": 12
+    }
+  ],
+  "reports": [
+    "0e50e43f6c856715972c1ab2f7ee9cf165e39994",
+    "0ffda0686deee2efb965de64dc9adeef819391ad",
+    "d7c96daab35e1af99f4abf39fac256296487b4b8",
+    "5ce9bb6c14542c479eac08198aa1addf6fa8cbff",
+    "4b430d4160509cb1d7334f6baef6fe78444e11b2",
+    "33a4157bae36dd42c560047a47f55c0cb5059cca",
+    "34ce1b23671cbe864497772a5fc442896273ecbc",
+    "493341fe3e4e60dacac79844781ea12e1d3e24f0",
+    "80b1a9d807402d4f5e2f6161ecb0da13c60a6abf",
+    "eeeb37400c0364bbe4715b9a159640155fec4577",
+    "f31e53112c633447c83173d07c91799cb246f4f2",
+    "b581da653445a74d5634916b31aba6b2791df141",
+    "eda142d195b86c38a9635d8fc15986ddf9c6d5a7",
+    "ff6a97621d86f9f6a149ecc68700921abbaae8b8",
+    "b6ddac5efd28c1d07aa1df4817ca659f4dbc3623",
+    "de0c52145ad53f6236c980ebee12b0b8427104ca",
+    "304f3b27b48c6964224be82f873574552f8d264e",
+    "c26628bae4d007fdef38b80701010a1d2e91981a",
+    "575762f4b3a32f4518b378b7cc5490bb4f44a91a",
+    "5d5e42a06592685fff11c54e62fc3db67e4e5054",
+    "77cfc5f7cf3139a53e449ca092757536ccfd7b90",
+    "f8be45a91bc1b4a104aea891f0b28f0b94a5b3d7",
+    "4591c4f4bfcb1ca9f1d4b8efcc083fe88653581e",
+    "6f171518918ce3ae69ada331224c5c8f020b93ef",
+    "5ad3d3124479963127071e5bc733dfc03032964b",
+    "3647d0b1f55f78d0fd793ebc76728e2aecddd9f0",
+    "4293f8d3b44105c0a0b1ab368e9237d1e685f09f",
+    "8d81424f50569ef0e6702c6f7914d2be614d6567",
+    "3c5310b71d1e6948dd17e94a8b2708d4bb9e5743",
+    "6190986342b844c6e7130019191deac5190dee64",
+    "88acd9ab76dad49f70a26ff598c9370694fb24db",
+    "ab7b1e63fa4e254e947ff147cb5f4c8e312cb28e",
+    "415047041e97e6592db5c6e845f500aa29c01092",
+    "92b0c6c15f45346d730ce5b3b637fc63987040cc",
+    "cf93575e1ae2129f8ed6524d669c46b79269cc17",
+    "0e48e9825441185e40534b234c0deaa825ad4976",
+    "4c5e880fb7a18580200309c4bdf20814f2c6cdc2",
+    "4f2c964fbf2a5f804e62160d1c3d587d4aab7ad2",
+    "f5d2a4fefd726cf1f371446b00cc2bad32e15737",
+    "b61e4c6ba0bf6f9658599075cdee2c82a340f909",
+    "e391341491c3a93a178e76eea3fb5b7653a5c9c1",
+    "f8b2cd213515c458e98a9d390603442b1f3ba200",
+    "2591fff6bbd28805ce0c5171df4db70159d25238",
+    "bb2fe7b3be077c56cf0d7b7df0b3583d5976734a",
+    "07b6534409d96d4583ca09250ed74f78efb4b1cd",
+    "2f5218ca65a083c1460dd82c116c9f30485ec13d",
+    "0da65d61c5e3ebef1a092a46d53be2e0c73520f5",
+    "85f1bf8dd79c86d0e35da99b994bcfbb9c17a506",
+    "4c66e210923784ee95abd19ff9a748ee6d7e496d",
+    "05c3fb7368292136a4ed80e69d6362311c4c46f1",
+    "1e11156cc02ce7d8483f8580878d68c3a3e82359",
+    "5194fba6d2b2fd75319d1a591a55d2c055591978",
+    "6931934cb76ada666412bcfb38ae02adbcb084d6",
+    "77e88d2213778c698f6612940a73631da452f367",
+    "32fd4ad5f243f8cb30a7ff9baefeadcc276d8bb5",
+    "a0c1b9429df1b054c353a372bdc8e597acc288fd",
+    "b2a76c6f6992465c09a6f2fce282f6c0cea8c200",
+    "5974cd546fdb0aebbbbebbba06950740007ecc37",
+    "468806732a7e989d83fd148cbaa6eeac41dfd812",
+    "5dd93c9f77a37e72459e7bf5fb94f9849e677a21",
+    "d7824e7fe8cfc6dea776a75f4c7ce0e70ab9e41e",
+    "cb28625bd1f0ca0e3931f170193e91d1d1472b3c",
+    "3915bc15f74d2c9fa1f4ebf96b080f770c7a021a",
+    "99b0919335ed83b75d201099aff69e6b41184a6a",
+    "ef55f0ca1869bc7feeaf18fe26e902596e8ad126",
+    "6740ee22413fa74df644d1595e6e48f32a16e90e",
+    "bc1a2aa8d98b28bcc30405c86d384c875024ac8b",
+    "a122089dc5b94d5796d0264d09144db259dd3f0a",
+    "3a73704681d0a2dfd80c6baff70edfd02f81bdbb",
+    "69ddf995ea7ac1898f92fd3050c643a9fdd48fbe",
+    "13894e03f052135078d6b337b6154a6f04c1efd0",
+    "91b33c9e0b7951d98d33f039f6d759dca0855fcd",
+    "0584b033a3b4ad06fdf8a1b26249314ffda17a60",
+    "8bed87552a104856c488a9f534c9151d88c64c60",
+    "d8d94230a79e6b5651ee9c536acfccb85d6e4f46",
+    "a522d2101053a161a47393d1eac37385ef77c9a4",
+    "f94c815300796725fcc66f749381a529dbf9ee78",
+    "dd6be1ff6fde3fbdc9b0fa45a8a8a31ef8dbe0d8",
+    "65ae74b9b03da28f0392a922550048c6895b6a2f",
+    "ee014dd867eed637d08c84509af57fe141d58c21",
+    "b765e0289a2e35fe4b1f0cbf850b7ca2977d967c",
+    "56adf824e620fffa433647d8e6c3a7b90c8677cb",
+    "6aeada561ca510c6ce740b526b27c34bb4ca6d7c",
+    "0fdaf06b055d9a0c7fd3b76f9da0010d95bfe538",
+    "d998dc8d92561b1cf97ff0d6d542eb3119e3d503",
+    "5677a64d57edb5e161544c62f84108a6975cf159",
+    "9eb4757ac315cbff68a8dbaa5363f43ef38bd62f",
+    "fe8791279ae52236d3c9b8bc1361f02bf712c217",
+    "a2f93627151b2f4861d95ccc169e793a69bf5114",
+    "f0534a2c0f717ab44a71cbf6afd612af5bfced71",
+    "c7eb1678611f476536e33eb1a1ba133e7a28e953",
+    "70997291b3a9034e297d1b43118ed3c2cc1d8735",
+    "dc04134bd165e4ca4139a600e8647620593becb6",
+    "85085c6c43631d988008ff27227ee0c9b0edae61",
+    "fc53b5fac43299d7e26d75e68e099e033998c8ce",
+    "2bdbc095822427dcfd5a2ae30d3a9ac844767bd4",
+    "fe6201954e544d5843bcb3e72d164f956c1cd4c1",
+    "c0ae5c1a3573d3ee764bd1247a6ac729d1589c25",
+    "eb7fdfae1c620cd84a1e185e9b07dc05a85fda6c",
+    "886fe6a305c8a548ca541725e0b85ec6b1c23ec5",
+    "646e2064885f535853ba5050f7a09eb15749458c",
+    "a68b93b9ad31b1fcf731a1f5c3e77682dd54a143",
+    "e5907235d6a751f290d789da584ca0f4dd073a6b",
+    "0c28e1c8a6d34db568ec9d312c8cef9c3ea69969",
+    "cd9fa509df0435268d6fed4c34cd4409bafd46fa",
+    "b27b62b421a14d85d700bd9109e54ac7e79f6910"
+  ],
+  "conflicts": [],
+  "evidence_count": 17
+}

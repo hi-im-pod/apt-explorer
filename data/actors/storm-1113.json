@@ -1,0 +1,87 @@
+{
+  "id": "storm-1113",
+  "name": "Storm-1113",
+  "aliases": [
+    {
+      "value": "Storm-1113",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "APOTHECARY SPIDER",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "EugenLoader",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [
+    {
+      "id": "T1059",
+      "count": 1
+    },
+    {
+      "id": "T1059.001",
+      "count": 1
+    },
+    {
+      "id": "T1105",
+      "count": 1
+    },
+    {
+      "id": "T1204.002",
+      "count": 1
+    }
+  ],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2023-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2024-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2024-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2025-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "4c92ec27cabd70f496bfc1ea21b7b85dd24ba9bc",
+    "fff656c787d7d6619bb0cf60713485e72add8977",
+    "629a32d8d8a4ed75ecb0365bc9e4d395f1dbc431",
+    "fc16fa5d5bbca92275d1e8e490574ba7cfd5f807",
+    "adc3bbd04b39dfd993f8483a7b6dacf2c4304a65",
+    "2b92911dc1cad928ecfc8a42d00850cf737d8722",
+    "a55c04d39cbb604e89fed0739cb0240ce89bb716",
+    "7b973fe91d26d2679403fafb8ad7e43a657f76a6"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

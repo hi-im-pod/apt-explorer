@@ -1,0 +1,54 @@
+{
+  "id": "attor",
+  "name": "Attor",
+  "aliases": [
+    {
+      "value": "Attor",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": [
+      {
+        "value": "Private sector",
+        "source": "misp"
+      },
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Private sector",
+        "source": "malpedia"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 1
+}

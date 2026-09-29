@@ -1,0 +1,138 @@
+{
+  "id": "water-barghest",
+  "name": "Water Barghest",
+  "aliases": [
+    {
+      "value": "Water Barghest",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "Ngioweb",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [
+    {
+      "id": "T1082",
+      "count": 1
+    },
+    {
+      "id": "T1090",
+      "count": 1
+    },
+    {
+      "id": "T1140",
+      "count": 1
+    },
+    {
+      "id": "T1189",
+      "count": 1
+    },
+    {
+      "id": "T1190",
+      "count": 1
+    },
+    {
+      "id": "T1210",
+      "count": 1
+    },
+    {
+      "id": "T1222",
+      "count": 1
+    },
+    {
+      "id": "T1222.002",
+      "count": 1
+    },
+    {
+      "id": "T1496",
+      "count": 1
+    },
+    {
+      "id": "T1497",
+      "count": 1
+    },
+    {
+      "id": "T1497.001",
+      "count": 1
+    },
+    {
+      "id": "T1543",
+      "count": 1
+    },
+    {
+      "id": "T1543.001",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2017-10271",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-7256",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2022-45440",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2023-28769",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2023-28770",
+      "kev": false,
+      "ransomware": null
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2019-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q4",
+      "count": 5
+    }
+  ],
+  "reports": [
+    "045ea59cb7421ecca85659347ae9d0b33aef75c9",
+    "79aeb957afda5a5e39a5095e4b28efed523574c6",
+    "81355d26fbbde076ad98da87916cd07081bc5bf8",
+    "dfdb56c82bd016451ac9fba5d6c9d003f0ce6f7a",
+    "10714e198e804bd31daeb1af3f8c6e388d4ef654",
+    "03da8f72045a1b6f4e6fc02441d28c469325efc7",
+    "4d83687294dcbf8627338caa1b287d997b3e47e1",
+    "a051a6ffbb0150c1a66bf158c5b436b2c841fc45"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

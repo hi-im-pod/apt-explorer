@@ -1,0 +1,328 @@
+{
+  "id": "G0013",
+  "name": "APT30",
+  "aliases": [
+    {
+      "value": "APT30",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "RADIUM",
+      "sources": [
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Raspberry Typhoon",
+      "sources": [
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "ISTHMUS CASTLE",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "APT 30",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Override Panda",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "CTG-5326",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Bronze Geneva",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Bronze Sterling",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "LotusBlossom",
+      "sources": [
+        "malpedia"
+      ]
+    },
+    {
+      "value": "LOTUS PANDA",
+      "sources": [
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "etda"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "China",
+      "source": "misp"
+    },
+    {
+      "value": "China",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "United States",
+        "source": "misp"
+      },
+      {
+        "value": "South Korea",
+        "source": "misp"
+      },
+      {
+        "value": "Saudi Arabia",
+        "source": "misp"
+      },
+      {
+        "value": "Thailand",
+        "source": "misp"
+      },
+      {
+        "value": "Vietnam",
+        "source": "misp"
+      },
+      {
+        "value": "Malaysia",
+        "source": "misp"
+      },
+      {
+        "value": "India",
+        "source": "misp"
+      },
+      {
+        "value": "Bhutan",
+        "source": "etda"
+      },
+      {
+        "value": "Brunei",
+        "source": "etda"
+      },
+      {
+        "value": "Cambodia",
+        "source": "etda"
+      },
+      {
+        "value": "India",
+        "source": "etda"
+      },
+      {
+        "value": "Indonesia",
+        "source": "etda"
+      },
+      {
+        "value": "Japan",
+        "source": "etda"
+      },
+      {
+        "value": "Laos",
+        "source": "etda"
+      },
+      {
+        "value": "Malaysia",
+        "source": "etda"
+      },
+      {
+        "value": "Myanmar",
+        "source": "etda"
+      },
+      {
+        "value": "Nepal",
+        "source": "etda"
+      },
+      {
+        "value": "Philippines",
+        "source": "etda"
+      },
+      {
+        "value": "Saudi Arabia",
+        "source": "etda"
+      },
+      {
+        "value": "Singapore",
+        "source": "etda"
+      },
+      {
+        "value": "South Korea",
+        "source": "etda"
+      },
+      {
+        "value": "Thailand",
+        "source": "etda"
+      },
+      {
+        "value": "Vietnam",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "malpedia"
+      },
+      {
+        "value": "South Korea",
+        "source": "malpedia"
+      },
+      {
+        "value": "Saudi Arabia",
+        "source": "malpedia"
+      },
+      {
+        "value": "Thailand",
+        "source": "malpedia"
+      },
+      {
+        "value": "Vietnam",
+        "source": "malpedia"
+      },
+      {
+        "value": "Malaysia",
+        "source": "malpedia"
+      },
+      {
+        "value": "India",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "BACKSPACE",
+      "source": "attack"
+    },
+    {
+      "name": "FLASHFLOOD",
+      "source": "attack"
+    },
+    {
+      "name": "NETEAGLE",
+      "source": "attack"
+    },
+    {
+      "name": "SHIPSHAPE",
+      "source": "attack"
+    },
+    {
+      "name": "SPACESHIP",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1204.002",
+    "T1566.001"
+  ],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2010-3333",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2012-0158",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2012-1856",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2015-Q2",
+      "count": 3
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "fc6c438a8be2a3f8e89c7dfcab4c0cc7165a9306",
+    "70ccc282b80140029c538fa52290add0b1fe1aeb",
+    "paper:TheNaikonAPT-MsnMM2",
+    "b5a974038bcb8e2aa46945aa2f5e3e5ef0b27150",
+    "55ea4075414a961a79bf62c7c55008322dc8ee4e"
+  ],
+  "conflicts": [],
+  "evidence_count": 4
+}

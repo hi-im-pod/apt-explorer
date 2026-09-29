@@ -1,0 +1,141 @@
+{
+  "id": "bluebottle",
+  "name": "BlueBottle",
+  "aliases": [
+    {
+      "value": "BlueBottle",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "OPERA1ER",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "DESKTOP-GROUP",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Common Raven",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "NXSMS",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Bluebottle",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Financial crime",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Argentina",
+        "source": "etda"
+      },
+      {
+        "value": "Bangladesh",
+        "source": "etda"
+      },
+      {
+        "value": "Benin",
+        "source": "etda"
+      },
+      {
+        "value": "Burkina Faso",
+        "source": "etda"
+      },
+      {
+        "value": "Cameroon",
+        "source": "etda"
+      },
+      {
+        "value": "Côte d'Ivoire",
+        "source": "etda"
+      },
+      {
+        "value": "Gabon",
+        "source": "etda"
+      },
+      {
+        "value": "Mali",
+        "source": "etda"
+      },
+      {
+        "value": "Niger",
+        "source": "etda"
+      },
+      {
+        "value": "Nigeria",
+        "source": "etda"
+      },
+      {
+        "value": "Paraguay",
+        "source": "etda"
+      },
+      {
+        "value": "Senegal",
+        "source": "etda"
+      },
+      {
+        "value": "Sierra Leone",
+        "source": "etda"
+      },
+      {
+        "value": "Togo",
+        "source": "etda"
+      },
+      {
+        "value": "Uganda",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Financial",
+        "source": "etda"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 10
+}

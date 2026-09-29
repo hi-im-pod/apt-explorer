@@ -1,45 +1,1387 @@
 {
   "stats": {
-    "source_record_count": 52,
-    "actor_count": 14,
-    "merge_count": 38,
-    "evidence_edge_count": 61,
-    "ambiguity_count": 1,
-    "non_actor_name_count": 23
+    "source_record_count": 2791,
+    "actor_count": 1059,
+    "merge_count": 1732,
+    "evidence_edge_count": 4048,
+    "ambiguity_count": 107,
+    "non_actor_name_count": 5191
   },
   "paper_match": {
     "names_total": 443,
-    "resolved": 371,
-    "typed_non_actor": 29,
-    "match_rate": 0.837471783295711
+    "resolved": 334,
+    "typed_non_actor": 23,
+    "match_rate": 0.7539503386004515
   },
   "ambiguities": [
+    {
+      "alias": "actinium",
+      "candidates": [
+        "G0047",
+        "G1033"
+      ]
+    },
+    {
+      "alias": "appleworm",
+      "candidates": [
+        "G0138",
+        "G1049"
+      ]
+    },
+    {
+      "alias": "apt34",
+      "candidates": [
+        "G0003",
+        "G0049"
+      ]
+    },
+    {
+      "alias": "apt38",
+      "candidates": [
+        "G0082",
+        "G0138"
+      ]
+    },
+    {
+      "alias": "aptc26",
+      "candidates": [
+        "G0138",
+        "G1049"
+      ]
+    },
+    {
+      "alias": "aquablizzard",
+      "candidates": [
+        "G0047",
+        "G1033"
+      ]
+    },
+    {
+      "alias": "armageddon",
+      "candidates": [
+        "G0047",
+        "G1033"
+      ]
+    },
+    {
+      "alias": "atk3",
+      "candidates": [
+        "G0138",
+        "G1049"
+      ]
+    },
+    {
+      "alias": "atk32",
+      "candidates": [
+        "G0008",
+        "G0046"
+      ]
+    },
+    {
+      "alias": "axiom",
+      "candidates": [
+        "G0001",
+        "G0025"
+      ]
+    },
+    {
+      "alias": "backdoordiplomacy",
+      "candidates": [
+        "G0004",
+        "G0135"
+      ]
+    },
+    {
+      "alias": "beagleboyz",
+      "candidates": [
+        "G0082",
+        "G0138"
+      ]
+    },
+    {
+      "alias": "beijing",
+      "candidates": [
+        "G0025",
+        "G0066"
+      ]
+    },
+    {
+      "alias": "blackfly",
+      "candidates": [
+        "G0044",
+        "G0096"
+      ]
+    },
+    {
+      "alias": "blackvine",
+      "candidates": [
+        "G0009",
+        "G0073"
+      ]
+    },
+    {
+      "alias": "bleedingbear",
+      "candidates": [
+        "G1003",
+        "G1031"
+      ]
+    },
+    {
+      "alias": "bluenoroff",
+      "candidates": [
+        "G0082",
+        "G0138"
+      ]
+    },
+    {
+      "alias": "bronzeexport",
+      "candidates": [
+        "G0039",
+        "G0096"
+      ]
+    },
+    {
+      "alias": "bronzegeneva",
+      "candidates": [
+        "G0013",
+        "G0019"
+      ]
+    },
+    {
+      "alias": "bronzesterling",
+      "candidates": [
+        "G0013",
+        "G0019"
+      ]
+    },
+    {
+      "alias": "cadetblizzard",
+      "candidates": [
+        "G1003",
+        "G1031"
+      ]
+    },
+    {
+      "alias": "calcium",
+      "candidates": [
+        "G0008",
+        "G0046"
+      ]
+    },
+    {
+      "alias": "carbonspider",
+      "candidates": [
+        "G0008",
+        "G0046"
+      ]
+    },
+    {
+      "alias": "charcoaltyphoon",
+      "candidates": [
+        "G0143",
+        "G1006"
+      ]
+    },
+    {
+      "alias": "chromium",
+      "candidates": [
+        "G0143",
+        "G1006"
+      ]
+    },
+    {
+      "alias": "citrinesleet",
+      "candidates": [
+        "G0138",
+        "G1049"
+      ]
+    },
+    {
+      "alias": "cobaltgypsy",
+      "candidates": [
+        "G0003",
+        "G0049"
+      ]
+    },
+    {
+      "alias": "controlx",
+      "candidates": [
+        "G0143",
+        "G1006"
+      ]
+    },
+    {
+      "alias": "copernicium",
+      "candidates": [
+        "G0082",
+        "G0138"
+      ]
+    },
+    {
+      "alias": "crambus",
+      "candidates": [
+        "G0003",
+        "G0049"
+      ]
+    },
+    {
+      "alias": "deeppanda",
+      "candidates": [
+        "G0009",
+        "G0073"
+      ]
+    },
+    {
+      "alias": "dev0139",
+      "candidates": [
+        "G0138",
+        "G1049"
+      ]
+    },
+    {
+      "alias": "dev0157",
+      "candidates": [
+        "G0047",
+        "G1033"
+      ]
+    },
+    {
+      "alias": "diamondsleet",
+      "candidates": [
+        "G0032",
+        "G0138",
+        "G1049"
+      ]
+    },
+    {
+      "alias": "earthkasha",
+      "candidates": [
+        "G0045",
+        "G1054"
+      ]
+    },
+    {
+      "alias": "earthlusca",
+      "candidates": [
+        "G0143",
+        "G1006"
+      ]
+    },
+    {
+      "alias": "elbrus",
+      "candidates": [
+        "G0008",
+        "G0046"
+      ]
+    },
+    {
+      "alias": "elderwood",
+      "candidates": [
+        "G0025",
+        "G0066"
+      ]
+    },
+    {
+      "alias": "elderwoodgang",
+      "candidates": [
+        "G0025",
+        "G0066"
+      ]
+    },
+    {
+      "alias": "electrum",
+      "candidates": [
+        "G0034",
+        "G0035"
+      ]
+    },
+    {
+      "alias": "emberbear",
+      "candidates": [
+        "G1003",
+        "G1031"
+      ]
+    },
+    {
+      "alias": "europium",
+      "candidates": [
+        "G0003",
+        "G0049"
+      ]
+    },
+    {
+      "alias": "fin7",
+      "candidates": [
+        "G0008",
+        "G0046"
+      ]
+    },
+    {
+      "alias": "fireant",
+      "candidates": [
+        "G0129",
+        "G1048"
+      ]
+    },
+    {
+      "alias": "frozenvista",
+      "candidates": [
+        "G1003",
+        "G1031"
+      ]
+    },
+    {
+      "alias": "g0013",
+      "candidates": [
+        "G0013",
+        "G0019"
+      ]
+    },
+    {
+      "alias": "g0032",
+      "candidates": [
+        "G0138",
+        "G1049"
+      ]
+    },
+    {
+      "alias": "g0046",
+      "candidates": [
+        "G0008",
+        "G0046"
+      ]
+    },
+    {
+      "alias": "g0093",
+      "candidates": [
+        "G0045",
+        "G0093"
+      ]
+    },
+    {
+      "alias": "gamaredon",
+      "candidates": [
+        "G0047",
+        "G1033"
+      ]
+    },
+    {
+      "alias": "goldniagara",
+      "candidates": [
+        "G0008",
+        "G0046"
+      ]
+    },
+    {
+      "alias": "grizzlysteppe",
+      "candidates": [
+        "G0007",
+        "G0016"
+      ]
+    },
+    {
+      "alias": "group72",
+      "candidates": [
+        "G0001",
+        "G0025"
+      ]
+    },
+    {
+      "alias": "group77",
+      "candidates": [
+        "G0138",
+        "G1049"
+      ]
+    },
+    {
+      "alias": "group83",
+      "candidates": [
+        "G0059",
+        "G0130"
+      ]
+    },
+    {
+      "alias": "guardiansofpeace",
+      "candidates": [
+        "G0032",
+        "G1049"
+      ]
+    },
+    {
+      "alias": "hastati",
+      "candidates": [
+        "G0138",
+        "G1049"
+      ]
+    },
+    {
+      "alias": "hazelsandstorm",
+      "candidates": [
+        "G0003",
+        "G0049"
+      ]
+    },
+    {
+      "alias": "helixkitten",
+      "candidates": [
+        "G0003",
+        "G0049"
+      ]
+    },
+    {
+      "alias": "hiddencobra",
+      "candidates": [
+        "G0032",
+        "G0138",
+        "G1049"
+      ]
+    },
+    {
+      "alias": "higaisa",
+      "candidates": [
+        "G0012",
+        "G0126"
+      ]
+    },
+    {
+      "alias": "iron",
+      "candidates": [
+        "G0081",
+        "G0106"
+      ]
+    },
+    {
+      "alias": "irontilden",
+      "candidates": [
+        "G0047",
+        "G1033"
+      ]
+    },
+    {
+      "alias": "kungfukittens",
+      "candidates": [
+        "G0009",
+        "G0073"
+      ]
+    },
+    {
+      "alias": "labyrinthchollima",
+      "candidates": [
+        "G0032",
+        "G0138",
+        "G1049"
+      ]
+    },
+    {
+      "alias": "lazarus",
+      "candidates": [
+        "G0032",
+        "G0138"
+      ]
+    },
+    {
+      "alias": "lotusblossom",
+      "candidates": [
+        "G0013",
+        "G0030"
+      ]
+    },
+    {
+      "alias": "lotuspanda",
+      "candidates": [
+        "G0013",
+        "G0019",
+        "G0030"
+      ]
+    },
+    {
+      "alias": "luminousmoth",
+      "candidates": [
+        "G0129",
+        "G1014"
+      ]
+    },
+    {
+      "alias": "moafee",
+      "candidates": [
+        "G0002",
+        "G0017"
+      ]
+    },
+    {
+      "alias": "moonstonesleet",
+      "candidates": [
+        "G0138",
+        "G1036"
+      ]
+    },
+    {
+      "alias": "mustardtempest",
+      "candidates": [
+        "G0119",
+        "G1020"
+      ]
+    },
+    {
+      "alias": "newromaniccyberarmy",
+      "candidates": [
+        "G0138",
+        "G1049"
+      ]
+    },
+    {
+      "alias": "newsbeef",
+      "candidates": [
+        "G0059",
+        "G0130"
+      ]
+    },
+    {
+      "alias": "newscaster",
+      "candidates": [
+        "G0059",
+        "G0130"
+      ]
+    },
+    {
+      "alias": "nickelacademy",
+      "candidates": [
+        "G0032",
+        "G0138"
+      ]
+    },
+    {
+      "alias": "nickelgladstone",
+      "candidates": [
+        "G0082",
+        "G0138"
+      ]
+    },
+    {
+      "alias": "oilrig",
+      "candidates": [
+        "G0003",
+        "G0049"
+      ]
+    },
+    {
+      "alias": "overridepanda",
+      "candidates": [
+        "G0013",
+        "G0019"
+      ]
+    },
+    {
+      "alias": "parastoo",
+      "candidates": [
+        "G0059",
+        "G0130"
+      ]
+    },
+    {
+      "alias": "pinkpanther",
+      "candidates": [
+        "G0009",
+        "G0073"
+      ]
+    },
+    {
+      "alias": "primitivebear",
+      "candidates": [
+        "G0047",
+        "G1033"
+      ]
+    },
+    {
+      "alias": "radium",
+      "candidates": [
+        "G0013",
+        "G0030"
+      ]
+    },
+    {
+      "alias": "raspberrytyphoon",
+      "candidates": [
+        "G0013",
+        "G0030"
+      ]
+    },
+    {
+      "alias": "sangriatempest",
+      "candidates": [
+        "G0008",
+        "G0046"
+      ]
+    },
+    {
+      "alias": "sapphiresleet",
+      "candidates": [
+        "G0082",
+        "G0138"
+      ]
+    },
+    {
+      "alias": "shellcrew",
+      "candidates": [
+        "G0009",
+        "G0073"
+      ]
+    },
+    {
+      "alias": "shuckworm",
+      "candidates": [
+        "G0047",
+        "G1033"
+      ]
+    },
+    {
+      "alias": "sneakypanda",
+      "candidates": [
+        "G0025",
+        "G0066"
+      ]
+    },
+    {
+      "alias": "stardustchollima",
+      "candidates": [
+        "G0082",
+        "G0138"
+      ]
+    },
+    {
+      "alias": "ta404",
+      "candidates": [
+        "G0138",
+        "G1049"
+      ]
+    },
+    {
+      "alias": "tag22",
+      "candidates": [
+        "G0143",
+        "G1006"
+      ]
+    },
+    {
+      "alias": "tarhandishan",
+      "candidates": [
+        "G0003",
+        "G0059"
+      ]
+    },
+    {
+      "alias": "tempavengers",
+      "candidates": [
+        "G0025",
+        "G0073"
+      ]
+    },
+    {
+      "alias": "tempbeanie",
+      "candidates": [
+        "G0059",
+        "G0130"
+      ]
+    },
+    {
+      "alias": "tg2754",
+      "candidates": [
+        "G0005",
+        "G1023"
+      ]
+    },
+    {
+      "alias": "thrip",
+      "candidates": [
+        "G0030",
+        "G0076"
+      ]
+    },
+    {
+      "alias": "timberworm",
+      "candidates": [
+        "G0059",
+        "G0130"
+      ]
+    },
+    {
+      "alias": "uac0056",
+      "candidates": [
+        "G1003",
+        "G1031"
+      ]
+    },
+    {
+      "alias": "unc2589",
+      "candidates": [
+        "G1003",
+        "G1031"
+      ]
+    },
+    {
+      "alias": "unc788",
+      "candidates": [
+        "G0059",
+        "G1044"
+      ]
+    },
+    {
+      "alias": "webmasters",
+      "candidates": [
+        "G0009",
+        "G0073"
+      ]
+    },
+    {
+      "alias": "whitefly",
+      "candidates": [
+        "G0103",
+        "G0107"
+      ]
+    },
+    {
+      "alias": "whoishacking",
+      "candidates": [
+        "G0138",
+        "G1049"
+      ]
+    },
+    {
+      "alias": "wickedspider",
+      "candidates": [
+        "G0039",
+        "G0096"
+      ]
+    },
     {
       "alias": "winnti",
       "candidates": [
         "G0044",
         "G0096"
       ]
+    },
+    {
+      "alias": "zinc",
+      "candidates": [
+        "G0032",
+        "G0138",
+        "G1049"
+      ]
     }
   ],
   "unresolved_names": [
     {
-      "name": "Mimikatz",
+      "name": "Winnti Umbrella",
+      "count": 593,
+      "typed_as": null
+    },
+    {
+      "name": "Operation Armageddon",
+      "count": 24,
+      "typed_as": null
+    },
+    {
+      "name": "COBALT GIPSY",
+      "count": 20,
+      "typed_as": null
+    },
+    {
+      "name": "Timberworm",
+      "count": 20,
+      "typed_as": null
+    },
+    {
+      "name": "Kimsuki",
+      "count": 19,
+      "typed_as": null
+    },
+    {
+      "name": "nso group",
+      "count": 5,
+      "typed_as": null
+    },
+    {
+      "name": "LOTUS PANDA",
+      "count": 4,
+      "typed_as": null
+    },
+    {
+      "name": "Oktropys",
+      "count": 3,
+      "typed_as": null
+    },
+    {
+      "name": "grand theft auto panda",
+      "count": 3,
+      "typed_as": null
+    },
+    {
+      "name": "uac-0056",
+      "count": 3,
+      "typed_as": null
+    },
+    {
+      "name": "Sphinx (APT-C-15)",
       "count": 2,
-      "typed_as": "tool"
+      "typed_as": null
     },
     {
-      "name": "China Chopper",
+      "name": "Stealth Mango",
+      "count": 2,
+      "typed_as": "malware"
+    },
+    {
+      "name": "chessmaster",
+      "count": 2,
+      "typed_as": null
+    },
+    {
+      "name": "kovcoreg",
+      "count": 2,
+      "typed_as": null
+    },
+    {
+      "name": "newsbeef",
+      "count": 2,
+      "typed_as": null
+    },
+    {
+      "name": "outlaw",
+      "count": 2,
+      "typed_as": null
+    },
+    {
+      "name": "shadow force",
+      "count": 2,
+      "typed_as": null
+    },
+    {
+      "name": "3ve",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "85th gtsss",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "DePriMon",
       "count": 1,
       "typed_as": "malware"
     },
     {
-      "name": "Cl0p",
+      "name": "DustySky",
       "count": 1,
       "typed_as": "malware"
     },
     {
-      "name": "TA505",
+      "name": "Iron Group",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "Thrip",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "TopHat",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "a 공격 그룹",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "a41apt",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "aleksandr",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "appin security group",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "apt sidewinder",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "apt-c-01",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "apt-c-47",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "apt-c-59",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "black mafia",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "black peace",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "blackenergy gang",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "blue termit",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "c-23",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "c.rufus security team",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "cadelspy",
+      "count": 1,
+      "typed_as": "malware"
+    },
+    {
+      "name": "cetarat",
+      "count": 1,
+      "typed_as": "malware"
+    },
+    {
+      "name": "china chopper",
+      "count": 1,
+      "typed_as": "malware"
+    },
+    {
+      "name": "clouddragon",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "comfoo",
+      "count": 1,
+      "typed_as": "malware"
+    },
+    {
+      "name": "conti",
+      "count": 1,
+      "typed_as": "malware"
+    },
+    {
+      "name": "cosmic banker",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "destover",
+      "count": 1,
+      "typed_as": "malware"
+    },
+    {
+      "name": "dustysky",
+      "count": 1,
+      "typed_as": "malware"
+    },
+    {
+      "name": "edbitss",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "emotet gang",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "fhappi",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "french intelligence",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "gholee",
+      "count": 1,
+      "typed_as": "malware"
+    },
+    {
+      "name": "gholee6",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "ghost dragon",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "goldenspy",
+      "count": 1,
+      "typed_as": "malware"
+    },
+    {
+      "name": "great",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "hafnuim",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "hussarini",
+      "count": 1,
+      "typed_as": "malware"
+    },
+    {
+      "name": "inception attackers",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "iron group",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "isis-linked hackers",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "jolly roger’s patrons",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "kelvinsecurityteam",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "keyboys",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "king kong elephant",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "leery turtle",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "lucky elephant",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "luminousmoth",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "miniduke",
+      "count": 1,
+      "typed_as": "malware"
+    },
+    {
+      "name": "mirrorthief",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "mykings",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "negg",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "nilephish",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "operation falcon",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "operation kingphish",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "operation oceansalt",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "operation transparent tribe",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "ozie team",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "praying mantis",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "punchbuggy",
+      "count": 1,
+      "typed_as": "malware"
+    },
+    {
+      "name": "puzzlemaker",
+      "count": 1,
+      "typed_as": "malware"
+    },
+    {
+      "name": "quantum ransomware",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "rana",
+      "count": 1,
+      "typed_as": "malware"
+    },
+    {
+      "name": "raqqah",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "reconhellcat",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "red hacker alliance",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "redoctober",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "regin",
+      "count": 1,
+      "typed_as": "malware"
+    },
+    {
+      "name": "remexi",
+      "count": 1,
+      "typed_as": "malware"
+    },
+    {
+      "name": "right sector",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "romcom threat actor",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "russian gru",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "sakula",
+      "count": 1,
+      "typed_as": "malware"
+    },
+    {
+      "name": "sectora05",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "sectorb06",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "shadow chaser",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "shiqiang",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "shun wang technologies",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "silverhawk",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "solar marker",
+      "count": 1,
+      "typed_as": "malware"
+    },
+    {
+      "name": "soraj bear",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "sourface",
+      "count": 1,
+      "typed_as": "malware"
+    },
+    {
+      "name": "sun team folder",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "sunorcal",
+      "count": 1,
+      "typed_as": "malware"
+    },
+    {
+      "name": "sunshop digital quartermaster",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "tag-26",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "tarh andishan",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "teleport crew",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "thrip",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "trickbot",
+      "count": 1,
+      "typed_as": "malware"
+    },
+    {
+      "name": "uac-0098",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "ucid902",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "unc2727",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "unclassified",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "urlzone",
+      "count": 1,
+      "typed_as": "malware"
+    },
+    {
+      "name": "valkyrie-x security research group",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "water kappa",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "water pamola",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "zebra2104",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "zebrocy",
+      "count": 1,
+      "typed_as": "malware"
+    },
+    {
+      "name": "عقارب ليبيا",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "伪猎者apt组织",
+      "count": 1,
+      "typed_as": null
+    },
+    {
+      "name": "海莲花",
       "count": 1,
       "typed_as": null
     }

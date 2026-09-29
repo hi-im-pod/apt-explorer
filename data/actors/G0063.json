@@ -1,0 +1,167 @@
+{
+  "id": "G0063",
+  "name": "BlackOasis",
+  "aliases": [
+    {
+      "value": "BlackOasis",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Afghanistan",
+        "source": "etda"
+      },
+      {
+        "value": "Angola",
+        "source": "etda"
+      },
+      {
+        "value": "Bahrain",
+        "source": "etda"
+      },
+      {
+        "value": "Iran",
+        "source": "etda"
+      },
+      {
+        "value": "Iraq",
+        "source": "etda"
+      },
+      {
+        "value": "Jordan",
+        "source": "etda"
+      },
+      {
+        "value": "Libya",
+        "source": "etda"
+      },
+      {
+        "value": "Netherlands",
+        "source": "etda"
+      },
+      {
+        "value": "Nigeria",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "etda"
+      },
+      {
+        "value": "Saudi Arabia",
+        "source": "etda"
+      },
+      {
+        "value": "Tunisia",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Media",
+        "source": "etda"
+      },
+      {
+        "value": "Think Tanks",
+        "source": "etda"
+      },
+      {
+        "value": "activists and the UN",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [
+    "T1027"
+  ],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2015-5119",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2016-0984",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2016-4117",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-0199",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-0261",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-0262",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-0263",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-11292",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-8759",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2017-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "918a2a4f90591eb792b4af948bd705b24520eeaf",
+    "18f110cc5441d442f5aa14b9b456fce56e59d8f4",
+    "6eed5ac5ef038eda219cea039afd827c26bebee6",
+    "4e6532ff082baa3efd5a4c63a732228e3ef4e80c"
+  ],
+  "conflicts": [],
+  "evidence_count": 5
+}

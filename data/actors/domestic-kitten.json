@@ -1,0 +1,132 @@
+{
+  "id": "domestic-kitten",
+  "name": "Domestic Kitten",
+  "aliases": [
+    {
+      "value": "Domestic Kitten",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "APT-C-50",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Bouncing Golf",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IR",
+      "source": "misp"
+    },
+    {
+      "value": "IR",
+      "source": "etda"
+    },
+    {
+      "value": "IR",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Afghanistan",
+        "source": "etda"
+      },
+      {
+        "value": "Iran",
+        "source": "etda"
+      },
+      {
+        "value": "Iraq",
+        "source": "etda"
+      },
+      {
+        "value": "Pakistan",
+        "source": "etda"
+      },
+      {
+        "value": "Türkiye",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      },
+      {
+        "value": "Uzbekistan",
+        "source": "etda"
+      }
+    ],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "FurBall",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2018-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2019-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2019-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q4",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "ffd3f5128d64fb0e2484b75b822ac0897ef9d363",
+    "b3a2d495f4aa295790b967320667d1a3ebe7f7ba",
+    "bcc2ff0e9e6bfbc5b2d54610dede3be8a49f1331",
+    "800876142db752d7cdb495e4310c841dd55e126d",
+    "37eb1c9bd867497732ab39d113be0b3166024c87",
+    "6e9b8f277b6393dc6fee8628c0f649e49223a165",
+    "f40ee5670d0d20f5b2a86f17539b08eca2ea1d17",
+    "60ffe642ed8d9d2171b4c44729c4687fe493e87d",
+    "9e10c53bcb169107a22b8eef9ea6162a753ce736"
+  ],
+  "conflicts": [],
+  "evidence_count": 6
+}

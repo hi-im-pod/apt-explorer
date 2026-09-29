@@ -1,0 +1,784 @@
+{
+  "id": "mummy-spider",
+  "name": "MUMMY SPIDER",
+  "aliases": [
+    {
+      "value": "MUMMY SPIDER",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TA542",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "GOLD CRESTWOOD",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Mummy Spider",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "ATK 104",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Mealybug",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Gold Crestwood",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Financial crime",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": [
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Energy",
+        "source": "etda"
+      },
+      {
+        "value": "Financial",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Healthcare",
+        "source": "etda"
+      },
+      {
+        "value": "Manufacturing",
+        "source": "etda"
+      },
+      {
+        "value": "Retail",
+        "source": "etda"
+      },
+      {
+        "value": "Shipping and Logistics",
+        "source": "etda"
+      },
+      {
+        "value": "Utilities",
+        "source": "etda"
+      },
+      {
+        "value": "Technology",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Emotet",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2012-5469",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2014-0160",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2014-0346",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2015-2051",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-0199",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-0261",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-11882",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-12824",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2017-15399",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2017-8291",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-0798",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-0802",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-10561",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-13374",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-13379",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-0604",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-11510",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-1181",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2019-13720",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-19781",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-2725",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-6703",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2019-9489",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2020-0688",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-10189",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-10826",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2020-10827",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2020-12061",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2020-13756",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2020-1472",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-1664",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2020-2021",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-5135",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-5902",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-8243",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-8260",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-20016",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-22894",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-22899",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-22900",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-26855",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-30116",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-31207",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-34473",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-34523",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-40444",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-41379",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-42321",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-43936",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-44228",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-24086",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2022-30190",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-2868",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2025-68613",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-1731",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2026-20127",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2027-11882",
+      "kev": false,
+      "ransomware": null
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2015-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 4
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 5
+    },
+    {
+      "quarter": "2018-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2018-Q3",
+      "count": 5
+    },
+    {
+      "quarter": "2018-Q4",
+      "count": 4
+    },
+    {
+      "quarter": "2019-Q1",
+      "count": 5
+    },
+    {
+      "quarter": "2019-Q2",
+      "count": 9
+    },
+    {
+      "quarter": "2019-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2019-Q4",
+      "count": 6
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 21
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 6
+    },
+    {
+      "quarter": "2020-Q3",
+      "count": 13
+    },
+    {
+      "quarter": "2020-Q4",
+      "count": 19
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 22
+    },
+    {
+      "quarter": "2021-Q2",
+      "count": 8
+    },
+    {
+      "quarter": "2021-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 17
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 31
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 29
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 9
+    },
+    {
+      "quarter": "2022-Q4",
+      "count": 8
+    },
+    {
+      "quarter": "2023-Q1",
+      "count": 11
+    },
+    {
+      "quarter": "2023-Q2",
+      "count": 3
+    },
+    {
+      "quarter": "2023-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2023-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2024-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "26dc48ca54daa70440cde34f77710355003488a5",
+    "61221e4a9723e978eaaf46803586656e9c7a2545",
+    "6020231ec2c1e520f832e09880c58d12efe4c074",
+    "9a95051404fb6a7b619c6b2201572ec840f134d4",
+    "b23114053ac6c43a73fb850f9bf8c852f4d1714d",
+    "e9fc4059394ac436de965b38531ce89ea2a385eb",
+    "7d812b6f1a2815f24b18952461a878c6195923e5",
+    "bbe05e46c767cf0b2649d8a179f0bba2b1ff31ec",
+    "9b5e890508b8dadb7b8023c8ad17a0d1377d0512",
+    "0d773d76268cb60539d1e9b290fdbef4af1eed71",
+    "d7abc1943c01d1c4321f23ac3350b2806b69ccfe",
+    "45ac66f4ab05c43bc5128377779e6673eace06cf",
+    "82f5b14ecf701ab255a61a186acb6e1a16c9a590",
+    "7d8e6af3f27d4790208576da5469d7ee973f59bd",
+    "c7537abb3de8b03040c12f781c62092851b273aa",
+    "88dfa8d33a9ea5e11f03b2a61d1b5a24182763ea",
+    "0ff5b67f57593264e7bf0b178ef7343f1efa82f1",
+    "6285c7aac3860661f90bbc3caf6c859a68ce5dc9",
+    "7c4a6454e3eb3c6012316b31b38551f187d9dc86",
+    "4737584885ebcaa363559fae14e74d65a201e864",
+    "7bf258a7762f1bb3a049287074f875242dcf2437",
+    "04fc658289318e68bbfaa83c54a5ce5cb7b41bd6",
+    "b1875e87c7242d614165305fe992e2aba331c2b1",
+    "4e8c55fd789a464429527d10f07ce9ba0b291aa9",
+    "0833d4867b38c7780b97921671dbdcf83ba73141",
+    "f36b089b9ec23f9a1c328ef4592dd1c28f220f48",
+    "a33062f301411b934bbbd17ce600b4e994063a8e",
+    "7a74f93fea0e288ac9fd2e55d06dc184fcff51b4",
+    "83f81ebf23830ac896d1b46e55617138e115ee75",
+    "73286f83e1a0cff01b572d70a035db032ffee9d1",
+    "325471781a0efd42a1f32340e1a5c2915b23580f",
+    "af91b2a5704db61cc3b02fd1850b9d0f5eb605c9",
+    "9e08760e9ff918aa6095f8d4735ed1ff70eb944a",
+    "f991ff9f99d7377f2bbe581513b076c4315664ca",
+    "e59564dc1b7bf359584748bd3d18c82a07735784",
+    "a717e4c4065f059b95b3206f9ba3f0968a804aac",
+    "b17bb10e1edc1c2c1c8dd6e870c926207b5cba09",
+    "fac3b2807d83b5f9574c7ae69dd43596057c750c",
+    "14d2852629b7ffabc3a2fcb6c30a31b63a60c74a",
+    "bdbe9a048a6114e202a1e0d4892dc7023739f15a",
+    "d53696dd1b79b6a24c7764822e74abd31dccb226",
+    "18ca634d30bb318ab842b1965bb0fb3f3268cb35",
+    "8944a7406390652b91f4874b1b6a4182713fb7b2",
+    "1d1787f0e05bb6ef3a5cf5151728f12add1d0d3d",
+    "372d770a04e24b0dbee66b8d5271f34085dad24f",
+    "4b048db96ed4d3cb4f0fe703ebcc95af9889cc95",
+    "7610fb3fcc0bb4d8e1ffa8f386b5e9b333a84a74",
+    "59378899238ff927f193794670b471341106e640",
+    "a5eea2a8616df2aaa823c9b01cd01811bec6fa83",
+    "4e6fe10d76df11b0de7b9535825fe44e5412bacf",
+    "eb196e8262e576a1050919a732ea6dc07f00e641",
+    "f2e450b04718986a1d9f6817384f1563bc0b6780",
+    "19a58dc123f0b62e8565c5c4753e735d3f57d0f5",
+    "21181a4ee8ccc3d93fe37efa586cdcaaf842ac94",
+    "38a51c45a2dd892736b58da22e3bfed13d8fad3a",
+    "03c3003dd7a13a7a64e21b55f503dda8ec7bc79d",
+    "ec2f590a4b14c60ead7d932c2fc41553f47f1008",
+    "a7cedb195d2e9aac6b9d66dcf4f0e0f24975b60c",
+    "dba6379ff47fa7e1265386ded205f1a063d0c41d",
+    "e6dde12567e95688fab1e98a48a48248703b8f70",
+    "481e59a7aafa886581162db071e0657cef39753d",
+    "9b0c3db3a626888087822e73a40a30f389a734f8",
+    "f9b285ccb48d71c153b1a6025cde00f1425c86e9",
+    "fa3146c7d4e1f91891295e6a15cd5a6c68d7192d",
+    "63831bb429530b2e5d4f3f1415b73ef148ceca95",
+    "49c140e8985188749a21a84589a1786a0f748164",
+    "d182073e6910d30eb50c80e47f2fc304f84440a0",
+    "f25b0947c04f0601eecc69ae21b4872ac4110185",
+    "63cdf7781764c2e4553a054c1d7a3c8aa621fb2b",
+    "ed8b446451bc07e92fa6cfe857a6b07accff4f88",
+    "84b9861d2e2d57db06c6daf92dff28af8cb4ac35",
+    "008559dbb0abdb2908725a5580b213071e29e705",
+    "3943cc4ef4fac2cda4620a4a393b9c1d4c3dc683",
+    "3abc16edabef6768abd82d8e906aef499ec4825a",
+    "9ef876e655c670f280df227af8ea5ec2c825e45b",
+    "925bab09b7fd0c6f9579ccb15d40bb7dda345104",
+    "69c39d827a80d7a560dbafc31cce36566ec37c7f",
+    "afdab5f7c256d3a536b67558ae4c51a9016fc06f",
+    "fadf927d266a91ccf53350360e0efa7a3f0b81fd",
+    "78dca40a65171320d01fabb3160ece81b44f27ef",
+    "343486bdcf7e6965d9e1856f35c7f8c3eac6bef5",
+    "a929d6342765e1918976190af9805a7b92ef00ac",
+    "b5a4298b02741788e9536e6e8619a1cb6c2a2edb",
+    "b7c4de0d31d547bd89af38eb238da421bebec370",
+    "bda966802ce63c0835a3d5bc42564b9e0da10401",
+    "a6631c88075ee4876d1bd9a5a7efb43a5c0eedcb",
+    "08f3b8c107d05b61a1705394f7bbadd827d5cc9a",
+    "5f7dbc5d99d81740551c91d302d04ba4dd1836e7",
+    "75b4843ad3c32cf7b3f20792e88645bb2e1bdf9d",
+    "c83210fdf31ba8e79539e61206476af3fea4721b",
+    "6283bc11b7a3c59f8a6fc32595fb15c8e9d56132",
+    "b2dce0510a73d9a78a757dbfb1e0b32294419dd7",
+    "0a00a7c9d890bce9d92f6e8fdac7ed9d05062515",
+    "a02a2ab024407bb1528231c11b6fa2fe12df457e",
+    "530b1699e84ddf04a099adf503832b4e2ada0933",
+    "b127fff6ce829cb6c68359eb5607ad900d13e1de",
+    "7e258d6b0d59b0e638dce4c147cab1ac6bc56c96",
+    "f7b317e8450d6fa5607afa089d412948bedd0d38",
+    "3b1c30c148ccf1f3ac9f34107fc73028f812e6f0",
+    "da1bd8eeb39eb3f5d0982da9baf19b2e538405df",
+    "c3132775048bc9d3c7a7553dff0d9a0a9bd32908",
+    "f7192bf9c1598d2c90d0e2fbb05a0b97449ee056",
+    "2cc8379b16f4e4fe650747e28d37e65bbd9dde74",
+    "063396100a235172fd02a3a2eea301db4dc8a7a2",
+    "690d1c187ea6ab6e649ec8ea7d52ee666454b8aa",
+    "2287efda22658ec561d2e23226ecd4c58cc695a8",
+    "473d3b0cfb268862f37aa3576a3b9475d8b72a07",
+    "562ccfe770b228f27ae5f6bfa41faa192e3a43b6",
+    "70a055da9f367bb85c7c406a9215ff1d06dc5c0d",
+    "d290871e3b3e74050c9ee9e09448e06fd862867d",
+    "da7b08131192a8c4c2700a989cf0f9d9cec54219",
+    "0263b4b80f61efd25846484887f54271787d4e11",
+    "37ad33b60e132a3ca0fa09e9288f32c998d6c503",
+    "80a32303a5e50822fd838ed2df158d471e096fca",
+    "9b9a21d73fc8413d8a4e7bdccf77089a02e516de",
+    "c5ac072cab1671651a60626e3acdb99c7be85974",
+    "2900b089877d8ce3ad0fd2e4be814ec1a201cc70",
+    "8620dff6b78619154e722ef0292083f0b17c0018",
+    "3a9ee924b3e4ad9e217dfe3798b4bd911a589eb5",
+    "11d574009827e7cb59834403c49add808bb84693",
+    "a3005bfbbc39c73189da9e2564a14d290f5c3702",
+    "345d9fda181a71fcd1445d7d307032871f015782",
+    "7d934b7c90048e67e68478e55f1d47fd07a96625",
+    "9270422bab8c6e6c6fb74cf4b1ba3a69880d18d3",
+    "0d26dbc29f5eefd39e85146835e1358d9eb39311",
+    "3c8117a757ec08bdd9b5f36a2ff9972712d62f3c",
+    "65ac25fa2f09838621715217446f4f902a50a44d",
+    "1fac46edcc5a4fb403cd23cb462b57a79db925f0",
+    "dcb2172fc9fe524167b4ae8dde9428285c9287d0",
+    "8b38b4df3156c38d0f9adc81b3fc0715e307ca93",
+    "1c1dd830c28d3981de3c71fbd7dd3dd31d2f4e6e",
+    "09fb9464f14ba1a90d339c832fcd3d778272907d",
+    "49924fd082744057702c768bafcc7f145f9a5153",
+    "fe88cf32c0db9cf5d15f3202c19793ccb5045fbb",
+    "04e53e8ff0dd0175bd3bd08d3f5ee432fa288dea",
+    "79e7623dd1455f31921463c582e5e96e7aebe0c1",
+    "e0f70a9fac33a317678f675b03fd0cdc168bf0c9",
+    "2d98a214de7a8a280ebe92a6883684593e3d33d3",
+    "3e550c218ec73a994871b86c0e388a3a391409c9",
+    "91a851fd57e90b415bb3dd43f668e01c72426267",
+    "075b2620cdc687cb3b82d4eb438c3f3a9a97667d",
+    "bc8871ecebd522dfdcd508a49507460d188ec4e7",
+    "41adf7bdd7b276e0fa5dd161811c6e6ab71aadc8",
+    "956cff49f3317492bdf585544d2a60abb8a3c88c",
+    "88bc5c4c414e3484c0dd56b410f0b59e05c357c9",
+    "97c60b9ab2603aef830cb80615e7c4bcd35c8b91",
+    "d0664eb9d6cf81ca20cd0880be93c8f0f9a945cb",
+    "3f9a47aba3bceb5ea8e807873a694177778e0eaf",
+    "b33339b4a0646ede4b2d40968ac2d61e3e64b6a8",
+    "18148db41266afa60030469ab3a8afb2d774c4a1",
+    "bbe2189646401528639e5ca7b243de9ef5b09a15",
+    "0fe8afc8e224af5db9477edef35a20656faa1976",
+    "240edb29479ddabca336042802d16035fc71a6b8",
+    "5538278e3786a284c7ddc707007af9f2c0f9ceb7",
+    "81c83be1f229edf110b7ce72ba5a3b15ed640c9c",
+    "f444061a5c1cc14fdec187fbe0718d5843e09e95",
+    "efe77708bf35a911b07e019db06745486a29b89e",
+    "d72ead2a71d14c7a7781a96ef829baf1fb8e206a",
+    "c37fa8fdaa83c5e6ed5ed8356467ac36a8ac92af",
+    "c7dfe735fbb1d6e4c3366aa16991eb2c086c4e53",
+    "f2f20e3a3d733d5933dddbe65a12147df888b959",
+    "4771b94c4140de52570b7a3cb0c204f5e5a0afe9",
+    "6ff3154475662b268fc464088eb6468d63bb4ad1",
+    "aeeb56ec2b7b4a4e8caf9d80a86650d7644598c2",
+    "1e8e72234ef88fbadb55782da34c1bb3ebb622ad",
+    "a5bb8e92382484cb2df4d738d2516f98317913fb",
+    "c774af602cf781b62e2770c469fe3bae70b1b762",
+    "56a855e1335e058dad9778dc5db25e81eeb13ac7",
+    "170b4718f4aaf158520bf6cb6e6bec40a5cc2203",
+    "062ed42ea6d639318cfe3d674d7881610d89cf69",
+    "29d124e255755a3dbd1dcb930674916c37bfe7f5",
+    "360e2f6154ad57dc6f20f508ef67948f963bb9e0",
+    "dd0a1e1b0314fa785ca2087c6e0cf11641b7842e",
+    "75c3dd9e81d636182eb5371be43730a801dfb137",
+    "145cee373c443f20adc6fd052185a5e7a04d95f8",
+    "55bd586adb0adaf1cd72dba31ae4ca70388c6686",
+    "83481f52a6b2bce97e3ef453960195f55651cd05",
+    "36d29757d15807abeb39d7a3b2b9118d2a4c0624",
+    "a1888b908d5fba43b6a9dfcabdbf1b3d3850d3bc",
+    "8523f13281f31e2c6b8a51b7f56268100a533c69",
+    "f70037486e33de5fbbfd366969c04f120fd640af",
+    "430815f0be8f889e9442dd9b4ad46b7c9266e0e1",
+    "b0288ae342af69886daf394178fdaed92882d0cb",
+    "8ce74542576ea47e7fffe9a0590a1b2e62b508e9",
+    "e7b430f2e93b3e773c6b94de27d5a9f8a9f83ca8",
+    "3f1eeff52099d718e593dfe4488442091a811c5b",
+    "a9c2d2a48d01ff836c666f9171b0a688cc331a02",
+    "e7b872a8d417270afd5cfd69bef191628ad0b516",
+    "33a1cfe083d2825325c133f5d5dba0c16951f725",
+    "c32b37795debaf236d4b4bfa56616cf5a5ed630b",
+    "e210f62853e52310dfc7269a9b700254633b89ac",
+    "eb1fe39299ff8f1dded715909c01059bed2c5bb7",
+    "fed84094f8bd8822542b76820b569235ff6cd98a",
+    "24b089f66141a590b8d2b32cff928f14e3a0d550",
+    "0f320274312bf9c6ef2ca84d259d2c9023185491",
+    "ac3ab1b4796064b6561182308f4f4c699b448607",
+    "d5508c77331814f7aa13652ed035b6b5f7b9aaca",
+    "0565f099582e92c00988636adf9201c0cf30cbcc",
+    "34b84eab4ed1e10193690ec45fb2578e877cad38",
+    "e3289fca944318ce7b22b926eddfc900cd190a69",
+    "e233bef8aefd245092a2129ec58eb58f3aba5946",
+    "48cf9f52bd2a3c432ff5fcb9f23f2e7d34713575",
+    "3da4e7d77f8277d640d12a39fcdfd2a422a1da11",
+    "0c1a4812da35c7924ddc4160c40b2ee0034a8c75",
+    "1ccd9bed77a597e46da58c0c6c8bd2daba7f633c",
+    "d46507b6e080e284e3567a8463d17f130b2d0b6a",
+    "7ba92e8c163b58d974f58e34111acf8c632c10cd",
+    "df8c6e17acdd0d83a9127877a405b9425a1e5fd2",
+    "cedd9a10359401b2dcd479ab895c9fdc6c89a804",
+    "5007fb82a883c1ba9b478e5e613d028a4538c5b0",
+    "877e23dd1b203498558291fe12ce85c206ec4135",
+    "4d36058f8941c4a094989205b55b49c6e5a38d36",
+    "33a813a3c8b3fcab97ccc9c9015d5b793d88dc6b",
+    "130ef3553f5130c37a9bf59bb98de4e630329b88",
+    "5766e6aea95e738684d5cc26568bf7cd3abc67d9",
+    "4cac21552c2f27d8c0e44fa077604812035e91f0",
+    "1a27b348127a9bb76ff3c76bcec1702f1ae885a8",
+    "33edf08be9ac927f3120ae9675236589adc4193f",
+    "15e8040390702d04ce2cf53724232f97e379e574",
+    "b39d2b22d891c951148ce7198ba07d45278f2256",
+    "e722b78ccb2678579d9980083debe43b39a1a6ff",
+    "c7a00109e9e7367f0e4840b9313cbbd843cabf12",
+    "2f496421d03118e3aa04fc0c075fab7440f2f1e5",
+    "aca5bc98ea3e936d75b09162dc4ff52bb4e3308a",
+    "32e7e9e18d0785cf45592e6d76a9440c5d0d2d46",
+    "dc5707c1fc3058150c08860517d4f325984aa634",
+    "cdfd4171171e03b62b1318ce898b0d9c41c470e6",
+    "717f6a8493ee03fd359fd302f5d4d7a0a701dbb1",
+    "71035736af68098e95c5085ae6f11bbc28c06816",
+    "c870fbad5ef73ada73729daab1f67915ac19da3d",
+    "88a9af327feda0bef58ea4cdea79c86fce26c351",
+    "dc949d77a36cf7daeb3d611a2844360cf7dad9b7",
+    "3c950811f5a3bb720abd0592f776d52a75890aa9",
+    "1a516cf6b243e4517a07a4f333fa427efd42c2f4",
+    "a550e392a02c1e88699ff41e4f9023d3fcf809f3",
+    "3aaa22c26b159ff8ce559aae9c7abf4945a2c55d",
+    "677339a1b1725b4688637fb21417c4c7175c2894",
+    "f086102eb5546d5e02c0895c1988d9208c5c5f8e",
+    "5afd3153e6ad3e89580fb70484f22ecf7e70873d",
+    "fad3c4ca2317fb2c7e9a28c71ff37509024d8f6c",
+    "91d81501b9e9287c19c673845eec7e3a733d9311",
+    "352cad748f3fdc218b3b5d2e13f34ef62e5e1f12",
+    "35546374d21fa7ceabada074c60afb6369450ce0",
+    "c443c27e77581ac592afa6bc9d595e44715f7861",
+    "2399ea006d63f87e98c30e73f600c3e30ef2f970",
+    "831eea16d28eff2d676c1cecfb9a96e62bc945c2",
+    "cee0f862a2d83c578fe7dfde8971475676d42387",
+    "049f9194540a72a890d5263243f107f3d4e04b88",
+    "04cb114b2e41438c39f43f609e345964e9581a1c",
+    "5dde650c5fda26a379c6f91bde8696c7f7ff1cab",
+    "a3354656c7d0b890c513035ed9038765ba702913",
+    "a7e78a343c4f9175272cebde6eaffa403de9dcb2",
+    "7df61a5aa32275622b26bd89ace959fdab758c29",
+    "8c6de7cc5e3ea338a5a1d365925c2d3d8f10eda6"
+  ],
+  "conflicts": [],
+  "evidence_count": 6
+}

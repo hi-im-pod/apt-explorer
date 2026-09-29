@@ -1,0 +1,49 @@
+{
+  "id": "cl-sta-1087",
+  "name": "CL-STA-1087",
+  "aliases": [
+    {
+      "value": "CL-STA-1087",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "AppleChris",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2026-Q1",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "8174cb9faa2ed91a2cdb6f90ce8a56caa04fed97"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

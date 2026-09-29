@@ -1,0 +1,71 @@
+{
+  "id": "G0083",
+  "name": "SilverTerrier",
+  "aliases": [
+    {
+      "value": "SilverTerrier",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "NG",
+      "source": "misp"
+    },
+    {
+      "value": "NG",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "Agent Tesla",
+      "source": "attack"
+    },
+    {
+      "name": "DarkComet",
+      "source": "attack"
+    },
+    {
+      "name": "Lokibot",
+      "source": "attack"
+    },
+    {
+      "name": "NETWIRE",
+      "source": "attack"
+    },
+    {
+      "name": "NanoCore",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1071.001",
+    "T1071.002",
+    "T1071.003",
+    "T1657"
+  ],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2016-Q4",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "939b0144c6c6ba359af7aaf7b4bee8fa83e519f1"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

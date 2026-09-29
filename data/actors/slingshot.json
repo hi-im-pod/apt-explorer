@@ -1,0 +1,103 @@
+{
+  "id": "slingshot",
+  "name": "Slingshot",
+  "aliases": [
+    {
+      "value": "Slingshot",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Afghanistan",
+        "source": "etda"
+      },
+      {
+        "value": "Republic of the Congo",
+        "source": "etda"
+      },
+      {
+        "value": "Iraq",
+        "source": "etda"
+      },
+      {
+        "value": "Jordan",
+        "source": "etda"
+      },
+      {
+        "value": "Kenya",
+        "source": "etda"
+      },
+      {
+        "value": "Libya",
+        "source": "etda"
+      },
+      {
+        "value": "Somalia",
+        "source": "etda"
+      },
+      {
+        "value": "Sudan",
+        "source": "etda"
+      },
+      {
+        "value": "Tanzania",
+        "source": "etda"
+      },
+      {
+        "value": "Türkiye",
+        "source": "etda"
+      },
+      {
+        "value": "Yemen",
+        "source": "etda"
+      }
+    ],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2007-5633",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2009-0824",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2010-1592",
+      "kev": false,
+      "ransomware": null
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2018-Q1",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "23fa5421c81d318d293978d47e7e65739fbce42f",
+    "42bc3ed806d32f12e7fcb224aa184abfda49d079"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

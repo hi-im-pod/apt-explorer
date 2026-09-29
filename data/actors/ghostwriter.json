@@ -1,0 +1,377 @@
+{
+  "id": "ghostwriter",
+  "name": "Ghostwriter",
+  "aliases": [
+    {
+      "value": "Ghostwriter",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UNC1151",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TA445",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UAC-0057",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "PUSHCHA",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "DEV-0257",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Storm-0257",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Operation Ghostwriter",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "UAC-0051",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "White Lynx",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "BY",
+      "source": "misp"
+    },
+    {
+      "value": "BY",
+      "source": "etda"
+    },
+    {
+      "value": "BY",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "Belarus",
+      "source": "misp"
+    },
+    {
+      "value": "Belarus",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Sabotage and destruction",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Germany",
+        "source": "misp"
+      },
+      {
+        "value": "Latvia",
+        "source": "misp"
+      },
+      {
+        "value": "Lithuania",
+        "source": "misp"
+      },
+      {
+        "value": "Poland",
+        "source": "misp"
+      },
+      {
+        "value": "Ukraine",
+        "source": "misp"
+      },
+      {
+        "value": "Belarus",
+        "source": "etda"
+      },
+      {
+        "value": "Colombia",
+        "source": "etda"
+      },
+      {
+        "value": "Estonia",
+        "source": "etda"
+      },
+      {
+        "value": "France",
+        "source": "etda"
+      },
+      {
+        "value": "Germany",
+        "source": "etda"
+      },
+      {
+        "value": "Ireland",
+        "source": "etda"
+      },
+      {
+        "value": "Kuwait",
+        "source": "etda"
+      },
+      {
+        "value": "Latvia",
+        "source": "etda"
+      },
+      {
+        "value": "Lithuania",
+        "source": "etda"
+      },
+      {
+        "value": "Poland",
+        "source": "etda"
+      },
+      {
+        "value": "Switzerland",
+        "source": "etda"
+      },
+      {
+        "value": "Ukraine",
+        "source": "etda"
+      },
+      {
+        "value": "Germany",
+        "source": "malpedia"
+      },
+      {
+        "value": "Latvia",
+        "source": "malpedia"
+      },
+      {
+        "value": "Lithuania",
+        "source": "malpedia"
+      },
+      {
+        "value": "Poland",
+        "source": "malpedia"
+      },
+      {
+        "value": "Ukraine",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Education",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Media",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "MicroBackdoor",
+      "source": "malpedia"
+    },
+    {
+      "name": "PicassoLoader",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [
+    {
+      "id": "T1027",
+      "count": 1
+    },
+    {
+      "id": "T1027.009",
+      "count": 1
+    },
+    {
+      "id": "T1036.005",
+      "count": 1
+    },
+    {
+      "id": "T1041",
+      "count": 1
+    },
+    {
+      "id": "T1053.005",
+      "count": 1
+    },
+    {
+      "id": "T1057",
+      "count": 1
+    },
+    {
+      "id": "T1059",
+      "count": 1
+    },
+    {
+      "id": "T1071.001",
+      "count": 1
+    },
+    {
+      "id": "T1082",
+      "count": 1
+    },
+    {
+      "id": "T1204.002",
+      "count": 1
+    },
+    {
+      "id": "T1566.001",
+      "count": 1
+    },
+    {
+      "id": "T1583",
+      "count": 1
+    },
+    {
+      "id": "T1588.002",
+      "count": 1
+    },
+    {
+      "id": "T1608",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2023-38831",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-42009",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2021-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "044f17d2b0b222b8bf06787200d521bc2ac26d86",
+    "f701bdae3ae5d3caf47f349d5529b3e6ee098f09",
+    "075c05d08e575ac604b3f9bd89a7c79d0989be72",
+    "5efd1aaa7e3c4c9a1cc9fa5797247df496798a53",
+    "d58565ae7773721281b6b209ae5bd9b74f5db2b5",
+    "30f2a48048ed6d31502762c7efb4b1404b60b606",
+    "91acb4a1d7712dcdd3c3a17f7cc234f5109cf4c8",
+    "b520b9cb7fe1850b3915d6c3ee8ac09a0c6d8037",
+    "a94e6463300a5a4f60c724638f5bbe7cce2a31e7",
+    "7ce215c45e30d9dbd9cb49667c5ce6258e74a86c",
+    "0a93c55b24c514cc021e9989662b5bfd12418b61",
+    "2972b297a603cd2b70e365ce6db4d58846cdb802",
+    "f7ab89e669d11e63e8f62a6fdb63127078fe0f23",
+    "d4b7cea45a61e93a4fcb2ae2e2f8022c1e7da2f4",
+    "84aa89ff766bcd002bf1a6641157aed3388547f5"
+  ],
+  "conflicts": [],
+  "evidence_count": 13
+}

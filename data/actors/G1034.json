@@ -1,0 +1,517 @@
+{
+  "id": "G1034",
+  "name": "Daggerfly",
+  "aliases": [
+    {
+      "value": "Daggerfly",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Evasive Panda",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "BRONZE HIGHLAND",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Storm Cloud",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TAG-112",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Bronze Highland",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "StormBamboo",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "TAG-102",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Digging Taurus",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "etda"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "China",
+      "source": "misp"
+    },
+    {
+      "value": "China",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Hong Kong",
+        "source": "misp"
+      },
+      {
+        "value": "India",
+        "source": "misp"
+      },
+      {
+        "value": "Malaysia",
+        "source": "misp"
+      },
+      {
+        "value": "Taiwan",
+        "source": "misp"
+      },
+      {
+        "value": "Macao",
+        "source": "misp"
+      },
+      {
+        "value": "Nigeria",
+        "source": "misp"
+      },
+      {
+        "value": "China",
+        "source": "etda"
+      },
+      {
+        "value": "Hong Kong",
+        "source": "etda"
+      },
+      {
+        "value": "India",
+        "source": "etda"
+      },
+      {
+        "value": "Macao",
+        "source": "etda"
+      },
+      {
+        "value": "Malaysia",
+        "source": "etda"
+      },
+      {
+        "value": "Myanmar",
+        "source": "etda"
+      },
+      {
+        "value": "Nigeria",
+        "source": "etda"
+      },
+      {
+        "value": "Philippines",
+        "source": "etda"
+      },
+      {
+        "value": "Taiwan",
+        "source": "etda"
+      },
+      {
+        "value": "Vietnam",
+        "source": "etda"
+      },
+      {
+        "value": "Hong Kong",
+        "source": "malpedia"
+      },
+      {
+        "value": "Malaysia",
+        "source": "malpedia"
+      },
+      {
+        "value": "India",
+        "source": "malpedia"
+      },
+      {
+        "value": "Taiwan",
+        "source": "malpedia"
+      },
+      {
+        "value": "Macao",
+        "source": "malpedia"
+      },
+      {
+        "value": "Nigeria",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Individuals",
+        "source": "misp"
+      },
+      {
+        "value": "Universities",
+        "source": "misp"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "etda"
+      },
+      {
+        "value": "human rights and pro-democracy advocates",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      },
+      {
+        "value": "Individuals",
+        "source": "malpedia"
+      },
+      {
+        "value": "Universities",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "BITSAdmin",
+      "source": "attack"
+    },
+    {
+      "name": "MacMa",
+      "source": "attack"
+    },
+    {
+      "name": "MgBot",
+      "source": "attack"
+    },
+    {
+      "name": "Nightdoor",
+      "source": "attack"
+    },
+    {
+      "name": "PlugX",
+      "source": "attack"
+    },
+    {
+      "name": "Reg",
+      "source": "attack"
+    },
+    {
+      "name": "CloudScout",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1003.002",
+    "T1012",
+    "T1036.003",
+    "T1053.005",
+    "T1059.001",
+    "T1071.001",
+    "T1082",
+    "T1105",
+    "T1136.001",
+    "T1189",
+    "T1195.002",
+    "T1204.001",
+    "T1218.011",
+    "T1553.002",
+    "T1574.001",
+    "T1584.004",
+    "T1587.002"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1036.005",
+      "count": 2
+    },
+    {
+      "id": "T1082",
+      "count": 2
+    },
+    {
+      "id": "T1095",
+      "count": 2
+    },
+    {
+      "id": "T1106",
+      "count": 2
+    },
+    {
+      "id": "T1140",
+      "count": 2
+    },
+    {
+      "id": "T1543.003",
+      "count": 2
+    },
+    {
+      "id": "T1583.004",
+      "count": 2
+    },
+    {
+      "id": "T1587.001",
+      "count": 2
+    },
+    {
+      "id": "T1005",
+      "count": 1
+    },
+    {
+      "id": "T1012",
+      "count": 1
+    },
+    {
+      "id": "T1020",
+      "count": 1
+    },
+    {
+      "id": "T1027",
+      "count": 1
+    },
+    {
+      "id": "T1027.009",
+      "count": 1
+    },
+    {
+      "id": "T1033",
+      "count": 1
+    },
+    {
+      "id": "T1036.004",
+      "count": 1
+    },
+    {
+      "id": "T1041",
+      "count": 1
+    },
+    {
+      "id": "T1049",
+      "count": 1
+    },
+    {
+      "id": "T1053.005",
+      "count": 1
+    },
+    {
+      "id": "T1055.001",
+      "count": 1
+    },
+    {
+      "id": "T1057",
+      "count": 1
+    },
+    {
+      "id": "T1070.004",
+      "count": 1
+    },
+    {
+      "id": "T1070.009",
+      "count": 1
+    },
+    {
+      "id": "T1071.001",
+      "count": 1
+    },
+    {
+      "id": "T1074.001",
+      "count": 1
+    },
+    {
+      "id": "T1083",
+      "count": 1
+    },
+    {
+      "id": "T1102",
+      "count": 1
+    },
+    {
+      "id": "T1112",
+      "count": 1
+    },
+    {
+      "id": "T1114.002",
+      "count": 1
+    },
+    {
+      "id": "T1119",
+      "count": 1
+    },
+    {
+      "id": "T1189",
+      "count": 1
+    },
+    {
+      "id": "T1195.002",
+      "count": 1
+    },
+    {
+      "id": "T1518",
+      "count": 1
+    },
+    {
+      "id": "T1530",
+      "count": 1
+    },
+    {
+      "id": "T1539",
+      "count": 1
+    },
+    {
+      "id": "T1548.002",
+      "count": 1
+    },
+    {
+      "id": "T1550.004",
+      "count": 1
+    },
+    {
+      "id": "T1560",
+      "count": 1
+    },
+    {
+      "id": "T1560.001",
+      "count": 1
+    },
+    {
+      "id": "T1567.002",
+      "count": 1
+    },
+    {
+      "id": "T1569.002",
+      "count": 1
+    },
+    {
+      "id": "T1571",
+      "count": 1
+    },
+    {
+      "id": "T1572",
+      "count": 1
+    },
+    {
+      "id": "T1583.006",
+      "count": 1
+    },
+    {
+      "id": "T1584.004",
+      "count": 1
+    },
+    {
+      "id": "T1585.003",
+      "count": 1
+    },
+    {
+      "id": "T1588.003",
+      "count": 1
+    },
+    {
+      "id": "T1608.004",
+      "count": 1
+    },
+    {
+      "id": "T1620",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2021-30869",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2023-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "5dbbe0a45df1d14c2e6359854d9f836c012a5acd",
+    "fadb2d02c0d1ffcc9a87048700de5b1896869137",
+    "15bdbf6e8f959d2ca374be258fc714ec2e5d3fd6",
+    "45c31eaf4df2dd5ba362f2b24a06579e0146a4eb",
+    "0216959614e185c6a6fff8933983768369f5d052"
+  ],
+  "conflicts": [],
+  "evidence_count": 17
+}

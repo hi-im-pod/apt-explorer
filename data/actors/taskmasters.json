@@ -1,0 +1,109 @@
+{
+  "id": "taskmasters",
+  "name": "TaskMasters",
+  "aliases": [
+    {
+      "value": "TaskMasters",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "BlueTraveller",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "etda"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Russia",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Construction",
+        "source": "etda"
+      },
+      {
+        "value": "Energy",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "IT",
+        "source": "etda"
+      },
+      {
+        "value": "Manufacturing",
+        "source": "etda"
+      },
+      {
+        "value": "Shipping and Logistics",
+        "source": "etda"
+      },
+      {
+        "value": "Technology",
+        "source": "etda"
+      },
+      {
+        "value": "Transportation",
+        "source": "etda"
+      },
+      {
+        "value": "Systems integration and Real estate",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2017-0176",
+      "kev": false,
+      "ransomware": null
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2019-Q3",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "8e6ded91de2f0755c2dabc9576cbd97d62535c68"
+  ],
+  "conflicts": [],
+  "evidence_count": 3
+}

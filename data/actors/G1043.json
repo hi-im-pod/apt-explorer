@@ -1,0 +1,265 @@
+{
+  "id": "G1043",
+  "name": "BlackByte",
+  "aliases": [
+    {
+      "value": "BlackByte",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Hecamede",
+      "sources": [
+        "attack"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "AdFind",
+      "source": "attack"
+    },
+    {
+      "name": "Arp",
+      "source": "attack"
+    },
+    {
+      "name": "BlackByte 2.0 Ransomware",
+      "source": "attack"
+    },
+    {
+      "name": "BlackByte Ransomware",
+      "source": "attack"
+    },
+    {
+      "name": "Cobalt Strike",
+      "source": "attack"
+    },
+    {
+      "name": "Exbyte",
+      "source": "attack"
+    },
+    {
+      "name": "Mimikatz",
+      "source": "attack"
+    },
+    {
+      "name": "PsExec",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1003",
+    "T1012",
+    "T1016",
+    "T1018",
+    "T1021.001",
+    "T1021.002",
+    "T1036.008",
+    "T1041",
+    "T1046",
+    "T1047",
+    "T1053.005",
+    "T1055",
+    "T1055.012",
+    "T1059.001",
+    "T1059.003",
+    "T1068",
+    "T1070.004",
+    "T1071.001",
+    "T1078",
+    "T1078.002",
+    "T1082",
+    "T1087.002",
+    "T1105",
+    "T1112",
+    "T1134.003",
+    "T1135",
+    "T1136.002",
+    "T1140",
+    "T1190",
+    "T1219",
+    "T1480",
+    "T1482",
+    "T1486",
+    "T1490",
+    "T1491.001",
+    "T1505.003",
+    "T1518.001",
+    "T1543.003",
+    "T1547.001",
+    "T1560",
+    "T1567",
+    "T1569.002",
+    "T1570",
+    "T1583.003",
+    "T1608.001",
+    "T1614.001",
+    "T1685",
+    "T1686"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1018",
+      "count": 1
+    },
+    {
+      "id": "T1021.001",
+      "count": 1
+    },
+    {
+      "id": "T1021.002",
+      "count": 1
+    },
+    {
+      "id": "T1070.004",
+      "count": 1
+    },
+    {
+      "id": "T1078.002",
+      "count": 1
+    },
+    {
+      "id": "T1078.003",
+      "count": 1
+    },
+    {
+      "id": "T1083",
+      "count": 1
+    },
+    {
+      "id": "T1098",
+      "count": 1
+    },
+    {
+      "id": "T1112",
+      "count": 1
+    },
+    {
+      "id": "T1136.002",
+      "count": 1
+    },
+    {
+      "id": "T1204",
+      "count": 1
+    },
+    {
+      "id": "T1210",
+      "count": 1
+    },
+    {
+      "id": "T1211",
+      "count": 1
+    },
+    {
+      "id": "T1484",
+      "count": 1
+    },
+    {
+      "id": "T1484.001",
+      "count": 1
+    },
+    {
+      "id": "T1486",
+      "count": 1
+    },
+    {
+      "id": "T1529",
+      "count": 1
+    },
+    {
+      "id": "T1543",
+      "count": 1
+    },
+    {
+      "id": "T1569.002",
+      "count": 1
+    },
+    {
+      "id": "T1608",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2019-16098",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-26855",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-27065",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-31207",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-34473",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-34523",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-37085",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2049-16098",
+      "kev": false,
+      "ransomware": null
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2021-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2023-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "387a288ffe3fdb98d70c7e0a8e0fd047a945d1ab",
+    "4eadcac034c8cf281961264d05ee1c63dead5953",
+    "97b9b73bcd13d967adfe3815b9e57b90d31aa5ec",
+    "35c36a91f0747222f7d09c6dd565eafd3c39ecd4",
+    "c0006d980c6bb6cd6492eb0a0bec67d07dbeb6e6",
+    "0542848e5c59717fed254896bf6477b12f2f9d1a"
+  ],
+  "conflicts": [],
+  "evidence_count": 0
+}

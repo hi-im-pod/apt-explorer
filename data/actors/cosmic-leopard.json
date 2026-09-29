@@ -1,0 +1,48 @@
+{
+  "id": "cosmic-leopard",
+  "name": "Cosmic Leopard",
+  "aliases": [
+    {
+      "value": "Cosmic Leopard",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Operation Celestial Force",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "PK",
+      "source": "etda"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "India",
+        "source": "etda"
+      }
+    ],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 0
+}

@@ -1,0 +1,37 @@
+{
+  "id": "n4ughtysectu",
+  "name": "N4ughtysecTU",
+  "aliases": [
+    {
+      "value": "N4ughtysecTU",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "BR",
+      "source": "misp"
+    },
+    {
+      "value": "BR",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 1
+}

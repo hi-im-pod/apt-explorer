@@ -1,0 +1,49 @@
+{
+  "id": "shadow-water-063",
+  "name": "SHADOW-WATER-063",
+  "aliases": [
+    {
+      "value": "SHADOW-WATER-063",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "BR",
+      "source": "misp"
+    },
+    {
+      "value": "BR",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "Banana RAT",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "46eca7b98834c30a91ad748c232b4df41c884fc2"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

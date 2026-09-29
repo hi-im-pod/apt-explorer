@@ -1,0 +1,64 @@
+{
+  "id": "G0089",
+  "name": "The White Company",
+  "aliases": [
+    {
+      "value": "The White Company",
+      "sources": [
+        "attack",
+        "etda"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Pakistan",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "NETWIRE",
+      "source": "attack"
+    },
+    {
+      "name": "Revenge RAT",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1027.002",
+    "T1070.004",
+    "T1124",
+    "T1203",
+    "T1204.002",
+    "T1518.001",
+    "T1566.001"
+  ],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 1
+}

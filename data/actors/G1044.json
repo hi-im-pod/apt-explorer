@@ -1,0 +1,369 @@
+{
+  "id": "G1044",
+  "name": "APT42",
+  "aliases": [
+    {
+      "value": "APT42",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UNC788",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "CALANQUE",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "CALANQUE ION",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "APT 42",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "GreenBravo",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IR",
+      "source": "misp"
+    },
+    {
+      "value": "IR",
+      "source": "etda"
+    },
+    {
+      "value": "IR",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "Iran (Islamic Republic of)",
+      "source": "misp"
+    },
+    {
+      "value": "Iran (Islamic Republic of)",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Australia",
+        "source": "misp"
+      },
+      {
+        "value": "Israel",
+        "source": "misp"
+      },
+      {
+        "value": "United States",
+        "source": "misp"
+      },
+      {
+        "value": "Australia",
+        "source": "etda"
+      },
+      {
+        "value": "Bulgaria",
+        "source": "etda"
+      },
+      {
+        "value": "Iran",
+        "source": "etda"
+      },
+      {
+        "value": "Italy",
+        "source": "etda"
+      },
+      {
+        "value": "Malaysia",
+        "source": "etda"
+      },
+      {
+        "value": "Norway",
+        "source": "etda"
+      },
+      {
+        "value": "United Arab Emirates",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "Ukraine",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      },
+      {
+        "value": "Australia",
+        "source": "malpedia"
+      },
+      {
+        "value": "Israel",
+        "source": "malpedia"
+      },
+      {
+        "value": "United States",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Education",
+        "source": "misp"
+      },
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Military",
+        "source": "misp"
+      },
+      {
+        "value": "Defense",
+        "source": "misp"
+      },
+      {
+        "value": "Energy",
+        "source": "misp"
+      },
+      {
+        "value": "Finance",
+        "source": "misp"
+      },
+      {
+        "value": "Healthcare",
+        "source": "misp"
+      },
+      {
+        "value": "Pharmaceuticals",
+        "source": "misp"
+      },
+      {
+        "value": "Civil Society",
+        "source": "misp"
+      },
+      {
+        "value": "Legal",
+        "source": "misp"
+      },
+      {
+        "value": "Manufacturing",
+        "source": "misp"
+      },
+      {
+        "value": "Media",
+        "source": "misp"
+      },
+      {
+        "value": "NGOs",
+        "source": "misp"
+      },
+      {
+        "value": "Education",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Healthcare",
+        "source": "etda"
+      },
+      {
+        "value": "Manufacturing",
+        "source": "etda"
+      },
+      {
+        "value": "Media",
+        "source": "etda"
+      },
+      {
+        "value": "Non-profit organizations",
+        "source": "etda"
+      },
+      {
+        "value": "Pharmaceutical",
+        "source": "etda"
+      },
+      {
+        "value": "Legal and professional services",
+        "source": "etda"
+      },
+      {
+        "value": "Education",
+        "source": "malpedia"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      },
+      {
+        "value": "Military",
+        "source": "malpedia"
+      },
+      {
+        "value": "Defense",
+        "source": "malpedia"
+      },
+      {
+        "value": "Energy",
+        "source": "malpedia"
+      },
+      {
+        "value": "Finance",
+        "source": "malpedia"
+      },
+      {
+        "value": "Healthcare",
+        "source": "malpedia"
+      },
+      {
+        "value": "Pharmaceuticals",
+        "source": "malpedia"
+      },
+      {
+        "value": "Civil Society",
+        "source": "malpedia"
+      },
+      {
+        "value": "Legal",
+        "source": "malpedia"
+      },
+      {
+        "value": "Manufacturing",
+        "source": "malpedia"
+      },
+      {
+        "value": "Media",
+        "source": "malpedia"
+      },
+      {
+        "value": "NGOs",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "NICECURL",
+      "source": "attack"
+    },
+    {
+      "name": "TAMECAT",
+      "source": "attack"
+    },
+    {
+      "name": "TAMECAT",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1016",
+    "T1036.005",
+    "T1047",
+    "T1053.005",
+    "T1056",
+    "T1056.001",
+    "T1059.001",
+    "T1059.005",
+    "T1070",
+    "T1070.008",
+    "T1071.001",
+    "T1082",
+    "T1087.001",
+    "T1102",
+    "T1111",
+    "T1112",
+    "T1113",
+    "T1132.001",
+    "T1518.001",
+    "T1530",
+    "T1539",
+    "T1547",
+    "T1555.003",
+    "T1566.002",
+    "T1573.002",
+    "T1583.001",
+    "T1583.003",
+    "T1585.002",
+    "T1588.002",
+    "T1608.001",
+    "T1682",
+    "T1684.001"
+  ],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2022-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2024-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "bfcbb45cf106ad3d416c18575aaeb468db4a983d",
+    "07336685a65e86562afab4823368e7472ade3b78",
+    "686b64604331d09ecd155ffe6a379958f2d87b32",
+    "e2b253b023aae7abc86c8ea77b5d6bc2b8b82d35",
+    "paper:APT42%20Crooked%20Charms,%20Cons%20%20and%20Compromises",
+    "3df30e5ad2316e211c51bbd15210f3e06ed3ff7e"
+  ],
+  "conflicts": [],
+  "evidence_count": 5
+}

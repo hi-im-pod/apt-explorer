@@ -1,0 +1,242 @@
+{
+  "id": "G1004",
+  "name": "LAPSUS$",
+  "aliases": [
+    {
+      "value": "LAPSUS$",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "DEV-0537",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Strawberry Tempest",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "LAPSUS",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "SLIPPY SPIDER",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UNC3661",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Lapsus",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Lapsus$",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Slippy Spider",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "BR",
+      "source": "etda"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Financial gain",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Argentina",
+        "source": "etda"
+      },
+      {
+        "value": "Brazil",
+        "source": "etda"
+      },
+      {
+        "value": "Portugal",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      }
+    ],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "Mimikatz",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1003.003",
+    "T1003.006",
+    "T1005",
+    "T1068",
+    "T1069.002",
+    "T1078",
+    "T1078.004",
+    "T1087.002",
+    "T1090",
+    "T1098.003",
+    "T1111",
+    "T1114.003",
+    "T1133",
+    "T1136.003",
+    "T1199",
+    "T1204",
+    "T1213.001",
+    "T1213.002",
+    "T1213.003",
+    "T1213.005",
+    "T1485",
+    "T1489",
+    "T1531",
+    "T1552.008",
+    "T1555.003",
+    "T1555.005",
+    "T1578.002",
+    "T1578.003",
+    "T1583.003",
+    "T1584.002",
+    "T1586.002",
+    "T1588.001",
+    "T1588.002",
+    "T1589",
+    "T1589.001",
+    "T1589.002",
+    "T1591.002",
+    "T1591.004",
+    "T1593.003",
+    "T1597.002",
+    "T1598.004",
+    "T1621",
+    "T1684.001"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1016.001",
+      "count": 1
+    },
+    {
+      "id": "T1018",
+      "count": 1
+    },
+    {
+      "id": "T1021.001",
+      "count": 1
+    },
+    {
+      "id": "T1039",
+      "count": 1
+    },
+    {
+      "id": "T1069.002",
+      "count": 1
+    },
+    {
+      "id": "T1072",
+      "count": 1
+    },
+    {
+      "id": "T1078.002",
+      "count": 1
+    },
+    {
+      "id": "T1213.002",
+      "count": 1
+    },
+    {
+      "id": "T1213.003",
+      "count": 1
+    },
+    {
+      "id": "T1482",
+      "count": 1
+    },
+    {
+      "id": "T1485",
+      "count": 1
+    },
+    {
+      "id": "T1529",
+      "count": 1
+    },
+    {
+      "id": "T1534",
+      "count": 1
+    },
+    {
+      "id": "T1555.005",
+      "count": 1
+    },
+    {
+      "id": "T1567",
+      "count": 1
+    }
+  ],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2022-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q3",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "229590c6306ab44c9a100e43f19f11b5e1c5d67d",
+    "e8c33cefaf9dc42acf2d668cf78d781fdf17c240",
+    "c84b9a87c69fbf1fc074571a9ac8f16631cf8603",
+    "16c141d9d362d2d18b694aa83afb035d83d67ea9"
+  ],
+  "conflicts": [],
+  "evidence_count": 12
+}

@@ -1,0 +1,120 @@
+{
+  "id": "zoopark",
+  "name": "ZooPark",
+  "aliases": [
+    {
+      "value": "ZooPark",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "COBALT JUNO",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "APT-C-38 (QiAnXin)",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "SABER LION",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TG-2884 (SCWX CTU)",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TG-2884",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Cobalt Juno",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "APT-C-38",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Saber Lion",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Egypt",
+        "source": "etda"
+      },
+      {
+        "value": "Iraq",
+        "source": "etda"
+      },
+      {
+        "value": "Iran",
+        "source": "etda"
+      },
+      {
+        "value": "Jordan",
+        "source": "etda"
+      },
+      {
+        "value": "Kuwait",
+        "source": "etda"
+      },
+      {
+        "value": "Lebanon",
+        "source": "etda"
+      },
+      {
+        "value": "Morocco",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Media",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 8
+}

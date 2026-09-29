@@ -1,0 +1,40 @@
+{
+  "id": "actor240524",
+  "name": "Actor240524",
+  "aliases": [
+    {
+      "value": "Actor240524",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "ABCsync",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2024-Q3",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "ef5ef546368b8746397d6be2f18a242619ff56da"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

@@ -1,0 +1,136 @@
+{
+  "id": "unc215",
+  "name": "UNC215",
+  "aliases": [
+    {
+      "value": "UNC215",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "etda"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Israel",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Education",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "IT",
+        "source": "etda"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "TwoFace",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2017-0199",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-11882",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-10148",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-33766",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2017-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "ff86dd3ec5a70fe1e1bb7680e1df4697c6212fe2",
+    "291c9f75be5db44e71d84666512d431a4cc5013b",
+    "bd0c197453f05585b435008cdde10e54190a83d6",
+    "b43c8a29b106f92b9521b4d057e29d23692ff86d",
+    "fa738be5d10521d4f90279de7ab0c3000544c539",
+    "1655e090c52d870c8bb518408742fc5e6cead70b",
+    "c541610a0a2f23c4527d321f151c9e94c8b53902"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

@@ -1,0 +1,82 @@
+{
+  "id": "cyber-serp",
+  "name": "Cyber Serp",
+  "aliases": [
+    {
+      "value": "Cyber Serp",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UAC-0255",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "RU",
+      "source": "misp"
+    },
+    {
+      "value": "RU",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "AGEWHEEZE",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [
+    {
+      "id": "T1027",
+      "count": 1
+    },
+    {
+      "id": "T1053.005",
+      "count": 1
+    },
+    {
+      "id": "T1071.001",
+      "count": 1
+    },
+    {
+      "id": "T1105",
+      "count": 1
+    },
+    {
+      "id": "T1566",
+      "count": 1
+    }
+  ],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2026-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "577627c1e2b07c5c56ea56bcee0b1cce0d10a1a2",
+    "e52f1156f2c9e8397ba775fc76825e6c67430ac4"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

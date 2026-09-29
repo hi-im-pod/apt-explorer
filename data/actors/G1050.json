@@ -1,0 +1,191 @@
+{
+  "id": "G1050",
+  "name": "Water Galura",
+  "aliases": [
+    {
+      "value": "Water Galura",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "GOLD FEATHER",
+      "sources": [
+        "attack"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "Qilin",
+      "source": "attack"
+    },
+    {
+      "name": "Tor",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1486",
+    "T1585.001",
+    "T1657"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1001.001",
+      "count": 1
+    },
+    {
+      "id": "T1003.001",
+      "count": 1
+    },
+    {
+      "id": "T1005",
+      "count": 1
+    },
+    {
+      "id": "T1010",
+      "count": 1
+    },
+    {
+      "id": "T1011.001",
+      "count": 1
+    },
+    {
+      "id": "T1014",
+      "count": 1
+    },
+    {
+      "id": "T1018",
+      "count": 1
+    },
+    {
+      "id": "T1021.001",
+      "count": 1
+    },
+    {
+      "id": "T1021.004",
+      "count": 1
+    },
+    {
+      "id": "T1027",
+      "count": 1
+    },
+    {
+      "id": "T1037",
+      "count": 1
+    },
+    {
+      "id": "T1046",
+      "count": 1
+    },
+    {
+      "id": "T1053",
+      "count": 1
+    },
+    {
+      "id": "T1055",
+      "count": 1
+    },
+    {
+      "id": "T1059.001",
+      "count": 1
+    },
+    {
+      "id": "T1059.003",
+      "count": 1
+    },
+    {
+      "id": "T1068",
+      "count": 1
+    },
+    {
+      "id": "T1078",
+      "count": 1
+    },
+    {
+      "id": "T1082",
+      "count": 1
+    },
+    {
+      "id": "T1190",
+      "count": 1
+    },
+    {
+      "id": "T1211",
+      "count": 1
+    },
+    {
+      "id": "T1480",
+      "count": 1
+    },
+    {
+      "id": "T1485",
+      "count": 1
+    },
+    {
+      "id": "T1486",
+      "count": 1
+    },
+    {
+      "id": "T1490",
+      "count": 1
+    },
+    {
+      "id": "T1497",
+      "count": 1
+    },
+    {
+      "id": "T1548",
+      "count": 1
+    },
+    {
+      "id": "T1561.001",
+      "count": 1
+    },
+    {
+      "id": "T1566",
+      "count": 1
+    },
+    {
+      "id": "T1566.001",
+      "count": 1
+    },
+    {
+      "id": "T1566.002",
+      "count": 1
+    },
+    {
+      "id": "T1569.002",
+      "count": 1
+    },
+    {
+      "id": "T1570",
+      "count": 1
+    }
+  ],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2024-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "4c8f97fc9d25791ae96a8c718d6648d4672609ee",
+    "8a8079e989a1498767ede0baa6c979e7581d5560"
+  ],
+  "conflicts": [],
+  "evidence_count": 0
+}

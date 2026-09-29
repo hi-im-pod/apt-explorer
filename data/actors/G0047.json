@@ -1,0 +1,602 @@
+{
+  "id": "G0047",
+  "name": "Gamaredon Group",
+  "aliases": [
+    {
+      "value": "Gamaredon Group",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "IRON TILDEN",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Primitive Bear",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "ACTINIUM",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Armageddon",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Shuckworm",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "DEV-0157",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Aqua Blizzard",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "NastyShrew",
+      "sources": [
+        "attack"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "Ping",
+      "source": "attack"
+    },
+    {
+      "name": "PowerPunch",
+      "source": "attack"
+    },
+    {
+      "name": "Pteranodon",
+      "source": "attack"
+    },
+    {
+      "name": "QuietSieve",
+      "source": "attack"
+    },
+    {
+      "name": "Reg",
+      "source": "attack"
+    },
+    {
+      "name": "Remcos",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1001",
+    "T1005",
+    "T1012",
+    "T1016.001",
+    "T1020",
+    "T1021.005",
+    "T1025",
+    "T1027",
+    "T1027.004",
+    "T1027.010",
+    "T1027.012",
+    "T1027.015",
+    "T1027.016",
+    "T1033",
+    "T1036.005",
+    "T1039",
+    "T1041",
+    "T1047",
+    "T1053.005",
+    "T1055",
+    "T1057",
+    "T1059.001",
+    "T1059.003",
+    "T1059.005",
+    "T1070.004",
+    "T1071.001",
+    "T1080",
+    "T1082",
+    "T1083",
+    "T1090",
+    "T1090.003",
+    "T1091",
+    "T1095",
+    "T1102",
+    "T1102.002",
+    "T1102.003",
+    "T1105",
+    "T1106",
+    "T1112",
+    "T1113",
+    "T1119",
+    "T1120",
+    "T1137",
+    "T1140",
+    "T1204.001",
+    "T1204.002",
+    "T1218.005",
+    "T1218.011",
+    "T1221",
+    "T1480",
+    "T1491.001",
+    "T1497.001",
+    "T1518.001",
+    "T1534",
+    "T1547.001",
+    "T1559.001",
+    "T1561.001",
+    "T1564.003",
+    "T1566.001",
+    "T1568",
+    "T1568.001",
+    "T1571",
+    "T1583.001",
+    "T1583.003",
+    "T1583.006",
+    "T1587.003",
+    "T1588.002",
+    "T1608.001",
+    "T1620",
+    "T1685"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1059.001",
+      "count": 2
+    },
+    {
+      "id": "T1071.001",
+      "count": 2
+    },
+    {
+      "id": "T1082",
+      "count": 2
+    },
+    {
+      "id": "T1083",
+      "count": 2
+    },
+    {
+      "id": "T1140",
+      "count": 2
+    },
+    {
+      "id": "T1480.001",
+      "count": 2
+    },
+    {
+      "id": "T1583.001",
+      "count": 2
+    },
+    {
+      "id": "T1005",
+      "count": 1
+    },
+    {
+      "id": "T1008",
+      "count": 1
+    },
+    {
+      "id": "T1012",
+      "count": 1
+    },
+    {
+      "id": "T1025",
+      "count": 1
+    },
+    {
+      "id": "T1027.006",
+      "count": 1
+    },
+    {
+      "id": "T1027.009",
+      "count": 1
+    },
+    {
+      "id": "T1027.010",
+      "count": 1
+    },
+    {
+      "id": "T1027.011",
+      "count": 1
+    },
+    {
+      "id": "T1027.013",
+      "count": 1
+    },
+    {
+      "id": "T1036.004",
+      "count": 1
+    },
+    {
+      "id": "T1036.005",
+      "count": 1
+    },
+    {
+      "id": "T1036.007",
+      "count": 1
+    },
+    {
+      "id": "T1037.001",
+      "count": 1
+    },
+    {
+      "id": "T1039",
+      "count": 1
+    },
+    {
+      "id": "T1041",
+      "count": 1
+    },
+    {
+      "id": "T1047",
+      "count": 1
+    },
+    {
+      "id": "T1053.005",
+      "count": 1
+    },
+    {
+      "id": "T1057",
+      "count": 1
+    },
+    {
+      "id": "T1059.005",
+      "count": 1
+    },
+    {
+      "id": "T1070.004",
+      "count": 1
+    },
+    {
+      "id": "T1074.001",
+      "count": 1
+    },
+    {
+      "id": "T1090",
+      "count": 1
+    },
+    {
+      "id": "T1091",
+      "count": 1
+    },
+    {
+      "id": "T1095",
+      "count": 1
+    },
+    {
+      "id": "T1102",
+      "count": 1
+    },
+    {
+      "id": "T1102.001",
+      "count": 1
+    },
+    {
+      "id": "T1105",
+      "count": 1
+    },
+    {
+      "id": "T1106",
+      "count": 1
+    },
+    {
+      "id": "T1112",
+      "count": 1
+    },
+    {
+      "id": "T1113",
+      "count": 1
+    },
+    {
+      "id": "T1132.001",
+      "count": 1
+    },
+    {
+      "id": "T1137.001",
+      "count": 1
+    },
+    {
+      "id": "T1204.001",
+      "count": 1
+    },
+    {
+      "id": "T1204.002",
+      "count": 1
+    },
+    {
+      "id": "T1218.005",
+      "count": 1
+    },
+    {
+      "id": "T1221",
+      "count": 1
+    },
+    {
+      "id": "T1518.001",
+      "count": 1
+    },
+    {
+      "id": "T1539",
+      "count": 1
+    },
+    {
+      "id": "T1547.001",
+      "count": 1
+    },
+    {
+      "id": "T1552.002",
+      "count": 1
+    },
+    {
+      "id": "T1555.003",
+      "count": 1
+    },
+    {
+      "id": "T1559.001",
+      "count": 1
+    },
+    {
+      "id": "T1564.001",
+      "count": 1
+    },
+    {
+      "id": "T1566.001",
+      "count": 1
+    },
+    {
+      "id": "T1567.002",
+      "count": 1
+    },
+    {
+      "id": "T1568.001",
+      "count": 1
+    },
+    {
+      "id": "T1573.001",
+      "count": 1
+    },
+    {
+      "id": "T1583.003",
+      "count": 1
+    },
+    {
+      "id": "T1583.004",
+      "count": 1
+    },
+    {
+      "id": "T1583.007",
+      "count": 1
+    },
+    {
+      "id": "T1584.003",
+      "count": 1
+    },
+    {
+      "id": "T1587.001",
+      "count": 1
+    },
+    {
+      "id": "T1588.002",
+      "count": 1
+    },
+    {
+      "id": "T1608",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2017-0199",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-20250",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-19781",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2025-6218",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2025-8088",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2026-22813",
+      "kev": false,
+      "ransomware": null
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2016-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2017-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2018-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 3
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 8
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 4
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2023-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2025-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q2",
+      "count": 3
+    },
+    {
+      "quarter": "2025-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2025-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 4
+    }
+  ],
+  "reports": [
+    "13c9ba1cc9daa8f77f5006055e587253d078d6ca",
+    "27c08e0a03e65cea5d3652ff2168aaf8dd9657f9",
+    "11457a6b5c67a73785fab13ccf226f329629c958",
+    "f6a0e5aa4904d488f12d88394feb80c4049aa12f",
+    "a93b1f07a78f22d5ccc9da92dc8db6d3c03e4334",
+    "bdcc83093677dc0ad36b2937396bc3d8b51dca57",
+    "db25d80ed77ab8630cfd21e591bd9a4aef8db36c",
+    "358e912932c6cabc6c096988d0c425b0d856acbb",
+    "197ba2d6753fe6ffefa2196f365fe0127a25a020",
+    "5b8cb7f9b2f54e602fe7f3243a21e710bc628227",
+    "9b8318e830d11254f8884a7af42a1676d9c51b0b",
+    "e99bf15cd223f01ebbf225dbf294c824007a1884",
+    "9afcf258c89c83eb6555e800208ca88e8674f3d0",
+    "d3f9c773389f17b868a23739bed521300cea3bae",
+    "8bbb47162318dff1bead4eee2b311e77e882f743",
+    "8b5fbe9ab67505ab5e8f81aaf49c57442d70b0b6",
+    "acea177d177878b6303f017ab49b872a15757f09",
+    "3f376504ae710b506adaf25298562f78dec63f15",
+    "19ca80e1086bf5820f592e38f4b46280b544773a",
+    "a73568b3fe7ea68f32f81575281cf99ae510d326",
+    "abee4fba459156eb4b681f95337c5fade2e24385",
+    "6d96c56b3170a7edbd2b85d0cd1ee19b3987733f",
+    "b8680a401f3d92a3d7048b480b2ae1cff8735c38",
+    "726c535a689d9020a7528d050e9f39afc0cc55d1",
+    "c444be7de57a435a484792660cd28278d7723fd3",
+    "d6d27a3621ad8ef77df6c6c9644d8deb4a32c2ba",
+    "522f7c41c9f71cd4ec842da1a305d614426e719f",
+    "58a7dc800d633da1fad1756815d0e71ad120b60f",
+    "aea32dc44e16621116c0d01a489876bb7e36f6b5",
+    "3fe8f7a06c34c9171fe13352fdc807d04bff7775",
+    "80649c8b4cfc9987a5b747021917cd53f2c433e5",
+    "23cafa01c3e13fe4999ebf42997a45347b029a62",
+    "70b68051e0086125427abed0851380433dc93108",
+    "a4cfdd5ef6eaee5466755fec8f50a7e8aa22b81b",
+    "f4cc781f3d98a56cba20613f0550f457a7d47956",
+    "ee64c5385df7e65c33cbb7de8f802e279ab0a8c9",
+    "2ac2ed44a463bcf1dbd5070c38e70af03bc1231c",
+    "d80285d183f189dbdcbea129264b676bc6a744ac",
+    "8c1113bdbc364d81bf68c274e309e9d5b8d00c9b",
+    "656f08cd11d5191ee9d71e48b267e87b9be6da27",
+    "07f675fbe36baae92e4ba5f2e87aeb80a9022b3a",
+    "23105ad6d914cb0f167209761326119f86c1ae3c",
+    "bead11e2acc0a0690136d7963bb52e8fd93bb80b",
+    "efba480dd620ad7230886608631de2131fd524ba",
+    "058b757094b61fc018b5b6fd3c8956346ca8e63b",
+    "e5e69cfd5429be15882d043f1938318d889b9f13",
+    "f359aec53f9387c45e5f9ec93a803e4b2199f39c",
+    "paper:Eset-Turla-Outlook-Backdoor",
+    "facd552d3a133cec5a6421d21474e03a66968b0c",
+    "0825f718c85ddeeac8c223b3eeff32c8edb568a6",
+    "7c7567206d222546376079a19c07b615d9538cf3",
+    "9d2ad96e9013af7d912d56022158841fc95e1273",
+    "9cd65052f9dc3d8fddfaaa426a551635a78d0d73"
+  ],
+  "conflicts": [],
+  "evidence_count": 0
+}

@@ -1,0 +1,64 @@
+{
+  "id": "snake-wine",
+  "name": "Snake Wine",
+  "aliases": [
+    {
+      "value": "Snake Wine",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "etda"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Japan",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Education",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Commerce",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2017-Q1",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "0b30c4bd931d88806fcbd98cb740e5b111fc8f42"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

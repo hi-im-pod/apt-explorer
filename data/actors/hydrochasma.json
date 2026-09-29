@@ -1,0 +1,41 @@
+{
+  "id": "hydrochasma",
+  "name": "Hydrochasma",
+  "aliases": [
+    {
+      "value": "Hydrochasma",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": [
+      {
+        "value": "Healthcare",
+        "source": "etda"
+      },
+      {
+        "value": "Shipping and Logistics",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 0
+}

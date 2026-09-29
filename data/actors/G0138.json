@@ -1,0 +1,1848 @@
+{
+  "id": "G0138",
+  "name": "Andariel",
+  "aliases": [
+    {
+      "value": "Andariel",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Silent Chollima",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Onyx Sleet",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "PLUTONIUM",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Bluenoroff",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "APT 38",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Stardust Chollima",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TEMP.Hermit",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TA444",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Sapphire Sleet",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Nickel Academy",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Black Artemis",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Alluring Pisces",
+      "sources": [
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "APT45",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "GRASS NEPTUNE",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Lazarus Group",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Operation DarkSeoul",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Dark Seoul",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Hidden Cobra",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Hastati Group",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Unit 121",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Bureau 121",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "NewRomanic Cyber Army Team",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Subgroup: Bluenoroff",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Group 77",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Labyrinth Chollima",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Operation Troy",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Operation GhostSecret",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Operation AppleJeus",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "APT38",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Whois Hacking Team",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Zinc",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Appleworm",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "APT-C-26",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "NICKEL GLADSTONE",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "COVELLITE",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "ATK3",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "ATK117",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Citrine Sleet",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "DEV-0139",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "DEV-1222",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Diamond Sleet",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "ZINC",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "COPERNICIUM",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TA404",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Lazarus group",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "BeagleBoyz",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Moonstone Sleet",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UNC1069",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "CryptoCore",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "OperationTroy",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Guardian of Peace",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "GOP",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "WHOis Team",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Subgroup: Andariel",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "HERMIT NEPTUNE",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "MASAN",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "MIDNIGHT NEPTUNE",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Stonefly",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Plutonium",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "APT 45",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Jumpy Pisces",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "CTG-6459",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Nickel Gladstone",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "T-APT-15",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "ATK 117",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Black Alicanto",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Copernicium",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "TAG-71",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Selective Pisces",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Covellite",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "CTG-2460",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Lazarus",
+      "sources": [
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Genie Spider",
+      "sources": [
+        "malpedia"
+      ]
+    },
+    {
+      "value": "CageyChameleon",
+      "sources": [
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "KP",
+      "source": "misp"
+    },
+    {
+      "value": "KP",
+      "source": "etda"
+    },
+    {
+      "value": "KP",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "Korea (Democratic People's Republic of)",
+      "source": "misp"
+    },
+    {
+      "value": "Korea (Democratic People's Republic of)",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Sabotage",
+      "source": "misp"
+    },
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Financial crime",
+      "source": "etda"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    },
+    {
+      "value": "Sabotage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "South Korea",
+        "source": "misp"
+      },
+      {
+        "value": "United States",
+        "source": "misp"
+      },
+      {
+        "value": "Thailand",
+        "source": "misp"
+      },
+      {
+        "value": "France",
+        "source": "misp"
+      },
+      {
+        "value": "China",
+        "source": "misp"
+      },
+      {
+        "value": "Hong Kong",
+        "source": "misp"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "misp"
+      },
+      {
+        "value": "Guatemala",
+        "source": "misp"
+      },
+      {
+        "value": "Canada",
+        "source": "misp"
+      },
+      {
+        "value": "Bangladesh",
+        "source": "misp"
+      },
+      {
+        "value": "Japan",
+        "source": "misp"
+      },
+      {
+        "value": "India",
+        "source": "misp"
+      },
+      {
+        "value": "Germany",
+        "source": "misp"
+      },
+      {
+        "value": "Brazil",
+        "source": "misp"
+      },
+      {
+        "value": "Australia",
+        "source": "misp"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      },
+      {
+        "value": "South Korea",
+        "source": "malpedia"
+      },
+      {
+        "value": "United States",
+        "source": "malpedia"
+      },
+      {
+        "value": "Thailand",
+        "source": "malpedia"
+      },
+      {
+        "value": "France",
+        "source": "malpedia"
+      },
+      {
+        "value": "China",
+        "source": "malpedia"
+      },
+      {
+        "value": "Hong Kong",
+        "source": "malpedia"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "malpedia"
+      },
+      {
+        "value": "Guatemala",
+        "source": "malpedia"
+      },
+      {
+        "value": "Canada",
+        "source": "malpedia"
+      },
+      {
+        "value": "Bangladesh",
+        "source": "malpedia"
+      },
+      {
+        "value": "Japan",
+        "source": "malpedia"
+      },
+      {
+        "value": "India",
+        "source": "malpedia"
+      },
+      {
+        "value": "Germany",
+        "source": "malpedia"
+      },
+      {
+        "value": "Brazil",
+        "source": "malpedia"
+      },
+      {
+        "value": "Australia",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Private sector",
+        "source": "misp"
+      },
+      {
+        "value": "Energy",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      },
+      {
+        "value": "Private sector",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Rifdoor",
+      "source": "attack"
+    },
+    {
+      "name": "gh0st RAT",
+      "source": "attack"
+    },
+    {
+      "name": "3CX Backdoor",
+      "source": "malpedia"
+    },
+    {
+      "name": "ARTFULPIE",
+      "source": "malpedia"
+    },
+    {
+      "name": "AlphaNC",
+      "source": "malpedia"
+    },
+    {
+      "name": "Alreay",
+      "source": "malpedia"
+    },
+    {
+      "name": "AnchorMTea",
+      "source": "malpedia"
+    },
+    {
+      "name": "AppleJeus",
+      "source": "malpedia"
+    },
+    {
+      "name": "BADCALL",
+      "source": "malpedia"
+    },
+    {
+      "name": "BISTROMATH",
+      "source": "malpedia"
+    },
+    {
+      "name": "BLINDINGCAN",
+      "source": "malpedia"
+    },
+    {
+      "name": "BLINDTOAD",
+      "source": "malpedia"
+    },
+    {
+      "name": "BOOTWRECK",
+      "source": "malpedia"
+    },
+    {
+      "name": "BUFFETLINE",
+      "source": "malpedia"
+    },
+    {
+      "name": "BanPolMex RAT",
+      "source": "malpedia"
+    },
+    {
+      "name": "Bankshot",
+      "source": "malpedia"
+    },
+    {
+      "name": "Bitsran",
+      "source": "malpedia"
+    },
+    {
+      "name": "BlueNoroff",
+      "source": "malpedia"
+    },
+    {
+      "name": "BookCodes RAT",
+      "source": "malpedia"
+    },
+    {
+      "name": "Brambul",
+      "source": "malpedia"
+    },
+    {
+      "name": "BravoNC",
+      "source": "malpedia"
+    },
+    {
+      "name": "CHEESETRAY",
+      "source": "malpedia"
+    },
+    {
+      "name": "CLEANTOAD",
+      "source": "malpedia"
+    },
+    {
+      "name": "CLOUDBURST",
+      "source": "malpedia"
+    },
+    {
+      "name": "CRAT",
+      "source": "malpedia"
+    },
+    {
+      "name": "Casso",
+      "source": "malpedia"
+    },
+    {
+      "name": "ComeBacker",
+      "source": "malpedia"
+    },
+    {
+      "name": "Contopee",
+      "source": "malpedia"
+    },
+    {
+      "name": "CoreDN",
+      "source": "malpedia"
+    },
+    {
+      "name": "Cur1Downloader",
+      "source": "malpedia"
+    },
+    {
+      "name": "DPAPILoader",
+      "source": "malpedia"
+    },
+    {
+      "name": "DRATzarus",
+      "source": "malpedia"
+    },
+    {
+      "name": "DYEPACK",
+      "source": "malpedia"
+    },
+    {
+      "name": "Dacls",
+      "source": "malpedia"
+    },
+    {
+      "name": "DarkComet",
+      "source": "malpedia"
+    },
+    {
+      "name": "Delta(Alfa,Bravo, ...)",
+      "source": "malpedia"
+    },
+    {
+      "name": "Dtrack",
+      "source": "malpedia"
+    },
+    {
+      "name": "Duuzer",
+      "source": "malpedia"
+    },
+    {
+      "name": "ELECTRICFISH",
+      "source": "malpedia"
+    },
+    {
+      "name": "FastCash",
+      "source": "malpedia"
+    },
+    {
+      "name": "FeedLoad",
+      "source": "malpedia"
+    },
+    {
+      "name": "ForestTiger",
+      "source": "malpedia"
+    },
+    {
+      "name": "FudModule",
+      "source": "malpedia"
+    },
+    {
+      "name": "FuwuqiDrama",
+      "source": "malpedia"
+    },
+    {
+      "name": "Ghost RAT",
+      "source": "malpedia"
+    },
+    {
+      "name": "GhostSecret",
+      "source": "malpedia"
+    },
+    {
+      "name": "Gopuram",
+      "source": "malpedia"
+    },
+    {
+      "name": "HARDRAIN",
+      "source": "malpedia"
+    },
+    {
+      "name": "HLOADER",
+      "source": "malpedia"
+    },
+    {
+      "name": "HOPLIGHT",
+      "source": "malpedia"
+    },
+    {
+      "name": "HOTCROISSANT",
+      "source": "malpedia"
+    },
+    {
+      "name": "HOTWAX",
+      "source": "malpedia"
+    },
+    {
+      "name": "HTTP(S) uploader",
+      "source": "malpedia"
+    },
+    {
+      "name": "Hermes",
+      "source": "malpedia"
+    },
+    {
+      "name": "IconicStealer",
+      "source": "malpedia"
+    },
+    {
+      "name": "ImprudentCook",
+      "source": "malpedia"
+    },
+    {
+      "name": "Interception",
+      "source": "malpedia"
+    },
+    {
+      "name": "JessieConTea",
+      "source": "malpedia"
+    },
+    {
+      "name": "Joanap",
+      "source": "malpedia"
+    },
+    {
+      "name": "KANDYKORN",
+      "source": "malpedia"
+    },
+    {
+      "name": "KEYMARBLE",
+      "source": "malpedia"
+    },
+    {
+      "name": "Kaolin RAT",
+      "source": "malpedia"
+    },
+    {
+      "name": "KillDisk (Lazarus)",
+      "source": "malpedia"
+    },
+    {
+      "name": "Klackring",
+      "source": "malpedia"
+    },
+    {
+      "name": "LCPDot",
+      "source": "malpedia"
+    },
+    {
+      "name": "LPEClient",
+      "source": "malpedia"
+    },
+    {
+      "name": "LambLoad",
+      "source": "malpedia"
+    },
+    {
+      "name": "LazarDoor",
+      "source": "malpedia"
+    },
+    {
+      "name": "LazarLoader",
+      "source": "malpedia"
+    },
+    {
+      "name": "LightlessCan",
+      "source": "malpedia"
+    },
+    {
+      "name": "MagicRAT",
+      "source": "malpedia"
+    },
+    {
+      "name": "Manuscrypt",
+      "source": "malpedia"
+    },
+    {
+      "name": "NACHOCHEESE",
+      "source": "malpedia"
+    },
+    {
+      "name": "NESTEGG",
+      "source": "malpedia"
+    },
+    {
+      "name": "NedDnLoader",
+      "source": "malpedia"
+    },
+    {
+      "name": "OpBlockBuster",
+      "source": "malpedia"
+    },
+    {
+      "name": "POOLRAT",
+      "source": "malpedia"
+    },
+    {
+      "name": "PSLogger",
+      "source": "malpedia"
+    },
+    {
+      "name": "PhanDoor",
+      "source": "malpedia"
+    },
+    {
+      "name": "PostNapTea",
+      "source": "malpedia"
+    },
+    {
+      "name": "PowerBrace",
+      "source": "malpedia"
+    },
+    {
+      "name": "PowerRatankba",
+      "source": "malpedia"
+    },
+    {
+      "name": "PowerSpritz",
+      "source": "malpedia"
+    },
+    {
+      "name": "PulsarTea",
+      "source": "malpedia"
+    },
+    {
+      "name": "QUICKCAFE",
+      "source": "malpedia"
+    },
+    {
+      "name": "QuanPinLoader",
+      "source": "malpedia"
+    },
+    {
+      "name": "REDSHAWL",
+      "source": "malpedia"
+    },
+    {
+      "name": "Racket Downloader",
+      "source": "malpedia"
+    },
+    {
+      "name": "Ratankba",
+      "source": "malpedia"
+    },
+    {
+      "name": "RatankbaPOS",
+      "source": "malpedia"
+    },
+    {
+      "name": "RedHat Hacker WebShell",
+      "source": "malpedia"
+    },
+    {
+      "name": "RemotePE",
+      "source": "malpedia"
+    },
+    {
+      "name": "Rifdoor",
+      "source": "malpedia"
+    },
+    {
+      "name": "RollSling",
+      "source": "malpedia"
+    },
+    {
+      "name": "Romeo(Alfa,Bravo, ...)",
+      "source": "malpedia"
+    },
+    {
+      "name": "RustBucket",
+      "source": "malpedia"
+    },
+    {
+      "name": "SLICKSHOES",
+      "source": "malpedia"
+    },
+    {
+      "name": "SUGARLOADER",
+      "source": "malpedia"
+    },
+    {
+      "name": "ScoringMathTea",
+      "source": "malpedia"
+    },
+    {
+      "name": "Scout",
+      "source": "malpedia"
+    },
+    {
+      "name": "SecondHandTea",
+      "source": "malpedia"
+    },
+    {
+      "name": "Sierra(Alfa,Bravo, ...)",
+      "source": "malpedia"
+    },
+    {
+      "name": "SimpleTea",
+      "source": "malpedia"
+    },
+    {
+      "name": "SnatchCrypto",
+      "source": "malpedia"
+    },
+    {
+      "name": "SpectralBlur",
+      "source": "malpedia"
+    },
+    {
+      "name": "TOUCHMOVE",
+      "source": "malpedia"
+    },
+    {
+      "name": "TYPEFRAME",
+      "source": "malpedia"
+    },
+    {
+      "name": "ThemeForestRAT",
+      "source": "malpedia"
+    },
+    {
+      "name": "Torisma",
+      "source": "malpedia"
+    },
+    {
+      "name": "VEILEDSIGNAL",
+      "source": "malpedia"
+    },
+    {
+      "name": "VSingle",
+      "source": "malpedia"
+    },
+    {
+      "name": "Volgmer",
+      "source": "malpedia"
+    },
+    {
+      "name": "Vyveva RAT",
+      "source": "malpedia"
+    },
+    {
+      "name": "WORMHOLE",
+      "source": "malpedia"
+    },
+    {
+      "name": "WannaCryptor",
+      "source": "malpedia"
+    },
+    {
+      "name": "WatchCat",
+      "source": "malpedia"
+    },
+    {
+      "name": "WebbyTea",
+      "source": "malpedia"
+    },
+    {
+      "name": "WinInetLoader",
+      "source": "malpedia"
+    },
+    {
+      "name": "WinorDLL64",
+      "source": "malpedia"
+    },
+    {
+      "name": "Yort",
+      "source": "malpedia"
+    },
+    {
+      "name": "miniBlindingCan",
+      "source": "malpedia"
+    },
+    {
+      "name": "miniTypeFrame",
+      "source": "malpedia"
+    },
+    {
+      "name": "sRDI",
+      "source": "malpedia"
+    },
+    {
+      "name": "tsunami",
+      "source": "malpedia"
+    },
+    {
+      "name": "wAgentTea",
+      "source": "malpedia"
+    },
+    {
+      "name": "Andardoor",
+      "source": "malpedia"
+    },
+    {
+      "name": "Atharvan",
+      "source": "malpedia"
+    },
+    {
+      "name": "Collection RAT",
+      "source": "malpedia"
+    },
+    {
+      "name": "GopherRAT",
+      "source": "malpedia"
+    },
+    {
+      "name": "HazyLoad",
+      "source": "malpedia"
+    },
+    {
+      "name": "JelusRAT",
+      "source": "malpedia"
+    },
+    {
+      "name": "Jupiter",
+      "source": "malpedia"
+    },
+    {
+      "name": "Lilith",
+      "source": "malpedia"
+    },
+    {
+      "name": "Maui Ransomware",
+      "source": "malpedia"
+    },
+    {
+      "name": "NineRAT",
+      "source": "malpedia"
+    },
+    {
+      "name": "PetitPotato",
+      "source": "malpedia"
+    },
+    {
+      "name": "QuiteRAT",
+      "source": "malpedia"
+    },
+    {
+      "name": "SHARPKNOT",
+      "source": "malpedia"
+    },
+    {
+      "name": "SHATTEREDGLASS",
+      "source": "malpedia"
+    },
+    {
+      "name": "Tiger RAT",
+      "source": "malpedia"
+    },
+    {
+      "name": "TigerLite",
+      "source": "malpedia"
+    },
+    {
+      "name": "YamaBot",
+      "source": "malpedia"
+    },
+    {
+      "name": "AmodalTea",
+      "source": "malpedia"
+    },
+    {
+      "name": "WAVESHAPER",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1005",
+    "T1027.003",
+    "T1049",
+    "T1057",
+    "T1105",
+    "T1189",
+    "T1203",
+    "T1204.002",
+    "T1566.001",
+    "T1588.001",
+    "T1590.005",
+    "T1592.002"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1053.005",
+      "count": 1
+    },
+    {
+      "id": "T1059.001",
+      "count": 1
+    },
+    {
+      "id": "T1059.005",
+      "count": 1
+    },
+    {
+      "id": "T1140",
+      "count": 1
+    },
+    {
+      "id": "T1518.001",
+      "count": 1
+    },
+    {
+      "id": "T1564.001",
+      "count": 1
+    },
+    {
+      "id": "T1566.001",
+      "count": 1
+    },
+    {
+      "id": "T1571",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2013-4979",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2014-0497",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2014-8439",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2015-2387",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2015-2419",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2015-2545",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2015-3105",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2015-5119",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2015-5122",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2015-6585",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2015-7645",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2015-8651",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2016-0034",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2016-0189",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2016-1019",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2016-4117",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-0199",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-0261",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-10271",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-1182",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2017-12824",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2017-15399",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2017-8291",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-20250",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-4878",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-6055",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2018-8174",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-8373",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-0708",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-0797",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-0808",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-0859",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-1132",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-11707",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-11708",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-1367",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-13720",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-1458",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-2215",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-3568",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-5786",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-6225",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2019-7286",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-7287",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-8518",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2020-0986",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-1380",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-20038",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-34527",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-4034",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-44228",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-24990",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-27925",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-37042",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-47966",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-42793",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-26229",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-0282",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2025-6218",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2025-8088",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2026-1281",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-1340",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-21509",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2015-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2019-Q4",
+      "count": 4
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 5
+    },
+    {
+      "quarter": "2020-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q2",
+      "count": 3
+    },
+    {
+      "quarter": "2021-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 5
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 10
+    },
+    {
+      "quarter": "2022-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2023-Q1",
+      "count": 9
+    },
+    {
+      "quarter": "2023-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2023-Q3",
+      "count": 4
+    },
+    {
+      "quarter": "2023-Q4",
+      "count": 3
+    },
+    {
+      "quarter": "2024-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2024-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 4
+    },
+    {
+      "quarter": "2026-Q3",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "24bb6d01f2508e4001990348616aff2cadc34cd1",
+    "83acfa3564bb29071720fe0642f57d930e02dbb7",
+    "7ac0a8fc12a526672cccc6de65b7943bb700f3c4",
+    "1f797c4832edd2005abaa9076ccc40d3f16bccde",
+    "56ed9733c1fe64731b5a572f30fd58d756a9d14c",
+    "bbd2e38e0a210917ec9f3b697f17ed91da4eafa3",
+    "4d121bcd6d12a8de873f9b4d1819ae1253614445",
+    "a052ffc6a85eecd3f0a1b632c5fb52bcee845eed",
+    "4ab76f396dd4cf9d81d4636158c06bfbdc488de7",
+    "33d56385d9aaf9d6692724ce8e253b771e294ae6",
+    "83dbf3ac01f347dcb82ecea7b4e3f259049662d8",
+    "f058f562cfdfdc5aea92985f74627e3f507edb1b",
+    "296690290086bf1651c74db8b1f2337bd39ecd3a",
+    "efbd423ef9480c50b08956e9b55a31baf9c4c8d6",
+    "a5af4ba85da685a118afff56a007b6ec5e9c203d",
+    "0ce1eae63e681b49a35d3d50bcf5b34100b0272f",
+    "efcbb14f8ef15621c8601482e2b24e394aa0cf33",
+    "af49b1c03b279bab539136a05c4955863e535b47",
+    "cdb7237a581b6e98420f4fa2b592af10298c1b23",
+    "287a22d1ee13a4ac02679ca01da10c205a7b6a3e",
+    "d5782a5ae293d83bb9798f6793b72ec72a400d5f",
+    "61441439fbdfa37eafd90ced35fbe9acd58b2b4e",
+    "4672fc36c4981b36b0ed234fceaeca884226e31d",
+    "fddfe4b139190d30f8574b4b86a3bc0877310be5",
+    "fe4118b12ef6374ac98402ffe6896b70a3cf9600",
+    "899ca1bce85b3c285e39bfcf9c1528eb58694c14",
+    "aa0a42476a20300252c58e1ceebd320ca258d2e2",
+    "b05990f3c45c74d60a4449961031da915bb91063",
+    "1dee7a6195d27712adf1cf29121fcfcdbb070942",
+    "e8b2072c9f1a2b095eb36a682c9c57bb3ca8f5bc",
+    "f62b66f925f7fe8fea27e22142daf0de30c4f28a",
+    "53223f41ffe20e9661f9dbd4333f4f46cf210282",
+    "a95564709d0e346ccd9f4fdd195c65216f650174",
+    "29ba9060aefa437fdf8a1ef3afda67e02e565db9",
+    "1ee8f4b78d4f341ae6fad3619649be8cd6d73218",
+    "63f76d448d4a2755c314a7bc50dba79c7ae0fad0",
+    "2bd387ccf00914086aa6eb9f119f7923a04fb12b",
+    "ec694b8e26248596bddf5f0d6617822b537d0201",
+    "9fed14d392e7fa043af1885a188a8f98aa7d2ba1",
+    "3f2c224705dbf8658a97e8cbf6ca322ddf72862f",
+    "6846c7985c22ad1294b9472a9cc3baff53a58f61",
+    "b827fd356c2d2022f50721b9d2ccdede281bc62d",
+    "d25a60177ac4d1696f5c91f5f88bc7bd6a46bca2",
+    "f3324c79f4fdd01c3a4db6be1844c3a13f3cac7a",
+    "2616f9e6a6edc9ee2e656ed4fd892d1665ea90ef",
+    "47b4760a8c97074eb2b62bcfcaf0ea544cb1cd53",
+    "d29ffab19faa011ce3afc093ff0b087f3f33763f",
+    "4c61ffc79acb3f842c8a0d64c6d005b75452939f",
+    "e09362b4f79762939c2cd2e9002962dd4ec4d7b2",
+    "1af559f92444deae37f9793aa35e6dadcdeea6ab",
+    "f35c94bced01b50ed62c883f0a09ff211a24fa02",
+    "4e71371a868ff37a0bb64cf49739addc4a20bc3a",
+    "d3794eabf0197a7014f021654a1faf75d0080d77",
+    "38bbcccb57987dc9471da4684601574024179fd6",
+    "aeeec3e82bad1f1e8973a715f3c9dc737edb92f0",
+    "24b089f66141a590b8d2b32cff928f14e3a0d550",
+    "0dd88c4d988fa9a583d6265388c0375ee1c93131",
+    "fc29ba5080306e4fe1b09b15979c236e78fb947a",
+    "e553083dd46f0a8dcf0bc0a12b5265d6973b7a1c",
+    "d6b452fe46682f1bd964eb8cae720076bf30c592",
+    "5007fb82a883c1ba9b478e5e613d028a4538c5b0",
+    "0ee5735cc82721915571813bb86d4ec6da6f29f4",
+    "d1579aab0e68123813f387eeef0e383a9c675528",
+    "paper:Is%20LazarusAPT38%20Targeting%20Critical%20Infrastructures",
+    "dd94de18f8a02f10335543bec2f7eb9f1b90655e",
+    "6cf561669f2861e10a0cecc99ebe93947e65d0b3",
+    "ff023277406257f779a1fb42a52b82031ab2c032",
+    "4d6b0434ff5803c7ead0474434cfa23eaee932b5",
+    "05ef6cbe45e1dcfab77569f14b61db8f99aacd89",
+    "e204f491c98755fe0239112758a0938409dce32a"
+  ],
+  "conflicts": [],
+  "evidence_count": 52
+}

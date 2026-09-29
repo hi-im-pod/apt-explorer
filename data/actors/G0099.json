@@ -1,0 +1,554 @@
+{
+  "id": "G0099",
+  "name": "APT-C-36",
+  "aliases": [
+    {
+      "value": "APT-C-36",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Blind Eagle",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "AguilaCiega",
+      "sources": [
+        "attack",
+        "etda"
+      ]
+    },
+    {
+      "value": "APT-Q-98",
+      "sources": [
+        "attack",
+        "etda"
+      ]
+    },
+    {
+      "value": "TAG-144",
+      "sources": [
+        "attack"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CO",
+      "source": "etda"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Financial crime",
+      "source": "etda"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Ecuador",
+        "source": "misp"
+      },
+      {
+        "value": "Colombia",
+        "source": "misp"
+      },
+      {
+        "value": "Spain",
+        "source": "misp"
+      },
+      {
+        "value": "Panama",
+        "source": "misp"
+      },
+      {
+        "value": "Chile",
+        "source": "misp"
+      },
+      {
+        "value": "Chile",
+        "source": "etda"
+      },
+      {
+        "value": "Colombia",
+        "source": "etda"
+      },
+      {
+        "value": "Ecuador",
+        "source": "etda"
+      },
+      {
+        "value": "Panama",
+        "source": "etda"
+      },
+      {
+        "value": "Spain",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      },
+      {
+        "value": "Ecuador",
+        "source": "malpedia"
+      },
+      {
+        "value": "Colombia",
+        "source": "malpedia"
+      },
+      {
+        "value": "Spain",
+        "source": "malpedia"
+      },
+      {
+        "value": "Panama",
+        "source": "malpedia"
+      },
+      {
+        "value": "Chile",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Petroleum",
+        "source": "misp"
+      },
+      {
+        "value": "Manufacturing",
+        "source": "misp"
+      },
+      {
+        "value": "Financial",
+        "source": "misp"
+      },
+      {
+        "value": "Private sector",
+        "source": "misp"
+      },
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Education",
+        "source": "etda"
+      },
+      {
+        "value": "Energy",
+        "source": "etda"
+      },
+      {
+        "value": "Financial",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Healthcare",
+        "source": "etda"
+      },
+      {
+        "value": "Manufacturing",
+        "source": "etda"
+      },
+      {
+        "value": "Transportation",
+        "source": "etda"
+      },
+      {
+        "value": "large domestic companies and multinational corporation branches",
+        "source": "etda"
+      },
+      {
+        "value": "Petroleum",
+        "source": "malpedia"
+      },
+      {
+        "value": "Manufacturing",
+        "source": "malpedia"
+      },
+      {
+        "value": "Financial",
+        "source": "malpedia"
+      },
+      {
+        "value": "Private sector",
+        "source": "malpedia"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "AsyncRAT",
+      "source": "attack"
+    },
+    {
+      "name": "Caminho",
+      "source": "attack"
+    },
+    {
+      "name": "DCRAT",
+      "source": "attack"
+    },
+    {
+      "name": "HeartCrypt",
+      "source": "attack"
+    },
+    {
+      "name": "Imminent Monitor",
+      "source": "attack"
+    },
+    {
+      "name": "PureCrypter",
+      "source": "attack"
+    },
+    {
+      "name": "QuasarRAT",
+      "source": "attack"
+    },
+    {
+      "name": "Remcos",
+      "source": "attack"
+    },
+    {
+      "name": "njRAT",
+      "source": "attack"
+    },
+    {
+      "name": "Imminent Monitor RAT",
+      "source": "malpedia"
+    },
+    {
+      "name": "LimeRAT",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1027",
+    "T1027.003",
+    "T1027.013",
+    "T1027.016",
+    "T1036.004",
+    "T1036.005",
+    "T1047",
+    "T1053.005",
+    "T1055.012",
+    "T1059.001",
+    "T1059.005",
+    "T1059.007",
+    "T1105",
+    "T1133",
+    "T1204.001",
+    "T1204.002",
+    "T1480",
+    "T1534",
+    "T1564.003",
+    "T1566.001",
+    "T1566.002",
+    "T1568",
+    "T1571",
+    "T1574.001",
+    "T1583.001",
+    "T1583.003",
+    "T1583.006",
+    "T1584.005",
+    "T1586.002",
+    "T1586.003",
+    "T1587.001",
+    "T1588.001",
+    "T1588.002",
+    "T1593",
+    "T1608.001",
+    "T1683.001",
+    "T1683.002",
+    "T1684.001"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1012",
+      "count": 2
+    },
+    {
+      "id": "T1059.001",
+      "count": 2
+    },
+    {
+      "id": "T1071.001",
+      "count": 2
+    },
+    {
+      "id": "T1082",
+      "count": 2
+    },
+    {
+      "id": "T1105",
+      "count": 2
+    },
+    {
+      "id": "T1112",
+      "count": 2
+    },
+    {
+      "id": "T1566.002",
+      "count": 2
+    },
+    {
+      "id": "T1573.001",
+      "count": 2
+    },
+    {
+      "id": "T1573.002",
+      "count": 2
+    },
+    {
+      "id": "T1583.001",
+      "count": 2
+    },
+    {
+      "id": "T1583.003",
+      "count": 2
+    },
+    {
+      "id": "T1583.004",
+      "count": 2
+    },
+    {
+      "id": "T1583.008",
+      "count": 2
+    },
+    {
+      "id": "T1584.004",
+      "count": 2
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2018-20250",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-6055",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2019-0708",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-0797",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-0808",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-0859",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-1132",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-11707",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-11708",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-1367",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-13720",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-1458",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-2215",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-3568",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-5786",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-6225",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2019-7286",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-7287",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-8518",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2024-43451",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2019-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 4
+    },
+    {
+      "quarter": "2020-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2025-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2025-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 3
+    }
+  ],
+  "reports": [
+    "44d0012ed7e23b8adb4e2ffa363b8277b1c05414",
+    "560b0c22ba82252a8e1d75ed12936f7522ba8e37",
+    "c1030d1d6faff27debe60ba517e4fa2ff1205304",
+    "48b25595644b5faa2f836bfae0ba8f53854eb844",
+    "ba28e9414078c889952e5f33706d74ff2e7184f9",
+    "ddfb075f6b359d1ee826fda08c1afd1b8bce8d4f",
+    "6443e6d70d7f834d28ebd54745fadb7ba6a297b8",
+    "994eb3ba7123e757a12ef19cd953409e74b15f8a",
+    "669282e93ad3ee2f09ca00538a9e9f9d474dcb9b",
+    "3a904da819b8adb107998f6408249cf29ce950cb",
+    "53018c3a9f322d09d671c055d98114529192cd55",
+    "99e54e66074025c4dea47b6712ab2d5763d0f66f",
+    "d54753e8b515e67dbdf189ba014b71ebc9849c47",
+    "paper:Infographic%20APTs%20in%20South%20America",
+    "434bfe8feea363bbccfa107c9d24e6a5a5a756f2",
+    "2db1b4e539d976c33c386626df178737c7d40adb",
+    "28d4c998f5da43f7fe9d35f6388b8a5369d8390f",
+    "bcecea6cd429761694a5866c86664e167a247da8",
+    "68886576280e56f78d2df6457ef73c3650064c7b",
+    "fd3346482845f4f83f74b8443cd8f1b639e310a1",
+    "3f5daa005e4404241450ec8e4d4d908d3e148927",
+    "d6b452fe46682f1bd964eb8cae720076bf30c592",
+    "86441ca8925bf1fdd2e9cf23babe553c9b363a2e",
+    "1f097e1b50bb5227f9b0ed011a710921de81288a",
+    "9a3463eb36070962f90fbc723b37dbb15eed0331",
+    "4f13d213b76574f359cc6f4e63f1360ff84958f9",
+    "6b6ee89a082f34b86b232978f48589b8adc06d62"
+  ],
+  "conflicts": [],
+  "evidence_count": 8
+}

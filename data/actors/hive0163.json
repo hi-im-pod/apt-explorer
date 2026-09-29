@@ -1,0 +1,40 @@
+{
+  "id": "hive0163",
+  "name": "Hive0163",
+  "aliases": [
+    {
+      "value": "Hive0163",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "Slopoly",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2026-Q1",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "a0b5a84f0a1e951e6fbd9cfe201433a358c64dd6"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

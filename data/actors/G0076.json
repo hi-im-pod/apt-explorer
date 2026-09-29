@@ -1,0 +1,52 @@
+{
+  "id": "G0076",
+  "name": "Thrip",
+  "aliases": [
+    {
+      "value": "Thrip",
+      "sources": [
+        "attack"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "Catchamas",
+      "source": "attack"
+    },
+    {
+      "name": "Mimikatz",
+      "source": "attack"
+    },
+    {
+      "name": "PsExec",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1048.003",
+    "T1059.001",
+    "T1219.002",
+    "T1588.002"
+  ],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2018-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "0a86ef9a1e36c4ea9a296d40070368b9354e787b"
+  ],
+  "conflicts": [],
+  "evidence_count": 0
+}

@@ -1,0 +1,263 @@
+{
+  "id": "G0068",
+  "name": "PLATINUM",
+  "aliases": [
+    {
+      "value": "PLATINUM",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TwoForOne",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "ATK33",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Platinum",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "ATK 33",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "etda"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "China",
+        "source": "etda"
+      },
+      {
+        "value": "India",
+        "source": "etda"
+      },
+      {
+        "value": "Indonesia",
+        "source": "etda"
+      },
+      {
+        "value": "Malaysia",
+        "source": "etda"
+      },
+      {
+        "value": "Singapore",
+        "source": "etda"
+      },
+      {
+        "value": "Thailand",
+        "source": "etda"
+      },
+      {
+        "value": "Vietnam",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Defense",
+        "source": "misp"
+      },
+      {
+        "value": "Government, Administration",
+        "source": "misp"
+      },
+      {
+        "value": "Diplomacy",
+        "source": "misp"
+      },
+      {
+        "value": "Intelligence",
+        "source": "misp"
+      },
+      {
+        "value": "Telecoms",
+        "source": "misp"
+      },
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Financial",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "etda"
+      },
+      {
+        "value": "Intelligence agencies",
+        "source": "etda"
+      },
+      {
+        "value": "Defense",
+        "source": "malpedia"
+      },
+      {
+        "value": "Government, Administration",
+        "source": "malpedia"
+      },
+      {
+        "value": "Diplomacy",
+        "source": "malpedia"
+      },
+      {
+        "value": "Intelligence",
+        "source": "malpedia"
+      },
+      {
+        "value": "Telecoms",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Dipsind",
+      "source": "attack"
+    },
+    {
+      "name": "JPIN",
+      "source": "attack"
+    },
+    {
+      "name": "adbupd",
+      "source": "attack"
+    },
+    {
+      "name": "AMTsol",
+      "source": "malpedia"
+    },
+    {
+      "name": "REDPEPPER",
+      "source": "malpedia"
+    },
+    {
+      "name": "REDSALT",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1003.001",
+    "T1036",
+    "T1055",
+    "T1056.001",
+    "T1056.004",
+    "T1068",
+    "T1095",
+    "T1105",
+    "T1189",
+    "T1204.002",
+    "T1566.001"
+  ],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2013-1331",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2013-7331",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2015-0057",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2015-2545",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2015-2546",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2025-55182",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2025-66478",
+      "kev": false,
+      "ransomware": null
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2015-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2016-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2018-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "e48c30fa9e486c845bb53dc44286e5cb61237a3f",
+    "80b06f28ee5e364f47ca3a290b160b2de61bcc0f",
+    "7796e3ac5f6f5c8f1b2103662b7912ae9b6d2f50",
+    "c8f8d4cea73e6941d5b6bfe0caffbdd26d0ace2d",
+    "f5e66b114420b9db026862418d61f478085846c1",
+    "ffe1ab81dc16f38930659c5ec9f6f8f9ebdf7d35",
+    "8f9ced352ae35a97e06c0066ee2092b28b5f32d8",
+    "25aa281300e73d4eee57527c39764f8c22082ea7"
+  ],
+  "conflicts": [],
+  "evidence_count": 9
+}

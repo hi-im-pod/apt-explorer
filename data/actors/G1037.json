@@ -1,0 +1,72 @@
+{
+  "id": "G1037",
+  "name": "TA577",
+  "aliases": [
+    {
+      "value": "TA577",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Hive0118",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "RU",
+      "source": "misp"
+    },
+    {
+      "value": "RU",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "Latrodectus",
+      "source": "attack"
+    },
+    {
+      "name": "Pikabot",
+      "source": "attack"
+    },
+    {
+      "name": "QakBot",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1027.009",
+    "T1059.003",
+    "T1059.007",
+    "T1204.001",
+    "T1566.002",
+    "T1586.002"
+  ],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2024-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "41d1c52df55145a4839e54b74c0e0ff17917d539"
+  ],
+  "conflicts": [],
+  "evidence_count": 3
+}

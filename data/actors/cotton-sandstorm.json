@@ -1,0 +1,172 @@
+{
+  "id": "cotton-sandstorm",
+  "name": "Cotton Sandstorm",
+  "aliases": [
+    {
+      "value": "Cotton Sandstorm",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Emennet Pasargad",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Holy Souls",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "MARNANBRIDGE",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "NEPTUNIUM",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "HAYWIRE KITTEN",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IR",
+      "source": "misp"
+    },
+    {
+      "value": "IR",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "Iran (Islamic Republic of)",
+      "source": "misp"
+    },
+    {
+      "value": "Iran (Islamic Republic of)",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Information Operations",
+      "source": "misp"
+    },
+    {
+      "value": "Information Operations",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "United States",
+        "source": "misp"
+      },
+      {
+        "value": "Israel",
+        "source": "misp"
+      },
+      {
+        "value": "United States",
+        "source": "malpedia"
+      },
+      {
+        "value": "Israel",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Finance",
+        "source": "misp"
+      },
+      {
+        "value": "High-Tech",
+        "source": "misp"
+      },
+      {
+        "value": "Telecoms",
+        "source": "misp"
+      },
+      {
+        "value": "NGOs",
+        "source": "misp"
+      },
+      {
+        "value": "Civil Society",
+        "source": "misp"
+      },
+      {
+        "value": "Rail",
+        "source": "misp"
+      },
+      {
+        "value": "Energy",
+        "source": "misp"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      },
+      {
+        "value": "Finance",
+        "source": "malpedia"
+      },
+      {
+        "value": "High-Tech",
+        "source": "malpedia"
+      },
+      {
+        "value": "Telecoms",
+        "source": "malpedia"
+      },
+      {
+        "value": "NGOs",
+        "source": "malpedia"
+      },
+      {
+        "value": "Civil Society",
+        "source": "malpedia"
+      },
+      {
+        "value": "Rail",
+        "source": "malpedia"
+      },
+      {
+        "value": "Energy",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 6
+}

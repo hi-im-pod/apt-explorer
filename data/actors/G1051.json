@@ -1,0 +1,253 @@
+{
+  "id": "G1051",
+  "name": "Medusa Group",
+  "aliases": [
+    {
+      "value": "Medusa Group",
+      "sources": [
+        "attack"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "Medusa Ransomware",
+      "source": "attack"
+    },
+    {
+      "name": "Mimikatz",
+      "source": "attack"
+    },
+    {
+      "name": "PsExec",
+      "source": "attack"
+    },
+    {
+      "name": "Rclone",
+      "source": "attack"
+    },
+    {
+      "name": "certutil",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1003.001",
+    "T1003.003",
+    "T1016",
+    "T1018",
+    "T1021.001",
+    "T1027.002",
+    "T1027.010",
+    "T1033",
+    "T1046",
+    "T1047",
+    "T1057",
+    "T1059.001",
+    "T1059.003",
+    "T1069.002",
+    "T1070.003",
+    "T1070.004",
+    "T1071.001",
+    "T1072",
+    "T1078",
+    "T1082",
+    "T1083",
+    "T1087.001",
+    "T1090.003",
+    "T1105",
+    "T1106",
+    "T1112",
+    "T1135",
+    "T1136.002",
+    "T1190",
+    "T1218.014",
+    "T1219",
+    "T1486",
+    "T1489",
+    "T1490",
+    "T1505.003",
+    "T1518.001",
+    "T1529",
+    "T1543.003",
+    "T1548.002",
+    "T1553.002",
+    "T1559.001",
+    "T1564.003",
+    "T1567.002",
+    "T1569.002",
+    "T1570",
+    "T1573.002",
+    "T1583.006",
+    "T1585.001",
+    "T1585.002",
+    "T1588.002",
+    "T1608.002",
+    "T1650",
+    "T1652",
+    "T1657",
+    "T1685",
+    "T1686",
+    "T1690"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1003.001",
+      "count": 1
+    },
+    {
+      "id": "T1016",
+      "count": 1
+    },
+    {
+      "id": "T1021.001",
+      "count": 1
+    },
+    {
+      "id": "T1027",
+      "count": 1
+    },
+    {
+      "id": "T1027.013",
+      "count": 1
+    },
+    {
+      "id": "T1046",
+      "count": 1
+    },
+    {
+      "id": "T1047",
+      "count": 1
+    },
+    {
+      "id": "T1059.001",
+      "count": 1
+    },
+    {
+      "id": "T1059.003",
+      "count": 1
+    },
+    {
+      "id": "T1069.002",
+      "count": 1
+    },
+    {
+      "id": "T1070",
+      "count": 1
+    },
+    {
+      "id": "T1070.003",
+      "count": 1
+    },
+    {
+      "id": "T1071.001",
+      "count": 1
+    },
+    {
+      "id": "T1072",
+      "count": 1
+    },
+    {
+      "id": "T1082",
+      "count": 1
+    },
+    {
+      "id": "T1083",
+      "count": 1
+    },
+    {
+      "id": "T1105",
+      "count": 1
+    },
+    {
+      "id": "T1135",
+      "count": 1
+    },
+    {
+      "id": "T1136.002",
+      "count": 1
+    },
+    {
+      "id": "T1190",
+      "count": 1
+    },
+    {
+      "id": "T1219",
+      "count": 1
+    },
+    {
+      "id": "T1486",
+      "count": 1
+    },
+    {
+      "id": "T1489",
+      "count": 1
+    },
+    {
+      "id": "T1490",
+      "count": 1
+    },
+    {
+      "id": "T1529",
+      "count": 1
+    },
+    {
+      "id": "T1566",
+      "count": 1
+    },
+    {
+      "id": "T1567.002",
+      "count": 1
+    },
+    {
+      "id": "T1569.002",
+      "count": 1
+    },
+    {
+      "id": "T1657",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2024-1709",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2024-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 3
+    }
+  ],
+  "reports": [
+    "049f9103a6840ac7135dac8a7d4f555c285639ab",
+    "3a0f3f73911642c942c2c2037a9bcbed34f46b29",
+    "fb0b4a047a282ce73fc7b08a184e509280ea220b",
+    "90c3ad8a4bcbdce474c22d7c18ac8977db87bc6c",
+    "4cba649b032a613ba5d37cfa0e2b84f9d9f7e121",
+    "3748206711f44ce299129a6350830d52494afc67"
+  ],
+  "conflicts": [],
+  "evidence_count": 0
+}

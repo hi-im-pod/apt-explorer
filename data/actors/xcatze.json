@@ -1,0 +1,45 @@
+{
+  "id": "xcatze",
+  "name": "Xcatze",
+  "aliases": [
+    {
+      "value": "Xcatze",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "AndroxGh0st",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2022-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "0f91692a34386a4dc9e6365760847ed033d92590",
+    "45b5c1611076866d38c148113d721ddbcf9de497"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

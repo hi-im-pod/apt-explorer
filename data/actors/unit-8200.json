@@ -1,0 +1,163 @@
+{
+  "id": "unit-8200",
+  "name": "Unit 8200",
+  "aliases": [
+    {
+      "value": "Unit 8200",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Duqu Group",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IL",
+      "source": "misp"
+    },
+    {
+      "value": "IL",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "Israel",
+      "source": "misp"
+    },
+    {
+      "value": "Israel",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Iran",
+        "source": "misp"
+      },
+      {
+        "value": "Sudan",
+        "source": "misp"
+      },
+      {
+        "value": "Iran",
+        "source": "malpedia"
+      },
+      {
+        "value": "Sudan",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Military",
+        "source": "misp"
+      },
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Private sector",
+        "source": "misp"
+      },
+      {
+        "value": "Military",
+        "source": "malpedia"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      },
+      {
+        "value": "Private sector",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "DuQu",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2011-3402",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2014-4148",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2014-6324",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2015-2360",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-18935",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2015-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2018-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q1",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "1c910f396287fa1321a235131c6a6b6adc06a397",
+    "346299ce612bab941635bfa51adbab9791ac5f7f",
+    "7c8d9bf4d968c124b2d8885aaa29eaf9c1af8708",
+    "paper:Territorial%20Dispute%20-%20NSA's%20perspective%20on%20APT%20landscape",
+    "1a3701992fb75c4331774ba383c9e120ca39bbdc",
+    "paper:The_Mystery_of_Duqu_2_0_a_sophisticated_cyberespionage_actor_returns"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

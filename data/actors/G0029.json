@@ -1,0 +1,142 @@
+{
+  "id": "G0029",
+  "name": "Scarlet Mimic",
+  "aliases": [
+    {
+      "value": "Scarlet Mimic",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Golfing Taurus",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "etda"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": [
+      {
+        "value": "Activists",
+        "source": "misp"
+      },
+      {
+        "value": "Activists",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "CallMe",
+      "source": "attack"
+    },
+    {
+      "name": "FakeM",
+      "source": "attack"
+    },
+    {
+      "name": "MobileOrder",
+      "source": "attack"
+    },
+    {
+      "name": "Psylo",
+      "source": "attack"
+    },
+    {
+      "name": "CrypticConvo",
+      "source": "malpedia"
+    },
+    {
+      "name": "MobileOrder",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1036.002"
+  ],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2009-3129",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2010-2572",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2010-2883",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2010-3333",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2012-0158",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2012-4969",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2016-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "18c45f1e4f572cffc670f0747c46daf617980f53",
+    "10d4af6005171e665ebfc907f4b611a1a95f0e23",
+    "5be1878cef91b9f144933f3953afeaa2a17fc9f2",
+    "731e1a3a25d4ff2c7d84382946b296f32c964a86",
+    "9a7bd4348f8ad97d5440d287b81382d47f71d954"
+  ],
+  "conflicts": [],
+  "evidence_count": 7
+}

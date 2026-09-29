@@ -1,0 +1,481 @@
+{
+  "id": "angry-likho",
+  "name": "Angry Likho",
+  "aliases": [
+    {
+      "value": "Angry Likho",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Sticky Werewolf",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "RU",
+      "source": "misp"
+    },
+    {
+      "value": "RU",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Belarus",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Lumma Stealer",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [
+    {
+      "id": "T1059.001",
+      "count": 3
+    },
+    {
+      "id": "T1218.005",
+      "count": 3
+    },
+    {
+      "id": "T1027.013",
+      "count": 2
+    },
+    {
+      "id": "T1041",
+      "count": 2
+    },
+    {
+      "id": "T1059.010",
+      "count": 2
+    },
+    {
+      "id": "T1204",
+      "count": 2
+    },
+    {
+      "id": "T1497",
+      "count": 2
+    },
+    {
+      "id": "T1547.001",
+      "count": 2
+    },
+    {
+      "id": "T1012",
+      "count": 1
+    },
+    {
+      "id": "T1027.009",
+      "count": 1
+    },
+    {
+      "id": "T1027.010",
+      "count": 1
+    },
+    {
+      "id": "T1033",
+      "count": 1
+    },
+    {
+      "id": "T1053",
+      "count": 1
+    },
+    {
+      "id": "T1053.005",
+      "count": 1
+    },
+    {
+      "id": "T1055.002",
+      "count": 1
+    },
+    {
+      "id": "T1055.012",
+      "count": 1
+    },
+    {
+      "id": "T1056.001",
+      "count": 1
+    },
+    {
+      "id": "T1057",
+      "count": 1
+    },
+    {
+      "id": "T1059",
+      "count": 1
+    },
+    {
+      "id": "T1059.003",
+      "count": 1
+    },
+    {
+      "id": "T1059.005",
+      "count": 1
+    },
+    {
+      "id": "T1059.006",
+      "count": 1
+    },
+    {
+      "id": "T1068",
+      "count": 1
+    },
+    {
+      "id": "T1070",
+      "count": 1
+    },
+    {
+      "id": "T1071",
+      "count": 1
+    },
+    {
+      "id": "T1082",
+      "count": 1
+    },
+    {
+      "id": "T1083",
+      "count": 1
+    },
+    {
+      "id": "T1098",
+      "count": 1
+    },
+    {
+      "id": "T1119",
+      "count": 1
+    },
+    {
+      "id": "T1132",
+      "count": 1
+    },
+    {
+      "id": "T1140",
+      "count": 1
+    },
+    {
+      "id": "T1176",
+      "count": 1
+    },
+    {
+      "id": "T1189",
+      "count": 1
+    },
+    {
+      "id": "T1204.001",
+      "count": 1
+    },
+    {
+      "id": "T1204.002",
+      "count": 1
+    },
+    {
+      "id": "T1217",
+      "count": 1
+    },
+    {
+      "id": "T1218",
+      "count": 1
+    },
+    {
+      "id": "T1219",
+      "count": 1
+    },
+    {
+      "id": "T1486",
+      "count": 1
+    },
+    {
+      "id": "T1497.003",
+      "count": 1
+    },
+    {
+      "id": "T1498",
+      "count": 1
+    },
+    {
+      "id": "T1518",
+      "count": 1
+    },
+    {
+      "id": "T1547",
+      "count": 1
+    },
+    {
+      "id": "T1552",
+      "count": 1
+    },
+    {
+      "id": "T1555",
+      "count": 1
+    },
+    {
+      "id": "T1555.003",
+      "count": 1
+    },
+    {
+      "id": "T1558.003",
+      "count": 1
+    },
+    {
+      "id": "T1566",
+      "count": 1
+    },
+    {
+      "id": "T1566.002",
+      "count": 1
+    },
+    {
+      "id": "T1566.003",
+      "count": 1
+    },
+    {
+      "id": "T1566.004",
+      "count": 1
+    },
+    {
+      "id": "T1570",
+      "count": 1
+    },
+    {
+      "id": "T1571",
+      "count": 1
+    },
+    {
+      "id": "T1572",
+      "count": 1
+    },
+    {
+      "id": "T1583.001",
+      "count": 1
+    },
+    {
+      "id": "T1587.001",
+      "count": 1
+    },
+    {
+      "id": "T1588.001",
+      "count": 1
+    },
+    {
+      "id": "T1608.001",
+      "count": 1
+    },
+    {
+      "id": "T1620",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2022-26923",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2023-48788",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-1708",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-1709",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-21412",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-4577",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2025-32975",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-1731",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2023-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2023-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2023-Q4",
+      "count": 5
+    },
+    {
+      "quarter": "2024-Q1",
+      "count": 7
+    },
+    {
+      "quarter": "2024-Q2",
+      "count": 4
+    },
+    {
+      "quarter": "2024-Q3",
+      "count": 9
+    },
+    {
+      "quarter": "2024-Q4",
+      "count": 11
+    },
+    {
+      "quarter": "2025-Q1",
+      "count": 12
+    },
+    {
+      "quarter": "2025-Q2",
+      "count": 8
+    },
+    {
+      "quarter": "2025-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2025-Q4",
+      "count": 3
+    },
+    {
+      "quarter": "2026-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 4
+    }
+  ],
+  "reports": [
+    "24b2c0cd8aaa5149844c69c1e96744d81febe212",
+    "443abff12699e1c0574deccb3d45d0abc83059a9",
+    "9ccc0123f8a457d15d97a76212b72c78673c5ba0",
+    "f5d3d9bd646ba2901eaea60862d5e93fd471c367",
+    "078a390b27afdc1f57607375f7549fa40a1d2467",
+    "5c7a933562a50cc1e03506463d3143e4dc12ff9c",
+    "48cf1e3184bbb2af724a60fabfd0a6f2a6cb75c5",
+    "74ad41bb5c59e084faaf2b4fd5d9e23b9db8b1dc",
+    "16ed313feb7972a23826f4499f9fba32fec5547d",
+    "124b8f02298badf5051e27391dc336301e8e1321",
+    "4663949ea7080694560c0ed4b8c72183d5ed0c40",
+    "29fb56536ab6e1fd5ce0e729b04730b4cb4332eb",
+    "446997379ebdfde8c75fcafaa57cbefc97fc6ef4",
+    "d2361cdf38657bd6042dda946cb31d542a894e81",
+    "e7a254638c47876f66b66906167a4b3ef5b689ed",
+    "fed5336516fd55a91a02fa46f6ed22c66040cbfc",
+    "539bc54edea87d3f83aabef4355e9adc7874f43c",
+    "1c1be4190185c300e088368806942945058bf6fc",
+    "d1a434b8dd6b88a04d06f4732290e056c930ec5c",
+    "b139c9201b7bf2c2aec96a7660254f37e035ae9a",
+    "c5929bca13854a4668823cdf25095d2deefe87ff",
+    "b94c36613dfae893955cc7da2e8a8a708c3bf285",
+    "a9797ebea255a9543b1419f31c13d64868f61756",
+    "81e679651910fcbd740f2571d11cb51ad7878686",
+    "554c01c9451fbb1457a3dbbf64f167d3a47d151b",
+    "c9eed4c19746c117717dfa1c34415341e5bcb93d",
+    "acc19fdf0e1bb046b0d3f6207a6c5453d294c07e",
+    "b2fccb782e423b215594669a769c59002d9ab109",
+    "3c89ed263f8400e3af4233d8f9ff12f56a0075b6",
+    "6a6ce05b0bb774238bfc7d49fbb106072ce64b01",
+    "6aa6dc25b52c124c06919debc8a88ce9d07e9cdf",
+    "18f8168998dcc60bcbda18117514c698bc738e33",
+    "09759bf9edd9a34b4aac4e6f479e02d11f7e5769",
+    "9ca8727dbe6e531ea651bb28f2a38f82d284330d",
+    "da9c79807b8ae4ea622e931bba531cf68e67581d",
+    "4a0a71af45657599716252251a03b3e7008bceeb",
+    "c6957a9f9f170f07af82b5e1c3a1d93a6d37670b",
+    "07425ca50812b32d3712db66487e6de89c63e0fb",
+    "337fb5aee0f4a636b85c1224a4705f48a832f671",
+    "ae07680d7144038bdcc0804232d09a289d643659",
+    "580bb8841f70d61292e42eee5a2550a255f511f2",
+    "894d010dd488ebf2e300bd542bf79a7feaabdce1",
+    "26ec299f11de5c1905de5ee8bd5629bbc37240b1",
+    "92bddc2b2bc29adaf5a56d15b6be5ef54613b190",
+    "f6d0f56683e0bdd584cf6739deb3034104b61f8b",
+    "58bbbccde5533fe2a5329a53db8010e4baf4f6ea",
+    "804b0761389ffa959cd716b6d4b1c5742065efca",
+    "f3be817749169c31ba0cf255f3b63328ec9d79c5",
+    "2c84786d03a17afeb8e76ba55449ad285045ba8c",
+    "9360ea522e191d1c65670d2245d2d928b6b2c123",
+    "747f92f807f96a7dfce7addbd06bb4da9597371b",
+    "87bb5a93a084b618ec57b020195a630c6b2c7d91",
+    "adc3bbd04b39dfd993f8483a7b6dacf2c4304a65",
+    "03c8336688e8d8b769702e81bf6b6a85771140b4",
+    "0e8b6a39651dc35e0d28ea9b6ad5864d217dd611",
+    "8f81a5c1abb37ef5db0a577443d7879ea2ef449c",
+    "08b9e61d3fae4e7f57e721bc3988699021bffedb",
+    "35e5639a4f2b8732945112ea6fc5f2370cfafb03",
+    "5f1d470f92f205a25daf6fd7c4376b419e7c93ec",
+    "656ed915e17564b90806ea9f3ccb162968ec55f0",
+    "eab23627e86e7dcbc936ce022343f61a5568fd5f",
+    "67d57821edabc8568a2be2ec4cbe9e3a25d4aed1",
+    "c44c2ca0d048f9d27f63a5c5307de4fbae38a13c",
+    "965d4dab1270ecee305b7a19512ef5005afc1274",
+    "4ef86101231a1ed7235de539141bab9a217c2cf0",
+    "299db0a1b5651190e6ab16c84acb74aa4e1505a1",
+    "741b72eb78c90ac66476d3d8ad2acd8f69431d1f",
+    "675dd06adff55df31c37dc6376691f0a6600797a",
+    "47739ee04363eca89878b0689a04a4305e33d76e",
+    "f2fc5ce12faba85abdbcd164b2f1c29160f22475",
+    "dcc273a1d445fd74fbe15403f5640c759df50b66",
+    "16bf878169581910fa504ac1be876c10871ae0c4",
+    "64f711365690e360ebc0a36405a7a5e038ddddf5",
+    "cbf02d3fd3007990d1ac17d04bafe76173cd2aa7",
+    "2f84556b555f22cac1c5e7a4234f1ecdf23ab513",
+    "82eb931354c50d2b60110172c3fdd5148db44038"
+  ],
+  "conflicts": [],
+  "evidence_count": 3
+}

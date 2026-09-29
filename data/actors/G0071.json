@@ -1,0 +1,235 @@
+{
+  "id": "G0071",
+  "name": "Orangeworm",
+  "aliases": [
+    {
+      "value": "Orangeworm",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Belgium",
+        "source": "etda"
+      },
+      {
+        "value": "Brazil",
+        "source": "etda"
+      },
+      {
+        "value": "Canada",
+        "source": "etda"
+      },
+      {
+        "value": "Chile",
+        "source": "etda"
+      },
+      {
+        "value": "China",
+        "source": "etda"
+      },
+      {
+        "value": "France",
+        "source": "etda"
+      },
+      {
+        "value": "Germany",
+        "source": "etda"
+      },
+      {
+        "value": "Hong Kong",
+        "source": "etda"
+      },
+      {
+        "value": "Hungary",
+        "source": "etda"
+      },
+      {
+        "value": "India",
+        "source": "etda"
+      },
+      {
+        "value": "Malaysia",
+        "source": "etda"
+      },
+      {
+        "value": "Netherlands",
+        "source": "etda"
+      },
+      {
+        "value": "Norway",
+        "source": "etda"
+      },
+      {
+        "value": "Philippines",
+        "source": "etda"
+      },
+      {
+        "value": "Poland",
+        "source": "etda"
+      },
+      {
+        "value": "Saudi Arabia",
+        "source": "etda"
+      },
+      {
+        "value": "Spain",
+        "source": "etda"
+      },
+      {
+        "value": "Sweden",
+        "source": "etda"
+      },
+      {
+        "value": "Switzerland",
+        "source": "etda"
+      },
+      {
+        "value": "Türkiye",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Food and Agriculture",
+        "source": "etda"
+      },
+      {
+        "value": "Healthcare",
+        "source": "etda"
+      },
+      {
+        "value": "IT",
+        "source": "etda"
+      },
+      {
+        "value": "Manufacturing",
+        "source": "etda"
+      },
+      {
+        "value": "Shipping and Logistics",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Arp",
+      "source": "attack"
+    },
+    {
+      "name": "Kwampirs",
+      "source": "attack"
+    },
+    {
+      "name": "Net",
+      "source": "attack"
+    },
+    {
+      "name": "Systeminfo",
+      "source": "attack"
+    },
+    {
+      "name": "cmd",
+      "source": "attack"
+    },
+    {
+      "name": "ipconfig",
+      "source": "attack"
+    },
+    {
+      "name": "netstat",
+      "source": "attack"
+    },
+    {
+      "name": "route",
+      "source": "attack"
+    },
+    {
+      "name": "Kwampirs",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1021.002",
+    "T1071.001"
+  ],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2020-0601",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-1472",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2018-Q2",
+      "count": 3
+    },
+    {
+      "quarter": "2019-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 4
+    },
+    {
+      "quarter": "2020-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 3
+    }
+  ],
+  "reports": [
+    "abcbde3a4ecaf320cc2c48783821d34ad139a452",
+    "cd05adf64bd3c48cc0345b88b311b1baed6b2f73",
+    "23ea7ce9f823969c9d01d9c9bc92c7041e961b74",
+    "8b38b4df3156c38d0f9adc81b3fc0715e307ca93",
+    "6a3a74771e4dc19b571bd8e7985bf285432daa3a",
+    "72eecc02acc0e8c336862d676a0f2e69859bb2e4",
+    "78980aadacce299e79644040d4f6c8efc8519dfb",
+    "7db7542684db64b912ddea81a37f21db802acc0d",
+    "b5fef4cb068baf09acfce01d418b47f34d2ca4fe",
+    "14470e0b48bd93938da124484a61e7da6d2298a5",
+    "4fe5aaf97516f67f00e090565759ee01e5957a91",
+    "6fabade1fd332ecd130ebe9664990981d63bd78f",
+    "95344b8198280e7ccdf0f148a812f3a6afa0ffa4"
+  ],
+  "conflicts": [],
+  "evidence_count": 3
+}

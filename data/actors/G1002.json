@@ -1,0 +1,295 @@
+{
+  "id": "G1002",
+  "name": "BITTER",
+  "aliases": [
+    {
+      "value": "BITTER",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "T-APT-17",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Bitter",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TA397",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "HAZY TIGER",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "APT-C-08",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Orange Yali",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IN",
+      "source": "misp"
+    },
+    {
+      "value": "IN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Germany",
+        "source": "misp"
+      },
+      {
+        "value": "Bangladesh",
+        "source": "etda"
+      },
+      {
+        "value": "China",
+        "source": "etda"
+      },
+      {
+        "value": "India",
+        "source": "etda"
+      },
+      {
+        "value": "Pakistan",
+        "source": "etda"
+      },
+      {
+        "value": "Saudi Arabia",
+        "source": "etda"
+      },
+      {
+        "value": "Germany",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Energy",
+        "source": "etda"
+      },
+      {
+        "value": "Engineering",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "ZxxZ",
+      "source": "attack"
+    },
+    {
+      "name": "AlmondRAT",
+      "source": "malpedia"
+    },
+    {
+      "name": "BDarkRAT",
+      "source": "malpedia"
+    },
+    {
+      "name": "Dracarys",
+      "source": "malpedia"
+    },
+    {
+      "name": "KiwiStealer",
+      "source": "malpedia"
+    },
+    {
+      "name": "KugelBlitz",
+      "source": "malpedia"
+    },
+    {
+      "name": "MiyaRAT",
+      "source": "malpedia"
+    },
+    {
+      "name": "ProSpy",
+      "source": "malpedia"
+    },
+    {
+      "name": "WmRAT",
+      "source": "malpedia"
+    },
+    {
+      "name": "ZxxZ",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1027.013",
+    "T1036.004",
+    "T1053.005",
+    "T1068",
+    "T1071.001",
+    "T1095",
+    "T1105",
+    "T1203",
+    "T1204.002",
+    "T1559.002",
+    "T1566.001",
+    "T1568",
+    "T1573",
+    "T1583.001",
+    "T1588.002",
+    "T1608.001"
+  ],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2012-0158",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-0199",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-01992",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2017-1182",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2017-11882",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-0798",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-0802",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-1732",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-28310",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2016-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q3",
+      "count": 4
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2020-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2024-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2025-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 3
+    }
+  ],
+  "reports": [
+    "d00ce0cea066e57ec4a1ad5dda1abc535592d7c1",
+    "0511afe5dd337266562c75e40c6c05cfb79399e0",
+    "9ca5938ba3c4a617ff1c4230bd142e28f7db4225",
+    "d7e9f49173fc2cad5d070361cdbf67b7d382db0b",
+    "f888162d59d3ce6d321ba37c4c76e25548189111",
+    "2dd8df21de3d82903c0b789a398780aa8df6e1d1",
+    "46d2e6de15b3362ecdf293e2356bb68d6e1fd643",
+    "e903888eddc9f7143c2ef92701e60fd694435620",
+    "945abafd9df657f9b06cf1c8f3551ba3a7c0151c",
+    "0dbf6231490c24f493afe7cdf6770892a36df9d1",
+    "5f8c3de2c2e101c15d9c8fd9c86ca4cfcaeba07b",
+    "61cbc94ba10fa02aa103a45c681a5cf52c74b402",
+    "a64d2206e1e103ad29c72db4046f85bd46769eb7",
+    "3de1ca4becb47d95d6f35c45d9d5f5bc51dda263",
+    "969ec8174de828cf9016983138f6b929d2e2b9bd",
+    "cf011cca773f812145c8e81d8f1bade04e716732",
+    "ce6de200409d558d88c026c9ab087ed1c836db28",
+    "6f061c5514738986949d75a81905dc4556e27605",
+    "9ec45ba171c3e3e0553aa587c0ea245ee641e624",
+    "385ba37be4d0617780a137a81d6593554f0ecc98"
+  ],
+  "conflicts": [],
+  "evidence_count": 11
+}

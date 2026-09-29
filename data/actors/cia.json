@@ -1,0 +1,54 @@
+{
+  "id": "cia",
+  "name": "CIA",
+  "aliases": [
+    {
+      "value": "CIA",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Central Intelligence Agency",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "US",
+      "source": "etda"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Sabotage and destruction",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2017-Q1",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "e57d09562b9a3ca615f74903bc4bc172f7475946"
+  ],
+  "conflicts": [],
+  "evidence_count": 0
+}

@@ -1,0 +1,102 @@
+{
+  "id": "antlion",
+  "name": "Antlion",
+  "aliases": [
+    {
+      "value": "Antlion",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "etda"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Taiwan",
+        "source": "misp"
+      },
+      {
+        "value": "Taiwan",
+        "source": "etda"
+      },
+      {
+        "value": "Taiwan",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Financial",
+        "source": "misp"
+      },
+      {
+        "value": "Financial",
+        "source": "etda"
+      },
+      {
+        "value": "Manufacturing",
+        "source": "etda"
+      },
+      {
+        "value": "Financial",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "xPack",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2019-1458",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2021-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 3
+    }
+  ],
+  "reports": [
+    "6b8c34552b7d555bbab4362b3356cef3cfee8fca",
+    "b1bd49f1ce653a470d0a8be83bb02b9140eeba34",
+    "ca099d18524bd774b7c704a90ddcfbdfce22099f",
+    "d29ffab19faa011ce3afc093ff0b087f3f33763f"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

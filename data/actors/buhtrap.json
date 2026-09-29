@@ -1,0 +1,166 @@
+{
+  "id": "buhtrap",
+  "name": "BuhTrap",
+  "aliases": [
+    {
+      "value": "BuhTrap",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Buhtrap",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Ratopak Spider",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "UAC-0008",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "RU",
+      "source": "misp"
+    },
+    {
+      "value": "RU",
+      "source": "etda"
+    },
+    {
+      "value": "RU",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Financial crime",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Russia",
+        "source": "etda"
+      },
+      {
+        "value": "Ukraine",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Bank",
+        "source": "misp"
+      },
+      {
+        "value": "Payment",
+        "source": "misp"
+      },
+      {
+        "value": "Finance",
+        "source": "misp"
+      },
+      {
+        "value": "Financial",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Bank",
+        "source": "malpedia"
+      },
+      {
+        "value": "Payment",
+        "source": "malpedia"
+      },
+      {
+        "value": "Finance",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Buhtrap",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2012-0158",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2013-3660",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2015-2387",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-1132",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2015-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2016-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "04333e730fc1dc9814aea65ea603cadfa590a3d5",
+    "111a6d9294c5d762da36c87f4908f7b3330d1d20",
+    "392edc2d1ef6f98a2313ffb75797a2edcda12355",
+    "93a54e05256a696ca20d04ad96cac47ff217fe46",
+    "d29c2b564287bab988ac4062aa3a61beb116e6cf",
+    "84a0eb51b3d1209a178bf4350e6031072ca682d7",
+    "da1e5681af930382696e3ae9450227a893be438d",
+    "660bd79b220d27e53736c6bf86901061c4f2e6c4"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

@@ -1,0 +1,282 @@
+{
+  "id": "G0061",
+  "name": "FIN8",
+  "aliases": [
+    {
+      "value": "FIN8",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Syssphinx",
+      "sources": [
+        "attack",
+        "etda"
+      ]
+    },
+    {
+      "value": "ATK113",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "PUNCH COMET",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "ATK 113",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Storm-0288",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Financial crime",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Canada",
+        "source": "etda"
+      },
+      {
+        "value": "Italy",
+        "source": "etda"
+      },
+      {
+        "value": "Panama",
+        "source": "etda"
+      },
+      {
+        "value": "South Africa",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Entertainment",
+        "source": "misp"
+      },
+      {
+        "value": "Hospitality",
+        "source": "misp"
+      },
+      {
+        "value": "Retail",
+        "source": "misp"
+      },
+      {
+        "value": "Entertainment",
+        "source": "etda"
+      },
+      {
+        "value": "Financial",
+        "source": "etda"
+      },
+      {
+        "value": "Food and Agriculture",
+        "source": "etda"
+      },
+      {
+        "value": "Healthcare",
+        "source": "etda"
+      },
+      {
+        "value": "Hospitality",
+        "source": "etda"
+      },
+      {
+        "value": "Retail",
+        "source": "etda"
+      },
+      {
+        "value": "Entertainment",
+        "source": "malpedia"
+      },
+      {
+        "value": "Hospitality",
+        "source": "malpedia"
+      },
+      {
+        "value": "Retail",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "BADHATCH",
+      "source": "attack"
+    },
+    {
+      "name": "Impacket",
+      "source": "attack"
+    },
+    {
+      "name": "Net",
+      "source": "attack"
+    },
+    {
+      "name": "Nltest",
+      "source": "attack"
+    },
+    {
+      "name": "PUNCHBUGGY",
+      "source": "attack"
+    },
+    {
+      "name": "PUNCHTRACK",
+      "source": "attack"
+    },
+    {
+      "name": "Ping",
+      "source": "attack"
+    },
+    {
+      "name": "PsExec",
+      "source": "attack"
+    },
+    {
+      "name": "Ragnar Locker",
+      "source": "attack"
+    },
+    {
+      "name": "Sardonic",
+      "source": "attack"
+    },
+    {
+      "name": "dsquery",
+      "source": "attack"
+    },
+    {
+      "name": "BADHATCH",
+      "source": "malpedia"
+    },
+    {
+      "name": "PoSlurp",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1003.001",
+    "T1016.001",
+    "T1018",
+    "T1021.001",
+    "T1021.002",
+    "T1027.010",
+    "T1033",
+    "T1047",
+    "T1048.003",
+    "T1053.005",
+    "T1055.004",
+    "T1059.001",
+    "T1059.003",
+    "T1068",
+    "T1070.004",
+    "T1071.001",
+    "T1074.002",
+    "T1078",
+    "T1082",
+    "T1102",
+    "T1105",
+    "T1112",
+    "T1134.001",
+    "T1204.001",
+    "T1204.002",
+    "T1482",
+    "T1486",
+    "T1518.001",
+    "T1546.003",
+    "T1560.001",
+    "T1566.001",
+    "T1566.002",
+    "T1573.002",
+    "T1588.002",
+    "T1588.003",
+    "T1685.005"
+  ],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2016-0167",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-20016",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-30116",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2016-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2023-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "94cf359a01b554eb46edd83952e99930d114046c",
+    "8648dd23fd4bcdbb6ce7bf4e074e6dcb85f12c6b",
+    "3a9ee924b3e4ad9e217dfe3798b4bd911a589eb5",
+    "5c78065dea2185f0a877d47223ceb1376f75cb76",
+    "412f70c02f7582ed56e48d5ab2fb62d5fc37c064",
+    "d50c6b80ce0ea0898d6dcd5980270a4bb36a9278",
+    "d0a844e2945ef77e7a6c68c23e2e5ac9667eca89",
+    "4aa58052e825a1c2a68d7d12894e662653c9e829"
+  ],
+  "conflicts": [],
+  "evidence_count": 9
+}

@@ -1,0 +1,421 @@
+{
+  "id": "G0095",
+  "name": "Machete",
+  "aliases": [
+    {
+      "value": "Machete",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "APT-C-43",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "El Machete",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "machete-apt",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TEMP.Andromeda",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "ATK 97",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "TAG-NS1",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [
+    {
+      "value": "Unknown",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Venezuela",
+        "source": "misp"
+      },
+      {
+        "value": "Russia",
+        "source": "misp"
+      },
+      {
+        "value": "Cuba",
+        "source": "misp"
+      },
+      {
+        "value": "China",
+        "source": "misp"
+      },
+      {
+        "value": "Belgium",
+        "source": "misp"
+      },
+      {
+        "value": "Ecuador",
+        "source": "misp"
+      },
+      {
+        "value": "Brazil",
+        "source": "misp"
+      },
+      {
+        "value": "Spain",
+        "source": "misp"
+      },
+      {
+        "value": "Germany",
+        "source": "misp"
+      },
+      {
+        "value": "France",
+        "source": "misp"
+      },
+      {
+        "value": "Colombia",
+        "source": "misp"
+      },
+      {
+        "value": "Peru",
+        "source": "misp"
+      },
+      {
+        "value": "Sweden",
+        "source": "misp"
+      },
+      {
+        "value": "United States",
+        "source": "misp"
+      },
+      {
+        "value": "Malaysia",
+        "source": "misp"
+      },
+      {
+        "value": "Argentina",
+        "source": "etda"
+      },
+      {
+        "value": "Belgium",
+        "source": "etda"
+      },
+      {
+        "value": "Bolivia",
+        "source": "etda"
+      },
+      {
+        "value": "Brazil",
+        "source": "etda"
+      },
+      {
+        "value": "Canada",
+        "source": "etda"
+      },
+      {
+        "value": "China",
+        "source": "etda"
+      },
+      {
+        "value": "Colombia",
+        "source": "etda"
+      },
+      {
+        "value": "Cuba",
+        "source": "etda"
+      },
+      {
+        "value": "Dominican Republic",
+        "source": "etda"
+      },
+      {
+        "value": "Ecuador",
+        "source": "etda"
+      },
+      {
+        "value": "France",
+        "source": "etda"
+      },
+      {
+        "value": "Germany",
+        "source": "etda"
+      },
+      {
+        "value": "Guatemala",
+        "source": "etda"
+      },
+      {
+        "value": "Malaysia",
+        "source": "etda"
+      },
+      {
+        "value": "Mexico",
+        "source": "etda"
+      },
+      {
+        "value": "Nicaragua",
+        "source": "etda"
+      },
+      {
+        "value": "Peru",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "etda"
+      },
+      {
+        "value": "South Korea",
+        "source": "etda"
+      },
+      {
+        "value": "Spain",
+        "source": "etda"
+      },
+      {
+        "value": "Sweden",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "Ukraine",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      },
+      {
+        "value": "Venezuela",
+        "source": "etda"
+      },
+      {
+        "value": "Venezuela",
+        "source": "malpedia"
+      },
+      {
+        "value": "Russia",
+        "source": "malpedia"
+      },
+      {
+        "value": "Cuba",
+        "source": "malpedia"
+      },
+      {
+        "value": "China",
+        "source": "malpedia"
+      },
+      {
+        "value": "Belgium",
+        "source": "malpedia"
+      },
+      {
+        "value": "Ecuador",
+        "source": "malpedia"
+      },
+      {
+        "value": "Brazil",
+        "source": "malpedia"
+      },
+      {
+        "value": "Spain",
+        "source": "malpedia"
+      },
+      {
+        "value": "Germany",
+        "source": "malpedia"
+      },
+      {
+        "value": "France",
+        "source": "malpedia"
+      },
+      {
+        "value": "Colombia",
+        "source": "malpedia"
+      },
+      {
+        "value": "Peru",
+        "source": "malpedia"
+      },
+      {
+        "value": "Sweden",
+        "source": "malpedia"
+      },
+      {
+        "value": "United States",
+        "source": "malpedia"
+      },
+      {
+        "value": "Malaysia",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Military",
+        "source": "misp"
+      },
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Education",
+        "source": "etda"
+      },
+      {
+        "value": "Embassies",
+        "source": "etda"
+      },
+      {
+        "value": "Energy",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "etda"
+      },
+      {
+        "value": "Military",
+        "source": "malpedia"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Machete",
+      "source": "attack"
+    },
+    {
+      "name": "El Machete APT Backdoor Dropper",
+      "source": "malpedia"
+    },
+    {
+      "name": "Loki RAT",
+      "source": "malpedia"
+    },
+    {
+      "name": "PyArk",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1036.005",
+    "T1053.005",
+    "T1059.003",
+    "T1059.005",
+    "T1059.006",
+    "T1189",
+    "T1204.001",
+    "T1204.002",
+    "T1218.007",
+    "T1566.001",
+    "T1566.002"
+  ],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2017-11882",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2014-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2017-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2020-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q3",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "b130c081c89a51831e4cbaf5ce20cc4ea5ec614c",
+    "804cad95b32569b1648541a3d968cecc2f3349f3",
+    "a77cbdde77e4f422afa752f5300c4c61227a9713",
+    "eb6bd1daa8364adaeb1a749bffeea39ebdfda558",
+    "4e45a10b5a7c19ff7af8f68f6908d14258f4e799",
+    "c7a8c2597269ab369b4f0527056f9bb13c65a2a6",
+    "bde1cb3a3c8d5eebbd9a3e142d00199f1270e109",
+    "414c09b6b48165e17890931281e78df184d4ddea"
+  ],
+  "conflicts": [],
+  "evidence_count": 11
+}

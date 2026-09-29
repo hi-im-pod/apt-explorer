@@ -1,0 +1,186 @@
+{
+  "id": "G0122",
+  "name": "Silent Librarian",
+  "aliases": [
+    {
+      "value": "Silent Librarian",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TA407",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "COBALT DICKENS",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Mabna Institute",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Yellow Nabu",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TA4900",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Mabna Institute Group",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Cobalt Dickens",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Academic Serpens",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IR",
+      "source": "misp"
+    },
+    {
+      "value": "IR",
+      "source": "etda"
+    },
+    {
+      "value": "IR",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Australia",
+        "source": "etda"
+      },
+      {
+        "value": "Canada",
+        "source": "etda"
+      },
+      {
+        "value": "China",
+        "source": "etda"
+      },
+      {
+        "value": "Hong Kong",
+        "source": "etda"
+      },
+      {
+        "value": "Israel",
+        "source": "etda"
+      },
+      {
+        "value": "Japan",
+        "source": "etda"
+      },
+      {
+        "value": "Switzerland",
+        "source": "etda"
+      },
+      {
+        "value": "Türkiye",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Education",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [
+    "T1078",
+    "T1110.003",
+    "T1114",
+    "T1114.003",
+    "T1583.001",
+    "T1585.002",
+    "T1588.002",
+    "T1588.004",
+    "T1589.002",
+    "T1589.003",
+    "T1594",
+    "T1598.003",
+    "T1608.005"
+  ],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2019-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q4",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "8406efff010535b5b3970c90f1c66c48cd42a334",
+    "paper:Silent%20Librarian%20APT%20right%20on%20schedule%20for%202021%20academic%20year",
+    "c98008b03a7bbcf446705b7e63dff4a2d51a98b8",
+    "edbd146351a40f307247b887b8f95e625cb62336"
+  ],
+  "conflicts": [],
+  "evidence_count": 15
+}

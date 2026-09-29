@@ -1,0 +1,311 @@
+{
+  "id": "G1038",
+  "name": "TA578",
+  "aliases": [
+    {
+      "value": "TA578",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "Bumblebee",
+      "source": "attack"
+    },
+    {
+      "name": "IcedID",
+      "source": "attack"
+    },
+    {
+      "name": "Latrodectus",
+      "source": "attack"
+    },
+    {
+      "name": "BumbleBee",
+      "source": "malpedia"
+    },
+    {
+      "name": "SSLoad",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1059.007",
+    "T1204.001",
+    "T1583.006",
+    "T1594"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1033",
+      "count": 1
+    },
+    {
+      "id": "T1047",
+      "count": 1
+    },
+    {
+      "id": "T1057",
+      "count": 1
+    },
+    {
+      "id": "T1059",
+      "count": 1
+    },
+    {
+      "id": "T1059.001",
+      "count": 1
+    },
+    {
+      "id": "T1059.007",
+      "count": 1
+    },
+    {
+      "id": "T1069.002",
+      "count": 1
+    },
+    {
+      "id": "T1070.004",
+      "count": 1
+    },
+    {
+      "id": "T1071.002",
+      "count": 1
+    },
+    {
+      "id": "T1078.002",
+      "count": 1
+    },
+    {
+      "id": "T1082",
+      "count": 1
+    },
+    {
+      "id": "T1083",
+      "count": 1
+    },
+    {
+      "id": "T1102",
+      "count": 1
+    },
+    {
+      "id": "T1218.007",
+      "count": 1
+    },
+    {
+      "id": "T1218.011",
+      "count": 1
+    },
+    {
+      "id": "T1219",
+      "count": 1
+    },
+    {
+      "id": "T1518.001",
+      "count": 1
+    },
+    {
+      "id": "T1573",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2015-0096",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2017-0199",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-1472",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-34527",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-40444",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-30190",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-3519",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-38831",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-27564",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2024-4577",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2025-24813",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2025-49704",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2026-21236",
+      "kev": false,
+      "ransomware": null
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2021-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 16
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 10
+    },
+    {
+      "quarter": "2022-Q4",
+      "count": 5
+    },
+    {
+      "quarter": "2023-Q1",
+      "count": 5
+    },
+    {
+      "quarter": "2023-Q2",
+      "count": 4
+    },
+    {
+      "quarter": "2023-Q3",
+      "count": 4
+    },
+    {
+      "quarter": "2024-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q2",
+      "count": 5
+    },
+    {
+      "quarter": "2024-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2025-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "dfir:2026-06-29-from-bing-search-to-ransomware-bumblebee-and-adaptixc2-deliver-akira-3",
+    "e1e2f4719a3edbd7f8f6b5599f05a435b98b1d28",
+    "409b3329f1526ab9dcd29e529da42ab7669e152a",
+    "61221e4a9723e978eaaf46803586656e9c7a2545",
+    "da4d7253fdb0734966a75f161f1bcf0fadf36f2d",
+    "f487973c655ba7c4ce1aa2e3851609192422d5f1",
+    "a33ac58a1d90568716c289434a5afcced93c482e",
+    "0b621379e7a459b36b9a68348aa78eda71cb41de",
+    "f39ec26a4d5807f2b5f154a15212bd60e84b9099",
+    "fcb4c0dfadf0a31ae22571fca13e2304f402521a",
+    "41d1c52df55145a4839e54b74c0e0ff17917d539",
+    "e8fd95b64cf80a5bdd2fce8aa078ab5ca8a47198",
+    "6b8a3936d4516f43972d436eb5912abaf6f4b44d",
+    "d8563fa877bf29a223f91b8c74c649e4b5f85956",
+    "425d47bd92a9f3ced756c44b25e5900dd26de84c",
+    "c4b81ca18d218af107d691f307544036d4a1129b",
+    "4c4b9b9d55c353f69d36357c307cfc72d7e806f7",
+    "de0ab2f6450074086b035d458faf11c2b0004f00",
+    "45ac66f4ab05c43bc5128377779e6673eace06cf",
+    "59b600d2309a4e88c632a3a1d1a22df2cd5e87e7",
+    "bc08a226efbcb0764756a8a59c6ac6e143585bbb",
+    "b6ac1c8df2b5d023227b9f98575b92131abdfbed",
+    "362b9a8c655921d16fd86c6fd529de65d801536b",
+    "9ad9d4c91c0d32bbb738943b49025c8a4e53621d",
+    "4e8c55fd789a464429527d10f07ce9ba0b291aa9",
+    "7a74f93fea0e288ac9fd2e55d06dc184fcff51b4",
+    "83f81ebf23830ac896d1b46e55617138e115ee75",
+    "ab1ee9b5e79b3b44b4e20d3806a5d4dbc74e73d4",
+    "325471781a0efd42a1f32340e1a5c2915b23580f",
+    "8002a481ae477a283086842e197b2826b81695c3",
+    "cd5742992501ef75e3297ebd6bf29b404dd505a9",
+    "1611678ae4b80b56d640dede90033844f845ed8a",
+    "4270b82d1c09e7f1217205669ad1cec8dc96c0e8",
+    "a2ee8f9165b9b7ff3d99c3d156479fee7613d54b",
+    "ac9dc190477f7e6cd6e6246b8ca75fa77e9799a1",
+    "c2b59de92052209cbcb40bbe53c4c82efb43ed02",
+    "b6fd8a2292611991eade47bb11001d05b7087630",
+    "25af33bb5f05915fcd24c97b36e36ebc22e2a225",
+    "fac3b2807d83b5f9574c7ae69dd43596057c750c",
+    "d53696dd1b79b6a24c7764822e74abd31dccb226",
+    "9b5d6cd83682ca52388a3b686512bbd3e67c8df5",
+    "584eeac7723f24c28931ef596c3a3b70d6835ccf",
+    "6890522aad79e2338bad83ada9a64db61f9b9980",
+    "1f7237fb84511e669d9e2b3fa2d895130da3aa9d",
+    "d53579b2ef3dd75e7ada6784418e06246b556571",
+    "eb002a1358fbf509e042cb44b589d26785598393",
+    "03d5659ede82aeffa7c45c88843439a8e83b8b8b",
+    "26b82a79ffa9a63bab0526e0dd2cec604d4def2c",
+    "97a25b36d9759aa1aaf64c23febbea486e41980e",
+    "f7eae229313e21c54dd7905e6f52de781c22d2af",
+    "fac33d612b753b3d965beebef877673d5d5469ff",
+    "7cb1c776d4f11f2e9fe593c66926f8820c9c9642",
+    "0786bc25a10467aaf5aa9335a55b1079bf54a883",
+    "e285d7aaecf93c218efe4623b4db5ed87eb9808d",
+    "19a488c230c30f8bbce5903de947698c5812abfc",
+    "0f74dbb705fbe1d89e0b432aed2cb148aa58b929",
+    "4f5ccab91488058437e866f94dbbc310ca1b9f33",
+    "2184d2d8e7c53e6848038101cf45c5e732284050",
+    "282368ee28e9938a54735945158c2fe6cbe76eb3"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

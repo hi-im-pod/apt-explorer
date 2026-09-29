@@ -1,0 +1,71 @@
+{
+  "id": "unc6353",
+  "name": "UNC6353",
+  "aliases": [
+    {
+      "value": "UNC6353",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "GHOSTBLADE",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2025-14174",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2025-31277",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2025-43510",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2025-43520",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2025-43529",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-20700",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2026-Q1",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "62eabf70d765e7fc055409aa7008f48ee4ec3cfb"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

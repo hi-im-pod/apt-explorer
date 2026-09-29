@@ -1,0 +1,54 @@
+{
+  "id": "spicy-panda",
+  "name": "SPICY PANDA",
+  "aliases": [
+    {
+      "value": "SPICY PANDA",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Spicy Panda",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "etda"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2015-Q1",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "476ebf5380941f81e9d22e9a012bae5638e1a985"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

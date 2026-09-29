@@ -1,0 +1,1076 @@
+{
+  "id": "G1033",
+  "name": "Star Blizzard",
+  "aliases": [
+    {
+      "value": "Star Blizzard",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TA446",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "SEABORGIUM",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Callisto Group",
+      "sources": [
+        "attack",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "COLDRIVER",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Cold River",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Nahr el bared",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Nahr Elbard",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TAG-53",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "BlueCharlie",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Blue Callisto",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UNC4057",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "IRON FRONTIER",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Gamaredon Group",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Winterflounder",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "BlueAlpha",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Blue Otso",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Callisto",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Shuckworm",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Actinium",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Trident Ursa",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "DEV-0157",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UAC-0010",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Aqua Blizzard",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "DNSpionage",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Armageddon",
+      "sources": [
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "SectorC08",
+      "sources": [
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UNC530",
+      "sources": [
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "GOSSAMER BEAR",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "COLD RELIC",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "COBALT EDGEWATER",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "ACTINIUM",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "IRON TILDEN",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "PRIMITIVE BEAR",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Cobalt Edgewater",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Seaborgium",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Calisto",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Grey Pro",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Mythic Ursa",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Gossamer Bear",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Primitive Bear",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Iron Tilden",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Reuse Team",
+      "sources": [
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Gamaredon",
+      "sources": [
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "RU",
+      "source": "misp"
+    },
+    {
+      "value": "RU",
+      "source": "etda"
+    },
+    {
+      "value": "IR",
+      "source": "etda"
+    },
+    {
+      "value": "RU",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Ukraine",
+        "source": "misp"
+      },
+      {
+        "value": "Germany",
+        "source": "misp"
+      },
+      {
+        "value": "Canada",
+        "source": "etda"
+      },
+      {
+        "value": "India",
+        "source": "etda"
+      },
+      {
+        "value": "Lebanon",
+        "source": "etda"
+      },
+      {
+        "value": "United Arab Emirates",
+        "source": "etda"
+      },
+      {
+        "value": "Ukraine",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      },
+      {
+        "value": "Albania",
+        "source": "etda"
+      },
+      {
+        "value": "Austria",
+        "source": "etda"
+      },
+      {
+        "value": "Australia",
+        "source": "etda"
+      },
+      {
+        "value": "Bangladesh",
+        "source": "etda"
+      },
+      {
+        "value": "Brazil",
+        "source": "etda"
+      },
+      {
+        "value": "Chile",
+        "source": "etda"
+      },
+      {
+        "value": "China",
+        "source": "etda"
+      },
+      {
+        "value": "Colombia",
+        "source": "etda"
+      },
+      {
+        "value": "Croatia",
+        "source": "etda"
+      },
+      {
+        "value": "Denmark",
+        "source": "etda"
+      },
+      {
+        "value": "Georgia",
+        "source": "etda"
+      },
+      {
+        "value": "Germany",
+        "source": "etda"
+      },
+      {
+        "value": "Guatemala",
+        "source": "etda"
+      },
+      {
+        "value": "Honduras",
+        "source": "etda"
+      },
+      {
+        "value": "Indonesia",
+        "source": "etda"
+      },
+      {
+        "value": "Iran",
+        "source": "etda"
+      },
+      {
+        "value": "Israel",
+        "source": "etda"
+      },
+      {
+        "value": "Italy",
+        "source": "etda"
+      },
+      {
+        "value": "Japan",
+        "source": "etda"
+      },
+      {
+        "value": "Kazakhstan",
+        "source": "etda"
+      },
+      {
+        "value": "Latvia",
+        "source": "etda"
+      },
+      {
+        "value": "Malaysia",
+        "source": "etda"
+      },
+      {
+        "value": "Netherlands",
+        "source": "etda"
+      },
+      {
+        "value": "Nigeria",
+        "source": "etda"
+      },
+      {
+        "value": "Norway",
+        "source": "etda"
+      },
+      {
+        "value": "Pakistan",
+        "source": "etda"
+      },
+      {
+        "value": "Papua New Guinea",
+        "source": "etda"
+      },
+      {
+        "value": "Poland",
+        "source": "etda"
+      },
+      {
+        "value": "Portugal",
+        "source": "etda"
+      },
+      {
+        "value": "Romania",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "etda"
+      },
+      {
+        "value": "South Africa",
+        "source": "etda"
+      },
+      {
+        "value": "South Korea",
+        "source": "etda"
+      },
+      {
+        "value": "Spain",
+        "source": "etda"
+      },
+      {
+        "value": "Sweden",
+        "source": "etda"
+      },
+      {
+        "value": "Türkiye",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "Vietnam",
+        "source": "etda"
+      },
+      {
+        "value": "Cyprus",
+        "source": "etda"
+      },
+      {
+        "value": "Egypt",
+        "source": "etda"
+      },
+      {
+        "value": "Iraq",
+        "source": "etda"
+      },
+      {
+        "value": "Jordan",
+        "source": "etda"
+      },
+      {
+        "value": "Kuwait",
+        "source": "etda"
+      },
+      {
+        "value": "Libya",
+        "source": "etda"
+      },
+      {
+        "value": "Ukraine",
+        "source": "malpedia"
+      },
+      {
+        "value": "Germany",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Government Administration",
+        "source": "misp"
+      },
+      {
+        "value": "Military",
+        "source": "misp"
+      },
+      {
+        "value": "Think Tanks",
+        "source": "misp"
+      },
+      {
+        "value": "Journalist",
+        "source": "misp"
+      },
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "NGOs",
+        "source": "etda"
+      },
+      {
+        "value": "Think Tanks",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "journalists",
+        "source": "etda"
+      },
+      {
+        "value": "Law enforcement",
+        "source": "etda"
+      },
+      {
+        "value": "diplomats and journalists",
+        "source": "etda"
+      },
+      {
+        "value": "Aviation",
+        "source": "etda"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "etda"
+      },
+      {
+        "value": "Internet infrastructure",
+        "source": "etda"
+      },
+      {
+        "value": "Government Administration",
+        "source": "malpedia"
+      },
+      {
+        "value": "Military",
+        "source": "malpedia"
+      },
+      {
+        "value": "Think Tanks",
+        "source": "malpedia"
+      },
+      {
+        "value": "Journalist",
+        "source": "malpedia"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Spica",
+      "source": "attack"
+    },
+    {
+      "name": "LOSTKEYS",
+      "source": "malpedia"
+    },
+    {
+      "name": "MAYBEROBOT",
+      "source": "malpedia"
+    },
+    {
+      "name": "NOROBOT",
+      "source": "malpedia"
+    },
+    {
+      "name": "YESROBOT",
+      "source": "malpedia"
+    },
+    {
+      "name": "DNSpionage",
+      "source": "malpedia"
+    },
+    {
+      "name": "Karkoff",
+      "source": "malpedia"
+    },
+    {
+      "name": "BoneSpy",
+      "source": "malpedia"
+    },
+    {
+      "name": "DilongTrash",
+      "source": "malpedia"
+    },
+    {
+      "name": "DinoTrain",
+      "source": "malpedia"
+    },
+    {
+      "name": "EvilGnome",
+      "source": "malpedia"
+    },
+    {
+      "name": "GamaWiper",
+      "source": "malpedia"
+    },
+    {
+      "name": "GammDrop",
+      "source": "malpedia"
+    },
+    {
+      "name": "GammaLoad",
+      "source": "malpedia"
+    },
+    {
+      "name": "LitterDrifter",
+      "source": "malpedia"
+    },
+    {
+      "name": "PlainGnome",
+      "source": "malpedia"
+    },
+    {
+      "name": "Pteranodon",
+      "source": "malpedia"
+    },
+    {
+      "name": "PteroGraphin",
+      "source": "malpedia"
+    },
+    {
+      "name": "QuietSieve",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1059.007",
+    "T1078",
+    "T1114.002",
+    "T1114.003",
+    "T1204.002",
+    "T1539",
+    "T1550.004",
+    "T1566.001",
+    "T1583",
+    "T1583.001",
+    "T1585.001",
+    "T1585.002",
+    "T1586.002",
+    "T1588.002",
+    "T1589",
+    "T1593",
+    "T1598.002",
+    "T1598.003",
+    "T1608.001",
+    "T1684.001"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1078",
+      "count": 1
+    },
+    {
+      "id": "T1114.002",
+      "count": 1
+    },
+    {
+      "id": "T1114.003",
+      "count": 1
+    },
+    {
+      "id": "T1539",
+      "count": 1
+    },
+    {
+      "id": "T1550.004",
+      "count": 1
+    },
+    {
+      "id": "T1566.001",
+      "count": 1
+    },
+    {
+      "id": "T1566.002",
+      "count": 1
+    },
+    {
+      "id": "T1583.001",
+      "count": 1
+    },
+    {
+      "id": "T1585.001",
+      "count": 1
+    },
+    {
+      "id": "T1585.002",
+      "count": 1
+    },
+    {
+      "id": "T1586.002",
+      "count": 1
+    },
+    {
+      "id": "T1589",
+      "count": 1
+    },
+    {
+      "id": "T1593",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2009-1151",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2014-6271",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2014-6277",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2014-7169",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2014-7186",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2014-7187",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2017-0199",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-11882",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-12617",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-3881",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-6736",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-0296",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-20250",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-6055",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2018-7600",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-0708",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-0797",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-0808",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-0859",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-1132",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-11707",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-11708",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-1367",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-13720",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-1458",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-2215",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-3568",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-5786",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-6225",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2019-7286",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-7287",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-8518",
+      "kev": false,
+      "ransomware": null
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2017-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2019-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2019-Q2",
+      "count": 3
+    },
+    {
+      "quarter": "2019-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q4",
+      "count": 3
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2021-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2023-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "b43bfe5a12e60a06af2425f490f3582e434586f6",
+    "b9c7e4e5c0cb806df2ebd71e84952a0a4e1b99af",
+    "3ccb7a0119dd03a4e70172c3fa63522d76201996",
+    "3d980b6df91d2d6b6f909111f07c0f5bba05c9b6",
+    "d8bb807b5b8dbc34a151daa220f3620aa74abc8e",
+    "376d8ca8645a8cae8bf2f979e02a7d86ba3bc756",
+    "7faa0cff1e6fc7881b39b8f16e820dfbe9248b2e",
+    "7e23d7bd9766f4fcb482fdeb5e35d30cbe739cd7",
+    "7ffa8cc48d900c15e6ac08b104610f82011496c5",
+    "9c2e050959ee0d8e7e979b09b0d9674e2277cd15",
+    "6191785c9b36d5909ad58692193c3c12d302b00d",
+    "24b089f66141a590b8d2b32cff928f14e3a0d550",
+    "paper:Karkoff%202020%20a%20new%20APT34%20espionage%20operation%20involves%20Lebanon%20Government",
+    "d6b452fe46682f1bd964eb8cae720076bf30c592",
+    "3d4b6ef9ea3d3d64c174b6eaf85434ffa4af8d61",
+    "c8b43c78906df829ffa707e4fc4e3a0cfb0462de",
+    "2beb8524fab9f8f40c0501b712accf9a179e7272",
+    "b43c8a29b106f92b9521b4d057e29d23692ff86d",
+    "8583824bdb9c5acf4ee1e243825303d62486bcf3",
+    "paper:APT34%20webmask%20project",
+    "fa738be5d10521d4f90279de7ab0c3000544c539",
+    "90270207dfbccfbc3021fd7849807fdf1630d909",
+    "320a7e4a9ea4342714019222c85f4d034bf46e79",
+    "c030c982ce185522473555c673920bf08fd5453e",
+    "106f7d512f587c56cc68c378918113454fbc6fce",
+    "5217218444c642545031eaaabe9a0dd0f8dc4644",
+    "7dcaea7c97091bd953bfb58e83ee329c92ba04d6",
+    "749fcb8711afe06402e0a97903bfe2b4073bacc6"
+  ],
+  "conflicts": [],
+  "evidence_count": 53
+}

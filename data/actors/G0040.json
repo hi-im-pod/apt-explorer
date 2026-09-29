@@ -1,0 +1,1225 @@
+{
+  "id": "G0040",
+  "name": "Patchwork",
+  "aliases": [
+    {
+      "value": "Patchwork",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Dropping Elephant",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Chinastrats",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Donot Team",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "APT-C-35",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "SectorE02",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "APT-C-09",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Monsoon",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Thirsty Gemini",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "QUILTED TIGER",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Sarit",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "ZINC EMERSON",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "ATK11",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Orange Athos",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "VICEROY TIGER",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "OPERATION HANGOVER",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Orange Kala",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Hangover Group",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "MONSOON",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Operation Hangover",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Mint Tempest",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Origami Elephant",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Quilted Tiger",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "TG-4410",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Zinc Emerson",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "ATK 11",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Capricorn Organisation",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Maha Grass",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Operation HangOver",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Viceroy Tiger",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Neon",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IN",
+      "source": "misp"
+    },
+    {
+      "value": "IN",
+      "source": "etda"
+    },
+    {
+      "value": "IN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "India",
+      "source": "misp"
+    },
+    {
+      "value": "India",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Bangladesh",
+        "source": "misp"
+      },
+      {
+        "value": "Sri Lanka",
+        "source": "misp"
+      },
+      {
+        "value": "Pakistan",
+        "source": "misp"
+      },
+      {
+        "value": "Germany",
+        "source": "misp"
+      },
+      {
+        "value": "Argentina",
+        "source": "etda"
+      },
+      {
+        "value": "Bangladesh",
+        "source": "etda"
+      },
+      {
+        "value": "India",
+        "source": "etda"
+      },
+      {
+        "value": "Nepal",
+        "source": "etda"
+      },
+      {
+        "value": "Pakistan",
+        "source": "etda"
+      },
+      {
+        "value": "Philippines",
+        "source": "etda"
+      },
+      {
+        "value": "Sri Lanka",
+        "source": "etda"
+      },
+      {
+        "value": "Thailand",
+        "source": "etda"
+      },
+      {
+        "value": "Togo",
+        "source": "etda"
+      },
+      {
+        "value": "United Arab Emirates",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "Bhutan",
+        "source": "etda"
+      },
+      {
+        "value": "Cambodia",
+        "source": "etda"
+      },
+      {
+        "value": "China",
+        "source": "etda"
+      },
+      {
+        "value": "Israel",
+        "source": "etda"
+      },
+      {
+        "value": "Japan",
+        "source": "etda"
+      },
+      {
+        "value": "Myanmar",
+        "source": "etda"
+      },
+      {
+        "value": "South Korea",
+        "source": "etda"
+      },
+      {
+        "value": "Türkiye",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      },
+      {
+        "value": "Austria",
+        "source": "etda"
+      },
+      {
+        "value": "Canada",
+        "source": "etda"
+      },
+      {
+        "value": "France",
+        "source": "etda"
+      },
+      {
+        "value": "Germany",
+        "source": "etda"
+      },
+      {
+        "value": "Indonesia",
+        "source": "etda"
+      },
+      {
+        "value": "Iran",
+        "source": "etda"
+      },
+      {
+        "value": "Jordan",
+        "source": "etda"
+      },
+      {
+        "value": "Kuwait",
+        "source": "etda"
+      },
+      {
+        "value": "Norway",
+        "source": "etda"
+      },
+      {
+        "value": "Oman",
+        "source": "etda"
+      },
+      {
+        "value": "Panama",
+        "source": "etda"
+      },
+      {
+        "value": "Poland",
+        "source": "etda"
+      },
+      {
+        "value": "Romania",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "etda"
+      },
+      {
+        "value": "Singapore",
+        "source": "etda"
+      },
+      {
+        "value": "Taiwan",
+        "source": "etda"
+      },
+      {
+        "value": "Bangladesh",
+        "source": "malpedia"
+      },
+      {
+        "value": "Sri Lanka",
+        "source": "malpedia"
+      },
+      {
+        "value": "Pakistan",
+        "source": "malpedia"
+      },
+      {
+        "value": "Germany",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Private sector",
+        "source": "misp"
+      },
+      {
+        "value": "Military",
+        "source": "misp"
+      },
+      {
+        "value": "Finance",
+        "source": "misp"
+      },
+      {
+        "value": "Diplomacy",
+        "source": "misp"
+      },
+      {
+        "value": "Government, Administration",
+        "source": "misp"
+      },
+      {
+        "value": "Security Service",
+        "source": "misp"
+      },
+      {
+        "value": "Embassies",
+        "source": "etda"
+      },
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Aviation",
+        "source": "etda"
+      },
+      {
+        "value": "Energy",
+        "source": "etda"
+      },
+      {
+        "value": "Financial",
+        "source": "etda"
+      },
+      {
+        "value": "IT",
+        "source": "etda"
+      },
+      {
+        "value": "Media",
+        "source": "etda"
+      },
+      {
+        "value": "NGOs",
+        "source": "etda"
+      },
+      {
+        "value": "Pharmaceutical",
+        "source": "etda"
+      },
+      {
+        "value": "Think Tanks",
+        "source": "etda"
+      },
+      {
+        "value": "Hospitality",
+        "source": "etda"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "etda"
+      },
+      {
+        "value": "Private sector",
+        "source": "malpedia"
+      },
+      {
+        "value": "Military",
+        "source": "malpedia"
+      },
+      {
+        "value": "Finance",
+        "source": "malpedia"
+      },
+      {
+        "value": "Diplomacy",
+        "source": "malpedia"
+      },
+      {
+        "value": "Government, Administration",
+        "source": "malpedia"
+      },
+      {
+        "value": "Security Service",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "AutoIt backdoor",
+      "source": "attack"
+    },
+    {
+      "name": "BADNEWS",
+      "source": "attack"
+    },
+    {
+      "name": "BackConfig",
+      "source": "attack"
+    },
+    {
+      "name": "NDiskMonitor",
+      "source": "attack"
+    },
+    {
+      "name": "PowerSploit",
+      "source": "attack"
+    },
+    {
+      "name": "QuasarRAT",
+      "source": "attack"
+    },
+    {
+      "name": "TINYTYPHON",
+      "source": "attack"
+    },
+    {
+      "name": "Unknown Logger",
+      "source": "attack"
+    },
+    {
+      "name": "BadNews",
+      "source": "malpedia"
+    },
+    {
+      "name": "Spyder Patchwork",
+      "source": "malpedia"
+    },
+    {
+      "name": "BackConfig",
+      "source": "malpedia"
+    },
+    {
+      "name": "DONOT",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1005",
+    "T1021.001",
+    "T1027.001",
+    "T1027.002",
+    "T1027.005",
+    "T1027.010",
+    "T1033",
+    "T1036.005",
+    "T1053.005",
+    "T1055.012",
+    "T1059.001",
+    "T1059.003",
+    "T1059.005",
+    "T1070.004",
+    "T1074.001",
+    "T1082",
+    "T1083",
+    "T1102.001",
+    "T1105",
+    "T1112",
+    "T1119",
+    "T1132.001",
+    "T1189",
+    "T1197",
+    "T1203",
+    "T1204.001",
+    "T1204.002",
+    "T1518.001",
+    "T1547.001",
+    "T1548.002",
+    "T1553.002",
+    "T1555.003",
+    "T1559.002",
+    "T1560",
+    "T1566.001",
+    "T1566.002",
+    "T1574.001",
+    "T1587.002",
+    "T1588.002",
+    "T1598.003",
+    "T1680"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1059.001",
+      "count": 2
+    },
+    {
+      "id": "T1071.001",
+      "count": 2
+    },
+    {
+      "id": "T1112",
+      "count": 2
+    },
+    {
+      "id": "T1583.001",
+      "count": 2
+    },
+    {
+      "id": "T1583.008",
+      "count": 2
+    },
+    {
+      "id": "T1012",
+      "count": 1
+    },
+    {
+      "id": "T1014",
+      "count": 1
+    },
+    {
+      "id": "T1027",
+      "count": 1
+    },
+    {
+      "id": "T1027.010",
+      "count": 1
+    },
+    {
+      "id": "T1036",
+      "count": 1
+    },
+    {
+      "id": "T1037.001",
+      "count": 1
+    },
+    {
+      "id": "T1053.005",
+      "count": 1
+    },
+    {
+      "id": "T1055",
+      "count": 1
+    },
+    {
+      "id": "T1059.003",
+      "count": 1
+    },
+    {
+      "id": "T1082",
+      "count": 1
+    },
+    {
+      "id": "T1102",
+      "count": 1
+    },
+    {
+      "id": "T1105",
+      "count": 1
+    },
+    {
+      "id": "T1132",
+      "count": 1
+    },
+    {
+      "id": "T1140",
+      "count": 1
+    },
+    {
+      "id": "T1204.002",
+      "count": 1
+    },
+    {
+      "id": "T1219",
+      "count": 1
+    },
+    {
+      "id": "T1555.003",
+      "count": 1
+    },
+    {
+      "id": "T1566.001",
+      "count": 1
+    },
+    {
+      "id": "T1566.002",
+      "count": 1
+    },
+    {
+      "id": "T1573.001",
+      "count": 1
+    },
+    {
+      "id": "T1573.002",
+      "count": 1
+    },
+    {
+      "id": "T1583.003",
+      "count": 1
+    },
+    {
+      "id": "T1583.004",
+      "count": 1
+    },
+    {
+      "id": "T1584.004",
+      "count": 1
+    },
+    {
+      "id": "T1620",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2012-0158",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2012-11882",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2012-1856",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2014-1761",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2014-4114",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2014-6352",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2015-1641",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2015-2545",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2016-0034",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2016-4171",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2016-9192",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2017-0199",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-0261",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-1182",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2017-11882",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-12824",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2017-8570",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-8750",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2018-0798",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-0802",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-13379",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-20250",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-0604",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-0808",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-11510",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-11932",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2019-13720",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-19781",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-9489",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2020-0688",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-10189",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-1472",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-2021",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-1732",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-26855",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-2883",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2024-43451",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2024-4577",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2016-Q3",
+      "count": 5
+    },
+    {
+      "quarter": "2017-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 3
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2018-Q1",
+      "count": 4
+    },
+    {
+      "quarter": "2018-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2018-Q3",
+      "count": 4
+    },
+    {
+      "quarter": "2018-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2019-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2019-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2019-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2019-Q4",
+      "count": 3
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 7
+    },
+    {
+      "quarter": "2020-Q4",
+      "count": 7
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 4
+    },
+    {
+      "quarter": "2021-Q2",
+      "count": 3
+    },
+    {
+      "quarter": "2021-Q3",
+      "count": 5
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 3
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 11
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 10
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2022-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q1",
+      "count": 4
+    },
+    {
+      "quarter": "2023-Q2",
+      "count": 3
+    },
+    {
+      "quarter": "2023-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2023-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2024-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2024-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2024-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q1",
+      "count": 6
+    },
+    {
+      "quarter": "2025-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2025-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2026-Q3",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "4dc4cfdd02b71f888a378a33099915a51cbfec2f",
+    "cfdb3d32d6a31891c317b4412de451d8e41c7b68",
+    "fe52dee64e719ea763f6e8b485eb690cd77c5290",
+    "34399febaf90cde2f9df7aca450dda1c7f81d75c",
+    "d0a0a5f2b671b004318874f8d2683e3ce5bd42f3",
+    "ba28e9414078c889952e5f33706d74ff2e7184f9",
+    "e7a254638c47876f66b66906167a4b3ef5b689ed",
+    "ce1c9aed40cb251890cac05f24f7bff10ee03d94",
+    "52fd3849db36a54a40c091732817776e3c52e384",
+    "0df1518059b88e4fa815acd97325f2d03319cac8",
+    "693f5d20edcb1115fce6af1d1ba0c4681f4e0c31",
+    "6196cb48af636b0c431ebf3ff838008b9b9fbc5d",
+    "4f0e8fce607584e2e2301a4b0b18a1d15c470166",
+    "c2ed014ae31e2740cab0f1758d1d83ddb1665a0f",
+    "9c53b40b2be55764a1879bb8432855032fbf09fe",
+    "67a7e63baf71300341926bcebb9745fa9d716cc1",
+    "633e2ecf2b9f5976d9b82d32856e15812a9a9dd0",
+    "1fca8044e90d64caed80b8a16fab8749dbc8168e",
+    "bf483c8a050857607fe7cbe9a88bf3a2e96440d0",
+    "47ed28849959714f322ab7b3d74aecc6c2c8ae51",
+    "3d93ac448b14cae40f1618032b985a74b6b179c0",
+    "c44c2ca0d048f9d27f63a5c5307de4fbae38a13c",
+    "bc4aba6b0cc36c914ac83997cf606b3845da2de5",
+    "ecd7f6900f8dbbfcf62ca63e795c7d0f3e34c1f2",
+    "c4b81ca18d218af107d691f307544036d4a1129b",
+    "1e5f071cd183b27c3a9c813f6e6690a2f57872b1",
+    "3e87ae154e06cf1ce35f53a4ba22a7a78ce91725",
+    "202cd69f70e6f21571c76ef66967bf2a30d35121",
+    "8ef50b3946a56f51b3d2f77bf9161ff4b46ab6a5",
+    "7d8e6af3f27d4790208576da5469d7ee973f59bd",
+    "06adc50aef05fea02d1d41b52fe51c1cde44c542",
+    "16cf2b9cd2857fe08e3cf519cd4adfae820884a9",
+    "0d37b69929b89e39661baf14219fbb32b15a0625",
+    "e695755280ab29560ebc445003ee3a3a1cd5328f",
+    "b4f1bcbef3b1af8fe39101d47b6d70e34214e0eb",
+    "b3edaaa08e0864c4c7a25cf2abaf52f3254edf2a",
+    "66c415ee8b4c93e92d6551f4bc0b09074eda8dd7",
+    "d0c53005e801ae155173cf94555915c2ddba9643",
+    "0f5242b03ee6c309641eae553230c529bd7589e4",
+    "f5305857dd972cfdc3c9ef7998e2c1a5132036de",
+    "99e54e66074025c4dea47b6712ab2d5763d0f66f",
+    "d3dc13cd1dfdc5e80f2bc4e37f894dd4a5c73590",
+    "1820c13e296fe1851fc14dae94a71288015f6690",
+    "20050eb56a7e9ae7822224694f46580fe4f77d47",
+    "681ab6a539dfc853591c4259019738f573eeac84",
+    "8a1d66455b304913f385a3ce7e6c23e7060211b2",
+    "ebfda0e6fa14e173ec63d10b7d616d453cf18bb0",
+    "9de160ea8e73fcdf71947bbb8882ab0191728f03",
+    "6f1551644309748036eb2ebf88e32d4d1e1f9d19",
+    "5e3ee3e27893b664edf63ddfd4b6a3436e5e3e8a",
+    "4f16e01c6f07c94e57ab46122d5a672b05c203b2",
+    "c994c0711a66be1e2a3dbde3628a7a2060ffb0c5",
+    "74a8e4d2e0035e88c9c163c1b32640262793cdac",
+    "e23b7a6e0c210aa2e92ad779c5dded5962f19b89",
+    "b6f156e50c618d6373a754cb11f62863fa3d40ef",
+    "bfcabb3f75750a8d8f91be6b7c3505fa1cbb0b00",
+    "278673a18cf0b2916627fdb0a7891421998a0490",
+    "bc53a0db10794ce970ffd5d1c22e71f580e6eaed",
+    "d29ffab19faa011ce3afc093ff0b087f3f33763f",
+    "e0ab7bcb5835a004b356464df087e36b576c42d7",
+    "0247dfd52784898815506925107a991587fa6b3c",
+    "2db1b4e539d976c33c386626df178737c7d40adb",
+    "2b8f1f71c8638df5eb2ad1540426f475e6f92887",
+    "02c222792c65765833e9bb8d77453ba1912e416e",
+    "a3aaf5ecd3ada502cd3a8fa5da4e1e76dd0ed47d",
+    "9b0936b1e3b43ea3afe57dce26d6dbd5dc56d6bc",
+    "cc61019a4194b24a408814c436c65367e47d8b54",
+    "1b2ff3206088d60b5b7c14a56514a0648a576314",
+    "a4e2caa2816eb4b829d65f344773f9aa7a75664b",
+    "349099020900d3186c5c28f63a46351b6f9639b8",
+    "2d98a214de7a8a280ebe92a6883684593e3d33d3",
+    "91bce8338de804b13fef7c6936b7ad14ea787acb",
+    "9dfed529039907f4bb300d0281839de2de0a0058",
+    "0817067a5a3f5c104dbb3e44e8f5eaf804ca2db9",
+    "935a59cde6d931a628cd50010c778607e311676b",
+    "85fd3c90c1e6689979e048592c363a2a8c2361ea",
+    "d75290d64647f01eda0a1c7495d65d45cc858f19",
+    "9b9b575dc4095c28cb94e02b37e00873de326151",
+    "2b2dcdbdd804a1d4266b1aa7bbe9e19eaa6e6563",
+    "4adc5b33be6956bc254164b3919bec95c64c3824",
+    "89f7fb7b421848e7da6961809778cbdb65fd8a58",
+    "22efa00a0cabc17b368d870d5b5905d73f5b6ad8",
+    "1a0adbc6007772407524862a3cbb6940baa2aa16",
+    "e87b05f20ef33f02be1c02a25f10630522686344",
+    "d39ee9fb22106b3f9da17e504c910b97f200bbd5",
+    "9c44b54afa829d13b0da0689fc654f1e304b3e09",
+    "a339a0b53f8a8b8b63684d3355f784eac299e431",
+    "fed84094f8bd8822542b76820b569235ff6cd98a",
+    "86441ca8925bf1fdd2e9cf23babe553c9b363a2e",
+    "1ccd9bed77a597e46da58c0c6c8bd2daba7f633c",
+    "688771ff7a16425f001508bbb46242248d74545e",
+    "fb6cf9ea34db6270ac980049fbd3e977bcf0f486",
+    "90e00bfc5d1611fcc42b7bdd4c840087ff84b8ce",
+    "0178f617bc4cf930e5d1dabb3ebe78496f072041",
+    "559510923d4fa0e1f0d3ec6a210a49d09903c3e8",
+    "7960be96f5038b5a44680ccb0c7e2598615ed7c6",
+    "a0fe7b3d93f31f4b3c43555c0a853e2ab892bd8d",
+    "30d5a1c22af2711a79fa2251f523cd2e0b4faa1a",
+    "734ae623b5c32fe7a38fb962effa6f2305b6d79e",
+    "0cfc49eacece7037e8bad568e7ea993816fb2b62",
+    "3ce361b368e7909b3a9376b399c79d34d0850571",
+    "fe6b4819bbf4b7b5c664def98fb930d9f8ec1e5e",
+    "79ccc0053998efff9d299565ace7f992f9c9d377",
+    "a110d78ce9322857fd7d8f5f6d90f1eb6eb07c3e",
+    "8d2dfecda96a023dc8204c6347fcaa176cdedf9c",
+    "f7aa6ab1c5f0c699e10b98535e53aa364a360a0e",
+    "4b7cd07ad68ff8bde356ee84ea22b0e918899684",
+    "c58320595990b936d91523bd64c8b40fe6869d5d",
+    "33b025ccc68548b5553ae63953d10074e53c2be2",
+    "128ea779dec6b3799b81e1536db23b51dbab67ce",
+    "823ac975ea7d0a32d2055faeee970041e5d11a6b",
+    "e20d4a86631d905166dcf39d903bcc1e4920b58b",
+    "dafed0f2a46c513004287c96588d3be3b7ae513a",
+    "823df99bb42c74b5e0484e6fb20c36a450175f4a",
+    "60b374976e1a1a88d1f431bb295b737d180acbfe",
+    "0e29b12113c357d86236ff8af1c11af0a06db151",
+    "1defaa3eb72c554214e297c77f7da16fff310639",
+    "a4647ed4280e38c131c19afd52fdac7ce1ecf445",
+    "b910f06ecd66d0a297e2043369b82a29cf770eee",
+    "0184ab60e9f8f38cd59f0a53278192a286255179",
+    "8688aec5114fb87cf951ffe8ddd82540c30f6cae",
+    "ddbce0dd2907394801bd17ce8ecaf50ac0401ed2",
+    "955ddb4453827e2c1664f2924e75b21fb0c0496d"
+  ],
+  "conflicts": [],
+  "evidence_count": 39
+}

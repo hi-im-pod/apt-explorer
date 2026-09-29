@@ -1,0 +1,56 @@
+{
+  "id": "G0105",
+  "name": "DarkVishnya",
+  "aliases": [
+    {
+      "value": "DarkVishnya",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "PsExec",
+      "source": "attack"
+    },
+    {
+      "name": "Winexe",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1040",
+    "T1046",
+    "T1059.001",
+    "T1110",
+    "T1135",
+    "T1200",
+    "T1219",
+    "T1543.003",
+    "T1571",
+    "T1588.002"
+  ],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "80ed5248e57966f7160ec549e563340b4f6afd94"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

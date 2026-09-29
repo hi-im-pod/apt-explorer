@@ -1,0 +1,276 @@
+{
+  "id": "G1031",
+  "name": "Saint Bear",
+  "aliases": [
+    {
+      "value": "Saint Bear",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Storm-0587",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TA471",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UAC-0056",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Lorec53",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "SaintBear",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UNC2589",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Nodaria",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "FROZENVISTA",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Nascent Ursa",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "DEV-0587",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "EMBER BEAR",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Lorec Bear",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Bleeding Bear",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Cadet Blizzard",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Ember Bear",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "RU",
+      "source": "misp"
+    },
+    {
+      "value": "RU",
+      "source": "etda"
+    },
+    {
+      "value": "RU",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Georgia",
+        "source": "etda"
+      },
+      {
+        "value": "Ukraine",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Energy",
+        "source": "etda"
+      },
+      {
+        "value": "Financial",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Media",
+        "source": "etda"
+      },
+      {
+        "value": "Transportation",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "OutSteel",
+      "source": "attack"
+    },
+    {
+      "name": "Saint Bot",
+      "source": "attack"
+    },
+    {
+      "name": "Graphiron",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1027.002",
+    "T1027.013",
+    "T1059",
+    "T1059.001",
+    "T1059.003",
+    "T1059.007",
+    "T1112",
+    "T1203",
+    "T1204.001",
+    "T1204.002",
+    "T1497",
+    "T1553.002",
+    "T1566.001",
+    "T1583.006",
+    "T1589.002",
+    "T1608.001",
+    "T1684.001",
+    "T1685"
+  ],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2017-11882",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-1472",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-26084",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-4034",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-41040",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2022-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2023-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2023-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "effd076232525b4f6636ad2f68fc6dcf91b9e381",
+    "232cfeb4ee7a1e9aae111eebb5574dcc970e0d9b",
+    "81ddba4dbf75eebdced9d95bf116f9d1fbce0094",
+    "2dcf8a821046d08371dfd07bf2812c8c681d6b68",
+    "4622da4f28cb5b28c61aaebc8eaa43ed4bfd45e2",
+    "d883d94dd0cc7257751177e42a32bd5a85796b03"
+  ],
+  "conflicts": [],
+  "evidence_count": 18
+}

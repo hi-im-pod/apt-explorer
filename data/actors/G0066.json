@@ -1,0 +1,100 @@
+{
+  "id": "G0066",
+  "name": "Elderwood",
+  "aliases": [
+    {
+      "value": "Elderwood",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Elderwood Gang",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Beijing Group",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Sneaky Panda",
+      "sources": [
+        "attack"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "Briba",
+      "source": "attack"
+    },
+    {
+      "name": "Hydraq",
+      "source": "attack"
+    },
+    {
+      "name": "Linfo",
+      "source": "attack"
+    },
+    {
+      "name": "Naid",
+      "source": "attack"
+    },
+    {
+      "name": "Nerex",
+      "source": "attack"
+    },
+    {
+      "name": "Pasam",
+      "source": "attack"
+    },
+    {
+      "name": "PoisonIvy",
+      "source": "attack"
+    },
+    {
+      "name": "Vasport",
+      "source": "attack"
+    },
+    {
+      "name": "Wiarp",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1027.002",
+    "T1027.013",
+    "T1105",
+    "T1189",
+    "T1203",
+    "T1204.001",
+    "T1204.002",
+    "T1566.001",
+    "T1566.002"
+  ],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2026-Q2",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "666ef1d8ca3ef0d5574ca60615263941534f6fe0",
+    "e32efa4dfa8b308196da1ca9bf53b2f4a3bf5bab"
+  ],
+  "conflicts": [],
+  "evidence_count": 0
+}

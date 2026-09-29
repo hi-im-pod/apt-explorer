@@ -1,0 +1,77 @@
+{
+  "id": "G0137",
+  "name": "Ferocious Kitten",
+  "aliases": [
+    {
+      "value": "Ferocious Kitten",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IR",
+      "source": "misp"
+    },
+    {
+      "value": "IR",
+      "source": "etda"
+    },
+    {
+      "value": "IR",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": [
+      {
+        "value": "Persian-speaking individuals",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "BITSAdmin",
+      "source": "attack"
+    },
+    {
+      "name": "MarkiRAT",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1036.002",
+    "T1036.005",
+    "T1204.002",
+    "T1566.001",
+    "T1583.001",
+    "T1588.002"
+  ],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2021-Q2",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "3ef10b0ab15e09aa93d78ade0cdc1d316b4849c2",
+    "45de45d06730df7b420ca326a1c792ecabb3ce0a"
+  ],
+  "conflicts": [],
+  "evidence_count": 3
+}

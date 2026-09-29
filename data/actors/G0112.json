@@ -1,0 +1,205 @@
+{
+  "id": "G0112",
+  "name": "Windshift",
+  "aliases": [
+    {
+      "value": "Windshift",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Bahamut",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "WindShift",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Windy Phoenix",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Egypt",
+        "source": "etda"
+      },
+      {
+        "value": "Iran",
+        "source": "etda"
+      },
+      {
+        "value": "Pakistan",
+        "source": "etda"
+      },
+      {
+        "value": "Palestine",
+        "source": "etda"
+      },
+      {
+        "value": "Qatar",
+        "source": "etda"
+      },
+      {
+        "value": "Tunisia",
+        "source": "etda"
+      },
+      {
+        "value": "Türkiye",
+        "source": "etda"
+      },
+      {
+        "value": "United Arab Emirates",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Political, economic and social",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "WindTail",
+      "source": "attack"
+    },
+    {
+      "name": "Bahamut",
+      "source": "malpedia"
+    },
+    {
+      "name": "WindTail",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1027",
+    "T1033",
+    "T1036",
+    "T1036.001",
+    "T1047",
+    "T1057",
+    "T1059.005",
+    "T1071.001",
+    "T1082",
+    "T1105",
+    "T1189",
+    "T1204.001",
+    "T1204.002",
+    "T1518",
+    "T1518.001",
+    "T1547.001",
+    "T1566.001",
+    "T1566.002",
+    "T1566.003"
+  ],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2017-11882",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-12824",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2017-8750",
+      "kev": false,
+      "ransomware": null
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2017-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2018-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2018-Q4",
+      "count": 3
+    },
+    {
+      "quarter": "2019-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "d8f1166bd61a5dfe20d464af25a639856b306fb4",
+    "e695755280ab29560ebc445003ee3a3a1cd5328f",
+    "d0c53005e801ae155173cf94555915c2ddba9643",
+    "512479da6af4e92b9d86b6eb8a5fcf5e9f21df9d",
+    "82067ed3e216dadbbebd7bde327c7d9ea42bd5b6",
+    "db7ce48692735110a2f8e1b24c2f3178ca32e3c8",
+    "32054571e93dbab573614595ed27bc301bef9df5",
+    "3e599de2f9e4fcf383811d108da149e929ac811e",
+    "acc670862c4fc12a28385b0c4438d1e32fd917ed",
+    "79ccc0053998efff9d299565ace7f992f9c9d377",
+    "a110d78ce9322857fd7d8f5f6d90f1eb6eb07c3e",
+    "b6c547c6d2911413cd04f4e8a5f218097c6b3a28",
+    "823df99bb42c74b5e0484e6fb20c36a450175f4a",
+    "a7aeb82c38c24d916f743f63d8dd3a44245f8824",
+    "60b374976e1a1a88d1f431bb295b737d180acbfe"
+  ],
+  "conflicts": [],
+  "evidence_count": 8
+}

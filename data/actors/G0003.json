@@ -1,0 +1,551 @@
+{
+  "id": "G0003",
+  "name": "Cleaver",
+  "aliases": [
+    {
+      "value": "Cleaver",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TG-2889",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Cutting Kitten",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Operation Cleaver",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Op Cleaver",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Tarh Andishan",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Alibaba",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Cobalt Gypsy",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "ITsecTeam",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Threat Group 2889",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Hazel Sandstorm",
+      "sources": [
+        "malpedia"
+      ]
+    },
+    {
+      "value": "EUROPIUM",
+      "sources": [
+        "malpedia"
+      ]
+    },
+    {
+      "value": "APT34",
+      "sources": [
+        "malpedia"
+      ]
+    },
+    {
+      "value": "OilRig",
+      "sources": [
+        "malpedia"
+      ]
+    },
+    {
+      "value": "HELIX KITTEN",
+      "sources": [
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Crambus",
+      "sources": [
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IR",
+      "source": "misp"
+    },
+    {
+      "value": "IR",
+      "source": "etda"
+    },
+    {
+      "value": "IR",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "Iran (Islamic Republic of)",
+      "source": "misp"
+    },
+    {
+      "value": "Iran (Islamic Republic of)",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Denial of service",
+      "source": "misp"
+    },
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    },
+    {
+      "value": "Denial of service",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "United States",
+        "source": "misp"
+      },
+      {
+        "value": "Canada",
+        "source": "misp"
+      },
+      {
+        "value": "France",
+        "source": "misp"
+      },
+      {
+        "value": "Israel",
+        "source": "misp"
+      },
+      {
+        "value": "Mexico",
+        "source": "misp"
+      },
+      {
+        "value": "Saudi Arabia",
+        "source": "misp"
+      },
+      {
+        "value": "China",
+        "source": "misp"
+      },
+      {
+        "value": "Germany",
+        "source": "misp"
+      },
+      {
+        "value": "Pakistan",
+        "source": "misp"
+      },
+      {
+        "value": "South Korea",
+        "source": "misp"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "misp"
+      },
+      {
+        "value": "India",
+        "source": "misp"
+      },
+      {
+        "value": "Kuwait",
+        "source": "misp"
+      },
+      {
+        "value": "Qatar",
+        "source": "misp"
+      },
+      {
+        "value": "Türkiye",
+        "source": "misp"
+      },
+      {
+        "value": "Canada",
+        "source": "etda"
+      },
+      {
+        "value": "China",
+        "source": "etda"
+      },
+      {
+        "value": "France",
+        "source": "etda"
+      },
+      {
+        "value": "Germany",
+        "source": "etda"
+      },
+      {
+        "value": "India",
+        "source": "etda"
+      },
+      {
+        "value": "Israel",
+        "source": "etda"
+      },
+      {
+        "value": "Kuwait",
+        "source": "etda"
+      },
+      {
+        "value": "Mexico",
+        "source": "etda"
+      },
+      {
+        "value": "Netherlands",
+        "source": "etda"
+      },
+      {
+        "value": "Pakistan",
+        "source": "etda"
+      },
+      {
+        "value": "Qatar",
+        "source": "etda"
+      },
+      {
+        "value": "Saudi Arabia",
+        "source": "etda"
+      },
+      {
+        "value": "South Korea",
+        "source": "etda"
+      },
+      {
+        "value": "Türkiye",
+        "source": "etda"
+      },
+      {
+        "value": "United Arab Emirates",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      },
+      {
+        "value": "Canada",
+        "source": "malpedia"
+      },
+      {
+        "value": "France",
+        "source": "malpedia"
+      },
+      {
+        "value": "Israel",
+        "source": "malpedia"
+      },
+      {
+        "value": "Mexico",
+        "source": "malpedia"
+      },
+      {
+        "value": "Saudi Arabia",
+        "source": "malpedia"
+      },
+      {
+        "value": "China",
+        "source": "malpedia"
+      },
+      {
+        "value": "Germany",
+        "source": "malpedia"
+      },
+      {
+        "value": "United States",
+        "source": "malpedia"
+      },
+      {
+        "value": "Pakistan",
+        "source": "malpedia"
+      },
+      {
+        "value": "South Korea",
+        "source": "malpedia"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "malpedia"
+      },
+      {
+        "value": "India",
+        "source": "malpedia"
+      },
+      {
+        "value": "Kuwait",
+        "source": "malpedia"
+      },
+      {
+        "value": "Qatar",
+        "source": "malpedia"
+      },
+      {
+        "value": "Türkiye",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Private sector",
+        "source": "misp"
+      },
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Defense",
+        "source": "misp"
+      },
+      {
+        "value": "Energy",
+        "source": "misp"
+      },
+      {
+        "value": "Technology",
+        "source": "misp"
+      },
+      {
+        "value": "Government, Administration",
+        "source": "misp"
+      },
+      {
+        "value": "Academia - University",
+        "source": "misp"
+      },
+      {
+        "value": "Aerospace",
+        "source": "etda"
+      },
+      {
+        "value": "Aviation",
+        "source": "etda"
+      },
+      {
+        "value": "Chemical",
+        "source": "etda"
+      },
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Education",
+        "source": "etda"
+      },
+      {
+        "value": "Energy",
+        "source": "etda"
+      },
+      {
+        "value": "Financial",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Healthcare",
+        "source": "etda"
+      },
+      {
+        "value": "Oil and gas",
+        "source": "etda"
+      },
+      {
+        "value": "Technology",
+        "source": "etda"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "etda"
+      },
+      {
+        "value": "Transportation",
+        "source": "etda"
+      },
+      {
+        "value": "Utilities",
+        "source": "etda"
+      },
+      {
+        "value": "Private sector",
+        "source": "malpedia"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      },
+      {
+        "value": "Defense",
+        "source": "malpedia"
+      },
+      {
+        "value": "Energy",
+        "source": "malpedia"
+      },
+      {
+        "value": "Technology",
+        "source": "malpedia"
+      },
+      {
+        "value": "Government, Administration",
+        "source": "malpedia"
+      },
+      {
+        "value": "Academia - University",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Mimikatz",
+      "source": "attack"
+    },
+    {
+      "name": "Net Crawler",
+      "source": "attack"
+    },
+    {
+      "name": "PsExec",
+      "source": "attack"
+    },
+    {
+      "name": "TinyZBot",
+      "source": "attack"
+    },
+    {
+      "name": "CsExt",
+      "source": "malpedia"
+    },
+    {
+      "name": "Jasus",
+      "source": "malpedia"
+    },
+    {
+      "name": "KAgent",
+      "source": "malpedia"
+    },
+    {
+      "name": "NetC",
+      "source": "malpedia"
+    },
+    {
+      "name": "PvzOut",
+      "source": "malpedia"
+    },
+    {
+      "name": "SynFlooder",
+      "source": "malpedia"
+    },
+    {
+      "name": "TinyZbot",
+      "source": "malpedia"
+    },
+    {
+      "name": "WndTest",
+      "source": "malpedia"
+    },
+    {
+      "name": "ZhMimikatz",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1003.001",
+    "T1557.002",
+    "T1585.001",
+    "T1587.001",
+    "T1588.002"
+  ],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2014-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2015-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2015-Q4",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "36fdb5f263a2abc93ab50d345d3626aded73050e",
+    "38fa23b9506b2f598d4d5564e61d0e51a5d58a38",
+    "114d677bac083a956038f44abec2bf2a59e1e080"
+  ],
+  "conflicts": [],
+  "evidence_count": 13
+}

@@ -1,0 +1,57 @@
+{
+  "id": "nexus-zeta",
+  "name": "Nexus Zeta",
+  "aliases": [
+    {
+      "value": "Nexus Zeta",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "Masuta",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2014-8361",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-17215",
+      "kev": false,
+      "ransomware": null
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2018-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "ef694bc768601d892b1e613f6ab4cceff0ee933a",
+    "6932fc96d45fcb6716effa26f0245138f44ea5af",
+    "a306959ff3a6250c7b27945139ca00be6515770c"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

@@ -1,0 +1,61 @@
+{
+  "id": "excobalt",
+  "name": "ExCobalt",
+  "aliases": [
+    {
+      "value": "ExCobalt",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "GoRed",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2019-13272",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-3156",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-4034",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-2586",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2024-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "9c3bc123ae8363155ce34f6434695d512e0ef4e9"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

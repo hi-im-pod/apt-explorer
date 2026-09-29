@@ -1,0 +1,133 @@
+{
+  "id": "G0033",
+  "name": "Poseidon Group",
+  "aliases": [
+    {
+      "value": "Poseidon Group",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "BR",
+      "source": "misp"
+    },
+    {
+      "value": "BR",
+      "source": "etda"
+    },
+    {
+      "value": "BR",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Brazil",
+        "source": "etda"
+      },
+      {
+        "value": "France",
+        "source": "etda"
+      },
+      {
+        "value": "India",
+        "source": "etda"
+      },
+      {
+        "value": "Kazakhstan",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "etda"
+      },
+      {
+        "value": "United Arab Emirates",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Energy",
+        "source": "etda"
+      },
+      {
+        "value": "Financial",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Media",
+        "source": "etda"
+      },
+      {
+        "value": "Manufacturing",
+        "source": "etda"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "etda"
+      },
+      {
+        "value": "Utilities",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Makadocs",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1003",
+    "T1007",
+    "T1036.005",
+    "T1049",
+    "T1057",
+    "T1059.001",
+    "T1087.001",
+    "T1087.002"
+  ],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2012-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2016-Q1",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "1d8767400696eec436e4e8442643ba50311205df",
+    "9b53b4949a768982c2496ed5ab16caddda97230b",
+    "cea43242e385bb10cfce08eed98dc9cf220a15b7"
+  ],
+  "conflicts": [],
+  "evidence_count": 5
+}

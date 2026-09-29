@@ -1,0 +1,285 @@
+{
+  "id": "hive0137",
+  "name": "Hive0137",
+  "aliases": [
+    {
+      "value": "Hive0137",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "XWorm",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [
+    {
+      "id": "T1027",
+      "count": 2
+    },
+    {
+      "id": "T1053.005",
+      "count": 2
+    },
+    {
+      "id": "T1059.001",
+      "count": 2
+    },
+    {
+      "id": "T1059.007",
+      "count": 2
+    },
+    {
+      "id": "T1082",
+      "count": 2
+    },
+    {
+      "id": "T1204.002",
+      "count": 2
+    },
+    {
+      "id": "T1518.001",
+      "count": 2
+    },
+    {
+      "id": "T1547.001",
+      "count": 2
+    },
+    {
+      "id": "T1620",
+      "count": 2
+    },
+    {
+      "id": "T1005",
+      "count": 1
+    },
+    {
+      "id": "T1027.002",
+      "count": 1
+    },
+    {
+      "id": "T1027.003",
+      "count": 1
+    },
+    {
+      "id": "T1033",
+      "count": 1
+    },
+    {
+      "id": "T1036.005",
+      "count": 1
+    },
+    {
+      "id": "T1041",
+      "count": 1
+    },
+    {
+      "id": "T1047",
+      "count": 1
+    },
+    {
+      "id": "T1055",
+      "count": 1
+    },
+    {
+      "id": "T1055.012",
+      "count": 1
+    },
+    {
+      "id": "T1056.001",
+      "count": 1
+    },
+    {
+      "id": "T1102",
+      "count": 1
+    },
+    {
+      "id": "T1105",
+      "count": 1
+    },
+    {
+      "id": "T1114",
+      "count": 1
+    },
+    {
+      "id": "T1140",
+      "count": 1
+    },
+    {
+      "id": "T1190",
+      "count": 1
+    },
+    {
+      "id": "T1497",
+      "count": 1
+    },
+    {
+      "id": "T1497.001",
+      "count": 1
+    },
+    {
+      "id": "T1497.002",
+      "count": 1
+    },
+    {
+      "id": "T1497.003",
+      "count": 1
+    },
+    {
+      "id": "T1548.002",
+      "count": 1
+    },
+    {
+      "id": "T1552.001",
+      "count": 1
+    },
+    {
+      "id": "T1555",
+      "count": 1
+    },
+    {
+      "id": "T1555.003",
+      "count": 1
+    },
+    {
+      "id": "T1566.001",
+      "count": 1
+    },
+    {
+      "id": "T1573.001",
+      "count": 1
+    },
+    {
+      "id": "T1592.001",
+      "count": 1
+    },
+    {
+      "id": "T1622",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2017-11882",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-30190",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2022-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2023-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2023-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2024-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2024-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2024-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2024-Q4",
+      "count": 3
+    },
+    {
+      "quarter": "2025-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2025-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2025-Q3",
+      "count": 5
+    },
+    {
+      "quarter": "2025-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "c84a1054cea7fbfc49bec90425decbda08fa6c08",
+    "e6716ebfb04cf83254972ac42b4df2ff9ecfbe10",
+    "67f4c58d389fa4387b60968da0a605170f259417",
+    "2671c81a0abcba09a92bbed1eedb58daf4159c80",
+    "ab1181d8c6401a865d08637cc6a0e5f3d6e255ca",
+    "728fff2f69e437e3ee448e2d3e09df956fd503c4",
+    "7d99932c18129ec1c09e258e0706ae627bc73713",
+    "68ef5aa72a3666d3e9a6705e78f3918fe0b82f80",
+    "e18c275955e400fe207516f80b6d4a3685244bbb",
+    "b8988fdc5e8607850be9750b8a74e549fb3714d8",
+    "99f78815741c76b079bd8f772ec6f61b0e9cd354",
+    "048546fa0749d902c12026aeb931b4c383a07880",
+    "459c15f5cac30cbac9dc88fa467b4b2305f7080f",
+    "79d0b7304af31871b9a9a6c6e4101391acbae482",
+    "0a02aff533ae22840dbaa1f89f7c807692b3c1e4",
+    "5f4e049f5c90babd7e1fcde41ee16ca49dcb99cf",
+    "ae07680d7144038bdcc0804232d09a289d643659",
+    "0477166d0b9ad6189f8228e9df5add344de1aa32",
+    "be6c3ac43a7268c1e7e765a4fbed672cd126fe47",
+    "a10e9f3797fc4394e9a8b51c9853b64954007c94",
+    "1fca8044e90d64caed80b8a16fab8749dbc8168e",
+    "e2d6a7a51ee7bab982f09755c44f751fe7fe5af2",
+    "f978aab5185bec657a5d94e97f2f16a7ee9b81c7",
+    "725909b28d32b81de1a915da670a17c45c894a9c",
+    "a19b55e284dfb975617e38dee7080f95bbbae9b2",
+    "e5c2848846cf5520679ce5c4e526a8d6dee5a19c",
+    "e23042d4aaff0bc4d44b1be67e98d47493ba7644",
+    "ecd7f6900f8dbbfcf62ca63e795c7d0f3e34c1f2",
+    "e3bb996418597cb8954bdb3284eedb74d67a1d76",
+    "f89cb523137d17900c49ba53bd6597fbb284c5c8",
+    "9da82963106b91cf0e93addc4504bf8bcd969f26",
+    "70eabcb60b9b56e65b3c4931044806b378b13bca",
+    "7d8e6af3f27d4790208576da5469d7ee973f59bd",
+    "8bdd6377492fe8d0860eb58fe05eaf4f238bc6b3"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

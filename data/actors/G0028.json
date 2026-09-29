@@ -1,0 +1,54 @@
+{
+  "id": "G0028",
+  "name": "Threat Group-1314",
+  "aliases": [
+    {
+      "value": "Threat Group-1314",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "TG-1314",
+      "sources": [
+        "attack"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "Net",
+      "source": "attack"
+    },
+    {
+      "name": "PsExec",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1021.002",
+    "T1059.003",
+    "T1072",
+    "T1078.002"
+  ],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "299bd190bf43d43c449b0d315ffebe5388306e3c"
+  ],
+  "conflicts": [],
+  "evidence_count": 0
+}

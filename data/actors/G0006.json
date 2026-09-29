@@ -14,26 +14,108 @@
       "value": "Comment Crew",
       "sources": [
         "attack",
-        "misp"
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Comment Group",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TG-8223",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Group 3",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Byzantine Candor",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "GIF89a",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
       ]
     },
     {
       "value": "Comment Panda",
       "sources": [
         "attack",
-        "misp"
+        "etda"
       ]
     },
     {
-      "value": "Comment Group",
+      "value": "COMMENT PANDA",
       "sources": [
-        "attack"
+        "misp",
+        "malpedia"
       ]
     },
     {
-      "value": "Byzantine Candor",
+      "value": "PLA Unit 61398",
       "sources": [
-        "misp"
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Brown Fox",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "ShadyRAT",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "APT 1",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "BrownFox",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Byzantine Hades",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Shanghai Group",
+      "sources": [
+        "etda"
       ]
     }
   ],
@@ -44,6 +126,10 @@
     },
     {
       "value": "CN",
+      "source": "etda"
+    },
+    {
+      "value": "CN",
       "source": "malpedia"
     }
   ],
@@ -51,12 +137,24 @@
     {
       "value": "China",
       "source": "misp"
+    },
+    {
+      "value": "China",
+      "source": "malpedia"
     }
   ],
   "motivation": [
     {
       "value": "Espionage",
       "source": "misp"
+    },
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
     }
   ],
   "claimed_targets": {
@@ -64,16 +162,300 @@
       {
         "value": "United States",
         "source": "misp"
+      },
+      {
+        "value": "Taiwan",
+        "source": "misp"
+      },
+      {
+        "value": "Israel",
+        "source": "misp"
+      },
+      {
+        "value": "Norway",
+        "source": "misp"
+      },
+      {
+        "value": "United Arab Emirates",
+        "source": "misp"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "misp"
+      },
+      {
+        "value": "Singapore",
+        "source": "misp"
+      },
+      {
+        "value": "India",
+        "source": "misp"
+      },
+      {
+        "value": "Belgium",
+        "source": "misp"
+      },
+      {
+        "value": "South Africa",
+        "source": "misp"
+      },
+      {
+        "value": "Switzerland",
+        "source": "misp"
+      },
+      {
+        "value": "Canada",
+        "source": "misp"
+      },
+      {
+        "value": "France",
+        "source": "misp"
+      },
+      {
+        "value": "Luxembourg",
+        "source": "misp"
+      },
+      {
+        "value": "Japan",
+        "source": "misp"
+      },
+      {
+        "value": "Belgium",
+        "source": "etda"
+      },
+      {
+        "value": "Canada",
+        "source": "etda"
+      },
+      {
+        "value": "France",
+        "source": "etda"
+      },
+      {
+        "value": "India",
+        "source": "etda"
+      },
+      {
+        "value": "Israel",
+        "source": "etda"
+      },
+      {
+        "value": "Japan",
+        "source": "etda"
+      },
+      {
+        "value": "Luxembourg",
+        "source": "etda"
+      },
+      {
+        "value": "Norway",
+        "source": "etda"
+      },
+      {
+        "value": "Singapore",
+        "source": "etda"
+      },
+      {
+        "value": "South Africa",
+        "source": "etda"
+      },
+      {
+        "value": "South Korea",
+        "source": "etda"
+      },
+      {
+        "value": "Switzerland",
+        "source": "etda"
+      },
+      {
+        "value": "Taiwan",
+        "source": "etda"
+      },
+      {
+        "value": "United Arab Emirates",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      },
+      {
+        "value": "Vietnam",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "malpedia"
+      },
+      {
+        "value": "Taiwan",
+        "source": "malpedia"
+      },
+      {
+        "value": "Israel",
+        "source": "malpedia"
+      },
+      {
+        "value": "Norway",
+        "source": "malpedia"
+      },
+      {
+        "value": "United Arab Emirates",
+        "source": "malpedia"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "malpedia"
+      },
+      {
+        "value": "Singapore",
+        "source": "malpedia"
+      },
+      {
+        "value": "India",
+        "source": "malpedia"
+      },
+      {
+        "value": "Belgium",
+        "source": "malpedia"
+      },
+      {
+        "value": "South Africa",
+        "source": "malpedia"
+      },
+      {
+        "value": "Switzerland",
+        "source": "malpedia"
+      },
+      {
+        "value": "Canada",
+        "source": "malpedia"
+      },
+      {
+        "value": "France",
+        "source": "malpedia"
+      },
+      {
+        "value": "Luxembourg",
+        "source": "malpedia"
+      },
+      {
+        "value": "Japan",
+        "source": "malpedia"
       }
     ],
     "sectors": [
       {
-        "value": "Aerospace",
+        "value": "Private sector",
         "source": "misp"
       },
       {
-        "value": "Energy",
+        "value": "Government",
         "source": "misp"
+      },
+      {
+        "value": "Aerospace",
+        "source": "etda"
+      },
+      {
+        "value": "Chemical",
+        "source": "etda"
+      },
+      {
+        "value": "Construction",
+        "source": "etda"
+      },
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Education",
+        "source": "etda"
+      },
+      {
+        "value": "Energy",
+        "source": "etda"
+      },
+      {
+        "value": "Engineering",
+        "source": "etda"
+      },
+      {
+        "value": "Entertainment",
+        "source": "etda"
+      },
+      {
+        "value": "Financial",
+        "source": "etda"
+      },
+      {
+        "value": "Food and Agriculture",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Healthcare",
+        "source": "etda"
+      },
+      {
+        "value": "High-Tech",
+        "source": "etda"
+      },
+      {
+        "value": "IT",
+        "source": "etda"
+      },
+      {
+        "value": "Manufacturing",
+        "source": "etda"
+      },
+      {
+        "value": "Media",
+        "source": "etda"
+      },
+      {
+        "value": "Mining",
+        "source": "etda"
+      },
+      {
+        "value": "Non-profit organizations",
+        "source": "etda"
+      },
+      {
+        "value": "Research",
+        "source": "etda"
+      },
+      {
+        "value": "Satellites",
+        "source": "etda"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "etda"
+      },
+      {
+        "value": "Transportation",
+        "source": "etda"
+      },
+      {
+        "value": "Navigation and lawyers",
+        "source": "etda"
+      },
+      {
+        "value": "Private sector",
+        "source": "malpedia"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
       }
     ]
   },
@@ -83,19 +465,177 @@
       "source": "attack"
     },
     {
+      "name": "CALENDAR",
+      "source": "attack"
+    },
+    {
+      "name": "Cachedump",
+      "source": "attack"
+    },
+    {
+      "name": "GLOOXMAIL",
+      "source": "attack"
+    },
+    {
+      "name": "Lslsass",
+      "source": "attack"
+    },
+    {
+      "name": "Mimikatz",
+      "source": "attack"
+    },
+    {
+      "name": "Net",
+      "source": "attack"
+    },
+    {
+      "name": "Pass-The-Hash Toolkit",
+      "source": "attack"
+    },
+    {
+      "name": "PoisonIvy",
+      "source": "attack"
+    },
+    {
+      "name": "PsExec",
+      "source": "attack"
+    },
+    {
+      "name": "Seasalt",
+      "source": "attack"
+    },
+    {
+      "name": "Tasklist",
+      "source": "attack"
+    },
+    {
       "name": "WEBC2",
+      "source": "attack"
+    },
+    {
+      "name": "gsecdump",
+      "source": "attack"
+    },
+    {
+      "name": "ipconfig",
+      "source": "attack"
+    },
+    {
+      "name": "pwdump",
+      "source": "attack"
+    },
+    {
+      "name": "xCmd",
       "source": "attack"
     }
   ],
   "techniques_documented": [
-    "T1566.001",
+    "T1003.001",
+    "T1005",
+    "T1007",
+    "T1016",
+    "T1021.001",
+    "T1036.005",
+    "T1049",
+    "T1057",
     "T1059.003",
-    "T1560.001"
+    "T1087.001",
+    "T1114.001",
+    "T1114.002",
+    "T1119",
+    "T1135",
+    "T1550.002",
+    "T1560.001",
+    "T1566.001",
+    "T1566.002",
+    "T1583.001",
+    "T1584.001",
+    "T1585.002",
+    "T1588.001",
+    "T1588.002"
   ],
   "techniques_reported": [],
-  "cves": [],
-  "timeline": [],
-  "reports": [],
+  "cves": [
+    {
+      "cve": "CVE-2009-4324",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2010-2883",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2010-3333",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2010-3654",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2012-0158",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2013-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2014-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2014-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2014-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2016-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "9b4b65eddf039e8180859efc0a993eb4d6d9326a",
+    "f1a02cdc30e256d40d50aa8939f9aa79313324b7",
+    "1bf64f3fe87c916e250e3c9058d7de553e1cbbd2",
+    "paper:APT1",
+    "f5cadff536797504676152ebb92faeeb32539406",
+    "5801fcf1d7fd14cdf2267fd5abac67a448812677",
+    "34c2b718869354a588ee602f41be77e553346c5d",
+    "ddadffb91053c4d19590e2035c8eeed14fceca60",
+    "ca792ed076f91a730d524c06b9224ee0c47908c0",
+    "02609d9b72875b060b6e575ff1b99411f600ed56"
+  ],
   "conflicts": [],
-  "evidence_count": 7
+  "evidence_count": 25
 }

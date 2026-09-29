@@ -1,0 +1,138 @@
+{
+  "id": "G1018",
+  "name": "TA2541",
+  "aliases": [
+    {
+      "value": "TA2541",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": [
+      {
+        "value": "Aviation",
+        "source": "etda"
+      },
+      {
+        "value": "Aerospace",
+        "source": "etda"
+      },
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Transportation",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Agent Tesla",
+      "source": "attack"
+    },
+    {
+      "name": "AsyncRAT",
+      "source": "attack"
+    },
+    {
+      "name": "Imminent Monitor",
+      "source": "attack"
+    },
+    {
+      "name": "NETWIRE",
+      "source": "attack"
+    },
+    {
+      "name": "Revenge RAT",
+      "source": "attack"
+    },
+    {
+      "name": "Snip3",
+      "source": "attack"
+    },
+    {
+      "name": "WarzoneRAT",
+      "source": "attack"
+    },
+    {
+      "name": "jRAT",
+      "source": "attack"
+    },
+    {
+      "name": "njRAT",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1016.001",
+    "T1027.002",
+    "T1027.013",
+    "T1027.015",
+    "T1036.005",
+    "T1047",
+    "T1053.005",
+    "T1055",
+    "T1055.012",
+    "T1059.001",
+    "T1059.005",
+    "T1082",
+    "T1105",
+    "T1204.001",
+    "T1204.002",
+    "T1218.005",
+    "T1518.001",
+    "T1547.001",
+    "T1566.001",
+    "T1566.002",
+    "T1568",
+    "T1573.002",
+    "T1583.001",
+    "T1583.006",
+    "T1588.001",
+    "T1588.002",
+    "T1608.001",
+    "T1685"
+  ],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2021-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 3
+    }
+  ],
+  "reports": [
+    "215a11a46e9109c9ec17d5ca4f41e6929bfe77a9",
+    "9eb007c724c923d13bda70ce5cd6b2567fed48b6",
+    "fd4788e38ca40d87eda3dd1e36f021076f22fe80",
+    "baccd5c5f70b4f98227f3628558b3e4a0d2ceb84",
+    "d3362d39321bf61fa7c70f916ee410ad6525cc88",
+    "3d86ca0f5ee2c6944e65a4e5f56a7f39d96c9565"
+  ],
+  "conflicts": [],
+  "evidence_count": 3
+}

@@ -5,90 +5,71 @@
     {
       "value": "Winnti Group",
       "sources": [
-        "attack",
-        "misp"
+        "attack"
       ]
     },
     {
       "value": "Blackfly",
       "sources": [
-        "attack",
-        "misp"
-      ]
-    },
-    {
-      "value": "Winnti",
-      "sources": [
-        "misp"
+        "attack"
       ]
     }
   ],
-  "origin": [
-    {
-      "value": "CN",
-      "source": "misp"
-    }
-  ],
+  "origin": [],
   "sponsor": [],
-  "motivation": [
-    {
-      "value": "Financial gain",
-      "source": "misp"
-    }
-  ],
+  "motivation": [],
   "claimed_targets": {
-    "countries": [
-      {
-        "value": "Germany",
-        "source": "misp"
-      },
-      {
-        "value": "South Korea",
-        "source": "misp"
-      }
-    ],
-    "sectors": [
-      {
-        "value": "Video games",
-        "source": "misp"
-      }
-    ]
+    "countries": [],
+    "sectors": []
   },
   "malware": [
     {
-      "name": "Winnti for Windows",
+      "name": "PipeMon",
       "source": "attack"
     },
     {
-      "name": "PipeMon",
-      "source": "malpedia"
+      "name": "PlugX",
+      "source": "attack"
+    },
+    {
+      "name": "Winnti for Windows",
+      "source": "attack"
     }
   ],
   "techniques_documented": [
-    "T1574.002",
     "T1014",
-    "T1553.002"
+    "T1057",
+    "T1083",
+    "T1105",
+    "T1553.002",
+    "T1583.001"
   ],
-  "techniques_reported": [
-    {
-      "id": "T1014",
-      "count": 1
-    },
-    {
-      "id": "T1574.002",
-      "count": 1
-    }
-  ],
+  "techniques_reported": [],
   "cves": [],
   "timeline": [
     {
-      "quarter": "2025-Q2",
+      "quarter": "2013-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2015-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
       "count": 1
     }
   ],
   "reports": [
-    "e7c14c9ffafe3f9ef33da83cbd7bbfd5b410a6cf"
+    "dbe7775f831ef5d971234ece2cc6efb10027fb0d",
+    "b7b6535cee4727e614a9216490109cae65482984",
+    "b5ed62ff2039bcc3dccc82fdea7e98b441f8d3ea",
+    "e5da7bcfbc463031d214d9fb40b16eef7bf5ca2a"
   ],
   "conflicts": [],
-  "evidence_count": 4
+  "evidence_count": 0
 }

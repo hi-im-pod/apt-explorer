@@ -1,0 +1,37 @@
+{
+  "id": "bignosa",
+  "name": "Bignosa",
+  "aliases": [
+    {
+      "value": "Bignosa",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "KE",
+      "source": "misp"
+    },
+    {
+      "value": "KE",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 1
+}

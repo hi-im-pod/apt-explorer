@@ -1,0 +1,172 @@
+{
+  "id": "G1039",
+  "name": "RedCurl",
+  "aliases": [
+    {
+      "value": "RedCurl",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Red Wolf",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Earth Kapre",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "GOLD BLADE",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Australia",
+        "source": "etda"
+      },
+      {
+        "value": "Canada",
+        "source": "etda"
+      },
+      {
+        "value": "Germany",
+        "source": "etda"
+      },
+      {
+        "value": "Mexico",
+        "source": "etda"
+      },
+      {
+        "value": "Norway",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "etda"
+      },
+      {
+        "value": "Spain",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "Ukraine",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Construction",
+        "source": "etda"
+      },
+      {
+        "value": "Financial",
+        "source": "etda"
+      },
+      {
+        "value": "Retail",
+        "source": "etda"
+      },
+      {
+        "value": "travel agencies and law and consulting firms",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [
+    "T1003.001",
+    "T1005",
+    "T1020",
+    "T1027",
+    "T1036.005",
+    "T1039",
+    "T1046",
+    "T1053.005",
+    "T1056.002",
+    "T1059.001",
+    "T1059.003",
+    "T1059.005",
+    "T1059.006",
+    "T1070.004",
+    "T1071.001",
+    "T1080",
+    "T1082",
+    "T1083",
+    "T1087.001",
+    "T1087.002",
+    "T1087.003",
+    "T1102",
+    "T1114.001",
+    "T1119",
+    "T1199",
+    "T1202",
+    "T1204.001",
+    "T1204.002",
+    "T1218.011",
+    "T1537",
+    "T1547.001",
+    "T1552.001",
+    "T1552.002",
+    "T1555.003",
+    "T1560.001",
+    "T1564.001",
+    "T1566.001",
+    "T1566.002",
+    "T1573.001",
+    "T1573.002",
+    "T1587.001"
+  ],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2024-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 3
+    }
+  ],
+  "reports": [
+    "747f7adab1f6ac6dad6f1d9de899d59500d6e073",
+    "88944ae624979cb1d4c3e9f951eb937e9455362c",
+    "9c674b6e787c87113cdf7119d43e9757c52a5342",
+    "3c87c22992a62dfe4caae42db2e2abf77a7b4614"
+  ],
+  "conflicts": [],
+  "evidence_count": 8
+}

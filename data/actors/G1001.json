@@ -1,0 +1,408 @@
+{
+  "id": "G1001",
+  "name": "HEXANE",
+  "aliases": [
+    {
+      "value": "HEXANE",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Spirlin",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Lyceum",
+      "sources": [
+        "attack",
+        "etda"
+      ]
+    },
+    {
+      "value": "Siamesekitten",
+      "sources": [
+        "attack",
+        "etda"
+      ]
+    },
+    {
+      "value": "LYCEUM",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "COBALT LYCEUM",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UNC1530",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "MYSTICDOME",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "siamesekitten",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Chrono Kitten",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Storm-0133",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Hexane",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Cobalt Lyceum",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "ATK 120",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Yellow Dev 9",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IR",
+      "source": "misp"
+    },
+    {
+      "value": "IR",
+      "source": "etda"
+    },
+    {
+      "value": "IR",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "Iran (Islamic Republic of)",
+      "source": "misp"
+    },
+    {
+      "value": "Iran (Islamic Republic of)",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Israel",
+        "source": "misp"
+      },
+      {
+        "value": "Israel",
+        "source": "etda"
+      },
+      {
+        "value": "Kuwait",
+        "source": "etda"
+      },
+      {
+        "value": "Morocco",
+        "source": "etda"
+      },
+      {
+        "value": "Saudi Arabia",
+        "source": "etda"
+      },
+      {
+        "value": "Tunisia",
+        "source": "etda"
+      },
+      {
+        "value": "United Arab Emirates",
+        "source": "etda"
+      },
+      {
+        "value": "Israel",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Energy",
+        "source": "misp"
+      },
+      {
+        "value": "High-Tech",
+        "source": "misp"
+      },
+      {
+        "value": "Telecomms",
+        "source": "misp"
+      },
+      {
+        "value": "Education",
+        "source": "misp"
+      },
+      {
+        "value": "Military",
+        "source": "misp"
+      },
+      {
+        "value": "Defense",
+        "source": "misp"
+      },
+      {
+        "value": "Energy",
+        "source": "etda"
+      },
+      {
+        "value": "Oil and gas",
+        "source": "etda"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      },
+      {
+        "value": "Energy",
+        "source": "malpedia"
+      },
+      {
+        "value": "High-Tech",
+        "source": "malpedia"
+      },
+      {
+        "value": "Telecomms",
+        "source": "malpedia"
+      },
+      {
+        "value": "Education",
+        "source": "malpedia"
+      },
+      {
+        "value": "Military",
+        "source": "malpedia"
+      },
+      {
+        "value": "Defense",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "BITSAdmin",
+      "source": "attack"
+    },
+    {
+      "name": "DanBot",
+      "source": "attack"
+    },
+    {
+      "name": "DnsSystem",
+      "source": "attack"
+    },
+    {
+      "name": "Empire",
+      "source": "attack"
+    },
+    {
+      "name": "Kevin",
+      "source": "attack"
+    },
+    {
+      "name": "Milan",
+      "source": "attack"
+    },
+    {
+      "name": "Mimikatz",
+      "source": "attack"
+    },
+    {
+      "name": "Ping",
+      "source": "attack"
+    },
+    {
+      "name": "PoshC2",
+      "source": "attack"
+    },
+    {
+      "name": "Shark",
+      "source": "attack"
+    },
+    {
+      "name": "ipconfig",
+      "source": "attack"
+    },
+    {
+      "name": "netstat",
+      "source": "attack"
+    },
+    {
+      "name": "Lyceum .NET DNS Backdoor",
+      "source": "malpedia"
+    },
+    {
+      "name": "Lyceum .NET TCP Backdoor",
+      "source": "malpedia"
+    },
+    {
+      "name": "Lyceum Golang HTTP Backdoor",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1010",
+    "T1016",
+    "T1016.001",
+    "T1018",
+    "T1021.001",
+    "T1027.010",
+    "T1033",
+    "T1049",
+    "T1053.005",
+    "T1056.001",
+    "T1057",
+    "T1059.001",
+    "T1059.005",
+    "T1069.001",
+    "T1082",
+    "T1102.002",
+    "T1105",
+    "T1110",
+    "T1110.003",
+    "T1204.002",
+    "T1518",
+    "T1534",
+    "T1546.003",
+    "T1555",
+    "T1555.003",
+    "T1567.002",
+    "T1583.001",
+    "T1583.002",
+    "T1585.001",
+    "T1585.002",
+    "T1586.002",
+    "T1588.002",
+    "T1589",
+    "T1589.002",
+    "T1591.004",
+    "T1608.001"
+  ],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2017-11882",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-13379",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-1732",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2019-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "b15ca5f1a749c214fbafb4c8519ff15ca927f6db",
+    "b2cc82adeb5fbea915cb1624d009fcd6512b6dac",
+    "df1109697af74948a23a2c83d6f4587d00b15903",
+    "804cad95b32569b1648541a3d968cecc2f3349f3",
+    "19ed71adf4dbc79f5599200646359e4989122ad6",
+    "1b2ff3206088d60b5b7c14a56514a0648a576314",
+    "588b19b571321e82e811aaf1179803da45f8c6cf"
+  ],
+  "conflicts": [],
+  "evidence_count": 17
+}

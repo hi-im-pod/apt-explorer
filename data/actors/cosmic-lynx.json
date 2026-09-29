@@ -1,0 +1,44 @@
+{
+  "id": "cosmic-lynx",
+  "name": "Cosmic Lynx",
+  "aliases": [
+    {
+      "value": "Cosmic Lynx",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Business Email Compromise",
+      "source": "misp"
+    },
+    {
+      "value": "Business Email Compromise",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2020-Q3",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "60542b63d4ebd6481f237c64553920cb3ee53897"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

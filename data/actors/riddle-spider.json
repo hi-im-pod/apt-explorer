@@ -1,0 +1,260 @@
+{
+  "id": "riddle-spider",
+  "name": "RIDDLE SPIDER",
+  "aliases": [
+    {
+      "value": "RIDDLE SPIDER",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Riddle Spider",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Avaddon Team",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Financial gain",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Australia",
+        "source": "etda"
+      },
+      {
+        "value": "Belgium",
+        "source": "etda"
+      },
+      {
+        "value": "Brazil",
+        "source": "etda"
+      },
+      {
+        "value": "Canada",
+        "source": "etda"
+      },
+      {
+        "value": "China",
+        "source": "etda"
+      },
+      {
+        "value": "Costa Rica",
+        "source": "etda"
+      },
+      {
+        "value": "France",
+        "source": "etda"
+      },
+      {
+        "value": "Germany",
+        "source": "etda"
+      },
+      {
+        "value": "India",
+        "source": "etda"
+      },
+      {
+        "value": "Indonesia",
+        "source": "etda"
+      },
+      {
+        "value": "Italy",
+        "source": "etda"
+      },
+      {
+        "value": "Japan",
+        "source": "etda"
+      },
+      {
+        "value": "Jordan",
+        "source": "etda"
+      },
+      {
+        "value": "Peru",
+        "source": "etda"
+      },
+      {
+        "value": "Poland",
+        "source": "etda"
+      },
+      {
+        "value": "Portugal",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "etda"
+      },
+      {
+        "value": "South Korea",
+        "source": "etda"
+      },
+      {
+        "value": "Spain",
+        "source": "etda"
+      },
+      {
+        "value": "Switzerland",
+        "source": "etda"
+      },
+      {
+        "value": "Thailand",
+        "source": "etda"
+      },
+      {
+        "value": "United Arab Emirates",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      }
+    ],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "Avaddon",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2018-13379",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-0604",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-11510",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-19781",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-0688",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-10189",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-1472",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-2021",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-20016",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-30116",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2020-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2020-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 4
+    },
+    {
+      "quarter": "2021-Q2",
+      "count": 7
+    },
+    {
+      "quarter": "2021-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "b4a1a75e6f274962240cd9f0aed810681473fe67",
+    "c2b4db76d8ab7198720f71bd2e77553ce3e5acec",
+    "bdc2b7e1b680e5f164fcc86e64f13f4ca2ae9b84",
+    "5833a520361b071bff76551ad3a1101ef45dbe4d",
+    "9fa4422268b575d7b3e9624fd3d763ae8901769f",
+    "84fb4151154b1cb5cc9c06eafb1e624e10969ac1",
+    "3a9ee924b3e4ad9e217dfe3798b4bd911a589eb5",
+    "a8bc267d11c899b3cf77ef0233a0be271a3b5463",
+    "6d65394ba978930bac15cf5b13e89d3f0f5bb932",
+    "bc8a8c61b60a431874fbc6d2d00f20a507e19b70",
+    "779eb2388be2f1f3309d91d8528f6bbf8b81870e",
+    "3a5c28b80ed4734f87492da4e3347ace01702ceb",
+    "034f516c99b01297e1653bd6c4d1360691551e05",
+    "e4045a0b663eaba6bdf1001b87ca47d374e6e3c6",
+    "e74a74de0a5c87fd3f5bfd6a91bd4bd9a6f028e5",
+    "2d98a214de7a8a280ebe92a6883684593e3d33d3",
+    "3b2344dc14801bb90465cdb9637b5f1ef15ba37f",
+    "32f20b5032df378b26bd08c4bc6ee793731074d0",
+    "982833a8c15e2d2bf746ce8bff61f727a5be99ba",
+    "efe77708bf35a911b07e019db06745486a29b89e",
+    "29d124e255755a3dbd1dcb930674916c37bfe7f5",
+    "985c6cff8fec395a6a602f6c5bd679f8da6bce19",
+    "86b15eda326c51a03fcac927eaf8d406bc6fc82f",
+    "ee862a1f0fdcfb239a90090e4fd68cb131aba379"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

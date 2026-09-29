@@ -1,0 +1,168 @@
+{
+  "id": "G0054",
+  "name": "Sowbug",
+  "aliases": [
+    {
+      "value": "Sowbug",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [
+    {
+      "value": "Unknown",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Argentina",
+        "source": "misp"
+      },
+      {
+        "value": "Ecuador",
+        "source": "misp"
+      },
+      {
+        "value": "Brazil",
+        "source": "misp"
+      },
+      {
+        "value": "Brunei",
+        "source": "misp"
+      },
+      {
+        "value": "Peru",
+        "source": "misp"
+      },
+      {
+        "value": "Malaysia",
+        "source": "misp"
+      },
+      {
+        "value": "Argentina",
+        "source": "etda"
+      },
+      {
+        "value": "Brazil",
+        "source": "etda"
+      },
+      {
+        "value": "Brunei",
+        "source": "etda"
+      },
+      {
+        "value": "Ecuador",
+        "source": "etda"
+      },
+      {
+        "value": "Malaysia",
+        "source": "etda"
+      },
+      {
+        "value": "Peru",
+        "source": "etda"
+      },
+      {
+        "value": "Argentina",
+        "source": "malpedia"
+      },
+      {
+        "value": "Ecuador",
+        "source": "malpedia"
+      },
+      {
+        "value": "Brazil",
+        "source": "malpedia"
+      },
+      {
+        "value": "Brunei",
+        "source": "malpedia"
+      },
+      {
+        "value": "Peru",
+        "source": "malpedia"
+      },
+      {
+        "value": "Malaysia",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Felismus",
+      "source": "attack"
+    },
+    {
+      "name": "Starloader",
+      "source": "attack"
+    },
+    {
+      "name": "Felismus",
+      "source": "malpedia"
+    },
+    {
+      "name": "StarLoader",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1003",
+    "T1036.005",
+    "T1039",
+    "T1056.001",
+    "T1059.003",
+    "T1082",
+    "T1083",
+    "T1135",
+    "T1560.001"
+  ],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2017-Q4",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "54217b0c066f77f19aeb47d323c9606ece22ffab"
+  ],
+  "conflicts": [],
+  "evidence_count": 5
+}

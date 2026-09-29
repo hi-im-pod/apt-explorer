@@ -1,0 +1,53 @@
+{
+  "id": "scattered-canary",
+  "name": "Scattered Canary",
+  "aliases": [
+    {
+      "value": "Scattered Canary",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "NG",
+      "source": "misp"
+    },
+    {
+      "value": "NG",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Cybercrime",
+      "source": "misp"
+    },
+    {
+      "value": "Cybercrime",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2019-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "da5367c9a88967ac55d056236f865d9f220995be"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

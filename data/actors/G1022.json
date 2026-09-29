@@ -1,0 +1,330 @@
+{
+  "id": "G1022",
+  "name": "ToddyCat",
+  "aliases": [
+    {
+      "value": "ToddyCat",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Websiic",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Storm-0247",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "etda"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Afghanistan",
+        "source": "misp"
+      },
+      {
+        "value": "India",
+        "source": "misp"
+      },
+      {
+        "value": "Indonesia",
+        "source": "misp"
+      },
+      {
+        "value": "Iran",
+        "source": "misp"
+      },
+      {
+        "value": "Kyrgyzstan",
+        "source": "misp"
+      },
+      {
+        "value": "Malaysia",
+        "source": "misp"
+      },
+      {
+        "value": "Pakistan",
+        "source": "misp"
+      },
+      {
+        "value": "Russia",
+        "source": "misp"
+      },
+      {
+        "value": "Slovakia",
+        "source": "misp"
+      },
+      {
+        "value": "Taiwan",
+        "source": "misp"
+      },
+      {
+        "value": "Thailand",
+        "source": "misp"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "misp"
+      },
+      {
+        "value": "Uzbekistan",
+        "source": "misp"
+      },
+      {
+        "value": "Vietnam",
+        "source": "misp"
+      },
+      {
+        "value": "Afghanistan",
+        "source": "etda"
+      },
+      {
+        "value": "India",
+        "source": "etda"
+      },
+      {
+        "value": "Indonesia",
+        "source": "etda"
+      },
+      {
+        "value": "Iran",
+        "source": "etda"
+      },
+      {
+        "value": "Kazakhstan",
+        "source": "etda"
+      },
+      {
+        "value": "Kyrgyzstan",
+        "source": "etda"
+      },
+      {
+        "value": "Malaysia",
+        "source": "etda"
+      },
+      {
+        "value": "Pakistan",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "etda"
+      },
+      {
+        "value": "Slovakia",
+        "source": "etda"
+      },
+      {
+        "value": "Taiwan",
+        "source": "etda"
+      },
+      {
+        "value": "Thailand",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "Uzbekistan",
+        "source": "etda"
+      },
+      {
+        "value": "Vietnam",
+        "source": "etda"
+      },
+      {
+        "value": "Afghanistan",
+        "source": "malpedia"
+      },
+      {
+        "value": "India",
+        "source": "malpedia"
+      },
+      {
+        "value": "Indonesia",
+        "source": "malpedia"
+      },
+      {
+        "value": "Iran",
+        "source": "malpedia"
+      },
+      {
+        "value": "Kyrgyzstan",
+        "source": "malpedia"
+      },
+      {
+        "value": "Malaysia",
+        "source": "malpedia"
+      },
+      {
+        "value": "Pakistan",
+        "source": "malpedia"
+      },
+      {
+        "value": "Russia",
+        "source": "malpedia"
+      },
+      {
+        "value": "Slovakia",
+        "source": "malpedia"
+      },
+      {
+        "value": "Taiwan",
+        "source": "malpedia"
+      },
+      {
+        "value": "Thailand",
+        "source": "malpedia"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "malpedia"
+      },
+      {
+        "value": "Uzbekistan",
+        "source": "malpedia"
+      },
+      {
+        "value": "Vietnam",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Military",
+        "source": "misp"
+      },
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "etda"
+      },
+      {
+        "value": "Military",
+        "source": "malpedia"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "China Chopper",
+      "source": "attack"
+    },
+    {
+      "name": "Cobalt Strike",
+      "source": "attack"
+    },
+    {
+      "name": "LoFiSe",
+      "source": "attack"
+    },
+    {
+      "name": "Net",
+      "source": "attack"
+    },
+    {
+      "name": "Ninja",
+      "source": "attack"
+    },
+    {
+      "name": "Pcexter",
+      "source": "attack"
+    },
+    {
+      "name": "Ping",
+      "source": "attack"
+    },
+    {
+      "name": "Samurai",
+      "source": "attack"
+    },
+    {
+      "name": "netstat",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1005",
+    "T1018",
+    "T1021.002",
+    "T1036.005",
+    "T1047",
+    "T1049",
+    "T1053.005",
+    "T1057",
+    "T1059.001",
+    "T1059.003",
+    "T1069.002",
+    "T1074.002",
+    "T1078.002",
+    "T1083",
+    "T1087.002",
+    "T1095",
+    "T1106",
+    "T1190",
+    "T1518.001",
+    "T1560.001",
+    "T1564.003",
+    "T1566.003",
+    "T1567.002",
+    "T1680",
+    "T1686"
+  ],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2022-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "b2b3cd4420f01a962c6e8eb84fdc704c174f3fd9",
+    "d4c1666a91183fbe2fd1661b0219a2e92d8492f2"
+  ],
+  "conflicts": [],
+  "evidence_count": 4
+}

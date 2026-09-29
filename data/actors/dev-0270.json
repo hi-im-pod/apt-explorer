@@ -1,0 +1,86 @@
+{
+  "id": "dev-0270",
+  "name": "DEV-0270",
+  "aliases": [
+    {
+      "value": "DEV-0270",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Nemesis Kitten",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Storm-0270",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "DireFate",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Yellow Dev 23",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Yellow Dev 24",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Lord Nemesis",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IR",
+      "source": "misp"
+    },
+    {
+      "value": "IR",
+      "source": "etda"
+    },
+    {
+      "value": "IR",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Financial gain",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 5
+}

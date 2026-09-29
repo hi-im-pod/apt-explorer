@@ -1,0 +1,284 @@
+{
+  "id": "G1053",
+  "name": "Storm-0501",
+  "aliases": [
+    {
+      "value": "Storm-0501",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "AADInternals",
+      "source": "attack"
+    },
+    {
+      "name": "Cobalt Strike",
+      "source": "attack"
+    },
+    {
+      "name": "Embargo",
+      "source": "attack"
+    },
+    {
+      "name": "Impacket",
+      "source": "attack"
+    },
+    {
+      "name": "Net",
+      "source": "attack"
+    },
+    {
+      "name": "Nltest",
+      "source": "attack"
+    },
+    {
+      "name": "Rclone",
+      "source": "attack"
+    },
+    {
+      "name": "Tasklist",
+      "source": "attack"
+    },
+    {
+      "name": "Hunters International",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1003",
+    "T1003.006",
+    "T1021.006",
+    "T1021.007",
+    "T1027.002",
+    "T1036.004",
+    "T1053.005",
+    "T1057",
+    "T1059.001",
+    "T1059.009",
+    "T1078.004",
+    "T1082",
+    "T1087.002",
+    "T1087.004",
+    "T1098.001",
+    "T1098.003",
+    "T1110",
+    "T1190",
+    "T1218.010",
+    "T1218.011",
+    "T1219.002",
+    "T1482",
+    "T1484.001",
+    "T1484.002",
+    "T1485",
+    "T1486",
+    "T1490",
+    "T1518.001",
+    "T1526",
+    "T1530",
+    "T1537",
+    "T1552.004",
+    "T1555.005",
+    "T1555.006",
+    "T1556.009",
+    "T1567.002",
+    "T1578.003",
+    "T1580",
+    "T1587.003",
+    "T1588.006",
+    "T1614.001",
+    "T1657"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1071.001",
+      "count": 2
+    },
+    {
+      "id": "T1003.002",
+      "count": 1
+    },
+    {
+      "id": "T1016",
+      "count": 1
+    },
+    {
+      "id": "T1018",
+      "count": 1
+    },
+    {
+      "id": "T1021.001",
+      "count": 1
+    },
+    {
+      "id": "T1021.002",
+      "count": 1
+    },
+    {
+      "id": "T1027",
+      "count": 1
+    },
+    {
+      "id": "T1027.002",
+      "count": 1
+    },
+    {
+      "id": "T1041",
+      "count": 1
+    },
+    {
+      "id": "T1055",
+      "count": 1
+    },
+    {
+      "id": "T1057",
+      "count": 1
+    },
+    {
+      "id": "T1059.001",
+      "count": 1
+    },
+    {
+      "id": "T1059.003",
+      "count": 1
+    },
+    {
+      "id": "T1069.002",
+      "count": 1
+    },
+    {
+      "id": "T1078",
+      "count": 1
+    },
+    {
+      "id": "T1083",
+      "count": 1
+    },
+    {
+      "id": "T1087",
+      "count": 1
+    },
+    {
+      "id": "T1105",
+      "count": 1
+    },
+    {
+      "id": "T1136",
+      "count": 1
+    },
+    {
+      "id": "T1189",
+      "count": 1
+    },
+    {
+      "id": "T1190",
+      "count": 1
+    },
+    {
+      "id": "T1486",
+      "count": 1
+    },
+    {
+      "id": "T1497",
+      "count": 1
+    },
+    {
+      "id": "T1497.001",
+      "count": 1
+    },
+    {
+      "id": "T1518",
+      "count": 1
+    },
+    {
+      "id": "T1564.003",
+      "count": 1
+    },
+    {
+      "id": "T1573.002",
+      "count": 1
+    },
+    {
+      "id": "T1587.003",
+      "count": 1
+    },
+    {
+      "id": "T1595.002",
+      "count": 1
+    },
+    {
+      "id": "T1608.003",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2017-10271",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-2725",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-2729",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2022-47966",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-29300",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-38203",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-4966",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2024-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "140582da8fa2fe6fc3cb8bafe8a1b1923db3f191",
+    "f98063e2d8498587163a6c24850f3164f4613946",
+    "a17e060b4b0ad6346c35e6e6e0155abf2bd4a8a7",
+    "aa876d3205880558d4244c07bff002c63906d9c8"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

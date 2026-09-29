@@ -1,0 +1,64 @@
+{
+  "id": "foxy-panda",
+  "name": "FOXY PANDA",
+  "aliases": [
+    {
+      "value": "FOXY PANDA",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Foxy Panda",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "etda"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": [
+      {
+        "value": "Technology",
+        "source": "misp"
+      },
+      {
+        "value": "Telecoms",
+        "source": "misp"
+      },
+      {
+        "value": "Technology",
+        "source": "malpedia"
+      },
+      {
+        "value": "Telecoms",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 2
+}

@@ -1,0 +1,117 @@
+{
+  "id": "yanbian-gang",
+  "name": "Yanbian Gang",
+  "aliases": [
+    {
+      "value": "Yanbian Gang",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "etda"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Financial crime",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "South Korea",
+        "source": "misp"
+      },
+      {
+        "value": "Japan",
+        "source": "misp"
+      },
+      {
+        "value": "South Korea",
+        "source": "etda"
+      },
+      {
+        "value": "South Korea",
+        "source": "malpedia"
+      },
+      {
+        "value": "Japan",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "FunkyBot",
+      "source": "malpedia"
+    },
+    {
+      "name": "MoqHao",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2018-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2019-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2023-Q1",
+      "count": 3
+    }
+  ],
+  "reports": [
+    "732387f90c716b00b61864b7348da4a70c10438b",
+    "b4cd1849e0e0c86bd7047507ff32d36c9b6b6a54",
+    "616e62419d2576eba3abb69f228d2258054649ec",
+    "99398564d6073d6ccf78ddd478199f77cc72a71b",
+    "deeede755b6727c8e18f95917826ced762429b29",
+    "5917f8c128632d85d34e136f78450036258bf220",
+    "65f83a515449e805ee4fb278203ec5b66f5b6fdd",
+    "084fabe6f6bb41cd07b3df61f389c6720b765a18",
+    "d46507b6e080e284e3567a8463d17f130b2d0b6a",
+    "48ccd73d316fc1a741d6ebce01af9bf0875aacb3",
+    "5020098299aac9de9130653e3df183221d6a2c74",
+    "5968d4f881bc06fc866c9a20d885542039e5eead",
+    "825b66ab3dee4cdfa12dd4877b2ac5dc910f6dd6",
+    "ffbedc5c8812b3575d3d2ff6d8c9931d03583845"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

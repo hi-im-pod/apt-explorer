@@ -1,0 +1,60 @@
+{
+  "id": "slime88",
+  "name": "SLIME88",
+  "aliases": [
+    {
+      "value": "SLIME88",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "SoxAgent",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2024-32114",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2026-34197",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "960604ed5f5e66fecc59df6b19fda82ddead7f72"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

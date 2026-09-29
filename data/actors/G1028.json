@@ -1,0 +1,691 @@
+{
+  "id": "G1028",
+  "name": "APT-C-23",
+  "aliases": [
+    {
+      "value": "APT-C-23",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Arid Viper",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Two-tailed Scorpion",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Desert Falcon",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Desert Falcons",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Pinstripe Lightning",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Scimitar",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Mantis",
+      "sources": [
+        "attack",
+        "etda"
+      ]
+    },
+    {
+      "value": "TAG-63",
+      "sources": [
+        "attack",
+        "etda"
+      ]
+    },
+    {
+      "value": "AridViper",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Bearded Barbie",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "NIOBIUM",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "RENEGADE JACKAL",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Grey Karkadann",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Big Bang APT",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "ATK 66",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "TAG-CT1",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Niobium",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Renegade Jackal",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "PS",
+      "source": "misp"
+    },
+    {
+      "value": "PS",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "Palestine",
+      "source": "misp"
+    },
+    {
+      "value": "Palestine",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "United States",
+        "source": "misp"
+      },
+      {
+        "value": "Israel",
+        "source": "misp"
+      },
+      {
+        "value": "Palestine",
+        "source": "misp"
+      },
+      {
+        "value": "Albania",
+        "source": "etda"
+      },
+      {
+        "value": "Algeria",
+        "source": "etda"
+      },
+      {
+        "value": "Australia",
+        "source": "etda"
+      },
+      {
+        "value": "Belgium",
+        "source": "etda"
+      },
+      {
+        "value": "Bosnia and Herzegovina",
+        "source": "etda"
+      },
+      {
+        "value": "Canada",
+        "source": "etda"
+      },
+      {
+        "value": "China",
+        "source": "etda"
+      },
+      {
+        "value": "Cyprus",
+        "source": "etda"
+      },
+      {
+        "value": "Denmark",
+        "source": "etda"
+      },
+      {
+        "value": "Egypt",
+        "source": "etda"
+      },
+      {
+        "value": "France",
+        "source": "etda"
+      },
+      {
+        "value": "Germany",
+        "source": "etda"
+      },
+      {
+        "value": "Greece",
+        "source": "etda"
+      },
+      {
+        "value": "Hungary",
+        "source": "etda"
+      },
+      {
+        "value": "India",
+        "source": "etda"
+      },
+      {
+        "value": "Iran",
+        "source": "etda"
+      },
+      {
+        "value": "Iraq",
+        "source": "etda"
+      },
+      {
+        "value": "Israel",
+        "source": "etda"
+      },
+      {
+        "value": "Italy",
+        "source": "etda"
+      },
+      {
+        "value": "Japan",
+        "source": "etda"
+      },
+      {
+        "value": "Jordan",
+        "source": "etda"
+      },
+      {
+        "value": "Kuwait",
+        "source": "etda"
+      },
+      {
+        "value": "Lebanon",
+        "source": "etda"
+      },
+      {
+        "value": "Libya",
+        "source": "etda"
+      },
+      {
+        "value": "Mali",
+        "source": "etda"
+      },
+      {
+        "value": "Mauritania",
+        "source": "etda"
+      },
+      {
+        "value": "Mexico",
+        "source": "etda"
+      },
+      {
+        "value": "Morocco",
+        "source": "etda"
+      },
+      {
+        "value": "Netherlands",
+        "source": "etda"
+      },
+      {
+        "value": "Norway",
+        "source": "etda"
+      },
+      {
+        "value": "Pakistan",
+        "source": "etda"
+      },
+      {
+        "value": "Palestine",
+        "source": "etda"
+      },
+      {
+        "value": "Portugal",
+        "source": "etda"
+      },
+      {
+        "value": "Qatar",
+        "source": "etda"
+      },
+      {
+        "value": "Romania",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "etda"
+      },
+      {
+        "value": "Saudi Arabia",
+        "source": "etda"
+      },
+      {
+        "value": "South Korea",
+        "source": "etda"
+      },
+      {
+        "value": "Sudan",
+        "source": "etda"
+      },
+      {
+        "value": "Sweden",
+        "source": "etda"
+      },
+      {
+        "value": "Syria",
+        "source": "etda"
+      },
+      {
+        "value": "Taiwan",
+        "source": "etda"
+      },
+      {
+        "value": "Türkiye",
+        "source": "etda"
+      },
+      {
+        "value": "United Arab Emirates",
+        "source": "etda"
+      },
+      {
+        "value": "Ukraine",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      },
+      {
+        "value": "Uzbekistan",
+        "source": "etda"
+      },
+      {
+        "value": "Yemen",
+        "source": "etda"
+      },
+      {
+        "value": "Zimbabwe",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "malpedia"
+      },
+      {
+        "value": "Israel",
+        "source": "malpedia"
+      },
+      {
+        "value": "Palestine",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Defense",
+        "source": "misp"
+      },
+      {
+        "value": "Energy",
+        "source": "misp"
+      },
+      {
+        "value": "Finance",
+        "source": "misp"
+      },
+      {
+        "value": "Education",
+        "source": "misp"
+      },
+      {
+        "value": "High-Tech",
+        "source": "misp"
+      },
+      {
+        "value": "Telecoms",
+        "source": "misp"
+      },
+      {
+        "value": "Transportation",
+        "source": "misp"
+      },
+      {
+        "value": "Media",
+        "source": "misp"
+      },
+      {
+        "value": "NGOs",
+        "source": "misp"
+      },
+      {
+        "value": "Civil Society",
+        "source": "misp"
+      },
+      {
+        "value": "Legal",
+        "source": "misp"
+      },
+      {
+        "value": "Military",
+        "source": "misp"
+      },
+      {
+        "value": "Critical infrastructure",
+        "source": "etda"
+      },
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Education",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Media",
+        "source": "etda"
+      },
+      {
+        "value": "Transportation",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      },
+      {
+        "value": "Defense",
+        "source": "malpedia"
+      },
+      {
+        "value": "Energy",
+        "source": "malpedia"
+      },
+      {
+        "value": "Finance",
+        "source": "malpedia"
+      },
+      {
+        "value": "Education",
+        "source": "malpedia"
+      },
+      {
+        "value": "High-Tech",
+        "source": "malpedia"
+      },
+      {
+        "value": "Telecoms",
+        "source": "malpedia"
+      },
+      {
+        "value": "Transportation",
+        "source": "malpedia"
+      },
+      {
+        "value": "Media",
+        "source": "malpedia"
+      },
+      {
+        "value": "NGOs",
+        "source": "malpedia"
+      },
+      {
+        "value": "Civil Society",
+        "source": "malpedia"
+      },
+      {
+        "value": "Legal",
+        "source": "malpedia"
+      },
+      {
+        "value": "Military",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Micropsia",
+      "source": "attack"
+    },
+    {
+      "name": "Arid Gopher",
+      "source": "malpedia"
+    },
+    {
+      "name": "AridHelper",
+      "source": "malpedia"
+    },
+    {
+      "name": "Barb(ie) Downloader",
+      "source": "malpedia"
+    },
+    {
+      "name": "BarbWire",
+      "source": "malpedia"
+    },
+    {
+      "name": "GlanceLove",
+      "source": "malpedia"
+    },
+    {
+      "name": "GnatSpy",
+      "source": "malpedia"
+    },
+    {
+      "name": "Micropsia",
+      "source": "malpedia"
+    },
+    {
+      "name": "Phenakite",
+      "source": "malpedia"
+    },
+    {
+      "name": "SpyC23",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2018-11776",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-8006",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2018-8373",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2015-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2015-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2017-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2019-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2020-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "612b64444abbc2edb607b1a6c9725caa0fd7b1aa",
+    "e9b230db0468f39b27c9e9e8177f67f8b3704584",
+    "0753cdcfa70bed2b0bd0aa2d32bfc6eafa778a1d",
+    "36a4bd06471d80d2789f30bdd2f92f44a6634cc6",
+    "ffd6e63827e156aa1cc6020365a7972a66eb1f19",
+    "7a7ab98f401cb4a50772eef64812702cb1e4b124",
+    "3435670a303b3fd872bb04c76c58d6951076afeb",
+    "e73db1470ec074c7e62fbc4ca4356a1bc83acfd4",
+    "842b5f840ce9983955afc34bc842e9f926dcde13",
+    "dc641767dfecf2604e634d2a849c5988dc010621",
+    "75609cca39e6bd39390f11e23753c951fd5f0f7e",
+    "57d854291be5afd32de86dc5fb670c2ee511ac66",
+    "c19c3cf6fc7f11ece1d8db1f0eaf19dd9017d91a",
+    "c3540b25293ee33d44c189ce1946a445c6b5964a",
+    "56bae7808247d2efd2f0821de519232a60e75c89",
+    "paper:MICROPSIA%20(APT-C-23)",
+    "ecc2daeb3c747d13f4f94c6058df8564a1474ca3",
+    "d41dd6180e8d6709c0ce1454fad5ae53da3d6977",
+    "4eada8344992c7d6f6e99359caef246a68498793",
+    "4a495a1c574827c5dbce2d01b1d1a8841d4b3ffa",
+    "04847e1239f1bd6c2a9c80d3d8391ce4da6f1f04",
+    "1211cf3539f2d02c5335b8d05beb81c20920b206",
+    "529a4959c9cfdc81513c035bf78b20540e9b1a30",
+    "75c2325f529d34155445af6a82bb22ec4277a80f",
+    "paper:The-Desert-Falcons-targeted-attacks"
+  ],
+  "conflicts": [],
+  "evidence_count": 26
+}

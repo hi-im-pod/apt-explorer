@@ -1,0 +1,590 @@
+{
+  "id": "red-menshen",
+  "name": "Red Menshen",
+  "aliases": [
+    {
+      "value": "Red Menshen",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Red Dev 18",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Earth Bluecrow",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Education",
+        "source": "misp"
+      },
+      {
+        "value": "Logistics",
+        "source": "misp"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      },
+      {
+        "value": "Education",
+        "source": "malpedia"
+      },
+      {
+        "value": "Logistics",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "BPFDoor",
+      "source": "malpedia"
+    },
+    {
+      "name": "Ghost RAT",
+      "source": "malpedia"
+    },
+    {
+      "name": "Mangzamel",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [
+    {
+      "id": "T1027",
+      "count": 1
+    },
+    {
+      "id": "T1041",
+      "count": 1
+    },
+    {
+      "id": "T1053.005",
+      "count": 1
+    },
+    {
+      "id": "T1059.003",
+      "count": 1
+    },
+    {
+      "id": "T1071.001",
+      "count": 1
+    },
+    {
+      "id": "T1078",
+      "count": 1
+    },
+    {
+      "id": "T1082",
+      "count": 1
+    },
+    {
+      "id": "T1095",
+      "count": 1
+    },
+    {
+      "id": "T1140",
+      "count": 1
+    },
+    {
+      "id": "T1189",
+      "count": 1
+    },
+    {
+      "id": "T1190",
+      "count": 1
+    },
+    {
+      "id": "T1204.002",
+      "count": 1
+    },
+    {
+      "id": "T1547.001",
+      "count": 1
+    },
+    {
+      "id": "T1555.003",
+      "count": 1
+    },
+    {
+      "id": "T1566.002",
+      "count": 1
+    },
+    {
+      "id": "T1593.002",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2017-0144",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-0199",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-0261",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-0262",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-10271",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-11292",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-11882",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-5638",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-8570",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-8759",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-0798",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-2628",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-8174",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-8373",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-1367",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-13720",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-1458",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-17026",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-17100",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2019-2725",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-3010",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-0674",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-1472",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-1473",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-1732",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-20021",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-20022",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-20023",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-2135",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-21975",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-21983",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-22893",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-26084",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-26855",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-28149",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-28152",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-28310",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-28482",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-3019",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-34473",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-3490",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2022-1040",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2022-27518",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2022-41328",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2022-42475",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-20867",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2023-2868",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2024-23204",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2024-4577",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2025-55182",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2026-21236",
+      "kev": false,
+      "ransomware": null
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2011-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2017-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2018-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 5
+    },
+    {
+      "quarter": "2020-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q4",
+      "count": 3
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2021-Q2",
+      "count": 4
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 3
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 10
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2023-Q2",
+      "count": 5
+    },
+    {
+      "quarter": "2023-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2023-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q2",
+      "count": 5
+    },
+    {
+      "quarter": "2025-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2026-Q3",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "52f859f75007550de14412e1dc834d10d06e1b3a",
+    "0ad712c3e42d3065da15afdd2078d4f6f6e07268",
+    "92abe5d1c8459ef534f3795f7f137a40c58314a3",
+    "cfc697ef692ebb109dce35cb62ae14df98a7b36f",
+    "490f4a4cd9ad2b9544858235de91e2141e7d63cf",
+    "e7a254638c47876f66b66906167a4b3ef5b689ed",
+    "368503e3852dce49e0c581546b1131945407c7a1",
+    "944a846fa1dff0aefb5b925f02b8480f0d16131c",
+    "b37c8ef9df34ae64bf5f323abba81a3cdbd6ba1e",
+    "c842edc0b627e5c594454b71f8bd71048ea36e03",
+    "2a016643f1a539e03bc88fc5a4500904d83f32ac",
+    "2e83b260a6d2a7500d3b670a03cac212e27ce6b1",
+    "88a4cfd8e88bd252a570ccceadd2cec23f6ef9e2",
+    "693a01af45711473c5bab9b7f81536975b9f3515",
+    "214fad92e285b270f7c330844b4629e1e403c924",
+    "b7c5d3b5f5f6fdec5363fd5dcc10c235a9b7c639",
+    "a2d3a6321f64d5ba3b083aed22713c54b6872549",
+    "9e35d7c3dc7f08d635bc1892edab63d8263d7e8f",
+    "baf1923e15963467f6727f89cd652129626e142c",
+    "13e39e781ae002a15b922c973678664897d03cb7",
+    "4bf7d837a4bd64a77b02bba0d4e84fb0082f9eeb",
+    "0101b21e0ed2e986895fcd2438b51c43d08995ea",
+    "18c269d1eaa29438861255b754cdf766df09110a",
+    "2ba8e179f577da0ee8a2ec75e09aab98bdafa51a",
+    "03024125af7f94341afef701b3299542f647b96a",
+    "8669be387434bc67801ffde790797e1bb816a16b",
+    "fae3f622d63f677a3a403b51ab949652a8400460",
+    "681ab6a539dfc853591c4259019738f573eeac84",
+    "ebfda0e6fa14e173ec63d10b7d616d453cf18bb0",
+    "98d52a3a51de58f87d23944f6cd24b18f3e05895",
+    "c4cdd952e7f7cba9fb4acfce16ce851fa9b471d9",
+    "ae45e11605ada416b2bbee9670c2551a7625d5c7",
+    "7ea3c61934ff1889b79be8cc0d01a53ec603fd00",
+    "0062160b097ca093312a5e53e98b79941fdbc9b4",
+    "d29ffab19faa011ce3afc093ff0b087f3f33763f",
+    "bef05d2bce2a6e56e284e655502f5db5c35d3275",
+    "2aeb2eacfc08fac049dbeb48b3fec5bfd314a568",
+    "cc61019a4194b24a408814c436c65367e47d8b54",
+    "531c19e274be634c24a91885b2de098576169425",
+    "dbcb7c03b4798e33472cd0358061b179a2462a3b",
+    "f29079c38ee0d5b3a9afb0462b4475e226e9b4ab",
+    "dc049b1e012f71fb39aa3df9365350123b455256",
+    "285a8a65c0986c6f084ca9b6c7b1ba98071957f3",
+    "c41bf56a5a401306ba768fc3ad24f2e1bc801de5",
+    "3a0edf0ff1855d507297a7687ebf6d7801fa4ee0",
+    "4892ec97e210f22ccf1a25628292e5d90e51dd33",
+    "b5ec4647de793371361d6489ed2e9ac600e90480",
+    "436af4e7eecd2267f8eabe8460562ff0d6ee7fd1",
+    "482fcaea88cec22fa8cd9ec73d5d5ae28e6ce43b",
+    "21d17d8989661a5be08a19a688c6e33dc67b4022",
+    "2dffc3e2cf175bc15ffba805a6e869f40dfd36a1",
+    "16c40c38294e6214024cb00abbc841af3c7bf539",
+    "09a9d18f29c0b7a473d8de75a374e0e61018cc89",
+    "e2a5ff7e5beea32042a46bdf69cdc96792d1ea6d",
+    "bfb5e3c8357c0990e882a7de15caf6dbe0c21e87",
+    "61ac8f21bfe03ac9d3446a71584a92a9a8da0730",
+    "eab263d2cfdab0601a467d8bcc1fb18ff70e0733",
+    "5fc8f0edc719046ed5a8e9f4c7654e808c07c705",
+    "d756a710363dff192c32481266645104a903305c",
+    "c58538b894e29ea2cf2947132505c031114b1da5",
+    "a2c4ceacfefe0f9ce75721edc02d32c552bf0b61",
+    "6334806dd0432eac1530a599f02e993881e0a5f2",
+    "b49facd3aa055abb703c0f64b8a6ab0fdde08401",
+    "30eb047ce9c5f2394ceef0897ad5b363c4014f3c",
+    "c39670484716e0b383b6063e792a1112e9f05240",
+    "2f6abbda2e6cd11dc0d295681de0261acc8d7e29"
+  ],
+  "conflicts": [],
+  "evidence_count": 3
+}

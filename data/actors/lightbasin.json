@@ -1,0 +1,129 @@
+{
+  "id": "lightbasin",
+  "name": "LightBasin",
+  "aliases": [
+    {
+      "value": "LightBasin",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UNC1945",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "CL-CRI-0025",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TH-239",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "DecisiveArchitect",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Luminal Panda",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "etda"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": [
+      {
+        "value": "Financial",
+        "source": "etda"
+      },
+      {
+        "value": "IT",
+        "source": "etda"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "GTPDOOR",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2014-0160",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-0708",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-14871",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2020-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q1",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "1231fb95ec01f6ab4a1f255723c57d0ee0c91e53",
+    "98fe112857885dc84909b66d652305b9ff09952d",
+    "ec83db1b099ad2e211b9633f66ebed82f8bb93e5",
+    "5e45c51ac37f98d5a77773448007d5c2d47b28f6",
+    "060d5bead69abda2843568e023e2da9b79f30728"
+  ],
+  "conflicts": [],
+  "evidence_count": 5
+}

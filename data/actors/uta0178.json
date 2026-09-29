@@ -1,0 +1,488 @@
+{
+  "id": "uta0178",
+  "name": "UTA0178",
+  "aliases": [
+    {
+      "value": "UTA0178",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UNC5221",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Red Dev 61",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "etda"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Germany",
+        "source": "misp"
+      },
+      {
+        "value": "Germany",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "BRICKSTORM",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [
+    {
+      "id": "T1071.001",
+      "count": 3
+    },
+    {
+      "id": "T1041",
+      "count": 2
+    },
+    {
+      "id": "T1083",
+      "count": 2
+    },
+    {
+      "id": "T1505.003",
+      "count": 2
+    },
+    {
+      "id": "T1003.003",
+      "count": 1
+    },
+    {
+      "id": "T1021.001",
+      "count": 1
+    },
+    {
+      "id": "T1021.004",
+      "count": 1
+    },
+    {
+      "id": "T1036",
+      "count": 1
+    },
+    {
+      "id": "T1036.004",
+      "count": 1
+    },
+    {
+      "id": "T1037",
+      "count": 1
+    },
+    {
+      "id": "T1070.004",
+      "count": 1
+    },
+    {
+      "id": "T1070.006",
+      "count": 1
+    },
+    {
+      "id": "T1071.004",
+      "count": 1
+    },
+    {
+      "id": "T1078",
+      "count": 1
+    },
+    {
+      "id": "T1078.001",
+      "count": 1
+    },
+    {
+      "id": "T1078.004",
+      "count": 1
+    },
+    {
+      "id": "T1090",
+      "count": 1
+    },
+    {
+      "id": "T1090.001",
+      "count": 1
+    },
+    {
+      "id": "T1090.003",
+      "count": 1
+    },
+    {
+      "id": "T1095",
+      "count": 1
+    },
+    {
+      "id": "T1098.001",
+      "count": 1
+    },
+    {
+      "id": "T1105",
+      "count": 1
+    },
+    {
+      "id": "T1114.002",
+      "count": 1
+    },
+    {
+      "id": "T1190",
+      "count": 1
+    },
+    {
+      "id": "T1213",
+      "count": 1
+    },
+    {
+      "id": "T1213.002",
+      "count": 1
+    },
+    {
+      "id": "T1530",
+      "count": 1
+    },
+    {
+      "id": "T1548.003",
+      "count": 1
+    },
+    {
+      "id": "T1550.001",
+      "count": 1
+    },
+    {
+      "id": "T1560.001",
+      "count": 1
+    },
+    {
+      "id": "T1564.006",
+      "count": 1
+    },
+    {
+      "id": "T1572",
+      "count": 1
+    },
+    {
+      "id": "T1573.002",
+      "count": 1
+    },
+    {
+      "id": "T1574.007",
+      "count": 1
+    },
+    {
+      "id": "T1583.001",
+      "count": 1
+    },
+    {
+      "id": "T1583.003",
+      "count": 1
+    },
+    {
+      "id": "T1583.007",
+      "count": 1
+    },
+    {
+      "id": "T1584.008",
+      "count": 1
+    },
+    {
+      "id": "T1588.001",
+      "count": 1
+    },
+    {
+      "id": "T1608.003",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2019-11539",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-8218",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-22005",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-34048",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2023-46747",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-46805",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-21887",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-21893",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-38812",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2025-41430",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-46706",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-47148",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-48008",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-53474",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-53521",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2025-53856",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-53868",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-54479",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-54755",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-54854",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-54858",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-55036",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-55669",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-58071",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-58096",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-58153",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-58424",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-58474",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-59268",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-59269",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-59478",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-59481",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-59483",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-59781",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-60016",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-61933",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-61935",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-61938",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-61951",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-61958",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-61960",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-61974",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-61990",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2026-22769",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2024-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2025-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q4",
+      "count": 3
+    },
+    {
+      "quarter": "2026-Q1",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "2847d66d5679ee28e006b3eb2a330eebdd20bdcb",
+    "173af10e6832559c4e2d9cb6b7c5258a4d342369",
+    "1eaaa225d4b6c5ff7bfcda6eb005e19623d271ef",
+    "e3156f30229251669b34c907766c876875e2f9d1",
+    "59b4660c9819d21d97621fadcac9e93be556164c",
+    "d91a947ba961dd705ee8944f4abed0cf97bf0fb6",
+    "0015305d7ee572f2394c2572f6a394ea55952c67",
+    "b31bac9f3cd7bdeb0e4b79edacae72ca02ee357b"
+  ],
+  "conflicts": [],
+  "evidence_count": 5
+}

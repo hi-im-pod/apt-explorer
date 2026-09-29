@@ -1,0 +1,41 @@
+{
+  "id": "uac-0099",
+  "name": "UAC-0099",
+  "aliases": [
+    {
+      "value": "UAC-0099",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2023-38831",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2023-Q4",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "b0cce40bbc4e54a2742d25794bc5311cd958c2b2"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

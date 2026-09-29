@@ -1,0 +1,141 @@
+{
+  "id": "boss-spider",
+  "name": "BOSS SPIDER",
+  "aliases": [
+    {
+      "value": "BOSS SPIDER",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "GOLD LOWELL",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Boss Spider",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Gold Lowell",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "CTG-0007",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IR",
+      "source": "etda"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Financial gain",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": [
+      {
+        "value": "Education",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Healthcare",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2010-0738",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-9805",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-8611",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-11510",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2016-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2020-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "63f3229483f0ba26ce5b1b5d153e20a367f58daf",
+    "79177e0137600508d3d1e5edae412fab838681ff",
+    "d188680eff339121bbbd3f81218a0bb42e31b5a3",
+    "195a98133c9887e60b063376103644dc66249f8a",
+    "b6872c99d05c806cb177c20ded7ab1b43f923995",
+    "4b75f585b8ff8f6c826fb2d2cac3bfd52b633c01",
+    "d3485dcb2495886e204851d1dcf3761316c20286",
+    "ced1c6df2415009457e769c288b7612e3e029035",
+    "a0159633cb7e9eda8e172774dcaeab714b6f3b85",
+    "59b6f4c53f860ec7c911385abb9f52572cc87117"
+  ],
+  "conflicts": [],
+  "evidence_count": 4
+}

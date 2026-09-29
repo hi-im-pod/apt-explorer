@@ -1,0 +1,61 @@
+{
+  "id": "storm-0494",
+  "name": "Storm-0494",
+  "aliases": [
+    {
+      "value": "Storm-0494",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "INC",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2024-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2026-Q3",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "9409799c158fa716806104bbd29b5c4cfca7d939",
+    "24b2c0cd8aaa5149844c69c1e96744d81febe212",
+    "9ccc0123f8a457d15d97a76212b72c78673c5ba0",
+    "7c8803ff242c6a41c0a202c04d69b1d4489d2302",
+    "934f6c9cf58d24192e7ab87ffe5723af1cb678aa",
+    "e11a0b81063e773aaf8d0e9fdb35d78a550ad249"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

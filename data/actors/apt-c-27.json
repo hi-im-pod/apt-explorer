@@ -1,0 +1,100 @@
+{
+  "id": "apt-c-27",
+  "name": "APT-C-27",
+  "aliases": [
+    {
+      "value": "APT-C-27",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "GoldMouse",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Golden RAT",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "ATK80",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Goldmouse",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Golden Rat",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "ATK 80",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "SY",
+      "source": "misp"
+    },
+    {
+      "value": "SY",
+      "source": "etda"
+    },
+    {
+      "value": "SY",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Syria",
+        "source": "etda"
+      },
+      {
+        "value": "Syria",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "GoldenRAT",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 8
+}

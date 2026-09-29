@@ -1,0 +1,854 @@
+{
+  "id": "G0060",
+  "name": "BRONZE BUTLER",
+  "aliases": [
+    {
+      "value": "BRONZE BUTLER",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Tick",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "REDBALDKNIGHT",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TEMP.Tick",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Stalker Taurus",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Swirl Typhoon",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TempTick",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Nian",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "STALKER PANDA",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "PLA Unit 61419",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TICK CASTLE",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Bronze Butler",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "CTG-2006",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "RedBaldNight",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Stalker Panda",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "etda"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "China",
+      "source": "misp"
+    },
+    {
+      "value": "China",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "South Korea",
+        "source": "misp"
+      },
+      {
+        "value": "Japan",
+        "source": "misp"
+      },
+      {
+        "value": "China",
+        "source": "misp"
+      },
+      {
+        "value": "Russia",
+        "source": "misp"
+      },
+      {
+        "value": "China",
+        "source": "etda"
+      },
+      {
+        "value": "Hong Kong",
+        "source": "etda"
+      },
+      {
+        "value": "Japan",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "etda"
+      },
+      {
+        "value": "Singapore",
+        "source": "etda"
+      },
+      {
+        "value": "South Korea",
+        "source": "etda"
+      },
+      {
+        "value": "Taiwan",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      },
+      {
+        "value": "South Korea",
+        "source": "malpedia"
+      },
+      {
+        "value": "Japan",
+        "source": "malpedia"
+      },
+      {
+        "value": "China",
+        "source": "malpedia"
+      },
+      {
+        "value": "Russia",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Private sector",
+        "source": "misp"
+      },
+      {
+        "value": "Infrastructure",
+        "source": "misp"
+      },
+      {
+        "value": "Industrial",
+        "source": "misp"
+      },
+      {
+        "value": "Manufacturing",
+        "source": "misp"
+      },
+      {
+        "value": "Diplomacy",
+        "source": "misp"
+      },
+      {
+        "value": "News - Media",
+        "source": "misp"
+      },
+      {
+        "value": "Political party",
+        "source": "misp"
+      },
+      {
+        "value": "Engineering",
+        "source": "misp"
+      },
+      {
+        "value": "Critical infrastructure",
+        "source": "etda"
+      },
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Engineering",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "High-Tech",
+        "source": "etda"
+      },
+      {
+        "value": "Industrial",
+        "source": "etda"
+      },
+      {
+        "value": "Manufacturing",
+        "source": "etda"
+      },
+      {
+        "value": "Media",
+        "source": "etda"
+      },
+      {
+        "value": "Technology",
+        "source": "etda"
+      },
+      {
+        "value": "International relations",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      },
+      {
+        "value": "Private sector",
+        "source": "malpedia"
+      },
+      {
+        "value": "Infrastructure",
+        "source": "malpedia"
+      },
+      {
+        "value": "Industrial",
+        "source": "malpedia"
+      },
+      {
+        "value": "Manufacturing",
+        "source": "malpedia"
+      },
+      {
+        "value": "Diplomacy",
+        "source": "malpedia"
+      },
+      {
+        "value": "News - Media",
+        "source": "malpedia"
+      },
+      {
+        "value": "Political party",
+        "source": "malpedia"
+      },
+      {
+        "value": "Engineering",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "ABK",
+      "source": "attack"
+    },
+    {
+      "name": "Avenger",
+      "source": "attack"
+    },
+    {
+      "name": "BBK",
+      "source": "attack"
+    },
+    {
+      "name": "Daserf",
+      "source": "attack"
+    },
+    {
+      "name": "Mimikatz",
+      "source": "attack"
+    },
+    {
+      "name": "Net",
+      "source": "attack"
+    },
+    {
+      "name": "ShadowPad",
+      "source": "attack"
+    },
+    {
+      "name": "Windows Credential Editor",
+      "source": "attack"
+    },
+    {
+      "name": "at",
+      "source": "attack"
+    },
+    {
+      "name": "build_downer",
+      "source": "attack"
+    },
+    {
+      "name": "cmd",
+      "source": "attack"
+    },
+    {
+      "name": "down_new",
+      "source": "attack"
+    },
+    {
+      "name": "gsecdump",
+      "source": "attack"
+    },
+    {
+      "name": "schtasks",
+      "source": "attack"
+    },
+    {
+      "name": "8.t Dropper",
+      "source": "malpedia"
+    },
+    {
+      "name": "BROLER",
+      "source": "malpedia"
+    },
+    {
+      "name": "Daserf",
+      "source": "malpedia"
+    },
+    {
+      "name": "Datper",
+      "source": "malpedia"
+    },
+    {
+      "name": "Lilith",
+      "source": "malpedia"
+    },
+    {
+      "name": "NodeRAT",
+      "source": "malpedia"
+    },
+    {
+      "name": "rarstar",
+      "source": "malpedia"
+    },
+    {
+      "name": "xxmm",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1003.001",
+    "T1005",
+    "T1007",
+    "T1018",
+    "T1027.001",
+    "T1027.003",
+    "T1036",
+    "T1036.002",
+    "T1036.005",
+    "T1039",
+    "T1053.002",
+    "T1053.005",
+    "T1059.001",
+    "T1059.003",
+    "T1059.005",
+    "T1059.006",
+    "T1070.004",
+    "T1071.001",
+    "T1080",
+    "T1083",
+    "T1087.002",
+    "T1102.001",
+    "T1105",
+    "T1113",
+    "T1124",
+    "T1132.001",
+    "T1140",
+    "T1189",
+    "T1203",
+    "T1204.002",
+    "T1518",
+    "T1547.001",
+    "T1548.002",
+    "T1550.003",
+    "T1560.001",
+    "T1566.001",
+    "T1573.001",
+    "T1574.001",
+    "T1588.002",
+    "T1685"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1053.005",
+      "count": 1
+    },
+    {
+      "id": "T1059.001",
+      "count": 1
+    },
+    {
+      "id": "T1059.005",
+      "count": 1
+    },
+    {
+      "id": "T1140",
+      "count": 1
+    },
+    {
+      "id": "T1518.001",
+      "count": 1
+    },
+    {
+      "id": "T1564.001",
+      "count": 1
+    },
+    {
+      "id": "T1566.001",
+      "count": 1
+    },
+    {
+      "id": "T1571",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2010-1424",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2010-2152",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2010-3915",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2010-3916",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2011-1331",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2011-2462",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2011-3544",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2012-0158",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2013-0707",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2013-3644",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2013-3893",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2013-3918",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2013-5990",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2014-0810",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2014-1761",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2014-4113",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2014-7247",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2015-7645",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2016-1019",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2016-4117",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2016-7836",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-0199",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-0261",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-11882",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-8570",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-8759",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-0798",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-0802",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-8570",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2019-11510",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-13720",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-19781",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-2215",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-9489",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2020-0674",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-0688",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-10189",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-1472",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-1664",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2020-5135",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-5902",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-1040",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2022-30190",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2017-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2018-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2018-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2019-Q1",
+      "count": 4
+    },
+    {
+      "quarter": "2019-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q3",
+      "count": 4
+    },
+    {
+      "quarter": "2019-Q4",
+      "count": 3
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 7
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 4
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2022-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2023-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "33d56385d9aaf9d6692724ce8e253b771e294ae6",
+    "f058f562cfdfdc5aea92985f74627e3f507edb1b",
+    "a5af4ba85da685a118afff56a007b6ec5e9c203d",
+    "05492ed154eb29b8f629bdefcce596de1596d21f",
+    "23219da0963e95373d5dacba4348f1ccd274fd59",
+    "4672fc36c4981b36b0ed234fceaeca884226e31d",
+    "ce5d2096b4d274477ef7da69a6ebf55018dd7249",
+    "a95564709d0e346ccd9f4fdd195c65216f650174",
+    "586056209352af94432542eaa4865ffb6026b96e",
+    "ec694b8e26248596bddf5f0d6617822b537d0201",
+    "71a6cdf9a7133b7f18c54ae88788fe8d4f2b7798",
+    "d29ffab19faa011ce3afc093ff0b087f3f33763f",
+    "434bfe8feea363bbccfa107c9d24e6a5a5a756f2",
+    "255a4321e5fdaf8d1f88f8efec947a7b0e674947",
+    "fe88cf32c0db9cf5d15f3202c19793ccb5045fbb",
+    "459d4afeac4f379012af4f4d6e233c041fdd16c7",
+    "e77b297b2ecccec54516ba2538bd4f30bb528cb7",
+    "07abf8d563b06610e15d6e277748aedee6c310d2",
+    "db4237de5b592f87d4c8775722bdc5589dce6950",
+    "d9868cea48675bc539618753e8d6292ab75d65e9",
+    "99082dea169edfd63d6d0d53e44f30226000e783",
+    "1618dabcb33c58ce1804bccb2e71df09c140b620",
+    "fed84094f8bd8822542b76820b569235ff6cd98a",
+    "67ed982fef7800a433d55e59ffe9e0da74cad52b",
+    "1ccd9bed77a597e46da58c0c6c8bd2daba7f633c",
+    "0ee5735cc82721915571813bb86d4ec6da6f29f4",
+    "502c37a11fc85045efc1cc7ab019875aba9906a8",
+    "938a0ac8cbd4415ece8db4acf6fcba6217b1cfce",
+    "72fd9c6eb05ac339aace5c8771b6da7ef8de688b",
+    "6cf561669f2861e10a0cecc99ebe93947e65d0b3",
+    "e1ba4c5db4982f4aac36cea2429be505196f7ff9",
+    "9c06013fd519169a0ae86c69438b59f7fb848bd9",
+    "a0fe7b3d93f31f4b3c43555c0a853e2ab892bd8d",
+    "dc10236f085ce06fb6d2ca7808ba00c3f307fc02",
+    "1d7c2d24de19a1c6d8fde96bbfa1215576db37b2",
+    "fc5a3719289a4e0829d97cab642f25c3615b345e",
+    "d1bb4ab4a3ea1dc2463487f593ebe2f7ed6e1704",
+    "6a7ef30b7ef4ecd4c85430aaa1234ad2c1493b3d",
+    "9867f20bf345ae417068e4e248f3ca610679ab67",
+    "89540497d08e70e4a9400ca3f0594d37bbd188ab",
+    "9de4109c60d0abbf4d986815169f04a78ceaf101",
+    "dd16552805b96e7cafc27d7edcd05e15014e4091",
+    "a4154f5822b5ea9bfc117d3fa87666c5b71e4d46",
+    "ca5db110c6eff4afde63016823a546599e49dba6",
+    "80ffb5ab6a8a5f2ce5a02f10a8b131b48d5b0672",
+    "e8e651ded2d19cb62556e14a2e79eec1e897c55d",
+    "73e1915ed4e87b70f4d068beaf3a12c9a4ddbb0a"
+  ],
+  "conflicts": [],
+  "evidence_count": 23
+}

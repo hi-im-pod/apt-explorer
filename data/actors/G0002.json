@@ -1,0 +1,34 @@
+{
+  "id": "G0002",
+  "name": "Moafee",
+  "aliases": [
+    {
+      "value": "Moafee",
+      "sources": [
+        "attack"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "PoisonIvy",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1027.001"
+  ],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 0
+}

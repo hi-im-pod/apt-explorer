@@ -1,0 +1,390 @@
+{
+  "id": "G1008",
+  "name": "SideCopy",
+  "aliases": [
+    {
+      "value": "SideCopy",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TAG-140",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UNC2269",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "White Dev 55",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Mocking Draco",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "PK",
+      "source": "misp"
+    },
+    {
+      "value": "PK",
+      "source": "etda"
+    },
+    {
+      "value": "PK",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "India",
+        "source": "etda"
+      }
+    ],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "Action RAT",
+      "source": "attack"
+    },
+    {
+      "name": "AuTo Stealer",
+      "source": "attack"
+    },
+    {
+      "name": "Action RAT",
+      "source": "malpedia"
+    },
+    {
+      "name": "CurlBack RAT",
+      "source": "malpedia"
+    },
+    {
+      "name": "DRAT",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1016",
+    "T1036.005",
+    "T1059.005",
+    "T1082",
+    "T1105",
+    "T1106",
+    "T1204.002",
+    "T1218.005",
+    "T1518",
+    "T1518.001",
+    "T1566.001",
+    "T1574.001",
+    "T1584.001",
+    "T1598.002",
+    "T1608.001",
+    "T1614"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1005",
+      "count": 3
+    },
+    {
+      "id": "T1012",
+      "count": 3
+    },
+    {
+      "id": "T1041",
+      "count": 3
+    },
+    {
+      "id": "T1047",
+      "count": 3
+    },
+    {
+      "id": "T1082",
+      "count": 3
+    },
+    {
+      "id": "T1140",
+      "count": 3
+    },
+    {
+      "id": "T1204.001",
+      "count": 3
+    },
+    {
+      "id": "T1204.002",
+      "count": 3
+    },
+    {
+      "id": "T1218.005",
+      "count": 3
+    },
+    {
+      "id": "T1518.001",
+      "count": 3
+    },
+    {
+      "id": "T1547.001",
+      "count": 3
+    },
+    {
+      "id": "T1016",
+      "count": 2
+    },
+    {
+      "id": "T1033",
+      "count": 2
+    },
+    {
+      "id": "T1036.005",
+      "count": 2
+    },
+    {
+      "id": "T1036.007",
+      "count": 2
+    },
+    {
+      "id": "T1053.003",
+      "count": 2
+    },
+    {
+      "id": "T1056.001",
+      "count": 2
+    },
+    {
+      "id": "T1057",
+      "count": 2
+    },
+    {
+      "id": "T1059",
+      "count": 2
+    },
+    {
+      "id": "T1071.001",
+      "count": 2
+    },
+    {
+      "id": "T1083",
+      "count": 2
+    },
+    {
+      "id": "T1105",
+      "count": 2
+    },
+    {
+      "id": "T1106",
+      "count": 2
+    },
+    {
+      "id": "T1113",
+      "count": 2
+    },
+    {
+      "id": "T1119",
+      "count": 2
+    },
+    {
+      "id": "T1129",
+      "count": 2
+    },
+    {
+      "id": "T1566.001",
+      "count": 2
+    },
+    {
+      "id": "T1566.002",
+      "count": 2
+    },
+    {
+      "id": "T1571",
+      "count": 2
+    },
+    {
+      "id": "T1583.001",
+      "count": 2
+    },
+    {
+      "id": "T1584.001",
+      "count": 2
+    },
+    {
+      "id": "T1587.001",
+      "count": 2
+    },
+    {
+      "id": "T1588.001",
+      "count": 2
+    },
+    {
+      "id": "T1588.002",
+      "count": 2
+    },
+    {
+      "id": "T1608.001",
+      "count": 2
+    },
+    {
+      "id": "T1608.005",
+      "count": 2
+    },
+    {
+      "id": "T1020",
+      "count": 1
+    },
+    {
+      "id": "T1027",
+      "count": 1
+    },
+    {
+      "id": "T1027.009",
+      "count": 1
+    },
+    {
+      "id": "T1027.010",
+      "count": 1
+    },
+    {
+      "id": "T1059.003",
+      "count": 1
+    },
+    {
+      "id": "T1071.002",
+      "count": 1
+    },
+    {
+      "id": "T1074.001",
+      "count": 1
+    },
+    {
+      "id": "T1123",
+      "count": 1
+    },
+    {
+      "id": "T1125",
+      "count": 1
+    },
+    {
+      "id": "T1547.013",
+      "count": 1
+    },
+    {
+      "id": "T1548.002",
+      "count": 1
+    },
+    {
+      "id": "T1560.001",
+      "count": 1
+    },
+    {
+      "id": "T1567",
+      "count": 1
+    },
+    {
+      "id": "T1573",
+      "count": 1
+    },
+    {
+      "id": "T1585.002",
+      "count": 1
+    },
+    {
+      "id": "T1586.002",
+      "count": 1
+    },
+    {
+      "id": "T1589.002",
+      "count": 1
+    },
+    {
+      "id": "T1620",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2017-0199",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-38831",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2021-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2023-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "595081ab859d0cf8eeedaccbe02707be792584b3",
+    "79f4b1bcebeeb5fb35820153d72dea177ecc15e0",
+    "4bf5f63f9ac5ee363cccdecd9541e313fe8d962c",
+    "6ad77b985f6bb09a34b6c121621cbbc727001a2a",
+    "1391f10eb893f4c3853f113bf29fe8ea7aba8e77",
+    "80aa237c13069511c89ff0c575af09473fb889a7",
+    "54ae563ee5d4d0905ec776281189045c24678cbb",
+    "0eb229d05054aa61c3bcb0f37bf5412b071865ee",
+    "paper:India's%20Chief%20of%20Defence%20Staff%20Crashes%20SideCopy%20APT%20takes%20advantage%20of%20the%20fire",
+    "0b1764f058dae3ad01b60b4d305caecafe09f8e5",
+    "2f44839afed1c12fd6e2e7f0fa8dd38dd632b065"
+  ],
+  "conflicts": [],
+  "evidence_count": 5
+}

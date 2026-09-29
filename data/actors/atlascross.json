@@ -1,0 +1,41 @@
+{
+  "id": "atlascross",
+  "name": "AtlasCross",
+  "aliases": [
+    {
+      "value": "AtlasCross",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2023-Q3",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "63c62490178f8132edad7f598ca3ed960a38c0b6"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

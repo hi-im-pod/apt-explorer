@@ -1,0 +1,232 @@
+{
+  "id": "shamoon-group",
+  "name": "Shamoon Group",
+  "aliases": [
+    {
+      "value": "Shamoon Group",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Cutting Sword of Justice",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IR",
+      "source": "misp"
+    },
+    {
+      "value": "IR",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-1999-0191",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-1999-0262",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2010-2861",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2016-0167",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-20250",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-6055",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2019-0708",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-0797",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-0808",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-0859",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-1132",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-11707",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-11708",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-1367",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-13720",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-1458",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-1653",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-2215",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-3568",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-5786",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-6225",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2019-7286",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-7287",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-8518",
+      "kev": false,
+      "ransomware": null
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2012-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2016-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2017-Q1",
+      "count": 5
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2019-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2021-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "5e8b3c3093f16e6616e5dde5417347e231473aad",
+    "76d82224091c633671b8b446977b773392a1ce7b",
+    "1c873c59e0bdb9d92d2ab7f8381ee7e9ef6a8d4f",
+    "cd05adf64bd3c48cc0345b88b311b1baed6b2f73",
+    "26a35a012cac9774103af2f7166fe120dd2cd3b0",
+    "d6b452fe46682f1bd964eb8cae720076bf30c592",
+    "b5fef4cb068baf09acfce01d418b47f34d2ca4fe",
+    "505326c2819ae627a88306ef2932cabecff36cb7",
+    "2305597122b156bbd6e6cf060cb2e16d36baf1ed",
+    "ef69a55bcde167f26771a40036d65654b497c1a1",
+    "aebe4dc00683af54afeedccaa6d6ed5cf522f5a3",
+    "c6a21866539c9e1f90bd4930fd3a7160ecab9507",
+    "paper:Report_Shamoon_StoneDrill_final",
+    "c38b1d51363d56d47ee4794f35f8e1e665403dfd",
+    "0a2571ced4ece4672ad6ac9d644c220b53a77eeb",
+    "ae49f7d2f9c2ca17387060d0ebdb501b020e87dd",
+    "b340d5c750b8ea980e790c97c9851927a2616862",
+    "c3bcbeece75791e947ca950393a316da24ec1231",
+    "1b6e8d41db6335e17b40ba0bfd60f1e9b6e33b4d",
+    "798bf7121f2276a156f8beb509d7e604d2eb28e5",
+    "bc3eccc11b37e8c2ca130f87a4c17f2166aa701d"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

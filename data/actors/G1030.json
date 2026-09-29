@@ -1,0 +1,251 @@
+{
+  "id": "G1030",
+  "name": "Agrius",
+  "aliases": [
+    {
+      "value": "Agrius",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Pink Sandstorm",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "AMERICIUM",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Agonizing Serpens",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "BlackShadow",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "DEV-0022",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UNC2428",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Black Shadow",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "SPECTRAL KITTEN",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "DEV-0227",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "SharpBoys",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Spectral Kitten",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IR",
+      "source": "misp"
+    },
+    {
+      "value": "IR",
+      "source": "etda"
+    },
+    {
+      "value": "IR",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Sabotage and destruction",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Hong Kong",
+        "source": "etda"
+      },
+      {
+        "value": "Israel",
+        "source": "etda"
+      },
+      {
+        "value": "South Africa",
+        "source": "etda"
+      }
+    ],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "ASPXSpy",
+      "source": "attack"
+    },
+    {
+      "name": "Apostle",
+      "source": "attack"
+    },
+    {
+      "name": "BFG Agonizer",
+      "source": "attack"
+    },
+    {
+      "name": "DEADWOOD",
+      "source": "attack"
+    },
+    {
+      "name": "IPsec Helper",
+      "source": "attack"
+    },
+    {
+      "name": "Mimikatz",
+      "source": "attack"
+    },
+    {
+      "name": "Moneybird",
+      "source": "attack"
+    },
+    {
+      "name": "MultiLayer Wiper",
+      "source": "attack"
+    },
+    {
+      "name": "NBTscan",
+      "source": "attack"
+    },
+    {
+      "name": "Apostle",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1003.001",
+    "T1003.002",
+    "T1005",
+    "T1018",
+    "T1021.001",
+    "T1036",
+    "T1041",
+    "T1046",
+    "T1059.003",
+    "T1074.001",
+    "T1078.002",
+    "T1110",
+    "T1110.003",
+    "T1119",
+    "T1140",
+    "T1190",
+    "T1505.003",
+    "T1543.003",
+    "T1560.001",
+    "T1570",
+    "T1583",
+    "T1685"
+  ],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2018-13379",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2021-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2021-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q4",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "0b57681534b8f5cb21ca7bc51e5658350c44c2bb",
+    "4144b8da662a7f5fc8f52e3ed0dc8c0676870b97",
+    "1a55926bde2b5740c0399b974ae2f8ed7740c660",
+    "40098b9573c4c7ee36352bf50267455134b30cdc",
+    "76d82224091c633671b8b446977b773392a1ce7b",
+    "390434dfaf40212d3bb4503e8ebc3e916ac522c4",
+    "edd147c245dcbf63d18c6f2b96f0cc2afd0476f4",
+    "8f99e28d978b22cfe04a25286d94b10b5b89a9fc"
+  ],
+  "conflicts": [],
+  "evidence_count": 19
+}

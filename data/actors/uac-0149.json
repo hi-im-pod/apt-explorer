@@ -1,0 +1,53 @@
+{
+  "id": "uac-0149",
+  "name": "UAC-0149",
+  "aliases": [
+    {
+      "value": "UAC-0149",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "COOKBOX",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2023-38831",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2024-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2024-Q2",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "5725f0c6a3d7d3148f4de364e2e2a530e70fb7cf",
+    "a2fb44c8490171fba67bf2b31ae18109a3deac29",
+    "d96b698de97bc90cd95474fab0f22d0c673bab1d",
+    "210d36a3aa461fa51e10db19b4fc914ca21986cd"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

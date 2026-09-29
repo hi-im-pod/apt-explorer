@@ -1,0 +1,113 @@
+{
+  "id": "henbox",
+  "name": "HenBox",
+  "aliases": [
+    {
+      "value": "HenBox",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "China",
+      "source": "misp"
+    },
+    {
+      "value": "China",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": [
+      {
+        "value": "Civil society",
+        "source": "misp"
+      },
+      {
+        "value": "Civil society",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "CarbonSteal",
+      "source": "malpedia"
+    },
+    {
+      "name": "DoubleAgent",
+      "source": "malpedia"
+    },
+    {
+      "name": "GoldenEagle",
+      "source": "malpedia"
+    },
+    {
+      "name": "HenBox",
+      "source": "malpedia"
+    },
+    {
+      "name": "SilkBean",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2012-0158",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2018-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "072401ca621f892b99161ba98326a82ece2a24da",
+    "f2a5e4513007b5ab01a805e078256f5e8d10dbc2",
+    "6eb91b46cb6e98fe6f9e4b542d243da97352459f",
+    "b0e615fcf8dbd49c5e0f1c50fe95714b1e6e7926"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

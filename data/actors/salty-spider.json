@@ -1,0 +1,88 @@
+{
+  "id": "salty-spider",
+  "name": "SALTY SPIDER",
+  "aliases": [
+    {
+      "value": "SALTY SPIDER",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Salty Spider",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "RU",
+      "source": "etda"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Financial gain",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2022-2003",
+      "kev": false,
+      "ransomware": null
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2015-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "0a82d1de17d338fa636b15d0d2d499b06cb0f32a",
+    "9b0c3db3a626888087822e73a40a30f389a734f8",
+    "fa3146c7d4e1f91891295e6a15cd5a6c68d7192d",
+    "ff4fdc6922f9040689c5b2027c383f74305b05e4",
+    "8ce74542576ea47e7fffe9a0590a1b2e62b508e9",
+    "9e39c91a8707c1ad2dbbcb7446976f436b07c223",
+    "592fcf14459be0097fb64c1b854a2af05b632ced",
+    "a32e1a4407cc82ee190feded10e009fa13854f4c"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

@@ -1,0 +1,106 @@
+[
+  {
+    "id": "8f0a39ac76b6201ff24553f732bb730fdfc08033",
+    "title": "Virus Bulletin :: Spam from the kernel",
+    "published": "2007-11-01",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://www.virusbulletin.com/virusbulletin/2007/11/spam-kernel",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/8f0a39ac76b6201ff24553f732bb730fdfc08033.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "a34957c7b9599da3df50f600fd49edd62131deda",
+    "title": "Securelist | Kaspersky’s threat research and reports",
+    "published": "2007-10-22",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://de.securelist.com/malware-entwicklung-im-ersten-halbjahr-2007/59574/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/a34957c7b9599da3df50f600fd49edd62131deda.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "91425b85971a490e4cb1bb64446cb19509cb6cdd",
+    "title": "Microsoft Word - BlackEnergy DDoS Bot Analysis.doc",
+    "published": "2007-10-01",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://pds15.egloos.com/pds/201001/01/66/BlackEnergy_DDoS_Bot_Analysis.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/91425b85971a490e4cb1bb64446cb19509cb6cdd.pdf",
+    "actors": [
+      "G0034"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "d97ce2059accb3ad84943994bfe7d551a1849f43",
+    "title": "A Case Study of the Rustock Rootkit and Spam Bot",
+    "published": "2007-04-03",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://www.usenix.org/legacy/event/hotbots07/tech/full_papers/chiang/chiang_html/index.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/d97ce2059accb3ad84943994bfe7d551a1849f43.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "3ec0180dea841ad0c31fee5e0acc5c2c5b140fe9",
+    "title": "Microsoft Word - TR62.doc",
+    "published": "2007-03-13",
+    "date_basis": "file-metadata",
+    "organisation": null,
+    "url": "https://apps.dtic.mil/sti/pdfs/ADA466332.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/3ec0180dea841ad0c31fee5e0acc5c2c5b140fe9.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "bc38dd9115119af6e63396d760364e0701e4393b",
+    "title": "2016-08-08 - Strider- Cyberespionage group turns eye of Sauron on targets",
+    "published": "2007-01-23",
+    "date_basis": "file-metadata",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/ICS%20SCADA/ICS%20Vulnerabilities/Top%2010%20Vulnerabilities%20of%20Control%20Systems%20and%20their%20Mitigations%20(2007).pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/bc38dd9115119af6e63396d760364e0701e4393b.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  }
+]

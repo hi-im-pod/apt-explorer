@@ -1,0 +1,58 @@
+{
+  "id": "twisted-panda",
+  "name": "Twisted Panda",
+  "aliases": [
+    {
+      "value": "Twisted Panda",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "etda"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Belarus",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Defense",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2022-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "paper:Twisted%20Panda%20Chinese%20APT%20Launch%20Spy%20Operation%20Against%20Russian%20Defence%20Institutes"
+  ],
+  "conflicts": [],
+  "evidence_count": 0
+}

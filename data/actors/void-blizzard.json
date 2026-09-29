@@ -1,0 +1,242 @@
+{
+  "id": "void-blizzard",
+  "name": "Void Blizzard",
+  "aliases": [
+    {
+      "value": "Void Blizzard",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Laundry Bear",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "LAUNDRY BEAR",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UAC-0190",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TA488",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "RU",
+      "source": "misp"
+    },
+    {
+      "value": "RU",
+      "source": "etda"
+    },
+    {
+      "value": "RU",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Ukraine",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Education",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Healthcare",
+        "source": "etda"
+      },
+      {
+        "value": "IT",
+        "source": "etda"
+      },
+      {
+        "value": "Law enforcement",
+        "source": "etda"
+      },
+      {
+        "value": "Media",
+        "source": "etda"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "etda"
+      },
+      {
+        "value": "Transportation",
+        "source": "etda"
+      },
+      {
+        "value": "NGOs",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "PLUGGYAPE",
+      "source": "malpedia"
+    },
+    {
+      "name": "ZimReaper",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [
+    {
+      "id": "T1027",
+      "count": 1
+    },
+    {
+      "id": "T1041",
+      "count": 1
+    },
+    {
+      "id": "T1059.007",
+      "count": 1
+    },
+    {
+      "id": "T1069",
+      "count": 1
+    },
+    {
+      "id": "T1071.004",
+      "count": 1
+    },
+    {
+      "id": "T1082",
+      "count": 1
+    },
+    {
+      "id": "T1087.003",
+      "count": 1
+    },
+    {
+      "id": "T1098.001",
+      "count": 1
+    },
+    {
+      "id": "T1111",
+      "count": 1
+    },
+    {
+      "id": "T1114.002",
+      "count": 1
+    },
+    {
+      "id": "T1120",
+      "count": 1
+    },
+    {
+      "id": "T1185",
+      "count": 1
+    },
+    {
+      "id": "T1203",
+      "count": 1
+    },
+    {
+      "id": "T1213",
+      "count": 1
+    },
+    {
+      "id": "T1528",
+      "count": 1
+    },
+    {
+      "id": "T1539",
+      "count": 1
+    },
+    {
+      "id": "T1555.003",
+      "count": 1
+    },
+    {
+      "id": "T1564.001",
+      "count": 1
+    },
+    {
+      "id": "T1566.001",
+      "count": 1
+    },
+    {
+      "id": "T1583.001",
+      "count": 1
+    },
+    {
+      "id": "T1586.002",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2025-66376",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2026-42897",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2026-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2026-Q3",
+      "count": 3
+    }
+  ],
+  "reports": [
+    "b46c384eb9dd5c869609ff98d172c7d2c6a8aed9",
+    "b7eb971ea359a3a964bdad7f43dd41b5fb440b6c",
+    "fe96a5810d98d95689e4666c53052e86edf78403",
+    "2526e6723356947617bc3897edceec7d9c7b08a7",
+    "fb033541c7f191f6c9dc830859661c80de4a8f5a"
+  ],
+  "conflicts": [],
+  "evidence_count": 6
+}

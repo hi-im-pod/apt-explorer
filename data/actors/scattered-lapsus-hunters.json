@@ -1,0 +1,35 @@
+{
+  "id": "scattered-lapsus-hunters",
+  "name": "Scattered Lapsus Hunters",
+  "aliases": [
+    {
+      "value": "Scattered Lapsus Hunters",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Scattered Lapsus$ Hunters",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 1
+}

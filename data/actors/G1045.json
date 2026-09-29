@@ -1,0 +1,592 @@
+{
+  "id": "G1045",
+  "name": "Salt Typhoon",
+  "aliases": [
+    {
+      "value": "Salt Typhoon",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "GhostEmperor",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UNC2286",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "FamousSparrow",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Earth Estries",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "RedMike",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "OPERATOR PANDA",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Operator Panda",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "etda"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Afghanistan",
+        "source": "etda"
+      },
+      {
+        "value": "Argentina",
+        "source": "etda"
+      },
+      {
+        "value": "Bangladesh",
+        "source": "etda"
+      },
+      {
+        "value": "Brazil",
+        "source": "etda"
+      },
+      {
+        "value": "Burkina Faso",
+        "source": "etda"
+      },
+      {
+        "value": "Canada",
+        "source": "etda"
+      },
+      {
+        "value": "Egypt",
+        "source": "etda"
+      },
+      {
+        "value": "Ethiopia",
+        "source": "etda"
+      },
+      {
+        "value": "France",
+        "source": "etda"
+      },
+      {
+        "value": "Germany",
+        "source": "etda"
+      },
+      {
+        "value": "Guatemala",
+        "source": "etda"
+      },
+      {
+        "value": "India",
+        "source": "etda"
+      },
+      {
+        "value": "Indonesia",
+        "source": "etda"
+      },
+      {
+        "value": "Israel",
+        "source": "etda"
+      },
+      {
+        "value": "Lithuania",
+        "source": "etda"
+      },
+      {
+        "value": "Malaysia",
+        "source": "etda"
+      },
+      {
+        "value": "Mexico",
+        "source": "etda"
+      },
+      {
+        "value": "Netherlands",
+        "source": "etda"
+      },
+      {
+        "value": "Pakistan",
+        "source": "etda"
+      },
+      {
+        "value": "Philippines",
+        "source": "etda"
+      },
+      {
+        "value": "Saudi Arabia",
+        "source": "etda"
+      },
+      {
+        "value": "Singapore",
+        "source": "etda"
+      },
+      {
+        "value": "South Africa",
+        "source": "etda"
+      },
+      {
+        "value": "Eswatini",
+        "source": "etda"
+      },
+      {
+        "value": "Taiwan",
+        "source": "etda"
+      },
+      {
+        "value": "Thailand",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      },
+      {
+        "value": "Vietnam",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Chemical",
+        "source": "etda"
+      },
+      {
+        "value": "Education",
+        "source": "etda"
+      },
+      {
+        "value": "Engineering",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Hospitality",
+        "source": "etda"
+      },
+      {
+        "value": "Technology",
+        "source": "etda"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "etda"
+      },
+      {
+        "value": "Transportation",
+        "source": "etda"
+      },
+      {
+        "value": "NGOs",
+        "source": "etda"
+      },
+      {
+        "value": "law firms",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "JumbledPath",
+      "source": "attack"
+    },
+    {
+      "name": "DracuLoader",
+      "source": "malpedia"
+    },
+    {
+      "name": "HemiGate",
+      "source": "malpedia"
+    },
+    {
+      "name": "MASOL",
+      "source": "malpedia"
+    },
+    {
+      "name": "SNAPPYBEE",
+      "source": "malpedia"
+    },
+    {
+      "name": "SparrowDoor",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1021.004",
+    "T1040",
+    "T1048.003",
+    "T1098.004",
+    "T1110.002",
+    "T1136",
+    "T1190",
+    "T1572",
+    "T1587.001",
+    "T1588.002",
+    "T1590.004",
+    "T1602.002",
+    "T1685.006",
+    "T1686"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1095",
+      "count": 2
+    },
+    {
+      "id": "T1190",
+      "count": 2
+    },
+    {
+      "id": "T1574.001",
+      "count": 2
+    },
+    {
+      "id": "T1005",
+      "count": 1
+    },
+    {
+      "id": "T1027.007",
+      "count": 1
+    },
+    {
+      "id": "T1033",
+      "count": 1
+    },
+    {
+      "id": "T1036.001",
+      "count": 1
+    },
+    {
+      "id": "T1036.004",
+      "count": 1
+    },
+    {
+      "id": "T1041",
+      "count": 1
+    },
+    {
+      "id": "T1059.003",
+      "count": 1
+    },
+    {
+      "id": "T1070.004",
+      "count": 1
+    },
+    {
+      "id": "T1070.009",
+      "count": 1
+    },
+    {
+      "id": "T1071",
+      "count": 1
+    },
+    {
+      "id": "T1071.001",
+      "count": 1
+    },
+    {
+      "id": "T1082",
+      "count": 1
+    },
+    {
+      "id": "T1083",
+      "count": 1
+    },
+    {
+      "id": "T1090.001",
+      "count": 1
+    },
+    {
+      "id": "T1090.002",
+      "count": 1
+    },
+    {
+      "id": "T1105",
+      "count": 1
+    },
+    {
+      "id": "T1106",
+      "count": 1
+    },
+    {
+      "id": "T1113",
+      "count": 1
+    },
+    {
+      "id": "T1120",
+      "count": 1
+    },
+    {
+      "id": "T1134.002",
+      "count": 1
+    },
+    {
+      "id": "T1140",
+      "count": 1
+    },
+    {
+      "id": "T1480.002",
+      "count": 1
+    },
+    {
+      "id": "T1543.003",
+      "count": 1
+    },
+    {
+      "id": "T1547.001",
+      "count": 1
+    },
+    {
+      "id": "T1559",
+      "count": 1
+    },
+    {
+      "id": "T1564.010",
+      "count": 1
+    },
+    {
+      "id": "T1569.002",
+      "count": 1
+    },
+    {
+      "id": "T1571",
+      "count": 1
+    },
+    {
+      "id": "T1573.001",
+      "count": 1
+    },
+    {
+      "id": "T1573.002",
+      "count": 1
+    },
+    {
+      "id": "T1583.003",
+      "count": 1
+    },
+    {
+      "id": "T1587.001",
+      "count": 1
+    },
+    {
+      "id": "T1608.001",
+      "count": 1
+    },
+    {
+      "id": "T1620",
+      "count": 1
+    },
+    {
+      "id": "T1665",
+      "count": 1
+    },
+    {
+      "id": "T1680",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2018-0171",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-31207",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-34473",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-34523",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-3236",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2023-20198",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2023-20273",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2023-46805",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-48788",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-20399",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2024-21887",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2025-0994",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2025-5777",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2021-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2024-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2025-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2026-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2026-Q3",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "0bbe08391e07869882c39a9bbe8de8537363be06",
+    "5ac892de5893e31aa9af699a2d232851010722a8",
+    "9c822f6005a986f77601350ad62f5a72645582b6",
+    "689943b5bfe46cd6760ab71ba49903b98e886278",
+    "2d8689276cb6d2c62c3d8a0508dded33378782ce",
+    "fa0b2245a64f141c0908dd087baee7e7d9e4125e",
+    "6db70921dc6506a517c5bde1e9945d382d04bc59",
+    "d365ab462127b407a36eb3696d11e2fcdf1a0508",
+    "ccd36642686bd01fba70006ad6392a4fd3768c12",
+    "d56881263ebd54121556ce60a18451deda0df261",
+    "d46ca97249f49dd39e6c7989805583a6f3a5b2ae",
+    "aac3f85bef8083fa7ef88e174324c3c28b856e8a",
+    "0a4e2f1f417516c70cb0e5003ec074fb46552b22",
+    "df30aebd709abcf1541ec658a365200859c49507",
+    "b0265691d1be7cebe55f42db672f6840486cb924",
+    "2262c24115e3030b2c4a9eead986751226d2dc4d",
+    "c92752ce6b098bf1ddb085dd539ac67d58b3ec27",
+    "0acf53ba83aaabb027f6e37905690e36bf7ef6e4",
+    "a90fa85bbe07c14057eee1835edf3af5721d9597",
+    "294d42c456a41c69c9068df0f5eaffc93b132377"
+  ],
+  "conflicts": [],
+  "evidence_count": 15
+}

@@ -1,0 +1,160 @@
+{
+  "id": "G0077",
+  "name": "Leafminer",
+  "aliases": [
+    {
+      "value": "Leafminer",
+      "sources": [
+        "attack",
+        "etda"
+      ]
+    },
+    {
+      "value": "Raspite",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Flash Kitten",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "RASPITE",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "LeafMiner",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IR",
+      "source": "etda"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Israel",
+        "source": "etda"
+      },
+      {
+        "value": "Kuwait",
+        "source": "etda"
+      },
+      {
+        "value": "Lebanon",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Electric",
+        "source": "misp"
+      },
+      {
+        "value": "Energy",
+        "source": "etda"
+      },
+      {
+        "value": "Financial",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Transportation",
+        "source": "etda"
+      },
+      {
+        "value": "Electric",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "LaZagne",
+      "source": "attack"
+    },
+    {
+      "name": "MailSniper",
+      "source": "attack"
+    },
+    {
+      "name": "Mimikatz",
+      "source": "attack"
+    },
+    {
+      "name": "PsExec",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1003.001",
+    "T1003.004",
+    "T1003.005",
+    "T1018",
+    "T1027.010",
+    "T1046",
+    "T1055.013",
+    "T1059.007",
+    "T1083",
+    "T1110.003",
+    "T1114.002",
+    "T1136.001",
+    "T1189",
+    "T1552.001",
+    "T1555",
+    "T1555.003",
+    "T1588.002"
+  ],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2014-0160",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2018-Q3",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "332752e71bda8d3da3eba84ee6d6ba829bf1eafb",
+    "6fe9b74cc2aa8aa7d37283456094cc1a4895e2ab"
+  ],
+  "conflicts": [],
+  "evidence_count": 8
+}

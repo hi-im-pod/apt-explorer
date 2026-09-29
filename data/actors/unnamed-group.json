@@ -1,0 +1,308 @@
+{
+  "id": "unnamed-group",
+  "name": "[Unnamed group]",
+  "aliases": [
+    {
+      "value": "[Unnamed group]",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "Calfbot",
+      "source": "malpedia"
+    },
+    {
+      "name": "DEVMAN",
+      "source": "malpedia"
+    },
+    {
+      "name": "FiveHands",
+      "source": "malpedia"
+    },
+    {
+      "name": "SombRAT",
+      "source": "malpedia"
+    },
+    {
+      "name": "puzzlemaker",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [
+    {
+      "id": "T1486",
+      "count": 2
+    },
+    {
+      "id": "T1003.001",
+      "count": 1
+    },
+    {
+      "id": "T1005",
+      "count": 1
+    },
+    {
+      "id": "T1016",
+      "count": 1
+    },
+    {
+      "id": "T1018",
+      "count": 1
+    },
+    {
+      "id": "T1021.001",
+      "count": 1
+    },
+    {
+      "id": "T1027",
+      "count": 1
+    },
+    {
+      "id": "T1053.005",
+      "count": 1
+    },
+    {
+      "id": "T1059.001",
+      "count": 1
+    },
+    {
+      "id": "T1070",
+      "count": 1
+    },
+    {
+      "id": "T1071.001",
+      "count": 1
+    },
+    {
+      "id": "T1078",
+      "count": 1
+    },
+    {
+      "id": "T1078.002",
+      "count": 1
+    },
+    {
+      "id": "T1082",
+      "count": 1
+    },
+    {
+      "id": "T1083",
+      "count": 1
+    },
+    {
+      "id": "T1135",
+      "count": 1
+    },
+    {
+      "id": "T1204.002",
+      "count": 1
+    },
+    {
+      "id": "T1482",
+      "count": 1
+    },
+    {
+      "id": "T1490",
+      "count": 1
+    },
+    {
+      "id": "T1543.003",
+      "count": 1
+    },
+    {
+      "id": "T1547.001",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2018-13379",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-0604",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-11510",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-19781",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-10189",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-8243",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-8260",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-1675",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-20016",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-21220",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-21224",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-22894",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-22899",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-22900",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-30116",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-31207",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-31955",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-31956",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-34527",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-40444",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-44228",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-30190",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2026-21236",
+      "kev": false,
+      "ransomware": null
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2020-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q2",
+      "count": 9
+    },
+    {
+      "quarter": "2021-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2024-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q3",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "2e74b32e7bb6718afa38566937336bc5bc1c6c50",
+    "be85714cb00c2f41768cae858da6fac4c5678eb8",
+    "64f9829c09b2bf58ac7b7f43851ae7a2ece1bc48",
+    "ce5d10c27ebe02cbd88e5a8020c11412cfccc5f4",
+    "736317860bb65785ba712359c8b547127ade2338",
+    "19a58dc123f0b62e8565c5c4753e735d3f57d0f5",
+    "cc5efdd12549a38850cd5da35731c0ed460efd67",
+    "2910a11a2efbd057665917bd8c7b848c4c38ce3d",
+    "933fddcfd431eb68dc5a5918d34ad5a613d22177",
+    "3a9ee924b3e4ad9e217dfe3798b4bd911a589eb5",
+    "d272a3bd0d1ad4f30533ed6e897145af64e85ff5",
+    "14a508bb67653fa47c17d10c942e100e0403d144",
+    "166ccfe88fc1ed66462f341c1cb5147c3b814513",
+    "c1ad568ce93baec700467536c76fc21174bca41f",
+    "2c542855e3338d6622fcda44c94539eddab3d6ba",
+    "4e395faf8f096bc406d112d207086d65aef73412",
+    "d011a495f861df8128160f7968bdc866aa45c39d",
+    "4cf44882bff6f955dc0224d7aae112c0d03636f1",
+    "597502602df9b03c54f3f1940033d0a9964933f7",
+    "ada1cd65aa7a6196298a5e975d3b31099c036ad8"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

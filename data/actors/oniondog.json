@@ -1,0 +1,133 @@
+{
+  "id": "oniondog",
+  "name": "OnionDog",
+  "aliases": [
+    {
+      "value": "OnionDog",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "KP",
+      "source": "misp"
+    },
+    {
+      "value": "KR",
+      "source": "etda"
+    },
+    {
+      "value": "KP",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "Unknown",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "South Korea",
+        "source": "misp"
+      },
+      {
+        "value": "South Korea",
+        "source": "etda"
+      },
+      {
+        "value": "South Korea",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Private sector",
+        "source": "misp"
+      },
+      {
+        "value": "Energy",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Transportation",
+        "source": "etda"
+      },
+      {
+        "value": "Utilities",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      },
+      {
+        "value": "Private sector",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2016-Q1",
+      "count": 3
+    }
+  ],
+  "reports": [
+    "b663a72af28076084dd8a428ee02c24c37764e09",
+    "840c190b2e0b88ba64935b320a1b3162d6e264ba",
+    "df5f02460e3c9645924403b70b2a38154f58c506"
+  ],
+  "conflicts": [
+    {
+      "field": "origin",
+      "values": [
+        {
+          "value": "KP",
+          "source": "misp"
+        },
+        {
+          "value": "KR",
+          "source": "etda"
+        },
+        {
+          "value": "KP",
+          "source": "malpedia"
+        }
+      ]
+    }
+  ],
+  "evidence_count": 2
+}

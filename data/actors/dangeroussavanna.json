@@ -1,0 +1,69 @@
+{
+  "id": "dangeroussavanna",
+  "name": "DangerousSavanna",
+  "aliases": [
+    {
+      "value": "DangerousSavanna",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Côte d'Ivoire",
+        "source": "misp"
+      },
+      {
+        "value": "Morocco",
+        "source": "misp"
+      },
+      {
+        "value": "Cameroon",
+        "source": "misp"
+      },
+      {
+        "value": "Senegal",
+        "source": "misp"
+      },
+      {
+        "value": "Togo",
+        "source": "misp"
+      },
+      {
+        "value": "Côte d'Ivoire",
+        "source": "malpedia"
+      },
+      {
+        "value": "Morocco",
+        "source": "malpedia"
+      },
+      {
+        "value": "Cameroon",
+        "source": "malpedia"
+      },
+      {
+        "value": "Senegal",
+        "source": "malpedia"
+      },
+      {
+        "value": "Togo",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 1
+}

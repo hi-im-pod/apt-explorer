@@ -1,0 +1,75 @@
+{
+  "id": "higaisa-2",
+  "name": "Higaisa",
+  "aliases": [
+    {
+      "value": "Higaisa",
+      "sources": [
+        "misp"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "KR",
+      "source": "misp"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "Korea (Republic of)",
+      "source": "misp"
+    }
+  ],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "China",
+        "source": "misp"
+      },
+      {
+        "value": "North Korea",
+        "source": "misp"
+      },
+      {
+        "value": "Japan",
+        "source": "misp"
+      },
+      {
+        "value": "Nepal",
+        "source": "misp"
+      },
+      {
+        "value": "Singapore",
+        "source": "misp"
+      },
+      {
+        "value": "Russia",
+        "source": "misp"
+      },
+      {
+        "value": "Poland",
+        "source": "misp"
+      },
+      {
+        "value": "Switzerland",
+        "source": "misp"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "misp"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 0
+}

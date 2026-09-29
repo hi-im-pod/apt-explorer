@@ -1,0 +1,519 @@
+{
+  "id": "G0114",
+  "name": "Chimera",
+  "aliases": [
+    {
+      "value": "Chimera",
+      "sources": [
+        "attack",
+        "etda"
+      ]
+    },
+    {
+      "value": "Red Charon",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "BRONZE VAPOR",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Bronze Vapor",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "THORIUM",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Tumbleweed Typhoon",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Nuclear Taurus",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "etda"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Taiwan",
+        "source": "misp"
+      },
+      {
+        "value": "Netherlands",
+        "source": "etda"
+      },
+      {
+        "value": "Taiwan",
+        "source": "etda"
+      },
+      {
+        "value": "Taiwan",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Semiconductor Industry",
+        "source": "misp"
+      },
+      {
+        "value": "Aviation",
+        "source": "etda"
+      },
+      {
+        "value": "High-Tech",
+        "source": "etda"
+      },
+      {
+        "value": "Semiconductor Industry",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "BloodHound",
+      "source": "attack"
+    },
+    {
+      "name": "Cobalt Strike",
+      "source": "attack"
+    },
+    {
+      "name": "Mimikatz",
+      "source": "attack"
+    },
+    {
+      "name": "Net",
+      "source": "attack"
+    },
+    {
+      "name": "PsExec",
+      "source": "attack"
+    },
+    {
+      "name": "esentutl",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1003.003",
+    "T1007",
+    "T1012",
+    "T1016",
+    "T1018",
+    "T1021.001",
+    "T1021.002",
+    "T1021.006",
+    "T1027.010",
+    "T1033",
+    "T1036.005",
+    "T1039",
+    "T1041",
+    "T1046",
+    "T1047",
+    "T1049",
+    "T1053.005",
+    "T1057",
+    "T1059.001",
+    "T1059.003",
+    "T1069.001",
+    "T1070.004",
+    "T1070.006",
+    "T1071.001",
+    "T1071.004",
+    "T1074.001",
+    "T1074.002",
+    "T1078",
+    "T1078.002",
+    "T1083",
+    "T1087.001",
+    "T1087.002",
+    "T1105",
+    "T1106",
+    "T1110.003",
+    "T1110.004",
+    "T1111",
+    "T1114.001",
+    "T1114.002",
+    "T1119",
+    "T1124",
+    "T1133",
+    "T1135",
+    "T1201",
+    "T1213.002",
+    "T1217",
+    "T1482",
+    "T1550.002",
+    "T1556.001",
+    "T1560.001",
+    "T1567.002",
+    "T1569.002",
+    "T1570",
+    "T1572",
+    "T1574.001",
+    "T1588.002",
+    "T1589.001",
+    "T1680",
+    "T1685.005"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1003",
+      "count": 1
+    },
+    {
+      "id": "T1003.001",
+      "count": 1
+    },
+    {
+      "id": "T1003.003",
+      "count": 1
+    },
+    {
+      "id": "T1005",
+      "count": 1
+    },
+    {
+      "id": "T1007",
+      "count": 1
+    },
+    {
+      "id": "T1012",
+      "count": 1
+    },
+    {
+      "id": "T1016",
+      "count": 1
+    },
+    {
+      "id": "T1018",
+      "count": 1
+    },
+    {
+      "id": "T1020",
+      "count": 1
+    },
+    {
+      "id": "T1021",
+      "count": 1
+    },
+    {
+      "id": "T1021.002",
+      "count": 1
+    },
+    {
+      "id": "T1021.004",
+      "count": 1
+    },
+    {
+      "id": "T1021.006",
+      "count": 1
+    },
+    {
+      "id": "T1030",
+      "count": 1
+    },
+    {
+      "id": "T1033",
+      "count": 1
+    },
+    {
+      "id": "T1036",
+      "count": 1
+    },
+    {
+      "id": "T1036.003",
+      "count": 1
+    },
+    {
+      "id": "T1036.005",
+      "count": 1
+    },
+    {
+      "id": "T1039",
+      "count": 1
+    },
+    {
+      "id": "T1041",
+      "count": 1
+    },
+    {
+      "id": "T1046",
+      "count": 1
+    },
+    {
+      "id": "T1047",
+      "count": 1
+    },
+    {
+      "id": "T1049",
+      "count": 1
+    },
+    {
+      "id": "T1053",
+      "count": 1
+    },
+    {
+      "id": "T1053.005",
+      "count": 1
+    },
+    {
+      "id": "T1057",
+      "count": 1
+    },
+    {
+      "id": "T1059",
+      "count": 1
+    },
+    {
+      "id": "T1059.001",
+      "count": 1
+    },
+    {
+      "id": "T1059.003",
+      "count": 1
+    },
+    {
+      "id": "T1069",
+      "count": 1
+    },
+    {
+      "id": "T1070",
+      "count": 1
+    },
+    {
+      "id": "T1070.004",
+      "count": 1
+    },
+    {
+      "id": "T1070.006",
+      "count": 1
+    },
+    {
+      "id": "T1071",
+      "count": 1
+    },
+    {
+      "id": "T1071.001",
+      "count": 1
+    },
+    {
+      "id": "T1071.004",
+      "count": 1
+    },
+    {
+      "id": "T1074",
+      "count": 1
+    },
+    {
+      "id": "T1074.001",
+      "count": 1
+    },
+    {
+      "id": "T1074.002",
+      "count": 1
+    },
+    {
+      "id": "T1078",
+      "count": 1
+    },
+    {
+      "id": "T1082",
+      "count": 1
+    },
+    {
+      "id": "T1083",
+      "count": 1
+    },
+    {
+      "id": "T1087",
+      "count": 1
+    },
+    {
+      "id": "T1087.001",
+      "count": 1
+    },
+    {
+      "id": "T1087.002",
+      "count": 1
+    },
+    {
+      "id": "T1110",
+      "count": 1
+    },
+    {
+      "id": "T1110.003",
+      "count": 1
+    },
+    {
+      "id": "T1110.004",
+      "count": 1
+    },
+    {
+      "id": "T1111",
+      "count": 1
+    },
+    {
+      "id": "T1114",
+      "count": 1
+    },
+    {
+      "id": "T1114.001",
+      "count": 1
+    },
+    {
+      "id": "T1119",
+      "count": 1
+    },
+    {
+      "id": "T1124",
+      "count": 1
+    },
+    {
+      "id": "T1133",
+      "count": 1
+    },
+    {
+      "id": "T1135",
+      "count": 1
+    },
+    {
+      "id": "T1140",
+      "count": 1
+    },
+    {
+      "id": "T1213",
+      "count": 1
+    },
+    {
+      "id": "T1213.002",
+      "count": 1
+    },
+    {
+      "id": "T1217",
+      "count": 1
+    },
+    {
+      "id": "T1482",
+      "count": 1
+    },
+    {
+      "id": "T1550",
+      "count": 1
+    },
+    {
+      "id": "T1550.002",
+      "count": 1
+    },
+    {
+      "id": "T1560",
+      "count": 1
+    },
+    {
+      "id": "T1560.001",
+      "count": 1
+    },
+    {
+      "id": "T1567",
+      "count": 1
+    },
+    {
+      "id": "T1567.002",
+      "count": 1
+    },
+    {
+      "id": "T1569",
+      "count": 1
+    },
+    {
+      "id": "T1569.002",
+      "count": 1
+    },
+    {
+      "id": "T1570",
+      "count": 1
+    },
+    {
+      "id": "T1572",
+      "count": 1
+    },
+    {
+      "id": "T1573",
+      "count": 1
+    },
+    {
+      "id": "T1573.002",
+      "count": 1
+    },
+    {
+      "id": "T1574",
+      "count": 1
+    }
+  ],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2020-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "c527e7648e148e65f269d9c75cd233fc19c6addb",
+    "1c5b2a04552c20a61d6cc296479e309a0316208c",
+    "27e37961690bb9c0fd761127ef68a84fdaab3548",
+    "6a5077e6dac44c1ba63d36b7562496996f56032a"
+  ],
+  "conflicts": [],
+  "evidence_count": 5
+}

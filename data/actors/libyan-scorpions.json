@@ -1,0 +1,73 @@
+{
+  "id": "libyan-scorpions",
+  "name": "Libyan Scorpions",
+  "aliases": [
+    {
+      "value": "Libyan Scorpions",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "LY",
+      "source": "misp"
+    },
+    {
+      "value": "LY",
+      "source": "etda"
+    },
+    {
+      "value": "LY",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Libya",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Intelligence",
+        "source": "misp"
+      },
+      {
+        "value": "Influencers and political figures",
+        "source": "etda"
+      },
+      {
+        "value": "Intelligence",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2016-Q3",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "528e04eea263ae76084664f0c77f51ab500f50b3",
+    "9030bce0306febd7e94fd047d480512583889389"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

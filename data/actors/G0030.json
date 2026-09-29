@@ -1,0 +1,580 @@
+{
+  "id": "G0030",
+  "name": "Lotus Blossom",
+  "aliases": [
+    {
+      "value": "Lotus Blossom",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Spring Dragon",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Thrip",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "DRAGONFISH",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Billbug",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Red Salamander",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "LOTUS PANDA",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "ST Group",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "BRONZE ELGIN",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "ATK1",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Lotus BLossom",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "ATK78",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "RADIUM",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Raspberry Typhoon",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Bilbug",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Dragonfish",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Bronze Elgin",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "CTG-8171",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "ATK 1",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "ATK 78",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "etda"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "China",
+      "source": "misp"
+    },
+    {
+      "value": "China",
+      "source": "malpedia"
+    },
+    {
+      "value": "Unknown",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Japan",
+        "source": "misp"
+      },
+      {
+        "value": "Philippines",
+        "source": "misp"
+      },
+      {
+        "value": "Hong Kong",
+        "source": "misp"
+      },
+      {
+        "value": "Indonesia",
+        "source": "misp"
+      },
+      {
+        "value": "Taiwan",
+        "source": "misp"
+      },
+      {
+        "value": "Vietnam",
+        "source": "misp"
+      },
+      {
+        "value": "United States",
+        "source": "misp"
+      },
+      {
+        "value": "Brunei",
+        "source": "etda"
+      },
+      {
+        "value": "Cambodia",
+        "source": "etda"
+      },
+      {
+        "value": "Hong Kong",
+        "source": "etda"
+      },
+      {
+        "value": "Indonesia",
+        "source": "etda"
+      },
+      {
+        "value": "Japan",
+        "source": "etda"
+      },
+      {
+        "value": "Laos",
+        "source": "etda"
+      },
+      {
+        "value": "Macao",
+        "source": "etda"
+      },
+      {
+        "value": "Malaysia",
+        "source": "etda"
+      },
+      {
+        "value": "Myanmar",
+        "source": "etda"
+      },
+      {
+        "value": "Philippines",
+        "source": "etda"
+      },
+      {
+        "value": "Singapore",
+        "source": "etda"
+      },
+      {
+        "value": "Taiwan",
+        "source": "etda"
+      },
+      {
+        "value": "Thailand",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      },
+      {
+        "value": "Vietnam",
+        "source": "etda"
+      },
+      {
+        "value": "Japan",
+        "source": "malpedia"
+      },
+      {
+        "value": "Philippines",
+        "source": "malpedia"
+      },
+      {
+        "value": "Hong Kong",
+        "source": "malpedia"
+      },
+      {
+        "value": "Indonesia",
+        "source": "malpedia"
+      },
+      {
+        "value": "Taiwan",
+        "source": "malpedia"
+      },
+      {
+        "value": "Vietnam",
+        "source": "malpedia"
+      },
+      {
+        "value": "United States",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Military",
+        "source": "misp"
+      },
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Government, Administration",
+        "source": "misp"
+      },
+      {
+        "value": "Private sector",
+        "source": "misp"
+      },
+      {
+        "value": "Aerospace",
+        "source": "etda"
+      },
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Education",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "High-Tech",
+        "source": "etda"
+      },
+      {
+        "value": "Satellites",
+        "source": "etda"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "etda"
+      },
+      {
+        "value": "Military",
+        "source": "malpedia"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      },
+      {
+        "value": "Government, Administration",
+        "source": "malpedia"
+      },
+      {
+        "value": "Private sector",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "AdFind",
+      "source": "attack"
+    },
+    {
+      "name": "Elise",
+      "source": "attack"
+    },
+    {
+      "name": "Emissary",
+      "source": "attack"
+    },
+    {
+      "name": "Hannotog",
+      "source": "attack"
+    },
+    {
+      "name": "Impacket",
+      "source": "attack"
+    },
+    {
+      "name": "NBTscan",
+      "source": "attack"
+    },
+    {
+      "name": "Ping",
+      "source": "attack"
+    },
+    {
+      "name": "Sagerunex",
+      "source": "attack"
+    },
+    {
+      "name": "certutil",
+      "source": "attack"
+    },
+    {
+      "name": "Chrysalis",
+      "source": "malpedia"
+    },
+    {
+      "name": "Sagerunex",
+      "source": "malpedia"
+    },
+    {
+      "name": "Catchamas",
+      "source": "malpedia"
+    },
+    {
+      "name": "Rikamanu",
+      "source": "malpedia"
+    },
+    {
+      "name": "Spedear",
+      "source": "malpedia"
+    },
+    {
+      "name": "WMI Ghost",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1012",
+    "T1016",
+    "T1016.001",
+    "T1018",
+    "T1046",
+    "T1047",
+    "T1049",
+    "T1074.001",
+    "T1083",
+    "T1087.001",
+    "T1087.002",
+    "T1090.001",
+    "T1090.003",
+    "T1112",
+    "T1134",
+    "T1482",
+    "T1539",
+    "T1543.003",
+    "T1560.001",
+    "T1560.003",
+    "T1588.002"
+  ],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2009-3129",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2010-0188",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2010-2883",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2010-3333",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2012-0158",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2012-1856",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2013-2729",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2013-5990",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2014-1761",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2014-4114",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2014-6332",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2015-3113",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-11882",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-0802",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2014-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2014-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2015-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2015-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2016-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2019-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 4
+    }
+  ],
+  "reports": [
+    "2e7c4e1fccea3de15d43482a10e7f69e543ba3c6",
+    "89d52c5903d7584dbaf756fff7acf700be7e2ac5",
+    "aec24163a02d978fa755305b1cc865aa49c9361e",
+    "bc70d78d2119f95c53618648d5819752be71649a",
+    "537bd87d34bbeab8077bb7e199475a9dffa9f58f",
+    "f4036e666095678b4051549ce5091f442df8fe2e",
+    "70fae1539b2e714ac6876d64dacbead9671fc003",
+    "93269fb4566d06a8bc741fe1498cf33c5ce5a9bc",
+    "8a5dd7e1cb4e277dbdf8323aeda0d79dce182249",
+    "9cd1ca5133ac7d86efbbf3b0700028b9b3524374",
+    "paper:unit42-operation-lotus-blossom",
+    "76c546c2e97b8e9c430d9a0678c23784f175d9d2",
+    "paper:FTA%201012%20STTEAM%20Final"
+  ],
+  "conflicts": [],
+  "evidence_count": 21
+}

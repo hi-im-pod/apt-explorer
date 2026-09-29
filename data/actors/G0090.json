@@ -1,0 +1,191 @@
+{
+  "id": "G0090",
+  "name": "WIRTE",
+  "aliases": [
+    {
+      "value": "WIRTE",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Ashen Lepus",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "WIRTE Group",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "White Dev 21",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "PS",
+      "source": "misp"
+    },
+    {
+      "value": "PS",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Sabotage and destruction",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Egypt",
+        "source": "etda"
+      },
+      {
+        "value": "Iraq",
+        "source": "etda"
+      },
+      {
+        "value": "Israel",
+        "source": "etda"
+      },
+      {
+        "value": "Jordan",
+        "source": "etda"
+      },
+      {
+        "value": "Lebanon",
+        "source": "etda"
+      },
+      {
+        "value": "Saudi Arabia",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "diplomats",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "AshTag",
+      "source": "attack"
+    },
+    {
+      "name": "Empire",
+      "source": "attack"
+    },
+    {
+      "name": "Ferocious",
+      "source": "attack"
+    },
+    {
+      "name": "Havoc",
+      "source": "attack"
+    },
+    {
+      "name": "IronWind",
+      "source": "attack"
+    },
+    {
+      "name": "LitePower",
+      "source": "attack"
+    },
+    {
+      "name": "Rclone",
+      "source": "attack"
+    },
+    {
+      "name": "SameCoin",
+      "source": "attack"
+    },
+    {
+      "name": "Ashen",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1027.010",
+    "T1027.015",
+    "T1036.005",
+    "T1041",
+    "T1059.001",
+    "T1059.003",
+    "T1059.005",
+    "T1071.001",
+    "T1074.001",
+    "T1105",
+    "T1106",
+    "T1114.001",
+    "T1140",
+    "T1204.001",
+    "T1204.002",
+    "T1218.010",
+    "T1497.001",
+    "T1566.001",
+    "T1566.002",
+    "T1571",
+    "T1574.001",
+    "T1583.001",
+    "T1586.002",
+    "T1588.002",
+    "T1608.001",
+    "T1684.001"
+  ],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2019-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "a6f2de3335c347ad8946641c360ef9d88408023f",
+    "8a6d1cac860155b54e5793373fdce8f8bcb630bf",
+    "1a08b3fde634d6168b9cc2ae9c29827368537eca",
+    "7eb56e0f6ccf41045a2ed683eda87d54968442bb"
+  ],
+  "conflicts": [],
+  "evidence_count": 5
+}

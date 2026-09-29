@@ -1,0 +1,81 @@
+{
+  "id": "avivore",
+  "name": "Avivore",
+  "aliases": [
+    {
+      "value": "Avivore",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "AVIVORE",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "etda"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Aerospace",
+        "source": "etda"
+      },
+      {
+        "value": "Automotive",
+        "source": "etda"
+      },
+      {
+        "value": "Energy",
+        "source": "etda"
+      },
+      {
+        "value": "Satellites",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2019-Q4",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "f0fbe7cbd9b7a3d77550a48e6ac853593ca182bb"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

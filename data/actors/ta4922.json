@@ -1,0 +1,57 @@
+{
+  "id": "ta4922",
+  "name": "TA4922",
+  "aliases": [
+    {
+      "value": "TA4922",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "Atlas RAT",
+      "source": "malpedia"
+    },
+    {
+      "name": "RomulusLoader",
+      "source": "malpedia"
+    },
+    {
+      "name": "SilentRunLoader",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "51d0fdcfc1e91ae2ea0d9446201230437c0e0cf5"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

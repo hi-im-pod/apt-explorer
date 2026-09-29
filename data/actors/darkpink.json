@@ -1,0 +1,113 @@
+{
+  "id": "darkpink",
+  "name": "DarkPink",
+  "aliases": [
+    {
+      "value": "DarkPink",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Saaiwc",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Dark Pink",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Saaiwc Group",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Belgium",
+        "source": "etda"
+      },
+      {
+        "value": "Bosnia and Herzegovina",
+        "source": "etda"
+      },
+      {
+        "value": "Brunei",
+        "source": "etda"
+      },
+      {
+        "value": "Cambodia",
+        "source": "etda"
+      },
+      {
+        "value": "Indonesia",
+        "source": "etda"
+      },
+      {
+        "value": "Malaysia",
+        "source": "etda"
+      },
+      {
+        "value": "Philippines",
+        "source": "etda"
+      },
+      {
+        "value": "Thailand",
+        "source": "etda"
+      },
+      {
+        "value": "Vietnam",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Education",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Non-profit organizations",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2023-Q1",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "e5c9ee752a09cc290bd5bd6c40b9c14241586ff7"
+  ],
+  "conflicts": [],
+  "evidence_count": 4
+}

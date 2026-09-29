@@ -6,13 +6,42 @@
       "value": "Sandworm Team",
       "sources": [
         "attack",
-        "misp"
+        "etda"
       ]
     },
     {
-      "value": "Sandworm",
+      "value": "Quedagh",
       "sources": [
+        "attack",
         "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "IRIDIUM",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Seashell Blizzard",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "FROZENBARENTS",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
         "malpedia"
       ]
     },
@@ -20,40 +49,208 @@
       "value": "ELECTRUM",
       "sources": [
         "attack",
-        "misp"
+        "misp",
+        "malpedia"
       ]
     },
     {
-      "value": "Voodoo Bear",
+      "value": "IRON VIKING",
       "sources": [
         "attack",
-        "misp"
-      ]
-    },
-    {
-      "value": "IRIDIUM",
-      "sources": [
-        "attack"
-      ]
-    },
-    {
-      "value": "Seashell Blizzard",
-      "sources": [
-        "attack"
+        "misp",
+        "malpedia"
       ]
     },
     {
       "value": "APT44",
       "sources": [
         "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Sandworm",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TEMP.Noble",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UAC-0082",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UAC-0113",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Blue Echidna",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TeleBots",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Voodoo Bear",
+      "sources": [
+        "attack",
+        "etda"
+      ]
+    },
+    {
+      "value": "BE2",
+      "sources": [
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "VOODOO BEAR",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "SANDWORM RELIC",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UAC-0145",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Telebots",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "BlackEnergy (Group)",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Iridium",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Iron Viking",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "CTG-7263",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "ATK 14",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "UAC-0125",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "UAC-0133",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "APT 44",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Grey Tornado",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Razing Ursa",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "PHANTOM",
+      "sources": [
+        "malpedia"
+      ]
+    },
+    {
+      "value": "BlackEnergy Lite",
+      "sources": [
         "malpedia"
       ]
     }
   ],
   "origin": [
     {
+      "value": "IR",
+      "source": "misp"
+    },
+    {
       "value": "RU",
       "source": "misp"
+    },
+    {
+      "value": "IR",
+      "source": "etda"
+    },
+    {
+      "value": "RU",
+      "source": "etda"
+    },
+    {
+      "value": "IR",
+      "source": "malpedia"
     },
     {
       "value": "RU",
@@ -64,43 +261,495 @@
     {
       "value": "Russian Federation",
       "source": "misp"
+    },
+    {
+      "value": "Russian Federation",
+      "source": "malpedia"
     }
   ],
   "motivation": [
     {
-      "value": "Sabotage",
+      "value": "Espionage",
       "source": "misp"
     },
     {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Sabotage and destruction",
+      "source": "etda"
+    },
+    {
       "value": "Espionage",
-      "source": "misp"
+      "source": "malpedia"
     }
   ],
   "claimed_targets": {
     "countries": [
       {
+        "value": "Russia",
+        "source": "misp"
+      },
+      {
+        "value": "Lithuania",
+        "source": "misp"
+      },
+      {
+        "value": "Kyrgyzstan",
+        "source": "misp"
+      },
+      {
+        "value": "Israel",
+        "source": "misp"
+      },
+      {
         "value": "Ukraine",
         "source": "misp"
+      },
+      {
+        "value": "Belarus",
+        "source": "misp"
+      },
+      {
+        "value": "Kazakhstan",
+        "source": "misp"
+      },
+      {
+        "value": "Georgia",
+        "source": "misp"
+      },
+      {
+        "value": "Poland",
+        "source": "misp"
+      },
+      {
+        "value": "Azerbaijan",
+        "source": "misp"
+      },
+      {
+        "value": "Iran",
+        "source": "misp"
+      },
+      {
+        "value": "Afghanistan",
+        "source": "etda"
+      },
+      {
+        "value": "Angola",
+        "source": "etda"
+      },
+      {
+        "value": "Argentina",
+        "source": "etda"
+      },
+      {
+        "value": "Australia",
+        "source": "etda"
+      },
+      {
+        "value": "Austria",
+        "source": "etda"
+      },
+      {
+        "value": "Azerbaijan",
+        "source": "etda"
+      },
+      {
+        "value": "Belarus",
+        "source": "etda"
+      },
+      {
+        "value": "Belgium",
+        "source": "etda"
+      },
+      {
+        "value": "Bulgaria",
+        "source": "etda"
+      },
+      {
+        "value": "Cambodia",
+        "source": "etda"
+      },
+      {
+        "value": "Canada",
+        "source": "etda"
+      },
+      {
+        "value": "China",
+        "source": "etda"
+      },
+      {
+        "value": "Colombia",
+        "source": "etda"
+      },
+      {
+        "value": "Denmark",
+        "source": "etda"
+      },
+      {
+        "value": "Egypt",
+        "source": "etda"
+      },
+      {
+        "value": "France",
+        "source": "etda"
+      },
+      {
+        "value": "Georgia",
+        "source": "etda"
+      },
+      {
+        "value": "Germany",
+        "source": "etda"
+      },
+      {
+        "value": "Ghana",
+        "source": "etda"
+      },
+      {
+        "value": "Hungary",
+        "source": "etda"
+      },
+      {
+        "value": "India",
+        "source": "etda"
+      },
+      {
+        "value": "Iran",
+        "source": "etda"
+      },
+      {
+        "value": "Israel",
+        "source": "etda"
+      },
+      {
+        "value": "Italy",
+        "source": "etda"
+      },
+      {
+        "value": "Kazakhstan",
+        "source": "etda"
+      },
+      {
+        "value": "Kyrgyzstan",
+        "source": "etda"
+      },
+      {
+        "value": "Latvia",
+        "source": "etda"
+      },
+      {
+        "value": "Lithuania",
+        "source": "etda"
+      },
+      {
+        "value": "Luxembourg",
+        "source": "etda"
+      },
+      {
+        "value": "Moldova",
+        "source": "etda"
+      },
+      {
+        "value": "Myanmar",
+        "source": "etda"
+      },
+      {
+        "value": "Netherlands",
+        "source": "etda"
+      },
+      {
+        "value": "Nigeria",
+        "source": "etda"
+      },
+      {
+        "value": "Oman",
+        "source": "etda"
+      },
+      {
+        "value": "Norway",
+        "source": "etda"
+      },
+      {
+        "value": "Pakistan",
+        "source": "etda"
+      },
+      {
+        "value": "Paraguay",
+        "source": "etda"
+      },
+      {
+        "value": "Peru",
+        "source": "etda"
+      },
+      {
+        "value": "Poland",
+        "source": "etda"
+      },
+      {
+        "value": "Portugal",
+        "source": "etda"
+      },
+      {
+        "value": "Romania",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "etda"
+      },
+      {
+        "value": "Serbia",
+        "source": "etda"
+      },
+      {
+        "value": "South Korea",
+        "source": "etda"
+      },
+      {
+        "value": "Spain",
+        "source": "etda"
+      },
+      {
+        "value": "Sweden",
+        "source": "etda"
+      },
+      {
+        "value": "Syria",
+        "source": "etda"
+      },
+      {
+        "value": "Thailand",
+        "source": "etda"
+      },
+      {
+        "value": "Türkiye",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "Ukraine",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      },
+      {
+        "value": "Uzbekistan",
+        "source": "etda"
+      },
+      {
+        "value": "Vietnam",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "malpedia"
+      },
+      {
+        "value": "Lithuania",
+        "source": "malpedia"
+      },
+      {
+        "value": "Kyrgyzstan",
+        "source": "malpedia"
+      },
+      {
+        "value": "Israel",
+        "source": "malpedia"
+      },
+      {
+        "value": "Ukraine",
+        "source": "malpedia"
+      },
+      {
+        "value": "Belarus",
+        "source": "malpedia"
+      },
+      {
+        "value": "Kazakhstan",
+        "source": "malpedia"
+      },
+      {
+        "value": "Georgia",
+        "source": "malpedia"
+      },
+      {
+        "value": "Poland",
+        "source": "malpedia"
+      },
+      {
+        "value": "Azerbaijan",
+        "source": "malpedia"
+      },
+      {
+        "value": "Iran",
+        "source": "malpedia"
       }
     ],
     "sectors": [
       {
-        "value": "Energy",
-        "source": "misp"
-      },
-      {
-        "value": "Telecommunications",
+        "value": "Private sector",
         "source": "misp"
       },
       {
         "value": "Government",
         "source": "misp"
+      },
+      {
+        "value": "Electric",
+        "source": "misp"
+      },
+      {
+        "value": "Energy",
+        "source": "misp"
+      },
+      {
+        "value": "Industrial",
+        "source": "misp"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Oil and gas",
+        "source": "etda"
+      },
+      {
+        "value": "Technology",
+        "source": "etda"
+      },
+      {
+        "value": "Education",
+        "source": "etda"
+      },
+      {
+        "value": "Energy",
+        "source": "etda"
+      },
+      {
+        "value": "Industrial",
+        "source": "etda"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "etda"
+      },
+      {
+        "value": "Financial",
+        "source": "etda"
+      },
+      {
+        "value": "Transportation",
+        "source": "etda"
+      },
+      {
+        "value": "Software companies",
+        "source": "etda"
+      },
+      {
+        "value": "Private sector",
+        "source": "malpedia"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      },
+      {
+        "value": "Electric",
+        "source": "malpedia"
+      },
+      {
+        "value": "Energy",
+        "source": "malpedia"
+      },
+      {
+        "value": "Industrial",
+        "source": "malpedia"
       }
     ]
   },
   "malware": [
     {
+      "name": "AcidPour",
+      "source": "attack"
+    },
+    {
+      "name": "AcidRain",
+      "source": "attack"
+    },
+    {
+      "name": "Bad Rabbit",
+      "source": "attack"
+    },
+    {
+      "name": "BlackEnergy",
+      "source": "attack"
+    },
+    {
+      "name": "Cobalt Strike",
+      "source": "attack"
+    },
+    {
+      "name": "Cyclops Blink",
+      "source": "attack"
+    },
+    {
+      "name": "Empire",
+      "source": "attack"
+    },
+    {
+      "name": "Exaramel for Linux",
+      "source": "attack"
+    },
+    {
+      "name": "Exaramel for Windows",
+      "source": "attack"
+    },
+    {
+      "name": "GreyEnergy",
+      "source": "attack"
+    },
+    {
+      "name": "Impacket",
+      "source": "attack"
+    },
+    {
       "name": "Industroyer",
+      "source": "attack"
+    },
+    {
+      "name": "Industroyer2",
+      "source": "attack"
+    },
+    {
+      "name": "Invoke-PSImage",
+      "source": "attack"
+    },
+    {
+      "name": "Kapeka",
+      "source": "attack"
+    },
+    {
+      "name": "KillDisk",
+      "source": "attack"
+    },
+    {
+      "name": "Mimikatz",
+      "source": "attack"
+    },
+    {
+      "name": "Neo-reGeorg",
+      "source": "attack"
+    },
+    {
+      "name": "Net",
       "source": "attack"
     },
     {
@@ -112,69 +761,1098 @@
       "source": "attack"
     },
     {
+      "name": "P.A.S. Webshell",
+      "source": "attack"
+    },
+    {
+      "name": "PoshC2",
+      "source": "attack"
+    },
+    {
+      "name": "Prestige",
+      "source": "attack"
+    },
+    {
+      "name": "PsExec",
+      "source": "attack"
+    },
+    {
+      "name": "SDelete",
+      "source": "attack"
+    },
+    {
+      "name": "VPNFilter",
+      "source": "attack"
+    },
+    {
+      "name": "ArguePatch",
+      "source": "malpedia"
+    },
+    {
+      "name": "BACKORDER",
+      "source": "malpedia"
+    },
+    {
+      "name": "BlackEnergy",
+      "source": "malpedia"
+    },
+    {
+      "name": "CaddyWiper",
+      "source": "malpedia"
+    },
+    {
+      "name": "EternalPetya",
+      "source": "malpedia"
+    },
+    {
+      "name": "INDUSTROYER2",
+      "source": "malpedia"
+    },
+    {
+      "name": "Kalambur",
+      "source": "malpedia"
+    },
+    {
+      "name": "Kapeka",
+      "source": "malpedia"
+    },
+    {
       "name": "KillDisk",
+      "source": "malpedia"
+    },
+    {
+      "name": "LocalOlive",
+      "source": "malpedia"
+    },
+    {
+      "name": "Rhadamanthys",
+      "source": "malpedia"
+    },
+    {
+      "name": "RoarBAT",
+      "source": "malpedia"
+    },
+    {
+      "name": "SwiftSlicer",
+      "source": "malpedia"
+    },
+    {
+      "name": "TeleBot",
+      "source": "malpedia"
+    },
+    {
+      "name": "TeleDoor",
       "source": "malpedia"
     }
   ],
   "techniques_documented": [
-    "T1485",
-    "T1561.002",
+    "T1003.001",
+    "T1003.003",
+    "T1005",
+    "T1018",
+    "T1021.002",
+    "T1027",
+    "T1027.010",
+    "T1033",
+    "T1036",
+    "T1036.005",
+    "T1040",
+    "T1041",
+    "T1047",
+    "T1049",
+    "T1053.005",
+    "T1056.001",
     "T1059.001",
-    "T1190"
+    "T1059.005",
+    "T1070.004",
+    "T1071.001",
+    "T1072",
+    "T1078",
+    "T1078.002",
+    "T1082",
+    "T1083",
+    "T1087.002",
+    "T1087.003",
+    "T1090",
+    "T1102.002",
+    "T1105",
+    "T1106",
+    "T1132.001",
+    "T1133",
+    "T1140",
+    "T1190",
+    "T1195",
+    "T1195.002",
+    "T1199",
+    "T1203",
+    "T1204.001",
+    "T1204.002",
+    "T1213.006",
+    "T1218.011",
+    "T1219",
+    "T1485",
+    "T1486",
+    "T1489",
+    "T1490",
+    "T1491.002",
+    "T1499",
+    "T1505.003",
+    "T1539",
+    "T1555.003",
+    "T1561.002",
+    "T1566.001",
+    "T1566.002",
+    "T1570",
+    "T1571",
+    "T1583",
+    "T1583.001",
+    "T1583.004",
+    "T1584.004",
+    "T1584.005",
+    "T1585.001",
+    "T1585.002",
+    "T1586.001",
+    "T1587.001",
+    "T1588.002",
+    "T1588.006",
+    "T1589.002",
+    "T1589.003",
+    "T1590.001",
+    "T1591.002",
+    "T1592.002",
+    "T1593",
+    "T1594",
+    "T1595.002",
+    "T1598.003",
+    "T1608.001"
   ],
   "techniques_reported": [
     {
-      "id": "T1485",
+      "id": "T1082",
+      "count": 5
+    },
+    {
+      "id": "T1071.001",
+      "count": 4
+    },
+    {
+      "id": "T1005",
       "count": 3
     },
     {
       "id": "T1059.001",
-      "count": 1
+      "count": 3
     },
     {
-      "id": "T1561.002",
-      "count": 1
+      "id": "T1027",
+      "count": 2
+    },
+    {
+      "id": "T1041",
+      "count": 2
+    },
+    {
+      "id": "T1059.003",
+      "count": 2
+    },
+    {
+      "id": "T1105",
+      "count": 2
+    },
+    {
+      "id": "T1218",
+      "count": 2
+    },
+    {
+      "id": "T1218.011",
+      "count": 2
+    },
+    {
+      "id": "T1219",
+      "count": 2
+    },
+    {
+      "id": "T1555.003",
+      "count": 2
+    },
+    {
+      "id": "T1566",
+      "count": 2
     },
     {
       "id": "T1566.001",
+      "count": 2
+    },
+    {
+      "id": "T1566.002",
+      "count": 2
+    },
+    {
+      "id": "T1003",
+      "count": 1
+    },
+    {
+      "id": "T1007",
+      "count": 1
+    },
+    {
+      "id": "T1016",
+      "count": 1
+    },
+    {
+      "id": "T1018",
+      "count": 1
+    },
+    {
+      "id": "T1021.001",
+      "count": 1
+    },
+    {
+      "id": "T1021.004",
+      "count": 1
+    },
+    {
+      "id": "T1033",
+      "count": 1
+    },
+    {
+      "id": "T1036",
+      "count": 1
+    },
+    {
+      "id": "T1047",
+      "count": 1
+    },
+    {
+      "id": "T1053.005",
+      "count": 1
+    },
+    {
+      "id": "T1055",
+      "count": 1
+    },
+    {
+      "id": "T1056.001",
+      "count": 1
+    },
+    {
+      "id": "T1057",
+      "count": 1
+    },
+    {
+      "id": "T1059",
+      "count": 1
+    },
+    {
+      "id": "T1069.002",
+      "count": 1
+    },
+    {
+      "id": "T1070.004",
+      "count": 1
+    },
+    {
+      "id": "T1071",
+      "count": 1
+    },
+    {
+      "id": "T1083",
+      "count": 1
+    },
+    {
+      "id": "T1090.003",
+      "count": 1
+    },
+    {
+      "id": "T1091",
+      "count": 1
+    },
+    {
+      "id": "T1112",
+      "count": 1
+    },
+    {
+      "id": "T1113",
+      "count": 1
+    },
+    {
+      "id": "T1114",
+      "count": 1
+    },
+    {
+      "id": "T1124",
+      "count": 1
+    },
+    {
+      "id": "T1189",
+      "count": 1
+    },
+    {
+      "id": "T1190",
+      "count": 1
+    },
+    {
+      "id": "T1195",
+      "count": 1
+    },
+    {
+      "id": "T1204",
+      "count": 1
+    },
+    {
+      "id": "T1204.002",
+      "count": 1
+    },
+    {
+      "id": "T1204.004",
+      "count": 1
+    },
+    {
+      "id": "T1210",
+      "count": 1
+    },
+    {
+      "id": "T1213",
+      "count": 1
+    },
+    {
+      "id": "T1218.007",
+      "count": 1
+    },
+    {
+      "id": "T1482",
+      "count": 1
+    },
+    {
+      "id": "T1497",
+      "count": 1
+    },
+    {
+      "id": "T1518.001",
+      "count": 1
+    },
+    {
+      "id": "T1547.001",
+      "count": 1
+    },
+    {
+      "id": "T1548.002",
+      "count": 1
+    },
+    {
+      "id": "T1552",
+      "count": 1
+    },
+    {
+      "id": "T1552.002",
+      "count": 1
+    },
+    {
+      "id": "T1566.003",
+      "count": 1
+    },
+    {
+      "id": "T1567.002",
+      "count": 1
+    },
+    {
+      "id": "T1569.002",
+      "count": 1
+    },
+    {
+      "id": "T1586.002",
+      "count": 1
+    },
+    {
+      "id": "T1589.002",
+      "count": 1
+    },
+    {
+      "id": "T1608.004",
+      "count": 1
+    },
+    {
+      "id": "T1608.006",
+      "count": 1
+    },
+    {
+      "id": "T1659",
       "count": 1
     }
   ],
-  "cves": [],
+  "cves": [
+    {
+      "cve": "CVE-1999-0191",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-1999-0262",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2008-3431",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2010-2861",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2010-3333",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2012-0158",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2013-3906",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2014-0751",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2014-1761",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2014-3828",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2014-4114",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2015-5374",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2017-0144",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-0147",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-0199",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-11882",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-9805",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-4878",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-8405",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-8406",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-8611",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-0604",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-0708",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-10149",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-1653",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-19781",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-0601",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-0688",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-0968",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-35730",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-1636",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-3156",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-34473",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-36934",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-4034",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-40444",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-26134",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-27926",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2022-30190",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-41091",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-41352",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-23397",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2023-32315",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2023-36884",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-3883",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2023-38831",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-42793",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-48788",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-1709",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-42009",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2024-9680",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2025-26633",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2025-55182",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2025-66478",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-8088",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
   "timeline": [
     {
+      "quarter": "2007-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2010-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2010-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2014-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2014-Q4",
+      "count": 5
+    },
+    {
+      "quarter": "2015-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2016-Q1",
+      "count": 4
+    },
+    {
+      "quarter": "2016-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2017-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 19
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 11
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 5
+    },
+    {
+      "quarter": "2018-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q4",
+      "count": 3
+    },
+    {
+      "quarter": "2019-Q1",
+      "count": 6
+    },
+    {
+      "quarter": "2019-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 3
+    },
+    {
+      "quarter": "2020-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2020-Q4",
+      "count": 4
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2021-Q2",
+      "count": 3
+    },
+    {
+      "quarter": "2021-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 23
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 19
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 5
+    },
+    {
+      "quarter": "2022-Q4",
+      "count": 5
+    },
+    {
+      "quarter": "2023-Q1",
+      "count": 11
+    },
+    {
+      "quarter": "2023-Q2",
+      "count": 5
+    },
+    {
       "quarter": "2023-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2023-Q4",
+      "count": 7
+    },
+    {
+      "quarter": "2024-Q1",
       "count": 1
     },
     {
       "quarter": "2024-Q2",
-      "count": 1
+      "count": 7
     },
     {
       "quarter": "2024-Q3",
-      "count": 1
+      "count": 5
+    },
+    {
+      "quarter": "2024-Q4",
+      "count": 3
+    },
+    {
+      "quarter": "2025-Q1",
+      "count": 7
     },
     {
       "quarter": "2025-Q2",
       "count": 1
     },
     {
+      "quarter": "2025-Q3",
+      "count": 1
+    },
+    {
       "quarter": "2025-Q4",
+      "count": 3
+    },
+    {
+      "quarter": "2026-Q1",
       "count": 1
     },
     {
       "quarter": "2026-Q2",
-      "count": 1
+      "count": 13
+    },
+    {
+      "quarter": "2026-Q3",
+      "count": 2
     }
   ],
   "reports": [
-    "795abfc564ecb2a19be55c768bec3b145f802555",
-    "5eecf7e006e2f6d9e1d6fb1bddcb2318fa500259",
-    "b160ea77c5d2d5297456f1a80f0330c614f49d73",
-    "83086f8202f48adfac618fb3cab581faf271d0f0",
-    "71b2ffd2e0b0aee08d638bf1cb737ec3ac9a2ed7",
-    "277740a92bae78aabebd632037ffe8895463a043"
+    "24bb6d01f2508e4001990348616aff2cadc34cd1",
+    "83acfa3564bb29071720fe0642f57d930e02dbb7",
+    "f64fd498d26d2b12bddba0aad4851be9ae34b20d",
+    "0518042f57f911f388a9b396d8f373693ddd42d7",
+    "1ba49d11e3564e352356e2e732822fd6b909ca34",
+    "2edb15bace7713c4bc00e72bc9af44f61d0e4991",
+    "4eea9fb2ebb3f0422c23aca3fd31ced4206bd00e",
+    "7536dff22fdcc49216f41052a3e7457349d86d20",
+    "89cb14e7a461f50795ba36556ae6b810fdf0340b",
+    "96f850f203e3968233d7811abffdda7811bae635",
+    "b9c4dfe07661a3d571925d873103fc1d091feb10",
+    "c5145a4d713500abfaf5c9ccad27e03a846d91ba",
+    "d9b5942d25e92a654ed74ad3bb841c8a5755ae00",
+    "ef153ea07948b240ca456c318165d089e4da7cd7",
+    "f8178f927719d66b6eac9fcf0bbcd768d639d90f",
+    "9509e3db32b775fc571fb1634f5e6321397adc7a",
+    "b2005fb356245f8ef34d3ddc952b73f16859bcb5",
+    "702cbf9ce1536c37fbb8f18dab3a2600d1418f7a",
+    "2b6a6d3b022f2097f1a3dabc579610b0eced90b6",
+    "be4228259ed811d26545e5bded61f2438d0800cb",
+    "ec47460d74fca9b12a0defb273c9c927197b2450",
+    "48253f3e8272d2450377931f927e76cc9cea55db",
+    "a471cf867c5d619585167646c146c7fd73f312b0",
+    "86fd4d9cc97e1abbb8947e829d63c6adc636f01d",
+    "630170c4c2f48b028bc15c5555abed7444c02eee",
+    "330dd90e0e68b9e5a5f83e72744011dd2e8ee236",
+    "c2ed014ae31e2740cab0f1758d1d83ddb1665a0f",
+    "e2b17cfeeb9adeb5574944225fa318f8ac03e98e",
+    "e9329bebe5ef9f858f6696badbf87a38ac15a526",
+    "c0b530039c1ac9f45c0953bfe031a810814df134",
+    "55a007707dd3ffad8290f8344aa09e0bf629d177",
+    "765ab784cb2ccd15e71ac1dc158ad00546d5f295",
+    "1190cb24f4a015f5d763f7b4e13d8162de614d5f",
+    "9360ea522e191d1c65670d2245d2d928b6b2c123",
+    "d45e55c6dce600287dfc49bb12d35d93927fb93b",
+    "633e2ecf2b9f5976d9b82d32856e15812a9a9dd0",
+    "973ae8db6491e9c7813ce34a81842ced7d496aa5",
+    "9692c542bca6d2effb58a63da1ea75ecc3cfba4d",
+    "3e6bf32da5a7ded135a13184a20074e6c4a69e51",
+    "9daa0eb8faf38eb8d76666eb7ccd684ccb804e96",
+    "4485a72e8dfe4255f38ac3e0f3f2c549ec82a01f",
+    "71c32d07fa13801b4f5251ba28632d4807ccd2b5",
+    "5b46f570f8b82d3f9cb143cb6c639c0a07243144",
+    "c44c2ca0d048f9d27f63a5c5307de4fbae38a13c",
+    "1436a8ea269cba1a82e72f72af783703100d2a3f",
+    "d45bd99f281d4556aa9aaf19b4f47678d193c965",
+    "741b72eb78c90ac66476d3d8ad2acd8f69431d1f",
+    "7873f4b161d89a40f97a4b4104f212f4d556459a",
+    "421de2fc96be8d420e5b3057dc5767d807f355f1",
+    "bc4aba6b0cc36c914ac83997cf606b3845da2de5",
+    "fc31ff3edd2f3c812757f3abfde3193a5819dc7c",
+    "1476c6800b40266d546f453f3d548395ed0a662d",
+    "e67cd23f1708d2cafdcbe66cceb161e03ca39049",
+    "c4b81ca18d218af107d691f307544036d4a1129b",
+    "88d7e23d50bdd2004b74e136c76a22034d7d5563",
+    "5025fc747290840ca15a2ed57a169f1dd65f610a",
+    "5d7e173125437196cfeea0af0ff2a8e18951de9b",
+    "a6a2bbb8b5d768c347cc5169ae72cf237439279e",
+    "45ac66f4ab05c43bc5128377779e6673eace06cf",
+    "1195ad97ea81814fb55b2bf2144f68e4f6808ea3",
+    "ffb07fd296f04211524b7f5a87cc9f2e61debba9",
+    "703e60b68dc098a5525505413b8cd3b8ad868bc2",
+    "paper:APT%20Activity%20Report%20T3%202022%20Sandworm%20Deploying%20its%20Enhanced%20Wiper%20Arsenal",
+    "44bcba68843f35ff4eda518182af595bc2d7419c",
+    "58e38023c35a14bd0ee8ae8bdf7e6ae19b942d15",
+    "5f20bdf04c4571d29df4c610d91231b2b9514394",
+    "2ad735c2f0d7f502e329007c676fd6cf80737300",
+    "3bd693224c041be5b6d5d5c1bd6da107feaae741",
+    "88a69bd4cae55d4e3400a5f34fccc827fcc9c9da",
+    "eab05d00db65c7fa6d06b1a12442e6d460a51351",
+    "0a301a613a0f23047e1406067865d23785d9e5c2",
+    "4b80372b5383ae77c492fa41afb97df8df505abc",
+    "df4cab4f217485602ef6e5aa3a0c6b061bfd151d",
+    "c9f8b84cb36967a95ea9d8b84efb23b36f487c32",
+    "a0e13df356f8b2dba18eae8c3fdf30a7ed945865",
+    "5e8b3c3093f16e6616e5dde5417347e231473aad",
+    "d7e789df3f936f75f0ca3754eb88ad435f71c2b2",
+    "ab9bb1351dbaa87e7d936783f3186ff9328631e0",
+    "76d82224091c633671b8b446977b773392a1ce7b",
+    "055ba19adf2555a8191068020526947cad083822",
+    "d6a194bcb216e6c55cbb14942953db47a1b59e15",
+    "97c691e96ac1e05bad3c2339a995b4df0c5b2a9c",
+    "8c2ba457a5350eab2e0ae15ad90dc858d8988253",
+    "ee11dd998c717709ec36c1282b426367c02c493b",
+    "7c8d9bf4d968c124b2d8885aaa29eaf9c1af8708",
+    "1c873c59e0bdb9d92d2ab7f8381ee7e9ef6a8d4f",
+    "e0cc49e7c501e7ea4e3a05fca63c33a3fdba45f6",
+    "2886f88274a77dc006a6ee05d158d0c2818f3a51",
+    "6e7d13508a23b799c83c18a2ee93cc9c127d7be8",
+    "e494ce68d6e058f7b1148bd908aa17caae0e5224",
+    "9b0c3db3a626888087822e73a40a30f389a734f8",
+    "f9b285ccb48d71c153b1a6025cde00f1425c86e9",
+    "fa3146c7d4e1f91891295e6a15cd5a6c68d7192d",
+    "35476a57e1d317f3a970507cf6c5d208d70fcfea",
+    "3d39a49d3c3e0fdb3484998fb12c1319639166a7",
+    "555f685cb42cbded434adf99014ff7db662506b1",
+    "86fb1e42af7f974ddabb9de5f475355fd1f77037",
+    "30dc20e1028f05cfaabfce7daabc3f3b02f162f5",
+    "9f6de6ec5446f9e867eac43b3bb6b9cfba40a18e",
+    "0fa85dbc8bb26609211b2d53b355f94d34b03a76",
+    "99c352f4af3768a6e13cc8bbbce087c9f2b0bf79",
+    "9ef79834d68d835150fcad93974ea68546eb833c",
+    "1cf09d0939ad76d94236118f87a757bee8d27f85",
+    "321e28ae6c06145e143ccb2f7d8be59c9b4c2352",
+    "09c4f8ef3fced7f59e58ed7b506dcd2fb2a94fdc",
+    "b7f29ddc5bb196ead2a89bdc87b426b344226125",
+    "f2fbddd32d98d8911b88843677e24664e1664885",
+    "55efdae4f613b1e95a5afce6c2239202a1298d23",
+    "2c87d51ee8fdc40bb411355f8e32465f16abeda3",
+    "428c5396cdb0fa908269fbc8728c8e5fbc88996b",
+    "84731055c458efb38c1606f3455164083d093fbb",
+    "b40cabbc1f764c4d47546d48745d1921c735c52b",
+    "d0fb3bbbea91f306574b963833ad856d22a9dbf0",
+    "10740a9c6c3fdd76d03c028e1bba1fef71512c76",
+    "afd4c1685181d626ba8169f95ba50c655dd8d33d",
+    "8cd2be979e10ddef402461d88c2032f4b5387a28",
+    "4619f64dc373197cf5321078bc23d65b51669fb9",
+    "4cdb7e8f6cd8fdb275f7213ba54db021c311f495",
+    "dbe4338e68d9a0ea59dee38ec6d2504fd06f4402",
+    "1e7b9c2fb9c9533572df9070f118b15bdbcb6104",
+    "408653a44dc99da2c090e3561df82d09a6174113",
+    "fd3a16ebe67e6dee94887a99a29121a68d5960da",
+    "362dc8dce2e5f54302893c8245f5d74ac05de4a4",
+    "26a35a012cac9774103af2f7166fe120dd2cd3b0",
+    "caed0a2d00650cfa0866c314ad3ad12dd9f86138",
+    "7556bbae29ee26c1b5abc6ba024b3c1b84d8140d",
+    "637162990948282bd43e16cdbeaae4a59b4b959a",
+    "b900c66506125cc33fb5198b46f4bfb68bcb21cf",
+    "5f5d6d028898dce8bb445e07cc85a9bc66c51bed",
+    "8d4c669ba1eb89136a3c362cf15ad8afc21f48e3",
+    "5183b51959c244b3215f7e95e1560241e7e9a34a",
+    "63bc1cb4a2bca80e9179acfbce2649accf04706a",
+    "b143a751da2ad41cf33660a2551643834c7c97ed",
+    "3ea222bb4ab010d621f3e3df2a9bcb6e8d10d2c4",
+    "74d729b136d338a1d28aed9d32bfb17315cdda1d",
+    "cef445a22ce4637c0ef2a4ba2947e36ef3420168",
+    "6a3a74771e4dc19b571bd8e7985bf285432daa3a",
+    "75ce802fc0723328a492651833c43e1f274c4a87",
+    "101d6e4515e730e85c9751f702244cd46b45cb61",
+    "af351d85b2ef5ef7ddfa4de15710e84c7df955dd",
+    "e7b430f2e93b3e773c6b94de27d5a9f8a9f83ca8",
+    "d188680eff339121bbbd3f81218a0bb42e31b5a3",
+    "f2144ce8647afe942d16e8886735e5ef139ce02d",
+    "f130f98ce44559c0328409c1be9db6c0663c1520",
+    "b4fd1d981430cfa82a6725aead51a38066c1fdaf",
+    "1b9d20cd96eca138bf6e4345f5a4d649e9d7f951",
+    "4b75f585b8ff8f6c826fb2d2cac3bfd52b633c01",
+    "7a817b1dd112b073102b2ca818c1b5ffb66dd6a2",
+    "4f5ad88d331ba56a64a40d1a2cd3b6b8a2773d4d",
+    "68d1fab712d42e872d4004b6d6dfc4e60787917d",
+    "3925b9ad66a00cdac2ec2ef1a724a3183271de1b",
+    "4a97aa6e3c8a53b1bd43e6f853ad03a288f8549c",
+    "911fecedd1e7e99cb9f491c9c96c6d7f15a4862c",
+    "e374781848bd51add20e73f9dab3e0559e4db342",
+    "a25ec7842d099723e923b84475074c8f75894a7b",
+    "e2748c51db39bf6116bc8f484603d5aae44ce879",
+    "02565c1f41dbf19f8318baa6181f1407ca487d3c",
+    "a6400050e83a0571c5df8b7feff2617213a3439d",
+    "b78045458896b95b88e042ef8dc27b7ab5b96082",
+    "ab12ebf5a30e4da8a68f389045d38304f588e1fd",
+    "0c02be057d312e046c7b028c5071d0ebdb45ec29",
+    "38ce07808921d7651d9ffe952e9c45ff13fc55db",
+    "660e6c602b930ef096f205c2420f8de73da2c8ce",
+    "fd51ad86abfee1c58e43ef674b1aff05d9fb8868",
+    "9a9047ea6d995e8197cd04b0fdc23c9608aa86c4",
+    "e3e20bb540610307bb0f5f41a65a57f532aa07b1",
+    "8d09785cf770349d6d6eb0eec0ccce44f4c0f9b7",
+    "663ae2bcfe9a53be7a4a978c5a22a37ce417c30b",
+    "57108210ceb5ebdd3bc2ab1c3d8b54f92d7231f8",
+    "6ccf943832cef10266a103d64b667db591a8479e",
+    "dba94cfef9b611c12d2f0b4ec8a9a1f11ce78e9a",
+    "0b610391fbbe2a57074d7e8a74cd8d28f2e0c12d",
+    "a2d8d9f2ddc271beaa46705c6eed1487d95a23aa",
+    "dc61a241279869db57acd48fe3316d8c92f9eda6",
+    "efcf1ec26fbd855f6af9adc8de3ba2f5cf1e531b",
+    "4997696b75360f43d280c9475b442e31054d7c9d",
+    "51c53e2a1076f0a844fe08a140dfeb7f5e751303",
+    "a00e87b7c84b238136e6b7e03faa7032a1f1462b",
+    "e32715ee8ed5733487a4282d086fd8b939c5b4c9",
+    "2a2486e9a226fb4b2715d2f39e97e6febe4580a8",
+    "7c8a73861b129dd1798c638b020cae2f0a6cd783",
+    "7e3fb3bed0683db4ab2eacefd89aec06fb36571f",
+    "e4f7f82a9b2fe27ff51d18e97381e03c0a4b0734",
+    "1c985c18d4a0839445e1948c80905051bfee1adf",
+    "90d76df878d9297e5133212d20c72361ea63efeb",
+    "eb7096f3e9ac02a59a7267c4f274d3cae9baa3aa",
+    "0d113fcd85711233e2b30c9d683a233cb2215c75",
+    "2680208b08bfc47367056e72cbda1643708bcd51",
+    "26b438f7a82c6a6d3cf49699dcaef575383e4c04",
+    "330a26f7b6acc2be8cea3b159ac9c68ca201a9b8",
+    "c24d3868d17b811ae50736682edba9852b4b4b43",
+    "9e6f9b8b5b22c32c1ec5d53ed1992f8f83013140",
+    "bbfa238d5fdfb411eab6ac67c7d07e08002cd163",
+    "paper:CrashOverride-01",
+    "4f028b163860ed092fa556dd3852aad214a68b8f",
+    "2e269c4e5b0e6a3836676f0cf51642142d26828d",
+    "cce1f08c2f7f6a358b948a78a99be0f833563795",
+    "547c04be6d9ef7f6c4df1bc978b101526a9948e4",
+    "5780a1382be59719a980376feb783590e422b1aa",
+    "a926283d0abd146822e4e37359a7b7694aa539d6",
+    "ed19e5c293f8acef03e89ade53f179c941155479",
+    "cb9fc523410acbb7492c93e72a6322071323ea68",
+    "paper:Korplug_Afghanistan_Tajikistan",
+    "f64245c505ed680125323f700b07ce14ceba4c5a",
+    "paper:BlackEnergy2_Plugins_Router",
+    "842122fee8d130850200c6136fc842f27d95a0ac",
+    "paper:Sandworm_briefing2",
+    "paper:blackenergy_whitepaper",
+    "efd7b3a3a2bf6e3976411347dc9101fea70c9405",
+    "dff6b382daa307cd7fb212184b082c17ec24ca80",
+    "ace68cd5f90719a18d84ef8a42f90370629fcd22",
+    "91425b85971a490e4cb1bb64446cb19509cb6cdd"
   ],
   "conflicts": [],
-  "evidence_count": 9
+  "evidence_count": 52
 }

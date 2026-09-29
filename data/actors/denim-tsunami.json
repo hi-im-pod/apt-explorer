@@ -1,0 +1,102 @@
+{
+  "id": "denim-tsunami",
+  "name": "Denim Tsunami",
+  "aliases": [
+    {
+      "value": "Denim Tsunami",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "KNOTWEED",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "DSIRF",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "AT",
+      "source": "misp"
+    },
+    {
+      "value": "AT",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "Subzero",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2021-28550",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-31199",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-31201",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-36948",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2022-2204",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2022-22047",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2021-Q4",
+      "count": 3
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "1ca4e65eeb605340e20fa71106d895cbbc490dde",
+    "a7943f166d2ba5893bf3884ab55187e40e5b28ca",
+    "deb042a93dce9935c1d1fb6caee329d4b18e4e78",
+    "fe9d94fb11f628e2121df8b9e92aea6dcdfc7ff6",
+    "c4e4713cc565871b4913264a59885b79c52f911c"
+  ],
+  "conflicts": [],
+  "evidence_count": 3
+}

@@ -1,0 +1,65 @@
+{
+  "id": "caramel-tsunami",
+  "name": "Caramel Tsunami",
+  "aliases": [
+    {
+      "value": "Caramel Tsunami",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "SOURGUM",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Candiru",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "DevilsTongue",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2021-31979",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-33771",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2021-Q3",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "2c859b479d88ce91c8ab247797bab045e8bb8718"
+  ],
+  "conflicts": [],
+  "evidence_count": 3
+}

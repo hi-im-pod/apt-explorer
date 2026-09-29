@@ -1,0 +1,617 @@
+{
+  "id": "G0091",
+  "name": "Silence",
+  "aliases": [
+    {
+      "value": "Silence",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Whisper Spider",
+      "sources": [
+        "attack",
+        "etda"
+      ]
+    },
+    {
+      "value": "Silence group",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "WHISPER SPIDER",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Contract Crew",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "TEMP.TruthTeller",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "ATK 86",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "TAG-CR8",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Financial crime",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Antigua and Barbuda",
+        "source": "etda"
+      },
+      {
+        "value": "Armenia",
+        "source": "etda"
+      },
+      {
+        "value": "Australia",
+        "source": "etda"
+      },
+      {
+        "value": "Austria",
+        "source": "etda"
+      },
+      {
+        "value": "Azerbaijan",
+        "source": "etda"
+      },
+      {
+        "value": "Bangladesh",
+        "source": "etda"
+      },
+      {
+        "value": "Belarus",
+        "source": "etda"
+      },
+      {
+        "value": "Belgium",
+        "source": "etda"
+      },
+      {
+        "value": "Belize",
+        "source": "etda"
+      },
+      {
+        "value": "Bulgaria",
+        "source": "etda"
+      },
+      {
+        "value": "Canada",
+        "source": "etda"
+      },
+      {
+        "value": "Chile",
+        "source": "etda"
+      },
+      {
+        "value": "China",
+        "source": "etda"
+      },
+      {
+        "value": "Costa Rica",
+        "source": "etda"
+      },
+      {
+        "value": "Croatia",
+        "source": "etda"
+      },
+      {
+        "value": "Cyprus",
+        "source": "etda"
+      },
+      {
+        "value": "Finland",
+        "source": "etda"
+      },
+      {
+        "value": "France",
+        "source": "etda"
+      },
+      {
+        "value": "Georgia",
+        "source": "etda"
+      },
+      {
+        "value": "Germany",
+        "source": "etda"
+      },
+      {
+        "value": "Ghana",
+        "source": "etda"
+      },
+      {
+        "value": "Gibraltar",
+        "source": "etda"
+      },
+      {
+        "value": "Greece",
+        "source": "etda"
+      },
+      {
+        "value": "Hong Kong",
+        "source": "etda"
+      },
+      {
+        "value": "India",
+        "source": "etda"
+      },
+      {
+        "value": "Indonesia",
+        "source": "etda"
+      },
+      {
+        "value": "Ireland",
+        "source": "etda"
+      },
+      {
+        "value": "Israel",
+        "source": "etda"
+      },
+      {
+        "value": "Jamaica",
+        "source": "etda"
+      },
+      {
+        "value": "Jordan",
+        "source": "etda"
+      },
+      {
+        "value": "Kazakhstan",
+        "source": "etda"
+      },
+      {
+        "value": "Kenya",
+        "source": "etda"
+      },
+      {
+        "value": "Kyrgyzstan",
+        "source": "etda"
+      },
+      {
+        "value": "Latvia",
+        "source": "etda"
+      },
+      {
+        "value": "Luxembourg",
+        "source": "etda"
+      },
+      {
+        "value": "Malaysia",
+        "source": "etda"
+      },
+      {
+        "value": "Mexico",
+        "source": "etda"
+      },
+      {
+        "value": "Moldova",
+        "source": "etda"
+      },
+      {
+        "value": "Netherlands",
+        "source": "etda"
+      },
+      {
+        "value": "Norway",
+        "source": "etda"
+      },
+      {
+        "value": "Pakistan",
+        "source": "etda"
+      },
+      {
+        "value": "Panama",
+        "source": "etda"
+      },
+      {
+        "value": "Poland",
+        "source": "etda"
+      },
+      {
+        "value": "Romania",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "etda"
+      },
+      {
+        "value": "Saudi Arabia",
+        "source": "etda"
+      },
+      {
+        "value": "Serbia",
+        "source": "etda"
+      },
+      {
+        "value": "Seychelles",
+        "source": "etda"
+      },
+      {
+        "value": "Singapore",
+        "source": "etda"
+      },
+      {
+        "value": "South Korea",
+        "source": "etda"
+      },
+      {
+        "value": "Spain",
+        "source": "etda"
+      },
+      {
+        "value": "Sri Lanka",
+        "source": "etda"
+      },
+      {
+        "value": "Sweden",
+        "source": "etda"
+      },
+      {
+        "value": "Switzerland",
+        "source": "etda"
+      },
+      {
+        "value": "Taiwan",
+        "source": "etda"
+      },
+      {
+        "value": "Thailand",
+        "source": "etda"
+      },
+      {
+        "value": "Türkiye",
+        "source": "etda"
+      },
+      {
+        "value": "United Arab Emirates",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "Ukraine",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      },
+      {
+        "value": "Uzbekistan",
+        "source": "etda"
+      },
+      {
+        "value": "Vietnam",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Financial",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Manufacturing",
+        "source": "etda"
+      },
+      {
+        "value": "Pharmaceutical",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Empire",
+      "source": "attack"
+    },
+    {
+      "name": "SDelete",
+      "source": "attack"
+    },
+    {
+      "name": "Winexe",
+      "source": "attack"
+    },
+    {
+      "name": "Atmosphere",
+      "source": "malpedia"
+    },
+    {
+      "name": "Silence",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1003.001",
+    "T1018",
+    "T1021.001",
+    "T1027.010",
+    "T1036.005",
+    "T1053.005",
+    "T1055",
+    "T1059.001",
+    "T1059.003",
+    "T1059.005",
+    "T1059.007",
+    "T1070.004",
+    "T1072",
+    "T1078",
+    "T1090.002",
+    "T1105",
+    "T1106",
+    "T1112",
+    "T1113",
+    "T1125",
+    "T1204.002",
+    "T1218.001",
+    "T1547.001",
+    "T1553.002",
+    "T1566.001",
+    "T1569.002",
+    "T1571",
+    "T1588.002"
+  ],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2008-4250",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2012-0507",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2013-0074",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2013-2551",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2014-6332",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2015-0313",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2015-2419",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2016-0189",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-0143",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-0199",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-01996",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2017-0262",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-0263",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-11882",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-118827",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2018-0802",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-8174",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-0752",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-13720",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-0674",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-26411",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-35211",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-31199",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-27350",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-34362",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-1708",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-1709",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2017-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2019-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2019-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2020-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2023-Q1",
+      "count": 5
+    },
+    {
+      "quarter": "2023-Q2",
+      "count": 3
+    },
+    {
+      "quarter": "2023-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2025-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "600cac4b4fc9a9b6241a9177429d5ea474950633",
+    "62ae56cfb569b786c3ba0420c26e78fa1103d664",
+    "c0b6b55f4177ff960648364581fcf125ad3a6cd4",
+    "0167228714b6706ce40c2109d7cbfdb1e4f7c62e",
+    "4e9c77e4b8991049e79ba75ed041673e8503157b",
+    "64df87cac686a9d3f82ec3e06e6364718b9afeb1",
+    "4d1e43384eb54a1c4c4e973ad2a494ea01b0c00a",
+    "44fa26153489eee252b5ccbf2194e8cf7d3f6441",
+    "f5ac5b24528d0aa81d5457fc7fe07c49de144ee1",
+    "dfb07eec53b154eb86647ff90c431f43ddea6e70",
+    "0948ea10634dbb40171cd779d87cfc5cba45bcb5",
+    "871c229eff3707bd8b9f423b8a5b157242f36321",
+    "e5f1c33cac341286af9062168f4d925bb241ac7a",
+    "1460844da0d4a71e4f8aff5a4f7c3a5d70efb5d7",
+    "ab1ee9b5e79b3b44b4e20d3806a5d4dbc74e73d4",
+    "316c1c936f78837e7148812ecb761adb7345a925",
+    "df60bb2850cd056f36be17aa79d6bbb0dd02938a",
+    "28daf3ac0fd51cfb17d851fe8469d7f8a620452b",
+    "71d071d0d47356e26ed72eeb51ad906b70fd46c3",
+    "fed84094f8bd8822542b76820b569235ff6cd98a",
+    "8a334cf52006c753baa8e990275241ccfd7c7ec5",
+    "bb4b9c2d558621a3feee2b00f4edcec0448646ed",
+    "461f427a1eb0d0c558bc2ad4f8f625a0bf0b6be7",
+    "28af1f42b6f62a2c8b550f5999061eea92c574c8",
+    "73a9554626fde9e3b23fc2e2e2d33ef3394a61bf",
+    "paper:silence_moving-into-the-darkside",
+    "7248e232bab65f79ad7274ea1049a8b13179916c"
+  ],
+  "conflicts": [],
+  "evidence_count": 6
+}

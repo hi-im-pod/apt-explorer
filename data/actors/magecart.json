@@ -1,0 +1,218 @@
+{
+  "id": "magecart",
+  "name": "MageCart",
+  "aliases": [
+    {
+      "value": "MageCart",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "magecart",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2016-4010",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2017-0144",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-0604",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-0708",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-2725",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-24086",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2022-24087",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2024-34102",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2025-47110",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-54236",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2018-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2019-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2019-Q2",
+      "count": 3
+    },
+    {
+      "quarter": "2019-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 10
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 8
+    },
+    {
+      "quarter": "2020-Q3",
+      "count": 5
+    },
+    {
+      "quarter": "2020-Q4",
+      "count": 3
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q2",
+      "count": 3
+    },
+    {
+      "quarter": "2021-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 3
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "1062e14aacea30c6afa7aaeb91324b72be25c0c4",
+    "a90ac4e3c02a1ea796f99068f59350546a1537eb",
+    "bea3c1e9bf89592ff4a32953708cace24081c354",
+    "c61886b75dde6cc796b294f11655c0664ec1b281",
+    "53626c1051da5e12ff8b7cade2ef7872314c17b2",
+    "cd3666f75e63d2dfdd7f1d027d303a6507692bb8",
+    "0620c9c33afaa52740d509ba23f1e8d417098a09",
+    "5146f2c397ee9343d59dec88160bad750d8e4e1c",
+    "fcc1292cfea5b604460191bdf7df8f72a3be6d8a",
+    "fb2e2eeef9452e2b2fe7ea64590201d50d1dee41",
+    "0cd997cc2c1f679cd0d734a0c7b257ca9acdbe06",
+    "afd44adf1849e1227356a12359196c029b2620f4",
+    "22f73a673b94190f29938f6ee82dbbb5afd3d95f",
+    "49f41b9bb7d13908d907fe1b35d6e09227bffc50",
+    "e2800dd0f3d20da804613174e5e5b4b9234b0bc7",
+    "c2114f749b0013b53ac921685825a45677477733",
+    "8bc8e93791e8902040c227e7b14d54466a3af745",
+    "9029dc135c03bbdf18067d08d11a1fe234fd0c69",
+    "4d302f0337f30bae51a162132e1bde5aa82db975",
+    "a47abaf4da7764511f0ee6dbe2a1d60f4790ac5a",
+    "21de5d50f42061c8db17d001c4a3029a4d0f9137",
+    "85b513aa7777969db0ef5476a925992cde7892c4",
+    "51394ccb24a526bd9c46b7ef7f4d4f2a9ce41940",
+    "f3460ae2716ba00c86b1c1aa2afa5de65a1f2b0c",
+    "26616b75591bd213ba4a0c5508755481f0a74bbc",
+    "b7f1af0c0248ab7106bef87fea76007eda734981",
+    "5d588e4f8a7cf4710325233b4dc129bd5c975811",
+    "ae88a28c39416fbe5ae48a7885044b12c339ff1c",
+    "c8c746d9e8d70884b7fd270e6060c7084dad8196",
+    "a4339737e3fd1490b59b12ec23bbce462f4c3b4a",
+    "977267b4fd3c42512157d7a92dc45c11c6fd186a",
+    "1899445fca29ed7132f5d14fe8b0acdb1ae03f69",
+    "522b1b9d8acb2f1f1856baa02ff2d2786aa86853",
+    "e43c9fecfb9048439c809644ffda4725983103aa",
+    "24b089f66141a590b8d2b32cff928f14e3a0d550",
+    "c837699eefecc3ce1b59533cac86de5e19f2de1c",
+    "14cc938b28cf45badecfbd417f9aba63c4f12058",
+    "34b84eab4ed1e10193690ec45fb2578e877cad38",
+    "451443542c754aaa301a5e9c2c34d4cb5cbb0e97",
+    "2cb1a1fb413d4854bcdbb4b8474f2b2696e5f5dd",
+    "89951f8270cd950887f5acf99c65638d2c68b6de",
+    "eeb279bf4ecacd5ec7e071d89a9de6e93a2b2e4b",
+    "df8c6e17acdd0d83a9127877a405b9425a1e5fd2",
+    "f2f120a0bd41748b0d69d8616fdd2a7713d1510e",
+    "1b9d20cd96eca138bf6e4345f5a4d649e9d7f951",
+    "a2b58817a1bb63945895f6b4d0a0afcc98e53b8b",
+    "e7b7c9cb511edac1e8d98207440454ef90677bd9",
+    "a40ff89c2c82c824c8adac234c07ca918aa8e2b5",
+    "fa25a2eca914cc7782885545ce6326349b1b48dd",
+    "0fcb2c5164bfd3e4bd0481dd8de6f7cbfb4445a5",
+    "98a8f2b5b7f8b857c29ae388ac1eebfc6c8844d3",
+    "2221802c63d5047b4b123902b4a8c9bda3f1be2e"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

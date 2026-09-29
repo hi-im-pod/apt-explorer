@@ -1,0 +1,400 @@
+{
+  "id": "G0075",
+  "name": "Rancor",
+  "aliases": [
+    {
+      "value": "Rancor",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Rancor Group",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Rancor Taurus",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "RANCOR",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Rancor group",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "etda"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "China",
+      "source": "misp"
+    },
+    {
+      "value": "China",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Singapore",
+        "source": "misp"
+      },
+      {
+        "value": "Cambodia",
+        "source": "misp"
+      },
+      {
+        "value": "Cambodia",
+        "source": "etda"
+      },
+      {
+        "value": "Singapore",
+        "source": "etda"
+      },
+      {
+        "value": "Vietnam",
+        "source": "etda"
+      },
+      {
+        "value": "Singapore",
+        "source": "malpedia"
+      },
+      {
+        "value": "Cambodia",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Civil society",
+        "source": "misp"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "political entities",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      },
+      {
+        "value": "Civil society",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "DDKONG",
+      "source": "attack"
+    },
+    {
+      "name": "PLAINTEE",
+      "source": "attack"
+    },
+    {
+      "name": "Reg",
+      "source": "attack"
+    },
+    {
+      "name": "certutil",
+      "source": "attack"
+    },
+    {
+      "name": "8.t Dropper",
+      "source": "malpedia"
+    },
+    {
+      "name": "DDKONG",
+      "source": "malpedia"
+    },
+    {
+      "name": "PLAINTEE",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1053.005",
+    "T1059.003",
+    "T1059.005",
+    "T1071.001",
+    "T1105",
+    "T1204.002",
+    "T1218.007",
+    "T1546.003",
+    "T1566.001"
+  ],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2012-0158",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2014-1761",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2015-7645",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2016-1019",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2016-4117",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-0199",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-0261",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-11882",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-8570",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-8759",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-0798",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-0802",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-8570",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2019-11510",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-13720",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-19781",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-2215",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-0674",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-0688",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-10189",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-1472",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-1664",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2020-5135",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-5902",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-1040",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2022-30190",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2018-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2018-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2018-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2019-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2019-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 6
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2023-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "05492ed154eb29b8f629bdefcce596de1596d21f",
+    "ce5d2096b4d274477ef7da69a6ebf55018dd7249",
+    "586056209352af94432542eaa4865ffb6026b96e",
+    "71a6cdf9a7133b7f18c54ae88788fe8d4f2b7798",
+    "434bfe8feea363bbccfa107c9d24e6a5a5a756f2",
+    "fe88cf32c0db9cf5d15f3202c19793ccb5045fbb",
+    "459d4afeac4f379012af4f4d6e233c041fdd16c7",
+    "e77b297b2ecccec54516ba2538bd4f30bb528cb7",
+    "07abf8d563b06610e15d6e277748aedee6c310d2",
+    "db4237de5b592f87d4c8775722bdc5589dce6950",
+    "d9868cea48675bc539618753e8d6292ab75d65e9",
+    "99082dea169edfd63d6d0d53e44f30226000e783",
+    "1618dabcb33c58ce1804bccb2e71df09c140b620",
+    "fed84094f8bd8822542b76820b569235ff6cd98a",
+    "67ed982fef7800a433d55e59ffe9e0da74cad52b",
+    "5b25a8a994e713bf9371f4f91afeeac9d04ec860",
+    "e54539e7a87e229b70384bd20943c2afd689445c",
+    "72fd9c6eb05ac339aace5c8771b6da7ef8de688b",
+    "a873e9f1ba1904911a92497f949b9b10c701d931",
+    "9c06013fd519169a0ae86c69438b59f7fb848bd9",
+    "dc10236f085ce06fb6d2ca7808ba00c3f307fc02",
+    "d1bb4ab4a3ea1dc2463487f593ebe2f7ed6e1704",
+    "6a7ef30b7ef4ecd4c85430aaa1234ad2c1493b3d",
+    "89540497d08e70e4a9400ca3f0594d37bbd188ab",
+    "9de4109c60d0abbf4d986815169f04a78ceaf101",
+    "8c43c98c4d92b683088413f7f1c9be56e1e2a0f6",
+    "dc7912fdc23452e38d28768ce42a18c17f17ebce"
+  ],
+  "conflicts": [],
+  "evidence_count": 7
+}

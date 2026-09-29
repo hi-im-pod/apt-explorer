@@ -1,0 +1,74 @@
+{
+  "id": "greenspot",
+  "name": "GreenSpot",
+  "aliases": [
+    {
+      "value": "GreenSpot",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "PoisonVine",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "APT-Q-20",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "TW",
+      "source": "misp"
+    },
+    {
+      "value": "TW",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2012-0158",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2014-4114",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-8759",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2018-Q3",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "d46f8f9f955dae7486b9c9b96c533ebb56a739b9"
+  ],
+  "conflicts": [],
+  "evidence_count": 3
+}

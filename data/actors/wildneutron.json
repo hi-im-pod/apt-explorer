@@ -1,0 +1,177 @@
+{
+  "id": "wildneutron",
+  "name": "WildNeutron",
+  "aliases": [
+    {
+      "value": "WildNeutron",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Butterfly",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Morpho",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Sphinx Moth",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Wild Neutron",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "The Postal Group",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Algeria",
+        "source": "etda"
+      },
+      {
+        "value": "Australia",
+        "source": "etda"
+      },
+      {
+        "value": "Austria",
+        "source": "etda"
+      },
+      {
+        "value": "Canada",
+        "source": "etda"
+      },
+      {
+        "value": "France",
+        "source": "etda"
+      },
+      {
+        "value": "Germany",
+        "source": "etda"
+      },
+      {
+        "value": "Kazakhstan",
+        "source": "etda"
+      },
+      {
+        "value": "Palestine",
+        "source": "etda"
+      },
+      {
+        "value": "Poland",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "etda"
+      },
+      {
+        "value": "Slovenia",
+        "source": "etda"
+      },
+      {
+        "value": "Spain",
+        "source": "etda"
+      },
+      {
+        "value": "Switzerland",
+        "source": "etda"
+      },
+      {
+        "value": "United Arab Emirates",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Financial",
+        "source": "etda"
+      },
+      {
+        "value": "Healthcare",
+        "source": "etda"
+      },
+      {
+        "value": "IT",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "JripBot",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2012-3213",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2013-0422",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2015-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2015-Q4",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "paper:Sphinx%20Moth%20Expanding%20our%20knowledge%20of%20the%20'Wild%20Neutron'%20%20'Morpho'%20APT",
+    "paper:butterfly-corporate-spies-out-for-financial-gain",
+    "04782375b790b045df57c2ae4e91d69911a58dfa",
+    "paper:WildNeutron_Economic_espionage"
+  ],
+  "conflicts": [],
+  "evidence_count": 8
+}

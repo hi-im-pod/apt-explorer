@@ -1,0 +1,263 @@
+{
+  "id": "G0055",
+  "name": "NEODYMIUM",
+  "aliases": [
+    {
+      "value": "NEODYMIUM",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Neodymium",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "TR",
+      "source": "etda"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "Wingbird",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2008-2551",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2010-0188",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2010-0840",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2010-1297",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2010-2568",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2010-3336",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2010-3653",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2011-0097",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2011-0611",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2011-1823",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2012-0056",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2012-0158",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2012-0507",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2012-1723",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2012-1889",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2013-0074",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2013-0422",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2013-1493",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2013-2423",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2013-2460",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2013-2551",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2013-3896",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2014-1761",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2014-6332",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2015-0072",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2015-0310",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2015-0311",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2015-0313",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2015-1671",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2015-5119",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2015-8651",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2016-0034",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2016-0165",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2016-0167",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2016-0189",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2016-1010",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2016-1019",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2016-4117",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2016-4171",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2016-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2017-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "918a2a4f90591eb792b4af948bd705b24520eeaf",
+    "272a1bd174df7770e539ef0553873d78b1e0c57a",
+    "c522253f0ac5cbfb56d0d8f377ef360a6ace0a5b"
+  ],
+  "conflicts": [],
+  "evidence_count": 5
+}

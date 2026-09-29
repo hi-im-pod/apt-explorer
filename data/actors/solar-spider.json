@@ -1,0 +1,126 @@
+{
+  "id": "solar-spider",
+  "name": "SOLAR SPIDER",
+  "aliases": [
+    {
+      "value": "SOLAR SPIDER",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Solar Spider",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": [
+      {
+        "value": "Finance",
+        "source": "misp"
+      },
+      {
+        "value": "Finance",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "JSOutProx",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [
+    {
+      "id": "T1036",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2018-13379",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-0604",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-11510",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-19781",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-0688",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-10189",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-1472",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-2021",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2020-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "a55a53a8d96894273342541964cc89cefb7e024b",
+    "55b4a7ce4e93c81ae4b1b1bf5995e607141b6ef6",
+    "12be6a4988d9340d8636edaa8bc76c4aae461c4e",
+    "2d98a214de7a8a280ebe92a6883684593e3d33d3",
+    "3d9a2e7f33d013567267abcef3ce54761fc054d6",
+    "a722821ee32695219c76160941e59f97bd551f66"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

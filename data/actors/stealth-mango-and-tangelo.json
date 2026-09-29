@@ -1,0 +1,137 @@
+{
+  "id": "stealth-mango-and-tangelo",
+  "name": "Stealth Mango and Tangelo",
+  "aliases": [
+    {
+      "value": "Stealth Mango and Tangelo",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "PK",
+      "source": "misp"
+    },
+    {
+      "value": "PK",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "Pakistan",
+      "source": "misp"
+    },
+    {
+      "value": "Pakistan",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Pakistan",
+        "source": "misp"
+      },
+      {
+        "value": "Iraq",
+        "source": "misp"
+      },
+      {
+        "value": "Australia",
+        "source": "misp"
+      },
+      {
+        "value": "Afghanistan",
+        "source": "misp"
+      },
+      {
+        "value": "United Arab Emirates",
+        "source": "misp"
+      },
+      {
+        "value": "Germany",
+        "source": "misp"
+      },
+      {
+        "value": "India",
+        "source": "misp"
+      },
+      {
+        "value": "United States",
+        "source": "misp"
+      },
+      {
+        "value": "Pakistan",
+        "source": "malpedia"
+      },
+      {
+        "value": "Iraq",
+        "source": "malpedia"
+      },
+      {
+        "value": "Australia",
+        "source": "malpedia"
+      },
+      {
+        "value": "Afghanistan",
+        "source": "malpedia"
+      },
+      {
+        "value": "United Arab Emirates",
+        "source": "malpedia"
+      },
+      {
+        "value": "Germany",
+        "source": "malpedia"
+      },
+      {
+        "value": "India",
+        "source": "malpedia"
+      },
+      {
+        "value": "United States",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Civil society",
+        "source": "misp"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      },
+      {
+        "value": "Civil society",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 1
+}

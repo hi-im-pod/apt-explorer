@@ -1,0 +1,459 @@
+{
+  "id": "G0117",
+  "name": "Fox Kitten",
+  "aliases": [
+    {
+      "value": "Fox Kitten",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UNC757",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Lemon Sandstorm",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "RUBIDIUM",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Parisite",
+      "sources": [
+        "attack",
+        "etda"
+      ]
+    },
+    {
+      "value": "Pioneer Kitten",
+      "sources": [
+        "attack",
+        "etda"
+      ]
+    },
+    {
+      "value": "PIONEER KITTEN",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "PARISITE",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Cobalt Foxglove",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Rubidium",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "PioneerKitten",
+      "sources": [
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IR",
+      "source": "misp"
+    },
+    {
+      "value": "IR",
+      "source": "etda"
+    },
+    {
+      "value": "IR",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Australia",
+        "source": "etda"
+      },
+      {
+        "value": "Austria",
+        "source": "etda"
+      },
+      {
+        "value": "Finland",
+        "source": "etda"
+      },
+      {
+        "value": "France",
+        "source": "etda"
+      },
+      {
+        "value": "Germany",
+        "source": "etda"
+      },
+      {
+        "value": "Hungary",
+        "source": "etda"
+      },
+      {
+        "value": "Israel",
+        "source": "etda"
+      },
+      {
+        "value": "Italy",
+        "source": "etda"
+      },
+      {
+        "value": "Kuwait",
+        "source": "etda"
+      },
+      {
+        "value": "Lebanon",
+        "source": "etda"
+      },
+      {
+        "value": "Malaysia",
+        "source": "etda"
+      },
+      {
+        "value": "Poland",
+        "source": "etda"
+      },
+      {
+        "value": "Saudi Arabia",
+        "source": "etda"
+      },
+      {
+        "value": "United Arab Emirates",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Aviation",
+        "source": "etda"
+      },
+      {
+        "value": "Chemical",
+        "source": "etda"
+      },
+      {
+        "value": "Energy",
+        "source": "etda"
+      },
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Engineering",
+        "source": "etda"
+      },
+      {
+        "value": "Financial",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Healthcare",
+        "source": "etda"
+      },
+      {
+        "value": "IT",
+        "source": "etda"
+      },
+      {
+        "value": "Media",
+        "source": "etda"
+      },
+      {
+        "value": "Manufacturing",
+        "source": "etda"
+      },
+      {
+        "value": "Oil and gas",
+        "source": "etda"
+      },
+      {
+        "value": "Retail",
+        "source": "etda"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "China Chopper",
+      "source": "attack"
+    },
+    {
+      "name": "Pay2Key",
+      "source": "attack"
+    },
+    {
+      "name": "PsExec",
+      "source": "attack"
+    },
+    {
+      "name": "SystemBC",
+      "source": "attack"
+    },
+    {
+      "name": "ngrok",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1003.001",
+    "T1003.003",
+    "T1005",
+    "T1012",
+    "T1018",
+    "T1021.001",
+    "T1021.002",
+    "T1021.004",
+    "T1021.005",
+    "T1027.010",
+    "T1027.013",
+    "T1036.004",
+    "T1036.005",
+    "T1039",
+    "T1046",
+    "T1053.005",
+    "T1059",
+    "T1059.001",
+    "T1059.003",
+    "T1078",
+    "T1083",
+    "T1087.001",
+    "T1087.002",
+    "T1090",
+    "T1102",
+    "T1105",
+    "T1110",
+    "T1136.001",
+    "T1190",
+    "T1210",
+    "T1213.005",
+    "T1217",
+    "T1505.003",
+    "T1530",
+    "T1546.008",
+    "T1552.001",
+    "T1555.005",
+    "T1560.001",
+    "T1572",
+    "T1585",
+    "T1585.001"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1003",
+      "count": 1
+    },
+    {
+      "id": "T1003.001",
+      "count": 1
+    },
+    {
+      "id": "T1003.002",
+      "count": 1
+    },
+    {
+      "id": "T1021.001",
+      "count": 1
+    },
+    {
+      "id": "T1021.002",
+      "count": 1
+    },
+    {
+      "id": "T1021.004",
+      "count": 1
+    },
+    {
+      "id": "T1053.005",
+      "count": 1
+    },
+    {
+      "id": "T1056",
+      "count": 1
+    },
+    {
+      "id": "T1056.003",
+      "count": 1
+    },
+    {
+      "id": "T1059.001",
+      "count": 1
+    },
+    {
+      "id": "T1070.006",
+      "count": 1
+    },
+    {
+      "id": "T1078.002",
+      "count": 1
+    },
+    {
+      "id": "T1133",
+      "count": 1
+    },
+    {
+      "id": "T1218",
+      "count": 1
+    },
+    {
+      "id": "T1219",
+      "count": 1
+    },
+    {
+      "id": "T1505.003",
+      "count": 1
+    },
+    {
+      "id": "T1556.002",
+      "count": 1
+    },
+    {
+      "id": "T1572",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2018-13379",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-1579",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2019-11510",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-11539",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-19781",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-5902",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-38950",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2023-3895037",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2023-38951",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2023-3895138",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2023-38952",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2023-3895239",
+      "kev": false,
+      "ransomware": null
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2020-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2020-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2025-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "50e5250ec1a5564fe289068323c72fed31e609d0",
+    "92b71dd407e51409b3ce7d3cd8518e1adff0900e",
+    "a4f055f4aa7f38e5a81e9d28e6a1d929d2f6842a",
+    "1b97889b7b9c89d7bed71413db8fe7b8ec3f8860",
+    "b036d3911079f41830018b344184b28a9079a632",
+    "73b5e3e155f9690b5a1c231760d78e2471cc9af4"
+  ],
+  "conflicts": [],
+  "evidence_count": 18
+}

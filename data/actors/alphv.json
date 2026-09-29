@@ -1,0 +1,56 @@
+{
+  "id": "alphv",
+  "name": "ALPHV",
+  "aliases": [
+    {
+      "value": "ALPHV",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "ALPHVM",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "BlackCat Gang",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "UNC4466",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Ambitious Scorpius",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Financial gain",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 0
+}

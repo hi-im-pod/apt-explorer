@@ -1,0 +1,231 @@
+{
+  "id": "earth-berberoka",
+  "name": "Earth Berberoka",
+  "aliases": [
+    {
+      "value": "Earth Berberoka",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "GamblingPuppet",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "etda"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "China",
+        "source": "misp"
+      },
+      {
+        "value": "United States",
+        "source": "misp"
+      },
+      {
+        "value": "Hong Kong",
+        "source": "misp"
+      },
+      {
+        "value": "Malaysia",
+        "source": "misp"
+      },
+      {
+        "value": "Taiwan",
+        "source": "misp"
+      },
+      {
+        "value": "China",
+        "source": "malpedia"
+      },
+      {
+        "value": "United States",
+        "source": "malpedia"
+      },
+      {
+        "value": "Hong Kong",
+        "source": "malpedia"
+      },
+      {
+        "value": "Malaysia",
+        "source": "malpedia"
+      },
+      {
+        "value": "Taiwan",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Gambling Websites",
+        "source": "misp"
+      },
+      {
+        "value": "Information technology",
+        "source": "misp"
+      },
+      {
+        "value": "Electronics Manufacturers",
+        "source": "misp"
+      },
+      {
+        "value": "Education",
+        "source": "misp"
+      },
+      {
+        "value": "Casinos and Gambling",
+        "source": "etda"
+      },
+      {
+        "value": "Gambling Websites",
+        "source": "malpedia"
+      },
+      {
+        "value": "Information technology",
+        "source": "malpedia"
+      },
+      {
+        "value": "Electronics Manufacturers",
+        "source": "malpedia"
+      },
+      {
+        "value": "Education",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "HelloBot",
+      "source": "malpedia"
+    },
+    {
+      "name": "Rshell",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2017-15944",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-1207",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-26855",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-26857",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-27065",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-31195",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-31196",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-31206",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-31207",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-34473",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-34523",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-44228",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-21587",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-47986",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2022-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q3",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "29646bd71e8daa952efa40cfb3836392f68d7a4b",
+    "8269696ef27d5db68cfb4b51946e7ccd937d98fe",
+    "8a1d66455b304913f385a3ce7e6c23e7060211b2",
+    "ebfda0e6fa14e173ec63d10b7d616d453cf18bb0"
+  ],
+  "conflicts": [],
+  "evidence_count": 4
+}

@@ -1,0 +1,187 @@
+{
+  "id": "G0133",
+  "name": "Nomadic Octopus",
+  "aliases": [
+    {
+      "value": "Nomadic Octopus",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "DustSquad",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Golden Falcon",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "APT-C-34",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "RU",
+      "source": "misp"
+    },
+    {
+      "value": "RU",
+      "source": "etda"
+    },
+    {
+      "value": "RU",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Afghanistan",
+        "source": "etda"
+      },
+      {
+        "value": "Kazakhstan",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Media",
+        "source": "etda"
+      },
+      {
+        "value": "diplomats and dissidents",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Octopus",
+      "source": "attack"
+    },
+    {
+      "name": "RCS",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1036",
+    "T1059.001",
+    "T1059.003",
+    "T1105",
+    "T1204.002",
+    "T1564.003",
+    "T1566.001"
+  ],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2016-4117",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-15982",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2012-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2012-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2019-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "6d9d5c4e6b7d33e0a5ca5d5d8a1bd4f6390bbac6",
+    "e7ca2681510b1c79cfc827ed4168f65a814a7b4c",
+    "376d8ca8645a8cae8bf2f979e02a7d86ba3bc756",
+    "f3689f177e84f86339bbf081e256c5279fc9247a",
+    "f2144ce8647afe942d16e8886735e5ef139ce02d",
+    "192be8ca1c779e40ef93e950065e84f5d900161e",
+    "d98f01f30dd26d2e017a6ff76dca24caa6179f81",
+    "7c8822e79f18b854a3b9ed2148410cea198c3408",
+    "2b3082d75dd39ff900b4b17fca8d1f22109d2655",
+    "86b482a16690c51947f30b16dbe692dba2850897",
+    "941d6cac3b97c64bc7280026d2bb5fb1c7db9414",
+    "3cdd5180fbe3168e97ae2da0e4e4d188760525c5",
+    "f7846d9fb1722b5003103c4250930743a32243e4",
+    "f5cd333e3df571e9fcb5b44ec99a494162c68a00"
+  ],
+  "conflicts": [],
+  "evidence_count": 10
+}

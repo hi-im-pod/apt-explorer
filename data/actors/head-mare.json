@@ -1,0 +1,40 @@
+{
+  "id": "head-mare",
+  "name": "Head Mare",
+  "aliases": [
+    {
+      "value": "Head Mare",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "PhantomGraph",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2026-Q3",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "91f90a05c5ca8aacc0a851d919688d61cedfeacd"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

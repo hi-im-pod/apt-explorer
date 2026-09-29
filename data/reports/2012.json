@@ -1,0 +1,2061 @@
+[
+  {
+    "id": "c146bdd1dfc40e71ca81557ecc5443fdbcf210ab",
+    "title": "ZeroAccess / Sirefef Rootkit - 5 fresh samples",
+    "published": "2012-12-26",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://contagiodump.blogspot.com/2012/12/zeroaccess-sirefef-rootkit-5-fresh.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/c146bdd1dfc40e71ca81557ecc5443fdbcf210ab.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "564f24384facefbcf8c1e040b8637e2adb92a246",
+    "title": "Dec 2012 Linux.Chapro - trojan Apache iframer",
+    "published": "2012-12-24",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://contagiodump.blogspot.com/2012/12/dec-2012-linuxchapro-trojan-apache.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/564f24384facefbcf8c1e040b8637e2adb92a246.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2012-1723"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "fa51a98e20f85a937fdd65f80a62fb834ba45be7",
+    "title": "Dec. 2012 Trojan.Stabuniq samples - financial infostealer trojan",
+    "published": "2012-12-24",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://contagiodump.blogspot.com/2012/12/dec-2012-trojanstabuniq-samples.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/fa51a98e20f85a937fdd65f80a62fb834ba45be7.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "4832b722a70d53bedc78a1205a129eb32210ec6a",
+    "title": "Dec 2012 Dexter - POS Infostealer samples and information",
+    "published": "2012-12-23",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://contagiodump.blogspot.com/2012/12/dexter-pos-infostealer-samples-and.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/4832b722a70d53bedc78a1205a129eb32210ec6a.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "0ebb25806772c282099c2cf757e98ffcf9cfc744",
+    "title": "Research, News, and Perspectives",
+    "published": "2012-12-21",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/infostealer-dexter-targets-checkout-systems/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/0ebb25806772c282099c2cf757e98ffcf9cfc744.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "a486fb5b0b485796f0b2d1248c948e7c64c6b49a",
+    "title": "The Heartbeat Apt Campaign",
+    "published": "2012-12-21",
+    "date_basis": "file-metadata",
+    "organisation": "Trend Micro",
+    "url": "https://app.box.com/s/4qfg9m8wrdgsdf7k3fwrz7zmg2tkfxno",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/a486fb5b0b485796f0b2d1248c948e7c64c6b49a.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "2d4dc68bbc1a73c435ccf4ba8e886bbc1e61e62d",
+    "title": "Win32/Spy.Ranbyus modifying Java code in RBS Ukraine systems",
+    "published": "2012-12-19",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://www.welivesecurity.com/2012/12/19/win32spy-ranbyus-modifying-java-code-in-rbs/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/2d4dc68bbc1a73c435ccf4ba8e886bbc1e61e62d.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "0b541fac82a69e00d637a13bbbde4739e19c2176",
+    "title": "ESET Blog: Cybersecurity News, Threats & Tips",
+    "published": "2012-12-18",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://blog.eset.com/2012/12/18/malicious-apache-module-used-for-content-injection-linuxchapro-a",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/0b541fac82a69e00d637a13bbbde4739e19c2176.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "16ae9c14284f7127f31be2ab3bb1b233fc950865",
+    "title": "https://www.trustwave.com/Resources/SpiderLabs-Blog/The-Dexter-Malware--Getting-Your-Hands-Dirty/",
+    "published": "2012-12-13",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://www.trustwave.com/Resources/SpiderLabs-Blog/The-Dexter-Malware--Getting-Your-Hands-Dirty/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/16ae9c14284f7127f31be2ab3bb1b233fc950865.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "a549e97b28a2936e0f68745789e1569be71271c4",
+    "title": "Unpacking Dexter POS \"Memory Dump Parsing\" Malware",
+    "published": "2012-12-12",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://volatility-labs.blogspot.com/2012/12/unpacking-dexter-pos-memory-dump.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/a549e97b28a2936e0f68745789e1569be71271c4.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "b23169f889ceede40b24a433c953638925a36ddb",
+    "title": "Aug 2012 Backdoor.Wirenet - OSX and Linux",
+    "published": "2012-12-07",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://contagiodump.blogspot.com/2012/12/aug-2012-backdoorwirenet-osx-and-linux.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/b23169f889ceede40b24a433c953638925a36ddb.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "cea43242e385bb10cfce08eed98dc9cf220a15b7",
+    "title": "Nov 2012 - Backdoor.W32.Makadocs Sample",
+    "published": "2012-12-07",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://contagiodump.blogspot.com/2012/12/nov-2012-backdoorw32makadocs-sample.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/cea43242e385bb10cfce08eed98dc9cf220a15b7.pdf",
+    "actors": [
+      "G0033"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "f149387774016036e77e49a1c38fcc2d5967b702",
+    "title": "Nov 2012 Worm Vobfus Samples",
+    "published": "2012-12-07",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://contagiodump.blogspot.com/2012/12/nov-2012-worm-vobfus-samples.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/f149387774016036e77e49a1c38fcc2d5967b702.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "f7846d9fb1722b5003103c4250930743a32243e4",
+    "title": "Aug 2012 W32.Crisis and OSX.Crisis - JAR file Samples - APT",
+    "published": "2012-12-07",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://contagiodump.blogspot.com/2012/12/aug-2012-w32crisis-and-osxcrisis-jar.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/f7846d9fb1722b5003103c4250930743a32243e4.pdf",
+    "actors": [
+      "G0133",
+      "hacking-team"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "1a10a2ca371efbaa9cc52de23ddc50a24d7fadff",
+    "title": "Nov 2012 - W32.Narilam Sample",
+    "published": "2012-12-06",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://contagiodump.blogspot.com/2012/12/nov-2012-w32narilam-sample.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/1a10a2ca371efbaa9cc52de23ddc50a24d7fadff.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "1a789ca5f77588cd201b8c7f4bdd0a77762bb0f2",
+    "title": "The path to infection - Eye glance at the first line of \"Russian Underground\" - focused on Ransomware",
+    "published": "2012-12-05",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://malware.dontneedcoffee.com/2012/12/eyeglanceru.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/1a789ca5f77588cd201b8c7f4bdd0a77762bb0f2.pdf",
+    "actors": [
+      "G0134"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "39fa5d4aea8b0e20cc087271b8ef1edfd6c3fa2a",
+    "title": "OSX/Dockster.A and Win32/Trojan.Agent.AXMO Samples, pcaps, OSX malware analysis tools",
+    "published": "2012-12-05",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://contagiodump.blogspot.com/2012/12/osxdockstera-and-win32trojanagentaxmo.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/39fa5d4aea8b0e20cc087271b8ef1edfd6c3fa2a.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "c4893b78d12dbb94b9d3fa415a9ce701fb0d75a3",
+    "title": "Virus Bulletin :: Compromised library",
+    "published": "2012-12-03",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://www.virusbulletin.com/virusbulletin/2012/12/compromised-library",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/c4893b78d12dbb94b9d3fa415a9ce701fb0d75a3.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "66bb8b5e617439e3af82783bcb71571980a8b31c",
+    "title": "Inside view of Lyposit aka (for its friends) Lucky LOCKER",
+    "published": "2012-11-29",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://malware.dontneedcoffee.com/2012/11/inside-view-of-lyposit-aka-for-its.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/66bb8b5e617439e3af82783bcb71571980a8b31c.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "bacddfba82cfacb4e732f91452179e966719d06b",
+    "title": "Research, News, and Perspectives",
+    "published": "2012-11-29",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/whats-the-fuss-with-worm_vobfus/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/bacddfba82cfacb4e732f91452179e966719d06b.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "2ff83b3616a2c10b1ed9fa879a83b5755137693a",
+    "title": "Parastoo Hacks IAEA",
+    "published": "2012-11-25",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://cryptome.org/2012/11/parastoo-hacks-iaea.htm",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/2ff83b3616a2c10b1ed9fa879a83b5755137693a.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "502e2449a455b810cb16bc18080da3aab9baa2a2",
+    "title": "GitHub - DesignativeDave/androrat: Remote Administration Tool for Android devices",
+    "published": "2012-11-16",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://github.com/DesignativeDave/androrat",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/502e2449a455b810cb16bc18080da3aab9baa2a2.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "6ac96277e3120a9730fd6584cd42217c3527aed1",
+    "title": "China Chopper Webshell - the 4KB that Owns your Web Server",
+    "published": "2012-11-16",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://informationonsecurity.blogspot.com/2012/11/china-chopper-webshell.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/6ac96277e3120a9730fd6584cd42217c3527aed1.pdf",
+    "actors": [
+      "G0027",
+      "G0065",
+      "G0093",
+      "G0096",
+      "G0125",
+      "hurricane-panda"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "09c742937a65d5be9b7c683d847f583cf4f6a2bb",
+    "title": "Group Photos.zip OSX/Revir | OSX/iMuler samples March 2012-November 2012",
+    "published": "2012-11-14",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://contagiodump.blogspot.com/2012/11/group-photoszip-osxrevir-osximuler.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/09c742937a65d5be9b7c683d847f583cf4f6a2bb.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "e802d6f06085f22242a66b06c785315e1c63c070",
+    "title": "\"Wicked Rose\" And The Ncph Hacking Group",
+    "published": "2012-11-13",
+    "date_basis": "file-metadata",
+    "organisation": "iDefense",
+    "url": "https://app.box.com/s/0cp8nyd339dnbak96x2klgz1kxm36xd2",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/e802d6f06085f22242a66b06c785315e1c63c070.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "299a326641766c588a04f990927f795ecc31726f",
+    "title": "Systematic Cyber Attacks Against Israeli And Palestinian Targets Going On For A Year",
+    "published": "2012-11-12",
+    "date_basis": "file-metadata",
+    "organisation": "Norman",
+    "url": "https://app.box.com/s/83uopvit3i46wmy3hxvw4g3rjhv8ax1s",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/299a326641766c588a04f990927f795ecc31726f.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "52eb74021588c43ac3b3744d0e9f26d4d0a71d00",
+    "title": "2016-08-07 - Strider- Cyberespionage group turns eye of Sauron on targets",
+    "published": "2012-11-07",
+    "date_basis": "file-metadata",
+    "organisation": "Наталья",
+    "url": "https://papers.vx-underground.org/papers/ICS%20SCADA/ICS%20Vulnerabilities/SCADA%20Safety%20in%20Numbers.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/52eb74021588c43ac3b3744d0e9f26d4d0a71d00.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "36e6df39bc1060317bb727ac3c42387d65c32829",
+    "title": "2016-05-19 - Petya and Mischa – Ransomware Duet (Part 1)",
+    "published": "2012-11-06",
+    "date_basis": "file-metadata",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/ICS%20SCADA/Duqu/The%20Cousins%20of%20Stuxnet%20-Duqu,%20Flame,%20and%20Gauss.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/36e6df39bc1060317bb727ac3c42387d65c32829.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2011-3402"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "11a4a22f7be8336a4073fd45c77798786b197d06",
+    "title": "Citadel: a cyber-criminal’s ultimate weapon? | Malwarebytes Labs",
+    "published": "2012-11-05",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://blog.malwarebytes.com/threat-analysis/2012/11/citadel-a-cyber-criminals-ultimate-weapon/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/11a4a22f7be8336a4073fd45c77798786b197d06.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "4477f8bb9e82fa99d4c0f1d57720f5856b8ee9f8",
+    "title": "Recovering From Shamoon",
+    "published": "2012-11-01",
+    "date_basis": "file-metadata",
+    "organisation": "Fidelis",
+    "url": "https://app.box.com/s/fjucrojt5ldxio2sbvsql7syv46l6p4g",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/4477f8bb9e82fa99d4c0f1d57720f5856b8ee9f8.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "8155eee577cf9ad0f7f6b31a71dba70cc29c3182",
+    "title": "2013-02-10 - Shellcoding in Linux",
+    "published": "2012-11-01",
+    "date_basis": "file-metadata",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Linux/Process%20Injection/2013-02-10%20-%20Shellcoding%20in%20Linux.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/8155eee577cf9ad0f7f6b31a71dba70cc29c3182.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "a03b895e6a7d5f216351ede694a60fc4befefd69",
+    "title": "Tracking the 2012 Sasfis campaign",
+    "published": "2012-11-01",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://www.virusbulletin.com/virusbulletin/2012/11/tracking-2012-sasfis-campaign",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/a03b895e6a7d5f216351ede694a60fc4befefd69.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "65982738bfe0e70e63310bfbc1e57c07dfba01ee",
+    "title": "Research, News, and Perspectives",
+    "published": "2012-10-30",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/jacksbot-has-some-dirty-tricks-up-its-sleeves/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/65982738bfe0e70e63310bfbc1e57c07dfba01ee.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "3392452b5245a2e5b7299367f5588c75d44cca25",
+    "title": "The Luckycat Hackers",
+    "published": "2012-10-26",
+    "date_basis": "file-metadata",
+    "organisation": "Symantec",
+    "url": "https://app.box.com/s/oiblu3lk6fsqnjqv6bx4ygkv7e14tcb8",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/3392452b5245a2e5b7299367f5588c75d44cca25.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2010-0188",
+      "CVE-2010-2883",
+      "CVE-2010-3333",
+      "CVE-2011-0611"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "5a563a44b50b5aa78f7de68c8ec819a37fe2c94c",
+    "title": "2016-09-23 - Dissecting a Hacktivist’s DDoS Tool- Saphyra Revealed",
+    "published": "2012-10-24",
+    "date_basis": "file-metadata",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/ICS%20SCADA/Stuxnet/Stuxnet,%20Schmitt%20Analysis,%20and%20the%20Cyber%20%E2%80%9CUse-of-Force%E2%80%9D%20Debate.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/5a563a44b50b5aa78f7de68c8ec819a37fe2c94c.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "3e7ddfd34b1cad4204f2367d65f46e4ca84a9e99",
+    "title": "Detecting APT Activity with Network Traffic Analysis",
+    "published": "2012-10-23",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://documents.trendmicro.com/assets/wp/wp-detecting-apt-activity-with-network-traffic-analysis.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/3e7ddfd34b1cad4204f2367d65f46e4ca84a9e99.pdf",
+    "actors": [
+      "G0026"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2010-2883",
+      "CVE-2011-2462",
+      "CVE-2012-0507"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "9295aec16ab3d95bd082cef98c816f04edea1d3e",
+    "title": "Research, News, and Perspectives",
+    "published": "2012-10-16",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/the-dorkbot-rises/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/9295aec16ab3d95bd082cef98c816f04edea1d3e.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "2e6ea5eda5e11e87687b4208bf60033ea4cac417",
+    "title": "WORM_EMUDBOT.JP - Threat Encyclopedia | Trend Micro (US)",
+    "published": "2012-10-13",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://www.trendmicro.com/vinfo/us/threat-encyclopedia/malware/worm_emudbot.jp",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/2e6ea5eda5e11e87687b4208bf60033ea4cac417.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "6bc3ad509dcbd9887387d23a04c51751cf0c8c8d",
+    "title": "BKDR_SARHUST.A - Threat Encyclopedia | Trend Micro (US)",
+    "published": "2012-10-09",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://www.trendmicro.com/vinfo/us/threat-encyclopedia/malware/bkdr_sarhust.a",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/6bc3ad509dcbd9887387d23a04c51751cf0c8c8d.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "c8a4bd6b756f18d222d542f5091e6385dcc1c5ea",
+    "title": "SASFIS - Threat Encyclopedia | Trend Micro (US)",
+    "published": "2012-10-09",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://www.trendmicro.com/vinfo/us/threat-encyclopedia/malware/sasfis",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/c8a4bd6b756f18d222d542f5091e6385dcc1c5ea.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "203258819d7fbffdfae2c5df96d71254a2816ca6",
+    "title": "Pest Control: Taming The Rats",
+    "published": "2012-10-05",
+    "date_basis": "file-metadata",
+    "organisation": "Matasano",
+    "url": "https://app.box.com/s/k6kyhjnok9n5vqtchm4u1luoluth0j1i",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/203258819d7fbffdfae2c5df96d71254a2816ca6.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "e6823e65a8c3259b765b9faa581e6110d83dab4a",
+    "title": "Dark Comet 2: Electric Boogaloo | Malwarebytes Labs",
+    "published": "2012-10-05",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://blog.malwarebytes.com/threat-analysis/2012/10/dark-comet-2-electric-boogaloo/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/e6823e65a8c3259b765b9faa581e6110d83dab4a.pdf",
+    "actors": [
+      "G0032",
+      "G0064",
+      "G0134"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "2eb5209479c499db090911af31a4756962be6580",
+    "title": "Dissecting 'Operation Ababil' - an OSINT Analysis",
+    "published": "2012-09-28",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://ddanchev.blogspot.com.es/2012/09/dissecting-operation-ababil-osint.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/2eb5209479c499db090911af31a4756962be6580.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "759e45d0b495ec23949b3324fd543df7e450afdc",
+    "title": "The Voho Campaign: An In Depth Analysis",
+    "published": "2012-09-24",
+    "date_basis": "file-metadata",
+    "organisation": "RSA",
+    "url": "https://app.box.com/s/g1nx7q1o451m0o8hmhbeg82igcflk6q5",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/759e45d0b495ec23949b3324fd543df7e450afdc.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2007-4848",
+      "CVE-2008-3869",
+      "CVE-2008-3870",
+      "CVE-2011-3544",
+      "CVE-2012-1723",
+      "CVE-2012-1889"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "1e729f9e0fb15678179f162dc381853962074027",
+    "title": "osx_flashback.pdf",
+    "published": "2012-09-20",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://web-assets.esetstatic.com/wls/200x/white-papers/osx_flashback.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/1e729f9e0fb15678179f162dc381853962074027.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2011-0507",
+      "CVE-2011-3544",
+      "CVE-2012-0507"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "4e2df35f7021446e5a671731476e449b38d19e08",
+    "title": "QassamCyberFighters's Pastebin - Pastebin.com",
+    "published": "2012-09-18",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://pastebin.com/u/QassamCyberFighters",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/4e2df35f7021446e5a671731476e449b38d19e08.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "0120f4f065c62bcd218bbc21bc729bd3645adf14",
+    "title": "Have I Got Newsforyou: Analysis Of Flamer C&C Server",
+    "published": "2012-09-17",
+    "date_basis": "file-metadata",
+    "organisation": "Symantec",
+    "url": "https://app.box.com/s/6ujt4gi1c962id9o4iviesurww2grbxi",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/0120f4f065c62bcd218bbc21bc729bd3645adf14.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "bd6f3f93d3c87e78149d766b2613ed9e18bc2620",
+    "title": "Iexpl0Re Rat",
+    "published": "2012-09-07",
+    "date_basis": "file-metadata",
+    "organisation": "Citizen Lab",
+    "url": "https://app.box.com/s/tdgkyqg7o511v8a29mc8ec28yxzw118j",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/bd6f3f93d3c87e78149d766b2613ed9e18bc2620.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "ce7a662c0f822536e6beff4856f701d28137c8e1",
+    "title": "The Elderwood Project",
+    "published": "2012-09-07",
+    "date_basis": "malpedia-library",
+    "organisation": "Symantec",
+    "url": "https://app.box.com/s/kbhzz24wt2t7kd92c2409uyqawj1jl0t",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/ce7a662c0f822536e6beff4856f701d28137c8e1.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2010-0249",
+      "CVE-2011-0609",
+      "CVE-2011-0611",
+      "CVE-2011-2110",
+      "CVE-2012-0779",
+      "CVE-2012-1535",
+      "CVE-2012-1875",
+      "CVE-2012-1889"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "29447d73b85ebcddbc5299398b4b0daa37628c69",
+    "title": "2016-09-06 - Buckeye cyberespionage group shifts gaze from US to Hong Kong",
+    "published": "2012-09-06",
+    "date_basis": "file-metadata",
+    "organisation": null,
+    "url": "http://www.cs.cornell.edu/courses/cs6410/2012fa/slides/Symantec_ElderwoodProject_2012.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/29447d73b85ebcddbc5299398b4b0daa37628c69.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2010-0249",
+      "CVE-2011-0609",
+      "CVE-2011-0611",
+      "CVE-2011-2110",
+      "CVE-2012-0779",
+      "CVE-2012-1535",
+      "CVE-2012-1875",
+      "CVE-2012-1889"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "fb8df83d58f09d53438e5dcf70159b30f0d89516",
+    "title": "Endpoint Protection - Symantec Enterprise",
+    "published": "2012-09-06",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://community.broadcom.com/symantecenterprise/communities/community-home/librarydocuments/viewdocument?DocumentKey=3b0d679a-3707-4075-a2a9-37d1af16d411&CommunityKey=1ecf5f55-9545-44d6-b0f4-4e4a7f5f5e68&tab=librarydocuments",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/fb8df83d58f09d53438e5dcf70159b30f0d89516.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2012-0779",
+      "CVE-2012-1535",
+      "CVE-2012-1875",
+      "CVE-2012-1889"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "2d95d816544848da93a5cce71e2c3130a256c00a",
+    "title": "Virus Bulletin :: URLZone reloaded: new evolution",
+    "published": "2012-09-01",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://www.virusbulletin.com/virusbulletin/2012/09/urlzone-reloaded-new-evolution/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/2d95d816544848da93a5cce71e2c3130a256c00a.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "5fc09310938d289541ffe01a218ae644abe2495d",
+    "title": "The Taidoor Campaign: An In-Depth Analysis",
+    "published": "2012-08-23",
+    "date_basis": "file-metadata",
+    "organisation": null,
+    "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2012/2012.08.18.Taidoor_Campaign/wp_the_taidoor_campaign.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/5fc09310938d289541ffe01a218ae644abe2495d.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2009-3129",
+      "CVE-2009-4324",
+      "CVE-2010-1297",
+      "CVE-2010-2883",
+      "CVE-2011-0611",
+      "CVE-2011-1269",
+      "CVE-2011-12696",
+      "CVE-2012-0158"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "1b6e8d41db6335e17b40ba0bfd60f1e9b6e33b4d",
+    "title": "Shamoon or DistTrack.A samples",
+    "published": "2012-08-17",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://contagiodump.blogspot.com/2012/08/shamoon-or-disttracka-samples.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/1b6e8d41db6335e17b40ba0bfd60f1e9b6e33b4d.pdf",
+    "actors": [
+      "G0059",
+      "shamoon-group"
+    ],
+    "actor_names_unresolved": [
+      "COBALT GIPSY",
+      "Timberworm"
+    ],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "02e2959da1d4522c2d94ffbc7a1871470b2f7912",
+    "title": "The Many Faces Of Gh0St Rat: Plotting The Connections Between Malware Attacks",
+    "published": "2012-08-16",
+    "date_basis": "file-metadata",
+    "organisation": "Norman",
+    "url": "https://app.box.com/s/aj7ebr1v0x9mf3psmxeififqijwmmacy",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/02e2959da1d4522c2d94ffbc7a1871470b2f7912.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "1594b99def62026d4e28b9a2b4b72a1707e5485a",
+    "title": "Inside Upas Kit (1.0.1.1) aka Rombrast C&C - Botnet Control Panel",
+    "published": "2012-08-16",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://malware.dontneedcoffee.com/2012/08/inside-upas-kit1.0.1.1.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/1594b99def62026d4e28b9a2b4b72a1707e5485a.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "798bf7121f2276a156f8beb509d7e604d2eb28e5",
+    "title": "Shamoon the Wiper - Copycats at Work",
+    "published": "2012-08-16",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://securelist.com/shamoon-the-wiper-copycats-at-work/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/798bf7121f2276a156f8beb509d7e604d2eb28e5.pdf",
+    "actors": [
+      "G0059",
+      "shamoon-group"
+    ],
+    "actor_names_unresolved": [
+      "COBALT GIPSY",
+      "Timberworm"
+    ],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "bc3eccc11b37e8c2ca130f87a4c17f2166aa701d",
+    "title": "The Shamoon Attacks | Symantec Connect Community",
+    "published": "2012-08-16",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://web.archive.org/web/20120818235442/https://www.symantec.com/connect/blogs/shamoon-attacks",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/bc3eccc11b37e8c2ca130f87a4c17f2166aa701d.pdf",
+    "actors": [
+      "G0059",
+      "shamoon-group"
+    ],
+    "actor_names_unresolved": [
+      "COBALT GIPSY",
+      "Timberworm"
+    ],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "e43c021006743a2b311e296bf4eb762c0b5c1b6b",
+    "title": "Beware the trolls, secure your trackers",
+    "published": "2012-08-14",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://www.shadowserver.org/news/beware-the-trolls-secure-your-trackers/",
+    "url_ok": true,
+    "archive_url": "https://archive.orkl.eu/e43c021006743a2b311e296bf4eb762c0b5c1b6b.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "a1b16b4d66b6defd553e7c3dbf2c916c65d82864",
+    "title": "Syrian Electronic Army",
+    "published": "2012-08-13",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://en.wikipedia.org/wiki/Syrian_Electronic_Army",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/a1b16b4d66b6defd553e7c3dbf2c916c65d82864.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "4c9c37199b1e1da37d0dae56f7a6469e0b0a4c6e",
+    "title": "Gauss: Abnormal Distribution",
+    "published": "2012-08-09",
+    "date_basis": "file-metadata",
+    "organisation": "Kaspersky",
+    "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/03/20134940/kaspersky-lab-gauss.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/4c9c37199b1e1da37d0dae56f7a6469e0b0a4c6e.pdf",
+    "actors": [
+      "G0020"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2010-2568"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "22b369cdbf078b436544e6426a2a706ecc698f80",
+    "title": "Cridex Analysis using Volatility - by Andre' DiMino - samples and memory analysis resources",
+    "published": "2012-08-03",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://contagiodump.blogspot.com/2012/08/cridex-analysis-using-volatility-by.html",
+    "url_ok": true,
+    "archive_url": "https://archive.orkl.eu/22b369cdbf078b436544e6426a2a706ecc698f80.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2011-0611"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "006924f76175f56ed914322bc87855912b98b7ef",
+    "title": "Cridex Analysis using Volatility",
+    "published": "2012-08-02",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://www.sempersecurus.org/2012/08/cridex-analysis-using-volatility.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/006924f76175f56ed914322bc87855912b98b7ef.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "22cf1586ec8ba727a3650e5e00103711bfa48afb",
+    "title": "Inside the ICE IX bot, descendent of Zeus",
+    "published": "2012-08-01",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://www.virusbulletin.com/virusbulletin/2012/08/inside-ice-ix-bot-descendent-zeus",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/22cf1586ec8ba727a3650e5e00103711bfa48afb.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "4b47b004a31ad8d33504f3fa00f4f2e10146a2e2",
+    "title": "“RunForestRun”, “gootkit” and random domain name generation",
+    "published": "2012-08-01",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://securelist.com/runforestrun-gootkit-and-random-domain-name-generation/57865/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/4b47b004a31ad8d33504f3fa00f4f2e10146a2e2.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "5a3d449416fe93ed374b4095ca574fd1a8c49df8",
+    "title": "woot12-final24.pdf",
+    "published": "2012-07-27",
+    "date_basis": "file-metadata",
+    "organisation": null,
+    "url": "https://www.usenix.org/system/files/conference/woot12/woot12-final24.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/5a3d449416fe93ed374b4095ca574fd1a8c49df8.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2010-3832"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "61c047476369c5069e39f3d06825d847d924d216",
+    "title": "Recent Observations In Tibet-Related Information Operations: Advanced Social Engineering For The Distribution Of Lurk Malware",
+    "published": "2012-07-27",
+    "date_basis": "file-metadata",
+    "organisation": "Citizen Lab",
+    "url": "https://app.box.com/s/njc3dvwkbx4i9y0s300r3k3ocrj1gmua",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/61c047476369c5069e39f3d06825d847d924d216.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "0c3fe58efcfba955c8ad4e5022fb78d4c86e88ee",
+    "title": "Investigation an interesting kernel mode stealer",
+    "published": "2012-07-26",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://artemonsecurity.blogspot.com/2012/07/investigation-interesting-kernel-mode.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/0c3fe58efcfba955c8ad4e5022fb78d4c86e88ee.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "4b2aab5dade4e3de59291bdafc82f6ec9153216b",
+    "title": "The Madi Campaign - Part II",
+    "published": "2012-07-26",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://securelist.com/the-madi-campaign-part-ii-53/33701/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/4b2aab5dade4e3de59291bdafc82f6ec9153216b.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "c00b7449b733f070c148c5b6c0a4df087a3f34f1",
+    "title": "Ixeshe An Apt Campaign",
+    "published": "2012-07-25",
+    "date_basis": "file-metadata",
+    "organisation": "Trend Micro",
+    "url": "https://app.box.com/s/t74crjmu21ee2gpnnx56182bj74facvi",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/c00b7449b733f070c148c5b6c0a4df087a3f34f1.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2009-0927",
+      "CVE-2009-09274",
+      "CVE-2009-3129",
+      "CVE-2009-4324",
+      "CVE-2009-43243",
+      "CVE-2010-0188",
+      "CVE-2010-1297",
+      "CVE-2011-0609",
+      "CVE-2011-06095",
+      "CVE-2011-06098",
+      "CVE-2011-0611",
+      "CVE-2011-06116"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "f5cd333e3df571e9fcb5b44ec99a494162c68a00",
+    "title": "New Apple Mac Trojan Called OSX/Crisis Discovered",
+    "published": "2012-07-24",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://www.intego.com/mac-security-blog/new-apple-mac-trojan-called-osxcrisis-discovered-by-intego-virus-team/?",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/f5cd333e3df571e9fcb5b44ec99a494162c68a00.pdf",
+    "actors": [
+      "G0133",
+      "hacking-team"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "3b78c69a303ab03fe38b7cc6a712cc290086f23e",
+    "title": "Malware.lu - Xtreme RAT analysis",
+    "published": "2012-07-22",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://malware.lu/articles/2012/07/22/xtreme-rat-analysis.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/3b78c69a303ab03fe38b7cc6a712cc290086f23e.pdf",
+    "actors": [
+      "G0021"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "da360eebeeca7d0b5e10bee2a2bb59eebd05f195",
+    "title": "The Madi Attacks: Series of Social Engineering Campaigns",
+    "published": "2012-07-18",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://web.archive.org/web/20120718173322/https://www.symantec.com/connect/blogs/madi-attacks-series-social-engineering-campaigns",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/da360eebeeca7d0b5e10bee2a2bb59eebd05f195.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "9a8c7d73e61dfcf0015fd439b6b025cd6c47f130",
+    "title": "The Madi Campaign - Part I",
+    "published": "2012-07-17",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://securelist.com/the-madi-campaign-part-i-5/33693/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/9a8c7d73e61dfcf0015fd439b6b025cd6c47f130.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "ee0ebdae05ce6f4d923822d2a4fabda7fc983a2f",
+    "title": "Kaspersky Lab and Seculert Announce ‘Madi,’ a Newly Discovered Cyber-Espionage Campaign in the Middle East",
+    "published": "2012-07-17",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://www.kaspersky.com/about/press-releases/2012_kaspersky-lab-and-seculert-announce--madi--a-newly-discovered-cyber-espionage-campaign-in-the-middle-east",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/ee0ebdae05ce6f4d923822d2a4fabda7fc983a2f.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "2b0ef76af26b04058ee881fbc9326eacc1236b2a",
+    "title": "Rovnix bootkit framework updated",
+    "published": "2012-07-13",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://www.welivesecurity.com/2012/07/13/rovnix-bootkit-framework-updated/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/2b0ef76af26b04058ee881fbc9326eacc1236b2a.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "50a78f9df0196803cbbb6b6fe9c79aa0811a42a4",
+    "title": "Microsoft Word - Trustwave - SpiderLabs - Adventures in Bouncerland - Black Hat USA 2012 - PAPER.docx",
+    "published": "2012-07-11",
+    "date_basis": "file-metadata",
+    "organisation": null,
+    "url": "https://media.blackhat.com/bh-us-12/Briefings/Percoco/BH_US_12_Percoco_Adventures_in_Bouncerland_WP.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/50a78f9df0196803cbbb6b6fe9c79aa0811a42a4.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "ce75cfcecf4e2e9188cce71911b14f0d68682773",
+    "title": "Medre.A - AutoCAD worm samples",
+    "published": "2012-06-24",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://contagiodump.blogspot.com/2012/06/medrea-autocad-worm-samples.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/ce75cfcecf4e2e9188cce71911b14f0d68682773.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "fc66447363ce63032aab95f8b971eec5a3c7812d",
+    "title": "Runforestrun and Pseudo Random Domains",
+    "published": "2012-06-22",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://web.archive.org/web/20150613014503/https://blog.unmaskparasites.com/2012/06/22/runforestrun-and-pseudo-random-domains/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/fc66447363ce63032aab95f8b971eec5a3c7812d.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "2b2bcefb07712b458eed0a18b0a6640d6cb71ae3",
+    "title": "Dissecting the Android Bouncer",
+    "published": "2012-06-21",
+    "date_basis": "file-metadata",
+    "organisation": null,
+    "url": "https://jon.oberheide.org/files/summercon12-bouncer.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/2b2bcefb07712b458eed0a18b0a6640d6cb71ae3.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "454b81f972afd8354b8f1a62cb7e9ef0c69805f0",
+    "title": "BlackShades in Syria",
+    "published": "2012-06-21",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://blog.malwarebytes.com/threat-analysis/2012/06/blackshades-in-syria/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/454b81f972afd8354b8f1a62cb7e9ef0c69805f0.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "a27e0a670db551b6c01781233bbe02431e1fcc7a",
+    "title": "ESET_ACAD_Medre_A_whitepaper.pdf",
+    "published": "2012-06-21",
+    "date_basis": "file-metadata",
+    "organisation": null,
+    "url": "https://www.welivesecurity.com/wp-content/uploads/200x/white-papers/ESET_ACAD_Medre_A_whitepaper.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/a27e0a670db551b6c01781233bbe02431e1fcc7a.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "30723cf79b1a0fb1136131ad3e0736358d84ab0f",
+    "title": "You Dirty RAT! Part 2 – BlackShades NET",
+    "published": "2012-06-15",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://blog.malwarebytes.com/threat-analysis/2012/06/you-dirty-rat-part-2-blackshades-net/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/30723cf79b1a0fb1136131ad3e0736358d84ab0f.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "0825c023ddbc93c1a00d1fa0cc4525da247d0640",
+    "title": "You dirty RAT! Part 1: DarkComet | Malwarebytes Labs",
+    "published": "2012-06-09",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://blog.malwarebytes.com/threat-analysis/2012/06/you-dirty-rat-part-1-darkcomet/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/0825c023ddbc93c1a00d1fa0cc4525da247d0640.pdf",
+    "actors": [
+      "G0032",
+      "G0064",
+      "G0134"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "41f6dbbda6c30a431784c4988130e5e32e589840",
+    "title": "May 31 - Tinba / Zusy - tiny banker trojan",
+    "published": "2012-06-06",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://contagiodump.blogspot.com/2012/06/amazon.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/41f6dbbda6c30a431784c4988130e5e32e589840.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "ba65916e3a65fd22e6fe7c6412c0890d342f1a08",
+    "title": "Smartcard vulnerabilities in modern banking malware",
+    "published": "2012-06-05",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://www.welivesecurity.com/2012/06/05/smartcard-vulnerabilities-in-modern-banking-malware/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/ba65916e3a65fd22e6fe7c6412c0890d342f1a08.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "6e4df95a65ad848c8192c7c76ed35d622764cab3",
+    "title": "skywiper_v1.05",
+    "published": "2012-05-31",
+    "date_basis": "malpedia-library",
+    "organisation": "CrySyS, BME",
+    "url": "https://www.crysys.hu/publications/files/skywiper.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/6e4df95a65ad848c8192c7c76ed35d622764cab3.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "2821c2f96899ef863724cb1c9a1f321bc6dcaba2",
+    "title": "The Flame: Questions and Answers",
+    "published": "2012-05-28",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://securelist.com/the-flame-questions-and-answers-51/34344/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/2821c2f96899ef863724cb1c9a1f321bc6dcaba2.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "a51b3dd56f50c2526ffc69aee8be11f8511a918c",
+    "title": "2016-11-14 - Doctor Web discovers a botnet that attacks Russian banks",
+    "published": "2012-04-26",
+    "date_basis": "file-metadata",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/ICS%20SCADA/Threat%20Intelligence%20Reports/IC3%20-%20Internet%20Crime%20Report%20-%202011.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/a51b3dd56f50c2526ffc69aee8be11f8511a918c.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "f8dc378a4f0b446563d8751475d5428f52d9a0f3",
+    "title": "Discord visar svart skärm när skärmen delas",
+    "published": "2012-04-23",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://www.enigmasoftware.com/bkdrcysxla-removal/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/f8dc378a4f0b446563d8751475d5428f52d9a0f3.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "a5c0b7a8e502175e8c3b5fae9f0065ff01f74e49",
+    "title": "Doctor Web doesn't register significant decrease in BackDoor.Flashback.39 bot number",
+    "published": "2012-04-20",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://news.drweb.com/show/?c=5&i=2386&lng=en",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/a5c0b7a8e502175e8c3b5fae9f0065ff01f74e49.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "cbe071f9312ea01a59bda9717e6b5d45689fd5cb",
+    "title": "Analysis of DarkMegi aka NpcDark",
+    "published": "2012-04-20",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://stopmalvertising.com/rootkits/analysis-of-darkmegi-aka-npcdark.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/cbe071f9312ea01a59bda9717e6b5d45689fd5cb.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2012-0003"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "7b4d0077e78405859371f1744cb209a8792010ca",
+    "title": "DarkMegi rootkit - sample (distributed via Blackhole)",
+    "published": "2012-04-18",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://contagiodump.blogspot.com/2012/04/this-is-darkmegie-rootkit-sample-kindly.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/7b4d0077e78405859371f1744cb209a8792010ca.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "e8464c2d73b827864aa4633fb4aad572b571ca40",
+    "title": "Final Safety Evaluation for the Triconex Topical Report.",
+    "published": "2012-04-16",
+    "date_basis": "file-metadata",
+    "organisation": null,
+    "url": "https://www.nrc.gov/docs/ML1209/ML120900890.pdf",
+    "url_ok": true,
+    "archive_url": "https://archive.orkl.eu/e8464c2d73b827864aa4633fb4aad572b571ca40.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "03722399fd326ae29ca89a1b486bbc98ef9f5ca8",
+    "title": "OSX/Flashback.K sample + Mac OS malware study set (30+ older samples)",
+    "published": "2012-04-12",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://contagiodump.blogspot.com/2012/04/osxflashbackk-sample-mac-os-malware.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/03722399fd326ae29ca89a1b486bbc98ef9f5ca8.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "9841529d4fd5b7137fb877acfb44911e01a79813",
+    "title": "OSX/Flashback.O sample + some domains",
+    "published": "2012-04-10",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://contagiodump.blogspot.com/2012/04/osxflashbacko-sample-some-domains.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/9841529d4fd5b7137fb877acfb44911e01a79813.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "dbeee9c7964efeacccb1141bece7e2339dd17d29",
+    "title": "Flashback (Trojan horse)",
+    "published": "2012-04-05",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://en.wikipedia.org/wiki/Flashback_(Trojan)",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/dbeee9c7964efeacccb1141bece7e2339dd17d29.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "bdb218fdc0cce0bc57f77a9a1e6d3cc7e81b55f9",
+    "title": "Luckycat Redux: Inside An Apt Campaign With Multiple Targets In India And Japan",
+    "published": "2012-03-28",
+    "date_basis": "file-metadata",
+    "organisation": "Trend Micro",
+    "url": "https://app.box.com/s/vun0x0rrek5l51djb8igbojb7v85sg3q",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/bdb218fdc0cce0bc57f77a9a1e6d3cc7e81b55f9.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2010-2883",
+      "CVE-2010-3333",
+      "CVE-2010-3654",
+      "CVE-2011-0611",
+      "CVE-2011-2462"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "7e9daad350d3f16c89b39113046abb890ab49ddc",
+    "title": "Luckycat Redux Campaign Attacks Multiple Targets in India and Japan",
+    "published": "2012-03-26",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://www.trendmicro.com/vinfo/us/security/news/cyber-attacks/luckycat-redux-campaign-attacks-multiple-targets-in-india-and-japan",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/7e9daad350d3f16c89b39113046abb890ab49ddc.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2010-3333"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "c32627e18128fbf249a084272310996d1b794bb5",
+    "title": "Trojan.Taidoor: Targeting Think Tanks",
+    "published": "2012-03-21",
+    "date_basis": "file-metadata",
+    "organisation": "Symantec",
+    "url": "https://app.box.com/s/td8bl14go6icl9lhi9c4idkk82e83t2c",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/c32627e18128fbf249a084272310996d1b794bb5.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2009-1129",
+      "CVE-2011-0611",
+      "CVE-2011-2100"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "50511389957f7c2e0127031d8633724ae05354f3",
+    "title": "It'S Not The End Of The World: Darkcomet Misses By A Mile",
+    "published": "2012-03-15",
+    "date_basis": "file-metadata",
+    "organisation": "Arbor Networks",
+    "url": "https://app.box.com/s/akmz317h8dkapm52ksycf187rw2ylp21",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/50511389957f7c2e0127031d8633724ae05354f3.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "5dba7529dfdcd435578dad0c219da02da54b28a0",
+    "title": "Know Your Digital Enemy",
+    "published": "2012-03-14",
+    "date_basis": "file-metadata",
+    "organisation": null,
+    "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2012/2012.04.10.Gh0st_RAT/Know%20Your%20Digital%20Enemy.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/5dba7529dfdcd435578dad0c219da02da54b28a0.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "75c240fb4334b2307b56c336284acad112e40063",
+    "title": "Crouching Tiger, Hidden Dragon, Stolen Data",
+    "published": "2012-03-08",
+    "date_basis": "file-metadata",
+    "organisation": "Contextis",
+    "url": "https://app.box.com/s/vk0oacayqkgrk3tp492h3ja9jnlktk7t",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/75c240fb4334b2307b56c336284acad112e40063.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "d2d29b2f19d9837f03f5f9707c0df644d855599f",
+    "title": "Virus Ukash Gendarmerie Absence twexx32.dll",
+    "published": "2012-03-06",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://forum.malekal.com/viewtopic.php?t=36485&start=",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/d2d29b2f19d9837f03f5f9707c0df644d855599f.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "9afebcbec06e6e6d9db177fd5a41dba40a3a4b08",
+    "title": "white-papers-win-32-carberp.pdf",
+    "published": "2012-03-02",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://cdn1.esetstatic.com/eset/US/resources/docs/white-papers/white-papers-win-32-carberp.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/9afebcbec06e6e6d9db177fd5a41dba40a3a4b08.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "e056ecf61d014bcf4fc51a8e86627096c1f98bb7",
+    "title": "2016-09-28 - Introducing Her Royal Highness the Princess Locker Ransomware",
+    "published": "2012-02-28",
+    "date_basis": "file-metadata",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/ICS%20SCADA/Threat%20Intelligence%20Reports/BSI%20-%20Threats%20Catalogue%20-%20Elementary%20Threats.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/e056ecf61d014bcf4fc51a8e86627096c1f98bb7.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "967398f7cd0d4f0f5d68becbdc3bd5814d7d0700",
+    "title": "TDL4 - Purple Haze (Pihar) Variant - sample and analysis",
+    "published": "2012-02-01",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://contagiodump.blogspot.com/2012/02/purple-haze-bootkit.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/967398f7cd0d4f0f5d68becbdc3bd5814d7d0700.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "c7d0387067ba747e3a3d9b43b7349d7888bf574e",
+    "title": "The Msupdater Trojan And Ongoing Targeted Attacks",
+    "published": "2012-01-31",
+    "date_basis": "file-metadata",
+    "organisation": "Seculert, Zscaler",
+    "url": "https://app.box.com/s/gh8m5os2jewj2adleu2xqivj9qzf9ok8",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/c7d0387067ba747e3a3d9b43b7349d7888bf574e.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "222a2bd14a8e02ccd9e54972480219d6528901d6",
+    "title": "Blackhole Ramnit - samples and analysis",
+    "published": "2012-01-12",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "http://contagiodump.blogspot.com/2012/01/blackhole-ramnit-samples-and-analysis.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/222a2bd14a8e02ccd9e54972480219d6528901d6.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "19f7e688091f5b60f9446a9bb517f6711da9f2bb",
+    "title": "Microsoft Word - ZeusSpyEyeBankingTrojanAnalysis.docx",
+    "published": "2012-01-11",
+    "date_basis": "file-metadata",
+    "organisation": null,
+    "url": "https://ioactive.com/pdfs/ZeusSpyEyeBankingTrojanAnalysis.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/19f7e688091f5b60f9446a9bb517f6711da9f2bb.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "56064ebf0504493a10f893b80215870bc92ce25f",
+    "title": "Cold$eal: 'Situation is under control'",
+    "published": "2012-01-08",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://www.xylibox.com/2012/01/coldeal-situation-is-under-control.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/56064ebf0504493a10f893b80215870bc92ce25f.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "67c0aca8dc28925db1ca5377ac1f072fb9522416",
+    "title": "Malware static analysis part 1 of 2.",
+    "published": "2012-01-06",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://www.exploit-db.com/docs/english/18387-malware-reverse-engineering-part-1---static-analysis.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/67c0aca8dc28925db1ca5377ac1f072fb9522416.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "6f5daaee857e8ad97b05645b2b087854cabd2b00",
+    "title": "Cracking Cold$eal 5.4.1 FWB++",
+    "published": "2012-01-06",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://www.xylibox.com/2012/01/cracking-coldeal-541-fwb.html",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/6f5daaee857e8ad97b05645b2b087854cabd2b00.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  }
+]

@@ -1,0 +1,63 @@
+{
+  "id": "G0084",
+  "name": "Gallmaker",
+  "aliases": [
+    {
+      "value": "Gallmaker",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": [
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Embassies",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [
+    "T1027",
+    "T1059.001",
+    "T1204.002",
+    "T1559.002",
+    "T1560.001",
+    "T1566.001"
+  ],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2018-Q4",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "d26e508ee0247d9cb909e0fe9cd542488c0396fa",
+    "1c24fa69b9c3fafcf6a596ecc8606adc4d40aac9"
+  ],
+  "conflicts": [],
+  "evidence_count": 3
+}

@@ -1,0 +1,184 @@
+{
+  "id": "poison-carp",
+  "name": "POISON CARP",
+  "aliases": [
+    {
+      "value": "POISON CARP",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Evil Eye",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Earth Empusa",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Red Dev 16",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Poison Carp",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "EvilBamboo",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Sentinel Taurus",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "etda"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Australia",
+        "source": "etda"
+      },
+      {
+        "value": "Canada",
+        "source": "etda"
+      },
+      {
+        "value": "China",
+        "source": "etda"
+      },
+      {
+        "value": "Kazakhstan",
+        "source": "etda"
+      },
+      {
+        "value": "Syria",
+        "source": "etda"
+      },
+      {
+        "value": "Türkiye",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Tibetan and Uyghur activists as well as those who are interested in their causes",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "ActionSpy",
+      "source": "malpedia"
+    },
+    {
+      "name": "PoisonCarp",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2016-1646",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2016-5198",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-5030",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-5070",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-17463",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-17480",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-6065",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-5825",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2019-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 3
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "4903844aea0bc10a66fdea7569a348d1b5a1c230",
+    "b6344cc645c025ef7f86357703ac866fc4ace0f0",
+    "d41d17387b00f43bc8db3a8730085e43ee26a267",
+    "1df98e647d64ef01bdc29e2530e611effe5e895b",
+    "2294e70f0b1af5475cc3f331475bb0319e139efe",
+    "9390697aa5f36850758d8ccd32473030ae100634"
+  ],
+  "conflicts": [],
+  "evidence_count": 8
+}

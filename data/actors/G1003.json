@@ -1,0 +1,445 @@
+{
+  "id": "G1003",
+  "name": "Ember Bear",
+  "aliases": [
+    {
+      "value": "Ember Bear",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "DEV-0586",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Cadet Blizzard",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Ruinous Ursa",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UNC2589",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Bleeding Bear",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Frozenvista",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "UAC-0056",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "EMBER BEAR",
+      "sources": [
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "RU",
+      "source": "misp"
+    },
+    {
+      "value": "RU",
+      "source": "etda"
+    },
+    {
+      "value": "RU",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Sabotage",
+      "source": "misp"
+    },
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Sabotage and destruction",
+      "source": "etda"
+    },
+    {
+      "value": "Sabotage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Ukraine",
+        "source": "misp"
+      },
+      {
+        "value": "Ukraine",
+        "source": "etda"
+      },
+      {
+        "value": "Ukraine",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "IT",
+        "source": "etda"
+      },
+      {
+        "value": "Law enforcement",
+        "source": "etda"
+      },
+      {
+        "value": "NGOs",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "BloodHound",
+      "source": "attack"
+    },
+    {
+      "name": "CrackMapExec",
+      "source": "attack"
+    },
+    {
+      "name": "Impacket",
+      "source": "attack"
+    },
+    {
+      "name": "P.A.S. Webshell",
+      "source": "attack"
+    },
+    {
+      "name": "PsExec",
+      "source": "attack"
+    },
+    {
+      "name": "Rclone",
+      "source": "attack"
+    },
+    {
+      "name": "Responder",
+      "source": "attack"
+    },
+    {
+      "name": "Saint Bot",
+      "source": "attack"
+    },
+    {
+      "name": "WhisperGate",
+      "source": "attack"
+    },
+    {
+      "name": "ngrok",
+      "source": "attack"
+    },
+    {
+      "name": "reGeorg",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1003",
+    "T1003.001",
+    "T1003.002",
+    "T1003.004",
+    "T1005",
+    "T1018",
+    "T1021",
+    "T1036",
+    "T1036.005",
+    "T1046",
+    "T1047",
+    "T1053.005",
+    "T1059.001",
+    "T1070.004",
+    "T1071.004",
+    "T1078.001",
+    "T1090.003",
+    "T1095",
+    "T1110",
+    "T1110.003",
+    "T1112",
+    "T1114",
+    "T1119",
+    "T1125",
+    "T1133",
+    "T1190",
+    "T1195",
+    "T1203",
+    "T1210",
+    "T1491.002",
+    "T1505.003",
+    "T1550.002",
+    "T1552.001",
+    "T1560",
+    "T1561.002",
+    "T1567.002",
+    "T1570",
+    "T1571",
+    "T1572",
+    "T1583",
+    "T1583.003",
+    "T1585",
+    "T1588.001",
+    "T1588.005",
+    "T1595.001",
+    "T1595.002",
+    "T1654"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1003",
+      "count": 1
+    },
+    {
+      "id": "T1003.001",
+      "count": 1
+    },
+    {
+      "id": "T1003.002",
+      "count": 1
+    },
+    {
+      "id": "T1046",
+      "count": 1
+    },
+    {
+      "id": "T1059.001",
+      "count": 1
+    },
+    {
+      "id": "T1071.001",
+      "count": 1
+    },
+    {
+      "id": "T1071.004",
+      "count": 1
+    },
+    {
+      "id": "T1078.001",
+      "count": 1
+    },
+    {
+      "id": "T1090.003",
+      "count": 1
+    },
+    {
+      "id": "T1095",
+      "count": 1
+    },
+    {
+      "id": "T1105",
+      "count": 1
+    },
+    {
+      "id": "T1110.003",
+      "count": 1
+    },
+    {
+      "id": "T1114",
+      "count": 1
+    },
+    {
+      "id": "T1125",
+      "count": 1
+    },
+    {
+      "id": "T1190",
+      "count": 1
+    },
+    {
+      "id": "T1213.001",
+      "count": 1
+    },
+    {
+      "id": "T1485",
+      "count": 1
+    },
+    {
+      "id": "T1505.003",
+      "count": 1
+    },
+    {
+      "id": "T1550.002",
+      "count": 1
+    },
+    {
+      "id": "T1552.001",
+      "count": 1
+    },
+    {
+      "id": "T1560",
+      "count": 1
+    },
+    {
+      "id": "T1567.002",
+      "count": 1
+    },
+    {
+      "id": "T1572",
+      "count": 1
+    },
+    {
+      "id": "T1583.003",
+      "count": 1
+    },
+    {
+      "id": "T1588.001",
+      "count": 1
+    },
+    {
+      "id": "T1588.005",
+      "count": 1
+    },
+    {
+      "id": "T1590.002",
+      "count": 1
+    },
+    {
+      "id": "T1595",
+      "count": 1
+    },
+    {
+      "id": "T1595.001",
+      "count": 1
+    },
+    {
+      "id": "T1595.002",
+      "count": 1
+    },
+    {
+      "id": "T1596.005",
+      "count": 1
+    },
+    {
+      "id": "T1654",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2017-11882",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-1472",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-26084",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-3156",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-33044",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-33045",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-4034",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-26134",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-26138",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2022-27666",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2022-3236",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2022-41040",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2022-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2023-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q3",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "c78080b0ad08e4bb3595b93f6e0eba77d45587c2",
+    "effd076232525b4f6636ad2f68fc6dcf91b9e381",
+    "a0cfdae10401d2676b1cf0e9098f2f93d14acf33",
+    "6210a8284c194a3a4aca173956c208ebb91be007",
+    "2dcf8a821046d08371dfd07bf2812c8c681d6b68"
+  ],
+  "conflicts": [],
+  "evidence_count": 5
+}

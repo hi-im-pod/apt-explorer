@@ -1,0 +1,50 @@
+{
+  "id": "viking-jackal",
+  "name": "Viking Jackal",
+  "aliases": [
+    {
+      "value": "Viking Jackal",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Vikingdom",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "AE",
+      "source": "misp"
+    },
+    {
+      "value": "AE",
+      "source": "etda"
+    },
+    {
+      "value": "AE",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 4
+}

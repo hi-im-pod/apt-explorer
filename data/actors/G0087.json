@@ -1,0 +1,422 @@
+{
+  "id": "G0087",
+  "name": "APT39",
+  "aliases": [
+    {
+      "value": "APT39",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "ITG07",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Chafer",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TA454",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Radio Serpens",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Burgundy Sandstorm",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Remix Kitten",
+      "sources": [
+        "attack",
+        "etda"
+      ]
+    },
+    {
+      "value": "REMIX KITTEN",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "COBALT HICKMAN",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "CINDER ION",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "APT 39",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Cobalt Hickman",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IR",
+      "source": "misp"
+    },
+    {
+      "value": "IR",
+      "source": "etda"
+    },
+    {
+      "value": "IR",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Israel",
+        "source": "etda"
+      },
+      {
+        "value": "Jordan",
+        "source": "etda"
+      },
+      {
+        "value": "Kuwait",
+        "source": "etda"
+      },
+      {
+        "value": "Saudi Arabia",
+        "source": "etda"
+      },
+      {
+        "value": "Spain",
+        "source": "etda"
+      },
+      {
+        "value": "Türkiye",
+        "source": "etda"
+      },
+      {
+        "value": "United Arab Emirates",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Aviation",
+        "source": "etda"
+      },
+      {
+        "value": "Engineering",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "High-Tech",
+        "source": "etda"
+      },
+      {
+        "value": "IT",
+        "source": "etda"
+      },
+      {
+        "value": "Shipping and Logistics",
+        "source": "etda"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "etda"
+      },
+      {
+        "value": "Transportation",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "ASPXSpy",
+      "source": "attack"
+    },
+    {
+      "name": "Cadelspy",
+      "source": "attack"
+    },
+    {
+      "name": "CrackMapExec",
+      "source": "attack"
+    },
+    {
+      "name": "MechaFlounder",
+      "source": "attack"
+    },
+    {
+      "name": "Mimikatz",
+      "source": "attack"
+    },
+    {
+      "name": "NBTscan",
+      "source": "attack"
+    },
+    {
+      "name": "PsExec",
+      "source": "attack"
+    },
+    {
+      "name": "Remexi",
+      "source": "attack"
+    },
+    {
+      "name": "Windows Credential Editor",
+      "source": "attack"
+    },
+    {
+      "name": "ftp",
+      "source": "attack"
+    },
+    {
+      "name": "pwdump",
+      "source": "attack"
+    },
+    {
+      "name": "ANTAK",
+      "source": "malpedia"
+    },
+    {
+      "name": "ASPXSpy",
+      "source": "malpedia"
+    },
+    {
+      "name": "OilRig",
+      "source": "malpedia"
+    },
+    {
+      "name": "Rana",
+      "source": "malpedia"
+    },
+    {
+      "name": "Remexi",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1003",
+    "T1003.001",
+    "T1005",
+    "T1012",
+    "T1018",
+    "T1021.001",
+    "T1021.002",
+    "T1021.004",
+    "T1027.002",
+    "T1027.013",
+    "T1033",
+    "T1036.005",
+    "T1041",
+    "T1046",
+    "T1053.005",
+    "T1056",
+    "T1056.001",
+    "T1059",
+    "T1059.001",
+    "T1059.005",
+    "T1059.006",
+    "T1059.010",
+    "T1070.004",
+    "T1071.001",
+    "T1071.004",
+    "T1074.001",
+    "T1078",
+    "T1083",
+    "T1090.001",
+    "T1090.002",
+    "T1102.002",
+    "T1105",
+    "T1110",
+    "T1113",
+    "T1115",
+    "T1135",
+    "T1136.001",
+    "T1140",
+    "T1190",
+    "T1197",
+    "T1204.001",
+    "T1204.002",
+    "T1505.003",
+    "T1546.010",
+    "T1547.001",
+    "T1547.009",
+    "T1553.006",
+    "T1555",
+    "T1560.001",
+    "T1566.001",
+    "T1566.002",
+    "T1569.002",
+    "T1588.002"
+  ],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2017-10271",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-8639",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-13720",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-1458",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-10148",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-33766",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2014-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2015-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2018-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q1",
+      "count": 4
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q3",
+      "count": 4
+    },
+    {
+      "quarter": "2020-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 3
+    }
+  ],
+  "reports": [
+    "02e9d44492fa846e30c977197aed811b7ea2177b",
+    "b82cb3fb1aaa34a799f3be925f1d62223d7f5fac",
+    "e3e6b161782f7fe52fb69c9a1d81694d26303f8a",
+    "47b8da3bea0c3580d92023398518498a0e33c21a",
+    "bb37f33f3495a1cf5949cd085ca8f958d88cfb38",
+    "ff86dd3ec5a70fe1e1bb7680e1df4697c6212fe2",
+    "418a6825e4dc16d1adda0c8a3f36bb1359194179",
+    "79b9e779c11668efaab691c4941ea27503b01ba1",
+    "7e929cf5fddf1b8416a199060641a25d45a70b45",
+    "f354efde0ffd18ae8a28579919253dce6f9f8fc1",
+    "6f7d879b63fd152adfb2e9a4b7b56ec129e178ae",
+    "paper:Iranian%20Chafer%20APT%20Targeted%20Air%20Transportation%20and%20Government%20in%20Kuwait%20and%20Saudi%20Arabia",
+    "fed84094f8bd8822542b76820b569235ff6cd98a",
+    "5b54e1a9c0965d05e69601ab39f72f7a9c691489",
+    "9707e48b8b7bdca8d17e74292142a5a4dd344f64",
+    "e108f8a8648ab67c7161441a325e5c88af915eb9",
+    "4833d735a10e070a8e14c14c4c29df1e97407b0f",
+    "6a34208ac703c1fb4633ba448fb78bc79eb3ae19",
+    "2a8dd227c58b7bc6a83f21f1947198ca7fcacc79",
+    "626159a21e301f39f491621325514a7045da286e",
+    "68ea1b735d59a6f13e33b91b7c43d399919d9d69",
+    "bbcb0de32d2d6f8af74374e92361e405540dcdd7",
+    "58c9be6ce39d271b69c9dd3314c77326a6d8f955"
+  ],
+  "conflicts": [],
+  "evidence_count": 23
+}

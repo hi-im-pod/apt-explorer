@@ -1,0 +1,128 @@
+{
+  "id": "G1019",
+  "name": "MoustachedBouncer",
+  "aliases": [
+    {
+      "value": "MoustachedBouncer",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "BY",
+      "source": "misp"
+    },
+    {
+      "value": "BY",
+      "source": "etda"
+    },
+    {
+      "value": "BY",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "Belarus",
+      "source": "misp"
+    },
+    {
+      "value": "Belarus",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Belarus",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Foreign embassies in Belarus",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Disco",
+      "source": "attack"
+    },
+    {
+      "name": "NightClub",
+      "source": "attack"
+    },
+    {
+      "name": "SharpDisco",
+      "source": "attack"
+    },
+    {
+      "name": "NightClub",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1027.002",
+    "T1059.001",
+    "T1059.007",
+    "T1068",
+    "T1074.002",
+    "T1090",
+    "T1113",
+    "T1659"
+  ],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2021-1732",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-27926",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2023-Q3",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "49c87716cede73f9944324aa862332183aaa4fe1",
+    "f0f6021f6a10f761bcd6f5b027cb2e345fa3d273"
+  ],
+  "conflicts": [],
+  "evidence_count": 3
+}

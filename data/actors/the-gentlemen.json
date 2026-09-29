@@ -1,0 +1,265 @@
+{
+  "id": "the-gentlemen",
+  "name": "The Gentlemen",
+  "aliases": [
+    {
+      "value": "The Gentlemen",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "Gentlemen",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [
+    {
+      "id": "T1021.002",
+      "count": 3
+    },
+    {
+      "id": "T1027",
+      "count": 3
+    },
+    {
+      "id": "T1059.001",
+      "count": 3
+    },
+    {
+      "id": "T1059.003",
+      "count": 3
+    },
+    {
+      "id": "T1486",
+      "count": 3
+    },
+    {
+      "id": "T1489",
+      "count": 3
+    },
+    {
+      "id": "T1018",
+      "count": 2
+    },
+    {
+      "id": "T1021.001",
+      "count": 2
+    },
+    {
+      "id": "T1021.004",
+      "count": 2
+    },
+    {
+      "id": "T1039",
+      "count": 2
+    },
+    {
+      "id": "T1046",
+      "count": 2
+    },
+    {
+      "id": "T1048.001",
+      "count": 2
+    },
+    {
+      "id": "T1071.001",
+      "count": 2
+    },
+    {
+      "id": "T1074.001",
+      "count": 2
+    },
+    {
+      "id": "T1078.002",
+      "count": 2
+    },
+    {
+      "id": "T1087.002",
+      "count": 2
+    },
+    {
+      "id": "T1112",
+      "count": 2
+    },
+    {
+      "id": "T1190",
+      "count": 2
+    },
+    {
+      "id": "T1219",
+      "count": 2
+    },
+    {
+      "id": "T1482",
+      "count": 2
+    },
+    {
+      "id": "T1484.001",
+      "count": 2
+    },
+    {
+      "id": "T1014",
+      "count": 1
+    },
+    {
+      "id": "T1021",
+      "count": 1
+    },
+    {
+      "id": "T1036",
+      "count": 1
+    },
+    {
+      "id": "T1036.001",
+      "count": 1
+    },
+    {
+      "id": "T1047",
+      "count": 1
+    },
+    {
+      "id": "T1048",
+      "count": 1
+    },
+    {
+      "id": "T1059",
+      "count": 1
+    },
+    {
+      "id": "T1068",
+      "count": 1
+    },
+    {
+      "id": "T1069.002",
+      "count": 1
+    },
+    {
+      "id": "T1070.004",
+      "count": 1
+    },
+    {
+      "id": "T1071",
+      "count": 1
+    },
+    {
+      "id": "T1074",
+      "count": 1
+    },
+    {
+      "id": "T1078",
+      "count": 1
+    },
+    {
+      "id": "T1083",
+      "count": 1
+    },
+    {
+      "id": "T1087",
+      "count": 1
+    },
+    {
+      "id": "T1106",
+      "count": 1
+    },
+    {
+      "id": "T1135",
+      "count": 1
+    },
+    {
+      "id": "T1136",
+      "count": 1
+    },
+    {
+      "id": "T1218",
+      "count": 1
+    },
+    {
+      "id": "T1222",
+      "count": 1
+    },
+    {
+      "id": "T1490",
+      "count": 1
+    },
+    {
+      "id": "T1543.003",
+      "count": 1
+    },
+    {
+      "id": "T1547",
+      "count": 1
+    },
+    {
+      "id": "T1547.001",
+      "count": 1
+    },
+    {
+      "id": "T1552",
+      "count": 1
+    },
+    {
+      "id": "T1569.002",
+      "count": 1
+    },
+    {
+      "id": "T1685",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2024-55591",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2025-32433",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2025-33073",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2025-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "19e036bc976ca7c072f5549832bf534df1c7c785",
+    "867af853d8d2f568d65e019b740f3d3315c973e7",
+    "aa20732e94bdf7496b5e13cfc3563fba6addfd54",
+    "fa3d54d8bed727a60a8a85b3ec2385f73d96cc28",
+    "a83dd5eaf3c18a7c17af3e60c4b23461dbc305fa"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

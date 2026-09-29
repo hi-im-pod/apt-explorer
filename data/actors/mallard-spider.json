@@ -1,0 +1,124 @@
+{
+  "id": "mallard-spider",
+  "name": "MALLARD SPIDER",
+  "aliases": [
+    {
+      "value": "MALLARD SPIDER",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "GOLD LAGOON",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Mallard Spider",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Gold Lagoon",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Financial crime",
+      "source": "etda"
+    },
+    {
+      "value": "Financial gain",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "ReedBed",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [
+    {
+      "id": "T1053.005",
+      "count": 1
+    },
+    {
+      "id": "T1055.001",
+      "count": 1
+    },
+    {
+      "id": "T1078.002",
+      "count": 1
+    },
+    {
+      "id": "T1566",
+      "count": 1
+    },
+    {
+      "id": "T1567",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2017-0199",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-3519",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-27564",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2024-4577",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2025-24813",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2025-49704",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2025-Q1",
+      "count": 5
+    }
+  ],
+  "reports": [
+    "81e2bacff84095002321e159120e309d989d3fc8",
+    "3bc076b6147f94095b176f776f58583ca7d77621",
+    "112187b03b33e6e8e537b80e95b66b1f0262ed25",
+    "2e7f21a7335ce963482ec9dbf8e2a39ad0dcf1c7",
+    "57b3d6cd08f944860f3a066777ca34cffc138cff"
+  ],
+  "conflicts": [],
+  "evidence_count": 4
+}

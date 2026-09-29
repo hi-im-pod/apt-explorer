@@ -1,0 +1,120 @@
+{
+  "id": "G0062",
+  "name": "TA459",
+  "aliases": [
+    {
+      "value": "TA459",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "etda"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Belarus",
+        "source": "etda"
+      },
+      {
+        "value": "Mongolia",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Financial",
+        "source": "etda"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "etda"
+      },
+      {
+        "value": "journalists",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "NetTraveler",
+      "source": "attack"
+    },
+    {
+      "name": "PlugX",
+      "source": "attack"
+    },
+    {
+      "name": "ZeroT",
+      "source": "attack"
+    },
+    {
+      "name": "gh0st RAT",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1059.001",
+    "T1059.005",
+    "T1203",
+    "T1204.002",
+    "T1566.001"
+  ],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2012-0158",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-0199",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2015-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "fca50ee04a9a2b96e57aa3babb6956e4ed9cfc95",
+    "11ce27412676f3584b8e9abefc629e2b90735056"
+  ],
+  "conflicts": [],
+  "evidence_count": 5
+}

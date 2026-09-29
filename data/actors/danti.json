@@ -1,0 +1,56 @@
+{
+  "id": "danti",
+  "name": "Danti",
+  "aliases": [
+    {
+      "value": "Danti",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "ELMER",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2015-1701",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2015-2545",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2016-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "7b3757391a41b013fc481e60e1a80d6eec372065",
+    "5f77c03a83f36e0f74a37efea8cc959613ee3d10"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

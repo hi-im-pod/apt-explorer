@@ -1,0 +1,329 @@
+{
+  "id": "G0005",
+  "name": "APT12",
+  "aliases": [
+    {
+      "value": "APT12",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "IXESHE",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "DynCalc",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "BeeBus",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Calc Team",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "DNSCalc",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Group 22",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Crimson Iron",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Hexagon Typhoon",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Numbered Panda",
+      "sources": [
+        "attack",
+        "etda"
+      ]
+    },
+    {
+      "value": "NUMBERED PANDA",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TG-2754",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "BRONZE GLOBE",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "DNSCALC",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "APT 12",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "CTG-8223",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Bronze Globe",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "DynCALC",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "etda"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "China",
+      "source": "misp"
+    },
+    {
+      "value": "China",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Taiwan",
+        "source": "misp"
+      },
+      {
+        "value": "Japan",
+        "source": "misp"
+      },
+      {
+        "value": "Germany",
+        "source": "etda"
+      },
+      {
+        "value": "Japan",
+        "source": "etda"
+      },
+      {
+        "value": "Taiwan",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      },
+      {
+        "value": "Taiwan",
+        "source": "malpedia"
+      },
+      {
+        "value": "Japan",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Private sector",
+        "source": "misp"
+      },
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "High-Tech",
+        "source": "etda"
+      },
+      {
+        "value": "Media",
+        "source": "etda"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "etda"
+      },
+      {
+        "value": "Electronics and journalists",
+        "source": "etda"
+      },
+      {
+        "value": "Private sector",
+        "source": "malpedia"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "HTRAN",
+      "source": "attack"
+    },
+    {
+      "name": "Ixeshe",
+      "source": "attack"
+    },
+    {
+      "name": "RIPTIDE",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1102.002",
+    "T1203",
+    "T1204.002",
+    "T1566.001",
+    "T1568.003"
+  ],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2012-0158",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2015-0116",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2015-5122",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2016-0189",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2013-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2014-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2014-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2016-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "f2542f40abe18c9a6097f44805ba03325996607a",
+    "aced1deec4e99e43f11e29c9e4e18f5658e55d15",
+    "dfb9d2e921a64e9d9dfd05425078371958be7cc3",
+    "paper:Darwin_fav_APT_Group",
+    "paper:NYTimes_Attackers_Evolve_Quickly",
+    "paper:ASERT-Threat-Intelligence-Brief-2014-07-Illuminating-Etumbot-APT",
+    "3a597a0c55b0f2a8484f8fc0ee579f289a2bb45a"
+  ],
+  "conflicts": [],
+  "evidence_count": 26
+}

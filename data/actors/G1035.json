@@ -1,0 +1,261 @@
+{
+  "id": "G1035",
+  "name": "Winter Vivern",
+  "aliases": [
+    {
+      "value": "Winter Vivern",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TA473",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UAC-0114",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TAG-70",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TA-473",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UNC4907",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "RU",
+      "source": "misp"
+    },
+    {
+      "value": "RU",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Germany",
+        "source": "misp"
+      },
+      {
+        "value": "Georgia",
+        "source": "etda"
+      },
+      {
+        "value": "India",
+        "source": "etda"
+      },
+      {
+        "value": "Lithuania",
+        "source": "etda"
+      },
+      {
+        "value": "Moldova",
+        "source": "etda"
+      },
+      {
+        "value": "Poland",
+        "source": "etda"
+      },
+      {
+        "value": "Slovakia",
+        "source": "etda"
+      },
+      {
+        "value": "Tunisia",
+        "source": "etda"
+      },
+      {
+        "value": "Ukraine",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      },
+      {
+        "value": "Uzbekistan",
+        "source": "etda"
+      },
+      {
+        "value": "Germany",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      }
+    ]
+  },
+  "malware": [],
+  "techniques_documented": [
+    "T1020",
+    "T1033",
+    "T1036",
+    "T1036.004",
+    "T1041",
+    "T1053.005",
+    "T1056.003",
+    "T1059",
+    "T1059.001",
+    "T1059.003",
+    "T1059.007",
+    "T1071.001",
+    "T1082",
+    "T1083",
+    "T1105",
+    "T1113",
+    "T1114.001",
+    "T1119",
+    "T1140",
+    "T1189",
+    "T1190",
+    "T1204.001",
+    "T1566.001",
+    "T1583.001",
+    "T1583.003",
+    "T1584.006",
+    "T1595.002"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1056",
+      "count": 1
+    },
+    {
+      "id": "T1078",
+      "count": 1
+    },
+    {
+      "id": "T1083",
+      "count": 1
+    },
+    {
+      "id": "T1114",
+      "count": 1
+    },
+    {
+      "id": "T1203",
+      "count": 1
+    },
+    {
+      "id": "T1212",
+      "count": 1
+    },
+    {
+      "id": "T1566",
+      "count": 1
+    },
+    {
+      "id": "T1571",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2020-35730",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-35207",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2022-27926",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2022-30190",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-23397",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2023-5631",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2021-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2023-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "f49eb01c824720de627ae5390b11cb49bd24d9d9",
+    "a63fe60718382d7519016de0262dd90d22d1c47c",
+    "43285fb6c2df8046dbc4021ed2cf995f92b8e272",
+    "74583be37a759b0554a52e187ec43578636324b8",
+    "caf6edfe587677a28840c3d8eab2b3480e08c052",
+    "38463aa76795c9cc4ac4c0b8c7ea6544ed6e6d6f"
+  ],
+  "conflicts": [],
+  "evidence_count": 11
+}

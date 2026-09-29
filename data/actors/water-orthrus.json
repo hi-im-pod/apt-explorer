@@ -1,0 +1,40 @@
+{
+  "id": "water-orthrus",
+  "name": "Water Orthrus",
+  "aliases": [
+    {
+      "value": "Water Orthrus",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "CopperStealth",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2023-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "d49fd733e342db8043f42f42f56742ddd3ed950d"
+  ],
+  "conflicts": [],
+  "evidence_count": 1
+}

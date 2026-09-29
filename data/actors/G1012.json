@@ -1,0 +1,605 @@
+{
+  "id": "G1012",
+  "name": "CURIUM",
+  "aliases": [
+    {
+      "value": "CURIUM",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Crimson Sandstorm",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TA456",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Yellow Liderc",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TA455",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Smoke Sandstorm",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Bohrium",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UNC1549",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Tortoiseshell",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Imperial Kitten",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Cuboid Sandstorm",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "BOHRIUM",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "IMPERIAL KITTEN",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "DEV-0228",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "DUSTYCAVE",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Nimbus Manticore",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Tortoise Shell",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "DEV-0056",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Yellow Dev 13",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Curium",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Marcella Flores",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Houseblend",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Devious Serpens",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Cobalt Fireside",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IR",
+      "source": "misp"
+    },
+    {
+      "value": "IR",
+      "source": "etda"
+    },
+    {
+      "value": "IR",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "Iran (Islamic Republic of)",
+      "source": "misp"
+    },
+    {
+      "value": "Iran (Islamic Republic of)",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "United States",
+        "source": "misp"
+      },
+      {
+        "value": "Israel",
+        "source": "misp"
+      },
+      {
+        "value": "Albania",
+        "source": "etda"
+      },
+      {
+        "value": "India",
+        "source": "etda"
+      },
+      {
+        "value": "Israel",
+        "source": "etda"
+      },
+      {
+        "value": "Türkiye",
+        "source": "etda"
+      },
+      {
+        "value": "United Arab Emirates",
+        "source": "etda"
+      },
+      {
+        "value": "Saudi Arabia",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "malpedia"
+      },
+      {
+        "value": "Israel",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Defense",
+        "source": "misp"
+      },
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Military",
+        "source": "misp"
+      },
+      {
+        "value": "Finance",
+        "source": "misp"
+      },
+      {
+        "value": "Energy",
+        "source": "misp"
+      },
+      {
+        "value": "Healthcare",
+        "source": "misp"
+      },
+      {
+        "value": "Pharmaceuticals",
+        "source": "misp"
+      },
+      {
+        "value": "Telecoms",
+        "source": "misp"
+      },
+      {
+        "value": "High-Tech",
+        "source": "misp"
+      },
+      {
+        "value": "Media",
+        "source": "misp"
+      },
+      {
+        "value": "NGOs",
+        "source": "misp"
+      },
+      {
+        "value": "Civil Society",
+        "source": "misp"
+      },
+      {
+        "value": "Legal",
+        "source": "misp"
+      },
+      {
+        "value": "Rail",
+        "source": "misp"
+      },
+      {
+        "value": "Transportation",
+        "source": "misp"
+      },
+      {
+        "value": "Aerospace",
+        "source": "etda"
+      },
+      {
+        "value": "Aviation",
+        "source": "etda"
+      },
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "IT",
+        "source": "etda"
+      },
+      {
+        "value": "Shipping and Logistics",
+        "source": "etda"
+      },
+      {
+        "value": "Maritime and Shipbuilding",
+        "source": "etda"
+      },
+      {
+        "value": "Defense",
+        "source": "malpedia"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      },
+      {
+        "value": "Military",
+        "source": "malpedia"
+      },
+      {
+        "value": "Finance",
+        "source": "malpedia"
+      },
+      {
+        "value": "Energy",
+        "source": "malpedia"
+      },
+      {
+        "value": "Healthcare",
+        "source": "malpedia"
+      },
+      {
+        "value": "Pharmaceuticals",
+        "source": "malpedia"
+      },
+      {
+        "value": "Telecoms",
+        "source": "malpedia"
+      },
+      {
+        "value": "High-Tech",
+        "source": "malpedia"
+      },
+      {
+        "value": "Media",
+        "source": "malpedia"
+      },
+      {
+        "value": "NGOs",
+        "source": "malpedia"
+      },
+      {
+        "value": "Civil Society",
+        "source": "malpedia"
+      },
+      {
+        "value": "Legal",
+        "source": "malpedia"
+      },
+      {
+        "value": "Rail",
+        "source": "malpedia"
+      },
+      {
+        "value": "Transportation",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "IMAPLoader",
+      "source": "attack"
+    },
+    {
+      "name": "IMAPLoader",
+      "source": "malpedia"
+    },
+    {
+      "name": "Liderc",
+      "source": "malpedia"
+    },
+    {
+      "name": "SysKit",
+      "source": "malpedia"
+    },
+    {
+      "name": "MiniFast",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1005",
+    "T1041",
+    "T1048.002",
+    "T1059.001",
+    "T1082",
+    "T1124",
+    "T1189",
+    "T1204.002",
+    "T1505.003",
+    "T1566.001",
+    "T1566.003",
+    "T1583.001",
+    "T1583.003",
+    "T1583.004",
+    "T1584.006",
+    "T1585.001",
+    "T1585.002",
+    "T1598.003",
+    "T1608.004"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1016",
+      "count": 1
+    },
+    {
+      "id": "T1033",
+      "count": 1
+    },
+    {
+      "id": "T1036.004",
+      "count": 1
+    },
+    {
+      "id": "T1041",
+      "count": 1
+    },
+    {
+      "id": "T1053.005",
+      "count": 1
+    },
+    {
+      "id": "T1055.001",
+      "count": 1
+    },
+    {
+      "id": "T1059.003",
+      "count": 1
+    },
+    {
+      "id": "T1059.007",
+      "count": 1
+    },
+    {
+      "id": "T1071.003",
+      "count": 1
+    },
+    {
+      "id": "T1082",
+      "count": 1
+    },
+    {
+      "id": "T1083",
+      "count": 1
+    },
+    {
+      "id": "T1189",
+      "count": 1
+    },
+    {
+      "id": "T1204.002",
+      "count": 1
+    },
+    {
+      "id": "T1547.001",
+      "count": 1
+    },
+    {
+      "id": "T1574",
+      "count": 1
+    },
+    {
+      "id": "T1584",
+      "count": 1
+    },
+    {
+      "id": "T1585.002",
+      "count": 1
+    },
+    {
+      "id": "T1587.001",
+      "count": 1
+    },
+    {
+      "id": "T1592",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2018-13379",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-26855",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-26857",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-26858",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-27065",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2019-Q3",
+      "count": 5
+    },
+    {
+      "quarter": "2021-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 4
+    }
+  ],
+  "reports": [
+    "98431c73634a84681a070042e17e2f9d9c8f36a2",
+    "b5278fe45bdd3140db60dcd2b3d8156081e8337b",
+    "00beaaeb93467dd6264ba82d05c8f5a6f50063fd",
+    "c84a1b71501cae8b2abe2cb568e4d4b75e960351",
+    "81c038a629e66fcf7b3cd097c863e017bcb919d3",
+    "0bfb2a4fa07e33858de806790cc846d66c3e3a24",
+    "0f11b452c512baf0c39d718a8b9b47f590a5579d",
+    "390db92ec9b05eeb3e869524fb8e9d17455a5cb8",
+    "6fa5641b366ea3cb82097902227cd9a6c2682607",
+    "849af341110e821e74ed05361acd7a0b6f239ea5",
+    "14c060c241fe5a0ed998aa85dad982777f716442",
+    "5100106fc5d02c212edfc0b6977c3526d0d48dbc",
+    "e4129398913943732e62a603877b9bb70b998fd9",
+    "5d08b29ec4f76e1a6bce6d1507de01df1b188666",
+    "e30eb85661ec98636d8992a74db6033c7d7617b3"
+  ],
+  "conflicts": [],
+  "evidence_count": 36
+}

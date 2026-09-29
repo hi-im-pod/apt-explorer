@@ -1,0 +1,73 @@
+{
+  "id": "rebel-jackal",
+  "name": "Rebel Jackal",
+  "aliases": [
+    {
+      "value": "Rebel Jackal",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "FallagaTeam",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "TN",
+      "source": "misp"
+    },
+    {
+      "value": "TN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Hacktivists-Nationalists",
+      "source": "misp"
+    },
+    {
+      "value": "Defacement",
+      "source": "misp"
+    },
+    {
+      "value": "Defacement",
+      "source": "malpedia"
+    },
+    {
+      "value": "Hacktivists-Nationalists",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "SPECTRALVIPER",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2023-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "d8b996f3bbb9782114c666a9f4bd2d47b2a6b493"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}

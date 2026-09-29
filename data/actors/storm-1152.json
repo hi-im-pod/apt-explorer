@@ -1,0 +1,37 @@
+{
+  "id": "storm-1152",
+  "name": "Storm-1152",
+  "aliases": [
+    {
+      "value": "Storm-1152",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "VN",
+      "source": "misp"
+    },
+    {
+      "value": "VN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 1
+}

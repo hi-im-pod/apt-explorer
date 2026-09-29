@@ -1,0 +1,37 @@
+{
+  "id": "r00tk1t",
+  "name": "R00tK1T",
+  "aliases": [
+    {
+      "value": "R00tK1T",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IL",
+      "source": "misp"
+    },
+    {
+      "value": "IL",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 1
+}

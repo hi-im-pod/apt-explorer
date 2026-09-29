@@ -1,0 +1,47 @@
+{
+  "id": "G1026",
+  "name": "Malteiro",
+  "aliases": [
+    {
+      "value": "Malteiro",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "Mispadu",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1027.013",
+    "T1055.001",
+    "T1059.005",
+    "T1082",
+    "T1140",
+    "T1204.002",
+    "T1518.001",
+    "T1555",
+    "T1555.003",
+    "T1566.001",
+    "T1614.001",
+    "T1657"
+  ],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 2
+}

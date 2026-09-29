@@ -1,0 +1,219 @@
+{
+  "id": "G0123",
+  "name": "Volatile Cedar",
+  "aliases": [
+    {
+      "value": "Volatile Cedar",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Lebanese Cedar",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Dancing Salome",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "DeftTorero",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "VolcanicTimber",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Amethyst Rain",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "LB",
+      "source": "misp"
+    },
+    {
+      "value": "LB",
+      "source": "etda"
+    },
+    {
+      "value": "LB",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Canada",
+        "source": "etda"
+      },
+      {
+        "value": "Egypt",
+        "source": "etda"
+      },
+      {
+        "value": "Israel",
+        "source": "etda"
+      },
+      {
+        "value": "Jordan",
+        "source": "etda"
+      },
+      {
+        "value": "Lebanon",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "etda"
+      },
+      {
+        "value": "Saudi Arabia",
+        "source": "etda"
+      },
+      {
+        "value": "United Arab Emirates",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      },
+      {
+        "value": "Ukraine",
+        "source": "malpedia"
+      },
+      {
+        "value": "Israel",
+        "source": "malpedia"
+      },
+      {
+        "value": "Lebanon",
+        "source": "malpedia"
+      },
+      {
+        "value": "Saudi Arabia",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Think Tanks",
+        "source": "misp"
+      },
+      {
+        "value": "Government, Administration",
+        "source": "misp"
+      },
+      {
+        "value": "Education",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Hosting",
+        "source": "etda"
+      },
+      {
+        "value": "Think Tanks",
+        "source": "malpedia"
+      },
+      {
+        "value": "Government, Administration",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Caterpillar WebShell",
+      "source": "attack"
+    },
+    {
+      "name": "Explosive",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1105",
+    "T1190",
+    "T1505.003",
+    "T1595.002",
+    "T1595.003"
+  ],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2012-3152",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-11581",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-3396",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2015-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "f379aa885d52567de38ad7ffe6be90aca2140f56",
+    "paper:Lebanese-Cedar-APT",
+    "paper:volatile-cedar-technical-report",
+    "7cd5b12fa38705e254296133991410754f1678ab"
+  ],
+  "conflicts": [],
+  "evidence_count": 15
+}

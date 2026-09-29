@@ -1,0 +1,229 @@
+{
+  "id": "G0024",
+  "name": "Putter Panda",
+  "aliases": [
+    {
+      "value": "Putter Panda",
+      "sources": [
+        "attack",
+        "etda"
+      ]
+    },
+    {
+      "value": "APT2",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "MSUpdater",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TG-6952",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "SearchFire",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "4HCrew",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "PLA Unit 61486",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "PUTTER PANDA",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "SULPHUR",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "APT 2",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Group 36",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Sulphur",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "etda"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "China",
+      "source": "misp"
+    },
+    {
+      "value": "China",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "United States",
+        "source": "etda"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Private sector",
+        "source": "misp"
+      },
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Research",
+        "source": "etda"
+      },
+      {
+        "value": "Technology",
+        "source": "etda"
+      },
+      {
+        "value": "Private sector",
+        "source": "malpedia"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "3PARA RAT",
+      "source": "attack"
+    },
+    {
+      "name": "4H RAT",
+      "source": "attack"
+    },
+    {
+      "name": "httpclient",
+      "source": "attack"
+    },
+    {
+      "name": "pngdowner",
+      "source": "attack"
+    },
+    {
+      "name": "pngdowner",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1027.013",
+    "T1055.001",
+    "T1547.001",
+    "T1685"
+  ],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2014-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2021-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "d6859c132b0a9f82086313f4169808da5cf782c6",
+    "daf80dcda007b9e1dcec8cf9cafc26a0c6c99cd0",
+    "2b8f1f71c8638df5eb2ad1540426f475e6f92887",
+    "ddadffb91053c4d19590e2035c8eeed14fceca60",
+    "paper:putter-panda"
+  ],
+  "conflicts": [],
+  "evidence_count": 19
+}

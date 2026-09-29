@@ -1,0 +1,769 @@
+{
+  "id": "G0035",
+  "name": "Dragonfly",
+  "aliases": [
+    {
+      "value": "Dragonfly",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TG-4192",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Crouching Yeti",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Ghost Blizzard",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "DYMALLOY",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "IRON LIBERTY",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "BROMINE",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Allanite",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Palmetto Fusion",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Group 24",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Koala Team",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "ITG15",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Blue Kraken",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Berserk Bear",
+      "sources": [
+        "attack",
+        "etda"
+      ]
+    },
+    {
+      "value": "Energetic Bear",
+      "sources": [
+        "attack",
+        "etda"
+      ]
+    },
+    {
+      "value": "ALLANITE",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "ENERGETIC BEAR",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "BERSERK BEAR",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "CASTLE",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Havex",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "ATK6",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "TEMP.Isotope",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Dragonfly 2.0",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Dymalloy",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Iron Liberty",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Electrum",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "ATK 6",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Bromine",
+      "sources": [
+        "etda"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "RU",
+      "source": "misp"
+    },
+    {
+      "value": "RU",
+      "source": "etda"
+    },
+    {
+      "value": "RU",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "Russian Federation",
+      "source": "misp"
+    },
+    {
+      "value": "Russian Federation",
+      "source": "malpedia"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Sabotage and destruction",
+      "source": "etda"
+    },
+    {
+      "value": "Information theft and espionage",
+      "source": "etda"
+    },
+    {
+      "value": "Espionage",
+      "source": "malpedia"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "United States",
+        "source": "misp"
+      },
+      {
+        "value": "Germany",
+        "source": "misp"
+      },
+      {
+        "value": "Türkiye",
+        "source": "misp"
+      },
+      {
+        "value": "China",
+        "source": "misp"
+      },
+      {
+        "value": "Spain",
+        "source": "misp"
+      },
+      {
+        "value": "France",
+        "source": "misp"
+      },
+      {
+        "value": "Ireland",
+        "source": "misp"
+      },
+      {
+        "value": "Japan",
+        "source": "misp"
+      },
+      {
+        "value": "Italy",
+        "source": "misp"
+      },
+      {
+        "value": "Poland",
+        "source": "misp"
+      },
+      {
+        "value": "Azerbaijan",
+        "source": "etda"
+      },
+      {
+        "value": "Belgium",
+        "source": "etda"
+      },
+      {
+        "value": "Canada",
+        "source": "etda"
+      },
+      {
+        "value": "France",
+        "source": "etda"
+      },
+      {
+        "value": "Germany",
+        "source": "etda"
+      },
+      {
+        "value": "Italy",
+        "source": "etda"
+      },
+      {
+        "value": "Norway",
+        "source": "etda"
+      },
+      {
+        "value": "Russia",
+        "source": "etda"
+      },
+      {
+        "value": "Singapore",
+        "source": "etda"
+      },
+      {
+        "value": "Spain",
+        "source": "etda"
+      },
+      {
+        "value": "Switzerland",
+        "source": "etda"
+      },
+      {
+        "value": "Türkiye",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "Ukraine",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      },
+      {
+        "value": "Greece",
+        "source": "etda"
+      },
+      {
+        "value": "Poland",
+        "source": "etda"
+      },
+      {
+        "value": "Romania",
+        "source": "etda"
+      },
+      {
+        "value": "Serbia",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "malpedia"
+      },
+      {
+        "value": "Germany",
+        "source": "malpedia"
+      },
+      {
+        "value": "Türkiye",
+        "source": "malpedia"
+      },
+      {
+        "value": "China",
+        "source": "malpedia"
+      },
+      {
+        "value": "Spain",
+        "source": "malpedia"
+      },
+      {
+        "value": "France",
+        "source": "malpedia"
+      },
+      {
+        "value": "Ireland",
+        "source": "malpedia"
+      },
+      {
+        "value": "Japan",
+        "source": "malpedia"
+      },
+      {
+        "value": "Italy",
+        "source": "malpedia"
+      },
+      {
+        "value": "Poland",
+        "source": "malpedia"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Private sector",
+        "source": "misp"
+      },
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Energy",
+        "source": "misp"
+      },
+      {
+        "value": "Energy",
+        "source": "etda"
+      },
+      {
+        "value": "Aviation",
+        "source": "etda"
+      },
+      {
+        "value": "Construction",
+        "source": "etda"
+      },
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "Education",
+        "source": "etda"
+      },
+      {
+        "value": "Industrial",
+        "source": "etda"
+      },
+      {
+        "value": "IT",
+        "source": "etda"
+      },
+      {
+        "value": "Manufacturing",
+        "source": "etda"
+      },
+      {
+        "value": "Oil and gas",
+        "source": "etda"
+      },
+      {
+        "value": "Pharmaceutical",
+        "source": "etda"
+      },
+      {
+        "value": "Private sector",
+        "source": "malpedia"
+      },
+      {
+        "value": "Government",
+        "source": "malpedia"
+      },
+      {
+        "value": "Energy",
+        "source": "malpedia"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Backdoor.Oldrea",
+      "source": "attack"
+    },
+    {
+      "name": "CrackMapExec",
+      "source": "attack"
+    },
+    {
+      "name": "Impacket",
+      "source": "attack"
+    },
+    {
+      "name": "MCMD",
+      "source": "attack"
+    },
+    {
+      "name": "Mimikatz",
+      "source": "attack"
+    },
+    {
+      "name": "Net",
+      "source": "attack"
+    },
+    {
+      "name": "PsExec",
+      "source": "attack"
+    },
+    {
+      "name": "Reg",
+      "source": "attack"
+    },
+    {
+      "name": "Trojan.Karagany",
+      "source": "attack"
+    },
+    {
+      "name": "netsh",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1003.002",
+    "T1003.003",
+    "T1003.004",
+    "T1005",
+    "T1012",
+    "T1016",
+    "T1018",
+    "T1021.001",
+    "T1033",
+    "T1036.010",
+    "T1053.005",
+    "T1059",
+    "T1059.001",
+    "T1059.003",
+    "T1059.006",
+    "T1069.002",
+    "T1070.004",
+    "T1071.002",
+    "T1074.001",
+    "T1078",
+    "T1083",
+    "T1087.002",
+    "T1098.007",
+    "T1105",
+    "T1110",
+    "T1110.002",
+    "T1112",
+    "T1113",
+    "T1114.002",
+    "T1133",
+    "T1135",
+    "T1136.001",
+    "T1187",
+    "T1189",
+    "T1190",
+    "T1195.002",
+    "T1203",
+    "T1204.002",
+    "T1210",
+    "T1221",
+    "T1505.003",
+    "T1547.001",
+    "T1560",
+    "T1564.002",
+    "T1566.001",
+    "T1583.001",
+    "T1583.003",
+    "T1584.004",
+    "T1588.002",
+    "T1591.002",
+    "T1595.002",
+    "T1598.002",
+    "T1598.003",
+    "T1608.004",
+    "T1685.005",
+    "T1686"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1078",
+      "count": 1
+    },
+    {
+      "id": "T1110",
+      "count": 1
+    },
+    {
+      "id": "T1133",
+      "count": 1
+    },
+    {
+      "id": "T1189",
+      "count": 1
+    },
+    {
+      "id": "T1190",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2011-0611",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2012-1723",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2012-4792",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2013-1347",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2013-2465",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2015-2545",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-9841",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-13379",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-0211",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-10149",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-19781",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-0688",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-1472",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-21311",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2023-4911",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2014-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2014-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2014-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 3
+    },
+    {
+      "quarter": "2018-Q2",
+      "count": 3
+    },
+    {
+      "quarter": "2019-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2023-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 7
+    }
+  ],
+  "reports": [
+    "2067d2d81952779ccdc33d518f18a94dfeec42c2",
+    "4a75f35efddfd81eef0b999a8c71456e4c07f6bb",
+    "56f04a8a7bd6c924ba03ad6b1e3da546a791d1f8",
+    "5869df71429177668242a41b4e07130c227fff2d",
+    "63da8f5b387b0442d383ddef78069685c0f93717",
+    "a34e23884711d0a9fe30c30688a7ec9aa8688336",
+    "f54f0306c754fdb2f895473b28ad636eabcc07f0",
+    "e4257eef53d49415b7cc6813b879bcf0fbc5a2a7",
+    "51bc7d60cc47b54b886462e217b291a25880a531",
+    "e975abe6e455787bd19b3dcee33f9d179e874ad4",
+    "4bd0778aea2c9268cd7ffba520223691878b2ef8",
+    "7fa852e194f6a7edc5e0f6c9f11c83fc675ace68",
+    "6a9fc02917bdf17fdcac63437535b93de39db703",
+    "ee71c95db39979df6e22f91bd2689b838f97761f",
+    "b143a751da2ad41cf33660a2551643834c7c97ed",
+    "e4772882fe35af3650068b0665a2d12c24999e51",
+    "694c995bd92d815da556578c273f4e4d542dac7e",
+    "dbc9026e9f8f76b9cac91b86dd97780f81d8e9ae",
+    "059fd3de304083e79ca083605aff7cf58d9b17cb",
+    "1d065e765e8733b8edc7709ebb8339a890abb149",
+    "8a146c79ec045eee3b72971c2285b63f28ec4407",
+    "3e8197de6b5d3ee28900addba58d37693ab48c35",
+    "6d7205824e9b3f398aa2e42e87d9e6416f925cac",
+    "29e1e27c9564c0a7b52481295a83b1b8482393dc",
+    "c7d082f04cb0d613c04517d0d6dec2d76a866c6b",
+    "paper:ICS_Havex_backdoors",
+    "paper:EB-YetiJuly2014-Public",
+    "paper:Dragonfly_Threat_Against_Western_Energy_Suppliers"
+  ],
+  "conflicts": [],
+  "evidence_count": 47
+}

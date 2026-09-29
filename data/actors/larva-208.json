@@ -1,0 +1,62 @@
+{
+  "id": "larva-208",
+  "name": "Larva-208",
+  "aliases": [
+    {
+      "value": "Larva-208",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "EncryptHub",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "DarkWisp",
+      "source": "malpedia"
+    },
+    {
+      "name": "SilentPrism",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [
+    {
+      "cve": "CVE-2025-26633",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2025-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q3",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "64dbadc11ad09f69cfda9acdaf942f414885245c",
+    "48253f3e8272d2450377931f927e76cc9cea55db"
+  ],
+  "conflicts": [],
+  "evidence_count": 2
+}
