@@ -190,3 +190,12 @@ def test_shrunken_bundle_keeps_the_old_snapshot_and_its_date(tmp_path, fast_http
     # new dated folder would make the old bundle look fresh.
     assert store.latest_date("attack") == "2026-01-02"
     assert store.latest("attack", "LICENSE.txt") is None
+
+
+def test_technique_ids_holds_live_techniques_and_sub_techniques_only(store):
+    # The fixture has a revoked T1086, which ATT&CK replaced, so it is not a valid ID any more.
+    assert attack.technique_ids(store) == frozenset({"T1059", "T1059.001", "T1003"})
+
+
+def test_technique_ids_is_empty_without_a_snapshot(tmp_path):
+    assert attack.technique_ids(SnapshotStore(tmp_path)) == frozenset()

@@ -222,3 +222,24 @@ def copyright_year(store: SnapshotStore) -> str | None:
         return None
     m = _DESIGNATION.search(raw.decode("utf-8", errors="replace"))
     return m.group(1) if m else None
+
+
+_TECHNIQUE_ID = re.compile(r"T[0-9]{4}(\.[0-9]{3})?")
+
+
+def technique_ids(store: SnapshotStore) -> frozenset[str]:
+    """Every live technique and sub-technique ID in the bundle, such as T1059 and T1059.001.
+
+    Reports from ORKL and the paper carry technique IDs found by pattern, and a
+    pattern also matches IDs that ATT&CK revoked or never had. The build
+    keeps only the IDs in this set. A revoked technique is left out on
+    purpose: ATT&CK no longer asserts it, so it must not reach the data.
+    Returns an empty set when there is no snapshot.
+    """
+    loaded = _load(store)
+    if loaded is None:
+        return frozenset()
+    live, _ = loaded
+    return frozenset(aid for o in live.values()
+                     if o.get("type") == "attack-pattern"
+                     and (aid := _attack_id(o)) and _TECHNIQUE_ID.fullmatch(aid))

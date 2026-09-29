@@ -51,3 +51,28 @@ def get_text(url: str) -> str:
 
 def get_bytes(url: str) -> bytes:
     return _get(url).content
+
+# Servers that refuse HEAD answer with one of these. The same URL usually
+# works for GET, so a refusal is not proof that the link is dead.
+_HEAD_REFUSED = frozenset({400, 403, 405, 501})
+LINK_TIMEOUT = 20.0
+
+def probe(url: str) -> int:
+    """The final status code of a URL, without downloading its body.
+
+    Sends HEAD and falls back to GET when the server refuses HEAD. Every
+    request goes through the same per-host pacing as the connectors, so a
+    link check of many pages on one site stays polite. Unlike the fetch
+    helpers this makes one attempt per method and never retries: a link
+    checker wants to know what the server said, and retrying a 5xx would only
+    slow the check down. A transport failure such as a timeout is raised for
+    the caller to record.
+    """
+    _pace(url)
+    status = _client.head(url, timeout=LINK_TIMEOUT).status_code
+    if status in _HEAD_REFUSED:
+        _pace(url)
+        # stream() reads the headers only, so the body is never downloaded.
+        with _client.stream("GET", url, timeout=LINK_TIMEOUT) as r:
+            status = r.status_code
+    return status
