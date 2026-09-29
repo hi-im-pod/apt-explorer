@@ -27,7 +27,7 @@ SNAPSHOT = "posts.json"
 ORGANISATION = "The DFIR Report"
 HOST = "thedfirreport.com"
 
-_HTTP_URL = re.compile(r"https?://\S+", re.IGNORECASE)
+_HTTP_URL = re.compile(r"(https?)(://\S+)", re.IGNORECASE)
 _TAG = re.compile(r"<[^>]*>")
 
 
@@ -71,8 +71,15 @@ def _published(raw: str | None) -> str | None:
         return _calendar_day(parse_date(raw))
 
 
-def _usable(title: str, link: str) -> bool:
-    return bool(title) and bool(_HTTP_URL.fullmatch(link))
+def _http_url(value: str) -> str:
+    """The link with a lower-case scheme, or "" unless it is an http(s) URL.
+
+    The contract's URL pattern is case-sensitive, so HTTPS:// would pass here
+    and then fail schema validation at build time, which blocks the whole
+    data commit. Any other scheme, such as javascript:, is refused.
+    """
+    m = _HTTP_URL.fullmatch(value.strip())
+    return m.group(1).lower() + m.group(2) if m else ""
 
 
 def _feed_items(payload: bytes) -> list[dict]:
@@ -81,8 +88,8 @@ def _feed_items(payload: bytes) -> list[dict]:
     # client.
     items, dropped = [], 0
     for entry in feedparser.parse(payload).entries:
-        title, link = _title(entry), (entry.get("link") or "").strip()
-        if _usable(title, link):
+        title, link = _title(entry), _http_url(entry.get("link") or "")
+        if title and link:
             items.append({"title": title, "link": link, "published": _published(entry.get("published"))})
         else:
             dropped += 1
@@ -105,8 +112,8 @@ def _stored_items(store: SnapshotStore) -> list[dict]:
     items, dropped = [], 0
     for i in json.loads(raw.decode("utf-8")):
         title = _one_line(str(i.get("title") or "")) if isinstance(i, dict) else ""
-        link = str(i.get("link") or "").strip() if isinstance(i, dict) else ""
-        if not _usable(title, link):
+        link = _http_url(str(i.get("link") or "")) if isinstance(i, dict) else ""
+        if not (title and link):
             dropped += 1
             continue
         published = _calendar_day(parse_date(str(i.get("published") or "")))

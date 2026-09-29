@@ -191,6 +191,14 @@ def test_source_id_comes_from_the_normalized_link(tmp_path, no_wait):
                    "2025-12-17-cats-got-your-files-lynx-ransomware"]
 
 
+def test_an_upper_case_scheme_is_lowered(tmp_path, no_wait):
+    # The contract's URL pattern is case-sensitive, so HTTPS:// would fail
+    # schema validation at build time and block the whole data commit.
+    s = SnapshotStore(tmp_path)
+    fetch_feed(s, rss("<title>Loud</title><link>HTTPS://thedfirreport.com/Loud/</link>"))
+    assert DfirConnector().normalize(s).reports[0].url == "https://thedfirreport.com/Loud/"
+
+
 def test_a_repeated_link_is_kept_once(tmp_path, no_wait):
     s = SnapshotStore(tmp_path)
     fetch_feed(s, rss("<title>First</title><link>https://thedfirreport.com/same/</link>",

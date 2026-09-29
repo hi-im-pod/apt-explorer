@@ -32,7 +32,9 @@ ACTORS_SNAPSHOT = "Threat_Actor_Collection.csv"
 REPORT_COLUMNS = ("Date", "Filename", "Title", "Download_url", "Source", "CVE", "MITRE_ID", "Threat_actor")
 ACTOR_COLUMNS = ("Threat Actor", "Other Names")
 
-_HTTP_URL = re.compile(r"https?://\S+", re.IGNORECASE)
+# The contract's URL pattern is case-sensitive, so the scheme is lowered on
+# the way in; HTTP:// would otherwise fail schema validation at build time.
+_HTTP_URL = re.compile(r"(https?)(://\S+)", re.IGNORECASE)
 _CVE = re.compile(r"CVE-[0-9]{4}-[0-9]{4,7}")
 # ATT&CK Enterprise technique IDs all start with T1. The dataset's MITRE_ID
 # column also holds tactic IDs (TA0001), software IDs (S0063) and malware
@@ -182,7 +184,8 @@ class PaperConnector:
                 repeated += 1
                 continue
             published = _calendar_day(parse_date(_text(r.get("Date"))))
-            link = _text(r.get("Download_url"))
+            link = _HTTP_URL.fullmatch(_text(r.get("Download_url")))
+            url = link.group(1).lower() + link.group(2) if link else None
             reports[sid] = ReportRecord(
                 source=self.name,
                 source_id=sid,
@@ -194,7 +197,7 @@ class PaperConnector:
                 # row without a usable date does not claim the paper dated it.
                 date_basis="paper" if published else "unknown",
                 organisation=_text(r.get("Source")) or None,
-                url=link if _HTTP_URL.fullmatch(link) else None,
+                url=url,
                 actor_names=_parts(r.get("Threat_actor")),
                 cves=_cves(r.get("CVE")),
                 techniques=_techniques(r.get("MITRE_ID")),

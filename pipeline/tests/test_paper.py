@@ -169,6 +169,9 @@ def test_labels_are_single_trimmed_lines_and_bad_urls_become_none(tmp_path):
     s = store_with(tmp_path, csv_bytes(row(Title=" Two\n lines ", Source=" Lab\tName ", Download_url="report.pdf")))
     [r] = PaperConnector().normalize(s).reports
     assert (r.title, r.organisation, r.url) == ("Two lines", "Lab Name", None)
+    # The contract's URL pattern is case-sensitive, so the scheme is lowered.
+    s = store_with(tmp_path / "loud", csv_bytes(row(Download_url="HTTP://Example.org/A.pdf")))
+    assert PaperConnector().normalize(s).reports[0].url == "http://Example.org/A.pdf"
 
 
 def test_rows_without_a_filename_or_a_repeated_one_are_dropped_and_counted(tmp_path, caplog):
