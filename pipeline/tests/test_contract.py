@@ -17,10 +17,12 @@ from pathlib import Path
 import pytest
 from jsonschema import Draft202012Validator
 
-from aptx.build.contract import SCHEMA_DIR, load_schema, schema_for, validator
+from aptx.build.contract import NON_JSON_FILES, SCHEMA_DIR, load_schema, schema_for, validator
+from aptx.sources.base import publish_policy
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "data"
+SOURCES_MD = ROOT / "SOURCES.md"
 
 # The site fetches these by name, so each must exist even when it is empty.
 # The year shards are not listed because which years exist depends on the data;
@@ -35,7 +37,9 @@ def _files(root: Path) -> list[str]:
     return sorted(p.relative_to(root).as_posix() for p in root.rglob("*") if p.is_file())
 
 
-FILES = _files(DATA) if DATA.is_dir() else []
+# NOTICE.md is left out by name, not by a pattern such as *.md, so any other
+# file without a schema still fails test_every_data_file_has_a_schema.
+FILES = [rel for rel in _files(DATA) if rel not in NON_JSON_FILES] if DATA.is_dir() else []
 
 
 def _load(rel: str):
@@ -83,6 +87,13 @@ def test_schema_mapping_covers_the_published_layout():
     assert schema_for("reports/latest.json") is None
     assert schema_for("reports/24.json") is None
     assert schema_for("README.md") is None
+
+
+def test_only_the_notice_is_exempt_from_the_schema_check():
+    # Each exemption is a file the site gets with no agreed shape, so the list
+    # stays as short as the licences allow.
+    assert NON_JSON_FILES == {"NOTICE.md"}
+    assert (DATA / "NOTICE.md").is_file()
 
 
 # --- The schemas themselves ----------------------------------------------------
@@ -167,6 +178,16 @@ def _trends(**changes):
     return trends
 
 
+def _source(**changes):
+    source = {"name": "kev", "last_success": None, "record_count": 0, "stale": True, "publish": "full",
+              "licence": "CC0 1.0",
+              "licence_url": "https://www.cisa.gov/sites/default/files/licenses/kev/license.txt",
+              "attribution": "CISA Known Exploited Vulnerabilities Catalog, "
+                             "https://www.cisa.gov/known-exploited-vulnerabilities-catalog, CC0 1.0."}
+    source.update(changes)
+    return source
+
+
 def _without(doc: dict, key: str) -> dict:
     return {k: v for k, v in doc.items() if k != key}
 
@@ -176,7 +197,7 @@ VALID = [
     ("reports_shard", [_report(published=None, date_basis="unknown")]),
     ("actors_index", [_index_entry()]),
     ("actor", _actor()),
-    ("sources", [{"name": "kev", "last_success": None, "record_count": 0, "stale": True, "publish": "full"}]),
+    ("sources", [_source()]),
     ("trends", _trends()),
     ("build", {"built_at": "2026-09-28T03:21:05Z", "version": "0.1.0", "report_years": []}),
 ]
@@ -203,8 +224,12 @@ INVALID = [
     ("actor", _actor(timeline=[{"quarter": "2024-Q5", "count": 1}]), "a quarter that does not exist"),
     ("actor", _actor(conflicts=[{"field": "origin", "values": [{"value": "RU", "source": "misp"}]}]),
      "a conflict with one side"),
-    ("sources", [{"name": "kev", "last_success": None, "record_count": 0, "stale": True, "publish": "public"}],
-     "an unknown publish policy"),
+    ("sources", [_source(publish="public")], "an unknown publish policy"),
+    ("sources", [_without(_source(), "attribution")], "a source with no attribution text"),
+    ("sources", [_source(attribution="")], "an empty attribution"),
+    ("sources", [_source(licence=None)], "a source with no licence named"),
+    ("sources", [_source(licence_url=None)], "a source with no licence URL"),
+    ("sources", [_source(licence_url="cisa.gov/license.txt")], "a licence URL that is not http or https"),
     ("trends", _trends(notes={"reporting_activity": "A counting rule."}), "a chart without its note"),
     ("build", {"built_at": "2026-09-28T03:21:05Z", "version": "0.1.0"}, "no list of report years"),
 ]
@@ -462,6 +487,113 @@ def test_integrity_check_finds_a_first_seen_date_from_an_evidence_only_source(tr
     source["publish"] = "evidence-only"
     broken["trends.json"]["new_actors"][0]["basis"] = source["name"]
     assert any("new_actors" in p and "evidence-only" in p for p in integrity_problems(broken))
+
+
+# --- sources.json and NOTICE.md say what SOURCES.md says --------------------------
+
+_UNESCAPED_PIPE = re.compile(r"(?<!\\)\|")
+_QUOTED = re.compile(r'"([^"]+)"')
+
+
+def _licence_table() -> dict[str, dict[str, str]]:
+    """SOURCES.md's licence table as {connector key: {column header: cell}}.
+
+    A row belongs to the key its first cell names in backticks, as in
+    "MITRE ATT&CK® (`attack`)", which is the same rule publish_policy() uses.
+    """
+    rows: dict[str, dict[str, str]] = {}
+    header: list[str] | None = None
+    for line in SOURCES_MD.read_text(encoding="utf-8-sig").splitlines():
+        if not line.startswith("|"):
+            header = None
+            continue
+        cells = [c.strip().replace("\\|", "|") for c in _UNESCAPED_PIPE.split(line.strip().strip("|"))]
+        if header is None:
+            header = cells
+            continue
+        key = re.search(r"\(`([a-z][a-z0-9-]*)`\)", cells[0])
+        if key:
+            rows[key.group(1)] = dict(zip(header, cells))
+    return rows
+
+
+def _column(row: dict[str, str], prefix: str) -> str:
+    return next(cell for header, cell in row.items() if header.startswith(prefix))
+
+
+def _attribution(key: str, row: dict[str, str]) -> str:
+    """The attribution text for one source: the strings its SOURCES.md row
+    quotes in the Attribution column, in order, joined by single spaces."""
+    quotes = _QUOTED.findall(_column(row, "Attribution"))
+    if key == "attack":
+        # The cell says the copyright designation is "followed by the licence
+        # paragraph quoted in the previous column" and then the trademark line.
+        # MITRE's licence only holds if that paragraph travels with every copy.
+        quotes.insert(1, _QUOTED.findall(_column(row, "Licence"))[0])
+    if key == "kev":
+        # The second quote is the licence's condition about the CISA logo and
+        # DHS seal. The site follows it, but it is not credit text.
+        quotes = quotes[:1]
+    return " ".join(quotes)
+
+
+@pytest.fixture(scope="module")
+def licence_table() -> dict[str, dict[str, str]]:
+    table = _licence_table()
+    assert len(table) == 8, f"SOURCES.md rows found for {sorted(table)}"
+    return table
+
+
+def test_sources_json_lists_every_source_in_the_licence_table(tree, licence_table):
+    assert sorted(s["name"] for s in tree["sources.json"]) == sorted(licence_table)
+
+
+def test_publish_values_are_the_ones_sources_md_sets(tree):
+    # The site hides or shows data by the publish value in sources.json. If it
+    # drifted from SOURCES.md, the site would apply a licence decision nobody
+    # made. publish_policy() is the reader the pipeline uses, so the sample and
+    # real builds are held to the same parse.
+    wrong = {s["name"]: (s["publish"], publish_policy(s["name"], SOURCES_MD)) for s in tree["sources.json"]
+             if s["publish"] != publish_policy(s["name"], SOURCES_MD)}
+    assert wrong == {}, "name: (sources.json, SOURCES.md)"
+
+
+def test_attribution_is_the_text_sources_md_gives(tree, licence_table):
+    for source in tree["sources.json"]:
+        expected = _attribution(source["name"], licence_table[source["name"]])
+        assert source["attribution"] == expected, source["name"]
+
+
+def test_licence_url_is_one_sources_md_records_for_that_source(tree, licence_table):
+    # A licence link the audit never read could point at the wrong terms.
+    for source in tree["sources.json"]:
+        row = " ".join(licence_table[source["name"]].values())
+        assert source["licence_url"] in row, source["name"]
+
+
+def test_attribution_helper_rebuilds_the_mitre_notice_in_order(licence_table):
+    text = _attribution("attack", licence_table["attack"])
+    assert re.match(r"© [0-9]{4} The MITRE Corporation\. This work is reproduced", text)
+    assert "hereby grants you a non-exclusive, royalty-free license" in text
+    assert text.endswith("MITRE ATT&CK® and ATT&CK® are registered trademarks of The MITRE Corporation.")
+    assert "CISA Logo" not in _attribution("kev", licence_table["kev"])
+
+
+def test_notice_carries_the_data_licence_and_every_attribution(tree, licence_table):
+    text = (DATA / "NOTICE.md").read_text(encoding="utf-8")
+    flat = " ".join(text.split())
+    assert "CC BY-NC-SA 4.0" in text
+    assert "https://creativecommons.org/licenses/by-nc-sa/4.0/" in text
+    # MITRE's licence requires its copyright designation and "this license" in
+    # any copy, so each quoted piece must appear verbatim, © and ® included.
+    for piece in _QUOTED.findall(_column(licence_table["attack"], "Attribution")) + \
+            _QUOTED.findall(_column(licence_table["attack"], "Licence"))[:1]:
+        assert piece in text
+    for source in tree["sources.json"]:
+        assert " ".join(source["attribution"].split()) in flat, source["name"]
+    # Section 3(b)(3) of CC BY-NC-SA 4.0 forbids adding terms to adapted
+    # material, so the notice says none are added.
+    assert re.search(r"no additional terms", flat, re.I)
 
 
 # --- The sample covers what the site is built against ----------------------------

@@ -16,7 +16,10 @@
         "last_success",
         "record_count",
         "stale",
-        "publish"
+        "publish",
+        "licence",
+        "licence_url",
+        "attribution"
       ],
       "properties": {
         "name": {
@@ -36,6 +39,18 @@
         },
         "publish": {
           "$ref": "#/$defs/publish"
+        },
+        "licence": {
+          "$ref": "#/$defs/label",
+          "description": "The source's licence in short form as SOURCES.md records it, such as CC BY-NC-SA 4.0, or a short statement such as All rights reserved when the source names no licence."
+        },
+        "licence_url": {
+          "$ref": "#/$defs/url",
+          "description": "The licence text, or the terms page SOURCES.md read when the source has no standard licence."
+        },
+        "attribution": {
+          "$ref": "#/$defs/label",
+          "description": "The attribution text SOURCES.md gives for the source, character for character, on one line. The About page and data/NOTICE.md show it wherever the source is credited."
         }
       }
     },
@@ -52,6 +67,11 @@
       "type": "integer",
       "minimum": 0
     },
+    "label": {
+      "description": "Non-empty text with no leading or trailing whitespace and no line breaks.",
+      "type": "string",
+      "pattern": "^\\S(.*\\S)?$"
+    },
     "nullableDate": {
       "description": "A date, or null when none is known.",
       "type": [
@@ -64,6 +84,11 @@
       "description": "A connector key such as attack or misp, as listed in sources.json. Never a display name.",
       "type": "string",
       "pattern": "^[a-z][a-z0-9-]*$"
+    },
+    "url": {
+      "description": "An http or https URL.",
+      "type": "string",
+      "pattern": "^https?://\\S+$"
     }
   }
 }

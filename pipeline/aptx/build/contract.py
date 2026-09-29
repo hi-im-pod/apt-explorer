@@ -15,6 +15,12 @@ from jsonschema import Draft202012Validator
 
 SCHEMA_DIR = Path(__file__).resolve().parent / "schemas"
 
+# Files in data/ that no schema governs, named one by one so that any other
+# stray file still fails the contract tests. NOTICE.md carries the data licence
+# and the attributions that CC BY-NC-SA and MITRE's licence require in every
+# copy of data/, so a writer that clears data/ before a build must keep it.
+NON_JSON_FILES = frozenset({"NOTICE.md"})
+
 # Paths are relative to data/. The first rule that matches wins, which is why
 # actors/index.json comes before the rule for single actor pages.
 _RULES: tuple[tuple[re.Pattern[str], str], ...] = (

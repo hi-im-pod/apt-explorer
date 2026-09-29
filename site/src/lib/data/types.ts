@@ -306,6 +306,12 @@ export interface SourceStatus {
 	record_count: number;
 	stale: boolean;
 	publish: PublishPolicy;
+	/** The licence in short form, such as "CC BY-NC-SA 4.0", or "All rights reserved" when none is named. */
+	licence: string;
+	/** The licence text, or the terms page SOURCES.md read when the source has no standard licence. */
+	licence_url: string;
+	/** SOURCES.md's attribution text, character for character. Show it wherever the source is credited. */
+	attribution: string;
 }
 
 /**
@@ -451,7 +457,7 @@ export interface ReportedVsDocumented {
 }
 
 /**
- * The health fields of sources.json, without the publish policy.
+ * The health fields of sources.json, without the publish policy or licence fields.
  * @schema trends.schema.json#/$defs/sourceHealth
  */
 export interface SourceHealth {
