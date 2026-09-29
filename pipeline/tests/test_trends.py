@@ -130,6 +130,13 @@ def test_an_actor_with_no_date_anywhere_is_not_new():
     assert run(reports=[R(None, ["G0001"])])["new_actors"] == []
 
 
+def test_an_actor_whose_only_claims_are_empty_or_in_the_future_is_not_new():
+    # Assembly passes an empty list for an actor no source dated, and a future date is dropped.
+    out = run(claims={"G0001": []})
+    assert out["new_actors"] == []
+    assert run(claims={"G0001": [("2027-01-01", "misp")]})["new_actors"] == []
+
+
 def test_only_published_actors_can_be_new():
     out = run([R("2026-02-11", ["G0009"])], {"G0001": []})
     assert out["new_actors"] == []

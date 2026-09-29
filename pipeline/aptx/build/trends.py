@@ -150,6 +150,10 @@ def _new_actors(dated, published, claims, today: date) -> list[dict]:
             seen[actor].append((d.isoformat(), "report"))
     out = []
     for actor in sorted(seen):
+        if not seen[actor]:
+            # Every claim was in the future, or the actor has none. With no date there is no
+            # first sighting to compare with the window.
+            continue
         # The earliest date from any source decides. A recent report does not make an
         # actor new when a source has known of it for years. Ties keep the source
         # key that sorts first, so the basis is the same on every build.
