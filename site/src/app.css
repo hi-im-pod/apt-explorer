@@ -138,6 +138,12 @@ body {
 	/* Long unbroken strings, such as aliases and URLs, wrap instead of
 	   pushing the page wider than a phone screen. */
 	overflow-wrap: anywhere;
+	/* Header, main and footer are the page's direct boxes (SvelteKit's
+	   wrapper div is display: contents), so a column lets main grow and
+	   keeps the footer at the bottom of a short page. */
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 :root[data-theme='apt'] body {

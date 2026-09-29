@@ -1,0 +1,357 @@
+<script lang="ts">
+	import { base } from '$app/paths';
+	import type { PublishPolicy } from '$lib/data';
+	import { PUBLISH_POLICIES, sourceLabel } from '$lib/data/labels';
+	import { formatCount, formatDate } from '$lib/format';
+
+	let { data } = $props();
+
+	// Licence names, links and attribution text all come from sources.json,
+	// which the pipeline's tests hold to SOURCES.md. Nothing here retypes
+	// them, so a new copyright year or licence reaches the page with the data.
+	const attack = $derived(data.sources.find((s) => s.name === 'attack'));
+	const paper = $derived(data.sources.find((s) => s.name === 'paper'));
+
+	const DATA_LICENCE_URL = 'https://creativecommons.org/licenses/by-nc-sa/4.0/';
+	const POLICIES: PublishPolicy[] = ['full', 'derived-only', 'link-only', 'evidence-only'];
+
+	/** "A, B and C" */
+	function joinNames(names: string[]): string {
+		return names.length < 2 ? names.join('') : `${names.slice(0, -1).join(', ')} and ${names.at(-1)}`;
+	}
+
+	const usedBy = (p: PublishPolicy) =>
+		joinNames(data.sources.filter((s) => s.publish === p).map((s) => sourceLabel(s.name).short));
+</script>
+
+<svelte:head>
+	<title>About · APT Explorer</title>
+	<meta
+		name="description"
+		content="What APT Explorer is, the paper it builds on, and the licence and attribution for every source it uses."
+	/>
+</svelte:head>
+
+<div class="intro">
+	<h1>About APT Explorer</h1>
+	<p class="lede">
+		APT Explorer tracks advanced persistent threat (APT) actors, the reports written about them and
+		current reporting trends. It is a personal, non-commercial research project built only from open
+		sources.
+	</p>
+	<p>
+		Different sources give the same actor different names: one vendor's APT28 is another's Fancy
+		Bear, Sofacy or Sednit. The site merges actor records from MITRE ATT&CK®, the MISP galaxy, ETDA's
+		Threat Group Cards and Malpedia, and records the evidence behind each merge. Where sources
+		disagree on a value, such as an actor's origin, the site shows every value with its source
+		instead of picking one. The <a href="{base}/methodology/">Methodology</a> page reports how well
+		the merge works.
+	</p>
+	<p>
+		Reports belong to their authors. The site publishes derived facts, metadata and links, and it
+		never re-hosts a report's text or PDF.
+	</p>
+</div>
+
+<section id="paper" aria-labelledby="paper-heading">
+	<h2 id="paper-heading">Built on Yuldoshkhujaev et al. (CCS '25)</h2>
+	<p>
+		This project builds on Yuldoshkhujaev, Jeon, Kim, Nikiforakis and Koo,
+		<cite>A Decade-long Landscape of Advanced Persistent Threats: Longitudinal Analysis and Global
+			Trends</cite
+		>, published at the 2025 ACM SIGSAC Conference on Computer and Communications Security (CCS
+		'25). The preprint is on <a href="https://arxiv.org/abs/2509.07457">arXiv (2509.07457)</a>.
+	</p>
+	{#if paper}
+		<p>
+			The authors released their data as
+			<a href="https://zenodo.org/records/16869733">Zenodo record 16869733</a>
+			under <a href={paper.licence_url}>{paper.licence}</a>. This site uses it as a labelled
+			historical layer for 2014 to 2023. The trends are computed from current sources from 2024
+			onward, and no view reproduces a figure from the paper.
+		</p>
+		<div class="attribution">
+			<p class="label">Dataset attribution</p>
+			<blockquote><p>{paper.attribution}</p></blockquote>
+		</div>
+	{/if}
+</section>
+
+<section id="sources" aria-labelledby="sources-heading">
+	<h2 id="sources-heading">Sources and Licences</h2>
+	<p class="section-note">
+		Each source's licence decides what the site may publish from it. The project's SOURCES.md file
+		quotes every licence and records the decision. The entries below come from the same data the
+		site is built from, so they show this build's state.
+	</p>
+	<ul class="sources">
+		{#each data.sources as s (s.name)}
+			{@const label = sourceLabel(s.name)}
+			<li id="source-{s.name}" class="source" class:stale={s.stale}>
+				<div class="meta">
+					<h3 id="h-{s.name}">{label.name}</h3>
+					{#if label.role}<p class="role">{label.role}</p>{/if}
+					<dl>
+						<div>
+							<dt>Publish</dt>
+							<dd><a class="policy" href="#publish-{s.publish}">{s.publish}</a></dd>
+						</div>
+						<div>
+							<dt>Licence</dt>
+							<dd><a href={s.licence_url}>{s.licence}</a></dd>
+						</div>
+						<div>
+							<dt>Last good fetch</dt>
+							<dd>
+								{#if s.last_success}<time datetime={s.last_success}>{formatDate(s.last_success)}</time
+									>{:else}never{/if}
+								{#if s.stale}<span class="stale-tag">Stale</span>{/if}
+							</dd>
+						</div>
+						<div>
+							<dt>Records</dt>
+							<dd class="data">{formatCount(s.record_count)}</dd>
+						</div>
+					</dl>
+				</div>
+				<div class="attribution">
+					<p class="label">Attribution</p>
+					<blockquote><p>{s.attribution}</p></blockquote>
+				</div>
+			</li>
+		{/each}
+	</ul>
+</section>
+
+<section id="publish-values" aria-labelledby="publish-heading">
+	<h2 id="publish-heading">What Each Publish Value Means</h2>
+	<p class="section-note">
+		A source's publish value limits what the site may show from it. It never reduces what the
+		licence requires: attribution, NonCommercial and ShareAlike terms apply in full.
+	</p>
+	<dl class="policies">
+		{#each POLICIES as p (p)}
+			<div id="publish-{p}">
+				<dt><code>{p}</code></dt>
+				<dd>
+					<p>{PUBLISH_POLICIES[p]}</p>
+					<p class="used">
+						{#if usedBy(p)}Used by {usedBy(p)}.{:else}No source uses this value in this build.{/if}
+					</p>
+				</dd>
+			</div>
+		{/each}
+	</dl>
+</section>
+
+<section id="data-licence" aria-labelledby="licence-heading">
+	<h2 id="licence-heading">Data Licence</h2>
+	<p>
+		The published data is offered under the
+		<a href={DATA_LICENCE_URL}
+			>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International licence (CC BY-NC-SA
+			4.0)</a
+		>.
+	</p>
+	<p>
+		It carries this licence because it adapts two share-alike sources: values from ETDA's Threat
+		Group Cards and from Malpedia are normalized and merged with the other sources. Anyone who
+		reuses the data receives the same NonCommercial and ShareAlike terms and must credit the sources
+		listed above.
+	</p>
+	<p>
+		No additional terms apply to the data, and the licence of the APT Explorer code does not cover
+		it. The same notice ships with the data as <a href="{base}/data/NOTICE.md">NOTICE.md</a>.
+	</p>
+	{#if attack}
+		<h3>MITRE ATT&CK</h3>
+		<p>
+			Values from MITRE ATT&CK stay under MITRE's licence, which requires its copyright designation
+			and licence in every copy:
+		</p>
+		<blockquote class="notice"><p>{attack.attribution}</p></blockquote>
+	{/if}
+	<p class="section-note">
+		APT Explorer is not affiliated with, sponsored by or endorsed by MITRE, CISA or the US Department
+		of Homeland Security (DHS), and it does not use the CISA logo or the DHS seal.
+	</p>
+</section>
+
+<style>
+	.intro,
+	section > p,
+	.section-note {
+		max-width: 44rem;
+	}
+
+	.lede {
+		font-size: 1.125rem;
+	}
+
+	.section-note {
+		color: var(--text-muted);
+	}
+
+	cite {
+		font-style: italic;
+	}
+
+	/* Attribution text is quoted as given, so it gets a quiet frame rather
+	   than body styling. */
+	.attribution .label,
+	dt {
+		margin: 0 0 0.25rem;
+		color: var(--text-muted);
+		font-family: var(--font-data);
+		font-size: 0.6875rem;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+	}
+
+	blockquote {
+		padding: 0.25rem 0 0.25rem 1rem;
+		border-left: 2px solid var(--accent);
+		font-size: 0.9375rem;
+	}
+
+	blockquote p {
+		margin: 0;
+	}
+
+	#paper .attribution {
+		max-width: 44rem;
+		margin-top: 1.25rem;
+	}
+
+	.sources {
+		display: grid;
+		gap: 0.75rem;
+		margin: 1.5rem 0 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	.source {
+		display: grid;
+		gap: 1rem 2rem;
+		padding: 1.125rem 1.25rem;
+		background: var(--surface);
+		border: 1px solid var(--border);
+		border-radius: 0.75rem;
+	}
+
+	@media (min-width: 56rem) {
+		.source {
+			grid-template-columns: minmax(16rem, 22rem) 1fr;
+		}
+	}
+
+	.source h3 {
+		margin: 0 0 0.25rem;
+	}
+
+	.role {
+		margin: 0 0 0.75rem;
+		color: var(--text-muted);
+		font-size: 0.875rem;
+	}
+
+	.source dl {
+		display: grid;
+		/* The first column holds the date, which needs the extra room at 375px. */
+		grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+		gap: 0.625rem 1rem;
+		margin: 0;
+	}
+
+	.source dd {
+		margin: 0;
+		font-size: 0.875rem;
+	}
+
+	.policy {
+		display: inline-block;
+		padding: 0.0625rem 0.5rem;
+		border-radius: 999px;
+		background: var(--accent-soft);
+		color: var(--text);
+		font-family: var(--font-data);
+		font-size: 0.75rem;
+		text-decoration: none;
+	}
+
+	.policy:hover {
+		text-decoration: underline;
+	}
+
+	.stale-tag {
+		display: inline-block;
+		margin-left: 0.25rem;
+		padding: 0 0.375rem;
+		border: 1px solid var(--danger);
+		border-radius: 0.25rem;
+		color: var(--danger);
+		font-family: var(--font-data);
+		font-size: 0.6875rem;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+	}
+
+	.source.stale {
+		border-color: var(--danger);
+	}
+
+	.source time {
+		font-family: var(--font-data);
+		font-size: 0.8125rem;
+	}
+
+	.source .attribution blockquote {
+		color: var(--text);
+	}
+
+	.policies {
+		display: grid;
+		gap: 0.75rem;
+		max-width: 44rem;
+		margin: 1.25rem 0 0;
+	}
+
+	.policies > div {
+		padding: 0.875rem 1rem;
+		border: 1px solid var(--border);
+		border-radius: 0.625rem;
+		scroll-margin-top: 1rem;
+	}
+
+	.policies > div:target {
+		border-color: var(--accent);
+		background: var(--accent-soft);
+	}
+
+	.policies dt code {
+		font-size: 0.8125rem;
+		letter-spacing: 0;
+		text-transform: none;
+		color: var(--accent);
+	}
+
+	.policies dd {
+		margin: 0;
+	}
+
+	.policies dd p {
+		margin: 0 0 0.375rem;
+	}
+
+	.policies .used {
+		margin: 0;
+		color: var(--text-muted);
+		font-size: 0.875rem;
+	}
+
+	.notice {
+		max-width: 44rem;
+		margin: 0 0 1.25rem;
+	}
+</style>
