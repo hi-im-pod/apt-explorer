@@ -18,10 +18,12 @@ from pathlib import Path
 
 from aptx.build.contract import NON_JSON_FILES, load_schema, schema_for, validator
 
-# Files that must exist for the site to load at all. Report shards and actor
-# pages are not listed because how many there are depends on the data.
-REQUIRED = ("actors/index.json", "campaigns.json", "vulns.json", "sources.json", "resolution.json",
-            "trends.json", "build.json", "NOTICE.md")
+# Files that must exist for the site to load at all. Year shards and actor
+# pages are not listed because how many there are depends on the data, but the
+# undated shard is always there, even when empty, so the site can fetch it
+# without first checking whether it exists.
+REQUIRED = ("actors/index.json", "reports/undated.json", "campaigns.json", "vulns.json", "sources.json",
+            "resolution.json", "trends.json", "build.json", "NOTICE.md")
 
 _ACTOR_FILE = re.compile(r"actors/([^/]+)\.json")
 _SHARD = re.compile(r"reports/([0-9]{4}|undated)\.json")

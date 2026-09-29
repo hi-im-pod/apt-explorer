@@ -153,7 +153,7 @@ def test_a_path_no_schema_governs_is_refused(tmp_path, rel):
     refused(tmp_path, payload, match="no schema|not a plain path")
 
 
-@pytest.mark.parametrize("rel", ["actors/index.json", "campaigns.json", "vulns.json", "sources.json",
+@pytest.mark.parametrize("rel", ["actors/index.json", "reports/undated.json", "campaigns.json", "vulns.json", "sources.json",
                                  "resolution.json", "trends.json", "build.json", "NOTICE.md"])
 def test_a_missing_top_level_file_is_refused(tmp_path, rel):
     payload = sample_payload()
