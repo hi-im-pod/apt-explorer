@@ -1,0 +1,9 @@
+.cache/
+__pycache__/
+*.egg-info/
+.venv/
+site/node_modules/
+site/.svelte-kit/
+site/build/
+site/test-results/
+site/playwright-report/
