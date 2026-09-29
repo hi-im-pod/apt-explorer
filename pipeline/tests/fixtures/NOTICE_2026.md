@@ -1,0 +1,53 @@
+# Data licence and attribution
+
+The files in this directory are offered under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International licence (CC BY-NC-SA 4.0): https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+They carry this licence because they adapt two share-alike sources. Values from ETDA's Threat Group Cards (CC BY-NC-SA 4.0) and from Malpedia (CC BY-NC-SA 3.0) are normalized and merged with the other sources, and both licences require adapted material to be shared under the same licence elements. Anyone who reuses these files receives the same NonCommercial and ShareAlike terms and must credit the sources below.
+
+No additional terms or conditions apply to these files. The licence of the apt-explorer code does not apply to them.
+
+## MITRE ATT&CK
+
+Values from MITRE ATT&CK® stay under MITRE's licence, which requires its copyright designation and licence in every copy:
+
+© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation.
+
+The MITRE Corporation (MITRE) hereby grants you a non-exclusive, royalty-free license to use ATT&CK® for research, development, and commercial purposes. Any copy you make for such purposes is authorized provided that you reproduce MITRE's copyright designation and this license in any such copy.
+
+MITRE ATT&CK® and ATT&CK® are registered trademarks of The MITRE Corporation.
+
+## Other sources
+
+Each source's attribution, as SOURCES.md in the apt-explorer repository records it.
+
+### MISP galaxy threat-actor cluster (`misp`)
+
+Threat actor data from the MISP galaxy threat-actor cluster (MISP Project; authors Alexandre Dulaunoy, Florian Roth, Thomas Schreck, Timo Steffens and others), https://github.com/MISP/misp-galaxy, used under CC0 1.0.
+
+### ETDA Threat Group Cards (`etda`)
+
+Threat Group Cards: A Threat Actor Encyclopedia. Copyright © Electronic Transactions Development Agency, 2019-2026. https://apt.etda.or.th/. Licensed under CC BY-NC-SA 4.0, https://creativecommons.org/licenses/by-nc-sa/4.0/. Provided by ETDA on an 'As Is' basis with no warranty. Modified: names and values were normalized and merged with other sources by apt-explorer.
+
+### Malpedia (`malpedia`)
+
+Malpedia, a free service offered by Fraunhofer FKIE. https://malpedia.caad.fkie.fraunhofer.de/. Licensed under CC BY-NC-SA 3.0, https://creativecommons.org/licenses/by-nc-sa/3.0/. Modified: actor, family and library data were normalized and merged with other sources by apt-explorer.
+
+Plohmann, D., Clauss, M., Enders, S., Padilla, E. Malpedia: A Collaborative Effort to Inventorize the Malware Landscape. The Journal on Cybercrime & Digital Investigations, [S.l.], v. 3, n. 1, apr. 2018.
+
+### ORKL (`orkl`)
+
+Report metadata from ORKL, the community cyber threat intelligence library, https://orkl.eu.
+
+### CISA Known Exploited Vulnerabilities Catalog (`kev`)
+
+CISA Known Exploited Vulnerabilities Catalog, https://www.cisa.gov/known-exploited-vulnerabilities-catalog, CC0 1.0.
+
+The KEV licence also states: "Use of the information does not authorize you to use the CISA Logo or DHS Seal, nor should such use be interpreted as an endorsement by CISA or DHS."
+
+### The DFIR Report (`dfir`)
+
+Report titles and links from The DFIR Report, https://thedfirreport.com/. © The DFIR Report. All rights reserved; report content is not reproduced here.
+
+### Yuldoshkhujaev et al., CCS '25 dataset, Zenodo 16869733 (`paper`)
+
+Data from Yuldoshkhujaev, S., Jeon, M., Kim, D., Nikiforakis, N., Koo, H. A Decade-long Landscape of Advanced Persistent Threats: Longitudinal Analysis and Global Trends. Proceedings of the 2025 ACM SIGSAC Conference on Computer and Communications Security (CCS '25). Dataset: https://doi.org/10.5281/zenodo.16869733, licensed under CC BY 4.0, https://creativecommons.org/licenses/by/4.0/. Modified: rows were parsed, split and filtered by apt-explorer.
