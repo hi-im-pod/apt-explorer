@@ -11,9 +11,7 @@
     "actors": [
       "G0032"
     ],
-    "actor_names_unresolved": [
-      "Mimikatz"
-    ],
+    "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
       "T1003.001",
@@ -35,7 +33,9 @@
     "actors": [
       "G0049"
     ],
-    "actor_names_unresolved": [],
+    "actor_names_unresolved": [
+      "China Chopper"
+    ],
     "cves": [],
     "techniques": [
       "T1071.004",
@@ -80,9 +80,7 @@
     "actors": [
       "G0096"
     ],
-    "actor_names_unresolved": [
-      "China Chopper"
-    ],
+    "actor_names_unresolved": [],
     "cves": [
       "CVE-2021-44228"
     ],
@@ -128,7 +126,8 @@
     "archive_url": null,
     "actors": [],
     "actor_names_unresolved": [
-      "Cl0p"
+      "Cl0p",
+      "TA505"
     ],
     "cves": [
       "CVE-2023-34362"
@@ -153,7 +152,9 @@
     "actors": [
       "G0016"
     ],
-    "actor_names_unresolved": [],
+    "actor_names_unresolved": [
+      "Mimikatz"
+    ],
     "cves": [],
     "techniques": [
       "T1078",
@@ -223,7 +224,9 @@
     "actors": [
       "G0032"
     ],
-    "actor_names_unresolved": [],
+    "actor_names_unresolved": [
+      "Mimikatz"
+    ],
     "cves": [],
     "techniques": [
       "T1566.002"

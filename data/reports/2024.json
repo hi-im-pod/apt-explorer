@@ -75,9 +75,7 @@
     "url_ok": true,
     "archive_url": null,
     "actors": [],
-    "actor_names_unresolved": [
-      "LockBit"
-    ],
+    "actor_names_unresolved": [],
     "cves": [
       "CVE-2023-4966"
     ],
@@ -146,9 +144,7 @@
     "actors": [
       "G0096"
     ],
-    "actor_names_unresolved": [
-      "Winnti"
-    ],
+    "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
       "T1195.002",
@@ -235,9 +231,7 @@
     "url_ok": true,
     "archive_url": "https://example.org/archive/48c70133e313cfad2e830d5d6f3d1aff44d181ff.pdf",
     "actors": [],
-    "actor_names_unresolved": [
-      "UTA0218"
-    ],
+    "actor_names_unresolved": [],
     "cves": [
       "CVE-2024-3400"
     ],
