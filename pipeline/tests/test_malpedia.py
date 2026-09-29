@@ -285,6 +285,39 @@ def test_actor_missing_from_the_bulk_payload_is_fetched_alone(tmp_path, fast_htt
 
 
 @respx.mock
+def test_a_failed_gap_fill_call_skips_that_actor_only(tmp_path, fast_http, monkeypatch):
+    # One listed actor Malpedia cannot serve must not push the whole run onto
+    # a thousand per-actor calls that would hit the same error. One of three
+    # is over the real 5% budget, so the test widens it.
+    monkeypatch.setattr(malpedia, "MAX_FAILED_SHARE", 0.5)
+    per_actor = _mock(ids=IDS + ["ghost"], per_actor={})
+    s = SnapshotStore(tmp_path)
+    MalpediaConnector().fetch(s)
+    assert per_actor.call_count == 1
+    assert set(_snapshot(s, "actors.json")) == {"1937cn", "apt28"}
+
+
+@respx.mock
+def test_fallback_skips_a_few_failed_actors(tmp_path, fast_http, monkeypatch):
+    monkeypatch.setattr(malpedia, "MAX_FAILED_SHARE", 0.5)
+    _mock(ids=IDS + ["ghost"], actors=httpx.Response(404))
+    s = SnapshotStore(tmp_path)
+    MalpediaConnector().fetch(s)
+    assert set(_snapshot(s, "actors.json")) == {"1937cn", "apt28"}
+
+
+@respx.mock
+def test_fallback_fails_when_too_many_actors_fail(tmp_path, fast_http):
+    # Most of the list failing means Malpedia is down, not that a few actors
+    # are broken, so the last good snapshot stays.
+    _mock(ids=IDS + ["ghost"], actors=httpx.Response(404), per_actor={"apt28": APT28_ITEM})
+    s = SnapshotStore(tmp_path)
+    with pytest.raises(ValueError):
+        MalpediaConnector().fetch(s)
+    assert s.latest_date("malpedia") is None
+
+
+@respx.mock
 def test_per_actor_ids_are_escaped_in_the_path(tmp_path, fast_http):
     vault = {"value": "[Vault 7/8]", "meta": {}, "uuid": "v", "families": {}}
     per_actor = _mock(ids=["[vault_7_8]"], actors=httpx.Response(404), per_actor={"[vault_7_8]": vault})

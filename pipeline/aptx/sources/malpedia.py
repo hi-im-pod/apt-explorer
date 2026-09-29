@@ -40,6 +40,10 @@ API = f"{BASE}/api"
 LIBRARY_URL = f"{BASE}/library/download"
 ACTORS, FAMILIES, LIBRARY = "actors.json", "families.json", "library.bib"
 PROGRESS_EVERY = 100
+# A few actors failing is a problem with those actors, and they are skipped.
+# More than this share failing means Malpedia itself is failing, and the last
+# good snapshot is kept instead.
+MAX_FAILED_SHARE = 0.05
 
 
 def actor_id(value: str) -> str:
@@ -217,18 +221,41 @@ class MalpediaConnector:
         The two bulk endpoints replace roughly a thousand per-actor calls, which
         take about 20 minutes at one request per second. If either bulk payload
         is missing or has an unexpected shape, the connector falls back to one
-        call per actor. Nothing is saved until every payload has been fetched
-        and checked, so a failure leaves the last good snapshot in place.
+        call per actor. A few actors that fail on their own are skipped. Nothing
+        is saved until every payload has been fetched and checked, so a failure
+        leaves the last good snapshot in place.
         """
         ids = http.get_json(f"{API}/list/actors")
         if not isinstance(ids, list) or not ids or not all(isinstance(i, str) and i for i in ids):
             raise ValueError("malpedia: /list/actors returned no actor IDs")
         try:
             actors, families = self._fetch_bulk(ids)
+            bulk = True
         except (httpx.HTTPError, ValueError) as e:
             # json.JSONDecodeError is a ValueError, so a non-JSON body lands here too.
             log.warning("malpedia: bulk endpoints unusable (%s); fetching %d actors one by one", e, len(ids))
-            actors, families = self._fetch_per_actor(ids, store)
+            actors, families, bulk = {}, {}, False
+
+        # Listed actors the bulk payload lacks, or every actor after a
+        # fallback, are fetched one by one.
+        missing = [i for i in ids if i not in actors]
+        failed = self._fetch_each(missing, actors, families)
+        if len(failed) > len(ids) * MAX_FAILED_SHARE:
+            raise ValueError(f"malpedia: {len(failed)} of {len(ids)} actors failed; snapshot not saved")
+        if failed:
+            log.warning("malpedia: skipped %d actors that failed: %s", len(failed), ", ".join(failed[:10]))
+        if not bulk:
+            # Per-actor calls return only families attributed to some actor, a
+            # fraction of what the bulk endpoint lists. The others carry over
+            # from the last snapshot, so the resolver can still type their
+            # names as malware and the smaller payload does not trip the
+            # shrink guard.
+            previous = _load(store, FAMILIES) or {}
+            carried = {k: v for k, v in previous.items() if k not in families and _is_family(v)}
+            if carried:
+                log.info("malpedia: kept %d families from the last snapshot", len(carried))
+            families = {**carried, **families}
+
         library = http.get_text(LIBRARY_URL)
         if not parse_bib(library):
             raise ValueError("malpedia: the library download has no BibTeX entries")
@@ -251,8 +278,8 @@ class MalpediaConnector:
             log.warning("malpedia: dropped %d bulk families that are not family objects", dropped)
 
         # /list/actors is the authority on IDs. A bulk actor whose derived ID
-        # is not listed is dropped, and a listed ID the bulk payload lacks is
-        # fetched on its own, so an actor never appears under two IDs.
+        # is not listed is dropped, and fetch() gets a listed ID the bulk
+        # payload lacks on its own, so an actor never appears under two IDs.
         listed = set(ids)
         actors, unlisted = {}, []
         for body in raw_actors.values():
@@ -268,29 +295,27 @@ class MalpediaConnector:
         if unlisted:
             log.warning("malpedia: %d bulk actors have no listed ID and were dropped: %s",
                         len(unlisted), ", ".join(unlisted[:10]))
-        missing = [i for i in ids if i not in actors]
-        if missing:
-            log.info("malpedia: fetching %d actors the bulk payload lacks", len(missing))
-            for i in missing:
-                actors[i] = self._fetch_actor(i, families)
         return actors, families
 
-    def _fetch_per_actor(self, ids: list[str], store: SnapshotStore) -> tuple[dict, dict]:
-        actors: dict = {}
-        families: dict = {}
-        for n, i in enumerate(ids, 1):
-            actors[i] = self._fetch_actor(i, families)
+    def _fetch_each(self, keys: list[str], actors: dict, families: dict) -> list[str]:
+        """Fetch each actor on its own into `actors`, and return the keys that failed.
+
+        One actor Malpedia cannot serve is skipped rather than failing the run.
+        fetch() decides whether the number of failures means Malpedia itself
+        is down.
+        """
+        if keys:
+            log.info("malpedia: fetching %d actors one by one", len(keys))
+        failed = []
+        for n, key in enumerate(keys, 1):
+            try:
+                actors[key] = self._fetch_actor(key, families)
+            except (httpx.HTTPError, ValueError) as e:
+                failed.append(key)
+                log.debug("malpedia: actor %s failed: %s", key, e)
             if n % PROGRESS_EVERY == 0:
-                log.info("malpedia: %d of %d actors fetched", n, len(ids))
-        # Per-actor calls return only families attributed to some actor, a
-        # fraction of what the bulk endpoint lists. The others carry over from
-        # the last snapshot, so the resolver can still type their names as
-        # malware and the smaller payload does not trip the shrink guard.
-        previous = _load(store, FAMILIES) or {}
-        carried = {k: v for k, v in previous.items() if k not in families and _is_family(v)}
-        if carried:
-            log.info("malpedia: kept %d families from the last snapshot", len(carried))
-        return actors, {**carried, **families}
+                log.info("malpedia: %d of %d actors fetched", n, len(keys))
+        return failed
 
     def _fetch_actor(self, key: str, families: dict) -> dict:
         """One actor, with its embedded family bodies moved into `families`.

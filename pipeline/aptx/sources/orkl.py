@@ -160,7 +160,8 @@ class OrklConnector:
         and appends the older lines from it, so only new entries are fetched.
         That also means changes ORKL makes to an older entry, such as new tags,
         are not picked up; deleting the snapshot forces a full backfill.
-        Nothing is saved when the run fails part-way.
+        Nothing is saved when the run fails part-way, or when a weekly run
+        never reaches a known entry.
         """
         info = http.get_json(f"{API}/library/info")
         data = info.get("data") if isinstance(info, dict) else None
@@ -210,6 +211,13 @@ class OrklConnector:
 
         if dropped:
             log.warning("orkl: dropped %d entries without an id", dropped)
+        if previous and not reached_known:
+            # A weekly run must meet an entry it already holds; that is what
+            # proves the answer was complete. An empty or truncated answer
+            # would otherwise re-save the old lines under today's date, and
+            # the source would look fresh when it was not fetched at all.
+            raise ValueError(f"orkl: paging ended after {len(fresh)} new entries without reaching "
+                             "a known entry; snapshot not saved")
         fresh_ids = {e["id"] for e in fresh}
         combined = fresh + [e for e in previous if e["id"] not in fresh_ids]
         if not combined:

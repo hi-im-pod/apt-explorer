@@ -256,6 +256,30 @@ def test_weekly_run_stops_at_the_first_known_entry_and_keeps_the_older_lines(tmp
 
 
 @respx.mock
+def test_a_quiet_week_still_counts_as_a_fetch(tmp_path, fast_http):
+    # Nothing new: the first entry is already known, which proves ORKL answered.
+    s = _store(tmp_path, [TALOS, KIMSUKY, CERTFR])
+    route = _mock({0: [TALOS, KIMSUKY]}, total=3)
+    OrklConnector().fetch(s)
+    assert route.call_count == 1
+    assert len(_lines(s)) == 3
+
+
+@pytest.mark.parametrize("pages", [{0: None}, {0: [TALOS]}])
+@respx.mock
+def test_an_outage_never_resaves_the_old_snapshot_as_fresh(tmp_path, fast_http, pages):
+    # An empty answer, or one that ends before any known entry, proves nothing
+    # about the library. Re-saving the old lines under today's date would make
+    # the source look fresh, so the run fails and the source is marked stale.
+    s = _store(tmp_path, [KIMSUKY, CERTFR])
+    before = s.latest("orkl", "entries.jsonl")
+    _mock(pages, total=3)
+    with pytest.raises(ValueError):
+        OrklConnector().fetch(s)
+    assert s.latest("orkl", "entries.jsonl") == before
+
+
+@respx.mock
 def test_a_server_that_ignores_the_offset_cannot_loop_forever(tmp_path, fast_http):
     route = _mock({i: [TALOS, KIMSUKY] for i in range(0, 20, 2)}, total=2)
     s = SnapshotStore(tmp_path)
