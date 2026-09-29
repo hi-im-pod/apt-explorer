@@ -116,13 +116,17 @@ class AttackConnector:
         # older snapshot, and stale data must not claim to be fresh.
         retrieved = store.latest_date(NAME)
 
+        # ATT&CK IDs for the objects this connector uses: the record types, and
+        # attack-patterns for technique IDs. The bundle also gives IDs to
+        # tactics, matrices, mitigations and more. Those never become records,
+        # and some have no name, so they are left out here.
         ids: dict[str, str] = {}
         dropped = 0
         for sid, o in live.items():
-            aid = _attack_id(o)
-            if o.get("type") in _MAPPED and not (aid and (o.get("name") or "").strip()):
+            t, aid = o.get("type"), _attack_id(o)
+            if t in _MAPPED and not (aid and (o.get("name") or "").strip()):
                 dropped += 1
-            elif aid:
+            elif aid and (t in _MAPPED or t == "attack-pattern"):
                 ids[sid] = aid
         if dropped:
             # Every ATT&CK record should carry an ID. Dropping is right, but it
@@ -151,7 +155,9 @@ class AttackConnector:
 
         bundle = SourceBundle(source=NAME)
         for sid, o in live.items():
-            if sid not in ids:
+            # Attack-patterns are in ids only to name techniques; they are not
+            # records, and only mapped types were checked for a name above.
+            if sid not in ids or o.get("type") not in _MAPPED:
                 continue
             aid, t, name = ids[sid], o.get("type"), o["name"].strip()
             if t == "intrusion-set":

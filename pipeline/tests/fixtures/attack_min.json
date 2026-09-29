@@ -11,6 +11,17 @@
       "x_mitre_contents": []
     },
     {
+      "type": "x-mitre-tactic",
+      "id": "x-mitre-tactic--00000000-0000-4000-8000-000000000002",
+      "spec_version": "2.1",
+      "x_mitre_shortname": "execution",
+      "external_references": [
+        {"source_name": "mitre-attack", "url": "https://attack.mitre.org/tactics/TA0002", "external_id": "TA0002"}
+      ],
+      "revoked": false,
+      "x_mitre_deprecated": false
+    },
+    {
       "type": "intrusion-set",
       "id": "intrusion-set--00000000-0000-4000-8000-000000000007",
       "spec_version": "2.1",

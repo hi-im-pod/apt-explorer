@@ -86,6 +86,18 @@ def test_object_without_an_attack_id_is_dropped_and_logged(store, caplog):
     assert "attack: dropped 1" in caplog.text
 
 
+def test_unmapped_objects_are_ignored_even_without_a_name(store, caplog):
+    # The real bundle holds tactics, matrices, mitigations and other objects
+    # that carry an ATT&CK ID. None of them becomes a record, so a missing
+    # name on one of them must neither crash normalize() nor count as dropped.
+    # The fixture's tactic TA0002 has no name.
+    with caplog.at_level("WARNING"):
+        b = AttackConnector().normalize(store)
+    ids = {r.source_id for r in [*b.actors, *b.campaigns, *b.software]}
+    assert "TA0002" not in ids
+    assert "dropped 1 " in caplog.text
+
+
 def test_retrieved_at_is_the_snapshot_date_not_today(tmp_path):
     # normalize() may be reading an old snapshot after a failed fetch, and a
     # stale snapshot must not claim to be fresh.
