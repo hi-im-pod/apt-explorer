@@ -11,7 +11,6 @@ import csv
 import io
 import logging
 import re
-from datetime import date
 from urllib.parse import quote
 
 from aptx.core import http
@@ -81,15 +80,6 @@ def _techniques(value) -> list[str]:
     # ID before the colon is kept; ATT&CK itself supplies the names.
     ids = {p.split(":", 1)[0].strip() for p in _parts(value)}
     return sorted(i for i in ids if _TECHNIQUE.fullmatch(i))
-
-
-def _calendar_day(day: str | None) -> str | None:
-    # parse_date does not yet check that the month and day exist, so a value
-    # such as 2019-02-30 is refused here rather than reaching a year shard.
-    try:
-        return date.fromisoformat(day).isoformat() if day else None
-    except ValueError:
-        return None
 
 
 def _rows(payload: bytes, required: tuple[str, ...], what: str) -> list[dict]:
@@ -184,7 +174,7 @@ class PaperConnector(Connector):
             if sid in reports:
                 repeated += 1
                 continue
-            published = _calendar_day(parse_date(_text(r.get("Date"))))
+            published = parse_date(_text(r.get("Date")))
             link = _HTTP_URL.fullmatch(_text(r.get("Download_url")))
             url = link.group(1).lower() + link.group(2) if link else None
             reports[sid] = ReportRecord(

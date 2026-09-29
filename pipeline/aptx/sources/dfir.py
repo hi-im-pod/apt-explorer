@@ -9,7 +9,6 @@ import html
 import json
 import logging
 import re
-from datetime import date
 from email.utils import parsedate_to_datetime
 
 import feedparser
@@ -47,15 +46,6 @@ def _title(entry) -> str:
     return _one_line(title)
 
 
-def _calendar_day(day: str | None) -> str | None:
-    # parse_date does not yet check that the month and day exist, so a value
-    # such as 2025-02-30 is refused here rather than reaching the site.
-    try:
-        return date.fromisoformat(day).isoformat() if day else None
-    except ValueError:
-        return None
-
-
 def _published(raw: str | None) -> str | None:
     """The post's date as the publisher wrote it, or None when unusable.
 
@@ -67,9 +57,9 @@ def _published(raw: str | None) -> str | None:
     if not raw:
         return None
     try:
-        return _calendar_day(parsedate_to_datetime(raw).date().isoformat())
+        return parsedate_to_datetime(raw).date().isoformat()
     except (TypeError, ValueError, IndexError):
-        return _calendar_day(parse_date(raw))
+        return parse_date(raw)
 
 
 def _http_url(value: str) -> str:
@@ -117,7 +107,7 @@ def _stored_items(store: SnapshotStore) -> list[dict]:
         if not (title and link):
             dropped += 1
             continue
-        published = _calendar_day(parse_date(str(i.get("published") or "")))
+        published = parse_date(str(i.get("published") or ""))
         items.append({"title": title, "link": link, "published": published})
     if dropped:
         log.warning("dfir: dropped %d stored items without a title or an http link", dropped)

@@ -1,11 +1,12 @@
 import re
+from datetime import date
 
 from aptx.core.urls import norm_url
 
 _ISO = re.compile(r"^(\d{4})-(\d{2})(?:-(\d{2}))?")
 
 def parse_date(s: str | None) -> str | None:
-    """Return YYYY-MM-DD, or None for missing, zero or pre-1990 values.
+    """Return YYYY-MM-DD, or None for missing, zero, pre-1990 or impossible dates.
 
     Sources use sentinel dates (ORKL's 0001-01-01, epoch zero) for "unknown";
     treating those as real would put reports in year 1 on every chart.
@@ -17,10 +18,15 @@ def parse_date(s: str | None) -> str | None:
         return None
     # A source that gives only year and month still places the report in the
     # right month and quarter, so the first of the month stands in for the day.
-    year, month, day = int(m.group(1)), m.group(2), m.group(3) or "01"
+    year, month, day = int(m.group(1)), int(m.group(2)), int(m.group(3) or 1)
     if year < 1990:
         return None
-    return f"{year:04d}-{month}-{day}"
+    # The regex only checks digit counts, so 2024-02-30 and 2024-13-01 get here.
+    # Building a real date rejects them, and leap days come out right for free.
+    try:
+        return date(year, month, day).isoformat()
+    except ValueError:
+        return None
 
 
 def resolve_report_date(urls: list[str], lib_dates: dict[str, str], file_creation: str | None,
