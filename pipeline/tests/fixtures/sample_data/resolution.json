@@ -1,0 +1,47 @@
+{
+  "stats": {
+    "source_record_count": 52,
+    "actor_count": 14,
+    "merge_count": 38,
+    "evidence_edge_count": 61,
+    "ambiguity_count": 1,
+    "non_actor_name_count": 23
+  },
+  "paper_match": {
+    "names_total": 443,
+    "resolved": 371,
+    "typed_non_actor": 29,
+    "match_rate": 0.837471783295711
+  },
+  "ambiguities": [
+    {
+      "alias": "winnti",
+      "candidates": [
+        "G0044",
+        "G0096"
+      ]
+    }
+  ],
+  "unresolved_names": [
+    {
+      "name": "Mimikatz",
+      "count": 2,
+      "typed_as": "tool"
+    },
+    {
+      "name": "China Chopper",
+      "count": 1,
+      "typed_as": "malware"
+    },
+    {
+      "name": "Cl0p",
+      "count": 1,
+      "typed_as": "malware"
+    },
+    {
+      "name": "TA505",
+      "count": 1,
+      "typed_as": null
+    }
+  ]
+}

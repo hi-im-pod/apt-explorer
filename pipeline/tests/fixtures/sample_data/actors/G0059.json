@@ -1,0 +1,146 @@
+{
+  "id": "G0059",
+  "name": "Magic Hound",
+  "aliases": [
+    {
+      "value": "Magic Hound",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "APT35",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Charming Kitten",
+      "sources": [
+        "attack",
+        "misp"
+      ]
+    },
+    {
+      "value": "Phosphorus",
+      "sources": [
+        "attack",
+        "misp"
+      ]
+    },
+    {
+      "value": "Mint Sandstorm",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "TA453",
+      "sources": [
+        "attack",
+        "misp"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IR",
+      "source": "misp"
+    },
+    {
+      "value": "IR",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "Iran",
+      "source": "misp"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Israel",
+        "source": "misp"
+      },
+      {
+        "value": "United States",
+        "source": "misp"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Academia",
+        "source": "misp"
+      },
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Media",
+        "source": "misp"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "CharmPower",
+      "source": "attack"
+    },
+    {
+      "name": "PowerLess",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1566.003",
+    "T1598.003",
+    "T1204.001"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1566.003",
+      "count": 3
+    },
+    {
+      "id": "T1204.001",
+      "count": 1
+    },
+    {
+      "id": "T1598.003",
+      "count": 1
+    }
+  ],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2024-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q3",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "9e53624b748a64a6c3152e58f7cb46fdeba0b0c6",
+    "b4a84dd5a7cbe2049540c5461c5eb5622846098e",
+    "d68faec56e265d66729eedc56fb290bf1f0820ce"
+  ],
+  "conflicts": [],
+  "evidence_count": 8
+}

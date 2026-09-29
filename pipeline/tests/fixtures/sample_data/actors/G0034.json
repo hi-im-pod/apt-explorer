@@ -1,0 +1,180 @@
+{
+  "id": "G0034",
+  "name": "Sandworm Team",
+  "aliases": [
+    {
+      "value": "Sandworm Team",
+      "sources": [
+        "attack",
+        "misp"
+      ]
+    },
+    {
+      "value": "Sandworm",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "ELECTRUM",
+      "sources": [
+        "attack",
+        "misp"
+      ]
+    },
+    {
+      "value": "Voodoo Bear",
+      "sources": [
+        "attack",
+        "misp"
+      ]
+    },
+    {
+      "value": "IRIDIUM",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Seashell Blizzard",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "APT44",
+      "sources": [
+        "attack",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "RU",
+      "source": "misp"
+    },
+    {
+      "value": "RU",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "Russian Federation",
+      "source": "misp"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Sabotage",
+      "source": "misp"
+    },
+    {
+      "value": "Espionage",
+      "source": "misp"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Ukraine",
+        "source": "misp"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Energy",
+        "source": "misp"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "misp"
+      },
+      {
+        "value": "Government",
+        "source": "misp"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Industroyer",
+      "source": "attack"
+    },
+    {
+      "name": "NotPetya",
+      "source": "attack"
+    },
+    {
+      "name": "Olympic Destroyer",
+      "source": "attack"
+    },
+    {
+      "name": "KillDisk",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1485",
+    "T1561.002",
+    "T1059.001",
+    "T1190"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1485",
+      "count": 3
+    },
+    {
+      "id": "T1059.001",
+      "count": 1
+    },
+    {
+      "id": "T1561.002",
+      "count": 1
+    },
+    {
+      "id": "T1566.001",
+      "count": 1
+    }
+  ],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2023-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "795abfc564ecb2a19be55c768bec3b145f802555",
+    "5eecf7e006e2f6d9e1d6fb1bddcb2318fa500259",
+    "b160ea77c5d2d5297456f1a80f0330c614f49d73",
+    "83086f8202f48adfac618fb3cab581faf271d0f0",
+    "71b2ffd2e0b0aee08d638bf1cb737ec3ac9a2ed7",
+    "277740a92bae78aabebd632037ffe8895463a043"
+  ],
+  "conflicts": [],
+  "evidence_count": 9
+}

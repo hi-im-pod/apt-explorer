@@ -1,0 +1,238 @@
+[
+  {
+    "id": "d814dc407ef48060fd249818a03bc399e6863ba2",
+    "title": "Cryptocurrency developer targeted through a trojanized trading app",
+    "published": "2023-12-06",
+    "date_basis": "file-metadata",
+    "organisation": null,
+    "url": "https://example.org/unattributed/2023/cryptocurrency-developer-targeted-through-a-trojanized-trading-app/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/d814dc407ef48060fd249818a03bc399e6863ba2.pdf",
+    "actors": [
+      "G0032"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1003.001",
+      "T1105"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "paper:2023_dns_tunnelling_backdoor_in_middle_east_government_networks.pdf",
+    "title": "DNS tunnelling backdoor in Middle East government networks",
+    "published": "2023-11-20",
+    "date_basis": "paper",
+    "organisation": "Lakeside Security Labs",
+    "url": "https://example.org/lakeside-security-labs/2023/dns-tunnelling-backdoor-in-middle-east-government-networks/",
+    "url_ok": true,
+    "archive_url": null,
+    "actors": [
+      "G0049"
+    ],
+    "actor_names_unresolved": [
+      "China Chopper"
+    ],
+    "cves": [],
+    "techniques": [
+      "T1071.004",
+      "T1059.001"
+    ],
+    "sources": [
+      "paper"
+    ]
+  },
+  {
+    "id": "a910c99c9a47deb05264f20a147856b84b50f215",
+    "title": "Continued Outlook exploitation against energy and transport",
+    "published": "2023-10-11",
+    "date_basis": "malpedia-library",
+    "organisation": "Harbor CERT",
+    "url": "https://example.org/harbor-cert/2023/continued-outlook-exploitation-against-energy-and-transport/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/a910c99c9a47deb05264f20a147856b84b50f215.pdf",
+    "actors": [
+      "G0007"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2023-23397"
+    ],
+    "techniques": [
+      "T1187"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "ab98e573a872820c03eed722e831c11bc5759b43",
+    "title": "Web shells and Log4Shell against logistics firms",
+    "published": "2023-08-30",
+    "date_basis": "file-metadata",
+    "organisation": "Northwind Threat Research",
+    "url": "https://example.org/northwind-threat-research/2023/web-shells-and-log4shell-against-logistics-firms/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/ab98e573a872820c03eed722e831c11bc5759b43.pdf",
+    "actors": [
+      "G0096"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2021-44228"
+    ],
+    "techniques": [
+      "T1190",
+      "T1505.003"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "277740a92bae78aabebd632037ffe8895463a043",
+    "title": "Wiper deployment against a regional energy operator",
+    "published": "2023-07-26",
+    "date_basis": "malpedia-library",
+    "organisation": "Blue Meridian Labs",
+    "url": "https://example.org/blue-meridian-labs/2023/wiper-deployment-against-a-regional-energy-operator/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/277740a92bae78aabebd632037ffe8895463a043.pdf",
+    "actors": [
+      "G0034"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1485",
+      "T1561.002"
+    ],
+    "sources": [
+      "orkl",
+      "paper"
+    ]
+  },
+  {
+    "id": "paper:2023_mass_exploitation_of_a_managed_file_transfer_server.pdf",
+    "title": "Mass exploitation of a managed file transfer server",
+    "published": "2023-06-09",
+    "date_basis": "paper",
+    "organisation": "Copperline CSIRT",
+    "url": "https://example.org/copperline-csirt/2023/mass-exploitation-of-a-managed-file-transfer-server/",
+    "url_ok": false,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [
+      "Cl0p",
+      "TA505"
+    ],
+    "cves": [
+      "CVE-2023-34362"
+    ],
+    "techniques": [
+      "T1190",
+      "T1567.002"
+    ],
+    "sources": [
+      "paper"
+    ]
+  },
+  {
+    "id": "paper:2023_diplomatic_lures_and_cloud_token_theft.pdf",
+    "title": "Diplomatic lures and cloud token theft",
+    "published": "2023-05-17",
+    "date_basis": "paper",
+    "organisation": "Lakeside Security Labs",
+    "url": "https://example.org/lakeside-security-labs/2023/diplomatic-lures-and-cloud-token-theft/",
+    "url_ok": true,
+    "archive_url": null,
+    "actors": [
+      "G0016"
+    ],
+    "actor_names_unresolved": [
+      "Mimikatz"
+    ],
+    "cves": [],
+    "techniques": [
+      "T1078",
+      "T1550.001"
+    ],
+    "sources": [
+      "paper"
+    ]
+  },
+  {
+    "id": "d93ac727fdca6185f653201a58fa50670f6bf538",
+    "title": "Log4Shell exploitation on exposed virtual desktop servers",
+    "published": "2023-04-05",
+    "date_basis": "file-metadata",
+    "organisation": null,
+    "url": "https://example.org/unattributed/2023/log4shell-exploitation-on-exposed-virtual-desktop-servers/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/d93ac727fdca6185f653201a58fa50670f6bf538.pdf",
+    "actors": [
+      "G0032"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2021-44228"
+    ],
+    "techniques": [
+      "T1190",
+      "T1105"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "2726fd3f742b2dbf548c1f45bc346a8c638f4f7e",
+    "title": "Outlook NTLM relay abuse against European ministries",
+    "published": "2023-03-22",
+    "date_basis": "malpedia-library",
+    "organisation": "Northwind Threat Research",
+    "url": "https://example.org/northwind-threat-research/2023/outlook-ntlm-relay-abuse-against-european-ministries/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/2726fd3f742b2dbf548c1f45bc346a8c638f4f7e.pdf",
+    "actors": [
+      "G0007"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2023-23397"
+    ],
+    "techniques": [
+      "T1187",
+      "T1566.001"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "paper:2023_fake_job_offers_used_to_reach_defence_engineers.pdf",
+    "title": "Fake job offers used to reach defence engineers",
+    "published": "2023-02-14",
+    "date_basis": "paper",
+    "organisation": "Harbor CERT",
+    "url": "https://example.org/harbor-cert/2023/fake-job-offers-used-to-reach-defence-engineers/",
+    "url_ok": true,
+    "archive_url": null,
+    "actors": [
+      "G0032"
+    ],
+    "actor_names_unresolved": [
+      "Mimikatz"
+    ],
+    "cves": [],
+    "techniques": [
+      "T1566.002"
+    ],
+    "sources": [
+      "paper"
+    ]
+  }
+]

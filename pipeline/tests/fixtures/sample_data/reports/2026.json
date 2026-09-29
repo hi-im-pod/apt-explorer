@@ -1,0 +1,304 @@
+[
+  {
+    "id": "81de5a133b0f86100eba401006abbeef4833cdea",
+    "title": "Supply-chain attack on a crypto wallet extension",
+    "published": "2026-09-22",
+    "date_basis": "malpedia-library",
+    "organisation": "Northwind Threat Research",
+    "url": "https://example.org/northwind-threat-research/2026/supply-chain-attack-on-a-crypto-wallet-extension/",
+    "url_ok": null,
+    "archive_url": "https://example.org/archive/81de5a133b0f86100eba401006abbeef4833cdea.pdf",
+    "actors": [
+      "G0032"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1105"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "b92cca183252b0c6f52042dadd5b42cfd961fdfc",
+    "title": "Glass Heron returns with a rebuilt web shell",
+    "published": "2026-09-16",
+    "date_basis": "malpedia-library",
+    "organisation": "Harbor CERT",
+    "url": "https://example.org/harbor-cert/2026/glass-heron-returns-with-a-rebuilt-web-shell/",
+    "url_ok": null,
+    "archive_url": "https://example.org/archive/b92cca183252b0c6f52042dadd5b42cfd961fdfc.pdf",
+    "actors": [
+      "glass-heron"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1505.003"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "63ce7ecaa126a197f09bd193f2f09cbe2c16b27a",
+    "title": "Router-hosted phishing pages target logistics firms",
+    "published": "2026-09-09",
+    "date_basis": "file-metadata",
+    "organisation": "Lakeside Security Labs",
+    "url": "https://example.org/lakeside-security-labs/2026/router-hosted-phishing-pages-target-logistics-firms/",
+    "url_ok": null,
+    "archive_url": "https://example.org/archive/63ce7ecaa126a197f09bd193f2f09cbe2c16b27a.pdf",
+    "actors": [
+      "G0007"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1566.001"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "f55d40ae14f90a3c35d5c302eb22cd0ffbddc783",
+    "title": "Fake coding tests deliver a Python backdoor",
+    "published": "2026-08-19",
+    "date_basis": "malpedia-library",
+    "organisation": "Blue Meridian Labs",
+    "url": "https://example.org/blue-meridian-labs/2026/fake-coding-tests-deliver-a-python-backdoor/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/f55d40ae14f90a3c35d5c302eb22cd0ffbddc783.pdf",
+    "actors": [
+      "G0032"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1566.002",
+      "T1105"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "9e53624b748a64a6c3152e58f7cb46fdeba0b0c6",
+    "title": "Messaging-app lures for dissidents abroad",
+    "published": "2026-07-08",
+    "date_basis": "orkl-ingest",
+    "organisation": null,
+    "url": "https://example.org/unattributed/2026/messaging-app-lures-for-dissidents-abroad/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/9e53624b748a64a6c3152e58f7cb46fdeba0b0c6.pdf",
+    "actors": [
+      "G0059"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1566.003"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "dc522750e2b8cb7755c21a02fcb5dba55b77b8bf",
+    "title": "Pre-positioning in port logistics networks",
+    "published": "2026-06-17",
+    "date_basis": "malpedia-library",
+    "organisation": "Harbor CERT",
+    "url": "https://example.org/harbor-cert/2026/pre-positioning-in-port-logistics-networks/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/dc522750e2b8cb7755c21a02fcb5dba55b77b8bf.pdf",
+    "actors": [
+      "G1017"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1133"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "27dc683d848b7ca528c19590a2581560ddae6638",
+    "title": "Diplomatic-conference lures with a new dropper",
+    "published": "2026-05-27",
+    "date_basis": "file-metadata",
+    "organisation": "Northwind Threat Research",
+    "url": "https://example.org/northwind-threat-research/2026/diplomatic-conference-lures-with-a-new-dropper/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/27dc683d848b7ca528c19590a2581560ddae6638.pdf",
+    "actors": [
+      "G0094"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1566.001"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "795abfc564ecb2a19be55c768bec3b145f802555",
+    "title": "Destructive malware disguised as ransomware",
+    "published": "2026-05-06",
+    "date_basis": "malpedia-library",
+    "organisation": "Copperline CSIRT",
+    "url": "https://example.org/copperline-csirt/2026/destructive-malware-disguised-as-ransomware/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/795abfc564ecb2a19be55c768bec3b145f802555.pdf",
+    "actors": [
+      "G0034"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1485"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "9ceb15c958f0381062a47f32308fab48164f2565",
+    "title": "Criminal and espionage tooling overlap at a manufacturer",
+    "published": "2026-04-15",
+    "date_basis": "file-metadata",
+    "organisation": null,
+    "url": "https://example.org/unattributed/2026/criminal-and-espionage-tooling-overlap-at-a-manufacturer/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/9ceb15c958f0381062a47f32308fab48164f2565.pdf",
+    "actors": [
+      "G0096"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1190"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "14d3ee8a3629f3e4641c0d8b3d75b414dcd1f640",
+    "title": "OAuth consent phishing in foreign ministries",
+    "published": "2026-03-25",
+    "date_basis": "malpedia-library",
+    "organisation": "Lakeside Security Labs",
+    "url": "https://example.org/lakeside-security-labs/2026/oauth-consent-phishing-in-foreign-ministries/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/14d3ee8a3629f3e4641c0d8b3d75b414dcd1f640.pdf",
+    "actors": [
+      "G0016"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1566.002",
+      "T1550.001"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "dfir:2026-03-search-ad-malware-to-hands-on-keyboard-in-six-hours",
+    "title": "Search-ad malware to hands-on-keyboard in six hours",
+    "published": "2026-03-04",
+    "date_basis": "publisher",
+    "organisation": "Fieldnote DFIR",
+    "url": "https://example.org/fieldnote-dfir/2026/search-ad-malware-to-hands-on-keyboard-in-six-hours/",
+    "url_ok": true,
+    "archive_url": null,
+    "actors": [
+      "G0046"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1204.002",
+      "T1059.001"
+    ],
+    "sources": [
+      "dfir"
+    ]
+  },
+  {
+    "id": "dc1d8d336554bdfeb43616a4b753656a5e931f42",
+    "title": "A new cluster exploits a telecom billing portal",
+    "published": "2026-02-11",
+    "date_basis": "malpedia-library",
+    "organisation": "Harbor CERT",
+    "url": "https://example.org/harbor-cert/2026/a-new-cluster-exploits-a-telecom-billing-portal/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/dc1d8d336554bdfeb43616a4b753656a5e931f42.pdf",
+    "actors": [
+      "glass-heron"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2026-100123"
+    ],
+    "techniques": [
+      "T1190",
+      "T1505.003"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "e6abd7abb771058c80903026be35e83c5fc8e2e0",
+    "title": "Messaging-app lures against government officials",
+    "published": "2026-02-04",
+    "date_basis": "file-metadata",
+    "organisation": "Blue Meridian Labs",
+    "url": "https://example.org/blue-meridian-labs/2026/messaging-app-lures-against-government-officials/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/e6abd7abb771058c80903026be35e83c5fc8e2e0.pdf",
+    "actors": [
+      "G0007"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1566.001",
+      "T1204.002"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "b7fe17a7dfc830fec69fb11a915fdef0a89d0cbd",
+    "title": "Poisoned open-source packages steal wallet keys",
+    "published": "2026-01-14",
+    "date_basis": "malpedia-library",
+    "organisation": "Northwind Threat Research",
+    "url": "https://example.org/northwind-threat-research/2026/poisoned-open-source-packages-steal-wallet-keys/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/b7fe17a7dfc830fec69fb11a915fdef0a89d0cbd.pdf",
+    "actors": [
+      "G0032"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1195.002",
+      "T1059.007"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  }
+]

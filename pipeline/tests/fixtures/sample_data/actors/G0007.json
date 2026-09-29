@@ -1,0 +1,214 @@
+{
+  "id": "G0007",
+  "name": "APT28",
+  "aliases": [
+    {
+      "value": "APT28",
+      "sources": [
+        "attack",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Fancy Bear",
+      "sources": [
+        "attack",
+        "misp"
+      ]
+    },
+    {
+      "value": "Sofacy",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Sednit",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Pawn Storm",
+      "sources": [
+        "misp"
+      ]
+    },
+    {
+      "value": "STRONTIUM",
+      "sources": [
+        "attack",
+        "misp"
+      ]
+    },
+    {
+      "value": "Forest Blizzard",
+      "sources": [
+        "attack"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "RU",
+      "source": "misp"
+    },
+    {
+      "value": "RU",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "Russian Federation",
+      "source": "misp"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Ukraine",
+        "source": "misp"
+      },
+      {
+        "value": "Germany",
+        "source": "misp"
+      },
+      {
+        "value": "United States",
+        "source": "misp"
+      },
+      {
+        "value": "France",
+        "source": "misp"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Defense",
+        "source": "misp"
+      },
+      {
+        "value": "Energy",
+        "source": "misp"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "CHOPSTICK",
+      "source": "attack"
+    },
+    {
+      "name": "Zebrocy",
+      "source": "attack"
+    },
+    {
+      "name": "JHUHUGIT",
+      "source": "attack"
+    },
+    {
+      "name": "X-Agent",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1566.001",
+    "T1187",
+    "T1059.001",
+    "T1071.001",
+    "T1003.001",
+    "T1105",
+    "T1204.002"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1566.001",
+      "count": 6
+    },
+    {
+      "id": "T1204.002",
+      "count": 2
+    },
+    {
+      "id": "T1059.001",
+      "count": 1
+    },
+    {
+      "id": "T1187",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2023-23397",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2023-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q3",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "63ce7ecaa126a197f09bd193f2f09cbe2c16b27a",
+    "e6abd7abb771058c80903026be35e83c5fc8e2e0",
+    "5eecf7e006e2f6d9e1d6fb1bddcb2318fa500259",
+    "00953374ee605d8e001ea22c299e678f711afdd9",
+    "b4673e7d07cb9cffbae167f5a00462abad402a9e",
+    "83086f8202f48adfac618fb3cab581faf271d0f0",
+    "28d4a0de3aaa5bc79df8b62aa641beefae28b106",
+    "a910c99c9a47deb05264f20a147856b84b50f215",
+    "2726fd3f742b2dbf548c1f45bc346a8c638f4f7e",
+    "b7e85ac766fe089afaf42198525b8acec729c467"
+  ],
+  "conflicts": [],
+  "evidence_count": 11
+}

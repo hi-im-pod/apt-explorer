@@ -1,0 +1,168 @@
+{
+  "id": "G0096",
+  "name": "APT41",
+  "aliases": [
+    {
+      "value": "APT41",
+      "sources": [
+        "attack",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Wicked Panda",
+      "sources": [
+        "attack",
+        "misp"
+      ]
+    },
+    {
+      "value": "Brass Typhoon",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "BARIUM",
+      "sources": [
+        "attack",
+        "misp"
+      ]
+    },
+    {
+      "value": "Double Dragon",
+      "sources": [
+        "misp"
+      ]
+    },
+    {
+      "value": "Winnti",
+      "sources": [
+        "misp"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "China",
+      "source": "misp"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Financial gain",
+      "source": "misp"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "United States",
+        "source": "misp"
+      },
+      {
+        "value": "Taiwan",
+        "source": "misp"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Video games",
+        "source": "misp"
+      },
+      {
+        "value": "Healthcare",
+        "source": "misp"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "misp"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "ShadowPad",
+      "source": "attack"
+    },
+    {
+      "name": "DEADEYE",
+      "source": "attack"
+    },
+    {
+      "name": "KEYPLUG",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1190",
+    "T1505.003",
+    "T1195.002",
+    "T1574.002"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1190",
+      "count": 2
+    },
+    {
+      "id": "T1195.002",
+      "count": 1
+    },
+    {
+      "id": "T1505.003",
+      "count": 1
+    },
+    {
+      "id": "T1574.002",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2021-44228",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2023-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "9ceb15c958f0381062a47f32308fab48164f2565",
+    "cd93abb20c70bab08de3e4fc479cc47da55fdd28",
+    "f1e34134815ce555ffecf7d45a07314609d4febe",
+    "ab98e573a872820c03eed722e831c11bc5759b43"
+  ],
+  "conflicts": [],
+  "evidence_count": 9
+}

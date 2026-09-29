@@ -1,0 +1,127 @@
+{
+  "id": "G0049",
+  "name": "OilRig",
+  "aliases": [
+    {
+      "value": "OilRig",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "APT34",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Helix Kitten",
+      "sources": [
+        "attack",
+        "misp"
+      ]
+    },
+    {
+      "value": "COBALT GYPSY",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Hazel Sandstorm",
+      "sources": [
+        "attack"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IR",
+      "source": "misp"
+    },
+    {
+      "value": "IR",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "Iran",
+      "source": "misp"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "Saudi Arabia",
+        "source": "misp"
+      },
+      {
+        "value": "United Arab Emirates",
+        "source": "misp"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Energy",
+        "source": "misp"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Helminth",
+      "source": "attack"
+    },
+    {
+      "name": "SideTwist",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1071.004",
+    "T1059.001",
+    "T1566.001"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1059.001",
+      "count": 1
+    },
+    {
+      "id": "T1071.004",
+      "count": 1
+    }
+  ],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2023-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q4",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "fb9ff9a54494861e06e29d004a102159be5557a2",
+    "paper:2023_dns_tunnelling_backdoor_in_middle_east_government_networks.pdf"
+  ],
+  "conflicts": [],
+  "evidence_count": 8
+}

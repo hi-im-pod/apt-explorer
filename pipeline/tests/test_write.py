@@ -9,9 +9,10 @@ from aptx.build.contract import NON_JSON_FILES, schema_for
 from aptx.build.notice import render_notice
 from aptx.build.write import WriteRefused, write_all
 
-# The committed sample under data/ is a complete, valid tree, so it is the
-# payload every test starts from and then breaks in one place.
-SAMPLE = Path(__file__).resolve().parents[2] / "data"
+# A small, complete and valid tree kept under fixtures/ is the payload every test starts
+# from and then breaks in one place. It is not the published data/, because that now holds
+# the full live build and these tests write the whole tree dozens of times.
+SAMPLE = Path(__file__).resolve().parent / "fixtures" / "sample_data"
 
 
 def sample_payload() -> dict:

@@ -1,0 +1,101 @@
+{
+  "id": "G0006",
+  "name": "APT1",
+  "aliases": [
+    {
+      "value": "APT1",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Comment Crew",
+      "sources": [
+        "attack",
+        "misp"
+      ]
+    },
+    {
+      "value": "Comment Panda",
+      "sources": [
+        "attack",
+        "misp"
+      ]
+    },
+    {
+      "value": "Comment Group",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Byzantine Candor",
+      "sources": [
+        "misp"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "misp"
+    },
+    {
+      "value": "CN",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "China",
+      "source": "misp"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "United States",
+        "source": "misp"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Aerospace",
+        "source": "misp"
+      },
+      {
+        "value": "Energy",
+        "source": "misp"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "BISCUIT",
+      "source": "attack"
+    },
+    {
+      "name": "WEBC2",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1566.001",
+    "T1059.003",
+    "T1560.001"
+  ],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 7
+}
