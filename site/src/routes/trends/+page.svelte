@@ -395,6 +395,18 @@
 		font-size: 0.9375rem;
 	}
 
+	/* Dates, counts and statuses stay on one line. On a phone the table
+	   then outgrows the screen and scrolls inside .scroll, which reads better
+	   than a date broken in the middle of a word. */
+	.numbers.wide td:first-child {
+		min-width: 11rem;
+	}
+
+	.numbers.wide td:not(:first-child),
+	.numbers.wide th:not(:first-child) {
+		white-space: nowrap;
+	}
+
 	/* The tables inside a chart's "Show the numbers" are styled from here,
 	   because the snippet renders them in this component's scope. */
 	.numbers th,

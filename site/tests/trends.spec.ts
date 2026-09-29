@@ -166,6 +166,19 @@ for (const t of themes) {
 	});
 }
 
+test('at 375px the source table scrolls in its own box instead of breaking words', async ({ page }) => {
+	await page.setViewportSize({ width: 375, height: 800 });
+	await open(page);
+	const table = section(page, 'source_health').getByRole('table');
+	// A name, date or status split into fragments ("Septem / ber", "CUR / REN / T")
+	// is unreadable, so a row is never taller than a two-line name.
+	const heights = await table
+		.locator('tbody tr')
+		.evaluateAll((rows) => rows.map((r) => r.getBoundingClientRect().height));
+	expect(Math.max(...heights)).toBeLessThan(72);
+	await noHorizontalScroll(page);
+});
+
 test('a chart redraws to the new width when the window narrows', async ({ page }) => {
 	await page.setViewportSize({ width: 1280, height: 900 });
 	await open(page);
