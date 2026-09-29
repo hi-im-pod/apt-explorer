@@ -1,0 +1,178 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "data/resolution.json",
+  "description": "How the actor registry merged names across sources. The Methodology page publishes it.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "stats",
+    "paper_match",
+    "ambiguities",
+    "unresolved_names"
+  ],
+  "properties": {
+    "stats": {
+      "$ref": "#/$defs/stats"
+    },
+    "paper_match": {
+      "$ref": "#/$defs/paperMatch"
+    },
+    "ambiguities": {
+      "description": "Aliases that name two or more ATT&CK groups, so no merge was made.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ambiguity"
+      }
+    },
+    "unresolved_names": {
+      "description": "Report actor tags that resolved to no actor, most frequent first, at most 200.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/unresolvedName"
+      },
+      "maxItems": 200
+    }
+  },
+  "$defs": {
+    "stats": {
+      "description": "Exactly what Registry.stats() returns.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_record_count",
+        "actor_count",
+        "merge_count",
+        "evidence_edge_count",
+        "ambiguity_count",
+        "non_actor_name_count"
+      ],
+      "properties": {
+        "source_record_count": {
+          "$ref": "#/$defs/count",
+          "description": "Actor records read from every source, evidence-only sources included."
+        },
+        "actor_count": {
+          "$ref": "#/$defs/count",
+          "description": "Actors after merging, including any not published because only evidence-only sources know them."
+        },
+        "merge_count": {
+          "$ref": "#/$defs/count",
+          "description": "Source records folded into another record's actor: source_record_count minus actor_count."
+        },
+        "evidence_edge_count": {
+          "$ref": "#/$defs/count",
+          "description": "Shared-alias edges that joined two records. One merge can rest on several edges."
+        },
+        "ambiguity_count": {
+          "$ref": "#/$defs/count",
+          "description": "The length of ambiguities."
+        },
+        "non_actor_name_count": {
+          "$ref": "#/$defs/count",
+          "description": "Names typed as malware or a tool rather than an actor."
+        }
+      }
+    },
+    "paperMatch": {
+      "description": "The registry measured against the paper's actor names. The build computes this, not the registry.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "names_total",
+        "resolved",
+        "typed_non_actor",
+        "match_rate"
+      ],
+      "properties": {
+        "names_total": {
+          "$ref": "#/$defs/count",
+          "description": "Distinct actor names in the paper's report data (Zenodo 16869733)."
+        },
+        "resolved": {
+          "$ref": "#/$defs/count",
+          "description": "Of those, names the registry resolves to one actor."
+        },
+        "typed_non_actor": {
+          "$ref": "#/$defs/count",
+          "description": "Of those, names the registry types as malware or a tool."
+        },
+        "match_rate": {
+          "description": "resolved / names_total, or null when the paper's data is unavailable.",
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "ambiguity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "alias",
+        "candidates"
+      ],
+      "properties": {
+        "alias": {
+          "$ref": "#/$defs/label",
+          "description": "The normalized alias key, as names.norm() returns it."
+        },
+        "candidates": {
+          "description": "The ATT&CK groups the alias names, sorted.",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/actorId"
+          },
+          "uniqueItems": true,
+          "minItems": 2
+        }
+      }
+    },
+    "unresolvedName": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "count",
+        "typed_as"
+      ],
+      "properties": {
+        "name": {
+          "$ref": "#/$defs/label"
+        },
+        "count": {
+          "$ref": "#/$defs/positiveCount",
+          "description": "Published reports carrying the name."
+        },
+        "typed_as": {
+          "description": "malware or tool when the registry typed the name as software, else null.",
+          "enum": [
+            "malware",
+            "tool",
+            null
+          ]
+        }
+      }
+    },
+    "actorId": {
+      "description": "An ATT&CK group ID such as G0007, or a lower-case ASCII slug for an actor ATT&CK does not track. The ID is also the actor's file name and URL segment, so it has no colons, slashes or spaces, and it is never 'index'.",
+      "type": "string",
+      "pattern": "^(?!index$)(G[0-9]{4}|[a-z0-9]+(-[a-z0-9]+)*)$"
+    },
+    "count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "label": {
+      "description": "Non-empty text with no leading or trailing whitespace and no line breaks.",
+      "type": "string",
+      "pattern": "^\\S(.*\\S)?$"
+    },
+    "positiveCount": {
+      "type": "integer",
+      "minimum": 1
+    }
+  }
+}

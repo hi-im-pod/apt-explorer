@@ -1,0 +1,166 @@
+{
+  "id": "G0094",
+  "name": "Kimsuky",
+  "aliases": [
+    {
+      "value": "Kimsuky",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Velvet Chollima",
+      "sources": [
+        "attack",
+        "misp"
+      ]
+    },
+    {
+      "value": "THALLIUM",
+      "sources": [
+        "attack",
+        "misp"
+      ]
+    },
+    {
+      "value": "Emerald Sleet",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "APT43",
+      "sources": [
+        "attack",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Black Banshee",
+      "sources": [
+        "attack",
+        "misp"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "KP",
+      "source": "misp"
+    },
+    {
+      "value": "KP",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "North Korea",
+      "source": "misp"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "South Korea",
+        "source": "misp"
+      },
+      {
+        "value": "United States",
+        "source": "misp"
+      },
+      {
+        "value": "Japan",
+        "source": "misp"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Think tanks",
+        "source": "misp"
+      },
+      {
+        "value": "Education",
+        "source": "misp"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "BabyShark",
+      "source": "attack"
+    },
+    {
+      "name": "Gold Dragon",
+      "source": "attack"
+    },
+    {
+      "name": "AppleSeed",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1566.001",
+    "T1059.005",
+    "T1204.002",
+    "T1598.003"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1566.001",
+      "count": 4
+    },
+    {
+      "id": "T1059.005",
+      "count": 2
+    },
+    {
+      "id": "T1204.002",
+      "count": 2
+    },
+    {
+      "id": "T1566.002",
+      "count": 1
+    }
+  ],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2024-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2025-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "27dc683d848b7ca528c19590a2581560ddae6638",
+    "68a507370101304dc515183eb3b50c0126a02631",
+    "90733bec59529803d0519dca86a24b050c5c67d9",
+    "1954ecb389d2bf59685bde91ab9b1fb735ddc49e",
+    "785e2ccb240c7516794145f1ea31e483ffd32985"
+  ],
+  "conflicts": [],
+  "evidence_count": 8
+}

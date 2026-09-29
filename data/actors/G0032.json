@@ -1,0 +1,244 @@
+{
+  "id": "G0032",
+  "name": "Lazarus Group",
+  "aliases": [
+    {
+      "value": "Lazarus Group",
+      "sources": [
+        "attack",
+        "misp"
+      ]
+    },
+    {
+      "value": "Lazarus",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Labyrinth Chollima",
+      "sources": [
+        "attack",
+        "misp"
+      ]
+    },
+    {
+      "value": "HIDDEN COBRA",
+      "sources": [
+        "attack",
+        "misp"
+      ]
+    },
+    {
+      "value": "Guardians of Peace",
+      "sources": [
+        "attack",
+        "misp"
+      ]
+    },
+    {
+      "value": "ZINC",
+      "sources": [
+        "attack",
+        "misp"
+      ]
+    },
+    {
+      "value": "Diamond Sleet",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "Lazarus-Group-Umbrella-Cluster-Including-Andariel-And-BlueNoroff-Subgroups",
+      "sources": [
+        "misp"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "KP",
+      "source": "misp"
+    },
+    {
+      "value": "KP",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "North Korea",
+      "source": "misp"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    },
+    {
+      "value": "Financial gain",
+      "source": "misp"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "South Korea",
+        "source": "misp"
+      },
+      {
+        "value": "United States",
+        "source": "misp"
+      },
+      {
+        "value": "Japan",
+        "source": "misp"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Financial services",
+        "source": "misp"
+      },
+      {
+        "value": "Defense",
+        "source": "misp"
+      },
+      {
+        "value": "Cryptocurrency",
+        "source": "misp"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "Manuscrypt",
+      "source": "malpedia"
+    },
+    {
+      "name": "AppleJeus",
+      "source": "attack"
+    },
+    {
+      "name": "BLINDINGCAN",
+      "source": "attack"
+    },
+    {
+      "name": "Dtrack",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1566.002",
+    "T1204.002",
+    "T1105",
+    "T1027",
+    "T1071.001",
+    "T1059.001",
+    "T1195.002"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1105",
+      "count": 5
+    },
+    {
+      "id": "T1566.002",
+      "count": 3
+    },
+    {
+      "id": "T1027",
+      "count": 2
+    },
+    {
+      "id": "T1059.007",
+      "count": 2
+    },
+    {
+      "id": "T1195.002",
+      "count": 2
+    },
+    {
+      "id": "T1204.002",
+      "count": 2
+    },
+    {
+      "id": "T1071.001",
+      "count": 1
+    },
+    {
+      "id": "T1190",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2021-44228",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2023-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2024-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2026-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q3",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "81de5a133b0f86100eba401006abbeef4833cdea",
+    "f55d40ae14f90a3c35d5c302eb22cd0ffbddc783",
+    "b7fe17a7dfc830fec69fb11a915fdef0a89d0cbd",
+    "5eecf7e006e2f6d9e1d6fb1bddcb2318fa500259",
+    "388bfd98c502f8ce0a963f09813c0312e56c6b7e",
+    "9a57df292b50a18fd60400e34ff23ab702fe0a00",
+    "a7b732352e1bc3661e46f5454e69a822add9ef94",
+    "b3a043843b3d91c0d037be1dc1229694918ba2fa",
+    "1954ecb389d2bf59685bde91ab9b1fb735ddc49e",
+    "c0c8b8dc68280707a363beae283409bd7b986378",
+    "d814dc407ef48060fd249818a03bc399e6863ba2",
+    "d93ac727fdca6185f653201a58fa50670f6bf538",
+    "paper:2023_fake_job_offers_used_to_reach_defence_engineers.pdf",
+    "b6989977ffda6cf01300320f1f407f3b591b1bb2"
+  ],
+  "conflicts": [],
+  "evidence_count": 14
+}

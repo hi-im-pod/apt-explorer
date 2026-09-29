@@ -1,0 +1,150 @@
+{
+  "id": "G1015",
+  "name": "Scattered Spider",
+  "aliases": [
+    {
+      "value": "Scattered Spider",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Roasted 0ktapus",
+      "sources": [
+        "attack",
+        "misp"
+      ]
+    },
+    {
+      "value": "Octo Tempest",
+      "sources": [
+        "attack",
+        "misp"
+      ]
+    },
+    {
+      "value": "Storm-0875",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "UNC3944",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "US",
+      "source": "misp"
+    },
+    {
+      "value": "GB",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [
+    {
+      "value": "Financial gain",
+      "source": "misp"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "United States",
+        "source": "misp"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "misp"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Retail",
+        "source": "misp"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "misp"
+      },
+      {
+        "value": "Hospitality",
+        "source": "misp"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "BlackCat",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1621",
+    "T1078",
+    "T1486",
+    "T1566.004"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1621",
+      "count": 3
+    },
+    {
+      "id": "T1003.001",
+      "count": 1
+    },
+    {
+      "id": "T1078",
+      "count": 1
+    },
+    {
+      "id": "T1486",
+      "count": 1
+    }
+  ],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2024-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q3",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "dfir:2025-09-hypervisor-encryption-after-a-help-desk-call",
+    "dfir:2025-03-sim-swapping-and-single-sign-on-abuse-in-a-retail-intrusion",
+    "dfir:2024-09-help-desk-social-engineering-to-domain-admin-in-a-day"
+  ],
+  "conflicts": [
+    {
+      "field": "origin",
+      "values": [
+        {
+          "value": "US",
+          "source": "misp"
+        },
+        {
+          "value": "GB",
+          "source": "malpedia"
+        }
+      ]
+    }
+  ],
+  "evidence_count": 6
+}

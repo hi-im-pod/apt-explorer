@@ -1,0 +1,81 @@
+[
+  {
+    "cve": "CVE-2021-44228",
+    "kev_date_added": "2021-12-10",
+    "ransomware": true,
+    "vendor": "Apache",
+    "product": "Log4j2",
+    "actors": [
+      "G0032",
+      "G0096"
+    ],
+    "report_count": 3
+  },
+  {
+    "cve": "CVE-2022-30190",
+    "kev_date_added": "2022-06-14",
+    "ransomware": true,
+    "vendor": "Microsoft",
+    "product": "Windows",
+    "actors": [],
+    "report_count": 0
+  },
+  {
+    "cve": "CVE-2023-23397",
+    "kev_date_added": "2023-03-14",
+    "ransomware": false,
+    "vendor": "Microsoft",
+    "product": "Office",
+    "actors": [
+      "G0007"
+    ],
+    "report_count": 3
+  },
+  {
+    "cve": "CVE-2023-34362",
+    "kev_date_added": "2023-06-02",
+    "ransomware": true,
+    "vendor": "Progress",
+    "product": "MOVEit Transfer",
+    "actors": [],
+    "report_count": 1
+  },
+  {
+    "cve": "CVE-2023-4966",
+    "kev_date_added": "2023-10-18",
+    "ransomware": true,
+    "vendor": "Citrix",
+    "product": "NetScaler ADC and NetScaler Gateway",
+    "actors": [],
+    "report_count": 1
+  },
+  {
+    "cve": "CVE-2024-1709",
+    "kev_date_added": "2024-02-22",
+    "ransomware": true,
+    "vendor": "ConnectWise",
+    "product": "ScreenConnect",
+    "actors": [],
+    "report_count": 0
+  },
+  {
+    "cve": "CVE-2024-3400",
+    "kev_date_added": "2024-04-12",
+    "ransomware": true,
+    "vendor": "Palo Alto Networks",
+    "product": "PAN-OS",
+    "actors": [],
+    "report_count": 1
+  },
+  {
+    "cve": "CVE-2026-100123",
+    "kev_date_added": null,
+    "ransomware": null,
+    "vendor": null,
+    "product": null,
+    "actors": [
+      "glass-heron"
+    ],
+    "report_count": 1
+  }
+]

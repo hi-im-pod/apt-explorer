@@ -1,0 +1,58 @@
+[
+  {
+    "name": "attack",
+    "last_success": "2026-09-28",
+    "record_count": 1057,
+    "stale": false,
+    "publish": "full"
+  },
+  {
+    "name": "misp",
+    "last_success": "2026-09-28",
+    "record_count": 1056,
+    "stale": false,
+    "publish": "full"
+  },
+  {
+    "name": "etda",
+    "last_success": "2026-09-28",
+    "record_count": 503,
+    "stale": false,
+    "publish": "evidence-only"
+  },
+  {
+    "name": "malpedia",
+    "last_success": "2026-09-28",
+    "record_count": 4213,
+    "stale": false,
+    "publish": "derived-only"
+  },
+  {
+    "name": "orkl",
+    "last_success": "2026-09-28",
+    "record_count": 29538,
+    "stale": false,
+    "publish": "derived-only"
+  },
+  {
+    "name": "kev",
+    "last_success": "2026-09-28",
+    "record_count": 1728,
+    "stale": false,
+    "publish": "full"
+  },
+  {
+    "name": "dfir",
+    "last_success": "2026-09-14",
+    "record_count": 118,
+    "stale": true,
+    "publish": "link-only"
+  },
+  {
+    "name": "paper",
+    "last_success": "2026-09-28",
+    "record_count": 1509,
+    "stale": false,
+    "publish": "full"
+  }
+]

@@ -1,0 +1,492 @@
+"""The data contract: every file in data/ matches its JSON Schema, and the files
+agree with each other.
+
+The pipeline writes data/ and the site reads it, and different people build the
+two at the same time. These tests are where drift between them shows up: a field
+one side renamed, a report filed under the wrong year, an actor page the index
+does not list, or a source the licence table keeps private turning up on the
+site. They run against whatever data/ holds, which is the hand-made sample until
+the pipeline writes its first real build.
+"""
+import copy
+import json
+import re
+from collections import defaultdict
+from pathlib import Path
+
+import pytest
+from jsonschema import Draft202012Validator
+
+from aptx.build.contract import SCHEMA_DIR, load_schema, schema_for, validator
+
+ROOT = Path(__file__).resolve().parents[2]
+DATA = ROOT / "data"
+
+# The site fetches these by name, so each must exist even when it is empty.
+# The year shards are not listed because which years exist depends on the data;
+# build.json's report_years names them.
+REQUIRED = ["actors/index.json", "reports/undated.json", "campaigns.json", "vulns.json",
+            "sources.json", "resolution.json", "trends.json", "build.json"]
+
+SCHEMA_NAMES = sorted(p.name.removesuffix(".schema.json") for p in SCHEMA_DIR.glob("*.schema.json"))
+
+
+def _files(root: Path) -> list[str]:
+    return sorted(p.relative_to(root).as_posix() for p in root.rglob("*") if p.is_file())
+
+
+FILES = _files(DATA) if DATA.is_dir() else []
+
+
+def _load(rel: str):
+    return json.loads((DATA / rel).read_text(encoding="utf-8"))
+
+
+@pytest.fixture(scope="module")
+def tree() -> dict:
+    return {rel: _load(rel) for rel in FILES if schema_for(rel)}
+
+
+# --- Every file has a schema, and every file matches it -----------------------
+
+def test_data_directory_holds_every_file_the_site_fetches_by_name():
+    assert DATA.is_dir(), f"{DATA} is missing"
+    assert [rel for rel in REQUIRED if rel not in FILES] == []
+
+
+def test_every_data_file_has_a_schema():
+    # A file with no schema is a file nobody agreed on. The site may not know it
+    # exists, or the pipeline may have renamed a file the site still fetches.
+    assert [rel for rel in FILES if schema_for(rel) is None] == []
+
+
+def test_every_schema_governs_a_data_file():
+    # A schema that no file uses means a file was renamed or never written.
+    used = {schema_for(rel) for rel in FILES}
+    assert [name for name in SCHEMA_NAMES if name not in used] == []
+
+
+@pytest.mark.parametrize("rel", FILES)
+def test_data_file_matches_its_schema(rel):
+    name = schema_for(rel)
+    assert name, f"{rel} has no schema"
+    errors = sorted(validator(name).iter_errors(_load(rel)), key=lambda e: list(e.absolute_path))
+    assert not errors, "\n".join(f"{rel} at /{'/'.join(map(str, e.absolute_path))}: {e.message}"
+                                 for e in errors[:10])
+
+
+def test_schema_mapping_covers_the_published_layout():
+    assert schema_for("actors/index.json") == "actors_index"
+    assert schema_for("actors/G0007.json") == "actor"
+    assert schema_for("reports/2024.json") == schema_for("reports/undated.json") == "reports_shard"
+    assert schema_for("reports\\2024.json") == "reports_shard"
+    assert schema_for("reports/latest.json") is None
+    assert schema_for("reports/24.json") is None
+    assert schema_for("README.md") is None
+
+
+# --- The schemas themselves ----------------------------------------------------
+
+def _walk(node, pointer=""):
+    """Yield (json_pointer, node) for every schema object inside a schema."""
+    if isinstance(node, dict):
+        yield pointer, node
+        for key, value in node.items():
+            yield from _walk(value, f"{pointer}/{key.replace('~', '~0').replace('/', '~1')}")
+    elif isinstance(node, list):
+        for i, value in enumerate(node):
+            yield from _walk(value, f"{pointer}/{i}")
+
+
+@pytest.mark.parametrize("name", SCHEMA_NAMES)
+def test_schema_is_draft_2020_12_and_every_object_is_closed(name):
+    schema = load_schema(name)
+    assert schema["$schema"] == "https://json-schema.org/draft/2020-12/schema"
+    Draft202012Validator.check_schema(schema)
+    for pointer, node in _walk(schema):
+        if node.get("type") != "object":
+            continue
+        # additionalProperties: false catches an added or misspelled field, and
+        # requiring every property catches a dropped one. The pipeline writes
+        # null for a missing value rather than leaving the key out, so the site
+        # never has to tell undefined from null.
+        assert node.get("additionalProperties") is False, f"{name}{pointer} is open"
+        assert sorted(node.get("required", [])) == sorted(node.get("properties", {})), \
+            f"{name}{pointer} does not require every property"
+
+
+def test_shared_definitions_are_identical_across_schemas():
+    # Each schema is self-contained, so common definitions such as the date
+    # pattern are copied into each file. The copies must not drift apart.
+    seen: dict[str, tuple[str, dict]] = {}
+    for name in SCHEMA_NAMES:
+        for key, definition in load_schema(name).get("$defs", {}).items():
+            if key in seen:
+                first, other = seen[key]
+                assert definition == other, f"$defs/{key} differs between {first} and {name}"
+            else:
+                seen[key] = (name, definition)
+
+
+# --- The schemas reject the drift they exist to catch ---------------------------
+
+def _report(**changes):
+    report = {"id": "0" * 40, "title": "A report", "published": "2024-05-01",
+              "date_basis": "orkl-ingest", "organisation": None, "url": "https://example.org/a",
+              "url_ok": None, "archive_url": None, "actors": [], "actor_names_unresolved": [],
+              "cves": [], "techniques": [], "sources": ["orkl"]}
+    report.update(changes)
+    return report
+
+
+def _index_entry(**changes):
+    entry = {"id": "G0007", "name": "APT28", "aliases": [], "origin": [], "report_count": 0,
+             "last_reported": None, "sources": ["attack"]}
+    entry.update(changes)
+    return entry
+
+
+def _actor(**changes):
+    actor = {"id": "G0007", "name": "APT28", "aliases": [{"value": "Fancy Bear", "sources": ["attack"]}],
+             "origin": [], "sponsor": [], "motivation": [],
+             "claimed_targets": {"countries": [], "sectors": []}, "malware": [],
+             "techniques_documented": [], "techniques_reported": [], "cves": [], "timeline": [],
+             "reports": [], "conflicts": [], "evidence_count": 0}
+    actor.update(changes)
+    return actor
+
+
+def _trends(**changes):
+    trends = {"window_start": "2024-01-01", "generated_at": "2026-09-28T03:17:00Z",
+              "reporting_activity": [], "new_actors": [], "kev_monthly": [], "kev_actor_links": [],
+              "reported_vs_documented": [], "source_health": [],
+              "notes": {k: "A counting rule." for k in ("reporting_activity", "new_actors", "kev_monthly",
+                                                        "kev_actor_links", "reported_vs_documented",
+                                                        "source_health")}}
+    trends.update(changes)
+    return trends
+
+
+def _without(doc: dict, key: str) -> dict:
+    return {k: v for k, v in doc.items() if k != key}
+
+
+VALID = [
+    ("reports_shard", [_report()]),
+    ("reports_shard", [_report(published=None, date_basis="unknown")]),
+    ("actors_index", [_index_entry()]),
+    ("actor", _actor()),
+    ("sources", [{"name": "kev", "last_success": None, "record_count": 0, "stale": True, "publish": "full"}]),
+    ("trends", _trends()),
+    ("build", {"built_at": "2026-09-28T03:21:05Z", "version": "0.1.0", "report_years": []}),
+]
+
+INVALID = [
+    ("reports_shard", [_report(archiveUrl="https://example.org/a.pdf")], "an unknown field"),
+    ("reports_shard", [_without(_report(), "title")], "a missing field"),
+    ("reports_shard", [_report(published="0001-01-01")], "a year-1 sentinel date"),
+    ("reports_shard", [_report(published="2024-05-01T00:00:00Z")], "a timestamp where a date belongs"),
+    ("reports_shard", [_report(published=None)], "an undated report whose basis is not 'unknown'"),
+    ("reports_shard", [_report(date_basis="unknown")], "a dated report whose basis is 'unknown'"),
+    ("reports_shard", [_report(date_basis="guess")], "an unknown date basis"),
+    ("reports_shard", [_report(url=None, url_ok=True)], "a link check on a missing URL"),
+    ("reports_shard", [_report(id="orkl-123")], "a report ID that is neither a SHA-1 nor source:id"),
+    ("reports_shard", [_report(cves=["cve-2023-23397"])], "a lower-case CVE"),
+    ("reports_shard", [_report(techniques=["T1059.1"])], "a malformed technique ID"),
+    ("reports_shard", [_report(sources=["MITRE ATT&CK"])], "a source name instead of its key"),
+    ("reports_shard", [_report(sources=[])], "a report with no source"),
+    ("reports_shard", [_report(title=" padded ")], "untrimmed text"),
+    ("actors_index", [_index_entry(id="misp:5a1b")], "an actor ID that cannot be a file name"),
+    ("actors_index", [_index_entry(id="index")], "an actor ID that would overwrite the index"),
+    ("actors_index", [_index_entry(aliases=["Sofacy", "Sofacy"])], "a repeated alias"),
+    ("actor", _actor(aliases=[{"value": "Fancy Bear"}]), "a nested object missing a field"),
+    ("actor", _actor(timeline=[{"quarter": "2024-Q5", "count": 1}]), "a quarter that does not exist"),
+    ("actor", _actor(conflicts=[{"field": "origin", "values": [{"value": "RU", "source": "misp"}]}]),
+     "a conflict with one side"),
+    ("sources", [{"name": "kev", "last_success": None, "record_count": 0, "stale": True, "publish": "public"}],
+     "an unknown publish policy"),
+    ("trends", _trends(notes={"reporting_activity": "A counting rule."}), "a chart without its note"),
+    ("build", {"built_at": "2026-09-28T03:21:05Z", "version": "0.1.0"}, "no list of report years"),
+]
+
+
+@pytest.mark.parametrize("name,doc", VALID)
+def test_the_rejected_documents_start_from_valid_ones(name, doc):
+    # Without this control, a negative case could pass because its base
+    # document was already invalid rather than because of the one change.
+    assert list(validator(name).iter_errors(doc)) == []
+
+
+@pytest.mark.parametrize("name,doc,why", INVALID, ids=[why for _, _, why in INVALID])
+def test_schema_rejects(name, doc, why):
+    assert list(validator(name).iter_errors(doc)), f"{name} accepted {why}"
+
+
+# --- The files agree with each other ------------------------------------------
+
+def _quarter(date: str) -> str:
+    return f"{date[:4]}-Q{(int(date[5:7]) - 1) // 3 + 1}"
+
+
+def _source_refs(tree: dict):
+    """Yield (where, source_key) for every published fact that names its source."""
+    for entry in tree.get("actors/index.json", []):
+        for key in entry["sources"]:
+            yield f"actors/index.json {entry['id']}", key
+    for rel, doc in tree.items():
+        name = schema_for(rel)
+        if name == "actor":
+            for alias in doc["aliases"]:
+                for key in alias["sources"]:
+                    yield f"{rel} aliases", key
+            claims = doc["origin"] + doc["sponsor"] + doc["motivation"] + doc["malware"]
+            claims += doc["claimed_targets"]["countries"] + doc["claimed_targets"]["sectors"]
+            claims += [v for c in doc["conflicts"] for v in c["values"]]
+            for claim in claims:
+                yield rel, claim["source"]
+        elif name == "reports_shard":
+            for report in doc:
+                for key in report["sources"]:
+                    yield f"{rel} {report['id']}", key
+    for campaign in tree.get("campaigns.json", []):
+        yield f"campaigns.json {campaign['id']}", campaign["source"]
+
+
+def integrity_problems(tree: dict) -> list[str]:
+    """Every way the files in `tree` contradict each other, as readable lines."""
+    problems: list[str] = []
+    add = problems.append
+
+    index = tree.get("actors/index.json", [])
+    ids = [entry["id"] for entry in index]
+    known = set(ids)
+    if len(ids) != len(known):
+        add("actors/index.json lists an actor twice")
+    pages = {rel.removeprefix("actors/").removesuffix(".json"): doc
+             for rel, doc in tree.items() if schema_for(rel) == "actor"}
+    # The site prerenders one page per index entry, and a missing file fails
+    # the build, so the index and the actor files must match exactly.
+    if set(pages) != known:
+        add(f"actor files without an index entry: {sorted(set(pages) - known)}; "
+            f"index entries without a file: {sorted(known - set(pages))}")
+    for stem, page in pages.items():
+        if page["id"] != stem:
+            add(f"actors/{stem}.json holds actor {page['id']}")
+
+    shards = {rel.removeprefix("reports/").removesuffix(".json"): doc
+              for rel, doc in tree.items() if schema_for(rel) == "reports_shard"}
+    reports: dict[str, dict] = {}
+    for stem, rows in shards.items():
+        for report in rows:
+            if report["id"] in reports:
+                add(f"report {report['id']} appears twice")
+            reports[report["id"]] = report
+            belongs = report["published"][:4] if report["published"] else "undated"
+            if belongs != stem:
+                add(f"report {report['id']} published {report['published']} is in reports/{stem}.json")
+    years = sorted(int(stem) for stem in shards if stem != "undated")
+    if "build.json" in tree and tree["build.json"]["report_years"] != years:
+        add(f"build.json report_years {tree['build.json']['report_years']} but the shards are {years}")
+
+    def need_actor(where: str, actor_id: str) -> None:
+        if actor_id not in known:
+            add(f"{where} names actor {actor_id}, which actors/index.json does not list")
+
+    for report in reports.values():
+        for actor_id in report["actors"]:
+            need_actor(f"report {report['id']}", actor_id)
+    for campaign in tree.get("campaigns.json", []):
+        for actor_id in campaign["actors"]:
+            need_actor(f"campaign {campaign['id']}", actor_id)
+    for vuln in tree.get("vulns.json", []):
+        for actor_id in vuln["actors"]:
+            need_actor(f"vulns.json {vuln['cve']}", actor_id)
+    resolution = tree.get("resolution.json")
+    if resolution:
+        for amb in resolution["ambiguities"]:
+            for actor_id in amb["candidates"]:
+                need_actor(f"ambiguity {amb['alias']!r}", actor_id)
+    trends = tree.get("trends.json")
+    if trends:
+        for section in ("reporting_activity", "new_actors", "reported_vs_documented"):
+            for row in trends[section]:
+                need_actor(f"trends {section}", row["actor"])
+        for link in trends["kev_actor_links"]:
+            for actor_id in link["actors"]:
+                need_actor(f"trends kev_actor_links {link['cve']}", actor_id)
+
+    # An actor page, its index row and the report shards must tell one story.
+    tagged: dict[str, set[str]] = defaultdict(set)
+    for report in reports.values():
+        for actor_id in report["actors"]:
+            tagged[actor_id].add(report["id"])
+    for entry in index:
+        page = pages.get(entry["id"])
+        if page is None:
+            continue
+        where = f"actor {entry['id']}"
+        if page["name"] != entry["name"] or [a["value"] for a in page["aliases"]] != entry["aliases"]:
+            add(f"{where}: the index and the actor page show different names or aliases")
+        if entry["report_count"] != len(page["reports"]):
+            add(f"{where}: report_count {entry['report_count']} but the page lists {len(page['reports'])}")
+        if set(page["reports"]) != tagged[entry["id"]]:
+            add(f"{where}: the page's reports differ from the reports tagged with it")
+        dated = [reports[r]["published"] for r in page["reports"] if r in reports and reports[r]["published"]]
+        if sum(point["count"] for point in page["timeline"]) != len(dated):
+            add(f"{where}: the timeline does not count exactly the dated reports")
+        if entry["last_reported"] != (max(dated) if dated else None):
+            add(f"{where}: last_reported {entry['last_reported']} is not its newest report")
+        page_cves = {c["cve"] for c in page["cves"]}
+        report_cves = {c for r in page["reports"] if r in reports for c in reports[r]["cves"]}
+        if page_cves != report_cves:
+            add(f"{where}: CVEs {sorted(page_cves ^ report_cves)} differ from its reports' CVEs")
+
+    # The licence gate. Nothing from an evidence-only source may reach the site,
+    # and a source key sources.json does not list is a typo or a new source
+    # nobody recorded terms for.
+    sources = {s["name"]: s for s in tree.get("sources.json", [])}
+    hidden = {name for name, s in sources.items() if s["publish"] == "evidence-only"}
+    for where, key in _source_refs(tree):
+        if key not in sources:
+            add(f"{where} cites source {key!r}, which sources.json does not list")
+        elif key in hidden:
+            add(f"{where} publishes {key!r}, whose publish policy is evidence-only")
+
+    vulns: dict[str, dict] = {}
+    for vuln in tree.get("vulns.json", []):
+        if vuln["cve"] in vulns:
+            add(f"vulns.json lists {vuln['cve']} twice")
+        vulns[vuln["cve"]] = vuln
+    by_cve: dict[str, list[dict]] = defaultdict(list)
+    for report in reports.values():
+        for cve in report["cves"]:
+            by_cve[cve].append(report)
+    for cve in sorted(set(by_cve) - set(vulns)):
+        add(f"{cve} appears in a report but not in vulns.json")
+    for cve, vuln in vulns.items():
+        rows = by_cve.get(cve, [])
+        if vuln["report_count"] != len(rows):
+            add(f"vulns.json {cve}: report_count {vuln['report_count']} but {len(rows)} reports name it")
+        if sorted(vuln["actors"]) != sorted({a for r in rows for a in r["actors"]}):
+            add(f"vulns.json {cve}: actors differ from the actors of the reports that name it")
+        if vuln["kev_date_added"] is None and vuln["ransomware"] is not None:
+            add(f"vulns.json {cve}: not in KEV, so KEV cannot say anything about ransomware")
+    for rel, page in tree.items():
+        if schema_for(rel) != "actor":
+            continue
+        for c in page["cves"]:
+            vuln = vulns.get(c["cve"])
+            if vuln and (c["kev"] != (vuln["kev_date_added"] is not None) or c["ransomware"] != vuln["ransomware"]):
+                add(f"{rel} {c['cve']}: the KEV flags differ from vulns.json")
+
+    if resolution:
+        stats, paper = resolution["stats"], resolution["paper_match"]
+        if stats["ambiguity_count"] != len(resolution["ambiguities"]):
+            add("resolution.json ambiguity_count differs from the ambiguities listed")
+        if stats["merge_count"] != stats["source_record_count"] - stats["actor_count"]:
+            add("resolution.json merge_count is not source_record_count minus actor_count")
+        if paper["resolved"] + paper["typed_non_actor"] > paper["names_total"]:
+            add("resolution.json paper_match counts more names than the paper has")
+        rate = paper["resolved"] / paper["names_total"] if paper["names_total"] else None
+        if (rate is None) != (paper["match_rate"] is None) or (rate is not None and abs(rate - paper["match_rate"]) > 1e-6):
+            add(f"resolution.json match_rate {paper['match_rate']} is not resolved / names_total ({rate})")
+
+    if trends:
+        # Trends describe 2024 onward. An earlier bucket means pre-window data
+        # leaked into a chart that says it starts at window_start.
+        start = trends["window_start"]
+        for row in trends["reporting_activity"]:
+            if row["quarter"] < _quarter(start):
+                add(f"trends reporting_activity has {row['quarter']}, before {start}")
+        for row in trends["kev_monthly"]:
+            if row["month"] < start[:7]:
+                add(f"trends kev_monthly has {row['month']}, before {start}")
+            if row["ransomware"] > row["added"]:
+                add(f"trends kev_monthly {row['month']}: more ransomware CVEs than CVEs added")
+        for link in trends["kev_actor_links"]:
+            if vulns.get(link["cve"], {}).get("kev_date_added") is None:
+                add(f"trends kev_actor_links {link['cve']} is not a KEV CVE in vulns.json")
+        health = sorted(trends["source_health"], key=lambda s: s["name"])
+        status = sorted(({k: s[k] for k in ("name", "last_success", "record_count", "stale")}
+                         for s in sources.values()), key=lambda s: s["name"])
+        if health != status:
+            add("trends source_health differs from sources.json")
+
+    return problems
+
+
+def test_files_agree_with_each_other(tree):
+    assert integrity_problems(tree) == []
+
+
+def _first_dated_report(tree: dict) -> tuple[str, dict]:
+    for rel, doc in sorted(tree.items()):
+        if schema_for(rel) == "reports_shard" and not rel.endswith("undated.json") and doc:
+            return rel, doc[0]
+    pytest.skip("data/ has no dated report to move")
+
+
+def test_integrity_check_finds_a_report_in_the_wrong_year(tree):
+    broken = copy.deepcopy(tree)
+    rel, report = _first_dated_report(broken)
+    broken[rel].remove(report)
+    broken["reports/undated.json"].append(report)
+    assert any("is in reports/undated.json" in p for p in integrity_problems(broken))
+
+
+def test_integrity_check_finds_an_actor_page_listing_an_unknown_report(tree):
+    broken = copy.deepcopy(tree)
+    page = next(doc for rel, doc in broken.items() if schema_for(rel) == "actor")
+    page["reports"].append("orkl:no-such-report")
+    assert any("differ from the reports tagged" in p for p in integrity_problems(broken))
+
+
+def test_integrity_check_finds_an_evidence_only_source_on_the_site(tree):
+    broken = copy.deepcopy(tree)
+    _, report = _first_dated_report(broken)
+    source = next(s for s in broken["sources.json"] if s["name"] == report["sources"][0])
+    source["publish"] = "evidence-only"
+    assert any("evidence-only" in p for p in integrity_problems(broken))
+
+
+# --- The sample covers what the site is built against ----------------------------
+
+def test_sample_covers_the_cases_the_site_is_built_against(tree):
+    # Wave 1 builds the site against the hand-made sample, so it must contain
+    # every awkward case the site has to render. Real pipeline output is not
+    # held to this list, because a real week may have no stale source.
+    if "sample" not in tree["build.json"]["version"]:
+        pytest.skip("data/ is pipeline output, not the hand-made sample")
+    index = tree["actors/index.json"]
+    pages = [doc for rel, doc in tree.items() if schema_for(rel) == "actor"]
+    shards = {rel: doc for rel, doc in tree.items() if schema_for(rel) == "reports_shard"}
+    reports = [r for rows in shards.values() for r in rows]
+
+    assert len(index) >= 12
+    assert any(a["report_count"] == 0 for a in index), "an actor with zero reports"
+    busiest = max(index, key=lambda a: a["report_count"])
+    assert busiest["id"] == "G0032", "Lazarus Group is the actor with the most reports"
+    assert any(not re.fullmatch(r"G[0-9]{4}", a["id"]) for a in index), "an actor ATT&CK does not track"
+    assert any(len(alias) > 60 and not re.search(r"\s", alias) for a in index for alias in a["aliases"]), \
+        "an alias over 60 characters with no spaces"
+    assert any(c["field"] == "origin" and len({v["source"] for v in c["values"]}) >= 2
+               for page in pages for c in page["conflicts"]), "an origin conflict between two sources"
+    assert {"alias": "winnti", "candidates": ["G0044", "G0096"]} in tree["resolution.json"]["ambiguities"]
+
+    assert {f"reports/{y}.json" for y in (2023, 2024, 2025, 2026)} <= set(shards)
+    assert tree["reports/undated.json"], "at least one undated report"
+    assert {r["date_basis"] for r in reports} == {"malpedia-library", "file-metadata", "orkl-ingest",
+                                                  "publisher", "paper", "unknown"}
+    assert {r["url_ok"] for r in reports} == {True, False, None}
+    assert any(r["url"] is None for r in reports) and any(r["archive_url"] is None for r in reports)
+    assert any(re.fullmatch(r"[0-9a-f]{40}", r["id"]) for r in reports)
+    assert any(":" in r["id"] for r in reports)
+    assert any(r["actor_names_unresolved"] and not r["actors"] for r in reports)
+
+    assert any(v["kev_date_added"] and v["ransomware"] is True for v in tree["vulns.json"])
+    assert any(v["kev_date_added"] is None for v in tree["vulns.json"]), "a CVE not in KEV"
+    assert any(c["source"] == "attack" for c in tree["campaigns.json"]), "an ATT&CK campaign"
+    assert any(s["stale"] for s in tree["sources.json"]), "a stale source"
+    trends = tree["trends.json"]
+    assert all(trends[k] for k in ("reporting_activity", "new_actors", "kev_monthly", "kev_actor_links",
+                                   "reported_vs_documented", "source_health")), "a full trends.json"

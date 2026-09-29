@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "data/campaigns.json",
+  "description": "Named campaigns, from ATT&CK and, later, from report write-ups.",
+  "type": "array",
+  "items": {
+    "$ref": "#/$defs/campaign"
+  },
+  "$defs": {
+    "campaign": {
+      "description": "One campaign.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "first_seen",
+        "last_seen",
+        "actors",
+        "techniques",
+        "source"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/campaignId"
+        },
+        "name": {
+          "$ref": "#/$defs/label"
+        },
+        "first_seen": {
+          "$ref": "#/$defs/nullableDate"
+        },
+        "last_seen": {
+          "$ref": "#/$defs/nullableDate",
+          "description": "Null while the campaign is ongoing or the source gives no end."
+        },
+        "actors": {
+          "description": "Resolved actors the source attributes the campaign to.",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/actorId"
+          },
+          "uniqueItems": true
+        },
+        "techniques": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/techniqueId"
+          },
+          "uniqueItems": true
+        },
+        "source": {
+          "$ref": "#/$defs/sourceKey"
+        }
+      }
+    },
+    "campaignId": {
+      "description": "The ATT&CK campaign ID, such as C0022, or a source-scoped ID.",
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+    },
+    "actorId": {
+      "description": "An ATT&CK group ID such as G0007, or a lower-case ASCII slug for an actor ATT&CK does not track. The ID is also the actor's file name and URL segment, so it has no colons, slashes or spaces, and it is never 'index'.",
+      "type": "string",
+      "pattern": "^(?!index$)(G[0-9]{4}|[a-z0-9]+(-[a-z0-9]+)*)$"
+    },
+    "label": {
+      "description": "Non-empty text with no leading or trailing whitespace and no line breaks.",
+      "type": "string",
+      "pattern": "^\\S(.*\\S)?$"
+    },
+    "nullableDate": {
+      "description": "A date, or null when none is known.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^(199[0-9]|2[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+    },
+    "sourceKey": {
+      "description": "A connector key such as attack or misp, as listed in sources.json. Never a display name.",
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$"
+    },
+    "techniqueId": {
+      "description": "An ATT&CK technique or sub-technique ID.",
+      "type": "string",
+      "pattern": "^T[0-9]{4}(\\.[0-9]{3})?$"
+    }
+  }
+}

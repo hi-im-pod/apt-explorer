@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "data/build.json",
+  "description": "What wrote this data/ and when, and which report shards exist.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "built_at",
+    "version",
+    "report_years"
+  ],
+  "properties": {
+    "built_at": {
+      "$ref": "#/$defs/dateTime"
+    },
+    "version": {
+      "$ref": "#/$defs/label",
+      "description": "The pipeline version that wrote the data. The hand-made sample says so here."
+    },
+    "report_years": {
+      "description": "Years that have a reports/<year>.json shard, ascending. reports/undated.json always exists and is not listed. A static host cannot list a directory, so the site reads this instead of guessing.",
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 1990
+      },
+      "uniqueItems": true
+    }
+  },
+  "$defs": {
+    "dateTime": {
+      "description": "A UTC timestamp, YYYY-MM-DDTHH:MM:SSZ.",
+      "type": "string",
+      "pattern": "^(199[0-9]|2[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]Z$"
+    },
+    "label": {
+      "description": "Non-empty text with no leading or trailing whitespace and no line breaks.",
+      "type": "string",
+      "pattern": "^\\S(.*\\S)?$"
+    }
+  }
+}

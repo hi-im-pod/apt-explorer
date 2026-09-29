@@ -1,0 +1,310 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "data/trends.json",
+  "description": "Current trends, computed from window_start onward. The paper's older data is a labelled historical layer and never feeds these.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "window_start",
+    "generated_at",
+    "reporting_activity",
+    "new_actors",
+    "kev_monthly",
+    "kev_actor_links",
+    "reported_vs_documented",
+    "source_health",
+    "notes"
+  ],
+  "properties": {
+    "window_start": {
+      "$ref": "#/$defs/date",
+      "description": "The first day the trends cover. Earlier reports only feed prev_year_count."
+    },
+    "generated_at": {
+      "$ref": "#/$defs/dateTime"
+    },
+    "reporting_activity": {
+      "description": "Reports per actor per quarter, with the year-earlier count.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/activityRow"
+      }
+    },
+    "new_actors": {
+      "description": "Actors first seen within 365 days of generated_at.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/newActor"
+      }
+    },
+    "kev_monthly": {
+      "description": "KEV additions per month.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/kevMonth"
+      }
+    },
+    "kev_actor_links": {
+      "description": "KEV CVEs named in reports alongside resolved actors.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/kevActorLink"
+      }
+    },
+    "reported_vs_documented": {
+      "description": "Techniques in recent reports compared with what ATT&CK documents.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/reportedVsDocumented"
+      }
+    },
+    "source_health": {
+      "description": "The same health fields as sources.json.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/sourceHealth"
+      }
+    },
+    "notes": {
+      "$ref": "#/$defs/notes"
+    }
+  },
+  "$defs": {
+    "activityRow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "actor",
+        "quarter",
+        "count",
+        "prev_year_count"
+      ],
+      "properties": {
+        "actor": {
+          "$ref": "#/$defs/actorId"
+        },
+        "quarter": {
+          "$ref": "#/$defs/quarter"
+        },
+        "count": {
+          "$ref": "#/$defs/count",
+          "description": "Reports in the quarter tagged with the actor."
+        },
+        "prev_year_count": {
+          "$ref": "#/$defs/count",
+          "description": "The same count for the same quarter a year earlier; 0 when none."
+        }
+      }
+    },
+    "newActor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "actor",
+        "first_seen",
+        "basis"
+      ],
+      "properties": {
+        "actor": {
+          "$ref": "#/$defs/actorId"
+        },
+        "first_seen": {
+          "$ref": "#/$defs/date"
+        },
+        "basis": {
+          "description": "What supplied first_seen: a source key, or report for the earliest dated report.",
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        }
+      }
+    },
+    "kevMonth": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "month",
+        "added",
+        "ransomware"
+      ],
+      "properties": {
+        "month": {
+          "$ref": "#/$defs/month"
+        },
+        "added": {
+          "$ref": "#/$defs/count",
+          "description": "CVEs CISA added to KEV in the month."
+        },
+        "ransomware": {
+          "$ref": "#/$defs/count",
+          "description": "Of those, CVEs KEV marks as known ransomware use."
+        }
+      }
+    },
+    "kevActorLink": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "cve",
+        "actors"
+      ],
+      "properties": {
+        "cve": {
+          "$ref": "#/$defs/cve"
+        },
+        "actors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/actorId"
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        }
+      }
+    },
+    "reportedVsDocumented": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "actor",
+        "reported_only",
+        "documented_only_count",
+        "overlap"
+      ],
+      "properties": {
+        "actor": {
+          "$ref": "#/$defs/actorId"
+        },
+        "reported_only": {
+          "description": "Techniques in the actor's reports from window_start on that ATT&CK does not document for it.",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/techniqueId"
+          },
+          "uniqueItems": true
+        },
+        "documented_only_count": {
+          "$ref": "#/$defs/count",
+          "description": "Documented techniques no recent report names."
+        },
+        "overlap": {
+          "$ref": "#/$defs/count",
+          "description": "Techniques both documented and reported."
+        }
+      }
+    },
+    "sourceHealth": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "last_success",
+        "record_count",
+        "stale"
+      ],
+      "properties": {
+        "name": {
+          "$ref": "#/$defs/sourceKey"
+        },
+        "last_success": {
+          "$ref": "#/$defs/nullableDate"
+        },
+        "record_count": {
+          "$ref": "#/$defs/count"
+        },
+        "stale": {
+          "type": "boolean"
+        }
+      }
+    },
+    "notes": {
+      "description": "The counting rule printed under each chart, keyed by the section it describes.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reporting_activity",
+        "new_actors",
+        "kev_monthly",
+        "kev_actor_links",
+        "reported_vs_documented",
+        "source_health"
+      ],
+      "properties": {
+        "reporting_activity": {
+          "$ref": "#/$defs/label"
+        },
+        "new_actors": {
+          "$ref": "#/$defs/label"
+        },
+        "kev_monthly": {
+          "$ref": "#/$defs/label"
+        },
+        "kev_actor_links": {
+          "$ref": "#/$defs/label"
+        },
+        "reported_vs_documented": {
+          "$ref": "#/$defs/label"
+        },
+        "source_health": {
+          "$ref": "#/$defs/label"
+        }
+      }
+    },
+    "actorId": {
+      "description": "An ATT&CK group ID such as G0007, or a lower-case ASCII slug for an actor ATT&CK does not track. The ID is also the actor's file name and URL segment, so it has no colons, slashes or spaces, and it is never 'index'.",
+      "type": "string",
+      "pattern": "^(?!index$)(G[0-9]{4}|[a-z0-9]+(-[a-z0-9]+)*)$"
+    },
+    "count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "cve": {
+      "description": "A CVE ID in upper case.",
+      "type": "string",
+      "pattern": "^CVE-[0-9]{4}-[0-9]{4,7}$"
+    },
+    "date": {
+      "description": "A calendar date, YYYY-MM-DD, from 1990 on. Sentinel values such as 0001-01-01 mean 'unknown' and are written as null instead.",
+      "type": "string",
+      "pattern": "^(199[0-9]|2[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+    },
+    "dateTime": {
+      "description": "A UTC timestamp, YYYY-MM-DDTHH:MM:SSZ.",
+      "type": "string",
+      "pattern": "^(199[0-9]|2[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]Z$"
+    },
+    "label": {
+      "description": "Non-empty text with no leading or trailing whitespace and no line breaks.",
+      "type": "string",
+      "pattern": "^\\S(.*\\S)?$"
+    },
+    "month": {
+      "description": "A calendar month, YYYY-MM.",
+      "type": "string",
+      "pattern": "^(199[0-9]|2[0-9]{3})-(0[1-9]|1[0-2])$"
+    },
+    "nullableDate": {
+      "description": "A date, or null when none is known.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^(199[0-9]|2[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+    },
+    "quarter": {
+      "description": "A calendar quarter, YYYY-Qn.",
+      "type": "string",
+      "pattern": "^(199[0-9]|2[0-9]{3})-Q[1-4]$"
+    },
+    "sourceKey": {
+      "description": "A connector key such as attack or misp, as listed in sources.json. Never a display name.",
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$"
+    },
+    "techniqueId": {
+      "description": "An ATT&CK technique or sub-technique ID.",
+      "type": "string",
+      "pattern": "^T[0-9]{4}(\\.[0-9]{3})?$"
+    }
+  }
+}

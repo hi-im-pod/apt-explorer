@@ -1,0 +1,367 @@
+[
+  {
+    "id": "f0319912eab7a8a74bab9252eed372fd079bca2a",
+    "title": "Botnet of end-of-life routers used as a relay network",
+    "published": "2024-12-04",
+    "date_basis": "malpedia-library",
+    "organisation": "Harbor CERT",
+    "url": "https://example.org/harbor-cert/2024/botnet-of-end-of-life-routers-used-as-a-relay-network/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/f0319912eab7a8a74bab9252eed372fd079bca2a.pdf",
+    "actors": [
+      "G1017"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1090.003",
+      "T1133"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "d68faec56e265d66729eedc56fb290bf1f0820ce",
+    "title": "Credential harvesting through fake webinar invitations",
+    "published": "2024-11-13",
+    "date_basis": "orkl-ingest",
+    "organisation": null,
+    "url": "https://example.org/unattributed/2024/credential-harvesting-through-fake-webinar-invitations/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/d68faec56e265d66729eedc56fb290bf1f0820ce.pdf",
+    "actors": [
+      "G0059"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1566.003",
+      "T1204.001"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "b3a043843b3d91c0d037be1dc1229694918ba2fa",
+    "title": "Fake video-conferencing app delivers an infostealer",
+    "published": "2024-10-23",
+    "date_basis": "file-metadata",
+    "organisation": "Northwind Threat Research",
+    "url": "https://example.org/northwind-threat-research/2024/fake-video-conferencing-app-delivers-an-infostealer/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/b3a043843b3d91c0d037be1dc1229694918ba2fa.pdf",
+    "actors": [
+      "G0032"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1105",
+      "T1027"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "dfir:2024-10-session-hijacking-on-an-unpatched-gateway-ends-in-ransomware",
+    "title": "Session hijacking on an unpatched gateway ends in ransomware",
+    "published": "2024-10-02",
+    "date_basis": "publisher",
+    "organisation": "Fieldnote DFIR",
+    "url": "https://example.org/fieldnote-dfir/2024/session-hijacking-on-an-unpatched-gateway-ends-in-ransomware/",
+    "url_ok": true,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [
+      "LockBit"
+    ],
+    "cves": [
+      "CVE-2023-4966"
+    ],
+    "techniques": [
+      "T1190",
+      "T1486"
+    ],
+    "sources": [
+      "dfir"
+    ]
+  },
+  {
+    "id": "dfir:2024-09-help-desk-social-engineering-to-domain-admin-in-a-day",
+    "title": "Help-desk social engineering to domain admin in a day",
+    "published": "2024-09-05",
+    "date_basis": "publisher",
+    "organisation": "Fieldnote DFIR",
+    "url": "https://example.org/fieldnote-dfir/2024/help-desk-social-engineering-to-domain-admin-in-a-day/",
+    "url_ok": true,
+    "archive_url": null,
+    "actors": [
+      "G1015"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1621",
+      "T1078"
+    ],
+    "sources": [
+      "dfir"
+    ]
+  },
+  {
+    "id": "83086f8202f48adfac618fb3cab581faf271d0f0",
+    "title": "Russian state actors' phishing tradecraft compared",
+    "published": "2024-08-14",
+    "date_basis": "malpedia-library",
+    "organisation": "Blue Meridian Labs",
+    "url": "https://example.org/blue-meridian-labs/2024/russian-state-actors-phishing-tradecraft-compared/",
+    "url_ok": false,
+    "archive_url": "https://example.org/archive/83086f8202f48adfac618fb3cab581faf271d0f0.pdf",
+    "actors": [
+      "G0007",
+      "G0016",
+      "G0034"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1566.001"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "f1e34134815ce555ffecf7d45a07314609d4febe",
+    "title": "Supply-chain compromise of a game update server",
+    "published": "2024-07-10",
+    "date_basis": "file-metadata",
+    "organisation": null,
+    "url": "https://example.org/unattributed/2024/supply-chain-compromise-of-a-game-update-server/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/f1e34134815ce555ffecf7d45a07314609d4febe.pdf",
+    "actors": [
+      "G0096"
+    ],
+    "actor_names_unresolved": [
+      "Winnti"
+    ],
+    "cves": [],
+    "techniques": [
+      "T1195.002",
+      "T1574.002"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "1954ecb389d2bf59685bde91ab9b1fb735ddc49e",
+    "title": "Two DPRK clusters share a job-lure toolkit",
+    "published": "2024-06-19",
+    "date_basis": "malpedia-library",
+    "organisation": "Harbor CERT",
+    "url": "https://example.org/harbor-cert/2024/two-dprk-clusters-share-a-job-lure-toolkit/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/1954ecb389d2bf59685bde91ab9b1fb735ddc49e.pdf",
+    "actors": [
+      "G0032",
+      "G0094"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1566.002",
+      "T1204.002"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "71b2ffd2e0b0aee08d638bf1cb737ec3ac9a2ed7",
+    "title": "Destructive attacks on telecom providers",
+    "published": "2024-05-29",
+    "date_basis": "file-metadata",
+    "organisation": "Lakeside Security Labs",
+    "url": "https://example.org/lakeside-security-labs/2024/destructive-attacks-on-telecom-providers/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/71b2ffd2e0b0aee08d638bf1cb737ec3ac9a2ed7.pdf",
+    "actors": [
+      "G0034"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1485",
+      "T1059.001"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "785e2ccb240c7516794145f1ea31e483ffd32985",
+    "title": "Spear-phishing with think-tank personas",
+    "published": "2024-05-01",
+    "date_basis": "malpedia-library",
+    "organisation": "Northwind Threat Research",
+    "url": "https://example.org/northwind-threat-research/2024/spear-phishing-with-think-tank-personas/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/785e2ccb240c7516794145f1ea31e483ffd32985.pdf",
+    "actors": [
+      "G0094"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1566.001",
+      "T1059.005"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "48c70133e313cfad2e830d5d6f3d1aff44d181ff",
+    "title": "Firewall zero-day exploited before disclosure",
+    "published": "2024-04-16",
+    "date_basis": "file-metadata",
+    "organisation": "Copperline CSIRT",
+    "url": "https://example.org/copperline-csirt/2024/firewall-zero-day-exploited-before-disclosure/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/48c70133e313cfad2e830d5d6f3d1aff44d181ff.pdf",
+    "actors": [],
+    "actor_names_unresolved": [
+      "UTA0218"
+    ],
+    "cves": [
+      "CVE-2024-3400"
+    ],
+    "techniques": [
+      "T1190",
+      "T1059.004"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "c0c8b8dc68280707a363beae283409bd7b986378",
+    "title": "Log4Shell remains an entry point for a DPRK cluster",
+    "published": "2024-04-03",
+    "date_basis": "malpedia-library",
+    "organisation": "Blue Meridian Labs",
+    "url": "https://example.org/blue-meridian-labs/2024/log4shell-remains-an-entry-point-for-a-dprk-cluster/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/c0c8b8dc68280707a363beae283409bd7b986378.pdf",
+    "actors": [
+      "G0032"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2021-44228"
+    ],
+    "techniques": [
+      "T1190",
+      "T1105",
+      "T1071.001"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "dfir:2024-03-malicious-installer-ads-leading-to-a-backdoor",
+    "title": "Malicious installer ads leading to a backdoor",
+    "published": "2024-03-12",
+    "date_basis": "publisher",
+    "organisation": "Fieldnote DFIR",
+    "url": "https://example.org/fieldnote-dfir/2024/malicious-installer-ads-leading-to-a-backdoor/",
+    "url_ok": true,
+    "archive_url": null,
+    "actors": [
+      "G0046"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1204.002",
+      "T1059.001"
+    ],
+    "sources": [
+      "dfir"
+    ]
+  },
+  {
+    "id": "28d4a0de3aaa5bc79df8b62aa641beefae28b106",
+    "title": "Router compromise feeding credential phishing",
+    "published": "2024-02-21",
+    "date_basis": "orkl-ingest",
+    "organisation": null,
+    "url": "https://example.org/unattributed/2024/router-compromise-feeding-credential-phishing/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/28d4a0de3aaa5bc79df8b62aa641beefae28b106.pdf",
+    "actors": [
+      "G0007"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2023-23397"
+    ],
+    "techniques": [
+      "T1187",
+      "T1566.001"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "d7a4d348e52bd3fabf579037ab0fe701da750ec5",
+    "title": "Living-off-the-land intrusion into water utility edge devices",
+    "published": "2024-02-07",
+    "date_basis": "file-metadata",
+    "organisation": "Harbor CERT",
+    "url": "https://example.org/harbor-cert/2024/living-off-the-land-intrusion-into-water-utility-edge-devices/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/d7a4d348e52bd3fabf579037ab0fe701da750ec5.pdf",
+    "actors": [
+      "G1017"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1190",
+      "T1133"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "b2a2df31de7067cf30edb321bbb41db97923f980",
+    "title": "Password spraying against a software vendor's corporate tenant",
+    "published": "2024-01-18",
+    "date_basis": "malpedia-library",
+    "organisation": "Northwind Threat Research",
+    "url": "https://example.org/northwind-threat-research/2024/password-spraying-against-a-software-vendor-s-corporate-tenant/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/b2a2df31de7067cf30edb321bbb41db97923f980.pdf",
+    "actors": [
+      "G0016"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1078.004",
+      "T1098.001"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  }
+]

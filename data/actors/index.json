@@ -1,0 +1,298 @@
+[
+  {
+    "id": "G0006",
+    "name": "APT1",
+    "aliases": [
+      "APT1",
+      "Comment Crew",
+      "Comment Panda",
+      "Comment Group",
+      "Byzantine Candor"
+    ],
+    "origin": [
+      "CN"
+    ],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "attack",
+      "misp",
+      "malpedia"
+    ]
+  },
+  {
+    "id": "G0007",
+    "name": "APT28",
+    "aliases": [
+      "APT28",
+      "Fancy Bear",
+      "Sofacy",
+      "Sednit",
+      "Pawn Storm",
+      "STRONTIUM",
+      "Forest Blizzard"
+    ],
+    "origin": [
+      "RU"
+    ],
+    "report_count": 10,
+    "last_reported": "2026-09-09",
+    "sources": [
+      "attack",
+      "misp",
+      "malpedia"
+    ]
+  },
+  {
+    "id": "G0016",
+    "name": "APT29",
+    "aliases": [
+      "APT29",
+      "Cozy Bear",
+      "The Dukes",
+      "NOBELIUM",
+      "Midnight Blizzard",
+      "UNC2452"
+    ],
+    "origin": [
+      "RU"
+    ],
+    "report_count": 6,
+    "last_reported": "2026-03-25",
+    "sources": [
+      "attack",
+      "misp",
+      "malpedia"
+    ]
+  },
+  {
+    "id": "G0096",
+    "name": "APT41",
+    "aliases": [
+      "APT41",
+      "Wicked Panda",
+      "Brass Typhoon",
+      "BARIUM",
+      "Double Dragon",
+      "Winnti"
+    ],
+    "origin": [
+      "CN"
+    ],
+    "report_count": 4,
+    "last_reported": "2026-04-15",
+    "sources": [
+      "attack",
+      "misp",
+      "malpedia"
+    ]
+  },
+  {
+    "id": "G0046",
+    "name": "FIN7",
+    "aliases": [
+      "FIN7",
+      "Carbon Spider",
+      "GOLD NIAGARA",
+      "ELBRUS",
+      "Sangria Tempest"
+    ],
+    "origin": [],
+    "report_count": 2,
+    "last_reported": "2026-03-04",
+    "sources": [
+      "attack",
+      "misp",
+      "malpedia"
+    ]
+  },
+  {
+    "id": "glass-heron",
+    "name": "Glass Heron",
+    "aliases": [
+      "Glass Heron",
+      "Heron Cluster 7"
+    ],
+    "origin": [],
+    "report_count": 2,
+    "last_reported": "2026-09-16",
+    "sources": [
+      "misp",
+      "malpedia"
+    ]
+  },
+  {
+    "id": "G0094",
+    "name": "Kimsuky",
+    "aliases": [
+      "Kimsuky",
+      "Velvet Chollima",
+      "THALLIUM",
+      "Emerald Sleet",
+      "APT43",
+      "Black Banshee"
+    ],
+    "origin": [
+      "KP"
+    ],
+    "report_count": 5,
+    "last_reported": "2026-05-27",
+    "sources": [
+      "attack",
+      "misp",
+      "malpedia"
+    ]
+  },
+  {
+    "id": "G0032",
+    "name": "Lazarus Group",
+    "aliases": [
+      "Lazarus Group",
+      "Lazarus",
+      "Labyrinth Chollima",
+      "HIDDEN COBRA",
+      "Guardians of Peace",
+      "ZINC",
+      "Diamond Sleet",
+      "Lazarus-Group-Umbrella-Cluster-Including-Andariel-And-BlueNoroff-Subgroups"
+    ],
+    "origin": [
+      "KP"
+    ],
+    "report_count": 14,
+    "last_reported": "2026-09-22",
+    "sources": [
+      "attack",
+      "misp",
+      "malpedia"
+    ]
+  },
+  {
+    "id": "G0059",
+    "name": "Magic Hound",
+    "aliases": [
+      "Magic Hound",
+      "APT35",
+      "Charming Kitten",
+      "Phosphorus",
+      "Mint Sandstorm",
+      "TA453"
+    ],
+    "origin": [
+      "IR"
+    ],
+    "report_count": 3,
+    "last_reported": "2026-07-08",
+    "sources": [
+      "attack",
+      "misp",
+      "malpedia"
+    ]
+  },
+  {
+    "id": "G0049",
+    "name": "OilRig",
+    "aliases": [
+      "OilRig",
+      "APT34",
+      "Helix Kitten",
+      "COBALT GYPSY",
+      "Hazel Sandstorm"
+    ],
+    "origin": [
+      "IR"
+    ],
+    "report_count": 2,
+    "last_reported": "2025-11-26",
+    "sources": [
+      "attack",
+      "misp",
+      "malpedia"
+    ]
+  },
+  {
+    "id": "G0034",
+    "name": "Sandworm Team",
+    "aliases": [
+      "Sandworm Team",
+      "Sandworm",
+      "ELECTRUM",
+      "Voodoo Bear",
+      "IRIDIUM",
+      "Seashell Blizzard",
+      "APT44"
+    ],
+    "origin": [
+      "RU"
+    ],
+    "report_count": 6,
+    "last_reported": "2026-05-06",
+    "sources": [
+      "attack",
+      "misp",
+      "malpedia"
+    ]
+  },
+  {
+    "id": "G1015",
+    "name": "Scattered Spider",
+    "aliases": [
+      "Scattered Spider",
+      "Roasted 0ktapus",
+      "Octo Tempest",
+      "Storm-0875",
+      "UNC3944"
+    ],
+    "origin": [
+      "US",
+      "GB"
+    ],
+    "report_count": 3,
+    "last_reported": "2025-09-03",
+    "sources": [
+      "attack",
+      "misp",
+      "malpedia"
+    ]
+  },
+  {
+    "id": "G1017",
+    "name": "Volt Typhoon",
+    "aliases": [
+      "Volt Typhoon",
+      "BRONZE SILHOUETTE",
+      "Vanguard Panda",
+      "VOLTZITE",
+      "Insidious Taurus"
+    ],
+    "origin": [
+      "CN"
+    ],
+    "report_count": 4,
+    "last_reported": "2026-06-17",
+    "sources": [
+      "attack",
+      "misp",
+      "malpedia"
+    ]
+  },
+  {
+    "id": "G0044",
+    "name": "Winnti Group",
+    "aliases": [
+      "Winnti Group",
+      "Blackfly",
+      "Winnti"
+    ],
+    "origin": [
+      "CN"
+    ],
+    "report_count": 1,
+    "last_reported": "2025-06-11",
+    "sources": [
+      "attack",
+      "misp",
+      "malpedia"
+    ]
+  }
+]

@@ -1,0 +1,175 @@
+{
+  "id": "G0016",
+  "name": "APT29",
+  "aliases": [
+    {
+      "value": "APT29",
+      "sources": [
+        "attack",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Cozy Bear",
+      "sources": [
+        "attack",
+        "misp"
+      ]
+    },
+    {
+      "value": "The Dukes",
+      "sources": [
+        "attack",
+        "misp"
+      ]
+    },
+    {
+      "value": "NOBELIUM",
+      "sources": [
+        "attack",
+        "misp"
+      ]
+    },
+    {
+      "value": "Midnight Blizzard",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "UNC2452",
+      "sources": [
+        "attack",
+        "misp"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "RU",
+      "source": "misp"
+    },
+    {
+      "value": "RU",
+      "source": "malpedia"
+    }
+  ],
+  "sponsor": [
+    {
+      "value": "Russian Federation",
+      "source": "misp"
+    }
+  ],
+  "motivation": [
+    {
+      "value": "Espionage",
+      "source": "misp"
+    }
+  ],
+  "claimed_targets": {
+    "countries": [
+      {
+        "value": "United States",
+        "source": "misp"
+      },
+      {
+        "value": "Germany",
+        "source": "misp"
+      }
+    ],
+    "sectors": [
+      {
+        "value": "Government",
+        "source": "misp"
+      },
+      {
+        "value": "Technology",
+        "source": "misp"
+      }
+    ]
+  },
+  "malware": [
+    {
+      "name": "SUNBURST",
+      "source": "attack"
+    },
+    {
+      "name": "WellMess",
+      "source": "attack"
+    },
+    {
+      "name": "MiniDuke",
+      "source": "malpedia"
+    }
+  ],
+  "techniques_documented": [
+    "T1078.004",
+    "T1098.001",
+    "T1550.001",
+    "T1566.002",
+    "T1195.002"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1078.004",
+      "count": 2
+    },
+    {
+      "id": "T1566.001",
+      "count": 2
+    },
+    {
+      "id": "T1566.002",
+      "count": 2
+    },
+    {
+      "id": "T1098.001",
+      "count": 1
+    },
+    {
+      "id": "T1204.002",
+      "count": 1
+    },
+    {
+      "id": "T1550.001",
+      "count": 1
+    }
+  ],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2023-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q1",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "14d3ee8a3629f3e4641c0d8b3d75b414dcd1f640",
+    "41b35b48263e0c06ed1c8cb214a6b62614185b6a",
+    "ee40d0e848c0f6d0360539695d234be74eb88668",
+    "83086f8202f48adfac618fb3cab581faf271d0f0",
+    "b2a2df31de7067cf30edb321bbb41db97923f980",
+    "paper:2023_diplomatic_lures_and_cloud_token_theft.pdf"
+  ],
+  "conflicts": [],
+  "evidence_count": 10
+}

@@ -1,0 +1,399 @@
+[
+  {
+    "id": "5eecf7e006e2f6d9e1d6fb1bddcb2318fa500259",
+    "title": "Quarterly roundup of state-sponsored activity",
+    "published": "2025-12-17",
+    "date_basis": "malpedia-library",
+    "organisation": "Copperline CSIRT",
+    "url": "https://example.org/copperline-csirt/2025/quarterly-roundup-of-state-sponsored-activity/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/5eecf7e006e2f6d9e1d6fb1bddcb2318fa500259.pdf",
+    "actors": [
+      "G0007",
+      "G0032",
+      "G0034"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "68a507370101304dc515183eb3b50c0126a02631",
+    "title": "Fake security alerts push a VBScript backdoor",
+    "published": "2025-12-10",
+    "date_basis": "file-metadata",
+    "organisation": "Harbor CERT",
+    "url": "https://example.org/harbor-cert/2025/fake-security-alerts-push-a-vbscript-backdoor/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/68a507370101304dc515183eb3b50c0126a02631.pdf",
+    "actors": [
+      "G0094"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1566.001",
+      "T1059.005"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "fb9ff9a54494861e06e29d004a102159be5557a2",
+    "title": "Email-based command and control in Gulf government networks",
+    "published": "2025-11-26",
+    "date_basis": "malpedia-library",
+    "organisation": "Lakeside Security Labs",
+    "url": "https://example.org/lakeside-security-labs/2025/email-based-command-and-control-in-gulf-government-networks/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/fb9ff9a54494861e06e29d004a102159be5557a2.pdf",
+    "actors": [
+      "G0049"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1071.004",
+      "T1059.001"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "b4a84dd5a7cbe2049540c5461c5eb5622846098e",
+    "title": "Impersonated journalists seek access to policy researchers",
+    "published": "2025-11-05",
+    "date_basis": "malpedia-library",
+    "organisation": "Northwind Threat Research",
+    "url": "https://example.org/northwind-threat-research/2025/impersonated-journalists-seek-access-to-policy-researchers/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/b4a84dd5a7cbe2049540c5461c5eb5622846098e.pdf",
+    "actors": [
+      "G0059"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1566.003",
+      "T1598.003"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "388bfd98c502f8ce0a963f09813c0312e56c6b7e",
+    "title": "Recruiter personas on professional networks target DeFi staff",
+    "published": "2025-10-15",
+    "date_basis": "file-metadata",
+    "organisation": null,
+    "url": "https://example.org/unattributed/2025/recruiter-personas-on-professional-networks-target-defi-staff/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/388bfd98c502f8ce0a963f09813c0312e56c6b7e.pdf",
+    "actors": [
+      "G0032"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1566.002",
+      "T1204.002"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "a339f1cecb4ea87ddbf022ea840dbc68a3c032ee",
+    "title": "Persistent access to telecom edge routers",
+    "published": "2025-09-24",
+    "date_basis": "malpedia-library",
+    "organisation": "Blue Meridian Labs",
+    "url": "https://example.org/blue-meridian-labs/2025/persistent-access-to-telecom-edge-routers/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/a339f1cecb4ea87ddbf022ea840dbc68a3c032ee.pdf",
+    "actors": [
+      "G1017"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1133",
+      "T1090.003"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "dfir:2025-09-hypervisor-encryption-after-a-help-desk-call",
+    "title": "Hypervisor encryption after a help-desk call",
+    "published": "2025-09-03",
+    "date_basis": "publisher",
+    "organisation": "Fieldnote DFIR",
+    "url": "https://example.org/fieldnote-dfir/2025/hypervisor-encryption-after-a-help-desk-call/",
+    "url_ok": true,
+    "archive_url": null,
+    "actors": [
+      "G1015"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1621",
+      "T1486"
+    ],
+    "sources": [
+      "dfir"
+    ]
+  },
+  {
+    "id": "41b35b48263e0c06ed1c8cb214a6b62614185b6a",
+    "title": "Wine-tasting invitations deliver a new loader",
+    "published": "2025-08-13",
+    "date_basis": "malpedia-library",
+    "organisation": "Harbor CERT",
+    "url": "https://example.org/harbor-cert/2025/wine-tasting-invitations-deliver-a-new-loader/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/41b35b48263e0c06ed1c8cb214a6b62614185b6a.pdf",
+    "actors": [
+      "G0016"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1566.001",
+      "T1204.002"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "00953374ee605d8e001ea22c299e678f711afdd9",
+    "title": "Webmail exploitation against defence suppliers",
+    "published": "2025-07-23",
+    "date_basis": "file-metadata",
+    "organisation": "Copperline CSIRT",
+    "url": "https://example.org/copperline-csirt/2025/webmail-exploitation-against-defence-suppliers/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/00953374ee605d8e001ea22c299e678f711afdd9.pdf",
+    "actors": [
+      "G0007"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1566.001",
+      "T1059.001"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "cd93abb20c70bab08de3e4fc479cc47da55fdd28",
+    "title": "Edge appliance exploitation against shipping companies",
+    "published": "2025-07-02",
+    "date_basis": "malpedia-library",
+    "organisation": "Northwind Threat Research",
+    "url": "https://example.org/northwind-threat-research/2025/edge-appliance-exploitation-against-shipping-companies/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/cd93abb20c70bab08de3e4fc479cc47da55fdd28.pdf",
+    "actors": [
+      "G0096"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1190",
+      "T1505.003"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "e7c14c9ffafe3f9ef33da83cbd7bbfd5b410a6cf",
+    "title": "Rootkit-backed persistence in game studios",
+    "published": "2025-06-11",
+    "date_basis": "orkl-ingest",
+    "organisation": "Lakeside Security Labs",
+    "url": "https://example.org/lakeside-security-labs/2025/rootkit-backed-persistence-in-game-studios/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/e7c14c9ffafe3f9ef33da83cbd7bbfd5b410a6cf.pdf",
+    "actors": [
+      "G0044"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1574.002",
+      "T1014"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "9a57df292b50a18fd60400e34ff23ab702fe0a00",
+    "title": "Exchange hot-wallet theft traced to a compromised developer laptop",
+    "published": "2025-05-21",
+    "date_basis": "malpedia-library",
+    "organisation": null,
+    "url": "https://example.org/unattributed/2025/exchange-hot-wallet-theft-traced-to-a-compromised-developer-laptop/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/9a57df292b50a18fd60400e34ff23ab702fe0a00.pdf",
+    "actors": [
+      "G0032"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1105",
+      "T1027"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "90733bec59529803d0519dca86a24b050c5c67d9",
+    "title": "Paste-and-run lures in academic outreach",
+    "published": "2025-04-30",
+    "date_basis": "file-metadata",
+    "organisation": "Harbor CERT",
+    "url": "https://example.org/harbor-cert/2025/paste-and-run-lures-in-academic-outreach/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/90733bec59529803d0519dca86a24b050c5c67d9.pdf",
+    "actors": [
+      "G0094"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1566.001",
+      "T1204.002"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "b160ea77c5d2d5297456f1a80f0330c614f49d73",
+    "title": "Wiper variants against grain exporters",
+    "published": "2025-04-09",
+    "date_basis": "malpedia-library",
+    "organisation": "Blue Meridian Labs",
+    "url": "https://example.org/blue-meridian-labs/2025/wiper-variants-against-grain-exporters/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/b160ea77c5d2d5297456f1a80f0330c614f49d73.pdf",
+    "actors": [
+      "G0034"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1485",
+      "T1561.002"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "dfir:2025-03-sim-swapping-and-single-sign-on-abuse-in-a-retail-intrusion",
+    "title": "SIM swapping and single sign-on abuse in a retail intrusion",
+    "published": "2025-03-19",
+    "date_basis": "publisher",
+    "organisation": "Fieldnote DFIR",
+    "url": "https://example.org/fieldnote-dfir/2025/sim-swapping-and-single-sign-on-abuse-in-a-retail-intrusion/",
+    "url_ok": true,
+    "archive_url": null,
+    "actors": [
+      "G1015"
+    ],
+    "actor_names_unresolved": [
+      "Mimikatz"
+    ],
+    "cves": [],
+    "techniques": [
+      "T1621",
+      "T1003.001"
+    ],
+    "sources": [
+      "dfir"
+    ]
+  },
+  {
+    "id": "ee40d0e848c0f6d0360539695d234be74eb88668",
+    "title": "Device-code phishing for cloud accounts",
+    "published": "2025-02-26",
+    "date_basis": "malpedia-library",
+    "organisation": "Copperline CSIRT",
+    "url": "https://example.org/copperline-csirt/2025/device-code-phishing-for-cloud-accounts/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/ee40d0e848c0f6d0360539695d234be74eb88668.pdf",
+    "actors": [
+      "G0016"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1566.002",
+      "T1078.004"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "b4673e7d07cb9cffbae167f5a00462abad402a9e",
+    "title": "HTML smuggling in military-themed lures",
+    "published": "2025-02-05",
+    "date_basis": "file-metadata",
+    "organisation": "Northwind Threat Research",
+    "url": "https://example.org/northwind-threat-research/2025/html-smuggling-in-military-themed-lures/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/b4673e7d07cb9cffbae167f5a00462abad402a9e.pdf",
+    "actors": [
+      "G0007"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1566.001",
+      "T1204.002"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "a7b732352e1bc3661e46f5454e69a822add9ef94",
+    "title": "Malicious npm packages aimed at blockchain developers",
+    "published": "2025-01-15",
+    "date_basis": "malpedia-library",
+    "organisation": "Lakeside Security Labs",
+    "url": "https://example.org/lakeside-security-labs/2025/malicious-npm-packages-aimed-at-blockchain-developers/",
+    "url_ok": true,
+    "archive_url": "https://example.org/archive/a7b732352e1bc3661e46f5454e69a822add9ef94.pdf",
+    "actors": [
+      "G0032"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1195.002",
+      "T1059.007"
+    ],
+    "sources": [
+      "orkl"
+    ]
+  }
+]
