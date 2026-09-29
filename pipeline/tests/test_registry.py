@@ -96,7 +96,8 @@ def test_a_record_bridging_two_attack_groups_never_joins_them():
     # recorded as ambiguous.
     assert r.lookup("Bridge") == "G0001"
     assert r.ambiguities == [{"alias": "sharedtwo", "candidates": ["G0001", "G0002"]}]
-    assert r.lookup("Shared Two") is None
+    # Only Beta carries "Shared Two" directly, so the refused key still finds it.
+    assert r.lookup("Shared Two") == "G0002"
 
 
 def test_direct_attack_evidence_wins_over_a_chain_of_other_sources():
@@ -117,7 +118,9 @@ def test_a_shared_primary_name_outranks_a_shared_alias():
                  A("etda", "e1", "APT 41", "Wicked Panda", "Blackfly")], [])
     assert r.lookup("APT 41") == "G0096"
     assert r.lookup("Wicked Panda") == "G0096"
-    assert r.lookup("Blackfly") is None
+    # The merge on "Blackfly" was refused, but Winnti Group is the only
+    # ATT&CK group that carries the key itself, so the key resolves to it.
+    assert r.lookup("Blackfly") == "G0044"
     assert {"alias": "blackfly", "candidates": ["G0044", "G0096"]} in r.ambiguities
 
 
@@ -131,9 +134,81 @@ def test_a_shared_primary_name_outranks_a_name_on_one_side_only():
     assert ("etda", "e1") in {(m.source, m.source_id) for m in winnti.members}
     assert r.lookup("Winnti Group") == "G0044"
     assert {"alias": "apt41", "candidates": ["G0044", "G0096"]} in r.ambiguities
-    # Plan step 7: an ambiguous key resolves to nothing, even when it is an
-    # ATT&CK group's own name. Flagged for wave 2, which measures its cost.
-    assert r.lookup("APT41") is None
+    # The merge on "APT41" was refused, but APT41 (G0096) is the only ATT&CK
+    # group that carries the key itself, so reports tagged APT41 still land on it.
+    assert r.lookup("APT41") == "G0096"
+
+
+# The candidate rule: an ambiguous key still resolves when exactly one ATT&CK
+# group carries it directly, as its own name or alias.
+
+def test_apt41_resolves_to_its_group_although_the_etda_card_lumps_it_with_winnti():
+    r = resolve([A("attack", "G0096", "APT41"), A("attack", "G0044", "Winnti Group"),
+                 A("etda", "e1", "Winnti Group", "APT41")], [])
+    assert r.lookup("APT41") == "G0096"
+    assert r.lookup("apt 41") == "G0096"        # Any spelling of the key.
+    assert r.lookup("Winnti Group") == "G0044"
+    # Resolving the key does not undo the refusal: the ambiguity is still
+    # written, and the ETDA card is still not merged into APT41.
+    assert r.ambiguities == [{"alias": "apt41", "candidates": ["G0044", "G0096"]}]
+    apt41 = next(a for a in r.actors if a.id == "G0096")
+    assert ("etda", "e1") not in {(m.source, m.source_id) for m in apt41.members}
+    assert len(r.actors) == 2
+
+
+def test_a_key_carried_directly_by_two_attack_groups_still_resolves_to_nothing():
+    r = resolve([A("attack", "G0096", "APT41", "Winnti"), A("attack", "G0044", "Winnti Group", "Winnti"),
+                 A("etda", "e1", "Winnti Group", "APT41")], [])
+    assert r.lookup("Winnti") is None
+    assert {"alias": "winnti", "candidates": ["G0044", "G0096"]} in r.ambiguities
+    # APT41 is carried by only one group, so it resolves in the same registry.
+    assert r.lookup("APT41") == "G0096"
+
+
+def test_non_attack_records_sharing_only_an_ambiguous_key_stay_unmerged():
+    r = resolve([A("attack", "G0096", "APT41"), A("attack", "G0044", "Winnti Group"),
+                 A("etda", "e1", "Winnti Group", "APT41"),
+                 A("misp", "m1", "Karma One", "APT41"), A("malpedia", "m2", "Karma Two", "APT41")], [])
+    homes = {(m.source, m.source_id): a.id for a in r.actors for m in a.members}
+    assert homes[("etda", "e1")] == "G0044"
+    # Neither newcomer joins a group, and they do not join each other. The key
+    # names a real group, but nothing says which one these sources meant.
+    assert homes[("misp", "m1")] not in {"G0096", "G0044"}
+    assert homes[("malpedia", "m2")] not in {"G0096", "G0044"}
+    assert homes[("misp", "m1")] != homes[("malpedia", "m2")]
+    # Reports tagged APT41 still resolve to the ATT&CK group.
+    assert r.lookup("APT41") == "G0096"
+    assert [x["alias"] for x in r.ambiguities] == ["apt41"]
+
+
+def test_a_key_with_no_attack_carrier_stays_unresolved_even_when_ambiguous():
+    # Yankee is only an alias of two non-ATT&CK records that sit under two
+    # groups, so there is no group to prefer.
+    r = resolve([A("attack", "G0007", "Alpha", "Xray"),
+                 A("misp", "u1", "Mid One", "Xray", "Yankee"),
+                 A("malpedia", "m1", "Mid Two", "Yankee", "Zulu"),
+                 A("attack", "G0008", "Beta", "Zulu")], [])
+    assert r.lookup("Yankee") is None
+    assert r.ambiguities == [{"alias": "yankee", "candidates": ["G0007", "G0008"]}]
+
+
+def test_the_candidate_rule_leaves_apt28_and_apt2_apart():
+    r = resolve([A("attack", "G0007", "APT28", "Sofacy"), A("attack", "G0087", "APT2"),
+                 A("misp", "u1", "APT 28"), A("misp", "u2", "APT-2")], [])
+    assert r.lookup("APT28") == "G0007" and r.lookup("APT 28") == "G0007"
+    assert r.lookup("APT2") == "G0087" and r.lookup("apt-2") == "G0087"
+    assert r.ambiguities == []
+
+
+def test_stats_stay_exact_when_a_refused_key_still_resolves():
+    r = resolve([A("attack", "G0096", "APT41"), A("attack", "G0044", "Winnti Group"),
+                 A("etda", "e1", "Winnti Group", "APT41")], [])
+    assert r.stats() == {
+        "source_record_count": 3, "actor_count": 2, "merge_count": 1,
+        "evidence_edge_count": 1, "ambiguity_count": 1, "non_actor_name_count": 0,
+    }
+    for ambiguity in r.ambiguities:
+        assert contract_errors("ambiguity", ambiguity) == []
 
 
 def test_records_of_one_attack_group_always_share_one_actor():

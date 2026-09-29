@@ -5,7 +5,8 @@ names.norm). Each shared key is kept as evidence, so every merge can be traced
 to the aliases that caused it. A key that would put two ATT&CK groups into one
 actor is refused and recorded as an ambiguity instead, because ATT&CK already
 decided those are different groups and an alias shared between them says
-nothing about which one another source meant.
+nothing about which one another source meant. Looking such a key up still
+finds the one ATT&CK group that carries it directly, if there is exactly one.
 
 The registry uses every record it is given as merge evidence, whatever that
 source's publish policy is. Which facts reach data/ is decided at assembly, so
@@ -60,9 +61,12 @@ class Registry:
     def lookup(self, name: str) -> str | None:
         """The actor ID a name resolves to.
 
-        None when the name is unknown, has no key, or is ambiguous. An ambiguous
-        name must not be attached to either candidate, because the registry
-        cannot tell which group a report meant by it.
+        None when the name is unknown or has no key. It is also None when the
+        name is ambiguous and no single ATT&CK group carries it directly:
+        with two such groups, or with none, the registry cannot tell which
+        group a report meant. When exactly one ATT&CK group carries the name as
+        its own name or alias, the name resolves to that group even though the
+        merge on it was refused and the ambiguity is on record.
         """
         return self._actor_ids.get(norm(name))
 
@@ -144,6 +148,16 @@ def resolve(actors: list[ActorRecord], software: list[SoftwareRecord]) -> Regist
 
     actor_ids = {key: ids[groups.find(next(iter(nodes)))]
                  for key, nodes in carriers.items() if key not in ambiguous}
+    # A refused key is still a name a report can use. When exactly one ATT&CK
+    # group carries it itself, as its name or one of its own aliases, that
+    # group is the only candidate ATT&CK's own data supports, so a report
+    # tagged with the key resolves to it. The ambiguity stays on record, and
+    # nothing is merged, so records from other sources that share only this key
+    # still sit apart. With two direct carriers there is no way to choose.
+    for key in ambiguous:
+        direct = [n for n in carriers[key] if _is_attack_group(n)]
+        if len(direct) == 1:
+            actor_ids[key] = ids[groups.find(direct[0])]
     return Registry(
         actors=resolved,
         ambiguities=[{"alias": key, "candidates": ambiguous[key]} for key in sorted(ambiguous)],
