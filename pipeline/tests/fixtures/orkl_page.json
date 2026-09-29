@@ -1,0 +1,201 @@
+{
+ "data": [
+  {
+   "id": "b64b1126-c800-49c6-90f8-3176912c8faa",
+   "created_at": "2026-09-29T02:02:37.917908Z",
+   "updated_at": "2026-09-29T02:03:54.677157Z",
+   "deleted_at": null,
+   "sha1_hash": "19f38ef695903486bbe533ed0b22733c8766f725",
+   "title": "The Closed Quorum: Inside the first reported autonomous AI C2 implant",
+   "llm_title": "",
+   "authors": "",
+   "file_creation_date": "0001-01-01T00:00:00Z",
+   "file_modification_date": "0001-01-01T00:00:00Z",
+   "file_size": 934217,
+   "plain_text": "Synthetic fixture text: the implant exploits cve-2023-23397 and runs T1059.001, with part number T9999 and ST1566 nearby.",
+   "extraction_quality": 1,
+   "language": "EN",
+   "sources": [
+    "Malpedia"
+   ],
+   "origins": [
+    "web"
+   ],
+   "references": [
+    "https://blog.talosintelligence.com/the-closed-quorum-inside-the-first-reported-autonomous-ai-c2-implant/"
+   ],
+   "report_names": [
+    "the-closed-quorum-inside-the-first-reported-autonomous-ai-c2-implant"
+   ],
+   "threat_actors": [],
+   "ts_created_at": 1790647357,
+   "ts_updated_at": 1790647434,
+   "ts_creation_date": 0,
+   "ts_modification_date": 0,
+   "files": {
+    "pdf": "https://archive.orkl.eu/19f38ef695903486bbe533ed0b22733c8766f725.pdf",
+    "text": "https://archive.orkl.eu/19f38ef695903486bbe533ed0b22733c8766f725.txt",
+    "img": "https://archive.orkl.eu/19f38ef695903486bbe533ed0b22733c8766f725.jpg"
+   }
+  },
+  {
+   "id": "fb0abad2-6493-4ea1-9c20-37603bbfe554",
+   "created_at": "2026-09-28T02:02:45.200722Z",
+   "updated_at": "2026-09-29T02:02:26.103849Z",
+   "deleted_at": null,
+   "sha1_hash": "fdf53fac0af9cced76179fb1b9df0ce009952e36",
+   "title": "North Korea-linked APT attack found disguised as a digital asset wallet service customer center",
+   "llm_title": "",
+   "authors": "ESTSecurity",
+   "file_creation_date": "2022-02-21T00:52:14Z",
+   "file_modification_date": "2022-02-21T00:52:14Z",
+   "file_size": 843363,
+   "plain_text": "Synthetic fixture text: the lure exploits CVE-2021-40444 via T1566.001.",
+   "extraction_quality": 1,
+   "language": "EN",
+   "sources": [
+    "APTnotes"
+   ],
+   "origins": [
+    "web"
+   ],
+   "references": [
+    "https://app.box.com/s/sn6863bx5gk1i1o2kw7t5m2fk5s1f6iq"
+   ],
+   "report_names": [
+    "alyac_NKorea-digital-asset-wallet-customer-center(02-16-2022)"
+   ],
+   "threat_actors": [
+    {
+     "id": "191d7f9a-8c3c-442a-9f13-debe259d4cc2",
+     "created_at": "2022-10-25T15:50:23.280374Z",
+     "updated_at": "2026-09-29T02:00:04.999799Z",
+     "deleted_at": null,
+     "main_name": "Kimsuky",
+     "aliases": [
+      "Kimsuky",
+      "Black Banshee",
+      "Velvet Chollima",
+      "Emerald Sleet"
+     ],
+     "source_name": "MITRE:Kimsuky",
+     "tools": [
+      "Troll Stealer",
+      "HTTPTroy"
+     ],
+     "source_id": "MITRE",
+     "reports": null
+    },
+    {
+     "id": "760f2827-1718-4eed-8234-4027c1346145",
+     "created_at": "2023-01-06T13:46:38.670947Z",
+     "updated_at": "2026-09-29T02:00:03.385716Z",
+     "deleted_at": null,
+     "main_name": "Kimsuky",
+     "aliases": [
+      "Velvet Chollima",
+      "Black Banshee",
+      "Thallium",
+      "APT43"
+     ],
+     "source_name": "MISPGALAXY:Kimsuky",
+     "tools": [
+      "BabyShark",
+      "RevClient"
+     ],
+     "source_id": "MISPGALAXY",
+     "reports": null
+    },
+    {
+     "id": "71a1e16c-3ba6-4193-be62-be53527817bc",
+     "created_at": "2022-10-25T16:07:23.753455Z",
+     "updated_at": "2026-09-29T02:00:07.005939Z",
+     "deleted_at": null,
+     "main_name": "Kimsuky",
+     "aliases": [
+      "APT 43",
+      "Black Banshee",
+      "Emerald Sleet",
+      "G0086"
+     ],
+     "source_name": "ETDA:Kimsuky",
+     "tools": [
+      "AngryRebel",
+      "AppleSeed"
+     ],
+     "source_id": "ETDA",
+     "reports": null
+    },
+    {
+     "id": "892dd3f3-26c7-4ca4-820a-0b0c7b81e41c",
+     "created_at": "2026-09-17T02:00:03.686979Z",
+     "updated_at": "2026-09-29T02:00:03.801502Z",
+     "deleted_at": null,
+     "main_name": "NICKEL KIMBALL",
+     "aliases": [
+      "ARCHIPELAGO ",
+      "Black Banshee ",
+      "ITG16 ",
+      "Kimsuky "
+     ],
+     "source_name": "Secureworks:NICKEL KIMBALL",
+     "tools": [
+      "BabyShark",
+      "FastFire"
+     ],
+     "source_id": "Secureworks",
+     "reports": null
+    }
+   ],
+   "ts_created_at": 1790560965,
+   "ts_updated_at": 1790647346,
+   "ts_creation_date": 1645404734,
+   "ts_modification_date": 1645404734,
+   "files": {
+    "pdf": "https://archive.orkl.eu/fdf53fac0af9cced76179fb1b9df0ce009952e36.pdf",
+    "text": "https://archive.orkl.eu/fdf53fac0af9cced76179fb1b9df0ce009952e36.txt",
+    "img": "https://archive.orkl.eu/fdf53fac0af9cced76179fb1b9df0ce009952e36.jpg"
+   }
+  },
+  {
+   "id": "393f041d-cd75-4664-9a44-118ae3e91a02",
+   "created_at": "2023-11-15T02:06:06.773743Z",
+   "updated_at": "2026-09-29T02:02:31.822934Z",
+   "deleted_at": null,
+   "sha1_hash": "aed53f16c085e33ed7c65ba8b81b682c5e66bee7",
+   "title": "",
+   "llm_title": "Campagnes d'attaques du mode opératoire APT28 depuis 2021",
+   "authors": "",
+   "file_creation_date": "0001-01-01T00:00:00Z",
+   "file_modification_date": "0001-01-01T00:00:00Z",
+   "file_size": 2487153,
+   "plain_text": null,
+   "extraction_quality": 1,
+   "language": "FR",
+   "sources": [
+    "Malpedia"
+   ],
+   "origins": [
+    "pdf"
+   ],
+   "references": [
+    "https://www.cert.ssi.gouv.fr/uploads/CERTFR-2023-CTI-009.pdf"
+   ],
+   "report_names": [
+    "CERTFR-2023-CTI-009.pdf"
+   ],
+   "threat_actors": null,
+   "ts_created_at": 1700013966,
+   "ts_updated_at": 1790647351,
+   "ts_creation_date": 1698256940,
+   "ts_modification_date": 0,
+   "files": {
+    "pdf": "https://archive.orkl.eu/aed53f16c085e33ed7c65ba8b81b682c5e66bee7.pdf",
+    "text": "https://archive.orkl.eu/aed53f16c085e33ed7c65ba8b81b682c5e66bee7.txt",
+    "img": "https://archive.orkl.eu/aed53f16c085e33ed7c65ba8b81b682c5e66bee7.jpg"
+   }
+  }
+ ],
+ "message": "library entries",
+ "status": "success"
+}

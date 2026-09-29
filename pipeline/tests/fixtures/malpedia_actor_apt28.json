@@ -1,0 +1,82 @@
+{
+ "description": "Synthetic fixture text. Malpedia descriptions are never copied.",
+ "meta": {
+  "country": "RU",
+  "synonyms": [
+   "Pawn Storm",
+   "FANCY BEAR",
+   "Sednit",
+   "SNAKEMACKEREL",
+   "Tsar Team",
+   "TG-4127",
+   "APT28"
+  ],
+  "cfr-suspected-state-sponsor": "Russian Federation",
+  "cfr-type-of-incident": "Espionage",
+  "cfr-suspected-victims": [
+   "Georgia",
+   "France",
+   "Jordan"
+  ],
+  "cfr-target-category": [
+   "Government",
+   "Military"
+  ],
+  "targeted-sector": [
+   "Military",
+   "Government, Administration",
+   "Security Service"
+  ],
+  "refs": [
+   "https://attack.mitre.org/groups/G0007/",
+   "https://en.wikipedia.org/wiki/Fancy_Bear",
+   "https://en.wikipedia.org/wiki/Sofacy_Group"
+  ]
+ },
+ "uuid": "5b4ee3ea-eee3-4c8e-8323-85ae32658754",
+ "value": "APT28",
+ "families": {
+  "win.seduploader": {
+   "urls": [
+    "https://securelist.com/a-slice-of-2017-sofacy-activity/83930/"
+   ],
+   "uuid": "6bd20349-1231-4aaa-ba2a-f4b09d3b344c",
+   "notes": [],
+   "sources": [],
+   "updated": "2024-07-10",
+   "alt_names": [
+    "jhuhugit",
+    "jkeyskw"
+   ],
+   "attribution": [
+    "APT28"
+   ],
+   "common_name": "Seduploader",
+   "description": "",
+   "library_entries": []
+  },
+  "win.xagent": {
+   "urls": [
+    "https://securelist.com/a-slice-of-2017-sofacy-activity/83930/",
+    "http://www.welivesecurity.com/wp-content/uploads/2016/10/eset-sednit-part-2.pdf"
+   ],
+   "uuid": "e8b38fbd-a7ce-4073-a660-44dfabc1b678",
+   "notes": [],
+   "sources": [],
+   "updated": "2026-03-11",
+   "alt_names": [
+    "splm",
+    "chopstick"
+   ],
+   "attribution": [
+    "APT28"
+   ],
+   "common_name": "X-Agent",
+   "description": "",
+   "library_entries": [
+    "research:20260310:sednit:86e9801",
+    "great:20180220:slice:0f910f7"
+   ]
+  }
+ }
+}
