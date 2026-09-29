@@ -250,6 +250,11 @@ def _source_refs(tree: dict):
                     yield f"{rel} {report['id']}", key
     for campaign in tree.get("campaigns.json", []):
         yield f"campaigns.json {campaign['id']}", campaign["source"]
+    # A first_seen date is a published fact too. Its basis is a source key
+    # unless it came from the earliest dated report.
+    for row in tree.get("trends.json", {}).get("new_actors", []):
+        if row["basis"] != "report":
+            yield f"trends new_actors {row['actor']} basis", row["basis"]
 
 
 def integrity_problems(tree: dict) -> list[str]:
@@ -447,6 +452,16 @@ def test_integrity_check_finds_an_evidence_only_source_on_the_site(tree):
     source = next(s for s in broken["sources.json"] if s["name"] == report["sources"][0])
     source["publish"] = "evidence-only"
     assert any("evidence-only" in p for p in integrity_problems(broken))
+
+
+def test_integrity_check_finds_a_first_seen_date_from_an_evidence_only_source(tree):
+    broken = copy.deepcopy(tree)
+    if not broken["trends.json"]["new_actors"]:
+        pytest.skip("data/ has no newly documented actor")
+    source = broken["sources.json"][0]
+    source["publish"] = "evidence-only"
+    broken["trends.json"]["new_actors"][0]["basis"] = source["name"]
+    assert any("new_actors" in p and "evidence-only" in p for p in integrity_problems(broken))
 
 
 # --- The sample covers what the site is built against ----------------------------
