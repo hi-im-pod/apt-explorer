@@ -415,6 +415,10 @@ def integrity_problems(tree: dict) -> list[str]:
             add("resolution.json ambiguity_count differs from the ambiguities listed")
         if stats["merge_count"] != stats["source_record_count"] - stats["actor_count"]:
             add("resolution.json merge_count is not source_record_count minus actor_count")
+        # The methodology page prints this count next to a list of the actors,
+        # so the two must be the same number.
+        if stats["actor_count"] != len(index):
+            add(f"resolution.json actor_count {stats['actor_count']} but actors/index.json lists {len(index)}")
         if paper["resolved"] + paper["typed_non_actor"] > paper["names_total"]:
             add("resolution.json paper_match counts more names than the paper has")
         rate = paper["resolved"] / paper["names_total"] if paper["names_total"] else None
@@ -462,6 +466,13 @@ def test_integrity_check_finds_a_report_in_the_wrong_year(tree):
     broken[rel].remove(report)
     broken["reports/undated.json"].append(report)
     assert any("is in reports/undated.json" in p for p in integrity_problems(broken))
+
+
+def test_integrity_check_finds_an_actor_count_that_disagrees_with_the_index(tree):
+    broken = copy.deepcopy(tree)
+    broken["resolution.json"]["stats"]["actor_count"] += 1
+    broken["resolution.json"]["stats"]["merge_count"] -= 1
+    assert any("actors/index.json lists" in p for p in integrity_problems(broken))
 
 
 def test_integrity_check_finds_an_actor_page_listing_an_unknown_report(tree):
@@ -637,3 +648,17 @@ def test_sample_covers_the_cases_the_site_is_built_against(tree):
     trends = tree["trends.json"]
     assert all(trends[k] for k in ("reporting_activity", "new_actors", "kev_monthly", "kev_actor_links",
                                    "reported_vs_documented", "source_health")), "a full trends.json"
+
+
+def test_published_text_is_utf_8_without_mojibake():
+    # The About page prints the attribution strings verbatim. A file read as
+    # Windows-1252 and saved again turns (R) and (C) into two-character junk,
+    # so this reads bytes and never trusts a console print.
+    for path in sorted(DATA.rglob("*")):
+        if path.suffix not in {".json", ".md"}:
+            continue
+        raw = path.read_bytes()
+        assert not raw.startswith(b"\xef\xbb\xbf"), f"{path.name} starts with a byte order mark"
+        text = raw.decode("utf-8")
+        for junk in ("\u00c2\u00ae", "\u00c2\u00a9", "\u00c3", "\u00e2\u20ac", "\ufffd"):
+            assert junk not in text, f"{path.relative_to(DATA)} contains {junk!r}, which is mojibake"
