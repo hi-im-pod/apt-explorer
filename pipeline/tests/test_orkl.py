@@ -179,6 +179,24 @@ def test_only_http_links_are_published(tmp_path, link_only):
     assert (r.url, r.archive_url) == ("https://example.com/r", None)
 
 
+def test_a_reference_with_spaces_is_kept_as_an_encoded_link(tmp_path, link_only):
+    # On the live library about a third of the entries are vx-underground
+    # papers whose reference holds raw spaces and curly quotes. Dropping them
+    # left 10,207 reports without their original link.
+    entry = json.loads((FIX / "orkl_vxug_entry.json").read_text(encoding="utf-8"))
+    r = OrklConnector().normalize(_store(tmp_path, [entry])).reports[0]
+    assert r.url == ("https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202023/"
+                     "2023-05-17%20-%20Andariel%E2%80%99s%20%E2%80%9CJupiter%E2%80%9D%20malware%20and%20the"
+                     "%20case%20of%20the%20curious%20C2.pdf")
+    assert not any(c.isspace() for c in r.url)
+
+
+def test_encoding_a_link_leaves_a_clean_one_and_existing_escapes_alone():
+    assert orkl._http_url("https://example.com/a%20b?q=1&r=2#frag") == "https://example.com/a%20b?q=1&r=2#frag"
+    assert orkl._http_url("  https://example.com/a b  ") == "https://example.com/a%20b"
+    assert orkl._http_url("ftp://example.com/a b") is None
+
+
 def test_malformed_snapshot_lines_are_dropped_and_counted(tmp_path, link_only, caplog):
     s = SnapshotStore(tmp_path / "cache")
     good = json.dumps(OrklConnector._derive(TALOS))

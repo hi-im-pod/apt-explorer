@@ -16,6 +16,7 @@ actor on the site.
 import json
 import logging
 import re
+from urllib.parse import quote
 
 from aptx.core import http
 from aptx.core.dates import resolve_report_date
@@ -42,6 +43,8 @@ TAGS_SHOWN = frozenset({"full", "derived-only"})
 
 _SHA1 = re.compile(r"[0-9a-f]{40}")
 _HTTP_URL = re.compile(r"https?://\S+")
+# Every ASCII character a URL may carry unescaped, plus "%" for existing escapes.
+_URL_SAFE = "%:/?#[]@!$&'()*+,;=~-._"
 
 
 def _text(value) -> str | None:
@@ -57,8 +60,15 @@ def _strings(values) -> list[str]:
 
 def _http_url(value) -> str | None:
     # The contract accepts only http and https links, and a published link
-    # must open in a browser.
+    # must open in a browser. ORKL's vx-underground references, about a third
+    # of the library, carry raw spaces and curly quotes in the path. Browsers
+    # send those percent-encoded, so encoding them here keeps the link working
+    # and inside the contract's no-whitespace pattern. "%" is left alone so
+    # an escape that is already there is not encoded twice.
     text = value.strip() if isinstance(value, str) else ""
+    if not re.match(r"https?://", text):
+        return None
+    text = quote(text, safe=_URL_SAFE)
     return text if _HTTP_URL.fullmatch(text) else None
 
 
