@@ -360,7 +360,7 @@ export interface Ambiguity {
 }
 
 /**
- * A report actor tag that resolved to no actor.
+ * A report actor name, from a publishable source, that resolved to no actor.
  * @schema resolution.schema.json#/$defs/unresolvedName
  */
 export interface UnresolvedName {

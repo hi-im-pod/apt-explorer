@@ -68,7 +68,7 @@
           "uniqueItems": true
         },
         "actor_names_unresolved": {
-          "description": "Actor tags that did not resolve to exactly one actor, verbatim.",
+          "description": "Actor names a publishable source gave for the report that did not resolve to exactly one actor, verbatim. Link-only sources add none, and ORKL's own actor tags are never listed here.",
           "type": "array",
           "items": {
             "$ref": "#/$defs/label"

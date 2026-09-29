@@ -25,7 +25,7 @@
       }
     },
     "unresolved_names": {
-      "description": "Report actor tags that resolved to no actor, most frequent first, at most 200.",
+      "description": "Report actor names, from publishable sources, that resolved to no actor, most frequent first, at most 200.",
       "type": "array",
       "items": {
         "$ref": "#/$defs/unresolvedName"
