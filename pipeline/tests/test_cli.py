@@ -324,6 +324,17 @@ def test_the_sample_takes_unchecked_urls_first_then_the_oldest_checked(tmp_path)
 
 
 @respx.mock
+def test_a_first_sample_is_spread_across_hosts_rather_than_alphabetical(tmp_path):
+    # Alphabetical order would spend the whole sample on the first host and queue behind its
+    # per-host pause, so the tie-break on unchecked URLs has to be independent of the host.
+    s = SnapshotStore(tmp_path)
+    urls = [f"https://{host}.test/{n}" for host in "abcd" for n in range(20)]
+    respx.route(method="HEAD").mock(return_value=httpx.Response(200))
+    got = cli.check_links(s, urls, sample=20, now=NOW)
+    assert len({u.split("/")[2] for u in got}) == 4
+
+
+@respx.mock
 def test_the_links_command_reads_urls_from_the_published_reports(tmp_path, store, capsys):
     data = tmp_path / "data"
     write_reports(data, ["https://a.test/x", "https://a.test/x", "https://a.test/y"])

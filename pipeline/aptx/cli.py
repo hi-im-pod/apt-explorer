@@ -11,6 +11,7 @@ see the data is old. The build fails only when the assembled output breaks the
 data contract, and then nothing is written, so the previous data/ stays.
 """
 import argparse
+import hashlib
 import json
 import logging
 import os
@@ -210,7 +211,10 @@ def check_links(store: SnapshotStore, urls: Iterable[str], sample: int = 300, *,
     def last_checked(u: str) -> str:
         r = results.get(u)
         return str(r.get("checked_at") or "") if isinstance(r, dict) else ""
-    todo = sorted(set(urls), key=lambda u: (last_checked(u), u))[:max(sample, 0)]
+    # Ties, which are every URL on the first run, are broken by a hash of the URL. Sorting them
+    # alphabetically would spend the whole sample on a few hosts and wait out the per-host pause
+    # between every request, while a hash spreads the sample across hosts and stays repeatable.
+    todo = sorted(set(urls), key=lambda u: (last_checked(u), hashlib.sha1(u.encode("utf-8")).hexdigest()))[:max(sample, 0)]
 
     for i, url in enumerate(todo, 1):
         try:
@@ -250,6 +254,8 @@ def main(argv: Sequence[str] | None = None, *, store: SnapshotStore | None = Non
     args = parser.parse_args(argv)
     if not logging.getLogger().handlers:
         logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s", stream=sys.stderr)
+        # httpx logs one line per request, which drowns the build's own messages.
+        logging.getLogger("httpx").setLevel(logging.WARNING)
     store = store or SnapshotStore()
 
     if args.command == "links":
