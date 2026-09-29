@@ -121,6 +121,21 @@ def test_a_shared_primary_name_outranks_a_shared_alias():
     assert {"alias": "blackfly", "candidates": ["G0044", "G0096"]} in r.ambiguities
 
 
+def test_a_shared_primary_name_outranks_a_name_on_one_side_only():
+    # An ETDA card named for one group that lists another group's name as an
+    # alias. Alphabetically "apt41" would be applied first and pull the card
+    # into APT41; the shared primary name must win instead.
+    r = resolve([A("attack", "G0096", "APT41"), A("attack", "G0044", "Winnti Group"),
+                 A("etda", "e1", "Winnti Group", "APT41")], [])
+    winnti = next(a for a in r.actors if a.id == "G0044")
+    assert ("etda", "e1") in {(m.source, m.source_id) for m in winnti.members}
+    assert r.lookup("Winnti Group") == "G0044"
+    assert {"alias": "apt41", "candidates": ["G0044", "G0096"]} in r.ambiguities
+    # Plan step 7: an ambiguous key resolves to nothing, even when it is an
+    # ATT&CK group's own name. Flagged for wave 2, which measures its cost.
+    assert r.lookup("APT41") is None
+
+
 def test_records_of_one_attack_group_always_share_one_actor():
     r = resolve([A("attack", "G0007", "APT28"), A("attack", "G0007", "Fancy Bear")], [])
     assert [a.id for a in r.actors] == ["G0007"]
@@ -188,6 +203,19 @@ def test_colliding_slugs_get_distinct_ids_in_a_fixed_order():
         assert r.lookup("Müller Cat") == "muller-cat"
         assert r.lookup("Muller Cat 2") == "muller-cat-2"
         assert r.lookup("Muller Cat") == "muller-cat-3"
+
+
+def test_long_slugs_that_collide_after_the_cut_are_numbered_within_the_limit():
+    long_one, long_two = "a" * 70 + " one", "a" * 70 + " two"
+    # The cut falls just after a word, which would leave a trailing hyphen.
+    hyphen_at_cut = "b" * 63 + " c"
+    r = resolve([A("misp", "m1", long_one), A("misp", "m2", long_two), A("misp", "m3", hyphen_at_cut)], [])
+    assert r.lookup(long_one) == "a" * 64
+    assert r.lookup(long_two) == "a" * 62 + "-2"
+    assert r.lookup(hyphen_at_cut) == "b" * 63
+    for actor in r.actors:
+        assert len(actor.id) <= 64
+        assert contract_errors("actorId", actor.id) == [], actor.id
 
 
 def test_an_attack_record_without_a_group_id_gets_a_slug():
