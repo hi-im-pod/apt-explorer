@@ -9,3 +9,4 @@ site/test-results/
 site/playwright-report/
 # A build-time copy of data/, made by site/scripts/copy-data.mjs.
 site/static/data/
+.claude/
