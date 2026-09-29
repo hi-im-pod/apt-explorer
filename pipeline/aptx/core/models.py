@@ -98,6 +98,11 @@ class SoftwareRecord(_Record):
     # The resolver uses this to type a name as malware or a tool, so it does
     # not treat that name as an actor.
     kind: Literal["malware", "tool"]
+    # The actor names a source attributes this software to, verbatim. Malpedia
+    # has 73 such names that match no actor's display name exactly, and the
+    # resolver can use them to link the software to an actor. This is an
+    # internal field; no published schema carries it.
+    attribution: list[str] = []
     retrieved_at: str
 
 

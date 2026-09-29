@@ -34,3 +34,11 @@ def test_claim_is_generic_over_its_value():
     assert Claim[str](value="Fancy Bear", prov=prov).value == "Fancy Bear"
     with pytest.raises(ValidationError):
         Claim[int](value="not a number", prov=prov)
+
+
+def test_software_attribution_defaults_to_empty_and_is_not_shared():
+    a = SoftwareRecord(source="malpedia", source_id="win.x", name="X", kind="malware", retrieved_at="x")
+    assert a.attribution == []
+    a.attribution.append("APT 29")
+    assert SoftwareRecord(source="malpedia", source_id="win.y", name="Y", kind="malware",
+                          retrieved_at="x").attribution == []

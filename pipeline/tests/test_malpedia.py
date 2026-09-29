@@ -76,6 +76,25 @@ def test_families_become_malware_software_records(store):
     assert software["win.7ev3n"].kind == "malware"
 
 
+def test_software_carries_the_family_attribution_names_verbatim(store):
+    # "APT 29" is not any actor's display name, so the family is not in an
+    # actor's malware list. The name is kept on the software record so the
+    # resolver can still link the two.
+    software = _by_id(MalpediaConnector().normalize(store).software)
+    assert software["win.xagent"].attribution == ["APT28"]
+    assert software["elf.wellmess"].attribution == ["APT 29"]
+    assert software["win.7ev3n"].attribution == []
+
+
+def test_attribution_names_are_trimmed_and_deduplicated(tmp_path):
+    s = SnapshotStore(tmp_path)
+    _save(s, "actors.json", {"apt28": {"value": "APT28", "meta": {}}})
+    _save(s, "families.json", {"win.a": {"common_name": "A", "alt_names": [],
+                                         "attribution": [" APT28 ", "APT28", "Sofacy\n"]}})
+    [sw] = MalpediaConnector().normalize(s).software
+    assert sw.attribution == ["APT28", "Sofacy"]
+
+
 def test_family_without_a_common_name_is_named_from_its_id(tmp_path):
     # Six live families, such as win.idat_loader, have an empty common_name.
     # They are still malware the resolver must recognise, so they are kept.

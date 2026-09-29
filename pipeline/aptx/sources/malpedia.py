@@ -391,6 +391,7 @@ class MalpediaConnector(Connector):
                 aliases=[a for a in _labels(family.get("alt_names")) if a != name],
                 # Malpedia inventories malware; it has no separate tool category.
                 kind="malware",
+                attribution=_labels(family.get("attribution")),
                 retrieved_at=retrieved_at,
             ))
         if dropped:
