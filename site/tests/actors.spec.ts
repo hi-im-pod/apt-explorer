@@ -258,6 +258,20 @@ test('a conflict names every source and value', async ({ page }) => {
 	await expect(note).toContainText('United Kingdom');
 });
 
+test('running text names MITRE ATT&CK with the ® at its first mention', async ({ page }) => {
+	// Badges and headings are labels and carry no sign; the first sentence
+	// that names ATT&CK does, as MITRE's terms ask.
+	for (const path of [ACTORS, profile(busiest.id), profile(empty.id)]) {
+		await page.goto(path);
+		const first = await page.evaluate(
+			() => [...document.querySelectorAll('main p')]
+					.map((p) => (p.textContent ?? '').replace(/\s+/g, ' '))
+					.find((t) => t.includes('ATT&CK')) ?? ''
+		);
+		expect(first, path).toContain('MITRE ATT&CK®');
+	}
+});
+
 test('claimed targets carry their actor-level label', async ({ page }) => {
 	await page.goto(profile(busiest.id));
 	await expect(page.getByRole('heading', { name: 'Claimed targets (actor-level, per source)' })).toBeVisible();

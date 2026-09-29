@@ -155,7 +155,7 @@
 	{#if reports.length === 0}
 		<p class="no-reports">
 			No published report is linked to this actor yet. A report is linked when Malpedia, MITRE
-			ATT&CK or the CCS '25 data connects it to the actor.
+			ATT&CK® or the CCS '25 data connects it to the actor.
 		</p>
 	{/if}
 </header>
@@ -257,7 +257,7 @@
 			{#if actor.techniques_reported.length > 0}
 				<div>
 					<h3>Named in reports since 2024</h3>
-					<ul class="ids counted">
+					<ul class="ids">
 						{#each actor.techniques_reported as t}
 							<li>
 								<a class="data" href={techniqueUrl(t.id)}>{t.id}</a>
@@ -272,9 +272,9 @@
 		{#if actor.techniques_reported.length > 0}
 			<p class="section-note">
 				Report counts come from technique IDs found in the text of the actor's reports dated 2024 or
-				later.{#if documented.size > 0}
-					“Reports only” marks a technique that recent reports name but ATT&CK does not list for this
-					actor.{/if}
+				later.
+				{#if documented.size > 0}“Reports only” marks a technique that recent reports name but MITRE
+					ATT&CK® does not list for this actor.{/if}
 			</p>
 		{/if}
 	</section>
@@ -400,10 +400,18 @@
 
 	.aliases {
 		display: grid;
-		gap: 0.375rem;
+		gap: 0.375rem 2rem;
 		margin: 0;
 		padding: 0;
 		list-style: none;
+	}
+
+	/* Some actors have forty aliases; two columns halve the scroll on a
+	   wide screen, and a long alias still wraps inside its column. */
+	@media (min-width: 52rem) {
+		.aliases {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
 	}
 
 	.aliases li {
@@ -495,10 +503,6 @@
 		min-width: 0;
 	}
 
-	.ids.counted {
-		display: grid;
-		gap: 0.25rem;
-	}
 
 	.n {
 		color: var(--text-muted);
