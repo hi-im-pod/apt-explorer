@@ -3,7 +3,7 @@ import { test, expect, type Locator, type Page } from '@playwright/test';
 import type { ActorsIndex, Build, Campaigns, Report, Vulns } from '../src/lib/data/types';
 
 // Expectations come from the same data/ the site is built from, so a change
-// to the sample changes what these tests expect rather than breaking them.
+// to the data changes what these tests expect rather than breaking them.
 const read = <T>(path: string): T =>
 	JSON.parse(readFileSync(new URL(`../../data/${path}`, import.meta.url), 'utf8')) as T;
 const build = read<Build>('build.json');
@@ -27,12 +27,52 @@ const themes = ['light', 'dark', 'apt'] as const;
 const dated = reports.filter((r) => r.published != null);
 const undated = reports.filter((r) => r.published == null);
 
-// Sample rows with a known shape, named once so each test says what it needs.
-const ORKL_DEAD = '83086f8202f48adfac618fb3cab581faf271d0f0'; // ORKL, url_ok false, has an archive link
-const ORKL_LIVE = '28d4a0de3aaa5bc79df8b62aa641beefae28b106'; // ORKL, url_ok true, has an archive link
-const ORKL_NO_URL = 'b7e85ac766fe089afaf42198525b8acec729c467'; // ORKL, undated, no original URL
-const PAPER_DEAD = 'paper:2023_mass_exploitation_of_a_managed_file_transfer_server.pdf'; // no archive
-const PAPER_LIVE = 'paper:2023_dns_tunnelling_backdoor_in_middle_east_government_networks.pdf';
+// Rows with a known shape, named once so each test says what it needs. They are found in
+// the data rather than written down, so a rebuild with different reports does not break
+// them. A title made of plain words is chosen so the row can be reached by searching for it,
+// because the table only renders a window of its rows.
+const titleCount = new Map<string, number>();
+for (const r of reports) titleCount.set(r.title, (titleCount.get(r.title) ?? 0) + 1);
+const findable = (r: Report) => titleCount.get(r.title) === 1 && /^[A-Za-z0-9 ,.:'()-]{12,80}$/.test(r.title);
+const orklOnly = (r: Report) => r.sources.length === 1 && r.sources[0] === 'orkl';
+const paperOnly = (r: Report) => r.sources.length === 1 && r.sources[0] === 'paper';
+const firstReport = (what: string, match: (r: Report) => boolean) => {
+	const r = dated.find(match);
+	if (!r) throw new Error(`the data has no ${what}`);
+	return r;
+};
+const ORKL_DEAD = firstReport(
+	'ORKL report with a dead original and an archive copy',
+	(r) => orklOnly(r) && findable(r) && r.url_ok === false && !!r.url && !!r.archive_url
+).id;
+const ORKL_LIVE = firstReport(
+	'ORKL report with a live original and an archive copy',
+	(r) => orklOnly(r) && findable(r) && r.url_ok === true && !!r.url && !!r.archive_url
+).id;
+const ORKL_ANY = firstReport('ORKL report with an archive copy', (r) => orklOnly(r) && !!r.url && !!r.archive_url).id;
+// A paper-only report with a publisher and actors, and one with a CVE that CISA lists as exploited.
+const PAPER_LIVE = firstReport(
+	'paper report with a publisher and actors',
+	(r) => paperOnly(r) && !!r.organisation && r.actors.length > 0 && !!r.url
+).id;
+const PAPER_KEV = firstReport(
+	'paper report with a KEV CVE',
+	(r) => paperOnly(r) && !!r.url && r.cves.some((c) => kevCves.has(c))
+).id;
+
+// The live data has no report without an original link, and none whose original is dead with
+// no archive copy either, so those two states are made by editing one real row on its way to
+// the page. The panel is the thing under test, and it reads only what the row says.
+const NO_URL = { url: null, url_ok: null } as const;
+const DEAD_NO_ARCHIVE = { url_ok: false, archive_url: null } as const;
+async function editReport(page: Page, id: string, patch: Partial<Report>) {
+	await page.route('**/data/reports/*.json', async (route) => {
+		const shard = (await (await route.fetch()).json()) as Report[];
+		await route.fulfill({ json: shard.map((r) => (r.id === id ? { ...r, ...patch } : r)) });
+	});
+}
+/** The address that finds a row by its own title. */
+const byTitle = (id: string) => `?q=${encodeURIComponent(reportById(id).title)}`;
 
 async function useTheme(page: Page, t: string) {
 	await page.addInitScript((th) => {
@@ -45,7 +85,9 @@ async function useTheme(page: Page, t: string) {
 /** Open a URL and wait until the rows have loaded in the browser. */
 async function open(page: Page, query = '') {
 	await page.goto(`${EXPLORE}${query}`);
-	await expect(page.getByRole('status')).toContainText(/showing/i);
+	// The page loads every report shard, about 19 MB for the live data, and several workers do
+	// that at once, so the default five seconds is too short.
+	await expect(page.getByRole('status')).toContainText(/showing/i, { timeout: 20_000 });
 }
 
 const table = (page: Page) => page.getByRole('table', { name: /reports and campaigns/i });
@@ -92,8 +134,8 @@ test('an actor and start date in the URL show only that actor from that date', a
 });
 
 test('clicking a row sets ?report= and opens the panel with the original and archive links', async ({ page }) => {
-	await open(page);
 	const r = reportById(ORKL_DEAD);
+	await open(page, byTitle(ORKL_DEAD));
 	await rowFor(page, r.title).getByRole('link').click();
 	await expect(page).toHaveURL(new RegExp(`[?&]report=${ORKL_DEAD}`));
 	const dialog = panel(page);
@@ -190,16 +232,23 @@ test('at 1280px the row cells sit side by side', async ({ page }) => {
 });
 
 test('undated reports appear only when the Undated switch is on', async ({ page }) => {
+	// The live data has no undated report, because every report gets at least an ingest date,
+	// so one is added to the undated shard. The switch and the row are what is under test.
+	const extra: Report[] = undated.length
+		? []
+		: [{ ...dated[0], id: 'synthetic-undated', title: 'A report with no date at all', published: null, date_basis: 'unknown' }];
+	if (extra.length) await page.route('**/data/reports/undated.json', (route) => route.fulfill({ json: extra }));
+	const shownUndated = [...undated, ...extra];
 	await open(page);
 	const before = await shownCount(page);
 	expect(before).toBe(dated.length + campaigns.length);
 	await page.getByLabel(/include undated reports/i).check();
 	await expect(page).toHaveURL(/[?&]undated=1/);
-	await expect.poll(() => shownCount(page)).toBe(before + undated.length);
+	await expect.poll(() => shownCount(page)).toBe(before + shownUndated.length);
 	// Undated rows sort last, so they are rendered once scrolled to.
 	await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
-	await expect(rowFor(page, undated[0].title)).toBeVisible();
-	await expect(rowFor(page, undated[0].title).getByRole('cell').first()).toHaveText(/undated/i);
+	await expect(rowFor(page, shownUndated[0].title)).toBeVisible();
+	await expect(rowFor(page, shownUndated[0].title).getByRole('cell').first()).toHaveText(/undated/i);
 
 	await page.getByLabel(/include undated reports/i).uncheck();
 	await expect(page).not.toHaveURL(/undated=/);
@@ -236,25 +285,26 @@ test('an unreachable original puts the archive link first and says why', async (
 });
 
 test('an unreachable original with no archive copy is still linked, with the warning', async ({ page }) => {
-	const r = reportById(PAPER_DEAD);
-	await open(page, `?report=${encodeURIComponent(PAPER_DEAD)}`);
+	const r = { ...reportById(PAPER_KEV), ...DEAD_NO_ARCHIVE };
+	await editReport(page, PAPER_KEV, DEAD_NO_ARCHIVE);
+	await open(page, `?report=${encodeURIComponent(PAPER_KEV)}`);
 	const dialog = panel(page);
 	const links = dialog.getByRole('list', { name: /links/i }).getByRole('link');
 	await expect(links).toHaveCount(1);
 	await expect(links.first()).toHaveAttribute('href', r.url!);
 	await expect(dialog).toContainText(/original .*unreachable/i);
 	// Its CVE is in KEV, and the panel says so.
-	const cve = r.cves[0];
-	expect(kevCves.has(cve)).toBe(true);
+	const cve = r.cves.find((c) => kevCves.has(c))!;
 	await expect(dialog.getByRole('listitem').filter({ hasText: cve })).toContainText(/KEV/);
 });
 
 test('a report with no original URL offers the archive copy', async ({ page }) => {
-	await open(page, `?report=${ORKL_NO_URL}`);
+	await editReport(page, ORKL_ANY, NO_URL);
+	await open(page, `?report=${ORKL_ANY}`);
 	const dialog = panel(page);
 	const links = dialog.getByRole('list', { name: /links/i }).getByRole('link');
 	await expect(links).toHaveCount(1);
-	await expect(links.first()).toHaveAttribute('href', reportById(ORKL_NO_URL).archive_url!);
+	await expect(links.first()).toHaveAttribute('href', reportById(ORKL_ANY).archive_url!);
 	await expect(dialog).toContainText(/no original link/i);
 });
 
@@ -293,10 +343,10 @@ test("ORKL's actor tags never appear, in the table or the panel", async ({ page 
 });
 
 test('a campaign opens through ?campaign= with its span, actors and ATT&CK link', async ({ page }) => {
-	const c = campaigns.find((x) => x.id === 'C0022')!;
-	await open(page);
+	const c = campaigns.find((x) => x.actors.length > 0 && x.techniques.length > 0 && /^[A-Za-z0-9 ]+$/.test(x.name))!;
+	await open(page, `?q=${encodeURIComponent(c.name)}`);
 	await rowFor(page, c.name).getByRole('link').click();
-	await expect(page).toHaveURL(/[?&]campaign=C0022/);
+	await expect(page).toHaveURL(new RegExp(`[?&]campaign=${c.id}`));
 	await expect(page).not.toHaveURL(/report=/);
 	const dialog = panel(page);
 	await expect(dialog.getByRole('heading', { level: 2 })).toHaveText(c.name);
@@ -307,7 +357,7 @@ test('a campaign opens through ?campaign= with its span, actors and ATT&CK link'
 	);
 	await expect(dialog.getByRole('link', { name: /att&ck/i })).toHaveAttribute(
 		'href',
-		'https://attack.mitre.org/campaigns/C0022/'
+		`https://attack.mitre.org/campaigns/${c.id}/`
 	);
 });
 
@@ -317,8 +367,8 @@ test('an unknown ?report= says it is not in the data', async ({ page }) => {
 });
 
 test('the panel takes focus, closes on Escape, clears ?report= and returns focus to the row', async ({ page }) => {
-	await open(page);
 	const r = reportById(ORKL_DEAD);
+	await open(page, byTitle(ORKL_DEAD));
 	const link = rowFor(page, r.title).getByRole('link');
 	await link.click();
 	const dialog = panel(page);
@@ -353,10 +403,14 @@ test('text search matches actor aliases and is written to the URL', async ({ pag
 	await open(page);
 	await page.getByLabel('Search', { exact: true }).fill('fancy bear');
 	await expect(page).toHaveURL(/[?&]q=fancy(\+|%20)bear/);
+	// Every report of the actor whose alias this is must match, and so may a report whose
+	// title says "Fancy Bear" for some other actor, so the count is a floor, not an equality.
 	const expected = dated.filter((r) => r.actors.includes('G0007')).length;
-	await expect.poll(() => shownCount(page)).toBe(expected);
+	await expect.poll(() => shownCount(page)).toBeGreaterThanOrEqual(expected);
+	// Narrowed to the actor, the rows shown are the ones its alias found.
+	await open(page, '?q=fancy+bear&actor=G0007');
 	const rows = bodyRows(page);
-	for (let i = 0; i < Math.min(expected, 5); i++) await expect(rows.nth(i)).toContainText('APT28');
+	for (let i = 0; i < 5; i++) await expect(rows.nth(i)).toContainText('APT28');
 });
 
 test('source, publisher, CVE and technique filters narrow the rows', async ({ page }) => {

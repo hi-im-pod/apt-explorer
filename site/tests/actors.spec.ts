@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { test, expect, type Page } from '@playwright/test';
 import type { Actor, ActorsIndex, Report } from '../src/lib/data/types';
+import { countryName } from '../src/routes/actors/actors';
 import { openSynthIndex, synthActor, synthReports, SYNTH_ACTORS, SYNTH_REPORTS } from './actors-synth';
 
 // Expectations come from the same data/ the site is built from, so the tests
@@ -20,11 +21,16 @@ const themes = ['light', 'dark', 'apt'] as const;
 const ACTORS = '/apt-explorer/actors/';
 const profile = (id: string) => `${ACTORS}${id}/`;
 
-// The sample's extreme cases, found from the data so the tests follow it.
+// How many reports a profile lists before "Show all", as in the profile page.
+const FIRST_REPORTS = 20;
+
+// The data's extreme cases, found from the data so the tests follow it.
 const busiest = [...index].sort((a, b) => b.report_count - a.report_count)[0];
 const empty = index.find((a) => a.report_count === 0)!;
-const longAlias = index.find((a) => a.aliases.some((x) => x.length > 60 && !x.includes(' ')))!;
-const conflicted = index.find((a) => actorFile(a.id).conflicts.length > 0)!;
+// The live data has no alias this long, and the synthesized busy profile below carries one in
+// every theme, so the real-data check only runs when a source does publish such an alias.
+const longAlias = index.find((a) => a.aliases.some((x) => x.length > 60 && !x.includes(' ')));
+const conflicted = index.find((a) => actorFile(a.id).conflicts.some((c) => c.field === 'origin'))!;
 
 async function useTheme(page: Page, t: string) {
 	await page.addInitScript((th) => {
@@ -119,7 +125,7 @@ test('search narrows the list by name, alias or ID, and says which alias matched
 	await search.fill('fancy-bear');
 	await expect(rows).toHaveCount(1);
 	await expect(rows.first()).toContainText('APT28');
-	await expect(page.getByRole('status')).toContainText(`1 of ${index.length}`);
+	await expect(page.getByRole('status')).toContainText(`1 of ${index.length.toLocaleString('en-US')}`);
 	await search.fill('g0032');
 	await expect(rows).toHaveCount(1);
 	await expect(rows.first()).toContainText('Lazarus Group');
@@ -181,8 +187,11 @@ test(`a direct load of the busiest actor shows aliases with badges, a timeline a
 		expect(box?.height ?? 0).toBeGreaterThan(0);
 	}
 
+	// The first twenty reports are listed and the rest wait behind "Show all", so every row
+	// exists in the page but only the first twenty are visible to begin with.
 	const reports = page.getByRole('list', { name: 'Reports', exact: true }).getByRole('listitem');
-	await expect(reports).toHaveCount(a.reports.length);
+	await expect(page.locator('#reports li.report')).toHaveCount(a.reports.length);
+	await expect(reports).toHaveCount(Math.min(a.reports.length, FIRST_REPORTS));
 	const newest = allReports.find((r) => r.id === a.reports[0])!;
 	await expect(reports.first()).toContainText(newest.title);
 	expect(await target(page, reports.first().getByRole('link', { name: newest.title, exact: true }))).toBe(
@@ -193,15 +202,20 @@ test(`a direct load of the busiest actor shows aliases with badges, a timeline a
 test('report links open the original first, and the archive when the original is dead', async ({ page }) => {
 	const a = actorFile(busiest.id);
 	await page.goto(profile(busiest.id));
-	const reports = page.getByRole('list', { name: 'Reports', exact: true }).getByRole('listitem');
-	for (const [i, id] of a.reports.entries()) {
-		const r = allReports.find((x) => x.id === id)!;
-		const title = reports.nth(i).getByRole('link', { name: r.title, exact: true });
+	const items = page.locator('#reports li.report');
+	// The first twenty, and every report whose original is dead, wherever it sits in the list.
+	const byId = new Map(allReports.map((r) => [r.id, r]));
+	const check = a.reports
+		.map((id, i) => ({ id, i, r: byId.get(id)! }))
+		.filter(({ i, r }) => i < FIRST_REPORTS || r.url_ok === false);
+	expect(check.some(({ r }) => r.url_ok === false && r.archive_url), 'a dead original with an archive copy').toBe(true);
+	for (const { id, i, r } of check) {
+		const title = items.nth(i).locator('a', { hasText: r.title }).first();
 		const href = await title.evaluate((el) => (el as HTMLAnchorElement).href);
 		const expected = r.url && r.url_ok === false && r.archive_url ? r.archive_url : (r.url ?? r.archive_url);
 		expect(href, r.title).toBe(expected);
 		// Every report opens in Explore's detail panel too.
-		const details = reports.nth(i).getByRole('link', { name: /details/i });
+		const details = items.nth(i).locator('a', { hasText: /details/i });
 		expect(await target(page, details)).toBe(`/apt-explorer/explore/?report=${encodeURIComponent(id)}`);
 	}
 });
@@ -216,8 +230,12 @@ test('an actor with no reports has no reports or timeline section', async ({ pag
 	await expectNoEmptySections(page);
 });
 
-test('every section on every sample profile has content', async ({ page }) => {
-	for (const a of index) {
+test('every section on a spread of profiles has content', async ({ page }) => {
+	// Loading all 1,000 or so profiles one at a time would outlast the test timeout, so every
+	// tenth one is opened, along with the three extremes the other tests use.
+	test.setTimeout(120_000);
+	const picked = new Set([busiest, empty, conflicted, ...index.filter((_, i) => i % 10 === 0)]);
+	for (const a of picked) {
 		await page.goto(profile(a.id));
 		await expect(page.getByRole('heading', { level: 1 })).toHaveText(a.name);
 		await expectNoEmptySections(page);
@@ -225,17 +243,18 @@ test('every section on every sample profile has content', async ({ page }) => {
 });
 
 for (const t of themes) {
-	test(`at 375px in ${t}, a profile with a ${Math.max(...longAlias.aliases.map((x) => x.length))}-character alias fits the screen`, async ({
-		page
-	}) => {
-		await page.setViewportSize({ width: 375, height: 800 });
-		await useTheme(page, t);
-		await page.goto(profile(longAlias.id));
-		await expect(page.locator('html')).toHaveAttribute('data-theme', t);
-		const alias = longAlias.aliases.find((x) => x.length > 60)!;
-		await expect(page.getByText(alias, { exact: true }).first()).toBeVisible();
-		await expectFitsWidth(page);
-	});
+	if (longAlias)
+		test(`at 375px in ${t}, a profile with a ${Math.max(...longAlias.aliases.map((x) => x.length))}-character alias fits the screen`, async ({
+			page
+		}) => {
+			await page.setViewportSize({ width: 375, height: 800 });
+			await useTheme(page, t);
+			await page.goto(profile(longAlias.id));
+			await expect(page.locator('html')).toHaveAttribute('data-theme', t);
+			const alias = longAlias.aliases.find((x) => x.length > 60)!;
+			await expect(page.getByText(alias, { exact: true }).first()).toBeVisible();
+			await expectFitsWidth(page);
+		});
 
 	test(`at 375px in ${t}, the sample index fits the screen`, async ({ page }) => {
 		await page.setViewportSize({ width: 375, height: 800 });
@@ -246,16 +265,15 @@ for (const t of themes) {
 }
 
 test('a conflict names every source and value', async ({ page }) => {
-	const c = actorFile(conflicted.id).conflicts[0];
+	const c = actorFile(conflicted.id).conflicts.find((x) => x.field === 'origin')!;
 	await page.goto(profile(conflicted.id));
 	const note = page.getByRole('note', { name: new RegExp(c.field) });
 	await expect(note).toBeVisible();
 	for (const v of c.values) {
-		await expect(note.getByRole('link', { name: new RegExp(v.source === 'misp' ? 'MISP' : 'Malpedia') })).toBeVisible();
+		await expect(note.getByRole('link', { name: new RegExp({ misp: 'MISP', etda: 'ETDA', malpedia: 'Malpedia' }[v.source] ?? v.source) })).toBeVisible();
 	}
 	// Origin codes are shown as country names.
-	await expect(note).toContainText('United States');
-	await expect(note).toContainText('United Kingdom');
+	for (const v of c.values) await expect(note).toContainText(countryName(v.value));
 });
 
 test('running text names MITRE ATT&CK with the ® at its first mention', async ({ page }) => {
@@ -283,7 +301,7 @@ test('with scripts blocked, the prerendered profile still reads', async ({ page 
 	await page.goto(profile(busiest.id));
 	await expect(page.getByRole('heading', { level: 1 })).toHaveText(a.name);
 	for (const alias of a.aliases) await expect(page.getByText(alias.value, { exact: true }).first()).toBeVisible();
-	await expect(page.getByRole('list', { name: 'Reports', exact: true }).getByRole('listitem')).toHaveCount(a.reports.length);
+	await expect(page.locator('#reports li.report')).toHaveCount(a.reports.length);
 	const bar = page.getByRole('list', { name: 'Dated reports per quarter' }).locator('.bar').first();
 	expect((await bar.boundingBox())?.height ?? 0).toBeGreaterThan(0);
 });

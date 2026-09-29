@@ -1,4 +1,11 @@
+import { readFileSync } from 'node:fs';
 import { test, expect } from '@playwright/test';
+import { formatDate } from '../src/lib/format';
+import { sourceLabel } from '../src/lib/data/labels';
+import type { Sources } from '../src/lib/data/types';
+
+const readData = <T>(path: string): T =>
+	JSON.parse(readFileSync(new URL(`../../data/${path}`, import.meta.url), 'utf8')) as T;
 const themes = ['light', 'dark', 'apt'] as const;
 
 for (const w of [1280, 375]) for (const t of themes) {
@@ -147,20 +154,38 @@ test('the current page is marked in the header', async ({ page }) => {
 test('the footer shows the build date and links to sources and licences', async ({ page }) => {
 	await page.goto('/apt-explorer/');
 	const footer = page.getByRole('contentinfo');
-	// build.json in the sample says 2026-09-28T03:21:05Z.
-	await expect(footer.locator('time')).toHaveAttribute('datetime', '2026-09-28T03:21:05Z');
-	await expect(footer.locator('time')).toHaveText('28 September 2026');
+	// The date comes from build.json, so a new build does not break the test.
+	const built = readData<{ built_at: string }>('build.json').built_at;
+	await expect(footer.locator('time')).toHaveAttribute('datetime', built);
+	await expect(footer.locator('time')).toHaveText(formatDate(built));
 	await footer.getByRole('link', { name: /sources and licences/i }).click();
 	await expect(page).toHaveURL(/\/apt-explorer\/about\/$/);
 });
 
 test('the home page lists every source with its health', async ({ page }) => {
+	const sources = readData<Sources>('sources.json');
 	await page.goto('/apt-explorer/');
 	const items = page.getByRole('list', { name: /source health/i }).getByRole('listitem');
-	await expect(items).toHaveCount(8);
-	// dfir is the stale source in the sample.
-	await expect(items.filter({ hasText: 'The DFIR Report' })).toContainText(/stale/i);
+	await expect(items).toHaveCount(sources.length);
+	for (const s of sources) {
+		const item = items.filter({ hasText: sourceLabel(s.name).name });
+		await expect(item.first()).toContainText(s.stale ? /stale/i : /current/i);
+	}
 	await expect(page.getByRole('link', { name: /explore/i }).first()).toBeVisible();
+});
+
+test('a stale source is marked stale on the home page', async ({ page }) => {
+	// A build with every source current has nothing stale to show, so the sources file is
+	// edited on its way to the page. The home page loads it again on a client-side visit.
+	await page.route('**/data/sources.json', async (route) => {
+		const sources = (await (await route.fetch()).json()) as Sources;
+		await route.fulfill({ json: sources.map((s) => (s.name === 'dfir' ? { ...s, stale: true } : s)) });
+	});
+	await page.goto('/apt-explorer/about/');
+	await page.getByRole('link', { name: 'APT Explorer', exact: true }).click();
+	const items = page.getByRole('list', { name: /source health/i }).getByRole('listitem');
+	await expect(items.filter({ hasText: 'The DFIR Report' })).toContainText(/stale/i);
+	await expect(items.filter({ hasText: 'Malpedia' })).toContainText(/current/i);
 });
 
 test('the 404.html that Pages serves renders the styled not-found page', async ({ page }) => {
