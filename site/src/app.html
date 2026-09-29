@@ -4,6 +4,17 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="text-scale" content="scale" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.svg" type="image/svg+xml" />
+		<script>
+			// Apply the stored theme before first paint, so a dark or APT page
+			// never flashes light. Only a known theme name is applied: the value
+			// comes from storage any script on the origin can write. Keep the
+			// list in step with THEMES in src/lib/theme.ts (a test checks it).
+			try {
+				var t = localStorage.getItem('theme');
+				if (['light', 'dark', 'apt'].indexOf(t) >= 0) document.documentElement.dataset.theme = t;
+			} catch (e) {}
+		</script>
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
