@@ -1,0 +1,48 @@
+{
+  "authors": ["Fixture Author"],
+  "category": "actor",
+  "description": "A trimmed copy of the MISP galaxy threat-actor cluster's shape, with made-up text.",
+  "name": "Threat Actor",
+  "source": "MISP Project",
+  "type": "threat-actor",
+  "uuid": "7cdff317-a673-4474-84ec-4f1754947823",
+  "values": [
+    {
+      "description": "Fixture description for the first actor.",
+      "meta": {
+        "attribution-confidence": "50",
+        "cfr-suspected-state-sponsor": "Russian Federation",
+        "cfr-suspected-victims": ["Georgia", "United States", " Georgia "],
+        "cfr-target-category": ["Government", "Military"],
+        "cfr-type-of-incident": "Espionage",
+        "country": "RU",
+        "motive": "Espionage",
+        "refs": ["https://example.org/reports/misp-apt28"],
+        "synonyms": ["Fancy Bear", "APT28", " Sofacy ", "Sofacy", "G0007"],
+        "targeted-sector": ["Defense", "Government"]
+      },
+      "related": [],
+      "uuid": "5b4ee3ea-eee3-4c8e-8323-85ae32658754",
+      "value": "APT28"
+    },
+    {
+      "value": "Bare Actor"
+    },
+    {
+      "meta": {
+        "cfr-suspected-state-sponsor": "Unknown",
+        "cfr-target-category": "Civil society",
+        "country": ["IR"],
+        "motive": "Hacktivists-Nationalists",
+        "synonyms": "Scalar Synonym"
+      },
+      "uuid": "00000000-0000-4000-8000-00000000c0de",
+      "value": "Scalar Actor"
+    },
+    {
+      "description": "A record with no name, which must be dropped and counted.",
+      "meta": {"country": "CN"},
+      "uuid": "00000000-0000-4000-8000-000000000bad"
+    }
+  ]
+}

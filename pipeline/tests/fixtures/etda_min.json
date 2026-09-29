@@ -1,0 +1,61 @@
+{
+  "authors": ["ETDA"],
+  "category": "actor",
+  "name": "Threat Group Cards - Threat Actors",
+  "type": "threat-actor",
+  "source": "Threat Group Cards: A Threat Actor Encyclopedia",
+  "description": "SENTINEL-TOP-DESCRIPTION: a made-up stand-in for the file's own description.",
+  "tlp": "white",
+  "license": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License",
+  "uuid": "78e854d3-173f-4113-beed-a7b7400131ff",
+  "last-db-change": "2025-08-16",
+  "values": [
+    {
+      "actor": "APT 28, Fancy Bear, Sofacy",
+      "names": [
+        {"name": "APT 28", "name-giver": "Mandiant"},
+        {"name": "Fancy Bear", "name-giver": "CrowdStrike"},
+        {"name": "Sofacy", "name-giver": "Kaspersky"},
+        {"name": " Fancy Bear ", "name-giver": "?"}
+      ],
+      "country": ["Russia"],
+      "sponsor": "State-sponsored, SENTINEL-SPONSOR-PROSE quoted from a vendor (Fixture)",
+      "motivation": ["Information theft and espionage"],
+      "first-seen": "2004",
+      "description": "SENTINEL-DESCRIPTION: made-up card text that must never reach a record.",
+      "observed-sectors": ["Defense", "Government"],
+      "observed-countries": ["Georgia", "USA", "others"],
+      "tools": ["SENTINEL-TOOL"],
+      "operations": [
+        {"date": "2018-12", "activity": "SENTINEL-ACTIVITY: made-up operation text.\nhttps://example.org/SENTINEL-ACTIVITY-URL"}
+      ],
+      "counter-operations": [
+        {"date": "2023-12", "activity": "SENTINEL-COUNTER-ACTIVITY: made-up counter-operation text."}
+      ],
+      "information": ["https://example.org/SENTINEL-INFORMATION"],
+      "mitre-attack": ["https://attack.mitre.org/groups/G0007/"],
+      "playbook": ["https://example.org/SENTINEL-PLAYBOOK"],
+      "uuid": "00000000-0000-4000-8000-0000000e7da1",
+      "last-card-change": "2025-08-16"
+    },
+    {
+      "actor": "Clockwork Spider",
+      "names": [{"name": "Clockwork Spider", "name-giver": "CrowdStrike"}],
+      "country": ["[Unknown]"],
+      "first-seen": "~2019",
+      "description": "SENTINEL-DESCRIPTION-2: made-up card text.",
+      "uuid": "00000000-0000-4000-8000-0000000e7da2",
+      "last-card-change": "2020-04-19"
+    },
+    {
+      "actor": "No Names Card, Second Name",
+      "country": ["China"],
+      "uuid": "00000000-0000-4000-8000-0000000e7da3",
+      "last-card-change": "2020-04-19"
+    },
+    {
+      "description": "SENTINEL-DESCRIPTION-3: a card with no name at all, which must be dropped.",
+      "uuid": "00000000-0000-4000-8000-0000000e7da4"
+    }
+  ]
+}
