@@ -53,12 +53,8 @@ The About page, and a notice file in `data/`, carry:
 
 ATT&CK is named as MITRE's FAQ asks. The first reference reads "MITRE ATT&CK®", and headlines always read "MITRE ATT&CK". The FAQ also says: "You may not display the ATT&CK trademark in any manner that implies an affiliation with, sponsorship, or endorsement by MITRE". The site does not use the CISA logo or the DHS seal.
 
-## ORKL Is Evidence-Only Until Its Terms Are Known
-
-ORKL states no licence at any location this project reads. Its report metadata is used for alias evidence only, and no ORKL report appears in `data/`. This row changes only when ORKL's terms are confirmed and recorded here.
-
-This file records each source's terms as the source states them. It is not legal advice.
-
 ## ORKL status
 
 ORKL is `link-only` while a permission request is pending (sent 2026-09-29 to orkl@mailbox.org). Only each report's own title, publication date and link to the original publisher appear, because those are facts about publicly released reports, whose authors retain copyright. ORKL's threat-actor tags are used only as matching evidence and are not displayed. Report-to-actor links shown on the site come from sources that allow publishing them, such as Malpedia's family references and MITRE ATT&CK.
+
+This file records each source's terms as the source states them. It is not legal advice.
