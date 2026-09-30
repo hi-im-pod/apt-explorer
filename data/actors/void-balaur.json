@@ -28,54 +28,6 @@
   "claimed_targets": {
     "countries": [
       {
-        "value": "Brazil",
-        "source": "misp"
-      },
-      {
-        "value": "Central African Republic",
-        "source": "misp"
-      },
-      {
-        "value": "Georgia",
-        "source": "misp"
-      },
-      {
-        "value": "Kazakhstan",
-        "source": "misp"
-      },
-      {
-        "value": "Moldova",
-        "source": "misp"
-      },
-      {
-        "value": "Russia",
-        "source": "misp"
-      },
-      {
-        "value": "Spain",
-        "source": "misp"
-      },
-      {
-        "value": "Sudan",
-        "source": "misp"
-      },
-      {
-        "value": "Taiwan",
-        "source": "misp"
-      },
-      {
-        "value": "Ukraine",
-        "source": "misp"
-      },
-      {
-        "value": "United Kingdom",
-        "source": "misp"
-      },
-      {
-        "value": "United States",
-        "source": "misp"
-      },
-      {
         "value": "Armenia",
         "source": "etda"
       },
@@ -190,54 +142,6 @@
       {
         "value": "Uzbekistan",
         "source": "etda"
-      },
-      {
-        "value": "Brazil",
-        "source": "malpedia"
-      },
-      {
-        "value": "Central African Republic",
-        "source": "malpedia"
-      },
-      {
-        "value": "Georgia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Kazakhstan",
-        "source": "malpedia"
-      },
-      {
-        "value": "Moldova",
-        "source": "malpedia"
-      },
-      {
-        "value": "Russia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Spain",
-        "source": "malpedia"
-      },
-      {
-        "value": "Sudan",
-        "source": "malpedia"
-      },
-      {
-        "value": "Taiwan",
-        "source": "malpedia"
-      },
-      {
-        "value": "Ukraine",
-        "source": "malpedia"
-      },
-      {
-        "value": "United Kingdom",
-        "source": "malpedia"
-      },
-      {
-        "value": "United States",
-        "source": "malpedia"
       }
     ],
     "sectors": []

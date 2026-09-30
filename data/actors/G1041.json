@@ -90,10 +90,6 @@
   "claimed_targets": {
     "countries": [
       {
-        "value": "Germany",
-        "source": "misp"
-      },
-      {
         "value": "Albania",
         "source": "etda"
       },
@@ -160,10 +156,6 @@
       {
         "value": "United States",
         "source": "etda"
-      },
-      {
-        "value": "Germany",
-        "source": "malpedia"
       }
     ],
     "sectors": [

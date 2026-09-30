@@ -42,62 +42,6 @@
     "countries": [
       {
         "value": "Afghanistan",
-        "source": "misp"
-      },
-      {
-        "value": "India",
-        "source": "misp"
-      },
-      {
-        "value": "Indonesia",
-        "source": "misp"
-      },
-      {
-        "value": "Iran",
-        "source": "misp"
-      },
-      {
-        "value": "Kyrgyzstan",
-        "source": "misp"
-      },
-      {
-        "value": "Malaysia",
-        "source": "misp"
-      },
-      {
-        "value": "Pakistan",
-        "source": "misp"
-      },
-      {
-        "value": "Russia",
-        "source": "misp"
-      },
-      {
-        "value": "Slovakia",
-        "source": "misp"
-      },
-      {
-        "value": "Taiwan",
-        "source": "misp"
-      },
-      {
-        "value": "Thailand",
-        "source": "misp"
-      },
-      {
-        "value": "United Kingdom",
-        "source": "misp"
-      },
-      {
-        "value": "Uzbekistan",
-        "source": "misp"
-      },
-      {
-        "value": "Vietnam",
-        "source": "misp"
-      },
-      {
-        "value": "Afghanistan",
         "source": "etda"
       },
       {
@@ -155,73 +99,9 @@
       {
         "value": "Vietnam",
         "source": "etda"
-      },
-      {
-        "value": "Afghanistan",
-        "source": "malpedia"
-      },
-      {
-        "value": "India",
-        "source": "malpedia"
-      },
-      {
-        "value": "Indonesia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Iran",
-        "source": "malpedia"
-      },
-      {
-        "value": "Kyrgyzstan",
-        "source": "malpedia"
-      },
-      {
-        "value": "Malaysia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Pakistan",
-        "source": "malpedia"
-      },
-      {
-        "value": "Russia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Slovakia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Taiwan",
-        "source": "malpedia"
-      },
-      {
-        "value": "Thailand",
-        "source": "malpedia"
-      },
-      {
-        "value": "United Kingdom",
-        "source": "malpedia"
-      },
-      {
-        "value": "Uzbekistan",
-        "source": "malpedia"
-      },
-      {
-        "value": "Vietnam",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Military",
-        "source": "misp"
-      },
-      {
-        "value": "Government",
-        "source": "misp"
-      },
       {
         "value": "Defense",
         "source": "etda"
@@ -233,14 +113,6 @@
       {
         "value": "Telecommunications",
         "source": "etda"
-      },
-      {
-        "value": "Military",
-        "source": "malpedia"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
       }
     ]
   },

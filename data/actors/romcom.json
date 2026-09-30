@@ -106,24 +106,7 @@
     }
   ],
   "claimed_targets": {
-    "countries": [
-      {
-        "value": "Ukraine",
-        "source": "misp"
-      },
-      {
-        "value": "Germany",
-        "source": "misp"
-      },
-      {
-        "value": "Germany",
-        "source": "malpedia"
-      },
-      {
-        "value": "Ukraine",
-        "source": "malpedia"
-      }
-    ],
+    "countries": [],
     "sectors": [
       {
         "value": "Construction",

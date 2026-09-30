@@ -143,16 +143,7 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "Pakistan",
-      "source": "misp"
-    },
-    {
-      "value": "Pakistan",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
     {
       "value": "Information theft and espionage",
@@ -284,19 +275,15 @@
     ],
     "sectors": [
       {
+        "value": "Activists",
+        "source": "misp"
+      },
+      {
         "value": "Civil society",
         "source": "misp"
       },
       {
         "value": "Military",
-        "source": "misp"
-      },
-      {
-        "value": "Government",
-        "source": "misp"
-      },
-      {
-        "value": "Activists",
         "source": "misp"
       },
       {
@@ -316,19 +303,15 @@
         "source": "etda"
       },
       {
+        "value": "Activists",
+        "source": "malpedia"
+      },
+      {
         "value": "Civil society",
         "source": "malpedia"
       },
       {
         "value": "Military",
-        "source": "malpedia"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
-      },
-      {
-        "value": "Activists",
         "source": "malpedia"
       }
     ]

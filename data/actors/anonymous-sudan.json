@@ -12,35 +12,9 @@
   ],
   "origin": [],
   "sponsor": [],
-  "motivation": [
-    {
-      "value": "Denial of service",
-      "source": "misp"
-    },
-    {
-      "value": "Denial of service",
-      "source": "malpedia"
-    }
-  ],
+  "motivation": [],
   "claimed_targets": {
-    "countries": [
-      {
-        "value": "Denmark",
-        "source": "misp"
-      },
-      {
-        "value": "Sweden",
-        "source": "misp"
-      },
-      {
-        "value": "Denmark",
-        "source": "malpedia"
-      },
-      {
-        "value": "Sweden",
-        "source": "malpedia"
-      }
-    ],
+    "countries": [],
     "sectors": []
   },
   "malware": [],

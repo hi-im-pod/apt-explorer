@@ -15,54 +15,11 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "Korea (Republic of)",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [],
   "claimed_targets": {
-    "countries": [
-      {
-        "value": "China",
-        "source": "malpedia"
-      },
-      {
-        "value": "North Korea",
-        "source": "malpedia"
-      },
-      {
-        "value": "Japan",
-        "source": "malpedia"
-      },
-      {
-        "value": "Nepal",
-        "source": "malpedia"
-      },
-      {
-        "value": "Singapore",
-        "source": "malpedia"
-      },
-      {
-        "value": "Russia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Poland",
-        "source": "malpedia"
-      },
-      {
-        "value": "Switzerland",
-        "source": "malpedia"
-      }
-    ],
-    "sectors": [
-      {
-        "value": "Government",
-        "source": "malpedia"
-      }
-    ]
+    "countries": [],
+    "sectors": []
   },
   "malware": [],
   "techniques_documented": [],

@@ -35,50 +35,18 @@
   "claimed_targets": {
     "countries": [
       {
-        "value": "Hong Kong",
-        "source": "misp"
-      },
-      {
-        "value": "Taiwan",
-        "source": "misp"
-      },
-      {
         "value": "Taiwan",
         "source": "etda"
-      },
-      {
-        "value": "Hong Kong",
-        "source": "malpedia"
-      },
-      {
-        "value": "Taiwan",
-        "source": "malpedia"
       }
     ],
     "sectors": [
       {
-        "value": "Government",
-        "source": "misp"
-      },
-      {
-        "value": "Education",
-        "source": "misp"
-      },
-      {
         "value": "Education",
         "source": "etda"
       },
       {
         "value": "Government",
         "source": "etda"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
-      },
-      {
-        "value": "Education",
-        "source": "malpedia"
       }
     ]
   },

@@ -29,24 +29,12 @@
   "sponsor": [],
   "motivation": [
     {
-      "value": "Sabotage",
-      "source": "misp"
-    },
-    {
       "value": "Sabotage and destruction",
       "source": "etda"
-    },
-    {
-      "value": "Sabotage",
-      "source": "malpedia"
     }
   ],
   "claimed_targets": {
     "countries": [
-      {
-        "value": "Iran",
-        "source": "misp"
-      },
       {
         "value": "Iran",
         "source": "etda"
@@ -54,21 +42,9 @@
       {
         "value": "Syria",
         "source": "etda"
-      },
-      {
-        "value": "Iran",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Critical manufacturing",
-        "source": "misp"
-      },
-      {
-        "value": "Transportation systems",
-        "source": "misp"
-      },
       {
         "value": "Energy",
         "source": "etda"
@@ -76,14 +52,6 @@
       {
         "value": "Transportation",
         "source": "etda"
-      },
-      {
-        "value": "Critical manufacturing",
-        "source": "malpedia"
-      },
-      {
-        "value": "Transportation systems",
-        "source": "malpedia"
       }
     ]
   },

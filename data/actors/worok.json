@@ -25,28 +25,11 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "China",
-      "source": "misp"
-    },
-    {
-      "value": "China",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
-    {
-      "value": "Espionage",
-      "source": "misp"
-    },
     {
       "value": "Information theft and espionage",
       "source": "etda"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
     }
   ],
   "claimed_targets": {
@@ -178,14 +161,6 @@
     ],
     "sectors": [
       {
-        "value": "Government",
-        "source": "misp"
-      },
-      {
-        "value": "Energy Company",
-        "source": "misp"
-      },
-      {
         "value": "Energy",
         "source": "etda"
       },
@@ -200,14 +175,6 @@
       {
         "value": "Telecommunications",
         "source": "etda"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
-      },
-      {
-        "value": "Energy Company",
-        "source": "malpedia"
       }
     ]
   },

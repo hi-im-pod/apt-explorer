@@ -191,40 +191,15 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "Iran (Islamic Republic of)",
-      "source": "misp"
-    },
-    {
-      "value": "Iran (Islamic Republic of)",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
-    {
-      "value": "Espionage",
-      "source": "misp"
-    },
     {
       "value": "Information theft and espionage",
       "source": "etda"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
     }
   ],
   "claimed_targets": {
     "countries": [
-      {
-        "value": "United States",
-        "source": "misp"
-      },
-      {
-        "value": "Israel",
-        "source": "misp"
-      },
       {
         "value": "Albania",
         "source": "etda"
@@ -252,77 +227,9 @@
       {
         "value": "United States",
         "source": "etda"
-      },
-      {
-        "value": "United States",
-        "source": "malpedia"
-      },
-      {
-        "value": "Israel",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Defense",
-        "source": "misp"
-      },
-      {
-        "value": "Government",
-        "source": "misp"
-      },
-      {
-        "value": "Military",
-        "source": "misp"
-      },
-      {
-        "value": "Finance",
-        "source": "misp"
-      },
-      {
-        "value": "Energy",
-        "source": "misp"
-      },
-      {
-        "value": "Healthcare",
-        "source": "misp"
-      },
-      {
-        "value": "Pharmaceuticals",
-        "source": "misp"
-      },
-      {
-        "value": "Telecoms",
-        "source": "misp"
-      },
-      {
-        "value": "High-Tech",
-        "source": "misp"
-      },
-      {
-        "value": "Media",
-        "source": "misp"
-      },
-      {
-        "value": "NGOs",
-        "source": "misp"
-      },
-      {
-        "value": "Civil Society",
-        "source": "misp"
-      },
-      {
-        "value": "Legal",
-        "source": "misp"
-      },
-      {
-        "value": "Rail",
-        "source": "misp"
-      },
-      {
-        "value": "Transportation",
-        "source": "misp"
-      },
       {
         "value": "Aerospace",
         "source": "etda"
@@ -346,66 +253,6 @@
       {
         "value": "Maritime and Shipbuilding",
         "source": "etda"
-      },
-      {
-        "value": "Defense",
-        "source": "malpedia"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
-      },
-      {
-        "value": "Military",
-        "source": "malpedia"
-      },
-      {
-        "value": "Finance",
-        "source": "malpedia"
-      },
-      {
-        "value": "Energy",
-        "source": "malpedia"
-      },
-      {
-        "value": "Healthcare",
-        "source": "malpedia"
-      },
-      {
-        "value": "Pharmaceuticals",
-        "source": "malpedia"
-      },
-      {
-        "value": "Telecoms",
-        "source": "malpedia"
-      },
-      {
-        "value": "High-Tech",
-        "source": "malpedia"
-      },
-      {
-        "value": "Media",
-        "source": "malpedia"
-      },
-      {
-        "value": "NGOs",
-        "source": "malpedia"
-      },
-      {
-        "value": "Civil Society",
-        "source": "malpedia"
-      },
-      {
-        "value": "Legal",
-        "source": "malpedia"
-      },
-      {
-        "value": "Rail",
-        "source": "malpedia"
-      },
-      {
-        "value": "Transportation",
-        "source": "malpedia"
       }
     ]
   },

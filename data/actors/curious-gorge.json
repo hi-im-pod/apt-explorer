@@ -35,37 +35,13 @@
   "sponsor": [],
   "motivation": [
     {
-      "value": "Espionage",
-      "source": "misp"
-    },
-    {
       "value": "Information theft and espionage",
       "source": "etda"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
     }
   ],
   "claimed_targets": {
     "countries": [
       {
-        "value": "Ukraine",
-        "source": "misp"
-      },
-      {
-        "value": "Russia",
-        "source": "misp"
-      },
-      {
-        "value": "Kazakhstan",
-        "source": "misp"
-      },
-      {
-        "value": "Mongolia",
-        "source": "misp"
-      },
-      {
         "value": "Kazakhstan",
         "source": "etda"
       },
@@ -80,41 +56,9 @@
       {
         "value": "Ukraine",
         "source": "etda"
-      },
-      {
-        "value": "Ukraine",
-        "source": "malpedia"
-      },
-      {
-        "value": "Russia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Kazakhstan",
-        "source": "malpedia"
-      },
-      {
-        "value": "Mongolia",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Government",
-        "source": "misp"
-      },
-      {
-        "value": "Military",
-        "source": "misp"
-      },
-      {
-        "value": "Logistics",
-        "source": "misp"
-      },
-      {
-        "value": "Defense Contractor",
-        "source": "misp"
-      },
       {
         "value": "Defense",
         "source": "etda"
@@ -122,22 +66,6 @@
       {
         "value": "Government",
         "source": "etda"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
-      },
-      {
-        "value": "Military",
-        "source": "malpedia"
-      },
-      {
-        "value": "Logistics",
-        "source": "malpedia"
-      },
-      {
-        "value": "Defense Contractor",
-        "source": "malpedia"
       }
     ]
   },

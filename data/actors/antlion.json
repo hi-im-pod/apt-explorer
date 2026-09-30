@@ -36,22 +36,10 @@
     "countries": [
       {
         "value": "Taiwan",
-        "source": "misp"
-      },
-      {
-        "value": "Taiwan",
         "source": "etda"
-      },
-      {
-        "value": "Taiwan",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Financial",
-        "source": "misp"
-      },
       {
         "value": "Financial",
         "source": "etda"
@@ -59,10 +47,6 @@
       {
         "value": "Manufacturing",
         "source": "etda"
-      },
-      {
-        "value": "Financial",
-        "source": "malpedia"
       }
     ]
   },

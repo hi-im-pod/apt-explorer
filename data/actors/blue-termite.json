@@ -40,50 +40,21 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "Unknown",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
-    {
-      "value": "Espionage",
-      "source": "misp"
-    },
     {
       "value": "Information theft and espionage",
       "source": "etda"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
     }
   ],
   "claimed_targets": {
     "countries": [
       {
         "value": "Japan",
-        "source": "misp"
-      },
-      {
-        "value": "Japan",
         "source": "etda"
-      },
-      {
-        "value": "Japan",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Government",
-        "source": "misp"
-      },
-      {
-        "value": "Private sector",
-        "source": "misp"
-      },
       {
         "value": "Automotive",
         "source": "etda"
@@ -147,14 +118,6 @@
       {
         "value": "Real estate and several others",
         "source": "etda"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
-      },
-      {
-        "value": "Private sector",
-        "source": "malpedia"
       }
     ]
   },

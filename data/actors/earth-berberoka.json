@@ -41,84 +41,11 @@
     }
   ],
   "claimed_targets": {
-    "countries": [
-      {
-        "value": "China",
-        "source": "misp"
-      },
-      {
-        "value": "United States",
-        "source": "misp"
-      },
-      {
-        "value": "Hong Kong",
-        "source": "misp"
-      },
-      {
-        "value": "Malaysia",
-        "source": "misp"
-      },
-      {
-        "value": "Taiwan",
-        "source": "misp"
-      },
-      {
-        "value": "China",
-        "source": "malpedia"
-      },
-      {
-        "value": "United States",
-        "source": "malpedia"
-      },
-      {
-        "value": "Hong Kong",
-        "source": "malpedia"
-      },
-      {
-        "value": "Malaysia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Taiwan",
-        "source": "malpedia"
-      }
-    ],
+    "countries": [],
     "sectors": [
-      {
-        "value": "Gambling Websites",
-        "source": "misp"
-      },
-      {
-        "value": "Information technology",
-        "source": "misp"
-      },
-      {
-        "value": "Electronics Manufacturers",
-        "source": "misp"
-      },
-      {
-        "value": "Education",
-        "source": "misp"
-      },
       {
         "value": "Casinos and Gambling",
         "source": "etda"
-      },
-      {
-        "value": "Gambling Websites",
-        "source": "malpedia"
-      },
-      {
-        "value": "Information technology",
-        "source": "malpedia"
-      },
-      {
-        "value": "Electronics Manufacturers",
-        "source": "malpedia"
-      },
-      {
-        "value": "Education",
-        "source": "malpedia"
       }
     ]
   },

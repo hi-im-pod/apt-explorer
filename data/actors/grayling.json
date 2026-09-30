@@ -21,16 +21,7 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "China",
-      "source": "misp"
-    },
-    {
-      "value": "China",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
     {
       "value": "Information theft and espionage",
@@ -41,22 +32,6 @@
     "countries": [
       {
         "value": "Taiwan",
-        "source": "misp"
-      },
-      {
-        "value": "United States",
-        "source": "misp"
-      },
-      {
-        "value": "Vietnam",
-        "source": "misp"
-      },
-      {
-        "value": "Solomon Islands",
-        "source": "misp"
-      },
-      {
-        "value": "Taiwan",
         "source": "etda"
       },
       {
@@ -66,37 +41,9 @@
       {
         "value": "Vietnam",
         "source": "etda"
-      },
-      {
-        "value": "Taiwan",
-        "source": "malpedia"
-      },
-      {
-        "value": "United States",
-        "source": "malpedia"
-      },
-      {
-        "value": "Vietnam",
-        "source": "malpedia"
-      },
-      {
-        "value": "Solomon Islands",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Biomedical",
-        "source": "misp"
-      },
-      {
-        "value": "Government",
-        "source": "misp"
-      },
-      {
-        "value": "Information technology",
-        "source": "misp"
-      },
       {
         "value": "Government",
         "source": "etda"
@@ -112,18 +59,6 @@
       {
         "value": "Pharmaceutical",
         "source": "etda"
-      },
-      {
-        "value": "Biomedical",
-        "source": "malpedia"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
-      },
-      {
-        "value": "Information technology",
-        "source": "malpedia"
       }
     ]
   },

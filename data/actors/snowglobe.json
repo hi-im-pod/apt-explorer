@@ -59,92 +59,15 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "France",
-      "source": "misp"
-    },
-    {
-      "value": "France",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
-    {
-      "value": "Espionage",
-      "source": "misp"
-    },
     {
       "value": "Information theft and espionage",
       "source": "etda"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
     }
   ],
   "claimed_targets": {
     "countries": [
-      {
-        "value": "Syria",
-        "source": "misp"
-      },
-      {
-        "value": "United States",
-        "source": "misp"
-      },
-      {
-        "value": "Netherlands",
-        "source": "misp"
-      },
-      {
-        "value": "Russia",
-        "source": "misp"
-      },
-      {
-        "value": "Spain",
-        "source": "misp"
-      },
-      {
-        "value": "Iran",
-        "source": "misp"
-      },
-      {
-        "value": "China",
-        "source": "misp"
-      },
-      {
-        "value": "Germany",
-        "source": "misp"
-      },
-      {
-        "value": "Algeria",
-        "source": "misp"
-      },
-      {
-        "value": "Norway",
-        "source": "misp"
-      },
-      {
-        "value": "Malaysia",
-        "source": "misp"
-      },
-      {
-        "value": "Türkiye",
-        "source": "misp"
-      },
-      {
-        "value": "United Kingdom",
-        "source": "misp"
-      },
-      {
-        "value": "Côte d'Ivoire",
-        "source": "misp"
-      },
-      {
-        "value": "Greece",
-        "source": "misp"
-      },
       {
         "value": "Algeria",
         "source": "etda"
@@ -232,77 +155,9 @@
       {
         "value": "United States",
         "source": "etda"
-      },
-      {
-        "value": "Syria",
-        "source": "malpedia"
-      },
-      {
-        "value": "United States",
-        "source": "malpedia"
-      },
-      {
-        "value": "Netherlands",
-        "source": "malpedia"
-      },
-      {
-        "value": "Russia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Spain",
-        "source": "malpedia"
-      },
-      {
-        "value": "Iran",
-        "source": "malpedia"
-      },
-      {
-        "value": "China",
-        "source": "malpedia"
-      },
-      {
-        "value": "Germany",
-        "source": "malpedia"
-      },
-      {
-        "value": "Algeria",
-        "source": "malpedia"
-      },
-      {
-        "value": "Norway",
-        "source": "malpedia"
-      },
-      {
-        "value": "Malaysia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Türkiye",
-        "source": "malpedia"
-      },
-      {
-        "value": "United Kingdom",
-        "source": "malpedia"
-      },
-      {
-        "value": "Côte d'Ivoire",
-        "source": "malpedia"
-      },
-      {
-        "value": "Greece",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Government",
-        "source": "misp"
-      },
-      {
-        "value": "Private sector",
-        "source": "misp"
-      },
       {
         "value": "Defense",
         "source": "etda"
@@ -318,14 +173,6 @@
       {
         "value": "private sectors",
         "source": "etda"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
-      },
-      {
-        "value": "Private sector",
-        "source": "malpedia"
       }
     ]
   },

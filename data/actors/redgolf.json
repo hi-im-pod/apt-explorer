@@ -25,40 +25,15 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "China",
-      "source": "misp"
-    },
-    {
-      "value": "China",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
     {
       "value": "state-sponsored espionage and financially motivated",
       "source": "misp"
     },
     {
-      "value": "Financial Theft",
-      "source": "misp"
-    },
-    {
-      "value": "Espionage",
-      "source": "misp"
-    },
-    {
       "value": "Information theft and espionage",
       "source": "etda"
-    },
-    {
-      "value": "Financial Theft",
-      "source": "malpedia"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
     },
     {
       "value": "state-sponsored espionage and financially motivated",
@@ -73,34 +48,6 @@
       }
     ],
     "sectors": [
-      {
-        "value": "Aviation",
-        "source": "misp"
-      },
-      {
-        "value": "Automotive",
-        "source": "misp"
-      },
-      {
-        "value": "Education",
-        "source": "misp"
-      },
-      {
-        "value": "Intergovernmental",
-        "source": "misp"
-      },
-      {
-        "value": "Media and Entertainment",
-        "source": "misp"
-      },
-      {
-        "value": "Information Technology",
-        "source": "misp"
-      },
-      {
-        "value": "Religious Organizations",
-        "source": "misp"
-      },
       {
         "value": "Aviation",
         "source": "etda"
@@ -128,34 +75,6 @@
       {
         "value": "religious organizations",
         "source": "etda"
-      },
-      {
-        "value": "Aviation",
-        "source": "malpedia"
-      },
-      {
-        "value": "Automotive",
-        "source": "malpedia"
-      },
-      {
-        "value": "Education",
-        "source": "malpedia"
-      },
-      {
-        "value": "Intergovernmental",
-        "source": "malpedia"
-      },
-      {
-        "value": "Media and Entertainment",
-        "source": "malpedia"
-      },
-      {
-        "value": "Information Technology",
-        "source": "malpedia"
-      },
-      {
-        "value": "Religious Organizations",
-        "source": "malpedia"
       }
     ]
   },
@@ -165,6 +84,24 @@
   "cves": [],
   "timeline": [],
   "reports": [],
-  "conflicts": [],
+  "conflicts": [
+    {
+      "field": "motivation",
+      "values": [
+        {
+          "value": "state-sponsored espionage and financially motivated",
+          "source": "misp"
+        },
+        {
+          "value": "Information theft and espionage",
+          "source": "etda"
+        },
+        {
+          "value": "state-sponsored espionage and financially motivated",
+          "source": "malpedia"
+        }
+      ]
+    }
+  ],
   "evidence_count": 2
 }

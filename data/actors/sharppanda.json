@@ -43,10 +43,6 @@
   "claimed_targets": {
     "countries": [
       {
-        "value": "Germany",
-        "source": "misp"
-      },
-      {
         "value": "Indonesia",
         "source": "etda"
       },
@@ -61,10 +57,6 @@
       {
         "value": "Vietnam",
         "source": "etda"
-      },
-      {
-        "value": "Germany",
-        "source": "malpedia"
       }
     ],
     "sectors": [

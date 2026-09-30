@@ -152,96 +152,15 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "Iran (Islamic Republic of)",
-      "source": "misp"
-    },
-    {
-      "value": "Iran (Islamic Republic of)",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
-    {
-      "value": "Espionage",
-      "source": "misp"
-    },
     {
       "value": "Information theft and espionage",
       "source": "etda"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
     }
   ],
   "claimed_targets": {
     "countries": [
-      {
-        "value": "United States",
-        "source": "misp"
-      },
-      {
-        "value": "Saudi Arabia",
-        "source": "misp"
-      },
-      {
-        "value": "Venezuela",
-        "source": "misp"
-      },
-      {
-        "value": "Afghanistan",
-        "source": "misp"
-      },
-      {
-        "value": "United Arab Emirates",
-        "source": "misp"
-      },
-      {
-        "value": "Iran",
-        "source": "misp"
-      },
-      {
-        "value": "Israel",
-        "source": "misp"
-      },
-      {
-        "value": "Iraq",
-        "source": "misp"
-      },
-      {
-        "value": "Kuwait",
-        "source": "misp"
-      },
-      {
-        "value": "Türkiye",
-        "source": "misp"
-      },
-      {
-        "value": "Canada",
-        "source": "misp"
-      },
-      {
-        "value": "Yemen",
-        "source": "misp"
-      },
-      {
-        "value": "United Kingdom",
-        "source": "misp"
-      },
-      {
-        "value": "Egypt",
-        "source": "misp"
-      },
-      {
-        "value": "Syria",
-        "source": "misp"
-      },
-      {
-        "value": "Jordan",
-        "source": "misp"
-      },
       {
         "value": "Algeria",
         "source": "etda"
@@ -297,81 +216,9 @@
       {
         "value": "United States",
         "source": "etda"
-      },
-      {
-        "value": "United States",
-        "source": "malpedia"
-      },
-      {
-        "value": "Saudi Arabia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Venezuela",
-        "source": "malpedia"
-      },
-      {
-        "value": "Afghanistan",
-        "source": "malpedia"
-      },
-      {
-        "value": "United Arab Emirates",
-        "source": "malpedia"
-      },
-      {
-        "value": "Iran",
-        "source": "malpedia"
-      },
-      {
-        "value": "Israel",
-        "source": "malpedia"
-      },
-      {
-        "value": "Iraq",
-        "source": "malpedia"
-      },
-      {
-        "value": "Kuwait",
-        "source": "malpedia"
-      },
-      {
-        "value": "Türkiye",
-        "source": "malpedia"
-      },
-      {
-        "value": "Canada",
-        "source": "malpedia"
-      },
-      {
-        "value": "Yemen",
-        "source": "malpedia"
-      },
-      {
-        "value": "United Kingdom",
-        "source": "malpedia"
-      },
-      {
-        "value": "Egypt",
-        "source": "malpedia"
-      },
-      {
-        "value": "Syria",
-        "source": "malpedia"
-      },
-      {
-        "value": "Jordan",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Military",
-        "source": "misp"
-      },
-      {
-        "value": "Civil society",
-        "source": "misp"
-      },
       {
         "value": "Aerospace",
         "source": "misp"
@@ -386,10 +233,6 @@
       },
       {
         "value": "Oil",
-        "source": "misp"
-      },
-      {
-        "value": "Government",
         "source": "misp"
       },
       {
@@ -449,14 +292,6 @@
         "source": "etda"
       },
       {
-        "value": "Military",
-        "source": "malpedia"
-      },
-      {
-        "value": "Civil society",
-        "source": "malpedia"
-      },
-      {
         "value": "Aerospace",
         "source": "malpedia"
       },
@@ -470,10 +305,6 @@
       },
       {
         "value": "Oil",
-        "source": "malpedia"
-      },
-      {
-        "value": "Government",
         "source": "malpedia"
       },
       {

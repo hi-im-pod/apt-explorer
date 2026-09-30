@@ -133,20 +133,12 @@
       "source": "misp"
     },
     {
-      "value": "Financial Theft",
-      "source": "misp"
-    },
-    {
       "value": "Financial crime",
       "source": "etda"
     },
     {
       "value": "Financial gain",
       "source": "etda"
-    },
-    {
-      "value": "Financial Theft",
-      "source": "malpedia"
     },
     {
       "value": "Cybercrime",
@@ -3659,20 +3651,12 @@
           "source": "misp"
         },
         {
-          "value": "Financial Theft",
-          "source": "misp"
-        },
-        {
           "value": "Financial crime",
           "source": "etda"
         },
         {
           "value": "Financial gain",
           "source": "etda"
-        },
-        {
-          "value": "Financial Theft",
-          "source": "malpedia"
         },
         {
           "value": "Cybercrime",

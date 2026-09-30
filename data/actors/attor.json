@@ -12,36 +12,10 @@
   ],
   "origin": [],
   "sponsor": [],
-  "motivation": [
-    {
-      "value": "Espionage",
-      "source": "misp"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
-    }
-  ],
+  "motivation": [],
   "claimed_targets": {
     "countries": [],
-    "sectors": [
-      {
-        "value": "Private sector",
-        "source": "misp"
-      },
-      {
-        "value": "Government",
-        "source": "misp"
-      },
-      {
-        "value": "Private sector",
-        "source": "malpedia"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
-      }
-    ]
+    "sectors": []
   },
   "malware": [],
   "techniques_documented": [],

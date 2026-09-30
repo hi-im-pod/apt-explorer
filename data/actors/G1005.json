@@ -67,36 +67,15 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "Lebanon",
-      "source": "misp"
-    },
-    {
-      "value": "Lebanon",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
-    {
-      "value": "Espionage",
-      "source": "misp"
-    },
     {
       "value": "Information theft and espionage",
       "source": "etda"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
     }
   ],
   "claimed_targets": {
     "countries": [
-      {
-        "value": "Israel",
-        "source": "misp"
-      },
       {
         "value": "Israel",
         "source": "etda"
@@ -104,65 +83,9 @@
       {
         "value": "Lebanon",
         "source": "etda"
-      },
-      {
-        "value": "Israel",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Critical manufacturing",
-        "source": "misp"
-      },
-      {
-        "value": "Defense industrial base",
-        "source": "misp"
-      },
-      {
-        "value": "Financial services",
-        "source": "misp"
-      },
-      {
-        "value": "Food and agriculture",
-        "source": "misp"
-      },
-      {
-        "value": "Government agencies and services",
-        "source": "misp"
-      },
-      {
-        "value": "Healthcare",
-        "source": "misp"
-      },
-      {
-        "value": "Pharmaceuticals",
-        "source": "misp"
-      },
-      {
-        "value": "Information technology",
-        "source": "misp"
-      },
-      {
-        "value": "Transportation systems",
-        "source": "misp"
-      },
-      {
-        "value": "NGOs",
-        "source": "misp"
-      },
-      {
-        "value": "Civil Society",
-        "source": "misp"
-      },
-      {
-        "value": "Military",
-        "source": "misp"
-      },
-      {
-        "value": "Defense",
-        "source": "misp"
-      },
       {
         "value": "Engineering",
         "source": "etda"
@@ -186,58 +109,6 @@
       {
         "value": "Telecommunications",
         "source": "etda"
-      },
-      {
-        "value": "Critical manufacturing",
-        "source": "malpedia"
-      },
-      {
-        "value": "Defense industrial base",
-        "source": "malpedia"
-      },
-      {
-        "value": "Financial services",
-        "source": "malpedia"
-      },
-      {
-        "value": "Food and agriculture",
-        "source": "malpedia"
-      },
-      {
-        "value": "Government agencies and services",
-        "source": "malpedia"
-      },
-      {
-        "value": "Healthcare",
-        "source": "malpedia"
-      },
-      {
-        "value": "Pharmaceuticals",
-        "source": "malpedia"
-      },
-      {
-        "value": "Information technology",
-        "source": "malpedia"
-      },
-      {
-        "value": "Transportation systems",
-        "source": "malpedia"
-      },
-      {
-        "value": "NGOs",
-        "source": "malpedia"
-      },
-      {
-        "value": "Civil Society",
-        "source": "malpedia"
-      },
-      {
-        "value": "Military",
-        "source": "malpedia"
-      },
-      {
-        "value": "Defense",
-        "source": "malpedia"
       }
     ]
   },

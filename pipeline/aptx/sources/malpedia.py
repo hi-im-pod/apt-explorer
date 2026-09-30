@@ -371,12 +371,12 @@ class MalpediaConnector(Connector):
                 aliases=[a for a in _labels(meta.get("synonyms")) if a != name],
                 # Country is an ISO 3166-1 alpha-2 code, as in MISP.
                 origin=[c.upper() for c in _labels(meta.get("country"))],
-                sponsor=_labels(meta.get("cfr-suspected-state-sponsor")),
-                motivation=_labels(_labels(meta.get("cfr-type-of-incident")) + _labels(meta.get("motive"))),
-                targets_countries=_labels(_labels(meta.get("cfr-suspected-victims"))
-                                          + _labels(meta.get("suspected-victims"))),
-                targets_sectors=_labels(_labels(meta.get("cfr-target-category"))
-                                        + _labels(meta.get("targeted-sector"))),
+                # The cfr-* fields in Malpedia's records copy the Council on
+                # Foreign Relations tracker, whose terms bar public reuse, so
+                # they are never read.
+                motivation=_labels(meta.get("motive")),
+                targets_countries=_labels(meta.get("suspected-victims")),
+                targets_sectors=_labels(meta.get("targeted-sector")),
                 malware=malware,
                 retrieved_at=retrieved_at,
             ))

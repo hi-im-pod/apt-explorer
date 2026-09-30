@@ -22,10 +22,6 @@
   "claimed_targets": {
     "countries": [
       {
-        "value": "Germany",
-        "source": "misp"
-      },
-      {
         "value": "Afghanistan",
         "source": "etda"
       },
@@ -48,10 +44,6 @@
       {
         "value": "Türkiye",
         "source": "etda"
-      },
-      {
-        "value": "Germany",
-        "source": "malpedia"
       }
     ],
     "sectors": [

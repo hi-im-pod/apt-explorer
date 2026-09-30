@@ -66,28 +66,11 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "United States",
-      "source": "misp"
-    },
-    {
-      "value": "United States",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
-    {
-      "value": "Espionage",
-      "source": "misp"
-    },
     {
       "value": "Information theft and espionage",
       "source": "etda"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
     }
   ],
   "claimed_targets": {
@@ -98,14 +81,6 @@
       }
     ],
     "sectors": [
-      {
-        "value": "Private sector",
-        "source": "misp"
-      },
-      {
-        "value": "Government",
-        "source": "misp"
-      },
       {
         "value": "Telecoms",
         "source": "misp"
@@ -173,14 +148,6 @@
       {
         "value": "Telecommunications",
         "source": "etda"
-      },
-      {
-        "value": "Private sector",
-        "source": "malpedia"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
       },
       {
         "value": "Telecoms",

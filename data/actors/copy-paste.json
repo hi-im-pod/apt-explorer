@@ -12,37 +12,10 @@
   ],
   "origin": [],
   "sponsor": [],
-  "motivation": [
-    {
-      "value": "Espionage",
-      "source": "misp"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
-    }
-  ],
+  "motivation": [],
   "claimed_targets": {
-    "countries": [
-      {
-        "value": "Australia",
-        "source": "misp"
-      },
-      {
-        "value": "Australia",
-        "source": "malpedia"
-      }
-    ],
-    "sectors": [
-      {
-        "value": "Government",
-        "source": "misp"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
-      }
-    ]
+    "countries": [],
+    "sectors": []
   },
   "malware": [],
   "techniques_documented": [],

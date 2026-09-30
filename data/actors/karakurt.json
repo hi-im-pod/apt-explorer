@@ -28,55 +28,15 @@
   "sponsor": [],
   "motivation": [
     {
-      "value": "Extortion",
-      "source": "misp"
-    },
-    {
       "value": "Financial gain",
       "source": "etda"
-    },
-    {
-      "value": "Extortion",
-      "source": "malpedia"
     }
   ],
   "claimed_targets": {
     "countries": [
       {
-        "value": "Canada",
-        "source": "misp"
-      },
-      {
-        "value": "Germany",
-        "source": "misp"
-      },
-      {
-        "value": "United Kingdom",
-        "source": "misp"
-      },
-      {
-        "value": "United States",
-        "source": "misp"
-      },
-      {
         "value": "United States",
         "source": "etda"
-      },
-      {
-        "value": "Canada",
-        "source": "malpedia"
-      },
-      {
-        "value": "Germany",
-        "source": "malpedia"
-      },
-      {
-        "value": "United Kingdom",
-        "source": "malpedia"
-      },
-      {
-        "value": "United States",
-        "source": "malpedia"
       }
     ],
     "sectors": [
@@ -120,24 +80,6 @@
   "cves": [],
   "timeline": [],
   "reports": [],
-  "conflicts": [
-    {
-      "field": "motivation",
-      "values": [
-        {
-          "value": "Extortion",
-          "source": "misp"
-        },
-        {
-          "value": "Financial gain",
-          "source": "etda"
-        },
-        {
-          "value": "Extortion",
-          "source": "malpedia"
-        }
-      ]
-    }
-  ],
+  "conflicts": [],
   "evidence_count": 3
 }

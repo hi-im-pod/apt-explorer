@@ -67,70 +67,25 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "China",
-      "source": "misp"
-    },
-    {
-      "value": "China",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
-    {
-      "value": "Espionage",
-      "source": "misp"
-    },
     {
       "value": "Information theft and espionage",
       "source": "etda"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
     }
   ],
   "claimed_targets": {
     "countries": [
       {
         "value": "Hong Kong",
-        "source": "misp"
-      },
-      {
-        "value": "United States",
-        "source": "misp"
-      },
-      {
-        "value": "Hong Kong",
         "source": "etda"
       },
       {
         "value": "United States",
         "source": "etda"
-      },
-      {
-        "value": "Hong Kong",
-        "source": "malpedia"
-      },
-      {
-        "value": "United States",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Government",
-        "source": "misp"
-      },
-      {
-        "value": "Private sector",
-        "source": "misp"
-      },
-      {
-        "value": "Civil society",
-        "source": "misp"
-      },
       {
         "value": "Activists",
         "source": "misp"
@@ -166,18 +121,6 @@
       {
         "value": "Think Tanks",
         "source": "etda"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
-      },
-      {
-        "value": "Private sector",
-        "source": "malpedia"
-      },
-      {
-        "value": "Civil society",
-        "source": "malpedia"
       },
       {
         "value": "Activists",

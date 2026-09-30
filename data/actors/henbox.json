@@ -20,38 +20,11 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "China",
-      "source": "misp"
-    },
-    {
-      "value": "China",
-      "source": "malpedia"
-    }
-  ],
-  "motivation": [
-    {
-      "value": "Espionage",
-      "source": "misp"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
+  "motivation": [],
   "claimed_targets": {
     "countries": [],
-    "sectors": [
-      {
-        "value": "Civil society",
-        "source": "misp"
-      },
-      {
-        "value": "Civil society",
-        "source": "malpedia"
-      }
-    ]
+    "sectors": []
   },
   "malware": [
     {

@@ -15,54 +15,11 @@
       "source": "misp"
     }
   ],
-  "sponsor": [
-    {
-      "value": "Korea (Republic of)",
-      "source": "misp"
-    }
-  ],
+  "sponsor": [],
   "motivation": [],
   "claimed_targets": {
-    "countries": [
-      {
-        "value": "China",
-        "source": "misp"
-      },
-      {
-        "value": "North Korea",
-        "source": "misp"
-      },
-      {
-        "value": "Japan",
-        "source": "misp"
-      },
-      {
-        "value": "Nepal",
-        "source": "misp"
-      },
-      {
-        "value": "Singapore",
-        "source": "misp"
-      },
-      {
-        "value": "Russia",
-        "source": "misp"
-      },
-      {
-        "value": "Poland",
-        "source": "misp"
-      },
-      {
-        "value": "Switzerland",
-        "source": "misp"
-      }
-    ],
-    "sectors": [
-      {
-        "value": "Government",
-        "source": "misp"
-      }
-    ]
+    "countries": [],
+    "sectors": []
   },
   "malware": [],
   "techniques_documented": [],

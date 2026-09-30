@@ -58,21 +58,8 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "United States",
-      "source": "misp"
-    },
-    {
-      "value": "United States",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
-    {
-      "value": "Espionage",
-      "source": "misp"
-    },
     {
       "value": "Information theft and espionage",
       "source": "etda"
@@ -80,74 +67,10 @@
     {
       "value": "Sabotage and destruction",
       "source": "etda"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
     }
   ],
   "claimed_targets": {
     "countries": [
-      {
-        "value": "Iran",
-        "source": "misp"
-      },
-      {
-        "value": "Afghanistan",
-        "source": "misp"
-      },
-      {
-        "value": "Syria",
-        "source": "misp"
-      },
-      {
-        "value": "Yemen",
-        "source": "misp"
-      },
-      {
-        "value": "Kenya",
-        "source": "misp"
-      },
-      {
-        "value": "Russia",
-        "source": "misp"
-      },
-      {
-        "value": "India",
-        "source": "misp"
-      },
-      {
-        "value": "Mali",
-        "source": "misp"
-      },
-      {
-        "value": "Algeria",
-        "source": "misp"
-      },
-      {
-        "value": "United Kingdom",
-        "source": "misp"
-      },
-      {
-        "value": "Pakistan",
-        "source": "misp"
-      },
-      {
-        "value": "China",
-        "source": "misp"
-      },
-      {
-        "value": "Lebanon",
-        "source": "misp"
-      },
-      {
-        "value": "United Arab Emirates",
-        "source": "misp"
-      },
-      {
-        "value": "Libya",
-        "source": "misp"
-      },
       {
         "value": "Afghanistan",
         "source": "etda"
@@ -399,77 +322,9 @@
       {
         "value": "Yemen",
         "source": "etda"
-      },
-      {
-        "value": "Iran",
-        "source": "malpedia"
-      },
-      {
-        "value": "Afghanistan",
-        "source": "malpedia"
-      },
-      {
-        "value": "Syria",
-        "source": "malpedia"
-      },
-      {
-        "value": "Yemen",
-        "source": "malpedia"
-      },
-      {
-        "value": "Kenya",
-        "source": "malpedia"
-      },
-      {
-        "value": "Russia",
-        "source": "malpedia"
-      },
-      {
-        "value": "India",
-        "source": "malpedia"
-      },
-      {
-        "value": "Mali",
-        "source": "malpedia"
-      },
-      {
-        "value": "Algeria",
-        "source": "malpedia"
-      },
-      {
-        "value": "United Kingdom",
-        "source": "malpedia"
-      },
-      {
-        "value": "Pakistan",
-        "source": "malpedia"
-      },
-      {
-        "value": "China",
-        "source": "malpedia"
-      },
-      {
-        "value": "Lebanon",
-        "source": "malpedia"
-      },
-      {
-        "value": "United Arab Emirates",
-        "source": "malpedia"
-      },
-      {
-        "value": "Libya",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Government",
-        "source": "misp"
-      },
-      {
-        "value": "Military",
-        "source": "misp"
-      },
       {
         "value": "Aerospace",
         "source": "etda"
@@ -505,14 +360,6 @@
       {
         "value": "Transportation",
         "source": "etda"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
-      },
-      {
-        "value": "Military",
-        "source": "malpedia"
       }
     ]
   },

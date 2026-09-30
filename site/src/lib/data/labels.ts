@@ -26,7 +26,7 @@ export const SOURCE_LABELS: Readonly<Record<SourceKey, SourceLabel>> = {
 	misp: {
 		name: 'MISP galaxy threat-actor cluster',
 		short: 'MISP',
-		role: 'Actors, synonyms, origin, sponsor and claimed targets.'
+		role: 'Actors, synonyms, origin, motive and claimed sectors.'
 	},
 	etda: {
 		name: 'ETDA Threat Group Cards',

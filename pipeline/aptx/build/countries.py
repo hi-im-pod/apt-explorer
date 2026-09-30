@@ -2,7 +2,7 @@
 
 Sources give countries in three shapes. Malpedia and MISP's origin field use
 ISO 3166-1 alpha-2 codes. ETDA writes short English names such as "USA" and
-"UK". MISP's sponsor and victim fields use UN-style wording such as "Iran
+"UK". Some sources use UN-style wording such as "Iran
 (Islamic Republic of)". Comparing them as raw text would report a conflict
 between "RU" and "Russia", so assembly compares the ISO code instead.
 
@@ -73,7 +73,7 @@ COUNTRIES: dict[str, str] = {
 }
 
 # Other wordings the sources use for a country. ETDA writes "USA", "UK" and
-# "North Korea". MISP's CFR fields use the UN's official forms, in which a
+# "North Korea". Some sources use the UN's official forms, in which a
 # comma or parenthesis moves the qualifier to the end.
 _ALIASES: dict[str, str] = {
     "USA": "US", "U.S.": "US", "U.S.A.": "US", "United States of America": "US", "America": "US",

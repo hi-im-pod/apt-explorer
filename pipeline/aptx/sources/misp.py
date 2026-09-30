@@ -1,8 +1,10 @@
 """MISP galaxy threat-actor cluster: actors, synonyms, origin, sponsor, targets.
 
 MISP has the widest synonym lists of any source here, which makes it the main
-bridge between vendor names, and it carries the CFR tracker's claimed victims
-and sectors. It is CC0, so every field taken from it may be published.
+bridge between vendor names. It is CC0, so every field taken from it may be
+published, with one exclusion: the cfr-* fields cite the Council on Foreign
+Relations Cyber Operations Tracker, whose terms bar public reuse, so no
+connector reads them.
 """
 import json
 import logging
@@ -100,14 +102,8 @@ class MispConnector(Connector):
                 name=name,
                 aliases=_names(meta, "synonyms", name),
                 origin=_values(meta, "country"),
-                sponsor=_values(meta, "cfr-suspected-state-sponsor"),
-                # motive is MISP's own field. The CFR incident type ("Espionage",
-                # "Sabotage") is the only motive-like value on most entries.
-                motivation=_values(meta, "motive", "cfr-type-of-incident"),
-                targets_countries=_values(meta, "cfr-suspected-victims"),
-                # The CFR category is coarse ("Government", "Private sector"),
-                # and MISP's own sector field is finer. Both are claims.
-                targets_sectors=_values(meta, "cfr-target-category", "targeted-sector"),
+                motivation=_values(meta, "motive"),
+                targets_sectors=_values(meta, "targeted-sector"),
                 retrieved_at=retrieved))
         if dropped:
             log.warning("%s: dropped %d entries without a name", NAME, dropped)

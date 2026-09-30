@@ -120,36 +120,15 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "Iran (Islamic Republic of)",
-      "source": "misp"
-    },
-    {
-      "value": "Iran (Islamic Republic of)",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
-    {
-      "value": "Espionage",
-      "source": "misp"
-    },
     {
       "value": "Information theft and espionage",
       "source": "etda"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
     }
   ],
   "claimed_targets": {
     "countries": [
-      {
-        "value": "Israel",
-        "source": "misp"
-      },
       {
         "value": "Israel",
         "source": "etda"
@@ -173,41 +152,9 @@
       {
         "value": "United Arab Emirates",
         "source": "etda"
-      },
-      {
-        "value": "Israel",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Government",
-        "source": "misp"
-      },
-      {
-        "value": "Energy",
-        "source": "misp"
-      },
-      {
-        "value": "High-Tech",
-        "source": "misp"
-      },
-      {
-        "value": "Telecomms",
-        "source": "misp"
-      },
-      {
-        "value": "Education",
-        "source": "misp"
-      },
-      {
-        "value": "Military",
-        "source": "misp"
-      },
-      {
-        "value": "Defense",
-        "source": "misp"
-      },
       {
         "value": "Energy",
         "source": "etda"
@@ -219,34 +166,6 @@
       {
         "value": "Telecommunications",
         "source": "etda"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
-      },
-      {
-        "value": "Energy",
-        "source": "malpedia"
-      },
-      {
-        "value": "High-Tech",
-        "source": "malpedia"
-      },
-      {
-        "value": "Telecomms",
-        "source": "malpedia"
-      },
-      {
-        "value": "Education",
-        "source": "malpedia"
-      },
-      {
-        "value": "Military",
-        "source": "malpedia"
-      },
-      {
-        "value": "Defense",
-        "source": "malpedia"
       }
     ]
   },

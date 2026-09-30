@@ -215,92 +215,15 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "China",
-      "source": "misp"
-    },
-    {
-      "value": "China",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
-    {
-      "value": "Espionage",
-      "source": "misp"
-    },
     {
       "value": "Information theft and espionage",
       "source": "etda"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
     }
   ],
   "claimed_targets": {
     "countries": [
-      {
-        "value": "Japan",
-        "source": "misp"
-      },
-      {
-        "value": "India",
-        "source": "misp"
-      },
-      {
-        "value": "South Africa",
-        "source": "misp"
-      },
-      {
-        "value": "South Korea",
-        "source": "misp"
-      },
-      {
-        "value": "Sweden",
-        "source": "misp"
-      },
-      {
-        "value": "United States",
-        "source": "misp"
-      },
-      {
-        "value": "Canada",
-        "source": "misp"
-      },
-      {
-        "value": "Australia",
-        "source": "misp"
-      },
-      {
-        "value": "France",
-        "source": "misp"
-      },
-      {
-        "value": "Finland",
-        "source": "misp"
-      },
-      {
-        "value": "United Kingdom",
-        "source": "misp"
-      },
-      {
-        "value": "Brazil",
-        "source": "misp"
-      },
-      {
-        "value": "Thailand",
-        "source": "misp"
-      },
-      {
-        "value": "Switzerland",
-        "source": "misp"
-      },
-      {
-        "value": "Norway",
-        "source": "misp"
-      },
       {
         "value": "Australia",
         "source": "etda"
@@ -416,77 +339,9 @@
       {
         "value": "Vietnam",
         "source": "etda"
-      },
-      {
-        "value": "Japan",
-        "source": "malpedia"
-      },
-      {
-        "value": "India",
-        "source": "malpedia"
-      },
-      {
-        "value": "South Africa",
-        "source": "malpedia"
-      },
-      {
-        "value": "South Korea",
-        "source": "malpedia"
-      },
-      {
-        "value": "Sweden",
-        "source": "malpedia"
-      },
-      {
-        "value": "United States",
-        "source": "malpedia"
-      },
-      {
-        "value": "Canada",
-        "source": "malpedia"
-      },
-      {
-        "value": "Australia",
-        "source": "malpedia"
-      },
-      {
-        "value": "France",
-        "source": "malpedia"
-      },
-      {
-        "value": "Finland",
-        "source": "malpedia"
-      },
-      {
-        "value": "United Kingdom",
-        "source": "malpedia"
-      },
-      {
-        "value": "Brazil",
-        "source": "malpedia"
-      },
-      {
-        "value": "Thailand",
-        "source": "malpedia"
-      },
-      {
-        "value": "Switzerland",
-        "source": "malpedia"
-      },
-      {
-        "value": "Norway",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Private sector",
-        "source": "misp"
-      },
-      {
-        "value": "Government",
-        "source": "misp"
-      },
       {
         "value": "Aerospace",
         "source": "etda"
@@ -538,14 +393,6 @@
       {
         "value": "MSPs",
         "source": "etda"
-      },
-      {
-        "value": "Private sector",
-        "source": "malpedia"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
       }
     ]
   },

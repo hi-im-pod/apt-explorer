@@ -45,26 +45,6 @@
     "countries": [
       {
         "value": "Australia",
-        "source": "misp"
-      },
-      {
-        "value": "Cambodia",
-        "source": "misp"
-      },
-      {
-        "value": "Hong Kong",
-        "source": "misp"
-      },
-      {
-        "value": "Singapore",
-        "source": "misp"
-      },
-      {
-        "value": "Vietnam",
-        "source": "misp"
-      },
-      {
-        "value": "Australia",
         "source": "etda"
       },
       {
@@ -82,42 +62,10 @@
       {
         "value": "Vietnam",
         "source": "etda"
-      },
-      {
-        "value": "Australia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Cambodia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Hong Kong",
-        "source": "malpedia"
-      },
-      {
-        "value": "Singapore",
-        "source": "malpedia"
-      },
-      {
-        "value": "Vietnam",
-        "source": "malpedia"
       }
     ],
     "sectors": [
       {
-        "value": "Government",
-        "source": "misp"
-      },
-      {
-        "value": "Education",
-        "source": "misp"
-      },
-      {
-        "value": "Telecommunications",
-        "source": "misp"
-      },
-      {
         "value": "Education",
         "source": "etda"
       },
@@ -128,18 +76,6 @@
       {
         "value": "Telecommunications",
         "source": "etda"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
-      },
-      {
-        "value": "Education",
-        "source": "malpedia"
-      },
-      {
-        "value": "Telecommunications",
-        "source": "malpedia"
       }
     ]
   },

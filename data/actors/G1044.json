@@ -58,44 +58,15 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "Iran (Islamic Republic of)",
-      "source": "misp"
-    },
-    {
-      "value": "Iran (Islamic Republic of)",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
-    {
-      "value": "Espionage",
-      "source": "misp"
-    },
     {
       "value": "Information theft and espionage",
       "source": "etda"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
     }
   ],
   "claimed_targets": {
     "countries": [
-      {
-        "value": "Australia",
-        "source": "misp"
-      },
-      {
-        "value": "Israel",
-        "source": "misp"
-      },
-      {
-        "value": "United States",
-        "source": "misp"
-      },
       {
         "value": "Australia",
         "source": "etda"
@@ -135,73 +106,9 @@
       {
         "value": "United States",
         "source": "etda"
-      },
-      {
-        "value": "Australia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Israel",
-        "source": "malpedia"
-      },
-      {
-        "value": "United States",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Education",
-        "source": "misp"
-      },
-      {
-        "value": "Government",
-        "source": "misp"
-      },
-      {
-        "value": "Military",
-        "source": "misp"
-      },
-      {
-        "value": "Defense",
-        "source": "misp"
-      },
-      {
-        "value": "Energy",
-        "source": "misp"
-      },
-      {
-        "value": "Finance",
-        "source": "misp"
-      },
-      {
-        "value": "Healthcare",
-        "source": "misp"
-      },
-      {
-        "value": "Pharmaceuticals",
-        "source": "misp"
-      },
-      {
-        "value": "Civil Society",
-        "source": "misp"
-      },
-      {
-        "value": "Legal",
-        "source": "misp"
-      },
-      {
-        "value": "Manufacturing",
-        "source": "misp"
-      },
-      {
-        "value": "Media",
-        "source": "misp"
-      },
-      {
-        "value": "NGOs",
-        "source": "misp"
-      },
       {
         "value": "Education",
         "source": "etda"
@@ -233,58 +140,6 @@
       {
         "value": "Legal and professional services",
         "source": "etda"
-      },
-      {
-        "value": "Education",
-        "source": "malpedia"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
-      },
-      {
-        "value": "Military",
-        "source": "malpedia"
-      },
-      {
-        "value": "Defense",
-        "source": "malpedia"
-      },
-      {
-        "value": "Energy",
-        "source": "malpedia"
-      },
-      {
-        "value": "Finance",
-        "source": "malpedia"
-      },
-      {
-        "value": "Healthcare",
-        "source": "malpedia"
-      },
-      {
-        "value": "Pharmaceuticals",
-        "source": "malpedia"
-      },
-      {
-        "value": "Civil Society",
-        "source": "malpedia"
-      },
-      {
-        "value": "Legal",
-        "source": "malpedia"
-      },
-      {
-        "value": "Manufacturing",
-        "source": "malpedia"
-      },
-      {
-        "value": "Media",
-        "source": "malpedia"
-      },
-      {
-        "value": "NGOs",
-        "source": "malpedia"
       }
     ]
   },

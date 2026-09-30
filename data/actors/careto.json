@@ -49,89 +49,16 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "Spain",
-      "source": "misp"
-    },
-    {
-      "value": "Spain",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
-    {
-      "value": "Espionage",
-      "source": "misp"
-    },
     {
       "value": "Information theft and espionage",
       "source": "etda"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
     }
   ],
   "claimed_targets": {
     "countries": [
       {
-        "value": "Morocco",
-        "source": "misp"
-      },
-      {
-        "value": "France",
-        "source": "misp"
-      },
-      {
-        "value": "Libya",
-        "source": "misp"
-      },
-      {
-        "value": "Venezuela",
-        "source": "misp"
-      },
-      {
-        "value": "Poland",
-        "source": "misp"
-      },
-      {
-        "value": "Brazil",
-        "source": "misp"
-      },
-      {
-        "value": "Spain",
-        "source": "misp"
-      },
-      {
-        "value": "United States",
-        "source": "misp"
-      },
-      {
-        "value": "South Africa",
-        "source": "misp"
-      },
-      {
-        "value": "Tunisia",
-        "source": "misp"
-      },
-      {
-        "value": "United Kingdom",
-        "source": "misp"
-      },
-      {
-        "value": "Switzerland",
-        "source": "misp"
-      },
-      {
-        "value": "Iran",
-        "source": "misp"
-      },
-      {
-        "value": "Germany",
-        "source": "misp"
-      },
-      {
         "value": "Brazil",
         "source": "etda"
       },
@@ -186,73 +113,9 @@
       {
         "value": "Venezuela",
         "source": "etda"
-      },
-      {
-        "value": "Morocco",
-        "source": "malpedia"
-      },
-      {
-        "value": "France",
-        "source": "malpedia"
-      },
-      {
-        "value": "Libya",
-        "source": "malpedia"
-      },
-      {
-        "value": "Venezuela",
-        "source": "malpedia"
-      },
-      {
-        "value": "Poland",
-        "source": "malpedia"
-      },
-      {
-        "value": "Brazil",
-        "source": "malpedia"
-      },
-      {
-        "value": "Spain",
-        "source": "malpedia"
-      },
-      {
-        "value": "United States",
-        "source": "malpedia"
-      },
-      {
-        "value": "South Africa",
-        "source": "malpedia"
-      },
-      {
-        "value": "Tunisia",
-        "source": "malpedia"
-      },
-      {
-        "value": "United Kingdom",
-        "source": "malpedia"
-      },
-      {
-        "value": "Switzerland",
-        "source": "malpedia"
-      },
-      {
-        "value": "Iran",
-        "source": "malpedia"
-      },
-      {
-        "value": "Germany",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Government",
-        "source": "misp"
-      },
-      {
-        "value": "Private sector",
-        "source": "misp"
-      },
       {
         "value": "Education",
         "source": "etda"
@@ -268,14 +131,6 @@
       {
         "value": "Diplomatic missions",
         "source": "etda"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
-      },
-      {
-        "value": "Private sector",
-        "source": "malpedia"
       }
     ]
   },

@@ -100,16 +100,7 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "India",
-      "source": "misp"
-    },
-    {
-      "value": "India",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
     {
       "value": "Information theft and espionage",
@@ -118,22 +109,6 @@
   ],
   "claimed_targets": {
     "countries": [
-      {
-        "value": "China",
-        "source": "misp"
-      },
-      {
-        "value": "Pakistan",
-        "source": "misp"
-      },
-      {
-        "value": "Nepal",
-        "source": "misp"
-      },
-      {
-        "value": "Afghanistan",
-        "source": "misp"
-      },
       {
         "value": "Afghanistan",
         "source": "etda"
@@ -197,37 +172,9 @@
       {
         "value": "Vietnam",
         "source": "etda"
-      },
-      {
-        "value": "China",
-        "source": "malpedia"
-      },
-      {
-        "value": "Pakistan",
-        "source": "malpedia"
-      },
-      {
-        "value": "Nepal",
-        "source": "malpedia"
-      },
-      {
-        "value": "Afghanistan",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Government",
-        "source": "misp"
-      },
-      {
-        "value": "Military",
-        "source": "misp"
-      },
-      {
-        "value": "Private Sector",
-        "source": "misp"
-      },
       {
         "value": "Defense",
         "source": "etda"
@@ -239,18 +186,6 @@
       {
         "value": "Maritime and Shipbuilding",
         "source": "etda"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
-      },
-      {
-        "value": "Military",
-        "source": "malpedia"
-      },
-      {
-        "value": "Private Sector",
-        "source": "malpedia"
       }
     ]
   },

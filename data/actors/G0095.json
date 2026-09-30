@@ -55,88 +55,15 @@
     }
   ],
   "origin": [],
-  "sponsor": [
-    {
-      "value": "Unknown",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
-    {
-      "value": "Espionage",
-      "source": "misp"
-    },
     {
       "value": "Information theft and espionage",
       "source": "etda"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
     }
   ],
   "claimed_targets": {
     "countries": [
-      {
-        "value": "Venezuela",
-        "source": "misp"
-      },
-      {
-        "value": "Russia",
-        "source": "misp"
-      },
-      {
-        "value": "Cuba",
-        "source": "misp"
-      },
-      {
-        "value": "China",
-        "source": "misp"
-      },
-      {
-        "value": "Belgium",
-        "source": "misp"
-      },
-      {
-        "value": "Ecuador",
-        "source": "misp"
-      },
-      {
-        "value": "Brazil",
-        "source": "misp"
-      },
-      {
-        "value": "Spain",
-        "source": "misp"
-      },
-      {
-        "value": "Germany",
-        "source": "misp"
-      },
-      {
-        "value": "France",
-        "source": "misp"
-      },
-      {
-        "value": "Colombia",
-        "source": "misp"
-      },
-      {
-        "value": "Peru",
-        "source": "misp"
-      },
-      {
-        "value": "Sweden",
-        "source": "misp"
-      },
-      {
-        "value": "United States",
-        "source": "misp"
-      },
-      {
-        "value": "Malaysia",
-        "source": "misp"
-      },
       {
         "value": "Argentina",
         "source": "etda"
@@ -236,77 +163,9 @@
       {
         "value": "Venezuela",
         "source": "etda"
-      },
-      {
-        "value": "Venezuela",
-        "source": "malpedia"
-      },
-      {
-        "value": "Russia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Cuba",
-        "source": "malpedia"
-      },
-      {
-        "value": "China",
-        "source": "malpedia"
-      },
-      {
-        "value": "Belgium",
-        "source": "malpedia"
-      },
-      {
-        "value": "Ecuador",
-        "source": "malpedia"
-      },
-      {
-        "value": "Brazil",
-        "source": "malpedia"
-      },
-      {
-        "value": "Spain",
-        "source": "malpedia"
-      },
-      {
-        "value": "Germany",
-        "source": "malpedia"
-      },
-      {
-        "value": "France",
-        "source": "malpedia"
-      },
-      {
-        "value": "Colombia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Peru",
-        "source": "malpedia"
-      },
-      {
-        "value": "Sweden",
-        "source": "malpedia"
-      },
-      {
-        "value": "United States",
-        "source": "malpedia"
-      },
-      {
-        "value": "Malaysia",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Military",
-        "source": "misp"
-      },
-      {
-        "value": "Government",
-        "source": "misp"
-      },
       {
         "value": "Defense",
         "source": "etda"
@@ -330,14 +189,6 @@
       {
         "value": "Telecommunications",
         "source": "etda"
-      },
-      {
-        "value": "Military",
-        "source": "malpedia"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
       }
     ]
   },

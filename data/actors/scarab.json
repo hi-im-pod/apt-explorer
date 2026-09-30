@@ -34,32 +34,12 @@
   "sponsor": [],
   "motivation": [
     {
-      "value": "Espionage",
-      "source": "misp"
-    },
-    {
       "value": "Information theft and espionage",
       "source": "etda"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
     }
   ],
   "claimed_targets": {
     "countries": [
-      {
-        "value": "Russia",
-        "source": "misp"
-      },
-      {
-        "value": "Ukraine",
-        "source": "misp"
-      },
-      {
-        "value": "United States",
-        "source": "misp"
-      },
       {
         "value": "Russia",
         "source": "etda"
@@ -75,18 +55,6 @@
       {
         "value": "United States",
         "source": "etda"
-      },
-      {
-        "value": "Russia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Ukraine",
-        "source": "malpedia"
-      },
-      {
-        "value": "United States",
-        "source": "malpedia"
       }
     ],
     "sectors": []

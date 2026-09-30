@@ -38,32 +38,7 @@
   "motivation": [],
   "claimed_targets": {
     "countries": [],
-    "sectors": [
-      {
-        "value": "Government",
-        "source": "misp"
-      },
-      {
-        "value": "Education",
-        "source": "misp"
-      },
-      {
-        "value": "Logistics",
-        "source": "misp"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
-      },
-      {
-        "value": "Education",
-        "source": "malpedia"
-      },
-      {
-        "value": "Logistics",
-        "source": "malpedia"
-      }
-    ]
+    "sectors": []
   },
   "malware": [
     {

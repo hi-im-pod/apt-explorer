@@ -165,68 +165,15 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "Iran (Islamic Republic of)",
-      "source": "misp"
-    },
-    {
-      "value": "Iran (Islamic Republic of)",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
-    {
-      "value": "Espionage",
-      "source": "misp"
-    },
     {
       "value": "Information theft and espionage",
       "source": "etda"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
     }
   ],
   "claimed_targets": {
     "countries": [
-      {
-        "value": "Saudi Arabia",
-        "source": "misp"
-      },
-      {
-        "value": "Georgia",
-        "source": "misp"
-      },
-      {
-        "value": "Türkiye",
-        "source": "misp"
-      },
-      {
-        "value": "Iraq",
-        "source": "misp"
-      },
-      {
-        "value": "Israel",
-        "source": "misp"
-      },
-      {
-        "value": "India",
-        "source": "misp"
-      },
-      {
-        "value": "United Arab Emirates",
-        "source": "misp"
-      },
-      {
-        "value": "Pakistan",
-        "source": "misp"
-      },
-      {
-        "value": "United States",
-        "source": "misp"
-      },
       {
         "value": "Afghanistan",
         "source": "etda"
@@ -358,49 +305,9 @@
       {
         "value": "United States",
         "source": "etda"
-      },
-      {
-        "value": "Saudi Arabia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Georgia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Türkiye",
-        "source": "malpedia"
-      },
-      {
-        "value": "Iraq",
-        "source": "malpedia"
-      },
-      {
-        "value": "Israel",
-        "source": "malpedia"
-      },
-      {
-        "value": "India",
-        "source": "malpedia"
-      },
-      {
-        "value": "United Arab Emirates",
-        "source": "malpedia"
-      },
-      {
-        "value": "Pakistan",
-        "source": "malpedia"
-      },
-      {
-        "value": "United States",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Government",
-        "source": "misp"
-      },
       {
         "value": "Aviation",
         "source": "etda"
@@ -468,10 +375,6 @@
       {
         "value": "Transportation",
         "source": "etda"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
       }
     ]
   },

@@ -13,54 +13,17 @@
     }
   ],
   "origin": [],
-  "sponsor": [
-    {
-      "value": "Unknown",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
-    {
-      "value": "Espionage",
-      "source": "misp"
-    },
     {
       "value": "Information theft and espionage",
       "source": "etda"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
     }
   ],
   "claimed_targets": {
     "countries": [
       {
         "value": "Argentina",
-        "source": "misp"
-      },
-      {
-        "value": "Ecuador",
-        "source": "misp"
-      },
-      {
-        "value": "Brazil",
-        "source": "misp"
-      },
-      {
-        "value": "Brunei",
-        "source": "misp"
-      },
-      {
-        "value": "Peru",
-        "source": "misp"
-      },
-      {
-        "value": "Malaysia",
-        "source": "misp"
-      },
-      {
-        "value": "Argentina",
         "source": "etda"
       },
       {
@@ -82,44 +45,12 @@
       {
         "value": "Peru",
         "source": "etda"
-      },
-      {
-        "value": "Argentina",
-        "source": "malpedia"
-      },
-      {
-        "value": "Ecuador",
-        "source": "malpedia"
-      },
-      {
-        "value": "Brazil",
-        "source": "malpedia"
-      },
-      {
-        "value": "Brunei",
-        "source": "malpedia"
-      },
-      {
-        "value": "Peru",
-        "source": "malpedia"
-      },
-      {
-        "value": "Malaysia",
-        "source": "malpedia"
       }
     ],
     "sectors": [
       {
         "value": "Government",
-        "source": "misp"
-      },
-      {
-        "value": "Government",
         "source": "etda"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
       }
     ]
   },

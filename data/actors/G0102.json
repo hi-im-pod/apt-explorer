@@ -169,16 +169,7 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "Russian Federation",
-      "source": "misp"
-    },
-    {
-      "value": "Russian Federation",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
     {
       "value": "Financial crime",
@@ -191,78 +182,6 @@
   ],
   "claimed_targets": {
     "countries": [
-      {
-        "value": "Australia",
-        "source": "misp"
-      },
-      {
-        "value": "Bahamas",
-        "source": "misp"
-      },
-      {
-        "value": "Canada",
-        "source": "misp"
-      },
-      {
-        "value": "Costa Rica",
-        "source": "misp"
-      },
-      {
-        "value": "France",
-        "source": "misp"
-      },
-      {
-        "value": "Germany",
-        "source": "misp"
-      },
-      {
-        "value": "India",
-        "source": "misp"
-      },
-      {
-        "value": "Ireland",
-        "source": "misp"
-      },
-      {
-        "value": "Italy",
-        "source": "misp"
-      },
-      {
-        "value": "Japan",
-        "source": "misp"
-      },
-      {
-        "value": "Mexico",
-        "source": "misp"
-      },
-      {
-        "value": "New Zealand",
-        "source": "misp"
-      },
-      {
-        "value": "Spain",
-        "source": "misp"
-      },
-      {
-        "value": "Switzerland",
-        "source": "misp"
-      },
-      {
-        "value": "Taiwan",
-        "source": "misp"
-      },
-      {
-        "value": "United Kingdom",
-        "source": "misp"
-      },
-      {
-        "value": "Ukraine",
-        "source": "misp"
-      },
-      {
-        "value": "United States",
-        "source": "misp"
-      },
       {
         "value": "United States",
         "source": "etda"
@@ -310,101 +229,9 @@
       {
         "value": "United Kingdom",
         "source": "etda"
-      },
-      {
-        "value": "Australia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Bahamas",
-        "source": "malpedia"
-      },
-      {
-        "value": "Canada",
-        "source": "malpedia"
-      },
-      {
-        "value": "Costa Rica",
-        "source": "malpedia"
-      },
-      {
-        "value": "France",
-        "source": "malpedia"
-      },
-      {
-        "value": "Germany",
-        "source": "malpedia"
-      },
-      {
-        "value": "India",
-        "source": "malpedia"
-      },
-      {
-        "value": "Ireland",
-        "source": "malpedia"
-      },
-      {
-        "value": "Italy",
-        "source": "malpedia"
-      },
-      {
-        "value": "Japan",
-        "source": "malpedia"
-      },
-      {
-        "value": "Mexico",
-        "source": "malpedia"
-      },
-      {
-        "value": "New Zealand",
-        "source": "malpedia"
-      },
-      {
-        "value": "Spain",
-        "source": "malpedia"
-      },
-      {
-        "value": "Switzerland",
-        "source": "malpedia"
-      },
-      {
-        "value": "Taiwan",
-        "source": "malpedia"
-      },
-      {
-        "value": "United Kingdom",
-        "source": "malpedia"
-      },
-      {
-        "value": "Ukraine",
-        "source": "malpedia"
-      },
-      {
-        "value": "United States",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Defense",
-        "source": "misp"
-      },
-      {
-        "value": "Financial",
-        "source": "misp"
-      },
-      {
-        "value": "Government",
-        "source": "misp"
-      },
-      {
-        "value": "Healthcare",
-        "source": "misp"
-      },
-      {
-        "value": "Telecommunications",
-        "source": "misp"
-      },
       {
         "value": "Defense",
         "source": "etda"
@@ -436,26 +263,6 @@
       {
         "value": "Technology",
         "source": "etda"
-      },
-      {
-        "value": "Defense",
-        "source": "malpedia"
-      },
-      {
-        "value": "Financial",
-        "source": "malpedia"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
-      },
-      {
-        "value": "Healthcare",
-        "source": "malpedia"
-      },
-      {
-        "value": "Telecommunications",
-        "source": "malpedia"
       }
     ]
   },

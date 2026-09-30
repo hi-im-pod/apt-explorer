@@ -12,16 +12,7 @@
   ],
   "origin": [],
   "sponsor": [],
-  "motivation": [
-    {
-      "value": "Business Email Compromise",
-      "source": "misp"
-    },
-    {
-      "value": "Business Email Compromise",
-      "source": "malpedia"
-    }
-  ],
+  "motivation": [],
   "claimed_targets": {
     "countries": [],
     "sectors": []

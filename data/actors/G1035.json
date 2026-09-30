@@ -71,10 +71,6 @@
   "claimed_targets": {
     "countries": [
       {
-        "value": "Germany",
-        "source": "misp"
-      },
-      {
         "value": "Georgia",
         "source": "etda"
       },
@@ -113,10 +109,6 @@
       {
         "value": "Uzbekistan",
         "source": "etda"
-      },
-      {
-        "value": "Germany",
-        "source": "malpedia"
       }
     ],
     "sectors": [

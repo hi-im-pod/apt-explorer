@@ -34,74 +34,6 @@
   "claimed_targets": {
     "countries": [
       {
-        "value": "North Korea",
-        "source": "misp"
-      },
-      {
-        "value": "South Korea",
-        "source": "misp"
-      },
-      {
-        "value": "Japan",
-        "source": "misp"
-      },
-      {
-        "value": "China",
-        "source": "misp"
-      },
-      {
-        "value": "Mongolia",
-        "source": "misp"
-      },
-      {
-        "value": "Egypt",
-        "source": "misp"
-      },
-      {
-        "value": "Saudi Arabia",
-        "source": "misp"
-      },
-      {
-        "value": "Yemen",
-        "source": "misp"
-      },
-      {
-        "value": "Oman",
-        "source": "misp"
-      },
-      {
-        "value": "Iran",
-        "source": "misp"
-      },
-      {
-        "value": "Iraq",
-        "source": "misp"
-      },
-      {
-        "value": "Kuwait",
-        "source": "misp"
-      },
-      {
-        "value": "Israel",
-        "source": "misp"
-      },
-      {
-        "value": "Jordan",
-        "source": "misp"
-      },
-      {
-        "value": "Syria",
-        "source": "misp"
-      },
-      {
-        "value": "Türkiye",
-        "source": "misp"
-      },
-      {
-        "value": "Lebanon",
-        "source": "misp"
-      },
-      {
         "value": "Argentina",
         "source": "etda"
       },
@@ -240,93 +172,9 @@
       {
         "value": "Yemen",
         "source": "etda"
-      },
-      {
-        "value": "North Korea",
-        "source": "malpedia"
-      },
-      {
-        "value": "South Korea",
-        "source": "malpedia"
-      },
-      {
-        "value": "Japan",
-        "source": "malpedia"
-      },
-      {
-        "value": "China",
-        "source": "malpedia"
-      },
-      {
-        "value": "Mongolia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Egypt",
-        "source": "malpedia"
-      },
-      {
-        "value": "Saudi Arabia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Yemen",
-        "source": "malpedia"
-      },
-      {
-        "value": "Oman",
-        "source": "malpedia"
-      },
-      {
-        "value": "Iran",
-        "source": "malpedia"
-      },
-      {
-        "value": "Iraq",
-        "source": "malpedia"
-      },
-      {
-        "value": "Kuwait",
-        "source": "malpedia"
-      },
-      {
-        "value": "Israel",
-        "source": "malpedia"
-      },
-      {
-        "value": "Jordan",
-        "source": "malpedia"
-      },
-      {
-        "value": "Syria",
-        "source": "malpedia"
-      },
-      {
-        "value": "Türkiye",
-        "source": "malpedia"
-      },
-      {
-        "value": "Lebanon",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Government",
-        "source": "misp"
-      },
-      {
-        "value": "Electronics Manufacturers",
-        "source": "misp"
-      },
-      {
-        "value": "Universities",
-        "source": "misp"
-      },
-      {
-        "value": "Religious organization",
-        "source": "misp"
-      },
       {
         "value": "Education",
         "source": "etda"
@@ -350,22 +198,6 @@
       {
         "value": "religious organizations",
         "source": "etda"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
-      },
-      {
-        "value": "Electronics Manufacturers",
-        "source": "malpedia"
-      },
-      {
-        "value": "Universities",
-        "source": "malpedia"
-      },
-      {
-        "value": "Religious organization",
-        "source": "malpedia"
       }
     ]
   },

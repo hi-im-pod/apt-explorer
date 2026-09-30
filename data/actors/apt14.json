@@ -64,16 +64,7 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "China",
-      "source": "misp"
-    },
-    {
-      "value": "China",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
     {
       "value": "Espionage",
@@ -91,26 +82,6 @@
   "claimed_targets": {
     "countries": [
       {
-        "value": "United States",
-        "source": "misp"
-      },
-      {
-        "value": "United Kingdom",
-        "source": "misp"
-      },
-      {
-        "value": "Germany",
-        "source": "misp"
-      },
-      {
-        "value": "Australia",
-        "source": "misp"
-      },
-      {
-        "value": "Sweden",
-        "source": "misp"
-      },
-      {
         "value": "Australia",
         "source": "etda"
       },
@@ -129,37 +100,9 @@
       {
         "value": "United States",
         "source": "etda"
-      },
-      {
-        "value": "United States",
-        "source": "malpedia"
-      },
-      {
-        "value": "United Kingdom",
-        "source": "malpedia"
-      },
-      {
-        "value": "Germany",
-        "source": "malpedia"
-      },
-      {
-        "value": "Australia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Sweden",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Government",
-        "source": "misp"
-      },
-      {
-        "value": "Military",
-        "source": "misp"
-      },
       {
         "value": "Other",
         "source": "misp"
@@ -178,6 +121,10 @@
       },
       {
         "value": "Maritime",
+        "source": "misp"
+      },
+      {
+        "value": "Military",
         "source": "misp"
       },
       {
@@ -205,14 +152,6 @@
         "source": "etda"
       },
       {
-        "value": "Government",
-        "source": "malpedia"
-      },
-      {
-        "value": "Military",
-        "source": "malpedia"
-      },
-      {
         "value": "Other",
         "source": "malpedia"
       },
@@ -230,6 +169,10 @@
       },
       {
         "value": "Maritime",
+        "source": "malpedia"
+      },
+      {
+        "value": "Military",
         "source": "malpedia"
       },
       {

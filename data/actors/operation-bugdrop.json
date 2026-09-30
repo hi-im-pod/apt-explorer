@@ -25,49 +25,16 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "Russian Federation",
-      "source": "misp"
-    },
-    {
-      "value": "Russian Federation",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
-    {
-      "value": "Espionage",
-      "source": "misp"
-    },
     {
       "value": "Information theft and espionage",
       "source": "etda"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
     }
   ],
   "claimed_targets": {
     "countries": [
       {
-        "value": "Ukraine",
-        "source": "misp"
-      },
-      {
-        "value": "Austria",
-        "source": "misp"
-      },
-      {
-        "value": "Russia",
-        "source": "misp"
-      },
-      {
-        "value": "Saudi Arabia",
-        "source": "misp"
-      },
-      {
         "value": "Austria",
         "source": "etda"
       },
@@ -82,29 +49,9 @@
       {
         "value": "Ukraine",
         "source": "etda"
-      },
-      {
-        "value": "Ukraine",
-        "source": "malpedia"
-      },
-      {
-        "value": "Austria",
-        "source": "malpedia"
-      },
-      {
-        "value": "Russia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Saudi Arabia",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Private sector",
-        "source": "misp"
-      },
       {
         "value": "Engineering",
         "source": "etda"
@@ -120,10 +67,6 @@
       {
         "value": "Research",
         "source": "etda"
-      },
-      {
-        "value": "Private sector",
-        "source": "malpedia"
       }
     ]
   },

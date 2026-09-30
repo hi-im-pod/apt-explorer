@@ -14,48 +14,7 @@
   "sponsor": [],
   "motivation": [],
   "claimed_targets": {
-    "countries": [
-      {
-        "value": "Côte d'Ivoire",
-        "source": "misp"
-      },
-      {
-        "value": "Morocco",
-        "source": "misp"
-      },
-      {
-        "value": "Cameroon",
-        "source": "misp"
-      },
-      {
-        "value": "Senegal",
-        "source": "misp"
-      },
-      {
-        "value": "Togo",
-        "source": "misp"
-      },
-      {
-        "value": "Côte d'Ivoire",
-        "source": "malpedia"
-      },
-      {
-        "value": "Morocco",
-        "source": "malpedia"
-      },
-      {
-        "value": "Cameroon",
-        "source": "malpedia"
-      },
-      {
-        "value": "Senegal",
-        "source": "malpedia"
-      },
-      {
-        "value": "Togo",
-        "source": "malpedia"
-      }
-    ],
+    "countries": [],
     "sectors": []
   },
   "malware": [],

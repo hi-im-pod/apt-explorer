@@ -83,56 +83,15 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "China",
-      "source": "misp"
-    },
-    {
-      "value": "China",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
-    {
-      "value": "Espionage",
-      "source": "misp"
-    },
     {
       "value": "Information theft and espionage",
       "source": "etda"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
     }
   ],
   "claimed_targets": {
     "countries": [
-      {
-        "value": "Hong Kong",
-        "source": "misp"
-      },
-      {
-        "value": "India",
-        "source": "misp"
-      },
-      {
-        "value": "Malaysia",
-        "source": "misp"
-      },
-      {
-        "value": "Taiwan",
-        "source": "misp"
-      },
-      {
-        "value": "Macao",
-        "source": "misp"
-      },
-      {
-        "value": "Nigeria",
-        "source": "misp"
-      },
       {
         "value": "China",
         "source": "etda"
@@ -172,45 +131,9 @@
       {
         "value": "Vietnam",
         "source": "etda"
-      },
-      {
-        "value": "Hong Kong",
-        "source": "malpedia"
-      },
-      {
-        "value": "Malaysia",
-        "source": "malpedia"
-      },
-      {
-        "value": "India",
-        "source": "malpedia"
-      },
-      {
-        "value": "Taiwan",
-        "source": "malpedia"
-      },
-      {
-        "value": "Macao",
-        "source": "malpedia"
-      },
-      {
-        "value": "Nigeria",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Government",
-        "source": "misp"
-      },
-      {
-        "value": "Individuals",
-        "source": "misp"
-      },
-      {
-        "value": "Universities",
-        "source": "misp"
-      },
       {
         "value": "Telecommunications",
         "source": "etda"
@@ -218,18 +141,6 @@
       {
         "value": "human rights and pro-democracy advocates",
         "source": "etda"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
-      },
-      {
-        "value": "Individuals",
-        "source": "malpedia"
-      },
-      {
-        "value": "Universities",
-        "source": "malpedia"
       }
     ]
   },

@@ -26,28 +26,11 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "Belarus",
-      "source": "misp"
-    },
-    {
-      "value": "Belarus",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
-    {
-      "value": "Espionage",
-      "source": "misp"
-    },
     {
       "value": "Information theft and espionage",
       "source": "etda"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
     }
   ],
   "claimed_targets": {
@@ -59,16 +42,8 @@
     ],
     "sectors": [
       {
-        "value": "Government",
-        "source": "misp"
-      },
-      {
         "value": "Foreign embassies in Belarus",
         "source": "etda"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
       }
     ]
   },

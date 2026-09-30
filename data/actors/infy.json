@@ -54,92 +54,15 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "Iran (Islamic Republic of)",
-      "source": "misp"
-    },
-    {
-      "value": "Iran (Islamic Republic of)",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
-    {
-      "value": "Espionage",
-      "source": "misp"
-    },
     {
       "value": "Information theft and espionage",
       "source": "etda"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
     }
   ],
   "claimed_targets": {
     "countries": [
-      {
-        "value": "Israel",
-        "source": "misp"
-      },
-      {
-        "value": "Iran",
-        "source": "misp"
-      },
-      {
-        "value": "France",
-        "source": "misp"
-      },
-      {
-        "value": "China",
-        "source": "misp"
-      },
-      {
-        "value": "Sweden",
-        "source": "misp"
-      },
-      {
-        "value": "United States",
-        "source": "misp"
-      },
-      {
-        "value": "United Kingdom",
-        "source": "misp"
-      },
-      {
-        "value": "Germany",
-        "source": "misp"
-      },
-      {
-        "value": "Syria",
-        "source": "misp"
-      },
-      {
-        "value": "Italy",
-        "source": "misp"
-      },
-      {
-        "value": "Denmark",
-        "source": "misp"
-      },
-      {
-        "value": "Canada",
-        "source": "misp"
-      },
-      {
-        "value": "Russia",
-        "source": "misp"
-      },
-      {
-        "value": "Saudi Arabia",
-        "source": "misp"
-      },
-      {
-        "value": "Bahrain",
-        "source": "misp"
-      },
       {
         "value": "Azerbaijan",
         "source": "etda"
@@ -223,77 +146,9 @@
       {
         "value": "United States",
         "source": "etda"
-      },
-      {
-        "value": "Israel",
-        "source": "malpedia"
-      },
-      {
-        "value": "Iran",
-        "source": "malpedia"
-      },
-      {
-        "value": "France",
-        "source": "malpedia"
-      },
-      {
-        "value": "China",
-        "source": "malpedia"
-      },
-      {
-        "value": "Sweden",
-        "source": "malpedia"
-      },
-      {
-        "value": "United States",
-        "source": "malpedia"
-      },
-      {
-        "value": "United Kingdom",
-        "source": "malpedia"
-      },
-      {
-        "value": "Germany",
-        "source": "malpedia"
-      },
-      {
-        "value": "Syria",
-        "source": "malpedia"
-      },
-      {
-        "value": "Italy",
-        "source": "malpedia"
-      },
-      {
-        "value": "Denmark",
-        "source": "malpedia"
-      },
-      {
-        "value": "Canada",
-        "source": "malpedia"
-      },
-      {
-        "value": "Russia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Saudi Arabia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Bahrain",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Government",
-        "source": "misp"
-      },
-      {
-        "value": "Private sector",
-        "source": "misp"
-      },
       {
         "value": "Activists",
         "source": "misp"
@@ -309,14 +164,6 @@
       {
         "value": "private sectors",
         "source": "etda"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
-      },
-      {
-        "value": "Private sector",
-        "source": "malpedia"
       },
       {
         "value": "Activists",

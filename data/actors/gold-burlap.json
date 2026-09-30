@@ -22,16 +22,7 @@
   "motivation": [],
   "claimed_targets": {
     "countries": [],
-    "sectors": [
-      {
-        "value": "Healthcare",
-        "source": "misp"
-      },
-      {
-        "value": "Healthcare",
-        "source": "malpedia"
-      }
-    ]
+    "sectors": []
   },
   "malware": [],
   "techniques_documented": [],

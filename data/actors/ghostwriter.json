@@ -90,16 +90,7 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "Belarus",
-      "source": "misp"
-    },
-    {
-      "value": "Belarus",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
     {
       "value": "Information theft and espionage",
@@ -112,26 +103,6 @@
   ],
   "claimed_targets": {
     "countries": [
-      {
-        "value": "Germany",
-        "source": "misp"
-      },
-      {
-        "value": "Latvia",
-        "source": "misp"
-      },
-      {
-        "value": "Lithuania",
-        "source": "misp"
-      },
-      {
-        "value": "Poland",
-        "source": "misp"
-      },
-      {
-        "value": "Ukraine",
-        "source": "misp"
-      },
       {
         "value": "Belarus",
         "source": "etda"
@@ -179,33 +150,9 @@
       {
         "value": "Ukraine",
         "source": "etda"
-      },
-      {
-        "value": "Germany",
-        "source": "malpedia"
-      },
-      {
-        "value": "Latvia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Lithuania",
-        "source": "malpedia"
-      },
-      {
-        "value": "Poland",
-        "source": "malpedia"
-      },
-      {
-        "value": "Ukraine",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Government",
-        "source": "misp"
-      },
       {
         "value": "Defense",
         "source": "etda"
@@ -221,10 +168,6 @@
       {
         "value": "Media",
         "source": "etda"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
       }
     ]
   },

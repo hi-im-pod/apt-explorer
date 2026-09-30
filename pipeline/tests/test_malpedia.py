@@ -54,10 +54,12 @@ def test_actor_normalizes_with_synonyms_values_and_family_names(store):
     # Families are named by common_name, not by their IDs such as win.xagent.
     assert apt28.malware == ["Seduploader", "X-Agent"]
     assert apt28.origin == ["RU"]
-    assert apt28.sponsor == ["Russian Federation"]
-    assert apt28.motivation == ["Espionage"]
-    assert apt28.targets_countries == ["Georgia", "France", "Jordan"]
-    assert apt28.targets_sectors == ["Government", "Military", "Government, Administration", "Security Service"]
+    # The record's cfr-* fields cite a tracker whose terms bar public reuse,
+    # so the connector never reads them, though the fixture carries them.
+    assert apt28.sponsor == []
+    assert apt28.motivation == []
+    assert apt28.targets_countries == []
+    assert apt28.targets_sectors == ["Military", "Government, Administration", "Security Service"]
     assert apt28.retrieved_at == store.latest_date("malpedia")
 
 

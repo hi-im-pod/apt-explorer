@@ -40,30 +40,6 @@
   "claimed_targets": {
     "countries": [
       {
-        "value": "India",
-        "source": "misp"
-      },
-      {
-        "value": "Japan",
-        "source": "misp"
-      },
-      {
-        "value": "Nepal",
-        "source": "misp"
-      },
-      {
-        "value": "Russia",
-        "source": "misp"
-      },
-      {
-        "value": "Taiwan",
-        "source": "misp"
-      },
-      {
-        "value": "United States",
-        "source": "misp"
-      },
-      {
         "value": "Afghanistan",
         "source": "etda"
       },
@@ -106,41 +82,9 @@
       {
         "value": "Vietnam",
         "source": "etda"
-      },
-      {
-        "value": "India",
-        "source": "malpedia"
-      },
-      {
-        "value": "Japan",
-        "source": "malpedia"
-      },
-      {
-        "value": "Nepal",
-        "source": "malpedia"
-      },
-      {
-        "value": "Russia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Taiwan",
-        "source": "malpedia"
-      },
-      {
-        "value": "United States",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Aviation",
-        "source": "misp"
-      },
-      {
-        "value": "Energy",
-        "source": "misp"
-      },
       {
         "value": "Aviation",
         "source": "etda"
@@ -152,14 +96,6 @@
       {
         "value": "Government",
         "source": "etda"
-      },
-      {
-        "value": "Aviation",
-        "source": "malpedia"
-      },
-      {
-        "value": "Energy",
-        "source": "malpedia"
       }
     ]
   },

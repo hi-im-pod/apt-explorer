@@ -33,10 +33,11 @@ def test_maps_the_galaxy_fields(store):
     # out the actor's own name.
     assert a.aliases == ["Fancy Bear", "Sofacy", "G0007"]
     assert a.origin == ["RU"]
-    assert a.sponsor == ["Russian Federation"]
-    assert a.targets_countries == ["Georgia", "United States"]
-    # Sectors come from both the CFR category and MISP's own sector field.
-    assert a.targets_sectors == ["Government", "Military", "Defense"]
+    # The cfr-* fields cite a tracker whose terms bar public reuse, so the
+    # connector never reads them, though the fixture carries them.
+    assert a.sponsor == []
+    assert a.targets_countries == []
+    assert a.targets_sectors == ["Defense", "Government"]
     assert a.motivation == ["Espionage"]
 
 
@@ -48,13 +49,13 @@ def test_bare_actor_still_normalizes_with_empty_lists(store):
         [], [], [], [], [], [])
 
 
-def test_scalar_meta_values_are_wrapped_and_unknown_is_dropped(store):
+def test_scalar_meta_values_are_wrapped(store):
     a = actors(store)["Scalar Actor"]
     assert a.aliases == ["Scalar Synonym"]
     assert a.origin == ["IR"]
-    assert a.targets_sectors == ["Civil society"]
     assert a.motivation == ["Hacktivists-Nationalists"]
-    # "Unknown" says the galaxy has no sponsor to name; it is not a sponsor.
+    # Its only sector value sits in a cfr-* field, which is never read.
+    assert a.targets_sectors == []
     assert a.sponsor == []
 
 

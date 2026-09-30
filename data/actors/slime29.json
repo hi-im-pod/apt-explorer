@@ -20,29 +20,11 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "China",
-      "source": "misp"
-    },
-    {
-      "value": "China",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [],
   "claimed_targets": {
     "countries": [],
-    "sectors": [
-      {
-        "value": "Private Sector",
-        "source": "misp"
-      },
-      {
-        "value": "Private Sector",
-        "source": "malpedia"
-      }
-    ]
+    "sectors": []
   },
   "malware": [
     {

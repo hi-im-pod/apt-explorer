@@ -89,22 +89,6 @@
   "claimed_targets": {
     "countries": [
       {
-        "value": "Belarus",
-        "source": "misp"
-      },
-      {
-        "value": "Russia",
-        "source": "misp"
-      },
-      {
-        "value": "Mongolia",
-        "source": "misp"
-      },
-      {
-        "value": "Ukraine",
-        "source": "misp"
-      },
-      {
         "value": "Afghanistan",
         "source": "etda"
       },
@@ -123,22 +107,6 @@
       {
         "value": "Ukraine",
         "source": "etda"
-      },
-      {
-        "value": "Belarus",
-        "source": "malpedia"
-      },
-      {
-        "value": "Russia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Mongolia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Ukraine",
-        "source": "malpedia"
       }
     ],
     "sectors": [

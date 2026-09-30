@@ -282,21 +282,8 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "China",
-      "source": "misp"
-    },
-    {
-      "value": "China",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
-    {
-      "value": "Espionage",
-      "source": "misp"
-    },
     {
       "value": "Financial gain",
       "source": "etda"
@@ -308,18 +295,10 @@
     {
       "value": "Financial crime",
       "source": "etda"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
     }
   ],
   "claimed_targets": {
     "countries": [
-      {
-        "value": "United States",
-        "source": "misp"
-      },
       {
         "value": "Australia",
         "source": "etda"
@@ -367,21 +346,9 @@
       {
         "value": "Thailand",
         "source": "etda"
-      },
-      {
-        "value": "United States",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Private sector",
-        "source": "misp"
-      },
-      {
-        "value": "Military",
-        "source": "misp"
-      },
       {
         "value": "Technology",
         "source": "misp"
@@ -392,26 +359,6 @@
       },
       {
         "value": "Non-profit organisation",
-        "source": "misp"
-      },
-      {
-        "value": "Pharmaceuticals",
-        "source": "misp"
-      },
-      {
-        "value": "Healthcare",
-        "source": "misp"
-      },
-      {
-        "value": "Construction",
-        "source": "misp"
-      },
-      {
-        "value": "Aerospace",
-        "source": "misp"
-      },
-      {
-        "value": "Defense industrial base",
         "source": "misp"
       },
       {
@@ -487,14 +434,6 @@
         "source": "etda"
       },
       {
-        "value": "Private sector",
-        "source": "malpedia"
-      },
-      {
-        "value": "Military",
-        "source": "malpedia"
-      },
-      {
         "value": "Technology",
         "source": "malpedia"
       },
@@ -504,26 +443,6 @@
       },
       {
         "value": "Non-profit organisation",
-        "source": "malpedia"
-      },
-      {
-        "value": "Pharmaceuticals",
-        "source": "malpedia"
-      },
-      {
-        "value": "Healthcare",
-        "source": "malpedia"
-      },
-      {
-        "value": "Construction",
-        "source": "malpedia"
-      },
-      {
-        "value": "Aerospace",
-        "source": "malpedia"
-      },
-      {
-        "value": "Defense industrial base",
         "source": "malpedia"
       }
     ]

@@ -146,44 +146,15 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "China",
-      "source": "misp"
-    },
-    {
-      "value": "China",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
-    {
-      "value": "Espionage",
-      "source": "misp"
-    },
     {
       "value": "Information theft and espionage",
       "source": "etda"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
     }
   ],
   "claimed_targets": {
     "countries": [
-      {
-        "value": "United States",
-        "source": "misp"
-      },
-      {
-        "value": "United Kingdom",
-        "source": "misp"
-      },
-      {
-        "value": "Hong Kong",
-        "source": "misp"
-      },
       {
         "value": "Belgium",
         "source": "etda"
@@ -219,25 +190,9 @@
       {
         "value": "Vietnam",
         "source": "etda"
-      },
-      {
-        "value": "United States",
-        "source": "malpedia"
-      },
-      {
-        "value": "United Kingdom",
-        "source": "malpedia"
-      },
-      {
-        "value": "Hong Kong",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Private sector",
-        "source": "misp"
-      },
       {
         "value": "Political party",
         "source": "misp"
@@ -273,10 +228,6 @@
       {
         "value": "Transportation",
         "source": "etda"
-      },
-      {
-        "value": "Private sector",
-        "source": "malpedia"
       },
       {
         "value": "Political party",

@@ -23,42 +23,8 @@
   "sponsor": [],
   "motivation": [],
   "claimed_targets": {
-    "countries": [
-      {
-        "value": "India",
-        "source": "misp"
-      },
-      {
-        "value": "India",
-        "source": "malpedia"
-      }
-    ],
-    "sectors": [
-      {
-        "value": "High-Tech",
-        "source": "misp"
-      },
-      {
-        "value": "Military",
-        "source": "misp"
-      },
-      {
-        "value": "Energy",
-        "source": "misp"
-      },
-      {
-        "value": "High-Tech",
-        "source": "malpedia"
-      },
-      {
-        "value": "Military",
-        "source": "malpedia"
-      },
-      {
-        "value": "Energy",
-        "source": "malpedia"
-      }
-    ]
+    "countries": [],
+    "sectors": []
   },
   "malware": [],
   "techniques_documented": [],

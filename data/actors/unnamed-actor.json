@@ -20,79 +20,11 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "China",
-      "source": "misp"
-    },
-    {
-      "value": "China",
-      "source": "malpedia"
-    }
-  ],
-  "motivation": [
-    {
-      "value": "Espionage",
-      "source": "misp"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
+  "motivation": [],
   "claimed_targets": {
-    "countries": [
-      {
-        "value": "China",
-        "source": "misp"
-      },
-      {
-        "value": "Myanmar",
-        "source": "misp"
-      },
-      {
-        "value": "Hong Kong",
-        "source": "misp"
-      },
-      {
-        "value": "Taiwan",
-        "source": "misp"
-      },
-      {
-        "value": "China",
-        "source": "malpedia"
-      },
-      {
-        "value": "Myanmar",
-        "source": "malpedia"
-      },
-      {
-        "value": "Hong Kong",
-        "source": "malpedia"
-      },
-      {
-        "value": "Taiwan",
-        "source": "malpedia"
-      }
-    ],
-    "sectors": [
-      {
-        "value": "Civil society",
-        "source": "misp"
-      },
-      {
-        "value": "Government",
-        "source": "misp"
-      },
-      {
-        "value": "Civil society",
-        "source": "malpedia"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
-      }
-    ]
+    "countries": [],
+    "sectors": []
   },
   "malware": [],
   "techniques_documented": [],

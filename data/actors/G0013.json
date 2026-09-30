@@ -88,60 +88,15 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "China",
-      "source": "misp"
-    },
-    {
-      "value": "China",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
-    {
-      "value": "Espionage",
-      "source": "misp"
-    },
     {
       "value": "Information theft and espionage",
       "source": "etda"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
     }
   ],
   "claimed_targets": {
     "countries": [
-      {
-        "value": "United States",
-        "source": "misp"
-      },
-      {
-        "value": "South Korea",
-        "source": "misp"
-      },
-      {
-        "value": "Saudi Arabia",
-        "source": "misp"
-      },
-      {
-        "value": "Thailand",
-        "source": "misp"
-      },
-      {
-        "value": "Vietnam",
-        "source": "misp"
-      },
-      {
-        "value": "Malaysia",
-        "source": "misp"
-      },
-      {
-        "value": "India",
-        "source": "misp"
-      },
       {
         "value": "Bhutan",
         "source": "etda"
@@ -209,41 +164,9 @@
       {
         "value": "United States",
         "source": "etda"
-      },
-      {
-        "value": "United States",
-        "source": "malpedia"
-      },
-      {
-        "value": "South Korea",
-        "source": "malpedia"
-      },
-      {
-        "value": "Saudi Arabia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Thailand",
-        "source": "malpedia"
-      },
-      {
-        "value": "Vietnam",
-        "source": "malpedia"
-      },
-      {
-        "value": "Malaysia",
-        "source": "malpedia"
-      },
-      {
-        "value": "India",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Government",
-        "source": "misp"
-      },
       {
         "value": "Defense",
         "source": "etda"
@@ -251,10 +174,6 @@
       {
         "value": "Government",
         "source": "etda"
-      },
-      {
-        "value": "Government",
-        "source": "malpedia"
       }
     ]
   },

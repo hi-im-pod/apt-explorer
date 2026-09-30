@@ -356,14 +356,6 @@
   "claimed_targets": {
     "countries": [
       {
-        "value": "Ukraine",
-        "source": "misp"
-      },
-      {
-        "value": "Germany",
-        "source": "misp"
-      },
-      {
         "value": "Canada",
         "source": "etda"
       },
@@ -562,21 +554,9 @@
       {
         "value": "Libya",
         "source": "etda"
-      },
-      {
-        "value": "Ukraine",
-        "source": "malpedia"
-      },
-      {
-        "value": "Germany",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Government",
-        "source": "misp"
-      },
       {
         "value": "Government Administration",
         "source": "misp"
@@ -647,10 +627,6 @@
       },
       {
         "value": "Journalist",
-        "source": "malpedia"
-      },
-      {
-        "value": "Government",
         "source": "malpedia"
       }
     ]

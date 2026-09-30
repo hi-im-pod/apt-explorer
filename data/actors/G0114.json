@@ -73,27 +73,15 @@
   "claimed_targets": {
     "countries": [
       {
-        "value": "Taiwan",
-        "source": "misp"
-      },
-      {
         "value": "Netherlands",
         "source": "etda"
       },
       {
         "value": "Taiwan",
         "source": "etda"
-      },
-      {
-        "value": "Taiwan",
-        "source": "malpedia"
       }
     ],
     "sectors": [
-      {
-        "value": "Semiconductor Industry",
-        "source": "misp"
-      },
       {
         "value": "Aviation",
         "source": "etda"
@@ -101,10 +89,6 @@
       {
         "value": "High-Tech",
         "source": "etda"
-      },
-      {
-        "value": "Semiconductor Industry",
-        "source": "malpedia"
       }
     ]
   },

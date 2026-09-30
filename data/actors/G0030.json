@@ -158,64 +158,15 @@
       "source": "malpedia"
     }
   ],
-  "sponsor": [
-    {
-      "value": "China",
-      "source": "misp"
-    },
-    {
-      "value": "China",
-      "source": "malpedia"
-    },
-    {
-      "value": "Unknown",
-      "source": "malpedia"
-    }
-  ],
+  "sponsor": [],
   "motivation": [
-    {
-      "value": "Espionage",
-      "source": "misp"
-    },
     {
       "value": "Information theft and espionage",
       "source": "etda"
-    },
-    {
-      "value": "Espionage",
-      "source": "malpedia"
     }
   ],
   "claimed_targets": {
     "countries": [
-      {
-        "value": "Japan",
-        "source": "misp"
-      },
-      {
-        "value": "Philippines",
-        "source": "misp"
-      },
-      {
-        "value": "Hong Kong",
-        "source": "misp"
-      },
-      {
-        "value": "Indonesia",
-        "source": "misp"
-      },
-      {
-        "value": "Taiwan",
-        "source": "misp"
-      },
-      {
-        "value": "Vietnam",
-        "source": "misp"
-      },
-      {
-        "value": "United States",
-        "source": "misp"
-      },
       {
         "value": "Brunei",
         "source": "etda"
@@ -275,34 +226,6 @@
       {
         "value": "Vietnam",
         "source": "etda"
-      },
-      {
-        "value": "Japan",
-        "source": "malpedia"
-      },
-      {
-        "value": "Philippines",
-        "source": "malpedia"
-      },
-      {
-        "value": "Hong Kong",
-        "source": "malpedia"
-      },
-      {
-        "value": "Indonesia",
-        "source": "malpedia"
-      },
-      {
-        "value": "Taiwan",
-        "source": "malpedia"
-      },
-      {
-        "value": "Vietnam",
-        "source": "malpedia"
-      },
-      {
-        "value": "United States",
-        "source": "malpedia"
       }
     ],
     "sectors": [
@@ -311,15 +234,7 @@
         "source": "misp"
       },
       {
-        "value": "Government",
-        "source": "misp"
-      },
-      {
         "value": "Government, Administration",
-        "source": "misp"
-      },
-      {
-        "value": "Private sector",
         "source": "misp"
       },
       {
@@ -355,15 +270,7 @@
         "source": "malpedia"
       },
       {
-        "value": "Government",
-        "source": "malpedia"
-      },
-      {
         "value": "Government, Administration",
-        "source": "malpedia"
-      },
-      {
-        "value": "Private sector",
         "source": "malpedia"
       }
     ]
