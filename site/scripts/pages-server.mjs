@@ -15,6 +15,7 @@ import { extname, join, normalize, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { gzipSync } from 'node:zlib';
 
+/** @type {Record<string, string>} */
 const TYPES = {
 	'.html': 'text/html; charset=utf-8',
 	'.js': 'text/javascript; charset=utf-8',
@@ -37,10 +38,12 @@ export function startPagesServer({ dir, base, port, maxAge = 600 }) {
 	/** Paths (below the base) whose body a test has replaced. */
 	const overrides = new Map();
 	/** Every request path with its query, in arrival order, so a test can count fetches. */
+	/** @type {string[]} */
 	const requests = [];
 	const gzipCache = new Map();
 	let extraDelay = 0;
 
+	/** @param {string} rel */
 	function fileFor(rel) {
 		const clean = normalize(decodeURIComponent(rel)).replace(/^([/\\])+/, '');
 		let file = join(root, clean);

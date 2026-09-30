@@ -233,7 +233,13 @@ test('with scripts blocked, the headings, notes and tables still read', async ({
 
 test('the trends page loads without console errors or warnings', async ({ page }) => {
 	const problems: string[] = [];
-	page.on('console', (m) => (m.type() === 'error' || m.type() === 'warning') && problems.push(m.text()));
+	// The config blocks the service worker so page.route works, and Chromium logs a warning about
+	// each blocked registration. That warning comes from the test setup, not from the page.
+	const fromSetup = /Service Worker registration blocked by Playwright/;
+	page.on(
+		'console',
+		(m) => (m.type() === 'error' || m.type() === 'warning') && !fromSetup.test(m.text()) && problems.push(m.text())
+	);
 	page.on('pageerror', (e) => problems.push(e.message));
 	await open(page);
 	await page.getByRole('button', { name: /theme/i }).click();

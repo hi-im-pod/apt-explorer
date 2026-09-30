@@ -2,10 +2,16 @@
 	Explore: every report and campaign in one filterable table.
 
 	The page is prerendered as a shell, and the rows load in the browser.
-	Loading them in a prerendered load function would inline every report
-	shard into the HTML, and the query string, which holds the filters, does
-	not exist at build time anyway. The shell says the table needs scripts,
-	which is what a visitor without them sees.
+	Loading them in a prerendered load function would inline the whole
+	report index into the HTML, and the query string, which holds the
+	filters, does not exist at build time anyway. The shell says the table
+	needs scripts, which is what a visitor without them sees.
+
+	The rows come from one compact index (about 1 MB compressed), not from
+	the report shards, which are 19 MB. A report's own record is read from
+	its one year shard when its panel opens. The data layer keeps both under
+	URLs that carry the build time, so a browser or the service worker can
+	keep them for as long as the build lasts.
 
 	The URL is the only store of the filters and the open row, so any view
 	can be shared or reloaded. Changes replace the history entry instead of
