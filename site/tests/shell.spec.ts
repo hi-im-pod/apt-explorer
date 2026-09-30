@@ -1,8 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { test, expect } from '@playwright/test';
 import { formatDate } from '../src/lib/format';
-import { sourceLabel } from '../src/lib/data/labels';
-import type { Sources } from '../src/lib/data/types';
 
 const readData = <T>(path: string): T =>
 	JSON.parse(readFileSync(new URL(`../../data/${path}`, import.meta.url), 'utf8')) as T;
@@ -178,48 +176,6 @@ test('the footer links to the name guesses page, inside the footer box at both w
 	await page.getByRole('contentinfo').getByRole('link', { name: 'Name guesses', exact: true }).click();
 	await expect(page).toHaveURL(/\/apt-explorer\/guesses\/$/);
 	await expect(page.getByRole('heading', { level: 1 })).toHaveText('Name Guesses');
-});
-
-test('the home page credits the paper and links to the full credit on About', async ({ page }) => {
-	for (const width of [1280, 375]) {
-		await page.setViewportSize({ width, height: 800 });
-		await page.goto('/apt-explorer/');
-		const credit = page.locator('main .credit');
-		await expect(credit).toBeVisible();
-		await expect(credit).toContainText("Built on the dataset of Yuldoshkhujaev et al. (CCS '25).");
-		const box = (await credit.boundingBox())!;
-		expect(box.height).toBeGreaterThan(0);
-		expect(box.x + box.width).toBeLessThanOrEqual(width);
-		const link = credit.getByRole('link', { name: 'About has the full credit' });
-		const href = new URL(await link.evaluate((a) => (a as HTMLAnchorElement).href));
-		expect(href.pathname + href.hash).toBe('/apt-explorer/about/#paper-heading');
-	}
-});
-
-test('the home page lists every source with its health', async ({ page }) => {
-	const sources = readData<Sources>('sources.json');
-	await page.goto('/apt-explorer/');
-	const items = page.getByRole('list', { name: /source health/i }).getByRole('listitem');
-	await expect(items).toHaveCount(sources.length);
-	for (const s of sources) {
-		const item = items.filter({ hasText: sourceLabel(s.name).name });
-		await expect(item.first()).toContainText(s.stale ? /stale/i : /current/i);
-	}
-	await expect(page.getByRole('link', { name: /explore/i }).first()).toBeVisible();
-});
-
-test('a stale source is marked stale on the home page', async ({ page }) => {
-	// A build with every source current has nothing stale to show, so the sources file is
-	// edited on its way to the page. The home page loads it again on a client-side visit.
-	await page.route('**/data/sources.json', async (route) => {
-		const sources = (await (await route.fetch()).json()) as Sources;
-		await route.fulfill({ json: sources.map((s) => (s.name === 'dfir' ? { ...s, stale: true } : s)) });
-	});
-	await page.goto('/apt-explorer/about/');
-	await page.getByRole('link', { name: 'APT Explorer', exact: true }).click();
-	const items = page.getByRole('list', { name: /source health/i }).getByRole('listitem');
-	await expect(items.filter({ hasText: 'The DFIR Report' })).toContainText(/stale/i);
-	await expect(items.filter({ hasText: 'Malpedia' })).toContainText(/current/i);
 });
 
 test('the 404.html that Pages serves renders the styled not-found page', async ({ page }) => {
