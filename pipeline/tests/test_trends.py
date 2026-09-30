@@ -1,9 +1,11 @@
 import pytest
 
 from aptx.build.contract import validator
-from aptx.build.trends import WINDOW_START, compute
+from aptx.build.trends import compute, window_start_for
 
 NOW = "2026-09-30T04:00:00Z"
+# Most tests pin the window so their fixtures do not move as the clock does. The rule itself is tested below.
+START = "2024-01-01"
 HEALTH = [{"name": "attack", "last_success": "2026-09-30", "record_count": 10, "stale": False}]
 
 
@@ -18,6 +20,7 @@ def V(cve, added, ransomware=False):
 
 
 def run(reports=(), documented=None, vulns=(), claims=None, health=HEALTH, **kw):
+    kw.setdefault("window_start", START)
     return compute(list(reports), documented=documented if documented is not None else {"G0001": []},
                    vulns=list(vulns), first_seen_claims=claims or {}, source_health=health,
                    generated_at=NOW, **kw)
@@ -27,10 +30,37 @@ def test_the_output_answers_to_the_published_schema():
     out = run([R("2025-05-01", ["G0001"], ["T1105"])], {"G0001": ["T1105"]}, [V("CVE-2025-0001", "2025-02-03")])
     assert list(validator("trends").iter_errors(out)) == []
     assert out["generated_at"] == NOW
-    assert out["window_start"] == WINDOW_START == "2024-01-01"
+    assert out["window_start"] == START
     assert out["source_health"] == HEALTH
     assert set(out["notes"]) == {"reporting_activity", "new_actors", "kev_monthly", "kev_actor_links",
                                  "reported_vs_documented", "source_health"}
+
+
+# the rolling window
+
+def test_the_window_is_the_trailing_24_months_in_whole_quarters():
+    assert window_start_for("2026-09-30T04:00:00Z") == "2024-07-01"
+    assert window_start_for("2026-07-01T00:00:00Z") == "2024-07-01"
+    assert window_start_for("2026-06-30T23:59:59Z") == "2024-04-01"
+    assert window_start_for("2026-01-15T00:00:00Z") == "2024-01-01"
+    assert window_start_for("2026-12-31T00:00:00Z") == "2024-10-01"
+
+
+def test_the_window_is_the_same_for_the_same_build_time_and_moves_with_it():
+    assert window_start_for(NOW) == window_start_for(NOW)
+    assert window_start_for("2027-01-02T00:00:00Z") == "2025-01-01"
+
+
+def test_the_window_rejects_a_timestamp_that_is_not_utc():
+    with pytest.raises(ValueError):
+        window_start_for("2026-09-30")
+
+
+def test_without_a_pinned_start_compute_uses_the_rolling_window():
+    out = compute([R("2024-05-01", ["G0001"]), R("2024-08-01", ["G0001"])], documented={"G0001": []}, vulns=[],
+                  first_seen_claims={}, source_health=HEALTH, generated_at=NOW)
+    assert out["window_start"] == "2024-07-01"
+    assert [r["quarter"] for r in out["reporting_activity"]] == ["2024-Q3", "2025-Q2", "2025-Q3"]
 
 
 # reporting_activity

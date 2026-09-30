@@ -1,6 +1,6 @@
 <!--
-	Trends: current reporting, computed by the pipeline from window_start
-	(2024-01-01) onward, in six sections, each with its counting rule from
+	Trends: recent reporting, computed by the pipeline over the trailing 24
+	months, in whole quarters starting at window_start, in six sections, each with its counting rule from
 	trends.json printed beneath it.
 
 	The headings, notes, tables and lists are prerendered, so they read
@@ -80,14 +80,14 @@
 	<title>Trends · APT Explorer</title>
 	<meta
 		name="description"
-		content="Reporting activity, newly documented actors and exploited vulnerabilities from 2024 onward, recomputed every week from open sources."
+		content="Reporting activity, newly documented actors and exploited vulnerabilities over the last two years, recomputed every week from open sources."
 	/>
 </svelte:head>
 
 <div class="intro">
 	<h1>Trends</h1>
 	<p class="lede">
-		What current sources report from {since} onward: which actors are being written about, which are
+		What current sources report over the last two years, counted in whole quarters from {since}: which actors are being written about, which are
 		new, and which exploited vulnerabilities appear in reports. The figures are recomputed with every
 		weekly build; these were computed on
 		<time datetime={t.generated_at}>{formatDate(t.generated_at)}</time>. Each chart's counting rule

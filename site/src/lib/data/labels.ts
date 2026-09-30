@@ -56,7 +56,7 @@ export const SOURCE_LABELS: Readonly<Record<SourceKey, SourceLabel>> = {
 	paper: {
 		name: "Yuldoshkhujaev et al., CCS '25 dataset",
 		short: "CCS '25 data",
-		role: 'A labelled historical layer for 2014 to 2023.'
+		role: 'Reports from 2014 to 2023, shown as a labelled layer.'
 	}
 };
 

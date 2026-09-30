@@ -178,7 +178,7 @@ def _actor(**changes):
 
 
 def _trends(**changes):
-    trends = {"window_start": "2024-01-01", "generated_at": "2026-09-28T03:17:00Z",
+    trends = {"window_start": "2024-07-01", "generated_at": "2026-09-28T03:17:00Z",
               "reporting_activity": [], "new_actors": [], "kev_monthly": [], "kev_actor_links": [],
               "reported_vs_documented": [], "source_health": [],
               "notes": {k: "A counting rule." for k in ("reporting_activity", "new_actors", "kev_monthly",

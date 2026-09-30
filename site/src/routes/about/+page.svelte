@@ -67,9 +67,9 @@
 		<p>
 			The authors released their data as
 			<a href="https://zenodo.org/records/16869733">Zenodo record 16869733</a>
-			under <a href={paper.licence_url}>{paper.licence}</a>. This site uses it as a labelled
-			historical layer for 2014 to 2023. The trends are computed from current sources from 2024
-			onward, and no view reproduces a figure from the paper.
+			under <a href={paper.licence_url}>{paper.licence}</a>. The dataset covers reports from 2014 to 2023, and this site
+			shows it as a labelled layer of its own. The trends are computed from current sources over
+			the last two years, and no view reproduces a figure from the paper.
 		</p>
 		<div class="attribution">
 			<p class="label">Dataset attribution</p>

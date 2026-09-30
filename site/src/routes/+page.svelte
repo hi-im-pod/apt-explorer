@@ -19,7 +19,7 @@
 		{
 			path: '/trends/',
 			title: 'Trends',
-			text: 'Reporting activity, newly documented actors and exploited vulnerabilities from 2024 onward.'
+			text: 'Reporting activity, newly documented actors and exploited vulnerabilities over the last two years.'
 		}
 	];
 </script>

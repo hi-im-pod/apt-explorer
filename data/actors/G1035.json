@@ -160,40 +160,7 @@
     "T1584.006",
     "T1595.002"
   ],
-  "techniques_reported": [
-    {
-      "id": "T1056",
-      "count": 1
-    },
-    {
-      "id": "T1078",
-      "count": 1
-    },
-    {
-      "id": "T1083",
-      "count": 1
-    },
-    {
-      "id": "T1114",
-      "count": 1
-    },
-    {
-      "id": "T1203",
-      "count": 1
-    },
-    {
-      "id": "T1212",
-      "count": 1
-    },
-    {
-      "id": "T1566",
-      "count": 1
-    },
-    {
-      "id": "T1571",
-      "count": 1
-    }
-  ],
+  "techniques_reported": [],
   "cves": [
     {
       "cve": "CVE-2020-35730",

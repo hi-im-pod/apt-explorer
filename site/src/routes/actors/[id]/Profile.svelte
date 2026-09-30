@@ -256,7 +256,7 @@
 			{/if}
 			{#if actor.techniques_reported.length > 0}
 				<div>
-					<h3>Named in reports since 2024</h3>
+					<h3>Named in recent reports</h3>
 					<ul class="ids">
 						{#each actor.techniques_reported as t}
 							<li>
@@ -271,8 +271,8 @@
 		</div>
 		{#if actor.techniques_reported.length > 0}
 			<p class="section-note">
-				Report counts come from technique IDs found in the text of the actor's reports dated 2024 or
-				later.
+				Report counts come from technique IDs found in the text of the actor's reports from the
+				last two years, counted in whole quarters.
 				{#if documented.size > 0}“Reports only” marks a technique that recent reports name but MITRE
 					ATT&CK® does not list for this actor.{/if}
 			</p>

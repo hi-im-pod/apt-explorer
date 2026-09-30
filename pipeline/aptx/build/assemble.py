@@ -139,6 +139,7 @@ def assemble(bundles, registry: Registry, policies: Mapping[str, str], link_stat
     policies = _check_policies(policies)
     by_source = _bundles_by_source(bundles)
     today = generated_at[:10]
+    window_start = trends.window_start_for(generated_at)
     valid_techniques = frozenset(facts.valid_techniques)
 
     shown = _published_actors(registry, policies)
@@ -155,7 +156,7 @@ def assemble(bundles, registry: Registry, policies: Mapping[str, str], link_stat
     index: list[dict] = []
     claims: dict[str, list[tuple[str, str]]] = defaultdict(list)
     for p in shown:
-        doc, entry = _actor(p, reports, kev, valid_techniques)
+        doc, entry = _actor(p, reports, kev, valid_techniques, window_start)
         actor_docs[p.id] = doc
         index.append(entry)
         payload[f"actors/{p.id}.json"] = doc
@@ -337,7 +338,8 @@ def _aliases(p: _Published, name: str, policies_visible) -> list[dict]:
     return [{"value": v, "sources": sorted(sources[v], key=_ORD.get)} for v in ranked]
 
 
-def _actor(p: _Published, reports: list["_Report"], kev: dict[str, dict], valid_techniques) -> tuple[dict, dict]:
+def _actor(p: _Published, reports: list["_Report"], kev: dict[str, dict], valid_techniques,
+           window_start: str) -> tuple[dict, dict]:
     members = p.members
     visible_sources = {m.source for m in members}
     name = _display_name(members)
@@ -357,7 +359,7 @@ def _actor(p: _Published, reports: list["_Report"], kev: dict[str, dict], valid_
     mine = [r for r in reports if p.id in r.actors]
     mine.sort(key=lambda r: (r.published is None, _negated(r.published or ""), r.id))
     quarters = Counter(_quarter(r.published) for r in mine if r.published)
-    reported = Counter(t for r in mine if r.trendable and r.published and r.published >= trends.WINDOW_START
+    reported = Counter(t for r in mine if r.trendable and r.published and r.published >= window_start
                        for t in r.techniques)
     cves = sorted({c for r in mine for c in r.cves})
 

@@ -406,12 +406,14 @@ def _linked(*reports, links=None, **kw):
     return run(*WORLD(orkl=orkl), facts=replace(FACTS, malpedia_report_links=links or urls), **kw)
 
 
-def test_a_2023_report_is_out_of_reporting_activity_but_supplies_prev_year_count():
-    payload = _linked(R("orkl", "1", "Old", "https://ex.org/old", "2023-05-10"),
-                      R("orkl", "2", "New", "https://ex.org/new", "2024-05-02"))
-    rows = payload["trends.json"]["reporting_activity"]
-    assert all(r["quarter"] >= "2024-Q1" for r in rows)
-    assert {"actor": "G0007", "quarter": "2024-Q2", "count": 1, "prev_year_count": 1} in rows
+def test_a_report_before_the_window_is_out_of_reporting_activity_but_supplies_prev_year_count():
+    payload = _linked(R("orkl", "1", "Old", "https://ex.org/old", "2023-08-10"),
+                      R("orkl", "2", "New", "https://ex.org/new", "2024-08-02"))
+    trends = payload["trends.json"]
+    rows = trends["reporting_activity"]
+    assert trends["window_start"] == "2024-07-01"
+    assert all(r["quarter"] >= "2024-Q3" for r in rows)
+    assert {"actor": "G0007", "quarter": "2024-Q3", "count": 1, "prev_year_count": 1} in rows
     assert [r["title"] for r in payload["reports/2023.json"]] == ["Old"]
 
 
@@ -629,9 +631,17 @@ def test_the_timeline_counts_dated_reports_per_quarter_oldest_first():
         {"quarter": "2022-Q1", "count": 1}, {"quarter": "2024-Q1", "count": 2}, {"quarter": "2025-Q3", "count": 1}]
 
 
-def test_reported_techniques_count_reports_from_2024_on():
-    assert _busy_world()["actors/G0007.json"]["techniques_reported"] == [
-        {"id": "T1059", "count": 2}, {"id": "T1105", "count": 1}, {"id": "T1190", "count": 1}]
+def test_reported_techniques_count_only_reports_inside_the_rolling_window():
+    # The two Q1 2024 reports name T1059 and T1190 but fall before the window, which starts 2024-07-01.
+    assert _busy_world()["actors/G0007.json"]["techniques_reported"] == [{"id": "T1105", "count": 1}]
+
+
+def test_reported_techniques_add_up_across_reports_inside_the_window():
+    payload = _linked(R("orkl", "1", "One", "https://ex.org/one", "2025-02-10", techniques=["T1059", "T1190"]),
+                      R("orkl", "2", "Two", "https://ex.org/two", "2025-03-10", techniques=["T1059"]),
+                      R("orkl", "3", "Before", "https://ex.org/before", "2024-06-30", techniques=["T1105"]))
+    assert payload["actors/G0007.json"]["techniques_reported"] == [
+        {"id": "T1059", "count": 2}, {"id": "T1190", "count": 1}]
 
 
 def test_an_actor_page_lists_report_cves_with_their_kev_status():

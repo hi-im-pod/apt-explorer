@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "data/trends.json",
-  "description": "Current trends, computed from window_start onward. The paper's older data is a labelled historical layer and never feeds these.",
+  "description": "Recent trends, computed from window_start onward: the trailing 24 months of the build, widened to whole quarters. The paper's dataset ends before this window and never feeds these.",
   "type": "object",
   "additionalProperties": false,
   "required": [

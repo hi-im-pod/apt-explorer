@@ -76,7 +76,7 @@
       "uniqueItems": true
     },
     "techniques_reported": {
-      "description": "Techniques found in reports on this actor published from 2024 on, with how many of those reports name each.",
+      "description": "Techniques found in reports on this actor published within the trends window (the trailing 24 months, in whole quarters), with how many of those reports name each.",
       "type": "array",
       "items": {
         "$ref": "#/$defs/techniqueCount"

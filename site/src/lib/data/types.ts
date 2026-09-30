@@ -151,7 +151,7 @@ export interface MalwareClaim {
 }
 
 /**
- * A technique and how many of the actor's reports from 2024 on name it.
+ * A technique and how many of the actor's recent reports name it.
  * @schema actor.schema.json#/$defs/techniqueCount
  */
 export interface TechniqueCount {

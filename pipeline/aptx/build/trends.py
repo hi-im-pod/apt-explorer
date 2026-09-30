@@ -14,13 +14,27 @@ import re
 from collections import defaultdict
 from datetime import date, datetime, timedelta, timezone
 
-# The first day the trends cover. Earlier reports only supply prev_year_count.
-WINDOW_START = "2024-01-01"
+# Recent means the trailing 24 months, widened to whole quarters so no chart starts mid-quarter.
+# Earlier reports only supply prev_year_count.
+WINDOW_MONTHS = 24
 
 # "New" means first seen within this many days of the build.
 NEW_ACTOR_DAYS = 365
 
 _GENERATED_AT = re.compile(r"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z")
+
+
+def window_start_for(generated_at: str) -> str:
+    """The first day of the quarter that holds the day WINDOW_MONTHS before the build.
+
+    It depends only on the build timestamp, so rebuilding one snapshot gives the same window.
+    """
+    if not _GENERATED_AT.fullmatch(generated_at):
+        raise ValueError(f"generated_at must be a UTC timestamp like 2026-09-30T04:00:00Z, got {generated_at!r}")
+    year, month = int(generated_at[:4]), int(generated_at[5:7])
+    back = year * 12 + (month - 1) - WINDOW_MONTHS
+    year, month = divmod(back, 12)
+    return date(year, month // 3 * 3 + 1, 1).isoformat()
 
 
 def notes(window_start: str) -> dict[str, str]:
@@ -70,7 +84,7 @@ def _year_on(q: str, years: int) -> str:
 
 def compute(reports: list[dict], *, documented: dict[str, list[str]], vulns: list[dict],
             first_seen_claims: dict[str, list[tuple[str, str]]], source_health: list[dict],
-            generated_at: str | None = None, window_start: str = WINDOW_START) -> dict:
+            generated_at: str | None = None, window_start: str | None = None) -> dict:
     """Build the trends.json document.
 
     reports: the published reports as {"id", "published" (YYYY-MM-DD or None),
@@ -86,12 +100,15 @@ def compute(reports: list[dict], *, documented: dict[str, list[str]], vulns: lis
     source_health: the sources.json health rows, copied through unchanged.
     generated_at: YYYY-MM-DDTHH:MM:SSZ, injectable so a test or a rebuild of
         the same snapshot is byte-identical. Defaults to now.
+    window_start: YYYY-MM-DD. Defaults to window_start_for(generated_at).
     """
     if generated_at is None:
         generated_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     if not _GENERATED_AT.fullmatch(generated_at):
         raise ValueError(f"generated_at must be a UTC timestamp like 2026-09-30T04:00:00Z, got {generated_at!r}")
     today = _day(generated_at[:10])
+    if window_start is None:
+        window_start = window_start_for(generated_at)
     start = _day(window_start)
     published = set(documented)
 
