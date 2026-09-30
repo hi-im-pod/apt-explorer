@@ -81,6 +81,9 @@ for (const width of [1280, 375]) {
 		await expect(status(page)).toContainText(`of ${TOTAL.toLocaleString('en-US')}`, { timeout: 20_000 });
 		await expect(alert).toHaveCount(0);
 		await expect(bodyRows(page).first()).toBeVisible();
+		// The button leaves the page when the retry works, so focus must land on the page heading
+		// and not fall back to the top of the document, where a keyboard user would start over.
+		await expect(page.getByRole('heading', { level: 1, name: 'Explore' })).toBeFocused();
 	});
 }
 

@@ -19,7 +19,7 @@
 	through every keystroke.
 -->
 <script lang="ts">
-	import { onMount, untrack } from 'svelte';
+	import { onMount, tick, untrack } from 'svelte';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/state';
 	import {
@@ -92,6 +92,17 @@
 	}
 
 	onMount(load);
+
+	/**
+	 * The retry button is removed once the list loads, which would drop keyboard focus to the top
+	 * of the document. The page heading takes it instead.
+	 */
+	async function retry() {
+		await load();
+		if (phase !== 'ready') return;
+		await tick();
+		heading.focus();
+	}
 
 	// The query string is read only once the rows are in: before that there
 	// is nothing to filter, and during prerender reading it is an error.
@@ -204,7 +215,7 @@
 		{:else}
 			The report list could not be loaded. Check your connection, then try again.
 		{/if}
-		<button type="button" class="retry" onclick={load}>Try again</button>
+		<button type="button" class="retry" onclick={retry}>Try again</button>
 	</p>
 {:else}
 	<p class="notice" role="status">
