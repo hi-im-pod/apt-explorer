@@ -217,6 +217,50 @@ test('at 375px the other filters fold away, so the rows start on the first scree
 	await expect(page.getByLabel('Actor', { exact: true })).toHaveValue('G0007');
 });
 
+test('the page head is the title and one short line, with no note about the address', async ({ page }) => {
+	await open(page);
+	await expect(page.getByText('Reports and campaigns from every source, newest first.', { exact: true })).toBeVisible();
+	await expect(page.getByText(/bookmarked or shared/i)).toHaveCount(0);
+	await expect(page.getByText(/saved in the page address/i)).toHaveCount(0);
+});
+
+test('at 375px each active filter is a chip that removes itself', async ({ page }) => {
+	await page.setViewportSize({ width: 375, height: 800 });
+	await open(page, '?actor=G0007&kev=1');
+	const chips = page.getByRole('list', { name: 'Active filters' });
+	await expect(chips.getByRole('button')).toHaveCount(2);
+	await chips.getByRole('button', { name: /remove filter actor: apt28/i }).click();
+	await expect(page).not.toHaveURL(/actor=/);
+	await expect(page).toHaveURL(/kev=1/);
+	await expect(chips.getByRole('button')).toHaveCount(1);
+	await page.getByRole('button', { name: /more filters/i }).click();
+	await expect(chips).toHaveCount(0);
+	await noHorizontalScroll(page);
+});
+
+test('the chips are not shown at 1280px, where every filter is already visible', async ({ page }) => {
+	await page.setViewportSize({ width: 1280, height: 900 });
+	await open(page, '?actor=G0007');
+	await expect(page.getByRole('list', { name: 'Active filters' })).toBeHidden();
+	await expect(page.getByLabel('Actor', { exact: true })).toHaveValue('G0007');
+});
+
+test('the open row is marked and the current page is the one filled page button', async ({ page }) => {
+	await page.setViewportSize({ width: 1280, height: 900 });
+	await open(page);
+	const first = bodyRows(page).first();
+	await first.getByRole('link').first().click();
+	await expect(first).toHaveClass(/selected/);
+	await expect(bodyRows(page).and(page.locator('.selected'))).toHaveCount(1);
+	const current = topPager(page).getByRole('button', { name: 'Page 1', exact: true });
+	await expect(current).toHaveAttribute('aria-current', 'page');
+	const fill = await current.evaluate((el) => getComputedStyle(el).backgroundColor);
+	const other = await topPager(page)
+		.getByRole('button', { name: 'Page 2', exact: true })
+		.evaluate((el) => getComputedStyle(el).backgroundColor);
+	expect(fill).not.toBe(other);
+});
+
 // Rows have a fixed height so the window can map a scroll position to a row.
 // A theme with a wider font must not push a cell past the row's edge, where
 // it would be clipped without anyone noticing.
