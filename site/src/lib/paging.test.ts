@@ -69,6 +69,9 @@ describe('rangeLabel', () => {
 	it('ends the last page at the total', () => {
 		expect(rangeLabel(3, 25, 60)).toBe('Rows 51 to 60 of 60 matching');
 	});
+	it('leaves out "matching" for a list with no filter', () => {
+		expect(rangeLabel(1, 25, 240, false)).toBe('Rows 1 to 25 of 240');
+	});
 	it('says so when nothing matches', () => {
 		expect(rangeLabel(1, 25, 0)).toBe('No rows match');
 	});

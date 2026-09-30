@@ -13,11 +13,13 @@
 		count: number;
 		size: number;
 		total: number;
+		/** True when the list has no filter, so the range does not say "matching". */
+		all?: boolean;
 		onpage: (page: number) => void;
 		onsize: (size: number) => void;
 	}
 
-	let { position, page, count, size, total, onpage, onsize }: Props = $props();
+	let { position, page, count, size, total, all = false, onpage, onsize }: Props = $props();
 
 	/** A number input binds to a number, or to null when it is empty or not a number. */
 	let target = $state<number | null>(null);
@@ -33,7 +35,7 @@
 
 <div class="bar" data-position={position}>
 	{#if position === 'top'}
-		<p class="range" aria-live="polite">{rangeLabel(page, size, total)}</p>
+		<p class="range" aria-live="polite">{rangeLabel(page, size, total, !all)}</p>
 	{:else}
 		<label class="size">
 			Rows per page

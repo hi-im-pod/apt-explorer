@@ -20,6 +20,7 @@ import type { ChartContext } from '$lib/components/Chart.svelte';
 import { formatCount, formatDate } from '$lib/format';
 import type { Activity, KevPoint, MonthCount, TechniqueBar } from './series';
 import { pickTicks } from './ticks';
+import { nearestSlot, withTooltip, type Pick } from './tooltip';
 
 const BAR_MAX = 24;
 // 12px keeps tick labels readable on a phone. ticks.ts assumes this size when it spaces them.
@@ -61,94 +62,205 @@ function frame(ctx: ChartContext, height: number, margins: Record<string, number
 	};
 }
 
-/** The tooltip's look, so it matches the page in every theme. */
-function tipStyle(ctx: ChartContext) {
-	return { fill: ctx.background, stroke: ctx.grid, fontSize: 12, textPadding: 8 };
+interface Margins {
+	marginTop: number;
+	marginRight: number;
+	marginBottom: number;
+	marginLeft: number;
+}
+
+type Scale = { apply(value: unknown): number } | undefined;
+type Scaled = Element & { scale(name: string): Scale };
+
+/** Reads px positions back from a drawn plot, so the tooltip uses exactly the geometry Plot drew. */
+function positions(svg: Element) {
+	const x = (svg as Scaled).scale('x');
+	const y = (svg as Scaled).scale('y');
+	return {
+		x: (d: Date | number) => x!.apply(d),
+		y: (v: number) => y!.apply(v)
+	};
+}
+
+/**
+ * Tooltip picking for a bar chart over time: the bar whose slot is nearest
+ * to the pointer, with the plot area as the only place that answers.
+ */
+function timePick<T extends { start: Date; end: Date }>(
+	svg: Element,
+	ctx: ChartContext,
+	m: Margins,
+	height: number,
+	points: T[],
+	bar: { value: (p: T) => number; inset: number; text: (p: T) => string }
+): Pick {
+	const at = positions(svg);
+	const slots = points.map((p) => [at.x(p.start), at.x(p.end)] as [number, number]);
+	const base = at.y(0);
+	return (px, py) => {
+		if (px < m.marginLeft || px > ctx.width - m.marginRight) return null;
+		if (py < m.marginTop || py > height - m.marginBottom) return null;
+		const i = nearestSlot(slots, px);
+		const [a, b] = slots[i];
+		const top = at.y(bar.value(points[i]));
+		return {
+			text: bar.text(points[i]),
+			box: {
+				x: a + bar.inset,
+				y: Math.min(top, base - 2),
+				w: Math.max(2, b - a - 2 * bar.inset),
+				h: Math.max(2, base - top)
+			}
+		};
+	};
 }
 
 /** Integer ticks only: counts have no halves. */
 const countTick = (d: number) => (Number.isInteger(d) ? formatCount(d) : '');
 
 // ---------------------------------------------------------------------------
-// Reporting activity: one small chart per actor, sharing one time axis.
+// Reporting activity: a heatmap with one row per actor and one column per quarter.
 
-// Each small chart is 92px: a 32px name line, then a plot tall enough to compare neighbouring bars.
-const FACET = 92;
+// Each row is 48px: a name line on top, then a 24px cell that holds the count.
+const ROW = 48;
+const CELL_TOP = 22;
+const CELL_BOTTOM = 2;
 const ACTIVITY_MARGINS = { marginTop: 4, marginRight: 8, marginBottom: 32, marginLeft: 32 };
+/** The faintest a quarter with reports is drawn; a quarter with none is fainter still. */
+const OPACITY_MIN = 0.22;
+const OPACITY_NONE = 0.07;
 
 export function activityHeight(actors: number): number {
-	return actors * FACET + ACTIVITY_MARGINS.marginTop + ACTIVITY_MARGINS.marginBottom;
+	return actors * ROW + ACTIVITY_MARGINS.marginTop + ACTIVITY_MARGINS.marginBottom;
+}
+
+type Rgb = [number, number, number];
+
+const hexRgb = (hex: string): Rgb | null => {
+	const m = /^#([0-9a-f]{6})$/i.exec(hex.trim());
+	if (!m) return null;
+	const n = parseInt(m[1], 16);
+	return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
+};
+
+const luminance = ([r, g, b]: Rgb) => {
+	const lin = (c: number) => {
+		const v = c / 255;
+		return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4;
+	};
+	return 0.2126 * lin(r) + 0.7152 * lin(g) + 0.0722 * lin(b);
+};
+
+const contrast = (a: number, b: number) => (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
+
+/** The text colour that reads best on the series colour drawn at `opacity` over the page background. */
+function inkOn(ctx: ChartContext, opacity: number): string {
+	const fill = hexRgb(ctx.series[1]);
+	const page = hexRgb(ctx.background);
+	const ink = hexRgb(ctx.text);
+	if (!fill || !page || !ink) return ctx.text;
+	const blended = fill.map((c, i) => c * opacity + page[i] * (1 - opacity)) as Rgb;
+	const under = luminance(blended);
+	return contrast(luminance(ink), under) >= contrast(luminance(page), under) ? ctx.text : ctx.background;
 }
 
 export function activityChart(a: Activity, names: Record<string, string>) {
 	return (ctx: ChartContext) => {
+		type Point = Activity['points'][number];
 		const from = a.points[0].start;
 		const to = a.points[a.points.length - 1].end;
+		const height = activityHeight(a.actors.length);
 		const plotWidth = ctx.width - ACTIVITY_MARGINS.marginLeft - ACTIVITY_MARGINS.marginRight;
-		const inset = barInset(plotWidth / a.quarters.length);
+		const inset = 1;
 		const quarterStarts = a.points.filter((p) => p.actor === a.actors[0]).map((p) => p.start);
-		const { ticks, format } = pickTicks(quarterStarts, 'quarter', {
+		// Each label sits under the middle of its column, half a column right of the period start,
+		// so the right-hand room shrinks by the same half column.
+		const pitch = plotWidth / quarterStarts.length;
+		const picked = pickTicks(quarterStarts, 'quarter', {
 			plotWidth,
 			leftRoom: ACTIVITY_MARGINS.marginLeft,
-			rightRoom: ACTIVITY_MARGINS.marginRight
+			rightRoom: ACTIVITY_MARGINS.marginRight - pitch / 2
 		});
-		const top = Math.max(1, ...a.points.map((p) => Math.max(p.count, p.prev)));
+		const columns = a.points.filter((p) => p.actor === a.actors[0]);
+		const middleOf = new Map(columns.map((p) => [p.start.getTime(), midpoint(p)]));
+		const ticks = picked.ticks.map((t) => middleOf.get(t.getTime()) ?? t);
+		const startOf = new Map(picked.ticks.map((t, i) => [ticks[i].getTime(), t]));
+		const format = (d: Date) => picked.format(startOf.get(d.getTime()) ?? d);
+		const top = Math.max(1, ...a.points.map((p) => p.count));
 		const name = (id: string) => names[id] ?? id;
-		const tip = (p: Activity['points'][number]) =>
+		const opacity = (p: Point) =>
+			p.count === 0 ? OPACITY_NONE : OPACITY_MIN + (1 - OPACITY_MIN) * Math.sqrt(p.count / top);
+		const tip = (p: Point) =>
 			`${name(p.actor)}, ${quarterName(p.quarter)}\n${plural(p.count, 'report', 'reports')}\n${plural(p.prev, 'report', 'reports')} a year earlier`;
 
-		return Plot.plot({
-			...frame(ctx, activityHeight(a.actors.length), ACTIVITY_MARGINS),
-			fy: { domain: a.actors, axis: null, padding: 0 },
-			x: { type: 'utc', domain: [from, to], ticks, tickFormat: format, label: null, tickPadding: 8 },
-			// The top of each small chart is kept free for the actor's name.
-			y: { domain: [0, top], insetTop: 32, label: null, ticks: [top], tickFormat: countTick, tickSize: 0 },
+		const svg = Plot.plot({
+			...frame(ctx, height, ACTIVITY_MARGINS),
+			y: { domain: a.actors, axis: null, padding: 0 },
+			x: { type: 'utc', domain: [from, to], ticks, tickFormat: format, label: null, tickPadding: 8, tickSize: 4 },
 			marks: [
-				Plot.gridY({ ticks: [top], stroke: ctx.grid, strokeOpacity: 1 }),
-				Plot.ruleY([0], { stroke: ctx.grid }),
-				Plot.rectY(
+				Plot.barX(a.points, {
+					y: 'actor',
+					x1: 'start',
+					x2: 'end',
+					fill: ctx.series[1],
+					fillOpacity: opacity,
+					insetTop: CELL_TOP,
+					insetBottom: CELL_BOTTOM,
+					insetLeft: inset,
+					insetRight: inset,
+					rx: 3
+				}),
+				// The count is written in the cell, so no reader has to judge a shade.
+				Plot.text(
 					a.points.filter((p) => p.count > 0),
 					{
-						fy: 'actor',
-						x1: 'start',
-						x2: 'end',
-						y: 'count',
-						fill: ctx.series[1],
-						insetLeft: inset,
-						insetRight: inset,
-						ry2: 3
-					}
-				),
-				// The same quarter a year earlier, as a short line across the bar's slot.
-				Plot.ruleY(
-					a.points.filter((p) => p.prev > 0),
-					{
-						fy: 'actor',
-						x1: 'start',
-						x2: 'end',
-						y: 'prev',
-						stroke: ctx.text,
-						strokeWidth: 2,
-						strokeLinecap: 'round',
-						insetLeft: Math.max(0, inset - 3),
-						insetRight: Math.max(0, inset - 3)
+						y: 'actor',
+						x: midpoint,
+						text: (p: Point) => formatCount(p.count),
+						dy: (CELL_TOP - CELL_BOTTOM) / 2,
+						fill: (p: Point) => inkOn(ctx, opacity(p)),
+						fontSize: 12,
+						fontWeight: 600
 					}
 				),
 				Plot.text(a.actors, {
-					fy: (d: string) => d,
-					frameAnchor: 'top-left',
+					y: (d: string) => d,
+					x: from,
+					textAnchor: 'start',
 					text: name,
 					fill: ctx.text,
 					fontSize: 12,
 					fontWeight: 600,
-					dy: 10
-				}),
-				Plot.tip(
-					a.points,
-					Plot.pointerX({ fy: 'actor', x: midpoint, y: 'count', title: tip, ...tipStyle(ctx) })
-				)
+					dy: 10 - ROW / 2
+				})
 			]
 		});
+
+		const at = positions(svg);
+		const slots = a.points
+			.filter((p) => p.actor === a.actors[0])
+			.map((p) => [at.x(p.start), at.x(p.end)] as [number, number]);
+		const byCell = new Map(a.points.map((p) => [`${p.actor} ${p.quarter}`, p]));
+		const pick: Pick = (px, py) => {
+			if (px < ACTIVITY_MARGINS.marginLeft || px > ctx.width - ACTIVITY_MARGINS.marginRight) return null;
+			const y = py - ACTIVITY_MARGINS.marginTop;
+			if (y < 0 || y >= a.actors.length * ROW) return null;
+			const row = Math.floor(y / ROW);
+			const col = nearestSlot(slots, px);
+			const p = byCell.get(`${a.actors[row]} ${a.quarters[col]}`);
+			if (!p) return null;
+			const [x1, x2] = slots[col];
+			return {
+				text: tip(p),
+				box: {
+					x: x1 + inset,
+					y: ACTIVITY_MARGINS.marginTop + row * ROW + CELL_TOP,
+					w: x2 - x1 - 2 * inset,
+					h: ROW - CELL_TOP - CELL_BOTTOM
+				}
+			};
+		};
+		return withTooltip(svg, ctx, pick);
 	};
 }
 
@@ -174,7 +286,7 @@ export function kevChart(k: KevPoint[]) {
 			return `${monthName(p.month)}\n${plural(p.added, 'CVE', 'CVEs')} added\n${formatCount(p.ransomware)} with known ransomware use (${share}%)`;
 		};
 
-		return Plot.plot({
+		const svg = Plot.plot({
 			...frame(ctx, KEV_HEIGHT, KEV_MARGINS),
 			x: { type: 'utc', domain: [from, to], ticks, tickFormat: format, label: null, tickPadding: 8 },
 			y: { nice: true, label: null, tickFormat: countTick, tickSize: 0 },
@@ -210,35 +322,41 @@ export function kevChart(k: KevPoint[]) {
 						ry2: 3
 					}
 				),
-				Plot.ruleY([0], { stroke: ctx.grid }),
-				Plot.tip(k, Plot.pointerX({ x: midpoint, y: 'added', title: tip, ...tipStyle(ctx) }))
+				Plot.ruleY([0], { stroke: ctx.grid })
 			]
 		});
+	return withTooltip(
+		svg,
+		ctx,
+		timePick(svg, ctx, KEV_MARGINS, KEV_HEIGHT, k, { value: (p) => p.added, inset, text: tip })
+	);
 	};
 }
 
 // ---------------------------------------------------------------------------
 // Reported versus documented techniques: one bar per actor, name above it.
 
-const ROW = 40;
+const TECH_ROW = 40;
 const TECH_MARGINS = { marginTop: 4, marginRight: 16, marginBottom: 32, marginLeft: 4 };
+const TECH_BAR_TOP = 22;
+const TECH_BAR_BOTTOM = 6;
 
 export function techniqueHeight(actors: number): number {
-	return actors * ROW + TECH_MARGINS.marginTop + TECH_MARGINS.marginBottom;
+	return actors * TECH_ROW + TECH_MARGINS.marginTop + TECH_MARGINS.marginBottom;
 }
 
 export function techniqueChart(bars: TechniqueBar[], names: Record<string, string>) {
 	return (ctx: ChartContext) => {
 		const total = (b: TechniqueBar) => b.overlap + b.reportedOnly;
 		const name = (b: TechniqueBar) => names[b.actor] ?? b.actor;
+		// Counts only: the technique IDs are in the table under the chart.
 		const tip = (b: TechniqueBar) =>
 			`${name(b)}\n${plural(b.reportedOnly, 'technique', 'techniques')} reported only` +
-			(b.ids.length ? `: ${b.ids.join(', ')}` : '') +
 			`\n${plural(b.overlap, 'technique', 'techniques')} also documented by ATT&CK`;
 		// Each row is 40px: the name on top, a 12px bar below it.
-		const bar = { y: 'actor', insetTop: 22, insetBottom: 6 } as const;
+		const bar = { y: 'actor', insetTop: TECH_BAR_TOP, insetBottom: TECH_BAR_BOTTOM } as const;
 
-		return Plot.plot({
+		const svg = Plot.plot({
 			...frame(ctx, techniqueHeight(bars.length), TECH_MARGINS),
 			y: { domain: bars.map((b) => b.actor), axis: null, padding: 0 },
 			x: { nice: true, label: null, tickFormat: countTick, tickSize: 0 },
@@ -263,10 +381,29 @@ export function techniqueChart(bars: TechniqueBar[], names: Record<string, strin
 					fill: ctx.text,
 					fontSize: 12,
 					fontWeight: 600
-				}),
-				Plot.tip(bars, Plot.pointerY({ y: 'actor', x: total, title: tip, ...tipStyle(ctx) }))
+				})
 			]
 		});
+
+	const at = positions(svg);
+	const pick: Pick = (px, py) => {
+		if (px < TECH_MARGINS.marginLeft || px > ctx.width - TECH_MARGINS.marginRight) return null;
+		const y = py - TECH_MARGINS.marginTop;
+		if (y < 0 || y >= bars.length * TECH_ROW) return null;
+		const row = Math.floor(y / TECH_ROW);
+		const b = bars[row];
+		const x0 = at.x(0);
+		return {
+			text: tip(b),
+			box: {
+				x: x0,
+				y: TECH_MARGINS.marginTop + row * TECH_ROW + TECH_BAR_TOP,
+				w: Math.max(2, at.x(total(b)) - x0),
+				h: TECH_ROW - TECH_BAR_TOP - TECH_BAR_BOTTOM
+			}
+		};
+	};
+	return withTooltip(svg, ctx, pick);
 	};
 }
 
@@ -290,7 +427,7 @@ export function newActorsChart(months: MonthCount[]) {
 		);
 		const tip = (p: MonthCount) => `${monthName(p.month)}\n${plural(p.count, 'new actor', 'new actors')}`;
 
-		return Plot.plot({
+		const svg = Plot.plot({
 			...frame(ctx, NEW_ACTORS_HEIGHT, NEW_MARGINS),
 			x: { type: 'utc', domain: [from, to], ticks, tickFormat: format, label: null, tickPadding: 8 },
 			y: { nice: true, label: null, tickFormat: countTick, tickSize: 0 },
@@ -309,9 +446,13 @@ export function newActorsChart(months: MonthCount[]) {
 						ry2: 3
 					}
 				),
-				Plot.ruleY([0], { stroke: ctx.grid }),
-				Plot.tip(months, Plot.pointerX({ x: midpoint, y: 'count', title: tip, ...tipStyle(ctx) }))
+				Plot.ruleY([0], { stroke: ctx.grid })
 			]
 		});
+	return withTooltip(
+		svg,
+		ctx,
+		timePick(svg, ctx, NEW_MARGINS, NEW_ACTORS_HEIGHT, months, { value: (p) => p.count, inset, text: tip })
+	);
 	};
 }

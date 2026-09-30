@@ -12,7 +12,6 @@
 	built on another branch.
 -->
 <script lang="ts">
-	import { base } from '$app/paths';
 	import Chart from '$lib/components/Chart.svelte';
 	import type { KevActorLink } from '$lib/data/types';
 	import { sourceLabel } from '$lib/data/labels';
@@ -27,6 +26,7 @@
 		techniqueChart,
 		techniqueHeight
 	} from './charts';
+	import KevTable from './KevTable.svelte';
 	import { kevMonthly, newActorMonths, reportedVsDocumented, reportingActivity } from './series';
 
 	let { data } = $props();
@@ -42,7 +42,7 @@
 	const activity = $derived(reportingActivity(t, TOP_ACTIVITY));
 	const activityPlot = $derived(activityChart(activity, data.names));
 	// The same top the chart uses for its shared scale.
-	const activityTop = $derived(Math.max(1, ...activity.points.map((p) => Math.max(p.count, p.prev))));
+	const activityTop = $derived(Math.max(1, ...activity.points.map((p) => p.count)));
 	const activityRows = $derived(activity.points.filter((p) => p.count > 0 || p.prev > 0));
 
 	const kev = $derived(kevMonthly(t));
@@ -99,19 +99,16 @@
 	<h2 id="h-reporting-activity">Reporting Activity</h2>
 	{#if activity.actors.length}
 		<p class="lead">
-			The {activity.actors.length} actors with the most reports since {since}, quarter by quarter.
-			All the small charts share one scale, which runs from 0 to {activityTop} reports.
+			The {activity.actors.length} actors with the most reports since {since}, quarter by quarter. Darker
+			cells mean more reports, on one scale that runs from 0 to {activityTop}.
 		</p>
 		<Chart
-			title="Reports per quarter for the {activity.actors.length} most reported actors, with the same quarter a year earlier"
+			title="Reports per quarter for the {activity.actors.length} most reported actors, as a grid with one row per actor"
 			note={t.notes.reporting_activity}
 			plot={activityPlot}
 			height={activityHeight(activity.actors.length)}
 			axis="time"
-			legend={[
-				{ label: 'Reports in the quarter', token: '--chart-2' },
-				{ label: 'Same quarter a year earlier', token: '--text', shape: 'rule' }
-			]}
+			legend={[{ label: 'Reports in the quarter, darker for more', token: '--chart-2' }]}
 		>
 			{#snippet table()}
 				<table class="numbers">
@@ -215,24 +212,7 @@
 <section id="kev-actor-links" aria-labelledby="h-kev-actor-links">
 	<h2 id="h-kev-actor-links">Exploited Vulnerabilities in Actor Reports</h2>
 	{#if kevLinks.length}
-		<div class="scroll">
-			<table class="numbers wide">
-				<thead>
-					<tr>
-						<th scope="col">CVE</th>
-						<th scope="col" class="actors">Actors named in the same reports</th>
-					</tr>
-				</thead>
-				<tbody>
-					{#each kevLinks as l (l.cve)}
-						<tr>
-							<td><a class="data" href="{base}/explore/?cve={l.cve}">{l.cve}</a></td>
-							<td class="actors">{l.actors.map(name).join(', ')}</td>
-						</tr>
-					{/each}
-				</tbody>
-			</table>
-		</div>
+		<KevTable links={kevLinks} names={data.names} />
 	{:else}
 		<p class="empty">No KEV CVE shares a report with a resolved actor in this window.</p>
 	{/if}
@@ -419,17 +399,6 @@
 	.numbers.wide td:not(:first-child),
 	.numbers.wide th:not(:first-child) {
 		white-space: nowrap;
-	}
-
-	/* On a wide screen a list of actor names wraps between names instead of
-	   stretching the table. On a phone it stays on one line and the table scrolls in its own box. */
-	@media (min-width: 40rem) {
-		.numbers.wide td.actors,
-		.numbers.wide th.actors {
-			min-width: 14rem;
-			max-width: 36rem;
-			white-space: normal;
-		}
 	}
 
 	/* The tables inside a chart's "Show the numbers" are styled from here,

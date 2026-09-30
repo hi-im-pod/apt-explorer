@@ -148,7 +148,18 @@ test('no time axis starts before the trends window', async ({ page }) => {
 		const left = await figure
 			.locator(`${BARS}, svg [aria-label="rule"] line`)
 			.evaluateAll((els) => Math.min(...els.map((e) => e.getBoundingClientRect().left)));
-		expect(left).toBeGreaterThanOrEqual(firstTick - 1.5);
+		const heatmap = await figure.evaluate((f) => !!f.closest('section#reporting-activity'));
+		if (heatmap) {
+			// A grid labels each column at its middle, so the first tick is inside the first column.
+			const first = await figure.locator(BARS).first().evaluate((el) => {
+				const r = el.getBoundingClientRect();
+				return { left: r.left, right: r.right };
+			});
+			expect(firstTick).toBeGreaterThanOrEqual(first.left);
+			expect(firstTick).toBeLessThanOrEqual(first.right);
+		} else {
+			expect(left).toBeGreaterThanOrEqual(firstTick - 1.5);
+		}
 	}
 });
 
@@ -294,7 +305,7 @@ for (const vp of [
 			await open(page);
 			const tokens = await chartTokens(page);
 			const heights: Record<string, number> = {
-				reporting_activity: 6 * 80,
+				reporting_activity: 6 * 40,
 				kev_monthly: 240,
 				reported_vs_documented: 40 * 5
 			};
@@ -305,7 +316,8 @@ for (const vp of [
 			// A legend swatch that is painted in a series colour, next to its label.
 			for (const key of CHARTS) {
 				const legend = section(page, key).locator('.legend li');
-				expect(await legend.count(), key).toBeGreaterThanOrEqual(2);
+				// The heatmap has one scale, so one legend item; the other charts name two series.
+				expect(await legend.count(), key).toBeGreaterThanOrEqual(key === 'reporting_activity' ? 1 : 2);
 				const text = await section(page, key).locator('.legend').innerText();
 				expect(text.length, key).toBeGreaterThan(5);
 				const colours = await legend.locator('.key').evaluateAll((els) =>
@@ -320,7 +332,7 @@ for (const vp of [
 				}
 				const distinct = new Set(colours.map((c) => c.bg));
 				expect(distinct.size, `${key} swatches differ`).toBe(colours.length);
-				// The series swatches are the chart's own colours, except the "year earlier" rule, which is text-coloured.
+				// At least one swatch is the chart's own series colour.
 				const seriesColours = colours.filter((c) => tokens.includes(c.bg));
 				expect(seriesColours.length, key).toBeGreaterThanOrEqual(1);
 			}
@@ -347,12 +359,28 @@ test('reporting activity shows the most reported actors by name', async ({ page 
 	await expect(chart(page, 'reporting_activity').locator('svg text', { hasText: nameOf(top) })).toHaveCount(1);
 });
 
-test('the tables list every KEV link and every source', async ({ page }) => {
+/** Every row of the paginated KEV table, read one page at a time. */
+async function kevRows(page: Page): Promise<string[]> {
+	const box = section(page, 'kev_actor_links');
+	await box.getByLabel('Rows per page').selectOption('100');
+	const next = box.getByRole('button', { name: 'Next' }).first();
+	const rows: string[] = [];
+	for (;;) {
+		// textContent, not innerText: names folded into a closed disclosure are still in the page.
+		rows.push(...(await box.getByRole('row').evaluateAll((els) => els.map((e) => e.textContent ?? ''))));
+		if (await next.isDisabled()) break;
+		await next.click();
+	}
+	return rows;
+}
+
+test('the KEV table lists every link, and every source is in the source table', async ({ page }) => {
 	await open(page);
-	const links = section(page, 'kev_actor_links').getByRole('table');
+	const rows = await kevRows(page);
 	for (const l of trends.kev_actor_links) {
-		const row = links.getByRole('row').filter({ hasText: l.cve });
-		for (const id of l.actors) await expect(row).toContainText(nameOf(id));
+		const row = rows.find((r) => r.includes(l.cve));
+		expect(row, l.cve).toBeTruthy();
+		for (const id of l.actors) expect(row, `${l.cve} ${id}`).toContain(nameOf(id));
 	}
 	const health = section(page, 'source_health').getByRole('table');
 	await expect(health.getByRole('row')).toHaveCount(trends.source_health.length + 1);
@@ -362,12 +390,48 @@ test('the tables list every KEV link and every source', async ({ page }) => {
 	}
 });
 
-test('a desktop screen shows the KEV link table whole, with actor lists wrapping between names', async ({ page }) => {
-	await page.setViewportSize({ width: 1280, height: 900 });
+for (const vp of [
+	{ name: 375, width: 375, height: 800 },
+	{ name: 1280, width: 1280, height: 900 }
+]) {
+	test(`at ${vp.name}px the KEV table is paged, has no sideways scroll, and links each CVE to the explorer`, async ({
+		page
+	}) => {
+		await page.setViewportSize({ width: vp.width, height: vp.height });
+		await open(page);
+		const box = section(page, 'kev_actor_links');
+		await expect(box.getByText(`Rows 1 to 25 of ${trends.kev_actor_links.length}`, { exact: true })).toBeVisible();
+		await expect(box.getByRole('row')).toHaveCount(26);
+		await noHorizontalScroll(page);
+		const frame = (await box.locator('.frame').boundingBox())!;
+		for (const chip of await box.locator('li').all()) {
+			const r = await chip.boundingBox();
+			if (!r) continue; // inside a closed disclosure
+			expect(r.x + r.width, 'a chip stays inside the table frame').toBeLessThanOrEqual(frame.x + frame.width + 1);
+		}
+		const link = box.getByRole('link').first();
+		const cve = (await link.innerText()).trim();
+		expect(trends.kev_actor_links.some((l) => l.cve === cve)).toBe(true);
+		await expect(link).toHaveAttribute('href', `/apt-explorer/explore/?cve=${cve}`);
+	});
+}
+
+test('a CVE with many actors folds the extra names into a native disclosure that holds every name', async ({ page }) => {
 	await open(page);
-	const box = section(page, 'kev_actor_links').locator('.scroll');
-	const fits = await box.evaluate((e) => e.scrollWidth <= e.clientWidth + 1);
-	expect(fits).toBe(true);
+	const many = trends.kev_actor_links.reduce((a, b) => (b.actors.length > a.actors.length ? b : a));
+	expect(many.actors.length).toBeGreaterThan(4);
+	const box = section(page, 'kev_actor_links');
+	await box.getByLabel('Rows per page').selectOption('100');
+	const next = box.getByRole('button', { name: 'Next' }).first();
+	let row = box.getByRole('row').filter({ hasText: many.cve });
+	while ((await row.count()) === 0) {
+		await next.click();
+		row = box.getByRole('row').filter({ hasText: many.cve });
+	}
+	const more = row.locator('summary');
+	await expect(more).toHaveText(`${many.actors.length - 4} more`);
+	await more.click();
+	for (const id of many.actors) await expect(row).toContainText(nameOf(id));
 });
 
 test('newly documented actors are listed with their first date and basis', async ({ page }) => {
@@ -403,4 +467,70 @@ test('the trends page loads without console errors or warnings', async ({ page }
 	await page.getByRole('menuitemradio', { name: /dark/i }).click();
 	await page.waitForLoadState('networkidle');
 	expect(problems).toEqual([]);
+});
+
+// A tooltip must stay inside the chart's own box, at the narrowest and widest layouts.
+for (const vp of [
+	{ name: 375, width: 375, height: 800 },
+	{ name: 1280, width: 1280, height: 900 }
+]) {
+	for (const key of CHARTS) {
+		test(`at ${vp.name}px the ${key} tooltip stays inside its chart at every sampled point`, async ({ page }) => {
+			await page.setViewportSize({ width: vp.width, height: vp.height });
+			await open(page);
+			const holder = section(page, key).locator('svg').first();
+			await holder.scrollIntoViewIfNeeded();
+			const svg = (await holder.boundingBox())!;
+			const tip = section(page, key).locator('[data-chart-tip]');
+			let shown = 0;
+			// A grid of points across the chart, including both edges where a tip is most likely to spill.
+			for (const fy of [0.15, 0.5, 0.85]) {
+				for (const fx of [0.03, 0.2, 0.5, 0.8, 0.97]) {
+					await page.mouse.move(svg.x + svg.width * fx, svg.y + svg.height * fy);
+					if (!(await tip.isVisible())) continue;
+					shown++;
+					const t = (await tip.boundingBox())!;
+					const where = `${key} at ${fx},${fy}`;
+					expect(t.x, where).toBeGreaterThanOrEqual(svg.x - 1);
+					expect(t.x + t.width, where).toBeLessThanOrEqual(svg.x + svg.width + 1);
+					expect(t.y, where).toBeGreaterThanOrEqual(svg.y - 1);
+					expect(t.y + t.height, where).toBeLessThanOrEqual(svg.y + svg.height + 1);
+					expect(t.width, `${where} is not wider than 260px`).toBeLessThanOrEqual(261);
+				}
+			}
+			expect(shown, `${key} showed a tooltip somewhere`).toBeGreaterThan(0);
+		});
+	}
+}
+
+test('the technique tooltip gives counts and no technique IDs', async ({ page }) => {
+	await page.setViewportSize({ width: 1280, height: 900 });
+	await open(page);
+	const holder = section(page, 'reported_vs_documented').locator('svg').first();
+	await holder.scrollIntoViewIfNeeded();
+	const svg = (await holder.boundingBox())!;
+	await page.mouse.move(svg.x + svg.width * 0.3, svg.y + 30);
+	const tip = section(page, 'reported_vs_documented').locator('[data-chart-tip]');
+	await expect(tip).toBeVisible();
+	const text = await tip.innerText();
+	expect(text).toMatch(/technique/);
+	expect(text).not.toMatch(/T\d{4}/);
+	expect((await tip.boundingBox())!.height).toBeLessThan(120);
+});
+
+test('a tap shows a tooltip, stays after the finger lifts, and a tap elsewhere closes it', async ({ browser }) => {
+	const ctx = await browser.newContext({ viewport: { width: 375, height: 800 }, hasTouch: true, isMobile: true });
+	const page = await ctx.newPage();
+	await open(page);
+	const holder = section(page, 'kev_monthly').locator('svg').first();
+	await holder.scrollIntoViewIfNeeded();
+	const svg = (await holder.boundingBox())!;
+	const tip = section(page, 'kev_monthly').locator('[data-chart-tip]');
+	await page.touchscreen.tap(svg.x + svg.width * 0.6, svg.y + svg.height * 0.6);
+	await expect(tip).toBeVisible();
+	await page.waitForTimeout(300);
+	await expect(tip).toBeVisible();
+	await page.touchscreen.tap(svg.x + 4, svg.y - 6 > 0 ? svg.y - 6 : svg.y + svg.height + 6);
+	await expect(tip).toBeHidden();
+	await ctx.close();
 });

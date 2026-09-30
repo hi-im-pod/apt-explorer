@@ -48,11 +48,12 @@ export function pageWindow(current: number, count: number): (number | 'gap')[] {
 	return out;
 }
 
-export function rangeLabel(page: number, size: number, total: number): string {
+/** `filtered` is false for a list that is not narrowed by any filter, so "matching" would mislead. */
+export function rangeLabel(page: number, size: number, total: number, filtered = true): string {
 	if (total === 0) return 'No rows match';
 	const first = (page - 1) * size + 1;
 	const last = Math.min(page * size, total);
-	return `Rows ${formatCount(first)} to ${formatCount(last)} of ${formatCount(total)} matching`;
+	return `Rows ${formatCount(first)} to ${formatCount(last)} of ${formatCount(total)}${filtered ? ' matching' : ''}`;
 }
 
 /** A copy of `params` with the page and size set. Defaults are left out of the address. */
