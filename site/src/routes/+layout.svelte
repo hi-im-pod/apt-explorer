@@ -71,6 +71,7 @@
 		<p class="links">
 			<a href="{base}/about/">Sources and licences</a>
 			<a href="{base}/methodology/">Methodology</a>
+			<a href="{base}/guesses/">Name guesses</a>
 		</p>
 	</div>
 </footer>

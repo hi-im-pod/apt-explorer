@@ -162,6 +162,24 @@ test('the footer shows the build date and links to sources and licences', async 
 	await expect(page).toHaveURL(/\/apt-explorer\/about\/$/);
 });
 
+test('the footer links to the name guesses page, inside the footer box at both widths', async ({ page }) => {
+	for (const width of [1280, 375]) {
+		await page.setViewportSize({ width, height: 800 });
+		await page.goto('/apt-explorer/');
+		const footer = page.getByRole('contentinfo');
+		const link = footer.getByRole('link', { name: 'Name guesses', exact: true });
+		await expect(link).toBeVisible();
+		const f = (await footer.boundingBox())!;
+		const b = (await link.boundingBox())!;
+		expect(b.width).toBeGreaterThan(0);
+		expect(b.x).toBeGreaterThanOrEqual(f.x);
+		expect(b.x + b.width).toBeLessThanOrEqual(f.x + f.width + 1);
+	}
+	await page.getByRole('contentinfo').getByRole('link', { name: 'Name guesses', exact: true }).click();
+	await expect(page).toHaveURL(/\/apt-explorer\/guesses\/$/);
+	await expect(page.getByRole('heading', { level: 1 })).toHaveText('Name Guesses');
+});
+
 test('the home page lists every source with its health', async ({ page }) => {
 	const sources = readData<Sources>('sources.json');
 	await page.goto('/apt-explorer/');
