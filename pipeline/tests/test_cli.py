@@ -1,4 +1,5 @@
 import json
+import re
 from pathlib import Path
 
 import httpx
@@ -203,7 +204,7 @@ def test_the_real_orkl_class_is_recognised_by_type_not_by_name(tmp_path, store):
 
 def test_a_schema_failure_returns_1_and_leaves_data_untouched(tmp_path, store, monkeypatch, capsys):
     out = tmp_path / "data"
-    assert cli.main(["run", "--out", str(out), "--skip-fetch"], store=store, connectors=connectors()) == 0
+    assert cli.main(["run", "--out", str(out), "--skip-fetch", "--first-build"], store=store, connectors=connectors()) == 0
     before = tree(out)
     # An actor with no name is the failure the plan names.
     real = cli.assembly.assemble
@@ -227,7 +228,7 @@ def test_run_raises_write_refused_and_writes_nothing(tmp_path, store, monkeypatc
 
 def test_a_missing_copyright_year_returns_1_and_writes_nothing(tmp_path, capsys):
     bare = SnapshotStore(tmp_path / "bare")
-    assert cli.main(["run", "--out", str(tmp_path / "data"), "--skip-fetch"], store=bare, connectors=connectors()) == 1
+    assert cli.main(["run", "--out", str(tmp_path / "data"), "--skip-fetch", "--first-build"], store=bare, connectors=connectors()) == 1
     assert not (tmp_path / "data").exists()
 
 
@@ -239,7 +240,7 @@ def test_an_unknown_source_in_only_is_a_usage_error(tmp_path, store):
 
 def test_the_status_table_is_printed(tmp_path, store, capsys):
     cs = connectors(dfir=Fake("dfir", bundles()["dfir"], fail=RuntimeError("down"), policy="link-only"))
-    assert cli.main(["run", "--out", str(tmp_path / "data")], store=store, connectors=cs) == 0
+    assert cli.main(["run", "--out", str(tmp_path / "data"), "--first-build"], store=store, connectors=cs) == 0
     text = capsys.readouterr().out
     assert "dfir" in text and "STALE" in text and "RuntimeError: down" in text
 
@@ -401,6 +402,44 @@ def test_a_registry_that_does_not_match_its_schema_stops_the_build_and_writes_no
 
 def test_the_command_line_accepts_a_slugs_option(tmp_path, store):
     out = tmp_path / "data"
-    assert cli.main(["run", "--skip-fetch", "--out", str(out), "--slugs", str(tmp_path / "none.json")],
+    assert cli.main(["run", "--skip-fetch", "--first-build", "--out", str(out), "--slugs", str(tmp_path / "none.json")],
                     store=store, connectors=connectors()) == 0
     assert (out / "slugs.json").is_file()
+
+
+# run(): a missing registry is a refusal unless the build says it is the first one
+
+def test_a_build_with_no_registry_is_refused_unless_it_is_marked_as_the_first(tmp_path, store, capsys):
+    out = tmp_path / "data"
+    assert cli.main(["run", "--skip-fetch", "--out", str(out)], store=store, connectors=connectors()) == 1
+    assert "first-build" in capsys.readouterr().err
+    # Nothing is written, so a deploy cannot go out with slugs that were quietly started again.
+    assert not out.exists()
+    assert cli.main(["run", "--skip-fetch", "--first-build", "--out", str(out)],
+                    store=store, connectors=connectors()) == 0
+    assert (out / "slugs.json").is_file()
+
+
+def test_a_later_build_finds_the_registry_inside_out_without_the_first_build_flag(tmp_path, store):
+    out = tmp_path / "data"
+    assert cli.main(["run", "--skip-fetch", "--first-build", "--out", str(out)],
+                    store=store, connectors=connectors()) == 0
+    assert cli.main(["run", "--skip-fetch", "--out", str(out)], store=store, connectors=connectors()) == 0
+
+
+# The weekly workflow
+
+def _clear_step_command() -> str:
+    """The shell command of the workflow step that empties data/ before the pipeline runs."""
+    text = (Path(__file__).resolve().parents[2] / ".github" / "workflows" / "build.yml").read_text(encoding="utf-8")
+    m = re.search(r"- name: Clear stale generated data\s*\n\s*run: (.+)", text)
+    assert m, "the workflow no longer has a step named 'Clear stale generated data'"
+    return m.group(1)
+
+
+def test_the_workflow_never_deletes_the_slug_registry_before_the_build():
+    # The registry is what keeps published actor addresses stable. If the step removed it, the
+    # build would start a new registry and every retired address would stop resolving.
+    command = _clear_step_command()
+    assert "! -name slugs.json" in command
+    assert "! -name NOTICE.md" in command

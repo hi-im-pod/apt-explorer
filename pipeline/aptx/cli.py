@@ -272,6 +272,9 @@ def _parser() -> argparse.ArgumentParser:
                    help="the slug registry the last build published (default: slugs.json inside --out)")
     r.add_argument("--labels", type=Path, default=None,
                    help="the labelled set of paper names that guesses.json is measured on")
+    r.add_argument("--first-build", action="store_true",
+                   help="allow a build that starts the slug registry from nothing; every other build needs "
+                        "the registry the last one published")
     lk = sub.add_parser("links", help="check a rotating sample of the published report links")
     lk.add_argument("--sample", type=int, default=300, help="how many URLs to check this run")
     lk.add_argument("--data", type=Path, default=Path("../data"), help="the data/ directory whose reports to check")
@@ -303,6 +306,14 @@ def main(argv: Sequence[str] | None = None, *, store: SnapshotStore | None = Non
         unknown = only - set(SOURCE_ORDER)
         if unknown:
             parser.error(f"unknown source(s) {', '.join(sorted(unknown))}; choose from {', '.join(SOURCE_ORDER)}")
+    # A missing registry is only right for the very first build. Anywhere else it means the file
+    # was deleted or not copied, and a quiet fresh start would give every actor a new slug and
+    # break the addresses that were already published.
+    registry_path = args.slugs if args.slugs is not None else args.out / "slugs.json"
+    if not args.first_build and not registry_path.is_file():
+        print(f"{registry_path} does not exist. Pass the registry the last build published with --slugs, "
+              "or pass --first-build if this is the first build.", file=sys.stderr)
+        return 1
     try:
         status = run(args.out, store, connectors, fetch=not args.skip_fetch, only=only,
                      slugs_path=args.slugs, labels=args.labels)

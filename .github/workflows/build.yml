@@ -73,9 +73,11 @@ jobs:
       # no longer produces, so an actor that the committed copy has and the
       # live data does not would survive into the deployed site. Clear
       # everything except NOTICE.md, which carries the licence text and has
-      # to stay next to the data.
+      # to stay next to the data, and slugs.json, the frozen registry of
+      # actor addresses. Without the registry the build would start a new one
+      # and every address that was already published would stop resolving.
       - name: Clear stale generated data
-        run: find data -mindepth 1 -maxdepth 1 ! -name NOTICE.md -exec rm -rf {} +
+        run: find data -mindepth 1 -maxdepth 1 ! -name NOTICE.md ! -name slugs.json -exec rm -rf {} +
 
       # A failing source does not fail this step: the pipeline reuses that
       # source's last good snapshot and marks it stale. The step fails only
