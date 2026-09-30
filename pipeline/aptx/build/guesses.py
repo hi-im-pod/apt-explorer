@@ -510,13 +510,15 @@ def _weighted(model: Model, analysis: Analysis, label: str, p_malware: float) ->
 
     The weight is how far the signal pushes toward the guessed label, so a positive weight supports the
     guess and a negative weight argues against it. The model's own weights point toward malware, so
-    for an actor guess the sign is flipped.
+    for an actor guess the sign is flipped. The model only weighs actor against malware, so a guess with
+    any other label carries no weight: a number that means "toward malware" would mislead there.
     """
     sign = 1 if label == "malware" else -1
     out: list[dict] = []
     for sig in model.fired(analysis.features):
         weight = model.weights[1 + model.signals.index(sig)] * analysis.features[sig]
-        out.append({"signal": sig, "detail": analysis.evidence[sig].detail, "weight": round(sign * weight, 3)})
+        shown = round(sign * weight, 3) if label in ("actor", "malware") else None
+        out.append({"signal": sig, "detail": analysis.evidence[sig].detail, "weight": shown})
     for sig in CONTEXT_SIGNALS:
         if sig in analysis.evidence and sig not in model.signals:
             out.append({"signal": sig, "detail": analysis.evidence[sig].detail, "weight": None})

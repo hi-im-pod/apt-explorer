@@ -427,3 +427,21 @@ def test_a_refused_band_is_named_in_the_limitations():
 def test_the_limitations_say_the_signals_were_chosen_on_the_same_names():
     text = " ".join(World().build([])["evaluation"]["limitations"])
     assert "chosen on the same" in text and "without each name in turn" in text
+
+
+# The direction of a weight
+
+def _weighted_for(label):
+    world = World()
+    ref = sim.build_reference(world.registry, world.software, [])
+    analysis = sim.analyse("Blorp Loader", ref)
+    model = g.Model(("malware_word",), [0.0, 1.2], [(1.0001, 0.8)], 0.5, frozenset({"actor", "malware"}))
+    return {e["signal"]: e["weight"] for e in g._weighted(model, analysis, label, 0.8)}
+
+
+def test_a_weight_supports_the_guess_only_when_the_label_is_actor_or_malware():
+    assert _weighted_for("malware")["malware_word"] == pytest.approx(1.2)
+    assert _weighted_for("actor")["malware_word"] == pytest.approx(-1.2)
+    # The model only weighs actor against malware, so it has nothing to say for or against another label.
+    assert _weighted_for("tool")["malware_word"] is None
+    assert _weighted_for("not-an-entity")["malware_word"] is None

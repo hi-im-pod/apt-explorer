@@ -9,7 +9,8 @@ import {
 	kindText,
 	labelText,
 	percentText,
-	weightText
+	weightText,
+	directionText
 } from './view';
 
 function guess(over: Partial<Guess>): Guess {
@@ -99,6 +100,18 @@ describe('weightText', () => {
 		expect(weightText(-0.5)).toBe('-0.5 argues against it');
 		expect(weightText(null)).toBe('context only');
 		expect(weightText(0)).toBe('context only');
+	});
+});
+
+describe('directionText', () => {
+	it('names the label a kept signal pushes toward and how hard', () => {
+		expect(directionText(0.939)).toBe('pushes toward malware, strength 0.9');
+		expect(directionText(-0.829)).toBe('pushes toward actor, strength 0.8');
+	});
+
+	it('says nothing is pushed for a missing or zero weight', () => {
+		expect(directionText(null)).toBeNull();
+		expect(directionText(0)).toBeNull();
 	});
 });
 

@@ -81,6 +81,16 @@ export function weightText(weight: number | null): string {
 }
 
 /**
+ * A kept signal's model weight as a direction and a strength. The model
+ * separates actor from malware, so a positive weight points toward malware
+ * and a negative weight toward actor. A bare signed number does not say that.
+ */
+export function directionText(weight: number | null): string | null {
+	if (weight == null || weight === 0) return null;
+	return `pushes toward ${weight > 0 ? 'malware' : 'actor'}, strength ${Math.abs(weight).toFixed(1)}`;
+}
+
+/**
  * Where the method stands against a plain alternative, in whole percentage
  * points. A gap under half a point counts as level, since the accuracy is
  * measured on a few dozen names and a smaller gap is noise.

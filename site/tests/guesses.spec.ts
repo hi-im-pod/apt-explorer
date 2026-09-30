@@ -126,6 +126,24 @@ test('the page only praises the High band when the evaluation used it', async ({
 	for (const l of ev.limitations) await expect(page.locator('#evaluation')).toContainText(l.slice(0, 40));
 });
 
+test('each kept signal says which label it pushes toward, for both signs of weight', async ({ page }) => {
+	const ev = real.evaluation as Evaluation;
+	const kept = ev.signals.filter((s) => s.kept && s.weight != null && s.weight !== 0);
+	const toward = (w: number) => (w > 0 ? 'malware' : 'actor');
+	const pos = kept.find((s) => (s.weight ?? 0) > 0);
+	const neg = kept.find((s) => (s.weight ?? 0) < 0);
+	expect(pos, 'the data has a kept signal that points toward malware').toBeTruthy();
+	expect(neg, 'the data has a kept signal that points toward actor').toBeTruthy();
+	await page.goto(PAGE);
+	for (const s of [pos!, neg!]) {
+		const item = page.locator('#evaluation .signals li', { has: page.locator('code', { hasText: new RegExp(`^${s.signal}$`) }) });
+		await expect(item.locator('.signal-facts')).toContainText(
+			`pushes toward ${toward(s.weight!)}, strength ${Math.abs(s.weight!).toFixed(1)}`
+		);
+		await expect(item.locator('.signal-facts')).not.toContainText(/weight -?\d/);
+	}
+});
+
 test('the confidence bands, labels and confusion matrix are tables of the evaluation', async ({ page }) => {
 	const ev = real.evaluation as Evaluation;
 	await page.goto(PAGE);

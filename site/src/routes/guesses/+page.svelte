@@ -14,7 +14,8 @@
 		kindText,
 		labelText,
 		percentText,
-		weightText
+		weightText,
+		directionText
 	} from './view';
 
 	let { data } = $props();
@@ -277,7 +278,9 @@
 		<h3>Signals</h3>
 		<p>
 			A signal is one thing the program checks about a name. A signal is kept only when the model
-			does worse without it. The weight says how strongly a kept signal pushes toward its label.
+			does worse without it. The model separates actor from malware. Each kept signal is shown with
+			the label it pushes a name toward and how strongly, and a larger strength is a stronger push.
+			In a guess, a positive weight supports that guess and a negative weight argues against it.
 		</p>
 		<ul class="signals">
 			{#each evaluation.signals as s (s.signal)}
@@ -292,7 +295,7 @@
 							? `, mostly ${labelText(s.implied_label).toLowerCase()}`
 							: ''}{s.precision_when_fires != null
 							? `, right ${percentText(s.precision_when_fires)}`
-							: ''}{s.weight != null ? `, weight ${s.weight.toFixed(1)}` : ''}
+							: ''}{directionText(s.weight) ? `, ${directionText(s.weight)}` : ''}
 					</p>
 					<p class="signal-note">{s.note}</p>
 				</li>
