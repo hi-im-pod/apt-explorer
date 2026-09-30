@@ -9,6 +9,7 @@
  */
 
 const SHA = /^[0-9a-f]{40}$/;
+const HEX = /^[0-9a-f]+$/;
 
 /** A report id in the form the index stores. Ids that are not digests are kept whole. */
 export function shortId(id: string, idLen: number): string {
@@ -17,9 +18,11 @@ export function shortId(id: string, idLen: number): string {
 
 /**
  * The index form of an id taken from a link. Actor pages link with the full
- * id, so a full digest is cut the same way the index cuts it. Anything else
- * is returned as it is: it is either already short or not a digest.
+ * id, and a link saved under an older build may carry a longer prefix than
+ * this build's index, so any hex text at least `idLen` long is cut the way
+ * the index cuts it. Anything else is returned as it is: it is either
+ * shorter (see `search.ts` for that case) or not a digest.
  */
 export function indexForm(param: string, idLen: number): string {
-	return shortId(param, idLen);
+	return HEX.test(param) && param.length >= idLen && param.length <= 40 ? param.slice(0, idLen) : param;
 }

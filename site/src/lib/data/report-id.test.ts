@@ -20,4 +20,11 @@ describe('indexForm', () => {
 	it('leaves a short id alone', () => {
 		expect(indexForm('ab12cd34', 8)).toBe('ab12cd34');
 	});
+	it('cuts a longer prefix from a link saved under another build', () => {
+		expect(indexForm('ab12cd34ef', 8)).toBe('ab12cd34');
+	});
+	it('leaves a prefix shorter than the index length, and an id that is not a digest', () => {
+		expect(indexForm('ab12cd', 8)).toBe('ab12cd');
+		expect(indexForm('paper:2025-ccs', 8)).toBe('paper:2025-ccs');
+	});
 });
