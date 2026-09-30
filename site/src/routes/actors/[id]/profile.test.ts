@@ -2,7 +2,11 @@ import { describe, it, expect } from 'vitest';
 import type { Actor, Report } from '$lib/data';
 import {
 	actorSources,
+	countWord,
+	documentedOnly,
 	groupValues,
+	ledeFor,
+	otherSources,
 	linkNote,
 	pickReports,
 	reportLinks,
@@ -215,6 +219,78 @@ describe('pickReports', () => {
 		const { reports, missing } = pickReports(['r2', 'gone'], byId);
 		expect(reports.map((r) => r.id)).toEqual(['r2']);
 		expect(missing).toEqual(['gone']);
+	});
+});
+
+describe('countWord', () => {
+	it('spells out numbers under ten and uses numerals from ten', () => {
+		expect(countWord(1)).toBe('one');
+		expect(countWord(3)).toBe('three');
+		expect(countWord(9)).toBe('nine');
+		expect(countWord(10)).toBe('10');
+		expect(countWord(1234)).toBe('1,234');
+	});
+});
+
+describe('ledeFor', () => {
+	const aliases = (...names: string[]) => names.map((value) => ({ value, sources: ['misp' as const] }));
+
+	it('names the first five other names, counts the rest and says how many sources agree on an origin', () => {
+		const a = actor({
+			name: 'APT28',
+			aliases: aliases('APT28', 'Fancy Bear', 'Sofacy', 'Sednit', 'Pawn Storm', 'Forest Blizzard', 'STRONTIUM', 'BlueDelta'),
+			origin: [
+				{ value: 'RU', source: 'misp' },
+				{ value: 'RU', source: 'etda' },
+				{ value: 'RU', source: 'malpedia' }
+			]
+		});
+		expect(ledeFor(a)).toBe(
+			'Also reported as Fancy Bear, Sofacy, Sednit, Pawn Storm, Forest Blizzard and 2 other names. Linked to Russia by three sources.'
+		);
+	});
+
+	it('lists a short set of names in full, with "and" before the last', () => {
+		expect(ledeFor(actor({ name: 'X', aliases: aliases('X', 'A', 'B') }))).toBe('Also reported as A and B.');
+		expect(ledeFor(actor({ name: 'X', aliases: aliases('X', 'A', 'B', 'C') }))).toBe('Also reported as A, B and C.');
+		expect(ledeFor(actor({ name: 'X', aliases: aliases('X', 'A') }))).toBe('Also reported as A.');
+	});
+
+	it('uses the singular for one source and says when sources disagree', () => {
+		expect(ledeFor(actor({ origin: [{ value: 'KP', source: 'misp' }] }))).toBe('Linked to North Korea by one source.');
+		expect(
+			ledeFor(
+				actor({
+					origin: [
+						{ value: 'CN', source: 'misp' },
+						{ value: 'RU', source: 'etda' }
+					]
+				})
+			)
+		).toBe('Sources disagree on the origin.');
+	});
+
+	it('is null for an actor with no other names and no origin', () => {
+		expect(ledeFor(actor({ name: 'Test' }))).toBeNull();
+	});
+});
+
+describe('documentedOnly', () => {
+	it('keeps the ATT&CK techniques that no recent report names, in order', () => {
+		const a = actor({
+			techniques_documented: ['T1', 'T2', 'T3', 'T4'],
+			techniques_reported: [
+				{ id: 'T3', count: 5 },
+				{ id: 'T9', count: 2 }
+			]
+		});
+		expect(documentedOnly(a)).toEqual(['T1', 'T2', 'T4']);
+	});
+});
+
+describe('otherSources', () => {
+	it('leaves out the four sources that have a box and keeps the rest', () => {
+		expect(otherSources(['attack', 'paper', 'malpedia', 'kev'])).toEqual(['paper', 'kev']);
 	});
 });
 

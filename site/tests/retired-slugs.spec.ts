@@ -100,7 +100,7 @@ test('a live actor page is not a stub', async ({ page }) => {
 	test.skip(!slug, 'data/slugs.json has no live entry yet');
 	await page.goto(`/apt-explorer/actors/${slug}/`);
 	await expect(page.getByRole('heading', { level: 1 })).toHaveText(entry!.display_name);
-	await expect(page.getByRole('heading', { level: 2, name: 'Aliases' })).toBeVisible();
+	await expect(page.getByRole('heading', { level: 2, name: 'Names and who uses them' })).toBeVisible();
 	await expect(page.getByRole('link', { name: /^Go to the profile of / })).toHaveCount(0);
 	await expect(page.locator('meta[name="robots"]')).toHaveCount(0);
 });

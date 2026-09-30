@@ -4,7 +4,9 @@
  */
 import type { Actor, DateBasis, Report, ReportId, SourceKey, SourcedValue } from '$lib/data';
 import { SOURCE_LABELS } from '$lib/data/labels';
+import { formatCount } from '$lib/format';
 import { describeLinks } from '$lib/links';
+import { countryName } from '../actors';
 
 /**
  * The report fields the profile shows. Link-only sources allow a title, a
@@ -166,4 +168,63 @@ export const DATE_BASIS_LABELS: Readonly<Record<DateBasis, string>> = {
 /** "T1059.001" to its page on attack.mitre.org. */
 export function techniqueUrl(id: string): string {
 	return `https://attack.mitre.org/techniques/${id.replace('.', '/')}/`;
+}
+
+/** How many items each long list shows before its "Show all" control. */
+export const FIRST_REPORTS = 10;
+export const FIRST_ALIASES = 14;
+export const FIRST_TECHNIQUES = 10;
+export const FIRST_CHIPS = 12;
+
+/** The four sources that name actors, each with the two-letter code its box carries. */
+export const NAME_SOURCES = [
+	{ key: 'attack', code: 'AT' },
+	{ key: 'misp', code: 'MI' },
+	{ key: 'etda', code: 'ET' },
+	{ key: 'malpedia', code: 'MA' }
+] as const satisfies readonly { key: SourceKey; code: string }[];
+
+/** Sources on an alias that have no box of their own. They still get a badge. */
+export function otherSources(sources: readonly SourceKey[]): SourceKey[] {
+	return sources.filter((s) => !NAME_SOURCES.some((n) => n.key === s));
+}
+
+const NUMBER_WORDS = ['no', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+
+/** Numbers under ten as words and the rest as numerals, for running text. */
+export function countWord(n: number): string {
+	return n >= 0 && n < 10 ? NUMBER_WORDS[n] : formatCount(n);
+}
+
+const NAMES_IN_LEDE = 5;
+
+/**
+ * The sentence or two under the actor's name, built only from the data: a few
+ * of its other names, and how many sources agree on an origin. Null when
+ * there is nothing to say, so the page shows no empty line.
+ */
+export function ledeFor(actor: Pick<Actor, 'name' | 'aliases' | 'origin'>): string | null {
+	const parts: string[] = [];
+	const others = actor.aliases.map((a) => a.value).filter((v) => v !== actor.name);
+	if (others.length > 0) {
+		const shown = others.slice(0, NAMES_IN_LEDE);
+		const rest = others.length - shown.length;
+		if (rest > 0) shown.push(`${formatCount(rest)} other ${rest === 1 ? 'name' : 'names'}`);
+		const list = shown.length === 1 ? shown[0] : `${shown.slice(0, -1).join(', ')} and ${shown[shown.length - 1]}`;
+		parts.push(`Also reported as ${list}.`);
+	}
+	const origins = groupValues(actor.origin);
+	if (origins.length === 1) {
+		const n = origins[0].sources.length;
+		parts.push(`Linked to ${countryName(origins[0].value)} by ${countWord(n)} ${n === 1 ? 'source' : 'sources'}.`);
+	} else if (origins.length > 1) {
+		parts.push('Sources disagree on the origin.');
+	}
+	return parts.length > 0 ? parts.join(' ') : null;
+}
+
+/** ATT&CK techniques that no recent report names, so the table of recent techniques leaves them out. */
+export function documentedOnly(actor: Pick<Actor, 'techniques_documented' | 'techniques_reported'>): string[] {
+	const seen = new Set(actor.techniques_reported.map((t) => t.id));
+	return actor.techniques_documented.filter((id) => !seen.has(id));
 }
