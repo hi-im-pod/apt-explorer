@@ -1,0 +1,1983 @@
+{
+  "evaluation": {
+    "ground_truth": {
+      "n": 64,
+      "derived": 64,
+      "confirmed": 0,
+      "by_label": [
+        {
+          "label": "actor",
+          "count": 44
+        },
+        {
+          "label": "malware",
+          "count": 20
+        },
+        {
+          "label": "tool",
+          "count": 0
+        },
+        {
+          "label": "not-an-entity",
+          "count": 0
+        }
+      ]
+    },
+    "accuracy": 0.75,
+    "correct": 48,
+    "baselines": {
+      "majority_label": "actor",
+      "majority_accuracy": 0.688,
+      "name_only_accuracy": 0.734
+    },
+    "per_label": [
+      {
+        "label": "actor",
+        "support": 44,
+        "predicted": 60,
+        "precision": 0.733,
+        "recall": 1.0,
+        "validated": true
+      },
+      {
+        "label": "malware",
+        "support": 20,
+        "predicted": 4,
+        "precision": 1.0,
+        "recall": 0.2,
+        "validated": true
+      },
+      {
+        "label": "tool",
+        "support": 0,
+        "predicted": 0,
+        "precision": null,
+        "recall": null,
+        "validated": false
+      },
+      {
+        "label": "not-an-entity",
+        "support": 0,
+        "predicted": 0,
+        "precision": null,
+        "recall": null,
+        "validated": false
+      }
+    ],
+    "confusion": {
+      "labels": [
+        "actor",
+        "malware",
+        "tool",
+        "not-an-entity"
+      ],
+      "rows": [
+        [
+          44,
+          0,
+          0,
+          0
+        ],
+        [
+          16,
+          4,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "bands": [
+      {
+        "band": "high",
+        "min_confidence": 0.85,
+        "n": 19,
+        "correct": 18,
+        "precision": 0.947,
+        "coverage": 0.297
+      },
+      {
+        "band": "medium",
+        "min_confidence": 0.7,
+        "n": 0,
+        "correct": 0,
+        "precision": null,
+        "coverage": 0.0
+      },
+      {
+        "band": "low",
+        "min_confidence": 0.0,
+        "n": 45,
+        "correct": 30,
+        "precision": 0.667,
+        "coverage": 0.703
+      }
+    ],
+    "signals": [
+      {
+        "signal": "cluster_id",
+        "description": "The name follows a numbered cluster pattern such as UNC1234 or APT-C-15.",
+        "fires": 7,
+        "implied_label": "actor",
+        "precision_when_fires": 1.0,
+        "weight": -0.829,
+        "loss_change_without": 0.011,
+        "kept": true,
+        "note": "Kept: the model does worse without it."
+      },
+      {
+        "signal": "vendor_suffix",
+        "description": "The name ends in a vendor naming word such as Panda, Bear or Team, or starts with Water.",
+        "fires": 4,
+        "implied_label": "actor",
+        "precision_when_fires": 1.0,
+        "weight": -0.704,
+        "loss_change_without": 0.0085,
+        "kept": true,
+        "note": "Kept: the model does worse without it."
+      },
+      {
+        "signal": "malware_word",
+        "description": "The name ends in a word that usually names malware, such as RAT, Spy or Loader.",
+        "fires": 3,
+        "implied_label": "malware",
+        "precision_when_fires": 1.0,
+        "weight": 0.939,
+        "loss_change_without": 0.0113,
+        "kept": true,
+        "note": "Kept: the model does worse without it."
+      },
+      {
+        "signal": "actor_resemblance",
+        "description": "The name is a close spelling of, or contains, the name of a known actor.",
+        "fires": 7,
+        "implied_label": "actor",
+        "precision_when_fires": 1.0,
+        "weight": -0.772,
+        "loss_change_without": 0.0089,
+        "kept": true,
+        "note": "Kept: the model does worse without it."
+      },
+      {
+        "signal": "software_resemblance",
+        "description": "The name is a close spelling of the name of known malware or a known tool.",
+        "fires": 4,
+        "implied_label": "malware",
+        "precision_when_fires": 0.75,
+        "weight": 0.809,
+        "loss_change_without": 0.0066,
+        "kept": true,
+        "note": "Kept: the model does worse without it."
+      },
+      {
+        "signal": "cooc_actor",
+        "description": "The paper lists the name in the same report row as an actor the resolver knows.",
+        "fires": 3,
+        "implied_label": "malware",
+        "precision_when_fires": 1.0,
+        "weight": 1.049,
+        "loss_change_without": 0.0166,
+        "kept": true,
+        "note": "Kept: the model does worse without it."
+      },
+      {
+        "signal": "cve_actor",
+        "description": "A report that uses the name cites a rare CVE that other reports tie to a known actor.",
+        "fires": 9,
+        "implied_label": "actor",
+        "precision_when_fires": 0.889,
+        "weight": -0.591,
+        "loss_change_without": 0.0014,
+        "kept": true,
+        "note": "Kept: the model does worse without it."
+      },
+      {
+        "signal": "non_latin",
+        "description": "The name is written in a script other than Latin.",
+        "fires": 0,
+        "implied_label": null,
+        "precision_when_fires": null,
+        "weight": null,
+        "loss_change_without": null,
+        "kept": false,
+        "note": "Dropped: it fires on fewer than 3 ground-truth names, too few to measure."
+      }
+    ],
+    "unmeasured_signals": [
+      {
+        "signal": "exact_name_listed",
+        "reason": "Every ground-truth name is labelled because a source lists it, so leaving that source out removes the signal, and keeping it would make the test circular. A guess that rests on it is shown as unvalidated."
+      }
+    ],
+    "matching": {
+      "actor_names": 44,
+      "matchable": 27,
+      "by_kind": [
+        {
+          "kind": "variant",
+          "proposed": 1,
+          "correct": 1,
+          "precision": 1.0,
+          "published": true
+        },
+        {
+          "kind": "contains",
+          "proposed": 0,
+          "correct": 0,
+          "precision": null,
+          "published": false
+        },
+        {
+          "kind": "fuzzy",
+          "proposed": 6,
+          "correct": 0,
+          "precision": 0.0,
+          "published": false
+        }
+      ]
+    },
+    "limitations": [
+      "The ground truth has fewer than 10 names labelled tool or not-an-entity, so guesses with those labels are shown as unvalidated.",
+      "The ground-truth names are ones that a source lists, so they are better known than a typical unresolved name.",
+      "Signals were kept and confidence was calibrated on the same 64 names, so the figures are likely a little optimistic."
+    ]
+  },
+  "guesses": [
+    {
+      "name": "Winnti Umbrella",
+      "count": 593,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "actor_resemblance",
+          "detail": "The name contains 'Winnti', the distinctive part of 'Winnti Group', a name of the actor Winnti Group.",
+          "weight": 0.695
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "Operation Armageddon",
+      "count": 24,
+      "label": "not-an-entity",
+      "confidence": null,
+      "band": "unvalidated",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "campaign_word",
+          "detail": "The name begins or ends with 'operation' or 'campaign', which names an operation, not an actor.",
+          "weight": null
+        },
+        {
+          "signal": "actor_resemblance",
+          "detail": "The name matches the actor Star Blizzard (as 'Armageddon') after removing the word 'operation'.",
+          "weight": 0.772
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "COBALT GIPSY",
+      "count": 20,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "actor_resemblance",
+          "detail": "The name contains 'Cobalt', the distinctive part of 'Cobalt Group', a name of the actor Cobalt Group.",
+          "weight": 0.695
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "Timberworm",
+      "count": 20,
+      "label": "actor",
+      "confidence": null,
+      "band": "unvalidated",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "exact_actor_name",
+          "detail": "MISP, ETDA and Malpedia list this exact name as an actor alias.",
+          "weight": null
+        },
+        {
+          "signal": "malware_word",
+          "detail": "The name ends in 'worm', a word that usually names malware.",
+          "weight": -0.939
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "Kimsuki",
+      "count": 19,
+      "label": "actor",
+      "confidence": 0.58,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "actor_resemblance",
+          "detail": "The name is 1 edit away from 'Kimsuky', a name of the actor Kimsuky.",
+          "weight": 0.662
+        },
+        {
+          "signal": "software_resemblance",
+          "detail": "The name is 1 edit away from 'Kimsuky', a malware listed by Malpedia.",
+          "weight": -0.694
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "nso group",
+      "count": 5,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "vendor_suffix",
+          "detail": "The name uses the vendor naming word 'group', which appears in names of tracked groups.",
+          "weight": 0.704
+        },
+        {
+          "signal": "cve_actor",
+          "detail": "A report that uses this name cites CVE-2016-4655, which the dataset's other reports tie to Stealth Falcon.",
+          "weight": 0.591
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "LOTUS PANDA",
+      "count": 4,
+      "label": "actor",
+      "confidence": null,
+      "band": "unvalidated",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "exact_actor_name",
+          "detail": "MISP, ETDA and Malpedia list this exact name as an actor alias.",
+          "weight": null
+        },
+        {
+          "signal": "vendor_suffix",
+          "detail": "The name uses the vendor naming word 'panda', which appears in names of tracked groups.",
+          "weight": 0.704
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "grand theft auto panda",
+      "count": 3,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "vendor_suffix",
+          "detail": "The name uses the vendor naming word 'panda', which appears in names of tracked groups.",
+          "weight": 0.704
+        },
+        {
+          "signal": "cve_actor",
+          "detail": "A report that uses this name cites CVE-2012-1856, which the dataset's other reports tie to Patchwork.",
+          "weight": 0.591
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "Oktropys",
+      "count": 3,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "uac-0056",
+      "count": 3,
+      "label": "actor",
+      "confidence": null,
+      "band": "unvalidated",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "exact_actor_name",
+          "detail": "ATT&CK, MISP, ETDA and Malpedia list this exact name as an actor alias.",
+          "weight": null
+        },
+        {
+          "signal": "cluster_id",
+          "detail": "The name follows the cluster-ID pattern UAC-<number>, which vendors use for groups they track by number.",
+          "weight": 0.829
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "chessmaster",
+      "count": 2,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "cve_actor",
+          "detail": "A report that uses this name cites CVE-2017-5689, which the dataset's other reports tie to Lazarus Group.",
+          "weight": 0.591
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "iron group",
+      "count": 2,
+      "label": "actor",
+      "confidence": null,
+      "band": "unvalidated",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "exact_actor_name",
+          "detail": "MISP, ETDA and Malpedia list this exact name as an actor alias.",
+          "weight": null
+        },
+        {
+          "signal": "vendor_suffix",
+          "detail": "The name uses the vendor naming word 'group', which appears in names of tracked groups.",
+          "weight": 0.704
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "kovcoreg",
+      "count": 2,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "newsbeef",
+      "count": 2,
+      "label": "actor",
+      "confidence": null,
+      "band": "unvalidated",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "exact_actor_name",
+          "detail": "MISP, ETDA and Malpedia list this exact name as an actor alias.",
+          "weight": null
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "outlaw",
+      "count": 2,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "shadow force",
+      "count": 2,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "Sphinx (APT-C-15)",
+      "count": 2,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": "sphinx",
+      "matched_actor_name": "Sphinx",
+      "evidence": [
+        {
+          "signal": "actor_resemblance",
+          "detail": "The name matches the actor Sphinx (as 'Sphinx') after taking the part outside the brackets.",
+          "weight": 0.772
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "thrip",
+      "count": 2,
+      "label": "actor",
+      "confidence": null,
+      "band": "unvalidated",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "exact_actor_name",
+          "detail": "ATT&CK, MISP, ETDA and Malpedia list this exact name as an actor alias.",
+          "weight": null
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "3ve",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "85th gtsss",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.58,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "cooc_actor",
+          "detail": "A report in the paper's dataset lists this name together with APT28.",
+          "weight": -1.049
+        },
+        {
+          "signal": "cve_actor",
+          "detail": "A report that uses this name cites CVE-2020-0688, which the dataset's other reports tie to Threat Group-3390.",
+          "weight": 0.591
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "a 공격 그룹",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "a41apt",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "aleksandr",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "appin security group",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "vendor_suffix",
+          "detail": "The name uses the vendor naming word 'group', which appears in names of tracked groups.",
+          "weight": 0.704
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "apt sidewinder",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.58,
+      "band": "low",
+      "matched_actor_id": "G0121",
+      "matched_actor_name": "Sidewinder",
+      "evidence": [
+        {
+          "signal": "actor_resemblance",
+          "detail": "The name matches the actor Sidewinder (as 'Sidewinder') after removing the leading 'apt'.",
+          "weight": 0.772
+        },
+        {
+          "signal": "software_resemblance",
+          "detail": "The name matches the malware 'SideWinder' listed by Malpedia after removing the leading 'apt'.",
+          "weight": -0.809
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "apt-c-01",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "cluster_id",
+          "detail": "The name follows the cluster-ID pattern APT-C-NN, which vendors use for groups they track by number.",
+          "weight": 0.829
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "apt-c-47",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "cluster_id",
+          "detail": "The name follows the cluster-ID pattern APT-C-NN, which vendors use for groups they track by number.",
+          "weight": 0.829
+        },
+        {
+          "signal": "actor_resemblance",
+          "detail": "The name is 1 edit away from 'APT-K-47', a name of the actor Mysterious Elephant.",
+          "weight": 0.643
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "apt-c-59",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "cluster_id",
+          "detail": "The name follows the cluster-ID pattern APT-C-NN, which vendors use for groups they track by number.",
+          "weight": 0.829
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "black mafia",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.58,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "software_resemblance",
+          "detail": "The name is 2 edits away from 'BlackMagic', a malware listed by Malpedia.",
+          "weight": -0.647
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "black peace",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "blackenergy gang",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.58,
+      "band": "low",
+      "matched_actor_id": "G0034",
+      "matched_actor_name": "Sandworm Team",
+      "evidence": [
+        {
+          "signal": "actor_resemblance",
+          "detail": "The name matches the actor Sandworm Team (as 'BlackEnergy (Group)') after removing the word 'gang'.",
+          "weight": 0.772
+        },
+        {
+          "signal": "software_resemblance",
+          "detail": "The name matches the malware 'BlackEnergy' listed by ATT&CK and Malpedia after removing the word 'gang'.",
+          "weight": -0.809
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "blue termit",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "actor_resemblance",
+          "detail": "The name is 1 edit away from 'Blue Termite', a name of the actor Blue Termite.",
+          "weight": 0.702
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "c-23",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "c.rufus security team",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "vendor_suffix",
+          "detail": "The name uses the vendor naming word 'team', which appears in names of tracked groups.",
+          "weight": 0.704
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "clouddragon",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "cosmic banker",
+      "count": 1,
+      "label": "malware",
+      "confidence": 0.58,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "malware_word",
+          "detail": "The name ends in 'banker', a word that usually names malware.",
+          "weight": 0.939
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "edbitss",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "emotet gang",
+      "count": 1,
+      "label": "malware",
+      "confidence": 0.58,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "software_resemblance",
+          "detail": "The name matches the malware 'Emotet' listed by ATT&CK and Malpedia after removing the word 'gang'.",
+          "weight": 0.809
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "fhappi",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "cve_actor",
+          "detail": "A report that uses this name cites CVE-2014-6271, which the dataset's other reports tie to Threat Group-3390.",
+          "weight": 0.591
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "french intelligence",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "cve_actor",
+          "detail": "A report that uses this name cites CVE-2011-4369, which the dataset's other reports tie to SNOWGLOBE.",
+          "weight": 0.591
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "gholee6",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "ghost dragon",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "great",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "hafnuim",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "actor_resemblance",
+          "detail": "The name is 1 edit away from 'HAFNIUM', a name of the actor HAFNIUM.",
+          "weight": 0.662
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "inception attackers",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": "G0100",
+      "matched_actor_name": "Inception",
+      "evidence": [
+        {
+          "signal": "actor_resemblance",
+          "detail": "The name matches the actor Inception (as 'Inception') after removing the word 'attackers'.",
+          "weight": 0.772
+        },
+        {
+          "signal": "cve_actor",
+          "detail": "A report that uses this name cites CVE-2012-1856, which the dataset's other reports tie to APT30.",
+          "weight": 0.591
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "isis-linked hackers",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "jolly roger’s patrons",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "kelvinsecurityteam",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "vendor_suffix",
+          "detail": "The name uses the vendor naming word 'team', which appears in names of tracked groups.",
+          "weight": 0.704
+        },
+        {
+          "signal": "cve_actor",
+          "detail": "A report that uses this name cites CVE-2019-11510, which the dataset's other reports tie to APT29.",
+          "weight": 0.591
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "keyboys",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.58,
+      "band": "low",
+      "matched_actor_id": "G0081",
+      "matched_actor_name": "Tropic Trooper",
+      "evidence": [
+        {
+          "signal": "actor_resemblance",
+          "detail": "The name matches the actor Tropic Trooper (as 'KeyBoy') after removing a plural 's'.",
+          "weight": 0.772
+        },
+        {
+          "signal": "software_resemblance",
+          "detail": "The name matches the malware 'KeyBoy' listed by ATT&CK and Malpedia after removing a plural 's'.",
+          "weight": -0.809
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "king kong elephant",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "vendor_suffix",
+          "detail": "The name uses the vendor naming word 'elephant', which appears in names of tracked groups.",
+          "weight": 0.704
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "leery turtle",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "lucky elephant",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "vendor_suffix",
+          "detail": "The name uses the vendor naming word 'elephant', which appears in names of tracked groups.",
+          "weight": 0.704
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "luminousmoth",
+      "count": 1,
+      "label": "actor",
+      "confidence": null,
+      "band": "unvalidated",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "exact_actor_name",
+          "detail": "ATT&CK, MISP, ETDA and Malpedia list this exact name as an actor alias.",
+          "weight": null
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "mirrorthief",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "cve_actor",
+          "detail": "A report that uses this name cites CVE-2019-2215, which the dataset's other reports tie to Sidewinder.",
+          "weight": 0.591
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "mykings",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "negg",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "nilephish",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "operation falcon",
+      "count": 1,
+      "label": "not-an-entity",
+      "confidence": null,
+      "band": "unvalidated",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "campaign_word",
+          "detail": "The name begins or ends with 'operation' or 'campaign', which names an operation, not an actor.",
+          "weight": null
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "operation kingphish",
+      "count": 1,
+      "label": "not-an-entity",
+      "confidence": null,
+      "band": "unvalidated",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "campaign_word",
+          "detail": "The name begins or ends with 'operation' or 'campaign', which names an operation, not an actor.",
+          "weight": null
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "operation oceansalt",
+      "count": 1,
+      "label": "not-an-entity",
+      "confidence": null,
+      "band": "unvalidated",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "campaign_word",
+          "detail": "The name begins or ends with 'operation' or 'campaign', which names an operation, not an actor.",
+          "weight": null
+        },
+        {
+          "signal": "software_resemblance",
+          "detail": "The name matches the malware 'OceanSalt' listed by ATT&CK and Malpedia after removing the word 'operation'.",
+          "weight": -0.809
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "operation transparent tribe",
+      "count": 1,
+      "label": "not-an-entity",
+      "confidence": null,
+      "band": "unvalidated",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "campaign_word",
+          "detail": "The name begins or ends with 'operation' or 'campaign', which names an operation, not an actor.",
+          "weight": null
+        },
+        {
+          "signal": "actor_resemblance",
+          "detail": "The name matches the actor Transparent Tribe (as 'Transparent Tribe') after removing the word 'operation'.",
+          "weight": 0.772
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "ozie team",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "vendor_suffix",
+          "detail": "The name uses the vendor naming word 'team', which appears in names of tracked groups.",
+          "weight": 0.704
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "praying mantis",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "actor_resemblance",
+          "detail": "The name contains 'Mantis', a name of the actor APT-C-23.",
+          "weight": 0.695
+        },
+        {
+          "signal": "cve_actor",
+          "detail": "A report that uses this name cites CVE-2019-18935, which the dataset's other reports tie to Blue Mockingbird.",
+          "weight": 0.591
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "quantum ransomware",
+      "count": 1,
+      "label": "malware",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "malware_word",
+          "detail": "The name ends in 'ransomware', a word that usually names malware.",
+          "weight": 0.939
+        },
+        {
+          "signal": "cooc_actor",
+          "detail": "A report in the paper's dataset lists this name together with Play.",
+          "weight": 1.049
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "raqqah",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "reconhellcat",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "red hacker alliance",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "redoctober",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "right sector",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "romcom threat actor",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": "romcom",
+      "matched_actor_name": "RomCom",
+      "evidence": [
+        {
+          "signal": "actor_resemblance",
+          "detail": "The name matches the actor RomCom (as 'RomCom') after removing the words 'actor' and 'threat'.",
+          "weight": 0.772
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "russian gru",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "sectora05",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "sectorb06",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "shadow chaser",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "shiqiang",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "shun wang technologies",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "silverhawk",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "soraj bear",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "vendor_suffix",
+          "detail": "The name uses the vendor naming word 'bear', which appears in names of tracked groups.",
+          "weight": 0.704
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "sun team folder",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "sunshop digital quartermaster",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "actor_resemblance",
+          "detail": "The name contains 'Sunshop', the distinctive part of 'Sunshop Group', a name of the actor APT19.",
+          "weight": 0.695
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "tag-26",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "cluster_id",
+          "detail": "The name follows the cluster-ID pattern TAG-<number>, which vendors use for groups they track by number.",
+          "weight": 0.829
+        },
+        {
+          "signal": "actor_resemblance",
+          "detail": "The name is 1 edit away from 'ATG26', a name of the actor Turla.",
+          "weight": 0.618
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "tarh andishan",
+      "count": 1,
+      "label": "actor",
+      "confidence": null,
+      "band": "unvalidated",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "exact_actor_name",
+          "detail": "MISP, ETDA and Malpedia list this exact name as an actor alias.",
+          "weight": null
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "teleport crew",
+      "count": 1,
+      "label": "malware",
+      "confidence": 0.58,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "software_resemblance",
+          "detail": "The name matches the malware 'Teleport' listed by Malpedia after removing the word 'crew'.",
+          "weight": 0.809
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "TopHat",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "uac-0098",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "cluster_id",
+          "detail": "The name follows the cluster-ID pattern UAC-<number>, which vendors use for groups they track by number.",
+          "weight": 0.829
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "ucid902",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "unc2727",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "cluster_id",
+          "detail": "The name follows the cluster-ID pattern UNC<number>, which vendors use for groups they track by number.",
+          "weight": 0.829
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "unclassified",
+      "count": 1,
+      "label": "not-an-entity",
+      "confidence": null,
+      "band": "unvalidated",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "placeholder_word",
+          "detail": "The name is a placeholder word such as 'unclassified', not a name.",
+          "weight": null
+        },
+        {
+          "signal": "cve_actor",
+          "detail": "A report that uses this name cites CVE-2010-2568, which the dataset's other reports tie to APT28.",
+          "weight": 0.591
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "valkyrie-x security research group",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "vendor_suffix",
+          "detail": "The name uses the vendor naming word 'group', which appears in names of tracked groups.",
+          "weight": 0.704
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "water kappa",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "vendor_suffix",
+          "detail": "The name uses the vendor naming word 'water', which appears in names of tracked groups.",
+          "weight": 0.704
+        },
+        {
+          "signal": "cve_actor",
+          "detail": "A report that uses this name cites CVE-2020-1380, which the dataset's other reports tie to APT37.",
+          "weight": 0.591
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "water pamola",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "vendor_suffix",
+          "detail": "The name uses the vendor naming word 'water', which appears in names of tracked groups.",
+          "weight": 0.704
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "zebra2104",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.94,
+      "band": "high",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "cve_actor",
+          "detail": "A report that uses this name cites CVE-2021-40444, which the dataset's other reports tie to APT28.",
+          "weight": 0.591
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "عقارب ليبيا",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "伪猎者apt组织",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    },
+    {
+      "name": "海莲花",
+      "count": 1,
+      "label": "actor",
+      "confidence": 0.67,
+      "band": "low",
+      "matched_actor_id": null,
+      "matched_actor_name": null,
+      "evidence": [
+        {
+          "signal": "base_rate",
+          "weight": null,
+          "detail": "No measured signal fired, so this is only the most common label in the ground truth (actor, 44 of 64 names)."
+        }
+      ],
+      "status": "pending confirmation"
+    }
+  ]
+}
