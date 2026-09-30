@@ -40,19 +40,22 @@ describe('retiredStubs', () => {
 		expect(stubs.get('fancy')?.successor).toEqual({ slug: 'G0007', display_name: 'APT28' });
 	});
 
-	it('makes no stub for a slug that vanished without a merge, because there is nothing to link to', () => {
-		const stubs = retiredStubs({ entries: [entry({ slug: 'gone', retired: true })] });
-		expect(stubs.size).toBe(0);
+	it('makes a stub with no successor for a slug that vanished without a merge, so the address does not die', () => {
+		const stubs = retiredStubs({ entries: [entry({ slug: 'gone', display_name: 'Gone', retired: true })] });
+		expect(stubs.get('gone')).toEqual({ slug: 'gone', display_name: 'Gone', successor: null });
 	});
 
-	it('makes no stub when the successor is missing or itself retired', () => {
+	it('makes a stub with no successor when the successor is missing or itself retired', () => {
 		const stubs = retiredStubs({
 			entries: [
 				entry({ slug: 'a', retired: true, merged_into: 'b' }),
 				entry({ slug: 'b', retired: true, merged_into: 'nowhere' })
 			]
 		});
-		expect(stubs.size).toBe(0);
+		expect([...stubs.values()].map((s) => [s.slug, s.successor])).toEqual([
+			['a', null],
+			['b', null]
+		]);
 	});
 
 	it('never turns a live actor into a stub', () => {
