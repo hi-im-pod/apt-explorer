@@ -1,0 +1,169 @@
+{
+  "entries": [
+    {
+      "slug": "G0006",
+      "display_name": "APT1",
+      "anchors": [
+        "G0006"
+      ],
+      "first_published": "2026-09-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "G0007",
+      "display_name": "APT28",
+      "anchors": [
+        "G0007"
+      ],
+      "first_published": "2026-09-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "G0016",
+      "display_name": "APT29",
+      "anchors": [
+        "G0016"
+      ],
+      "first_published": "2026-09-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "G0032",
+      "display_name": "Lazarus Group",
+      "anchors": [
+        "G0032"
+      ],
+      "first_published": "2026-09-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "G0034",
+      "display_name": "Sandworm Team",
+      "anchors": [
+        "G0034"
+      ],
+      "first_published": "2026-09-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "G0044",
+      "display_name": "Winnti Group",
+      "anchors": [
+        "G0044"
+      ],
+      "first_published": "2026-09-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "G0046",
+      "display_name": "FIN7",
+      "anchors": [
+        "G0046"
+      ],
+      "first_published": "2026-09-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "G0049",
+      "display_name": "OilRig",
+      "anchors": [
+        "G0049"
+      ],
+      "first_published": "2026-09-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "G0059",
+      "display_name": "Magic Hound",
+      "anchors": [
+        "G0059"
+      ],
+      "first_published": "2026-09-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "G0094",
+      "display_name": "Kimsuky",
+      "anchors": [
+        "G0094"
+      ],
+      "first_published": "2026-09-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "G0096",
+      "display_name": "APT41",
+      "anchors": [
+        "G0096"
+      ],
+      "first_published": "2026-09-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "G1015",
+      "display_name": "Scattered Spider",
+      "anchors": [
+        "G1015"
+      ],
+      "first_published": "2026-09-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "G1017",
+      "display_name": "Volt Typhoon",
+      "anchors": [
+        "G1017"
+      ],
+      "first_published": "2026-09-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "glass-heron",
+      "display_name": "Glass Heron",
+      "anchors": [
+        "malpedia:sample.glass_heron"
+      ],
+      "first_published": "2026-09-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "old-heron",
+      "display_name": "Old Heron",
+      "anchors": [
+        "malpedia:sample.old_heron"
+      ],
+      "first_published": "2026-09-01",
+      "suffix": null,
+      "retired": true,
+      "merged_into": "glass-heron"
+    }
+  ]
+}

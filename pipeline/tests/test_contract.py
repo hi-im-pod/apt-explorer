@@ -64,10 +64,26 @@ def test_every_data_file_has_a_schema():
     assert [rel for rel in FILES if schema_for(rel) is None] == []
 
 
+# Schemas whose file the pipeline writes but that the committed data/ does not hold yet, because
+# the slug registry can only be created by a real build and the integrator commits data/ once.
+# Delete this set when that build has been committed, so the exemption cannot outlive its reason.
+PENDING_FIRST_BUILD = {"slugs"}
+
+
 def test_every_schema_governs_a_data_file():
     # A schema that no file uses means a file was renamed or never written.
-    used = {schema_for(rel) for rel in FILES}
+    used = {schema_for(rel) for rel in FILES} | PENDING_FIRST_BUILD
     assert [name for name in SCHEMA_NAMES if name not in used] == []
+
+
+def test_committed_slug_registry_agrees_with_the_actor_pages(tree):
+    # Skipped until the first real build has written data/slugs.json (see PENDING_FIRST_BUILD).
+    if "slugs.json" not in tree:
+        pytest.skip("data/slugs.json has not been committed yet")
+    from aptx.build import slugs
+    names = {rel[len("actors/"):-len(".json")]: tree[rel]["name"]
+             for rel in tree if rel.startswith("actors/") and rel != "actors/index.json"}
+    assert slugs.cross_problems(names, tree["slugs.json"]) == []
 
 
 @pytest.mark.parametrize("rel", FILES)

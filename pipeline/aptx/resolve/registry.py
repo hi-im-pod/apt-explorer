@@ -12,29 +12,20 @@ The registry uses every record it is given as merge evidence, whatever that
 source's publish policy is. Which facts reach data/ is decided at assembly, so
 nothing here reads the licence gate.
 """
-import hashlib
 import re
 from collections import Counter, defaultdict
-from collections.abc import Iterable
+from collections.abc import Iterable, Mapping
 from dataclasses import dataclass, field
 
+from aptx.build import slugs
 from aptx.core.models import ActorRecord, Claim, Provenance, SoftwareRecord
-from aptx.resolve.names import norm, slug
+from aptx.resolve.names import norm
 
 # Only a record that ATT&CK itself published under a group ID counts as an
 # ATT&CK group. Its bare ID becomes the actor ID, file name and URL segment, so
 # it must fit the contract's G[0-9]{4} form; any other ATT&CK record is treated
 # like a record from any other source.
 _ATTACK_GROUP = re.compile(r"G[0-9]{4}")
-
-# Slugs that may never be used bare as actor IDs. "index" would overwrite
-# actors/index.json. "g0007" would be the same file as G0007.json on the
-# case-insensitive file systems of Windows and macOS.
-_RESERVED_SLUG = re.compile(r"index|g[0-9]{4}")
-
-# Actor IDs become file names and URL segments, so very long names are cut to
-# keep paths well inside Windows' limits.
-MAX_ID_LENGTH = 64
 
 # (alias key, node ID, node ID): the key two records shared, and the records it
 # joined. A node ID is the ATT&CK group ID, or "source:source_id" otherwise.
@@ -57,6 +48,9 @@ class Registry:
     _actor_ids: dict[str, str] = field(repr=False)
     _non_actor: dict[str, str] = field(repr=False)
     _source_record_count: int = field(repr=False)
+    # The registry to publish as data/slugs.json, and which sources it was allowed to see. See resolve().
+    slug_entries: list[dict] = field(default_factory=list, repr=False)
+    shown_sources: frozenset[str] | None = None
 
     def lookup(self, name: str) -> str | None:
         """The actor ID a name resolves to.
@@ -87,12 +81,23 @@ class Registry:
         }
 
 
-def resolve(actors: list[ActorRecord], software: list[SoftwareRecord]) -> Registry:
+def resolve(actors: list[ActorRecord], software: list[SoftwareRecord], *,
+            previous_slugs: Iterable[Mapping] | None = None, shown_sources: Iterable[str] | None = None,
+            build_date: str | None = None) -> Registry:
     """Merge actor records across sources and type software names.
 
     The result does not depend on the order of either list: every choice below
     is made in a sorted order, so a weekly rebuild from the same sources gives
     the same actors and IDs.
+
+    Actor IDs are frozen slugs (see aptx.build.slugs). `previous_slugs` is the
+    entries of the registry the last build wrote, or None for a first build.
+    `shown_sources` is the sources whose actor facts a page may show, from
+    slugs.shown_sources(policies); a slug is derived from the name that page
+    displays, so it may only read members from those sources. None means every
+    source is shown, which is right for tests and for a build with no
+    evidence-only source. `build_date` is recorded as first_published for each
+    new slug.
     """
     records: dict[str, list[ActorRecord]] = defaultdict(list)
     for record in actors:
@@ -128,7 +133,9 @@ def resolve(actors: list[ActorRecord], software: list[SoftwareRecord]) -> Regist
             groups.union(hub, other)
 
     components = groups.components()
-    ids = _assign_ids(components, records)
+    shown = None if shown_sources is None else frozenset(shown_sources)
+    ids, slug_entries = _assign_ids(components, records, list(previous_slugs or ()), shown,
+                                    build_date or slugs.today())
     evidence: dict[str, list[Evidence]] = defaultdict(list)
     for edge in edges:
         evidence[groups.find(edge[1])].append(edge)
@@ -164,6 +171,8 @@ def resolve(actors: list[ActorRecord], software: list[SoftwareRecord]) -> Regist
         _actor_ids=actor_ids,
         _non_actor=_type_software(software, actor_keys=set(carriers)),
         _source_record_count=len(actors),
+        slug_entries=slug_entries,
+        shown_sources=shown,
     )
 
 
@@ -289,57 +298,29 @@ def _claim(value: str, record: ActorRecord) -> Claim[str]:
         source=record.source, source_id=record.source_id, retrieved_at=record.retrieved_at))
 
 
-def _assign_ids(components: dict[str, list[str]], records: dict[str, list[ActorRecord]]) -> dict[str, str]:
-    """The actor ID for each component.
+def _assign_ids(components: dict[str, list[str]], records: dict[str, list[ActorRecord]],
+                previous: list[Mapping], shown: frozenset[str] | None, build_date: str) -> tuple[dict[str, str], list[dict]]:
+    """The actor ID for each component, and the slug registry entries.
 
-    An actor ATT&CK tracks keeps its group ID. Any other actor gets a readable
-    slug of its display name, or of its next name when that one has no ASCII
-    form. Slugs are handed out in the order of each component's smallest node
-    ID, which does not change when records arrive in another order. Every
-    natural slug is given out before any numbered one, so "Muller Cat 2" keeps
-    muller-cat-2 even when a second "Muller Cat" needs a number.
+    An actor ATT&CK tracks keeps its group ID. Any other actor that has a
+    published member gets a frozen slug from aptx.build.slugs, which reads only
+    the members a page may show. An actor with nothing publishable never gets a
+    page, so its ID is a hash, and it stays out of the registry.
     """
     ids: dict[str, str] = {}
-    wanted: list[tuple[str, str]] = []
-    for root, nodes in sorted(components.items(), key=lambda item: item[1][0]):
-        attack = [n for n in nodes if _is_attack_group(n)]
-        if attack:
-            ids[root] = attack[0]
+    candidates: list[slugs.Candidate] = []
+    for root, nodes in components.items():
+        attack = next((n for n in nodes if _is_attack_group(n)), None)
+        visible = [r for n in nodes for r in records[n] if shown is None or r.source in shown]
+        if not visible:
+            ids[root] = attack or slugs.hidden_id(nodes[0])
             continue
-        members = [r for n in nodes for r in records[n]]
-        candidates = [_display_name(members), *_ranked_names(members)]
-        base = next((s for s in (_fit(slug(c)) for c in candidates) if s), "")
-        if not base:
-            # Nothing folds to ASCII, as with a name only in Chinese. A hash of
-            # the smallest node ID stays the same from one build to the next,
-            # where a running number would not.
-            base = "actor-" + hashlib.sha1(nodes[0].encode("utf-8")).hexdigest()[:10]
-        wanted.append((root, base))
-
-    taken: set[str] = set()
-    numbered: list[tuple[str, str]] = []
-    for root, base in wanted:
-        if base in taken or _RESERVED_SLUG.fullmatch(base):
-            numbered.append((root, base))
-        else:
-            ids[root] = base
-            taken.add(base)
-    for root, base in numbered:
-        n = 2
-        while (candidate := _fit(base, suffix=f"-{n}")) in taken:
-            n += 1
-        ids[root] = candidate
-        taken.add(candidate)
-    return ids
-
-
-def _fit(base: str, suffix: str = "") -> str:
-    """base with suffix, cut so the whole ID stays within MAX_ID_LENGTH.
-
-    A cut can leave a trailing hyphen, which the ID pattern forbids, so it is
-    removed.
-    """
-    return base[:MAX_ID_LENGTH - len(suffix)].rstrip("-") + suffix
+        candidates.append(slugs.Candidate(
+            key=root, name=_display_name(visible), attack_id=attack,
+            anchors=tuple(sorted({_node_id(r) for r in visible}))))
+    assigned, entries = slugs.assign(candidates, previous, build_date)
+    ids.update(assigned)
+    return ids, entries
 
 
 def _type_software(software: list[SoftwareRecord], actor_keys: set[str]) -> dict[str, str]:

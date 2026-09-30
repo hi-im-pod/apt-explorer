@@ -253,8 +253,11 @@ def test_actor_ids_are_readable_ascii_slugs():
                  A("misp", "m3", "Лазарь", "Lazar Kitten")], [])
     assert r.lookup("Glass Heron") == "glass-heron"
     assert r.lookup("Café Bear") == "cafe-bear"
-    # A name with no ASCII form gives way to the record's next name.
-    assert r.lookup("Лазарь") == "lazar-kitten"
+    # A name with no ASCII form gets a stable fallback from the record's identity. It must not borrow
+    # the alias "Lazar Kitten", because the page never shows that name and a slug must not leak it.
+    fallback = r.lookup("Лазарь")
+    assert re.fullmatch(r"actor-[0-9a-f]{10}", fallback)
+    assert "lazar" not in fallback
 
 
 @pytest.mark.parametrize("name", ["Index", "INDEX", "Ｉｎｄｅｘ", "海莲花", "G0007", "g1017", "???", "x" * 300])

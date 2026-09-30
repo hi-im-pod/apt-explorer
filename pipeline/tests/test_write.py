@@ -155,11 +155,39 @@ def test_a_path_no_schema_governs_is_refused(tmp_path, rel):
 
 
 @pytest.mark.parametrize("rel", ["actors/index.json", "reports/undated.json", "campaigns.json", "vulns.json", "sources.json",
-                                 "resolution.json", "trends.json", "build.json", "NOTICE.md"])
+                                 "resolution.json", "trends.json", "build.json", "slugs.json", "NOTICE.md"])
 def test_a_missing_top_level_file_is_refused(tmp_path, rel):
     payload = sample_payload()
     del payload[rel]
     refused(tmp_path, payload, match=rel.replace(".", r"\."))
+
+
+def test_an_actor_page_without_a_slug_entry_is_refused(tmp_path):
+    payload = sample_payload()
+    payload["slugs.json"]["entries"] = [e for e in payload["slugs.json"]["entries"] if e["slug"] != "G0006"]
+    refused(tmp_path, payload, match="no entry for G0006")
+
+
+def test_a_live_slug_entry_without_an_actor_page_is_refused(tmp_path):
+    payload = sample_payload()
+    payload["slugs.json"]["entries"].append({
+        "slug": "ghost-crew", "display_name": "Ghost Crew", "anchors": ["misp:ghost"],
+        "first_published": "2026-09-01", "suffix": None, "retired": False, "merged_into": None})
+    refused(tmp_path, payload, match="ghost-crew.*active but is not a published actor")
+
+
+def test_a_retired_slug_that_is_still_a_published_actor_is_refused(tmp_path):
+    payload = sample_payload()
+    for entry in payload["slugs.json"]["entries"]:
+        if entry["slug"] == "G0006":
+            entry.update(retired=True, merged_into="G0007")
+    refused(tmp_path, payload, match="G0006.*retired but is a published actor")
+
+
+def test_a_slug_registry_that_breaks_its_schema_is_refused(tmp_path):
+    payload = sample_payload()
+    payload["slugs.json"]["entries"][0]["first_published"] = "yesterday"
+    refused(tmp_path, payload, match="slugs.json")
 
 
 @pytest.mark.parametrize("text", [

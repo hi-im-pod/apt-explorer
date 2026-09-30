@@ -357,3 +357,50 @@ def test_a_build_reads_the_link_results_into_url_ok(tmp_path, store):
     cli.run(out, store, connectors(), generated_at=NOW)
     [report] = json.loads((out / "reports" / "2024.json").read_text(encoding="utf-8"))
     assert report["url_ok"] is False
+
+
+# run(): frozen slugs
+
+def slug_registry(out: Path) -> dict:
+    return json.loads((out / "slugs.json").read_text(encoding="utf-8"))
+
+
+def test_a_build_writes_the_slug_registry(tmp_path, store):
+    out = tmp_path / "data"
+    cli.run(out, store, connectors(), generated_at=NOW)
+    entries = {e["slug"]: e for e in slug_registry(out)["entries"]}
+    # MISP is published in this build, so its record anchors the actor along with the ATT&CK ID.
+    assert entries["G0007"]["anchors"] == ["G0007", "misp:u1"]
+    assert entries["G0007"]["first_published"] == NOW[:10]
+
+
+def test_a_second_build_from_the_registry_is_byte_identical(tmp_path, store):
+    first, second = tmp_path / "first", tmp_path / "second"
+    cli.run(first, store, connectors(), generated_at=NOW)
+    cli.run(second, store, connectors(), generated_at=NOW, slugs_path=first / "slugs.json")
+    assert (first / "slugs.json").read_bytes() == (second / "slugs.json").read_bytes()
+
+
+def test_the_registry_comes_from_the_slugs_option_when_out_is_a_scratch_directory(tmp_path, store):
+    committed = tmp_path / "committed"
+    cli.run(committed, store, connectors(), generated_at="2026-01-01T00:00:00Z")
+    scratch = tmp_path / "scratch"
+    cli.run(scratch, store, connectors(), generated_at=NOW, slugs_path=committed / "slugs.json")
+    # The first_published date is the old build's, not the new one's, so the registry was read.
+    assert {e["first_published"] for e in slug_registry(scratch)["entries"]} == {"2026-01-01"}
+
+
+def test_a_registry_that_does_not_match_its_schema_stops_the_build_and_writes_nothing(tmp_path, store):
+    bad = tmp_path / "bad.json"
+    bad.write_text('{"entries": [{"slug": "x"}]}', encoding="utf-8")
+    out = tmp_path / "data"
+    with pytest.raises(ValueError):
+        cli.run(out, store, connectors(), generated_at=NOW, slugs_path=bad)
+    assert not out.exists()
+
+
+def test_the_command_line_accepts_a_slugs_option(tmp_path, store):
+    out = tmp_path / "data"
+    assert cli.main(["run", "--skip-fetch", "--out", str(out), "--slugs", str(tmp_path / "none.json")],
+                    store=store, connectors=connectors()) == 0
+    assert (out / "slugs.json").is_file()

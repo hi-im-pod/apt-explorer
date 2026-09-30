@@ -3,7 +3,7 @@ from dataclasses import replace
 
 import pytest
 
-from aptx.build import write
+from aptx.build import slugs, write
 from aptx.build.assemble import BuildFacts, assemble
 from aptx.build.notice import SOURCE_ORDER, render_notice, source_attribution
 from aptx.core.models import (ActorRecord, CampaignRecord, ReportRecord, SoftwareRecord, SourceBundle,
@@ -51,8 +51,10 @@ def run(*bundles, policies=None, facts=None, check=True, **kw):
     """Assemble from in-memory bundles, resolving actors exactly as the CLI does."""
     actors = [a for b in bundles for a in b.actors]
     software = [s for b in bundles for s in b.software]
-    payload = assemble(list(bundles), resolve(actors, software), {**POLICIES, **(policies or {})},
-                       generated_at=NOW, facts=facts or FACTS, **kw)
+    policies = {**POLICIES, **(policies or {})}
+    # The registry is told which sources may name a page, as the CLI does, or assemble() refuses it.
+    registry = resolve(actors, software, shown_sources=slugs.shown_sources(policies), build_date=NOW[:10])
+    payload = assemble(list(bundles), registry, policies, generated_at=NOW, facts=facts or FACTS, **kw)
     if check:
         # Every payload a test builds must also be one the writer accepts.
         write.validate(payload)
@@ -792,3 +794,26 @@ def test_actor_file_names_are_safe_on_a_case_insensitive_file_system():
         stem = rel[len("actors/"):-len(".json")]
         assert stem == stem.lower() or stem.startswith("G")
     assert "actors/index.json" in payload and isinstance(payload["actors/index.json"], list)
+
+
+# Slug registry
+
+def test_the_payload_carries_a_slug_entry_for_every_published_actor():
+    payload = run(*WORLD())
+    entries = {e["slug"]: e for e in payload["slugs.json"]["entries"]}
+    assert set(actor_files(payload)) == {f"actors/{s}.json" for s, e in entries.items() if not e["retired"]}
+    assert entries["G0007"]["display_name"] == "APT28"
+    assert entries["G0007"]["first_published"] == NOW[:10]
+
+
+def test_a_hidden_source_never_shapes_a_slug_or_an_anchor():
+    misp = B("misp", actors=[A("misp", "hidden-1", "Secret Panda")])
+    payload = run(misp, policies={"misp": "evidence-only"})
+    assert payload["slugs.json"]["entries"] == []
+
+
+def test_a_registry_resolved_with_the_wrong_visible_sources_is_refused():
+    misp = B("misp", actors=[A("misp", "1", "Glass Heron")])
+    registry = resolve(list(misp.actors), [])
+    with pytest.raises(ValueError, match="visible sources"):
+        assemble([misp], registry, {**POLICIES, "misp": "evidence-only"}, generated_at=NOW, facts=FACTS)
