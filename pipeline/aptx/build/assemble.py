@@ -59,7 +59,7 @@ from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from itertools import combinations
 
-from aptx.build import slugs, trends
+from aptx.build import guesses, slugs, trends
 from aptx.build.countries import country_name, iso2
 from aptx.build.notice import SOURCE_INFO, SOURCE_ORDER, render_notice, require_year, source_attribution
 from aptx.core.dates import parse_date
@@ -124,6 +124,10 @@ class BuildFacts:
     # Sources whose fetch failed this build, so the previous snapshot was used.
     fetch_failed: frozenset[str] = frozenset()
     version: str = PIPELINE_VERSION
+    # The labelled set of paper names (guesses.read_labels). Its derived and confirmed rows are the
+    # ground truth that guesses.json is measured on. Empty means "no ground truth", and then
+    # guesses.json is written with no evaluation and no guesses.
+    guess_labels: tuple = ()
 
 
 def assemble(bundles, registry: Registry, policies: Mapping[str, str], link_status: Mapping[str, bool] | None = None,
@@ -176,6 +180,12 @@ def assemble(bundles, registry: Registry, policies: Mapping[str, str], link_stat
     payload["vulns.json"] = vulns
     payload["sources.json"] = sources
     payload["resolution.json"] = _resolution(registry, reports, facts)
+    payload["guesses.json"] = guesses.build_guesses(
+        registry, [s for b in by_source.values() for s in b.software],
+        [r for b in by_source.values() for r in b.reports if r.source == "paper"],
+        payload["resolution.json"]["unresolved_names"], list(facts.guess_labels),
+        {p.id: _display_name(p.members) for p in shown},
+        shown_sources={key for key, policy in policies.items() if policy in _SHOWS_FACTS})
     payload["trends.json"] = trends.compute(
         [{"id": r.id, "published": r.published, "actors": r.actors, "techniques": r.techniques, "cves": r.cves}
          for r in reports if r.trendable],

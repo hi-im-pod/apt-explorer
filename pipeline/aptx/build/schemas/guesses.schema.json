@@ -1,0 +1,576 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "data/guesses.json",
+  "description": "What each unresolved paper name probably is, with the evidence for it and a confidence that an evaluation on names with known answers has measured. Every guess is pending confirmation. A guess never changes an actor, an alias, a report link or a resolution count.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "evaluation",
+    "guesses"
+  ],
+  "properties": {
+    "evaluation": {
+      "$ref": "#/$defs/evaluation",
+      "description": "How well the method did on names whose answer is known, or null when there were too few of them to measure. With null, guesses is empty."
+    },
+    "guesses": {
+      "description": "One per unresolved name that no source types as software, most reported first.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/guess"
+      }
+    }
+  },
+  "$defs": {
+    "guess": {
+      "description": "One unresolved name and what it probably is.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "count",
+        "label",
+        "confidence",
+        "band",
+        "matched_actor_id",
+        "matched_actor_name",
+        "evidence",
+        "status"
+      ],
+      "properties": {
+        "name": {
+          "$ref": "#/$defs/text"
+        },
+        "count": {
+          "$ref": "#/$defs/positiveCount",
+          "description": "Published reports carrying the name, as in resolution.json."
+        },
+        "label": {
+          "$ref": "#/$defs/guessLabel"
+        },
+        "confidence": {
+          "description": "The share of similar guesses that were right in the evaluation, or null when no measurement stands behind the label (band unvalidated or confirmed).",
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "band": {
+          "$ref": "#/$defs/guessBand"
+        },
+        "matched_actor_id": {
+          "description": "For an actor guess, the published actor the name is probably another name for, or null. It is set only for kinds of match that were right at least half the time in the evaluation.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^(?!index$)(G[0-9]{4}|[a-z0-9]+(-[a-z0-9]+)*)$"
+        },
+        "matched_actor_name": {
+          "description": "That actor's display name, or null.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "evidence": {
+          "description": "The signals behind the guess. weight is the signal's weight in the model, positive when it supports the guessed label and negative when it argues against it, or null when it is context only.",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidenceItem"
+          }
+        },
+        "status": {
+          "$ref": "#/$defs/guessStatus"
+        }
+      }
+    },
+    "evidenceItem": {
+      "description": "One signal, in a sentence this project wrote from its own computed values.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "signal",
+        "detail",
+        "weight"
+      ],
+      "properties": {
+        "signal": {
+          "$ref": "#/$defs/text"
+        },
+        "detail": {
+          "$ref": "#/$defs/text"
+        },
+        "weight": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      }
+    },
+    "evaluation": {
+      "description": "The measured quality of the method. Every figure comes from scoring each known name as if it were unresolved.",
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "ground_truth",
+        "accuracy",
+        "correct",
+        "baselines",
+        "per_label",
+        "confusion",
+        "bands",
+        "signals",
+        "unmeasured_signals",
+        "matching",
+        "limitations"
+      ],
+      "properties": {
+        "ground_truth": {
+          "$ref": "#/$defs/groundTruth"
+        },
+        "accuracy": {
+          "description": "Correct labels over all names scored. Null when none were scored.",
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "correct": {
+          "$ref": "#/$defs/count"
+        },
+        "baselines": {
+          "$ref": "#/$defs/baselines"
+        },
+        "per_label": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/labelStat"
+          }
+        },
+        "confusion": {
+          "$ref": "#/$defs/confusion"
+        },
+        "bands": {
+          "description": "How often guesses in each confidence band were right.",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/bandStat"
+          }
+        },
+        "signals": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/signalStat"
+          }
+        },
+        "unmeasured_signals": {
+          "description": "Signals the method uses that the evaluation cannot measure, each with the reason.",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/unmeasured"
+          }
+        },
+        "matching": {
+          "$ref": "#/$defs/matching"
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/text"
+          }
+        }
+      }
+    },
+    "groundTruth": {
+      "description": "The names the evaluation scored.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "n",
+        "derived",
+        "confirmed",
+        "by_label"
+      ],
+      "properties": {
+        "n": {
+          "$ref": "#/$defs/count"
+        },
+        "derived": {
+          "$ref": "#/$defs/count"
+        },
+        "confirmed": {
+          "$ref": "#/$defs/count"
+        },
+        "by_label": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/labelCount"
+          }
+        }
+      }
+    },
+    "labelCount": {
+      "description": "How many scored names carry one label.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "label",
+        "count"
+      ],
+      "properties": {
+        "label": {
+          "$ref": "#/$defs/guessLabel"
+        },
+        "count": {
+          "$ref": "#/$defs/count"
+        }
+      }
+    },
+    "baselines": {
+      "description": "What simple alternatives score on the same names.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "majority_label",
+        "majority_accuracy",
+        "name_only_accuracy"
+      ],
+      "properties": {
+        "majority_label": {
+          "$ref": "#/$defs/guessLabel"
+        },
+        "majority_accuracy": {
+          "description": "Accuracy of always guessing the most common label.",
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "name_only_accuracy": {
+          "description": "Accuracy of a model that reads only the text of the name.",
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        }
+      }
+    },
+    "labelStat": {
+      "description": "Precision and recall for one label.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "label",
+        "support",
+        "predicted",
+        "precision",
+        "recall",
+        "validated"
+      ],
+      "properties": {
+        "label": {
+          "$ref": "#/$defs/guessLabel"
+        },
+        "support": {
+          "$ref": "#/$defs/count"
+        },
+        "predicted": {
+          "$ref": "#/$defs/count"
+        },
+        "precision": {
+          "description": "Right predictions of this label over all predictions of it, or null when there were none.",
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "recall": {
+          "description": "Right predictions of this label over the names that carry it, or null when there were none.",
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "validated": {
+          "description": "False when too few known names carry the label to trust these figures.",
+          "type": "boolean"
+        }
+      }
+    },
+    "confusion": {
+      "description": "Rows are the known label, columns the predicted label, in the order of labels.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "labels",
+        "rows"
+      ],
+      "properties": {
+        "labels": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/guessLabel"
+          }
+        },
+        "rows": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/count"
+            }
+          }
+        }
+      }
+    },
+    "bandStat": {
+      "description": "The guesses that landed in one confidence band.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "band",
+        "min_confidence",
+        "n",
+        "correct",
+        "precision",
+        "coverage"
+      ],
+      "properties": {
+        "band": {
+          "$ref": "#/$defs/evalBand"
+        },
+        "min_confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "n": {
+          "$ref": "#/$defs/count"
+        },
+        "correct": {
+          "$ref": "#/$defs/count"
+        },
+        "precision": {
+          "description": "correct over n, or null when the band is empty.",
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "coverage": {
+          "description": "The share of scored names in the band.",
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        }
+      }
+    },
+    "signalStat": {
+      "description": "One signal, and how it did.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "signal",
+        "description",
+        "fires",
+        "implied_label",
+        "precision_when_fires",
+        "weight",
+        "loss_change_without",
+        "kept",
+        "note"
+      ],
+      "properties": {
+        "signal": {
+          "$ref": "#/$defs/text"
+        },
+        "description": {
+          "$ref": "#/$defs/text"
+        },
+        "fires": {
+          "$ref": "#/$defs/count"
+        },
+        "implied_label": {
+          "description": "The label most of the known names with this signal carry, or null when it never fired.",
+          "enum": [
+            "actor",
+            "malware",
+            "tool",
+            "not-an-entity",
+            null
+          ]
+        },
+        "precision_when_fires": {
+          "description": "The share of those names that carry the implied label.",
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "weight": {
+          "description": "The signal's weight in the final model, or null when it was dropped.",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "loss_change_without": {
+          "description": "How much worse the cross-validated log loss gets without this signal, or null when it was not tested.",
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "kept": {
+          "type": "boolean"
+        },
+        "note": {
+          "$ref": "#/$defs/text"
+        }
+      }
+    },
+    "unmeasured": {
+      "description": "A signal that cannot be measured, and why.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "signal",
+        "reason"
+      ],
+      "properties": {
+        "signal": {
+          "$ref": "#/$defs/text"
+        },
+        "reason": {
+          "$ref": "#/$defs/text"
+        }
+      }
+    },
+    "matching": {
+      "description": "How often a proposed match to an actor was right, for the known actor names that had an actor to find.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "actor_names",
+        "matchable",
+        "by_kind"
+      ],
+      "properties": {
+        "actor_names": {
+          "$ref": "#/$defs/count"
+        },
+        "matchable": {
+          "$ref": "#/$defs/count"
+        },
+        "by_kind": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/kindStat"
+          }
+        }
+      }
+    },
+    "kindStat": {
+      "description": "One kind of match.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "proposed",
+        "correct",
+        "precision",
+        "published"
+      ],
+      "properties": {
+        "kind": {
+          "$ref": "#/$defs/matchKind"
+        },
+        "proposed": {
+          "$ref": "#/$defs/count"
+        },
+        "correct": {
+          "$ref": "#/$defs/count"
+        },
+        "precision": {
+          "description": "correct over proposed, or null when nothing was proposed.",
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "published": {
+          "description": "Whether this kind of match is shown as a proposed actor.",
+          "type": "boolean"
+        }
+      }
+    },
+    "guessLabel": {
+      "enum": [
+        "actor",
+        "malware",
+        "tool",
+        "not-an-entity"
+      ]
+    },
+    "guessBand": {
+      "description": "high, medium or low from the confidence. unvalidated means no known name carries the label, so no confidence is given. confirmed means a person set the label.",
+      "enum": [
+        "high",
+        "medium",
+        "low",
+        "unvalidated",
+        "confirmed"
+      ]
+    },
+    "evalBand": {
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "matchKind": {
+      "enum": [
+        "variant",
+        "contains",
+        "fuzzy"
+      ]
+    },
+    "guessStatus": {
+      "enum": [
+        "pending confirmation",
+        "confirmed"
+      ]
+    },
+    "text": {
+      "description": "Non-empty text with no leading or trailing whitespace and no line breaks.",
+      "type": "string",
+      "pattern": "^\\S(.*\\S)?$"
+    },
+    "count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "positiveCount": {
+      "type": "integer",
+      "minimum": 1
+    }
+  }
+}

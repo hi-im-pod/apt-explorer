@@ -21,7 +21,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from aptx.build import assemble as assembly
-from aptx.build import slugs
+from aptx.build import guesses, slugs
 from aptx.build.assemble import BuildFacts
 from aptx.build.notice import SOURCE_ORDER
 from aptx.build.write import WriteRefused, write_all
@@ -108,9 +108,23 @@ def _fetch_all(store: SnapshotStore, connectors: Sequence[Connector], only: Coll
     return attempts
 
 
+def _labels(path: Path | None) -> tuple[guesses.Label, ...]:
+    """The labelled set that guesses.json is measured on, or nothing when the file is absent.
+
+    A missing file must not stop a build. The guesses are an extra that says what
+    unresolved names probably are, and without ground truth they say nothing.
+    """
+    try:
+        return tuple(guesses.read_labels(path or guesses.DEFAULT_LABELS))
+    except (OSError, KeyError, ValueError) as e:
+        log.warning("guesses: no labelled set, so guesses.json will hold no guesses (%s: %s)", type(e).__name__, e)
+        return ()
+
+
 def run(out: Path, store: SnapshotStore, connectors: Sequence[Connector] | None = None, fetch: bool = True, *,
         only: Collection[str] | None = None, generated_at: str | None = None,
-        slugs_path: Path | None = None) -> dict[str, dict]:
+        slugs_path: Path | None = None,
+        labels: Path | None = None) -> dict[str, dict]:
     """Build data/ at `out` and return each source's status.
 
     `slugs_path` is the slug registry the last build published. It defaults to slugs.json inside
@@ -175,7 +189,7 @@ def run(out: Path, store: SnapshotStore, connectors: Sequence[Connector] | None 
         group_reference_urls=attack.group_reference_urls(store),
         malpedia_report_links=malpedia.report_links(store) if policies["malpedia"] in _MALPEDIA_SHOWN else {},
         paper_names=paper.report_actor_names(store),
-        fetch_failed=fetch_failed)
+        fetch_failed=fetch_failed, guess_labels=_labels(labels))
     link_status = {u: r["ok"] for u, r in load_link_status(store).items()}
     payload = assembly.assemble(bundles, registry, policies, link_status, generated_at, facts=facts)
     write_all(out, payload)
@@ -256,6 +270,8 @@ def _parser() -> argparse.ArgumentParser:
     r.add_argument("--only", help="comma-separated source keys to fetch; the others use their newest snapshot")
     r.add_argument("--slugs", type=Path, default=None,
                    help="the slug registry the last build published (default: slugs.json inside --out)")
+    r.add_argument("--labels", type=Path, default=None,
+                   help="the labelled set of paper names that guesses.json is measured on")
     lk = sub.add_parser("links", help="check a rotating sample of the published report links")
     lk.add_argument("--sample", type=int, default=300, help="how many URLs to check this run")
     lk.add_argument("--data", type=Path, default=Path("../data"), help="the data/ directory whose reports to check")
@@ -288,7 +304,8 @@ def main(argv: Sequence[str] | None = None, *, store: SnapshotStore | None = Non
         if unknown:
             parser.error(f"unknown source(s) {', '.join(sorted(unknown))}; choose from {', '.join(SOURCE_ORDER)}")
     try:
-        status = run(args.out, store, connectors, fetch=not args.skip_fetch, only=only, slugs_path=args.slugs)
+        status = run(args.out, store, connectors, fetch=not args.skip_fetch, only=only,
+                     slugs_path=args.slugs, labels=args.labels)
     except WriteRefused as e:
         print(e, file=sys.stderr)
         return 1

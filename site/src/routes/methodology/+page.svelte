@@ -201,6 +201,8 @@
 			These names appear in reports and resolve to no actor, most frequent first. A name typed as
 			malware or a tool is software, not a missing actor. A name with no type may be an actor that
 			none of the sources lists.
+			<a href="{base}/guesses/">The Name Guesses page</a> gives a program's label for each one, with how
+			often that method was right, and marks every label as pending confirmation.
 		</p>
 		<table>
 			<thead>

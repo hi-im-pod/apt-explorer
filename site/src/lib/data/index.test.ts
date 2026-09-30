@@ -5,6 +5,7 @@ import {
 	getActorsIndex,
 	getBuild,
 	getCampaigns,
+	getGuesses,
 	getReports,
 	getResolution,
 	getSources,
@@ -40,6 +41,7 @@ describe('data layer URLs', () => {
 		['getCampaigns', getCampaigns, '/apt-explorer/data/campaigns.json'],
 		['getVulns', getVulns, '/apt-explorer/data/vulns.json'],
 		['getTrends', getTrends, '/apt-explorer/data/trends.json'],
+		['getGuesses', getGuesses, '/apt-explorer/data/guesses.json'],
 		['getSources', getSources, '/apt-explorer/data/sources.json'],
 		['getResolution', getResolution, '/apt-explorer/data/resolution.json'],
 		['getBuild', getBuild, '/apt-explorer/data/build.json']

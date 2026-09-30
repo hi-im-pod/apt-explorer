@@ -526,3 +526,199 @@ export interface Trends {
 	source_health: SourceHealth[];
 	notes: TrendNotes;
 }
+
+// ---------------------------------------------------------------------------
+// guesses.json
+
+/** @schema guesses.schema.json#/$defs/guessLabel */
+export type GuessLabel = 'actor' | 'malware' | 'tool' | 'not-an-entity';
+
+/**
+ * unvalidated: no known name carries the label, so there is no confidence.
+ * confirmed: a person set the label.
+ * @schema guesses.schema.json#/$defs/guessBand
+ */
+export type GuessBand = 'high' | 'medium' | 'low' | 'unvalidated' | 'confirmed';
+
+/** @schema guesses.schema.json#/$defs/evalBand */
+export type EvalBand = 'high' | 'medium' | 'low';
+
+/** @schema guesses.schema.json#/$defs/matchKind */
+export type MatchKind = 'variant' | 'contains' | 'fuzzy';
+
+/** @schema guesses.schema.json#/$defs/guessStatus */
+export type GuessStatus = 'pending confirmation' | 'confirmed';
+
+/** @schema guesses.schema.json#/$defs/signalStat/properties/implied_label */
+export type ImpliedLabel = 'actor' | 'malware' | 'tool' | 'not-an-entity';
+
+/**
+ * One signal behind a guess, as a sentence the pipeline wrote itself.
+ * @schema guesses.schema.json#/$defs/evidenceItem
+ */
+export interface EvidenceItem {
+	signal: string;
+	detail: string;
+	/** Positive when it supports the guessed label, negative when it argues against it, null for context only. */
+	weight: number | null;
+}
+
+/**
+ * One unresolved name and what it probably is.
+ * @schema guesses.schema.json#/$defs/guess
+ */
+export interface Guess {
+	name: string;
+	count: number;
+	label: GuessLabel;
+	/** Null when the band is unvalidated or confirmed. */
+	confidence: number | null;
+	band: GuessBand;
+	/** Set only for a kind of match the evaluation found right at least half the time. */
+	matched_actor_id: ActorId | null;
+	matched_actor_name: string | null;
+	evidence: EvidenceItem[];
+	status: GuessStatus;
+}
+
+/**
+ * How many scored names carry one label.
+ * @schema guesses.schema.json#/$defs/labelCount
+ */
+export interface LabelCount {
+	label: GuessLabel;
+	count: number;
+}
+
+/**
+ * The names the evaluation scored.
+ * @schema guesses.schema.json#/$defs/groundTruth
+ */
+export interface GroundTruth {
+	n: number;
+	derived: number;
+	confirmed: number;
+	by_label: LabelCount[];
+}
+
+/**
+ * What simple alternatives score on the same names.
+ * @schema guesses.schema.json#/$defs/baselines
+ */
+export interface Baselines {
+	majority_label: GuessLabel;
+	majority_accuracy: number | null;
+	name_only_accuracy: number | null;
+}
+
+/**
+ * Precision and recall for one label.
+ * @schema guesses.schema.json#/$defs/labelStat
+ */
+export interface LabelStat {
+	label: GuessLabel;
+	support: number;
+	predicted: number;
+	precision: number | null;
+	recall: number | null;
+	/** False when too few known names carry the label to trust the figures. */
+	validated: boolean;
+}
+
+/**
+ * Rows are the known label, columns the predicted label, in the order of labels.
+ * @schema guesses.schema.json#/$defs/confusion
+ */
+export interface Confusion {
+	labels: GuessLabel[];
+	rows: number[][];
+}
+
+/**
+ * The guesses that landed in one confidence band.
+ * @schema guesses.schema.json#/$defs/bandStat
+ */
+export interface BandStat {
+	band: EvalBand;
+	min_confidence: number;
+	n: number;
+	correct: number;
+	precision: number | null;
+	coverage: number | null;
+}
+
+/**
+ * One signal, and how it did.
+ * @schema guesses.schema.json#/$defs/signalStat
+ */
+export interface SignalStat {
+	signal: string;
+	description: string;
+	fires: number;
+	implied_label: ImpliedLabel | null;
+	precision_when_fires: number | null;
+	weight: number | null;
+	loss_change_without: number | null;
+	kept: boolean;
+	note: string;
+}
+
+/**
+ * A signal the evaluation cannot measure, and why.
+ * @schema guesses.schema.json#/$defs/unmeasured
+ */
+export interface UnmeasuredSignal {
+	signal: string;
+	reason: string;
+}
+
+/**
+ * One kind of match to an actor.
+ * @schema guesses.schema.json#/$defs/kindStat
+ */
+export interface KindStat {
+	kind: MatchKind;
+	proposed: number;
+	correct: number;
+	precision: number | null;
+	/** Whether this kind of match is shown as a proposed actor. */
+	published: boolean;
+}
+
+/**
+ * How often a proposed match to an actor was right on the known names.
+ * @schema guesses.schema.json#/$defs/matching
+ */
+export interface Matching {
+	actor_names: number;
+	matchable: number;
+	by_kind: KindStat[];
+}
+
+/**
+ * The measured quality of the method, scored on names with known answers.
+ * @schema guesses.schema.json#/$defs/evaluation
+ */
+export interface Evaluation {
+	ground_truth: GroundTruth;
+	accuracy: number | null;
+	correct: number;
+	baselines: Baselines;
+	per_label: LabelStat[];
+	confusion: Confusion;
+	bands: BandStat[];
+	signals: SignalStat[];
+	unmeasured_signals: UnmeasuredSignal[];
+	matching: Matching;
+	limitations: string[];
+}
+
+/**
+ * The whole of guesses.json. Every guess is pending confirmation and changes nothing else.
+ * @schema guesses.schema.json#
+ */
+export interface Guesses {
+	/** Null when there were too few known names to measure, and then guesses is empty. */
+	evaluation: Evaluation | null;
+	guesses: Guess[];
+}

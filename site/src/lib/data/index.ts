@@ -14,6 +14,7 @@ import type {
 	ActorsIndex,
 	Build,
 	Campaigns,
+	Guesses,
 	Report,
 	ReportsShard,
 	Resolution,
@@ -88,6 +89,10 @@ export function getVulns(fetch: Fetch): Promise<Vulns> {
 
 export function getTrends(fetch: Fetch): Promise<Trends> {
 	return getJson(fetch, 'trends.json');
+}
+
+export function getGuesses(fetch: Fetch): Promise<Guesses> {
+	return getJson(fetch, 'guesses.json');
 }
 
 export function getSources(fetch: Fetch): Promise<Sources> {
