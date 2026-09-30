@@ -169,9 +169,8 @@ for (const vp of viewports) {
 					expect(box.x + box.width, `${href} stays inside the viewport`).toBeLessThanOrEqual(vp.width + 1);
 				}
 				// It says in plain words what the map is and how this site differs.
-				await expect(section).toContainText('hand-curated');
 				await expect(section).toContainText('victim');
-				await expect(section).toContainText('GitHub pull request');
+				await expect(section).not.toContainText('pull request');
 				await expect(section).toContainText('rebuilt from open sources');
 				// It claims nothing about a licence, approval or plans to contribute.
 				const text = (await section.innerText()).toLowerCase();

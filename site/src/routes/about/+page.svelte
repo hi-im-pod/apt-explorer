@@ -82,11 +82,10 @@
 	<h2 id="related-work-heading">Related Work: APT Map</h2>
 	<p>
 		<a href="https://lngt-apt-study-map.vercel.app/">APT Map</a> is an interactive map of
-		hand-curated APT incident rows, built from the dataset released with the paper above. It shows
-		incidents from the victim's side or the attacker's side, and it filters them by year, country
-		and actor. A detail panel for each incident gives the CVE, whether a zero-day was used, the
-		source, the attack vector, the malware, the targeted sectors and the duration. Anyone can add
-		incidents through a GitHub pull request.
+		APT incident rows, built from the dataset released with the paper above. It shows incidents
+		from the victim's side or the attacker's side, and it filters them by year, country and actor.
+		A detail panel for each incident gives the CVE, whether a zero-day was used, the source, the
+		attack vector, the malware, the targeted sectors and the duration.
 	</p>
 	<p>
 		APT Explorer answers a different question. It is an explorer of actors and of the reports
