@@ -263,9 +263,16 @@
 			same host also serves publishers' own repositories.
 		</li>
 		<li>
+			<strong>Hosts that serve other people's pages are not called the original.</strong> An
+			address on a link shortener (t.co, bit.ly and similar), a reference site (Wikipedia, ETDA's
+			Threat Group Cards or Malpedia), a file host (Google Drive, Dropbox, Mega, SlideShare, Scribd,
+			Pastebin and similar) or a cache is labelled "Link, publisher not confirmed". The site cannot
+			tell who wrote the page behind such an address.
+		</li>
+		<li>
 			<strong>Any other web address is labelled as the original.</strong> This is a rule, not a
 			check. The site does not confirm that the host is the publisher, so a copy on a host that is
-			not on the list above would be labelled as an original.
+			not on either list above would be labelled as an original.
 		</li>
 		<li>
 			<strong>An unreadable address is dropped.</strong> A link that is not a web address cannot be
@@ -279,7 +286,8 @@
 		</li>
 		<li>
 			<strong>A missing original is stated, not filled in.</strong> When a report has only copies,
-			the panel says that no original publisher link is known and names what the copies are.
+			the panel says that no original publisher link is known and names what the copies are. When
+			it has only a link that is not confirmed, the panel says that no original is confirmed.
 		</li>
 	</ol>
 	<p class="section-note">

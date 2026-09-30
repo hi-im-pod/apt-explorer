@@ -188,8 +188,9 @@
 		{/each}
 	</dl>
 	<p class="section-note">
-		Some reports have no known original. Their records point only to a mirror, and the panel then
-		says that no original publisher link is known. The site does not guess one.
+		Some reports have no known original. Their records point only to a mirror, or to a link whose
+		publisher the site cannot confirm, and the panel then says that no original publisher link is
+		known or confirmed. The site does not guess one.
 	</p>
 </section>
 

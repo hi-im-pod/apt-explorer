@@ -33,6 +33,7 @@ const VX_MIRROR = pick(
 	'report whose only links are the VX-Underground mirror and ORKL copy',
 	(r) => describeLinks(r).links.map((l) => l.class.kind).join() === 'vxug-mirror,orkl-archive'
 );
+const UNCONFIRMED = pick('report whose link is on a host that cannot be confirmed', (r) => situation(r) === 'unconfirmed');
 // The data has no report with one mirror link and nothing else in a findable form, so the
 // lone-mirror wording is checked on a real row with its archive link removed on the way in.
 const LONE = VX_MIRROR;
@@ -134,6 +135,19 @@ for (const vp of viewports) {
 				await expectInsidePanel(page, '.note');
 			});
 
+			test('a link on a reference or shortener host is never labelled the original', async ({ page }) => {
+				await openPanel(page, UNCONFIRMED.id);
+				const d = describeLinks(UNCONFIRMED);
+				const links = panel(page).getByRole('list', { name: /links/i }).getByRole('link');
+				await expect(links.first()).toHaveText('Link, publisher not confirmed');
+				await expect(links.first()).toHaveAttribute('href', UNCONFIRMED.url!);
+				await expect(panel(page)).not.toContainText('Original publisher');
+				await expect(panel(page).locator('.note')).toHaveText(d.note);
+				await expect(panel(page).locator('.note')).toContainText('No original publisher link is confirmed');
+				await expectInsidePanel(page, '.links li');
+				await expectInsidePanel(page, '.note');
+			});
+
 			test('a mirror plus the ORKL copy lists two copies and no original', async ({ page }) => {
 				await openPanel(page, VX_MIRROR.id);
 				const links = panel(page).getByRole('list', { name: /links/i }).getByRole('link');
@@ -215,6 +229,8 @@ for (const vp of viewports) {
 				await expect(section).toContainText('host alone');
 				await expect(section).toContainText('never labelled as the original');
 				await expect(section).toContainText('does not confirm that the host is the publisher');
+				await expect(section).toContainText('Link, publisher not confirmed');
+				for (const host of ['t.co', 'Wikipedia', 'Dropbox', 'Malpedia']) await expect(section).toContainText(host);
 				expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
 				await openPanel(page, BOTH.id);
 				await panel(page).getByRole('link', { name: /originals, archives and mirrors/i }).click();

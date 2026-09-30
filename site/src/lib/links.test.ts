@@ -60,6 +60,60 @@ describe('classifyLink', () => {
 		expect(classifyLink('https://archive.today/AbCdE')).toMatchObject({ kind: 'archive-today' });
 	});
 
+	// These hosts serve other people's pages, so an address on one of them says nothing about who wrote the report.
+	const UNCONFIRMED_HOSTS = [
+		't.co',
+		'bit.ly',
+		'tinyurl.com',
+		'goo.gl',
+		'lnkd.in',
+		'apt.etda.or.th',
+		'malpedia.caad.fkie.fraunhofer.de',
+		'en.wikipedia.org',
+		'de.wikipedia.org',
+		'drive.google.com',
+		'docs.google.com',
+		'www.dropbox.com',
+		'dl.dropboxusercontent.com',
+		'mega.nz',
+		'onedrive.live.com',
+		'1drv.ms',
+		'www2.slideshare.net',
+		'scribd.com',
+		'pastebin.com',
+		'telegra.ph',
+		'academia.edu',
+		'researchgate.net',
+		'files.speakerdeck.com',
+		'foo-assets.s3.amazonaws.com',
+		'storage.googleapis.com',
+		'webcache.googleusercontent.com',
+		'gist.github.com',
+		'gist.githubusercontent.com',
+		'virustotal.com'
+	];
+
+	it('does not call a link shortener, reference page, file host or cache the original publisher', () => {
+		for (const host of UNCONFIRMED_HOSTS) {
+			const c = classifyLink(`https://${host}/some/path`);
+			expect(c, host).toMatchObject({
+				kind: 'unconfirmed',
+				label: 'Link, publisher not confirmed',
+				copy: false,
+				mirror: false,
+				valid: true
+			});
+			expect(c.explanation, host).toMatch(/cannot tell/i);
+		}
+	});
+
+	it('does not match a lookalike of an unconfirmed host, and keeps GitHub repositories as publishers', () => {
+		expect(classifyLink('https://notdropbox.com/x').kind).toBe('publisher');
+		expect(classifyLink('https://bit.ly.evil.example/x').kind).toBe('publisher');
+		expect(classifyLink('https://cloud.google.com/blog/x').kind).toBe('publisher');
+		expect(classifyLink('https://github.com/mandiant/apt1-report').kind).toBe('publisher');
+	});
+
 	it('treats any other host as the original publisher, ignoring www and case', () => {
 		const c = classifyLink('HTTPS://WWW.Example.COM/blog/report');
 		expect(c).toMatchObject({
@@ -95,6 +149,7 @@ describe('classifyLink', () => {
 			'https://app.box.com/s/a',
 			'https://web.archive.org/web/1/http://a',
 			'https://archive.ph/a',
+			'https://t.co/a',
 			'nonsense'
 		]) {
 			const c = classifyLink(href);
@@ -203,6 +258,35 @@ describe('describeLinks', () => {
 		expect(d.situation).toBe('copies-only');
 	});
 
+	it('does not call a lone unconfirmed link the original, and says what the reader knows', () => {
+		const d = describeLinks({ url: 'https://t.co/abc', url_ok: null, archive_url: null });
+		expect(d.situation).toBe('unconfirmed');
+		expect(d.links.map((l) => l.role)).toEqual(['unconfirmed']);
+		expect(d.note).toBe(
+			'No original publisher link is confirmed. This link goes to a site that does not publish reports itself, so it may not be the publisher.'
+		);
+	});
+
+	it('names the copy that comes with an unconfirmed link, and lists the unconfirmed link first', () => {
+		const d = describeLinks({ url: 'https://apt.etda.or.th/cgi-bin/x', url_ok: null, archive_url: ORKL });
+		expect(d.situation).toBe('unconfirmed');
+		expect(d.links.map((l) => l.role)).toEqual(['unconfirmed', 'copy']);
+		expect(d.note).toMatch(/^No original publisher link is confirmed\./);
+		expect(d.note).toMatch(/The other link is a copy held by another service\.$/);
+	});
+
+	it('notes an unreachable unconfirmed link', () => {
+		const d = describeLinks({ url: 'https://t.co/abc', url_ok: false, archive_url: ORKL });
+		expect(d.links.map((l) => l.class.kind)).toEqual(['orkl-archive', 'unconfirmed']);
+		expect(d.note).toMatch(/unreachable at the last link check/i);
+	});
+
+	it('keeps a real original in the original role beside an unconfirmed link', () => {
+		const d = describeLinks({ url: PUB, url_ok: null, archive_url: 'https://www.dropbox.com/s/x' });
+		expect(d.links.map((l) => l.role)).toEqual(['original', 'unconfirmed']);
+		expect(d.situation).not.toBe('unconfirmed');
+	});
+
 	it('never puts a mirror in the original role, for every mirror host', () => {
 		for (const href of [
 			VX,
@@ -228,7 +312,8 @@ describe('LINK_KINDS', () => {
 			'https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/x',
 			'https://app.box.com/s/x',
 			'https://web.archive.org/web/2020/https://example.org',
-			'https://archive.ph/abc'
+			'https://archive.ph/abc',
+			'https://t.co/abc'
 		];
 		expect(samples.map((s) => classifyLink(s).kind).sort()).toEqual([...kinds].sort());
 	});
