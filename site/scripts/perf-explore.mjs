@@ -25,6 +25,10 @@ const profileName = opt('profile', 'fast4g');
 const cpu = Number(opt('cpu', '1'));
 // Pages' own max-age is 600 s; 0 shows what a visit later than that costs.
 const maxAge = Number(opt('maxage', '600'));
+// "block" leaves the service worker out. Bytes it fetches for the page are not
+// counted by the page's network log, so the byte totals need it blocked, and
+// the timing of a return visit needs it allowed.
+const sw = opt('sw', 'allow');
 
 // Chrome DevTools' presets, in bytes per second and milliseconds.
 const PROFILES = {
@@ -67,7 +71,14 @@ async function visit(browser, server, context, label) {
 		const u = urls.get(e.requestId);
 		if (!u) return;
 		const path = new URL(u.url).pathname.replace(base, '');
-		const kind = /\/data\/reports\//.test(path) ? 'reports' : /\/data\//.test(path) ? 'other data' : 'app';
+		// The index is the file the page now needs first; the shards are the ones it now avoids.
+		const kind = /\/data\/reports\/index\.json/.test(path)
+			? 'report index'
+			: /\/data\/reports\//.test(path)
+				? 'reports'
+				: /\/data\//.test(path)
+					? 'other data'
+					: 'app';
 		const k = kinds.get(kind) ?? { wire: 0, raw: 0, requests: 0 };
 		k.wire += e.encodedDataLength;
 		k.raw += raw.get(e.requestId) ?? 0;
@@ -127,7 +138,7 @@ const cold = [];
 const warm = [];
 for (let i = 0; i < runs; i++) {
 	const browser = await chromium.launch();
-	const context = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+	const context = await browser.newContext({ viewport: { width: 1280, height: 900 }, serviceWorkers: sw });
 	cold.push(await visit(browser, server, context, 'cold'));
 	await context.pages()[0].close();
 	warm.push(await visit(browser, server, context, 'warm'));
