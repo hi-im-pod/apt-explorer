@@ -200,9 +200,12 @@ test('the filters narrow the list, count what they show and can be cleared', asy
 	await expect(count).toHaveText(`Showing ${actors.length} of ${real.guesses.length}`);
 	for (const text of await items.locator('.label-pill').allInnerTexts()) expect(text).toBe('Actor');
 
-	const high = actors.filter((g) => g.band === 'high');
-	await page.getByLabel('Confidence').selectOption('high');
-	await expect(items).toHaveCount(high.length);
+	// The measured bands decide which ones the page offers, so the test filters on a band the data
+	// really uses. Hard-coding "high" broke when calibration left nobody in that band.
+	const band = actors[0].band;
+	const inBand = actors.filter((g) => g.band === band);
+	await page.getByLabel('Confidence').selectOption(band);
+	await expect(items).toHaveCount(inBand.length);
 
 	await page.getByRole('searchbox', { name: 'Search' }).fill('zzzz-no-such-name');
 	await expect(items).toHaveCount(0);
