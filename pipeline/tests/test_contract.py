@@ -31,14 +31,9 @@ SOURCES_MD = ROOT / "SOURCES.md"
 # The year shards are not listed because which years exist depends on the data;
 # build.json's report_years names them.
 REQUIRED = ["actors/index.json", "reports/index.json", "reports/undated.json", "campaigns.json", "vulns.json",
-            "sources.json", "resolution.json", "trends.json", "build.json"]
+            "sources.json", "resolution.json", "trends.json", "build.json", "slugs.json", "guesses.json"]
 
 SCHEMA_NAMES = sorted(p.name.removesuffix(".schema.json") for p in SCHEMA_DIR.glob("*.schema.json"))
-
-# Schemas whose file the pipeline writes but the repository has not committed yet, because data/ is
-# regenerated in one step after the slices merge. Remove a name here when its file lands in data/, so
-# that the test guards it again. The file's own tests use generated data in the meantime.
-NOT_YET_COMMITTED = frozenset({"guesses"})
 
 
 def _files(root: Path) -> list[str]:
@@ -61,17 +56,8 @@ def tree() -> dict:
 
 # --- Every file has a schema, and every file matches it -----------------------
 
-# data/ is regenerated as a whole by the pipeline. Until that has happened once
-# after the reports index was added, the committed data/ has no index, and the two
-# tests that would say so are skipped with that reason rather than failing on a
-# file the pipeline had no way to produce yet. Once the file exists they are strict.
-NO_INDEX_YET = DATA.is_dir() and "reports/index.json" not in FILES
-
-
 def test_data_directory_holds_every_file_the_site_fetches_by_name():
     assert DATA.is_dir(), f"{DATA} is missing"
-    if NO_INDEX_YET:
-        pytest.skip("data/ was built before the reports index existed; regenerate it")
     assert [rel for rel in REQUIRED if rel not in FILES] == []
 
 
@@ -81,24 +67,13 @@ def test_every_data_file_has_a_schema():
     assert [rel for rel in FILES if schema_for(rel) is None] == []
 
 
-# Schemas whose file the pipeline writes but that the committed data/ does not hold yet, because
-# the slug registry can only be created by a real build and the integrator commits data/ once.
-# Delete this set when that build has been committed, so the exemption cannot outlive its reason.
-PENDING_FIRST_BUILD = {"slugs"}
-
-
 def test_every_schema_governs_a_data_file():
     # A schema that no file uses means a file was renamed or never written.
-    used = {schema_for(rel) for rel in FILES} | PENDING_FIRST_BUILD
-    if NO_INDEX_YET:
-        used.add("reports_index")
-    assert [name for name in SCHEMA_NAMES if name not in used and name not in NOT_YET_COMMITTED] == []
+    used = {schema_for(rel) for rel in FILES}
+    assert [name for name in SCHEMA_NAMES if name not in used] == []
 
 
 def test_committed_slug_registry_agrees_with_the_actor_pages(tree):
-    # Skipped until the first real build has written data/slugs.json (see PENDING_FIRST_BUILD).
-    if "slugs.json" not in tree:
-        pytest.skip("data/slugs.json has not been committed yet")
     from aptx.build import slugs
     names = {rel[len("actors/"):-len(".json")]: tree[rel]["name"]
              for rel in tree if rel.startswith("actors/") and rel != "actors/index.json"}
