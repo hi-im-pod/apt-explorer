@@ -186,14 +186,33 @@ def test_a_vanished_actor_gets_its_slug_back_when_it_returns():
     assert entry(back, "glass-heron")["first_published"] == "2026-01-01"
 
 
-def test_an_attack_group_keeps_its_group_id_and_retires_the_slug_it_swallowed():
+def test_an_actor_that_gains_an_attack_id_keeps_the_slug_it_already_published():
+    # ATT&CK adding a group later must not move an address that people may have bookmarked. The
+    # group ID is kept as an anchor, so the actor is still recognised, but the slug stays.
     first = build([A("misp", "m1", "Odd Bear")], day="2026-01-01")
     second = build([A("misp", "m1", "Odd Bear"), A("attack", "G0099", "Strange Group", "Odd Bear")],
                    first.slug_entries, day="2026-02-01")
-    assert [a.id for a in second.actors] == ["G0099"]
-    assert entry(second, "G0099")["anchors"] == ["G0099", "misp:m1"]
-    gone = entry(second, "odd-bear")
-    assert (gone["retired"], gone["merged_into"]) == (True, "G0099")
+    assert [a.id for a in second.actors] == ["odd-bear"]
+    kept = entry(second, "odd-bear")
+    assert kept["anchors"] == ["G0099", "misp:m1"]
+    assert (kept["retired"], kept["merged_into"], kept["first_published"]) == (False, None, "2026-01-01")
+    assert "G0099" not in {e["slug"] for e in second.slug_entries}
+
+
+def test_a_new_attack_group_uses_its_group_id_as_the_slug():
+    # This is the documented exception to the name-only rule, and it applies only to an actor
+    # that has no published slug yet.
+    first = build([A("attack", "G0099", "Strange Group")], day="2026-01-01")
+    assert [a.id for a in first.actors] == ["G0099"]
+
+
+def test_two_published_slugs_that_merge_into_an_attack_group_keep_the_older_one():
+    first = build([A("misp", "m1", "Odd Bear"), A("misp", "m2", "Even Bear")], day="2026-01-01")
+    second = build([A("misp", "m1", "Odd Bear"), A("misp", "m2", "Even Bear"),
+                    A("attack", "G0099", "Strange Group", "Odd Bear", "Even Bear")], first.slug_entries, day="2026-02-01")
+    [survivor] = [a.id for a in second.actors]
+    assert survivor == "even-bear"
+    assert (entry(second, "odd-bear")["retired"], entry(second, "odd-bear")["merged_into"]) == (True, "even-bear")
 
 
 def test_a_chain_of_merges_points_at_the_last_survivor():

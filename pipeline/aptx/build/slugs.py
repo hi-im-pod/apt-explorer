@@ -19,8 +19,12 @@ A slug is never given out twice. Retired and vanished entries stay in the
 registry, and a new actor whose natural slug is taken gets a numeric suffix,
 which is recorded in the entry.
 
-ATT&CK groups are the exception to "the slug comes from the name": their slug is
-the group ID, which is already stable and public.
+ATT&CK groups are the exception to "the slug comes from the name": when an ATT&CK group
+is first published, its slug is the group ID, which is already stable and public. The
+exception stops there. An actor that already has a published slug keeps it when ATT&CK
+starts to track it, and an entry's first_published date only decides which slug survives
+a merge among entries that were added on different days. Every entry of the first build
+carries the same date, so among those the alphabetical order of the slug decides.
 """
 import hashlib
 import json
@@ -126,12 +130,14 @@ def assign(candidates: Iterable[Candidate], previous: Iterable[Mapping], build_d
     fresh: list[Candidate] = []
     for c in ordered:
         mine = sorted(owned.get(c.key, ()), key=lambda s: (prev[s]["first_published"], s))
-        if c.attack_id:
-            # An ATT&CK group keeps its group ID, which is what its file and links already use.
-            # A slug the group swallowed becomes a redirect to it.
-            slug = c.attack_id
-        elif mine:
+        if mine:
+            # A published slug is frozen, even when ATT&CK later starts to track the actor. The
+            # group ID is already an anchor, so the actor is recognised, and the address stays.
             slug = mine[0]
+        elif c.attack_id:
+            # An ATT&CK group that has no published slug uses its group ID, which is already
+            # stable and public.
+            slug = c.attack_id
         else:
             fresh.append(c)
             continue
