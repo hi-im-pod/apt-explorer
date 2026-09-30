@@ -324,3 +324,50 @@ def test_an_empty_library_saves_nothing(tmp_path, fast_http):
     with pytest.raises(ValueError):
         OrklConnector().fetch(s)
     assert s.latest_date("orkl") is None
+
+
+# Titles and dates from VX-Underground entries
+
+def _vx(title, names, ref, **over):
+    entry = dict(TALOS, title=title, report_names=names, references=[ref], sources=["VXUG"],
+                 file_creation_date="2022-05-28T21:52:51Z", created_at="2023-01-12T15:06:43Z")
+    entry.update(over)
+    return entry
+
+
+VX_BASE = "https://papers.vx-underground.org/papers/"
+
+
+def test_a_filed_date_prefix_moves_from_the_title_to_the_date(tmp_path, link_only):
+    e = _vx("2014-11-14 - OnionDuke- APT Attacks Via the Tor Network", None,
+            VX_BASE + "Malware Defense/2014-11-14 - OnionDuke- APT Attacks Via the Tor Network.pdf")
+    r = OrklConnector().normalize(_store(tmp_path, [e])).reports[0]
+    assert r.title == "OnionDuke- APT Attacks Via the Tor Network"
+    assert (r.published, r.date_basis) == ("2014-11-14", "title-date")
+
+
+def test_a_title_that_belongs_to_another_document_is_replaced_by_the_file_name(tmp_path, link_only):
+    # The live library has 177 papers whose title, link and file date point at different documents.
+    # The file name agrees with the link and the archived copy, so it is the name to show, and the
+    # wrong title's date prefix must not date the paper.
+    name = "EPRI - ICCP Protocol - Threats to Data Security and Potential Solutions.pdf"
+    e = _vx("2016-07-13 - Troldesh ransomware influenced by (the) Da Vinci code", [name],
+            VX_BASE + "ICS SCADA/ICS Vulnerabilities/" + name, file_creation_date="2001-10-25T16:10:26Z")
+    r = OrklConnector().normalize(_store(tmp_path, [e])).reports[0]
+    assert r.title == name
+    assert (r.published, r.date_basis) == ("2001-10-25", "file-metadata")
+
+
+def test_a_title_that_matches_its_file_name_is_kept(tmp_path, link_only):
+    e = _vx("2016-07-13 - Troldesh ransomware influenced by (the) Da Vinci code",
+            ["2016-07-13 - Troldesh ransomware influenced by (the) Da Vinci code.pdf"],
+            VX_BASE + "Malware Defense/Malware Analysis 2016/2016-07-13 - Troldesh ransomware influenced by (the) Da Vinci code.pdf")
+    r = OrklConnector().normalize(_store(tmp_path, [e])).reports[0]
+    assert r.title == "Troldesh ransomware influenced by (the) Da Vinci code"
+
+
+def test_only_vx_underground_entries_are_checked_against_their_file_name(tmp_path, link_only):
+    # A blog slug is often unlike the post's title, so the check would drop good titles elsewhere.
+    e = dict(TALOS, title="Completely different words here", references=["https://example.com/zzz-qqq-xxx"],
+             report_names=["zzz-qqq-xxx.pdf"], sources=["ORKL"])
+    assert OrklConnector().normalize(_store(tmp_path, [e])).reports[0].title == "Completely different words here"

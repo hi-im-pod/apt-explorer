@@ -16,10 +16,10 @@ actor on the site.
 import json
 import logging
 import re
-from urllib.parse import quote
+from urllib.parse import quote, unquote, urlsplit
 
 from aptx.core import http
-from aptx.core.dates import resolve_report_date
+from aptx.core.dates import resolve_report_date, split_title_date
 from aptx.core.models import ReportRecord, SourceBundle
 from aptx.core.snapshot import SnapshotStore
 from aptx.extract.ids import find_cves, technique_candidates
@@ -42,6 +42,8 @@ MIN_COVERAGE = 0.9
 TAGS_SHOWN = frozenset({"full", "derived-only"})
 
 _SHA1 = re.compile(r"[0-9a-f]{40}")
+_WORD = re.compile(r"[a-z0-9]{4,}")
+VX_SOURCE = "VXUG"
 _HTTP_URL = re.compile(r"https?://\S+")
 # Every ASCII character a URL may carry unescaped, plus "%" for existing escapes.
 _URL_SAFE = "%:/?#[]@!$&'()*+,;=~-._"
@@ -107,15 +109,39 @@ def actor_tags(store: SnapshotStore) -> dict[str, list[dict]]:
     return {e["id"]: e["threat_actors"] for e in _read_lines(store) if e.get("threat_actors")}
 
 
+def _words(text: str) -> set[str]:
+    return set(_WORD.findall(text.casefold()))
+
+
+def _file_name(url: str | None) -> str:
+    return unquote(urlsplit(url).path.rsplit("/", 1)[-1]) if url else ""
+
+
+def _title_fits_file(entry: dict, url: str | None) -> bool:
+    """False when a VX-Underground title shares no word with the file the entry links to.
+
+    About 177 VX-Underground entries carry the title of one paper with the link, file name,
+    archived copy and file date of another, so the title is the odd one out. Only VX-Underground
+    entries are checked, because a blog post's slug often shares no word with its real title.
+    """
+    if VX_SOURCE not in _strings(entry.get("sources")):
+        return True
+    title = _words(split_title_date(_text(entry.get("title")) or "")[0])
+    names = _words(" ".join([*_strings(entry.get("report_names")), _file_name(url)]))
+    return not title or not names or bool(title & names)
+
+
 def _title(entry: dict, url: str | None) -> str:
     """The report's own title, or the next most faithful name for it.
 
     About one entry in ten has an empty title. ORKL's llm_title is skipped on
     purpose: ORKL generated it, so it is not the report's own title, and a
     link-only source may publish only the report's own metadata. The file
-    name the report was published under comes next, then its URL.
+    name the report was published under comes next, then its URL. A title that
+    belongs to a different document than the link is treated as missing.
     """
-    for candidate in [entry.get("title"), *_strings(entry.get("report_names")), url, entry.get("sha1")]:
+    own = entry.get("title") if _title_fits_file(entry, url) else None
+    for candidate in [own, *_strings(entry.get("report_names")), url, entry.get("sha1")]:
         text = _text(candidate)
         if text:
             return text
@@ -262,7 +288,11 @@ class OrklConnector(Connector):
         for e in lines:
             urls = [u for u in (_http_url(r) for r in e.get("references") or []) if u]
             url = urls[0] if urls else None
-            published, basis = resolve_report_date(urls, lib_dates, e.get("file_creation_date"), e.get("created_at"))
+            # The title decides first, so a title that belongs to another document cannot date
+            # this one, and the date prefix never stays in the text readers see.
+            title, title_date = split_title_date(_title(e, url))
+            published, basis = resolve_report_date(urls, lib_dates, e.get("file_creation_date"),
+                                                   e.get("created_at"), title_date)
             files = e.get("files") or {}
             names = []
             if show_tags:
@@ -270,7 +300,7 @@ class OrklConnector(Connector):
             reports.append(ReportRecord(
                 source=self.name,
                 source_id=e["id"],
-                title=_title(e, url),
+                title=title,
                 published=published,
                 date_basis=basis,
                 organisation=_text(e.get("authors")),

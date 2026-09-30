@@ -233,6 +233,11 @@
 	</p>
 	<ol class="steps">
 		<li>The Malpedia library date recorded for the report's URL (<code>malpedia-library</code>).</li>
+		<li>
+			The date at the start of the report's title (<code>title-date</code>). Some collections file a
+			paper as "2014-11-14 - Title". The site uses that date when it is not later than the day ORKL
+			added the report, and it removes the date from the title it shows.
+		</li>
 		<li>The file creation date stored in the report itself (<code>file-metadata</code>).</li>
 		<li>
 			The date ORKL added the report to its collection (<code>orkl-ingest</code>). This is when ORKL

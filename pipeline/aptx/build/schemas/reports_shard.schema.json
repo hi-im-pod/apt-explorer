@@ -152,9 +152,10 @@
       ]
     },
     "dateBasis": {
-      "description": "Where published came from. malpedia-library: Malpedia's library entry for the URL. file-metadata: the document's creation date. orkl-ingest: the date ORKL added the report, a last resort. publisher: the publisher's own feed. paper: the paper's dataset. unknown: no usable date, and published is null.",
+      "description": "Where published came from. malpedia-library: Malpedia's library entry for the URL. title-date: the filing date at the start of the title, used when it is no later than the ORKL ingest date. file-metadata: the document's creation date. orkl-ingest: the date ORKL added the report, a last resort. publisher: the publisher's own feed. paper: the paper's dataset. unknown: no usable date, and published is null.",
       "enum": [
         "malpedia-library",
+        "title-date",
         "file-metadata",
         "orkl-ingest",
         "publisher",

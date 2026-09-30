@@ -29,16 +29,40 @@ def parse_date(s: str | None) -> str | None:
         return None
 
 
+# VX-Underground files its papers as "YYYY-MM-DD - Title", and ORKL copies that file name into the
+# title. The text after the dash is the paper's title.
+_TITLE_DATE = re.compile(r"^(\d{4}-\d{2}-\d{2})\s+[-–—]\s+(\S.*)$")
+
+
+def split_title_date(title: str) -> tuple[str, str | None]:
+    """A title without its filing-date prefix, and that prefix as a date when it is a real one.
+
+    The prefix is filing noise even when the date is nonsense, so it always leaves the title. Only a
+    date that parse_date accepts is returned, because a typo must not date the report.
+    """
+    title, first = title.strip(), None
+    # A few papers are filed as "DATE - DATE - Title", so the prefix comes off until none is left.
+    # The outermost date is kept, because it is the one the collection filed the paper under.
+    while m := _TITLE_DATE.match(title):
+        title = m.group(2)
+        first = first or parse_date(m.group(1))
+    return title, first
+
+
 def resolve_report_date(urls: list[str], lib_dates: dict[str, str], file_creation: str | None,
-                        created_at: str | None) -> tuple[str | None, str]:
+                        created_at: str | None, title_date: str | None = None) -> tuple[str | None, str]:
     """A report's date and the basis it came from, best evidence first.
 
     1. The Malpedia library date of the first URL found in lib_dates, which
        maps norm_url(url) to YYYY-MM-DD ("malpedia-library").
-    2. The report file's own creation date ("file-metadata").
-    3. The date ORKL ingested the report ("orkl-ingest"). That is when ORKL
+    2. The date in the title's own filing prefix ("title-date"). It beats the
+       file metadata because that metadata is often years off for the papers
+       that carry such a prefix. It is trusted only when it is no later than
+       the ingest date, since a report cannot be published after ORKL saw it.
+    3. The report file's own creation date ("file-metadata").
+    4. The date ORKL ingested the report ("orkl-ingest"). That is when ORKL
        saw it, not when it was published, so the basis says so.
-    4. Nothing usable: (None, "unknown"). Such a report goes to
+    5. Nothing usable: (None, "unknown"). Such a report goes to
        reports/undated.json and stays out of dated trends.
 
     Every candidate goes through parse_date, so a sentinel such as ORKL's
@@ -49,10 +73,13 @@ def resolve_report_date(urls: list[str], lib_dates: dict[str, str], file_creatio
             date = parse_date(lib_dates.get(norm_url(url)))
             if date:
                 return date, "malpedia-library"
+    ingest = parse_date(created_at)
+    date = parse_date(title_date)
+    if date and (ingest is None or date <= ingest):
+        return date, "title-date"
     date = parse_date(file_creation)
     if date:
         return date, "file-metadata"
-    date = parse_date(created_at)
-    if date:
-        return date, "orkl-ingest"
+    if ingest:
+        return ingest, "orkl-ingest"
     return None, "unknown"

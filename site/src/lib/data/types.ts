@@ -64,6 +64,7 @@ export type PublishPolicy = 'full' | 'derived-only' | 'evidence-only' | 'link-on
  */
 export type DateBasis =
 	| 'malpedia-library'
+	| 'title-date'
 	| 'file-metadata'
 	| 'orkl-ingest'
 	| 'publisher'

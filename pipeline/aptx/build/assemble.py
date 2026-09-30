@@ -96,7 +96,7 @@ MAX_UNRESOLVED_NAMES = 200
 _REPORT_PRIORITY = {"dfir": 0, "orkl": 1, "paper": 2}
 
 # Which date wins when records of one report disagree, best evidence first.
-_BASIS_RANK = {"publisher": 0, "malpedia-library": 1, "paper": 2, "file-metadata": 3, "orkl-ingest": 4}
+_BASIS_RANK = {"publisher": 0, "malpedia-library": 1, "paper": 2, "title-date": 3, "file-metadata": 4, "orkl-ingest": 5}
 
 
 @dataclass(frozen=True)
