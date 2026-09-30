@@ -307,16 +307,35 @@ for (const width of [1280, 375]) {
 			// Text must be readable on what it sits on in this theme.
 			const bg = await style(page.locator('body'), 'background-color');
 			const card = page.locator('.guess').first();
-			const cardBg = await style(card, 'background-color');
-			expect(cardBg).not.toBe(bg);
-			expect(contrast(await style(card.locator('.name'), 'color'), cardBg)).toBeGreaterThanOrEqual(4.5);
-			expect(contrast(await style(card.locator('.status'), 'color'), cardBg)).toBeGreaterThanOrEqual(4.5);
-			expect(contrast(await style(card.locator('summary'), 'color'), cardBg)).toBeGreaterThanOrEqual(4.5);
+			// A guess is a ledger row, not a card: it sits on the page with a hairline under it.
+			expect(await style(card, 'background-color')).toBe('rgba(0, 0, 0, 0)');
+			expect(await style(card, 'border-bottom-width')).toBe('1px');
+			expect(contrast(await style(card.locator('.name'), 'color'), bg)).toBeGreaterThanOrEqual(4.5);
+			expect(contrast(await style(card.locator('.status'), 'color'), bg)).toBeGreaterThanOrEqual(4.5);
+			expect(contrast(await style(card.locator('summary'), 'color'), bg)).toBeGreaterThanOrEqual(4.5);
 			expect(contrast(await style(page.locator('h1'), 'color'), bg)).toBeGreaterThanOrEqual(4.5);
-			// The banner is a caution: its edge is the danger colour, thick enough to see.
+			// The banner is a caution: its edge is the unconfirmed amber, thick enough to see.
 			const banner = page.locator('.banner');
 			expect(await style(banner, 'border-left-width')).toBe('6px');
-			expect(contrast(await style(banner, 'border-left-color'), await style(banner, 'background-color'))).toBeGreaterThanOrEqual(3);
+			expect(contrast(await style(banner, 'border-left-color'), bg)).toBeGreaterThanOrEqual(3);
+
+			// An unconfirmed guess wears a dashed amber outline that can be seen on this theme.
+			const pill = page.locator('.label-pill:not(.confirmed)').first();
+			expect(await style(pill, 'border-top-style')).toBe('dashed');
+			expect(await style(pill, 'border-top-color')).toBe(await style(banner, 'border-left-color'));
+			expect(contrast(await style(pill, 'border-top-color'), bg)).toBeGreaterThanOrEqual(3);
+
+			// A guess with a measured confidence shows it on a scale with two threshold ticks.
+			const scaled = page.locator('.guess', { has: page.locator('.conf') }).first();
+			await expect(scaled.locator('.scale')).toBeVisible();
+			await expect(scaled.locator('.scale .tick')).toHaveCount(2);
+			await expect(scaled.locator('.scale')).toHaveAttribute('aria-hidden', 'true');
+
+			// The evaluation tables fit the screen on their own, so no cell is cut off.
+			const scrolling = await page.evaluate(() =>
+				[...document.querySelectorAll('#evaluation .scroll')].filter((e) => e.scrollWidth > e.clientWidth + 1).length
+			);
+			expect(scrolling).toBe(0);
 
 			// A one-word cell stays on one line: a taller cell means the word was cut.
 			// The row height cannot tell, because a long neighbour makes the row

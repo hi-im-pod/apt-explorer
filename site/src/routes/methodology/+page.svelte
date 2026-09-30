@@ -359,11 +359,13 @@
 	section > p,
 	section > .steps,
 	section > .limits {
-		max-width: 44rem;
+		max-width: 68ch;
 	}
 
 	.lede {
-		font-size: 1.125rem;
+		font-size: 1.1875rem;
+		line-height: 1.5;
+		color: var(--text-muted);
 	}
 
 	.section-note,
@@ -372,11 +374,14 @@
 		font-size: 0.9375rem;
 	}
 
+	/* The counts are a ledger of facts: a rule above, a hairline under each. */
 	.stats {
 		display: grid;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: 0.75rem;
+		column-gap: 2rem;
+		max-width: 52rem;
 		margin: 1.25rem 0;
+		border-top: 1px solid var(--text);
 	}
 
 	@media (min-width: 40rem) {
@@ -386,21 +391,16 @@
 	}
 
 	.stats > div {
-		padding: 0.875rem 1rem;
-		background: var(--surface);
-		border: 1px solid var(--border);
-		border-radius: 0.75rem;
+		padding: 0.625rem 0;
+		border-bottom: 1px solid var(--border);
 	}
 
 	/* The label sits above the number so a long label wraps instead of
-	   pushing the card wider than its column. */
+	   pushing the ledger wider than its column. */
 	dt {
-		margin: 0 0 0.25rem;
+		margin: 0 0 0.125rem;
 		color: var(--text-muted);
-		font-family: var(--font-data);
-		font-size: 0.6875rem;
-		letter-spacing: 0.06em;
-		text-transform: uppercase;
+		font-size: 0.75rem;
 	}
 
 	dd {
@@ -408,9 +408,9 @@
 	}
 
 	.stats dd {
-		font-size: 1.5rem;
-		font-weight: 600;
-		line-height: 1.2;
+		font-size: 1.25rem;
+		font-weight: 500;
+		line-height: 1.3;
 	}
 
 	.steps,
@@ -433,7 +433,6 @@
 	}
 
 	.big {
-		color: var(--accent);
 		font-size: 2.25rem;
 		font-weight: 600;
 		line-height: 1;
@@ -443,13 +442,14 @@
 		color: var(--text-muted);
 	}
 
+	/* Ink for what resolved, grey for software, an outline for what did not:
+	   the parts read apart without a colour that means something else. */
 	.bar {
 		display: flex;
-		max-width: 44rem;
+		max-width: 68ch;
 		height: 0.75rem;
 		overflow: hidden;
-		border-radius: 999px;
-		background: var(--border);
+		border: 1px solid var(--border);
 	}
 
 	.seg {
@@ -458,15 +458,15 @@
 	}
 
 	.resolved {
-		background: var(--accent);
+		background: var(--text);
 	}
 
 	.software {
-		background: var(--accent-2);
+		background: var(--text-muted);
 	}
 
 	.unmatched {
-		background: var(--rule-2);
+		background: transparent;
 	}
 
 	.key {
@@ -485,12 +485,16 @@
 		width: 0.625rem;
 		height: 0.625rem;
 		margin-right: 0.375rem;
-		border-radius: 50%;
+		border-radius: 1px;
+	}
+
+	.swatch.unmatched {
+		box-shadow: inset 0 0 0 1px var(--text-muted);
 	}
 
 	table {
 		width: 100%;
-		max-width: 44rem;
+		max-width: 68ch;
 		margin: 1rem 0;
 		border-collapse: collapse;
 		font-size: 0.9375rem;
@@ -507,12 +511,11 @@
 	}
 
 	thead th {
+		border-bottom-color: var(--text);
 		color: var(--text-muted);
 		font-family: var(--font-data);
 		font-size: 0.6875rem;
 		font-weight: 500;
-		letter-spacing: 0.06em;
-		text-transform: uppercase;
 	}
 
 	tbody th {
@@ -540,6 +543,6 @@
 	}
 
 	code {
-		color: var(--accent);
+		color: var(--text);
 	}
 </style>

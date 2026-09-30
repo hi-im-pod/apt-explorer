@@ -147,7 +147,7 @@
 	.key.bar {
 		width: 0.75rem;
 		height: 0.75rem;
-		border-radius: 2px;
+		border-radius: 1px;
 	}
 
 	.key.rule {
@@ -178,15 +178,15 @@
 		place-items: center;
 		margin: 0;
 		padding: 1rem;
-		border: 1px dashed var(--border);
-		border-radius: 0.5rem;
+		border: 1px solid var(--border);
+		border-radius: 0.375rem;
 		color: var(--text-muted);
 		font-size: 0.9375rem;
 		text-align: center;
 	}
 
 	.note {
-		max-width: 46rem;
+		max-width: 68ch;
 		margin-top: 0.75rem;
 		color: var(--text-muted);
 		font-size: 0.875rem;

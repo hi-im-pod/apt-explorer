@@ -27,14 +27,18 @@
 
 <style>
 	.error {
-		max-width: 40rem;
-		padding-block: 1rem 3rem;
+		max-width: 68ch;
+		padding-block: 2.5rem 3rem;
 	}
 
+	/* The status sits above the heading as a quiet rule-and-number, in ink:
+	   the accent colour is kept for what can be clicked. */
 	.code {
-		margin: 0 0 0.5rem;
-		color: var(--accent);
+		display: inline-block;
+		margin: 0 0 0.75rem;
+		padding-top: 0.5rem;
+		border-top: 1px solid var(--text);
+		color: var(--text-muted);
 		font-size: 0.875rem;
-		letter-spacing: 0.2em;
 	}
 </style>

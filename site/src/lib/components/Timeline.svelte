@@ -164,7 +164,7 @@
 		width: min(100%, 24px);
 		background: var(--chart-1);
 		/* Rounded at the data end, square on the baseline. */
-		border-radius: 4px 4px 0 0;
+		border-radius: 2px 2px 0 0;
 	}
 
 	.bars li:hover .bar {

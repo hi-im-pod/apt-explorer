@@ -72,9 +72,9 @@ const countTick = (d: number) => (Number.isInteger(d) ? formatCount(d) : '');
 // ---------------------------------------------------------------------------
 // Reporting activity: one small chart per actor, sharing one time axis.
 
-// Each small chart is 84px: a 24px name line, then a plot tall enough to compare neighbouring bars.
-const FACET = 84;
-const ACTIVITY_MARGINS = { marginTop: 4, marginRight: 8, marginBottom: 28, marginLeft: 32 };
+// Each small chart is 92px: a 32px name line, then a plot tall enough to compare neighbouring bars.
+const FACET = 92;
+const ACTIVITY_MARGINS = { marginTop: 4, marginRight: 8, marginBottom: 32, marginLeft: 32 };
 
 export function activityHeight(actors: number): number {
 	return actors * FACET + ACTIVITY_MARGINS.marginTop + ACTIVITY_MARGINS.marginBottom;
@@ -100,9 +100,9 @@ export function activityChart(a: Activity, names: Record<string, string>) {
 		return Plot.plot({
 			...frame(ctx, activityHeight(a.actors.length), ACTIVITY_MARGINS),
 			fy: { domain: a.actors, axis: null, padding: 0 },
-			x: { type: 'utc', domain: [from, to], ticks, tickFormat: format, label: null },
+			x: { type: 'utc', domain: [from, to], ticks, tickFormat: format, label: null, tickPadding: 8 },
 			// The top of each small chart is kept free for the actor's name.
-			y: { domain: [0, top], insetTop: 24, label: null, ticks: [top], tickFormat: countTick, tickSize: 0 },
+			y: { domain: [0, top], insetTop: 32, label: null, ticks: [top], tickFormat: countTick, tickSize: 0 },
 			marks: [
 				Plot.gridY({ ticks: [top], stroke: ctx.grid, strokeOpacity: 1 }),
 				Plot.ruleY([0], { stroke: ctx.grid }),
@@ -141,7 +141,7 @@ export function activityChart(a: Activity, names: Record<string, string>) {
 					fill: ctx.text,
 					fontSize: 12,
 					fontWeight: 600,
-					dy: 4
+					dy: 10
 				}),
 				Plot.tip(
 					a.points,
@@ -156,7 +156,7 @@ export function activityChart(a: Activity, names: Record<string, string>) {
 // KEV additions per month, split by known ransomware use.
 
 export const KEV_HEIGHT = 260;
-const KEV_MARGINS = { marginTop: 12, marginRight: 8, marginBottom: 28, marginLeft: 36 };
+const KEV_MARGINS = { marginTop: 12, marginRight: 8, marginBottom: 32, marginLeft: 36 };
 
 export function kevChart(k: KevPoint[]) {
 	return (ctx: ChartContext) => {
@@ -176,7 +176,7 @@ export function kevChart(k: KevPoint[]) {
 
 		return Plot.plot({
 			...frame(ctx, KEV_HEIGHT, KEV_MARGINS),
-			x: { type: 'utc', domain: [from, to], ticks, tickFormat: format, label: null },
+			x: { type: 'utc', domain: [from, to], ticks, tickFormat: format, label: null, tickPadding: 8 },
 			y: { nice: true, label: null, tickFormat: countTick, tickSize: 0 },
 			marks: [
 				Plot.gridY({ stroke: ctx.grid, strokeOpacity: 1 }),
@@ -221,7 +221,7 @@ export function kevChart(k: KevPoint[]) {
 // Reported versus documented techniques: one bar per actor, name above it.
 
 const ROW = 40;
-const TECH_MARGINS = { marginTop: 4, marginRight: 16, marginBottom: 28, marginLeft: 4 };
+const TECH_MARGINS = { marginTop: 4, marginRight: 16, marginBottom: 32, marginLeft: 4 };
 
 export function techniqueHeight(actors: number): number {
 	return actors * ROW + TECH_MARGINS.marginTop + TECH_MARGINS.marginBottom;
@@ -275,7 +275,7 @@ export function techniqueChart(bars: TechniqueBar[], names: Record<string, strin
 
 export const NEW_ACTORS_HEIGHT = 180;
 // The left margin is wide enough for a first label such as "Oct 2025", which is centred on the axis start.
-const NEW_MARGINS = { marginTop: 8, marginRight: 12, marginBottom: 28, marginLeft: 40 };
+const NEW_MARGINS = { marginTop: 8, marginRight: 12, marginBottom: 32, marginLeft: 40 };
 
 export function newActorsChart(months: MonthCount[]) {
 	return (ctx: ChartContext) => {
@@ -292,7 +292,7 @@ export function newActorsChart(months: MonthCount[]) {
 
 		return Plot.plot({
 			...frame(ctx, NEW_ACTORS_HEIGHT, NEW_MARGINS),
-			x: { type: 'utc', domain: [from, to], ticks, tickFormat: format, label: null },
+			x: { type: 'utc', domain: [from, to], ticks, tickFormat: format, label: null, tickPadding: 8 },
 			y: { nice: true, label: null, tickFormat: countTick, tickSize: 0 },
 			marks: [
 				Plot.gridY({ stroke: ctx.grid, strokeOpacity: 1 }),

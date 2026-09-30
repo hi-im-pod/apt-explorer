@@ -34,13 +34,11 @@
 		display: inline-block;
 		padding: 0 0.4375rem;
 		border: 1px solid var(--border);
-		border-radius: 999px;
-		background: var(--surface);
+		border-radius: 0.25rem;
 		color: var(--text-muted);
 		font-family: var(--font-data);
 		font-size: 0.6875rem;
 		line-height: 1.6;
-		letter-spacing: 0.01em;
 		white-space: nowrap;
 		text-decoration: none;
 		vertical-align: 0.1em;

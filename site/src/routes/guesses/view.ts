@@ -16,6 +16,9 @@ const KIND_TEXT: Record<MatchKind, string> = {
 
 export const kindText = (kind: MatchKind): string => KIND_TEXT[kind];
 
+/** The confidence a guess needs to enter each band, as the evaluation text states them. */
+export const BAND_THRESHOLDS = { medium: 0.7, high: 0.85 } as const;
+
 export const LABELS: GuessLabel[] = ['actor', 'malware', 'tool', 'not-an-entity'];
 export const BANDS: GuessBand[] = ['high', 'medium', 'low', 'unvalidated', 'confirmed'];
 

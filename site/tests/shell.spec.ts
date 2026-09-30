@@ -109,6 +109,40 @@ test('the theme menu works from the keyboard and reports the checked theme', asy
 	await expect(button).toBeFocused();
 });
 
+test('the theme switcher is a Light, Dark and APT strip that the arrow keys walk along', async ({ page }) => {
+	for (const width of [1280, 375]) {
+		await page.setViewportSize({ width, height: 800 });
+		await page.goto('/apt-explorer/about/');
+		const button = page.getByRole('button', { name: 'Theme' });
+		await expect(button).toContainText('Light');
+		await expect(button).toContainText('Dark');
+		await expect(button).toContainText('APT');
+		// The strip stays on the screen and does not widen the page.
+		const box = await button.boundingBox();
+		expect(box!.x).toBeGreaterThanOrEqual(0);
+		expect(box!.x + box!.width).toBeLessThanOrEqual(width);
+		expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
+	}
+	const button = page.getByRole('button', { name: 'Theme' });
+	await button.focus();
+	await expect(button).toBeFocused();
+	expect(await button.evaluate((e) => getComputedStyle(e).outlineStyle)).not.toBe('none');
+	await page.keyboard.press('Enter');
+	await expect(page.getByRole('menuitemradio', { name: /light/i })).toBeFocused();
+	await page.keyboard.press('ArrowRight');
+	await expect(page.getByRole('menuitemradio', { name: /dark/i })).toBeFocused();
+	await page.keyboard.press('ArrowRight');
+	await expect(page.getByRole('menuitemradio', { name: /apt/i })).toBeFocused();
+	await page.keyboard.press('ArrowLeft');
+	await expect(page.getByRole('menuitemradio', { name: /dark/i })).toBeFocused();
+	await page.keyboard.press('End');
+	await expect(page.getByRole('menuitemradio', { name: /apt/i })).toBeFocused();
+	await page.keyboard.press('Home');
+	await expect(page.getByRole('menuitemradio', { name: /light/i })).toBeFocused();
+	// A segment that holds focus draws a visible ring.
+	expect(await page.getByRole('menuitemradio', { name: /light/i }).evaluate((e) => getComputedStyle(e).outlineStyle)).not.toBe('none');
+});
+
 test('the theme menu closes on a click outside it', async ({ page }) => {
 	await page.goto('/apt-explorer/about/');
 	await page.getByRole('button', { name: /theme/i }).click();
