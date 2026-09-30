@@ -22,6 +22,25 @@
     ]
   },
   {
+    "id": "b86d329e90fe0e56f9c23b2feb2a37b711b46f09",
+    "title": "Overseas -Dark Inn- organization launched an APT attack on executives of domestic enterprises",
+    "published": "2015-12-31",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-12-31%20-%20Overseas%20-Dark%20Inn-%20organization%20launched%20an%20APT%20attack%20on%20executives%20of%20domestic%20enterprises.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/b86d329e90fe0e56f9c23b2feb2a37b711b46f09.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2015-8651"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "4b9ea4176c38a1b65f258d6cb83b12c57cd59fbc",
     "title": "Industrial Control Systems (ICS) Security Training",
     "published": "2015-12-30",
@@ -30,6 +49,23 @@
     "url": "https://ics.sans.org/blog/2015/12/30/current-reporting-on-the-cyber-attack-in-ukraine-resulting-in-power-outage",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4b9ea4176c38a1b65f258d6cb83b12c57cd59fbc.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "5669110b06396caaa444bcf65eb2209318cc7fbb",
+    "title": "Backdoor- Win32-Hesetox.A- vSkimmer POS Malware Analysis ﻿",
+    "published": "2015-12-26",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-12-26%20-%20Backdoor-%20Win32-Hesetox.A-%20vSkimmer%20POS%20Malware%20Analysis%20%EF%BB%BF.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/5669110b06396caaa444bcf65eb2209318cc7fbb.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -73,6 +109,23 @@
     ]
   },
   {
+    "id": "298d55814d45761f787d9d5c0874a9b71691af75",
+    "title": "Kraken's two Domain Generation Algorithms",
+    "published": "2015-12-22",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-12-22%20-%20Kraken's%20two%20Domain%20Generation%20Algorithms.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/298d55814d45761f787d9d5c0874a9b71691af75.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "2f04db722b7a212df65723b9685e3dc6afaaa66c",
     "title": "BBSRAT Attacks Targeting Russian Organizations Linked to Roaming Tiger - Palo Alto Networks BlogPalo Alto Networks Blog",
     "published": "2015-12-22",
@@ -106,23 +159,6 @@
     "cves": [
       "CVE-2012-0158"
     ],
-    "techniques": [],
-    "sources": [
-      "orkl"
-    ]
-  },
-  {
-    "id": "401cf4fdb4a47996e0d383cc7da35de8434d357d",
-    "title": "2016-08-11 - Smrss32 (.encrypted) Ransomware Help & Support - _HOW_TO_Decrypt.bmp",
-    "published": "2015-12-22",
-    "date_basis": "file-metadata",
-    "organisation": null,
-    "url": "https://papers.vx-underground.org/papers/ICS%20SCADA/Military%20Defense/DoD%20-%20ACI%20TTP%20for%20DoD%20ICS.pdf",
-    "url_ok": null,
-    "archive_url": "https://archive.orkl.eu/401cf4fdb4a47996e0d383cc7da35de8434d357d.pdf",
-    "actors": [],
-    "actor_names_unresolved": [],
-    "cves": [],
     "techniques": [],
     "sources": [
       "orkl"
@@ -199,6 +235,25 @@
     ]
   },
   {
+    "id": "f5b2e64de41911b83c9d4b68f8d2562156e2bdcc",
+    "title": "BBSRAT Attacks Targeting Russian Organizations Linked to Roaming Tiger",
+    "published": "2015-12-22",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-12-22%20-%20BBSRAT%20Attacks%20Targeting%20Russian%20Organizations%20Linked%20to%20Roaming%20Tiger.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/f5b2e64de41911b83c9d4b68f8d2562156e2bdcc.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2012-0158"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "060957bd034772155905e49648e869f2bfc0adfb",
     "title": "Threat Group-3390 Targets Organizations For Cyberespionage",
     "published": "2015-12-20",
@@ -238,6 +293,25 @@
     "sources": [
       "orkl",
       "paper"
+    ]
+  },
+  {
+    "id": "3f54af264da2ece6c5fa3fcfe0af45a02899c7d4",
+    "title": "Attack on French Diplomat Linked to Operation Lotus Blossom",
+    "published": "2015-12-18",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-12-18%20-%20Attack%20on%20French%20Diplomat%20Linked%20to%20Operation%20Lotus%20Blossom.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/3f54af264da2ece6c5fa3fcfe0af45a02899c7d4.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2014-6332"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
     ]
   },
   {
@@ -299,6 +373,23 @@
     "sources": [
       "orkl",
       "paper"
+    ]
+  },
+  {
+    "id": "c771936dde3b78a62039b23393549486c2cce60b",
+    "title": "SlemBunk- An Evolving Android Trojan Family Targeting Users of Worldwide Banking Apps",
+    "published": "2015-12-17",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-12-17%20-%20SlemBunk-%20An%20Evolving%20Android%20Trojan%20Family%20Targeting%20Users%20of%20Worldwide%20Banking%20Apps.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/c771936dde3b78a62039b23393549486c2cce60b.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
     ]
   },
   {
@@ -408,6 +499,40 @@
     ]
   },
   {
+    "id": "e5819d824b266c6c2c999615c0441859a0395568",
+    "title": "Nemucod malware spreads ransomware Teslacrypt around the world",
+    "published": "2015-12-16",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-12-16%20-%20Nemucod%20malware%20spreads%20ransomware%20Teslacrypt%20around%20the%20world.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/e5819d824b266c6c2c999615c0441859a0395568.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "1bea9f09efaa7bdf4bcb345bde8d4ac9854488ec",
+    "title": "Newcomers in the Derusbi family",
+    "published": "2015-12-15",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-12-15%20-%20Newcomers%20in%20the%20Derusbi%20family.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/1bea9f09efaa7bdf4bcb345bde8d4ac9854488ec.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "4aeb6879ccf9df349c1cd53d1841bb951ee832e3",
     "title": "Newcomers in the Derusbi family",
     "published": "2015-12-15",
@@ -488,6 +613,23 @@
     ]
   },
   {
+    "id": "bb6aba625886f89b49783851f200ae2944f6610d",
+    "title": "LATENTBOT- Trace Me If You Can",
+    "published": "2015-12-11",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-12-11%20-%20LATENTBOT-%20Trace%20Me%20If%20You%20Can.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/bb6aba625886f89b49783851f200ae2944f6610d.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "75c2325f529d34155445af6a82bb22ec4277a80f",
     "title": "Evolution of Cyber Threats in the Corporate Sector",
     "published": "2015-12-10",
@@ -545,6 +687,23 @@
     ]
   },
   {
+    "id": "3324a0c09593b21671937fe07a67eefc9083fae6",
+    "title": "Packrat- Seven Years of a South American Threat Actor",
+    "published": "2015-12-08",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-12-08%20-%20Packrat-%20Seven%20Years%20of%20a%20South%20American%20Threat%20Actor.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/3324a0c09593b21671937fe07a67eefc9083fae6.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "6a6eea4d83efdc3f965d4e41c9da8e2882a53e6d",
     "title": "Packrat: Seven Years of a South American Threat Actor",
     "published": "2015-12-08",
@@ -573,6 +732,40 @@
     "url": "https://www.virustotal.com/gui/file/4eb840617883bf6ed7366242ffee811ad5ea3d5bfd2a589a96d6ee9530690d28/details",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c4f0f98de79a8c507ce8353f85383985676f656a.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "ea1f7c687c318861f2ca4d3fb78929e392cf86ac",
+    "title": "VT Report for SmartEyes",
+    "published": "2015-12-08",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-12-08%20-%20VT%20Report%20for%20SmartEyes.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/ea1f7c687c318861f2ca4d3fb78929e392cf86ac.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "5e04856b09d9b6584cb3db856832960e3a1c4a70",
+    "title": "Iran-based attackers use back door threats to spy on Middle Eastern targets",
+    "published": "2015-12-07",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-12-07%20-%20Iran-based%20attackers%20use%20back%20door%20threats%20to%20spy%20on%20Middle%20Eastern%20targets.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/5e04856b09d9b6584cb3db856832960e3a1c4a70.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -679,6 +872,25 @@
     ]
   },
   {
+    "id": "48a8c38a615713cfd9b645af2ab4b77fe73db384",
+    "title": "Sofacy APT hits high profile targets with updated toolset",
+    "published": "2015-12-04",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-12-04%20-%20Sofacy%20APT%20hits%20high%20profile%20targets%20with%20updated%20toolset.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/48a8c38a615713cfd9b645af2ab4b77fe73db384.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2015-2590"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "85606536882806ab2d4a1a487a70cbcb976d8fcf",
     "title": "05-Nosenko.pdf",
     "published": "2015-12-04",
@@ -711,6 +923,23 @@
     "cves": [
       "CVE-2015-2590"
     ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "7f5dfe6c79eb967bd245d60f47271805acf5f26f",
+    "title": "Colombians major target of email campaigns delivering Xtreme RAT",
+    "published": "2015-12-03",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-12-03%20-%20Colombians%20major%20target%20of%20email%20campaigns%20delivering%20Xtreme%20RAT.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/7f5dfe6c79eb967bd245d60f47271805acf5f26f.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
     "techniques": [],
     "sources": [
       "orkl"
@@ -770,6 +999,25 @@
     ]
   },
   {
+    "id": "4aaf8a1564dc0c3cce9ce89ca8dab455f33b177a",
+    "title": "China-based Cyber Threat Group Uses Dropbox for Malware Communications and Targets Hong Kong Media Outlets",
+    "published": "2015-12-01",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-12-01%20-%20China-based%20Cyber%20Threat%20Group%20Uses%20Dropbox%20for%20Malware%20Communications%20and%20Targets%20Hong%20Kong%20Media%20Outlets.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/4aaf8a1564dc0c3cce9ce89ca8dab455f33b177a.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2012-0158"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "4b28cc1844c1f6218a71d3231c5f5e70d7c68709",
     "title": "China-based Cyber Threat Group Uses Dropbox for Malware Communications and Targets Hong Kong Media Outlets « Threat Research | FireEye Inc",
     "published": "2015-12-01",
@@ -789,6 +1037,23 @@
     "sources": [
       "orkl",
       "paper"
+    ]
+  },
+  {
+    "id": "a54c4261a099792c43cbe27a17f9be5bad33ea7a",
+    "title": "Operation Black Atlas Endangers In-Store Card Payments and SMBs Worldwide; Switches between BlackPOS and Other Tools",
+    "published": "2015-12-01",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-12-01%20-%20Operation%20Black%20Atlas%20Endangers%20In-Store%20Card%20Payments%20and%20SMBs%20Worldwide;%20Switches%20between%20BlackPOS%20and%20Other%20Tools.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/a54c4261a099792c43cbe27a17f9be5bad33ea7a.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
     ]
   },
   {
@@ -848,6 +1113,23 @@
     ]
   },
   {
+    "id": "c87708e2ad1cc7338e3b6413921a371cd5d8c76c",
+    "title": "Inside Braviax-FakeRean- An analysis and history of a FakeAV family",
+    "published": "2015-11-30",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-11-30%20-%20Inside%20Braviax-FakeRean-%20An%20analysis%20and%20history%20of%20a%20FakeAV%20family.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/c87708e2ad1cc7338e3b6413921a371cd5d8c76c.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "9d712bb8909d8c50e68c99444bd8c32b4ad9ca0d",
     "title": "A JavaScript-based DGA - Analysis of a defunct Proslikefan Sample",
     "published": "2015-11-26",
@@ -856,6 +1138,23 @@
     "url": "https://bin.re/blog/a-javascript-based-dga/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/9d712bb8909d8c50e68c99444bd8c32b4ad9ca0d.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "1804526fbf1c982b6476756ded614f040f61e2a3",
+    "title": "Detecting GlassRAT using Security Analytics and ECAT",
+    "published": "2015-11-25",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-11-25%20-%20Detecting%20GlassRAT%20using%20Security%20Analytics%20and%20ECAT.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/1804526fbf1c982b6476756ded614f040f61e2a3.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -1096,13 +1395,30 @@
   },
   {
     "id": "99aad372b51f748b2d694bf3dec087369273de58",
-    "title": "2016-10-20 - TheMoon - A P2P botnet targeting Home Routers",
+    "title": "Fortinet - The Evolving Threat Landscape in 2016.pdf",
     "published": "2015-11-20",
     "date_basis": "file-metadata",
     "organisation": null,
     "url": "https://papers.vx-underground.org/papers/ICS%20SCADA/Threat%20Intelligence%20Reports/Fortinet%20-%20The%20Evolving%20Threat%20Landscape%20in%202016.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/99aad372b51f748b2d694bf3dec087369273de58.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "b9aa62e1d1f2d620496352489c49f29eb47f055a",
+    "title": "A king's ransom- an analysis of the CTB-locker ransomware",
+    "published": "2015-11-20",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-11-20%20-%20A%20king's%20ransom-%20an%20analysis%20of%20the%20CTB-locker%20ransomware.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/b9aa62e1d1f2d620496352489c49f29eb47f055a.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -1312,6 +1628,23 @@
     ]
   },
   {
+    "id": "e397585c1fee0a8d6756a2434bd04f04d5afbf19",
+    "title": "New Memory Scraping Technique in Cherry Picker PoS Malware",
+    "published": "2015-11-17",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-11-17%20-%20New%20Memory%20Scraping%20Technique%20in%20Cherry%20Picker%20PoS%20Malware.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/e397585c1fee0a8d6756a2434bd04f04d5afbf19.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "4ddecdd0032c4941dad8e51b28301181c3044724",
     "title": "securitykitten.github.io/_posts/2015-11-16-logpos-new-point-of-sale-malware-using-mailslots.md at master · malware-kitten/securitykitten.github.io",
     "published": "2015-11-16",
@@ -1346,6 +1679,23 @@
     ]
   },
   {
+    "id": "c6bcd6d61d82c40418450c33786f38cbae3d0350",
+    "title": "Shining the Spotlight on Cherry Picker PoS Malware",
+    "published": "2015-11-16",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-11-16%20-%20Shining%20the%20Spotlight%20on%20Cherry%20Picker%20PoS%20Malware.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/c6bcd6d61d82c40418450c33786f38cbae3d0350.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "cb35be95eb316f859a5582a90a1f25ef0d53c7df",
     "title": "https://www.trustwave.com/Resources/SpiderLabs-Blog/Shining-the-Spotlight-on-Cherry-Picker-PoS-Malware/",
     "published": "2015-11-16",
@@ -1354,6 +1704,23 @@
     "url": "https://www.trustwave.com/Resources/SpiderLabs-Blog/Shining-the-Spotlight-on-Cherry-Picker-PoS-Malware/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/cb35be95eb316f859a5582a90a1f25ef0d53c7df.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "fbae5ee2e6151a2c1ec85fbe85e359ca0724cdc0",
+    "title": "Introducing LogPOS",
+    "published": "2015-11-16",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-11-16%20-%20Introducing%20LogPOS.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/fbae5ee2e6151a2c1ec85fbe85e359ca0724cdc0.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -1429,6 +1796,23 @@
     ]
   },
   {
+    "id": "27e3fa3676c4330edd99ed31d9746e6a8f1a0505",
+    "title": "AbaddonPOS- A new point of sale threat linked to Vawtrak",
+    "published": "2015-11-11",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-11-11%20-%20AbaddonPOS-%20A%20new%20point%20of%20sale%20threat%20linked%20to%20Vawtrak.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/27e3fa3676c4330edd99ed31d9746e6a8f1a0505.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "695f75674e6efbfb1ab952e4350a522ae74ef4b2",
     "title": "Operation Buhtrap malware distributed via ammyy.com",
     "published": "2015-11-11",
@@ -1457,6 +1841,40 @@
     "actors": [
       "tiny-spider"
     ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "dde5cac30e0f5eccf4f67e6d07246e0bc21f9e8a",
+    "title": "Operation Buhtrap malware distributed via ammyy.com",
+    "published": "2015-11-11",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-11-11%20-%20Operation%20Buhtrap%20malware%20distributed%20via%20ammyy.com.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/dde5cac30e0f5eccf4f67e6d07246e0bc21f9e8a.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "2a0640c82ee4840c75b857f2048be31f17ca942a",
+    "title": "Bookworm Trojan- A Model of Modular Architecture",
+    "published": "2015-11-10",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-11-10%20-%20Bookworm%20Trojan-%20A%20Model%20of%20Modular%20Architecture.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/2a0640c82ee4840c75b857f2048be31f17ca942a.pdf",
+    "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1502,6 +1920,23 @@
     ]
   },
   {
+    "id": "97960e4cb15166aff9e8faea67d991e127175009",
+    "title": "Talking to Dridex (part 0) – inside the dropper",
+    "published": "2015-11-10",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-11-10%20-%20Talking%20to%20Dridex%20(part%200)%20%E2%80%93%20inside%20the%20dropper.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/97960e4cb15166aff9e8faea67d991e127175009.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "c2131be1e6600b41cade25e90a86b456a0e6530a",
     "title": "Talking to Dridex (part 0) – inside the dropper",
     "published": "2015-11-10",
@@ -1523,7 +1958,7 @@
   },
   {
     "id": "ec2b86e072ccfbc52c8474ddc66d756c7a9079cc",
-    "title": "2016-08-08 - MONSOON - Analysis Of An APT Campaign",
+    "title": "Top 10 Most Dangerous ICS Software Weaknesses.pdf",
     "published": "2015-11-07",
     "date_basis": "file-metadata",
     "organisation": null,
@@ -1535,6 +1970,40 @@
     "cves": [
       "CVE-2012-4690"
     ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "74cb8f0d9dbe9fadc89019d55170e2acb2747ac4",
+    "title": "OmniRAT Takes Over Android Devices Through Social Engineering Tricks",
+    "published": "2015-11-06",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-11-06%20-%20OmniRAT%20Takes%20Over%20Android%20Devices%20Through%20Social%20Engineering%20Tricks.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/74cb8f0d9dbe9fadc89019d55170e2acb2747ac4.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "a9fac8a86813eed18c1cf56a5396cb2763bb1cc3",
+    "title": "Sphinx Moth- Expanding our knowledge of the “Wild Neutron” - “Morpho” APT",
+    "published": "2015-11-05",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-11-05%20-%20Sphinx%20Moth-%20Expanding%20our%20knowledge%20of%20the%20%E2%80%9CWild%20Neutron%E2%80%9D%20-%20%E2%80%9CMorpho%E2%80%9D%20APT.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/a9fac8a86813eed18c1cf56a5396cb2763bb1cc3.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
     "techniques": [],
     "sources": [
       "orkl"
@@ -1560,6 +2029,40 @@
     ]
   },
   {
+    "id": "126b587d1879e509bd072547bdfa4087ac13f3a0",
+    "title": "DroidJack isn’t the only spying software out there- Avast discovers OmniRat",
+    "published": "2015-11-04",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-11-04%20-%20DroidJack%20isn%E2%80%99t%20the%20only%20spying%20software%20out%20there-%20Avast%20discovers%20OmniRat.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/126b587d1879e509bd072547bdfa4087ac13f3a0.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "2115a7cff39bdf4a5449ceed47651489e327686a",
+    "title": "“Offline” Ransomware Encrypts Your Data without C&C Communication",
+    "published": "2015-11-04",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-11-04%20-%20%E2%80%9COffline%E2%80%9D%20Ransomware%20Encrypts%20Your%20Data%20without%20C&C%20Communication.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/2115a7cff39bdf4a5449ceed47651489e327686a.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "4911b137926b6b17044141527980cdb9e4a9cb13",
     "title": "Microsoft PowerPoint - CCT-W08_Evolving-Threats-Dissection-of-a-Cyber-Espionage-Attack.pptx",
     "published": "2015-11-04",
@@ -1575,6 +2078,23 @@
     "cves": [
       "CVE-2015-1701"
     ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "8fcea963318f214f1b54d75b81b04ad7d7cf8305",
+    "title": "A Technical Look At Dyreza",
+    "published": "2015-11-04",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-11-04%20-%20A%20Technical%20Look%20At%20Dyreza.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/8fcea963318f214f1b54d75b81b04ad7d7cf8305.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
     "techniques": [],
     "sources": [
       "orkl"
@@ -1693,6 +2213,76 @@
     ]
   },
   {
+    "id": "d7d5120eb1bed76ee644e49c979d8a276d4cfb67",
+    "title": "Reversing the SMS C&C protocol of Emmental (1st part - understanding the code)",
+    "published": "2015-11-03",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-11-03%20-%20Reversing%20the%20SMS%20C&C%20protocol%20of%20Emmental%20(1st%20part%20-%20understanding%20the%20code).pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/d7d5120eb1bed76ee644e49c979d8a276d4cfb67.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "8b2175a7449fae74d6d8b231321142584670a8e5",
+    "title": "Troj-Cryakl-B",
+    "published": "2015-11-02",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-11-02%20-%20Troj-Cryakl-B.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/8b2175a7449fae74d6d8b231321142584670a8e5.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "b6b81ac0d51fa69c10a42482fa5264e7ccb660c7",
+    "title": "Shifu – the rise of a self-destructive banking trojan",
+    "published": "2015-11-02",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-11-02%20-%20Shifu%20%E2%80%93%20the%20rise%20of%20a%20self-destructive%20banking%20trojan.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/b6b81ac0d51fa69c10a42482fa5264e7ccb660c7.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2015-0003"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "c6ac65b2f23da7040346ee517f1557c1042297f0",
+    "title": "Modular trojan for hidden access to a computer",
+    "published": "2015-11-02",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-11-02%20-%20Modular%20trojan%20for%20hidden%20access%20to%20a%20computer.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/c6ac65b2f23da7040346ee517f1557c1042297f0.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "e034e8b7e11481f67b3855dba738a943c6184528",
     "title": "Модульный троян для скрытого доступа к компьютеру",
     "published": "2015-11-02",
@@ -1789,6 +2379,23 @@
     ]
   },
   {
+    "id": "694a139c861adafade19906c797c0145392c9f7c",
+    "title": "Reversing the C2C HTTP Emmental communication",
+    "published": "2015-10-28",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-10-28%20-%20Reversing%20the%20C2C%20HTTP%20Emmental%20communication.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/694a139c861adafade19906c797c0145392c9f7c.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "75fd68bb0cf91b45be8595c21229132e38bf951b",
     "title": "Reversing the C2C HTTP Emmental communication",
     "published": "2015-10-28",
@@ -1842,6 +2449,23 @@
     ]
   },
   {
+    "id": "87da31f2a788b1291a87a8c245d9556756cece72",
+    "title": "Duuzer back door Trojan targets South Korea to take over computers",
+    "published": "2015-10-26",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-10-26%20-%20Duuzer%20back%20door%20Trojan%20targets%20South%20Korea%20to%20take%20over%20computers.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/87da31f2a788b1291a87a8c245d9556756cece72.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "418be3ed954329988d2a7e0d22fb01b524cf4cb8",
     "title": "Research, News, and Perspectives",
     "published": "2015-10-22",
@@ -1850,6 +2474,40 @@
     "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/pawn-storm-targets-mh17-investigation-team/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/418be3ed954329988d2a7e0d22fb01b524cf4cb8.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "ac5059ead2aebbdb47ab9899deee38e583a5dc10",
+    "title": "Pawn Storm Targets MH17 Investigation Team",
+    "published": "2015-10-22",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-10-22%20-%20Pawn%20Storm%20Targets%20MH17%20Investigation%20Team.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/ac5059ead2aebbdb47ab9899deee38e583a5dc10.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "5e6dd730b0f1ac744d239c8003002311f7da82d4",
+    "title": "Github Repository for AllaKore",
+    "published": "2015-10-19",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-10-19%20-%20Github%20Repository%20for%20AllaKore.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/5e6dd730b0f1ac744d239c8003002311f7da82d4.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -1876,6 +2534,23 @@
     ]
   },
   {
+    "id": "d68c60f47c3960e61bc93a3072e32f3eccab9516",
+    "title": "How to Write Simple but Sound Yara Rules – Part 2",
+    "published": "2015-10-17",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-10-17%20-%20How%20to%20Write%20Simple%20but%20Sound%20Yara%20Rules%20%E2%80%93%20Part%202.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/d68c60f47c3960e61bc93a3072e32f3eccab9516.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "0f6bedc77ec1cd79a67f5e519ae49a22a6233f77",
     "title": "Surveillance Malware Trends: Tracking Predator Pain and HawkEye",
     "published": "2015-10-16",
@@ -1884,6 +2559,23 @@
     "url": "https://researchcenter.paloaltonetworks.com/2015/10/surveillance-malware-trends-tracking-predator-pain-and-hawkeye/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/0f6bedc77ec1cd79a67f5e519ae49a22a6233f77.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "1592d1f9fa51fdd909f67beb6e223ec4228e9190",
+    "title": "Surveillance Malware Trends- Tracking Predator Pain and HawkEye",
+    "published": "2015-10-16",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-10-16%20-%20Surveillance%20Malware%20Trends-%20Tracking%20Predator%20Pain%20and%20HawkEye.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/1592d1f9fa51fdd909f67beb6e223ec4228e9190.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -1938,6 +2630,23 @@
     "url": "https://github.com/NullArray/Archivist",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/75b2747e1b22eb6ce6274dc211a26f3832d6f0ee.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "8f795cdc7a389642f102374b55142c056f3ce76c",
+    "title": "Archivist",
+    "published": "2015-10-15",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-10-15%20-%20Archivist.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/8f795cdc7a389642f102374b55142c056f3ce76c.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -2025,6 +2734,74 @@
     ]
   },
   {
+    "id": "8c4ededb7a829197fdb393aed25709a35ad06a51",
+    "title": "Dridex (Bugat v5) Botnet Takeover Operation",
+    "published": "2015-10-13",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-10-13%20-%20Dridex%20(Bugat%20v5)%20Botnet%20Takeover%20Operation.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/8c4ededb7a829197fdb393aed25709a35ad06a51.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "93a0e9be0b0e1d8620012439ebe6935296c0bd4e",
+    "title": "New Adobe Flash Zero-Day Used in Pawn Storm Campaign Targeting Foreign Affairs Ministries",
+    "published": "2015-10-13",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-10-13%20-%20New%20Adobe%20Flash%20Zero-Day%20Used%20in%20Pawn%20Storm%20Campaign%20Targeting%20Foreign%20Affairs%20Ministries.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/93a0e9be0b0e1d8620012439ebe6935296c0bd4e.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "b860e50ecabf1bca53fcfe26afc0fdaef4b11d30",
+    "title": "Prolific Cybercrime Gang Favors Legit Login Credentials",
+    "published": "2015-10-13",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-10-13%20-%20Prolific%20Cybercrime%20Gang%20Favors%20Legit%20Login%20Credentials.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/b860e50ecabf1bca53fcfe26afc0fdaef4b11d30.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "e91db5dda8854664cf12b00847d7ad2f82737011",
+    "title": "I am HDRoot! Part 2",
+    "published": "2015-10-13",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-10-13%20-%20I%20am%20HDRoot!%20Part%202.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/e91db5dda8854664cf12b00847d7ad2f82737011.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "ed1d8c208486862a472e2dd4f4588dd4d490bd75",
     "title": "I am HDRoot! Part 2",
     "published": "2015-10-13",
@@ -2036,6 +2813,23 @@
     "actors": [
       "G0025"
     ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "311502000ae08cda3415a2d5aa887c90d90b44a3",
+    "title": "Keybase Logger-Clipboard-CredsStealer campaign",
+    "published": "2015-10-12",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-10-12%20-%20Keybase%20Logger-Clipboard-CredsStealer%20campaign.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/311502000ae08cda3415a2d5aa887c90d90b44a3.pdf",
+    "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2069,6 +2863,40 @@
     "url": "http://files.brucon.org/2015/Tomczak_and_Ballenthin_Shims_for_the_Win.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c84fe736d1ea483428b66781fc2cd4c64cbeb7b1.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "0951e70e4473bcb2ec46137f33f28a29bf16f515",
+    "title": "Latest TeslaCrypt Ransomware Borrows Code From Carberp Trojan",
+    "published": "2015-10-09",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-10-09%20-%20Latest%20TeslaCrypt%20Ransomware%20Borrows%20Code%20From%20Carberp%20Trojan.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/0951e70e4473bcb2ec46137f33f28a29bf16f515.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "0f214d8fea349c4fab869a6798abd6a767e037a7",
+    "title": "Beta Bot Analysis- Part 1",
+    "published": "2015-10-09",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-10-09%20-%20Beta%20Bot%20Analysis-%20Part%201.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/0f214d8fea349c4fab869a6798abd6a767e037a7.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -2151,6 +2979,23 @@
     ]
   },
   {
+    "id": "dc29d43f79a0a5ca60627a25b27046a3776625af",
+    "title": "Dyre Malware Campaigners Innovate with Distribution Techniques",
+    "published": "2015-10-08",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-10-08%20-%20Dyre%20Malware%20Campaigners%20Innovate%20with%20Distribution%20Techniques.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/dc29d43f79a0a5ca60627a25b27046a3776625af.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "36fdb5f263a2abc93ab50d345d3626aded73050e",
     "title": "Hacker Group Creates Network of Fake LinkedIn Profiles",
     "published": "2015-10-07",
@@ -2171,6 +3016,40 @@
     ]
   },
   {
+    "id": "578cc82909982e90293b1cd80af32541275f1d44",
+    "title": "Hacker Group Creates Network of Fake LinkedIn Profiles",
+    "published": "2015-10-07",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-10-07%20-%20Hacker%20Group%20Creates%20Network%20of%20Fake%20LinkedIn%20Profiles.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/578cc82909982e90293b1cd80af32541275f1d44.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "04a9957cc210f5262d72cb2d4290dff935733237",
+    "title": "MOKER- A NEW APT DISCOVERED WITHIN A SENSITIVE NETWORK",
+    "published": "2015-10-06",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-10-06%20-%20MOKER-%20A%20NEW%20APT%20DISCOVERED%20WITHIN%20A%20SENSITIVE%20NETWORK.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/04a9957cc210f5262d72cb2d4290dff935733237.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "1648035d4151760f6b03cef8108080d38112df99",
     "title": "Targeted Attack Exposes OWA Weakness",
     "published": "2015-10-06",
@@ -2179,6 +3058,57 @@
     "url": "https://threatpost.com/targeted-attack-exposes-owa-weakness/114925/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1648035d4151760f6b03cef8108080d38112df99.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "40b5ce8e842eccf0c8704dbddc764f654dd054d2",
+    "title": "Targeted Attack Exposes OWA Weakness",
+    "published": "2015-10-06",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-10-06%20-%20Targeted%20Attack%20Exposes%20OWA%20Weakness.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/40b5ce8e842eccf0c8704dbddc764f654dd054d2.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "5fe1d8dec854d4a51f46d6fe3c9d191684d77b37",
+    "title": "Ticked Off- Upatre Malware’s Simple Anti-analysis Trick to Defeat Sandboxes",
+    "published": "2015-10-06",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-10-06%20-%20Ticked%20Off-%20Upatre%20Malware%E2%80%99s%20Simple%20Anti-analysis%20Trick%20to%20Defeat%20Sandboxes.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/5fe1d8dec854d4a51f46d6fe3c9d191684d77b37.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "6e0eca272f4b1ef240a4c1a867114507c8f9396b",
+    "title": "I am HDRoot! Part 1",
+    "published": "2015-10-06",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-10-06%20-%20I%20am%20HDRoot!%20Part%201.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/6e0eca272f4b1ef240a4c1a867114507c8f9396b.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -2280,6 +3210,23 @@
     ]
   },
   {
+    "id": "229e0ea6a47adce93e6a7d1d29d550419213ce6e",
+    "title": "Linux.Rekoobe.1",
+    "published": "2015-10-01",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-10-01%20-%20Linux.Rekoobe.1.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/229e0ea6a47adce93e6a7d1d29d550419213ce6e.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "23e76dd6426159173a0e9fbfceace4fd4f627e17",
     "title": "sb-report-threat-intelligence-groundhog.pdf",
     "published": "2015-10-01",
@@ -2314,6 +3261,74 @@
     ]
   },
   {
+    "id": "0ebd8899b5ff51a90d89c7c41b08f17d463e0b2d",
+    "title": "Andromeda Bot Analysis part 1",
+    "published": "2015-09-29",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-09-29%20-%20Andromeda%20Bot%20Analysis%20part%201.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/0ebd8899b5ff51a90d89c7c41b08f17d463e0b2d.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "99c7900132b1c3fceef11741849416e448170dc3",
+    "title": "Andromeda Bot Analysis part 2",
+    "published": "2015-09-29",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-09-29%20-%20Andromeda%20Bot%20Analysis%20part%202.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/99c7900132b1c3fceef11741849416e448170dc3.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "3e1d8a89fc635e00f9ffb2d1e1f5eebce84c5ab2",
+    "title": "Gaza cybergang, where’s your IR team-",
+    "published": "2015-09-28",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-09-28%20-%20Gaza%20cybergang,%20where%E2%80%99s%20your%20IR%20team-.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/3e1d8a89fc635e00f9ffb2d1e1f5eebce84c5ab2.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "4a85a4b01021238d4ce3593a796e098875c5690c",
+    "title": "Two New PoS Malware Affecting US SMBs",
+    "published": "2015-09-28",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-09-28%20-%20Two%20New%20PoS%20Malware%20Affecting%20US%20SMBs.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/4a85a4b01021238d4ce3593a796e098875c5690c.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "97c8e45baa94c386eb768aa40c1246742b2d5c0c",
     "title": "Research, News, and Perspectives",
     "published": "2015-09-28",
@@ -2322,6 +3337,23 @@
     "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/two-new-pos-malware-affecting-us-smbs/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/97c8e45baa94c386eb768aa40c1246742b2d5c0c.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "c73e6cb8781a13e605555a3b245ff3f759e64aa2",
+    "title": "Hammertoss- What, Me Worry-",
+    "published": "2015-09-28",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-09-28%20-%20Hammertoss-%20What,%20Me%20Worry-.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/c73e6cb8781a13e605555a3b245ff3f759e64aa2.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -2365,6 +3397,23 @@
     ]
   },
   {
+    "id": "db4d776abd7721a2b8c2e076c34c78bff893aef2",
+    "title": "Notes on Linux-Xor.DDoS",
+    "published": "2015-09-25",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-09-25%20-%20Notes%20on%20Linux-Xor.DDoS.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/db4d776abd7721a2b8c2e076c34c78bff893aef2.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "634be62fe2d04e87745513d7788f86bb1b9f6372",
     "title": "Meet GreenDispenser: A New Breed of ATM Malware | Proofpoint US",
     "published": "2015-09-24",
@@ -2390,6 +3439,57 @@
     "url": "http://blog.trendmicro.com/trendlabs-security-intelligence/credit-card-scraping-kasidet-builder-leads-to-spike-in-detections/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/95b3fa544b20766c73b670da5235d4e8f672aeef.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "bdd4153a36e9b533498859bfdd8497fd6798af68",
+    "title": "Credit Card-Scraping Kasidet Builder Leads to Spike in Detections",
+    "published": "2015-09-24",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-09-24%20-%20Credit%20Card-Scraping%20Kasidet%20Builder%20Leads%20to%20Spike%20in%20Detections.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/bdd4153a36e9b533498859bfdd8497fd6798af68.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "d14f719244231186162e81f1e2e88058d69ab50e",
+    "title": "Kovter malware learns from Poweliks with persistent fileless registry update",
+    "published": "2015-09-24",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-09-24%20-%20Kovter%20malware%20learns%20from%20Poweliks%20with%20persistent%20fileless%20registry%20update.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/d14f719244231186162e81f1e2e88058d69ab50e.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "058628b37b708f5358d303ac071eac7635f38492",
+    "title": "Quaverse RAT- Remote-Access-as-a-Service",
+    "published": "2015-09-23",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-09-23%20-%20Quaverse%20RAT-%20Remote-Access-as-a-Service.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/058628b37b708f5358d303ac071eac7635f38492.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -2456,6 +3556,25 @@
     ]
   },
   {
+    "id": "d46d02c0ac5baf72c2ba41092742a7ec71e198a7",
+    "title": "Chinese Actors Use ‘3102’ Malware in Attacks on US Government and EU Media",
+    "published": "2015-09-23",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-09-23%20-%20Chinese%20Actors%20Use%20%E2%80%983102%E2%80%99%20Malware%20in%20Attacks%20on%20US%20Government%20and%20EU%20Media.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/d46d02c0ac5baf72c2ba41092742a7ec71e198a7.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2012-0158"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "dbd710751a6c32ba91401fb5e5623f46b4d2475f",
     "title": "Project_CAMERASHY_ThreatConnect_Copyright_2015",
     "published": "2015-09-23",
@@ -2475,6 +3594,23 @@
     "sources": [
       "orkl",
       "paper"
+    ]
+  },
+  {
+    "id": "c2979f8f88d101cd7a337a7d634e14fe3fbf39ad",
+    "title": "Operation Arid Viper Slithers Back into View",
+    "published": "2015-09-18",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-09-18%20-%20Operation%20Arid%20Viper%20Slithers%20Back%20into%20View.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/c2979f8f88d101cd7a337a7d634e14fe3fbf39ad.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
     ]
   },
   {
@@ -2534,6 +3670,40 @@
     "sources": [
       "orkl",
       "paper"
+    ]
+  },
+  {
+    "id": "75c4a6427b143fe3946d6a3108a86dee9f3d4ce9",
+    "title": "The Dukes- 7 Years Of Russian Cyber-Espionage",
+    "published": "2015-09-17",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-09-17%20-%20The%20Dukes-%207%20Years%20Of%20Russian%20Cyber-Espionage.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/75c4a6427b143fe3946d6a3108a86dee9f3d4ce9.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "848e4a0403977a8a7c990dbdb69212e724456993",
+    "title": "Operation Iron Tiger- Attackers Shift from East Asia to the United States",
+    "published": "2015-09-16",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-09-16%20-%20Operation%20Iron%20Tiger-%20Attackers%20Shift%20from%20East%20Asia%20to%20the%20United%20States.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/848e4a0403977a8a7c990dbdb69212e724456993.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
     ]
   },
   {
@@ -2638,6 +3808,23 @@
     ]
   },
   {
+    "id": "733ef61e5932bef31f74a3120fe5248bca294299",
+    "title": "The Shade Encryptor- a Double Threat",
+    "published": "2015-09-14",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-09-14%20-%20The%20Shade%20Encryptor-%20a%20Double%20Threat.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/733ef61e5932bef31f74a3120fe5248bca294299.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "a851272326c9506046d982bead637689fecadb31",
     "title": "The Shade Encryptor: a Double Threat",
     "published": "2015-09-14",
@@ -2646,6 +3833,23 @@
     "url": "https://securelist.com/the-shade-encryptor-a-double-threat/72087/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a851272326c9506046d982bead637689fecadb31.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "36acbbe42b88e6463e1beaf6fe942e8122deb306",
+    "title": "Stuxnet code",
+    "published": "2015-09-12",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-09-12%20-%20Stuxnet%20code.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/36acbbe42b88e6463e1beaf6fe942e8122deb306.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -2695,7 +3899,7 @@
   },
   {
     "id": "74799e9eccee2f5246a7324da21240a3fedd9374",
-    "title": "2016-11-08 - Analysis of IOS.GUIINJECT Adware Library",
+    "title": "SANS - State of Security in Control Systems Today - 2015.pdf",
     "published": "2015-09-11",
     "date_basis": "file-metadata",
     "organisation": null,
@@ -2739,6 +3943,40 @@
     "actors": [
       "G0120"
     ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "89a983bd54dfa1f87c69c3b4950a078f326d260b",
+    "title": "SUCEFUL- Next Generation ATM Malware",
+    "published": "2015-09-11",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-09-11%20-%20SUCEFUL-%20Next%20Generation%20ATM%20Malware.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/89a983bd54dfa1f87c69c3b4950a078f326d260b.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "bc337a425be60bf9c3ec72976e3e042b2c6d8f5e",
+    "title": "CSI MacMark- Janicab",
+    "published": "2015-09-11",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-09-11%20-%20CSI%20MacMark-%20Janicab.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/bc337a425be60bf9c3ec72976e3e042b2c6d8f5e.pdf",
+    "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2827,6 +4065,40 @@
     ]
   },
   {
+    "id": "5c394cfe38b39e8ff5435a0954b7a1023a317dbe",
+    "title": "Pony Stealer Malware",
+    "published": "2015-09-09",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-09-09%20-%20Pony%20Stealer%20Malware.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/5c394cfe38b39e8ff5435a0954b7a1023a317dbe.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "9cac91ff51adee6fd0a04f4722d4f76e0d436857",
+    "title": "Satellite Turla- APT Command and Control in the Sky",
+    "published": "2015-09-09",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-09-09%20-%20Satellite%20Turla-%20APT%20Command%20and%20Control%20in%20the%20Sky.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/9cac91ff51adee6fd0a04f4722d4f76e0d436857.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "b103b2519187e38b2c0dcb6abc6653bd640bed72",
     "title": "Satellite Turla: APT Command and Control in the Sky",
     "published": "2015-09-09",
@@ -2909,6 +4181,26 @@
     "sources": [
       "orkl",
       "paper"
+    ]
+  },
+  {
+    "id": "9666783a96ea6ed4a2859848bd3fb99c75798d85",
+    "title": "Carbanak gang is back and packing new guns",
+    "published": "2015-09-08",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-09-08%20-%20Carbanak%20gang%20is%20back%20and%20packing%20new%20guns.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/9666783a96ea6ed4a2859848bd3fb99c75798d85.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2015-1770",
+      "CVE-2015-2426"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
     ]
   },
   {
@@ -3027,6 +4319,23 @@
     ]
   },
   {
+    "id": "5fc4313c48d6c179bf1c5a389adb794a2529c7e1",
+    "title": "Fancy Bear",
+    "published": "2015-09-01",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-09-01%20-%20Fancy%20Bear.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/5fc4313c48d6c179bf1c5a389adb794a2529c7e1.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "79f3de3c0445d389aab8db22b2071fb85d81b230",
     "title": "Fancy Bear",
     "published": "2015-09-01",
@@ -3035,6 +4344,23 @@
     "url": "https://en.wikipedia.org/wiki/Fancy_Bear",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/79f3de3c0445d389aab8db22b2071fb85d81b230.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "9c9b98bad0b5576e11cc94e5106ef1a3c6a3bb76",
+    "title": "Attackers Target Organizations in Japan; Transform Local Sites into C&C Servers for EMDIVI Backdoor",
+    "published": "2015-09-01",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-09-01%20-%20Attackers%20Target%20Organizations%20in%20Japan;%20Transform%20Local%20Sites%20into%20C&C%20Servers%20for%20EMDIVI%20Backdoor.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/9c9b98bad0b5576e11cc94e5106ef1a3c6a3bb76.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -3081,6 +4407,23 @@
     ]
   },
   {
+    "id": "5d424f5eb16a353613dcee428c43e803806bdea1",
+    "title": "Shifu- ‘Masterful’ New Banking Trojan Is Attacking 14 Japanese Banks",
+    "published": "2015-08-31",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-08-31%20-%20Shifu-%20%E2%80%98Masterful%E2%80%99%20New%20Banking%20Trojan%20Is%20Attacking%2014%20Japanese%20Banks.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/5d424f5eb16a353613dcee428c43e803806bdea1.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "3c0a417aa9d76ce3a9899ad6afd7d34340f91901",
     "title": "New Spear Phishing Campaign Pretends to be EFF",
     "published": "2015-08-27",
@@ -3089,6 +4432,40 @@
     "url": "https://www.eff.org/deeplinks/2015/08/new-spear-phishing-campaign-pretends-be-eff",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3c0a417aa9d76ce3a9899ad6afd7d34340f91901.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "42558439a47011f614addae38bee2541c27d151e",
+    "title": "New Spear Phishing Campaign Pretends to be EFF",
+    "published": "2015-08-27",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-08-27%20-%20New%20Spear%20Phishing%20Campaign%20Pretends%20to%20be%20EFF.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/42558439a47011f614addae38bee2541c27d151e.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "9ec9ef737c1df3c6ba424d8cc2aa492670efe762",
+    "title": "London Calling- Two-Factor Authentication Phishing From Iran",
+    "published": "2015-08-27",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-08-27%20-%20London%20Calling-%20Two-Factor%20Authentication%20Phishing%20From%20Iran.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/9ec9ef737c1df3c6ba424d8cc2aa492670efe762.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -3132,6 +4509,23 @@
     ]
   },
   {
+    "id": "ca393832efd79da679fe333211847bfade0920a5",
+    "title": "Sphinx, a new variant of Zeus available for sale in the underground",
+    "published": "2015-08-26",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-08-26%20-%20Sphinx,%20a%20new%20variant%20of%20Zeus%20available%20for%20sale%20in%20the%20underground.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/ca393832efd79da679fe333211847bfade0920a5.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "4941d55e63df64165b3b140207e716d1228247f2",
     "title": "Sphinx: New Zeus Variant for Sale on the Black Market - Darkmatters",
     "published": "2015-08-24",
@@ -3140,6 +4534,23 @@
     "url": "https://web.archive.org/web/20160130165709/http://darkmatters.norsecorp.com/2015/08/24/sphinx-new-zeus-variant-for-sale-on-the-black-market/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4941d55e63df64165b3b140207e716d1228247f2.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "5e7299b78dc33c16b9c0dc6e0e42b04ff5da900e",
+    "title": "Sphinx- New Zeus Variant for Sale on the Black Market",
+    "published": "2015-08-24",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-08-24%20-%20Sphinx-%20New%20Zeus%20Variant%20for%20Sale%20on%20the%20Black%20Market.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/5e7299b78dc33c16b9c0dc6e0e42b04ff5da900e.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -3176,6 +4587,23 @@
     "url": "https://researchcenter.paloaltonetworks.com/2015/08/retefe-banking-trojan-targets-sweden-switzerland-and-japan/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6d3516b0d17a1a4220c0c0802591e101d252efe7.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "73f7aa412503578f195883abb58e05b52ba4ed03",
+    "title": "Retefe Banking Trojan Targets Sweden, Switzerland and Japan",
+    "published": "2015-08-20",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-08-20%20-%20Retefe%20Banking%20Trojan%20Targets%20Sweden,%20Switzerland%20and%20Japan.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/73f7aa412503578f195883abb58e05b52ba4ed03.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -3246,6 +4674,23 @@
     ]
   },
   {
+    "id": "1b6ea97ea2c94bb3fd7b71577bedb9837538a74b",
+    "title": "Antak WebShell",
+    "published": "2015-08-19",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-08-19%20-%20Antak%20WebShell.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/1b6ea97ea2c94bb3fd7b71577bedb9837538a74b.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "68f5e800be94213b5fec499754aef6fe60ef13fe",
     "title": "New Internet Explorer zero-day exploited in Hong Kong attacks",
     "published": "2015-08-19",
@@ -3266,6 +4711,23 @@
     ]
   },
   {
+    "id": "8f752a9c453ec5ec4adac7e89cc9da5f6fb2b74b",
+    "title": "Inside Neutrino botnet builder",
+    "published": "2015-08-19",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-08-19%20-%20Inside%20Neutrino%20botnet%20builder.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/8f752a9c453ec5ec4adac7e89cc9da5f6fb2b74b.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "ad6a5081bc29d9d23c632b76de20339831990f2d",
     "title": "Inside Neutrino botnet builder | Malwarebytes Labs",
     "published": "2015-08-19",
@@ -3274,6 +4736,40 @@
     "url": "https://blog.malwarebytes.com/threat-analysis/2015/08/inside-neutrino-botnet-builder/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ad6a5081bc29d9d23c632b76de20339831990f2d.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "3cdcb801c1f2d8883e9771fbe46fa1927773aa8e",
+    "title": "Knowledge Fragment- Unwrapping Fobber",
+    "published": "2015-08-18",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-08-18%20-%20Knowledge%20Fragment-%20Unwrapping%20Fobber.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/3cdcb801c1f2d8883e9771fbe46fa1927773aa8e.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "49ab5177e4998a548d8524216a8656dd18deb6b4",
+    "title": "ransomware open-sources",
+    "published": "2015-08-18",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-08-18%20-%20ransomware%20open-sources.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/49ab5177e4998a548d8524216a8656dd18deb6b4.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -3360,6 +4856,23 @@
     ]
   },
   {
+    "id": "058923ab9e3f8cc46888448aef6e2a41caacad38",
+    "title": "Islamic State Hacking Division",
+    "published": "2015-08-12",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-08-12%20-%20Islamic%20State%20Hacking%20Division.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/058923ab9e3f8cc46888448aef6e2a41caacad38.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "07d4bd7ac5d7a7662acf7b4adf836fa9482dfa7e",
     "title": "Islamic State Hacking Division",
     "published": "2015-08-12",
@@ -3368,6 +4881,23 @@
     "url": "https://en.wikipedia.org/wiki/Islamic_State_Hacking_Division",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/07d4bd7ac5d7a7662acf7b4adf836fa9482dfa7e.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "bed9be5c25776105e976efcfe3ea291d4f91e815",
+    "title": "Tinba Trojan Sets Its Sights on Romania",
+    "published": "2015-08-12",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-08-12%20-%20Tinba%20Trojan%20Sets%20Its%20Sights%20on%20Romania.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/bed9be5c25776105e976efcfe3ea291d4f91e815.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -3416,6 +4946,23 @@
     ]
   },
   {
+    "id": "a3ba49d68fcdd49cf7989403e9f68e9a262421dd",
+    "title": "What’s Next in Malware After Kuluoz-",
+    "published": "2015-08-10",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-08-10%20-%20What%E2%80%99s%20Next%20in%20Malware%20After%20Kuluoz-.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/a3ba49d68fcdd49cf7989403e9f68e9a262421dd.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "e92d19e7054c2d384d2afac5027e9fae5ea51596",
     "title": "HTExploitTelemetry",
     "published": "2015-08-10",
@@ -3450,6 +4997,25 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "f3df831ddb7bf4bf86060157b5468f35f6b484b2",
+    "title": "Darkhotel’s attacks in 2015",
+    "published": "2015-08-10",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-08-10%20-%20Darkhotel%E2%80%99s%20attacks%20in%202015.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/f3df831ddb7bf4bf86060157b5468f35f6b484b2.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2014-0497"
+    ],
     "techniques": [],
     "sources": [
       "orkl"
@@ -3505,6 +5071,43 @@
     "url": "https://arstechnica.com/information-technology/2015/08/newly-discovered-chinese-hacking-group-hacked-100-websites-to-use-as-watering-holes/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4a50222f670f781ca703820d626b3a3bc659eb97.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2010-0738",
+      "CVE-2011-3544"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "d19e697769d7c51e575278600d4ddfa53ad4be28",
+    "title": "Who’s Behind Your Proxy- Uncovering Bunitu’s Secrets",
+    "published": "2015-08-05",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-08-05%20-%20Who%E2%80%99s%20Behind%20Your%20Proxy-%20Uncovering%20Bunitu%E2%80%99s%20Secrets.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/d19e697769d7c51e575278600d4ddfa53ad4be28.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "d93b09b770b91c7e24d22107ece6172745369b3c",
+    "title": "Threat Group 3390 Cyberespionage",
+    "published": "2015-08-05",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-08-05%20-%20Threat%20Group%203390%20Cyberespionage.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/d93b09b770b91c7e24d22107ece6172745369b3c.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [
@@ -3628,8 +5231,25 @@
     ]
   },
   {
+    "id": "d2e7cf5d5413160cde7c1535c3a0a2d5077e0c72",
+    "title": "OTX Pulse on PlugX",
+    "published": "2015-07-31",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-07-31%20-%20OTX%20Pulse%20on%20PlugX.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/d2e7cf5d5413160cde7c1535c3a0a2d5077e0c72.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "f02692dea716ee6a85a087fc7887a3c3fab3bbe2",
-    "title": "2016-07-21 - Phishing Attacks Employ Old but Effective Password Stealer",
+    "title": "ICS-CERT - Industrial Control Systems Assessments - FY 2014.pdf",
     "published": "2015-07-31",
     "date_basis": "file-metadata",
     "organisation": null,
@@ -3665,6 +5285,25 @@
     ]
   },
   {
+    "id": "263fcf3bdd14ee33f67160b85defa5f35f6115f4",
+    "title": "Sakula Malware Family",
+    "published": "2015-07-30",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-07-30%20-%20Sakula%20Malware%20Family.pdf",
+    "url_ok": true,
+    "archive_url": "https://archive.orkl.eu/263fcf3bdd14ee33f67160b85defa5f35f6115f4.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2014-0322"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "3f11377a0b8a174b5e827fc5a58107a136ec8e31",
     "title": "Operation Potao Express: Analysis of a cyber-espionage toolkit",
     "published": "2015-07-30",
@@ -3673,6 +5312,23 @@
     "url": "https://www.welivesecurity.com/2015/07/30/operation-potao-express/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3f11377a0b8a174b5e827fc5a58107a136ec8e31.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "97e8c74938e0bcbe89462ecfa96bee4ea4d12dd0",
+    "title": "Operation Potao Express- Analysis of a cyber‑espionage toolkit",
+    "published": "2015-07-30",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-07-30%20-%20Operation%20Potao%20Express-%20Analysis%20of%20a%20cyber%E2%80%91espionage%20toolkit.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/97e8c74938e0bcbe89462ecfa96bee4ea4d12dd0.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -3839,6 +5495,27 @@
     ]
   },
   {
+    "id": "c0a9e3877c768092cece9e844f645848896283f0",
+    "title": "UPS- Observations on CVE-2015-3113, Prior Zero-Days and the Pirpi Payload",
+    "published": "2015-07-27",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-07-27%20-%20UPS-%20Observations%20on%20CVE-2015-3113,%20Prior%20Zero-Days%20and%20the%20Pirpi%20Payload.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/c0a9e3877c768092cece9e844f645848896283f0.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2014-1776",
+      "CVE-2014-6332",
+      "CVE-2015-3113"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "paper:apt29-hammertoss-stealthy-tactics-define-a",
     "title": "apt29-hammertoss-stealthy-tactics-define-a",
     "published": "2015-07-27",
@@ -3855,6 +5532,23 @@
     "techniques": [],
     "sources": [
       "paper"
+    ]
+  },
+  {
+    "id": "9eee70eeab8908162af6d1f4d48e6c58345c2716",
+    "title": "An Analysis of the Qadars Banking Trojan",
+    "published": "2015-07-23",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-07-23%20-%20An%20Analysis%20of%20the%20Qadars%20Banking%20Trojan.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/9eee70eeab8908162af6d1f4d48e6c58345c2716.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
     ]
   },
   {
@@ -3930,6 +5624,23 @@
     ]
   },
   {
+    "id": "d65db6e8d6df376724615b892905be07a0766855",
+    "title": "Duke APT group's latest tools- cloud services and Linux support",
+    "published": "2015-07-22",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-07-22%20-%20Duke%20APT%20group's%20latest%20tools-%20cloud%20services%20and%20Linux%20support.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/d65db6e8d6df376724615b892905be07a0766855.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "paper:Duke_cloud_Linux",
     "title": "Duke_cloud_Linux",
     "published": "2015-07-22",
@@ -3978,6 +5689,25 @@
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2015-3673"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "a86b32da9049416f50b7480627d4f3ef3dfab348",
+    "title": "Watering Hole Attack on Aerospace Firm Exploits CVE-2015-5122 to Install IsSpace Backdoor",
+    "published": "2015-07-20",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-07-20%20-%20Watering%20Hole%20Attack%20on%20Aerospace%20Firm%20Exploits%20CVE-2015-5122%20to%20Install%20IsSpace%20Backdoor.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/a86b32da9049416f50b7480627d4f3ef3dfab348.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2015-5122"
     ],
     "techniques": [],
     "sources": [
@@ -4047,6 +5777,23 @@
     ]
   },
   {
+    "id": "514b3fe4aa3e56902fe3149422623a5cf0ab692c",
+    "title": "The Faulty Precursor of Pykspa's DGA",
+    "published": "2015-07-19",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-07-19%20-%20The%20Faulty%20Precursor%20of%20Pykspa's%20DGA.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/514b3fe4aa3e56902fe3149422623a5cf0ab692c.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "6154598b226307eb0d060d540f8b3fa30d4331cb",
     "title": "The Faulty Precursor of Pykspa's DGA",
     "published": "2015-07-19",
@@ -4106,6 +5853,40 @@
     ]
   },
   {
+    "id": "563a0dac7fbe297332b36755f71eb65cddaaa794",
+    "title": "TeslaCrypt 2.0 disguised as CryptoWall",
+    "published": "2015-07-14",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-07-14%20-%20TeslaCrypt%202.0%20disguised%20as%20CryptoWall.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/563a0dac7fbe297332b36755f71eb65cddaaa794.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "a3e9d9df7a1f295e9a1941efd98a4043d440b6be",
+    "title": "BernhardPOS",
+    "published": "2015-07-14",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-07-14%20-%20BernhardPOS.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/a3e9d9df7a1f295e9a1941efd98a4043d440b6be.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "e2119a7e79ef31d0177a10c784b22bf2ada8f16d",
     "title": "TeslaCrypt 2.0 disguised as CryptoWall",
     "published": "2015-07-14",
@@ -4159,6 +5940,23 @@
     ]
   },
   {
+    "id": "19f96fb13fab03915cf0cf3a301dc9941e8dd5ea",
+    "title": "Revisiting The Bunitu Trojan",
+    "published": "2015-07-13",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-07-13%20-%20Revisiting%20The%20Bunitu%20Trojan.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/19f96fb13fab03915cf0cf3a301dc9941e8dd5ea.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "4d638220f575b7d43e425d547d15e225da553d1d",
     "title": "Endpoint Protection - Symantec Enterprise",
     "published": "2015-07-13",
@@ -4170,6 +5968,23 @@
     "actors": [
       "G0016"
     ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "83fcb4509c4872e6148ff3711d3b32b41bfcaa76",
+    "title": "“Forkmeiamfamous”- Seaduke, latest weapon in the Duke armory",
+    "published": "2015-07-13",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-07-13%20-%20%E2%80%9CForkmeiamfamous%E2%80%9D-%20Seaduke,%20latest%20weapon%20in%20the%20Duke%20armory.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/83fcb4509c4872e6148ff3711d3b32b41bfcaa76.pdf",
+    "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4259,6 +6074,25 @@
     ]
   },
   {
+    "id": "f59251977931d0a395b1a8fd9a29fd10e44a7b31",
+    "title": "Sednit APT Group Meets Hacking Team",
+    "published": "2015-07-10",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-07-10%20-%20Sednit%20APT%20Group%20Meets%20Hacking%20Team.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/f59251977931d0a395b1a8fd9a29fd10e44a7b31.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2015-5119"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "195d8df2dc2070cf12f8325bf4755e6920ced996",
     "title": "PowerPoint Presentation",
     "published": "2015-07-09",
@@ -4337,6 +6171,26 @@
     ]
   },
   {
+    "id": "40d12dacd4b5e80ec4f7b7e928598c1640179ac0",
+    "title": "Animal Farm APT and the Shadow of French Intelligence",
+    "published": "2015-07-08",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-07-08%20-%20Animal%20Farm%20APT%20and%20the%20Shadow%20of%20French%20Intelligence.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/40d12dacd4b5e80ec4f7b7e928598c1640179ac0.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2011-4369",
+      "CVE-2014-0515"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "56b29d92aafa0c1769befc9f0453c088d55e2108",
     "title": "Wild Neutron – Economic espionage threat actor returns with new tricks",
     "published": "2015-07-08",
@@ -4350,6 +6204,42 @@
     "cves": [
       "CVE-2012-3213"
     ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "60e41fd9aeb90d4903b439ac7ee351f5428b264f",
+    "title": "Wild Neutron – Economic espionage threat actor returns with new tricks",
+    "published": "2015-07-08",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-07-08%20-%20Wild%20Neutron%20%E2%80%93%20Economic%20espionage%20threat%20actor%20returns%20with%20new%20tricks.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/60e41fd9aeb90d4903b439ac7ee351f5428b264f.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2012-3213"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "ea22e3f492cd406c7c051abbebfc8d2af37dc623",
+    "title": "Butterfly- Profiting from high-level corporate attacks",
+    "published": "2015-07-08",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-07-08%20-%20Butterfly-%20Profiting%20from%20high-level%20corporate%20attacks.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/ea22e3f492cd406c7c051abbebfc8d2af37dc623.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
     "techniques": [],
     "sources": [
       "orkl"
@@ -4396,6 +6286,43 @@
     "techniques": [],
     "sources": [
       "paper"
+    ]
+  },
+  {
+    "id": "67f6e77946bfd5bed97543d3f6fac165afb74ff8",
+    "title": "Dyre Banking Trojan Exploits CVE-2015-0057",
+    "published": "2015-07-07",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-07-07%20-%20Dyre%20Banking%20Trojan%20Exploits%20CVE-2015-0057.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/67f6e77946bfd5bed97543d3f6fac165afb74ff8.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2013-3660",
+      "CVE-2015-0057"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "3f8941d4b8be7c6ec70f7d86fc7bbb1745af82f2",
+    "title": "Spy Tech Company 'Hacking Team' Gets Hacked",
+    "published": "2015-07-05",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-07-05%20-%20Spy%20Tech%20Company%20'Hacking%20Team'%20Gets%20Hacked.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/3f8941d4b8be7c6ec70f7d86fc7bbb1745af82f2.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
     ]
   },
   {
@@ -4467,6 +6394,23 @@
     ]
   },
   {
+    "id": "73ef00f9bb47fe8eef9c28736fd86c0e65817a18",
+    "title": "Win32-Lethic Botnet Analysis",
+    "published": "2015-07-02",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-07-02%20-%20Win32-Lethic%20Botnet%20Analysis.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/73ef00f9bb47fe8eef9c28736fd86c0e65817a18.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "0c246863ee7d0513cdc2cebff9b173cd4bdc8134",
     "title": "43824.pdf",
     "published": "2015-07-01",
@@ -4504,7 +6448,7 @@
   },
   {
     "id": "52b018da1052c48a0da7a87d8c3a25a8857285b4",
-    "title": "2016-07-21 - Phishing Attacks Employ Old but Effective Password Stealer",
+    "title": "ICS-CERT - Year in Review - 2010.pdf",
     "published": "2015-06-30",
     "date_basis": "file-metadata",
     "organisation": null,
@@ -4631,6 +6575,23 @@
     ]
   },
   {
+    "id": "dd9b3e0b391c5f4ddcddb7cae764956052581c0d",
+    "title": "Sundown EK Spreads LuminosityLink RAT- Light After Dark",
+    "published": "2015-06-25",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-06-25%20-%20Sundown%20EK%20Spreads%20LuminosityLink%20RAT-%20Light%20After%20Dark.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/dd9b3e0b391c5f4ddcddb7cae764956052581c0d.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "7ceab9c75a1e80dd228fe524c610c5f939ede78b",
     "title": "Elusive HanJuan EK Drops New Tinba Version (updated)",
     "published": "2015-06-24",
@@ -4662,6 +6623,60 @@
     "actors": [
       "G0065"
     ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "94a88dd33eb3c5b71356eba949eb336d867efe58",
+    "title": "Elusive HanJuan EK Drops New Tinba Version (updated)",
+    "published": "2015-06-24",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-06-24%20-%20Elusive%20HanJuan%20EK%20Drops%20New%20Tinba%20Version%20(updated).pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/94a88dd33eb3c5b71356eba949eb336d867efe58.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2014-1776",
+      "CVE-2015-0359"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "9b35ce1259f8084541738687096cea2fedf17854",
+    "title": "Stealthy Cyberespionage Campaign Attacks With Social Engineering",
+    "published": "2015-06-24",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-06-24%20-%20Stealthy%20Cyberespionage%20Campaign%20Attacks%20With%20Social%20Engineering.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/9b35ce1259f8084541738687096cea2fedf17854.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "cda1cd455848ee54a9c7ff7bbec8a63121056239",
+    "title": "UnFIN4ished Business",
+    "published": "2015-06-24",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-06-24%20-%20UnFIN4ished%20Business.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/cda1cd455848ee54a9c7ff7bbec8a63121056239.pdf",
+    "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4727,6 +6742,44 @@
     ]
   },
   {
+    "id": "9717e88fb0173d82f45f5d41a3b0b1bfa39efa66",
+    "title": "Operation Clandestine Wolf – Adobe Flash Zero-Day in APT3 Phishing Campaign",
+    "published": "2015-06-23",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-06-23%20-%20Operation%20Clandestine%20Wolf%20%E2%80%93%20Adobe%20Flash%20Zero-Day%20in%20APT3%20Phishing%20Campaign.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/9717e88fb0173d82f45f5d41a3b0b1bfa39efa66.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2015-3113"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "1eee55bfc35583cdb0cff3d8a8235924450bac9b",
+    "title": "Games are over- Winnti is now targeting pharmaceutical companies",
+    "published": "2015-06-22",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-06-22%20-%20Games%20are%20over-%20Winnti%20is%20now%20targeting%20pharmaceutical%20companies.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/1eee55bfc35583cdb0cff3d8a8235924450bac9b.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2013-3906"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "b5ed62ff2039bcc3dccc82fdea7e98b441f8d3ea",
     "title": "Games are over: Winnti is now targeting pharmaceutical companies",
     "published": "2015-06-22",
@@ -4786,6 +6839,40 @@
     ]
   },
   {
+    "id": "42769bde968f19bb2443df0ac29e443fb3c82731",
+    "title": "Digital Attack on German Parliament- Investigative Report on the Hack of the Left Party Infrastructure in Bundestag",
+    "published": "2015-06-19",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-06-19%20-%20Digital%20Attack%20on%20German%20Parliament-%20Investigative%20Report%20on%20the%20Hack%20of%20the%20Left%20Party%20Infrastructure%20in%20Bundestag.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/42769bde968f19bb2443df0ac29e443fb3c82731.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "a07861dd98ff036baca25964796b40dafcec7d3c",
+    "title": "So Long, and Thanks for All the Domains",
+    "published": "2015-06-18",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-06-18%20-%20So%20Long,%20and%20Thanks%20for%20All%20the%20Domains.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/a07861dd98ff036baca25964796b40dafcec7d3c.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "154083bd059ac6bb001e247f7e03d6189fa93362",
     "title": "Target Attacks Against Tibetan And Hong Kong Groups Exploiting CVE-2014-4114",
     "published": "2015-06-17",
@@ -4800,6 +6887,27 @@
       "CVE-2010-3333",
       "CVE-2012-0158",
       "CVE-2014-4114"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "2e815cc8c07ded552e4c52d1649c1e9d3cdbea52",
+    "title": "The Spring Dragon APT",
+    "published": "2015-06-17",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-06-17%20-%20The%20Spring%20Dragon%20APT.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/2e815cc8c07ded552e4c52d1649c1e9d3cdbea52.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2010-2883",
+      "CVE-2012-0158",
+      "CVE-2014-6332"
     ],
     "techniques": [],
     "sources": [
@@ -4824,6 +6932,23 @@
       "CVE-2012-0158",
       "CVE-2014-6332"
     ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "9a5a70c89b869cca099738e01d342948ed873688",
+    "title": "Operation Lotus Blossom- A New Nation-State Cyberthreat-",
+    "published": "2015-06-16",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-06-16%20-%20Operation%20Lotus%20Blossom-%20A%20New%20Nation-State%20Cyberthreat-.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/9a5a70c89b869cca099738e01d342948ed873688.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
     "techniques": [],
     "sources": [
       "orkl"
@@ -4887,6 +7012,23 @@
     ]
   },
   {
+    "id": "d4c3c8cd2b09ec056063baca0c4b45e1a0d7a059",
+    "title": "Stegoloader- A Stealthy Information Stealer",
+    "published": "2015-06-15",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-06-15%20-%20Stegoloader-%20A%20Stealthy%20Information%20Stealer.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/d4c3c8cd2b09ec056063baca0c4b45e1a0d7a059.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "d7a3f88ed03baacbe97327c7e77c59d6c602c24b",
     "title": "Catching Up on the OPM Breach",
     "published": "2015-06-15",
@@ -4895,6 +7037,23 @@
     "url": "https://krebsonsecurity.com/2015/06/catching-up-on-the-opm-breach/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/d7a3f88ed03baacbe97327c7e77c59d6c602c24b.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "f51b9bc64b3fb045bbc4519a03217973e8918b98",
+    "title": "Catching Up on the OPM Breach",
+    "published": "2015-06-15",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-06-15%20-%20Catching%20Up%20on%20the%20OPM%20Breach.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/f51b9bc64b3fb045bbc4519a03217973e8918b98.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -4967,7 +7126,7 @@
   },
   {
     "id": "f5374c55bd8e336873efa667d5371305502c1a06",
-    "title": "2016-05-17 - Indian organizations targeted in Suckfly attacks",
+    "title": "Kaspersky - Duqu2 FAQ.pdf",
     "published": "2015-06-11",
     "date_basis": "file-metadata",
     "organisation": null,
@@ -5078,6 +7237,23 @@
     ]
   },
   {
+    "id": "e0ec2370ff604286318dcf535c31272a98b404ab",
+    "title": "The Mystery of Duqu 2.0- a sophisticated cyberespionage actor returns",
+    "published": "2015-06-10",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-06-10%20-%20The%20Mystery%20of%20Duqu%202.0-%20a%20sophisticated%20cyberespionage%20actor%20returns.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/e0ec2370ff604286318dcf535c31272a98b404ab.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "efdcd716cde10b6f13d76b51e2f0c5a13b078047",
     "title": "Duqu 2.0: Reemergence of an aggressive cyberespionage threat",
     "published": "2015-06-10",
@@ -5097,7 +7273,7 @@
   },
   {
     "id": "f96b39177a6d371bbcc749781c9591738b4ac5d2",
-    "title": "2016-05-17 - Indian organizations targeted in Suckfly attacks",
+    "title": "Duqu_2_Yara_rules",
     "published": "2015-06-10",
     "date_basis": "paper",
     "organisation": "craiu",
@@ -5190,6 +7366,23 @@
     ]
   },
   {
+    "id": "fab44c54627eab5192ac5a653a6ecadbbcc06448",
+    "title": "New Data- Volatile Cedar Malware Campaign",
+    "published": "2015-06-09",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-06-09%20-%20New%20Data-%20Volatile%20Cedar%20Malware%20Campaign.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/fab44c54627eab5192ac5a653a6ecadbbcc06448.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "4855ba957702d0393cb7ade531b46625426d9192",
     "title": "Grabit And The Rats",
     "published": "2015-06-08",
@@ -5258,6 +7451,23 @@
     ]
   },
   {
+    "id": "a37dadad3266b8548d0332b458b45ee0fbe35fe8",
+    "title": "KeyBase Keylogger Malware Family Exposed",
+    "published": "2015-06-04",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-06-04%20-%20KeyBase%20Keylogger%20Malware%20Family%20Exposed.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/a37dadad3266b8548d0332b458b45ee0fbe35fe8.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "2d40147bffae17231d62b6f392c83126b4de6d6b",
     "title": "Thamar-Reservoir-public.pdf",
     "published": "2015-06-03",
@@ -5292,6 +7502,23 @@
     ]
   },
   {
+    "id": "fe8bacff3b758ad3d78083aa82f51b6fd2fe48fc",
+    "title": "Thamar Reservoir – An Iranian cyber-attack campaign against targets in the Middle East",
+    "published": "2015-06-03",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-06-03%20-%20Thamar%20Reservoir%20%E2%80%93%20An%20Iranian%20cyber-attack%20campaign%20against%20targets%20in%20the%20Middle%20East.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/fe8bacff3b758ad3d78083aa82f51b6fd2fe48fc.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "paper:Thamar-Reservoir",
     "title": "Thamar-Reservoir",
     "published": "2015-06-03",
@@ -5308,6 +7535,25 @@
     "techniques": [],
     "sources": [
       "paper"
+    ]
+  },
+  {
+    "id": "65f0ccf60f99cf283b801eb35063d4d889f65b51",
+    "title": "Rhetoric Foreshadows Cyber Activity in the South China Sea",
+    "published": "2015-06-01",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-06-01%20-%20Rhetoric%20Foreshadows%20Cyber%20Activity%20in%20the%20South%20China%20Sea.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/65f0ccf60f99cf283b801eb35063d4d889f65b51.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2021-22941"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
     ]
   },
   {
@@ -5336,6 +7582,23 @@
     "url": "http://www.crowdstrike.com/blog/rhetoric-foreshadows-cyber-activity-in-the-south-china-sea/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/bc22c4cfb61575e352d6bf90f8fd106a241ad8e1.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "cff48fcbc955ab983a364ab5f0a334f920b6f911",
+    "title": "“Troldesh” – New Ransomware from Russia",
+    "published": "2015-06-01",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-06-01%20-%20%E2%80%9CTroldesh%E2%80%9D%20%E2%80%93%20New%20Ransomware%20from%20Russia.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/cff48fcbc955ab983a364ab5f0a334f920b6f911.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -5550,6 +7813,23 @@
     ]
   },
   {
+    "id": "d25d235213e5c221db9696abe45a08d8f3d2a4fc",
+    "title": "Moose – the router worm with an appetite for social networks",
+    "published": "2015-05-26",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-05-26%20-%20Moose%20%E2%80%93%20the%20router%20worm%20with%20an%20appetite%20for%20social%20networks.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/d25d235213e5c221db9696abe45a08d8f3d2a4fc.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "paper:Dissecting-LinuxMoose",
     "title": "Dissecting-LinuxMoose",
     "published": "2015-05-26",
@@ -5564,6 +7844,40 @@
     "techniques": [],
     "sources": [
       "paper"
+    ]
+  },
+  {
+    "id": "51f81c5f87dd67a17ae65171493b1ba8e9767d43",
+    "title": "NitlovePOS- Another New POS Malware",
+    "published": "2015-05-23",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-05-23%20-%20NitlovePOS-%20Another%20New%20POS%20Malware.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/51f81c5f87dd67a17ae65171493b1ba8e9767d43.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "40ec5c6cd98f1a4c15cfdd300819bba8d55bf90e",
+    "title": "The DGA of Ranbyus",
+    "published": "2015-05-22",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-05-22%20-%20The%20DGA%20of%20Ranbyus.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/40ec5c6cd98f1a4c15cfdd300819bba8d55bf90e.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
     ]
   },
   {
@@ -5607,6 +7921,23 @@
     ]
   },
   {
+    "id": "27c18dd5f4ad337c218c97922f2dfea555a39470",
+    "title": "Bedep Ad-Fraud Botnet Analysis – Exposing the Mechanics Behind 153.6M Defrauded Ad Impressions A Day",
+    "published": "2015-05-20",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-05-20%20-%20Bedep%20Ad-Fraud%20Botnet%20Analysis%20%E2%80%93%20Exposing%20the%20Mechanics%20Behind%20153.6M%20Defrauded%20Ad%20Impressions%20A%20Day.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/27c18dd5f4ad337c218c97922f2dfea555a39470.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "940615997789ceefea673c8a248829338c6ed7b0",
     "title": "crowdstrike-deep-panda-report",
     "published": "2015-05-20",
@@ -5642,7 +7973,7 @@
   },
   {
     "id": "a4b1d95632acffffb52d1d9dfe52a602eaa0d9f2",
-    "title": "2016-10-28 - zxshell repository",
+    "title": "IC3 - Internet Crime Report - 2014.pdf",
     "published": "2015-05-19",
     "date_basis": "file-metadata",
     "organisation": null,
@@ -5672,6 +8003,42 @@
     "techniques": [],
     "sources": [
       "paper"
+    ]
+  },
+  {
+    "id": "20e918b3a268956d8c779650116c44f8b3adfded",
+    "title": "TT Malware Log",
+    "published": "2015-05-18",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-05-18%20-%20TT%20Malware%20Log.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/20e918b3a268956d8c779650116c44f8b3adfded.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "2ab9f2ed4b55aeba5a2a3dc43682b7bd7d2f4729",
+    "title": "Cmstar Downloader- Lurid and Enfal’s New Cousin",
+    "published": "2015-05-18",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-05-18%20-%20Cmstar%20Downloader-%20Lurid%20and%20Enfal%E2%80%99s%20New%20Cousin.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/2ab9f2ed4b55aeba5a2a3dc43682b7bd7d2f4729.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2012-0158"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
     ]
   },
   {
@@ -5753,6 +8120,23 @@
     ]
   },
   {
+    "id": "22580b0b8c4230dc276af6bae842894ddd0ab322",
+    "title": "Newest addition to a happy family- KBOT",
+    "published": "2015-05-17",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-05-17%20-%20Newest%20addition%20to%20a%20happy%20family-%20KBOT.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/22580b0b8c4230dc276af6bae842894ddd0ab322.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "50f4873a42d73faeb860bf91b60a3957d1c0ccd9",
     "title": "https://lokalhost.pl/txt/newest_addition_to_happy_family_kbot.17.05.2015.txt",
     "published": "2015-05-17",
@@ -5815,6 +8199,42 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "bca6c17b02b09df3f4f2cfb084580c09df7ab43f",
+    "title": "Carefirst Blue Cross Breach Hits 1.1M",
+    "published": "2015-05-15",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-05-15%20-%20Carefirst%20Blue%20Cross%20Breach%20Hits%201.1M.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/bca6c17b02b09df3f4f2cfb084580c09df7ab43f.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "742abbd1dd3b2d31f494bba5f77f4a34a1adf99a",
+    "title": "The Naikon APT",
+    "published": "2015-05-14",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-05-14%20-%20The%20Naikon%20APT.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/742abbd1dd3b2d31f494bba5f77f4a34a1adf99a.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2012-0158"
+    ],
     "techniques": [],
     "sources": [
       "orkl"
@@ -5939,6 +8359,23 @@
     ]
   },
   {
+    "id": "77e12cb5d0998b68e3e0ddeb7822c31e72b91707",
+    "title": "Third-Party Software Was Entry Point for Background-Check System Hack",
+    "published": "2015-05-10",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-05-10%20-%20Third-Party%20Software%20Was%20Entry%20Point%20for%20Background-Check%20System%20Hack.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/77e12cb5d0998b68e3e0ddeb7822c31e72b91707.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "paper:APT28%20Targets%20Financial%20Markets",
     "title": "APT28 Targets Financial Markets",
     "published": "2015-05-10",
@@ -5983,6 +8420,25 @@
     "url": "https://app.box.com/s/r5vy0kolgdxwwby2wjo523devdbt5leg",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c478f5c474609cc5401648c0a55213f3a7137344.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2012-0158"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "0e131cf343ef536b2aab85f92791c065828046a5",
+    "title": "Dissecting the “Kraken”",
+    "published": "2015-05-07",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-05-07%20-%20Dissecting%20the%20%E2%80%9CKraken%E2%80%9D.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/0e131cf343ef536b2aab85f92791c065828046a5.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [
@@ -6082,6 +8538,23 @@
     "techniques": [],
     "sources": [
       "paper"
+    ]
+  },
+  {
+    "id": "9823b6f6f28a0a88e297ff33c160c237cd4d38ca",
+    "title": "Threat Spotlight- Rombertik – Gazing Past the Smoke, Mirrors, and Trapdoors",
+    "published": "2015-05-04",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-05-04%20-%20Threat%20Spotlight-%20Rombertik%20%E2%80%93%20Gazing%20Past%20the%20Smoke,%20Mirrors,%20and%20Trapdoors.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/9823b6f6f28a0a88e297ff33c160c237cd4d38ca.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
     ]
   },
   {
@@ -6195,6 +8668,23 @@
     ]
   },
   {
+    "id": "e49d528c8a2a464dd5ebf711e972c2719c86b2a4",
+    "title": "Unboxing Linux-Mumblehard- Muttering spam from your servers",
+    "published": "2015-04-29",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-04-29%20-%20Unboxing%20Linux-Mumblehard-%20Muttering%20spam%20from%20your%20servers.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/e49d528c8a2a464dd5ebf711e972c2719c86b2a4.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "b4e8fe336e0611e81ea6a7ad24a4f47279a074a5",
     "title": "mumblehard.pdf",
     "published": "2015-04-28",
@@ -6220,6 +8710,42 @@
     "url": "https://blogs.cisco.com/security/talos/teslacrypt",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2fd389a6195222d2a8338c9fadb7731221d36bd2.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2015-0311"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "d3c625ad2e59245cfb7ed766aeacbdbc81849728",
+    "title": "Attacks against Israeli & Palestinian interests",
+    "published": "2015-04-27",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-04-27%20-%20Attacks%20against%20Israeli%20&%20Palestinian%20interests.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/d3c625ad2e59245cfb7ed766aeacbdbc81849728.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "e1415f94f6ddd798edd47005500bd9f7aa5efcc1",
+    "title": "Threat Spotlight- TeslaCrypt – Decrypt It Yourself",
+    "published": "2015-04-27",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-04-27%20-%20Threat%20Spotlight-%20TeslaCrypt%20%E2%80%93%20Decrypt%20It%20Yourself.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/e1415f94f6ddd798edd47005500bd9f7aa5efcc1.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [
@@ -6299,6 +8825,25 @@
     "techniques": [],
     "sources": [
       "paper"
+    ]
+  },
+  {
+    "id": "5e5d56a00e4af1cf99539fb4ceb36cbc963b48ff",
+    "title": "Bedep’s DGA- Trading Foreign Exchange for Malware Domains",
+    "published": "2015-04-21",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-04-21%20-%20Bedep%E2%80%99s%20DGA-%20Trading%20Foreign%20Exchange%20for%20Malware%20Domains.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/5e5d56a00e4af1cf99539fb4ceb36cbc963b48ff.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2015-0311"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
     ]
   },
   {
@@ -6384,6 +8929,27 @@
     ]
   },
   {
+    "id": "5486b6b583108342e12a7368d11d50a8490ef88d",
+    "title": "Operation RussianDoll- Adobe & Windows Zero-Day Exploits Likely Leveraged by Russia’s APT28 in Highly-Targeted Attack",
+    "published": "2015-04-18",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-04-18%20-%20Operation%20RussianDoll-%20Adobe%20&%20Windows%20Zero-Day%20Exploits%20Likely%20Leveraged%20by%20Russia%E2%80%99s%20APT28%20in%20Highly-Targeted%20Attack.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/5486b6b583108342e12a7368d11d50a8490ef88d.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2014-0515",
+      "CVE-2015-1701",
+      "CVE-2015-3043"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "09c5ef5ffed40ed10befa97c6da979883951a7e7",
     "title": "Andromeda/Gamarue bot loves JSON too (new versions details)",
     "published": "2015-04-17",
@@ -6395,6 +8961,40 @@
     "actors": [
       "G0134"
     ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "989b3cd3d6f78459759388cc878d053de309dec0",
+    "title": "Andromeda-Gamarue bot loves JSON too (new versions details)",
+    "published": "2015-04-17",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-04-17%20-%20Andromeda-Gamarue%20bot%20loves%20JSON%20too%20(new%20versions%20details).pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/989b3cd3d6f78459759388cc878d053de309dec0.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "0a2599b7d5264a7f0276ce92860e5f0a43422391",
+    "title": "Betabot retrospective",
+    "published": "2015-04-15",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-04-15%20-%20Betabot%20retrospective.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/0a2599b7d5264a7f0276ce92860e5f0a43422391.pdf",
+    "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6415,6 +9015,25 @@
       "G0019",
       "G0065"
     ],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2012-0158"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "475918352a3eef65f9dd7e38c2f19a07daf5f92d",
+    "title": "The Chronicles of the Hellsing APT- the Empire Strikes Back",
+    "published": "2015-04-15",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-04-15%20-%20The%20Chronicles%20of%20the%20Hellsing%20APT-%20the%20Empire%20Strikes%20Back.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/475918352a3eef65f9dd7e38c2f19a07daf5f92d.pdf",
+    "actors": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2012-0158"
@@ -6498,6 +9117,59 @@
     ]
   },
   {
+    "id": "93a92b1d2d6ed82e431456c780b78222768d6175",
+    "title": "Knowledge Fragment- Bruteforcing Andromeda Configuration Buffers",
+    "published": "2015-04-15",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-04-15%20-%20Knowledge%20Fragment-%20Bruteforcing%20Andromeda%20Configuration%20Buffers.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/93a92b1d2d6ed82e431456c780b78222768d6175.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "9c3eb1a4391be36ebd61fa1094e29d9e847625c9",
+    "title": "The Chronicles of the Hellsing APT_the Empire Strikes Back",
+    "published": "2015-04-15",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-04-15%20-%20The%20Chronicles%20of%20the%20Hellsing%20APT_the%20Empire%20Strikes%20Back.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/9c3eb1a4391be36ebd61fa1094e29d9e847625c9.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2012-0158"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "afeef6b33f2e944f4c4b9b13ade53f04566aa789",
+    "title": "Elite cyber crime group strikes back after attack by rival APT gang",
+    "published": "2015-04-15",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-04-15%20-%20Elite%20cyber%20crime%20group%20strikes%20back%20after%20attack%20by%20rival%20APT%20gang.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/afeef6b33f2e944f4c4b9b13ade53f04566aa789.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "b5a974038bcb8e2aa46945aa2f5e3e5ef0b27150",
     "title": "rpt-apt30.pdf",
     "published": "2015-04-15",
@@ -6509,6 +9181,23 @@
     "actors": [
       "G0013"
     ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "b7e98100bcd8db7ec87071bf279933e4e58f52a9",
+    "title": "New POS Malware Emerges - Punkey",
+    "published": "2015-04-15",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-04-15%20-%20New%20POS%20Malware%20Emerges%20-%20Punkey.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/b7e98100bcd8db7ec87071bf279933e4e58f52a9.pdf",
+    "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6594,6 +9283,23 @@
     ]
   },
   {
+    "id": "6673d2db0c28b5c7604f9c4860f789449e26dc2e",
+    "title": "Unit 42 Identifies New DragonOK Backdoor Malware Deployed Against Japanese Targets",
+    "published": "2015-04-14",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-04-14%20-%20Unit%2042%20Identifies%20New%20DragonOK%20Backdoor%20Malware%20Deployed%20Against%20Japanese%20Targets.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/6673d2db0c28b5c7604f9c4860f789449e26dc2e.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "e36ee0829e7edf1ea2128d500c158c312a872993",
     "title": "Unit 42 Identifies New DragonOK Backdoor Malware Deployed Against Japanese Targets",
     "published": "2015-04-14",
@@ -6602,6 +9308,57 @@
     "url": "https://unit42.paloaltonetworks.com/unit-42-identifies-new-dragonok-backdoor-malware-deployed-against-japanese-targets/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e36ee0829e7edf1ea2128d500c158c312a872993.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "134aa49670fee521200ea66d73b3b3abb1bd489a",
+    "title": "sqlconnt1.exe",
+    "published": "2015-04-13",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-04-13%20-%20sqlconnt1.exe.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/134aa49670fee521200ea66d73b3b3abb1bd489a.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "46993d8b73bd5cfe817f5459265038be1c143781",
+    "title": "Analyzing Gootkit's persistence mechanism (new ASEP inside!)",
+    "published": "2015-04-13",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-04-13%20-%20Analyzing%20Gootkit's%20persistence%20mechanism%20(new%20ASEP%20inside!).pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/46993d8b73bd5cfe817f5459265038be1c143781.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "cb7a1b8b06a4222f0a0db4f30f030145718afb1b",
+    "title": "Cyber Deterrence in Action- A story of one long HURRICANE PANDA campaign",
+    "published": "2015-04-13",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-04-13%20-%20Cyber%20Deterrence%20in%20Action-%20A%20story%20of%20one%20long%20HURRICANE%20PANDA%20campaign.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/cb7a1b8b06a4222f0a0db4f30f030145718afb1b.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -6628,6 +9385,23 @@
     ]
   },
   {
+    "id": "c42adb31e5c14888ed7212cd957ca1bd34241d72",
+    "title": "SIMDA- A Botnet Takedown",
+    "published": "2015-04-12",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-04-12%20-%20SIMDA-%20A%20Botnet%20Takedown.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/c42adb31e5c14888ed7212cd957ca1bd34241d72.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "1b83984e2c9515c59885bc0078e3b1bed5d513b2",
     "title": "APT30 And The Mechanics Of A Long-Running Cyber Espionage Operation",
     "published": "2015-04-11",
@@ -6636,6 +9410,40 @@
     "url": "https://app.box.com/s/5jjomo7k001inllirt5lj83lu92ath7d",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1b83984e2c9515c59885bc0078e3b1bed5d513b2.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "110503e134e437352b9da01651c829af9875c9b7",
+    "title": "Beebone Botnet Takedown- Trend Micro Solutions",
+    "published": "2015-04-09",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-04-09%20-%20Beebone%20Botnet%20Takedown-%20Trend%20Micro%20Solutions.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/110503e134e437352b9da01651c829af9875c9b7.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "4362f97f25793e70c58f5bd591d08777134f7ee4",
+    "title": "The Banking Trojan Emotet- Detailed Analysis",
+    "published": "2015-04-09",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-04-09%20-%20The%20Banking%20Trojan%20Emotet-%20Detailed%20Analysis.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/4362f97f25793e70c58f5bd591d08777134f7ee4.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -6698,6 +9506,26 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "efaacba92742ae85f06ce6e89268a295976c4e06",
+    "title": "Operation Buhtrap, the trap for Russian accountants",
+    "published": "2015-04-09",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-04-09%20-%20Operation%20Buhtrap,%20the%20trap%20for%20Russian%20accountants.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/efaacba92742ae85f06ce6e89268a295976c4e06.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2012-0158",
+      "CVE-2013-3660"
+    ],
     "techniques": [],
     "sources": [
       "orkl"
@@ -6779,6 +9607,23 @@
     ]
   },
   {
+    "id": "b1fddcd5d37b7c049c6e5e7d19a3a76997a04d34",
+    "title": "NewPosThings Has New PoS Things",
+    "published": "2015-04-01",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-04-01%20-%20NewPosThings%20Has%20New%20PoS%20Things.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/b1fddcd5d37b7c049c6e5e7d19a3a76997a04d34.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "e34e684821ae647403251651bc8194e736152988",
     "title": "Research, News, and Perspectives",
     "published": "2015-04-01",
@@ -6787,6 +9632,23 @@
     "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/newposthings-has-new-pos-things/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e34e684821ae647403251651bc8194e736152988.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "069e6602490759729db5239b062381666427cf4b",
+    "title": "Volatile Cedar - Analysis of a Global Cyber Espionage Campaign",
+    "published": "2015-03-31",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-03-31%20-%20Volatile%20Cedar%20-%20Analysis%20of%20a%20Global%20Cyber%20Espionage%20Campaign.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/069e6602490759729db5239b062381666427cf4b.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -6821,6 +9683,23 @@
     "url": "https://blog.checkpoint.com/2015/03/31/volatilecedar/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b8c707f425a4774e6834913ecfdfb8936273699f.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "e2b54a1aa73d20fb19edc22328e076080c7dcf44",
+    "title": "Sinkholing Volatile Cedar DGA Infrastructure",
+    "published": "2015-03-31",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-03-31%20-%20Sinkholing%20Volatile%20Cedar%20DGA%20Infrastructure.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/e2b54a1aa73d20fb19edc22328e076080c7dcf44.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -6866,6 +9745,23 @@
     ]
   },
   {
+    "id": "5001b52df1e0cc02c95587ad207262c6214eea31",
+    "title": "Fake Judicial Spam Leads to Backdoor with Fake Certificate Authority",
+    "published": "2015-03-30",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-03-30%20-%20Fake%20Judicial%20Spam%20Leads%20to%20Backdoor%20with%20Fake%20Certificate%20Authority.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/5001b52df1e0cc02c95587ad207262c6214eea31.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "618933543d3e8091db0f4007ee54e93dd7bc6df2",
     "title": "Research, News, and Perspectives",
     "published": "2015-03-30",
@@ -6877,6 +9773,25 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "6bec946d9d45ed0c37327c2c8959e8e7ed3cce6c",
+    "title": "New reconnaissance threat Trojan.Laziok targets the energy sector",
+    "published": "2015-03-30",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-03-30%20-%20New%20reconnaissance%20threat%20Trojan.Laziok%20targets%20the%20energy%20sector.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/6bec946d9d45ed0c37327c2c8959e8e7ed3cce6c.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2012-0158"
+    ],
     "techniques": [],
     "sources": [
       "orkl"
@@ -6939,6 +9854,23 @@
     ]
   },
   {
+    "id": "dac5ee855d8bd5faf242fd9b74a908a213c5374b",
+    "title": "UACME",
+    "published": "2015-03-28",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-03-28%20-%20UACME.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/dac5ee855d8bd5faf242fd9b74a908a213c5374b.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "0945b07cb92795ead79f57242f2c9245fbf429dd",
     "title": "Microsoft Word - Hiding Behind ART.docx",
     "published": "2015-03-27",
@@ -6956,6 +9888,23 @@
     ]
   },
   {
+    "id": "996ecb5243334327dc2d8e625a4ddb72fc116e81",
+    "title": "Threat Spotlight- PoSeidon, A Deep Dive Into Point of Sale Malware",
+    "published": "2015-03-20",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-03-20%20-%20Threat%20Spotlight-%20PoSeidon,%20A%20Deep%20Dive%20Into%20Point%20of%20Sale%20Malware.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/996ecb5243334327dc2d8e625a4ddb72fc116e81.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "a7459517ddb9cbfe198a990598647718539a25b9",
     "title": "Threat Spotlight: PoSeidon, A Deep Dive Into Point of Sale Malware",
     "published": "2015-03-20",
@@ -6964,6 +9913,40 @@
     "url": "https://blogs.cisco.com/security/talos/poseidon",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a7459517ddb9cbfe198a990598647718539a25b9.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "324adbf067f86820070ea0da109ff14d923d240e",
+    "title": "FindPOS- New POS Malware Family Discovered",
+    "published": "2015-03-19",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-03-19%20-%20FindPOS-%20New%20POS%20Malware%20Family%20Discovered.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/324adbf067f86820070ea0da109ff14d923d240e.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "62494e19836f1d47677e04e8cc282f7ae72edffc",
+    "title": "Analyzing a Backdoor-Bot forthe MIPS Platform",
+    "published": "2015-03-19",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-03-19%20-%20Analyzing%20a%20Backdoor-Bot%20forthe%20MIPS%20Platform.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/62494e19836f1d47677e04e8cc282f7ae72edffc.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -7017,6 +10000,23 @@
     "url": "https://researchcenter.paloaltonetworks.com/2015/03/findpos-new-pos-malware-family-discovered/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c40d92061177f48fd1db9293669127bb3e8da06e.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "e7e4b287d85c96ded401f6a7c3801ad3561a240c",
+    "title": "Rocket Kitten Showing Its Claws- Operation Woolen-GoldFish and the GHOLE campaign",
+    "published": "2015-03-19",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-03-19%20-%20Rocket%20Kitten%20Showing%20Its%20Claws-%20Operation%20Woolen-GoldFish%20and%20the%20GHOLE%20campaign.pdf",
+    "url_ok": true,
+    "archive_url": "https://archive.orkl.eu/e7e4b287d85c96ded401f6a7c3801ad3561a240c.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -7168,6 +10168,40 @@
     ]
   },
   {
+    "id": "a036e813dfdb6a83f631e9cf4ebfd6a2168cb321",
+    "title": "Malvertising Targeting European Transit Users",
+    "published": "2015-03-11",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-03-11%20-%20Malvertising%20Targeting%20European%20Transit%20Users.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/a036e813dfdb6a83f631e9cf4ebfd6a2168cb321.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "dbd4f9814e370e4db988744b87d72402d6ae56c6",
+    "title": "Inside the EquationDrug Espionage Platform",
+    "published": "2015-03-11",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-03-11%20-%20Inside%20the%20EquationDrug%20Espionage%20Platform.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/dbd4f9814e370e4db988744b87d72402d6ae56c6.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "paper:Inside_EquationDrug_Espionage_Platform",
     "title": "Inside_EquationDrug_Espionage_Platform",
     "published": "2015-03-11",
@@ -7184,6 +10218,23 @@
     "techniques": [],
     "sources": [
       "paper"
+    ]
+  },
+  {
+    "id": "56ea0c63f7bb7a53097698bb70b371cdbd638c23",
+    "title": "The DGA of Pykspa",
+    "published": "2015-03-10",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-03-10%20-%20The%20DGA%20of%20Pykspa.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/56ea0c63f7bb7a53097698bb70b371cdbd638c23.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
     ]
   },
   {
@@ -7223,6 +10274,23 @@
     ]
   },
   {
+    "id": "c851824181614b6ac7c7c8d44cf6a810fa213f72",
+    "title": "CryptoFortress mimics TorrentLocker but is a different ransomware",
+    "published": "2015-03-09",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-03-09%20-%20CryptoFortress%20mimics%20TorrentLocker%20but%20is%20a%20different%20ransomware.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/c851824181614b6ac7c7c8d44cf6a810fa213f72.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "f5a3ae2b725f2988f8328a992e11c1d99c282fd2",
     "title": "CryptoFortress mimics TorrentLocker but is a different ransomware",
     "published": "2015-03-09",
@@ -7248,6 +10316,23 @@
     "url": "https://www.cert.pl/en/news/single/slave-banatrix-and-ransomware/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7d3b6e463f2bada5fb04168d94c3368b796a73b2.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "bfe6cd3dcde0d85faf0262819dbf5f1eaace6cc0",
+    "title": "Slave, Banatrix and ransomware",
+    "published": "2015-03-07",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-03-07%20-%20Slave,%20Banatrix%20and%20ransomware.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/bfe6cd3dcde0d85faf0262819dbf5f1eaace6cc0.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -7346,6 +10431,23 @@
     ]
   },
   {
+    "id": "f3a440632ccd37741f325b209c1732cf1fc97e31",
+    "title": "Animals in the APT Farm",
+    "published": "2015-03-06",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-03-06%20-%20Animals%20in%20the%20APT%20Farm.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/f3a440632ccd37741f325b209c1732cf1fc97e31.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "12c4cc9d9a59aadcd01aa2282a6c99da8bcd18ab",
     "title": "casper-malware-babar-bunny-another-espionage-cartoon",
     "published": "2015-03-05",
@@ -7363,6 +10465,25 @@
     "sources": [
       "orkl",
       "paper"
+    ]
+  },
+  {
+    "id": "6cc250dbaf429a5cfa70d474abdb9d5f5ed4cc52",
+    "title": "Casper Malware- After Babar and Bunny, Another Espionage Cartoon",
+    "published": "2015-03-05",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-03-05%20-%20Casper%20Malware-%20After%20Babar%20and%20Bunny,%20Another%20Espionage%20Cartoon.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/6cc250dbaf429a5cfa70d474abdb9d5f5ed4cc52.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2014-0515"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
     ]
   },
   {
@@ -7406,6 +10527,23 @@
     ]
   },
   {
+    "id": "b3ea07fdfd338070060c3a243f4b5083ab551544",
+    "title": "And you get a POS malware name...and you get a POS malware name....and you get a POS malware name....",
+    "published": "2015-03-04",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-03-04%20-%20And%20you%20get%20a%20POS%20malware%20name...and%20you%20get%20a%20POS%20malware%20name....and%20you%20get%20a%20POS%20malware%20name.....pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/b3ea07fdfd338070060c3a243f4b5083ab551544.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "d9fa88e203620b118beba3d52f03924acecae87d",
     "title": "And you get a POS malware name...and you get a POS malware name....and you get a POS malware name....",
     "published": "2015-03-04",
@@ -7414,6 +10552,43 @@
     "url": "https://www.brimorlabsblog.com/2015/03/and-you-get-pos-malware-nameand-you-get.html",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/d9fa88e203620b118beba3d52f03924acecae87d.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "fce4cc89ce7ec1c152a95f362ca94bfe507a3267",
+    "title": "New crypto ransomware in town - CryptoFortress",
+    "published": "2015-03-04",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-03-04%20-%20New%20crypto%20ransomware%20in%20town%20-%20CryptoFortress.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/fce4cc89ce7ec1c152a95f362ca94bfe507a3267.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2013-2551",
+      "CVE-2015-0311"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "fd3220fcf66ca964d3538c992a27b049268f6f35",
+    "title": "Who’s Really Spreading through the Bright Star-",
+    "published": "2015-03-04",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-03-04%20-%20Who%E2%80%99s%20Really%20Spreading%20through%20the%20Bright%20Star-.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/fd3220fcf66ca964d3538c992a27b049268f6f35.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -7448,6 +10623,40 @@
     "url": "https://bartblaze.blogspot.com/2015/03/c99shell-not-dead.html",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5070154cd716d192d1c61a8ca7dc4088440b5841.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "b7af08a234110c4d614f1993bdf7c11af2c10e97",
+    "title": "C99Shell not dead",
+    "published": "2015-03-03",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-03-03%20-%20C99Shell%20not%20dead.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/b7af08a234110c4d614f1993bdf7c11af2c10e97.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "f260c2842bd4df75fb7f688b16e20a7a5bb83622",
+    "title": "PwnPOS- Old Undetected PoS Malware Still Causing Havoc",
+    "published": "2015-03-03",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-03-03%20-%20PwnPOS-%20Old%20Undetected%20PoS%20Malware%20Still%20Causing%20Havoc.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/f260c2842bd4df75fb7f688b16e20a7a5bb83622.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -7537,6 +10746,57 @@
     ]
   },
   {
+    "id": "d2471ec299fa70084d017b66fd66d088915c5c7c",
+    "title": "The Anthem Hack- All Roads Lead to China",
+    "published": "2015-02-27",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-02-27%20-%20The%20Anthem%20Hack-%20All%20Roads%20Lead%20to%20China.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/d2471ec299fa70084d017b66fd66d088915c5c7c.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "df1d837cde7f93cdb37a36bc49e273a55bb2b309",
+    "title": "VB2014 paper- The pluginer - Caphaw",
+    "published": "2015-02-27",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-02-27%20-%20VB2014%20paper-%20The%20pluginer%20-%20Caphaw.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/df1d837cde7f93cdb37a36bc49e273a55bb2b309.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "eca0505328975e784a44b9b7a8a408bfcec1dc73",
+    "title": "ScanBox Framework",
+    "published": "2015-02-27",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-02-27%20-%20ScanBox%20Framework.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/eca0505328975e784a44b9b7a8a408bfcec1dc73.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "paper:Anthem_hack_all_roads_lead_to_China",
     "title": "Anthem_hack_all_roads_lead_to_China",
     "published": "2015-02-27",
@@ -7553,6 +10813,40 @@
     "techniques": [],
     "sources": [
       "paper"
+    ]
+  },
+  {
+    "id": "e84d266b74316df15bbd6ce9973e390b9caf3541",
+    "title": "Pony Sourcecode",
+    "published": "2015-02-25",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-02-25%20-%20Pony%20Sourcecode.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/e84d266b74316df15bbd6ce9973e390b9caf3541.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "ea56455983826d680567def1041d387b1567029f",
+    "title": "KINS Banking Trojan Source Code",
+    "published": "2015-02-25",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-02-25%20-%20KINS%20Banking%20Trojan%20Source%20Code.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/ea56455983826d680567def1041d387b1567029f.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
     ]
   },
   {
@@ -7674,6 +10968,25 @@
     ]
   },
   {
+    "id": "6cc6502b43f7d10e3ff2c1016e700c3e728e0e37",
+    "title": "Cyber Kung-Fu- The Great Firewall Art of DNS Poisoning",
+    "published": "2015-02-23",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-02-23%20-%20Cyber%20Kung-Fu-%20The%20Great%20Firewall%20Art%20of%20DNS%20Poisoning.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/6cc6502b43f7d10e3ff2c1016e700c3e728e0e37.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2021-22941"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "c73cbb8fa22e16920e3cbf51226f3fd8010d38bb",
     "title": "Scanbox Ii",
     "published": "2015-02-23",
@@ -7706,6 +11019,40 @@
     "actors": [
       "G0092"
     ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "a641c377ea16e3d85ac833e85a5edd2e84ff900b",
+    "title": "The DGAs of Necurs",
+    "published": "2015-02-20",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-02-20%20-%20The%20DGAs%20of%20Necurs.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/a641c377ea16e3d85ac833e85a5edd2e84ff900b.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "45c43189d5b79921a726a3659a4bc2b328b469b5",
+    "title": "Arid Viper – Israel entities targeted by malware packaged with sex video",
+    "published": "2015-02-19",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-02-19%20-%20Arid%20Viper%20%E2%80%93%20Israel%20entities%20targeted%20by%20malware%20packaged%20with%20sex%20video.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/45c43189d5b79921a726a3659a4bc2b328b469b5.pdf",
+    "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7750,6 +11097,40 @@
     ]
   },
   {
+    "id": "3e5ca01dab803b36d887e1f13e418e8657b5b365",
+    "title": "Babar- Suspected Nation State Spyware In The Spotlight",
+    "published": "2015-02-18",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-02-18%20-%20Babar-%20Suspected%20Nation%20State%20Spyware%20In%20The%20Spotlight.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/3e5ca01dab803b36d887e1f13e418e8657b5b365.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "4fc52907e32b665d3dd48ad1fe601786c7f36038",
+    "title": "Sexually Explicit Material Used as Lures in Recent Cyber Attacks",
+    "published": "2015-02-18",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-02-18%20-%20Sexually%20Explicit%20Material%20Used%20as%20Lures%20in%20Recent%20Cyber%20Attacks.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/4fc52907e32b665d3dd48ad1fe601786c7f36038.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "b0ac3fce955bb8361b98a791919d639b18877d56",
     "title": "Palebot Trojan Harvests Palestinian Online Credentials",
     "published": "2015-02-18",
@@ -7778,6 +11159,57 @@
     "actors": [
       "snowglobe"
     ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "c8df04b52d12558d366f36053918a86d5a406100",
+    "title": "Shooting Elephants",
+    "published": "2015-02-18",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-02-18%20-%20Shooting%20Elephants.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/c8df04b52d12558d366f36053918a86d5a406100.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "cbe3bcb7233761efea49885d7c1897289a4821fc",
+    "title": "Babar- espionage software finally found and put under the microscope",
+    "published": "2015-02-18",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-02-18%20-%20Babar-%20espionage%20software%20finally%20found%20and%20put%20under%20the%20microscope.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/cbe3bcb7233761efea49885d7c1897289a4821fc.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "db901823ae3246836f3bece9373acf7944fa786c",
+    "title": "Meet Babar, a New Malware Almost Certainly Created by France",
+    "published": "2015-02-18",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-02-18%20-%20Meet%20Babar,%20a%20New%20Malware%20Almost%20Certainly%20Created%20by%20France.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/db901823ae3246836f3bece9373acf7944fa786c.pdf",
+    "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7896,6 +11328,40 @@
     ]
   },
   {
+    "id": "9e4fd1d23c87f67eba42e01a86ed4e79f5df4960",
+    "title": "Ali Baba, the APT group from the Middle East",
+    "published": "2015-02-17",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-02-17%20-%20Ali%20Baba,%20the%20APT%20group%20from%20the%20Middle%20East.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/9e4fd1d23c87f67eba42e01a86ed4e79f5df4960.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "a2ebc8454b801ad017b81f35013cbf431a8197db",
+    "title": "Angry Android hacker hides Xbot malware in popular application icons",
+    "published": "2015-02-17",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-02-17%20-%20Angry%20Android%20hacker%20hides%20Xbot%20malware%20in%20popular%20application%20icons%20.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/a2ebc8454b801ad017b81f35013cbf431a8197db.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "b99e4faf6dc5b027f0dd9e649811c4bb5fe513d8",
     "title": "A_Fanny_Equation",
     "published": "2015-02-17",
@@ -7915,6 +11381,23 @@
     "sources": [
       "orkl",
       "paper"
+    ]
+  },
+  {
+    "id": "bda3e7ae73c9b236338662f0ac1a9574bca3a8c9",
+    "title": "BE2 extraordinary plugins, Siemens targeting, dev fails",
+    "published": "2015-02-17",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-02-17%20-%20BE2%20extraordinary%20plugins,%20Siemens%20targeting,%20dev%20fails.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/bda3e7ae73c9b236338662f0ac1a9574bca3a8c9.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
     ]
   },
   {
@@ -7948,6 +11431,23 @@
     "actors": [
       "G0034"
     ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "f93b9e9c6a66b8a21dd8b4a0ab2839e96869c0cf",
+    "title": "The Desert Falcons targeted attacks",
+    "published": "2015-02-17",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-02-17%20-%20The%20Desert%20Falcons%20targeted%20attacks.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/f93b9e9c6a66b8a21dd8b4a0ab2839e96869c0cf.pdf",
+    "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8056,6 +11556,42 @@
     ]
   },
   {
+    "id": "6206b567e6332073df5e1b0d24e01ab7c6826211",
+    "title": "Equation- The Death Star of Malware Galaxy",
+    "published": "2015-02-16",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-02-16%20-%20Equation-%20The%20Death%20Star%20of%20Malware%20Galaxy.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/6206b567e6332073df5e1b0d24e01ab7c6826211.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2012-1723"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "8f6d27049fd526c16200161e5917e3354ad4800d",
+    "title": "How “omnipotent” hackers tied to NSA hid for 14 years—and were found at last",
+    "published": "2015-02-16",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-02-16%20-%20How%20%E2%80%9Comnipotent%E2%80%9D%20hackers%20tied%20to%20NSA%20hid%20for%2014%20years%E2%80%94and%20were%20found%20at%20last.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/8f6d27049fd526c16200161e5917e3354ad4800d.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "bb42fe2dbf0b6097876e81c75ddb71c787896b94",
     "title": "How “omnipotent” hackers tied to NSA hid for 14 years—and were found at last",
     "published": "2015-02-16",
@@ -8083,6 +11619,23 @@
     "url": "https://en.wikipedia.org/wiki/Carbanak",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1791883bc5093ded0c68a033964c0f659f749c02.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "2b48767adb8cf497d8ea235e224cde9d4fa2af04",
+    "title": "Carbanak",
+    "published": "2015-02-15",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-02-15%20-%20Carbanak.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/2b48767adb8cf497d8ea235e224cde9d4fa2af04.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -8134,6 +11687,23 @@
     "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/mobile-malware-gang-steals-millions-from-south-korean-users/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/850c9f219b48f6bb0d2c6b7e5342d8c7aba1258f.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "a8a12f0366a5e35fec67a5070c7a9f4e7b5f0a99",
+    "title": "Mobile Malware Gang Steals Millions from South Korean Users",
+    "published": "2015-02-12",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-02-12%20-%20Mobile%20Malware%20Gang%20Steals%20Millions%20from%20South%20Korean%20Users.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/a8a12f0366a5e35fec67a5070c7a9f4e7b5f0a99.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -8229,6 +11799,23 @@
     ]
   },
   {
+    "id": "be80f34dd3e1b2e138fc02cc97641574e87e7af8",
+    "title": "Anthem Breach May Have Started in April 2014",
+    "published": "2015-02-09",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-02-09%20-%20Anthem%20Breach%20May%20Have%20Started%20in%20April%202014.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/be80f34dd3e1b2e138fc02cc97641574e87e7af8.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "b64a571a29d1c2cfc40b6b6cef50a95e6ce3b455",
     "title": "The \"Red October\" Campaign - An Advanced Cyber Espionage Network Targeting Diplomatic And Government Agencies",
     "published": "2015-02-08",
@@ -8285,6 +11872,40 @@
     "cves": [
       "CVE-2014-0322"
     ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "20676725f96ecb865989fb60464f45ba38147dde",
+    "title": "Anatomy of a Brute Force Campaign- The Story of Hee Thai Limited",
+    "published": "2015-02-05",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-02-05%20-%20Anatomy%20of%20a%20Brute%20Force%20Campaign-%20The%20Story%20of%20Hee%20Thai%20Limited.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/20676725f96ecb865989fb60464f45ba38147dde.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "22d7131de4df3fbe424bf71b894773f8e641634f",
+    "title": "Pawn Storm Update- iOS Espionage App Found",
+    "published": "2015-02-04",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-02-04%20-%20Pawn%20Storm%20Update-%20iOS%20Espionage%20App%20Found.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/22d7131de4df3fbe424bf71b894773f8e641634f.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
     "techniques": [],
     "sources": [
       "orkl"
@@ -8540,6 +12161,23 @@
     ]
   },
   {
+    "id": "24565e5194b5d57b2528867ae44d5e41d9ec5de7",
+    "title": "Storm Chasing- Hunting Hurricane Panda",
+    "published": "2015-01-26",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-01-26%20-%20Storm%20Chasing-%20Hunting%20Hurricane%20Panda.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/24565e5194b5d57b2528867ae44d5e41d9ec5de7.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "630eea3f1bc9158570c53d70fc70b31003305f5c",
     "title": "An Analysis Of Regin's Hopscotch And Legspin",
     "published": "2015-01-24",
@@ -8548,6 +12186,23 @@
     "url": "https://app.box.com/s/yezsypczjmt973gpcqfqh5yf9po4zr3c",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/630eea3f1bc9158570c53d70fc70b31003305f5c.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "0c23f4836dbcfbd7479d4b4d894fba15a84b23c8",
+    "title": "New RATs Emerge from Leaked Njw0rm Source Code",
+    "published": "2015-01-22",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-01-22%20-%20New%20RATs%20Emerge%20from%20Leaked%20Njw0rm%20Source%20Code.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/0c23f4836dbcfbd7479d4b4d894fba15a84b23c8.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -8568,6 +12223,25 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "537f8545d6d5f9bb99268526ddacc2c24008c737",
+    "title": "Scarab attackers took aim at select Russian targets since 2012",
+    "published": "2015-01-22",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-01-22%20-%20Scarab%20attackers%20took%20aim%20at%20select%20Russian%20targets%20since%202012.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/537f8545d6d5f9bb99268526ddacc2c24008c737.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2012-0158"
+    ],
     "techniques": [],
     "sources": [
       "orkl"
@@ -8708,7 +12382,7 @@
   },
   {
     "id": "a867a5d6ef7a2b751806a933f1e6aef007a09ea5",
-    "title": "2016-09-28 - Highly Evasive Code Injection Awaits User Interaction Before Delivering Malware",
+    "title": "BSI - IT Security Situation in Germany - 2014 (DE).pdf",
     "published": "2015-01-21",
     "date_basis": "file-metadata",
     "organisation": null,
@@ -8803,6 +12477,23 @@
     ]
   },
   {
+    "id": "ea680f2001bed8bae12bc1d1ec272957d9f88197",
+    "title": "Analysis of Project Cobra",
+    "published": "2015-01-20",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-01-20%20-%20Analysis%20of%20Project%20Cobra.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/ea680f2001bed8bae12bc1d1ec272957d9f88197.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "paper:Inception_APT_Analysis_Bluecoat",
     "title": "Inception_APT_Analysis_Bluecoat",
     "published": "2015-01-20",
@@ -8838,6 +12529,23 @@
     "techniques": [],
     "sources": [
       "paper"
+    ]
+  },
+  {
+    "id": "2dbf4d32a80d9ae83ad77f0bdf251a9579c19382",
+    "title": "Weiterentwicklung anspruchsvoller Spyware- von Agent.BTZ zu ComRAT",
+    "published": "2015-01-15",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-01-15%20-%20Weiterentwicklung%20anspruchsvoller%20Spyware-%20von%20Agent.BTZ%20zu%20ComRAT.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/2dbf4d32a80d9ae83ad77f0bdf251a9579c19382.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
     ]
   },
   {
@@ -8894,6 +12602,27 @@
     ]
   },
   {
+    "id": "a85a65b601d74f7929d01a91dc6ffeffb38b00d1",
+    "title": "Catching the “Inception Framework” Phishing Attack",
+    "published": "2015-01-14",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-01-14%20-%20Catching%20the%20%E2%80%9CInception%20Framework%E2%80%9D%20Phishing%20Attack.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/a85a65b601d74f7929d01a91dc6ffeffb38b00d1.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2010-3333",
+      "CVE-2012-0158",
+      "CVE-2014-1761"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "28f35f4b95e66030cf2a330bae394bbf8805b34f",
     "title": "Skeleton Key Malware Analysis",
     "published": "2015-01-13",
@@ -8912,7 +12641,7 @@
   },
   {
     "id": "560d6b931b1a5fa690450972f5bc985987f969d3",
-    "title": "2016-10-15 - TrickBot- We Missed you, Dyre",
+    "title": "Cisco - Annual Security Report - 2015.pdf",
     "published": "2015-01-13",
     "date_basis": "file-metadata",
     "organisation": null,
@@ -8924,6 +12653,23 @@
     "cves": [
       "CVE-2014-0160"
     ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "ce65f481b9df5534048f23385ba94eef965990f2",
+    "title": "New Carberp variant heads down under",
+    "published": "2015-01-13",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-01-13%20-%20New%20Carberp%20variant%20heads%20down%20under.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/ce65f481b9df5534048f23385ba94eef965990f2.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
     "techniques": [],
     "sources": [
       "orkl"
@@ -9000,6 +12746,23 @@
     ]
   },
   {
+    "id": "92f846c8ca30556352ea2981423b36c36c56a1be",
+    "title": "The Mozart RAM Scraper",
+    "published": "2015-01-11",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-01-11%20-%20The%20Mozart%20RAM%20Scraper.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/92f846c8ca30556352ea2981423b36c36c56a1be.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "paper:DTL-12012015-01",
     "title": "DTL-12012015-01",
     "published": "2015-01-11",
@@ -9036,6 +12799,40 @@
     ]
   },
   {
+    "id": "b8437c7700cffb0dd3b52f9348c6281ce4d05b14",
+    "title": "Chanitor Downloader Actively Installing Vawtrak",
+    "published": "2015-01-09",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-01-09%20-%20Chanitor%20Downloader%20Actively%20Installing%20Vawtrak.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/b8437c7700cffb0dd3b52f9348c6281ce4d05b14.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "4477713fc0b0d1225a12d759860fca1b920a35cd",
+    "title": "Getmypass Point of Sale Malware Update",
+    "published": "2015-01-08",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-01-08%20-%20Getmypass%20Point%20of%20Sale%20Malware%20Update.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/4477713fc0b0d1225a12d759860fca1b920a35cd.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "6b9ec60c1e26f40948f1a801f666103d8c71ba52",
     "title": "Major malvertising campaign spreads Kovter Ad Fraud malware | Malwarebytes Labs",
     "published": "2015-01-08",
@@ -9044,6 +12841,25 @@
     "url": "https://blog.malwarebytes.com/threat-analysis/2015/01/major-malvertising-campaign-hits-sites-with-combined-total-monthly-traffic-of-1-5bn-visitors/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6b9ec60c1e26f40948f1a801f666103d8c71ba52.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [
+      "CVE-2014-6332"
+    ],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "6f0a74d874c424559adbb1800b6850ebc820ce4d",
+    "title": "Major malvertising campaign spreads Kovter Ad Fraud malware",
+    "published": "2015-01-08",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-01-08%20-%20Major%20malvertising%20campaign%20spreads%20Kovter%20Ad%20Fraud%20malware.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/6f0a74d874c424559adbb1800b6850ebc820ce4d.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [
@@ -9080,6 +12896,23 @@
     "url": "https://blog.avast.com/2015/01/06/linux-ddos-trojan-hiding-itself-with-an-embedded-rootkit/",
     "url_ok": true,
     "archive_url": "https://archive.orkl.eu/8c0a1bb3a5bc821fb87aa67dc6d98c5081a886b0.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "f52217bacada4ea36a090fc81cb7821640afa3d7",
+    "title": "Linux DDoS Trojan hiding itself with an embedded rootkit",
+    "published": "2015-01-06",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202015/2015-01-06%20-%20Linux%20DDoS%20Trojan%20hiding%20itself%20with%20an%20embedded%20rootkit.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/f52217bacada4ea36a090fc81cb7821640afa3d7.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],

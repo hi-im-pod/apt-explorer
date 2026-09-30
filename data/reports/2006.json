@@ -1,7 +1,7 @@
 [
   {
     "id": "1fe54e36ac528f73a4942b2bf3f4f3f831063478",
-    "title": "2016-07-26 - Threat Actors Using Legitimate PayPal Accounts To Distribute Chthonic Banking Trojan",
+    "title": "INL - Cyber Incidents Involving Control Systems.pdf",
     "published": "2006-11-13",
     "date_basis": "file-metadata",
     "organisation": null,
@@ -51,14 +51,48 @@
     ]
   },
   {
+    "id": "12929758dc1049b094f1efb2d05365fdad99795c",
+    "title": "Blackmailer - the story of Gpcode",
+    "published": "2006-06-26",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202003%20-%202009/2006-06-26%20-%20Blackmailer%20-%20the%20story%20of%20Gpcode.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/12929758dc1049b094f1efb2d05365fdad99795c.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "862e11dc48d0d783b01b041f1404d55963fbf8ee",
-    "title": "2016-07-05 - New Backdoor Allows Full Access to Mac Systems, Bitdefender Warns",
+    "title": "Common Control System Vulnerabilities (2005).pdf",
     "published": "2006-04-12",
     "date_basis": "file-metadata",
     "organisation": null,
     "url": "https://papers.vx-underground.org/papers/ICS%20SCADA/ICS%20Vulnerabilities/Common%20Control%20System%20Vulnerabilities%20(2005).pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/862e11dc48d0d783b01b041f1404d55963fbf8ee.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "7cdd055cc0755f73ed1f9253cb3bb50567b9e676",
+    "title": "Win32-Neshta",
+    "published": "2006-01-15",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202003%20-%202009/2006-01-15%20-%20Win32-Neshta.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/7cdd055cc0755f73ed1f9253cb3bb50567b9e676.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],

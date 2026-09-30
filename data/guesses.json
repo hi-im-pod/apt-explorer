@@ -102,10 +102,10 @@
       {
         "band": "high",
         "min_confidence": 0.85,
-        "n": 19,
-        "correct": 18,
-        "precision": 0.947,
-        "coverage": 0.297
+        "n": 0,
+        "correct": 0,
+        "precision": null,
+        "coverage": 0.0
       },
       {
         "band": "medium",
@@ -118,10 +118,10 @@
       {
         "band": "low",
         "min_confidence": 0.0,
-        "n": 45,
-        "correct": 30,
-        "precision": 0.667,
-        "coverage": 0.703
+        "n": 64,
+        "correct": 48,
+        "precision": 0.75,
+        "coverage": 1.0
       }
     ],
     "signals": [
@@ -250,7 +250,9 @@
     "limitations": [
       "The ground truth has fewer than 10 names labelled tool or not-an-entity, so guesses with those labels are shown as unvalidated.",
       "The ground-truth names are ones that a source lists, so they are better known than a typical unresolved name.",
-      "Signals were kept and confidence was calibrated on the same 64 names, so the figures are likely a little optimistic."
+      "Signals were chosen on the same 64 names that score them, so the figures are likely a little optimistic. Confidence is calibrated without each name in turn, which removes a second source of the same bias.",
+      "No guess is shown as high confidence. The band needs at least 20 held-out names with 85% or more right, and 19 qualified, of which 18 were right.",
+      "No guess is shown as medium confidence. The band needs at least 20 held-out names with 70% or more right, and 19 qualified, of which 18 were right."
     ]
   },
   "guesses": [
@@ -258,8 +260,8 @@
       "name": "Winnti Umbrella",
       "count": 593,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": null,
       "matched_actor_name": null,
       "evidence": [
@@ -288,7 +290,7 @@
         {
           "signal": "actor_resemblance",
           "detail": "The name matches the actor Star Blizzard (as 'Armageddon') after removing the word 'operation'.",
-          "weight": 0.772
+          "weight": null
         }
       ],
       "status": "pending confirmation"
@@ -297,8 +299,8 @@
       "name": "COBALT GIPSY",
       "count": 20,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": null,
       "matched_actor_name": null,
       "evidence": [
@@ -358,8 +360,8 @@
       "name": "nso group",
       "count": 5,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": null,
       "matched_actor_name": null,
       "evidence": [
@@ -402,8 +404,8 @@
       "name": "grand theft auto panda",
       "count": 3,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": null,
       "matched_actor_name": null,
       "evidence": [
@@ -463,8 +465,8 @@
       "name": "chessmaster",
       "count": 2,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": null,
       "matched_actor_name": null,
       "evidence": [
@@ -570,8 +572,8 @@
       "name": "Sphinx (APT-C-15)",
       "count": 2,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": "sphinx",
       "matched_actor_name": "Sphinx",
       "evidence": [
@@ -694,8 +696,8 @@
       "name": "appin security group",
       "count": 1,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": null,
       "matched_actor_name": null,
       "evidence": [
@@ -733,8 +735,8 @@
       "name": "apt-c-01",
       "count": 1,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": null,
       "matched_actor_name": null,
       "evidence": [
@@ -750,8 +752,8 @@
       "name": "apt-c-47",
       "count": 1,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": null,
       "matched_actor_name": null,
       "evidence": [
@@ -772,8 +774,8 @@
       "name": "apt-c-59",
       "count": 1,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": null,
       "matched_actor_name": null,
       "evidence": [
@@ -845,8 +847,8 @@
       "name": "blue termit",
       "count": 1,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": null,
       "matched_actor_name": null,
       "evidence": [
@@ -879,8 +881,8 @@
       "name": "c.rufus security team",
       "count": 1,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": null,
       "matched_actor_name": null,
       "evidence": [
@@ -964,8 +966,8 @@
       "name": "fhappi",
       "count": 1,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": null,
       "matched_actor_name": null,
       "evidence": [
@@ -981,8 +983,8 @@
       "name": "french intelligence",
       "count": 1,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": null,
       "matched_actor_name": null,
       "evidence": [
@@ -1049,8 +1051,8 @@
       "name": "hafnuim",
       "count": 1,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": null,
       "matched_actor_name": null,
       "evidence": [
@@ -1066,8 +1068,8 @@
       "name": "inception attackers",
       "count": 1,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": "G0100",
       "matched_actor_name": "Inception",
       "evidence": [
@@ -1122,8 +1124,8 @@
       "name": "kelvinsecurityteam",
       "count": 1,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": null,
       "matched_actor_name": null,
       "evidence": [
@@ -1166,8 +1168,8 @@
       "name": "king kong elephant",
       "count": 1,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": null,
       "matched_actor_name": null,
       "evidence": [
@@ -1200,8 +1202,8 @@
       "name": "lucky elephant",
       "count": 1,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": null,
       "matched_actor_name": null,
       "evidence": [
@@ -1234,8 +1236,8 @@
       "name": "mirrorthief",
       "count": 1,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": null,
       "matched_actor_name": null,
       "evidence": [
@@ -1349,7 +1351,7 @@
         {
           "signal": "software_resemblance",
           "detail": "The name matches the malware 'OceanSalt' listed by ATT&CK and Malpedia after removing the word 'operation'.",
-          "weight": -0.809
+          "weight": null
         }
       ],
       "status": "pending confirmation"
@@ -1371,7 +1373,7 @@
         {
           "signal": "actor_resemblance",
           "detail": "The name matches the actor Transparent Tribe (as 'Transparent Tribe') after removing the word 'operation'.",
-          "weight": 0.772
+          "weight": null
         }
       ],
       "status": "pending confirmation"
@@ -1380,8 +1382,8 @@
       "name": "ozie team",
       "count": 1,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": null,
       "matched_actor_name": null,
       "evidence": [
@@ -1397,8 +1399,8 @@
       "name": "praying mantis",
       "count": 1,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": null,
       "matched_actor_name": null,
       "evidence": [
@@ -1419,8 +1421,8 @@
       "name": "quantum ransomware",
       "count": 1,
       "label": "malware",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": null,
       "matched_actor_name": null,
       "evidence": [
@@ -1526,8 +1528,8 @@
       "name": "romcom threat actor",
       "count": 1,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": "romcom",
       "matched_actor_name": "RomCom",
       "evidence": [
@@ -1662,8 +1664,8 @@
       "name": "soraj bear",
       "count": 1,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": null,
       "matched_actor_name": null,
       "evidence": [
@@ -1696,8 +1698,8 @@
       "name": "sunshop digital quartermaster",
       "count": 1,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": null,
       "matched_actor_name": null,
       "evidence": [
@@ -1713,8 +1715,8 @@
       "name": "tag-26",
       "count": 1,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": null,
       "matched_actor_name": null,
       "evidence": [
@@ -1786,8 +1788,8 @@
       "name": "uac-0098",
       "count": 1,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": null,
       "matched_actor_name": null,
       "evidence": [
@@ -1820,8 +1822,8 @@
       "name": "unc2727",
       "count": 1,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": null,
       "matched_actor_name": null,
       "evidence": [
@@ -1850,7 +1852,7 @@
         {
           "signal": "cve_actor",
           "detail": "A report that uses this name cites CVE-2010-2568, which the dataset's other reports tie to APT28.",
-          "weight": 0.591
+          "weight": null
         }
       ],
       "status": "pending confirmation"
@@ -1859,8 +1861,8 @@
       "name": "valkyrie-x security research group",
       "count": 1,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": null,
       "matched_actor_name": null,
       "evidence": [
@@ -1876,8 +1878,8 @@
       "name": "water kappa",
       "count": 1,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": null,
       "matched_actor_name": null,
       "evidence": [
@@ -1898,8 +1900,8 @@
       "name": "water pamola",
       "count": 1,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": null,
       "matched_actor_name": null,
       "evidence": [
@@ -1915,8 +1917,8 @@
       "name": "zebra2104",
       "count": 1,
       "label": "actor",
-      "confidence": 0.94,
-      "band": "high",
+      "confidence": 0.69,
+      "band": "low",
       "matched_actor_id": null,
       "matched_actor_name": null,
       "evidence": [

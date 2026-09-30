@@ -53,6 +53,23 @@
     ]
   },
   {
+    "id": "203bbfb2042fbf9d725b5cc9badb34774d2f99da",
+    "title": "Trojan-Win32-Opachki - redirections Google",
+    "published": "2009-11-11",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202003%20-%202009/2009-11-11%20-%20Trojan-Win32-Opachki%20-%20redirections%20Google.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/203bbfb2042fbf9d725b5cc9badb34774d2f99da.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "8157589046e362f68e10b8017425cd36bddea906",
     "title": "Trojan:Win32/Opachki : redirections Google",
     "published": "2009-11-11",
@@ -87,6 +104,23 @@
     ]
   },
   {
+    "id": "80611a43a8a420b335176f810427be1535fbc557",
+    "title": "Opachki, from (and to) Russia with love",
+    "published": "2009-11-03",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202003%20-%202009/2009-11-03%20-%20Opachki,%20from%20(and%20to)%20Russia%20with%20love.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/80611a43a8a420b335176f810427be1535fbc557.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "dd3c03359ef87f6bd0e5119aa66bc02dd86f36d9",
     "title": "Opachki, from (and to) Russia with love - SANS ISC",
     "published": "2009-11-03",
@@ -112,6 +146,57 @@
     "url": "http://contagiodump.blogspot.com/2009/11/new-banking-trojan-w32silon-msjet51dll.html",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/07c4be32f05eef5c0ff03df6b2d176c875ea040c.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "e1ba3a956c707b204e79eef95f6c91d5ad4be0ac",
+    "title": "New banking trojan W32.Silon -msjet51.dll",
+    "published": "2009-11-02",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202003%20-%202009/2009-11-02%20-%20New%20banking%20trojan%20W32.Silon%20-msjet51.dll.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/e1ba3a956c707b204e79eef95f6c91d5ad4be0ac.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "e519c00945f6268b01828b6d6766c98f4b5268c5",
+    "title": "Win32-Opachki.A - Trojan that removes Zeus (but it is not benign)",
+    "published": "2009-11-02",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202003%20-%202009/2009-11-02%20-%20Win32-Opachki.A%20-%20Trojan%20that%20removes%20Zeus%20(but%20it%20is%20not%20benign).pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/e519c00945f6268b01828b6d6766c98f4b5268c5.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "5a22d3fad96eac9215ce9b84a168b865a1ea9168",
+    "title": "Two-Headed Trojan Targets Online Banks",
+    "published": "2009-10-29",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202003%20-%202009/2009-10-29%20-%20Two-Headed%20Trojan%20Targets%20Online%20Banks.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/5a22d3fad96eac9215ce9b84a168b865a1ea9168.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -172,6 +257,23 @@
     ]
   },
   {
+    "id": "00cabe07301355e33affbaa4bd39198e9fa8974a",
+    "title": "Detecting ZeuS",
+    "published": "2009-10-01",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202003%20-%202009/2009-10-01%20-%20Detecting%20ZeuS.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/00cabe07301355e33affbaa4bd39198e9fa8974a.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "290de53b007e32e60a7e8704bf374a014c1074fc",
     "title": "Detecting ZeuS | eternal-todo.com",
     "published": "2009-10-01",
@@ -206,8 +308,42 @@
     ]
   },
   {
+    "id": "4208c7eeb8df937ad1d2a878e949dca2513d92e3",
+    "title": "PC Users Threatened by Conficker Worm and new Internet-browser Modifier",
+    "published": "2009-08-05",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202003%20-%202009/2009-08-05%20-%20PC%20Users%20Threatened%20by%20Conficker%20Worm%20and%20new%20Internet-browser%20Modifier.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/4208c7eeb8df937ad1d2a878e949dca2513d92e3.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "4b00565b560ccaec1033c88c42d22c3ab8a133cc",
+    "title": "Writing a Simple Rootkit for Linux",
+    "published": "2009-07-25",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Linux/Kernel%20Mode/2009-07-25%20-%20Writing%20a%20Simple%20Rootkit%20for%20Linux.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/4b00565b560ccaec1033c88c42d22c3ab8a133cc.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "4ff8f1be08a9b88f814a49e9da2dea7636f2b8c0",
-    "title": "2016-07-06 - New OSX-Keydnap malware is hungry for credentials",
+    "title": "Common Cyber Security Vulnerabilities Observed in ICS (2009).pdf",
     "published": "2009-07-21",
     "date_basis": "file-metadata",
     "organisation": null,
@@ -257,14 +393,48 @@
     ]
   },
   {
+    "id": "acb4bcbbe456a1f65ff4036fbe91b936696d49ca",
+    "title": "Special!!! ZeuS Botnet for Dummies",
+    "published": "2009-07-11",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202003%20-%202009/2009-07-11%20-%20Special!!!%20ZeuS%20Botnet%20for%20Dummies.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/acb4bcbbe456a1f65ff4036fbe91b936696d49ca.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "b9518d09da5941de1711ccc859f39e06896854d9",
-    "title": "2016-07-20 - CrypMIC Ransomware Wants to Follow CryptXXX’s Footsteps",
+    "title": "Hacking the Industrial Network.pdf",
     "published": "2009-07-09",
     "date_basis": "file-metadata",
     "organisation": null,
     "url": "https://papers.vx-underground.org/papers/ICS%20SCADA/ICS%20Vulnerabilities/Hacking%20the%20Industrial%20Network.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b9518d09da5941de1711ccc859f39e06896854d9.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "9885215fb54239749852a456847c0999c6104d03",
+    "title": "Cyber attackers target South Korea and US",
+    "published": "2009-07-08",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202003%20-%202009/2009-07-08%20-%20Cyber%20attackers%20target%20South%20Korea%20and%20US.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/9885215fb54239749852a456847c0999c6104d03.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -282,6 +452,23 @@
     "url": "https://www.theguardian.com/world/2009/jul/08/south-korea-cyber-attack",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/d2fc5fd41048da64ef34d258f7662b3598e6c3c9.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "fc2ab0533fa2ae38519ddd6950fb6e16cc980d0a",
+    "title": "Virut Encryption Analysis",
+    "published": "2009-06-23",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202003%20-%202009/2009-06-23%20-%20Virut%20Encryption%20Analysis.pdf",
+    "url_ok": true,
+    "archive_url": "https://archive.orkl.eu/fc2ab0533fa2ae38519ddd6950fb6e16cc980d0a.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -309,13 +496,30 @@
   },
   {
     "id": "69871900967d982185c2e254c607048011710ee6",
-    "title": "2016-09-02 - Necurs – hybrid spam botnet",
+    "title": "The Downadup Codex v2.0.pdf",
     "published": "2009-06-02",
     "date_basis": "file-metadata",
     "organisation": null,
     "url": "https://papers.vx-underground.org/papers/ICS%20SCADA/Other/The%20Downadup%20Codex%20v2.0.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/69871900967d982185c2e254c607048011710ee6.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "722d3271399e1d440faca03be05e2fb03e630bfc",
+    "title": "win32update.exe eec80fd4c7fc5cf5522f0ca4eb2d9c6f",
+    "published": "2009-06-02",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202003%20-%202009/2009-06-02%20-%20win32update.exe%20%20eec80fd4c7fc5cf5522f0ca4eb2d9c6f.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/722d3271399e1d440faca03be05e2fb03e630bfc.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -333,6 +537,23 @@
     "url": "https://www.wired.com/images_blogs/threatlevel/2009/06/trustwave-security-alert-atm-malware-analysis-briefing.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c4ae8b83af1017eedec9009c3ca08cb731f7ecda.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "23b4c879af9f79358e58c7ba3d589b7d913b3ea1",
+    "title": "Conficker.A binaries",
+    "published": "2009-05-31",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202003%20-%202009/2009-05-31%20-%20Conficker.A%20binaries.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/23b4c879af9f79358e58c7ba3d589b7d913b3ea1.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -378,6 +599,23 @@
     ]
   },
   {
+    "id": "9e8d825e6f2ba2411b162ae8237a4db663764c81",
+    "title": "GhostNet",
+    "published": "2009-03-29",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202003%20-%202009/2009-03-29%20-%20GhostNet.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/9e8d825e6f2ba2411b162ae8237a4db663764c81.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "28dd92f598e7d8987d8236767856c70be4f7e85f",
     "title": "Tracking Ghostnet: Investigating A Cyber Espionage Network",
     "published": "2009-03-28",
@@ -386,6 +624,23 @@
     "url": "https://app.box.com/s/8dq0gur02w8oh0z7ljjz5mh8l11cmrhh",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/28dd92f598e7d8987d8236767856c70be4f7e85f.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "427b91ea572bd74b572490aa0862f347f90f5c90",
+    "title": "Gheg spambot",
+    "published": "2009-03-17",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202003%20-%202009/2009-03-17%20-%20Gheg%20spambot.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/427b91ea572bd74b572490aa0862f347f90f5c90.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -420,6 +675,23 @@
     "url": "http://www.csl.sri.com/users/vinod/papers/Conficker/addendumC/index.html",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/47975ad2eedddcc5dec0832c23043cd781b36bb2.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "fefc6706f8b254f670a3f367ff70a4a547bbe834",
+    "title": "Conficker C Analysis",
+    "published": "2009-03-08",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202003%20-%202009/2009-03-08%20-%20Conficker%20C%20Analysis.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/fefc6706f8b254f670a3f367ff70a4a547bbe834.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],

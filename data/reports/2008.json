@@ -1,7 +1,7 @@
 [
   {
     "id": "b76743a97db3664476bc8d8a49b64aecb30e6d28",
-    "title": "2016-08-01 - CrowdStrike’s New Methodology for Tracking eCrime",
+    "title": "Leverage Ethernet Vulnerabilities in Field Devices.pdf",
     "published": "2008-12-30",
     "date_basis": "file-metadata",
     "organisation": null,
@@ -36,14 +36,14 @@
     ]
   },
   {
-    "id": "eb344bffc47fec990f140b61dd791561b5c57aef",
-    "title": "2016-07-05 - New Backdoor Allows Full Access to Mac Systems, Bitdefender Warns",
-    "published": "2008-11-19",
-    "date_basis": "file-metadata",
+    "id": "b5b1ca6279bf14f36ab7905c811bb2466d2e5f8a",
+    "title": "Agent.btz - A Threat That Hit Pentagon",
+    "published": "2008-11-30",
+    "date_basis": "title-date",
     "organisation": null,
-    "url": "https://papers.vx-underground.org/papers/ICS%20SCADA/ICS%20Vulnerabilities/Common%20Cyber%20Security%20Vulnerabilities%20Observed%20in%20Control%20Systems%20(2008).pdf",
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202003%20-%202009/2008-11-30%20-%20Agent.btz%20-%20A%20Threat%20That%20Hit%20Pentagon.pdf",
     "url_ok": null,
-    "archive_url": "https://archive.orkl.eu/eb344bffc47fec990f140b61dd791561b5c57aef.pdf",
+    "archive_url": "https://archive.orkl.eu/b5b1ca6279bf14f36ab7905c811bb2466d2e5f8a.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -172,6 +172,23 @@
     ]
   },
   {
+    "id": "d27044f3601bfa3c065751147a4f179b9b4752c3",
+    "title": "Who's behind the GPcode ransomware-",
+    "published": "2008-06-10",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202003%20-%202009/2008-06-10%20-%20Who's%20behind%20the%20GPcode%20ransomware-.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/d27044f3601bfa3c065751147a4f179b9b4752c3.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "fad3b72fed7a64edfda66fd3e1fffd1460a5223d",
     "title": "Who's behind the GPcode ransomware?",
     "published": "2008-06-10",
@@ -206,6 +223,23 @@
     ]
   },
   {
+    "id": "f106743de38d1cdf56cbd70b0f1ac49e8cc45dcd",
+    "title": "Потомок «нецензурного» трояна или как воруют пароли на FTP",
+    "published": "2008-06-08",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202003%20-%202009/2008-06-08%20-%20%D0%9F%D0%BE%D1%82%D0%BE%D0%BC%D0%BE%D0%BA%20%C2%AB%D0%BD%D0%B5%D1%86%D0%B5%D0%BD%D0%B7%D1%83%D1%80%D0%BD%D0%BE%D0%B3%D0%BE%C2%BB%20%D1%82%D1%80%D0%BE%D1%8F%D0%BD%D0%B0%20%D0%B8%D0%BB%D0%B8%20%D0%BA%D0%B0%D0%BA%20%D0%B2%D0%BE%D1%80%D1%83%D1%8E%D1%82%20%D0%BF%D0%B0%D1%80%D0%BE%D0%BB%D0%B8%20%D0%BD%D0%B0%20FTP.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/f106743de38d1cdf56cbd70b0f1ac49e8cc45dcd.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "c92a770df6f0b3f4f698da4c84cb3cd32889413d",
     "title": "killing_the_myth_of_cisco_ios_rootkits.pdf",
     "published": "2008-06-05",
@@ -214,6 +248,23 @@
     "url": "https://drwho.virtadpt.net/images/killing_the_myth_of_cisco_ios_rootkits.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c92a770df6f0b3f4f698da4c84cb3cd32889413d.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "5ae984b4e98ff93e4278ac159fb180ff06a250d9",
+    "title": "Rustock.C – Unpacking a Nested Doll",
+    "published": "2008-05-18",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202003%20-%202009/2008-05-18%20-%20Rustock.C%20%E2%80%93%20Unpacking%20a%20Nested%20Doll.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/5ae984b4e98ff93e4278ac159fb180ff06a250d9.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],

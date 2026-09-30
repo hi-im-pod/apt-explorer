@@ -1,5 +1,39 @@
 [
   {
+    "id": "01a0999db73efb515831628b933260cbe9348f61",
+    "title": "Pushdo - Analysis of a Modern Malware Distribution System",
+    "published": "2007-12-16",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202003%20-%202009/2007-12-16%20-%20Pushdo%20-%20Analysis%20of%20a%20Modern%20Malware%20Distribution%20System.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/01a0999db73efb515831628b933260cbe9348f61.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "e03593156f0a54ecdc47ee221433256894eab9b2",
+    "title": "Inside the -Ron Paul- Spam Botnet",
+    "published": "2007-12-04",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202003%20-%202009/2007-12-04%20-%20Inside%20the%20-Ron%20Paul-%20Spam%20Botnet.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/e03593156f0a54ecdc47ee221433256894eab9b2.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "8f0a39ac76b6201ff24553f732bb730fdfc08033",
     "title": "Virus Bulletin :: Spam from the kernel",
     "published": "2007-11-01",
@@ -8,6 +42,40 @@
     "url": "https://www.virusbulletin.com/virusbulletin/2007/11/spam-kernel",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/8f0a39ac76b6201ff24553f732bb730fdfc08033.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "a7e409c901a77561a247afc9c22519aed5cc67c0",
+    "title": "Spam from the kernel",
+    "published": "2007-11-01",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202003%20-%202009/2007-11-01%20-%20Spam%20from%20the%20kernel.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/a7e409c901a77561a247afc9c22519aed5cc67c0.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "4be65616a29f5c7d6267afd968db52331052dc8b",
+    "title": "Trojan.Bayrob Strikes Again!",
+    "published": "2007-10-31",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202003%20-%202009/2007-10-31%20-%20Trojan.Bayrob%20Strikes%20Again!.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/4be65616a29f5c7d6267afd968db52331052dc8b.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
@@ -53,6 +121,23 @@
     ]
   },
   {
+    "id": "22fc63b93d567746f75b3a6ec088a245aa78fe0e",
+    "title": "A Case Study of the Rustock Rootkit and Spam Bot",
+    "published": "2007-04-03",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202003%20-%202009/2007-04-03%20-%20A%20Case%20Study%20of%20the%20Rustock%20Rootkit%20and%20Spam%20Bot.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/22fc63b93d567746f75b3a6ec088a245aa78fe0e.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
     "id": "d97ce2059accb3ad84943994bfe7d551a1849f43",
     "title": "A Case Study of the Rustock Rootkit and Spam Bot",
     "published": "2007-04-03",
@@ -88,13 +173,30 @@
   },
   {
     "id": "bc38dd9115119af6e63396d760364e0701e4393b",
-    "title": "2016-08-08 - Strider- Cyberespionage group turns eye of Sauron on targets",
+    "title": "Top 10 Vulnerabilities of Control Systems and their Mitigations (2007).pdf",
     "published": "2007-01-23",
     "date_basis": "file-metadata",
     "organisation": null,
     "url": "https://papers.vx-underground.org/papers/ICS%20SCADA/ICS%20Vulnerabilities/Top%2010%20Vulnerabilities%20of%20Control%20Systems%20and%20their%20Mitigations%20(2007).pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/bc38dd9115119af6e63396d760364e0701e4393b.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "orkl"
+    ]
+  },
+  {
+    "id": "dd489d55af9d7a1fc0dc4783ff377a322a36863b",
+    "title": "A Rustock-ing Stuffer",
+    "published": "2007-01-09",
+    "date_basis": "title-date",
+    "organisation": null,
+    "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202003%20-%202009/2007-01-09%20-%20A%20Rustock-ing%20Stuffer.pdf",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/dd489d55af9d7a1fc0dc4783ff377a322a36863b.pdf",
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
