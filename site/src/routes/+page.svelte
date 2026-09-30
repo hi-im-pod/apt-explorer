@@ -41,6 +41,11 @@
 		behind each merge. Each actor links to the reports written about it, and the data is rebuilt
 		every week.
 	</p>
+	<p class="credit">
+		Built on the dataset of Yuldoshkhujaev et al. (CCS '25). <a href="{base}/about/#paper-heading"
+			>About has the full credit</a
+		>.
+	</p>
 </section>
 
 <section aria-labelledby="views-heading">
@@ -100,6 +105,11 @@
 		color: var(--text-muted);
 		font-size: 1.125rem;
 		max-width: 42rem;
+	}
+
+	.credit {
+		max-width: 42rem;
+		color: var(--text-muted);
 	}
 
 	.section-note {

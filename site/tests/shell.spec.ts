@@ -180,6 +180,22 @@ test('the footer links to the name guesses page, inside the footer box at both w
 	await expect(page.getByRole('heading', { level: 1 })).toHaveText('Name Guesses');
 });
 
+test('the home page credits the paper and links to the full credit on About', async ({ page }) => {
+	for (const width of [1280, 375]) {
+		await page.setViewportSize({ width, height: 800 });
+		await page.goto('/apt-explorer/');
+		const credit = page.locator('main .credit');
+		await expect(credit).toBeVisible();
+		await expect(credit).toContainText("Built on the dataset of Yuldoshkhujaev et al. (CCS '25).");
+		const box = (await credit.boundingBox())!;
+		expect(box.height).toBeGreaterThan(0);
+		expect(box.x + box.width).toBeLessThanOrEqual(width);
+		const link = credit.getByRole('link', { name: 'About has the full credit' });
+		const href = new URL(await link.evaluate((a) => (a as HTMLAnchorElement).href));
+		expect(href.pathname + href.hash).toBe('/apt-explorer/about/#paper-heading');
+	}
+});
+
 test('the home page lists every source with its health', async ({ page }) => {
 	const sources = readData<Sources>('sources.json');
 	await page.goto('/apt-explorer/');
