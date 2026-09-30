@@ -13,7 +13,9 @@ record identifier, never an alias, so writing anchors to a public file does not
 reveal a name either. An actor keeps the slug of the entry it shares anchors
 with. If it shares anchors with several entries, the sources it was built from
 were merged: it keeps the oldest slug, and the others are retired with a pointer
-to the survivor, so their old addresses can say where the actor went.
+to the survivor, so their old addresses can say where the actor went. Age is the entry's
+first_published date. Every entry from the first build carries the same date, so among those
+the alphabetically smaller slug survives; age decides only between entries added in later builds.
 
 A slug is never given out twice. Retired and vanished entries stay in the
 registry, and a new actor whose natural slug is taken gets a numeric suffix,
