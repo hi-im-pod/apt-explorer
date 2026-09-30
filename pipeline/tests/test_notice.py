@@ -53,6 +53,19 @@ def test_the_notice_states_the_data_licence_and_that_no_extra_terms_apply():
     assert "No additional terms or conditions apply to these files." in text
 
 
+def test_the_related_work_line_points_at_apt_map_and_says_nothing_about_its_terms():
+    # A pointer to a neighbouring project is a credit, not a licence statement. It must not
+    # imply the project's licence, its maintainers' approval or any plan to contribute.
+    text = render_notice("2026")
+    lines = [line for line in text.split("\n") if line.startswith("Related work:")]
+    assert len(lines) == 1
+    assert "https://lngt-apt-study-map.vercel.app/" in lines[0]
+    for word in ("licen", "approv", "endors", "permission", "contribut", "affiliat"):
+        assert word not in lines[0].lower()
+    # The line sits in the intro, before the first section heading.
+    assert text.index(lines[0]) < text.index("## MITRE ATT&CK")
+
+
 def test_the_licence_paragraph_and_trademark_line_travel_with_the_designation():
     text = render_notice("2026")
     assert "reproduce MITRE's copyright designation and this license in any such copy." in text

@@ -3,6 +3,7 @@
 	import type { PublishPolicy } from '$lib/data';
 	import { PUBLISH_POLICIES, sourceLabel } from '$lib/data/labels';
 	import { formatCount, formatDate } from '$lib/format';
+	import { LINK_KINDS } from '$lib/links';
 
 	let { data } = $props();
 
@@ -77,6 +78,35 @@
 	{/if}
 </section>
 
+<section id="related-work" aria-labelledby="related-work-heading">
+	<h2 id="related-work-heading">Related Work: APT Map</h2>
+	<p>
+		<a href="https://lngt-apt-study-map.vercel.app/">APT Map</a> is an interactive map of
+		hand-curated APT incident rows, built from the dataset released with the paper above. It shows
+		incidents from the victim's side or the attacker's side, and it filters them by year, country
+		and actor. A detail panel for each incident gives the CVE, whether a zero-day was used, the
+		source, the attack vector, the malware, the targeted sectors and the duration. Anyone can add
+		incidents through a GitHub pull request.
+	</p>
+	<p>
+		APT Explorer answers a different question. It is an explorer of actors and of the reports
+		written about them, and its pipeline can be rebuilt from open sources. The two projects share a
+		starting point, and the credit for the dataset belongs to the paper's authors.
+	</p>
+	<ul class="related">
+		<li><a href="https://lngt-apt-study-map.vercel.app/">APT Map, the interactive site</a></li>
+		<li>
+			<a href="https://github.com/SecAI-Lab/APTMap-backend">SecAI-Lab/APTMap-backend</a>, the code
+			behind the map on GitHub
+		</li>
+		<li>
+			<a href="https://github.com/SecAI-Lab/A-Decade-long-Landscape-of-Advanced-Persistent-Threats"
+				>SecAI-Lab/A-Decade-long-Landscape-of-Advanced-Persistent-Threats</a
+			>, the repository for the paper on GitHub
+		</li>
+	</ul>
+</section>
+
 <section id="sources" aria-labelledby="sources-heading">
 	<h2 id="sources-heading">Sources and Licences</h2>
 	<p class="section-note">
@@ -142,6 +172,28 @@
 			</div>
 		{/each}
 	</dl>
+</section>
+
+<section id="report-links" aria-labelledby="report-links-heading">
+	<h2 id="report-links-heading">Original, Archive and Mirror Links</h2>
+	<p class="section-note">
+		A report can have two links: the publisher's own page and a copy of it held by someone else.
+		The site labels each link by where it goes, so a copy is never passed off as the original. The
+		<a href="{base}/methodology/#report-links">Methodology</a> page explains how the label is chosen
+		and where it can be wrong.
+	</p>
+	<dl class="kinds">
+		{#each LINK_KINDS as k (k.kind)}
+			<div data-kind={k.kind}>
+				<dt>{k.label}</dt>
+				<dd>{k.explanation}</dd>
+			</div>
+		{/each}
+	</dl>
+	<p class="section-note">
+		Some reports have no known original. Their records point only to a mirror, and the panel then
+		says that no original publisher link is known. The site does not guess one.
+	</p>
 </section>
 
 <section id="data-licence" aria-labelledby="licence-heading">
@@ -353,5 +405,46 @@
 	.notice {
 		max-width: 44rem;
 		margin: 0 0 1.25rem;
+	}
+
+	.related {
+		max-width: 44rem;
+		margin: 0.75rem 0 0;
+		padding-left: 1.25rem;
+	}
+
+	.related li {
+		margin-bottom: 0.375rem;
+		/* Repository names are long single words, so they must wrap at 375px. */
+		overflow-wrap: anywhere;
+	}
+
+	.kinds {
+		display: grid;
+		gap: 0.5rem;
+		max-width: 44rem;
+		margin: 1rem 0;
+	}
+
+	.kinds > div {
+		padding: 0.625rem 1rem;
+		border: 1px solid var(--border);
+		border-radius: 0.625rem;
+	}
+
+	.kinds dt {
+		margin: 0 0 0.125rem;
+		color: var(--text);
+		font-family: var(--font-body, inherit);
+		font-size: 0.9375rem;
+		font-weight: 600;
+		letter-spacing: 0;
+		text-transform: none;
+	}
+
+	.kinds dd {
+		margin: 0;
+		color: var(--text-muted);
+		font-size: 0.9375rem;
 	}
 </style>

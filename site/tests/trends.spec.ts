@@ -179,6 +179,155 @@ test('at 375px the source table scrolls in its own box instead of breaking words
 	await noHorizontalScroll(page);
 });
 
+// ---------------------------------------------------------------------------
+// Legibility. Each check reads what the browser painted: where every tick label
+// sits, how big it is, and what colour it is against the page.
+
+interface LabelBox {
+	text: string;
+	left: number;
+	right: number;
+	top: number;
+	bottom: number;
+	size: number;
+	contrast: number;
+}
+
+/** Every tick label under a figure's SVG, with its painted box, size and contrast on the page. */
+async function tickLabels(figure: Locator, axis: 'x' | 'y'): Promise<{ svg: DOMRect; labels: LabelBox[] }> {
+	return figure.locator('svg').first().evaluate((svg, ax) => {
+		// A computed colour may be in any CSS colour syntax, so a canvas turns it into RGB.
+		const ctx = document.createElement('canvas').getContext('2d')!;
+		const rgb = (css: string): [number, number, number] => {
+			ctx.clearRect(0, 0, 1, 1);
+			ctx.fillStyle = '#000';
+			ctx.fillStyle = css;
+			ctx.fillRect(0, 0, 1, 1);
+			const d = ctx.getImageData(0, 0, 1, 1).data;
+			return [d[0], d[1], d[2]];
+		};
+		const lum = ([r, g, b]: number[]) => {
+			const f = (v: number) => ((v /= 255) <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4);
+			return 0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(b);
+		};
+		const bg = rgb(getComputedStyle(document.body).backgroundColor);
+		const texts = [...svg.querySelectorAll(`[aria-label="${ax}-axis tick label"] text`)];
+		return {
+			svg: svg.getBoundingClientRect().toJSON(),
+			labels: texts.map((t) => {
+				const r = t.getBoundingClientRect();
+				const s = getComputedStyle(t);
+				const a = lum(rgb(s.fill));
+				const b = lum(bg);
+				return {
+					text: t.textContent ?? '',
+					left: r.left,
+					right: r.right,
+					top: r.top,
+					bottom: r.bottom,
+					size: parseFloat(s.fontSize),
+					contrast: (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05)
+				};
+			})
+		};
+	}, axis);
+}
+
+const FIGURES: { key: Key; scope: string; axis: 'time' | 'value' }[] = [
+	{ key: 'reporting_activity', scope: 'section#reporting-activity figure', axis: 'time' },
+	{ key: 'new_actors', scope: 'section#new-actors figure', axis: 'time' },
+	{ key: 'kev_monthly', scope: 'section#kev-monthly figure', axis: 'time' },
+	{ key: 'reported_vs_documented', scope: 'section#reported-vs-documented figure', axis: 'value' }
+];
+
+for (const vp of [
+	{ name: '1280', width: 1280, height: 900 },
+	{ name: '375', width: 375, height: 800 }
+]) {
+	for (const t of themes) {
+		test(`at ${vp.name}px in ${t} every chart has readable, separate tick labels inside its box`, async ({ page }) => {
+			await page.setViewportSize({ width: vp.width, height: vp.height });
+			await useTheme(page, t);
+			await open(page);
+			for (const f of FIGURES) {
+				const figure = page.locator(f.scope);
+				// The new-actors chart is drawn only when the actors spread over two months.
+				if (!(await figure.count())) {
+					expect(f.key).toBe('new_actors');
+					continue;
+				}
+				await expect(figure.locator('svg').first()).toBeVisible();
+				for (const axis of ['x', 'y'] as const) {
+					if (axis === 'y' && f.axis === 'value') continue;
+					const { svg, labels } = await tickLabels(figure, axis);
+					const where = `${f.key} ${axis} axis`;
+					// Facets and bars share an x axis, so the y axis may be empty only for the small multiples.
+					if (axis === 'y' && labels.length === 0) continue;
+					expect(labels.length, where).toBeGreaterThanOrEqual(axis === 'x' ? 3 : 1);
+					for (const l of labels) {
+						expect(l.text.trim().length, where).toBeGreaterThan(0);
+						// Painted inside the chart's own box, so nothing is cut off at an edge.
+						expect(l.left, `${where} "${l.text}" left`).toBeGreaterThanOrEqual(svg.left - 0.5);
+						expect(l.right, `${where} "${l.text}" right`).toBeLessThanOrEqual(svg.right + 0.5);
+						expect(l.top, `${where} "${l.text}" top`).toBeGreaterThanOrEqual(svg.top - 0.5);
+						expect(l.bottom, `${where} "${l.text}" bottom`).toBeLessThanOrEqual(svg.bottom + 0.5);
+						expect(l.size, `${where} "${l.text}" size`).toBeGreaterThanOrEqual(11);
+						expect(l.contrast, `${where} "${l.text}" contrast`).toBeGreaterThanOrEqual(4.5);
+					}
+					if (axis === 'x') {
+						// Neighbouring labels do not touch, whatever the width.
+						const sorted = [...labels].sort((a, b) => a.left - b.left);
+						for (let i = 1; i < sorted.length; i++) {
+							expect(
+								sorted[i].left - sorted[i - 1].right,
+								`${where} "${sorted[i - 1].text}" and "${sorted[i].text}"`
+							).toBeGreaterThanOrEqual(2);
+						}
+					}
+				}
+			}
+		});
+
+		test(`at ${vp.name}px in ${t} charts are tall enough and multi-series charts name their series`, async ({ page }) => {
+			await page.setViewportSize({ width: vp.width, height: vp.height });
+			await useTheme(page, t);
+			await open(page);
+			const tokens = await chartTokens(page);
+			const heights: Record<string, number> = {
+				reporting_activity: 6 * 80,
+				kev_monthly: 240,
+				reported_vs_documented: 40 * 5
+			};
+			for (const [key, min] of Object.entries(heights)) {
+				const box = (await chart(page, key as Key).locator('svg').first().boundingBox())!;
+				expect(box.height, key).toBeGreaterThanOrEqual(min);
+			}
+			// A legend swatch that is painted in a series colour, next to its label.
+			for (const key of CHARTS) {
+				const legend = section(page, key).locator('.legend li');
+				expect(await legend.count(), key).toBeGreaterThanOrEqual(2);
+				const text = await section(page, key).locator('.legend').innerText();
+				expect(text.length, key).toBeGreaterThan(5);
+				const colours = await legend.locator('.key').evaluateAll((els) =>
+					els.map((e) => {
+						const r = e.getBoundingClientRect();
+						return { w: r.width, h: r.height, bg: getComputedStyle(e).backgroundColor };
+					})
+				);
+				for (const c of colours) {
+					expect(c.w, key).toBeGreaterThan(0);
+					expect(c.h, key).toBeGreaterThan(0);
+				}
+				const distinct = new Set(colours.map((c) => c.bg));
+				expect(distinct.size, `${key} swatches differ`).toBe(colours.length);
+				// The series swatches are the chart's own colours, except the "year earlier" rule, which is text-coloured.
+				const seriesColours = colours.filter((c) => tokens.includes(c.bg));
+				expect(seriesColours.length, key).toBeGreaterThanOrEqual(1);
+			}
+		});
+	}
+}
+
 test('a chart redraws to the new width when the window narrows', async ({ page }) => {
 	await page.setViewportSize({ width: 1280, height: 900 });
 	await open(page);

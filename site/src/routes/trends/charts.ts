@@ -19,26 +19,17 @@ import * as Plot from '@observablehq/plot';
 import type { ChartContext } from '$lib/components/Chart.svelte';
 import { formatCount, formatDate } from '$lib/format';
 import type { Activity, KevPoint, MonthCount, TechniqueBar } from './series';
+import { pickTicks } from './ticks';
 
 const BAR_MAX = 24;
-const TICK_FONT = '11px';
+// 12px keeps tick labels readable on a phone. ticks.ts assumes this size when it spaces them.
+const TICK_FONT = '12px';
 
 /** Side insets that keep a bar in a slot of `slot` px at most BAR_MAX wide, with a 2px gap. */
 function barInset(slot: number): number {
 	return Math.max(1, (slot - BAR_MAX) / 2);
 }
 
-/** January 1 of every year inside [from, to). */
-function yearStarts(from: Date, to: Date): Date[] {
-	const out: Date[] = [];
-	for (let y = from.getUTCFullYear(); y <= to.getUTCFullYear(); y++) {
-		const d = new Date(Date.UTC(y, 0, 1));
-		if (d >= from && d < to) out.push(d);
-	}
-	return out;
-}
-
-const year = (d: Date) => String(d.getUTCFullYear());
 const midpoint = (p: { start: Date; end: Date }) =>
 	new Date((p.start.getTime() + p.end.getTime()) / 2);
 
@@ -81,7 +72,8 @@ const countTick = (d: number) => (Number.isInteger(d) ? formatCount(d) : '');
 // ---------------------------------------------------------------------------
 // Reporting activity: one small chart per actor, sharing one time axis.
 
-const FACET = 68;
+// Each small chart is 84px: a 24px name line, then a plot tall enough to compare neighbouring bars.
+const FACET = 84;
 const ACTIVITY_MARGINS = { marginTop: 4, marginRight: 8, marginBottom: 28, marginLeft: 32 };
 
 export function activityHeight(actors: number): number {
@@ -94,6 +86,12 @@ export function activityChart(a: Activity, names: Record<string, string>) {
 		const to = a.points[a.points.length - 1].end;
 		const plotWidth = ctx.width - ACTIVITY_MARGINS.marginLeft - ACTIVITY_MARGINS.marginRight;
 		const inset = barInset(plotWidth / a.quarters.length);
+		const quarterStarts = a.points.filter((p) => p.actor === a.actors[0]).map((p) => p.start);
+		const { ticks, format } = pickTicks(quarterStarts, 'quarter', {
+			plotWidth,
+			leftRoom: ACTIVITY_MARGINS.marginLeft,
+			rightRoom: ACTIVITY_MARGINS.marginRight
+		});
 		const top = Math.max(1, ...a.points.map((p) => Math.max(p.count, p.prev)));
 		const name = (id: string) => names[id] ?? id;
 		const tip = (p: Activity['points'][number]) =>
@@ -102,7 +100,7 @@ export function activityChart(a: Activity, names: Record<string, string>) {
 		return Plot.plot({
 			...frame(ctx, activityHeight(a.actors.length), ACTIVITY_MARGINS),
 			fy: { domain: a.actors, axis: null, padding: 0 },
-			x: { type: 'utc', domain: [from, to], ticks: yearStarts(from, to), tickFormat: year, label: null },
+			x: { type: 'utc', domain: [from, to], ticks, tickFormat: format, label: null },
 			// The top of each small chart is kept free for the actor's name.
 			y: { domain: [0, top], insetTop: 24, label: null, ticks: [top], tickFormat: countTick, tickSize: 0 },
 			marks: [
@@ -166,6 +164,11 @@ export function kevChart(k: KevPoint[]) {
 		const to = k[k.length - 1].end;
 		const plotWidth = ctx.width - KEV_MARGINS.marginLeft - KEV_MARGINS.marginRight;
 		const inset = barInset(plotWidth / k.length);
+		const { ticks, format } = pickTicks(
+			k.map((p) => p.start),
+			'month',
+			{ plotWidth, leftRoom: KEV_MARGINS.marginLeft, rightRoom: KEV_MARGINS.marginRight }
+		);
 		const tip = (p: KevPoint) => {
 			const share = p.added ? Math.round((p.ransomware / p.added) * 100) : 0;
 			return `${monthName(p.month)}\n${plural(p.added, 'CVE', 'CVEs')} added\n${formatCount(p.ransomware)} with known ransomware use (${share}%)`;
@@ -173,7 +176,7 @@ export function kevChart(k: KevPoint[]) {
 
 		return Plot.plot({
 			...frame(ctx, KEV_HEIGHT, KEV_MARGINS),
-			x: { type: 'utc', domain: [from, to], ticks: yearStarts(from, to), tickFormat: year, label: null },
+			x: { type: 'utc', domain: [from, to], ticks, tickFormat: format, label: null },
 			y: { nice: true, label: null, tickFormat: countTick, tickSize: 0 },
 			marks: [
 				Plot.gridY({ stroke: ctx.grid, strokeOpacity: 1 }),
@@ -270,23 +273,9 @@ export function techniqueChart(bars: TechniqueBar[], names: Record<string, strin
 // ---------------------------------------------------------------------------
 // Newly documented actors per month: a small chart beside the list.
 
-export const NEW_ACTORS_HEIGHT = 140;
-const NEW_MARGINS = { marginTop: 8, marginRight: 8, marginBottom: 28, marginLeft: 28 };
-
-/**
- * A tick every third month from the first. The first tick and each January
- * carry the year ("Oct 2025", "Jan 2026"); the rest show the month only.
- */
-function monthTicks(points: MonthCount[]): { ticks: Date[]; format: (d: Date) => string } {
-	const ticks = points.filter((_, i) => i % 3 === 0).map((p) => p.start);
-	const first = ticks[0]?.getTime();
-	const format = (d: Date) => {
-		const month = d.toISOString().slice(0, 7);
-		const short = monthName(month).slice(0, 3);
-		return d.getTime() === first || d.getUTCMonth() === 0 ? `${short} ${month.slice(0, 4)}` : short;
-	};
-	return { ticks, format };
-}
+export const NEW_ACTORS_HEIGHT = 180;
+// The left margin is wide enough for a first label such as "Oct 2025", which is centred on the axis start.
+const NEW_MARGINS = { marginTop: 8, marginRight: 12, marginBottom: 28, marginLeft: 40 };
 
 export function newActorsChart(months: MonthCount[]) {
 	return (ctx: ChartContext) => {
@@ -294,7 +283,11 @@ export function newActorsChart(months: MonthCount[]) {
 		const to = months[months.length - 1].end;
 		const plotWidth = ctx.width - NEW_MARGINS.marginLeft - NEW_MARGINS.marginRight;
 		const inset = barInset(plotWidth / months.length);
-		const { ticks, format } = monthTicks(months);
+		const { ticks, format } = pickTicks(
+			months.map((p) => p.start),
+			'month',
+			{ plotWidth, leftRoom: NEW_MARGINS.marginLeft, rightRoom: NEW_MARGINS.marginRight }
+		);
 		const tip = (p: MonthCount) => `${monthName(p.month)}\n${plural(p.count, 'new actor', 'new actors')}`;
 
 		return Plot.plot({

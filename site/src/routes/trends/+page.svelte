@@ -41,6 +41,8 @@
 
 	const activity = $derived(reportingActivity(t, TOP_ACTIVITY));
 	const activityPlot = $derived(activityChart(activity, data.names));
+	// The same top the chart uses for its shared scale.
+	const activityTop = $derived(Math.max(1, ...activity.points.map((p) => Math.max(p.count, p.prev))));
 	const activityRows = $derived(activity.points.filter((p) => p.count > 0 || p.prev > 0));
 
 	const kev = $derived(kevMonthly(t));
@@ -98,6 +100,7 @@
 	{#if activity.actors.length}
 		<p class="lead">
 			The {activity.actors.length} actors with the most reports since {since}, quarter by quarter.
+			All the small charts share one scale, which runs from 0 to {activityTop} reports.
 		</p>
 		<Chart
 			title="Reports per quarter for the {activity.actors.length} most reported actors, with the same quarter a year earlier"
@@ -158,13 +161,16 @@
 		<p class="empty">No actor was first documented in the last twelve months.</p>
 	{/if}
 	{#if chartNewActors}
-		<Chart
-			title="Newly documented actors per month over the last twelve months"
-			note={t.notes.new_actors}
-			plot={newPlot}
-			height={NEW_ACTORS_HEIGHT}
-			axis="time"
-		/>
+		<div class="after-list">
+			<p class="lead">New actors per month over the same twelve months.</p>
+			<Chart
+				title="Newly documented actors per month over the last twelve months"
+				note={t.notes.new_actors}
+				plot={newPlot}
+				height={NEW_ACTORS_HEIGHT}
+				axis="time"
+			/>
+		</div>
 	{:else}
 		<p class="note">{t.notes.new_actors}</p>
 	{/if}
@@ -356,6 +362,10 @@
 		margin: 0;
 		padding: 0;
 		list-style: none;
+	}
+
+	.after-list {
+		margin-top: 1.5rem;
 	}
 
 	.new-actors li {

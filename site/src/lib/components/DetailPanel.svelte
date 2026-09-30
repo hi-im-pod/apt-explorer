@@ -7,13 +7,16 @@
 	both are done here: opening moves focus to the heading, Escape or the
 	close button calls onclose, and the page returns focus to the row.
 
-	Link order follows the link check. The original comes first; when the
-	last check found it unreachable, the archive copy comes first and the
-	panel says why. A dead link is never dropped.
+	Links are sorted by what they are, not by which field held them. The
+	original publisher's page is one kind of link; an archive or a mirror is
+	a copy. Both are shown wherever both exist, each with its own label and a
+	plain note on the difference, because a mirror must never pass as the
+	publisher. When the last link check found the original unreachable, the
+	copy comes first and the panel says why. A dead link is never dropped.
+	The classification lives in $lib/links.
 
 	A link-only row (ORKL, whose terms are pending) shows only its title,
-	date and links. Its archive link is ORKL's own copy, offered only when
-	the original is unreachable or missing.
+	date and links.
 
 	The table row already holds the title, date, publisher, sources, actors,
 	CVEs and techniques, so the panel shows them at once. The links and the
@@ -28,6 +31,7 @@
 	import type { ExploreRow } from '$lib/search';
 	import { sourceLabel } from '$lib/data/labels';
 	import { formatDate } from '$lib/format';
+	import { describeLinks } from '$lib/links';
 
 	interface Props {
 		/** Whether the panel is open. */
@@ -51,38 +55,8 @@
 	let dialog: HTMLDialogElement;
 	let heading = $state<HTMLHeadingElement>();
 
-	interface PanelLink {
-		kind: 'original' | 'archive';
-		href: string;
-	}
-
-	/** The report's links in the order a visitor should try them. */
-	const links = $derived.by((): PanelLink[] => {
-		const r = report;
-		if (!r) return [];
-		const original: PanelLink | null = r.url ? { kind: 'original', href: r.url } : null;
-		const archive: PanelLink | null = r.archive_url ? { kind: 'archive', href: r.archive_url } : null;
-		const dead = r.url_ok === false;
-		if (row?.linkOnly) {
-			// ORKL's archive copy stands in only when the original cannot.
-			if (original && !dead) return [original];
-			return [archive, original].filter((l): l is PanelLink => l != null);
-		}
-		const ordered = dead ? [archive, original] : [original, archive];
-		return ordered.filter((l): l is PanelLink => l != null);
-	});
-
-	const unreachable = $derived(report?.url != null && report.url_ok === false);
-	const noOriginal = $derived(report != null && report.url == null);
-
-	/** "harborcert.example", shown beside a link so the visitor knows where it goes. */
-	function host(href: string): string {
-		try {
-			return new URL(href).hostname.replace(/^www\./, '');
-		} catch {
-			return '';
-		}
-	}
+	/** The report's links in the order a visitor should try them, with a note on what they are. */
+	const linkInfo = $derived(report ? describeLinks(report) : null);
 
 	/** ATT&CK's page for a technique: T1566.002 lives at /techniques/T1566/002/. */
 	function techniqueUrl(id: string): string {
@@ -172,32 +146,31 @@
 						The links for this report could not be loaded.
 						<button type="button" class="retry" onclick={onretry}>Try again</button>
 					</p>
-				{:else if unreachable}
-					<p class="warn">
-						The original link was unreachable at the last link check.
-						{#if links[0]?.kind === 'archive'}The archive copy is listed first.{/if}
+				{:else if linkInfo}
+					<p
+						class="note"
+						class:warn={linkInfo.situation !== 'both' || linkInfo.links.some((l) => l.unreachable)}
+						data-situation={linkInfo.situation}
+					>
+						{linkInfo.note}
 					</p>
-				{:else if noOriginal}
-					<p class="warn">
-						This report has no original link.
-						{#if links.length}The archive copy is listed instead.{/if}
+					{#if linkInfo.links.length}
+						<ul class="links" aria-labelledby="panel-links">
+							{#each linkInfo.links as link (link.href)}
+								<li data-kind={link.class.kind} data-role={link.role}>
+									<a href={link.href} rel="noopener noreferrer" target="_blank">{link.class.label}</a>
+									<span class="host">{link.class.host}</span>
+									{#if link.unreachable}<span class="dead">Unreachable at last check</span>{/if}
+									<span class="what">{link.class.explanation}</span>
+								</li>
+							{/each}
+						</ul>
+					{/if}
+					<p class="policy">
+						<a href="{base}/methodology/#report-links"
+							>How the site tells originals, archives and mirrors apart</a
+						>
 					</p>
-				{/if}
-				{#if status !== 'ready'}
-					<!-- The links are not known yet, so neither a list nor "no link" is shown. -->
-				{:else if links.length}
-					<ul class="links" aria-labelledby="panel-links">
-						{#each links as link (link.kind)}
-							<li>
-								<a href={link.href} rel="noopener noreferrer" target="_blank"
-									>{link.kind === 'original' ? 'Original report' : 'Archive copy'}</a
-								>
-								<span class="host">{host(link.href)}</span>
-							</li>
-						{/each}
-					</ul>
-				{:else}
-					<p>No link is recorded for this report.</p>
 				{/if}
 			</section>
 
@@ -457,6 +430,19 @@
 		font-size: 0.9375rem;
 	}
 
+	.note {
+		margin: 0 0 0.75rem;
+		padding: 0.5rem 0.75rem;
+		border-left: 3px solid var(--accent);
+		background: var(--bg);
+		font-size: 0.9375rem;
+	}
+
+	/* A missing original, or a dead one, is worth noticing; a plain copy is not an error. */
+	.note.warn {
+		border-left-color: var(--danger);
+	}
+
 	.links,
 	.chips,
 	.ids {
@@ -481,6 +467,25 @@
 
 	.links a {
 		font-weight: 600;
+	}
+
+	.links li {
+		padding-bottom: 0.5rem;
+	}
+
+	.what {
+		flex-basis: 100%;
+		color: var(--text-muted);
+		font-size: 0.8125rem;
+		line-height: 1.4;
+	}
+
+	.dead {
+		padding: 0 0.375rem;
+		border: 1px solid var(--danger);
+		border-radius: 0.25rem;
+		color: var(--danger);
+		font-size: 0.6875rem;
 	}
 
 	.host {

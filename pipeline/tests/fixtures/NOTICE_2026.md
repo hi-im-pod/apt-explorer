@@ -6,6 +6,8 @@ They carry this licence because they adapt two share-alike sources. Values from 
 
 No additional terms or conditions apply to these files. The licence of the apt-explorer code does not apply to them.
 
+Related work: APT Map (https://lngt-apt-study-map.vercel.app/) is a separate interactive map built from the same paper dataset that appears below as the `paper` source.
+
 ## MITRE ATT&CK
 
 Values from MITRE ATT&CK® stay under MITRE's licence, which requires its copyright designation and licence in every copy:
