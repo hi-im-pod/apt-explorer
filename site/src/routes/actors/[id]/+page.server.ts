@@ -14,8 +14,17 @@
 import { error } from '@sveltejs/kit';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
-import { DataError, getActor, getReports, type Actor, type ActorsIndex, type Report } from '$lib/data';
+import {
+	DataError,
+	getActor,
+	getReports,
+	type Actor,
+	type ActorsIndex,
+	type Report,
+	type SlugRegistry
+} from '$lib/data';
 import { pickReports } from './profile';
+import { retiredStubs, type RetiredStub } from './stubs';
 import type { EntryGenerator, PageServerLoad } from './$types';
 
 /**
@@ -26,8 +35,25 @@ import type { EntryGenerator, PageServerLoad } from './$types';
  */
 export const entries: EntryGenerator = () => {
 	const index = JSON.parse(readFileSync(resolve('static/data/actors/index.json'), 'utf8')) as ActorsIndex;
-	return index.map((a) => ({ id: a.id }));
+	// The merged slugs get a small stub page each, so old links to them still lead somewhere.
+	return [...index.map((a) => a.id), ...stubs().keys()].map((id) => ({ id }));
 };
+
+// The stubs are read once per build. A data/ from before the slug registry existed has no
+// slugs.json, and that means no retired slugs rather than a failed build; any other read or
+// parse problem is a real error and stops the build.
+let retired: Map<string, RetiredStub> | undefined;
+
+function stubs(): Map<string, RetiredStub> {
+	if (retired) return retired;
+	try {
+		const registry = JSON.parse(readFileSync(resolve('static/data/slugs.json'), 'utf8')) as SlugRegistry;
+		return (retired = retiredStubs(registry));
+	} catch (e) {
+		if ((e as NodeJS.ErrnoException).code === 'ENOENT') return (retired = new Map());
+		throw e;
+	}
+}
 
 // Prerender runs every profile in one process, and each needs the same
 // shards. Reading and parsing them once instead of once per actor keeps the
@@ -47,6 +73,10 @@ function loadReports(fetch: typeof globalThis.fetch): Promise<Map<string, Report
 }
 
 export const load: PageServerLoad = async ({ fetch, params }) => {
+	// A retired slug is never a published actor, so it has no actor file to load.
+	const stub = stubs().get(params.id);
+	if (stub) return { stub, actor: null, reports: [] };
+
 	let actor: Actor;
 	try {
 		actor = await getActor(fetch, params.id);
@@ -56,7 +86,7 @@ export const load: PageServerLoad = async ({ fetch, params }) => {
 		if (e instanceof DataError) error(e.status === 404 ? 404 : 500, e.status === 404 ? 'Not found' : e.message);
 		throw e;
 	}
-	if (actor.reports.length === 0) return { actor, reports: [] };
+	if (actor.reports.length === 0) return { stub: null, actor, reports: [] };
 
 	const { reports, missing } = pickReports(actor.reports, await loadReports(fetch));
 	if (missing.length > 0) {
@@ -65,5 +95,5 @@ export const load: PageServerLoad = async ({ fetch, params }) => {
 		// gap rather than hiding it.
 		console.warn(`actors/${actor.id}: ${missing.length} report IDs are in no shard: ${missing.slice(0, 5).join(', ')}`);
 	}
-	return { actor, reports };
+	return { stub: null, actor, reports };
 };
