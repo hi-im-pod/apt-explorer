@@ -253,7 +253,7 @@
 		{#if hasTechniques}
 			<section id="techniques" aria-labelledby="techniques-heading">
 				<h2 id="techniques-heading">
-					{recentTechniques.length > 0 ? 'Techniques seen in the last 24 months' : 'Techniques in ATT&CK'}
+					{recentTechniques.length > 0 ? 'Techniques seen in the last two years' : 'Techniques in ATT&CK'}
 				</h2>
 				{#if recentTechniques.length > 0}
 					<ul class="tech" aria-labelledby="techniques-heading">
