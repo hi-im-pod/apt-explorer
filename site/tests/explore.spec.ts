@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { test, expect, type Locator, type Page } from '@playwright/test';
 import type { ActorsIndex, Build, Campaigns, Report, Vulns } from '../src/lib/data/types';
+import { describeLinks } from '../src/lib/links';
 
 // Expectations come from the same data/ the site is built from, so a change
 // to the data changes what these tests expect rather than breaking them.
@@ -42,8 +43,14 @@ const firstReport = (what: string, match: (r: Report) => boolean) => {
 	return r;
 };
 const ORKL_DEAD = firstReport(
-	'ORKL report with a dead original and an archive copy',
-	(r) => orklOnly(r) && findable(r) && r.url_ok === false && !!r.url && !!r.archive_url
+	'ORKL report with a dead publisher link and an archive copy',
+	// A dead mirror is not a dead original, so the row must have a publisher link.
+	(r) =>
+		orklOnly(r) &&
+		findable(r) &&
+		r.url_ok === false &&
+		!!r.archive_url &&
+		describeLinks(r).links.some((l) => l.role === 'original')
 ).id;
 const ORKL_LIVE = firstReport(
 	'ORKL report with a live original and an archive copy',
@@ -136,13 +143,14 @@ test('an actor and start date in the URL show only that actor from that date', a
 test('clicking a row sets ?report= and opens the panel with the original and archive links', async ({ page }) => {
 	const r = reportById(ORKL_DEAD);
 	await open(page, byTitle(ORKL_DEAD));
-	await rowFor(page, r.title).getByRole('link').click();
+	await rowFor(page, r.title).getByRole('link').first().click();
 	await expect(page).toHaveURL(new RegExp(`[?&]report=${ORKL_DEAD}`));
 	const dialog = panel(page);
 	await expect(dialog).toBeVisible();
 	await expect(dialog.getByRole('heading', { level: 2 })).toHaveText(r.title);
-	await expect(dialog.getByRole('link', { name: /original/i })).toHaveAttribute('href', r.url!);
-	await expect(dialog.getByRole('link', { name: /archive/i })).toHaveAttribute('href', r.archive_url!);
+	const links = dialog.getByRole('list', { name: /links/i }).getByRole('link');
+	await expect(links.filter({ hasText: 'Original publisher' })).toHaveAttribute('href', r.url!);
+	await expect(links.filter({ hasText: 'Archived copy on ORKL' })).toHaveAttribute('href', r.archive_url!);
 });
 
 test('reloading a ?report= URL reopens the same panel', async ({ page }) => {
@@ -175,7 +183,7 @@ for (const t of themes) {
 		await noHorizontalScroll(page);
 
 		// The open panel fits the screen too.
-		await rows.first().getByRole('link').click();
+		await rows.first().getByRole('link').first().click();
 		const dbox = (await panel(page).boundingBox())!;
 		expect(dbox.x).toBeGreaterThanOrEqual(0);
 		expect(dbox.x + dbox.width).toBeLessThanOrEqual(375);
@@ -305,7 +313,7 @@ test('a report with no original URL offers the archive copy', async ({ page }) =
 	const links = dialog.getByRole('list', { name: /links/i }).getByRole('link');
 	await expect(links).toHaveCount(1);
 	await expect(links.first()).toHaveAttribute('href', reportById(ORKL_ANY).archive_url!);
-	await expect(dialog).toContainText(/no original link/i);
+	await expect(dialog).toContainText(/no original publisher link is known/i);
 });
 
 test('an ORKL report shows only its title, date and links', async ({ page }) => {
@@ -314,10 +322,11 @@ test('an ORKL report shows only its title, date and links', async ({ page }) => 
 	const dialog = panel(page);
 	await expect(dialog.getByRole('heading', { level: 2 })).toHaveText(r.title);
 	await expect(dialog.locator('time')).toHaveAttribute('datetime', r.published!);
-	// The archive copy is only a fallback for a live ORKL original.
+	// Both the original and ORKL's archived copy are listed, original first (wave 3).
 	const links = dialog.getByRole('list', { name: /links/i }).getByRole('link');
-	await expect(links).toHaveCount(1);
+	await expect(links).toHaveCount(2);
 	await expect(links.first()).toHaveAttribute('href', r.url!);
+	await expect(links.nth(1)).toHaveAttribute('href', r.archive_url!);
 	for (const id of r.actors) await expect(dialog).not.toContainText(nameOf(id));
 	for (const cve of r.cves) await expect(dialog).not.toContainText(cve);
 	for (const tid of r.techniques) await expect(dialog).not.toContainText(tid);
@@ -345,7 +354,7 @@ test("ORKL's actor tags never appear, in the table or the panel", async ({ page 
 test('a campaign opens through ?campaign= with its span, actors and ATT&CK link', async ({ page }) => {
 	const c = campaigns.find((x) => x.actors.length > 0 && x.techniques.length > 0 && /^[A-Za-z0-9 ]+$/.test(x.name))!;
 	await open(page, `?q=${encodeURIComponent(c.name)}`);
-	await rowFor(page, c.name).getByRole('link').click();
+	await rowFor(page, c.name).getByRole('link').first().click();
 	await expect(page).toHaveURL(new RegExp(`[?&]campaign=${c.id}`));
 	await expect(page).not.toHaveURL(/report=/);
 	const dialog = panel(page);
@@ -369,7 +378,7 @@ test('an unknown ?report= says it is not in the data', async ({ page }) => {
 test('the panel takes focus, closes on Escape, clears ?report= and returns focus to the row', async ({ page }) => {
 	const r = reportById(ORKL_DEAD);
 	await open(page, byTitle(ORKL_DEAD));
-	const link = rowFor(page, r.title).getByRole('link');
+	const link = rowFor(page, r.title).getByRole('link').first();
 	await link.click();
 	const dialog = panel(page);
 	await expect(dialog).toBeVisible();

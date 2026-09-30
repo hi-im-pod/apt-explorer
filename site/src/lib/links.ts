@@ -223,7 +223,7 @@ export function describeLinks(report: ReportLinks): LinkDescription {
 	const original = found.find((l) => l.role === 'original');
 	const copies = found.filter((l) => l.role === 'copy');
 	const deadOriginal = original?.unreachable === true;
-	const links = deadOriginal ? [...copies, original!] : [...found].sort(byRole);
+	const links = [...found].sort(byTrust);
 
 	if (found.length === 0) return { links, situation: 'none', note: 'No link is recorded for this report.' };
 	if (!original) {
@@ -243,7 +243,10 @@ export function describeLinks(report: ReportLinks): LinkDescription {
 	return { links, situation: 'both', note };
 }
 
-/** Original before copy, and otherwise the order the fields came in. */
-function byRole(a: ReportLink, b: ReportLink): number {
-	return Number(a.role === 'copy') - Number(b.role === 'copy');
+/**
+ * Reachable before unreachable, then original before copy, and otherwise the
+ * order the fields came in. A failed link is kept but moved behind the rest.
+ */
+function byTrust(a: ReportLink, b: ReportLink): number {
+	return Number(a.unreachable) - Number(b.unreachable) || Number(a.role === 'copy') - Number(b.role === 'copy');
 }

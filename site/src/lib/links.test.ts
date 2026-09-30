@@ -183,6 +183,8 @@ describe('describeLinks', () => {
 		const d = describeLinks({ url: VX, url_ok: false, archive_url: ORKL });
 		expect(d.links.find((l) => l.class.kind === 'vxug-mirror')?.unreachable).toBe(true);
 		expect(d.links.find((l) => l.class.kind === 'orkl-archive')?.unreachable).toBe(false);
+		// The failed link is kept, behind the one that may still work.
+		expect(d.links.map((l) => l.class.kind)).toEqual(['orkl-archive', 'vxug-mirror']);
 		expect(d.note).toMatch(/^No original publisher link is known;/);
 		expect(d.note).not.toMatch(/original link was unreachable/i);
 	});

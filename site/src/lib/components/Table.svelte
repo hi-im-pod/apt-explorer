@@ -17,6 +17,7 @@
 	import type { ExploreRow } from '$lib/search';
 	import { sourceLabel } from '$lib/data/labels';
 	import { formatDate } from '$lib/format';
+	import { describeLinks } from '$lib/links';
 
 	interface Props {
 		rows: ExploreRow[];
@@ -109,6 +110,13 @@
 		return row.sources.map((s) => sourceLabel(s).short).join(', ');
 	}
 
+	// O: link cell start. A report's links, each named by kind, so a mirror
+	// is never mistaken for the publisher. Campaigns have no links.
+	function rowLinks(row: ExploreRow) {
+		return row.report ? describeLinks(row.report).links : [];
+	}
+	// O: link cell end
+
 	function click(e: MouseEvent, row: ExploreRow) {
 		// A modified click keeps the browser's own behaviour, such as opening
 		// the details in a new tab.
@@ -176,6 +184,23 @@
 					{/if}
 				</span>
 				<span class="source" role="cell">{sources(row)}</span>
+				<!-- O: link cell start -->
+				<span class="links" role="cell">
+					{#each rowLinks(row) as link (link.href)}
+						<a
+							href={link.href}
+							class:copy={link.role === 'copy'}
+							class:dead={link.unreachable}
+							rel="noopener noreferrer"
+							target="_blank"
+							title="{link.class.label}: {link.class.explanation}"
+							aria-label="{link.class.label}, {link.class.host}{link.unreachable
+								? ', unreachable at last check'
+								: ''}">{link.class.short}</a
+						>
+					{/each}
+				</span>
+				<!-- O: link cell end -->
 			</div>
 		{/each}
 	</div>
@@ -184,7 +209,7 @@
 <style>
 	.table {
 		/* Each layout fixes the row height; the windowing reads it back. */
-		--row-h: 8.25rem;
+		--row-h: 9.75rem;
 		font-size: 0.9375rem;
 	}
 
@@ -206,7 +231,8 @@
 		grid-template-areas:
 			'date source'
 			'title title'
-			'actors actors';
+			'actors actors'
+			'links links';
 		align-content: start;
 		gap: 0.25rem 0.75rem;
 		height: var(--row-h);
@@ -352,10 +378,45 @@
 		font-size: 0.8125rem;
 	}
 
+	/* O: link cell styles. The links sit above the row-wide overlay that
+	   opens the details, so a click on one follows the link instead. */
+	.links {
+		grid-area: links;
+		display: flex;
+		flex-wrap: nowrap;
+		gap: 0.25rem 0.875rem;
+		min-width: 0;
+		overflow: hidden;
+		font-size: 0.75rem;
+		line-height: 1.5;
+		white-space: nowrap;
+	}
+
+	.links a {
+		position: relative;
+		z-index: 1;
+		color: var(--accent);
+		font-weight: 600;
+		text-decoration: underline;
+		text-underline-offset: 0.15em;
+	}
+
+	/* A copy is not the publisher, so it is drawn quieter and dotted. */
+	.links a.copy {
+		color: var(--text-muted);
+		font-weight: 500;
+		text-decoration-style: dotted;
+	}
+
+	.links a.dead {
+		text-decoration-line: line-through;
+	}
+	/* O: link cell styles end */
+
 	/* Wide screens: a real table layout with a sticky header. */
 	@media (min-width: 45rem) {
 		.table {
-			--row-h: 4.25rem;
+			--row-h: 5.75rem;
 		}
 
 		.head {
@@ -372,7 +433,10 @@
 
 		.row {
 			grid-template-columns: 10.5rem minmax(0, 1fr) minmax(0, 15rem) 8rem;
-			grid-template-areas: 'date title actors source';
+			grid-template-areas:
+				'date title actors source'
+				'date links actors source';
+			grid-template-rows: auto 1fr;
 			align-items: start;
 			gap: 0 1.25rem;
 			padding: 0.75rem 0.75rem;
