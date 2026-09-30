@@ -304,9 +304,13 @@ export function parseFilters(params: URLSearchParams): Filters {
 	return f;
 }
 
-/** A copy of `params` with the filter keys replaced by `filters`. Other keys stay. */
+/**
+ * A copy of `params` with the filter keys replaced by `filters`. Other keys stay, except the
+ * page number: a new filter starts again from the first page.
+ */
 export function withFilters(params: URLSearchParams, filters: Filters): URLSearchParams {
 	const next = new URLSearchParams(params);
+	next.delete('page');
 	for (const key of FILTER_KEYS) next.delete(key);
 	for (const key of FILTER_KEYS) {
 		const value = filters[key];

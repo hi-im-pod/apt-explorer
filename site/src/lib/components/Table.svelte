@@ -1,25 +1,27 @@
 <!--
-	The explore table: one row per report or campaign.
+	The explore table: one row per report or campaign, for ONE page of the list.
 
 	It is an ARIA table built from divs rather than <table>, because on a
 	narrow screen each row turns into a card, and changing the display of
 	table elements makes some browsers drop their table semantics.
 
-	Long lists are windowed: only the rows near the viewport are in the DOM,
-	with padding standing in for the rest, so a build with tens of thousands
-	of reports scrolls as smoothly as one with fifty. Every row has the same
-	fixed height (set in CSS for each layout), which is what lets a scroll
-	position map straight to a row index. Short lists render in full, so
-	find-in-page and assistive technology see every row.
+	The page decides which rows to show, so every row here is in the DOM and
+	find-in-page and assistive technology see all of them. `offset` is the
+	number of rows on earlier pages, and `total` the rows on all pages, so the
+	row indexes and count stay true to the whole list.
 -->
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import type { ExploreRow } from '$lib/search';
 	import { sourceLabel } from '$lib/data/labels';
 	import { formatDate } from '$lib/format';
 
 	interface Props {
+		/** The rows on this page. */
 		rows: ExploreRow[];
+		/** How many rows come before this page. */
+		offset: number;
+		/** How many rows there are across all pages. */
+		total: number;
 		/** Actor ID to display name. An ID missing here is shown as itself. */
 		actorNames: ReadonlyMap<string, string>;
 		/** The row whose details are open, if any. */
@@ -32,69 +34,10 @@
 		onopen: (row: ExploreRow, link: HTMLAnchorElement) => void;
 	}
 
-	let { rows, actorNames, selectedKey, actorFilter, hrefFor, onopen }: Props = $props();
+	let { rows, offset, total, actorNames, selectedKey, actorFilter, hrefFor, onopen }: Props = $props();
 
-	/** Below this many rows everything is rendered; windowing only pays off above it. */
-	const WINDOW_FROM = 200;
-	/** Rows rendered above and below the viewport, so a fast scroll never shows a gap. */
-	const BUFFER = 12;
-	/** Rows to render before the row height has been measured. */
-	const FIRST_PAINT = 40;
 	/** At most this many actor chips; the rest are counted. */
 	const MAX_CHIPS = 3;
-
-	let body: HTMLDivElement;
-	let rowHeight = $state(0);
-	/** How far the viewport's top edge is below the top of the table body, in px. */
-	let viewTop = $state(0);
-	let viewHeight = $state(900);
-
-	const windowed = $derived(rows.length > WINDOW_FROM);
-	const start = $derived.by(() => {
-		if (!windowed || rowHeight === 0) return 0;
-		const first = Math.floor(viewTop / rowHeight) - BUFFER;
-		return Math.max(0, Math.min(first, rows.length - 1));
-	});
-	const end = $derived.by(() => {
-		if (!windowed) return rows.length;
-		if (rowHeight === 0) return Math.min(rows.length, FIRST_PAINT);
-		const last = Math.ceil((viewTop + viewHeight) / rowHeight) + BUFFER;
-		return Math.max(start, Math.min(last, rows.length));
-	});
-	const visible = $derived(rows.slice(start, end));
-
-	/** Read the scroll position and the row height, at most once a frame. */
-	let pending = false;
-	function measure() {
-		if (pending) return;
-		pending = true;
-		requestAnimationFrame(() => {
-			pending = false;
-			if (!body) return;
-			viewTop = -body.getBoundingClientRect().top;
-			viewHeight = window.innerHeight;
-			// The row height changes with the layout (table or cards), so it is
-			// re-read on every resize rather than cached from the first paint.
-			const row = body.querySelector<HTMLElement>('[role="row"]');
-			if (row) rowHeight = row.getBoundingClientRect().height;
-		});
-	}
-
-	onMount(() => {
-		measure();
-		window.addEventListener('scroll', measure, { passive: true });
-		window.addEventListener('resize', measure);
-		return () => {
-			window.removeEventListener('scroll', measure);
-			window.removeEventListener('resize', measure);
-		};
-	});
-
-	// A new filter can shrink the list under the viewport, so re-measure.
-	$effect(() => {
-		void rows;
-		measure();
-	});
 
 	function chips(row: ExploreRow): { names: string[]; more: number } {
 		const ids =
@@ -122,7 +65,7 @@
 	class="table"
 	role="table"
 	aria-label="Reports and campaigns"
-	aria-rowcount={rows.length + 1}
+	aria-rowcount={total + 1}
 	data-sveltekit-preload-data="false"
 >
 	<div class="head" role="rowgroup">
@@ -133,20 +76,14 @@
 			<span role="columnheader">Source</span>
 		</div>
 	</div>
-	<div
-		class="body"
-		role="rowgroup"
-		bind:this={body}
-		style:padding-top="{start * rowHeight}px"
-		style:padding-bottom="{(rows.length - end) * rowHeight}px"
-	>
-		{#each visible as row, i (row.key)}
+	<div class="body" role="rowgroup">
+		{#each rows as row, i (row.key)}
 			{@const c = chips(row)}
 			<div
 				class="row"
 				class:selected={row.key === selectedKey}
 				role="row"
-				aria-rowindex={start + i + 2}
+				aria-rowindex={offset + i + 2}
 			>
 				<span class="date" role="cell">
 					{#if row.date == null}
@@ -183,7 +120,7 @@
 
 <style>
 	.table {
-		/* Each layout fixes the row height; the windowing reads it back. */
+		/* Each layout fixes the row height, so a page is the same height whatever its titles say. */
 		--row-h: 8.25rem;
 		font-size: 0.9375rem;
 	}

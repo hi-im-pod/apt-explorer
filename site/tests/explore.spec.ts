@@ -111,6 +111,17 @@ async function shownCount(page: Page): Promise<number> {
 	return Number(m[1].replace(/,/g, ''));
 }
 
+/** The page controls above the table, which alone announce the row range. */
+const topPager = (page: Page) => page.getByRole('navigation', { name: /pages, top/i });
+const bottomPager = (page: Page) => page.getByRole('navigation', { name: /pages, bottom/i });
+const rangeLine = (page: Page) => page.locator('.range');
+
+/** The last page number is always listed, so clicking it is the way to the end. */
+async function goToLastPage(page: Page) {
+	await topPager(page).getByRole('button', { name: /^Page \d+$/ }).last().click();
+	await expect(topPager(page).getByRole('button', { name: /^Next$/ })).toBeDisabled();
+}
+
 async function noHorizontalScroll(page: Page) {
 	expect(
 		await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth)
@@ -125,15 +136,16 @@ async function hrefPath(link: Locator) {
 // The plan's cases.
 
 test('an actor and start date in the URL show only that actor from that date', async ({ page }) => {
-	await open(page, '?actor=G0007&from=2024-01-01');
+	await open(page, '?actor=G0007&from=2024-01-01&size=100');
 	const expected =
 		dated.filter((r) => r.actors.includes('G0007') && r.published! >= '2024-01-01').length +
 		campaigns.filter((c) => c.actors.includes('G0007')).length;
 	expect(expected).toBeGreaterThan(3);
 	expect(await shownCount(page)).toBe(expected);
 	const rows = bodyRows(page);
-	await expect(rows).toHaveCount(expected);
-	for (let i = 0; i < expected; i++) {
+	const onPage = Math.min(expected, 100);
+	await expect(rows).toHaveCount(onPage);
+	for (let i = 0; i < onPage; i++) {
 		await expect(rows.nth(i).getByRole('listitem').filter({ hasText: /^APT28$/ })).toBeVisible();
 	}
 	// The controls show the state the URL asked for.
@@ -258,8 +270,8 @@ test('undated reports appear only when the Undated switch is on', async ({ page 
 	await page.getByLabel(/include undated reports/i).check();
 	await expect(page).toHaveURL(/[?&]undated=1/);
 	await expect.poll(() => shownCount(page)).toBe(before + undated.length + added);
-	// Undated rows sort last, so they are rendered once scrolled to.
-	await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+	// Undated rows sort last, so they are on the last page.
+	await goToLastPage(page);
 	await expect(rowFor(page, shownUndated)).toBeVisible();
 	await expect(rowFor(page, shownUndated).getByRole('cell').first()).toHaveText(/undated/i);
 
@@ -484,7 +496,7 @@ test('a filter in the URL and a clear leave no history entries behind', async ({
 // ---------------------------------------------------------------------------
 // Volume, failure modes and hygiene.
 
-test('thousands of rows render only a window of them, and scrolling reaches the last', async ({ page }) => {
+test('thousands of rows put only one page in the DOM, and the last page reaches the oldest', async ({ page }) => {
 	const N = 5000;
 	const extras = Array.from({ length: N }, (_, i) => ({
 		id: `synthetic-${i}`,
@@ -496,14 +508,130 @@ test('thousands of rows render only a window of them, and scrolling reaches the 
 	await page.route(INDEX, (route) => route.fulfill({ json: withExtraRows(index, extras) }));
 	await open(page);
 	expect(await shownCount(page)).toBeGreaterThan(N);
-	expect(await bodyRows(page).count()).toBeLessThan(100);
-	await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+	expect(await bodyRows(page).count()).toBe(25);
+	await goToLastPage(page);
 	const oldest = [...campaigns, ...dated]
 		.map((x) => ('name' in x ? { t: x.name, d: x.first_seen } : { t: x.title, d: x.published }))
 		.filter((x) => x.d)
 		.sort((a, b) => (a.d! < b.d! ? -1 : 1))[0];
-	await expect(rowFor(page, oldest.t)).toBeInViewport();
-	expect(await bodyRows(page).count()).toBeLessThan(100);
+	await expect(rowFor(page, oldest.t)).toBeVisible();
+	expect(await bodyRows(page).count()).toBeLessThanOrEqual(25);
+});
+
+// ---------------------------------------------------------------------------
+// Pagination.
+
+test('the table shows 25 rows and says which rows of how many', async ({ page }) => {
+	await open(page);
+	const total = await shownCount(page);
+	await expect(bodyRows(page)).toHaveCount(25);
+	await expect(rangeLine(page)).toHaveText(`Rows 1 to 25 of ${total.toLocaleString('en-US')} matching`);
+	await expect(rangeLine(page)).toHaveAttribute('aria-live', 'polite');
+	await expect(page.locator('.range[aria-live]')).toHaveCount(1);
+	await expect(page.getByRole('navigation', { name: /^pages/i })).toHaveCount(2);
+	await expect(topPager(page).getByRole('button', { name: 'Previous' })).toBeDisabled();
+	await expect(topPager(page).getByRole('button', { name: 'Page 1', exact: true })).toHaveAttribute('aria-current', 'page');
+	await expect(table(page)).toHaveAttribute('aria-rowcount', String(total + 1));
+});
+
+test('Next moves one page, writes the page to the URL and focuses the table heading', async ({ page }) => {
+	await open(page);
+	const first = await bodyRows(page).first().innerText();
+	await bottomPager(page).getByRole('button', { name: 'Next' }).click();
+	await expect(page).toHaveURL(/[?&]page=2(&|$)/);
+	await expect(rangeLine(page)).toContainText('Rows 26 to 50 of');
+	await expect(bodyRows(page)).toHaveCount(25);
+	expect(await bodyRows(page).first().innerText()).not.toBe(first);
+	await expect(page.getByRole('heading', { level: 2, name: 'Reports and campaigns' })).toBeFocused();
+	await expect(bodyRows(page).first()).toHaveAttribute('aria-rowindex', '27');
+	await topPager(page).getByRole('button', { name: 'Previous' }).click();
+	await expect(page).not.toHaveURL(/page=/);
+	await expect(rangeLine(page)).toContainText('Rows 1 to 25 of');
+});
+
+test('the rows per page choice resets to page 1 and is kept in the URL', async ({ page }) => {
+	await open(page, '?page=3');
+	await expect(rangeLine(page)).toContainText('Rows 51 to 75 of');
+	await page.getByLabel('Rows per page').selectOption('50');
+	await expect(page).toHaveURL(/[?&]size=50(&|$)/);
+	await expect(page).not.toHaveURL(/page=/);
+	await expect(bodyRows(page)).toHaveCount(50);
+	await expect(rangeLine(page)).toContainText('Rows 1 to 50 of');
+	await page.reload();
+	await expect(page.getByLabel('Rows per page')).toHaveValue('50');
+});
+
+test('a filter change goes back to page 1 and keeps the page size', async ({ page }) => {
+	await open(page, '?page=4&size=50');
+	await expect(rangeLine(page)).toContainText('Rows 151 to 200 of');
+	await page.getByLabel(/only cves in cisa kev/i).check();
+	await expect(page).toHaveURL(/kev=1/);
+	await expect(page).not.toHaveURL(/page=/);
+	await expect(page).toHaveURL(/size=50/);
+	await expect(rangeLine(page)).toContainText('Rows 1 to');
+});
+
+test('a page past the end shows the last page, and a bad page falls back to the first', async ({ page }) => {
+	await open(page, '?page=99999');
+	const total = await shownCount(page);
+	const last = Math.ceil(total / 25);
+	await expect(page).toHaveURL(new RegExp(`[?&]page=${last}(&|$)`));
+	const first = ((last - 1) * 25 + 1).toLocaleString('en-US');
+	const all = total.toLocaleString('en-US');
+	await expect(rangeLine(page)).toHaveText(`Rows ${first} to ${all} of ${all} matching`);
+	await expect(topPager(page).getByRole('button', { name: 'Next' })).toBeDisabled();
+	await open(page, '?page=banana&size=31');
+	await expect(rangeLine(page)).toContainText('Rows 1 to 25 of');
+});
+
+test('a ?report= link opens on the page that holds the row', async ({ page }) => {
+	await open(page, '?page=3');
+	const href = await bodyRows(page).first().getByRole('link').first().getAttribute('href');
+	expect(href).toMatch(/[?&](report|campaign)=/);
+	// The row's own address carries the page it came from; without it, the row alone decides.
+	const own = new URLSearchParams(href!);
+	own.delete('page');
+	await open(page, `?${own}`);
+	await expect(rangeLine(page)).toContainText('Rows 51 to 75 of');
+	await expect(panel(page)).toBeVisible();
+	await expect(bodyRows(page).first()).toHaveClass(/selected/);
+});
+
+test('the go-to-page field jumps to a page and clamps a number past the end', async ({ page }) => {
+	await open(page);
+	await topPager(page).getByLabel('Go to page').fill('7');
+	await topPager(page).getByRole('button', { name: 'Go', exact: true }).click();
+	await expect(page).toHaveURL(/[?&]page=7(&|$)/);
+	await expect(rangeLine(page)).toContainText('Rows 151 to 175 of');
+	await bottomPager(page).getByLabel('Go to page').fill('999999');
+	await bottomPager(page).getByLabel('Go to page').press('Enter');
+	await expect(topPager(page).getByRole('button', { name: 'Next' })).toBeDisabled();
+});
+
+test('the page window shows the ends and the neighbours, with a gap between', async ({ page }) => {
+	await open(page, '?page=6');
+	const names = await topPager(page)
+		.getByRole('listitem')
+		.evaluateAll((els) => els.map((e) => (e.textContent ?? '').trim()));
+	expect(names.slice(0, 5)).toEqual(['1', '…', '5', '6', '7']);
+	expect(names[5]).toBe('…');
+});
+
+test('a filter with few matches shows the range and no page controls', async ({ page }) => {
+	await open(page, `?q=${encodeURIComponent(reportById(ORKL_DEAD).title)}`);
+	await expect(rangeLine(page)).toContainText('Rows 1 to');
+	await expect(page.getByRole('navigation', { name: /^pages/i })).toHaveCount(0);
+});
+
+test('at 375px the controls collapse to Previous, the position and Next', async ({ page }) => {
+	await page.setViewportSize({ width: 375, height: 800 });
+	await open(page, '?page=2');
+	await expect(topPager(page).getByText(/^Page 2 of \d+$/)).toBeVisible();
+	await expect(topPager(page).getByRole('button', { name: 'Previous' })).toBeVisible();
+	await expect(topPager(page).getByRole('button', { name: 'Next' })).toBeVisible();
+	await expect(topPager(page).getByRole('button', { name: 'Page 3' })).toBeHidden();
+	await expect(topPager(page).getByLabel('Go to page')).toBeHidden();
+	await noHorizontalScroll(page);
 });
 
 test('with scripts blocked, the prerendered page explains that the table needs them', async ({ page }) => {

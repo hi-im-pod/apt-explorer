@@ -43,8 +43,10 @@
 		type Filters
 	} from '$lib/search';
 	import { formatCount } from '$lib/format';
+	import { clampPage, pageCount, pageOfIndex, parsePaging, withPaging } from '$lib/paging';
 	import DetailPanel from '$lib/components/DetailPanel.svelte';
 	import FilterBar from '$lib/components/FilterBar.svelte';
+	import Pagination from '$lib/components/Pagination.svelte';
 	import Table from '$lib/components/Table.svelte';
 
 	/** After this long the loading note admits it is slow, so a slow line does not look like a stuck page. */
@@ -62,6 +64,7 @@
 	let find: ReturnType<typeof rowLookup> = () => null;
 
 	let heading: HTMLHeadingElement;
+	let tableHeading = $state<HTMLHeadingElement>();
 	/** The row link that opened the panel, so closing it can return focus there. */
 	let opener: HTMLAnchorElement | null = null;
 
@@ -129,6 +132,31 @@
 	const selected = $derived(requested ? find(requested.kind, requested.id) : null);
 
 	/**
+	 * The page comes from the address. With no page in it, an open report or campaign
+	 * decides: the table opens on the page that holds it. A page past the end is
+	 * clamped to the last one rather than shown empty.
+	 */
+	const size = $derived(parsePaging(params).size);
+	const wantedPage = $derived.by(() => {
+		if (params.has('page')) return parsePaging(params).page;
+		if (!selected) return 1;
+		const at = shown.findIndex((r) => r.key === selected.key);
+		return at < 0 ? 1 : pageOfIndex(at, size);
+	});
+	const pageNumber = $derived(clampPage(wantedPage, shown.length, size));
+	const pages = $derived(pageCount(shown.length, size));
+	const offset = $derived((pageNumber - 1) * size);
+	const pageRows = $derived(shown.slice(offset, offset + size));
+
+	// An out-of-range page in the address is corrected in place, so the address
+	// always says what the table shows.
+	$effect(() => {
+		if (phase === 'ready' && params.has('page') && wantedPage !== pageNumber) {
+			navigate(withPaging(page.url.searchParams, { page: pageNumber, size }));
+		}
+	});
+
+	/**
 	 * The open report's full record, read from its year shard. The panel shows
 	 * the row's own fields at once and waits on this only for the links.
 	 */
@@ -164,6 +192,21 @@
 		const url = new URL(page.url);
 		url.search = next.toString();
 		return goto(url, { replaceState: true, keepFocus: true, noScroll: true });
+	}
+
+	/** Move to a page. With a row open, page 1 is written out, or the row's own page would win. */
+	async function goToPage(n: number) {
+		const next = withPaging(page.url.searchParams, { page: n, size });
+		if (n === 1 && (next.has('report') || next.has('campaign'))) next.set('page', '1');
+		await navigate(next);
+		await tick();
+		tableHeading?.focus();
+	}
+
+	async function setSize(n: number) {
+		await navigate(withPaging(page.url.searchParams, { page: 1, size: n }));
+		await tick();
+		tableHeading?.focus();
 	}
 
 	function setFilters(next: Filters) {
@@ -239,14 +282,37 @@
 {#if phase === 'ready'}
 	<FilterBar {filters} {actors} {sources} {publishers} onchange={setFilters} />
 	{#if shown.length}
-		<Table
-			rows={shown}
-			{actorNames}
-			selectedKey={selected?.key ?? null}
-			actorFilter={filters.actor}
-			{hrefFor}
-			onopen={openRow}
-		/>
+		<section class="region" aria-labelledby="table-heading">
+			<h2 id="table-heading" tabindex="-1" bind:this={tableHeading}>Reports and campaigns</h2>
+			<Pagination
+				position="top"
+				page={pageNumber}
+				count={pages}
+				{size}
+				total={shown.length}
+				onpage={goToPage}
+				onsize={setSize}
+			/>
+			<Table
+				rows={pageRows}
+				{offset}
+				total={shown.length}
+				{actorNames}
+				selectedKey={selected?.key ?? null}
+				actorFilter={filters.actor}
+				{hrefFor}
+				onopen={openRow}
+			/>
+			<Pagination
+				position="bottom"
+				page={pageNumber}
+				count={pages}
+				{size}
+				total={shown.length}
+				onpage={goToPage}
+				onsize={setSize}
+			/>
+		</section>
 	{:else}
 		<p class="empty">No report or campaign matches these filters.</p>
 	{/if}
@@ -311,6 +377,28 @@
 
 	.retry:hover {
 		border-color: var(--accent);
+	}
+
+	.region {
+		margin-top: 1rem;
+	}
+
+	.region h2 {
+		margin: 0;
+		font-size: 1.0625rem;
+	}
+
+	.region h2:focus {
+		outline: none;
+	}
+
+	@media (min-width: 45rem) {
+		.region {
+			padding: 0.75rem 1rem;
+			border: 1px solid var(--border);
+			border-radius: 0.75rem;
+			background: var(--surface);
+		}
 	}
 
 	.empty {

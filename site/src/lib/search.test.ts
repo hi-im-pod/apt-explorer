@@ -441,6 +441,12 @@ describe('URL state', () => {
 		expect(next.toString()).toBe('report=abc&kev=1');
 	});
 
+	it('starts again from the first page on a new filter, and keeps the page size', () => {
+		const params = new URLSearchParams('actor=G0007&page=4&size=50');
+		const next = withFilters(params, { ...parseFilters(params), kev: true });
+		expect(next.toString()).toBe('size=50&actor=G0007&kev=1');
+	});
+
 	it('opens one detail at a time', () => {
 		const params = new URLSearchParams('actor=G0007&campaign=C0022');
 		expect(withSelection(params, { report: 'abc' }).toString()).toBe('actor=G0007&report=abc');
