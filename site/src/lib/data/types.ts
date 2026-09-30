@@ -244,6 +244,70 @@ export interface Report {
 export type ReportsShard = Report[];
 
 // ---------------------------------------------------------------------------
+// reports/index.json
+
+/**
+ * A report ID as the index stores it: a SHA-1 cut to `id_len` characters, or
+ * any other ID whole. Use shortId in the data layer to compare with a full ID.
+ * @schema reports_index.schema.json#/$defs/indexId
+ */
+export type IndexId = string;
+
+/**
+ * The strings that repeat across reports, each stored once. The columns refer
+ * to them by position.
+ * @schema reports_index.schema.json#/properties/tables
+ */
+export interface ReportsIndexTables {
+	/** Source keys, most used first. A source's position is its bit in the sources column. */
+	sources: SourceKey[];
+	organisations: string[];
+	actors: ActorId[];
+	cves: CveId[];
+	techniques: TechniqueId[];
+}
+
+/**
+ * One array per field. Position n in every array is the same report, and every
+ * array has `total` entries.
+ * @schema reports_index.schema.json#/properties/columns
+ */
+export interface ReportsIndexColumns {
+	id: IndexId[];
+	title: string[];
+	/** Null for an undated report. Undated reports come last. */
+	published: (IsoDate | null)[];
+	/** A position in tables.organisations, or null. */
+	organisation: (number | null)[];
+	/** A bitmask over tables.sources. */
+	sources: number[];
+	/** Positions in tables.actors. */
+	actors: number[][];
+	/** Positions in tables.cves. */
+	cves: number[][];
+	/** Positions in tables.techniques. */
+	techniques: number[][];
+}
+
+/**
+ * A compact summary of every report, newest first, so the explore page can
+ * list, filter and search all of them without loading a report shard. The
+ * pipeline rebuilds it from the shards and refuses any difference.
+ * @schema reports_index.schema.json#
+ */
+export interface ReportsIndex {
+	/** The built_at of build.json in the same build. */
+	built_at: IsoDateTime;
+	/** How many characters of a SHA-1 report ID the id column keeps. */
+	id_len: number;
+	total: number;
+	tables: ReportsIndexTables;
+	/** Positions in tables.cves of the CVEs in the KEV catalogue. */
+	kev: number[];
+	columns: ReportsIndexColumns;
+}
+
+// ---------------------------------------------------------------------------
 // campaigns.json
 
 /**

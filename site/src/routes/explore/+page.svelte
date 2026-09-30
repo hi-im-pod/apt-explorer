@@ -2,10 +2,16 @@
 	Explore: every report and campaign in one filterable table.
 
 	The page is prerendered as a shell, and the rows load in the browser.
-	Loading them in a prerendered load function would inline every report
-	shard into the HTML, and the query string, which holds the filters, does
-	not exist at build time anyway. The shell says the table needs scripts,
-	which is what a visitor without them sees.
+	Loading them in a prerendered load function would inline the whole
+	report index into the HTML, and the query string, which holds the
+	filters, does not exist at build time anyway. The shell says the table
+	needs scripts, which is what a visitor without them sees.
+
+	The rows come from one compact index (about 1 MB compressed), not from
+	the report shards, which are 19 MB. A report's own record is read from
+	its one year shard when its panel opens. The data layer keeps both under
+	URLs that carry the build time, so a browser or the service worker can
+	keep them for as long as the build lasts.
 
 	The URL is the only store of the filters and the open row, so any view
 	can be shared or reloaded. Changes replace the history entry instead of
@@ -13,21 +19,23 @@
 	through every keystroke.
 -->
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { onMount, untrack } from 'svelte';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/state';
 	import {
-		getActorsIndex,
-		getCampaigns,
-		getReports,
-		getVulns,
-		type ActorsIndex
+		getExploreData,
+		getReportDetail,
+		type ActorsIndex,
+		type Build,
+		type Report
 	} from '$lib/data';
 	import {
 		NO_FILTERS,
 		applyFilters,
-		buildIndex,
+		facets,
+		kevCves as kevCvesOf,
 		parseFilters,
+		rowLookup,
 		toRows,
 		withFilters,
 		withSelection,
@@ -39,66 +47,65 @@
 	import FilterBar from '$lib/components/FilterBar.svelte';
 	import Table from '$lib/components/Table.svelte';
 
+	/** After this long the loading note admits it is slow, so a slow line does not look like a stuck page. */
+	const SLOW_AFTER_MS = 4000;
+
 	/** 'static' is the prerendered state, and what a visitor without scripts keeps. */
 	let phase = $state<'static' | 'loading' | 'ready' | 'error'>('static');
+	let slow = $state(false);
+	let offline = $state(false);
 	let rows = $state.raw<ExploreRow[]>([]);
 	let actors = $state.raw<ActorsIndex>([]);
 	let kevCves = $state.raw<ReadonlySet<string>>(new Set());
+	let build: Build | null = null;
+	let idLen = 8;
+	let find: ReturnType<typeof rowLookup> = () => null;
 
 	let heading: HTMLHeadingElement;
 	/** The row link that opened the panel, so closing it can return focus there. */
 	let opener: HTMLAnchorElement | null = null;
 
-	onMount(async () => {
+	/**
+	 * Read the index, the campaigns and the actor names. The page shows no
+	 * report text of its own until this is done, and the whole download is
+	 * about a megabyte, so a slow line gets a note rather than a blank page.
+	 */
+	async function load() {
 		phase = 'loading';
+		slow = false;
+		const timer = setTimeout(() => (slow = true), SLOW_AFTER_MS);
 		try {
-			const [reports, campaigns, vulns, index] = await Promise.all([
-				getReports(fetch, 'all'),
-				getCampaigns(fetch),
-				getVulns(fetch),
-				getActorsIndex(fetch)
-			]);
-			actors = [...index].sort((a, b) => a.name.localeCompare(b.name, 'en'));
-			kevCves = new Set(vulns.filter((v) => v.kev_date_added != null).map((v) => v.cve));
-			rows = toRows(reports, campaigns, vulns, index);
+			const data = await getExploreData(fetch);
+			build = data.build;
+			idLen = data.index.id_len;
+			actors = [...data.actors].sort((a, b) => a.name.localeCompare(b.name, 'en'));
+			kevCves = kevCvesOf(data.index);
+			rows = toRows(data.index, data.campaigns, data.actors);
+			find = rowLookup(rows, idLen);
 			phase = 'ready';
 		} catch {
+			offline = typeof navigator !== 'undefined' && navigator.onLine === false;
 			phase = 'error';
+		} finally {
+			clearTimeout(timer);
 		}
-	});
+	}
+
+	onMount(load);
 
 	// The query string is read only once the rows are in: before that there
 	// is nothing to filter, and during prerender reading it is an error.
 	const params = $derived(phase === 'ready' ? page.url.searchParams : new URLSearchParams());
 	const filters = $derived<Filters>(phase === 'ready' ? parseFilters(params) : { ...NO_FILTERS });
 
-	// Building the text index takes a moment on a large build, so it waits
-	// until the first search and is then kept for as long as the rows are.
-	let searchIndex: ReturnType<typeof buildIndex> | null = null;
-	let indexedRows: ExploreRow[] | null = null;
-	function indexFor(all: ExploreRow[]) {
-		if (indexedRows !== all) {
-			searchIndex = buildIndex(all);
-			indexedRows = all;
-		}
-		return searchIndex!;
-	}
-
-	const shown = $derived(
-		applyFilters(rows, filters, filters.q.trim() ? indexFor(rows) : undefined)
-	);
+	const shown = $derived(applyFilters(rows, filters));
 
 	const actorNames = $derived(new Map(actors.map((a) => [a.id, a.name])));
-	const sources = $derived(
-		[...new Set(rows.flatMap((r) => r.sources))].sort((a, b) => a.localeCompare(b, 'en'))
-	);
+	const facet = $derived(facets(rows));
+	const sources = $derived(facet.sources);
 	// Link-only rows have no publisher by the time they are rows, so ORKL's
 	// publishers never reach this list.
-	const publishers = $derived(
-		[...new Set(rows.map((r) => r.organisation).filter((o): o is string => o != null))].sort(
-			(a, b) => a.localeCompare(b, 'en')
-		)
-	);
+	const publishers = $derived(facet.publishers);
 
 	/** What ?report= or ?campaign= asks for. The row is looked up among all rows, not only the shown ones. */
 	const requested = $derived.by((): { kind: 'report' | 'campaign'; id: string } | null => {
@@ -108,8 +115,39 @@
 		if (campaign) return { kind: 'campaign', id: campaign };
 		return null;
 	});
-	const byKey = $derived(new Map(rows.map((r) => [r.key, r])));
-	const selected = $derived(requested ? (byKey.get(`${requested.kind}:${requested.id}`) ?? null) : null);
+	const selected = $derived(requested ? find(requested.kind, requested.id) : null);
+
+	/**
+	 * The open report's full record, read from its year shard. The panel shows
+	 * the row's own fields at once and waits on this only for the links.
+	 */
+	let detail = $state.raw<{ key: string; status: 'loading' | 'error' | 'ready'; report: Report | null } | null>(
+		null
+	);
+
+	function loadDetail(row: ExploreRow) {
+		if (!build) return;
+		const key = row.key;
+		detail = { key, status: 'loading', report: null };
+		getReportDetail(fetch, build, idLen, { id: row.id, published: row.date })
+			.then((report) => {
+				// A visitor may have opened another row while this one loaded.
+				if (detail?.key === key) detail = { key, status: 'ready', report };
+			})
+			.catch(() => {
+				if (detail?.key === key) detail = { key, status: 'error', report: null };
+			});
+	}
+
+	$effect(() => {
+		const row = selected;
+		untrack(() => {
+			if (row?.kind === 'report') loadDetail(row);
+			else detail = null;
+		});
+	});
+
+	const panelDetail = $derived(detail && detail.key === selected?.key ? detail : null);
 
 	function navigate(next: URLSearchParams) {
 		const url = new URL(page.url);
@@ -160,7 +198,13 @@
 
 {#if phase === 'error'}
 	<p class="notice error" role="alert">
-		The report data could not be loaded. Reload the page to try again.
+		{#if offline}
+			You are offline, and this browser has no saved copy of the report list. Connect to the
+			internet, then try again.
+		{:else}
+			The report list could not be loaded. Check your connection, then try again.
+		{/if}
+		<button type="button" class="retry" onclick={load}>Try again</button>
 	</p>
 {:else}
 	<p class="notice" role="status">
@@ -169,6 +213,10 @@
 			page work without them.
 		{:else if phase === 'loading'}
 			Loading reports and campaigns…
+			{#if slow}
+				This is taking a while. The report list is about 1 MB, and later visits reuse the saved
+				copy.
+			{/if}
 		{:else}
 			Showing <strong>{formatCount(shown.length)}</strong> of {formatCount(rows.length)} reports and
 			campaigns{#if !filters.undated && rows.some((r) => r.date == null)}; undated reports are
@@ -197,6 +245,9 @@
 		{requested}
 		{actorNames}
 		{kevCves}
+		report={panelDetail?.report ?? null}
+		status={panelDetail?.status ?? 'loading'}
+		onretry={() => selected && loadDetail(selected)}
 		onclose={closePanel}
 	/>
 {/if}
@@ -233,6 +284,22 @@
 		border-left: 3px solid var(--danger);
 		background: var(--surface);
 		color: var(--text);
+	}
+
+	.retry {
+		margin-left: 0.5rem;
+		padding: 0.25rem 0.875rem;
+		background: transparent;
+		border: 1px solid var(--border);
+		border-radius: 999px;
+		color: var(--text);
+		font: inherit;
+		font-size: 0.875rem;
+		cursor: pointer;
+	}
+
+	.retry:hover {
+		border-color: var(--accent);
 	}
 
 	.empty {

@@ -62,6 +62,7 @@ from itertools import combinations
 from aptx.build import guesses, slugs, trends
 from aptx.build.countries import country_name, iso2
 from aptx.build.notice import SOURCE_INFO, SOURCE_ORDER, render_notice, require_year, source_attribution
+from aptx.build.report_index import build_reports_index
 from aptx.core.dates import parse_date
 from aptx.core.models import ActorRecord, CampaignRecord, ReportRecord, SourceBundle, VulnRecord
 from aptx.core.urls import norm_url
@@ -173,6 +174,11 @@ def assemble(bundles, registry: Registry, policies: Mapping[str, str], link_stat
     for key, rows in shards.items():
         rows.sort(key=lambda row: (row["published"] is None, _negated(row["published"] or ""), row["id"]))
         payload[f"reports/{key}.json"] = rows
+
+    # BEGIN reports index (explore page). Built from the finished shard rows so the two cannot differ.
+    payload["reports/index.json"] = build_reports_index(
+        [row for key, rows in shards.items() for row in rows], kev_cves=kev, built_at=generated_at)
+    # END reports index
 
     sources = _sources(by_source, policies, facts, year)
     health = [{k: row[k] for k in ("name", "last_success", "record_count", "stale")} for row in sources]

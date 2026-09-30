@@ -6,8 +6,8 @@
  * filters from the query string with parseFilters, narrows the rows with
  * applyFilters, and writes changes back with withFilters.
  */
-import MiniSearch from 'minisearch';
-import type { ActorsIndex, Campaign, Report, SourceKey, Vuln } from '$lib/data/types';
+import { indexForm } from '$lib/data/report-id';
+import type { ActorsIndex, Campaign, ReportsIndex, SourceKey } from '$lib/data/types';
 
 /**
  * Sources whose rows the site may show only as a title, a date and links.
@@ -19,6 +19,10 @@ const LINK_ONLY_ROW_SOURCES: ReadonlySet<SourceKey> = new Set(['orkl']);
 /** One line of the explore table: a report or a campaign. */
 export interface ExploreRow {
 	kind: 'report' | 'campaign';
+	/**
+	 * A report's id as the index stores it (a digest cut to the index's id
+	 * length; see report-id.ts) or a campaign's id.
+	 */
 	id: string;
 	/** kind and id together. A report and a campaign may share an ID. */
 	key: string;
@@ -30,8 +34,6 @@ export interface ExploreRow {
 	/** Null for a link-only row, whatever the data says. */
 	organisation: string | null;
 	actors: string[];
-	/** Names the registry could not resolve. Always empty for a link-only row. */
-	unresolved: string[];
 	sources: SourceKey[];
 	cves: string[];
 	techniques: string[];
@@ -39,9 +41,12 @@ export interface ExploreRow {
 	kev: boolean;
 	/** The row may show only its title, date and links. */
 	linkOnly: boolean;
-	/** Actor names and aliases, for text search. */
-	actorText: string;
-	report: Report | null;
+	/**
+	 * Everything text search looks at, lower case, with each run of
+	 * punctuation as one space and a space at the front. See `normalise`.
+	 */
+	haystack: string;
+	/** Set for a campaign row. A report's full record is read from its shard when it is opened. */
 	campaign: Campaign | null;
 }
 
@@ -80,115 +85,179 @@ const FLAG_KEYS = ['kev', 'undated'] as const;
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
 
 /**
- * Join reports and campaigns with the KEV list and the actor names, then
- * sort newest first with undated rows last. Sorting once here means every
- * filtered view is already in order.
+ * Text as search sees it: lower case, every run of anything that is not a
+ * letter or a digit turned into one space, and a space in front. A query word
+ * then matches only at the start of a word, which is a plain `includes` of a
+ * space and the word. "T1566.002" becomes " t1566 002", so a search for
+ * "t1566" and one for "t1566.002" both find it.
  */
-export function toRows(
-	reports: Report[],
-	campaigns: Campaign[],
-	vulns: Vuln[],
-	actors: ActorsIndex
-): ExploreRow[] {
-	const kevCves = new Set(vulns.filter((v) => v.kev_date_added != null).map((v) => v.cve));
-	const actorText = new Map(actors.map((a) => [a.id, [a.name, ...a.aliases].join(' ')]));
-	const textFor = (ids: string[]) => ids.map((id) => actorText.get(id) ?? id).join(' ');
-
-	const rows: ExploreRow[] = [];
-	for (const r of reports) {
-		const linkOnly = r.sources.some((s) => LINK_ONLY_ROW_SOURCES.has(s));
-		rows.push({
-			kind: 'report',
-			id: r.id,
-			key: `report:${r.id}`,
-			title: r.title,
-			date: r.published,
-			end: null,
-			organisation: linkOnly ? null : r.organisation,
-			actors: r.actors,
-			unresolved: linkOnly ? [] : r.actor_names_unresolved,
-			sources: r.sources,
-			cves: r.cves,
-			techniques: r.techniques,
-			kev: r.cves.some((c) => kevCves.has(c)),
-			linkOnly,
-			actorText: textFor(r.actors),
-			report: r,
-			campaign: null
-		});
-	}
-	for (const c of campaigns) {
-		rows.push({
-			kind: 'campaign',
-			id: c.id,
-			key: `campaign:${c.id}`,
-			title: c.name,
-			date: c.first_seen,
-			end: c.last_seen,
-			organisation: null,
-			actors: c.actors,
-			unresolved: [],
-			sources: [c.source],
-			cves: [],
-			techniques: c.techniques,
-			kev: false,
-			linkOnly: false,
-			actorText: textFor(c.actors),
-			report: null,
-			campaign: c
-		});
-	}
-	return rows.sort(byDateDesc);
+export function normalise(text: string): string {
+	return ` ${text.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim()}`;
 }
 
+/** The CVEs in the KEV catalogue that the index names, for marking them in the panel. */
+export function kevCves(index: ReportsIndex): Set<string> {
+	return new Set(index.kev.map((p) => index.tables.cves[p]));
+}
+
+/**
+ * Turn the index and the campaigns into rows, newest first with undated rows
+ * last. The index is already in that order, so only the campaigns are sorted
+ * and the two lists are merged. Sorting once here means every filtered view
+ * is already in order.
+ *
+ * Every string in a row is one of the index's table entries, shared rather
+ * than copied, so thirty thousand rows cost little memory.
+ */
+export function toRows(index: ReportsIndex, campaigns: Campaign[], actors: ActorsIndex): ExploreRow[] {
+	const { tables, columns } = index;
+	if (tables.sources.length > 31) throw new Error('The index has more sources than the bit mask can hold');
+	const kev = new Set(index.kev);
+	const actorText = new Map(actors.map((a) => [a.id, [a.name, ...a.aliases].join(' ')]));
+	const textFor = (ids: string[]) => ids.map((id) => actorText.get(id) ?? id).join(' ');
+	// An actor is named by many reports, so its text is worked out once.
+	const actorAt = tables.actors.map((id) => normalise(textFor([id])));
+
+	const masks = new Map<number, SourceKey[]>();
+	const sourcesFor = (mask: number): SourceKey[] => {
+		let keys = masks.get(mask);
+		if (!keys) {
+			keys = tables.sources.filter((_, bit) => mask & (1 << bit));
+			masks.set(mask, keys);
+		}
+		return keys;
+	};
+
+	const reports: ExploreRow[] = new Array(index.total);
+	for (let i = 0; i < index.total; i++) {
+		const id = columns.id[i];
+		const sources = sourcesFor(columns.sources[i]);
+		const linkOnly = sources.some((s) => LINK_ONLY_ROW_SOURCES.has(s));
+		const org = columns.organisation[i];
+		const organisation = linkOnly || org == null ? null : tables.organisations[org];
+		const cves = columns.cves[i].map((p) => tables.cves[p]);
+		const techniques = columns.techniques[i].map((p) => tables.techniques[p]);
+		const actorPositions = columns.actors[i];
+		reports[i] = {
+			kind: 'report',
+			id,
+			key: `report:${id}`,
+			title: columns.title[i],
+			date: columns.published[i],
+			end: null,
+			organisation,
+			actors: actorPositions.map((p) => tables.actors[p]),
+			sources,
+			cves,
+			techniques,
+			kev: columns.cves[i].some((p) => kev.has(p)),
+			linkOnly,
+			haystack:
+				normalise([columns.title[i], organisation ?? '', ...cves, ...techniques].join(' ')) +
+				actorPositions.map((p) => actorAt[p]).join(''),
+			campaign: null
+		};
+	}
+
+	const camps: ExploreRow[] = campaigns
+		.map(
+			(c): ExploreRow => ({
+				kind: 'campaign',
+				id: c.id,
+				key: `campaign:${c.id}`,
+				title: c.name,
+				date: c.first_seen,
+				end: c.last_seen,
+				organisation: null,
+				actors: c.actors,
+				sources: [c.source],
+				cves: [],
+				techniques: c.techniques,
+				kev: false,
+				linkOnly: false,
+				haystack: normalise([c.name, ...c.techniques].join(' ')) + normalise(textFor(c.actors)),
+				campaign: c
+			})
+		)
+		.sort(byDateDesc);
+
+	// A report goes first when a report and a campaign tie.
+	const out: ExploreRow[] = [];
+	let r = 0;
+	let c = 0;
+	while (r < reports.length && c < camps.length) {
+		out.push(byDateDesc(camps[c], reports[r]) < 0 ? camps[c++] : reports[r++]);
+	}
+	while (r < reports.length) out.push(reports[r++]);
+	while (c < camps.length) out.push(camps[c++]);
+	return out;
+}
+
+/** Newest first, undated last, then by title. Titles are compared as lower case text, as the pipeline does. */
 function byDateDesc(a: ExploreRow, b: ExploreRow): number {
 	if (a.date !== b.date) {
 		if (a.date == null) return 1;
 		if (b.date == null) return -1;
 		return a.date < b.date ? 1 : -1;
 	}
-	return a.title.localeCompare(b.title, 'en');
+	const ta = a.title.toLowerCase();
+	const tb = b.title.toLowerCase();
+	return ta < tb ? -1 : ta > tb ? 1 : 0;
 }
 
-/** A MiniSearch index over the rows' titles, publishers, actor names, CVEs and techniques. */
-export function buildIndex(rows: ExploreRow[]): MiniSearch<ExploreRow> {
-	const index = new MiniSearch<ExploreRow>({
-		idField: 'key',
-		fields: ['title', 'organisation', 'actorText', 'cveText', 'techText'],
-		extractField: (row, field) => {
-			if (field === 'cveText') return row.cves.join(' ');
-			if (field === 'techText') return row.techniques.join(' ');
-			const value = row[field as keyof ExploreRow];
-			return typeof value === 'string' ? value : '';
-		},
-		searchOptions: {
-			// Every word must match, so adding a word narrows the list the way
-			// the other filters do.
-			combineWith: 'AND',
-			prefix: true,
-			fuzzy: (term) => (term.length > 5 ? 0.15 : 0),
-			boost: { title: 2 }
+/** The sources and publishers to offer in the filter bar, from the rows as they are shown. */
+export function facets(rows: ExploreRow[]): { sources: string[]; publishers: string[] } {
+	// Taken from the rows, not from the index tables, so the publisher of a
+	// link-only row (already removed from its row) never reaches the list.
+	const sources = new Set<string>();
+	const publishers = new Set<string>();
+	for (const r of rows) {
+		for (const s of r.sources) sources.add(s);
+		if (r.organisation != null) publishers.add(r.organisation);
+	}
+	const sorted = (set: Set<string>) => [...set].sort((a, b) => a.localeCompare(b, 'en'));
+	return { sources: sorted(sources), publishers: sorted(publishers) };
+}
+
+/**
+ * A finder for the row that `?report=` or `?campaign=` names. A report id in
+ * a link may be the short form the page writes, a full id from an actor page,
+ * a longer prefix from a link saved under another build, or a shorter prefix
+ * from a link saved when fewer characters told reports apart. A shorter
+ * prefix finds a report only when it names exactly one, because guessing
+ * would open the wrong report.
+ */
+export function rowLookup(
+	rows: ExploreRow[],
+	idLen: number
+): (kind: 'report' | 'campaign', id: string) => ExploreRow | null {
+	const byKey = new Map(rows.map((r) => [r.key, r]));
+	return (kind, id) => {
+		if (kind === 'campaign') return byKey.get(`campaign:${id}`) ?? null;
+		const exact = byKey.get(`report:${indexForm(id, idLen)}`);
+		if (exact) return exact;
+		if (!/^[0-9a-f]{6,}$/.test(id) || id.length >= idLen) return null;
+		let found: ExploreRow | null = null;
+		for (const r of rows) {
+			if (r.kind !== 'report' || !r.id.startsWith(id)) continue;
+			if (found) return null;
+			found = r;
 		}
-	});
-	index.addAll(rows);
-	return index;
+		return found;
+	};
 }
 
 /**
  * The rows that pass every filter, in their original order. An unknown key
- * in `filters` is ignored. With a text query and no index, the query is
- * matched against titles only.
+ * in `filters` is ignored. A text query needs every word to start a word
+ * somewhere in the row's title, publisher, actor names, CVEs or techniques.
  */
-export function applyFilters(
-	rows: ExploreRow[],
-	filters: Partial<Filters>,
-	index?: MiniSearch<ExploreRow>
-): ExploreRow[] {
+export function applyFilters(rows: ExploreRow[], filters: Partial<Filters>): ExploreRow[] {
 	const f: Filters = { ...NO_FILTERS, ...pick(filters) };
-	const q = f.q.trim();
-	let hits: Set<string> | null = null;
-	if (q && index) hits = new Set(index.search(q).map((h) => String(h.id)));
-	const needle = q.toLowerCase();
+	const words = normalise(f.q)
+		.split(' ')
+		.filter(Boolean)
+		.map((w) => ` ${w}`);
 	const cve = f.cve?.trim().toUpperCase() || null;
 	const tech = f.tech?.trim().toUpperCase() || null;
 
@@ -209,8 +278,7 @@ export function applyFilters(
 		if (cve && !r.cves.some((c) => c.startsWith(cve))) return false;
 		// "T1566" also finds its sub-techniques, "T1566.001" and so on.
 		if (tech && !r.techniques.some((t) => t.startsWith(tech))) return false;
-		if (hits) return hits.has(r.key);
-		if (needle) return r.title.toLowerCase().includes(needle);
+		for (const w of words) if (!r.haystack.includes(w)) return false;
 		return true;
 	});
 }

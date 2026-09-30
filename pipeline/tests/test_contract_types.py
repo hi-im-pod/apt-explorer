@@ -109,6 +109,12 @@ def _check_value(file, schema, pointer, node, ts_type, decls, tagged, where) -> 
     """Check one TypeScript type expression against the schema node it mirrors."""
     pointer, node = _follow(schema, pointer, node)
     types = _types(node)
+    # An array whose elements may be null is written (Item | null)[], and the null belongs to the
+    # elements, not to the array, so the elements are checked on their own.
+    element = re.fullmatch(r"\((.+)\)\[\]", ts_type.strip())
+    if element and "array" in types:
+        _check_value(file, schema, f"{pointer}/items", node["items"], element.group(1), decls, tagged, where)
+        return
     assert bool(_NULL.search(ts_type)) == ("null" in types), f"{where}: nullability differs from the schema"
     base = _NULL.sub("", ts_type).strip()
     if "array" in types:

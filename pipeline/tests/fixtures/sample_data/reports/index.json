@@ -1,0 +1,900 @@
+{
+  "built_at": "2026-09-28T03:21:05Z",
+  "id_len": 8,
+  "total": 62,
+  "tables": {
+    "sources": [
+      "orkl",
+      "dfir",
+      "paper"
+    ],
+    "organisations": [
+      "Harbor CERT",
+      "Northwind Threat Research",
+      "Lakeside Security Labs",
+      "Blue Meridian Labs",
+      "Copperline CSIRT",
+      "Fieldnote DFIR"
+    ],
+    "actors": [
+      "G0032",
+      "G0007",
+      "G0016",
+      "G0034",
+      "G0094",
+      "G0096",
+      "G1017",
+      "G0059",
+      "G1015",
+      "G0046",
+      "G0049",
+      "glass-heron",
+      "G0044"
+    ],
+    "cves": [
+      "CVE-2021-44228",
+      "CVE-2023-23397",
+      "CVE-2023-34362",
+      "CVE-2023-4966",
+      "CVE-2024-3400",
+      "CVE-2026-100123"
+    ],
+    "techniques": [
+      "T1566.001",
+      "T1190",
+      "T1105",
+      "T1204.002",
+      "T1059.001",
+      "T1566.002",
+      "T1133",
+      "T1485",
+      "T1505.003",
+      "T1187",
+      "T1195.002",
+      "T1566.003",
+      "T1621",
+      "T1003.001",
+      "T1027",
+      "T1059.005",
+      "T1059.007",
+      "T1071.004",
+      "T1078",
+      "T1078.004",
+      "T1090.003",
+      "T1486",
+      "T1550.001",
+      "T1561.002",
+      "T1574.002",
+      "T1014",
+      "T1059.004",
+      "T1071.001",
+      "T1098.001",
+      "T1204.001",
+      "T1567.002",
+      "T1598.003"
+    ]
+  },
+  "kev": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "columns": {
+    "id": [
+      "81de5a13",
+      "b92cca18",
+      "63ce7eca",
+      "f55d40ae",
+      "9e53624b",
+      "dc522750",
+      "27dc683d",
+      "795abfc5",
+      "9ceb15c9",
+      "14d3ee8a",
+      "dfir:2026-03-search-ad-malware-to-hands-on-keyboard-in-six-hours",
+      "dc1d8d33",
+      "e6abd7ab",
+      "b7fe17a7",
+      "5eecf7e0",
+      "68a50737",
+      "fb9ff9a5",
+      "b4a84dd5",
+      "388bfd98",
+      "a339f1ce",
+      "dfir:2025-09-hypervisor-encryption-after-a-help-desk-call",
+      "41b35b48",
+      "00953374",
+      "cd93abb2",
+      "e7c14c9f",
+      "9a57df29",
+      "90733bec",
+      "b160ea77",
+      "dfir:2025-03-sim-swapping-and-single-sign-on-abuse-in-a-retail-intrusion",
+      "ee40d0e8",
+      "b4673e7d",
+      "a7b73235",
+      "f0319912",
+      "d68faec5",
+      "b3a04384",
+      "dfir:2024-10-session-hijacking-on-an-unpatched-gateway-ends-in-ransomware",
+      "dfir:2024-09-help-desk-social-engineering-to-domain-admin-in-a-day",
+      "83086f82",
+      "f1e34134",
+      "1954ecb3",
+      "71b2ffd2",
+      "785e2ccb",
+      "48c70133",
+      "c0c8b8dc",
+      "dfir:2024-03-malicious-installer-ads-leading-to-a-backdoor",
+      "28d4a0de",
+      "d7a4d348",
+      "b2a2df31",
+      "d814dc40",
+      "paper:2023_dns_tunnelling_backdoor_in_middle_east_government_networks.pdf",
+      "a910c99c",
+      "ab98e573",
+      "277740a9",
+      "paper:2023_mass_exploitation_of_a_managed_file_transfer_server.pdf",
+      "paper:2023_diplomatic_lures_and_cloud_token_theft.pdf",
+      "d93ac727",
+      "2726fd3f",
+      "paper:2023_fake_job_offers_used_to_reach_defence_engineers.pdf",
+      "685c7008",
+      "679e21c7",
+      "b6989977",
+      "b7e85ac7"
+    ],
+    "title": [
+      "Supply-chain attack on a crypto wallet extension",
+      "Glass Heron returns with a rebuilt web shell",
+      "Router-hosted phishing pages target logistics firms",
+      "Fake coding tests deliver a Python backdoor",
+      "Messaging-app lures for dissidents abroad",
+      "Pre-positioning in port logistics networks",
+      "Diplomatic-conference lures with a new dropper",
+      "Destructive malware disguised as ransomware",
+      "Criminal and espionage tooling overlap at a manufacturer",
+      "OAuth consent phishing in foreign ministries",
+      "Search-ad malware to hands-on-keyboard in six hours",
+      "A new cluster exploits a telecom billing portal",
+      "Messaging-app lures against government officials",
+      "Poisoned open-source packages steal wallet keys",
+      "Quarterly roundup of state-sponsored activity",
+      "Fake security alerts push a VBScript backdoor",
+      "Email-based command and control in Gulf government networks",
+      "Impersonated journalists seek access to policy researchers",
+      "Recruiter personas on professional networks target DeFi staff",
+      "Persistent access to telecom edge routers",
+      "Hypervisor encryption after a help-desk call",
+      "Wine-tasting invitations deliver a new loader",
+      "Webmail exploitation against defence suppliers",
+      "Edge appliance exploitation against shipping companies",
+      "Rootkit-backed persistence in game studios",
+      "Exchange hot-wallet theft traced to a compromised developer laptop",
+      "Paste-and-run lures in academic outreach",
+      "Wiper variants against grain exporters",
+      "SIM swapping and single sign-on abuse in a retail intrusion",
+      "Device-code phishing for cloud accounts",
+      "HTML smuggling in military-themed lures",
+      "Malicious npm packages aimed at blockchain developers",
+      "Botnet of end-of-life routers used as a relay network",
+      "Credential harvesting through fake webinar invitations",
+      "Fake video-conferencing app delivers an infostealer",
+      "Session hijacking on an unpatched gateway ends in ransomware",
+      "Help-desk social engineering to domain admin in a day",
+      "Russian state actors' phishing tradecraft compared",
+      "Supply-chain compromise of a game update server",
+      "Two DPRK clusters share a job-lure toolkit",
+      "Destructive attacks on telecom providers",
+      "Spear-phishing with think-tank personas",
+      "Firewall zero-day exploited before disclosure",
+      "Log4Shell remains an entry point for a DPRK cluster",
+      "Malicious installer ads leading to a backdoor",
+      "Router compromise feeding credential phishing",
+      "Living-off-the-land intrusion into water utility edge devices",
+      "Password spraying against a software vendor's corporate tenant",
+      "Cryptocurrency developer targeted through a trojanized trading app",
+      "DNS tunnelling backdoor in Middle East government networks",
+      "Continued Outlook exploitation against energy and transport",
+      "Web shells and Log4Shell against logistics firms",
+      "Wiper deployment against a regional energy operator",
+      "Mass exploitation of a managed file transfer server",
+      "Diplomatic lures and cloud token theft",
+      "Log4Shell exploitation on exposed virtual desktop servers",
+      "Outlook NTLM relay abuse against European ministries",
+      "Fake job offers used to reach defence engineers",
+      "Appliance exploitation cluster profile",
+      "Incident response lessons from a breach",
+      "Overview of DPRK malware families",
+      "Technical annex: implant configuration formats"
+    ],
+    "published": [
+      "2026-09-22",
+      "2026-09-16",
+      "2026-09-09",
+      "2026-08-19",
+      "2026-07-08",
+      "2026-06-17",
+      "2026-05-27",
+      "2026-05-06",
+      "2026-04-15",
+      "2026-03-25",
+      "2026-03-04",
+      "2026-02-11",
+      "2026-02-04",
+      "2026-01-14",
+      "2025-12-17",
+      "2025-12-10",
+      "2025-11-26",
+      "2025-11-05",
+      "2025-10-15",
+      "2025-09-24",
+      "2025-09-03",
+      "2025-08-13",
+      "2025-07-23",
+      "2025-07-02",
+      "2025-06-11",
+      "2025-05-21",
+      "2025-04-30",
+      "2025-04-09",
+      "2025-03-19",
+      "2025-02-26",
+      "2025-02-05",
+      "2025-01-15",
+      "2024-12-04",
+      "2024-11-13",
+      "2024-10-23",
+      "2024-10-02",
+      "2024-09-05",
+      "2024-08-14",
+      "2024-07-10",
+      "2024-06-19",
+      "2024-05-29",
+      "2024-05-01",
+      "2024-04-16",
+      "2024-04-03",
+      "2024-03-12",
+      "2024-02-21",
+      "2024-02-07",
+      "2024-01-18",
+      "2023-12-06",
+      "2023-11-20",
+      "2023-10-11",
+      "2023-08-30",
+      "2023-07-26",
+      "2023-06-09",
+      "2023-05-17",
+      "2023-04-05",
+      "2023-03-22",
+      "2023-02-14",
+      null,
+      null,
+      null,
+      null
+    ],
+    "organisation": [
+      1,
+      0,
+      2,
+      3,
+      null,
+      0,
+      1,
+      4,
+      null,
+      2,
+      5,
+      0,
+      3,
+      1,
+      4,
+      0,
+      2,
+      1,
+      null,
+      3,
+      5,
+      0,
+      4,
+      1,
+      2,
+      null,
+      0,
+      3,
+      5,
+      4,
+      1,
+      2,
+      0,
+      null,
+      1,
+      5,
+      5,
+      3,
+      null,
+      0,
+      2,
+      1,
+      4,
+      3,
+      5,
+      null,
+      0,
+      1,
+      null,
+      2,
+      0,
+      1,
+      3,
+      4,
+      2,
+      null,
+      1,
+      0,
+      null,
+      null,
+      null,
+      0
+    ],
+    "sources": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      4,
+      1,
+      1,
+      5,
+      4,
+      4,
+      1,
+      1,
+      4,
+      1,
+      1,
+      1,
+      1
+    ],
+    "actors": [
+      [
+        0
+      ],
+      [
+        11
+      ],
+      [
+        1
+      ],
+      [
+        0
+      ],
+      [
+        7
+      ],
+      [
+        6
+      ],
+      [
+        4
+      ],
+      [
+        3
+      ],
+      [
+        5
+      ],
+      [
+        2
+      ],
+      [
+        9
+      ],
+      [
+        11
+      ],
+      [
+        1
+      ],
+      [
+        0
+      ],
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        4
+      ],
+      [
+        10
+      ],
+      [
+        7
+      ],
+      [
+        0
+      ],
+      [
+        6
+      ],
+      [
+        8
+      ],
+      [
+        2
+      ],
+      [
+        1
+      ],
+      [
+        5
+      ],
+      [
+        12
+      ],
+      [
+        0
+      ],
+      [
+        4
+      ],
+      [
+        3
+      ],
+      [
+        8
+      ],
+      [
+        2
+      ],
+      [
+        1
+      ],
+      [
+        0
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ],
+      [
+        0
+      ],
+      [],
+      [
+        8
+      ],
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        5
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [],
+      [
+        0
+      ],
+      [
+        9
+      ],
+      [
+        1
+      ],
+      [
+        6
+      ],
+      [
+        2
+      ],
+      [
+        0
+      ],
+      [
+        10
+      ],
+      [
+        1
+      ],
+      [
+        5
+      ],
+      [
+        3
+      ],
+      [],
+      [
+        2
+      ],
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        0
+      ],
+      [],
+      [],
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ],
+    "cves": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        5
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        3
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        4
+      ],
+      [
+        0
+      ],
+      [],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [],
+      [
+        1
+      ],
+      [
+        0
+      ],
+      [],
+      [
+        2
+      ],
+      [],
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "techniques": [
+      [
+        2
+      ],
+      [
+        8
+      ],
+      [
+        0
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        11
+      ],
+      [
+        6
+      ],
+      [
+        0
+      ],
+      [
+        7
+      ],
+      [
+        1
+      ],
+      [
+        5,
+        22
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        10,
+        16
+      ],
+      [],
+      [
+        0,
+        15
+      ],
+      [
+        4,
+        17
+      ],
+      [
+        11,
+        31
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        6,
+        20
+      ],
+      [
+        12,
+        21
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        24,
+        25
+      ],
+      [
+        2,
+        14
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        7,
+        23
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        5,
+        19
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        10,
+        16
+      ],
+      [
+        6,
+        20
+      ],
+      [
+        11,
+        29
+      ],
+      [
+        2,
+        14
+      ],
+      [
+        1,
+        21
+      ],
+      [
+        12,
+        18
+      ],
+      [
+        0
+      ],
+      [
+        10,
+        24
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        0,
+        15
+      ],
+      [
+        1,
+        26
+      ],
+      [
+        1,
+        2,
+        27
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        19,
+        28
+      ],
+      [
+        2,
+        13
+      ],
+      [
+        4,
+        17
+      ],
+      [
+        9
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        7,
+        23
+      ],
+      [
+        1,
+        30
+      ],
+      [
+        18,
+        22
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        5
+      ],
+      [],
+      [],
+      [
+        2
+      ],
+      []
+    ]
+  }
+}

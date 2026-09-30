@@ -7,6 +7,7 @@ import pytest
 from aptx.build import write as write_module
 from aptx.build.contract import NON_JSON_FILES, schema_for
 from aptx.build.notice import render_notice
+from aptx.build.report_index import build_reports_index
 from aptx.build.write import WriteRefused, write_all
 
 # A small, complete and valid tree kept under fixtures/ is the payload every test starts
@@ -21,6 +22,14 @@ def sample_payload() -> dict:
         payload[path.relative_to(SAMPLE).as_posix()] = json.loads(path.read_text(encoding="utf-8"))
     payload["NOTICE.md"] = render_notice("2026")
     return payload
+
+
+def reindex(payload: dict) -> None:
+    """Rebuild the index after a test changes a report, as the real build would."""
+    reports = [r for rel, rows in payload.items() if rel.startswith("reports/") and rel != "reports/index.json"
+               for r in rows]
+    kev = {v["cve"] for v in payload["vulns.json"] if v["kev_date_added"] is not None}
+    payload["reports/index.json"] = build_reports_index(reports, kev_cves=kev, built_at=payload["build.json"]["built_at"])
 
 
 def snapshot(directory: Path) -> dict[str, bytes]:
@@ -60,6 +69,7 @@ def test_every_file_is_written_as_the_payload_says(tmp_path):
 def test_files_are_stable_utf8_with_lf_line_ends(tmp_path):
     payload = sample_payload()
     payload["reports/2024.json"][0]["title"] = "Ein Bericht über Räuber"
+    reindex(payload)
     write_all(tmp_path / "a", payload)
     write_all(tmp_path / "b", payload)
     assert snapshot(tmp_path / "a") == snapshot(tmp_path / "b")
@@ -280,6 +290,59 @@ def test_report_years_must_match_the_shards_written(tmp_path):
     payload = sample_payload()
     payload["build.json"]["report_years"] = [2023, 2024]
     refused(tmp_path, payload, match="report_years")
+
+
+# --- The reports index must agree with the shards it summarises ---------------
+
+def test_the_index_is_required(tmp_path):
+    payload = sample_payload()
+    del payload["reports/index.json"]
+    refused(tmp_path, payload, match="reports/index.json: is missing")
+
+
+def test_an_index_total_that_is_not_the_sum_of_the_shards_is_refused(tmp_path):
+    payload = sample_payload()
+    payload["reports/index.json"]["total"] += 1
+    refused(tmp_path, payload, match="total is")
+
+
+def test_an_index_built_at_another_time_than_build_json_is_refused(tmp_path):
+    payload = sample_payload()
+    payload["reports/index.json"]["built_at"] = "2020-01-01T00:00:00Z"
+    refused(tmp_path, payload, match="built_at")
+
+
+def test_an_indexed_report_that_is_in_no_shard_is_refused(tmp_path):
+    payload = sample_payload()
+    payload["reports/2024.json"].pop(0)
+    refused(tmp_path, payload, match="reports/index.json")
+
+
+def test_a_shard_report_that_is_not_indexed_is_refused(tmp_path):
+    payload = sample_payload()
+    extra = copy.deepcopy(payload["reports/2024.json"][0])
+    extra["id"] = "f" * 40
+    payload["reports/2024.json"].append(extra)
+    info = refused(tmp_path, payload, match="not in the index")
+    assert "f" * 8 in str(info)
+
+
+def test_a_column_of_the_wrong_length_is_refused(tmp_path):
+    payload = sample_payload()
+    payload["reports/index.json"]["columns"]["title"].pop()
+    refused(tmp_path, payload, match="columns.title has")
+
+
+def test_an_index_that_disagrees_with_a_report_field_is_refused(tmp_path):
+    payload = sample_payload()
+    payload["reports/index.json"]["columns"]["title"][0] = "A different title"
+    refused(tmp_path, payload, match="differs from the index rebuilt")
+
+
+def test_an_index_that_leaves_out_a_kev_cve_is_refused(tmp_path):
+    payload = sample_payload()
+    payload["reports/index.json"]["kev"] = []
+    refused(tmp_path, payload, match="reports/index.json")
 
 
 def test_a_failed_swap_puts_the_previous_tree_back(tmp_path, monkeypatch):

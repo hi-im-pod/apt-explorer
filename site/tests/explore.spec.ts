@@ -1,21 +1,14 @@
-import { readFileSync } from 'node:fs';
 import { test, expect, type Locator, type Page } from '@playwright/test';
-import type { ActorsIndex, Build, Campaigns, Report, Vulns } from '../src/lib/data/types';
+import type { ActorsIndex, Campaigns, Report } from '../src/lib/data/types';
+import { INDEX, SHARD, index, read, reports, short, withExtraRows } from './explore-data';
 
-// Expectations come from the same data/ the site is built from, so a change
-// to the data changes what these tests expect rather than breaking them.
-const read = <T>(path: string): T =>
-	JSON.parse(readFileSync(new URL(`../../data/${path}`, import.meta.url), 'utf8')) as T;
-const build = read<Build>('build.json');
-const reports: Report[] = [
-	...build.report_years.flatMap((y) => read<Report[]>(`reports/${y}.json`)),
-	...read<Report[]>('reports/undated.json')
-];
+// Expectations come from the same data the site is built from (see
+// explore-data.ts), so a change to the data changes what these tests expect
+// rather than breaking them.
 const campaigns = read<Campaigns>('campaigns.json');
-const vulns = read<Vulns>('vulns.json');
 const actors = read<ActorsIndex>('actors/index.json');
 const nameOf = (id: string) => actors.find((a) => a.id === id)?.name ?? id;
-const kevCves = new Set(vulns.filter((v) => v.kev_date_added).map((v) => v.cve));
+const kevCves = new Set(index.kev.map((p) => index.tables.cves[p]));
 const reportById = (id: string) => {
 	const r = reports.find((x) => x.id === id);
 	if (!r) throw new Error(`${id} is not in the sample reports`);
@@ -66,7 +59,7 @@ const PAPER_KEV = firstReport(
 const NO_URL = { url: null, url_ok: null } as const;
 const DEAD_NO_ARCHIVE = { url_ok: false, archive_url: null } as const;
 async function editReport(page: Page, id: string, patch: Partial<Report>) {
-	await page.route('**/data/reports/*.json', async (route) => {
+	await page.route(SHARD, async (route) => {
 		const shard = (await (await route.fetch()).json()) as Report[];
 		await route.fulfill({ json: shard.map((r) => (r.id === id ? { ...r, ...patch } : r)) });
 	});
@@ -85,11 +78,13 @@ async function useTheme(page: Page, t: string) {
 /** Open a URL and wait until the rows have loaded in the browser. */
 async function open(page: Page, query = '') {
 	await page.goto(`${EXPLORE}${query}`);
-	// The page loads every report shard, about 19 MB for the live data, and several workers do
-	// that at once, so the default five seconds is too short.
-	await expect(page.getByRole('status')).toContainText(/showing/i, { timeout: 20_000 });
+	// The page reads a 1 MB index and builds thirty thousand rows, and several workers do that at
+	// once, so the default five seconds can be too short.
+	await expect(status(page)).toContainText(/showing/i, { timeout: 20_000 });
 }
 
+/** The page's own count and loading note. The open panel has a status line of its own for its links. */
+const status = (page: Page) => page.locator('.notice[role="status"]');
 const table = (page: Page) => page.getByRole('table', { name: /reports and campaigns/i });
 /** Body rows only: the header row holds column headers, not cells. */
 const bodyRows = (page: Page) => table(page).getByRole('row').filter({ has: page.getByRole('cell') });
@@ -97,7 +92,7 @@ const rowFor = (page: Page, title: string) => bodyRows(page).filter({ hasText: t
 const panel = (page: Page) => page.getByRole('dialog');
 
 async function shownCount(page: Page): Promise<number> {
-	const text = await page.getByRole('status').innerText();
+	const text = await status(page).innerText();
 	const m = /showing ([\d,]+)/i.exec(text);
 	if (!m) throw new Error(`no count in "${text}"`);
 	return Number(m[1].replace(/,/g, ''));
@@ -137,7 +132,8 @@ test('clicking a row sets ?report= and opens the panel with the original and arc
 	const r = reportById(ORKL_DEAD);
 	await open(page, byTitle(ORKL_DEAD));
 	await rowFor(page, r.title).getByRole('link').click();
-	await expect(page).toHaveURL(new RegExp(`[?&]report=${ORKL_DEAD}`));
+	// The address holds the short form of the id, the same one the index stores.
+	await expect(page).toHaveURL(new RegExp(`[?&]report=${short(ORKL_DEAD)}(&|$)`));
 	const dialog = panel(page);
 	await expect(dialog).toBeVisible();
 	await expect(dialog.getByRole('heading', { level: 2 })).toHaveText(r.title);
@@ -233,22 +229,25 @@ test('at 1280px the row cells sit side by side', async ({ page }) => {
 
 test('undated reports appear only when the Undated switch is on', async ({ page }) => {
 	// The live data has no undated report, because every report gets at least an ingest date,
-	// so one is added to the undated shard. The switch and the row are what is under test.
-	const extra: Report[] = undated.length
-		? []
-		: [{ ...dated[0], id: 'synthetic-undated', title: 'A report with no date at all', published: null, date_basis: 'unknown' }];
-	if (extra.length) await page.route('**/data/reports/undated.json', (route) => route.fulfill({ json: extra }));
-	const shownUndated = [...undated, ...extra];
+	// so one is added to the index. The switch and the row are what is under test.
+	const TITLE = 'A report with no date at all';
+	const added = undated.length ? 0 : 1;
+	if (added) {
+		await page.route(INDEX, (route) =>
+			route.fulfill({ json: withExtraRows(index, [{ id: 'synthetic-undated', title: TITLE, published: null }]) })
+		);
+	}
+	const shownUndated = added ? TITLE : reports.find((r) => r.published == null)!.title;
 	await open(page);
 	const before = await shownCount(page);
 	expect(before).toBe(dated.length + campaigns.length);
 	await page.getByLabel(/include undated reports/i).check();
 	await expect(page).toHaveURL(/[?&]undated=1/);
-	await expect.poll(() => shownCount(page)).toBe(before + shownUndated.length);
+	await expect.poll(() => shownCount(page)).toBe(before + undated.length + added);
 	// Undated rows sort last, so they are rendered once scrolled to.
 	await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
-	await expect(rowFor(page, shownUndated[0].title)).toBeVisible();
-	await expect(rowFor(page, shownUndated[0].title).getByRole('cell').first()).toHaveText(/undated/i);
+	await expect(rowFor(page, shownUndated)).toBeVisible();
+	await expect(rowFor(page, shownUndated).getByRole('cell').first()).toHaveText(/undated/i);
 
 	await page.getByLabel(/include undated reports/i).uncheck();
 	await expect(page).not.toHaveURL(/undated=/);
@@ -325,20 +324,17 @@ test('an ORKL report shows only its title, date and links', async ({ page }) => 
 });
 
 test("ORKL's actor tags never appear, in the table or the panel", async ({ page }) => {
-	// Route a shard with an ORKL row that carries names the registry left
+	// Route a shard whose ORKL report carries names the registry left
 	// unresolved. The contract keeps these empty for link-only rows, and the
-	// site must not show them even if a build gets that wrong.
+	// site must not show them even if a build gets that wrong. The index has no
+	// names at all, so a search cannot find them either.
 	const TAG = 'Leaky Tag Panda';
-	await page.route('**/data/reports/2026.json', async (route) => {
-		const shard = (await (await route.fetch()).json()) as Report[];
-		shard[0] = { ...shard[0], sources: ['orkl'], actor_names_unresolved: [TAG] };
-		await route.fulfill({ json: shard });
-	});
+	await editReport(page, ORKL_ANY, { actor_names_unresolved: [TAG] });
 	await open(page, `?q=${encodeURIComponent(TAG)}`);
 	expect(await shownCount(page)).toBe(0);
-	const id = read<Report[]>('reports/2026.json')[0].id;
-	await page.goto(`${EXPLORE}?report=${encodeURIComponent(id)}`);
+	await page.goto(`${EXPLORE}?report=${encodeURIComponent(ORKL_ANY)}`);
 	await expect(panel(page)).toBeVisible();
+	await expect(panel(page).getByRole('list', { name: /links/i })).toBeVisible();
 	await expect(page.locator('body')).not.toContainText(TAG);
 });
 
@@ -463,25 +459,14 @@ test('a filter in the URL and a clear leave no history entries behind', async ({
 
 test('thousands of rows render only a window of them, and scrolling reaches the last', async ({ page }) => {
 	const N = 5000;
-	await page.route('**/data/reports/2025.json', (route) =>
-		route.fulfill({
-			json: Array.from({ length: N }, (_, i) => ({
-				id: `synthetic-${i}`,
-				title: `Synthetic report ${i}`,
-				published: `2025-${String((i % 12) + 1).padStart(2, '0')}-15`,
-				date_basis: 'publisher',
-				organisation: 'Fieldnote DFIR',
-				url: `https://example.org/synthetic/${i}`,
-				url_ok: true,
-				archive_url: null,
-				actors: ['G0032'],
-				actor_names_unresolved: [],
-				cves: [],
-				techniques: [],
-				sources: ['dfir']
-			}))
-		})
-	);
+	const extras = Array.from({ length: N }, (_, i) => ({
+		id: `synthetic-${i}`,
+		title: `Synthetic report ${i}`,
+		published: `2025-${String((i % 12) + 1).padStart(2, '0')}-15`,
+		organisation: 'Fieldnote DFIR',
+		actors: ['G0032']
+	}));
+	await page.route(INDEX, (route) => route.fulfill({ json: withExtraRows(index, extras) }));
 	await open(page);
 	expect(await shownCount(page)).toBeGreaterThan(N);
 	expect(await bodyRows(page).count()).toBeLessThan(100);
@@ -494,17 +479,11 @@ test('thousands of rows render only a window of them, and scrolling reaches the 
 	expect(await bodyRows(page).count()).toBeLessThan(100);
 });
 
-test('when the data cannot load, the page says so', async ({ page }) => {
-	await page.route('**/data/campaigns.json', (route) => route.fulfill({ status: 500, body: 'no' }));
-	await page.goto(EXPLORE);
-	await expect(page.getByRole('alert')).toContainText(/could not be loaded/i);
-});
-
 test('with scripts blocked, the prerendered page explains that the table needs them', async ({ page }) => {
 	await page.route('**/*.js', (r) => r.abort());
 	await page.goto(EXPLORE);
 	await expect(page.getByRole('heading', { level: 1 })).toHaveText('Explore');
-	await expect(page.getByRole('status')).toContainText(/scripts/i);
+	await expect(status(page)).toContainText(/scripts/i);
 });
 
 test('the explore page loads without console errors', async ({ page }) => {

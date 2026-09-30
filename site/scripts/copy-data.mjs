@@ -9,7 +9,10 @@ import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const here = dirname(fileURLToPath(import.meta.url));
-const src = resolve(process.argv[2] ?? join(here, '..', '..', 'data'));
+// APTX_DATA points a build at a data set other than the committed one, for
+// example a fresh pipeline run that has not been committed yet. The tests use
+// the same variable, so the site and its tests read the same files.
+const src = resolve(process.argv[2] ?? process.env.APTX_DATA ?? join(here, '..', '..', 'data'));
 const dest = resolve(process.argv[3] ?? join(here, '..', 'static', 'data'));
 
 // build.json is written last by the pipeline and is what the data layer

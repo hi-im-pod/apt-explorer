@@ -14,10 +14,17 @@
 	A link-only row (ORKL, whose terms are pending) shows only its title,
 	date and links. Its archive link is ORKL's own copy, offered only when
 	the original is unreachable or missing.
+
+	The table row already holds the title, date, publisher, sources, actors,
+	CVEs and techniques, so the panel shows them at once. The links and the
+	names that matched no actor live only in the report's own record, which
+	the page reads from its year shard. Those two parts show a loading note,
+	then either the record or an error with a retry button.
 -->
 <script lang="ts">
 	import { tick } from 'svelte';
 	import { base } from '$app/paths';
+	import type { Report } from '$lib/data/types';
 	import type { ExploreRow } from '$lib/search';
 	import { sourceLabel } from '$lib/data/labels';
 	import { formatDate } from '$lib/format';
@@ -31,10 +38,15 @@
 		requested: { kind: 'report' | 'campaign'; id: string } | null;
 		actorNames: ReadonlyMap<string, string>;
 		kevCves: ReadonlySet<string>;
+		/** The report's full record, once its shard has been read. */
+		report: Report | null;
+		/** Where reading the record stands. Only a report row has one. */
+		status: 'loading' | 'error' | 'ready';
+		onretry: () => void;
 		onclose: () => void;
 	}
 
-	let { open, row, requested, actorNames, kevCves, onclose }: Props = $props();
+	let { open, row, requested, actorNames, kevCves, report, status, onretry, onclose }: Props = $props();
 
 	let dialog: HTMLDialogElement;
 	let heading = $state<HTMLHeadingElement>();
@@ -46,7 +58,7 @@
 
 	/** The report's links in the order a visitor should try them. */
 	const links = $derived.by((): PanelLink[] => {
-		const r = row?.report;
+		const r = report;
 		if (!r) return [];
 		const original: PanelLink | null = r.url ? { kind: 'original', href: r.url } : null;
 		const archive: PanelLink | null = r.archive_url ? { kind: 'archive', href: r.archive_url } : null;
@@ -60,8 +72,8 @@
 		return ordered.filter((l): l is PanelLink => l != null);
 	});
 
-	const unreachable = $derived(row?.report?.url != null && row.report.url_ok === false);
-	const noOriginal = $derived(row?.report != null && row.report.url == null);
+	const unreachable = $derived(report?.url != null && report.url_ok === false);
+	const noOriginal = $derived(report != null && report.url == null);
 
 	/** "harborcert.example", shown beside a link so the visitor knows where it goes. */
 	function host(href: string): string {
@@ -129,14 +141,13 @@
 				<code>{requested?.id}</code> is not in the current data. A later build may have removed it,
 				or the link may be mistyped.
 			</p>
-		{:else if row.kind === 'report' && row.report}
-			{@const r = row.report}
-			<h2 id="panel-title" tabindex="-1" bind:this={heading}>{r.title}</h2>
+		{:else if row.kind === 'report'}
+			<h2 id="panel-title" tabindex="-1" bind:this={heading}>{row.title}</h2>
 			<dl class="meta">
 				<div>
 					<dt>Published</dt>
 					<dd>
-						{#if r.published}<time datetime={r.published}>{formatDate(r.published)}</time
+						{#if row.date}<time datetime={row.date}>{formatDate(row.date)}</time
 							>{:else}Undated{/if}
 					</dd>
 				</div>
@@ -154,7 +165,14 @@
 
 			<section aria-labelledby="panel-links">
 				<h3 id="panel-links">Links</h3>
-				{#if unreachable}
+				{#if status === 'loading'}
+					<p class="wait" role="status">Loading the links for this report…</p>
+				{:else if status === 'error'}
+					<p class="warn" role="alert">
+						The links for this report could not be loaded.
+						<button type="button" class="retry" onclick={onretry}>Try again</button>
+					</p>
+				{:else if unreachable}
 					<p class="warn">
 						The original link was unreachable at the last link check.
 						{#if links[0]?.kind === 'archive'}The archive copy is listed first.{/if}
@@ -165,7 +183,9 @@
 						{#if links.length}The archive copy is listed instead.{/if}
 					</p>
 				{/if}
-				{#if links.length}
+				{#if status !== 'ready'}
+					<!-- The links are not known yet, so neither a list nor "no link" is shown. -->
+				{:else if links.length}
 					<ul class="links" aria-labelledby="panel-links">
 						{#each links as link (link.kind)}
 							<li>
@@ -188,11 +208,11 @@
 					<a href="{base}/about/#publish-link-only">What link-only means</a>
 				</p>
 			{:else}
-				{#if r.actors.length}
+				{#if row.actors.length}
 					<section aria-labelledby="panel-actors">
 						<h3 id="panel-actors">Actors</h3>
 						<ul class="chips">
-							{#each r.actors as id (id)}
+							{#each row.actors as id (id)}
 								<li>
 									{#if actorNames.has(id)}
 										<a href="{base}/actors/{id}/">{actorNames.get(id)}</a>
@@ -204,19 +224,19 @@
 						</ul>
 					</section>
 				{/if}
-				{#if row.unresolved.length}
+				{#if report && report.actor_names_unresolved.length}
 					<section aria-labelledby="panel-unresolved">
 						<h3 id="panel-unresolved">Names not matched to an actor</h3>
 						<ul class="chips plain">
-							{#each row.unresolved as name (name)}<li>{name}</li>{/each}
+							{#each report.actor_names_unresolved as name (name)}<li>{name}</li>{/each}
 						</ul>
 					</section>
 				{/if}
-				{#if r.cves.length}
+				{#if row.cves.length}
 					<section aria-labelledby="panel-cves">
 						<h3 id="panel-cves">CVEs</h3>
 						<ul class="ids">
-							{#each r.cves as cve (cve)}
+							{#each row.cves as cve (cve)}
 								<li>
 									<span class="data">{cve}</span>
 									{#if kevCves.has(cve)}<span class="kev">In CISA KEV</span>{/if}
@@ -225,11 +245,11 @@
 						</ul>
 					</section>
 				{/if}
-				{#if r.techniques.length}
+				{#if row.techniques.length}
 					<section aria-labelledby="panel-techniques">
 						<h3 id="panel-techniques">Techniques</h3>
 						<ul class="ids">
-							{#each r.techniques as t (t)}
+							{#each row.techniques as t (t)}
 								<li><a class="data" href={techniqueUrl(t)} rel="noopener noreferrer">{t}</a></li>
 							{/each}
 						</ul>
@@ -406,6 +426,28 @@
 
 	.meta dd {
 		margin: 0;
+	}
+
+	.wait {
+		margin: 0;
+		color: var(--text-muted);
+		font-size: 0.9375rem;
+	}
+
+	.retry {
+		margin-left: 0.5rem;
+		padding: 0.125rem 0.75rem;
+		background: transparent;
+		border: 1px solid var(--border);
+		border-radius: 999px;
+		color: var(--text);
+		font: inherit;
+		font-size: 0.875rem;
+		cursor: pointer;
+	}
+
+	.retry:hover {
+		border-color: var(--accent);
 	}
 
 	.warn {

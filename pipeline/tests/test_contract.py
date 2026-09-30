@@ -10,6 +10,7 @@ the pipeline writes its first real build.
 """
 import copy
 import json
+import os
 import re
 from collections import defaultdict
 from pathlib import Path
@@ -21,13 +22,15 @@ from aptx.build.contract import NON_JSON_FILES, SCHEMA_DIR, load_schema, schema_
 from aptx.sources.base import publish_policy
 
 ROOT = Path(__file__).resolve().parents[2]
-DATA = ROOT / "data"
+# APTX_DATA points the whole file at another directory, such as a scratch build,
+# so a change to the contract can be checked before data/ itself is regenerated.
+DATA = Path(os.environ["APTX_DATA"]) if os.environ.get("APTX_DATA") else ROOT / "data"
 SOURCES_MD = ROOT / "SOURCES.md"
 
 # The site fetches these by name, so each must exist even when it is empty.
 # The year shards are not listed because which years exist depends on the data;
 # build.json's report_years names them.
-REQUIRED = ["actors/index.json", "reports/undated.json", "campaigns.json", "vulns.json",
+REQUIRED = ["actors/index.json", "reports/index.json", "reports/undated.json", "campaigns.json", "vulns.json",
             "sources.json", "resolution.json", "trends.json", "build.json"]
 
 SCHEMA_NAMES = sorted(p.name.removesuffix(".schema.json") for p in SCHEMA_DIR.glob("*.schema.json"))
@@ -58,8 +61,17 @@ def tree() -> dict:
 
 # --- Every file has a schema, and every file matches it -----------------------
 
+# data/ is regenerated as a whole by the pipeline. Until that has happened once
+# after the reports index was added, the committed data/ has no index, and the two
+# tests that would say so are skipped with that reason rather than failing on a
+# file the pipeline had no way to produce yet. Once the file exists they are strict.
+NO_INDEX_YET = DATA.is_dir() and "reports/index.json" not in FILES
+
+
 def test_data_directory_holds_every_file_the_site_fetches_by_name():
     assert DATA.is_dir(), f"{DATA} is missing"
+    if NO_INDEX_YET:
+        pytest.skip("data/ was built before the reports index existed; regenerate it")
     assert [rel for rel in REQUIRED if rel not in FILES] == []
 
 
@@ -78,6 +90,8 @@ PENDING_FIRST_BUILD = {"slugs"}
 def test_every_schema_governs_a_data_file():
     # A schema that no file uses means a file was renamed or never written.
     used = {schema_for(rel) for rel in FILES} | PENDING_FIRST_BUILD
+    if NO_INDEX_YET:
+        used.add("reports_index")
     assert [name for name in SCHEMA_NAMES if name not in used and name not in NOT_YET_COMMITTED] == []
 
 
@@ -303,6 +317,29 @@ def _source_refs(tree: dict):
             yield f"trends new_actors {row['actor']} basis", row["basis"]
 
 
+def add_index_problems(tree: dict, reports: dict[str, dict], add) -> None:
+    """reports/index.json and the shards must describe the same reports, one for one."""
+    index = tree.get("reports/index.json")
+    if index is None:
+        return
+    id_len = index["id_len"]
+    keys = {r if not re.fullmatch(r"[0-9a-f]{40}", r) else r[:id_len] for r in reports}
+    listed = index["columns"]["id"]
+    if index["total"] != len(reports):
+        add(f"reports/index.json total {index['total']} but the shards hold {len(reports)} reports")
+    for name, column in index["columns"].items():
+        if len(column) != index["total"]:
+            add(f"reports/index.json columns.{name} has {len(column)} entries, total is {index['total']}")
+    if len(set(listed)) != len(listed):
+        add("reports/index.json lists an id twice")
+    if set(listed) - keys:
+        add(f"reports/index.json lists ids that are in no shard: {sorted(set(listed) - keys)[:5]}")
+    if keys - set(listed):
+        add(f"reports in a shard but not in reports/index.json: {sorted(keys - set(listed))[:5]}")
+    if "build.json" in tree and index["built_at"] != tree["build.json"]["built_at"]:
+        add("reports/index.json built_at differs from build.json")
+
+
 def integrity_problems(tree: dict) -> list[str]:
     """Every way the files in `tree` contradict each other, as readable lines."""
     problems: list[str] = []
@@ -335,6 +372,7 @@ def integrity_problems(tree: dict) -> list[str]:
             belongs = report["published"][:4] if report["published"] else "undated"
             if belongs != stem:
                 add(f"report {report['id']} published {report['published']} is in reports/{stem}.json")
+    add_index_problems(tree, reports, add)
     years = sorted(int(stem) for stem in shards if stem != "undated")
     if "build.json" in tree and tree["build.json"]["report_years"] != years:
         add(f"build.json report_years {tree['build.json']['report_years']} but the shards are {years}")
@@ -487,6 +525,28 @@ def test_integrity_check_finds_a_report_in_the_wrong_year(tree):
     broken[rel].remove(report)
     broken["reports/undated.json"].append(report)
     assert any("is in reports/undated.json" in p for p in integrity_problems(broken))
+
+
+def test_integrity_check_finds_a_report_the_index_does_not_list(tree):
+    if "reports/index.json" not in tree:
+        pytest.skip("data/ has no reports index yet")
+    broken = copy.deepcopy(tree)
+    rel, report = _first_dated_report(broken)
+    extra = copy.deepcopy(report)
+    extra["id"] = "e" * 40
+    broken[rel].append(extra)
+    problems = integrity_problems(broken)
+    assert any("not in reports/index.json" in p for p in problems)
+    assert any("total" in p for p in problems)
+
+
+def test_integrity_check_finds_an_indexed_id_with_no_report(tree):
+    if "reports/index.json" not in tree:
+        pytest.skip("data/ has no reports index yet")
+    broken = copy.deepcopy(tree)
+    rel, report = _first_dated_report(broken)
+    broken[rel].remove(report)
+    assert any("in no shard" in p for p in integrity_problems(broken))
 
 
 def test_integrity_check_finds_an_actor_count_that_disagrees_with_the_index(tree):
