@@ -725,3 +725,14 @@ def test_published_text_is_utf_8_without_mojibake():
             junk_marks += ("\ufffd",)
         for junk in junk_marks:
             assert junk not in text, f"{path.relative_to(DATA)} contains {junk!r}, which is mojibake"
+
+
+def test_no_published_title_starts_with_its_filing_date(tree):
+    # VX-Underground files papers as "2014-11-14 - Title". The pipeline moves that date into
+    # published and drops it from the title, so a prefix left in a shard means a file skipped
+    # the split and the Explore table would show the date twice.
+    prefix = re.compile(r"^\d{4}-\d{2}-\d{2}\s+[-–—]\s")
+    shards = {rel: rows for rel, rows in tree.items() if rel.startswith("reports/") and rel != "reports/index.json"}
+    assert shards, "no report shards to check"
+    left = [r["title"] for rows in shards.values() for r in rows if prefix.match(r["title"])]
+    assert not left, f"{len(left)} titles still start with a date, for example {left[:3]}"
