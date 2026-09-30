@@ -82,7 +82,9 @@ def _types(node: dict) -> set[str]:
 
 
 def _is_object(node) -> bool:
-    return isinstance(node, dict) and node.get("type") == "object" and "properties" in node
+    # An object that may also be null, such as guesses.json's evaluation, counts as an object:
+    # its TypeScript interface is tagged, and the null shows up as "| null" at the use site.
+    return isinstance(node, dict) and "object" in _types(node) and "properties" in node
 
 
 def _is_enum(node) -> bool:
