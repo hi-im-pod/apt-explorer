@@ -36,6 +36,11 @@
 	--rule-3: #9fd8e2;
 	--font-body: 'Mona Sans Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
 	--font-data: 'Martian Mono Variable', ui-monospace, 'Cascadia Mono', Consolas, monospace;
+	/* Headlines use Mona Sans at its expanded width; the terminal theme sets its own. */
+	--head-stretch: 118%;
+	--head-weight: 720;
+	--ink-on-accent: #ffffff;
+	--unconfirmed: #b45309;
 }
 
 :root[data-theme="dark"] {
@@ -60,6 +65,8 @@
 	--rule-1: #ff9fcc;
 	--rule-2: #b9a4ff;
 	--rule-3: #8fd6e3;
+	--ink-on-accent: #16121d;
+	--unconfirmed: #ffc57a;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -85,6 +92,8 @@
 		--rule-1: #ff9fcc;
 		--rule-2: #b9a4ff;
 		--rule-3: #8fd6e3;
+		--ink-on-accent: #16121d;
+		--unconfirmed: #ffc57a;
 	}
 }
 
@@ -112,6 +121,10 @@
 	--rule-2: #86b98c;
 	--rule-3: #ffb000;
 	--font-body: ui-monospace, 'Martian Mono Variable', 'Cascadia Mono', Consolas, monospace;
+	--head-stretch: 100%;
+	--head-weight: 600;
+	--ink-on-accent: #07090a;
+	--unconfirmed: #ffb000;
 }
 
 /* ------------------------------------------------------------------------ */
@@ -154,14 +167,16 @@ body {
 h1,
 h2,
 h3 {
-	line-height: 1.2;
-	font-weight: 650;
-	letter-spacing: -0.01em;
+	line-height: 1.15;
+	font-weight: var(--head-weight);
+	font-stretch: var(--head-stretch);
+	letter-spacing: -0.015em;
 	overflow-wrap: break-word;
 }
 
 h1 {
-	font-size: clamp(1.75rem, 1.3rem + 2vw, 2.5rem);
+	font-size: clamp(2.25rem, 1.5rem + 3.4vw, 3.75rem);
+	line-height: 1.05;
 	margin: 0 0 1rem;
 }
 
