@@ -27,6 +27,8 @@ _RULES: tuple[tuple[re.Pattern[str], str], ...] = (
     (re.compile(r"actors/index\.json"), "actors_index"),
     (re.compile(r"actors/[^/]+\.json"), "actor"),
     (re.compile(r"reports/(?:[0-9]{4}|undated)\.json"), "reports_shard"),
+    # The explore page's compact index of every report. Its name cannot match a year shard.
+    (re.compile(r"reports/index\.json"), "reports_index"),
     (re.compile(r"campaigns\.json"), "campaigns"),
     (re.compile(r"vulns\.json"), "vulns"),
     (re.compile(r"sources\.json"), "sources"),

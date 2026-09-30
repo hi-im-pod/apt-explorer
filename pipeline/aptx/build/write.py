@@ -17,12 +17,13 @@ import shutil
 from pathlib import Path
 
 from aptx.build.contract import NON_JSON_FILES, load_schema, schema_for, validator
+from aptx.build.report_index import build_reports_index, short_id
 
 # Files that must exist for the site to load at all. Year shards and actor
 # pages are not listed because how many there are depends on the data, but the
 # undated shard is always there, even when empty, so the site can fetch it
 # without first checking whether it exists.
-REQUIRED = ("actors/index.json", "reports/undated.json", "campaigns.json", "vulns.json", "sources.json",
+REQUIRED = ("actors/index.json", "reports/index.json", "reports/undated.json", "campaigns.json", "vulns.json", "sources.json",
             "resolution.json", "trends.json", "build.json", "NOTICE.md")
 
 _ACTOR_FILE = re.compile(r"actors/([^/]+)\.json")
@@ -108,6 +109,49 @@ def _notice_problems(text: str) -> list[str]:
     return problems
 
 
+def _index_problems(parsed: dict[str, object], report_ids: dict[str, str]) -> list[str]:
+    """Contradictions between reports/index.json and the report shards it summarises.
+
+    The index is derived data, so the strongest check is to derive it again from
+    the shards and demand the same file. The checks before that only explain the
+    common failures in words, so a failed build says what is wrong.
+    """
+    rel = "reports/index.json"
+    index = parsed[rel]
+    shard_reports = [r for name in sorted(parsed) if _SHARD.fullmatch(name) for r in parsed[name]]
+    if len(report_ids) != len(shard_reports):
+        return []  # A repeated id is already reported, and the index cannot be rebuilt from it.
+    problems: list[str] = []
+    built_at = parsed["build.json"]["built_at"]
+    if index["built_at"] != built_at:
+        problems.append(f"{rel}: built_at is {index['built_at']}, but build.json says {built_at}")
+    if index["total"] != len(shard_reports):
+        problems.append(f"{rel}: total is {index['total']}, but the report shards hold {len(shard_reports)} reports")
+    short = [f"{rel}: columns.{name} has {len(column)} entries, total says {index['total']}"
+             for name, column in index["columns"].items() if len(column) != index["total"]]
+    if short:
+        return problems + short
+
+    id_len = index["id_len"]
+    indexed = set(index["columns"]["id"])
+    in_shards = {short_id(i, id_len) for i in report_ids}
+    for missing in sorted(in_shards - indexed)[:_MAX_PER_FILE]:
+        problems.append(f"{rel}: report {missing} is in a report shard but not in the index")
+    for extra in sorted(indexed - in_shards)[:_MAX_PER_FILE]:
+        problems.append(f"{rel}: {extra} is indexed but is in no report shard")
+    if problems:
+        return problems  # The rebuild below would only repeat the same news less clearly.
+
+    kev = {v["cve"] for v in parsed["vulns.json"] if v["kev_date_added"] is not None}
+    expected = build_reports_index(shard_reports, kev_cves=kev, built_at=built_at)
+    if expected != index:
+        first = next((k for k in expected if expected[k] != index.get(k)), "?")
+        if first in ("tables", "columns"):
+            first += "." + next(k for k in expected[first] if expected[first][k] != index[first][k])
+        problems.append(f"{rel}: differs from the index rebuilt from the report shards, first at {first}")
+    return problems
+
+
 def _cross_problems(parsed: dict[str, object]) -> list[str]:
     """Contradictions between files that each pass their own schema."""
     problems: list[str] = []
@@ -153,6 +197,8 @@ def _cross_problems(parsed: dict[str, object]) -> list[str]:
     if sorted(parsed["build.json"]["report_years"]) != sorted(years):
         problems.append(f"build.json: report_years {parsed['build.json']['report_years']} does not match "
                         f"the report shards written {sorted(years)}")
+
+    problems += _index_problems(parsed, report_ids)
 
     for actor_id, actor in sorted(actor_files.items()):
         for rid in actor["reports"]:

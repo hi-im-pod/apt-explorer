@@ -87,7 +87,8 @@ def actor_files(payload):
 
 
 def all_report_rows(payload):
-    return [r for rel, rows in payload.items() if rel.startswith("reports/") for r in rows]
+    return [r for rel, rows in payload.items() if rel.startswith("reports/") and rel != "reports/index.json"
+            for r in rows]
 
 
 def report_by_title(payload, title):
@@ -783,6 +784,27 @@ def test_build_json_says_when_and_which_shards():
     assert payload["build.json"]["built_at"] == NOW
     assert payload["build.json"]["report_years"] == [2023, 2025]
     assert payload["build.json"]["version"]
+
+
+def test_the_reports_index_lists_every_report_and_carries_the_build_time():
+    orkl = B("orkl", reports=[R("orkl", "1", "A", "https://ex.org/a", "2025-05-01"),
+                              R("orkl", "2", "B", "https://ex.org/b", "2023-05-01"),
+                              R("orkl", "3", "C")])
+    payload = run(*WORLD(orkl=orkl))
+    index = payload["reports/index.json"]
+    rows = all_report_rows(payload)
+    assert index["built_at"] == payload["build.json"]["built_at"] == NOW
+    assert index["total"] == len(rows) == len(index["columns"]["id"])
+    assert sorted(index["columns"]["title"]) == sorted(r["title"] for r in rows)
+    assert index["columns"]["published"] == sorted((p for p in index["columns"]["published"] if p),
+                                                   reverse=True) + [None] * index["columns"]["published"].count(None)
+
+
+def test_the_reports_index_marks_kev_cves_from_the_vulnerability_list():
+    payload = run(*WORLD())
+    kev = {v["cve"] for v in payload["vulns.json"] if v["kev_date_added"] is not None}
+    table = payload["reports/index.json"]["tables"]["cves"]
+    assert {table[i] for i in payload["reports/index.json"]["kev"]} == kev & set(table)
 
 
 def test_actor_file_names_are_safe_on_a_case_insensitive_file_system():
