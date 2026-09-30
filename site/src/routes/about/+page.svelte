@@ -82,10 +82,11 @@
 	<h2 id="related-work-heading">Related Work: APT Map</h2>
 	<p>
 		<a href="https://lngt-apt-study-map.vercel.app/">APT Map</a> is an interactive map of
-		APT incident rows, built from the dataset released with the paper above. It shows incidents
-		from the victim's side or the attacker's side, and it filters them by year, country and actor.
-		A detail panel for each incident gives the CVE, whether a zero-day was used, the source, the
-		attack vector, the malware, the targeted sectors and the duration.
+		hand-curated incident rows, built from the dataset released with the paper above. It shows
+		incidents from the victim's side or the attacker's side, and it filters them by year, country
+		and actor. A detail panel for each incident gives the CVE, whether a zero-day was used, the
+		source, the attack vector, the malware, the targeted sectors and the duration. Community
+		additions to the map are made by GitHub pull request.
 	</p>
 	<p>
 		APT Explorer answers a different question. It is an explorer of actors and of the reports
@@ -94,14 +95,11 @@
 	</p>
 	<ul class="related">
 		<li><a href="https://lngt-apt-study-map.vercel.app/">APT Map, the interactive site</a></li>
-		<li>
-			<a href="https://github.com/SecAI-Lab/APTMap-backend">SecAI-Lab/APTMap-backend</a>, the code
-			behind the map on GitHub
-		</li>
+		<li><a href="https://github.com/SecAI-Lab/APTMap-backend">SecAI-Lab/APTMap-backend on GitHub</a></li>
 		<li>
 			<a href="https://github.com/SecAI-Lab/A-Decade-long-Landscape-of-Advanced-Persistent-Threats"
-				>SecAI-Lab/A-Decade-long-Landscape-of-Advanced-Persistent-Threats</a
-			>, the repository for the paper on GitHub
+				>SecAI-Lab/A-Decade-long-Landscape-of-Advanced-Persistent-Threats on GitHub</a
+			>
 		</li>
 	</ul>
 </section>

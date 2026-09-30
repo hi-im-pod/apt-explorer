@@ -170,8 +170,14 @@ for (const vp of viewports) {
 				}
 				// It says in plain words what the map is and how this site differs.
 				await expect(section).toContainText('victim');
-				await expect(section).not.toContainText('pull request');
+				await expect(section).toContainText('hand-curated');
+				await expect(section).toContainText('GitHub pull request');
 				await expect(section).toContainText('rebuilt from open sources');
+				// The repositories are named by what they are called, with no claim about what they hold.
+				await expect(section.locator(`a[href="${APT_MAP_BACKEND}"]`)).toHaveText('SecAI-Lab/APTMap-backend on GitHub');
+				await expect(section.locator(`a[href="${APT_MAP_PAPER_REPO}"]`)).toHaveText(
+					'SecAI-Lab/A-Decade-long-Landscape-of-Advanced-Persistent-Threats on GitHub'
+				);
 				// It claims nothing about a licence, approval or plans to contribute.
 				const text = (await section.innerText()).toLowerCase();
 				for (const word of ['licen', 'approv', 'endors', 'permission', 'contribut']) {

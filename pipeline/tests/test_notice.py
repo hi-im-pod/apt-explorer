@@ -60,6 +60,8 @@ def test_the_related_work_line_points_at_apt_map_and_says_nothing_about_its_term
     lines = [line for line in text.split("\n") if line.startswith("Related work:")]
     assert len(lines) == 1
     assert "https://lngt-apt-study-map.vercel.app/" in lines[0]
+    # It says what kind of map it is, which the person who built it can check.
+    assert "hand-curated incident rows" in lines[0]
     for word in ("licen", "approv", "endors", "permission", "contribut", "affiliat"):
         assert word not in lines[0].lower()
     # The line sits in the intro, before the first section heading.
