@@ -53,6 +53,14 @@ L2 = 1.0
 # Confidence needed for a band, on the calibrated scale.
 BAND_MEDIUM = 0.70
 BAND_HIGH = 0.85
+# A band is only used when at least this many ground-truth names reached it
+# with the precision it claims, measured with each name left out of its own
+# calibration. Fewer than that cannot tell a 0.94 from a 0.75.
+MIN_BAND_SUPPORT = 20
+# A guess refused a band is held this far below the band's threshold, so its
+# confidence and its band agree.
+CAP_MARGIN = 0.01
+BAND_ORDER = ("high", "medium", "low")
 # Raw-score bins for calibration. With this few labelled names, three bins is
 # as fine as the counts allow.
 BIN_EDGES = (0.5, 0.7, 0.85, 1.0001)
@@ -228,6 +236,9 @@ class Model:
     bins: list[tuple[float, float]]
     no_signal_confidence: float
     validated_labels: frozenset[str]
+    # The bands the held-out evaluation supports. A guess whose calibrated
+    # confidence falls in a band outside this set drops to the next one down.
+    granted: frozenset[str] = frozenset(BAND_ORDER)
 
     def p_malware(self, features: Mapping[str, float]) -> float:
         return predict_logistic(self.weights, _vector(features, self.signals))
@@ -235,13 +246,34 @@ class Model:
     def fired(self, features: Mapping[str, float]) -> list[str]:
         return [s for s in self.signals if features.get(s)]
 
+    def calibrated(self, raw: float, fired: bool) -> float:
+        return _lookup(self.bins, self.no_signal_confidence, raw, fired)
+
+    def cap(self, value: float, fired: bool) -> float:
+        """The confidence, held below the threshold of the band the evaluation refused it."""
+        band = self.settled_band(value, fired)
+        return min(value, CAPS[band])
+
+    def settled_band(self, value: float, fired: bool) -> str:
+        band = band_for(value, fired)
+        while band not in self.granted:
+            band = BAND_ORDER[BAND_ORDER.index(band) + 1]
+        return band
+
     def confidence(self, raw: float, fired: bool) -> float:
-        if not fired:
-            return self.no_signal_confidence
-        for upper, value in self.bins:
-            if raw < upper:
-                return value
-        return self.bins[-1][1]
+        return self.cap(self.calibrated(raw, fired), fired)
+
+
+CAPS = {"high": 1.0, "medium": BAND_HIGH - CAP_MARGIN, "low": BAND_MEDIUM - CAP_MARGIN}
+
+
+def _lookup(bins: Sequence[tuple[float, float]], no_signal: float, raw: float, fired: bool) -> float:
+    if not fired:
+        return no_signal
+    for upper, value in bins:
+        if raw < upper:
+            return value
+    return bins[-1][1]
 
 
 def band_for(confidence: float, fired: bool) -> str:
@@ -276,6 +308,41 @@ def _calibrate(rows: list[tuple[float, bool, bool]]) -> tuple[list[tuple[float, 
     for i in range(1, len(values)):
         values[i] = max(values[i], values[i - 1])
     return list(zip(BIN_EDGES[1:], (round(v, 3) for v in values))), round(no_signal, 3)
+
+
+def held_out_confidences(rows: list[tuple[float, bool, bool]]) -> list[float]:
+    """Each row's calibrated confidence, from bins that were made without that row.
+
+    Calibrating on a name and then scoring the calibration on the same name
+    flatters it, most of all in a sparse bin, where one name is a large share.
+    """
+    out = []
+    for i, (raw, _, fired) in enumerate(rows):
+        bins, no_signal = _calibrate(rows[:i] + rows[i + 1:])
+        out.append(_lookup(bins, no_signal, raw, fired))
+    return out
+
+
+def band_pools(rows: list[tuple[float, bool, bool]]) -> list[tuple[str, int, int, bool]]:
+    """For the high and medium bands: (band, names, right, granted).
+
+    `rows` is (held-out confidence, whether the guess was right, whether a kept
+    signal fired). Names refused the high band are counted in the medium band's
+    pool, because that is where they would be shown. A band is granted when its
+    pool is large enough and at least as precise as the band claims.
+    """
+    carried: list[bool] = []
+    out = []
+    for band, floor in (("high", BAND_HIGH), ("medium", BAND_MEDIUM)):
+        pool = [ok for conf, ok, fired in rows if band_for(conf, fired) == band] + carried
+        granted = len(pool) >= MIN_BAND_SUPPORT and sum(pool) / len(pool) >= floor
+        out.append((band, len(pool), sum(pool), granted))
+        carried = [] if granted else pool
+    return out
+
+
+def granted_bands(rows: list[tuple[float, bool, bool]]) -> frozenset[str]:
+    return frozenset({"low"} | {band for band, _, _, ok in band_pools(rows) if ok})
 
 
 # The evaluation
@@ -316,26 +383,39 @@ def fit(labels: Sequence[Label], ref: Reference, truth: Callable[[str], str | No
         return label, raw, any(s.analysis.features[k] for k in kept)
 
     calib_rows = []
-    for s, p in zip(samples, probs):
+    calib_index = []
+    for i, (s, p) in enumerate(zip(samples, probs)):
         if s.label in ("actor", "malware"):
             label, raw, fired = cv_decision(s, p)
             if raw is not None:
                 calib_rows.append((raw, label == s.label, fired))
+                calib_index.append(i)
     bins, no_signal = _calibrate(calib_rows)
-    model = Model(kept, weights, bins, no_signal, validated)
+    # The bands are judged on names that were calibrated without themselves, so
+    # a band the data cannot support is refused before any guess is shown in it.
+    held = held_out_confidences(calib_rows)
+    held_rows = [(conf, ok, fired) for conf, (_, ok, fired) in zip(held, calib_rows)]
+    pools = band_pools(held_rows)
+    model = Model(kept, weights, bins, no_signal, validated, granted=granted_bands(held_rows))
+    held_conf = dict(zip(calib_index, held))
 
     predictions = []
-    for s, p in zip(samples, probs):
+    for i, (s, p) in enumerate(zip(samples, probs)):
         label, raw, fired = cv_decision(s, p)
-        conf = model.confidence(raw, fired) if raw is not None else None
+        if raw is None:
+            conf = None
+        elif i in held_conf:
+            conf = model.cap(held_conf[i], fired)
+        else:
+            conf = model.confidence(raw, fired)
         band = band_for(conf, fired) if label in validated and conf is not None else "unvalidated"
         predictions.append((s, label, conf, band))
 
-    evaluation = _report(samples, predictions, candidates, kept, fires, change, model, validated)
+    evaluation = _report(samples, predictions, candidates, kept, fires, change, model, validated, pools)
     return model, evaluation
 
 
-def _report(samples, predictions, candidates, kept, fires, change, model, validated) -> dict:
+def _report(samples, predictions, candidates, kept, fires, change, model, validated, pools) -> dict:
     n = len(samples)
     correct = sum(1 for s, label, _, _ in predictions if label == s.label)
     truth_counts = Counter(s.label for s in samples)
@@ -395,7 +475,13 @@ def _report(samples, predictions, candidates, kept, fires, change, model, valida
         limits.append("The ground truth has fewer than %d names labelled %s, so guesses with those labels are shown as unvalidated."
                       % (MIN_LABEL_SUPPORT, " or ".join(missing)))
     limits.append("The ground-truth names are ones that a source lists, so they are better known than a typical unresolved name.")
-    limits.append("Signals were kept and confidence was calibrated on the same %d names, so the figures are likely a little optimistic." % n)
+    limits.append("Signals were chosen on the same %d names that score them, so the figures are likely a little optimistic. "
+                  "Confidence is calibrated without each name in turn, which removes a second source of the same bias." % n)
+    for band, pooled, right, granted in pools:
+        if not granted:
+            limits.append("No guess is shown as %s confidence. The band needs at least %d held-out names with %d%% or more right, "
+                          "and %d qualified, of which %d were right."
+                          % (band, MIN_BAND_SUPPORT, round((BAND_HIGH if band == "high" else BAND_MEDIUM) * 100), pooled, right))
 
     return {
         "ground_truth": {"n": n, "derived": sum(1 for s in samples if s.status == "derived"),

@@ -111,6 +111,21 @@ test('the accuracy figure and its bars match the evaluation', async ({ page }) =
 	}
 });
 
+test('the page only praises the High band when the evaluation used it', async ({ page }) => {
+	const ev = real.evaluation as Evaluation;
+	const usesHigh = ev.bands.some((b) => b.band === 'high' && b.n > 0);
+	await page.goto(PAGE);
+	const note = page.locator('#evaluation .section-note');
+	if (usesHigh) {
+		await expect(note).toContainText('helps most where it says High');
+	} else {
+		await expect(note).not.toContainText('helps most');
+		await expect(note).toContainText('No guess reaches the High band');
+	}
+	// Every refusal the evaluation records is printed among the limitations.
+	for (const l of ev.limitations) await expect(page.locator('#evaluation')).toContainText(l.slice(0, 40));
+});
+
 test('the confidence bands, labels and confusion matrix are tables of the evaluation', async ({ page }) => {
 	const ev = real.evaluation as Evaluation;
 	await page.goto(PAGE);

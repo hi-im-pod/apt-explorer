@@ -35,6 +35,7 @@
 
 	const shown = $derived(filterGuesses(rows, { label, band, query }));
 	const labelCounts = $derived(countBy(rows, (g) => g.label, LABELS));
+	const usedBands = $derived(new Set((evaluation?.bands ?? []).filter((b) => b.n > 0).map((b) => b.band)));
 	const bandCounts = $derived(countBy(rows, (g) => g.band, BANDS));
 	const bandsInUse = $derived(BANDS.filter((b) => bandCounts[b] > 0));
 
@@ -135,15 +136,22 @@
 					? `, and ${versusName} a version that uses only the shape of the name`
 					: ''}.
 			{/if}
-			The names are few, so a gap of a few points is within noise. The method helps most where it
-			says High, as the next table shows.
+			The names are few, so a gap of a few points is within noise.
+			{#if usedBands.has('high')}
+				The method helps most where it says High, as the next table shows.
+			{:else}
+				No guess reaches the High band, and the next table says why.
+			{/if}
 		</p>
 
 		<h3>Confidence</h3>
 		<p>
 			Each actor or malware guess carries a confidence. It is the share of scored names with a
-			similar score that the method labelled correctly. High means 0.85 or more and medium means
-			0.70 or more. A guess that rests on no measured signal is always low.
+			similar score that the method labelled correctly, and each name was scored with a calibration
+			made without it. High means 0.85 or more and medium means 0.70 or more. A band is used only
+			when enough scored names reached it. A guess that would fall in a band that is not used is
+			shown one band lower, with its confidence held just under that band's threshold. A guess that
+			rests on no measured signal is always low.
 		</p>
 		<div class="scroll">
 			<table>

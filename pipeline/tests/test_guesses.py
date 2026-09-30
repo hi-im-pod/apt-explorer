@@ -110,6 +110,39 @@ def test_the_no_signal_confidence_comes_from_silent_names_only():
     assert no_signal > 0.8 and bins[0][1] == 0.6
 
 
+def test_a_names_own_result_never_shapes_its_confidence():
+    base = [(0.9, True, True)] * 12 + [(0.9, False, True)] * 3
+    right = g.held_out_confidences(base + [(0.9, True, True)])[-1]
+    wrong = g.held_out_confidences(base + [(0.9, False, True)])[-1]
+    assert right == wrong
+
+
+def test_a_band_needs_enough_held_out_names_and_the_precision_it_claims():
+    def rows(conf, right, wrong=0):
+        return [(conf, True, True)] * right + [(conf, False, True)] * wrong
+    assert g.granted_bands(rows(0.95, 20)) == {"high", "low"}
+    # Nineteen names are one short, and with nothing under them the medium band has too few as well.
+    assert g.granted_bands(rows(0.95, 19)) == {"low"}
+    # The names refused the high band count toward the medium band, and three more make twenty-two.
+    assert g.granted_bands(rows(0.95, 19) + rows(0.75, 3)) == {"medium", "low"}
+    # Twenty names in the high band with only 75% right fall to medium, which asks for 70%.
+    assert g.granted_bands(rows(0.95, 15, 5)) == {"medium", "low"}
+    assert g.granted_bands(rows(0.95, 10, 10)) == {"low"}
+    # A granted high band does not lend its names to the medium band, which must stand on its own.
+    assert g.granted_bands(rows(0.95, 20) + rows(0.75, 5)) == {"high", "low"}
+
+
+def test_a_refused_band_caps_the_confidence_below_its_own_threshold():
+    model = g.Model(("s",), [0.0, 1.0], [(0.7, 0.6), (0.85, 0.8), (1.0001, 0.94)], 0.5, frozenset({"actor"}),
+                    granted=frozenset({"low"}))
+    top = model.confidence(0.95, True)
+    assert top < g.BAND_MEDIUM and g.band_for(top, True) == "low"
+    medium_only = g.Model(("s",), [0.0, 1.0], [(0.7, 0.6), (0.85, 0.8), (1.0001, 0.94)], 0.5, frozenset({"actor"}),
+                          granted=frozenset({"medium", "low"}))
+    assert g.band_for(medium_only.confidence(0.95, True), True) == "medium"
+    assert medium_only.confidence(0.95, True) < g.BAND_HIGH
+
+
 # The evaluation
 
 def test_too_little_ground_truth_gives_no_fit():
@@ -372,3 +405,25 @@ def test_a_build_without_a_labels_file_still_works(tmp_path):
     cli.run(out, _store(tmp_path), _connectors(), fetch=False, labels=tmp_path / "missing.csv",
             generated_at="2026-09-30T04:00:00Z")
     assert json.loads((out / "guesses.json").read_text(encoding="utf-8"))["guesses"] == []
+
+
+def test_the_evaluation_only_reports_a_band_the_held_out_names_support():
+    ev = World().build([])["evaluation"]
+    for b in ev["bands"]:
+        if b["band"] in ("high", "medium") and b["n"]:
+            assert b["n"] >= g.MIN_BAND_SUPPORT
+            assert b["precision"] >= b["min_confidence"]
+
+
+def test_a_refused_band_is_named_in_the_limitations():
+    ev = World().build([])["evaluation"]
+    shown = {b["band"] for b in ev["bands"] if b["n"]}
+    text = " ".join(ev["limitations"])
+    for band in ("high", "medium"):
+        if band not in shown:
+            assert f"No guess is shown as {band} confidence" in text
+
+
+def test_the_limitations_say_the_signals_were_chosen_on_the_same_names():
+    text = " ".join(World().build([])["evaluation"]["limitations"])
+    assert "chosen on the same" in text and "without each name in turn" in text
