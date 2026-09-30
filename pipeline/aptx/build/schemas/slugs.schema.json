@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "data/slugs.json",
+  "description": "The frozen URL slug of every actor ever published. An actor keeps its slug when its name or its member records change, and a slug that stops naming an actor is kept as a retired entry, so no address is reused or silently lost. It lives beside the other data files, not under actors/, because it is not an actor page.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "entries"
+  ],
+  "properties": {
+    "entries": {
+      "description": "One entry per slug ever published, sorted by slug.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/slugEntry"
+      }
+    }
+  },
+  "$defs": {
+    "slugEntry": {
+      "description": "One slug and what is needed to recognise the actor that owns it in the next build.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "slug",
+        "display_name",
+        "anchors",
+        "first_published",
+        "suffix",
+        "retired",
+        "merged_into"
+      ],
+      "properties": {
+        "slug": {
+          "$ref": "#/$defs/actorId",
+          "description": "The actor's ID and URL segment. It never changes once published. An ATT&CK group's slug is its group ID."
+        },
+        "display_name": {
+          "$ref": "#/$defs/label",
+          "description": "The name the actor page showed in the last build that published it. Only a note for readers of this file; a changed name never changes the slug."
+        },
+        "anchors": {
+          "description": "The published member records of the actor, as source:source_id, or the bare ATT&CK group ID, sorted. A later build recognises the actor by any anchor it still shares. They are record identifiers, never alias names, so a name a page does not show cannot appear here.",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/label"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "first_published": {
+          "$ref": "#/$defs/buildDate",
+          "description": "The date of the build that first gave out this slug. When two entries merge, the older one keeps its slug."
+        },
+        "suffix": {
+          "description": "The number added to the slug because the natural slug was already owned, or null when none was needed. The slug then ends in a hyphen and this number.",
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 2
+        },
+        "retired": {
+          "description": "True when no published actor owns the slug in the last build. A retired slug is never given to another actor.",
+          "type": "boolean"
+        },
+        "merged_into": {
+          "description": "The slug of the actor this one was merged into, or null. Only a retired entry has one, and it names the end of any chain of merges. It is what the retired page links to.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^(?!index$)(G[0-9]{4}|[a-z0-9]+(-[a-z0-9]+)*)$"
+        }
+      }
+    },
+    "actorId": {
+      "description": "An ATT&CK group ID such as G0007, or a lower-case ASCII slug for an actor ATT&CK does not track. The ID is also the actor's file name and URL segment, so it has no colons, slashes or spaces, and it is never 'index'.",
+      "type": "string",
+      "pattern": "^(?!index$)(G[0-9]{4}|[a-z0-9]+(-[a-z0-9]+)*)$"
+    },
+    "label": {
+      "description": "Non-empty text with no leading or trailing whitespace and no line breaks.",
+      "type": "string",
+      "pattern": "^\\S(.*\\S)?$"
+    },
+    "buildDate": {
+      "description": "A build date, YYYY-MM-DD, never earlier than 1990.",
+      "type": "string",
+      "pattern": "^(199[0-9]|2[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+    }
+  }
+}

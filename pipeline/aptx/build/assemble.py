@@ -59,7 +59,7 @@ from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from itertools import combinations
 
-from aptx.build import trends
+from aptx.build import slugs, trends
 from aptx.build.countries import country_name, iso2
 from aptx.build.notice import SOURCE_INFO, SOURCE_ORDER, render_notice, require_year, source_attribution
 from aptx.core.dates import parse_date
@@ -185,6 +185,10 @@ def assemble(bundles, registry: Registry, policies: Mapping[str, str], link_stat
         "built_at": generated_at, "version": facts.version,
         "report_years": sorted(int(k) for k in shards if k != "undated")}
     payload["NOTICE.md"] = render_notice(year)
+    # BEGIN slugs hook: the frozen slug registry was computed inside resolve(), and this only checks
+    # that it saw the same visible sources as the policies and publishes it as data/slugs.json.
+    payload["slugs.json"] = slugs.document_for_build(registry, policies)
+    # END slugs hook
     return payload
 
 

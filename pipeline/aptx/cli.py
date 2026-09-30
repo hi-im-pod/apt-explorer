@@ -21,6 +21,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from aptx.build import assemble as assembly
+from aptx.build import slugs
 from aptx.build.assemble import BuildFacts
 from aptx.build.notice import SOURCE_ORDER
 from aptx.build.write import WriteRefused, write_all
@@ -108,8 +109,13 @@ def _fetch_all(store: SnapshotStore, connectors: Sequence[Connector], only: Coll
 
 
 def run(out: Path, store: SnapshotStore, connectors: Sequence[Connector] | None = None, fetch: bool = True, *,
-        only: Collection[str] | None = None, generated_at: str | None = None) -> dict[str, dict]:
+        only: Collection[str] | None = None, generated_at: str | None = None,
+        slugs_path: Path | None = None) -> dict[str, dict]:
     """Build data/ at `out` and return each source's status.
+
+    `slugs_path` is the slug registry the last build published. It defaults to slugs.json inside
+    `out`, which is the committed one when `out` is data/. A build into a scratch directory passes
+    the committed file, or the actors would all get first-build slugs.
 
     `only` limits which sources are fetched; every source is still normalized
     from its newest snapshot. Raises WriteRefused, with nothing written, when the
@@ -151,8 +157,15 @@ def run(out: Path, store: SnapshotStore, connectors: Sequence[Connector] | None 
 
     # The registry gets every source's records, evidence-only ones included, because merging
     # needs them. Assembly decides what may be shown.
+    # BEGIN slugs hook: IDs are frozen against the registry the last build published, and only the
+    # sources the policies let a page show may name or anchor an actor.
+    generated_at = assembly._timestamp(generated_at)
+    previous_slugs = slugs.read_registry(slugs_path if slugs_path is not None else out / "slugs.json")
     registry = resolve([a for b in bundles.values() for a in b.actors],
-                       [s for b in bundles.values() for s in b.software])
+                       [s for b in bundles.values() for s in b.software],
+                       previous_slugs=previous_slugs, shown_sources=slugs.shown_sources(policies),
+                       build_date=generated_at[:10])
+    # END slugs hook
 
     facts = BuildFacts(
         copyright_year=attack.copyright_year(store),
@@ -241,6 +254,8 @@ def _parser() -> argparse.ArgumentParser:
     r.add_argument("--out", type=Path, default=Path("../data"), help="the data/ directory to write")
     r.add_argument("--skip-fetch", action="store_true", help="build from the snapshots already on disk")
     r.add_argument("--only", help="comma-separated source keys to fetch; the others use their newest snapshot")
+    r.add_argument("--slugs", type=Path, default=None,
+                   help="the slug registry the last build published (default: slugs.json inside --out)")
     lk = sub.add_parser("links", help="check a rotating sample of the published report links")
     lk.add_argument("--sample", type=int, default=300, help="how many URLs to check this run")
     lk.add_argument("--data", type=Path, default=Path("../data"), help="the data/ directory whose reports to check")
@@ -273,7 +288,7 @@ def main(argv: Sequence[str] | None = None, *, store: SnapshotStore | None = Non
         if unknown:
             parser.error(f"unknown source(s) {', '.join(sorted(unknown))}; choose from {', '.join(SOURCE_ORDER)}")
     try:
-        status = run(args.out, store, connectors, fetch=not args.skip_fetch, only=only)
+        status = run(args.out, store, connectors, fetch=not args.skip_fetch, only=only, slugs_path=args.slugs)
     except WriteRefused as e:
         print(e, file=sys.stderr)
         return 1

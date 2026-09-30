@@ -33,6 +33,7 @@ _RULES: tuple[tuple[re.Pattern[str], str], ...] = (
     (re.compile(r"resolution\.json"), "resolution"),
     (re.compile(r"trends\.json"), "trends"),
     (re.compile(r"build\.json"), "build"),
+    (re.compile(r"slugs\.json"), "slugs"),
 )
 
 

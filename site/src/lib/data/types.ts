@@ -401,6 +401,37 @@ export interface Build {
 }
 
 // ---------------------------------------------------------------------------
+// slugs.json
+
+/**
+ * One slug ever published, and what the pipeline needs to recognise its actor.
+ * @schema slugs.schema.json#/$defs/slugEntry
+ */
+export interface SlugEntry {
+	/** The actor's ID and URL segment. Frozen once published. */
+	slug: ActorId;
+	/** The name the page showed in the last build that published the slug. */
+	display_name: string;
+	/** Published member records as "source:source_id", or an ATT&CK group ID. Sorted. Never alias names. */
+	anchors: string[];
+	first_published: IsoDate;
+	/** The number added because the natural slug was taken, or null when none was needed. */
+	suffix: number | null;
+	/** True when no published actor owns the slug. A retired slug is never reused. */
+	retired: boolean;
+	/** The slug of the actor this one was merged into, or null. It ends any chain of merges. */
+	merged_into: ActorId | null;
+}
+
+/**
+ * The whole of slugs.json, sorted by slug.
+ * @schema slugs.schema.json#
+ */
+export interface SlugRegistry {
+	entries: SlugEntry[];
+}
+
+// ---------------------------------------------------------------------------
 // trends.json
 
 /**
