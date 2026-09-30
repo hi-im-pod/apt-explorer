@@ -244,6 +244,48 @@
 	</p>
 </section>
 
+<section id="report-links" aria-labelledby="report-links-heading">
+	<h2 id="report-links-heading">Report Links</h2>
+	<p>
+		A report can carry two addresses, and the site labels each one as the original publisher's page
+		or as a copy. It decides from the address's host alone, never from the field the address was
+		stored in, because a source can store a mirror where the publisher's link belongs.
+		The <a href="{base}/about/#report-links">About page</a> lists every label.
+	</p>
+	<ol class="steps">
+		<li>
+			<strong>Known copy hosts are copies.</strong> An address on vx-underground.org,
+			archive.orkl.eu, app.box.com, web.archive.org, archive.org, archive.ph, archive.is or
+			archive.today is labelled as a mirror, an archive or a snapshot, and is never labelled as the
+			original. A GitHub address counts as a mirror only under the CyberMonitor account, because the
+			same host also serves publishers' own repositories.
+		</li>
+		<li>
+			<strong>Any other web address is labelled as the original.</strong> This is a rule, not a
+			check. The site does not confirm that the host is the publisher, so a copy on a host that is
+			not on the list above would be labelled as an original.
+		</li>
+		<li>
+			<strong>An unreadable address is dropped.</strong> A link that is not a web address cannot be
+			followed, so the site does not show it.
+		</li>
+		<li>
+			<strong>A failed link check moves a link back.</strong> The check covers one address per
+			report, the one stored as its main link. If it failed, the panel marks that link as
+			unreachable and lists the working links first. The link stays, because the check can be
+			wrong.
+		</li>
+		<li>
+			<strong>A missing original is stated, not filled in.</strong> When a report has only copies,
+			the panel says that no original publisher link is known and names what the copies are.
+		</li>
+	</ol>
+	<p class="section-note">
+		Many ORKL records give a mirror address and no publisher address. Finding the publisher for
+		each of them needs another source, and the pipeline does not look one up yet.
+	</p>
+</section>
+
 <section id="publishing" aria-labelledby="publishing-heading">
 	<h2 id="publishing-heading">What Is Published</h2>
 	<p>

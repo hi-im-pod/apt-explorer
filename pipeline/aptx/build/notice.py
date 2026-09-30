@@ -164,6 +164,8 @@ The files in this directory are offered under the Creative Commons Attribution-N
 They carry this licence because they adapt two share-alike sources. Values from ETDA's Threat Group Cards (CC BY-NC-SA 4.0) and from Malpedia (CC BY-NC-SA 3.0) are normalized and merged with the other sources, and both licences require adapted material to be shared under the same licence elements. Anyone who reuses these files receives the same NonCommercial and ShareAlike terms and must credit the sources below.
 
 No additional terms or conditions apply to these files. The licence of the apt-explorer code does not apply to them.
+
+Related work: APT Map (https://lngt-apt-study-map.vercel.app/) is a separate interactive map built from the same paper dataset that appears below as the `paper` source.
 """
 
 _MITRE_LEAD_IN = ("Values from MITRE ATT&CK® stay under MITRE's licence, which requires its copyright "

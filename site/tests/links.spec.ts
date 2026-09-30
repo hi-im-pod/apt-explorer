@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { test, expect, type Page } from '@playwright/test';
 import type { Build, Report } from '../src/lib/data/types';
-import { describeLinks } from '../src/lib/links';
+import { LINK_KINDS, describeLinks } from '../src/lib/links';
 
 // The panel and the table must tell an original publisher link from a copy
 // (an archive or a mirror). These checks read what is painted, at both widths
@@ -180,6 +180,79 @@ for (const vp of viewports) {
 					return hit === a;
 				});
 				expect(top).toBe(true);
+			});
+		});
+	}
+}
+
+const APT_MAP = 'https://lngt-apt-study-map.vercel.app/';
+const APT_MAP_BACKEND = 'https://github.com/SecAI-Lab/APTMap-backend';
+const APT_MAP_PAPER_REPO = 'https://github.com/SecAI-Lab/A-Decade-long-Landscape-of-Advanced-Persistent-Threats';
+
+for (const vp of viewports) {
+	for (const theme of themes) {
+		test.describe(`About and Methodology at ${vp.name}px, ${theme} theme`, () => {
+			test.use({ viewport: { width: vp.width, height: vp.height } });
+			test.beforeEach(async ({ page }) => useTheme(page, theme));
+
+			test('About credits APT Map with its three links, after the paper credit', async ({ page }) => {
+				await page.goto('/apt-explorer/about/');
+				const section = page.locator('#related-work');
+				await expect(section.getByRole('heading', { level: 2 })).toHaveText('Related Work: APT Map');
+				await expect(section).toBeVisible();
+				for (const href of [APT_MAP, APT_MAP_BACKEND, APT_MAP_PAPER_REPO]) {
+					const link = section.locator(`a[href="${href}"]`).first();
+					await expect(link, href).toBeVisible();
+					const box = (await link.boundingBox())!;
+					expect(box.x + box.width, `${href} stays inside the viewport`).toBeLessThanOrEqual(vp.width + 1);
+				}
+				// It says in plain words what the map is and how this site differs.
+				await expect(section).toContainText('hand-curated');
+				await expect(section).toContainText('victim');
+				await expect(section).toContainText('GitHub pull request');
+				await expect(section).toContainText('rebuilt from open sources');
+				// It claims nothing about a licence, approval or plans to contribute.
+				const text = (await section.innerText()).toLowerCase();
+				for (const word of ['licen', 'approv', 'endors', 'permission', 'contribut']) {
+					expect(text, word).not.toContain(word);
+				}
+				// The paper credit stays first and stays a visible section.
+				const paper = (await page.locator('#paper').boundingBox())!;
+				const related = (await section.boundingBox())!;
+				expect(paper.y).toBeLessThan(related.y);
+				await expect(page.locator('#paper')).toBeVisible();
+				// No horizontal scroll from long repository names.
+				expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+			});
+
+			test('About explains original, archive and mirror labels from the helper list', async ({ page }) => {
+				await page.goto('/apt-explorer/about/');
+				const section = page.locator('#report-links');
+				await expect(section).toBeVisible();
+				const items = section.locator('dl.kinds > div');
+				await expect(items).toHaveCount(LINK_KINDS.length);
+				for (const k of LINK_KINDS) {
+					const item = section.locator(`[data-kind="${k.kind}"]`);
+					await expect(item.locator('dt')).toHaveText(k.label);
+					await expect(item.locator('dd')).toHaveText(k.explanation);
+				}
+				await expect(section).toContainText('no original publisher link is known');
+				expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+			});
+
+			test('Methodology gives the rule for report links, and the panel links to it', async ({ page }) => {
+				await page.goto('/apt-explorer/methodology/');
+				const section = page.locator('#report-links');
+				await expect(section.getByRole('heading', { level: 2 })).toHaveText('Report Links');
+				await expect(section).toBeVisible();
+				await expect(section).toContainText('host alone');
+				await expect(section).toContainText('never labelled as the original');
+				await expect(section).toContainText('does not confirm that the host is the publisher');
+				expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+				await openPanel(page, BOTH.id);
+				await panel(page).getByRole('link', { name: /originals, archives and mirrors/i }).click();
+				await expect(page).toHaveURL(/\/methodology\/#report-links$/);
+				await expect(page.locator('#report-links')).toBeInViewport();
 			});
 		});
 	}

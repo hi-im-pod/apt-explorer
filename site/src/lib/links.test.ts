@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { classifyLink, describeLinks } from './links';
+import { LINK_KINDS, classifyLink, describeLinks } from './links';
 
 describe('classifyLink', () => {
 	it('recognises the VX-Underground paper collection as a mirror', () => {
@@ -211,6 +211,32 @@ describe('describeLinks', () => {
 		]) {
 			const d = describeLinks({ url: href, url_ok: null, archive_url: ORKL });
 			expect(d.links.filter((l) => l.role === 'original'), href).toEqual([]);
+		}
+	});
+});
+
+describe('LINK_KINDS', () => {
+	// The About page prints this list, so it must match what classifyLink can return.
+	it('lists every kind classifyLink can return except the unreadable one, once each', () => {
+		const kinds = LINK_KINDS.map((k) => k.kind);
+		expect(new Set(kinds).size).toBe(kinds.length);
+		expect(kinds).not.toContain('invalid');
+		const samples = [
+			'https://example.org/report.pdf',
+			'https://archive.orkl.eu/x',
+			'https://papers.vx-underground.org/x',
+			'https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/x',
+			'https://app.box.com/s/x',
+			'https://web.archive.org/web/2020/https://example.org',
+			'https://archive.ph/abc'
+		];
+		expect(samples.map((s) => classifyLink(s).kind).sort()).toEqual([...kinds].sort());
+	});
+
+	it('gives every kind a label and a one-sentence explanation', () => {
+		for (const k of LINK_KINDS) {
+			expect(k.label.length).toBeGreaterThan(0);
+			expect(k.explanation.endsWith('.')).toBe(true);
 		}
 	});
 });

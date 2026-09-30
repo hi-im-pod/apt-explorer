@@ -108,6 +108,21 @@ const INVALID: ClassBody = {
 	explanation: 'This address could not be read as a web link, so where it goes is not known.'
 };
 
+/**
+ * Every kind a readable address can get, in the order the About page lists
+ * them. The page prints this list instead of retyping it, so the legend cannot
+ * drift from the labels the panel shows.
+ */
+export const LINK_KINDS: readonly Pick<ClassBody, 'kind' | 'label' | 'explanation'>[] = [
+	PUBLISHER,
+	ORKL_ARCHIVE,
+	VXUG,
+	CYBERMONITOR,
+	BOX,
+	WAYBACK,
+	ARCHIVE_TODAY
+];
+
 /** Hosts whose whole site is a copy collection, matched exactly or as a subdomain. */
 const HOST_CLASSES: readonly (readonly [string, ClassBody])[] = [
 	['vx-underground.org', VXUG],
