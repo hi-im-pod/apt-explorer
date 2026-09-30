@@ -3,6 +3,7 @@ import type { Actor, Report } from '$lib/data';
 import {
 	actorSources,
 	groupValues,
+	linkNote,
 	pickReports,
 	reportLinks,
 	techniqueUrl,
@@ -50,50 +51,93 @@ function actor(over: Partial<Actor>): Actor {
 
 describe('reportLinks', () => {
 	const url = 'https://vendor.example/post';
-	const archive = 'https://archive.example/post.pdf';
+	const archive = 'https://archive.orkl.eu/aa.pdf';
+	const VX = 'https://papers.vx-underground.org/papers/x.pdf';
 
-	it('leads with the original link and offers the archive second', () => {
+	it('leads with the original link and offers the archived copy second, each named by its host', () => {
 		expect(reportLinks({ url, url_ok: true, archive_url: archive })).toEqual({
-			primary: { href: url, kind: 'original' },
-			secondary: { href: archive, kind: 'archive' },
-			originalFailed: false
+			primary: { href: url, kind: 'original', label: 'Original publisher' },
+			secondary: { href: archive, kind: 'copy', label: 'Archived copy on ORKL' },
+			failed: null
 		});
 	});
 
 	it('treats an unchecked link as working', () => {
-		expect(reportLinks({ url, url_ok: null, archive_url: archive }).primary).toEqual({
-			href: url,
-			kind: 'original'
-		});
+		expect(reportLinks({ url, url_ok: null, archive_url: archive }).primary?.href).toBe(url);
+		expect(reportLinks({ url, url_ok: null, archive_url: archive }).failed).toBeNull();
 	});
 
-	it('leads with the archive when the original failed its last check', () => {
+	it('leads with the copy when the original failed its last check', () => {
 		expect(reportLinks({ url, url_ok: false, archive_url: archive })).toEqual({
-			primary: { href: archive, kind: 'archive' },
-			secondary: { href: url, kind: 'original' },
-			originalFailed: true
+			primary: { href: archive, kind: 'copy', label: 'Archived copy on ORKL' },
+			secondary: { href: url, kind: 'original', label: 'Original publisher' },
+			failed: { href: url, kind: 'original', label: 'Original publisher' }
 		});
 	});
 
-	it('keeps a failed original when there is no archive, and says it failed', () => {
-		expect(reportLinks({ url, url_ok: false, archive_url: null })).toEqual({
-			primary: { href: url, kind: 'original' },
-			secondary: null,
-			originalFailed: true
-		});
+	it('keeps a failed original when there is no copy, and says it failed', () => {
+		const out = reportLinks({ url, url_ok: false, archive_url: null });
+		expect(out.primary?.href).toBe(url);
+		expect(out.secondary).toBeNull();
+		expect(out.failed?.href).toBe(url);
 	});
 
-	it('falls back to the archive alone, or to no link at all', () => {
+	it('falls back to the copy alone, or to no link at all', () => {
 		expect(reportLinks({ url: null, url_ok: null, archive_url: archive })).toEqual({
-			primary: { href: archive, kind: 'archive' },
+			primary: { href: archive, kind: 'copy', label: 'Archived copy on ORKL' },
 			secondary: null,
-			originalFailed: false
+			failed: null
 		});
 		expect(reportLinks({ url: null, url_ok: null, archive_url: null })).toEqual({
 			primary: null,
 			secondary: null,
-			originalFailed: false
+			failed: null
 		});
+	});
+
+	it('never calls a mirror in the url field the original', () => {
+		const out = reportLinks({ url: VX, url_ok: null, archive_url: archive });
+		expect(out.primary).toEqual({ href: VX, kind: 'copy', label: 'Mirror on VX-Underground' });
+		expect(out.secondary?.kind).toBe('copy');
+		expect([out.primary, out.secondary].some((l) => l?.kind === 'original')).toBe(false);
+	});
+
+	it('names a link the site cannot confirm as such', () => {
+		const out = reportLinks({ url: 'https://t.co/abc', url_ok: null, archive_url: null });
+		expect(out.primary).toEqual({ href: 'https://t.co/abc', kind: 'unconfirmed', label: 'Link, publisher not confirmed' });
+	});
+
+	it('drops an address that cannot be read as a web link', () => {
+		expect(reportLinks({ url: 'not a url', url_ok: null, archive_url: archive }).primary?.href).toBe(archive);
+	});
+});
+
+describe('linkNote', () => {
+	const copy = { href: 'x', kind: 'copy', label: 'Mirror on VX-Underground' } as const;
+	const original = { href: 'x', kind: 'original', label: 'Original publisher' } as const;
+	const unconfirmed = { href: 'x', kind: 'unconfirmed', label: 'Link, publisher not confirmed' } as const;
+
+	it('says what the title opens when it is not the publisher', () => {
+		expect(linkNote({ primary: copy, secondary: null, failed: null })).toBe(
+			'The title opens Mirror on VX-Underground, not the publisher’s page.'
+		);
+		expect(linkNote({ primary: unconfirmed, secondary: null, failed: null })).toBe(
+			'The title opens a link whose publisher is not confirmed.'
+		);
+	});
+
+	it('says which link failed its last check, using its own name', () => {
+		expect(linkNote({ primary: copy, secondary: original, failed: original })).toBe(
+			'The original link failed its last check.'
+		);
+		expect(linkNote({ primary: original, secondary: null, failed: copy })).toBe(
+			'The link to Mirror on VX-Underground failed its last check.'
+		);
+	});
+
+	it('says nothing when the title opens the original and nothing failed', () => {
+		expect(linkNote({ primary: original, secondary: copy, failed: null })).toBeNull();
+		expect(linkNote({ primary: null, secondary: null, failed: null })).toBeNull();
 	});
 });
 

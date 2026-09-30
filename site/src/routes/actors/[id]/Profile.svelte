@@ -10,6 +10,7 @@
 		actorSources,
 		DATE_BASIS_LABELS,
 		groupValues,
+		linkNote,
 		reportLinks,
 		techniqueUrl,
 		undatedCount,
@@ -76,6 +77,7 @@
 
 {#snippet reportItem(r: ProfileReport)}
 	{@const links = reportLinks(r)}
+	{@const note = linkNote(links)}
 	<li class="report">
 		<p class="report-title">
 			{#if links.primary}
@@ -100,13 +102,11 @@
 			>
 		</p>
 		<p class="report-links">
-			{#if links.originalFailed}
-				<span class="warn">The original link failed its last check.</span>
-			{:else if links.primary?.kind === 'archive'}
-				<span>The title opens an archived copy.</span>
+			{#if note}
+				<span class:warn={links.failed !== null}>{note}</span>
 			{/if}
 			{#if links.secondary}
-				<a href={links.secondary.href}>{links.secondary.kind === 'archive' ? 'Archived copy' : 'Original link'}</a>
+				<a href={links.secondary.href}>{links.secondary.label}</a>
 			{/if}
 			<a href="{base}/explore/?report={encodeURIComponent(r.id)}"
 				>Details<span class="visually-hidden"> for {r.title}</span></a

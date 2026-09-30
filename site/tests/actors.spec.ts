@@ -2,6 +2,7 @@ import { readFileSync } from 'node:fs';
 import { test, expect, type Page } from '@playwright/test';
 import type { Actor, ActorsIndex, Report } from '../src/lib/data/types';
 import { countryName } from '../src/routes/actors/actors';
+import { linkNote, reportLinks } from '../src/routes/actors/[id]/profile';
 import { openSynthIndex, synthActor, synthReports, SYNTH_ACTORS, SYNTH_REPORTS } from './actors-synth';
 
 // Expectations come from the same data/ the site is built from, so the tests
@@ -218,6 +219,37 @@ test('report links open the original first, and the archive when the original is
 		const details = items.nth(i).locator('a', { hasText: /details/i });
 		expect(await target(page, details)).toBe(`/apt-explorer/explore/?report=${encodeURIComponent(id)}`);
 	}
+});
+
+test('a mirror in the url field is named a mirror on the profile, never the original', async ({ page }) => {
+	const byId = new Map(allReports.map((r) => [r.id, r]));
+	// The busiest profile lists no mirror among its first reports, so the test takes the busiest
+	// one that does, found from the data.
+	const withMirror = [...index]
+		.sort((x, y) => y.report_count - x.report_count)
+		.find((x) =>
+			actorFile(x.id)
+				.reports.slice(0, FIRST_REPORTS)
+				.some((id) => reportLinks(byId.get(id)!).primary?.kind === 'copy')
+		)!;
+	const a = actorFile(withMirror.id);
+	await page.goto(profile(withMirror.id));
+	const items = page.locator('#reports li.report');
+	let mirrors = 0;
+	for (const [i, id] of a.reports.slice(0, FIRST_REPORTS).entries()) {
+		const r = byId.get(id)!;
+		const expected = reportLinks(r);
+		const text = await items.nth(i).locator('.report-links').innerText();
+		if (expected.primary?.kind === 'copy') mirrors += 1;
+		// Every visible label is the one the helper gives for that link's host.
+		if (expected.secondary) expect(text, r.title).toContain(expected.secondary.label);
+		const note = linkNote(expected);
+		if (note) expect(text, r.title).toContain(note);
+		// An original label appears only for a link the helper calls the original.
+		const hasOriginal = [expected.primary, expected.secondary].some((l) => l?.kind === 'original');
+		if (!hasOriginal) expect(text, r.title).not.toMatch(/original (link|publisher)/i);
+	}
+	expect(mirrors, 'the chosen profile lists at least one report whose link is a mirror').toBeGreaterThan(0);
 });
 
 test('an actor with no reports has no reports or timeline section', async ({ page }) => {

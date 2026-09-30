@@ -4,6 +4,7 @@
  */
 import type { Actor, DateBasis, Report, ReportId, SourceKey, SourcedValue } from '$lib/data';
 import { SOURCE_LABELS } from '$lib/data/labels';
+import { describeLinks } from '$lib/links';
 
 /**
  * The report fields the profile shows. Link-only sources allow a title, a
@@ -51,28 +52,56 @@ export function pickReports(
 
 export interface ReportLink {
 	href: string;
-	kind: 'original' | 'archive';
+	/** What the link is, decided from its host by the same helper as the Explore panel. */
+	kind: 'original' | 'copy' | 'unconfirmed';
+	label: string;
+}
+
+export interface ProfileLinks {
+	primary: ReportLink | null;
+	secondary: ReportLink | null;
+	/** The link that failed its last check, if it was one of the two shown. */
+	failed: ReportLink | null;
 }
 
 /**
  * Which link a report's title opens, and which one sits beside it.
  *
- * The original publisher comes first, because the report is theirs. When
- * the last link check found the original dead (url_ok false), the archive
- * leads instead and the page says why. An unchecked link (null) is treated
- * as working: most are, and a false alarm on every new report would teach
+ * The role and label of each link come from its host through describeLinks,
+ * so a mirror stored in the url field is never shown as the original. The
+ * original comes first, because the report is theirs. When the last link
+ * check found a link dead (url_ok false), it moves behind the other one and
+ * the page says which failed. An unchecked link (null) is treated as
+ * working: most are, and a false alarm on every new report would teach
  * readers to ignore the warning.
  */
-export function reportLinks(r: Pick<Report, 'url' | 'url_ok' | 'archive_url'>): {
-	primary: ReportLink | null;
-	secondary: ReportLink | null;
-	originalFailed: boolean;
-} {
-	const original: ReportLink | null = r.url ? { href: r.url, kind: 'original' } : null;
-	const archive: ReportLink | null = r.archive_url ? { href: r.archive_url, kind: 'archive' } : null;
-	const originalFailed = original !== null && r.url_ok === false;
-	if (originalFailed && archive) return { primary: archive, secondary: original, originalFailed };
-	return { primary: original ?? archive, secondary: original ? archive : null, originalFailed };
+export function reportLinks(r: Pick<Report, 'url' | 'url_ok' | 'archive_url'>): ProfileLinks {
+	const shown = describeLinks(r).links.map((l) => ({
+		link: { href: l.href, kind: l.role, label: l.class.label } satisfies ReportLink,
+		unreachable: l.unreachable
+	}));
+	return {
+		primary: shown[0]?.link ?? null,
+		secondary: shown[1]?.link ?? null,
+		failed: shown.find((l) => l.unreachable)?.link ?? null
+	};
+}
+
+/**
+ * The one sentence under a report that warns about its links, or null when
+ * the title opens the publisher's page and nothing failed. A failed link is
+ * reported first, because it changes what the reader can open.
+ */
+export function linkNote(links: ProfileLinks): string | null {
+	const { primary, failed } = links;
+	if (failed) {
+		return failed.kind === 'original'
+			? 'The original link failed its last check.'
+			: `The link to ${failed.label} failed its last check.`;
+	}
+	if (primary?.kind === 'copy') return `The title opens ${primary.label}, not the publisher’s page.`;
+	if (primary?.kind === 'unconfirmed') return 'The title opens a link whose publisher is not confirmed.';
+	return null;
 }
 
 /**
