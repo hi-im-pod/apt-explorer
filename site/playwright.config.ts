@@ -20,6 +20,14 @@ export default defineConfig({
 		timeout: 240_000,
 		reuseExistingServer: false
 	},
-	use: { baseURL: `http://localhost:${port}` },
+	use: {
+		baseURL: `http://localhost:${port}`,
+		// The site registers a service worker. Playwright's page.route cannot
+		// see requests the worker answers, so the specs that change what the
+		// server sends would see the worker's copy instead. They run without
+		// the worker, and the one spec about the worker (explore-cache.spec.ts)
+		// opens its own browser context with it allowed.
+		serviceWorkers: 'block'
+	},
 	projects: [{ name: 'chromium', use: { ...devices['Desktop Chrome'] } }]
 });
