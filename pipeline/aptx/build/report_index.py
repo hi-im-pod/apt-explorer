@@ -62,9 +62,11 @@ def build_reports_index(reports: Iterable[Mapping], *, kev_cves: Iterable[str], 
     build.json, which lets the page notice an index and a build.json that come
     from different builds.
     """
-    # Newest first with undated reports last, then by id, which is how the
-    # shards are ordered inside a year, so the table needs no sorting.
-    rows = sorted(reports, key=lambda r: (r["published"] is None, _negate(r["published"]), r["id"]))
+    # Newest first with undated reports last, then by title and id. The table
+    # shows this order as it is, so the browser never sorts thirty thousand
+    # rows, and reports of one day still read alphabetically.
+    rows = sorted(reports, key=lambda r: (r["published"] is None, _negate(r["published"]), r["title"].casefold(),
+                                          r["id"]))
     ids = [r["id"] for r in rows]
     if len(set(ids)) != len(ids):
         raise ValueError("a report id appears more than once, so the index cannot address it")

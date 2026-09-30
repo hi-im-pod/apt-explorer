@@ -30,17 +30,25 @@ def build(reports, kev=()):
     return build_reports_index(reports, kev_cves=set(kev), built_at=BUILT_AT)
 
 
-def test_rows_are_ordered_newest_first_with_undated_last_and_ties_by_id():
+def test_rows_are_ordered_newest_first_with_undated_last():
     rows = [
         report(sha(3), published=None),
         report(sha(2), published="2023-01-01"),
         report(sha(1), published="2024-01-01"),
-        report(sha(4), published="2024-01-01"),
+        report(sha(4), published="2024-01-02"),
     ]
     idx = build(rows)
-    assert idx["columns"]["published"] == ["2024-01-01", "2024-01-01", "2023-01-01", None]
+    assert idx["columns"]["published"] == ["2024-01-02", "2024-01-01", "2023-01-01", None]
     assert idx["total"] == 4
-    assert [i[:8] for i in idx["columns"]["id"]][:2] == [i[:8] for i in sorted([sha(1), sha(4)])]
+
+
+def test_reports_of_one_day_are_ordered_by_title_ignoring_case_then_by_id():
+    rows = [report(sha(1), "beta"), report(sha(2), "Alpha"), report(sha(3), "alpha"), report(sha(4), "Zulu")]
+    idx = build(rows)
+    same_title = sorted([sha(2), sha(3)])
+    assert [t.casefold() for t in idx["columns"]["title"]] == ["alpha", "alpha", "beta", "zulu"]
+    assert [i[:8] for i in idx["columns"]["id"]][:2] == [i[:8] for i in same_title]
+    assert sorted(idx["columns"]["title"][:2]) == ["Alpha", "alpha"]
 
 
 def test_ids_are_the_shortest_prefix_that_keeps_every_sha_unique():

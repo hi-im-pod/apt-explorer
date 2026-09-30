@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "data/reports/index.json",
-  "description": "A compact, columnar summary of every report, so the explore page can list, filter and search all of them without loading the report shards. Position n in every column is the same report. Reports are ordered newest first with undated ones last, then by id. The writer rebuilds this file from the shards and refuses any difference.",
+  "description": "A compact, columnar summary of every report, so the explore page can list, filter and search all of them without loading the report shards. Position n in every column is the same report. Reports are ordered newest first with undated ones last, then by title and id. The writer rebuilds this file from the shards and refuses any difference.",
   "type": "object",
   "additionalProperties": false,
   "required": [
