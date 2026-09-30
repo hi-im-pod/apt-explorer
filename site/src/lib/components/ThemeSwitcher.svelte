@@ -1,5 +1,8 @@
 <!--
-	The theme menu: a button that opens a menu of three radio items.
+	The theme control: a Light / Dark / APT strip. Closed, it is one button
+	that shows the three names with the active one filled; opened, a menu of
+	three radio items takes the strip's place, so picking is two steps
+	and the keyboard and screen reader behaviour is the menu button pattern.
 
 	It follows the WAI-ARIA menu button pattern. Opening the menu moves focus
 	to the checked theme; arrow keys, Home and End move between themes;
@@ -42,9 +45,13 @@
 
 	function onItemKey(e: KeyboardEvent, i: number) {
 		const last = THEMES.length - 1;
+		const next = i === last ? 0 : i + 1;
+		const prev = i === 0 ? last : i - 1;
 		const move: Record<string, number> = {
-			ArrowDown: i === last ? 0 : i + 1,
-			ArrowUp: i === 0 ? last : i - 1,
+			ArrowDown: next,
+			ArrowRight: next,
+			ArrowUp: prev,
+			ArrowLeft: prev,
 			Home: 0,
 			End: last
 		};
@@ -77,24 +84,26 @@
 		onclick={() => (open ? hide(true) : show())}
 		onkeydown={onTriggerKey}
 	>
-		<span class="swatch" aria-hidden="true"></span>
-		<span>Theme</span>
+		<span class="visually-hidden">Theme</span>
+		{#each THEMES as t (t)}
+			<span class="seg" class:on={$theme === t} aria-hidden="true">{NAMES[t]}</span>
+		{/each}
 	</button>
 
 	{#if open}
-		<ul id="theme-menu" class="menu" role="menu" aria-label="Theme">
+		<ul id="theme-menu" class="menu" role="menu" aria-orientation="horizontal" aria-label="Theme">
 			{#each THEMES as t, i (t)}
 				<li role="none">
 					<button
 						bind:this={items[i]}
 						type="button"
+						class="seg"
 						role="menuitemradio"
 						aria-checked={$theme === t}
 						tabindex="-1"
 						onclick={() => choose(t)}
 						onkeydown={(e) => onItemKey(e, i)}
 					>
-						<span class="check" aria-hidden="true"></span>
 						{NAMES[t]}
 					</button>
 				</li>
@@ -108,18 +117,24 @@
 		position: relative;
 	}
 
-	.trigger {
-		display: inline-flex;
-		align-items: center;
-		gap: 0.5rem;
-		min-height: 2.25rem;
-		padding: 0.25rem 0.75rem;
+	.trigger,
+	.menu {
+		display: flex;
+		margin: 0;
+		padding: 0;
 		border: 1px solid var(--border);
-		border-radius: 999px;
-		background: var(--surface);
-		color: var(--text);
-		font: inherit;
-		font-size: 0.875rem;
+		border-radius: 0.375rem;
+		background: var(--bg);
+		overflow: hidden;
+		font-family: var(--font-data);
+		font-size: 0.75rem;
+		font-weight: 500;
+		line-height: 1.25rem;
+		list-style: none;
+	}
+
+	.trigger {
+		color: var(--text-muted);
 		cursor: pointer;
 	}
 
@@ -127,61 +142,48 @@
 		border-color: var(--accent);
 	}
 
-	/* Shows the active theme's two accents, so the button previews it. */
-	.swatch {
-		width: 0.875rem;
-		height: 0.875rem;
-		border-radius: 50%;
-		background: linear-gradient(135deg, var(--accent) 50%, var(--accent-2) 50%);
-		box-shadow: 0 0 0 1px var(--border);
-	}
-
+	/* The open menu sits exactly over the closed strip. */
 	.menu {
 		position: absolute;
-		top: calc(100% + 0.375rem);
+		top: 0;
 		right: 0;
 		z-index: 10;
-		min-width: 9.5rem;
-		margin: 0;
-		padding: 0.25rem;
-		list-style: none;
-		background: var(--surface);
-		border: 1px solid var(--border);
-		border-radius: 0.625rem;
-		box-shadow: 0 0.5rem 1.5rem color-mix(in srgb, var(--text) 14%, transparent);
+		border-color: var(--accent);
 	}
 
-	[role='menuitemradio'] {
-		display: flex;
-		align-items: center;
-		gap: 0.625rem;
-		width: 100%;
-		padding: 0.5rem 0.75rem;
+	.seg {
+		display: block;
+		min-height: 1.75rem;
+		padding: 0.25rem 0.625rem;
 		border: 0;
-		border-radius: 0.4rem;
+		border-radius: 0;
 		background: transparent;
-		color: var(--text);
+		color: var(--text-muted);
 		font: inherit;
-		font-size: 0.9375rem;
-		text-align: left;
+		line-height: 1.25rem;
+		white-space: nowrap;
+		overflow-wrap: normal;
 		cursor: pointer;
 	}
 
-	[role='menuitemradio']:hover,
-	[role='menuitemradio']:focus-visible {
+	button.seg:hover {
 		background: var(--accent-soft);
-		outline-offset: -2px;
+		color: var(--text);
 	}
 
-	.check {
-		width: 0.625rem;
-		height: 0.625rem;
-		border-radius: 50%;
-		border: 1.5px solid var(--text-muted);
-	}
-
-	[aria-checked='true'] .check {
-		border-color: var(--accent);
+	.seg.on,
+	.seg[aria-checked='true'] {
 		background: var(--accent);
+		color: var(--ink-on-accent);
+	}
+
+	.seg:focus-visible {
+		outline-offset: -2px;
+		border-radius: 0;
+	}
+
+	.trigger:focus-visible {
+		outline-offset: 2px;
+		border-radius: 0.375rem;
 	}
 </style>

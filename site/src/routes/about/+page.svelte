@@ -231,11 +231,13 @@
 	.intro,
 	section > p,
 	.section-note {
-		max-width: 44rem;
+		max-width: 68ch;
 	}
 
 	.lede {
-		font-size: 1.125rem;
+		font-size: 1.1875rem;
+		line-height: 1.5;
+		color: var(--text-muted);
 	}
 
 	.section-note {
@@ -246,21 +248,19 @@
 		font-style: italic;
 	}
 
-	/* Attribution text is quoted as given, so it gets a quiet frame rather
+	/* Attribution text is quoted as given, so it gets a quiet rule rather
 	   than body styling. */
 	.attribution .label,
 	dt {
-		margin: 0 0 0.25rem;
+		margin: 0 0 0.125rem;
 		color: var(--text-muted);
 		font-family: var(--font-data);
-		font-size: 0.6875rem;
-		letter-spacing: 0.06em;
-		text-transform: uppercase;
+		font-size: 0.75rem;
 	}
 
 	blockquote {
-		padding: 0.25rem 0 0.25rem 1rem;
-		border-left: 2px solid var(--accent);
+		padding: 0.125rem 0 0.125rem 1rem;
+		border-left: 2px solid var(--text-muted);
 		font-size: 0.9375rem;
 	}
 
@@ -269,25 +269,23 @@
 	}
 
 	#paper .attribution {
-		max-width: 44rem;
+		max-width: 68ch;
 		margin-top: 1.25rem;
 	}
 
+	/* Each source is a ledger row: a rule above, the facts beside the quoted attribution. */
 	.sources {
-		display: grid;
-		gap: 0.75rem;
 		margin: 1.5rem 0 0;
 		padding: 0;
+		border-top: 1px solid var(--text);
 		list-style: none;
 	}
 
 	.source {
 		display: grid;
 		gap: 1rem 2rem;
-		padding: 1.125rem 1.25rem;
-		background: var(--surface);
-		border: 1px solid var(--border);
-		border-radius: 0.75rem;
+		padding: 1.25rem 0;
+		border-bottom: 1px solid var(--border);
 	}
 
 	@media (min-width: 56rem) {
@@ -321,17 +319,16 @@
 
 	.policy {
 		display: inline-block;
-		padding: 0.0625rem 0.5rem;
+		padding: 0 0.5rem;
+		border: 1px solid var(--border);
 		border-radius: 999px;
-		background: var(--accent-soft);
-		color: var(--text);
 		font-family: var(--font-data);
 		font-size: 0.75rem;
 		text-decoration: none;
 	}
 
 	.policy:hover {
-		text-decoration: underline;
+		border-color: var(--accent);
 	}
 
 	.stale-tag {
@@ -343,12 +340,11 @@
 		color: var(--danger);
 		font-family: var(--font-data);
 		font-size: 0.6875rem;
-		letter-spacing: 0.04em;
-		text-transform: uppercase;
 	}
 
 	.source.stale {
-		border-color: var(--danger);
+		box-shadow: inset 3px 0 0 var(--danger);
+		padding-left: 1rem;
 	}
 
 	.source time {
@@ -360,30 +356,29 @@
 		color: var(--text);
 	}
 
-	.policies {
-		display: grid;
-		gap: 0.75rem;
-		max-width: 44rem;
-		margin: 1.25rem 0 0;
+	.policies,
+	.kinds {
+		max-width: 68ch;
+		margin: 1.25rem 0;
+		border-top: 1px solid var(--text);
 	}
 
-	.policies > div {
-		padding: 0.875rem 1rem;
-		border: 1px solid var(--border);
-		border-radius: 0.625rem;
+	.policies > div,
+	.kinds > div {
+		padding: 0.75rem 0;
+		border-bottom: 1px solid var(--border);
 		scroll-margin-top: 1rem;
 	}
 
 	.policies > div:target {
-		border-color: var(--accent);
 		background: var(--accent-soft);
+		box-shadow: inset 3px 0 0 var(--accent);
+		padding-left: 0.875rem;
 	}
 
 	.policies dt code {
 		font-size: 0.8125rem;
-		letter-spacing: 0;
-		text-transform: none;
-		color: var(--accent);
+		color: var(--text);
 	}
 
 	.policies dd {
@@ -401,12 +396,12 @@
 	}
 
 	.notice {
-		max-width: 44rem;
+		max-width: 68ch;
 		margin: 0 0 1.25rem;
 	}
 
 	.related {
-		max-width: 44rem;
+		max-width: 68ch;
 		margin: 0.75rem 0 0;
 		padding-left: 1.25rem;
 	}
@@ -417,27 +412,12 @@
 		overflow-wrap: anywhere;
 	}
 
-	.kinds {
-		display: grid;
-		gap: 0.5rem;
-		max-width: 44rem;
-		margin: 1rem 0;
-	}
-
-	.kinds > div {
-		padding: 0.625rem 1rem;
-		border: 1px solid var(--border);
-		border-radius: 0.625rem;
-	}
-
 	.kinds dt {
 		margin: 0 0 0.125rem;
 		color: var(--text);
 		font-family: var(--font-body, inherit);
 		font-size: 0.9375rem;
 		font-weight: 600;
-		letter-spacing: 0;
-		text-transform: none;
 	}
 
 	.kinds dd {

@@ -220,14 +220,14 @@
 				<thead>
 					<tr>
 						<th scope="col">CVE</th>
-						<th scope="col">Actors named in the same reports</th>
+						<th scope="col" class="actors">Actors named in the same reports</th>
 					</tr>
 				</thead>
 				<tbody>
 					{#each kevLinks as l (l.cve)}
 						<tr>
 							<td><a class="data" href="{base}/explore/?cve={l.cve}">{l.cve}</a></td>
-							<td>{l.actors.map(name).join(', ')}</td>
+							<td class="actors">{l.actors.map(name).join(', ')}</td>
 						</tr>
 					{/each}
 				</tbody>
@@ -319,17 +319,20 @@
 
 <style>
 	.intro {
-		max-width: 46rem;
+		max-width: 68ch;
 	}
 
 	.lede {
 		color: var(--text-muted);
-		font-size: 1.0625rem;
+		font-size: 1.1875rem;
+		line-height: 1.5;
 	}
 
+	/* Each section opens on a hairline, so the page reads as a ledger of six entries. */
 	section {
-		margin-top: 3.5rem;
-		padding-top: 0.25rem;
+		margin-top: 3rem;
+		padding-top: 1.25rem;
+		border-top: 1px solid var(--border);
 		scroll-margin-top: 1rem;
 	}
 
@@ -338,29 +341,30 @@
 	}
 
 	.lead {
-		max-width: 46rem;
+		max-width: 68ch;
 		color: var(--text-muted);
 	}
 
 	.note {
-		max-width: 46rem;
+		max-width: 68ch;
 		margin-top: 0.75rem;
 		color: var(--text-muted);
 		font-size: 0.875rem;
 	}
 
+	/* An empty section says so in a line set off by a rule. The dashed outline
+	   is kept for unconfirmed name guesses. */
 	.empty {
-		padding: 1.25rem 1rem;
-		border: 1px dashed var(--border);
-		border-radius: 0.75rem;
+		max-width: 68ch;
+		padding: 0.25rem 0 0.25rem 1rem;
+		border-left: 2px solid var(--border);
 		color: var(--text-muted);
 	}
 
 	.new-actors {
-		display: grid;
-		gap: 0.5rem;
 		margin: 0;
 		padding: 0;
+		border-top: 1px solid var(--text);
 		list-style: none;
 	}
 
@@ -372,14 +376,14 @@
 		display: flex;
 		flex-wrap: wrap;
 		align-items: baseline;
-		gap: 0.125rem 1rem;
-		padding: 0.75rem 1rem;
-		background: var(--surface);
-		border: 1px solid var(--border);
-		border-radius: 0.625rem;
+		gap: 0.125rem 1.5rem;
+		padding: 0.625rem 0;
+		border-bottom: 1px solid var(--border);
 	}
 
 	.new-actors .actor {
+		flex: 0 0 14rem;
+		max-width: 100%;
 		font-weight: 600;
 	}
 
@@ -417,6 +421,17 @@
 		white-space: nowrap;
 	}
 
+	/* On a wide screen a list of actor names wraps between names instead of
+	   stretching the table. On a phone it stays on one line and the table scrolls in its own box. */
+	@media (min-width: 40rem) {
+		.numbers.wide td.actors,
+		.numbers.wide th.actors {
+			min-width: 14rem;
+			max-width: 36rem;
+			white-space: normal;
+		}
+	}
+
 	/* The tables inside a chart's "Show the numbers" are styled from here,
 	   because the snippet renders them in this component's scope. */
 	.numbers th,
@@ -428,12 +443,11 @@
 	}
 
 	.numbers th {
+		border-bottom-color: var(--text);
 		color: var(--text-muted);
 		font-family: var(--font-data);
 		font-size: 0.6875rem;
 		font-weight: 500;
-		letter-spacing: 0.06em;
-		text-transform: uppercase;
 	}
 
 	.numbers th:first-child,
@@ -454,11 +468,9 @@
 		display: inline-flex;
 		align-items: center;
 		gap: 0.375rem;
-		color: var(--accent-2);
+		color: var(--text-muted);
 		font-family: var(--font-data);
 		font-size: 0.75rem;
-		letter-spacing: 0.04em;
-		text-transform: uppercase;
 	}
 
 	.dot {

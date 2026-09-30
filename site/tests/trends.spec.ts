@@ -362,6 +362,14 @@ test('the tables list every KEV link and every source', async ({ page }) => {
 	}
 });
 
+test('a desktop screen shows the KEV link table whole, with actor lists wrapping between names', async ({ page }) => {
+	await page.setViewportSize({ width: 1280, height: 900 });
+	await open(page);
+	const box = section(page, 'kev_actor_links').locator('.scroll');
+	const fits = await box.evaluate((e) => e.scrollWidth <= e.clientWidth + 1);
+	expect(fits).toBe(true);
+});
+
 test('newly documented actors are listed with their first date and basis', async ({ page }) => {
 	await open(page);
 	const list = section(page, 'new_actors').getByRole('list').first();

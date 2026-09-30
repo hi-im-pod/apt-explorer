@@ -5,6 +5,7 @@
 	import type { GuessBand, GuessLabel } from '$lib/data/types';
 	import {
 		BANDS,
+		BAND_THRESHOLDS,
 		LABELS,
 		bandText,
 		confidenceText,
@@ -373,6 +374,17 @@
 				Showing {formatCount(shown.length)} of {formatCount(rows.length)}
 			</p>
 		{/if}
+		<p class="scale-key">
+			<span class="scale" aria-hidden="true">
+				<span class="level" style:width="0%"></span>
+				<i class="tick" style:left="{BAND_THRESHOLDS.medium * 100}%"></i>
+				<i class="tick" style:left="{BAND_THRESHOLDS.high * 100}%"></i>
+			</span>
+			<span>
+				The bar beside a label is its measured confidence, from 0 to 100%. The two ticks mark the
+				Medium ({BAND_THRESHOLDS.medium * 100}%) and High ({BAND_THRESHOLDS.high * 100}%) thresholds.
+			</span>
+		</p>
 
 		{#if shown.length === 0}
 			<p class="empty">
@@ -388,8 +400,15 @@
 							<span class="data seen">{formatCount(g.count)} {g.count === 1 ? 'report' : 'reports'}</span>
 						</div>
 						<p class="verdict">
-							<span class="label-pill {g.label}">{labelText(g.label)}</span>
+							<span class="label-pill {g.label}" class:confirmed={g.band === 'confirmed'}>{labelText(g.label)}</span>
 							<span class="conf {g.band}">{confidenceText(g)}</span>
+							{#if g.confidence != null}
+								<span class="scale" aria-hidden="true">
+									<span class="level" style:width="{Math.min(1, g.confidence) * 100}%"></span>
+									<i class="tick" style:left="{BAND_THRESHOLDS.medium * 100}%"></i>
+									<i class="tick" style:left="{BAND_THRESHOLDS.high * 100}%"></i>
+								</span>
+							{/if}
 							<span class="status">{g.status}</span>
 						</p>
 						{#if g.matched_actor_id != null}
@@ -425,27 +444,27 @@
 	section > p,
 	section > .limits,
 	section > .signals {
-		max-width: 44rem;
+		max-width: 68ch;
 	}
 
 	.lede {
-		font-size: 1.125rem;
+		font-size: 1.1875rem;
+		line-height: 1.5;
+		color: var(--text-muted);
 	}
 
 	.jump {
 		font-size: 0.9375rem;
 	}
 
-	/* The banner has to read as a caution in every theme, so it takes its
-	   colour from the danger token and not from the accent used for links. */
+	/* The banner marks every label as unconfirmed, so it wears the colour that
+	   marks an unconfirmed guess everywhere else: a thick amber edge. */
 	.banner {
-		max-width: 44rem;
+		max-width: 68ch;
 		margin: 1rem 0;
 		padding: 0.75rem 1rem;
-		background: var(--surface);
-		border: 1px solid var(--danger);
-		border-left-width: 0.375rem;
-		border-radius: 0.5rem;
+		border: 1px solid var(--border);
+		border-left: 0.375rem solid var(--unconfirmed);
 	}
 
 	.section-note,
@@ -454,6 +473,16 @@
 	.signal-facts {
 		color: var(--text-muted);
 		font-size: 0.9375rem;
+	}
+
+	section {
+		margin-top: 3rem;
+		padding-top: 1.25rem;
+		border-top: 1px solid var(--border);
+	}
+
+	section h2 {
+		margin-top: 0;
 	}
 
 	h3 {
@@ -468,7 +497,6 @@
 	}
 
 	.big {
-		color: var(--accent);
 		font-size: 2.25rem;
 		font-weight: 600;
 		line-height: 1;
@@ -481,7 +509,7 @@
 	.accuracy {
 		display: grid;
 		gap: 0.625rem;
-		max-width: 44rem;
+		max-width: 68ch;
 		margin: 1rem 0;
 		padding: 0;
 		list-style: none;
@@ -513,12 +541,13 @@
 		font-size: 0.875rem;
 	}
 
+	/* The three bars share a scale from zero. The method is ink, the two plain
+	   alternatives are grey: no colour here means anything but the ranking. */
 	.track {
 		display: block;
 		height: 0.75rem;
 		overflow: hidden;
-		border-radius: 999px;
-		background: var(--border);
+		border: 1px solid var(--border);
 	}
 
 	.fill {
@@ -527,19 +556,19 @@
 	}
 
 	.fill.method {
-		background: var(--accent);
+		background: var(--text);
 	}
 
 	.fill.name {
-		background: var(--accent-2);
+		background: var(--text-muted);
 	}
 
 	.fill.majority {
-		background: var(--rule-2);
+		background: var(--border);
 	}
 
 	.scroll {
-		max-width: 44rem;
+		max-width: 68ch;
 		overflow-x: auto;
 	}
 
@@ -552,24 +581,30 @@
 
 	th,
 	td {
-		padding: 0.5rem 0.75rem 0.5rem 0;
+		padding: 0.5rem 0.5rem 0.5rem 0;
 		border-bottom: 1px solid var(--border);
 		text-align: left;
 		vertical-align: top;
 		/* Every cell here is a short label or a number. The page default of
-		   breaking anywhere would cut "Malware" into pieces, so a narrow table
-		   scrolls in its own box instead. */
+		   breaking anywhere would cut "Malware" into pieces, so a heading
+		   wraps between words and a narrow table scrolls in its own box. */
 		overflow-wrap: normal;
 	}
 
+	/* Five columns of short labels fit a 375px screen only with tighter gutters. */
+	@media (max-width: 30rem) {
+		th,
+		td {
+			padding-right: 0.25rem;
+		}
+	}
+
 	thead th {
+		border-bottom-color: var(--text);
 		color: var(--text-muted);
 		font-family: var(--font-data);
 		font-size: 0.6875rem;
 		font-weight: 500;
-		/* A heading wraps between words and never inside one. */
-		letter-spacing: 0.02em;
-		text-transform: uppercase;
 	}
 
 	tbody th {
@@ -578,33 +613,29 @@
 
 	.num {
 		text-align: right;
-		padding-right: 0.75rem;
 	}
 
 	.diagonal {
-		color: var(--accent);
-		font-weight: 600;
-	}
-
-	.visually-hidden {
-		position: absolute;
-		width: 1px;
-		height: 1px;
-		overflow: hidden;
-		clip-path: inset(50%);
-		white-space: nowrap;
+		font-weight: 700;
 	}
 
 	.tag {
-		display: inline-block;
-		margin-left: 0.375rem;
+		display: block;
+		width: fit-content;
+		margin: 0.125rem 0 0;
 		padding: 0 0.375rem;
 		border: 1px solid var(--border);
-		border-radius: 999px;
+		border-radius: 0.25rem;
 		color: var(--text-muted);
 		font-family: var(--font-data);
 		font-size: 0.6875rem;
 		font-weight: 400;
+		line-height: 1.5;
+	}
+
+	.signal-head .tag {
+		display: inline-block;
+		margin: 0 0 0 0.375rem;
 	}
 
 	.tag.kept {
@@ -617,6 +648,10 @@
 		margin: 0 0 1rem;
 		padding-left: 0;
 		list-style: none;
+	}
+
+	.signals {
+		border-top: 1px solid var(--text);
 	}
 
 	.limits {
@@ -639,7 +674,7 @@
 	}
 
 	.signal-head code {
-		color: var(--accent);
+		color: var(--text);
 	}
 
 	.signal-facts {
@@ -651,6 +686,8 @@
 		flex-wrap: wrap;
 		gap: 0.75rem 1rem;
 		margin: 1rem 0 0.5rem;
+		padding-bottom: 1rem;
+		border-bottom: 1px solid var(--border);
 	}
 
 	.filters label {
@@ -661,10 +698,7 @@
 
 	.field {
 		color: var(--text-muted);
-		font-family: var(--font-data);
-		font-size: 0.6875rem;
-		letter-spacing: 0.06em;
-		text-transform: uppercase;
+		font-size: 0.75rem;
 	}
 
 	.filters select,
@@ -673,7 +707,7 @@
 		padding: 0.375rem 0.625rem;
 		background: var(--surface);
 		border: 1px solid var(--border);
-		border-radius: 0.5rem;
+		border-radius: 0.375rem;
 		color: var(--text);
 		font: inherit;
 		max-width: 100%;
@@ -683,11 +717,11 @@
 		flex: 1 1 14rem;
 	}
 
+	/* An empty state is a line set off by a rule. The dashed outline belongs to unconfirmed guesses. */
 	.empty {
-		max-width: 44rem;
-		padding: 1rem;
-		border: 1px dashed var(--border);
-		border-radius: 0.75rem;
+		max-width: 68ch;
+		padding: 0.25rem 0 0.25rem 1rem;
+		border-left: 2px solid var(--border);
 		color: var(--text-muted);
 	}
 
@@ -701,20 +735,51 @@
 		cursor: pointer;
 	}
 
+	.scale-key {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.25rem 0.75rem;
+		color: var(--text-muted);
+		font-size: 0.875rem;
+	}
+
+	/* A confidence scale from 0 to 100%. The bar is the guess's measured
+	   confidence; the two ticks are the Medium and High thresholds. */
+	.scale {
+		position: relative;
+		flex: none;
+		display: inline-block;
+		width: 6rem;
+		height: 0.5rem;
+		border: 1px solid var(--text-muted);
+	}
+
+	.level {
+		position: absolute;
+		inset: 0 auto 0 0;
+		background: var(--text);
+	}
+
+	.tick {
+		position: absolute;
+		top: -4px;
+		bottom: -4px;
+		width: 1px;
+		background: var(--text-muted);
+	}
+
 	.guesses {
-		display: grid;
-		gap: 0.625rem;
-		max-width: 44rem;
+		max-width: 68ch;
 		margin: 0.75rem 0 1rem;
 		padding: 0;
+		border-top: 1px solid var(--text);
 		list-style: none;
 	}
 
 	.guess {
-		padding: 0.75rem 1rem;
-		background: var(--surface);
-		border: 1px solid var(--border);
-		border-radius: 0.75rem;
+		padding: 0.875rem 0;
+		border-bottom: 1px solid var(--border);
 	}
 
 	.head {
@@ -744,18 +809,17 @@
 		font-size: 0.9375rem;
 	}
 
+	/* The label is a guess, so its outline is dashed and amber until a source confirms it. */
 	.label-pill {
-		padding: 0.0625rem 0.5rem;
-		border: 1px solid var(--accent-2);
-		border-radius: 999px;
-		color: var(--accent-2);
+		padding: 0 0.5rem;
+		border: 2px dashed var(--unconfirmed);
+		border-radius: 0.25rem;
 		font-size: 0.8125rem;
-		font-weight: 500;
+		font-weight: 550;
 	}
 
-	.label-pill.actor {
-		border-color: var(--accent);
-		color: var(--accent);
+	.label-pill.confirmed {
+		border: 1px solid var(--text);
 	}
 
 	.status {
@@ -780,10 +844,9 @@
 	}
 
 	.evidence {
-		display: grid;
-		gap: 0.5rem;
 		margin: 0.5rem 0 0;
 		padding: 0;
+		border-top: 1px solid var(--border);
 		list-style: none;
 		font-size: 0.9375rem;
 	}
@@ -791,6 +854,8 @@
 	.evidence li {
 		display: grid;
 		gap: 0.125rem;
+		padding: 0.4375rem 0;
+		border-bottom: 1px solid var(--grid);
 	}
 
 	.detail {

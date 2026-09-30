@@ -46,12 +46,10 @@
 
 <style>
 	.conflict {
+		max-width: 68ch;
 		margin: 0.5rem 0 0;
-		padding: 0.625rem 0.875rem;
-		border: 1px solid var(--border);
+		padding: 0.25rem 0 0.25rem 0.875rem;
 		border-left: 3px solid var(--accent-2);
-		border-radius: 0.5rem;
-		background: var(--surface);
 		font-size: 0.9375rem;
 	}
 
