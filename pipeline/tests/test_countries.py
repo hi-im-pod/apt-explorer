@@ -8,7 +8,7 @@ from aptx.build.countries import COUNTRIES, country_name, iso2
 @pytest.mark.parametrize("value,code", [
     # ETDA's wording
     ("USA", "US"), ("UK", "GB"), ("North Korea", "KP"), ("China", "CN"), ("Russia", "RU"), ("Iran", "IR"),
-    # MISP's sponsor and victim wording
+    # The UN's official wording
     ("Iran (Islamic Republic of)", "IR"), ("Korea (Republic of)", "KR"),
     ("Korea (Democratic People's Republic of)", "KP"), ("Russian Federation", "RU"),
     # The names the site shows

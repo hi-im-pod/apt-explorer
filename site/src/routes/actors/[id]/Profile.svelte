@@ -43,7 +43,6 @@
 		(
 			[
 				{ field: 'origin', label: 'Origin', values: actor.origin },
-				{ field: 'sponsor', label: 'Sponsor', values: actor.sponsor },
 				{ field: 'motivation', label: 'Motivation', values: actor.motivation }
 			] as const
 		).filter((f) => f.values.length > 0 || actor.conflicts.some((c) => c.field === f.field))
@@ -370,7 +369,7 @@
 
 		{#if attribution.length > 0}
 			<section aria-labelledby="attribution-heading">
-				<h2 id="attribution-heading">Origin, Sponsor and Motivation</h2>
+				<h2 id="attribution-heading">Origin and Motivation</h2>
 				<dl class="claims">
 					{#each attribution as f (f.field)}
 						<div>

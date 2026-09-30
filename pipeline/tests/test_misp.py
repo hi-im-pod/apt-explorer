@@ -59,6 +59,17 @@ def test_scalar_meta_values_are_wrapped(store):
     assert a.sponsor == []
 
 
+def test_unknown_placeholders_are_dropped_from_read_fields():
+    meta = {"country": "Unknown", "motive": ["[unknown]", "Espionage"], "targeted-sector": "unknown"}
+    assert misp._values(meta, "country") == []
+    assert misp._values(meta, "motive") == ["Espionage"]
+    assert misp._values(meta, "targeted-sector") == []
+
+
+def test_scalar_sector_is_wrapped():
+    assert misp._values({"targeted-sector": "Energy"}, "targeted-sector") == ["Energy"]
+
+
 def test_record_without_a_name_is_dropped_and_logged(store, caplog):
     with caplog.at_level("WARNING"):
         names = set(actors(store))

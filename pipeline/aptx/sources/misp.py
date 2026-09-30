@@ -1,4 +1,4 @@
-"""MISP galaxy threat-actor cluster: actors, synonyms, origin, sponsor, targets.
+"""MISP galaxy threat-actor cluster: actors, synonyms, origin, motive, sectors.
 
 MISP has the widest synonym lists of any source here, which makes it the main
 bridge between vendor names. It is CC0, so every field taken from it may be
@@ -21,7 +21,7 @@ FILE = "threat-actor.json"
 URL = "https://raw.githubusercontent.com/MISP/misp-galaxy/main/clusters/threat-actor.json"
 
 # Values that say the galaxy does not know. Kept, they would read as a claim,
-# for example a sponsor called "Unknown" in conflict with a real one.
+# for example an origin called "Unknown" in conflict with a real one.
 _PLACEHOLDERS = frozenset({"unknown", "[unknown]"})
 
 

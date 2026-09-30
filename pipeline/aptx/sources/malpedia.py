@@ -1,7 +1,7 @@
 """Malpedia: actors, malware families and the dated report library.
 
 Malpedia is derived-only under SOURCES.md. Names, aliases, country and sector
-values, sponsors and family names may be published, but its description text
+values and family names may be published, but its description text
 never is, so normalize() never reads it. Every endpoint used here is marked
 "Access limitation: none", and the connector sends no API token, so no
 restricted (TLP:AMBER) material enters a snapshot.
