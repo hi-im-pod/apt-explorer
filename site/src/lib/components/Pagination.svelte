@@ -34,6 +34,7 @@
 <div class="bar" data-position={position}>
 	{#if position === 'top'}
 		<p class="range" aria-live="polite">{rangeLabel(page, size, total)}</p>
+	{:else}
 		<label class="size">
 			Rows per page
 			<select value={size} onchange={(e) => onsize(Number(e.currentTarget.value))}>
@@ -87,22 +88,28 @@
 		align-items: center;
 		justify-content: space-between;
 		gap: 0.5rem 1rem;
-		padding: 0.625rem 0;
+		padding: 0.625rem 0.875rem;
+		color: var(--text-muted);
+	}
+
+	.bar[data-position='top'] {
+		border-bottom: 1px solid var(--border);
+	}
+
+	.bar[data-position='bottom'] {
+		border-top: 1px solid var(--border);
 	}
 
 	.range {
 		margin: 0;
-		font-family: var(--font-data);
 		font-size: 0.8125rem;
-		color: var(--text-muted);
 	}
 
 	.size {
 		display: inline-flex;
 		align-items: center;
 		gap: 0.5rem;
-		color: var(--text-muted);
-		font-size: 0.875rem;
+		font-size: 0.8125rem;
 	}
 
 	select,
@@ -111,7 +118,7 @@
 		padding: 0.25rem 0.5rem;
 		border: 1px solid var(--border);
 		border-radius: 0.375rem;
-		background: var(--surface);
+		background: var(--bg);
 		color: var(--text);
 		font-family: var(--font-data);
 		font-size: 0.8125rem;
@@ -132,7 +139,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
-		gap: 0.5rem;
+		gap: 0.25rem;
 		margin-left: auto;
 	}
 
@@ -148,34 +155,42 @@
 		min-height: 2.25rem;
 		min-width: 2.25rem;
 		padding: 0.25rem 0.625rem;
-		border: 1px solid var(--border);
+		border: 1px solid transparent;
 		border-radius: 0.375rem;
 		background: transparent;
 		color: var(--text);
 		font-family: var(--font-data);
 		font-size: 0.8125rem;
+		font-weight: 500;
 		cursor: pointer;
 	}
 
 	.step {
+		padding-inline: 0.75rem;
+		border-color: var(--border);
 		font-family: var(--font-body);
 		font-size: 0.875rem;
+		font-weight: 550;
 	}
 
 	button:hover:not(:disabled) {
 		border-color: var(--accent);
+		color: var(--accent);
 	}
 
 	button:disabled {
 		color: var(--text-muted);
 		cursor: default;
-		opacity: 0.55;
+		opacity: 0.6;
 	}
 
-	.num[aria-current='page'] {
+	/* The current page is the one filled control, in the accent. */
+	.num[aria-current='page'],
+	.num[aria-current='page']:hover:not(:disabled) {
 		border-color: var(--accent);
-		background: var(--accent-soft);
-		font-weight: 600;
+		background: var(--accent);
+		color: var(--ink-on-accent);
+		cursor: default;
 	}
 
 	.gap {
@@ -189,8 +204,8 @@
 		display: inline-flex;
 		align-items: center;
 		gap: 0.5rem;
-		color: var(--text-muted);
-		font-size: 0.875rem;
+		margin-left: 0.5rem;
+		font-size: 0.8125rem;
 	}
 
 	.goto label {
@@ -203,7 +218,7 @@
 		display: none;
 		font-family: var(--font-data);
 		font-size: 0.8125rem;
-		color: var(--text-muted);
+		color: var(--text);
 	}
 
 	@media (max-width: 44.99rem) {

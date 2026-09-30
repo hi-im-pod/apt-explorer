@@ -88,6 +88,28 @@
 	// the first screen. Wide screens show them all and ignore this.
 	let expanded = $state(false);
 
+	/** One chip per active filter, shown on a narrow screen while the fields are folded away. */
+	const chips = $derived(
+		(
+			[
+				filters.actor && ['actor', `Actor: ${actors.find((a) => a.id === filters.actor)?.name ?? filters.actor}`],
+				filters.source && ['source', `Source: ${sourceLabel(filters.source).name}`],
+				filters.org && ['org', `Publisher: ${filters.org}`],
+				filters.from && ['from', `From: ${filters.from}`],
+				filters.to && ['to', `To: ${filters.to}`],
+				filters.cve && ['cve', `CVE: ${filters.cve}`],
+				filters.tech && ['tech', `Technique: ${filters.tech}`],
+				filters.kev && ['kev', 'CISA KEV only'],
+				filters.undated && ['undated', 'Undated included']
+			] as const
+		).filter(Boolean) as [keyof Filters, string][]
+	);
+
+	function drop(key: keyof Filters) {
+		if (key === 'cve' || key === 'tech') clearTimeout(timers[key]);
+		onchange({ ...filters, [key]: typeof filters[key] === 'boolean' ? false : null });
+	}
+
 	// A value in the URL that is not among the options still shows as chosen.
 	const actorKnown = $derived(!filters.actor || actors.some((a) => a.id === filters.actor));
 	const sourceKnown = $derived(!filters.source || sources.includes(filters.source));
@@ -115,8 +137,21 @@
 		aria-controls="filter-fields"
 		onclick={() => (expanded = !expanded)}
 	>
-		{expanded ? 'Fewer filters' : 'More filters'}{#if others}<span class="count"> · {others} on</span>{/if}
+		{expanded ? 'Fewer filters' : 'More filters'}{#if others}<span class="count">&nbsp;· {others} on</span>{/if}
 	</button>
+
+	{#if chips.length && !expanded}
+		<ul class="chips" aria-label="Active filters">
+			{#each chips as [key, label] (key)}
+				<li>
+					<button type="button" aria-label="Remove filter {label}" onclick={() => drop(key)}>
+						{label}
+						<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 4l8 8m0-8l-8 8" /></svg>
+					</button>
+				</li>
+			{/each}
+		</ul>
+	{/if}
 
 	<div id="filter-fields" class="rest" class:expanded>
 		<div class="field">
@@ -138,15 +173,6 @@
 		</div>
 
 		<div class="field">
-			<label for="f-org">Publisher</label>
-			<select id="f-org" value={filters.org ?? ''} onchange={(e) => set('org', e.currentTarget.value || null)}>
-				<option value="">Any publisher</option>
-				{#if !publisherKnown}<option value={filters.org}>{filters.org}</option>{/if}
-				{#each publishers as p (p)}<option value={p}>{p}</option>{/each}
-			</select>
-		</div>
-
-		<div class="field">
 			<label for="f-from">From</label>
 			<input
 				id="f-from"
@@ -164,6 +190,15 @@
 				value={filters.to ?? ''}
 				onchange={(e) => set('to', e.currentTarget.value || null)}
 			/>
+		</div>
+
+		<div class="field">
+			<label for="f-org">Publisher</label>
+			<select id="f-org" value={filters.org ?? ''} onchange={(e) => set('org', e.currentTarget.value || null)}>
+				<option value="">Any publisher</option>
+				{#if !publisherKnown}<option value={filters.org}>{filters.org}</option>{/if}
+				{#each publishers as p (p)}<option value={p}>{p}</option>{/each}
+			</select>
 		</div>
 
 		<div class="field">
@@ -220,22 +255,20 @@
 </form>
 
 <style>
+	/* A flat row of controls, not a card: the table below is the page's one framed region. */
 	.filters {
 		display: grid;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 		gap: 0.75rem;
-		margin: 0 0 1.25rem;
-		padding: 1rem;
-		background: var(--surface);
-		border: 1px solid var(--border);
-		border-radius: 0.75rem;
+		margin: 0 0 1.5rem;
+		padding: 0 0 1.25rem;
+		border-bottom: 1px solid var(--border);
 	}
 
 	@media (min-width: 45rem) {
 		.filters {
-			grid-template-columns: repeat(4, minmax(0, 1fr));
-			gap: 0.875rem 1rem;
-			padding: 1.125rem 1.25rem;
+			grid-template-columns: repeat(6, minmax(0, 1fr));
+			gap: 0.75rem 1rem;
 		}
 	}
 
@@ -248,6 +281,12 @@
 
 	.search {
 		grid-column: 1 / -1;
+	}
+
+	@media (min-width: 45rem) {
+		.search {
+			grid-column: span 2;
+		}
 	}
 
 	/* Narrow screens: the fields after the search fold behind a toggle. */
@@ -265,11 +304,12 @@
 	.more {
 		grid-column: 1 / -1;
 		justify-self: start;
+		min-height: 2.25rem;
 		padding: 0.375rem 0.875rem;
 		background: transparent;
 		color: var(--text);
 		border: 1px solid var(--border);
-		border-radius: 999px;
+		border-radius: 0.375rem;
 		font: inherit;
 		font-size: 0.875rem;
 		font-weight: 550;
@@ -280,8 +320,55 @@
 		border-color: var(--accent);
 	}
 
+	.more:focus-visible,
+	.chips button:focus-visible,
+	.clear:focus-visible {
+		outline: 2px solid var(--focus);
+		outline-offset: 2px;
+	}
+
 	.count {
 		color: var(--accent);
+	}
+
+	.chips {
+		grid-column: 1 / -1;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.375rem;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	.chips button {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.375rem;
+		max-width: 100%;
+		min-height: 2rem;
+		padding: 0.125rem 0.625rem;
+		background: var(--accent-soft);
+		color: var(--text);
+		border: 1px solid transparent;
+		border-radius: 999px;
+		font: inherit;
+		font-size: 0.8125rem;
+		cursor: pointer;
+	}
+
+	.chips button:hover {
+		border-color: var(--accent);
+	}
+
+	.chips svg {
+		flex: none;
+		width: 0.75rem;
+		height: 0.75rem;
+		stroke: currentColor;
+		stroke-width: 1.75;
+		stroke-linecap: round;
+		fill: none;
 	}
 
 	@media (min-width: 45rem) {
@@ -291,14 +378,15 @@
 			display: contents;
 		}
 
-		.more {
+		.more,
+		.chips {
 			display: none;
 		}
 	}
 
 	label {
 		color: var(--text-muted);
-		font-size: 0.8125rem;
+		font-size: 0.75rem;
 		font-weight: 550;
 	}
 
@@ -308,16 +396,17 @@
 	select {
 		width: 100%;
 		min-width: 0;
-		min-height: 2.5rem;
-		padding: 0.4375rem 0.625rem;
-		background: var(--bg);
+		min-height: 2.375rem;
+		padding: 0.375rem 0.625rem;
+		background: var(--surface);
 		color: var(--text);
 		border: 1px solid var(--border);
-		border-radius: 0.5rem;
+		border-radius: 0.375rem;
 		font: inherit;
-		font-size: 0.9375rem;
+		font-size: 0.875rem;
 	}
 
+	input[type='date'],
 	input.data {
 		font-family: var(--font-data);
 		font-size: 0.8125rem;
@@ -348,12 +437,20 @@
 		gap: 0.5rem 1.5rem;
 	}
 
+	@media (min-width: 45rem) {
+		.switches {
+			grid-column: span 3;
+			align-self: end;
+			min-height: 2.375rem;
+		}
+	}
+
 	.switch {
 		display: inline-flex;
 		align-items: center;
 		gap: 0.5rem;
 		color: var(--text);
-		font-size: 0.9375rem;
+		font-size: 0.875rem;
 		font-weight: 450;
 		cursor: pointer;
 	}
@@ -367,11 +464,12 @@
 
 	.clear {
 		margin-left: auto;
+		min-height: 2.25rem;
 		padding: 0.375rem 0.875rem;
 		background: transparent;
 		color: var(--accent);
 		border: 1px solid var(--accent);
-		border-radius: 999px;
+		border-radius: 0.375rem;
 		font: inherit;
 		font-size: 0.875rem;
 		font-weight: 550;

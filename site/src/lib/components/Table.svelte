@@ -121,7 +121,7 @@
 <style>
 	.table {
 		/* Each layout fixes the row height, so a page is the same height whatever its titles say. */
-		--row-h: 8.25rem;
+		--row-h: 7.125rem;
 		font-size: 0.9375rem;
 	}
 
@@ -148,35 +148,47 @@
 		gap: 0.25rem 0.75rem;
 		height: var(--row-h);
 		overflow: hidden;
-		padding: 0.75rem 0.875rem 1.25rem;
+		padding: 0.75rem 0.875rem;
 	}
 
-	/* The card face sits behind the row and stops short of the next card, so
-	   the gap between cards is part of the fixed row height. */
+	/* The row face sits behind the row so hover, focus and selection can tint it. */
+	.body .row {
+		border-bottom: 1px solid var(--border);
+	}
+
+	.body .row:last-child {
+		border-bottom: 0;
+	}
+
 	.body .row::before {
 		content: '';
 		position: absolute;
-		inset: 0 0 0.5rem;
+		inset: 0;
 		z-index: -1;
-		background: var(--surface);
-		border: 1px solid var(--border);
-		border-radius: 0.625rem;
+		background: transparent;
 	}
 
 	.body .row:hover::before,
 	.body .row:has(a:focus-visible)::before {
-		border-color: var(--accent);
+		background: var(--accent-soft);
 	}
 
+	.body .row:has(a:focus-visible) {
+		outline: 2px solid var(--focus);
+		outline-offset: -2px;
+	}
+
+	/* The open row: soft pink and a 3px accent bar on its left edge. */
 	.body .row.selected::before {
-		border-color: var(--accent);
 		background: var(--accent-soft);
+		box-shadow: inset 3px 0 0 var(--accent);
 	}
 
 	.date {
 		grid-area: date;
 		color: var(--text-muted);
-		font-size: 0.8125rem;
+		font-family: var(--font-data);
+		font-size: 0.75rem;
 		line-height: 1.4;
 	}
 
@@ -235,7 +247,7 @@
 
 	.tag {
 		display: inline-block;
-		margin-right: 0.375rem;
+		margin-right: 0.5rem;
 		padding: 0 0.375rem;
 		border: 1px solid var(--accent-2);
 		border-radius: 0.25rem;
@@ -278,7 +290,12 @@
 		text-overflow: ellipsis;
 	}
 
-	.actors li.more {
+	.row.selected .actors li {
+		background: var(--surface);
+	}
+
+	.actors li.more,
+	.row.selected .actors li.more {
 		background: none;
 		color: var(--text-muted);
 		padding-inline: 0.125rem;
@@ -303,7 +320,7 @@
 			width: auto;
 			height: auto;
 			overflow: visible;
-			background: var(--bg);
+			background: var(--surface);
 			border-bottom: 1px solid var(--border);
 		}
 
@@ -323,32 +340,6 @@
 			font-size: 0.6875rem;
 			letter-spacing: 0.06em;
 			text-transform: uppercase;
-		}
-
-		.body .row {
-			border-bottom: 1px solid var(--border);
-		}
-
-		.body .row::before {
-			inset: 0;
-			border: 0;
-			border-radius: 0;
-			background: transparent;
-		}
-
-		.body .row:hover::before,
-		.body .row:has(a:focus-visible)::before {
-			background: var(--accent-soft);
-		}
-
-		.body .row:has(a:focus-visible) {
-			outline: 2px solid var(--focus);
-			outline-offset: -2px;
-		}
-
-		.body .row.selected::before {
-			background: var(--accent-soft);
-			box-shadow: inset 3px 0 0 var(--accent);
 		}
 
 		.until {

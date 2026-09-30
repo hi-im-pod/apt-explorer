@@ -244,10 +244,7 @@
 
 <div class="intro">
 	<h1 tabindex="-1" bind:this={heading}>Explore</h1>
-	<p class="lede">
-		Reports and campaigns from every source, newest first. The filters are saved in the page
-		address, so a filtered view can be bookmarked or shared.
-	</p>
+	<p class="lede">Reports and campaigns from every source, newest first.</p>
 </div>
 
 {#if phase === 'error'}
@@ -284,6 +281,7 @@
 	{#if shown.length}
 		<section class="region" aria-labelledby="table-heading">
 			<h2 id="table-heading" tabindex="-1" bind:this={tableHeading}>Reports and campaigns</h2>
+			<div class="frame">
 			<Pagination
 				position="top"
 				page={pageNumber}
@@ -312,6 +310,7 @@
 				onpage={goToPage}
 				onsize={setSize}
 			/>
+			</div>
 		</section>
 	{:else}
 		<p class="empty">No report or campaign matches these filters.</p>
@@ -332,6 +331,7 @@
 <style>
 	.intro {
 		max-width: 46rem;
+		margin-bottom: 1.5rem;
 	}
 
 	h1:focus {
@@ -339,14 +339,15 @@
 	}
 
 	.lede {
+		margin: 0;
 		color: var(--text-muted);
-		font-size: 1.0625rem;
+		font-size: 1.125rem;
 	}
 
 	.notice {
-		margin: 0 0 1rem;
+		margin: 0 0 0.75rem;
 		color: var(--text-muted);
-		font-size: 0.9375rem;
+		font-size: 0.875rem;
 	}
 
 	.notice strong {
@@ -368,7 +369,7 @@
 		padding: 0.25rem 0.875rem;
 		background: transparent;
 		border: 1px solid var(--border);
-		border-radius: 999px;
+		border-radius: 0.375rem;
 		color: var(--text);
 		font: inherit;
 		font-size: 0.875rem;
@@ -380,31 +381,30 @@
 	}
 
 	.region {
-		margin-top: 1rem;
+		margin-top: 1.5rem;
 	}
 
 	.region h2 {
-		margin: 0;
-		font-size: 1.0625rem;
+		margin: 0 0 0.75rem;
+		font-size: 1.125rem;
 	}
 
 	.region h2:focus {
 		outline: none;
 	}
 
-	@media (min-width: 45rem) {
-		.region {
-			padding: 0.75rem 1rem;
-			border: 1px solid var(--border);
-			border-radius: 0.75rem;
-			background: var(--surface);
-		}
+	/* The bordered region: range and pager above the rows, page size below. */
+	.frame {
+		overflow: hidden;
+		border: 1px solid var(--border);
+		border-radius: 0.5rem;
+		background: var(--surface);
 	}
 
 	.empty {
 		padding: 2rem 1rem;
 		border: 1px dashed var(--border);
-		border-radius: 0.75rem;
+		border-radius: 0.5rem;
 		color: var(--text-muted);
 		text-align: center;
 	}

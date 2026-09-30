@@ -105,7 +105,7 @@
 <dialog class="panel" bind:this={dialog} aria-labelledby="panel-title">
 	{#if open}
 		<div class="top">
-			<p class="kind">{kindLabel}</p>
+			<p class="kind" class:campaign={kindLabel === 'Campaign'}>{kindLabel}</p>
 			<button type="button" class="close" onclick={onclose}>
 				<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
 					<path d="M3.5 3.5l9 9m0-9l-9 9" />
@@ -311,7 +311,8 @@
 		background: var(--surface);
 		color: var(--text);
 		border: 0;
-		border-left: 1px solid var(--border);
+		/* The same 3px accent bar as the selected row it belongs to. */
+		border-left: 3px solid var(--accent);
 		box-shadow: -1.5rem 0 3rem -1.5rem rgb(0 0 0 / 0.35);
 	}
 
@@ -338,14 +339,20 @@
 		text-transform: uppercase;
 	}
 
+	/* Teal means campaign, here as in the table's tag. */
+	.kind.campaign {
+		color: var(--accent-2);
+	}
+
 	.close {
 		display: inline-flex;
 		align-items: center;
 		gap: 0.375rem;
+		min-height: 2.25rem;
 		padding: 0.375rem 0.75rem;
 		background: transparent;
 		border: 1px solid var(--border);
-		border-radius: 999px;
+		border-radius: 0.375rem;
 		color: var(--text);
 		font: inherit;
 		font-size: 0.875rem;
@@ -354,6 +361,12 @@
 
 	.close:hover {
 		border-color: var(--accent);
+	}
+
+	.close:focus-visible,
+	.retry:focus-visible {
+		outline: 2px solid var(--focus);
+		outline-offset: 2px;
 	}
 
 	.close svg {
@@ -368,6 +381,7 @@
 	h2 {
 		margin: 0 0 1rem;
 		font-size: 1.375rem;
+		line-height: 1.2;
 	}
 
 	/* The heading takes focus only so a screen reader starts reading at the
@@ -418,7 +432,7 @@
 		padding: 0.125rem 0.75rem;
 		background: transparent;
 		border: 1px solid var(--border);
-		border-radius: 999px;
+		border-radius: 0.375rem;
 		color: var(--text);
 		font: inherit;
 		font-size: 0.875rem;
@@ -439,7 +453,7 @@
 	.note {
 		margin: 0 0 0.75rem;
 		padding: 0.5rem 0.75rem;
-		border-left: 3px solid var(--accent);
+		border-left: 3px solid var(--accent-2);
 		background: var(--bg);
 		font-size: 0.9375rem;
 	}
@@ -515,6 +529,10 @@
 		display: inline-flex;
 		align-items: center;
 		gap: 0.375rem;
+		padding: 0.0625rem 0.5rem;
+		border: 1px solid var(--border);
+		border-radius: 0.25rem;
+		font-size: 0.8125rem;
 	}
 
 	.kev {
