@@ -310,6 +310,12 @@
 			never shows those tags and never links a report to an actor on the strength of a tag alone. A
 			report is linked to an actor only through Malpedia, ATT&CK references or the paper's data.
 		</p>
+		<p>
+			The actors, CVEs and techniques listed for an ORKL report were added by this project, and
+			the table can filter and search on them. Actors come from the three sources named above. CVE
+			and technique IDs are found by matching patterns in the report text. The link-only rule
+			allows this because the project works out those identifiers itself.
+		</p>
 	{/if}
 </section>
 

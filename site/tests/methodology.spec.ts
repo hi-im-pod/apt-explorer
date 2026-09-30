@@ -101,6 +101,7 @@ test('the evidence-only rule is stated, with the sources that use it in this bui
 	// ORKL's actor tags stay out of view while ORKL is link-only.
 	if (sources.find((s) => s.name === 'orkl')?.publish === 'link-only') {
 		await expect(rules).toContainText(/never shows those tags/i);
+		await expect(rules).toContainText(/were added by this project/i);
 	}
 	const about = rules.getByRole('link', { name: /about/i }).first();
 	expect(await about.evaluate((el) => new URL((el as HTMLAnchorElement).href).pathname)).toBe('/apt-explorer/about/');

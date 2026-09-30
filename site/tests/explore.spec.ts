@@ -49,6 +49,12 @@ const ORKL_LIVE = firstReport(
 	'ORKL report with a live original and an archive copy',
 	(r) => orklOnly(r) && findable(r) && r.url_ok === true && !!r.url && !!r.archive_url
 ).id;
+// A link-only report that the pipeline linked to an actor and found a CVE and a technique in.
+const ORKL_TAGGED = firstReport(
+	'ORKL report with an actor, a CVE, a technique and an archive copy',
+	(r) =>
+		orklOnly(r) && findable(r) && r.actors.length > 0 && r.cves.length > 0 && r.techniques.length > 0 && !!r.archive_url
+).id;
 const ORKL_ANY = firstReport('ORKL report with an archive copy', (r) => orklOnly(r) && !!r.url && !!r.archive_url).id;
 // A paper-only report with a publisher and actors, and one with a CVE that CISA lists as exploited.
 const PAPER_LIVE = firstReport(
@@ -315,7 +321,7 @@ test('a report with no original URL offers the archive copy', async ({ page }) =
 	await expect(dialog).toContainText(/no original publisher link is known/i);
 });
 
-test('an ORKL report shows only its title, date and links', async ({ page }) => {
+test('an ORKL report shows its title, date and links, and no publisher', async ({ page }) => {
 	const r = reportById(ORKL_LIVE);
 	await open(page, `?report=${ORKL_LIVE}`);
 	const dialog = panel(page);
@@ -326,10 +332,22 @@ test('an ORKL report shows only its title, date and links', async ({ page }) => 
 	await expect(links).toHaveCount(2);
 	await expect(links.first()).toHaveAttribute('href', r.url!);
 	await expect(links.nth(1)).toHaveAttribute('href', r.archive_url!);
-	for (const id of r.actors) await expect(dialog).not.toContainText(nameOf(id));
-	for (const cve of r.cves) await expect(dialog).not.toContainText(cve);
-	for (const tid of r.techniques) await expect(dialog).not.toContainText(tid);
+	await expect(dialog.getByText('Publisher', { exact: true })).toHaveCount(0);
 	await expect(dialog).toContainText(/link-only/i);
+});
+
+test('an ORKL report lists the actors, CVEs and techniques the pipeline found, and says where they came from', async ({
+	page
+}) => {
+	// The table filters and searches on these, so a panel that hid them would disagree with
+	// the list that opened it. They are shown together with a note that they are not ORKL's data.
+	const r = reportById(ORKL_TAGGED);
+	await open(page, `?report=${ORKL_TAGGED}`);
+	const dialog = panel(page);
+	for (const id of r.actors) await expect(dialog.getByRole('link', { name: nameOf(id), exact: true })).toBeVisible();
+	for (const cve of r.cves) await expect(dialog).toContainText(cve);
+	for (const tid of r.techniques) await expect(dialog).toContainText(tid);
+	await expect(dialog).toContainText(/never\s+from ORKL's tags/i);
 });
 
 test("ORKL's actor tags never appear, in the table or the panel", async ({ page }) => {

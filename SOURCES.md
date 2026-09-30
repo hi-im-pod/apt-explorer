@@ -55,6 +55,6 @@ ATT&CK is named as MITRE's FAQ asks. The first reference reads "MITRE ATT&CK®",
 
 ## ORKL status
 
-ORKL is `link-only` while a permission request is pending (sent 2026-09-29 to orkl@mailbox.org). Only each report's own title, publication date and link to the original publisher appear, because those are facts about publicly released reports, whose authors retain copyright. ORKL's threat-actor tags are used only as matching evidence and are not displayed. Report-to-actor links shown on the site come from sources that allow publishing them, such as Malpedia's family references and MITRE ATT&CK.
+ORKL is `link-only` while a permission request is pending (sent 2026-09-29 to orkl@mailbox.org). Only each report's own title, publication date and link to the original publisher appear, because those are facts about publicly released reports, whose authors retain copyright. ORKL's threat-actor tags are used only as matching evidence and are not displayed. Report-to-actor links shown on the site come from sources that allow publishing them, such as Malpedia's family references and MITRE ATT&CK. The site also publishes CVE and ATT&CK technique IDs for ORKL reports, because the pipeline finds them itself by matching patterns in the report text, and the Explore table filters and searches on them together with those actor links. None of these fields is copied from ORKL's own record.
 
 This file records each source's terms as the source states them. It is not legal advice.

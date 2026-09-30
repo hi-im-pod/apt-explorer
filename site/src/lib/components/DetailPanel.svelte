@@ -15,8 +15,13 @@
 	copy comes first and the panel says why. A dead link is never dropped.
 	The classification lives in $lib/links.
 
-	A link-only row (ORKL, whose terms are pending) shows only its title,
-	date and links.
+	A link-only row (ORKL, whose terms are pending) takes only its title,
+	date and links from the source. Its actors, CVEs and techniques are
+	shown too, because the table filters and searches on them and a panel
+	that hid them would disagree with the list that opened it. They are not
+	ORKL's own data: the pipeline links actors through Malpedia, ATT&CK and
+	the paper, and finds CVE and technique IDs by matching the report text.
+	The publisher and the names that matched no actor stay hidden.
 
 	The table row already holds the title, date, publisher, sources, actors,
 	CVEs and techniques, so the panel shows them at once. The links and the
@@ -174,60 +179,61 @@
 				{/if}
 			</section>
 
+			{#if row.actors.length}
+				<section aria-labelledby="panel-actors">
+					<h3 id="panel-actors">Actors</h3>
+					<ul class="chips">
+						{#each row.actors as id (id)}
+							<li>
+								{#if actorNames.has(id)}
+									<a href="{base}/actors/{id}/">{actorNames.get(id)}</a>
+								{:else}
+									{id}
+								{/if}
+							</li>
+						{/each}
+					</ul>
+				</section>
+			{/if}
+			{#if !row.linkOnly && report && report.actor_names_unresolved.length}
+				<section aria-labelledby="panel-unresolved">
+					<h3 id="panel-unresolved">Names not matched to an actor</h3>
+					<ul class="chips plain">
+						{#each report.actor_names_unresolved as name (name)}<li>{name}</li>{/each}
+					</ul>
+				</section>
+			{/if}
+			{#if row.cves.length}
+				<section aria-labelledby="panel-cves">
+					<h3 id="panel-cves">CVEs</h3>
+					<ul class="ids">
+						{#each row.cves as cve (cve)}
+							<li>
+								<span class="data">{cve}</span>
+								{#if kevCves.has(cve)}<span class="kev">In CISA KEV</span>{/if}
+							</li>
+						{/each}
+					</ul>
+				</section>
+			{/if}
+			{#if row.techniques.length}
+				<section aria-labelledby="panel-techniques">
+					<h3 id="panel-techniques">Techniques</h3>
+					<ul class="ids">
+						{#each row.techniques as t (t)}
+							<li><a class="data" href={techniqueUrl(t)} rel="noopener noreferrer">{t}</a></li>
+						{/each}
+					</ul>
+				</section>
+			{/if}
 			{#if row.linkOnly}
 				<p class="policy">
-					{sourceLabel('orkl').name} is a link-only source while its terms are confirmed, so this panel
-					shows only the report's title, date and links.
+					{sourceLabel('orkl').name} is a link-only source while its terms are confirmed, so it
+					supplies only the report's title, date and links. The actors, CVEs and techniques above
+					were added by this project. Actors come from Malpedia, MITRE ATT&CK and the paper, never
+					from ORKL's tags, and CVE and technique IDs are matched in the report text.
 					<a href="{base}/about/#publish-link-only">What link-only means</a>
 				</p>
-			{:else}
-				{#if row.actors.length}
-					<section aria-labelledby="panel-actors">
-						<h3 id="panel-actors">Actors</h3>
-						<ul class="chips">
-							{#each row.actors as id (id)}
-								<li>
-									{#if actorNames.has(id)}
-										<a href="{base}/actors/{id}/">{actorNames.get(id)}</a>
-									{:else}
-										{id}
-									{/if}
-								</li>
-							{/each}
-						</ul>
-					</section>
-				{/if}
-				{#if report && report.actor_names_unresolved.length}
-					<section aria-labelledby="panel-unresolved">
-						<h3 id="panel-unresolved">Names not matched to an actor</h3>
-						<ul class="chips plain">
-							{#each report.actor_names_unresolved as name (name)}<li>{name}</li>{/each}
-						</ul>
-					</section>
-				{/if}
-				{#if row.cves.length}
-					<section aria-labelledby="panel-cves">
-						<h3 id="panel-cves">CVEs</h3>
-						<ul class="ids">
-							{#each row.cves as cve (cve)}
-								<li>
-									<span class="data">{cve}</span>
-									{#if kevCves.has(cve)}<span class="kev">In CISA KEV</span>{/if}
-								</li>
-							{/each}
-						</ul>
-					</section>
-				{/if}
-				{#if row.techniques.length}
-					<section aria-labelledby="panel-techniques">
-						<h3 id="panel-techniques">Techniques</h3>
-						<ul class="ids">
-							{#each row.techniques as t (t)}
-								<li><a class="data" href={techniqueUrl(t)} rel="noopener noreferrer">{t}</a></li>
-							{/each}
-						</ul>
-					</section>
-				{/if}
 			{/if}
 		{:else if row.campaign}
 			{@const c = row.campaign}
