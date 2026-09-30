@@ -146,10 +146,9 @@
 		margin: 0;
 		padding: 0;
 		list-style: none;
-		/* The top line marks the peak and the bottom line is the baseline:
-		   hairlines one step off the surface, so the bars stay the loudest ink. */
+		/* The top line marks the peak, and the ink baseline grounds the bars. */
 		border-top: 1px solid var(--grid);
-		border-bottom: 1px solid var(--border);
+		border-bottom: 1px solid var(--text);
 	}
 
 	.bars li {
@@ -162,13 +161,11 @@
 	.bar {
 		display: block;
 		width: min(100%, 24px);
-		background: var(--chart-1);
-		/* Rounded at the data end, square on the baseline. */
-		border-radius: 4px 4px 0 0;
+		background: var(--accent);
 	}
 
 	.bars li:hover .bar {
-		background: var(--accent-2);
+		background: var(--text);
 	}
 
 	.ticks {

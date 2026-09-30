@@ -44,11 +44,10 @@
 <div class="intro">
 	<h1>Actors</h1>
 	<p class="lede">
-		{formatCount(total)} actors, each merged from the records of MITRE ATT&CK®, the MISP galaxy, ETDA's
-		Threat Group Cards and Malpedia. A profile lists every alias with the source that gives it, and
-		the reports linked to the actor.
+		{formatCount(total)} actors, merged from the records of MITRE ATT&CK®, the MISP galaxy, ETDA's Threat
+		Group Cards and Malpedia. A profile shows which source uses which name.
+		<a href="{base}/methodology/">How the records are merged</a>
 	</p>
-	<p class="note"><a href="{base}/methodology/">How the records are merged</a></p>
 </div>
 
 <form class="controls" role="search" onsubmit={(e) => e.preventDefault()}>
@@ -82,6 +81,12 @@
 </p>
 
 {#if rows.length > 0}
+	<div class="columns" aria-hidden="true">
+		<span>Actor</span>
+		<span>Origin</span>
+		<span>Reports</span>
+		<span>Last reported</span>
+	</div>
 	<ol class="actors" aria-label="Actors">
 		{#each rows as { entry, via } (entry.id)}
 			{@const aka = others(entry.name, entry.aliases)}
@@ -102,7 +107,7 @@
 					{/if}
 				</div>
 				<dl class="stats">
-					<div>
+					<div class="origin">
 						<dt>Origin</dt>
 						<dd>
 							{#if entry.origin.length > 0}
@@ -142,12 +147,15 @@
 		max-width: 44rem;
 	}
 
-	.lede {
-		font-size: 1.125rem;
+	h1 {
+		margin-bottom: 0;
 	}
 
-	.note {
-		font-size: 0.9375rem;
+	.lede {
+		margin: 1rem 0 0;
+		color: var(--text-muted);
+		font-size: 1.1875rem;
+		line-height: 1.5;
 	}
 
 	.controls {
@@ -172,17 +180,17 @@
 
 	label {
 		color: var(--text-muted);
-		font-size: 0.875rem;
-		font-weight: 550;
+		font-size: 0.75rem;
 	}
 
 	input,
 	select {
 		width: 100%;
 		min-width: 0;
-		padding: 0.5rem 0.75rem;
+		height: 2.75rem;
+		padding: 0 0.875rem;
 		border: 1px solid var(--border);
-		border-radius: 0.5rem;
+		border-radius: 0.375rem;
 		background: var(--surface);
 		color: var(--text);
 		font: inherit;
@@ -200,37 +208,58 @@
 	}
 
 	.count {
+		margin: 0 0 1.25rem;
 		color: var(--text-muted);
 		font-size: 0.875rem;
 	}
 
-	.actors {
+	/* The ledger: an ink rule under the column names, hairlines between rows. */
+	.columns,
+	.actors > li {
 		display: grid;
-		gap: 0.625rem;
+		grid-template-columns: minmax(0, 1fr);
+		gap: 0.5rem 1.5rem;
+	}
+
+	.columns {
+		display: none;
+	}
+
+	.actors {
 		margin: 0;
 		padding: 0;
 		list-style: none;
+		border-top: 1px solid var(--text);
 	}
 
 	.actors > li {
-		display: grid;
-		gap: 0.75rem 2rem;
-		padding: 1rem 1.125rem;
-		background: var(--surface);
-		border: 1px solid var(--border);
-		border-radius: 0.75rem;
+		padding: 0.875rem 0;
+		border-bottom: 1px solid var(--border);
 	}
 
 	@media (min-width: 52rem) {
+		.columns {
+			display: grid;
+			padding: 0 0 0.5rem;
+			color: var(--text-muted);
+			font-family: var(--font-data);
+			font-size: 0.6875rem;
+		}
+
+		.columns,
 		.actors > li {
-			grid-template-columns: minmax(0, 1fr) auto;
-			align-items: start;
+			grid-template-columns: minmax(0, 1fr) 10rem 5rem 13rem;
+			align-items: baseline;
+		}
+
+		.columns span:nth-child(3) {
+			text-align: right;
 		}
 	}
 
 	/* A grid or flex child keeps its min-content width unless told not to,
 	   and overflow-wrap cannot shrink below it; min-width: 0 lets a long
-	   unbroken alias wrap inside the card instead of widening it. */
+	   unbroken alias wrap inside the row instead of widening it. */
 	.who {
 		min-width: 0;
 	}
@@ -239,18 +268,22 @@
 		display: flex;
 		flex-wrap: wrap;
 		align-items: baseline;
-		gap: 0.125rem 0.625rem;
+		gap: 0.125rem 0.75rem;
 		margin: 0;
 	}
 
 	.name {
 		min-width: 0;
-		font-size: 1.0625rem;
-		font-weight: 650;
+		color: var(--text);
+		font-size: 1.125rem;
+		font-weight: var(--head-weight);
+		font-stretch: var(--head-stretch);
+		letter-spacing: -0.01em;
 		text-decoration: none;
 	}
 
 	.name:hover {
+		color: var(--accent);
 		text-decoration: underline;
 	}
 
@@ -283,7 +316,21 @@
 
 	@media (min-width: 52rem) {
 		.stats {
-			grid-template-columns: 9.5rem 4.5rem 10.5rem;
+			display: contents;
+		}
+
+		.stats dt {
+			position: absolute;
+			width: 1px;
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			clip-path: inset(50%);
+			white-space: nowrap;
+		}
+
+		.stats dd.data {
+			text-align: right;
 		}
 	}
 
@@ -294,10 +341,7 @@
 	dt {
 		margin: 0 0 0.125rem;
 		color: var(--text-muted);
-		font-family: var(--font-data);
-		font-size: 0.6875rem;
-		letter-spacing: 0.06em;
-		text-transform: uppercase;
+		font-size: 0.75rem;
 	}
 
 	dd {
@@ -321,9 +365,9 @@
 	}
 
 	.empty {
-		padding: 1.25rem;
-		border: 1px dashed var(--border);
-		border-radius: 0.75rem;
+		padding: 1.25rem 0;
+		border-top: 1px solid var(--text);
+		border-bottom: 1px solid var(--border);
 		color: var(--text-muted);
 	}
 </style>

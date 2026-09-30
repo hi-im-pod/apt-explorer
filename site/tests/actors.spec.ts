@@ -2,7 +2,17 @@ import { readFileSync } from 'node:fs';
 import { test, expect, type Page } from '@playwright/test';
 import type { Actor, ActorsIndex, Report } from '../src/lib/data/types';
 import { countryName } from '../src/routes/actors/actors';
-import { linkNote, reportLinks } from '../src/routes/actors/[id]/profile';
+import {
+	FIRST_ALIASES,
+	FIRST_CHIPS,
+	FIRST_REPORTS,
+	FIRST_TECHNIQUES,
+	ledeFor,
+	linkNote,
+	NAME_SOURCES,
+	otherSources,
+	reportLinks
+} from '../src/routes/actors/[id]/profile';
 import { openSynthIndex, synthActor, synthReports, SYNTH_ACTORS, SYNTH_REPORTS } from './actors-synth';
 
 // Expectations come from the same data/ the site is built from, so the tests
@@ -22,11 +32,9 @@ const themes = ['light', 'dark', 'apt'] as const;
 const ACTORS = '/apt-explorer/actors/';
 const profile = (id: string) => `${ACTORS}${id}/`;
 
-// How many reports a profile lists before "Show all", as in the profile page.
-const FIRST_REPORTS = 20;
-
 // The data's extreme cases, found from the data so the tests follow it.
 const busiest = [...index].sort((a, b) => b.report_count - a.report_count)[0];
+const mostCves = [...index].sort((a, b) => actorFile(b.id).cves.length - actorFile(a.id).cves.length)[0];
 const empty = index.find((a) => a.report_count === 0)!;
 // The live data has no alias this long, and the synthesized busy profile below carries one in
 // every theme, so the real-data check only runs when a source does publish such an alias.
@@ -169,8 +177,13 @@ test(`a direct load of the busiest actor shows aliases with badges, a timeline a
 	await page.goto(profile(busiest.id));
 	await expect(page.getByRole('heading', { level: 1 })).toHaveText(a.name);
 
-	const aliases = page.getByRole('list', { name: 'Aliases' }).getByRole('listitem');
+	// The first names show at once; the rest sit behind "Show all" and are checked once it is open.
+	const aliases = page.locator('.alias-list > li');
+	await expect(page.getByRole('list', { name: 'Names and who uses them' }).getByRole('listitem')).toHaveCount(
+		Math.min(a.aliases.length, FIRST_ALIASES)
+	);
 	await expect(aliases).toHaveCount(a.aliases.length);
+	if (a.aliases.length > FIRST_ALIASES) await page.getByText(/show all [\d,]+ names/i).click();
 	for (const [i, alias] of a.aliases.entries()) {
 		const row = aliases.nth(i);
 		await expect(row).toContainText(alias.value);
@@ -178,8 +191,11 @@ test(`a direct load of the busiest actor shows aliases with badges, a timeline a
 		await expect(badges).toHaveCount(alias.sources.length);
 		for (const b of await badges.all()) await expect(b).toBeVisible();
 	}
-	const badge = aliases.first().getByRole('link').first();
-	expect(await target(page, badge)).toBe(`/apt-explorer/about/#source-${a.aliases[0].sources[0]}`);
+	const first = a.aliases[0].sources;
+	const firstSource = NAME_SOURCES.find((n) => first.includes(n.key))?.key ?? otherSources(first)[0];
+	expect(await target(page, aliases.first().getByRole('link').first())).toBe(
+		`/apt-explorer/about/#source-${firstSource}`
+	);
 
 	const bars = page.getByRole('list', { name: 'Dated reports per quarter' }).locator('.bar');
 	await expect(bars).toHaveCount(a.timeline.filter((p) => p.count > 0).length);
@@ -188,8 +204,8 @@ test(`a direct load of the busiest actor shows aliases with badges, a timeline a
 		expect(box?.height ?? 0).toBeGreaterThan(0);
 	}
 
-	// The first twenty reports are listed and the rest wait behind "Show all", so every row
-	// exists in the page but only the first twenty are visible to begin with.
+	// The newest reports are listed and the rest wait behind "Show all", so every row
+	// exists in the page but only the first ten are visible to begin with.
 	const reports = page.getByRole('list', { name: 'Reports', exact: true }).getByRole('listitem');
 	await expect(page.locator('#reports li.report')).toHaveCount(a.reports.length);
 	await expect(reports).toHaveCount(Math.min(a.reports.length, FIRST_REPORTS));
@@ -204,7 +220,7 @@ test('report links open the original first, and the archive when the original is
 	const a = actorFile(busiest.id);
 	await page.goto(profile(busiest.id));
 	const items = page.locator('#reports li.report');
-	// The first twenty, and every report whose original is dead, wherever it sits in the list.
+	// The first ten, and every report whose original is dead, wherever it sits in the list.
 	const byId = new Map(allReports.map((r) => [r.id, r]));
 	const check = a.reports
 		.map((id, i) => ({ id, i, r: byId.get(id)! }))
@@ -332,6 +348,8 @@ test('with scripts blocked, the prerendered profile still reads', async ({ page 
 	const a = actorFile(busiest.id);
 	await page.goto(profile(busiest.id));
 	await expect(page.getByRole('heading', { level: 1 })).toHaveText(a.name);
+	// "Show all" is a native <details>, so it opens without scripts.
+	for (const summary of await page.locator('details.more > summary').all()) await summary.click();
 	for (const alias of a.aliases) await expect(page.getByText(alias.value, { exact: true }).first()).toBeVisible();
 	await expect(page.locator('#reports li.report')).toHaveCount(a.reports.length);
 	const bar = page.getByRole('list', { name: 'Dated reports per quarter' }).locator('.bar').first();
@@ -346,6 +364,97 @@ test('the profile links back to the index under the base path', async ({ page })
 		'aria-current',
 		'page'
 	);
+});
+
+// ---------------------------------------------------------------------------
+// The headline, the facts and the capped lists
+
+test('the headline carries a lede and facts built from the actor file', async ({ page }) => {
+	const a = actorFile(busiest.id);
+	await page.goto(profile(busiest.id));
+	const lede = ledeFor(a);
+	expect(lede).not.toBeNull();
+	await expect(page.locator('.actor-head .lede')).toHaveText(lede!);
+	const facts = page.locator('.facts > div');
+	const fact = (name: string) => facts.filter({ has: page.getByText(name, { exact: true }) }).locator('dd');
+	await expect(fact('Reports')).toHaveText(a.reports.length.toLocaleString('en-US'));
+	await expect(fact('Known CVEs')).toHaveText(a.cves.length.toLocaleString('en-US'));
+	await expect(fact('Techniques in ATT&CK')).toHaveText(a.techniques_documented.length.toLocaleString('en-US'));
+	await expect(fact('Last reported')).toBeVisible();
+});
+
+test('the CVE list shows twelve, and "Show all" opens the rest in place', async ({ page }) => {
+	const a = actorFile(mostCves.id);
+	expect(a.cves.length, 'the data has an actor with more than twelve CVEs').toBeGreaterThan(FIRST_CHIPS);
+	await page.goto(profile(mostCves.id));
+	const all = page.locator('#cves li');
+	const firstList = page.getByRole('list', { name: 'CVEs named in reports' }).getByRole('listitem');
+	await expect(all).toHaveCount(a.cves.length);
+	await expect(firstList).toHaveCount(FIRST_CHIPS);
+	await expect(all.last()).toBeHidden();
+
+	const summary = page.locator('#cves details.more > summary');
+	await expect(summary).toHaveAccessibleName(`Show all ${a.cves.length.toLocaleString('en-US')} CVEs`);
+	const top = () =>
+		page.evaluate(() => {
+			const y = (sel: string) => document.querySelector(sel)!.getBoundingClientRect().top + scrollY;
+			return { heading: y('#cves-heading'), summary: y('#cves details.more > summary') };
+		});
+	const before = await top();
+	// Keyboard first: the control is a real button-like summary that keeps focus when it opens.
+	await summary.focus();
+	await page.keyboard.press('Enter');
+	await expect(page.locator('#cves details.more')).toHaveAttribute('open', '');
+	await expect(summary).toBeFocused();
+	await expect(summary).toHaveAccessibleName('Show fewer');
+	await expect(all.last()).toBeVisible();
+	const after = await top();
+	expect(after.heading, 'the heading above does not move').toBe(before.heading);
+	expect(after.summary, 'the control does not move').toBe(before.summary);
+
+	await page.keyboard.press('Enter');
+	await expect(all.last()).toBeHidden();
+	await expect(summary).toBeFocused();
+});
+
+test('the busy synthesized profile caps every long list and opens each in place', async ({ page }) => {
+	await openSynthIndex(page);
+	await page.getByRole('link', { name: 'Busy Synthetic Actor', exact: true }).click();
+	await expect(page.getByRole('heading', { level: 1 })).toHaveText('Busy Synthetic Actor');
+	const actor = synthActor(synthReports());
+	const visible = (selector: string) => page.locator(selector).filter({ visible: true });
+	await expect(visible('.alias-list > li')).toHaveCount(FIRST_ALIASES);
+	await expect(visible('#cves li')).toHaveCount(FIRST_CHIPS);
+	await expect(visible('.tech > li')).toHaveCount(FIRST_TECHNIQUES);
+	await expect(visible('#reports li.report')).toHaveCount(FIRST_REPORTS);
+	// One control per capped list: names, techniques, techniques listed by ATT&CK, CVEs, reports,
+	// countries, sectors and malware.
+	await expect(page.locator('details.more')).toHaveCount(8);
+	for (const s of await page.locator('details.more > summary').all()) {
+		const y = await s.evaluate((el) => el.getBoundingClientRect().top + scrollY);
+		await s.click();
+		expect(await s.evaluate((el) => el.getBoundingClientRect().top + scrollY)).toBe(y);
+	}
+	await expect(visible('.alias-list > li')).toHaveCount(actor.aliases.length);
+	await expect(visible('#cves li')).toHaveCount(actor.cves.length);
+});
+
+test('a profile with short lists has no "Show all" control', async ({ page }) => {
+	const short = index.find((a) => {
+		const f = actorFile(a.id);
+		return (
+			f.aliases.length <= FIRST_ALIASES &&
+			f.cves.length <= FIRST_CHIPS &&
+			f.reports.length <= FIRST_REPORTS &&
+			f.techniques_reported.length <= FIRST_TECHNIQUES &&
+			f.techniques_documented.length <= FIRST_CHIPS &&
+			f.malware.length <= FIRST_CHIPS
+		);
+	})!;
+	await page.goto(profile(short.id));
+	await expect(page.getByRole('heading', { level: 1 })).toHaveText(short.name);
+	await expect(page.locator('details.more')).toHaveCount(0);
+	await expectNoEmptySections(page);
 });
 
 // ---------------------------------------------------------------------------
@@ -390,7 +499,7 @@ test(`a profile with ${SYNTH_REPORTS} reports lists them all and draws every qua
 	await expect(bars).toHaveCount(actor.timeline.length);
 	for (const bar of await bars.all()) expect((await bar.boundingBox())?.height ?? 0).toBeGreaterThan(0);
 	await expect(page.getByRole('main')).toContainText('10 undated reports are not shown');
-	await expect(page.getByRole('list', { name: 'Aliases' }).getByRole('listitem')).toHaveCount(actor.aliases.length);
+	await expect(page.locator('.alias-list > li')).toHaveCount(actor.aliases.length);
 });
 
 for (const w of [1280, 375]) {
@@ -403,8 +512,9 @@ for (const w of [1280, 375]) {
 			await expect(page.getByRole('heading', { level: 1 })).toHaveText('Busy Synthetic Actor');
 			await expectFitsWidth(page);
 			await expectNoEmptySections(page);
-			await page.getByText(/show all \d+ reports/i).click();
+			for (const summary of await page.locator('details.more > summary').all()) await summary.click();
 			await expect(page.locator('#reports li.report').last()).toBeVisible();
+			await expect(page.locator('details.more[open]')).toHaveCount(await page.locator('details.more').count());
 			await expectFitsWidth(page);
 		});
 	}
