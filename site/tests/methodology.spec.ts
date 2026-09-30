@@ -83,10 +83,12 @@ test('the date-basis rules are stated in order, with what happens to undated rep
 	await page.goto(PAGE);
 	const dates = page.locator('#report-dates');
 	const steps = dates.getByRole('listitem');
-	await expect(steps).toHaveCount(3);
+	await expect(steps).toHaveCount(4);
 	await expect(steps.nth(0)).toContainText(/malpedia library/i);
-	await expect(steps.nth(1)).toContainText(/file creation/i);
-	await expect(steps.nth(2)).toContainText(/ORKL added/i);
+	await expect(steps.nth(1)).toContainText(/date at the start of the report's title/i);
+	await expect(steps.nth(1)).toContainText(/not later than the day ORKL\s+added the report/i);
+	await expect(steps.nth(2)).toContainText(/file creation/i);
+	await expect(steps.nth(3)).toContainText(/ORKL added/i);
 	await expect(dates).toContainText(/undated/i);
 	await expect(dates).toContainText(/never in a timeline or a trend/i);
 	await expect(dates).toContainText('0001-01-01');
