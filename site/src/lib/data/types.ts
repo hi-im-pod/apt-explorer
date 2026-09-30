@@ -463,6 +463,10 @@ export interface Build {
 	 * so read this rather than guessing which years exist.
 	 */
 	report_years: number[];
+	/** How many reports the shards hold in all, undated included. Campaigns are not counted. */
+	report_count: number;
+	/** When the recent window starts, the same date as trends.json window_start. */
+	recent_since: IsoDate;
 }
 
 // ---------------------------------------------------------------------------

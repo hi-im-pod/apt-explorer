@@ -71,7 +71,7 @@ describe('getReports', () => {
 
 	it("'all' reads the shard years from build.json, then every shard and undated.json", async () => {
 		const f = stubFetch({
-			'/apt-explorer/data/build.json': { built_at: 'x', version: 'x', report_years: [2024, 2026] },
+			'/apt-explorer/data/build.json': { built_at: 'x', version: 'x', report_years: [2024, 2026], report_count: 0, recent_since: '2024-07-01' },
 			'/apt-explorer/data/reports/2024.json': [r('a', '2024-02-01')],
 			'/apt-explorer/data/reports/2026.json': [r('b', '2026-01-01'), r('c', '2026-03-01')],
 			'/apt-explorer/data/reports/undated.json': [r('d', null)]

@@ -292,6 +292,18 @@ def test_report_years_must_match_the_shards_written(tmp_path):
     refused(tmp_path, payload, match="report_years")
 
 
+def test_report_count_must_match_the_reports_written(tmp_path):
+    payload = sample_payload()
+    payload["build.json"]["report_count"] += 1
+    refused(tmp_path, payload, match="report_count")
+
+
+def test_recent_since_must_match_the_trends_window(tmp_path):
+    payload = sample_payload()
+    payload["build.json"]["recent_since"] = "1999-01-01"
+    refused(tmp_path, payload, match="recent_since")
+
+
 # --- The reports index must agree with the shards it summarises ---------------
 
 def test_the_index_is_required(tmp_path):

@@ -3,7 +3,7 @@ import { test, expect, type Page } from '@playwright/test';
 import { formatCount, formatDate } from '../src/lib/format';
 import { sourceLabel } from '../src/lib/data/labels';
 import { aliasGrid, numberWord, publishShort } from '../src/lib/home';
-import type { Actor, Guesses, Resolution, Sources } from '../src/lib/data/types';
+import type { Actor, Build, Guesses, Resolution, Sources } from '../src/lib/data/types';
 
 const readData = <T>(path: string): T =>
 	JSON.parse(readFileSync(new URL(`../../data/${path}`, import.meta.url), 'utf8')) as T;
@@ -62,12 +62,13 @@ test('the search box opens Explore with the words as the q filter', async ({ pag
 test('Ways in has a link and a real count for each view', async ({ page }) => {
 	const resolution = readData<Resolution>('resolution.json');
 	const guesses = readData<Guesses>('guesses.json');
+	const build = readData<Build>('build.json');
 	await page.goto('/apt-explorer/');
 	const items = page.getByRole('region', { name: 'Ways in' }).getByRole('listitem');
 	const want: [string, string, string][] = [
-		['Explore reports', '/apt-explorer/explore/', '\\d{4} to \\d{4}'],
+		['Explore reports', '/apt-explorer/explore/', `${formatCount(build.report_count)} reports`],
 		['Actors', '/apt-explorer/actors/', `${formatCount(resolution.stats.actor_count)} actors`],
-		['Trends', '/apt-explorer/trends/', '24 months'],
+		['Trends', '/apt-explorer/trends/', `Since ${formatDate(build.recent_since)}`],
 		['Name guesses', '/apt-explorer/guesses/', `${formatCount(guesses.guesses.length)} guesses`],
 		['Sources', '/apt-explorer/about/', `${sources.length} sources`]
 	];
@@ -77,6 +78,7 @@ test('Ways in has a link and a real count for each view', async ({ page }) => {
 		expect(new URL(await link.evaluate((a) => (a as HTMLAnchorElement).href)).pathname).toBe(href);
 		await expect(items.nth(i)).toContainText(new RegExp(count));
 	}
+	await expect(items.nth(4).getByRole('link', { name: 'Sources', exact: true })).toHaveAttribute('href', '/apt-explorer/about/#sources');
 });
 
 test('the source table lists every source with its policy, terms and health', async ({ page }) => {

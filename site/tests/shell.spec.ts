@@ -191,7 +191,8 @@ test('the footer shows the build date and links to sources and licences', async 
 	await expect(footer.locator('time')).toHaveAttribute('datetime', built);
 	await expect(footer.locator('time')).toHaveText(formatDate(built));
 	await footer.getByRole('link', { name: /sources and licences/i }).click();
-	await expect(page).toHaveURL(/\/apt-explorer\/about\/$/);
+	await expect(page).toHaveURL(/\/apt-explorer\/about\/#sources$/);
+	await expect(page.locator('#sources')).toBeInViewport();
 });
 
 test('the footer links to the name guesses page, inside the footer box at both widths', async ({ page }) => {

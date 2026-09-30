@@ -7,7 +7,9 @@
   "required": [
     "built_at",
     "version",
-    "report_years"
+    "report_years",
+    "report_count",
+    "recent_since"
   ],
   "properties": {
     "built_at": {
@@ -25,9 +27,23 @@
         "minimum": 1990
       },
       "uniqueItems": true
+    },
+    "report_count": {
+      "description": "How many reports the shards hold in all, undated included. Campaigns are not counted.",
+      "type": "integer",
+      "minimum": 0
+    },
+    "recent_since": {
+      "description": "The date the recent window starts, the same as trends.json window_start, so a page can say it without loading trends.json.",
+      "$ref": "#/$defs/date"
     }
   },
   "$defs": {
+    "date": {
+      "description": "A calendar date, YYYY-MM-DD, from 1990 on. Sentinel values such as 0001-01-01 mean 'unknown' and are written as null instead.",
+      "type": "string",
+      "pattern": "^(199[0-9]|2[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+    },
     "dateTime": {
       "description": "A UTC timestamp, YYYY-MM-DDTHH:MM:SSZ.",
       "type": "string",

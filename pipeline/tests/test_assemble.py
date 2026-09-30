@@ -117,6 +117,7 @@ def test_an_empty_build_is_still_a_complete_tree():
     payload = run(*[B(key) for key in SOURCE_ORDER])
     assert payload["actors/index.json"] == [] and payload["reports/undated.json"] == []
     assert payload["build.json"]["report_years"] == []
+    assert payload["build.json"]["report_count"] == 0
     assert len(payload["sources.json"]) == len(SOURCE_ORDER)
 
 
@@ -795,6 +796,8 @@ def test_build_json_says_when_and_which_shards():
     payload = run(*WORLD(orkl=orkl))
     assert payload["build.json"]["built_at"] == NOW
     assert payload["build.json"]["report_years"] == [2023, 2025]
+    assert payload["build.json"]["report_count"] == 3
+    assert payload["build.json"]["recent_since"] == payload["trends.json"]["window_start"]
     assert payload["build.json"]["version"]
 
 

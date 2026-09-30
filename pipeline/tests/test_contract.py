@@ -209,7 +209,8 @@ VALID = [
     ("actor", _actor()),
     ("sources", [_source()]),
     ("trends", _trends()),
-    ("build", {"built_at": "2026-09-28T03:21:05Z", "version": "0.1.0", "report_years": []}),
+    ("build", {"built_at": "2026-09-28T03:21:05Z", "version": "0.1.0", "report_years": [], "report_count": 0,
+            "recent_since": "2024-01-01"}),
 ]
 
 INVALID = [
@@ -351,6 +352,11 @@ def integrity_problems(tree: dict) -> list[str]:
     years = sorted(int(stem) for stem in shards if stem != "undated")
     if "build.json" in tree and tree["build.json"]["report_years"] != years:
         add(f"build.json report_years {tree['build.json']['report_years']} but the shards are {years}")
+    if "build.json" in tree and "trends.json" in tree and             tree["build.json"]["recent_since"] != tree["trends.json"]["window_start"]:
+        add("build.json recent_since is not trends.json window_start")
+    held = sum(len(rows) for rows in shards.values())
+    if "build.json" in tree and tree["build.json"]["report_count"] != held:
+        add(f"build.json report_count {tree['build.json']['report_count']} but the shards hold {held}")
 
     def need_actor(where: str, actor_id: str) -> None:
         if actor_id not in known:

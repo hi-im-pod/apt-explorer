@@ -202,6 +202,13 @@ def _cross_problems(parsed: dict[str, object]) -> list[str]:
     if sorted(parsed["build.json"]["report_years"]) != sorted(years):
         problems.append(f"build.json: report_years {parsed['build.json']['report_years']} does not match "
                         f"the report shards written {sorted(years)}")
+    if parsed["build.json"]["report_count"] != len(report_ids):
+        problems.append(f"build.json: report_count {parsed['build.json']['report_count']} but the report "
+                        f"shards hold {len(report_ids)} reports")
+
+    if parsed["build.json"]["recent_since"] != parsed["trends.json"]["window_start"]:
+        problems.append(f"build.json: recent_since {parsed['build.json']['recent_since']} but trends.json "
+                        f"window_start is {parsed['trends.json']['window_start']}")
 
     problems += _index_problems(parsed, report_ids)
 

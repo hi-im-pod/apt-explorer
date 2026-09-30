@@ -13,14 +13,13 @@
 		)
 	);
 	const hidden = $derived(grid.total - grid.rows.length);
-	const years = $derived(data.build?.report_years ?? []);
 
 	const ways = $derived([
 		{
 			path: '/explore/',
 			title: 'Explore reports',
 			text: 'Every report and campaign in one table you can filter by actor, source, date or CVE.',
-			count: years.length > 1 ? `${years[0]} to ${years[years.length - 1]}` : null
+			count: data.build ? `${formatCount(data.build.report_count)} reports` : null
 		},
 		{
 			path: '/actors/',
@@ -31,17 +30,17 @@
 		{
 			path: '/trends/',
 			title: 'Trends',
-			text: 'Which groups and techniques show up in the last 24 months of reporting.',
-			count: '24 months'
+			text: 'Which groups and techniques show up in the last two years of reporting.',
+			count: data.build ? `Since ${formatDate(data.build.recent_since)}` : null
 		},
 		{
 			path: '/guesses/',
 			title: 'Name guesses',
-			text: 'Names that look like the same group but no source has joined. Each comes with a score and the evidence.',
+			text: "Names from the paper's reports that match no known group. A program labels each one and gives a score and the evidence.",
 			count: `${formatCount(data.guessCount)} guesses`
 		},
 		{
-			path: '/about/',
+			path: '/about/#sources',
 			title: 'Sources',
 			text: 'Where every fact comes from, what we may publish from it, and when it was last fetched.',
 			count: `${formatCount(data.sources.length)} sources`
@@ -167,7 +166,7 @@
 	</table>
 	<p class="key">
 		Each source is fetched every week. When a fetch fails, the build keeps the last good snapshot and
-		marks the source stale. <a href="{base}/about/">Full licence table and fetch dates</a>
+		marks the source stale. <a href="{base}/about/#sources">Full licence table and fetch dates</a>
 	</p>
 	<p class="credit">
 		Built on the dataset of Yuldoshkhujaev et al. (CCS '25). <a href="{base}/about/#paper-heading"
