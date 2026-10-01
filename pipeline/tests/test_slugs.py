@@ -206,6 +206,23 @@ def test_a_new_attack_group_uses_its_group_id_as_the_slug():
     assert [a.id for a in first.actors] == ["G0099"]
 
 
+def test_a_group_id_slug_stays_with_its_own_group_when_a_second_group_pulls_the_records_away():
+    # ATT&CK once tracked one group, and other sources' records merged into it. A later matrix adds
+    # a second group that shares a name with most of those records. The two groups cannot merge, so
+    # the component splits, and the larger half must not take the first group's ID as its slug.
+    first = build([A("attack", "G0035", "Dragonfly", "Energetic Bear"),
+                   A("misp", "m1", "Energetic Bear", "Palmetto Fusion"),
+                   A("misp", "m2", "Palmetto Fusion"), A("etda", "e1", "Palmetto Fusion")], day="2026-01-01")
+    assert [a.id for a in first.actors] == ["G0035"]
+    second = build([A("attack", "G0035", "Dragonfly", "Energetic Bear"), A("attack", "G1000", "ALLANITE", "Palmetto Fusion"),
+                    A("misp", "m1", "Energetic Bear", "Palmetto Fusion"),
+                    A("misp", "m2", "Palmetto Fusion"), A("etda", "e1", "Palmetto Fusion")],
+                   first.slug_entries, day="2026-02-01")
+    by_group = {next(m.source_id for m in a.members if m.source == "attack"): a.id for a in second.actors}
+    assert by_group == {"G0035": "G0035", "G1000": "G1000"}
+    assert len({e["slug"] for e in second.slug_entries if not e["retired"]}) == 2
+
+
 def test_two_published_slugs_that_merge_into_an_attack_group_keep_the_older_one():
     first = build([A("misp", "m1", "Odd Bear"), A("misp", "m2", "Even Bear")], day="2026-01-01")
     second = build([A("misp", "m1", "Odd Bear"), A("misp", "m2", "Even Bear"),

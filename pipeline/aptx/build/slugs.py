@@ -123,6 +123,10 @@ def assign(candidates: Iterable[Candidate], previous: Iterable[Mapping], build_d
         for s, n in Counter(s for a in c.anchors for s in by_anchor.get(a, ())).items():
             claims[s].append((-n, rank, c.key))
     owner = {s: min(found)[2] for s, found in claims.items()}
+    # A group ID used as a slug belongs to the group that carries it, however the other records
+    # split, because two groups can never share an actor page.
+    by_group = {c.attack_id: c.key for c in ordered if c.attack_id}
+    owner.update({s: by_group[s] for s in matchable if s in by_group})
     owned: dict[str, list[str]] = defaultdict(list)
     for s, key in owner.items():
         owned[key].append(s)
