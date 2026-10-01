@@ -107,8 +107,8 @@
 	<h2 id="h-reporting-activity">Reporting Activity</h2>
 	{#if activity.actors.length}
 		<p class="lead">
-			The {activity.actors.length} actors with the most reports since {since}, quarter by quarter. Darker
-			cells mean more reports, on one scale that runs from 0 to {activityTop}.
+			The {activity.actors.length} actors with the most reports since {since}, quarter by quarter. Cells
+			with a stronger colour mean more reports, on one scale that runs from 0 to {activityTop}.
 		</p>
 		<Chart
 			title="Reports per quarter for the {activity.actors.length} most reported actors, as a grid with one row per actor"
@@ -116,7 +116,7 @@
 			plot={activityPlot}
 			height={activityHeight(activity.actors.length)}
 			axis="time"
-			legend={[{ label: 'Reports in the quarter, darker for more', token: '--chart-2' }]}
+			legend={[{ label: 'Reports in the quarter, stronger colour for more', token: '--chart-2' }]}
 		>
 			{#snippet table()}
 				<table class="numbers">

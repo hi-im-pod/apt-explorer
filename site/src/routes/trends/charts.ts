@@ -126,8 +126,7 @@ const ROW = 48;
 const CELL_TOP = 22;
 const CELL_BOTTOM = 2;
 const ACTIVITY_MARGINS = { marginTop: 4, marginRight: 8, marginBottom: 32, marginLeft: 32 };
-/** The faintest a quarter with reports is drawn; a quarter with none is fainter still. */
-const OPACITY_MIN = 0.22;
+/** How faint a quarter with no reports is drawn. */
 const OPACITY_NONE = 0.07;
 
 export function activityHeight(actors: number): number {
@@ -153,15 +152,43 @@ const luminance = ([r, g, b]: Rgb) => {
 
 const contrast = (a: number, b: number) => (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
 
-/** The text colour that reads best on the series colour drawn at `opacity` over the page background. */
-function inkOn(ctx: ChartContext, opacity: number): string {
-	const fill = hexRgb(ctx.series[1]);
+const mix = (a: Rgb, b: Rgb, t: number): Rgb => a.map((c, i) => c + (b[i] - c) * t) as Rgb;
+const toHex = (c: Rgb) => `#${c.map((v) => Math.round(v).toString(16).padStart(2, '0')).join('')}`;
+
+/** WCAG's floor for normal-size text, so a count stays readable on every cell. */
+const MIN_CONTRAST = 4.5;
+/** How far the strongest cell moves from the series colour toward the page's text colour. */
+const STRONG_SHIFT = 0.5;
+
+/**
+ * The heatmap's cell colours and the one ink that every count is written in.
+ *
+ * The ink is the page background colour, so it is light on a light theme and dark on a dark one.
+ * Each cell is the series colour, faded toward the page as far as the ink still reads (the
+ * lightest cell) and pushed toward the text colour for the most reports (the strongest cell).
+ * The count in every cell then has one colour and at least the contrast floor against its cell.
+ */
+function heatScale(ctx: ChartContext): { ink: string; cell: (share: number) => string } {
+	const series = hexRgb(ctx.series[1]);
 	const page = hexRgb(ctx.background);
-	const ink = hexRgb(ctx.text);
-	if (!fill || !page || !ink) return ctx.text;
-	const blended = fill.map((c, i) => c * opacity + page[i] * (1 - opacity)) as Rgb;
-	const under = luminance(blended);
-	return contrast(luminance(ink), under) >= contrast(luminance(page), under) ? ctx.text : ctx.background;
+	const text = hexRgb(ctx.text);
+	if (!series || !page || !text) return { ink: ctx.background, cell: () => ctx.series[1] };
+	const inkLum = luminance(page);
+	const reads = (c: Rgb) => contrast(inkLum, luminance(c)) >= MIN_CONTRAST;
+	// The fade that keeps the floor: the largest step toward the page that still reads.
+	let fade = 0;
+	if (reads(series)) {
+		let [lo, hi] = [0, 1];
+		for (let i = 0; i < 20; i++) {
+			const mid = (lo + hi) / 2;
+			if (reads(mix(series, page, mid))) lo = mid;
+			else hi = mid;
+		}
+		fade = lo;
+	}
+	const weak = mix(series, page, fade);
+	const strong = mix(series, text, STRONG_SHIFT);
+	return { ink: ctx.background, cell: (share) => toHex(mix(weak, strong, share)) };
 }
 
 export function activityChart(a: Activity, names: Record<string, string>) {
@@ -188,8 +215,8 @@ export function activityChart(a: Activity, names: Record<string, string>) {
 		const format = (d: Date) => picked.format(startOf.get(d.getTime()) ?? d);
 		const top = Math.max(1, ...a.points.map((p) => p.count));
 		const name = (id: string) => names[id] ?? id;
-		const opacity = (p: Point) =>
-			p.count === 0 ? OPACITY_NONE : OPACITY_MIN + (1 - OPACITY_MIN) * Math.sqrt(p.count / top);
+		const heat = heatScale(ctx);
+		const share = (p: Point) => Math.sqrt(p.count / top);
 		const tip = (p: Point) =>
 			`${name(p.actor)}, ${quarterName(p.quarter)}\n${plural(p.count, 'report', 'reports')}\n${plural(p.prev, 'report', 'reports')} a year earlier`;
 
@@ -202,8 +229,8 @@ export function activityChart(a: Activity, names: Record<string, string>) {
 					y: 'actor',
 					x1: 'start',
 					x2: 'end',
-					fill: ctx.series[1],
-					fillOpacity: opacity,
+					fill: (p: Point) => (p.count === 0 ? ctx.series[1] : heat.cell(share(p))),
+					fillOpacity: (p: Point) => (p.count === 0 ? OPACITY_NONE : 1),
 					insetTop: CELL_TOP,
 					insetBottom: CELL_BOTTOM,
 					insetLeft: inset,
@@ -218,7 +245,7 @@ export function activityChart(a: Activity, names: Record<string, string>) {
 						x: midpoint,
 						text: (p: Point) => formatCount(p.count),
 						dy: (CELL_TOP - CELL_BOTTOM) / 2,
-						fill: (p: Point) => inkOn(ctx, opacity(p)),
+						fill: heat.ink,
 						fontSize: 12,
 						fontWeight: 600
 					}

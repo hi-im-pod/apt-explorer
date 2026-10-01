@@ -112,6 +112,7 @@ test("the charts redraw in the new theme's colours", async ({ page }) => {
 	await useTheme(page, 'light');
 	await open(page);
 	const before = await barFills(page, 'kev_monthly');
+	const heatBefore = new Set(await barFills(page, 'reporting_activity'));
 	expect((await chartTokens(page)).some((t) => before.includes(t))).toBe(true);
 
 	await page.getByRole('button', { name: /theme/i }).click();
@@ -123,6 +124,11 @@ test("the charts redraw in the new theme's colours", async ({ page }) => {
 	for (const key of CHARTS) {
 		const fills = new Set(await barFills(page, key));
 		expect(fills.size, key).toBeGreaterThan(0);
+		if (key === 'reporting_activity') {
+			// Heatmap cells are blends of two theme colours, so no cell is a bare token. None may keep the old theme's colour.
+			for (const fill of fills) expect(heatBefore.has(fill), `${key} ${fill}`).toBe(false);
+			continue;
+		}
 		for (const fill of fills) expect(tokens, `${key} ${fill}`).toContain(fill);
 	}
 });
@@ -176,6 +182,38 @@ for (const t of themes) {
 			const box = (await chart(page, key).locator('svg').first().boundingBox())!;
 			expect(box.x, key).toBeGreaterThanOrEqual(0);
 			expect(box.x + box.width, key).toBeLessThanOrEqual(375);
+		}
+	});
+}
+
+for (const t of themes) {
+	test(`in ${t} every count in the activity heatmap has one colour and reads against its cell`, async ({ page }) => {
+		await useTheme(page, t);
+		await open(page);
+		const painted = await chart(page, 'reporting_activity').evaluate((root) => {
+			const rgb = (v: string) => (v.match(/[\d.]+/g) ?? []).slice(0, 3).map(Number);
+			const cells = [...root.querySelectorAll('[aria-label="bar"] rect, [aria-label="bar"] path')]
+				.map((el) => getComputedStyle(el))
+				.filter((st) => Number(st.fillOpacity) === 1)
+				.map((st) => rgb(st.fill));
+			const counts = [...root.querySelectorAll('text')]
+				.filter((el) => /^[\d,]+$/.test(el.textContent ?? ''))
+				.map((el) => rgb(getComputedStyle(el).fill));
+			return { cells, counts };
+		});
+		expect(painted.counts.length).toBeGreaterThan(0);
+		expect(painted.counts.length).toBe(painted.cells.length);
+		expect(new Set(painted.counts.map((c) => c.join(','))).size).toBe(1);
+		const lum = ([r, g, b]: number[]) => {
+			const lin = (c: number) => ((c / 255) <= 0.03928 ? c / 255 / 12.92 : ((c / 255 + 0.055) / 1.055) ** 2.4);
+			return 0.2126 * lin(r) + 0.7152 * lin(g) + 0.0722 * lin(b);
+		};
+		const ratio = (a: number[], b: number[]) => {
+			const [x, y] = [lum(a), lum(b)];
+			return (Math.max(x, y) + 0.05) / (Math.min(x, y) + 0.05);
+		};
+		for (const [i, cell] of painted.cells.entries()) {
+			expect(ratio(painted.counts[i], cell), `cell ${i}`).toBeGreaterThanOrEqual(4.5);
 		}
 	});
 }
