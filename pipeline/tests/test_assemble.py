@@ -13,7 +13,8 @@ from aptx.resolve.registry import resolve
 NOW = "2026-09-30T04:00:00Z"
 SNAP = "2026-09-28"
 POLICIES = {"attack": "full", "misp": "full", "etda": "derived-only", "malpedia": "derived-only",
-            "orkl": "link-only", "kev": "full", "dfir": "link-only", "paper": "full", "microsoft": "full"}
+            "orkl": "link-only", "kev": "full", "dfir": "link-only", "paper": "full", "microsoft": "full",
+            "epss": "full"}
 TECHNIQUES = frozenset({"T1059", "T1105", "T1190", "T1566", "T1566.002", "T1505.003", "T1090.003"})
 FACTS = BuildFacts(copyright_year="2026", valid_techniques=TECHNIQUES,
                    snapshot_dates={key: SNAP for key in SOURCE_ORDER})
@@ -38,9 +39,9 @@ def C(sid, name, actors=(), **kw):
                           retrieved_at=SNAP, **kw)
 
 
-def V(cve, added=None, ransomware=None, vendor=None, product=None):
+def V(cve, added=None, ransomware=None, vendor=None, product=None, epss=None, percentile=None):
     return VulnRecord(cve=cve, kev_date_added=added, ransomware=ransomware, vendor=vendor, product=product,
-                      retrieved_at=SNAP)
+                      epss=epss, epss_percentile=percentile, retrieved_at=SNAP)
 
 
 def B(source, **kw):
@@ -604,7 +605,7 @@ def test_report_text_is_tidied_and_a_bad_url_is_dropped():
 
 # Actor pages: reports, timeline, techniques, CVEs
 
-def _busy_world():
+def _busy_world(policies=None, **extra):
     orkl = B("orkl", reports=[
         R("orkl", "1", "Q1 2024", "https://ex.org/1", "2024-02-10", techniques=["T1059", "T1190"],
           cves=["CVE-2024-0001"]),
@@ -616,7 +617,8 @@ def _busy_world():
     links = {f"ex.org/{n}": ["APT28"] for n in range(1, 6)}
     kev = B("kev", vulns=[V("CVE-2024-0001", "2024-02-01", True, "Vendor", "Product"),
                           V("CVE-2023-0009", "2023-05-01", False, "Other", "Thing")])
-    return run(*WORLD(orkl=orkl, kev=kev), facts=replace(FACTS, malpedia_report_links=links))
+    return run(*WORLD(orkl=orkl, kev=kev, **extra), policies=policies,
+               facts=replace(FACTS, malpedia_report_links=links))
 
 
 def test_an_actor_page_lists_reports_newest_first_with_undated_last():
@@ -659,11 +661,35 @@ def test_vulns_hold_every_kev_cve_and_every_cve_named_in_a_published_report():
     assert set(vulns) == {"CVE-2023-0009", "CVE-2024-0001", "CVE-2025-0002"}
     assert vulns["CVE-2024-0001"] == {"cve": "CVE-2024-0001", "kev_date_added": "2024-02-01", "ransomware": True,
                                       "vendor": "Vendor", "product": "Product", "actors": ["G0007"],
-                                      "report_count": 2}
+                                      "report_count": 2, "epss": None, "epss_percentile": None}
     assert vulns["CVE-2023-0009"]["actors"] == [] and vulns["CVE-2023-0009"]["report_count"] == 0
     assert vulns["CVE-2025-0002"] == {"cve": "CVE-2025-0002", "kev_date_added": None, "ransomware": None,
-                                      "vendor": None, "product": None, "actors": ["G0007"], "report_count": 1}
+                                      "vendor": None, "product": None, "actors": ["G0007"], "report_count": 1,
+                                      "epss": None, "epss_percentile": None}
     assert [v["cve"] for v in _busy_world()["vulns.json"]] == sorted(vulns)
+
+
+def test_epss_scores_attach_to_cves_the_page_already_lists_and_never_add_one():
+    payload = _busy_world(epss=B("epss", vulns=[V("CVE-2024-0001", epss=0.5, percentile=0.9),
+                                                V("CVE-2023-0009", epss=0.01, percentile=0.2),
+                                                V("CVE-2020-9999", epss=0.99, percentile=1.0)]))
+    vulns = {v["cve"]: v for v in payload["vulns.json"]}
+    assert set(vulns) == {"CVE-2023-0009", "CVE-2024-0001", "CVE-2025-0002"}
+    assert (vulns["CVE-2024-0001"]["epss"], vulns["CVE-2024-0001"]["epss_percentile"]) == (0.5, 0.9)
+    assert vulns["CVE-2024-0001"]["vendor"] == "Vendor"
+    assert vulns["CVE-2025-0002"]["epss"] is None
+
+
+def test_an_out_of_range_epss_score_is_not_published():
+    payload = _busy_world(epss=B("epss", vulns=[V("CVE-2024-0001", epss=1.5, percentile=0.9)]))
+    row = {v["cve"]: v for v in payload["vulns.json"]}["CVE-2024-0001"]
+    assert (row["epss"], row["epss_percentile"]) == (None, 0.9)
+
+
+def test_epss_is_not_published_when_its_policy_says_so():
+    payload = _busy_world(policies={"epss": "evidence-only"},
+                          epss=B("epss", vulns=[V("CVE-2024-0001", epss=0.5, percentile=0.9)]))
+    assert {v["epss"] for v in payload["vulns.json"]} == {None}
 
 
 def test_kev_is_not_published_when_its_policy_says_so_but_report_cves_still_are():
@@ -672,7 +698,8 @@ def test_kev_is_not_published_when_its_policy_says_so_but_report_cves_still_are(
                                                    cves=["CVE-2024-0001"])])),
                   policies={"kev": "evidence-only"})
     assert payload["vulns.json"] == [{"cve": "CVE-2024-0001", "kev_date_added": None, "ransomware": None,
-                                      "vendor": None, "product": None, "actors": [], "report_count": 1}]
+                                      "vendor": None, "product": None, "actors": [], "report_count": 1,
+                                      "epss": None, "epss_percentile": None}]
     assert payload["trends.json"]["kev_monthly"] == []
 
 

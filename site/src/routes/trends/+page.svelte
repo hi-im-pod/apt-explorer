@@ -212,11 +212,15 @@
 <section id="kev-actor-links" aria-labelledby="h-kev-actor-links">
 	<h2 id="h-kev-actor-links">Exploited Vulnerabilities in Actor Reports</h2>
 	{#if kevLinks.length}
-		<KevTable links={kevLinks} names={data.names} />
+		<KevTable links={kevLinks} names={data.names} scores={data.scores} />
 	{:else}
 		<p class="empty">No KEV CVE shares a report with a resolved actor in this window.</p>
 	{/if}
 	<p class="note">{t.notes.kev_actor_links}</p>
+	<p class="note">
+		EPSS is the Exploit Prediction Scoring System from FIRST. Each score is the modelled chance that the CVE is
+		exploited in the next 30 days, shown as published. It is not a measure of impact.
+	</p>
 </section>
 
 <section id="reported-vs-documented" aria-labelledby="h-reported-vs-documented">

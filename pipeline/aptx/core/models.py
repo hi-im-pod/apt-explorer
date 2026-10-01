@@ -87,6 +87,10 @@ class VulnRecord(_Record):
     ransomware: bool | None = None
     vendor: str | None = None
     product: str | None = None
+    # EPSS: the modelled probability of exploitation in the next 30 days, and
+    # where that probability ranks among all scored CVEs. Both are 0 to 1.
+    epss: float | None = None
+    epss_percentile: float | None = None
     retrieved_at: str
 
 

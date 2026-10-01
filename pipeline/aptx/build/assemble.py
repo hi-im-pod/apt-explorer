@@ -638,10 +638,15 @@ def _campaigns(by_source, policies, registry, published_ids, valid_techniques) -
     return [seen[k] for k in sorted(seen)]
 
 
+# These sources score CVEs that other sources or reports already name. Their catalogues
+# cover nearly every CVE ever issued, so they never add a row of their own.
+_SCORES_ONLY = frozenset({"epss"})
+
+
 def _vulns(by_source, policies, reports: list[_Report]) -> list[dict]:
     rows: dict[str, dict] = {}
     for source in SOURCE_ORDER:
-        if policies[source] not in _SHOWS_FACTS or source not in by_source:
+        if policies[source] not in _SHOWS_FACTS or source not in by_source or source in _SCORES_ONLY:
             continue
         for v in sorted(by_source[source].vulns, key=lambda v: v.cve):
             cve = v.cve.strip().upper()
@@ -653,6 +658,13 @@ def _vulns(by_source, policies, reports: list[_Report]) -> list[dict]:
             named[cve].append(r)
     for cve in named:
         rows.setdefault(cve, _vuln_row(cve, None))
+    for source in _SCORES_ONLY:
+        if policies[source] not in _SHOWS_FACTS or source not in by_source:
+            continue
+        for v in by_source[source].vulns:
+            row = rows.get(v.cve.strip().upper())
+            if row is not None and row["epss"] is None:
+                row["epss"], row["epss_percentile"] = _score(v.epss), _score(v.epss_percentile)
     for cve, row in rows.items():
         row["actors"] = sorted({a for r in named.get(cve, ()) for a in r.actors})
         row["report_count"] = len(named.get(cve, ()))
@@ -662,7 +674,13 @@ def _vulns(by_source, policies, reports: list[_Report]) -> list[dict]:
 def _vuln_row(cve: str, v: VulnRecord | None) -> dict:
     return {"cve": cve, "kev_date_added": parse_date(v.kev_date_added) if v else None,
             "ransomware": v.ransomware if v else None, "vendor": _tidy(v.vendor) if v else None,
-            "product": _tidy(v.product) if v else None, "actors": [], "report_count": 0}
+            "product": _tidy(v.product) if v else None, "epss": None, "epss_percentile": None,
+            "actors": [], "report_count": 0}
+
+
+def _score(value: float | None) -> float | None:
+    # A score outside 0 to 1 is a broken feed, and it must not reach the contract.
+    return round(value, 5) if value is not None and 0 <= value <= 1 else None
 
 
 # Sources and resolution

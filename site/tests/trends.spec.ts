@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { test, expect, type Locator, type Page } from '@playwright/test';
-import type { ActorsIndex, Trends } from '../src/lib/data/types';
+import type { ActorsIndex, Trends, Vulns } from '../src/lib/data/types';
 import { sourceLabel } from '../src/lib/data/labels';
 
 // Expectations come from the same data/ the site is built from.
@@ -8,6 +8,9 @@ const read = <T>(path: string): T =>
 	JSON.parse(readFileSync(new URL(`../../data/${path}`, import.meta.url), 'utf8')) as T;
 const trends = read<Trends>('trends.json');
 const actors = read<ActorsIndex>('actors/index.json');
+const vulns = read<Vulns>('vulns.json');
+const epssOf = (cve: string) => vulns.find((v) => v.cve === cve)?.epss ?? null;
+const percentOf = (p: number) => (p < 0.001 ? 'under 0.1%' : p >= 0.9995 ? 'over 99.9%' : `${(p * 100).toFixed(1)}%`);
 const nameOf = (id: string) => actors.find((a) => a.id === id)?.name ?? id;
 
 const TRENDS = '/apt-explorer/trends/';
@@ -415,6 +418,33 @@ for (const vp of [
 		await expect(link).toHaveAttribute('href', `/apt-explorer/explore/?cve=${cve}`);
 	});
 }
+
+test('each KEV row shows its EPSS score, and the sort puts the highest score first', async ({ page }) => {
+	await page.setViewportSize({ width: 1280, height: 900 });
+	await open(page);
+	const box = section(page, 'kev_actor_links');
+	await expect(box.getByRole('columnheader', { name: /EPSS/ })).toBeVisible();
+	const first = box.getByRole('row').nth(1);
+	const cve = (await first.getByRole('link').innerText()).trim();
+	const score = epssOf(cve);
+	if (score === null) await expect(first).toContainText('Not scored');
+	else await expect(first).toContainText(percentOf(score));
+
+	await box.getByLabel('Sort by').selectOption('epss');
+	await expect(box.getByText(`Rows 1 to 25 of ${trends.kev_actor_links.length}`, { exact: true })).toBeVisible();
+	const top = trends.kev_actor_links.map((l) => epssOf(l.cve) ?? -1).sort((a, b) => b - a)[0];
+	const sortedFirst = (await box.getByRole('row').nth(1).getByRole('link').innerText()).trim();
+	expect(epssOf(sortedFirst)).toBe(top);
+	await noHorizontalScroll(page);
+});
+
+test('at 375px the EPSS score reads as a sentence and the table does not scroll sideways', async ({ page }) => {
+	await page.setViewportSize({ width: 375, height: 800 });
+	await open(page);
+	const box = section(page, 'kev_actor_links');
+	await expect(box.getByText(/chance of exploitation in the next 30 days/).first()).toBeVisible();
+	await noHorizontalScroll(page);
+});
 
 test('a CVE with many actors folds the extra names into a native disclosure that holds every name', async ({ page }) => {
 	await open(page);

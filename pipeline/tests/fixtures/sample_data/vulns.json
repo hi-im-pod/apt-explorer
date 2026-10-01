@@ -9,7 +9,9 @@
       "G0032",
       "G0096"
     ],
-    "report_count": 3
+    "report_count": 3,
+    "epss": 0.94358,
+    "epss_percentile": 0.99991
   },
   {
     "cve": "CVE-2022-30190",
@@ -18,7 +20,9 @@
     "vendor": "Microsoft",
     "product": "Windows",
     "actors": [],
-    "report_count": 0
+    "report_count": 0,
+    "epss": 0.91207,
+    "epss_percentile": 0.99634
   },
   {
     "cve": "CVE-2023-23397",
@@ -29,7 +33,9 @@
     "actors": [
       "G0007"
     ],
-    "report_count": 3
+    "report_count": 3,
+    "epss": 0.55021,
+    "epss_percentile": 0.97812
   },
   {
     "cve": "CVE-2023-34362",
@@ -38,7 +44,9 @@
     "vendor": "Progress",
     "product": "MOVEit Transfer",
     "actors": [],
-    "report_count": 1
+    "report_count": 1,
+    "epss": 0.00043,
+    "epss_percentile": 0.0987
   },
   {
     "cve": "CVE-2023-4966",
@@ -47,7 +55,9 @@
     "vendor": "Citrix",
     "product": "NetScaler ADC and NetScaler Gateway",
     "actors": [],
-    "report_count": 1
+    "report_count": 1,
+    "epss": null,
+    "epss_percentile": null
   },
   {
     "cve": "CVE-2024-1709",
@@ -56,7 +66,9 @@
     "vendor": "ConnectWise",
     "product": "ScreenConnect",
     "actors": [],
-    "report_count": 0
+    "report_count": 0,
+    "epss": null,
+    "epss_percentile": null
   },
   {
     "cve": "CVE-2024-3400",
@@ -65,7 +77,9 @@
     "vendor": "Palo Alto Networks",
     "product": "PAN-OS",
     "actors": [],
-    "report_count": 1
+    "report_count": 1,
+    "epss": null,
+    "epss_percentile": null
   },
   {
     "cve": "CVE-2026-100123",
@@ -76,6 +90,8 @@
     "actors": [
       "glass-heron"
     ],
-    "report_count": 1
+    "report_count": 1,
+    "epss": null,
+    "epss_percentile": null
   }
 ]

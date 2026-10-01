@@ -62,6 +62,11 @@ export const SOURCE_LABELS: Readonly<Record<SourceKey, SourceLabel>> = {
 		name: 'Microsoft threat actor naming table',
 		short: 'Microsoft',
 		role: "Microsoft's names for actors, with the aliases other vendors use and the origin it gives."
+	},
+	epss: {
+		name: 'EPSS exploit prediction scores',
+		short: 'EPSS',
+		role: 'The modelled chance that each listed CVE is exploited in the next 30 days.'
 	}
 };
 

@@ -34,6 +34,7 @@ from aptx.sources.attack import AttackConnector
 from aptx.sources.base import Connector, now_iso
 from aptx.sources.dfir import DfirConnector
 from aptx.sources.etda import EtdaConnector
+from aptx.sources.epss import EpssConnector
 from aptx.sources.kev import KevConnector
 from aptx.sources.malpedia import MalpediaConnector
 from aptx.sources.microsoft import MicrosoftConnector
@@ -57,9 +58,10 @@ LINK_STATUS = Path("links") / "status.json"
 
 
 def default_connectors() -> list[Connector]:
-    """The nine sources, listed here and nowhere else, in the order notice.SOURCE_ORDER uses."""
+    """The ten sources, listed here and nowhere else, in the order notice.SOURCE_ORDER uses."""
     return [AttackConnector(), MispConnector(), EtdaConnector(), MalpediaConnector(),
-            OrklConnector(), KevConnector(), DfirConnector(), PaperConnector(), MicrosoftConnector()]
+            OrklConnector(), KevConnector(), DfirConnector(), PaperConnector(), MicrosoftConnector(),
+            EpssConnector()]
 
 
 # Small JSON files in the snapshot store

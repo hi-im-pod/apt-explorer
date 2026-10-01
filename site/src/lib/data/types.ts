@@ -349,6 +349,10 @@ export interface Vuln {
 	product: string | null;
 	actors: ActorId[];
 	report_count: number;
+	/** EPSS: the modelled chance of exploitation in the next 30 days, 0 to 1. Null when EPSS has not scored the CVE. */
+	epss: number | null;
+	/** Where that score ranks among all EPSS-scored CVEs, 0 to 1. Null when `epss` is. */
+	epss_percentile: number | null;
 }
 
 /**

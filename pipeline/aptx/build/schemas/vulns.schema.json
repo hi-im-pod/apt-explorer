@@ -18,7 +18,9 @@
         "vendor",
         "product",
         "actors",
-        "report_count"
+        "report_count",
+        "epss",
+        "epss_percentile"
       ],
       "properties": {
         "cve": {
@@ -52,6 +54,14 @@
         "report_count": {
           "$ref": "#/$defs/count",
           "description": "Published reports that name the CVE."
+        },
+        "epss": {
+          "description": "EPSS, the modelled probability that the CVE is exploited in the next 30 days. Null when EPSS has not scored the CVE.",
+          "$ref": "#/$defs/score"
+        },
+        "epss_percentile": {
+          "description": "The share of all EPSS-scored CVEs whose score is at or below this one. Null when EPSS has not scored the CVE.",
+          "$ref": "#/$defs/score"
         }
       }
     },
@@ -68,6 +78,15 @@
       "description": "A CVE ID in upper case.",
       "type": "string",
       "pattern": "^CVE-[0-9]{4}-[0-9]{4,7}$"
+    },
+    "score": {
+      "description": "A probability from 0 to 1, or null when none is known.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
     },
     "nullableDate": {
       "description": "A date, or null when none is known.",
