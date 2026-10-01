@@ -2136,7 +2136,9 @@
     "ransomware": null,
     "vendor": null,
     "product": null,
-    "actors": [],
+    "actors": [
+      "G0034"
+    ],
     "report_count": 1
   },
   {
@@ -8280,8 +8282,7 @@
       "ta428",
       "tianwu",
       "uac-0006",
-      "uac-0050",
-      "unc215"
+      "uac-0050"
     ],
     "report_count": 259
   },
@@ -9218,7 +9219,6 @@
       "tianwu",
       "uac-0006",
       "uac-0050",
-      "unc215",
       "unc3973",
       "vice-spider"
     ],
@@ -17525,8 +17525,7 @@
       "G0049",
       "G0087",
       "G0096",
-      "G0125",
-      "unc215"
+      "G0125"
     ],
     "report_count": 13
   },
@@ -24496,8 +24495,7 @@
       "G0049",
       "G0087",
       "G0096",
-      "G0125",
-      "unc215"
+      "G0125"
     ],
     "report_count": 5
   },

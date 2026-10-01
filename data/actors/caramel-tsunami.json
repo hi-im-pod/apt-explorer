@@ -6,7 +6,8 @@
       "value": "Caramel Tsunami",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -22,9 +23,20 @@
         "misp",
         "malpedia"
       ]
+    },
+    {
+      "value": "DEV-0236",
+      "sources": [
+        "microsoft"
+      ]
     }
   ],
-  "origin": [],
+  "origin": [
+    {
+      "value": "IL",
+      "source": "microsoft"
+    }
+  ],
   "sponsor": [],
   "motivation": [],
   "claimed_targets": {
@@ -61,5 +73,5 @@
     "2c859b479d88ce91c8ab247797bab045e8bb8718"
   ],
   "conflicts": [],
-  "evidence_count": 3
+  "evidence_count": 4
 }

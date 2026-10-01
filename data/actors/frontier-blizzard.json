@@ -1,0 +1,38 @@
+{
+  "id": "frontier-blizzard",
+  "name": "Frontier Blizzard",
+  "aliases": [
+    {
+      "value": "Frontier Blizzard",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "UNC5792",
+      "sources": [
+        "microsoft"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "RU",
+      "source": "microsoft"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 0
+}

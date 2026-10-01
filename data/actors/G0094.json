@@ -8,7 +8,8 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -17,7 +18,18 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Emerald Sleet",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -30,12 +42,21 @@
       ]
     },
     {
-      "value": "Emerald Sleet",
+      "value": "THALLIUM",
       "sources": [
         "attack",
         "misp",
-        "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "APT43",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -44,22 +65,6 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "THALLIUM",
-      "sources": [
-        "attack",
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "APT43",
-      "sources": [
-        "attack",
-        "misp",
         "malpedia"
       ]
     },
@@ -104,6 +109,30 @@
       ]
     },
     {
+      "value": "Opal Sleet",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "OSMIUM",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Konni",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
       "value": "TA427",
       "sources": [
         "attack",
@@ -112,6 +141,27 @@
     },
     {
       "value": "Operation Stolen Pencil",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "RGB-D5",
+      "sources": [
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Greendinosa",
+      "sources": [
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Vedalia",
       "sources": [
         "misp",
         "malpedia"
@@ -166,15 +216,27 @@
       ]
     },
     {
-      "value": "RGB-D5",
+      "value": "VELVET CHOLLIMA",
       "sources": [
-        "malpedia"
+        "microsoft"
       ]
     },
     {
-      "value": "Greendinosa",
+      "value": "Planedown",
       "sources": [
-        "malpedia"
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Ruby Sleet",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "CERIUM",
+      "sources": [
+        "microsoft"
       ]
     }
   ],
@@ -190,6 +252,10 @@
     {
       "value": "KP",
       "source": "malpedia"
+    },
+    {
+      "value": "KP",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -572,6 +638,7 @@
     "T1608.001",
     "T1620",
     "T1657",
+    "T1660",
     "T1678",
     "T1680",
     "T1682",
@@ -638,6 +705,10 @@
     },
     {
       "id": "T1620",
+      "count": 2
+    },
+    {
+      "id": "T1660",
       "count": 2
     },
     {
@@ -753,11 +824,27 @@
       "count": 1
     },
     {
+      "id": "T1417.001",
+      "count": 1
+    },
+    {
+      "id": "T1418",
+      "count": 1
+    },
+    {
+      "id": "T1437",
+      "count": 1
+    },
+    {
       "id": "T1497.001",
       "count": 1
     },
     {
       "id": "T1518.001",
+      "count": 1
+    },
+    {
+      "id": "T1541",
       "count": 1
     },
     {
@@ -785,6 +872,10 @@
       "count": 1
     },
     {
+      "id": "T1575",
+      "count": 1
+    },
+    {
       "id": "T1585.001",
       "count": 1
     },
@@ -798,6 +889,10 @@
     },
     {
       "id": "T1589",
+      "count": 1
+    },
+    {
+      "id": "T1646",
       "count": 1
     }
   ],
@@ -1152,7 +1247,7 @@
     },
     {
       "quarter": "2022-Q1",
-      "count": 3
+      "count": 4
     },
     {
       "quarter": "2022-Q2",
@@ -1164,7 +1259,7 @@
     },
     {
       "quarter": "2022-Q4",
-      "count": 2
+      "count": 3
     },
     {
       "quarter": "2023-Q1",
@@ -1258,6 +1353,7 @@
     "1dee7a6195d27712adf1cf29121fcfcdbb070942",
     "0f21a5b2466bb133651b7524820cf3bf0f968de5",
     "f47cabf491ff1a3e54b07989853f77a10f662934",
+    "paper:Rewterz%20Threat%20Alert%20-%20KONNI%20APT%20Group%20-%20Active%20IOCs",
     "d024ba07693e90631f56e0ccf049775a082516ca",
     "1138d174099e24eea4d84a44a1586e953c1a3cdd",
     "7558a8942a7a3b6a31ed61a0da636e489f5287dc",
@@ -1267,6 +1363,7 @@
     "e523d1625e8b6aa299ff32e9ef5e94326f61544e",
     "fdf53fac0af9cced76179fb1b9df0ce009952e36",
     "964ad2434f2954786c6abcd25062835cfa1f8489",
+    "9a4bfa953645a026d375321eef37b893847d80ad",
     "4730e151de6ac586d54ee0268bdbcf6bd214bbe2",
     "7f1705015b2a3bc32ac9e8b2d8230c73a944b970",
     "6df8cf1bd9dca91d1715ad47a6ffb72df618f336",
@@ -1307,5 +1404,5 @@
     "c5bbe09a6d3ada643082681cc44f6583f166aa71"
   ],
   "conflicts": [],
-  "evidence_count": 35
+  "evidence_count": 48
 }

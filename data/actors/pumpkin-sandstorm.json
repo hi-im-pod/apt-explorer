@@ -1,0 +1,38 @@
+{
+  "id": "pumpkin-sandstorm",
+  "name": "Pumpkin Sandstorm",
+  "aliases": [
+    {
+      "value": "Pumpkin Sandstorm",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "DEV-0146",
+      "sources": [
+        "microsoft"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IR",
+      "source": "microsoft"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 0
+}

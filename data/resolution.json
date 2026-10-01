@@ -1,11 +1,11 @@
 {
   "stats": {
-    "source_record_count": 2791,
-    "actor_count": 1059,
-    "merge_count": 1732,
-    "evidence_edge_count": 4048,
-    "ambiguity_count": 107,
-    "non_actor_name_count": 5191
+    "source_record_count": 2965,
+    "actor_count": 1092,
+    "merge_count": 1873,
+    "evidence_edge_count": 4438,
+    "ambiguity_count": 133,
+    "non_actor_name_count": 5253
   },
   "paper_match": {
     "names_total": 443,
@@ -33,6 +33,13 @@
       "candidates": [
         "G0003",
         "G0049"
+      ]
+    },
+    {
+      "alias": "apt36",
+      "candidates": [
+        "G0134",
+        "G1008"
       ]
     },
     {
@@ -78,6 +85,13 @@
       ]
     },
     {
+      "alias": "atk6",
+      "candidates": [
+        "G0034",
+        "G1000"
+      ]
+    },
+    {
       "alias": "axiom",
       "candidates": [
         "G0001",
@@ -106,6 +120,13 @@
       ]
     },
     {
+      "alias": "berserkbear",
+      "candidates": [
+        "G0035",
+        "G1000"
+      ]
+    },
+    {
       "alias": "blackfly",
       "candidates": [
         "G0044",
@@ -120,10 +141,10 @@
       ]
     },
     {
-      "alias": "bleedingbear",
+      "alias": "bluekraken",
       "candidates": [
-        "G1003",
-        "G1031"
+        "G0034",
+        "G1000"
       ]
     },
     {
@@ -131,6 +152,13 @@
       "candidates": [
         "G0082",
         "G0138"
+      ]
+    },
+    {
+      "alias": "bromine",
+      "candidates": [
+        "G0035",
+        "G1000"
       ]
     },
     {
@@ -155,13 +183,6 @@
       ]
     },
     {
-      "alias": "cadetblizzard",
-      "candidates": [
-        "G1003",
-        "G1031"
-      ]
-    },
-    {
       "alias": "calcium",
       "candidates": [
         "G0008",
@@ -173,6 +194,13 @@
       "candidates": [
         "G0008",
         "G0046"
+      ]
+    },
+    {
+      "alias": "cerium",
+      "candidates": [
+        "G0067",
+        "G0094"
       ]
     },
     {
@@ -225,6 +253,13 @@
       ]
     },
     {
+      "alias": "crouchingyeti",
+      "candidates": [
+        "G0035",
+        "G1000"
+      ]
+    },
+    {
       "alias": "deeppanda",
       "candidates": [
         "G0009",
@@ -246,11 +281,32 @@
       ]
     },
     {
+      "alias": "dev0206",
+      "candidates": [
+        "G0119",
+        "G1020"
+      ]
+    },
+    {
       "alias": "diamondsleet",
       "candidates": [
         "G0032",
         "G0138",
         "G1049"
+      ]
+    },
+    {
+      "alias": "dragonfly",
+      "candidates": [
+        "G0035",
+        "G1000"
+      ]
+    },
+    {
+      "alias": "dymalloy",
+      "candidates": [
+        "G0035",
+        "G1000"
       ]
     },
     {
@@ -278,6 +334,7 @@
       "alias": "elderwood",
       "candidates": [
         "G0025",
+        "G0026",
         "G0066"
       ]
     },
@@ -289,17 +346,10 @@
       ]
     },
     {
-      "alias": "electrum",
+      "alias": "energeticbear",
       "candidates": [
-        "G0034",
-        "G0035"
-      ]
-    },
-    {
-      "alias": "emberbear",
-      "candidates": [
-        "G1003",
-        "G1031"
+        "G0035",
+        "G1000"
       ]
     },
     {
@@ -320,14 +370,15 @@
       "alias": "fireant",
       "candidates": [
         "G0129",
+        "G1030",
         "G1048"
       ]
     },
     {
-      "alias": "frozenvista",
+      "alias": "g0011",
       "candidates": [
-        "G1003",
-        "G1031"
+        "G0011",
+        "G0098"
       ]
     },
     {
@@ -342,6 +393,13 @@
       "candidates": [
         "G0138",
         "G1049"
+      ]
+    },
+    {
+      "alias": "g0035",
+      "candidates": [
+        "G0034",
+        "G1000"
       ]
     },
     {
@@ -366,6 +424,13 @@
       ]
     },
     {
+      "alias": "ghostblizzard",
+      "candidates": [
+        "G0035",
+        "G1000"
+      ]
+    },
+    {
       "alias": "goldniagara",
       "candidates": [
         "G0008",
@@ -377,6 +442,13 @@
       "candidates": [
         "G0007",
         "G0016"
+      ]
+    },
+    {
+      "alias": "group24",
+      "candidates": [
+        "G0034",
+        "G1000"
       ]
     },
     {
@@ -444,6 +516,13 @@
       ]
     },
     {
+      "alias": "hippo",
+      "candidates": [
+        "G0010",
+        "G0027"
+      ]
+    },
+    {
       "alias": "iron",
       "candidates": [
         "G0081",
@@ -451,10 +530,39 @@
       ]
     },
     {
+      "alias": "ironliberty",
+      "candidates": [
+        "G0034",
+        "G0035",
+        "G1000"
+      ]
+    },
+    {
       "alias": "irontilden",
       "candidates": [
         "G0047",
         "G1033"
+      ]
+    },
+    {
+      "alias": "itg15",
+      "candidates": [
+        "G0034",
+        "G1000"
+      ]
+    },
+    {
+      "alias": "kaos",
+      "candidates": [
+        "G0025",
+        "G0096"
+      ]
+    },
+    {
+      "alias": "koala",
+      "candidates": [
+        "G0034",
+        "G1000"
       ]
     },
     {
@@ -477,6 +585,13 @@
       "candidates": [
         "G0032",
         "G0138"
+      ]
+    },
+    {
+      "alias": "lorec53",
+      "candidates": [
+        "G1003",
+        "G1031"
       ]
     },
     {
@@ -523,6 +638,13 @@
       ]
     },
     {
+      "alias": "mythicleopard",
+      "candidates": [
+        "G0134",
+        "G1008"
+      ]
+    },
+    {
       "alias": "newromaniccyberarmy",
       "candidates": [
         "G0138",
@@ -565,6 +687,20 @@
       ]
     },
     {
+      "alias": "opalsleet",
+      "candidates": [
+        "G0067",
+        "G0094"
+      ]
+    },
+    {
+      "alias": "osmium",
+      "candidates": [
+        "G0067",
+        "G0094"
+      ]
+    },
+    {
       "alias": "overridepanda",
       "candidates": [
         "G0013",
@@ -586,6 +722,13 @@
       ]
     },
     {
+      "alias": "pittypanda",
+      "candidates": [
+        "G0011",
+        "G0098"
+      ]
+    },
+    {
       "alias": "primitivebear",
       "candidates": [
         "G0047",
@@ -604,6 +747,20 @@
       "candidates": [
         "G0013",
         "G0030"
+      ]
+    },
+    {
+      "alias": "rubysleet",
+      "candidates": [
+        "G0067",
+        "G0094"
+      ]
+    },
+    {
+      "alias": "saintbear",
+      "candidates": [
+        "G1003",
+        "G1031"
       ]
     },
     {
@@ -649,10 +806,31 @@
       ]
     },
     {
+      "alias": "storm0156",
+      "candidates": [
+        "G0134",
+        "G1008"
+      ]
+    },
+    {
+      "alias": "storm0587",
+      "candidates": [
+        "G1003",
+        "G1031"
+      ]
+    },
+    {
       "alias": "ta404",
       "candidates": [
         "G0138",
         "G1049"
+      ]
+    },
+    {
+      "alias": "ta471",
+      "candidates": [
+        "G1003",
+        "G1031"
       ]
     },
     {
@@ -691,6 +869,14 @@
       ]
     },
     {
+      "alias": "tg4192",
+      "candidates": [
+        "G0034",
+        "G0035",
+        "G1000"
+      ]
+    },
+    {
       "alias": "thrip",
       "candidates": [
         "G0030",
@@ -705,14 +891,14 @@
       ]
     },
     {
-      "alias": "uac0056",
+      "alias": "transparenttribe",
       "candidates": [
-        "G1003",
-        "G1031"
+        "G0134",
+        "G1008"
       ]
     },
     {
-      "alias": "unc2589",
+      "alias": "uac0056",
       "candidates": [
         "G1003",
         "G1031"
@@ -722,6 +908,7 @@
       "alias": "unc788",
       "candidates": [
         "G0059",
+        "G1029",
         "G1044"
       ]
     },

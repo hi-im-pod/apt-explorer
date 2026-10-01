@@ -8,7 +8,18 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Spandex Tempest",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -21,12 +32,21 @@
       ]
     },
     {
-      "value": "Spandex Tempest",
+      "value": "DEV-0950",
       "sources": [
-        "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Lace Tempest",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -62,19 +82,11 @@
       ]
     },
     {
-      "value": "DEV-0950",
+      "value": "MONTY SPIDER",
       "sources": [
         "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Lace Tempest",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -100,13 +112,6 @@
     },
     {
       "value": "GOLD RIVERVIEW",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "MONTY SPIDER",
       "sources": [
         "misp",
         "malpedia"
@@ -2646,5 +2651,5 @@
     "8fa16a3d00b2f0fc3672c673554696864d120101"
   ],
   "conflicts": [],
-  "evidence_count": 48
+  "evidence_count": 53
 }

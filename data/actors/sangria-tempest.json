@@ -1,0 +1,44 @@
+{
+  "id": "sangria-tempest",
+  "name": "Sangria Tempest",
+  "aliases": [
+    {
+      "value": "Sangria Tempest",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "ELBRUS",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "CARBON SPIDER",
+      "sources": [
+        "microsoft"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "UA",
+      "source": "microsoft"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 0
+}

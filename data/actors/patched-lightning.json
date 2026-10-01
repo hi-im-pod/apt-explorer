@@ -6,14 +6,16 @@
       "value": "Patched Lightning",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
       "value": "Storm-0113",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     }
   ],
@@ -31,5 +33,5 @@
   "timeline": [],
   "reports": [],
   "conflicts": [],
-  "evidence_count": 2
+  "evidence_count": 4
 }

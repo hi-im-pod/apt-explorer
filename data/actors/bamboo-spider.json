@@ -1,12 +1,13 @@
 {
   "id": "bamboo-spider",
-  "name": "BAMBOO SPIDER",
+  "name": "NARWHAL SPIDER",
   "aliases": [
     {
-      "value": "BAMBOO SPIDER",
+      "value": "NARWHAL SPIDER",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -14,7 +15,8 @@
       "sources": [
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -22,11 +24,12 @@
       "sources": [
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
-      "value": "NARWHAL SPIDER",
+      "value": "BAMBOO SPIDER",
       "sources": [
         "misp",
         "malpedia"
@@ -222,5 +225,5 @@
     "f3eb17e189bac328cc5f602549b889f0d079e09a"
   ],
   "conflicts": [],
-  "evidence_count": 10
+  "evidence_count": 13
 }

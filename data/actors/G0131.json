@@ -8,7 +8,8 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -17,7 +18,8 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -104,6 +106,18 @@
       "sources": [
         "etda"
       ]
+    },
+    {
+      "value": "Copper Typhoon",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Sharp-R",
+      "sources": [
+        "microsoft"
+      ]
     }
   ],
   "origin": [
@@ -118,6 +132,10 @@
     {
       "value": "CN",
       "source": "malpedia"
+    },
+    {
+      "value": "CN",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -930,5 +948,5 @@
     "4e5d653137e8c8e4e0dfcc7267519ed4200aaef8"
   ],
   "conflicts": [],
-  "evidence_count": 23
+  "evidence_count": 25
 }

@@ -6,14 +6,16 @@
       "value": "Moonstone Sleet",
       "sources": [
         "attack",
-        "etda"
+        "etda",
+        "microsoft"
       ]
     },
     {
       "value": "Storm-1789",
       "sources": [
         "attack",
-        "etda"
+        "etda",
+        "microsoft"
       ]
     },
     {
@@ -21,12 +23,22 @@
       "sources": [
         "etda"
       ]
+    },
+    {
+      "value": "LABYRINTH CHOLLIMA",
+      "sources": [
+        "microsoft"
+      ]
     }
   ],
   "origin": [
     {
       "value": "KP",
       "source": "etda"
+    },
+    {
+      "value": "KP",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -94,5 +106,5 @@
     "f05d1524424f5ec5484b5d0858fee86919307ec0"
   ],
   "conflicts": [],
-  "evidence_count": 1
+  "evidence_count": 2
 }

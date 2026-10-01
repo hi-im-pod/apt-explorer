@@ -7,7 +7,17 @@
       "sources": [
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Storm-0978",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -27,7 +37,7 @@
       ]
     },
     {
-      "value": "Storm-0978",
+      "value": "TA829",
       "sources": [
         "misp",
         "etda",
@@ -35,11 +45,17 @@
       ]
     },
     {
-      "value": "TA829",
+      "value": "Storm-0671",
       "sources": [
-        "misp",
         "etda",
-        "malpedia"
+        "microsoft"
+      ]
+    },
+    {
+      "value": "UNC2596",
+      "sources": [
+        "etda",
+        "microsoft"
       ]
     },
     {
@@ -56,18 +72,6 @@
       ]
     },
     {
-      "value": "Storm-0671",
-      "sources": [
-        "etda"
-      ]
-    },
-    {
-      "value": "UNC2596",
-      "sources": [
-        "etda"
-      ]
-    },
-    {
       "value": "CIGAR",
       "sources": [
         "etda"
@@ -77,6 +81,18 @@
       "value": "UAC-0180",
       "sources": [
         "etda"
+      ]
+    },
+    {
+      "value": "Tropicalscorpius",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Underground Team",
+      "sources": [
+        "microsoft"
       ]
     }
   ],
@@ -92,6 +108,10 @@
     {
       "value": "RU",
       "source": "malpedia"
+    },
+    {
+      "value": "RU",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -380,5 +400,5 @@
     "5c61980e67a35be135305a23a49801e89fa14780"
   ],
   "conflicts": [],
-  "evidence_count": 11
+  "evidence_count": 16
 }

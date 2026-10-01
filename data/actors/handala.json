@@ -41,52 +41,7 @@
     }
   ],
   "techniques_documented": [],
-  "techniques_reported": [
-    {
-      "id": "T1020",
-      "count": 1
-    },
-    {
-      "id": "T1027",
-      "count": 1
-    },
-    {
-      "id": "T1059",
-      "count": 1
-    },
-    {
-      "id": "T1059.010",
-      "count": 1
-    },
-    {
-      "id": "T1068",
-      "count": 1
-    },
-    {
-      "id": "T1218.009",
-      "count": 1
-    },
-    {
-      "id": "T1497.003",
-      "count": 1
-    },
-    {
-      "id": "T1561.002",
-      "count": 1
-    },
-    {
-      "id": "T1566.001",
-      "count": 1
-    },
-    {
-      "id": "T1589",
-      "count": 1
-    },
-    {
-      "id": "T1590",
-      "count": 1
-    }
-  ],
+  "techniques_reported": [],
   "cves": [],
   "timeline": [
     {

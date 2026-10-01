@@ -52,10 +52,32 @@
       ]
     },
     {
+      "value": "Storm-1877",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
       "value": "Tenacious Pungsan",
       "sources": [
         "attack",
         "etda"
+      ]
+    },
+    {
+      "value": "Storm-0287",
+      "sources": [
+        "etda",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Jasper Sleet",
+      "sources": [
+        "etda",
+        "microsoft"
       ]
     },
     {
@@ -67,13 +89,6 @@
     },
     {
       "value": "Famous Chollima",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Storm-1877",
       "sources": [
         "misp",
         "malpedia"
@@ -117,15 +132,9 @@
       ]
     },
     {
-      "value": "Storm-0287",
+      "value": "Coral Sleet",
       "sources": [
-        "etda"
-      ]
-    },
-    {
-      "value": "Jasper Sleet",
-      "sources": [
-        "etda"
+        "microsoft"
       ]
     }
   ],
@@ -141,6 +150,10 @@
     {
       "value": "KP",
       "source": "malpedia"
+    },
+    {
+      "value": "KP",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -287,11 +300,11 @@
   "techniques_reported": [
     {
       "id": "T1082",
-      "count": 13
+      "count": 12
     },
     {
       "id": "T1041",
-      "count": 12
+      "count": 11
     },
     {
       "id": "T1059.007",
@@ -326,10 +339,6 @@
       "count": 7
     },
     {
-      "id": "T1059.006",
-      "count": 7
-    },
-    {
       "id": "T1071.001",
       "count": 7
     },
@@ -355,6 +364,10 @@
     },
     {
       "id": "T1059",
+      "count": 6
+    },
+    {
+      "id": "T1059.006",
       "count": 6
     },
     {
@@ -414,14 +427,6 @@
       "count": 2
     },
     {
-      "id": "T1059.003",
-      "count": 2
-    },
-    {
-      "id": "T1070.004",
-      "count": 2
-    },
-    {
       "id": "T1071.002",
       "count": 2
     },
@@ -455,10 +460,6 @@
     },
     {
       "id": "T1547",
-      "count": 2
-    },
-    {
-      "id": "T1560",
       "count": 2
     },
     {
@@ -510,15 +511,7 @@
       "count": 1
     },
     {
-      "id": "T1027.010",
-      "count": 1
-    },
-    {
       "id": "T1030",
-      "count": 1
-    },
-    {
-      "id": "T1033",
       "count": 1
     },
     {
@@ -542,11 +535,15 @@
       "count": 1
     },
     {
-      "id": "T1059.001",
+      "id": "T1059.003",
       "count": 1
     },
     {
       "id": "T1059.004",
+      "count": 1
+    },
+    {
+      "id": "T1070.004",
       "count": 1
     },
     {
@@ -567,10 +564,6 @@
     },
     {
       "id": "T1124",
-      "count": 1
-    },
-    {
-      "id": "T1132",
       "count": 1
     },
     {
@@ -663,6 +656,10 @@
     },
     {
       "id": "T1557",
+      "count": 1
+    },
+    {
+      "id": "T1560",
       "count": 1
     },
     {
@@ -942,5 +939,5 @@
     "b27b62b421a14d85d700bd9109e54ac7e79f6910"
   ],
   "conflicts": [],
-  "evidence_count": 17
+  "evidence_count": 20
 }

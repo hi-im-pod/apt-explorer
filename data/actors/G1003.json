@@ -5,7 +5,8 @@
     {
       "value": "Ember Bear",
       "sources": [
-        "attack"
+        "attack",
+        "etda"
       ]
     },
     {
@@ -14,7 +15,8 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -23,6 +25,33 @@
         "attack",
         "misp",
         "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "UNC2589",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "UAC-0056",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Bleeding Bear",
+      "sources": [
+        "attack",
+        "misp",
         "malpedia"
       ]
     },
@@ -35,33 +64,94 @@
       ]
     },
     {
-      "value": "UNC2589",
+      "value": "SaintBear",
       "sources": [
-        "attack"
+        "misp",
+        "etda",
+        "malpedia"
       ]
     },
     {
-      "value": "Bleeding Bear",
+      "value": "TA471",
       "sources": [
-        "attack"
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Lorec53",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Nodaria",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "FROZENVISTA",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Storm-0587",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Nascent Ursa",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "EMBER BEAR",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "DEV-0587",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Saint Bear",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Lorec Bear",
+      "sources": [
+        "misp",
+        "malpedia"
       ]
     },
     {
       "value": "Frozenvista",
       "sources": [
         "attack"
-      ]
-    },
-    {
-      "value": "UAC-0056",
-      "sources": [
-        "attack"
-      ]
-    },
-    {
-      "value": "EMBER BEAR",
-      "sources": [
-        "malpedia"
       ]
     }
   ],
@@ -77,6 +167,10 @@
     {
       "value": "RU",
       "source": "malpedia"
+    },
+    {
+      "value": "RU",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -95,6 +189,14 @@
       {
         "value": "Ukraine",
         "source": "etda"
+      },
+      {
+        "value": "Georgia",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
       }
     ],
     "sectors": [
@@ -112,6 +214,22 @@
       },
       {
         "value": "NGOs",
+        "source": "etda"
+      },
+      {
+        "value": "Energy",
+        "source": "etda"
+      },
+      {
+        "value": "Financial",
+        "source": "etda"
+      },
+      {
+        "value": "Media",
+        "source": "etda"
+      },
+      {
+        "value": "Transportation",
         "source": "etda"
       }
     ]
@@ -160,6 +278,10 @@
     {
       "name": "reGeorg",
       "source": "attack"
+    },
+    {
+      "name": "Graphiron",
+      "source": "malpedia"
     }
   ],
   "techniques_documented": [
@@ -211,136 +333,7 @@
     "T1595.002",
     "T1654"
   ],
-  "techniques_reported": [
-    {
-      "id": "T1003",
-      "count": 1
-    },
-    {
-      "id": "T1003.001",
-      "count": 1
-    },
-    {
-      "id": "T1003.002",
-      "count": 1
-    },
-    {
-      "id": "T1046",
-      "count": 1
-    },
-    {
-      "id": "T1059.001",
-      "count": 1
-    },
-    {
-      "id": "T1071.001",
-      "count": 1
-    },
-    {
-      "id": "T1071.004",
-      "count": 1
-    },
-    {
-      "id": "T1078.001",
-      "count": 1
-    },
-    {
-      "id": "T1090.003",
-      "count": 1
-    },
-    {
-      "id": "T1095",
-      "count": 1
-    },
-    {
-      "id": "T1105",
-      "count": 1
-    },
-    {
-      "id": "T1110.003",
-      "count": 1
-    },
-    {
-      "id": "T1114",
-      "count": 1
-    },
-    {
-      "id": "T1125",
-      "count": 1
-    },
-    {
-      "id": "T1190",
-      "count": 1
-    },
-    {
-      "id": "T1213.001",
-      "count": 1
-    },
-    {
-      "id": "T1485",
-      "count": 1
-    },
-    {
-      "id": "T1505.003",
-      "count": 1
-    },
-    {
-      "id": "T1550.002",
-      "count": 1
-    },
-    {
-      "id": "T1552.001",
-      "count": 1
-    },
-    {
-      "id": "T1560",
-      "count": 1
-    },
-    {
-      "id": "T1567.002",
-      "count": 1
-    },
-    {
-      "id": "T1572",
-      "count": 1
-    },
-    {
-      "id": "T1583.003",
-      "count": 1
-    },
-    {
-      "id": "T1588.001",
-      "count": 1
-    },
-    {
-      "id": "T1588.005",
-      "count": 1
-    },
-    {
-      "id": "T1590.002",
-      "count": 1
-    },
-    {
-      "id": "T1595",
-      "count": 1
-    },
-    {
-      "id": "T1595.001",
-      "count": 1
-    },
-    {
-      "id": "T1595.002",
-      "count": 1
-    },
-    {
-      "id": "T1596.005",
-      "count": 1
-    },
-    {
-      "id": "T1654",
-      "count": 1
-    }
-  ],
+  "techniques_reported": [],
   "cves": [
     {
       "cve": "CVE-2017-11882",
@@ -409,6 +402,10 @@
       "count": 3
     },
     {
+      "quarter": "2023-Q1",
+      "count": 1
+    },
+    {
       "quarter": "2023-Q2",
       "count": 1
     },
@@ -420,10 +417,11 @@
   "reports": [
     "c78080b0ad08e4bb3595b93f6e0eba77d45587c2",
     "effd076232525b4f6636ad2f68fc6dcf91b9e381",
+    "232cfeb4ee7a1e9aae111eebb5574dcc970e0d9b",
     "a0cfdae10401d2676b1cf0e9098f2f93d14acf33",
     "6210a8284c194a3a4aca173956c208ebb91be007",
     "2dcf8a821046d08371dfd07bf2812c8c681d6b68"
   ],
   "conflicts": [],
-  "evidence_count": 5
+  "evidence_count": 31
 }

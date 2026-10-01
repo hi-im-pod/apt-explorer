@@ -11,6 +11,16 @@
       ]
     },
     {
+      "value": "Chafer",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
       "value": "ITG07",
       "sources": [
         "attack",
@@ -20,12 +30,21 @@
       ]
     },
     {
-      "value": "Chafer",
+      "value": "Cadelle",
       "sources": [
-        "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Burgundy Sandstorm",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -45,11 +64,11 @@
       ]
     },
     {
-      "value": "Burgundy Sandstorm",
+      "value": "REMIX KITTEN",
       "sources": [
         "misp",
-        "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -57,13 +76,6 @@
       "sources": [
         "attack",
         "etda"
-      ]
-    },
-    {
-      "value": "REMIX KITTEN",
-      "sources": [
-        "misp",
-        "malpedia"
       ]
     },
     {
@@ -105,6 +117,10 @@
     {
       "value": "IR",
       "source": "malpedia"
+    },
+    {
+      "value": "IR",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -116,6 +132,62 @@
   ],
   "claimed_targets": {
     "countries": [
+      {
+        "value": "Germany",
+        "source": "etda"
+      },
+      {
+        "value": "Iran",
+        "source": "etda"
+      },
+      {
+        "value": "Iraq",
+        "source": "etda"
+      },
+      {
+        "value": "Netherlands",
+        "source": "etda"
+      },
+      {
+        "value": "Pakistan",
+        "source": "etda"
+      },
+      {
+        "value": "Saudi Arabia",
+        "source": "etda"
+      },
+      {
+        "value": "Singapore",
+        "source": "etda"
+      },
+      {
+        "value": "Sudan",
+        "source": "etda"
+      },
+      {
+        "value": "Tajikistan",
+        "source": "etda"
+      },
+      {
+        "value": "Thailand",
+        "source": "etda"
+      },
+      {
+        "value": "Türkiye",
+        "source": "etda"
+      },
+      {
+        "value": "United Arab Emirates",
+        "source": "etda"
+      },
+      {
+        "value": "United Kingdom",
+        "source": "etda"
+      },
+      {
+        "value": "United States",
+        "source": "etda"
+      },
       {
         "value": "Israel",
         "source": "etda"
@@ -129,23 +201,7 @@
         "source": "etda"
       },
       {
-        "value": "Saudi Arabia",
-        "source": "etda"
-      },
-      {
         "value": "Spain",
-        "source": "etda"
-      },
-      {
-        "value": "Türkiye",
-        "source": "etda"
-      },
-      {
-        "value": "United Arab Emirates",
-        "source": "etda"
-      },
-      {
-        "value": "United States",
         "source": "etda"
       }
     ],
@@ -418,5 +474,5 @@
     "58c9be6ce39d271b69c9dd3314c77326a6d8f955"
   ],
   "conflicts": [],
-  "evidence_count": 23
+  "evidence_count": 29
 }

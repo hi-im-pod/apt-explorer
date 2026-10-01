@@ -8,7 +8,26 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "VolcanicTimber",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Amethyst Rain",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -34,22 +53,6 @@
         "etda",
         "malpedia"
       ]
-    },
-    {
-      "value": "VolcanicTimber",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Amethyst Rain",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
-      ]
     }
   ],
   "origin": [
@@ -64,6 +67,10 @@
     {
       "value": "LB",
       "source": "malpedia"
+    },
+    {
+      "value": "LB",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -215,5 +222,5 @@
     "7cd5b12fa38705e254296133991410754f1678ab"
   ],
   "conflicts": [],
-  "evidence_count": 15
+  "evidence_count": 18
 }

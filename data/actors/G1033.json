@@ -8,7 +8,8 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -17,7 +18,8 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -25,7 +27,8 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -33,7 +36,8 @@
       "sources": [
         "attack",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -41,7 +45,26 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "BlueCharlie",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Aqua Blizzard",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -70,14 +93,6 @@
     },
     {
       "value": "TAG-53",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "BlueCharlie",
       "sources": [
         "misp",
         "etda",
@@ -141,6 +156,22 @@
       ]
     },
     {
+      "value": "Armageddon",
+      "sources": [
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "SectorC08",
+      "sources": [
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
       "value": "Callisto",
       "sources": [
         "misp",
@@ -189,11 +220,11 @@
       ]
     },
     {
-      "value": "Aqua Blizzard",
+      "value": "UNC530",
       "sources": [
-        "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -205,24 +236,19 @@
       ]
     },
     {
-      "value": "Armageddon",
+      "value": "ACTINIUM",
       "sources": [
-        "etda",
-        "malpedia"
+        "misp",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
-      "value": "SectorC08",
+      "value": "PRIMITIVE BEAR",
       "sources": [
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "UNC530",
-      "sources": [
-        "etda",
-        "malpedia"
+        "misp",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -247,13 +273,6 @@
       ]
     },
     {
-      "value": "ACTINIUM",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
       "value": "IRON TILDEN",
       "sources": [
         "misp",
@@ -261,10 +280,10 @@
       ]
     },
     {
-      "value": "PRIMITIVE BEAR",
+      "value": "Gamaredon",
       "sources": [
-        "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -322,9 +341,9 @@
       ]
     },
     {
-      "value": "Gamaredon",
+      "value": "shuckworm",
       "sources": [
-        "malpedia"
+        "microsoft"
       ]
     }
   ],
@@ -344,6 +363,10 @@
     {
       "value": "RU",
       "source": "malpedia"
+    },
+    {
+      "value": "RU",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -729,6 +752,7 @@
     "T1598.002",
     "T1598.003",
     "T1608.001",
+    "T1676",
     "T1684.001"
   ],
   "techniques_reported": [
@@ -1001,6 +1025,10 @@
       "count": 1
     },
     {
+      "quarter": "2025-Q1",
+      "count": 1
+    },
+    {
       "quarter": "2025-Q2",
       "count": 1
     },
@@ -1023,6 +1051,7 @@
     "3ccb7a0119dd03a4e70172c3fa63522d76201996",
     "3d980b6df91d2d6b6f909111f07c0f5bba05c9b6",
     "d8bb807b5b8dbc34a151daa220f3620aa74abc8e",
+    "30a65e451d50f9aeb0fb79c99564643ca19af4cc",
     "376d8ca8645a8cae8bf2f979e02a7d86ba3bc756",
     "7faa0cff1e6fc7881b39b8f16e820dfbe9248b2e",
     "7e23d7bd9766f4fcb482fdeb5e35d30cbe739cd7",
@@ -1048,5 +1077,5 @@
     "749fcb8711afe06402e0a97903bfe2b4073bacc6"
   ],
   "conflicts": [],
-  "evidence_count": 53
+  "evidence_count": 61
 }

@@ -6,7 +6,8 @@
       "value": "Storm-1101",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -31,5 +32,5 @@
   "timeline": [],
   "reports": [],
   "conflicts": [],
-  "evidence_count": 2
+  "evidence_count": 3
 }

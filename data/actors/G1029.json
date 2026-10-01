@@ -1,0 +1,41 @@
+{
+  "id": "G1029",
+  "name": "UNC788",
+  "aliases": [
+    {
+      "value": "UNC788",
+      "sources": [
+        "attack"
+      ]
+    }
+  ],
+  "origin": [],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [
+    {
+      "name": "HilalRAT",
+      "source": "attack"
+    }
+  ],
+  "techniques_documented": [
+    "T1660"
+  ],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [
+    {
+      "quarter": "2022-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "e939cfd78126bc61e1f84d71ec84bce6b8798040"
+  ],
+  "conflicts": [],
+  "evidence_count": 0
+}

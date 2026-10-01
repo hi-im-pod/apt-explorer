@@ -7,7 +7,26 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Calc Team",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Hexagon Typhoon",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -28,14 +47,6 @@
     },
     {
       "value": "BeeBus",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Calc Team",
       "sources": [
         "misp",
         "etda",
@@ -67,11 +78,11 @@
       ]
     },
     {
-      "value": "Hexagon Typhoon",
+      "value": "NUMBERED PANDA",
       "sources": [
         "misp",
-        "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -79,13 +90,6 @@
       "sources": [
         "attack",
         "etda"
-      ]
-    },
-    {
-      "value": "NUMBERED PANDA",
-      "sources": [
-        "misp",
-        "malpedia"
       ]
     },
     {
@@ -131,6 +135,30 @@
       "sources": [
         "etda"
       ]
+    },
+    {
+      "value": "HYDROGEN",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Red Anubis",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "DNS-Calc",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "HORDE",
+      "sources": [
+        "microsoft"
+      ]
     }
   ],
   "origin": [
@@ -145,6 +173,10 @@
     {
       "value": "CN",
       "source": "malpedia"
+    },
+    {
+      "value": "CN",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -276,5 +308,5 @@
     "3a597a0c55b0f2a8484f8fc0ee579f289a2bb45a"
   ],
   "conflicts": [],
-  "evidence_count": 26
+  "evidence_count": 31
 }

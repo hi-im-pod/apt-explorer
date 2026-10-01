@@ -6,7 +6,8 @@
       "value": "Storm-1175",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     }
   ],
@@ -18,6 +19,10 @@
     {
       "value": "CN",
       "source": "malpedia"
+    },
+    {
+      "value": "CN",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -33,5 +38,5 @@
   "timeline": [],
   "reports": [],
   "conflicts": [],
-  "evidence_count": 1
+  "evidence_count": 2
 }

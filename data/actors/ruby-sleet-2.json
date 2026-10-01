@@ -1,0 +1,38 @@
+{
+  "id": "ruby-sleet-2",
+  "name": "Ruby Sleet",
+  "aliases": [
+    {
+      "value": "Ruby Sleet",
+      "sources": [
+        "misp"
+      ]
+    },
+    {
+      "value": "CERIUM",
+      "sources": [
+        "misp"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "KP",
+      "source": "misp"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 0
+}

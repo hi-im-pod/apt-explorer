@@ -7,7 +7,8 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -16,7 +17,8 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -24,19 +26,30 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Double Dragon",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
       "value": "TG-2633",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Leopard Typhoon",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Double Dragon",
       "sources": [
         "misp",
         "etda",
@@ -100,11 +113,19 @@
       ]
     },
     {
-      "value": "Leopard Typhoon",
+      "value": "LEAD",
       "sources": [
         "misp",
-        "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "WICKED PANDA",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -115,21 +136,21 @@
       ]
     },
     {
-      "value": "LEAD",
+      "value": "Winnti Group",
       "sources": [
-        "misp",
-        "malpedia"
+        "etda",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "TG-3279",
+      "sources": [
+        "etda",
+        "microsoft"
       ]
     },
     {
       "value": "WICKED SPIDER",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "WICKED PANDA",
       "sources": [
         "misp",
         "malpedia"
@@ -178,6 +199,13 @@
       ]
     },
     {
+      "value": "Mana Team",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
       "value": "APT 41",
       "sources": [
         "etda"
@@ -185,12 +213,6 @@
     },
     {
       "value": "Bronze Atlas",
-      "sources": [
-        "etda"
-      ]
-    },
-    {
-      "value": "Winnti Group",
       "sources": [
         "etda"
       ]
@@ -220,15 +242,27 @@
       ]
     },
     {
-      "value": "TG-3279",
+      "value": "Casper",
       "sources": [
         "etda"
       ]
     },
     {
-      "value": "Casper",
+      "value": "Mana",
       "sources": [
-        "etda"
+        "microsoft"
+      ]
+    },
+    {
+      "value": "KAOS",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Red Diablo",
+      "sources": [
+        "microsoft"
       ]
     }
   ],
@@ -244,6 +278,10 @@
     {
       "value": "CN",
       "source": "malpedia"
+    },
+    {
+      "value": "CN",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -868,22 +906,10 @@
   "techniques_reported": [
     {
       "id": "T1059.001",
-      "count": 13
+      "count": 10
     },
     {
       "id": "T1082",
-      "count": 13
-    },
-    {
-      "id": "T1057",
-      "count": 11
-    },
-    {
-      "id": "T1071.001",
-      "count": 11
-    },
-    {
-      "id": "T1059.003",
       "count": 10
     },
     {
@@ -891,96 +917,40 @@
       "count": 9
     },
     {
-      "id": "T1105",
+      "id": "T1057",
       "count": 9
     },
     {
-      "id": "T1204.002",
-      "count": 9
+      "id": "T1059.003",
+      "count": 8
+    },
+    {
+      "id": "T1071.001",
+      "count": 8
+    },
+    {
+      "id": "T1105",
+      "count": 8
     },
     {
       "id": "T1140",
-      "count": 8
+      "count": 7
+    },
+    {
+      "id": "T1204.002",
+      "count": 7
     },
     {
       "id": "T1566.001",
-      "count": 8
+      "count": 7
     },
     {
       "id": "T1016",
-      "count": 7
-    },
-    {
-      "id": "T1033",
-      "count": 7
+      "count": 6
     },
     {
       "id": "T1041",
-      "count": 7
-    },
-    {
-      "id": "T1070.004",
-      "count": 7
-    },
-    {
-      "id": "T1574.001",
-      "count": 7
-    },
-    {
-      "id": "T1018",
       "count": 6
-    },
-    {
-      "id": "T1021.001",
-      "count": 6
-    },
-    {
-      "id": "T1036.005",
-      "count": 6
-    },
-    {
-      "id": "T1055",
-      "count": 6
-    },
-    {
-      "id": "T1190",
-      "count": 6
-    },
-    {
-      "id": "T1482",
-      "count": 6
-    },
-    {
-      "id": "T1505.003",
-      "count": 6
-    },
-    {
-      "id": "T1543.003",
-      "count": 6
-    },
-    {
-      "id": "T1547.001",
-      "count": 6
-    },
-    {
-      "id": "T1560.001",
-      "count": 6
-    },
-    {
-      "id": "T1569.002",
-      "count": 6
-    },
-    {
-      "id": "T1570",
-      "count": 6
-    },
-    {
-      "id": "T1572",
-      "count": 6
-    },
-    {
-      "id": "T1003.001",
-      "count": 5
     },
     {
       "id": "T1003.002",
@@ -988,6 +958,10 @@
     },
     {
       "id": "T1005",
+      "count": 5
+    },
+    {
+      "id": "T1018",
       "count": 5
     },
     {
@@ -1007,15 +981,39 @@
       "count": 5
     },
     {
+      "id": "T1190",
+      "count": 5
+    },
+    {
+      "id": "T1482",
+      "count": 5
+    },
+    {
+      "id": "T1547.001",
+      "count": 5
+    },
+    {
+      "id": "T1570",
+      "count": 5
+    },
+    {
+      "id": "T1572",
+      "count": 5
+    },
+    {
+      "id": "T1003.001",
+      "count": 4
+    },
+    {
       "id": "T1007",
       "count": 4
     },
     {
-      "id": "T1021.002",
+      "id": "T1033",
       "count": 4
     },
     {
-      "id": "T1027.009",
+      "id": "T1036.005",
       "count": 4
     },
     {
@@ -1027,7 +1025,7 @@
       "count": 4
     },
     {
-      "id": "T1055.002",
+      "id": "T1055",
       "count": 4
     },
     {
@@ -1035,15 +1033,7 @@
       "count": 4
     },
     {
-      "id": "T1068",
-      "count": 4
-    },
-    {
-      "id": "T1069.002",
-      "count": 4
-    },
-    {
-      "id": "T1071",
+      "id": "T1070.004",
       "count": 4
     },
     {
@@ -1063,15 +1053,11 @@
       "count": 4
     },
     {
-      "id": "T1219",
+      "id": "T1505.003",
       "count": 4
     },
     {
-      "id": "T1518.001",
-      "count": 4
-    },
-    {
-      "id": "T1550.002",
+      "id": "T1543.003",
       "count": 4
     },
     {
@@ -1079,7 +1065,7 @@
       "count": 4
     },
     {
-      "id": "T1560",
+      "id": "T1560.001",
       "count": 4
     },
     {
@@ -1087,15 +1073,7 @@
       "count": 4
     },
     {
-      "id": "T1583.003",
-      "count": 4
-    },
-    {
-      "id": "T1587.001",
-      "count": 4
-    },
-    {
-      "id": "T1620",
+      "id": "T1574.001",
       "count": 4
     },
     {
@@ -1103,7 +1081,15 @@
       "count": 3
     },
     {
-      "id": "T1027.013",
+      "id": "T1021.001",
+      "count": 3
+    },
+    {
+      "id": "T1021.002",
+      "count": 3
+    },
+    {
+      "id": "T1027.009",
       "count": 3
     },
     {
@@ -1111,7 +1097,7 @@
       "count": 3
     },
     {
-      "id": "T1056.001",
+      "id": "T1055.002",
       "count": 3
     },
     {
@@ -1119,19 +1105,19 @@
       "count": 3
     },
     {
-      "id": "T1059.006",
-      "count": 3
-    },
-    {
       "id": "T1059.007",
       "count": 3
     },
     {
-      "id": "T1069",
+      "id": "T1068",
       "count": 3
     },
     {
-      "id": "T1069.001",
+      "id": "T1069.002",
+      "count": 3
+    },
+    {
+      "id": "T1071",
       "count": 3
     },
     {
@@ -1139,15 +1125,7 @@
       "count": 3
     },
     {
-      "id": "T1090",
-      "count": 3
-    },
-    {
       "id": "T1095",
-      "count": 3
-    },
-    {
-      "id": "T1098",
       "count": 3
     },
     {
@@ -1159,23 +1137,15 @@
       "count": 3
     },
     {
-      "id": "T1136",
-      "count": 3
-    },
-    {
       "id": "T1136.001",
       "count": 3
     },
     {
-      "id": "T1548",
+      "id": "T1219",
       "count": 3
     },
     {
-      "id": "T1555",
-      "count": 3
-    },
-    {
-      "id": "T1558.003",
+      "id": "T1518.001",
       "count": 3
     },
     {
@@ -1187,32 +1157,20 @@
       "count": 3
     },
     {
-      "id": "T1566.004",
-      "count": 3
-    },
-    {
-      "id": "T1567.002",
-      "count": 3
-    },
-    {
-      "id": "T1574",
-      "count": 3
-    },
-    {
       "id": "T1583.001",
       "count": 3
     },
     {
-      "id": "T1595.002",
+      "id": "T1583.003",
+      "count": 3
+    },
+    {
+      "id": "T1587.001",
       "count": 3
     },
     {
       "id": "T1608.001",
       "count": 3
-    },
-    {
-      "id": "T1003",
-      "count": 2
     },
     {
       "id": "T1008",
@@ -1227,10 +1185,6 @@
       "count": 2
     },
     {
-      "id": "T1053",
-      "count": 2
-    },
-    {
       "id": "T1055.004",
       "count": 2
     },
@@ -1239,7 +1193,19 @@
       "count": 2
     },
     {
-      "id": "T1070",
+      "id": "T1056.001",
+      "count": 2
+    },
+    {
+      "id": "T1059.006",
+      "count": 2
+    },
+    {
+      "id": "T1069",
+      "count": 2
+    },
+    {
+      "id": "T1069.001",
       "count": 2
     },
     {
@@ -1267,15 +1233,19 @@
       "count": 2
     },
     {
+      "id": "T1090",
+      "count": 2
+    },
+    {
+      "id": "T1098",
+      "count": 2
+    },
+    {
       "id": "T1098.007",
       "count": 2
     },
     {
       "id": "T1102",
-      "count": 2
-    },
-    {
-      "id": "T1102.002",
       "count": 2
     },
     {
@@ -1287,10 +1257,6 @@
       "count": 2
     },
     {
-      "id": "T1132",
-      "count": 2
-    },
-    {
       "id": "T1133",
       "count": 2
     },
@@ -1299,11 +1265,11 @@
       "count": 2
     },
     {
-      "id": "T1204",
+      "id": "T1136",
       "count": 2
     },
     {
-      "id": "T1204.001",
+      "id": "T1204",
       "count": 2
     },
     {
@@ -1315,14 +1281,6 @@
       "count": 2
     },
     {
-      "id": "T1486",
-      "count": 2
-    },
-    {
-      "id": "T1490",
-      "count": 2
-    },
-    {
       "id": "T1496",
       "count": 2
     },
@@ -1331,15 +1289,15 @@
       "count": 2
     },
     {
-      "id": "T1498",
-      "count": 2
-    },
-    {
       "id": "T1505.004",
       "count": 2
     },
     {
-      "id": "T1518",
+      "id": "T1548",
+      "count": 2
+    },
+    {
+      "id": "T1550.002",
       "count": 2
     },
     {
@@ -1347,11 +1305,27 @@
       "count": 2
     },
     {
+      "id": "T1560",
+      "count": 2
+    },
+    {
+      "id": "T1566.004",
+      "count": 2
+    },
+    {
       "id": "T1567",
       "count": 2
     },
     {
+      "id": "T1569.002",
+      "count": 2
+    },
+    {
       "id": "T1571",
+      "count": 2
+    },
+    {
+      "id": "T1574",
       "count": 2
     },
     {
@@ -1367,11 +1341,11 @@
       "count": 2
     },
     {
-      "id": "T1594",
+      "id": "T1595",
       "count": 2
     },
     {
-      "id": "T1595",
+      "id": "T1595.002",
       "count": 2
     },
     {
@@ -1391,11 +1365,19 @@
       "count": 2
     },
     {
+      "id": "T1620",
+      "count": 2
+    },
+    {
       "id": "T1649",
       "count": 2
     },
     {
       "id": "T1001.003",
+      "count": 1
+    },
+    {
+      "id": "T1003",
       "count": 1
     },
     {
@@ -1459,6 +1441,10 @@
       "count": 1
     },
     {
+      "id": "T1053",
+      "count": 1
+    },
+    {
       "id": "T1053.002",
       "count": 1
     },
@@ -1507,15 +1493,15 @@
       "count": 1
     },
     {
+      "id": "T1070",
+      "count": 1
+    },
+    {
       "id": "T1074",
       "count": 1
     },
     {
       "id": "T1074.002",
-      "count": 1
-    },
-    {
-      "id": "T1078.001",
       "count": 1
     },
     {
@@ -1555,11 +1541,11 @@
       "count": 1
     },
     {
-      "id": "T1106",
+      "id": "T1102.002",
       "count": 1
     },
     {
-      "id": "T1112",
+      "id": "T1106",
       "count": 1
     },
     {
@@ -1596,6 +1582,10 @@
     },
     {
       "id": "T1125",
+      "count": 1
+    },
+    {
+      "id": "T1132",
       "count": 1
     },
     {
@@ -1640,6 +1630,10 @@
     },
     {
       "id": "T1203",
+      "count": 1
+    },
+    {
+      "id": "T1204.001",
       "count": 1
     },
     {
@@ -1691,7 +1685,15 @@
       "count": 1
     },
     {
+      "id": "T1486",
+      "count": 1
+    },
+    {
       "id": "T1489",
+      "count": 1
+    },
+    {
+      "id": "T1490",
       "count": 1
     },
     {
@@ -1707,7 +1709,15 @@
       "count": 1
     },
     {
+      "id": "T1498",
+      "count": 1
+    },
+    {
       "id": "T1505",
+      "count": 1
+    },
+    {
+      "id": "T1518",
       "count": 1
     },
     {
@@ -1811,6 +1821,10 @@
       "count": 1
     },
     {
+      "id": "T1555",
+      "count": 1
+    },
+    {
       "id": "T1556",
       "count": 1
     },
@@ -1827,7 +1841,7 @@
       "count": 1
     },
     {
-      "id": "T1558.004",
+      "id": "T1558.003",
       "count": 1
     },
     {
@@ -1856,6 +1870,10 @@
     },
     {
       "id": "T1567.001",
+      "count": 1
+    },
+    {
+      "id": "T1567.002",
       "count": 1
     },
     {
@@ -2000,6 +2018,10 @@
     },
     {
       "id": "T1622",
+      "count": 1
+    },
+    {
+      "id": "T1627.001",
       "count": 1
     },
     {
@@ -4487,5 +4509,5 @@
     "6ac96277e3120a9730fd6584cd42217c3527aed1"
   ],
   "conflicts": [],
-  "evidence_count": 41
+  "evidence_count": 52
 }

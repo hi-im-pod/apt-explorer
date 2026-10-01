@@ -1,9 +1,23 @@
 {
-  "id": "viceleaker",
-  "name": "ViceLeaker",
+  "id": "mustard-tempest",
+  "name": "Mustard Tempest",
   "aliases": [
     {
-      "value": "ViceLeaker",
+      "value": "Mustard Tempest",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "DEV-0206",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Purple Vallhund",
       "sources": [
         "misp",
         "malpedia"

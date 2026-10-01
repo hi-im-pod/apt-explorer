@@ -6,7 +6,8 @@
       "value": "Dragonbridge",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -14,6 +15,18 @@
       "sources": [
         "misp",
         "malpedia"
+      ]
+    },
+    {
+      "value": "Taizi Flood",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Spamouflage",
+      "sources": [
+        "microsoft"
       ]
     }
   ],
@@ -25,6 +38,10 @@
     {
       "value": "CN",
       "source": "malpedia"
+    },
+    {
+      "value": "CN",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -40,5 +57,5 @@
   "timeline": [],
   "reports": [],
   "conflicts": [],
-  "evidence_count": 2
+  "evidence_count": 3
 }

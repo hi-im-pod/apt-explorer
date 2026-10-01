@@ -1,7 +1,16 @@
 {
   "id": "cyber-av3ngers",
-  "name": "Cyber Av3ngers",
+  "name": "CyberAv3ngers",
   "aliases": [
+    {
+      "value": "CyberAv3ngers",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
     {
       "value": "Cyber Av3ngers",
       "sources": [
@@ -10,18 +19,16 @@
       ]
     },
     {
-      "value": "CyberAv3ngers",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
       "value": "Shahid Kaveh Group",
       "sources": [
         "misp",
         "malpedia"
+      ]
+    },
+    {
+      "value": "Soldiers of Soloman",
+      "sources": [
+        "attack"
       ]
     }
   ],
@@ -96,5 +103,5 @@
     "00910170047c8ea0d169602b2e5ada04394a3984"
   ],
   "conflicts": [],
-  "evidence_count": 3
+  "evidence_count": 4
 }

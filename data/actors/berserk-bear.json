@@ -1,61 +1,71 @@
 {
-  "id": "cadelle",
-  "name": "Cadelle",
+  "id": "berserk-bear",
+  "name": "Berserk Bear",
   "aliases": [
     {
-      "value": "Cadelle",
+      "value": "Berserk Bear",
       "sources": [
-        "misp",
-        "etda",
-        "malpedia"
+        "etda"
+      ]
+    },
+    {
+      "value": "Dragonfly 2.0",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Dymalloy",
+      "sources": [
+        "etda"
       ]
     }
   ],
   "origin": [
     {
-      "value": "IR",
-      "source": "misp"
-    },
-    {
-      "value": "IR",
+      "value": "RU",
       "source": "etda"
-    },
-    {
-      "value": "IR",
-      "source": "malpedia"
     }
   ],
   "sponsor": [],
   "motivation": [
     {
-      "value": "Information theft and espionage",
+      "value": "Sabotage and destruction",
       "source": "etda"
     }
   ],
   "claimed_targets": {
     "countries": [
       {
+        "value": "Azerbaijan",
+        "source": "etda"
+      },
+      {
+        "value": "Belgium",
+        "source": "etda"
+      },
+      {
+        "value": "Canada",
+        "source": "etda"
+      },
+      {
+        "value": "France",
+        "source": "etda"
+      },
+      {
         "value": "Germany",
         "source": "etda"
       },
       {
-        "value": "Iran",
+        "value": "Italy",
         "source": "etda"
       },
       {
-        "value": "Iraq",
+        "value": "Norway",
         "source": "etda"
       },
       {
-        "value": "Netherlands",
-        "source": "etda"
-      },
-      {
-        "value": "Pakistan",
-        "source": "etda"
-      },
-      {
-        "value": "Saudi Arabia",
+        "value": "Russia",
         "source": "etda"
       },
       {
@@ -63,15 +73,11 @@
         "source": "etda"
       },
       {
-        "value": "Sudan",
+        "value": "Spain",
         "source": "etda"
       },
       {
-        "value": "Tajikistan",
-        "source": "etda"
-      },
-      {
-        "value": "Thailand",
+        "value": "Switzerland",
         "source": "etda"
       },
       {
@@ -79,11 +85,11 @@
         "source": "etda"
       },
       {
-        "value": "United Arab Emirates",
+        "value": "United Kingdom",
         "source": "etda"
       },
       {
-        "value": "United Kingdom",
+        "value": "Ukraine",
         "source": "etda"
       },
       {
@@ -91,7 +97,12 @@
         "source": "etda"
       }
     ],
-    "sectors": []
+    "sectors": [
+      {
+        "value": "Energy",
+        "source": "etda"
+      }
+    ]
   },
   "malware": [],
   "techniques_documented": [],
@@ -100,5 +111,5 @@
   "timeline": [],
   "reports": [],
   "conflicts": [],
-  "evidence_count": 2
+  "evidence_count": 0
 }

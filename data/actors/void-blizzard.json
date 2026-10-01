@@ -7,7 +7,8 @@
       "sources": [
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -15,7 +16,8 @@
       "sources": [
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -52,6 +54,10 @@
     {
       "value": "RU",
       "source": "malpedia"
+    },
+    {
+      "value": "RU",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -238,5 +244,5 @@
     "fb033541c7f191f6c9dc830859661c80de4a8f5a"
   ],
   "conflicts": [],
-  "evidence_count": 6
+  "evidence_count": 8
 }

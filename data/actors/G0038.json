@@ -8,7 +8,8 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -22,7 +23,20 @@
     {
       "value": "Project Raven",
       "sources": [
-        "etda"
+        "etda",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Daffodil Gust",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Fruity Armor",
+      "sources": [
+        "microsoft"
       ]
     }
   ],
@@ -38,6 +52,10 @@
     {
       "value": "AE",
       "source": "malpedia"
+    },
+    {
+      "value": "AE",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -176,5 +194,5 @@
     "6060d8839dc4054fd3d57b2935eb79b2876f75d6"
   ],
   "conflicts": [],
-  "evidence_count": 7
+  "evidence_count": 10
 }

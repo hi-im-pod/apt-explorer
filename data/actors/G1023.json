@@ -7,7 +7,8 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -16,7 +17,8 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -24,7 +26,8 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -52,11 +55,27 @@
       ]
     },
     {
+      "value": "TG-2754",
+      "sources": [
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
       "value": "Poisoned Flight",
       "sources": [
         "misp",
         "etda",
         "malpedia"
+      ]
+    },
+    {
+      "value": "KEYHOLE PANDA",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -67,24 +86,66 @@
       ]
     },
     {
-      "value": "TG-2754",
-      "sources": [
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "KEYHOLE PANDA",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
       "value": "BASALT CASTLE",
       "sources": [
         "misp",
         "malpedia"
+      ]
+    },
+    {
+      "value": "Backdoor-DPD",
+      "sources": [
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "COVENANT",
+      "sources": [
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "CYSERVICE",
+      "sources": [
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Bottle",
+      "sources": [
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Red Horus",
+      "sources": [
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Red Naga",
+      "sources": [
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Auriga",
+      "sources": [
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "ATG48",
+      "sources": [
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -112,51 +173,9 @@
       ]
     },
     {
-      "value": "Backdoor-DPD",
+      "value": "tabcteng",
       "sources": [
-        "malpedia"
-      ]
-    },
-    {
-      "value": "COVENANT",
-      "sources": [
-        "malpedia"
-      ]
-    },
-    {
-      "value": "CYSERVICE",
-      "sources": [
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Bottle",
-      "sources": [
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Red Horus",
-      "sources": [
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Red Naga",
-      "sources": [
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Auriga",
-      "sources": [
-        "malpedia"
-      ]
-    },
-    {
-      "value": "ATG48",
-      "sources": [
-        "malpedia"
+        "microsoft"
       ]
     }
   ],
@@ -172,6 +191,10 @@
     {
       "value": "CN",
       "source": "malpedia"
+    },
+    {
+      "value": "CN",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -493,5 +516,5 @@
     "paper:Check%20Your%20Pulse%20Suspected%20APT%20Actors%20Leverage%20Authentication%20Bypass%20Techniques%20and%20Pulse%20Secure%20Zero-Day"
   ],
   "conflicts": [],
-  "evidence_count": 22
+  "evidence_count": 35
 }

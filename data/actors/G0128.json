@@ -7,7 +7,8 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -16,7 +17,8 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -24,7 +26,8 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -47,7 +50,8 @@
       "value": "JUDGMENT PANDA",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -69,6 +73,20 @@
       "sources": [
         "misp",
         "malpedia"
+      ]
+    },
+    {
+      "value": "Chameleon",
+      "sources": [
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "WebFans",
+      "sources": [
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -100,18 +118,6 @@
       "sources": [
         "etda"
       ]
-    },
-    {
-      "value": "Chameleon",
-      "sources": [
-        "malpedia"
-      ]
-    },
-    {
-      "value": "WebFans",
-      "sources": [
-        "malpedia"
-      ]
     }
   ],
   "origin": [
@@ -126,6 +132,10 @@
     {
       "value": "CN",
       "source": "malpedia"
+    },
+    {
+      "value": "CN",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -244,7 +254,7 @@
   "techniques_reported": [
     {
       "id": "T1082",
-      "count": 4
+      "count": 3
     },
     {
       "id": "T1132.001",
@@ -267,15 +277,7 @@
       "count": 2
     },
     {
-      "id": "T1033",
-      "count": 2
-    },
-    {
       "id": "T1036.005",
-      "count": 2
-    },
-    {
-      "id": "T1057",
       "count": 2
     },
     {
@@ -284,10 +286,6 @@
     },
     {
       "id": "T1083",
-      "count": 2
-    },
-    {
-      "id": "T1105",
       "count": 2
     },
     {
@@ -315,15 +313,11 @@
       "count": 1
     },
     {
-      "id": "T1016",
-      "count": 1
-    },
-    {
-      "id": "T1021.001",
-      "count": 1
-    },
-    {
       "id": "T1027.009",
+      "count": 1
+    },
+    {
+      "id": "T1033",
       "count": 1
     },
     {
@@ -343,15 +337,11 @@
       "count": 1
     },
     {
+      "id": "T1057",
+      "count": 1
+    },
+    {
       "id": "T1059.003",
-      "count": 1
-    },
-    {
-      "id": "T1069.001",
-      "count": 1
-    },
-    {
-      "id": "T1070",
       "count": 1
     },
     {
@@ -363,11 +353,11 @@
       "count": 1
     },
     {
-      "id": "T1098",
+      "id": "T1102",
       "count": 1
     },
     {
-      "id": "T1102",
+      "id": "T1105",
       "count": 1
     },
     {
@@ -380,10 +370,6 @@
     },
     {
       "id": "T1129",
-      "count": 1
-    },
-    {
-      "id": "T1136",
       "count": 1
     },
     {
@@ -408,10 +394,6 @@
     },
     {
       "id": "T1553.002",
-      "count": 1
-    },
-    {
-      "id": "T1555",
       "count": 1
     },
     {
@@ -444,6 +426,10 @@
     },
     {
       "id": "T1608.001",
+      "count": 1
+    },
+    {
+      "id": "T1627.001",
       "count": 1
     }
   ],
@@ -1316,5 +1302,5 @@
     "24bd1e9d9c67263a2a65c017545634f004dcbfc8"
   ],
   "conflicts": [],
-  "evidence_count": 18
+  "evidence_count": 24
 }

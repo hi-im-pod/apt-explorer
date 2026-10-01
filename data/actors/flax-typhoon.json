@@ -7,7 +7,8 @@
       "sources": [
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -30,7 +31,14 @@
       "value": "Storm-0919",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "ETHEREAL PANDA",
+      "sources": [
+        "microsoft"
       ]
     }
   ],
@@ -46,6 +54,10 @@
     {
       "value": "CN",
       "source": "malpedia"
+    },
+    {
+      "value": "CN",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -144,5 +156,5 @@
     "ee9ef33464b87e53e9f8406fc537f089694f8656"
   ],
   "conflicts": [],
-  "evidence_count": 7
+  "evidence_count": 10
 }

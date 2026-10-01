@@ -6,7 +6,8 @@
       "value": "Storm-2372",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     }
   ],
@@ -33,5 +34,5 @@
   "timeline": [],
   "reports": [],
   "conflicts": [],
-  "evidence_count": 1
+  "evidence_count": 2
 }

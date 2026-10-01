@@ -14,7 +14,8 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -22,7 +23,26 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Fallout Team",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "APT-C-60",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -43,14 +63,6 @@
     },
     {
       "value": "SIG25",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Fallout Team",
       "sources": [
         "misp",
         "etda",
@@ -82,11 +94,19 @@
       ]
     },
     {
-      "value": "APT-C-60",
+      "value": "TieOnJoe",
       "sources": [
-        "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Purple Pygmy",
+      "sources": [
+        "etda",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -98,17 +118,19 @@
       ]
     },
     {
-      "value": "TieOnJoe",
+      "value": "Nemim",
       "sources": [
-        "etda",
-        "malpedia"
+        "misp",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
-      "value": "Purple Pygmy",
+      "value": "Tapaoux",
       "sources": [
-        "etda",
-        "malpedia"
+        "misp",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -119,21 +141,7 @@
       ]
     },
     {
-      "value": "Nemim",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
       "value": "Nemin",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Tapaoux",
       "sources": [
         "misp",
         "malpedia"
@@ -158,6 +166,34 @@
       "sources": [
         "misp",
         "malpedia"
+      ]
+    },
+    {
+      "value": "Dark Hotel",
+      "sources": [
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "TEMPLAR",
+      "sources": [
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Egobot",
+      "sources": [
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "PALADIN",
+      "sources": [
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -191,27 +227,9 @@
       ]
     },
     {
-      "value": "Dark Hotel",
+      "value": "SHADOW CRANE",
       "sources": [
-        "malpedia"
-      ]
-    },
-    {
-      "value": "TEMPLAR",
-      "sources": [
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Egobot",
-      "sources": [
-        "malpedia"
-      ]
-    },
-    {
-      "value": "PALADIN",
-      "sources": [
-        "malpedia"
+        "microsoft"
       ]
     }
   ],
@@ -498,32 +516,7 @@
     "T1566.001",
     "T1573.001"
   ],
-  "techniques_reported": [
-    {
-      "id": "T1203",
-      "count": 1
-    },
-    {
-      "id": "T1204.001",
-      "count": 1
-    },
-    {
-      "id": "T1583.001",
-      "count": 1
-    },
-    {
-      "id": "T1583.004",
-      "count": 1
-    },
-    {
-      "id": "T1587.004",
-      "count": 1
-    },
-    {
-      "id": "T1608.001",
-      "count": 1
-    }
-  ],
+  "techniques_reported": [],
   "cves": [
     {
       "cve": "CVE-2009-0556",
@@ -793,5 +786,5 @@
     "paper:Kaspersky_Darkhotel_kl_07.11_1.1(11-10-2014)"
   ],
   "conflicts": [],
-  "evidence_count": 39
+  "evidence_count": 52
 }

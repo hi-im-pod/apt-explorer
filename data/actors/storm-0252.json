@@ -6,14 +6,16 @@
       "value": "Storm-0252",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
       "value": "CHATTY SPIDER",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     }
   ],
@@ -31,5 +33,5 @@
   "timeline": [],
   "reports": [],
   "conflicts": [],
-  "evidence_count": 2
+  "evidence_count": 4
 }

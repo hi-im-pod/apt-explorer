@@ -8,7 +8,28 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "TEMP.Periscope",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Gingham Typhoon",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -21,21 +42,12 @@
       ]
     },
     {
-      "value": "TEMP.Periscope",
+      "value": "APT40",
       "sources": [
         "attack",
         "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Gingham Typhoon",
-      "sources": [
-        "attack",
-        "misp",
-        "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -48,14 +60,6 @@
     },
     {
       "value": "BRONZE MOHAWK",
-      "sources": [
-        "attack",
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "APT40",
       "sources": [
         "attack",
         "misp",
@@ -95,6 +99,22 @@
       ]
     },
     {
+      "value": "GADOLINIUM",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "KRYPTONITE PANDA",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
       "value": "Kryptonite Panda",
       "sources": [
         "attack",
@@ -109,20 +129,6 @@
       ]
     },
     {
-      "value": "GADOLINIUM",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "KRYPTONITE PANDA",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
       "value": "ATK29",
       "sources": [
         "misp",
@@ -134,6 +140,20 @@
       "sources": [
         "misp",
         "malpedia"
+      ]
+    },
+    {
+      "value": "JJDoor",
+      "sources": [
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Feverdream",
+      "sources": [
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -165,18 +185,6 @@
       "sources": [
         "etda"
       ]
-    },
-    {
-      "value": "JJDoor",
-      "sources": [
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Feverdream",
-      "sources": [
-        "malpedia"
-      ]
     }
   ],
   "origin": [
@@ -191,6 +199,10 @@
     {
       "value": "CN",
       "source": "malpedia"
+    },
+    {
+      "value": "CN",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -431,18 +443,6 @@
   "techniques_reported": [
     {
       "id": "T1082",
-      "count": 14
-    },
-    {
-      "id": "T1059.001",
-      "count": 12
-    },
-    {
-      "id": "T1071.001",
-      "count": 11
-    },
-    {
-      "id": "T1204.002",
       "count": 11
     },
     {
@@ -450,39 +450,43 @@
       "count": 10
     },
     {
+      "id": "T1059.001",
+      "count": 9
+    },
+    {
+      "id": "T1071.001",
+      "count": 9
+    },
+    {
+      "id": "T1204.002",
+      "count": 9
+    },
+    {
       "id": "T1057",
-      "count": 10
+      "count": 8
     },
     {
       "id": "T1059.003",
-      "count": 10
+      "count": 8
     },
     {
       "id": "T1105",
-      "count": 9
+      "count": 8
     },
     {
       "id": "T1140",
-      "count": 9
+      "count": 8
     },
     {
       "id": "T1566.001",
-      "count": 9
-    },
-    {
-      "id": "T1033",
       "count": 8
-    },
-    {
-      "id": "T1041",
-      "count": 8
-    },
-    {
-      "id": "T1021.001",
-      "count": 7
     },
     {
       "id": "T1027",
+      "count": 7
+    },
+    {
+      "id": "T1041",
       "count": 7
     },
     {
@@ -490,51 +494,15 @@
       "count": 7
     },
     {
-      "id": "T1547.001",
-      "count": 7
-    },
-    {
-      "id": "T1572",
-      "count": 7
-    },
-    {
-      "id": "T1574.001",
-      "count": 7
-    },
-    {
-      "id": "T1018",
-      "count": 6
-    },
-    {
-      "id": "T1036.005",
-      "count": 6
-    },
-    {
-      "id": "T1055",
-      "count": 6
-    },
-    {
-      "id": "T1070.004",
-      "count": 6
-    },
-    {
       "id": "T1083",
       "count": 6
     },
     {
-      "id": "T1190",
+      "id": "T1547.001",
       "count": 6
     },
     {
-      "id": "T1482",
-      "count": 6
-    },
-    {
-      "id": "T1505.003",
-      "count": 6
-    },
-    {
-      "id": "T1570",
+      "id": "T1572",
       "count": 6
     },
     {
@@ -542,19 +510,19 @@
       "count": 5
     },
     {
-      "id": "T1016",
+      "id": "T1018",
+      "count": 5
+    },
+    {
+      "id": "T1033",
+      "count": 5
+    },
+    {
+      "id": "T1036.005",
       "count": 5
     },
     {
       "id": "T1059.005",
-      "count": 5
-    },
-    {
-      "id": "T1068",
-      "count": 5
-    },
-    {
-      "id": "T1069.002",
       "count": 5
     },
     {
@@ -566,7 +534,15 @@
       "count": 5
     },
     {
-      "id": "T1560",
+      "id": "T1190",
+      "count": 5
+    },
+    {
+      "id": "T1482",
+      "count": 5
+    },
+    {
+      "id": "T1505.003",
       "count": 5
     },
     {
@@ -574,31 +550,23 @@
       "count": 5
     },
     {
-      "id": "T1569.002",
+      "id": "T1570",
       "count": 5
     },
     {
-      "id": "T1587.001",
+      "id": "T1574.001",
       "count": 5
-    },
-    {
-      "id": "T1620",
-      "count": 5
-    },
-    {
-      "id": "T1003.001",
-      "count": 4
     },
     {
       "id": "T1007",
       "count": 4
     },
     {
-      "id": "T1021.002",
+      "id": "T1016",
       "count": 4
     },
     {
-      "id": "T1027.009",
+      "id": "T1021.001",
       "count": 4
     },
     {
@@ -610,11 +578,7 @@
       "count": 4
     },
     {
-      "id": "T1055.002",
-      "count": 4
-    },
-    {
-      "id": "T1056.001",
+      "id": "T1055",
       "count": 4
     },
     {
@@ -622,11 +586,19 @@
       "count": 4
     },
     {
-      "id": "T1059.006",
+      "id": "T1059.007",
       "count": 4
     },
     {
-      "id": "T1059.007",
+      "id": "T1068",
+      "count": 4
+    },
+    {
+      "id": "T1069.002",
+      "count": 4
+    },
+    {
+      "id": "T1070.004",
       "count": 4
     },
     {
@@ -634,43 +606,11 @@
       "count": 4
     },
     {
-      "id": "T1090",
-      "count": 4
-    },
-    {
       "id": "T1090.001",
       "count": 4
     },
     {
-      "id": "T1098",
-      "count": 4
-    },
-    {
       "id": "T1135",
-      "count": 4
-    },
-    {
-      "id": "T1219",
-      "count": 4
-    },
-    {
-      "id": "T1518.001",
-      "count": 4
-    },
-    {
-      "id": "T1543.003",
-      "count": 4
-    },
-    {
-      "id": "T1555",
-      "count": 4
-    },
-    {
-      "id": "T1558.003",
-      "count": 4
-    },
-    {
-      "id": "T1560.001",
       "count": 4
     },
     {
@@ -682,15 +622,11 @@
       "count": 4
     },
     {
-      "id": "T1583.003",
+      "id": "T1587.001",
       "count": 4
     },
     {
-      "id": "T1595.002",
-      "count": 4
-    },
-    {
-      "id": "T1003",
+      "id": "T1003.001",
       "count": 3
     },
     {
@@ -699,6 +635,14 @@
     },
     {
       "id": "T1012",
+      "count": 3
+    },
+    {
+      "id": "T1021.002",
+      "count": 3
+    },
+    {
+      "id": "T1027.009",
       "count": 3
     },
     {
@@ -714,19 +658,19 @@
       "count": 3
     },
     {
+      "id": "T1055.002",
+      "count": 3
+    },
+    {
       "id": "T1055.012",
       "count": 3
     },
     {
-      "id": "T1069.001",
+      "id": "T1056.001",
       "count": 3
     },
     {
-      "id": "T1070",
-      "count": 3
-    },
-    {
-      "id": "T1071",
+      "id": "T1059.006",
       "count": 3
     },
     {
@@ -746,15 +690,19 @@
       "count": 3
     },
     {
+      "id": "T1090",
+      "count": 3
+    },
+    {
       "id": "T1095",
       "count": 3
     },
     {
-      "id": "T1102",
+      "id": "T1098",
       "count": 3
     },
     {
-      "id": "T1102.002",
+      "id": "T1102",
       "count": 3
     },
     {
@@ -778,11 +726,11 @@
       "count": 3
     },
     {
-      "id": "T1136",
+      "id": "T1136.001",
       "count": 3
     },
     {
-      "id": "T1136.001",
+      "id": "T1219",
       "count": 3
     },
     {
@@ -794,15 +742,11 @@
       "count": 3
     },
     {
-      "id": "T1518",
+      "id": "T1518.001",
       "count": 3
     },
     {
-      "id": "T1548",
-      "count": 3
-    },
-    {
-      "id": "T1550.002",
+      "id": "T1543.003",
       "count": 3
     },
     {
@@ -810,19 +754,15 @@
       "count": 3
     },
     {
-      "id": "T1566.004",
+      "id": "T1560",
       "count": 3
     },
     {
-      "id": "T1567.002",
+      "id": "T1560.001",
       "count": 3
     },
     {
       "id": "T1571",
-      "count": 3
-    },
-    {
-      "id": "T1574",
       "count": 3
     },
     {
@@ -834,11 +774,27 @@
       "count": 3
     },
     {
+      "id": "T1583.003",
+      "count": 3
+    },
+    {
+      "id": "T1595.002",
+      "count": 3
+    },
+    {
       "id": "T1608.001",
       "count": 3
     },
     {
+      "id": "T1620",
+      "count": 3
+    },
+    {
       "id": "T1001.003",
+      "count": 2
+    },
+    {
+      "id": "T1003",
       "count": 2
     },
     {
@@ -862,19 +818,11 @@
       "count": 2
     },
     {
-      "id": "T1027.013",
-      "count": 2
-    },
-    {
       "id": "T1039",
       "count": 2
     },
     {
       "id": "T1040",
-      "count": 2
-    },
-    {
-      "id": "T1053",
       "count": 2
     },
     {
@@ -902,7 +850,15 @@
       "count": 2
     },
     {
-      "id": "T1069",
+      "id": "T1069.001",
+      "count": 2
+    },
+    {
+      "id": "T1070",
+      "count": 2
+    },
+    {
+      "id": "T1071",
       "count": 2
     },
     {
@@ -918,10 +874,6 @@
       "count": 2
     },
     {
-      "id": "T1078.001",
-      "count": 2
-    },
-    {
       "id": "T1078.004",
       "count": 2
     },
@@ -934,15 +886,15 @@
       "count": 2
     },
     {
+      "id": "T1102.002",
+      "count": 2
+    },
+    {
       "id": "T1104",
       "count": 2
     },
     {
       "id": "T1106",
-      "count": 2
-    },
-    {
-      "id": "T1112",
       "count": 2
     },
     {
@@ -958,7 +910,7 @@
       "count": 2
     },
     {
-      "id": "T1132",
+      "id": "T1136",
       "count": 2
     },
     {
@@ -967,10 +919,6 @@
     },
     {
       "id": "T1204",
-      "count": 2
-    },
-    {
-      "id": "T1204.001",
       "count": 2
     },
     {
@@ -986,23 +934,15 @@
       "count": 2
     },
     {
-      "id": "T1486",
-      "count": 2
-    },
-    {
       "id": "T1489",
       "count": 2
     },
     {
-      "id": "T1490",
-      "count": 2
-    },
-    {
-      "id": "T1498",
-      "count": 2
-    },
-    {
       "id": "T1505.004",
+      "count": 2
+    },
+    {
+      "id": "T1518",
       "count": 2
     },
     {
@@ -1026,11 +966,23 @@
       "count": 2
     },
     {
+      "id": "T1548",
+      "count": 2
+    },
+    {
       "id": "T1552.001",
       "count": 2
     },
     {
       "id": "T1553.002",
+      "count": 2
+    },
+    {
+      "id": "T1555",
+      "count": 2
+    },
+    {
+      "id": "T1558.003",
       "count": 2
     },
     {
@@ -1042,7 +994,19 @@
       "count": 2
     },
     {
+      "id": "T1566.004",
+      "count": 2
+    },
+    {
       "id": "T1567",
+      "count": 2
+    },
+    {
+      "id": "T1567.002",
+      "count": 2
+    },
+    {
+      "id": "T1569.002",
       "count": 2
     },
     {
@@ -1051,6 +1015,10 @@
     },
     {
       "id": "T1573.002",
+      "count": 2
+    },
+    {
+      "id": "T1574",
       "count": 2
     },
     {
@@ -1083,10 +1051,6 @@
     },
     {
       "id": "T1593.002",
-      "count": 2
-    },
-    {
-      "id": "T1594",
       "count": 2
     },
     {
@@ -1170,6 +1134,10 @@
       "count": 1
     },
     {
+      "id": "T1053",
+      "count": 1
+    },
+    {
       "id": "T1053.002",
       "count": 1
     },
@@ -1198,6 +1166,10 @@
       "count": 1
     },
     {
+      "id": "T1069",
+      "count": 1
+    },
+    {
       "id": "T1069.003",
       "count": 1
     },
@@ -1211,6 +1183,10 @@
     },
     {
       "id": "T1074",
+      "count": 1
+    },
+    {
+      "id": "T1078.001",
       "count": 1
     },
     {
@@ -1274,6 +1250,10 @@
       "count": 1
     },
     {
+      "id": "T1112",
+      "count": 1
+    },
+    {
       "id": "T1113",
       "count": 1
     },
@@ -1295,6 +1275,10 @@
     },
     {
       "id": "T1125",
+      "count": 1
+    },
+    {
+      "id": "T1132",
       "count": 1
     },
     {
@@ -1347,6 +1331,10 @@
     },
     {
       "id": "T1202",
+      "count": 1
+    },
+    {
+      "id": "T1204.001",
       "count": 1
     },
     {
@@ -1406,6 +1394,14 @@
       "count": 1
     },
     {
+      "id": "T1486",
+      "count": 1
+    },
+    {
+      "id": "T1490",
+      "count": 1
+    },
+    {
       "id": "T1491.002",
       "count": 1
     },
@@ -1415,6 +1411,10 @@
     },
     {
       "id": "T1497.003",
+      "count": 1
+    },
+    {
+      "id": "T1498",
       "count": 1
     },
     {
@@ -1498,6 +1498,10 @@
       "count": 1
     },
     {
+      "id": "T1550.002",
+      "count": 1
+    },
+    {
       "id": "T1550.003",
       "count": 1
     },
@@ -1523,10 +1527,6 @@
     },
     {
       "id": "T1556.009",
-      "count": 1
-    },
-    {
-      "id": "T1558.004",
       "count": 1
     },
     {
@@ -1654,6 +1654,10 @@
       "count": 1
     },
     {
+      "id": "T1594",
+      "count": 1
+    },
+    {
       "id": "T1595.001",
       "count": 1
     },
@@ -1707,6 +1711,10 @@
     },
     {
       "id": "T1622",
+      "count": 1
+    },
+    {
+      "id": "T1627.001",
       "count": 1
     },
     {
@@ -4140,5 +4148,5 @@
     "2f6abbda2e6cd11dc0d295681de0261acc8d7e29"
   ],
   "conflicts": [],
-  "evidence_count": 40
+  "evidence_count": 48
 }

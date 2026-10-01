@@ -507,6 +507,10 @@
       "source": "attack"
     },
     {
+      "name": "VajraSpy",
+      "source": "attack"
+    },
+    {
       "name": "BadNews",
       "source": "malpedia"
     },
@@ -652,6 +656,58 @@
       "count": 1
     },
     {
+      "id": "T1398",
+      "count": 1
+    },
+    {
+      "id": "T1417.001",
+      "count": 1
+    },
+    {
+      "id": "T1418",
+      "count": 1
+    },
+    {
+      "id": "T1420",
+      "count": 1
+    },
+    {
+      "id": "T1422",
+      "count": 1
+    },
+    {
+      "id": "T1426",
+      "count": 1
+    },
+    {
+      "id": "T1429",
+      "count": 1
+    },
+    {
+      "id": "T1430",
+      "count": 1
+    },
+    {
+      "id": "T1437.001",
+      "count": 1
+    },
+    {
+      "id": "T1481.003",
+      "count": 1
+    },
+    {
+      "id": "T1512",
+      "count": 1
+    },
+    {
+      "id": "T1517",
+      "count": 1
+    },
+    {
+      "id": "T1533",
+      "count": 1
+    },
+    {
       "id": "T1555.003",
       "count": 1
     },
@@ -685,6 +741,26 @@
     },
     {
       "id": "T1620",
+      "count": 1
+    },
+    {
+      "id": "T1636.002",
+      "count": 1
+    },
+    {
+      "id": "T1636.003",
+      "count": 1
+    },
+    {
+      "id": "T1636.004",
+      "count": 1
+    },
+    {
+      "id": "T1641",
+      "count": 1
+    },
+    {
+      "id": "T1646",
       "count": 1
     }
   ],
@@ -1023,7 +1099,7 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 2
+      "count": 3
     },
     {
       "quarter": "2026-Q3",
@@ -1033,6 +1109,7 @@
   "reports": [
     "4dc4cfdd02b71f888a378a33099915a51cbfec2f",
     "cfdb3d32d6a31891c317b4412de451d8e41c7b68",
+    "b36d2f14704d33920e77dc0a8488401a9ab9517b",
     "fe52dee64e719ea763f6e8b485eb690cd77c5290",
     "34399febaf90cde2f9df7aca450dda1c7f81d75c",
     "d0a0a5f2b671b004318874f8d2683e3ce5bd42f3",

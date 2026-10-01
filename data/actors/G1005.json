@@ -7,7 +7,8 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -16,7 +17,16 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "INCENDIARY JACKAL",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -28,13 +38,6 @@
     },
     {
       "value": "GREATRIFT",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "INCENDIARY JACKAL",
       "sources": [
         "misp",
         "malpedia"
@@ -65,6 +68,10 @@
     {
       "value": "LB",
       "source": "malpedia"
+    },
+    {
+      "value": "LB",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -171,5 +178,5 @@
     "df1109697af74948a23a2c83d6f4587d00b15903"
   ],
   "conflicts": [],
-  "evidence_count": 10
+  "evidence_count": 13
 }

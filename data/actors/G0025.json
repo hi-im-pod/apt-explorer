@@ -7,7 +7,8 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -15,19 +16,21 @@
       "sources": [
         "misp",
         "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Group 8",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
       "value": "Heart Typhoon",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Group 8",
       "sources": [
         "misp",
         "etda",
@@ -99,6 +102,22 @@
       ]
     },
     {
+      "value": "AURORA PANDA",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "HELIUM",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
       "value": "Deputy Dog",
       "sources": [
         "attack",
@@ -106,21 +125,14 @@
       ]
     },
     {
-      "value": "AURORA PANDA",
+      "value": "TG-8153",
       "sources": [
-        "misp",
-        "malpedia"
+        "etda",
+        "microsoft"
       ]
     },
     {
       "value": "BRONZE KEYSTONE",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "HELIUM",
       "sources": [
         "misp",
         "malpedia"
@@ -158,12 +170,6 @@
       ]
     },
     {
-      "value": "TG-8153",
-      "sources": [
-        "etda"
-      ]
-    },
-    {
       "value": "TEMP.Avengers",
       "sources": [
         "etda"
@@ -173,6 +179,42 @@
       "value": "ATK 2",
       "sources": [
         "etda"
+      ]
+    },
+    {
+      "value": "ATG3",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Red Typhoon",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "KAOS",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "SportsFans",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "DeputyDog",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Tailgater",
+      "sources": [
+        "microsoft"
       ]
     }
   ],
@@ -188,6 +230,10 @@
     {
       "value": "CN",
       "source": "malpedia"
+    },
+    {
+      "value": "CN",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -451,24 +497,12 @@
   ],
   "techniques_reported": [
     {
-      "id": "T1057",
-      "count": 3
-    },
-    {
       "id": "T1059.001",
-      "count": 3
-    },
-    {
-      "id": "T1082",
       "count": 3
     },
     {
       "id": "T1140",
       "count": 3
-    },
-    {
-      "id": "T1016",
-      "count": 2
     },
     {
       "id": "T1027",
@@ -479,7 +513,11 @@
       "count": 2
     },
     {
-      "id": "T1105",
+      "id": "T1057",
+      "count": 2
+    },
+    {
+      "id": "T1082",
       "count": 2
     },
     {
@@ -527,7 +565,7 @@
       "count": 1
     },
     {
-      "id": "T1021.001",
+      "id": "T1016",
       "count": 1
     },
     {
@@ -536,10 +574,6 @@
     },
     {
       "id": "T1027.009",
-      "count": 1
-    },
-    {
-      "id": "T1033",
       "count": 1
     },
     {
@@ -560,14 +594,6 @@
     },
     {
       "id": "T1059.003",
-      "count": 1
-    },
-    {
-      "id": "T1069.001",
-      "count": 1
-    },
-    {
-      "id": "T1070",
       "count": 1
     },
     {
@@ -595,11 +621,11 @@
       "count": 1
     },
     {
-      "id": "T1098",
+      "id": "T1102",
       "count": 1
     },
     {
-      "id": "T1102",
+      "id": "T1105",
       "count": 1
     },
     {
@@ -608,10 +634,6 @@
     },
     {
       "id": "T1129",
-      "count": 1
-    },
-    {
-      "id": "T1136",
       "count": 1
     },
     {
@@ -640,10 +662,6 @@
     },
     {
       "id": "T1553.002",
-      "count": 1
-    },
-    {
-      "id": "T1555",
       "count": 1
     },
     {
@@ -680,6 +698,10 @@
     },
     {
       "id": "T1608.001",
+      "count": 1
+    },
+    {
+      "id": "T1627.001",
       "count": 1
     }
   ],
@@ -1728,5 +1750,5 @@
     "24bd1e9d9c67263a2a65c017545634f004dcbfc8"
   ],
   "conflicts": [],
-  "evidence_count": 27
+  "evidence_count": 35
 }

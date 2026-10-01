@@ -375,32 +375,7 @@
     "T1566.001",
     "T1566.003"
   ],
-  "techniques_reported": [
-    {
-      "id": "T1027.013",
-      "count": 1
-    },
-    {
-      "id": "T1059.001",
-      "count": 1
-    },
-    {
-      "id": "T1071.001",
-      "count": 1
-    },
-    {
-      "id": "T1204.002",
-      "count": 1
-    },
-    {
-      "id": "T1497",
-      "count": 1
-    },
-    {
-      "id": "T1566",
-      "count": 1
-    }
-  ],
+  "techniques_reported": [],
   "cves": [
     {
       "cve": "CVE-2017-0199",

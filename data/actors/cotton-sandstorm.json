@@ -6,7 +6,24 @@
       "value": "Cotton Sandstorm",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "NEPTUNIUM",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "HAYWIRE KITTEN",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -31,17 +48,16 @@
       ]
     },
     {
-      "value": "NEPTUNIUM",
+      "value": "ViceLeaker",
       "sources": [
         "misp",
         "malpedia"
       ]
     },
     {
-      "value": "HAYWIRE KITTEN",
+      "value": "Vice Leaker",
       "sources": [
-        "misp",
-        "malpedia"
+        "microsoft"
       ]
     }
   ],
@@ -53,6 +69,10 @@
     {
       "value": "IR",
       "source": "malpedia"
+    },
+    {
+      "value": "IR",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -68,5 +88,5 @@
   "timeline": [],
   "reports": [],
   "conflicts": [],
-  "evidence_count": 6
+  "evidence_count": 11
 }

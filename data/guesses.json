@@ -389,7 +389,7 @@
       "evidence": [
         {
           "signal": "exact_actor_name",
-          "detail": "MISP, ETDA and Malpedia list this exact name as an actor alias.",
+          "detail": "MISP, ETDA, Malpedia and Microsoft list this exact name as an actor alias.",
           "weight": null
         },
         {
@@ -1226,7 +1226,7 @@
       "evidence": [
         {
           "signal": "exact_actor_name",
-          "detail": "ATT&CK, MISP, ETDA and Malpedia list this exact name as an actor alias.",
+          "detail": "ATT&CK, MISP, ETDA, Malpedia and Microsoft list this exact name as an actor alias.",
           "weight": null
         }
       ],

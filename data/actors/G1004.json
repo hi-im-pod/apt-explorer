@@ -7,7 +7,8 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -16,7 +17,8 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -25,18 +27,20 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "LAPSUS",
-      "sources": [
-        "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
       "value": "SLIPPY SPIDER",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "LAPSUS",
       "sources": [
         "misp",
         "malpedia"
@@ -130,6 +134,7 @@
     "T1213.002",
     "T1213.003",
     "T1213.005",
+    "T1451",
     "T1485",
     "T1489",
     "T1531",
@@ -220,7 +225,7 @@
   "timeline": [
     {
       "quarter": "2022-Q1",
-      "count": 2
+      "count": 4
     },
     {
       "quarter": "2022-Q2",
@@ -235,8 +240,10 @@
     "229590c6306ab44c9a100e43f19f11b5e1c5d67d",
     "e8c33cefaf9dc42acf2d668cf78d781fdf17c240",
     "c84b9a87c69fbf1fc074571a9ac8f16631cf8603",
-    "16c141d9d362d2d18b694aa83afb035d83d67ea9"
+    "dc9a7aace067825a112c2bd6ab72bd1a08eac464",
+    "16c141d9d362d2d18b694aa83afb035d83d67ea9",
+    "5d5c5601b3d25150c8bc757617fd4c2ea4ea4a60"
   ],
   "conflicts": [],
-  "evidence_count": 12
+  "evidence_count": 16
 }

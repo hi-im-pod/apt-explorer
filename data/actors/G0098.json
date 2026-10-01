@@ -8,7 +8,8 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -17,7 +18,17 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Canary Typhoon",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -53,15 +64,30 @@
       ]
     },
     {
-      "value": "Canary Typhoon",
+      "value": "APT24",
       "sources": [
         "misp",
-        "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
       "value": "CIRCUIT PANDA",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "PITTY PANDA",
+      "sources": [
+        "misp",
+        "malpedia"
+      ]
+    },
+    {
+      "value": "Temp.Pittytiger",
       "sources": [
         "misp",
         "malpedia"
@@ -140,6 +166,10 @@
     {
       "value": "CN",
       "source": "malpedia"
+    },
+    {
+      "value": "CN",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -225,6 +255,10 @@
       "source": "attack"
     },
     {
+      "name": "BADAUDIO",
+      "source": "malpedia"
+    },
+    {
       "name": "BLUETHER",
       "source": "malpedia"
     },
@@ -285,7 +319,40 @@
     "T1588.003",
     "T1588.004"
   ],
-  "techniques_reported": [],
+  "techniques_reported": [
+    {
+      "id": "T1041",
+      "count": 1
+    },
+    {
+      "id": "T1059",
+      "count": 1
+    },
+    {
+      "id": "T1059.007",
+      "count": 1
+    },
+    {
+      "id": "T1082",
+      "count": 1
+    },
+    {
+      "id": "T1105",
+      "count": 1
+    },
+    {
+      "id": "T1189",
+      "count": 1
+    },
+    {
+      "id": "T1195.001",
+      "count": 1
+    },
+    {
+      "id": "T1574.001",
+      "count": 1
+    }
+  ],
   "cves": [
     {
       "cve": "CVE-2012-0158",
@@ -556,12 +623,22 @@
       "count": 1
     },
     {
+      "quarter": "2025-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q1",
+      "count": 1
+    },
+    {
       "quarter": "2026-Q2",
       "count": 1
     }
   ],
   "reports": [
     "3e2c93a53f0884a2084346fc97ff4dadfc79a05a",
+    "1f4c31af34263573f191262457eb99bc5edd690e",
+    "927127a9ff37420b191af7b81035bf637fa6ba55",
     "88a4cfd8e88bd252a570ccceadd2cec23f6ef9e2",
     "0932877395a2dfe8ef29853de15071e88306878d",
     "011d85f9602c8af14d9cf5bb0721633c1702f8bc",
@@ -610,5 +687,5 @@
     "f4b6fa581d2a5c22cc93842511c6d45bcbe37aa7"
   ],
   "conflicts": [],
-  "evidence_count": 28
+  "evidence_count": 35
 }

@@ -6,14 +6,16 @@
       "value": "Gray Sandstorm",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
       "value": "DEV-0343",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     }
   ],
@@ -25,6 +27,10 @@
     {
       "value": "IR",
       "source": "malpedia"
+    },
+    {
+      "value": "IR",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -40,5 +46,5 @@
   "timeline": [],
   "reports": [],
   "conflicts": [],
-  "evidence_count": 2
+  "evidence_count": 4
 }

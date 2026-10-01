@@ -87,23 +87,7 @@
       ]
     },
     {
-      "value": "Ruby Sleet",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
       "value": "Moldy Pisces",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Opal Sleet",
       "sources": [
         "misp",
         "etda",
@@ -160,34 +144,6 @@
       ]
     },
     {
-      "value": "OSMIUM",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Konni",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Vedalia",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "CERIUM",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
       "value": "Cerium",
       "sources": [
         "etda"
@@ -218,6 +174,12 @@
       ]
     },
     {
+      "value": "Ruby Sleet",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
       "value": "Crooked Pisces",
       "sources": [
         "etda"
@@ -225,6 +187,12 @@
     },
     {
       "value": "Osmium",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Opal Sleet",
       "sources": [
         "etda"
       ]
@@ -626,11 +594,67 @@
       "count": 1
     },
     {
+      "id": "T1406",
+      "count": 1
+    },
+    {
+      "id": "T1407",
+      "count": 1
+    },
+    {
+      "id": "T1420",
+      "count": 1
+    },
+    {
+      "id": "T1422",
+      "count": 1
+    },
+    {
+      "id": "T1426",
+      "count": 1
+    },
+    {
+      "id": "T1429",
+      "count": 1
+    },
+    {
+      "id": "T1430",
+      "count": 1
+    },
+    {
+      "id": "T1437.001",
+      "count": 1
+    },
+    {
+      "id": "T1474.003",
+      "count": 1
+    },
+    {
       "id": "T1480.001",
       "count": 1
     },
     {
+      "id": "T1481.002",
+      "count": 1
+    },
+    {
       "id": "T1497",
+      "count": 1
+    },
+    {
+      "id": "T1513",
+      "count": 1
+    },
+    {
+      "id": "T1532",
+      "count": 1
+    },
+    {
+      "id": "T1533",
+      "count": 1
+    },
+    {
+      "id": "T1541",
       "count": 1
     },
     {
@@ -671,6 +695,22 @@
     },
     {
       "id": "T1608.001",
+      "count": 1
+    },
+    {
+      "id": "T1636.002",
+      "count": 1
+    },
+    {
+      "id": "T1636.003",
+      "count": 1
+    },
+    {
+      "id": "T1636.004",
+      "count": 1
+    },
+    {
+      "id": "T1646",
       "count": 1
     },
     {
@@ -1075,7 +1115,7 @@
     },
     {
       "quarter": "2022-Q1",
-      "count": 3
+      "count": 2
     },
     {
       "quarter": "2022-Q2",
@@ -1087,7 +1127,7 @@
     },
     {
       "quarter": "2022-Q4",
-      "count": 3
+      "count": 2
     },
     {
       "quarter": "2023-Q1",
@@ -1164,7 +1204,6 @@
     "1a44c392d179a7603712202f2784c38ec10dce31",
     "4d042f2898173264f3791050861eb0b4313213fe",
     "095c763cb66c58a7f61e97b0dcd7328ae0a51d59",
-    "paper:Rewterz%20Threat%20Alert%20-%20KONNI%20APT%20Group%20-%20Active%20IOCs",
     "a42d8b990d63fa3e0132231270830bf89f8b3bf4",
     "5a11c6138d1d7ad8d5066e8025bf669eac4ee66a",
     "15830da9eb1ece90c6e53e04e43df3353bc18311",
@@ -1172,7 +1211,6 @@
     "5dfc005642eb3fd62f17d40b42fd03ae7e9e578b",
     "4f3ffe69b6a2b3938f1c3ba2fbf83766efa36797",
     "3a7b017f2fcb104f8ac765bac5e67e83d1ae031c",
-    "9a4bfa953645a026d375321eef37b893847d80ad",
     "91a1125eee7e0e691ef3ad773a09c8c2163c6b3b",
     "fa9c020074f0dafaa088c04e67d4bd164b598db7",
     "82faf0f8be075ee1f3efaba5089fd9962328811f",
@@ -1228,5 +1266,5 @@
     "c6f790c7284e57100b6ba5d19f0e034f9d92126e"
   ],
   "conflicts": [],
-  "evidence_count": 43
+  "evidence_count": 33
 }

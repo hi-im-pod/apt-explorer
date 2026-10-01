@@ -1,0 +1,38 @@
+{
+  "id": "yulong-flood",
+  "name": "Yulong Flood",
+  "aliases": [
+    {
+      "value": "Yulong Flood",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Storm-1852",
+      "sources": [
+        "microsoft"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "microsoft"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 0
+}

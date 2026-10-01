@@ -6,7 +6,14 @@
       "value": "Storm-2460",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Lumma Stealer",
+      "sources": [
+        "microsoft"
       ]
     }
   ],
@@ -24,5 +31,5 @@
   "timeline": [],
   "reports": [],
   "conflicts": [],
-  "evidence_count": 1
+  "evidence_count": 2
 }

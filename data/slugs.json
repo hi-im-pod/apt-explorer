@@ -59,6 +59,7 @@
         "malpedia:apt15",
         "malpedia:gref",
         "malpedia:purplehaze",
+        "microsoft:Nylon Typhoon",
         "misp:3501fbf2-098f-47e7-be6a-6b0ff5742ce8",
         "misp:40418a3e-fc51-4d24-9f88-aecbfcc0ef2e",
         "misp:e6d16c22-0780-483c-9920-c1d9f27b10c8"
@@ -75,6 +76,7 @@
         "G0005",
         "etda:a85ba864-0a13-4337-bd57-8df380b7b4fa",
         "malpedia:apt12",
+        "microsoft:Hexagon Typhoon",
         "misp:48146604-6693-4db1-bd94-159744726514"
       ],
       "first_published": "2026-09-30",
@@ -104,6 +106,7 @@
         "etda:e6037735-ed1b-4ae3-a45b-45d66e2c80f1",
         "malpedia:apt28",
         "malpedia:uac-0063",
+        "microsoft:Forest Blizzard",
         "misp:5b4ee3ea-eee3-4c8e-8323-85ae32658754",
         "misp:9565bf78-7c9c-41cd-9ed0-58031f6d8978"
       ],
@@ -147,6 +150,7 @@
         "etda:ebff5365-ae36-4e47-a310-28c1f3be0b3a",
         "malpedia:turla",
         "malpedia:white_bear",
+        "microsoft:Secret Blizzard",
         "misp:dc6c6cbc-9dc6-4ace-a2d2-fadefe45cce6",
         "misp:fa80877c-f509-4daf-8b62-20aba1635f68"
       ],
@@ -160,9 +164,7 @@
       "display_name": "PittyTiger",
       "anchors": [
         "G0011",
-        "etda:26627515-afdb-421b-b59e-3a5300210001",
-        "malpedia:apt24",
-        "misp:4d37813c-b8e9-4e58-a758-03168d8aa189"
+        "etda:26627515-afdb-421b-b59e-3a5300210001"
       ],
       "first_published": "2026-09-30",
       "suffix": null,
@@ -178,6 +180,7 @@
         "etda:d95fc4ff-3e71-4ab2-aa09-91e7efa56b13",
         "malpedia:apt-c-60",
         "malpedia:darkhotel",
+        "microsoft:Zigzag Hail",
         "misp:6a83b2bf-0c51-4c9b-89b0-35df7cab1dd5",
         "misp:b8c8b96d-61e6-47b1-8e38-fd8ad5d9854d"
       ],
@@ -193,6 +196,7 @@
         "G0013",
         "etda:a97aea4e-ac99-4506-89e6-ba1e5b766b0d",
         "malpedia:apt30",
+        "microsoft:Raspberry Typhoon",
         "misp:d3881afe-f781-4c53-9f68-33487a119a59"
       ],
       "first_published": "2026-09-30",
@@ -210,6 +214,7 @@
         "malpedia:silverfish",
         "malpedia:unc2452",
         "malpedia:unc3524",
+        "microsoft:Midnight Blizzard",
         "misp:2ee5ed7a-c4d0-40be-a837-20817474a15b",
         "misp:55bcc595-2442-4f98-9477-7fe9b507607c",
         "misp:b2056ff0-00b9-482e-b11c-c771daa5f28a",
@@ -302,6 +307,7 @@
         "G0022",
         "etda:92ced576-2522-4b79-8645-baa5e84ffee3",
         "malpedia:apt3",
+        "microsoft:Brocade Typhoon",
         "misp:d144c83e-2302-4947-9e24-856fbf7949ae"
       ],
       "first_published": "2026-09-30",
@@ -347,6 +353,7 @@
         "etda:6fa5b25b-276e-4f24-a54a-86e6c05fb27f",
         "malpedia:apt17",
         "malpedia:beijing_group",
+        "microsoft:Heart Typhoon",
         "misp:99e30d89-9361-4b73-a999-9e5ff9320bcb",
         "misp:da754aeb-a86d-4874-b388-d1d2028a56be"
       ],
@@ -366,6 +373,8 @@
         "malpedia:apt18",
         "malpedia:apt4",
         "malpedia:samurai_panda",
+        "microsoft:Salmon Typhoon",
+        "microsoft:Satin Typhoon",
         "misp:2fb07fa4-0d7f-43c7-8ff4-b28404313fe7",
         "misp:8e28dbee-4e9e-4491-9a6c-ee9c9ec4b28b",
         "misp:9a683d9c-8f7d-43df-bba2-ad0ca71e277c"
@@ -380,10 +389,18 @@
       "display_name": "Threat Group-3390",
       "anchors": [
         "G0027",
+        "etda:1a38d179-c0a4-4dda-a9a6-5c70b4386817",
+        "etda:987d237f-22bf-4c13-913b-5c445d609305",
         "etda:e67091ab-cbea-4d73-984d-e4b29f6c48a9",
         "malpedia:apt27",
+        "malpedia:apt6",
         "malpedia:tiltedtemple",
+        "malpedia:unc215",
+        "microsoft:Circle Typhoon",
+        "microsoft:Linen Typhoon",
+        "misp:1a2592a3-eab7-417c-bf2d-9c0558c2b3e7",
         "misp:834e0acd-d92a-4e38-bb14-dc4159d7cb32",
+        "misp:9795249f-8954-4632-830f-7e1f0ebc1dd5",
         "misp:aca6b3d2-1c3b-4674-9de8-975e35723bcf"
       ],
       "first_published": "2026-09-30",
@@ -464,9 +481,11 @@
         "G0034",
         "etda:529edb3c-a5dc-4438-a3ec-a078bc590adc",
         "etda:7f0a4e84-4c28-4f8c-a70a-3cac308bca90",
+        "etda:a1492ea6-162c-46a9-a2d5-9618641b5ab2",
         "etda:e84ec224-5c5f-4d2c-a3e6-0ee398ba1136",
         "malpedia:iridium",
         "malpedia:sandworm",
+        "microsoft:Seashell Blizzard",
         "misp:29cfe970-5446-4cfc-a2da-00e9f49e02ba",
         "misp:f512de42-f76b-40d2-9923-59e7dbdfec35"
       ],
@@ -479,14 +498,7 @@
       "slug": "G0035",
       "display_name": "Dragonfly",
       "anchors": [
-        "G0035",
-        "etda:3a78595b-3d41-401f-8e8c-ac527a854d08",
-        "etda:3f52e219-e79f-44e8-81b3-3e36441fd20b",
-        "etda:a1492ea6-162c-46a9-a2d5-9618641b5ab2",
-        "malpedia:allanite",
-        "malpedia:energetic_bear",
-        "misp:64d6559c-6d5c-4585-bbf9-c17868f763ee",
-        "misp:a9000eaf-2b75-4ec7-8dcf-fe1bb5c77470"
+        "G0035"
       ],
       "first_published": "2026-09-30",
       "suffix": null,
@@ -518,6 +530,7 @@
         "malpedia:gc01",
         "malpedia:gc02",
         "malpedia:venom_spider",
+        "microsoft:Storm-0538",
         "misp:647894f6-1723-4cba-aba4-0ef0966d5302",
         "misp:6bd7c91a-fdf5-11e8-95a8-e712ad4b0a9d",
         "misp:6d50a8a2-fdf5-11e8-9db3-833f231caac8",
@@ -535,6 +548,7 @@
         "G0038",
         "etda:6d2ff349-ad5d-4237-9cb3-3d8891c35fbf",
         "malpedia:stealth_falcon",
+        "microsoft:Daffodil Gust",
         "misp:dab75e38-6969-4e78-9304-dc269c3cbcf0"
       ],
       "first_published": "2026-09-30",
@@ -621,6 +635,7 @@
         "G0045",
         "etda:2aa9ca75-fa1b-422e-9677-02983934f983",
         "malpedia:apt10",
+        "microsoft:Purple Typhoon",
         "misp:56b37b05-72e7-4a89-ba8a-61ce45269a8c"
       ],
       "first_published": "2026-09-30",
@@ -696,6 +711,7 @@
         "etda:9adbce9a-231f-4bd0-a104-03324899afa8",
         "etda:b79f69a4-18a3-4d4f-b6e5-5ad3e01c984b",
         "malpedia:apt32",
+        "microsoft:Canvas Cyclone",
         "misp:aa29ae56-e54b-47a2-ad16-d3ab0242d5d7"
       ],
       "first_published": "2026-09-30",
@@ -780,6 +796,7 @@
         "G0056",
         "etda:c33e0a3e-f5b9-46e2-9fab-f19869292c11",
         "malpedia:promethium",
+        "microsoft:Magenta Dust",
         "misp:43894e2a-174e-4931-94a8-2296afe8f650"
       ],
       "first_published": "2026-09-30",
@@ -798,6 +815,7 @@
         "malpedia:charming_kitten",
         "malpedia:educated_manticore",
         "malpedia:ta453",
+        "microsoft:Mint Sandstorm",
         "misp:b84cd4b9-27d0-4722-a21e-e7bd4a171c86",
         "misp:b8967b3c-3bc9-11e8-8701-8b1ead8c099e",
         "misp:c1d44f44-425e-48fd-b78b-84b988da8bc3",
@@ -816,6 +834,7 @@
         "etda:334d9e0e-dab2-4bc5-8db2-5ab016f36947",
         "malpedia:temptick",
         "malpedia:tick",
+        "microsoft:Swirl Typhoon",
         "misp:3f3ff6de-a6a7-11e8-92b4-3743eb1c7762",
         "misp:add6554a-815a-4ac3-9b22-9337b9661ab8"
       ],
@@ -831,6 +850,7 @@
         "G0061",
         "etda:92691488-ff3b-4ff0-92f1-1c732bce88d2",
         "malpedia:fin8",
+        "microsoft:Storm-0288",
         "misp:a78ae9fe-71cd-4563-9213-7b6260bd9a73"
       ],
       "first_published": "2026-09-30",
@@ -873,6 +893,7 @@
         "G0064",
         "etda:958e1f46-a2b6-4beb-8cb0-ddc90c08368e",
         "malpedia:apt33",
+        "microsoft:Peach Sandstorm",
         "misp:4f69ec6d-cb6b-42af-b8e2-920a2aa4be10"
       ],
       "first_published": "2026-09-30",
@@ -887,6 +908,7 @@
         "G0065",
         "etda:b106313a-d204-4d9f-866b-e750a98d0e06",
         "malpedia:apt40",
+        "microsoft:Gingham Typhoon",
         "misp:5b4b6980-3bc7-11e8-84d6-879aaac37dd9"
       ],
       "first_published": "2026-09-30",
@@ -912,11 +934,7 @@
         "G0067",
         "etda:be6e7cee-7c2c-4298-941d-01b2106284e6",
         "malpedia:apt37",
-        "malpedia:opal_sleet",
-        "malpedia:ruby_sleet",
-        "misp:03ff54cf-f7d4-4606-a531-2ca6d4fa6a54",
-        "misp:50cd027f-df14-40b2-aa22-bf5de5061163",
-        "misp:5f71a9ea-511d-4fdd-9807-271ef613f488"
+        "misp:50cd027f-df14-40b2-aa22-bf5de5061163"
       ],
       "first_published": "2026-09-30",
       "suffix": null,
@@ -930,6 +948,7 @@
         "G0068",
         "etda:69d35f6f-9bd8-4d36-b120-2b563ef06841",
         "malpedia:platinum",
+        "microsoft:Fallow Squall",
         "misp:1fc5671f-5757-43bf-8d6d-a9a93b03713a"
       ],
       "first_published": "2026-09-30",
@@ -944,6 +963,7 @@
         "G0069",
         "etda:0d5af1f9-fa2e-4ce9-a4ce-0c6fade938e9",
         "malpedia:muddywater",
+        "microsoft:Mango Sandstorm",
         "misp:a29af069-03c3-4534-b78b-7d1a77ea085b"
       ],
       "first_published": "2026-09-30",
@@ -991,6 +1011,8 @@
         "malpedia:apt19",
         "malpedia:apt26",
         "malpedia:apt9",
+        "microsoft:Checkered Typhoon",
+        "microsoft:Taffeta Typhoon",
         "misp:066d25c1-71bd-4bd4-8ca7-edbba00063f4",
         "misp:7e6d82a4-3b7d-4c24-a2c5-e211ce6eafc5",
         "misp:c097471c-2405-4393-b6d7-afbcb5f0cd11"
@@ -1154,8 +1176,12 @@
       "display_name": "APT39",
       "anchors": [
         "G0087",
+        "etda:847d1026-418b-4a30-8ab9-6a4868ab6302",
         "etda:d7f937b7-b50b-4022-bca1-9e403ffefe45",
         "malpedia:apt39",
+        "malpedia:cadelle",
+        "microsoft:Burgundy Sandstorm",
+        "misp:03f13462-003c-4296-8784-bccea16710a9",
         "misp:c2c64bd3-a325-446f-91a8-b4c0f173a30b"
       ],
       "first_published": "2026-09-30",
@@ -1231,6 +1257,8 @@
         "malpedia:gold_riverview",
         "malpedia:monty_spider",
         "malpedia:ta505",
+        "microsoft:Lace Tempest",
+        "microsoft:Spandex Tempest",
         "misp:03c80674-35f8-4fe0-be2b-226ed0fcd69f",
         "misp:168a9e38-70e3-4542-b78f-afa2414436bb",
         "misp:3806516d-151b-4869-88bc-1f2a2cb73c3c",
@@ -1251,6 +1279,7 @@
         "etda:8dd3c489-96f1-412f-9eec-60f96a674571",
         "malpedia:gallium",
         "malpedia:operation_soft_cell",
+        "microsoft:Granite Typhoon",
         "misp:8dda51ef-9a30-48f7-b0fd-5b6f0a62262d",
         "misp:e400b6c5-77cf-453d-ba0f-44575583ac6c"
       ],
@@ -1268,9 +1297,14 @@
         "malpedia:apt43",
         "malpedia:kimsuky",
         "malpedia:larva-24005",
+        "malpedia:opal_sleet",
         "malpedia:ta406",
         "malpedia:uat-5394",
+        "microsoft:Emerald Sleet",
+        "microsoft:Opal Sleet",
+        "microsoft:Ruby Sleet",
         "misp:558e7697-7195-4086-a0d0-cd3b4c7b3747",
+        "misp:5f71a9ea-511d-4fdd-9807-271ef613f488",
         "misp:6038ceaf-4c1b-470d-af36-c62948488786",
         "misp:89f005f9-22e9-4c50-9b48-e94c521266e5",
         "misp:aac49b4e-74e9-49fa-84f9-e340cf8bafbc",
@@ -1306,7 +1340,11 @@
         "etda:c874e794-c836-4714-9ed3-a168a967a942",
         "malpedia:apt41",
         "malpedia:brazenbamboo",
+        "malpedia:mana_team",
         "malpedia:sparklinggoblin",
+        "microsoft:Brass Typhoon",
+        "microsoft:Leopard Typhoon",
+        "misp:110792e8-38d2-4df2-9ea3-08b60321e994",
         "misp:305fbff0-d3ff-43e3-8741-63bad68e47ee",
         "misp:9c124874-042d-48cd-b72b-ccdc51ecbbd6",
         "misp:f3fd4397-19e4-47e0-b1bc-f792690e3bd0"
@@ -1322,9 +1360,12 @@
       "anchors": [
         "G0098",
         "etda:8914b19b-9d8a-469f-8b95-37db9894e070",
+        "malpedia:apt24",
         "malpedia:blacktech",
         "malpedia:radio_panda",
+        "microsoft:Canary Typhoon",
         "misp:320c42f7-eab7-4ef9-b09a-74396caa6c3e",
+        "misp:4d37813c-b8e9-4e58-a758-03168d8aa189",
         "misp:c92d7d31-cfd9-4309-b6c4-b7eb1e85fa7e"
       ],
       "first_published": "2026-09-30",
@@ -1371,6 +1412,9 @@
         "malpedia:grim_spider",
         "malpedia:unc1878",
         "malpedia:wizard_spider",
+        "microsoft:Periwinkle Tempest",
+        "microsoft:Pistachio Tempest",
+        "microsoft:Storm-0230",
         "misp:3c2bb7d7-a085-4594-adc7-4a20cf724abb",
         "misp:3cf6dbb5-bf9e-47d4-a8d5-b6d76f5a791f",
         "misp:bdf4fe4f-af8a-495f-a719-cf175cecda1f"
@@ -1468,6 +1512,7 @@
         "etda:1b8fc69c-574a-4c14-9603-0c3a0de08b6f",
         "malpedia:bronze_vapor",
         "malpedia:red_charon",
+        "microsoft:Tumbleweed Typhoon",
         "misp:af12a336-bb68-41ff-866a-834cedc0b5fc",
         "misp:c8b961fe-3698-41ac-aba1-002ee3c19531"
       ],
@@ -1501,6 +1546,7 @@
         "G0117",
         "etda:9d13d133-e25a-4de0-8952-6b0cbdb92899",
         "malpedia:fox_kitten",
+        "microsoft:Lemon Sandstorm",
         "misp:bfb0bc20-5bdf-47ff-b07f-dbd9a3cb9772"
       ],
       "first_published": "2026-09-30",
@@ -1517,6 +1563,8 @@
         "malpedia:evil_corp",
         "malpedia:gold_winter",
         "malpedia:indrik_spider",
+        "microsoft:Manatee Tempest",
+        "microsoft:Mustard Tempest",
         "misp:658314bc-3bb8-48d2-913a-c528607b75c8",
         "misp:6c514d9d-e2fa-45a5-a938-9a461f69ad2d",
         "misp:c30fbdc8-b66d-4242-a02a-e01946bc86d8"
@@ -1579,6 +1627,7 @@
         "malpedia:amethyst_rain",
         "malpedia:dancing_salome",
         "malpedia:volatile_cedar",
+        "microsoft:Amethyst Rain",
         "misp:3d5192f2-f235-46fd-aa68-dd00cc17d632",
         "misp:cf421ce6-ddfe-419a-bc65-6a9fc953232a",
         "misp:ee12e0a9-a20b-4d48-8814-d565211cb0ba"
@@ -1606,6 +1655,7 @@
         "G0125",
         "etda:7c88c982-c383-4552-90b4-cbb67ec5240f",
         "malpedia:hafnium",
+        "microsoft:Silk Typhoon",
         "misp:4f05d6c1-3fc1-4567-91cd-dd4637cc38b5"
       ],
       "first_published": "2026-09-30",
@@ -1645,6 +1695,7 @@
         "G0128",
         "etda:e3e29e0b-f472-4a46-bbb7-d328b2348fcf",
         "malpedia:apt31",
+        "microsoft:Violet Typhoon",
         "misp:6bf7e6b6-5917-45a6-9567-f0baba79768c"
       ],
       "first_published": "2026-09-30",
@@ -1663,6 +1714,7 @@
         "malpedia:mustang_panda",
         "malpedia:reddelta",
         "malpedia:unc6384",
+        "microsoft:Twill Typhoon",
         "misp:78bf726c-a9e6-11e8-9e43-77249a2f7339",
         "misp:9ee446fd-b0cd-4662-9cd1-a60b429192db",
         "misp:a3e4a57e-4b50-4bca-9282-3307e92e5539",
@@ -1697,6 +1749,7 @@
         "G0131",
         "etda:85b77804-7780-4bd9-9332-f250525122a8",
         "malpedia:tonto_team",
+        "microsoft:Copper Typhoon",
         "misp:0ab7c8de-fc23-4793-99aa-7ee336199e26"
       ],
       "first_published": "2026-09-30",
@@ -1787,6 +1840,9 @@
         "malpedia:ta444",
         "malpedia:temp.hermit",
         "malpedia:unc1069",
+        "microsoft:Diamond Sleet",
+        "microsoft:Onyx Sleet",
+        "microsoft:Sapphire Sleet",
         "misp:02768be6-853c-4239-8fb1-823427489a86",
         "misp:245c8dde-ed42-4c49-b48b-634e3e21bdd7",
         "misp:5a38db83-16b3-477f-a045-66a922868eea",
@@ -1845,9 +1901,26 @@
         "etda:4de6af3d-8242-44c6-80eb-9eee83a62823",
         "etda:fd9f43c9-80bf-4abc-9345-f5332e26eeaa",
         "malpedia:earth_lusca",
+        "microsoft:Charcoal Typhoon",
         "misp:39150b30-61af-4d9c-9682-1595e145f3c1"
       ],
       "first_published": "2026-09-30",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "G1000",
+      "display_name": "ALLANITE",
+      "anchors": [
+        "G1000",
+        "etda:3f52e219-e79f-44e8-81b3-3e36441fd20b",
+        "malpedia:allanite",
+        "malpedia:energetic_bear",
+        "misp:64d6559c-6d5c-4585-bbf9-c17868f763ee",
+        "misp:a9000eaf-2b75-4ec7-8dcf-fe1bb5c77470"
+      ],
+      "first_published": "2026-10-01",
       "suffix": null,
       "retired": false,
       "merged_into": null
@@ -1859,6 +1932,7 @@
         "G1001",
         "etda:dbf635cb-f390-40f9-a2f2-81a11c2f1e11",
         "malpedia:lyceum",
+        "microsoft:Storm-0133",
         "misp:e1b95185-8db6-4f3c-9ffd-1749087d934a"
       ],
       "first_published": "2026-09-30",
@@ -1886,8 +1960,12 @@
       "anchors": [
         "G1003",
         "etda:4f64a76f-0650-49dd-9386-d7813916463a",
+        "etda:8f37f59a-226c-4059-9222-c5ad769f31ef",
         "malpedia:dev-0586",
-        "misp:a5f64c1a-c829-4855-903d-e0ff2098b2d7"
+        "malpedia:saintbear",
+        "microsoft:Cadet Blizzard",
+        "misp:a5f64c1a-c829-4855-903d-e0ff2098b2d7",
+        "misp:c67d3dfb-ab39-46e1-a971-5efdfe6a5b9f"
       ],
       "first_published": "2026-09-30",
       "suffix": null,
@@ -1901,6 +1979,7 @@
         "G1004",
         "etda:ffca877d-5411-419c-ba3b-31924cc4e4af",
         "malpedia:lapsus",
+        "microsoft:Strawberry Tempest",
         "misp:d9e5be22-1a04-4956-af6c-37af02330980"
       ],
       "first_published": "2026-09-30",
@@ -1915,6 +1994,7 @@
         "G1005",
         "etda:40d95f4c-db45-4311-86a0-328273bf0491",
         "malpedia:polonium",
+        "microsoft:Plaid Rain",
         "misp:3c5129ea-8f18-4bcf-a33b-b5aab0720494"
       ],
       "first_published": "2026-09-30",
@@ -1955,6 +2035,7 @@
         "etda:9fd705e5-6b3c-4e0b-b21c-ebb9dc854fc3",
         "malpedia:sidecopy",
         "malpedia:tag-140",
+        "microsoft:Viridian Vortex",
         "misp:f6d02ac3-3447-4892-b844-1ef31839e04f",
         "misp:f7359c2b-c151-4f5c-816e-cdff255db0de"
       ],
@@ -1970,6 +2051,7 @@
         "G1009",
         "etda:71af54b8-3a64-42a0-9b8f-94d8fcb684a8",
         "malpedia:mosesstaff",
+        "microsoft:Marigold Sandstorm",
         "misp:d45dd940-b38d-4b2c-9f2f-3e4a0eac841c"
       ],
       "first_published": "2026-09-30",
@@ -2002,6 +2084,9 @@
         "malpedia:ta455",
         "malpedia:tortoiseshell",
         "malpedia:unc1549",
+        "microsoft:Crimson Sandstorm",
+        "microsoft:Cuboid Sandstorm",
+        "microsoft:Smoke Sandstorm",
         "misp:111efc97-6a93-487b-8cb3-1e890ac51066",
         "misp:5f108484-db7f-11e9-aaa4-fb0176425734",
         "misp:a2a7d49f-f517-4eeb-9ec8-b9b74e3fe756",
@@ -2044,6 +2129,7 @@
         "G1015",
         "etda:4a45e10c-1486-44d7-b3ba-2b2086cf2afb",
         "malpedia:scattered_spider",
+        "microsoft:Octo Tempest",
         "misp:3b238f3a-c67a-4a9e-b474-dc3897e00129"
       ],
       "first_published": "2026-09-30",
@@ -2076,6 +2162,7 @@
         "malpedia:uat-5918",
         "malpedia:uat-7237",
         "malpedia:volt_typhoon",
+        "microsoft:Volt Typhoon",
         "misp:4f1c43a4-3788-4035-a99c-e510f89edd0f",
         "misp:82c0ebc5-0986-42cd-acd4-7c1888a0518e",
         "misp:a1e84808-6540-42bd-a3f8-c3c724ba5203",
@@ -2107,6 +2194,7 @@
         "G1019",
         "etda:e6ac692d-4adb-403d-83c6-f0d8845a4866",
         "malpedia:moustachedbouncer",
+        "microsoft:Storm-1125",
         "misp:01ac8b25-492e-444b-891b-968f2694e7b2"
       ],
       "first_published": "2026-09-30",
@@ -2120,8 +2208,6 @@
       "anchors": [
         "G1020",
         "malpedia:gold_prelude",
-        "malpedia:mustard_tempest",
-        "misp:3ce9610b-2435-4c41-80d1-3f95a5ff2984",
         "misp:8134c96d-d6ed-49cc-99d6-fe74c0636387"
       ],
       "first_published": "2026-09-30",
@@ -2136,6 +2222,7 @@
         "G1021",
         "etda:ada0ccd1-3229-4514-9a65-a66dd7ec862b",
         "malpedia:bronze_starlight",
+        "microsoft:Cinnamon Tempest",
         "misp:737c0207-1a1a-4480-86e7-b6a5066e1ee5"
       ],
       "first_published": "2026-09-30",
@@ -2150,6 +2237,7 @@
         "G1022",
         "etda:7cc191a7-8a9b-431c-8ae1-af954b6537b7",
         "malpedia:toddycat",
+        "microsoft:Storm-0247",
         "misp:091a0b69-74de-44b6-bb12-16b7a8fd078b"
       ],
       "first_published": "2026-09-30",
@@ -2165,6 +2253,7 @@
         "etda:ac14c97f-10ba-4b03-8a27-073682b83780",
         "malpedia:apt5",
         "malpedia:unc2630",
+        "microsoft:Mulberry Typhoon",
         "misp:86dfe64e-7101-4d45-bb94-efc40c5e14fe",
         "misp:a47b79ae-7a0c-4308-9efc-294af19cc795"
       ],
@@ -2179,6 +2268,7 @@
       "anchors": [
         "G1024",
         "malpedia:storm-1567",
+        "microsoft:Storm-1567",
         "misp:3a912680-6f38-4fe7-9941-744f0e2280b3"
       ],
       "first_published": "2026-09-30",
@@ -2207,10 +2297,22 @@
         "etda:d337940e-7ef9-4b4e-8c04-c6472d6b8972",
         "malpedia:aridviper",
         "malpedia:pinstripe_lightning",
+        "microsoft:Pinstripe Lightning",
         "misp:0cfff0f4-868c-40a1-b9b4-0d153c0b33b6",
         "misp:543bdc9f-da35-4c4b-9433-06cbd3091772"
       ],
       "first_published": "2026-09-30",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "G1029",
+      "display_name": "UNC788",
+      "anchors": [
+        "G1029"
+      ],
+      "first_published": "2026-10-01",
       "suffix": null,
       "retired": false,
       "merged_into": null
@@ -2222,6 +2324,7 @@
         "G1030",
         "etda:50c0c8a2-3842-4e7a-aad8-270c1793e3e1",
         "malpedia:pink_sandstorm",
+        "microsoft:Pink Sandstorm",
         "misp:0876c327-c82a-45f7-82fa-267c312ceb05"
       ],
       "first_published": "2026-09-30",
@@ -2233,10 +2336,7 @@
       "slug": "G1031",
       "display_name": "Saint Bear",
       "anchors": [
-        "G1031",
-        "etda:8f37f59a-226c-4059-9222-c5ad769f31ef",
-        "malpedia:saintbear",
-        "misp:c67d3dfb-ab39-46e1-a971-5efdfe6a5b9f"
+        "G1031"
       ],
       "first_published": "2026-09-30",
       "suffix": null,
@@ -2267,6 +2367,8 @@
         "malpedia:cold_river",
         "malpedia:dnspionage",
         "malpedia:gamaredon_group",
+        "microsoft:Aqua Blizzard",
+        "microsoft:Star Blizzard",
         "misp:1a77e156-76bc-43f5-bdd7-bd67f30fbbbb",
         "misp:608a903a-8145-4fd1-84bc-235e278480bf",
         "misp:7d99d2f7-adf0-44e4-9044-d18ff6842a16",
@@ -2316,7 +2418,8 @@
       "display_name": "Moonstone Sleet",
       "anchors": [
         "G1036",
-        "etda:30664418-5b20-40ce-8554-d1fb27cd21e7"
+        "etda:30664418-5b20-40ce-8554-d1fb27cd21e7",
+        "microsoft:Moonstone Sleet"
       ],
       "first_published": "2026-09-30",
       "suffix": null,
@@ -2381,6 +2484,7 @@
         "G1041",
         "etda:4227fdb4-8b95-410d-9b06-3697c5edd064",
         "malpedia:sea_turtle",
+        "microsoft:Marbled Dust",
         "misp:ce7bba52-5ae8-44ea-9979-68502d832ab7"
       ],
       "first_published": "2026-09-30",
@@ -2435,6 +2539,7 @@
         "etda:b88e37a4-1fc1-42da-bd72-6ad44758193f",
         "malpedia:earth_estries",
         "malpedia:ghostemperor",
+        "microsoft:Salt Typhoon",
         "misp:1f7f4a51-c4a8-4365-ade3-83b222e7cb67",
         "misp:3c3ca8f3-c6ab-4c5d-9bd0-be6677d6cdeb"
       ],
@@ -2449,6 +2554,7 @@
       "anchors": [
         "G1046",
         "malpedia:unc4393",
+        "microsoft:Storm-1811",
         "misp:8191e28a-fb2d-4d50-b992-b877807a2f37"
       ],
       "first_published": "2026-09-30",
@@ -2491,6 +2597,7 @@
         "malpedia:tradertraitor",
         "malpedia:unc2970",
         "malpedia:unc4736",
+        "microsoft:Jade Sleet",
         "misp:825abfd9-7238-4438-a9e7-c08791f4df4e",
         "misp:afe5526e-e5e4-4b05-bc69-2bfb6785fc7e",
         "misp:e40cf515-f155-46d4-b174-88b38383f9bb"
@@ -2530,6 +2637,8 @@
         "etda:6a507717-ba17-44cb-af22-ebc5aea59b67",
         "malpedia:contagious_interview",
         "malpedia:wagemole",
+        "microsoft:Coral Sleet",
+        "microsoft:Jasper Sleet",
         "misp:09aa3edb-e956-43f0-9fcb-a3154b47d202",
         "misp:b2765bd8-1200-4df5-a9d3-72a7b679dcdb"
       ],
@@ -2544,6 +2653,7 @@
       "anchors": [
         "G1053",
         "malpedia:storm-0501",
+        "microsoft:Storm-0501",
         "misp:f6a60403-4bcc-4fc6-ac07-abb913c1f080"
       ],
       "first_published": "2026-09-30",
@@ -2575,6 +2685,7 @@
         "malpedia:banished_kitten",
         "malpedia:homeland_justice",
         "malpedia:void_manticore",
+        "microsoft:Red Sandstorm",
         "misp:3682a08e-c1d9-4dff-ae08-774883dddba6",
         "misp:53ac2695-35ba-4ab2-a5cd-48ca533f1b72",
         "misp:bfc538e1-9205-420a-8641-6292023ecd08"
@@ -2590,6 +2701,7 @@
       "anchors": [
         "G1056",
         "malpedia:teampcp",
+        "microsoft:Storm-2999",
         "misp:d3682137-2845-424f-be8a-9112d23f4f58"
       ],
       "first_published": "2026-09-30",
@@ -2604,6 +2716,7 @@
         "G1057",
         "etda:92cc31c7-3c18-4ae2-9f9b-649b6cb029e1",
         "malpedia:shinyhunters",
+        "microsoft:Storm-3127",
         "misp:d4fd0a30-15d4-4dfd-bf98-beff5fe34c33"
       ],
       "first_published": "2026-09-30",
@@ -2685,10 +2798,11 @@
     },
     {
       "slug": "alpha-spider",
-      "display_name": "Alpha Spider",
+      "display_name": "Velvet Tempest",
       "anchors": [
         "malpedia:alpha_spider",
         "malpedia:velvet_tempest",
+        "microsoft:Velvet Tempest",
         "misp:209b1452-7062-46f8-9037-3be5f7eda54f",
         "misp:6149f3b6-510d-4e45-bf88-cd25c7193702"
       ],
@@ -2947,8 +3061,8 @@
       ],
       "first_published": "2026-09-30",
       "suffix": null,
-      "retired": false,
-      "merged_into": null
+      "retired": true,
+      "merged_into": "G0027"
     },
     {
       "slug": "apt73",
@@ -3134,12 +3248,13 @@
     },
     {
       "slug": "bamboo-spider",
-      "display_name": "BAMBOO SPIDER",
+      "display_name": "NARWHAL SPIDER",
       "anchors": [
         "etda:2b42c978-bc85-4aff-910d-b72e077b330f",
         "etda:ea10af8f-5a02-415e-aa8f-3e1b62bcaccf",
         "malpedia:bamboo_spider",
         "malpedia:narwhal_spider",
+        "microsoft:Storm-0302",
         "misp:419599eb-c1ea-4d32-8c9e-0ad61d7c5ba5",
         "misp:fda9cdea-0017-495e-879d-0f348db2aa07"
       ],
@@ -3215,6 +3330,28 @@
         "misp:3ef31ccd-60a9-4abc-a1a3-713ce625cbb7"
       ],
       "first_published": "2026-09-30",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "berry-sandstorm",
+      "display_name": "Berry Sandstorm",
+      "anchors": [
+        "microsoft:Berry Sandstorm"
+      ],
+      "first_published": "2026-10-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "berserk-bear",
+      "display_name": "Berserk Bear",
+      "anchors": [
+        "etda:3a78595b-3d41-401f-8e8c-ac527a854d08"
+      ],
+      "first_published": "2026-10-01",
       "suffix": null,
       "retired": false,
       "merged_into": null
@@ -3397,6 +3534,7 @@
       "display_name": "Blue Tsunami",
       "anchors": [
         "malpedia:blue_tsunami",
+        "microsoft:Blue Tsunami",
         "misp:46104ded-49f5-4440-bd25-e05c1126f0ba"
       ],
       "first_published": "2026-09-30",
@@ -3613,8 +3751,8 @@
       ],
       "first_published": "2026-09-30",
       "suffix": null,
-      "retired": false,
-      "merged_into": null
+      "retired": true,
+      "merged_into": "G0087"
     },
     {
       "slug": "caliente-bandits",
@@ -3658,6 +3796,7 @@
       "display_name": "Caramel Tsunami",
       "anchors": [
         "malpedia:caramel_tsunami",
+        "microsoft:Caramel Tsunami",
         "misp:062938a2-6fa1-4217-ad73-f5e0b5186966"
       ],
       "first_published": "2026-09-30",
@@ -3709,6 +3848,7 @@
       "display_name": "Carmine Tsunami",
       "anchors": [
         "malpedia:carmine_tsunami",
+        "microsoft:Carmine Tsunami",
         "misp:fa76ce6a-f434-4d4a-817f-c4bd0a3f803c"
       ],
       "first_published": "2026-09-30",
@@ -3874,6 +4014,17 @@
       "merged_into": null
     },
     {
+      "slug": "citrine-sleet",
+      "display_name": "Citrine Sleet",
+      "anchors": [
+        "microsoft:Citrine Sleet"
+      ],
+      "first_published": "2026-10-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
       "slug": "cl-sta-0043",
       "display_name": "CL-STA-0043",
       "anchors": [
@@ -3947,6 +4098,17 @@
       "merged_into": null
     },
     {
+      "slug": "clay-typhoon",
+      "display_name": "Clay Typhoon",
+      "anchors": [
+        "microsoft:Clay Typhoon"
+      ],
+      "first_published": "2026-10-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
       "slug": "clever-kitten",
       "display_name": "Clever Kitten",
       "anchors": [
@@ -4015,6 +4177,7 @@
       "display_name": "Coinbase Cartel",
       "anchors": [
         "malpedia:coinbase_cartel",
+        "microsoft:Storm-2981",
         "misp:bebcafbd-49ec-442f-9184-260c8c327f89"
       ],
       "first_published": "2026-09-30",
@@ -4172,7 +4335,10 @@
       "display_name": "Cotton Sandstorm",
       "anchors": [
         "malpedia:cotton_sandstorm",
-        "misp:bbb389f2-344f-4ca8-a9c9-902061f88deb"
+        "malpedia:viceleaker",
+        "microsoft:Cotton Sandstorm",
+        "misp:bbb389f2-344f-4ca8-a9c9-902061f88deb",
+        "misp:f676fcd1-cde9-4d0a-8958-221f2abb56e9"
       ],
       "first_published": "2026-09-30",
       "suffix": null,
@@ -4187,6 +4353,17 @@
         "misp:80872d9a-1d0c-4c12-9543-feca1fbd2ac2"
       ],
       "first_published": "2026-09-30",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "crescent-typhoon",
+      "display_name": "Crescent Typhoon",
+      "anchors": [
+        "microsoft:Crescent Typhoon"
+      ],
+      "first_published": "2026-10-01",
       "suffix": null,
       "retired": false,
       "merged_into": null
@@ -4313,8 +4490,9 @@
     },
     {
       "slug": "cyber-av3ngers",
-      "display_name": "Cyber Av3ngers",
+      "display_name": "CyberAv3ngers",
       "anchors": [
+        "G1027",
         "etda:9fe10605-78f1-4c01-bf85-b9dfa21431cd",
         "malpedia:cyber_av3ngers",
         "misp:286db62d-859d-48e2-9601-1b7abde9f3c3"
@@ -4607,6 +4785,7 @@
       "display_name": "Denim Tsunami",
       "anchors": [
         "malpedia:denim_tsunami",
+        "microsoft:Denim Tsunami",
         "misp:79a347d9-1938-4550-8836-98e4ed95f77c"
       ],
       "first_published": "2026-09-30",
@@ -4644,6 +4823,7 @@
       "display_name": "DEV-0569",
       "anchors": [
         "malpedia:dev-0569",
+        "microsoft:Storm-0569",
         "misp:e883458d-496f-4a94-b916-4b7b83e3d525"
       ],
       "first_published": "2026-09-30",
@@ -4727,8 +4907,9 @@
     },
     {
       "slug": "domestic-kitten",
-      "display_name": "Domestic Kitten",
+      "display_name": "Bouncing Golf",
       "anchors": [
+        "G0097",
         "etda:624ad02b-d8c3-4873-93a4-28d9811b55d5",
         "malpedia:domestic_kitten",
         "misp:dda1b28e-c558-11e8-8666-27cf61d1d7ee"
@@ -4768,6 +4949,7 @@
       "display_name": "Dragonbridge",
       "anchors": [
         "malpedia:dragonbridge",
+        "microsoft:Taizi Flood",
         "misp:a4d55f94-d842-400a-acb6-dfee1c446257"
       ],
       "first_published": "2026-09-30",
@@ -5253,6 +5435,7 @@
         "etda:653faab6-7686-4258-82ce-691c8c539a8b",
         "malpedia:flax_typhoon",
         "malpedia:redjuliett",
+        "microsoft:Flax Typhoon",
         "misp:50ee2b1b-979e-4507-8747-8597a95938f6",
         "misp:d20f5398-a362-4c88-b3fb-7e952dcf3948"
       ],
@@ -5301,6 +5484,7 @@
       "display_name": "Fox Tempest",
       "anchors": [
         "malpedia:fox_tempest",
+        "microsoft:Fox Tempest",
         "misp:56bc8e25-6915-4e2e-8d44-9d3b14aab9f6"
       ],
       "first_published": "2026-09-30",
@@ -5317,6 +5501,17 @@
         "misp:41c15f08-a646-49f7-a644-1bebbf7a4dcd"
       ],
       "first_published": "2026-09-30",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "frontier-blizzard",
+      "display_name": "Frontier Blizzard",
+      "anchors": [
+        "microsoft:Frontier Blizzard"
+      ],
+      "first_published": "2026-10-01",
       "suffix": null,
       "retired": false,
       "merged_into": null
@@ -5450,6 +5645,17 @@
         "misp:2dd31182-bae1-48ed-8bb3-805a3df89783"
       ],
       "first_published": "2026-09-30",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "ghost-blizzard",
+      "display_name": "Ghost Blizzard",
+      "anchors": [
+        "microsoft:Ghost Blizzard"
+      ],
+      "first_published": "2026-10-01",
       "suffix": null,
       "retired": false,
       "merged_into": null
@@ -5781,6 +5987,7 @@
       "display_name": "Gray Sandstorm",
       "anchors": [
         "malpedia:gray_sandstorm",
+        "microsoft:Gray Sandstorm",
         "misp:6ea73b7f-b2e5-4e6d-a1ff-705f91175613"
       ],
       "first_published": "2026-09-30",
@@ -6018,6 +6225,17 @@
       "merged_into": null
     },
     {
+      "slug": "hazel-sandstorm",
+      "display_name": "Hazel Sandstorm",
+      "anchors": [
+        "microsoft:Hazel Sandstorm"
+      ],
+      "first_published": "2026-10-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
       "slug": "head-mare",
       "display_name": "Head Mare",
       "anchors": [
@@ -6248,6 +6466,7 @@
       "display_name": "Houndstooth Typhoon",
       "anchors": [
         "malpedia:houndstooth_typhoon",
+        "microsoft:Houndstooth Typhoon",
         "misp:db3899d1-ee48-46ac-b452-870d62fbdf2e"
       ],
       "first_published": "2026-09-30",
@@ -6442,6 +6661,7 @@
       "anchors": [
         "etda:21785caa-d383-454d-a0cb-4242e57d0f8e",
         "malpedia:invisimole",
+        "microsoft:Storm-0593",
         "misp:87af83a4-ced4-4e7c-96a6-86612dc095b1"
       ],
       "first_published": "2026-09-30",
@@ -6963,6 +7183,7 @@
       "display_name": "Lilac Typhoon",
       "anchors": [
         "malpedia:lilac_typhoon",
+        "microsoft:Lilac Typhoon",
         "misp:b80be7a7-6d06-4da7-8ae0-302a198e7c73"
       ],
       "first_published": "2026-09-30",
@@ -6987,6 +7208,7 @@
       "display_name": "LIMINAL PANDA",
       "anchors": [
         "malpedia:liminal_panda",
+        "microsoft:Pepper Typhoon",
         "misp:e7a64fd7-5d30-47ec-b9f6-8c555e5f319f"
       ],
       "first_published": "2026-09-30",
@@ -7100,6 +7322,17 @@
         "misp:f5022a01-27c3-4cff-bc64-9980dc003a66"
       ],
       "first_published": "2026-09-30",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "luna-tempest",
+      "display_name": "Luna Tempest",
+      "anchors": [
+        "microsoft:Luna Tempest"
+      ],
+      "first_published": "2026-10-01",
       "suffix": null,
       "retired": false,
       "merged_into": null
@@ -7238,8 +7471,8 @@
       ],
       "first_published": "2026-09-30",
       "suffix": null,
-      "retired": false,
-      "merged_into": null
+      "retired": true,
+      "merged_into": "G0096"
     },
     {
       "slug": "markopolo",
@@ -7437,6 +7670,18 @@
       "merged_into": null
     },
     {
+      "slug": "mustard-tempest",
+      "display_name": "Mustard Tempest",
+      "anchors": [
+        "malpedia:mustard_tempest",
+        "misp:3ce9610b-2435-4c41-80d1-3f95a5ff2984"
+      ],
+      "first_published": "2026-10-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
       "slug": "mysterious-elephant",
       "display_name": "Mysterious Elephant",
       "anchors": [
@@ -7597,6 +7842,17 @@
       "merged_into": null
     },
     {
+      "slug": "night-tsunami",
+      "display_name": "Night Tsunami",
+      "anchors": [
+        "microsoft:Night Tsunami"
+      ],
+      "first_published": "2026-10-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
       "slug": "nighteagle",
       "display_name": "NightEagle",
       "anchors": [
@@ -7688,6 +7944,17 @@
         "misp:0c78182d-bc4b-404f-aacc-40538252b58c"
       ],
       "first_published": "2026-09-30",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "obsidian-sandstorm",
+      "display_name": "Obsidian Sandstorm",
+      "anchors": [
+        "microsoft:Obsidian Sandstorm"
+      ],
+      "first_published": "2026-10-01",
       "suffix": null,
       "retired": false,
       "merged_into": null
@@ -8442,6 +8709,7 @@
       "display_name": "Patched Lightning",
       "anchors": [
         "malpedia:patched_lightning",
+        "microsoft:Patched Lightning",
         "misp:3071973c-b3da-4c74-8fec-3cd6138bf146"
       ],
       "first_published": "2026-09-30",
@@ -8466,6 +8734,7 @@
       "display_name": "Pearl Sleet",
       "anchors": [
         "malpedia:pearl_sleet",
+        "microsoft:Pearl Sleet",
         "misp:ef0d776a-51de-4965-ba1c-69ed256e0e5d"
       ],
       "first_published": "2026-09-30",
@@ -8514,6 +8783,7 @@
       "display_name": "Phlox Tempest",
       "anchors": [
         "malpedia:phlox_tempest",
+        "microsoft:Phlox Tempest",
         "misp:dd012c50-4f4f-4485-ac52-294a341f03e5"
       ],
       "first_published": "2026-09-30",
@@ -8689,6 +8959,17 @@
         "misp:eb0b100c-8a4e-4859-b6f8-eebd66c3d20c"
       ],
       "first_published": "2026-09-30",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "pumpkin-sandstorm",
+      "display_name": "Pumpkin Sandstorm",
+      "anchors": [
+        "microsoft:Pumpkin Sandstorm"
+      ],
+      "first_published": "2026-10-01",
       "suffix": null,
       "retired": false,
       "merged_into": null
@@ -9115,12 +9396,36 @@
         "malpedia:romcom",
         "malpedia:ta829",
         "malpedia:void_rabisu",
+        "microsoft:Storm-0671",
+        "microsoft:Storm-0978",
         "misp:9766d52e-0e5d-4997-9c31-7f2291dcda9e",
         "misp:ba9e1ed2-e142-48d0-a593-f73ac6d59ccd",
         "misp:e9cba6d4-e413-4c53-8c84-7313f5c6aac5"
       ],
       "first_published": "2026-09-30",
       "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "ruby-sleet",
+      "display_name": "Ruby Sleet",
+      "anchors": [
+        "malpedia:ruby_sleet"
+      ],
+      "first_published": "2026-10-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "ruby-sleet-2",
+      "display_name": "Ruby Sleet",
+      "anchors": [
+        "misp:03ff54cf-f7d4-4606-a531-2ca6d4fa6a54"
+      ],
+      "first_published": "2026-10-01",
+      "suffix": 2,
       "retired": false,
       "merged_into": null
     },
@@ -9156,6 +9461,17 @@
         "misp:8b04c61d-be69-4246-901f-88f588520e4c"
       ],
       "first_published": "2026-09-30",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "ruza-flood",
+      "display_name": "Ruza Flood",
+      "anchors": [
+        "microsoft:Ruza Flood"
+      ],
+      "first_published": "2026-10-01",
       "suffix": null,
       "retired": false,
       "merged_into": null
@@ -9270,6 +9586,17 @@
       "merged_into": null
     },
     {
+      "slug": "sangria-tempest",
+      "display_name": "Sangria Tempest",
+      "anchors": [
+        "microsoft:Sangria Tempest"
+      ],
+      "first_published": "2026-10-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
       "slug": "sath-i-mudafaa",
       "display_name": "Sath-ı Müdafaa",
       "anchors": [
@@ -9377,6 +9704,17 @@
         "misp:7fb1662e-0257-4606-b3a2-bf294c64c098"
       ],
       "first_published": "2026-09-30",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "sefid-flood",
+      "display_name": "Sefid Flood",
+      "anchors": [
+        "microsoft:Sefid Flood"
+      ],
+      "first_published": "2026-10-01",
       "suffix": null,
       "retired": false,
       "merged_into": null
@@ -10032,6 +10370,7 @@
       "display_name": "Storm-0062",
       "anchors": [
         "malpedia:storm-0062",
+        "microsoft:Shadow Typhoon",
         "misp:d1fe4546-616a-409c-8d2c-f7a7e0a183f8"
       ],
       "first_published": "2026-09-30",
@@ -10044,6 +10383,7 @@
       "display_name": "Storm-0249",
       "anchors": [
         "malpedia:storm-0249",
+        "microsoft:Storm-0249",
         "misp:26c8deca-ac6e-4a56-93bd-5c47d9360b0d"
       ],
       "first_published": "2026-09-30",
@@ -10056,9 +10396,21 @@
       "display_name": "Storm-0252",
       "anchors": [
         "malpedia:storm-0252",
+        "microsoft:Storm-0252",
         "misp:7a609a0b-8c24-424b-aa85-393d97bbd470"
       ],
       "first_published": "2026-09-30",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "storm-0259",
+      "display_name": "Storm-0259",
+      "anchors": [
+        "microsoft:Storm-0259"
+      ],
+      "first_published": "2026-10-01",
       "suffix": null,
       "retired": false,
       "merged_into": null
@@ -10088,6 +10440,17 @@
       "merged_into": null
     },
     {
+      "slug": "storm-0408",
+      "display_name": "Storm-0408",
+      "anchors": [
+        "microsoft:Storm-0408"
+      ],
+      "first_published": "2026-10-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
       "slug": "storm-0473",
       "display_name": "Storm-0473",
       "anchors": [
@@ -10095,6 +10458,17 @@
         "misp:2f854548-1af0-4f55-acab-4f85ce9f162c"
       ],
       "first_published": "2026-09-30",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "storm-0485",
+      "display_name": "Storm-0485",
+      "anchors": [
+        "microsoft:Storm-0485"
+      ],
+      "first_published": "2026-10-01",
       "suffix": null,
       "retired": false,
       "merged_into": null
@@ -10140,6 +10514,7 @@
       "display_name": "Storm-0539",
       "anchors": [
         "malpedia:storm-0539",
+        "microsoft:Storm-0539",
         "misp:760b350c-522e-432d-80c5-7aab0eaf8873"
       ],
       "first_published": "2026-09-30",
@@ -10153,6 +10528,7 @@
       "anchors": [
         "etda:23e2ccea-9daa-415a-a72d-b242bbdb3782",
         "malpedia:storm-0558",
+        "microsoft:Antique Typhoon",
         "misp:5b30bcb8-4923-45cc-bc89-29651ca5d54e"
       ],
       "first_published": "2026-09-30",
@@ -10213,6 +10589,8 @@
       "display_name": "Storm-0940",
       "anchors": [
         "malpedia:storm-0940",
+        "microsoft:CovertNetwork-1658",
+        "microsoft:Storm-0940",
         "misp:301ffea9-edd5-4d89-a65f-8add8e34e95d"
       ],
       "first_published": "2026-09-30",
@@ -10261,6 +10639,7 @@
       "display_name": "Storm-1101",
       "anchors": [
         "malpedia:storm-1101",
+        "microsoft:Storm-1101",
         "misp:8081af2c-442f-4487-9cf7-022cbe010b8f"
       ],
       "first_published": "2026-09-30",
@@ -10273,6 +10652,7 @@
       "display_name": "Storm-1113",
       "anchors": [
         "malpedia:storm-1113",
+        "microsoft:Storm-1113",
         "misp:993e81e8-63f4-4666-9538-4053a69287ba"
       ],
       "first_published": "2026-09-30",
@@ -10297,6 +10677,7 @@
       "display_name": "Storm-1152",
       "anchors": [
         "malpedia:storm-1152",
+        "microsoft:Storm-1152",
         "misp:e18dca82-0524-4338-9a66-e13e67c81ac4"
       ],
       "first_published": "2026-09-30",
@@ -10321,9 +10702,32 @@
       "display_name": "Storm-1175",
       "anchors": [
         "malpedia:storm-1175",
+        "microsoft:Storm-1175",
         "misp:313d6dbd-e2fc-4336-b6ae-053665f00ba1"
       ],
       "first_published": "2026-09-30",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "storm-1194",
+      "display_name": "Storm-1194",
+      "anchors": [
+        "microsoft:Storm-1194"
+      ],
+      "first_published": "2026-10-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "storm-1249",
+      "display_name": "Storm-1249",
+      "anchors": [
+        "microsoft:Storm-1249"
+      ],
+      "first_published": "2026-10-01",
       "suffix": null,
       "retired": false,
       "merged_into": null
@@ -10369,6 +10773,8 @@
       "display_name": "Storm-1516",
       "anchors": [
         "malpedia:storm-1516",
+        "microsoft:Neva Flood",
+        "microsoft:Storm-1516",
         "misp:f37e5920-d780-4568-81dc-ae4e12052697"
       ],
       "first_published": "2026-09-30",
@@ -10381,9 +10787,21 @@
       "display_name": "Storm-1575",
       "anchors": [
         "malpedia:storm-1575",
+        "microsoft:Storm-1575",
         "misp:2485a9cb-b41c-43bd-8b1c-c64e919c0a4e"
       ],
       "first_published": "2026-09-30",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "storm-1607",
+      "display_name": "Storm-1607",
+      "anchors": [
+        "microsoft:Storm-1607"
+      ],
+      "first_published": "2026-10-01",
       "suffix": null,
       "retired": false,
       "merged_into": null
@@ -10393,6 +10811,7 @@
       "display_name": "Storm-1674",
       "anchors": [
         "malpedia:storm-1674",
+        "microsoft:Storm-1674",
         "misp:eb7b5ed7-cf9d-4c72-8f89-a2ee070b89b6"
       ],
       "first_published": "2026-09-30",
@@ -10405,6 +10824,7 @@
       "display_name": "Storm-1679",
       "anchors": [
         "malpedia:storm-1679",
+        "microsoft:Oka Flood",
         "misp:10582c97-90de-4f2b-8e4d-21513c3971fc"
       ],
       "first_published": "2026-09-30",
@@ -10417,6 +10837,7 @@
       "display_name": "Storm-1747",
       "anchors": [
         "malpedia:storm-1747",
+        "microsoft:Storm-1747",
         "misp:faa83106-1329-4049-87a8-7740d986a349"
       ],
       "first_published": "2026-09-30",
@@ -10437,6 +10858,17 @@
       "merged_into": null
     },
     {
+      "slug": "storm-1865",
+      "display_name": "Storm-1865",
+      "anchors": [
+        "microsoft:Storm-1865"
+      ],
+      "first_published": "2026-10-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
       "slug": "storm-1977",
       "display_name": "Storm-1977",
       "anchors": [
@@ -10449,11 +10881,34 @@
       "merged_into": null
     },
     {
+      "slug": "storm-1982",
+      "display_name": "Storm-1982",
+      "anchors": [
+        "microsoft:Storm-1982"
+      ],
+      "first_published": "2026-10-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "storm-2035",
+      "display_name": "Storm-2035",
+      "anchors": [
+        "microsoft:Storm-2035"
+      ],
+      "first_published": "2026-10-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
       "slug": "storm-2077",
       "display_name": "Storm-2077",
       "anchors": [
         "etda:b01702b6-b1dc-4292-8a10-dfb87acfcd59",
         "malpedia:storm-2077",
+        "microsoft:Storm-2077",
         "misp:e6afdfb4-a5ac-4be1-9cd0-c1801a7f7083"
       ],
       "first_published": "2026-09-30",
@@ -10474,10 +10929,22 @@
       "merged_into": null
     },
     {
+      "slug": "storm-2227",
+      "display_name": "Storm-2227",
+      "anchors": [
+        "microsoft:Storm-2227"
+      ],
+      "first_published": "2026-10-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
       "slug": "storm-2372",
       "display_name": "Storm-2372",
       "anchors": [
         "malpedia:storm-2372",
+        "microsoft:Storm-2372",
         "misp:9c2600e2-d9e6-42ea-963c-972a4b5673c6"
       ],
       "first_published": "2026-09-30",
@@ -10490,9 +10957,32 @@
       "display_name": "Storm-2460",
       "anchors": [
         "malpedia:storm-2460",
+        "microsoft:Storm-2460",
         "misp:0efde041-204e-46ba-9819-7c0ff2b34b42"
       ],
       "first_published": "2026-09-30",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "storm-2470",
+      "display_name": "Storm-2470",
+      "anchors": [
+        "microsoft:Storm-2470"
+      ],
+      "first_published": "2026-10-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "storm-2477",
+      "display_name": "Storm-2477",
+      "anchors": [
+        "microsoft:Storm-2477"
+      ],
+      "first_published": "2026-10-01",
       "suffix": null,
       "retired": false,
       "merged_into": null
@@ -10502,6 +10992,7 @@
       "display_name": "Storm-2561",
       "anchors": [
         "malpedia:storm-2561",
+        "microsoft:Storm-2561",
         "misp:7ff63e0c-2345-4282-b4d7-0e5dc49dfc60"
       ],
       "first_published": "2026-09-30",
@@ -10514,6 +11005,7 @@
       "display_name": "Storm-2603",
       "anchors": [
         "malpedia:storm-2603",
+        "microsoft:Storm-2603",
         "misp:981402be-3b2d-4310-a7c6-c773aec869c1"
       ],
       "first_published": "2026-09-30",
@@ -10526,9 +11018,32 @@
       "display_name": "Storm-2657",
       "anchors": [
         "malpedia:storm-2657",
+        "microsoft:Storm-2657",
         "misp:f240c6dd-e702-4acb-bfa9-131710f9f8b1"
       ],
       "first_published": "2026-09-30",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "storm-2697",
+      "display_name": "Storm-2697",
+      "anchors": [
+        "microsoft:Storm-2697"
+      ],
+      "first_published": "2026-10-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "storm-2755",
+      "display_name": "Storm-2755",
+      "anchors": [
+        "microsoft:Storm-2755"
+      ],
+      "first_published": "2026-10-01",
       "suffix": null,
       "retired": false,
       "merged_into": null
@@ -10538,6 +11053,7 @@
       "display_name": "Storm-2945",
       "anchors": [
         "malpedia:storm-2945",
+        "microsoft:Storm-2945",
         "misp:aaba51f8-7e75-46d1-b311-5aadbc370c97"
       ],
       "first_published": "2026-09-30",
@@ -10550,9 +11066,21 @@
       "display_name": "Storm-2949",
       "anchors": [
         "malpedia:storm-2949",
+        "microsoft:Storm-2949",
         "misp:4c449531-1e59-4a3f-a318-915b1dc79dc8"
       ],
       "first_published": "2026-09-30",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "storm-3075",
+      "display_name": "Storm-3075",
+      "anchors": [
+        "microsoft:Storm-3075"
+      ],
+      "first_published": "2026-10-01",
       "suffix": null,
       "retired": false,
       "merged_into": null
@@ -10585,6 +11113,7 @@
       "display_name": "Sunglow Blizzard",
       "anchors": [
         "malpedia:sunglow_blizzard",
+        "microsoft:Sunglow Blizzard",
         "misp:9c0f0db1-b773-42ff-a6f7-d4b6c1d28ca4"
       ],
       "first_published": "2026-09-30",
@@ -10635,6 +11164,7 @@
       "anchors": [
         "etda:046da342-795f-491e-b6d1-b61cd6c1f2d9",
         "malpedia:ta2101",
+        "microsoft:Storm-0216",
         "misp:39925aa0-c7bf-4b9b-97d6-7d600329453d"
       ],
       "first_published": "2026-09-30",
@@ -11847,8 +12377,8 @@
       ],
       "first_published": "2026-09-30",
       "suffix": null,
-      "retired": false,
-      "merged_into": null
+      "retired": true,
+      "merged_into": "G0027"
     },
     {
       "slug": "unc2447",
@@ -12181,6 +12711,7 @@
       "display_name": "UNC6040",
       "anchors": [
         "malpedia:unc6040",
+        "microsoft:Storm-2581",
         "misp:84669320-0b46-4b26-a063-fb71e9833fec"
       ],
       "first_published": "2026-09-30",
@@ -12744,10 +13275,11 @@
     },
     {
       "slug": "vice-spider",
-      "display_name": "VICE SPIDER",
+      "display_name": "Vanilla Tempest",
       "anchors": [
         "malpedia:vanilla_tempest",
         "malpedia:vice_spider",
+        "microsoft:Vanilla Tempest",
         "misp:2be3426b-c216-499f-b111-6694e96918f7",
         "misp:c4132d43-2405-43ca-9940-a6f78e007861"
       ],
@@ -12765,8 +13297,8 @@
       ],
       "first_published": "2026-09-30",
       "suffix": null,
-      "retired": false,
-      "merged_into": null
+      "retired": true,
+      "merged_into": "cotton-sandstorm"
     },
     {
       "slug": "vicioustrap",
@@ -12850,9 +13382,21 @@
       "anchors": [
         "etda:2a050d77-b95d-4f42-8fc3-b02f93f7bf8f",
         "malpedia:void_blizzard",
+        "microsoft:Void Blizzard",
         "misp:b495419f-e327-4bbe-aba5-0c281dc2605b"
       ],
       "first_published": "2026-09-30",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "volga-flood",
+      "display_name": "Volga Flood",
+      "anchors": [
+        "microsoft:Volga Flood"
+      ],
+      "first_published": "2026-10-01",
       "suffix": null,
       "retired": false,
       "merged_into": null
@@ -13065,6 +13609,17 @@
       "merged_into": null
     },
     {
+      "slug": "wheat-tempest",
+      "display_name": "Wheat Tempest",
+      "anchors": [
+        "microsoft:Wheat Tempest"
+      ],
+      "first_published": "2026-10-01",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
       "slug": "whitecobra",
       "display_name": "WhiteCobra",
       "anchors": [
@@ -13175,6 +13730,7 @@
       "display_name": "Wisteria Tsunami",
       "anchors": [
         "malpedia:wisteria_tsunami",
+        "microsoft:Wisteria Tsunami",
         "misp:7732e8b8-b541-428b-8873-2d72ffd39ecb"
       ],
       "first_published": "2026-09-30",
@@ -13289,6 +13845,17 @@
         "misp:2031ae01-e962-4861-a224-0934af6cdd3a"
       ],
       "first_published": "2026-09-30",
+      "suffix": null,
+      "retired": false,
+      "merged_into": null
+    },
+    {
+      "slug": "yulong-flood",
+      "display_name": "Yulong Flood",
+      "anchors": [
+        "microsoft:Yulong Flood"
+      ],
+      "first_published": "2026-10-01",
       "suffix": null,
       "retired": false,
       "merged_into": null

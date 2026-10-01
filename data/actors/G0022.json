@@ -7,7 +7,18 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "TG-0110",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -20,12 +31,21 @@
       ]
     },
     {
-      "value": "TG-0110",
+      "value": "Red Sylvan",
       "sources": [
-        "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Brocade Typhoon",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -37,19 +57,27 @@
       ]
     },
     {
-      "value": "Red Sylvan",
+      "value": "GOTHIC PANDA",
       "sources": [
         "misp",
-        "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
-      "value": "Brocade Typhoon",
+      "value": "UPS",
       "sources": [
         "misp",
-        "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "BORON",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -67,28 +95,7 @@
       ]
     },
     {
-      "value": "GOTHIC PANDA",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "UPS",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
       "value": "Boyusec",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "BORON",
       "sources": [
         "misp",
         "malpedia"
@@ -130,6 +137,18 @@
       "sources": [
         "etda"
       ]
+    },
+    {
+      "value": "OLDCARP",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "CYBRAN",
+      "sources": [
+        "microsoft"
+      ]
     }
   ],
   "origin": [
@@ -144,6 +163,10 @@
     {
       "value": "CN",
       "source": "malpedia"
+    },
+    {
+      "value": "CN",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -309,10 +332,6 @@
   ],
   "techniques_reported": [
     {
-      "id": "T1082",
-      "count": 3
-    },
-    {
       "id": "T1027",
       "count": 2
     },
@@ -321,15 +340,11 @@
       "count": 2
     },
     {
-      "id": "T1057",
-      "count": 2
-    },
-    {
       "id": "T1059.001",
       "count": 2
     },
     {
-      "id": "T1105",
+      "id": "T1082",
       "count": 2
     },
     {
@@ -365,19 +380,7 @@
       "count": 1
     },
     {
-      "id": "T1016",
-      "count": 1
-    },
-    {
-      "id": "T1021.001",
-      "count": 1
-    },
-    {
       "id": "T1027.009",
-      "count": 1
-    },
-    {
-      "id": "T1033",
       "count": 1
     },
     {
@@ -397,11 +400,7 @@
       "count": 1
     },
     {
-      "id": "T1069.001",
-      "count": 1
-    },
-    {
-      "id": "T1070",
+      "id": "T1057",
       "count": 1
     },
     {
@@ -413,11 +412,11 @@
       "count": 1
     },
     {
-      "id": "T1098",
+      "id": "T1102",
       "count": 1
     },
     {
-      "id": "T1102",
+      "id": "T1105",
       "count": 1
     },
     {
@@ -426,10 +425,6 @@
     },
     {
       "id": "T1129",
-      "count": 1
-    },
-    {
-      "id": "T1136",
       "count": 1
     },
     {
@@ -454,10 +449,6 @@
     },
     {
       "id": "T1553.002",
-      "count": 1
-    },
-    {
-      "id": "T1555",
       "count": 1
     },
     {
@@ -486,6 +477,10 @@
     },
     {
       "id": "T1608.001",
+      "count": 1
+    },
+    {
+      "id": "T1627.001",
       "count": 1
     }
   ],
@@ -1349,5 +1344,5 @@
     "24bd1e9d9c67263a2a65c017545634f004dcbfc8"
   ],
   "conflicts": [],
-  "evidence_count": 26
+  "evidence_count": 33
 }

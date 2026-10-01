@@ -7,7 +7,48 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Sednit",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Sofacy",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Tsar Team",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Forest Blizzard",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -21,24 +62,6 @@
     },
     {
       "value": "Group 74",
-      "sources": [
-        "attack",
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Sednit",
-      "sources": [
-        "attack",
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Sofacy",
       "sources": [
         "attack",
         "misp",
@@ -65,25 +88,16 @@
       ]
     },
     {
-      "value": "Tsar Team",
+      "value": "STRONTIUM",
       "sources": [
         "attack",
         "misp",
-        "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
       "value": "TG-4127",
-      "sources": [
-        "attack",
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Forest Blizzard",
       "sources": [
         "attack",
         "misp",
@@ -110,6 +124,15 @@
       ]
     },
     {
+      "value": "Blue Athena",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
       "value": "IRON TWILIGHT",
       "sources": [
         "attack",
@@ -119,14 +142,6 @@
     },
     {
       "value": "SNAKEMACKEREL",
-      "sources": [
-        "attack",
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "STRONTIUM",
       "sources": [
         "attack",
         "misp",
@@ -198,7 +213,7 @@
       ]
     },
     {
-      "value": "Blue Athena",
+      "value": "UAC-0063",
       "sources": [
         "misp",
         "etda",
@@ -206,11 +221,11 @@
       ]
     },
     {
-      "value": "UAC-0063",
+      "value": "FANCY BEAR",
       "sources": [
         "misp",
-        "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -224,13 +239,6 @@
       "value": "Grey-Cloud",
       "sources": [
         "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "FANCY BEAR",
-      "sources": [
-        "misp",
         "malpedia"
       ]
     },
@@ -260,6 +268,41 @@
       "sources": [
         "misp",
         "malpedia"
+      ]
+    },
+    {
+      "value": "ATG2",
+      "sources": [
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Z-Lom Team",
+      "sources": [
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Operation Pawn Storm",
+      "sources": [
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "CrisisFour",
+      "sources": [
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "HELLFIRE",
+      "sources": [
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -315,36 +358,6 @@
       "sources": [
         "malpedia"
       ]
-    },
-    {
-      "value": "ATG2",
-      "sources": [
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Z-Lom Team",
-      "sources": [
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Operation Pawn Storm",
-      "sources": [
-        "malpedia"
-      ]
-    },
-    {
-      "value": "CrisisFour",
-      "sources": [
-        "malpedia"
-      ]
-    },
-    {
-      "value": "HELLFIRE",
-      "sources": [
-        "malpedia"
-      ]
     }
   ],
   "origin": [
@@ -359,6 +372,10 @@
     {
       "value": "RU",
       "source": "malpedia"
+    },
+    {
+      "value": "RU",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -765,6 +782,10 @@
     },
     {
       "name": "Winexe",
+      "source": "attack"
+    },
+    {
+      "name": "X-Agent for Android",
       "source": "attack"
     },
     {
@@ -2225,7 +2246,7 @@
     },
     {
       "quarter": "2017-Q1",
-      "count": 9
+      "count": 10
     },
     {
       "quarter": "2017-Q2",
@@ -2553,6 +2574,7 @@
     "1721fa3665b069612d0f360fd1dcff628c0a26b1",
     "6bcc802ba2b58d24cf16ee9afe3ed0a93a41df97",
     "ec958b81f6d51eddea363ef6256e0d166fbd6269",
+    "e9a609f150d6fa43d810df52a3d8113d65ac3f55",
     "d16133f168a1d59e95e07f9c8c94e00459183058",
     "paper:Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web",
     "863c46b6069dde4fdea7e046932615e52d83d049",
@@ -2613,5 +2635,5 @@
     "886a03eba2ef3553bbcda46c9ead6222760ece73"
   ],
   "conflicts": [],
-  "evidence_count": 71
+  "evidence_count": 84
 }

@@ -5,165 +5,7 @@
     {
       "value": "Dragonfly",
       "sources": [
-        "attack",
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "TG-4192",
-      "sources": [
-        "attack",
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Crouching Yeti",
-      "sources": [
-        "attack",
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Ghost Blizzard",
-      "sources": [
-        "attack",
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "DYMALLOY",
-      "sources": [
-        "attack",
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "IRON LIBERTY",
-      "sources": [
-        "attack",
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "BROMINE",
-      "sources": [
-        "attack",
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Allanite",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Palmetto Fusion",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Group 24",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Koala Team",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "ITG15",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Blue Kraken",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Berserk Bear",
-      "sources": [
-        "attack",
-        "etda"
-      ]
-    },
-    {
-      "value": "Energetic Bear",
-      "sources": [
-        "attack",
-        "etda"
-      ]
-    },
-    {
-      "value": "ALLANITE",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "ENERGETIC BEAR",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "BERSERK BEAR",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "CASTLE",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Havex",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "ATK6",
-      "sources": [
-        "misp",
-        "malpedia"
+        "attack"
       ]
     },
     {
@@ -173,196 +15,60 @@
       ]
     },
     {
-      "value": "Dragonfly 2.0",
+      "value": "DYMALLOY",
       "sources": [
-        "etda"
+        "attack"
       ]
     },
     {
-      "value": "Dymalloy",
+      "value": "Berserk Bear",
       "sources": [
-        "etda"
+        "attack"
       ]
     },
     {
-      "value": "Iron Liberty",
+      "value": "TG-4192",
       "sources": [
-        "etda"
+        "attack"
       ]
     },
     {
-      "value": "Electrum",
+      "value": "Crouching Yeti",
       "sources": [
-        "etda"
+        "attack"
       ]
     },
     {
-      "value": "ATK 6",
+      "value": "IRON LIBERTY",
       "sources": [
-        "etda"
+        "attack"
       ]
     },
     {
-      "value": "Bromine",
+      "value": "Energetic Bear",
       "sources": [
-        "etda"
+        "attack"
+      ]
+    },
+    {
+      "value": "Ghost Blizzard",
+      "sources": [
+        "attack"
+      ]
+    },
+    {
+      "value": "BROMINE",
+      "sources": [
+        "attack"
       ]
     }
   ],
-  "origin": [
-    {
-      "value": "RU",
-      "source": "misp"
-    },
-    {
-      "value": "RU",
-      "source": "etda"
-    },
-    {
-      "value": "RU",
-      "source": "malpedia"
-    }
-  ],
+  "origin": [],
   "sponsor": [],
-  "motivation": [
-    {
-      "value": "Sabotage and destruction",
-      "source": "etda"
-    },
-    {
-      "value": "Information theft and espionage",
-      "source": "etda"
-    }
-  ],
+  "motivation": [],
   "claimed_targets": {
-    "countries": [
-      {
-        "value": "Azerbaijan",
-        "source": "etda"
-      },
-      {
-        "value": "Belgium",
-        "source": "etda"
-      },
-      {
-        "value": "Canada",
-        "source": "etda"
-      },
-      {
-        "value": "France",
-        "source": "etda"
-      },
-      {
-        "value": "Germany",
-        "source": "etda"
-      },
-      {
-        "value": "Italy",
-        "source": "etda"
-      },
-      {
-        "value": "Norway",
-        "source": "etda"
-      },
-      {
-        "value": "Russia",
-        "source": "etda"
-      },
-      {
-        "value": "Singapore",
-        "source": "etda"
-      },
-      {
-        "value": "Spain",
-        "source": "etda"
-      },
-      {
-        "value": "Switzerland",
-        "source": "etda"
-      },
-      {
-        "value": "Türkiye",
-        "source": "etda"
-      },
-      {
-        "value": "United Kingdom",
-        "source": "etda"
-      },
-      {
-        "value": "Ukraine",
-        "source": "etda"
-      },
-      {
-        "value": "United States",
-        "source": "etda"
-      },
-      {
-        "value": "Greece",
-        "source": "etda"
-      },
-      {
-        "value": "Poland",
-        "source": "etda"
-      },
-      {
-        "value": "Romania",
-        "source": "etda"
-      },
-      {
-        "value": "Serbia",
-        "source": "etda"
-      }
-    ],
-    "sectors": [
-      {
-        "value": "Energy",
-        "source": "misp"
-      },
-      {
-        "value": "Energy",
-        "source": "etda"
-      },
-      {
-        "value": "Aviation",
-        "source": "etda"
-      },
-      {
-        "value": "Construction",
-        "source": "etda"
-      },
-      {
-        "value": "Defense",
-        "source": "etda"
-      },
-      {
-        "value": "Education",
-        "source": "etda"
-      },
-      {
-        "value": "Industrial",
-        "source": "etda"
-      },
-      {
-        "value": "IT",
-        "source": "etda"
-      },
-      {
-        "value": "Manufacturing",
-        "source": "etda"
-      },
-      {
-        "value": "Oil and gas",
-        "source": "etda"
-      },
-      {
-        "value": "Pharmaceutical",
-        "source": "etda"
-      },
-      {
-        "value": "Energy",
-        "source": "malpedia"
-      }
-    ]
+    "countries": [],
+    "sectors": []
   },
   "malware": [
     {
@@ -407,6 +113,8 @@
     }
   ],
   "techniques_documented": [
+    "T0817",
+    "T0862",
     "T1003.002",
     "T1003.003",
     "T1003.004",
@@ -652,5 +360,5 @@
     "paper:Dragonfly_Threat_Against_Western_Energy_Suppliers"
   ],
   "conflicts": [],
-  "evidence_count": 47
+  "evidence_count": 0
 }

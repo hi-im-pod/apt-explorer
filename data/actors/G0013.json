@@ -7,21 +7,24 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
       "value": "RADIUM",
       "sources": [
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
       "value": "Raspberry Typhoon",
       "sources": [
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -29,6 +32,20 @@
       "sources": [
         "misp",
         "malpedia"
+      ]
+    },
+    {
+      "value": "LotusBlossom",
+      "sources": [
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "LOTUS PANDA",
+      "sources": [
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -60,18 +77,6 @@
       "sources": [
         "etda"
       ]
-    },
-    {
-      "value": "LotusBlossom",
-      "sources": [
-        "malpedia"
-      ]
-    },
-    {
-      "value": "LOTUS PANDA",
-      "sources": [
-        "malpedia"
-      ]
     }
   ],
   "origin": [
@@ -86,6 +91,10 @@
     {
       "value": "CN",
       "source": "malpedia"
+    },
+    {
+      "value": "CN",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -243,5 +252,5 @@
     "55ea4075414a961a79bf62c7c55008322dc8ee4e"
   ],
   "conflicts": [],
-  "evidence_count": 4
+  "evidence_count": 5
 }

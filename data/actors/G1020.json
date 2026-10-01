@@ -5,17 +5,7 @@
     {
       "value": "Mustard Tempest",
       "sources": [
-        "attack",
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "DEV-0206",
-      "sources": [
-        "attack",
-        "misp",
-        "malpedia"
+        "attack"
       ]
     },
     {
@@ -43,10 +33,9 @@
       ]
     },
     {
-      "value": "Purple Vallhund",
+      "value": "DEV-0206",
       "sources": [
-        "misp",
-        "malpedia"
+        "attack"
       ]
     }
   ],
@@ -88,38 +77,10 @@
   "techniques_reported": [
     {
       "id": "T1053.005",
-      "count": 3
-    },
-    {
-      "id": "T1059.001",
-      "count": 2
-    },
-    {
-      "id": "T1059.003",
       "count": 2
     },
     {
       "id": "T1059.007",
-      "count": 2
-    },
-    {
-      "id": "T1070.004",
-      "count": 2
-    },
-    {
-      "id": "T1071.001",
-      "count": 2
-    },
-    {
-      "id": "T1082",
-      "count": 2
-    },
-    {
-      "id": "T1105",
-      "count": 2
-    },
-    {
-      "id": "T1112",
       "count": 2
     },
     {
@@ -147,19 +108,7 @@
       "count": 1
     },
     {
-      "id": "T1027",
-      "count": 1
-    },
-    {
-      "id": "T1027.010",
-      "count": 1
-    },
-    {
       "id": "T1027.013",
-      "count": 1
-    },
-    {
-      "id": "T1036.004",
       "count": 1
     },
     {
@@ -167,7 +116,11 @@
       "count": 1
     },
     {
-      "id": "T1059",
+      "id": "T1059.001",
+      "count": 1
+    },
+    {
+      "id": "T1059.003",
       "count": 1
     },
     {
@@ -183,11 +136,23 @@
       "count": 1
     },
     {
+      "id": "T1070.004",
+      "count": 1
+    },
+    {
+      "id": "T1071.001",
+      "count": 1
+    },
+    {
       "id": "T1074.001",
       "count": 1
     },
     {
       "id": "T1078",
+      "count": 1
+    },
+    {
+      "id": "T1082",
       "count": 1
     },
     {
@@ -200,6 +165,14 @@
     },
     {
       "id": "T1095",
+      "count": 1
+    },
+    {
+      "id": "T1105",
+      "count": 1
+    },
+    {
+      "id": "T1112",
       "count": 1
     },
     {
@@ -232,10 +205,6 @@
     },
     {
       "id": "T1552.001",
-      "count": 1
-    },
-    {
-      "id": "T1553",
       "count": 1
     },
     {
@@ -545,5 +514,5 @@
     "e2096138af18eedf838816f0a176b7043c47ccd5"
   ],
   "conflicts": [],
-  "evidence_count": 9
+  "evidence_count": 6
 }

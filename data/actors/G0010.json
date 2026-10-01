@@ -8,7 +8,18 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Secret Blizzard",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -30,24 +41,25 @@
       ]
     },
     {
-      "value": "Secret Blizzard",
+      "value": "Snake",
       "sources": [
         "attack",
         "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Blue Python",
+      "sources": [
+        "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
       "value": "IRON HUNTER",
-      "sources": [
-        "attack",
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Snake",
       "sources": [
         "attack",
         "misp",
@@ -103,11 +115,27 @@
       ]
     },
     {
-      "value": "Blue Python",
+      "value": "WRAITH",
       "sources": [
         "misp",
-        "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Uroburos",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "KRYPTON",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -132,20 +160,6 @@
       ]
     },
     {
-      "value": "WRAITH",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Uroburos",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
       "value": "Pfinet",
       "sources": [
         "misp",
@@ -154,13 +168,6 @@
     },
     {
       "value": "TAG_0530",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "KRYPTON",
       "sources": [
         "misp",
         "malpedia"
@@ -213,6 +220,13 @@
       "sources": [
         "misp",
         "malpedia"
+      ]
+    },
+    {
+      "value": "ATG26",
+      "sources": [
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -302,9 +316,9 @@
       ]
     },
     {
-      "value": "ATG26",
+      "value": "VENOMOUS BEAR",
       "sources": [
-        "malpedia"
+        "microsoft"
       ]
     }
   ],
@@ -320,6 +334,10 @@
     {
       "value": "RU",
       "source": "malpedia"
+    },
+    {
+      "value": "RU",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -1682,5 +1700,5 @@
     "9e42753263f89db549ef5204335542b065f08337"
   ],
   "conflicts": [],
-  "evidence_count": 57
+  "evidence_count": 65
 }

@@ -6,7 +6,14 @@
       "value": "Coinbase Cartel",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Storm-2981",
+      "sources": [
+        "microsoft"
       ]
     }
   ],
@@ -24,5 +31,5 @@
   "timeline": [],
   "reports": [],
   "conflicts": [],
-  "evidence_count": 1
+  "evidence_count": 2
 }

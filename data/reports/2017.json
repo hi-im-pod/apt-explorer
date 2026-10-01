@@ -1295,8 +1295,7 @@
     "actors": [
       "G0010",
       "G0027",
-      "G0049",
-      "unc215"
+      "G0049"
     ],
     "actor_names_unresolved": [],
     "cves": [],
@@ -11566,8 +11565,7 @@
     "actors": [
       "G0010",
       "G0027",
-      "G0049",
-      "unc215"
+      "G0049"
     ],
     "actor_names_unresolved": [],
     "cves": [],
@@ -22684,7 +22682,9 @@
     "url": "https://www.crowdstrike.com/wp-content/brochures/FancyBearTracksUkrainianArtillery.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e9a609f150d6fa43d810df52a3d8113d65ac3f55.pdf",
-    "actors": [],
+    "actors": [
+      "G0007"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],

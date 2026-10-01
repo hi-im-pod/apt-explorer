@@ -1,0 +1,44 @@
+{
+  "id": "storm-1982",
+  "name": "Storm-1982",
+  "aliases": [
+    {
+      "value": "Storm-1982",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "SneakyCheff",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "UNK_SweetSpecter",
+      "sources": [
+        "microsoft"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "microsoft"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 0
+}

@@ -185,6 +185,10 @@
       "source": "attack"
     },
     {
+      "name": "Pallas",
+      "source": "attack"
+    },
+    {
       "name": "Bandook",
       "source": "malpedia"
     },
@@ -204,6 +208,7 @@
     "T1189",
     "T1204.002",
     "T1218.001",
+    "T1437.001",
     "T1547.001",
     "T1566.003"
   ],

@@ -1,18 +1,12 @@
 {
-  "window_start": "2024-07-01",
-  "generated_at": "2026-09-30T11:34:16Z",
+  "window_start": "2024-10-01",
+  "generated_at": "2026-10-01T04:50:21Z",
   "reporting_activity": [
     {
       "actor": "G0001",
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
-    },
-    {
-      "actor": "G0004",
-      "quarter": "2024-Q3",
-      "count": 3,
-      "prev_year_count": 6
     },
     {
       "actor": "G0004",
@@ -63,6 +57,12 @@
       "prev_year_count": 1
     },
     {
+      "actor": "G0004",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 2
+    },
+    {
       "actor": "G0005",
       "quarter": "2026-Q2",
       "count": 1,
@@ -73,12 +73,6 @@
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
-    },
-    {
-      "actor": "G0007",
-      "quarter": "2024-Q3",
-      "count": 1,
-      "prev_year_count": 2
     },
     {
       "actor": "G0007",
@@ -129,10 +123,10 @@
       "prev_year_count": 5
     },
     {
-      "actor": "G0008",
-      "quarter": "2024-Q3",
-      "count": 20,
-      "prev_year_count": 19
+      "actor": "G0007",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
     },
     {
       "actor": "G0008",
@@ -183,10 +177,10 @@
       "prev_year_count": 8
     },
     {
-      "actor": "G0009",
-      "quarter": "2024-Q3",
-      "count": 19,
-      "prev_year_count": 12
+      "actor": "G0008",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 4
     },
     {
       "actor": "G0009",
@@ -237,8 +231,8 @@
       "prev_year_count": 7
     },
     {
-      "actor": "G0010",
-      "quarter": "2024-Q3",
+      "actor": "G0009",
+      "quarter": "2026-Q4",
       "count": 0,
       "prev_year_count": 4
     },
@@ -292,26 +286,8 @@
     },
     {
       "actor": "G0011",
-      "quarter": "2025-Q4",
-      "count": 1,
-      "prev_year_count": 0
-    },
-    {
-      "actor": "G0011",
-      "quarter": "2026-Q1",
-      "count": 1,
-      "prev_year_count": 0
-    },
-    {
-      "actor": "G0011",
       "quarter": "2026-Q3",
       "count": 1,
-      "prev_year_count": 0
-    },
-    {
-      "actor": "G0012",
-      "quarter": "2024-Q3",
-      "count": 2,
       "prev_year_count": 0
     },
     {
@@ -343,12 +319,6 @@
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
-    },
-    {
-      "actor": "G0016",
-      "quarter": "2024-Q3",
-      "count": 21,
-      "prev_year_count": 18
     },
     {
       "actor": "G0016",
@@ -399,10 +369,10 @@
       "prev_year_count": 7
     },
     {
-      "actor": "G0017",
-      "quarter": "2024-Q3",
-      "count": 3,
-      "prev_year_count": 6
+      "actor": "G0016",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 4
     },
     {
       "actor": "G0017",
@@ -453,10 +423,10 @@
       "prev_year_count": 1
     },
     {
-      "actor": "G0019",
-      "quarter": "2024-Q3",
-      "count": 3,
-      "prev_year_count": 7
+      "actor": "G0017",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 2
     },
     {
       "actor": "G0019",
@@ -507,6 +477,12 @@
       "prev_year_count": 1
     },
     {
+      "actor": "G0019",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 2
+    },
+    {
       "actor": "G0021",
       "quarter": "2024-Q4",
       "count": 0,
@@ -517,12 +493,6 @@
       "quarter": "2026-Q2",
       "count": 3,
       "prev_year_count": 0
-    },
-    {
-      "actor": "G0022",
-      "quarter": "2024-Q3",
-      "count": 3,
-      "prev_year_count": 6
     },
     {
       "actor": "G0022",
@@ -571,6 +541,12 @@
       "quarter": "2026-Q3",
       "count": 0,
       "prev_year_count": 1
+    },
+    {
+      "actor": "G0022",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 2
     },
     {
       "actor": "G0023",
@@ -580,21 +556,9 @@
     },
     {
       "actor": "G0024",
-      "quarter": "2024-Q3",
-      "count": 0,
-      "prev_year_count": 1
-    },
-    {
-      "actor": "G0024",
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
-    },
-    {
-      "actor": "G0025",
-      "quarter": "2024-Q3",
-      "count": 5,
-      "prev_year_count": 9
     },
     {
       "actor": "G0025",
@@ -645,10 +609,10 @@
       "prev_year_count": 1
     },
     {
-      "actor": "G0026",
-      "quarter": "2024-Q3",
-      "count": 3,
-      "prev_year_count": 6
+      "actor": "G0025",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 3
     },
     {
       "actor": "G0026",
@@ -699,10 +663,10 @@
       "prev_year_count": 1
     },
     {
-      "actor": "G0027",
-      "quarter": "2024-Q3",
-      "count": 3,
-      "prev_year_count": 7
+      "actor": "G0026",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 2
     },
     {
       "actor": "G0027",
@@ -753,6 +717,12 @@
       "prev_year_count": 2
     },
     {
+      "actor": "G0027",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 2
+    },
+    {
       "actor": "G0028",
       "quarter": "2026-Q2",
       "count": 1,
@@ -769,12 +739,6 @@
       "quarter": "2026-Q2",
       "count": 4,
       "prev_year_count": 0
-    },
-    {
-      "actor": "G0032",
-      "quarter": "2024-Q3",
-      "count": 3,
-      "prev_year_count": 7
     },
     {
       "actor": "G0032",
@@ -815,7 +779,7 @@
     {
       "actor": "G0032",
       "quarter": "2026-Q2",
-      "count": 19,
+      "count": 20,
       "prev_year_count": 4
     },
     {
@@ -825,10 +789,10 @@
       "prev_year_count": 3
     },
     {
-      "actor": "G0034",
-      "quarter": "2024-Q3",
-      "count": 5,
-      "prev_year_count": 3
+      "actor": "G0032",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 6
     },
     {
       "actor": "G0034",
@@ -869,7 +833,7 @@
     {
       "actor": "G0034",
       "quarter": "2026-Q2",
-      "count": 13,
+      "count": 16,
       "prev_year_count": 1
     },
     {
@@ -877,6 +841,12 @@
       "quarter": "2026-Q3",
       "count": 2,
       "prev_year_count": 1
+    },
+    {
+      "actor": "G0034",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 3
     },
     {
       "actor": "G0035",
@@ -889,12 +859,6 @@
       "quarter": "2026-Q2",
       "count": 7,
       "prev_year_count": 0
-    },
-    {
-      "actor": "G0037",
-      "quarter": "2024-Q3",
-      "count": 19,
-      "prev_year_count": 13
     },
     {
       "actor": "G0037",
@@ -945,16 +909,16 @@
       "prev_year_count": 7
     },
     {
+      "actor": "G0037",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 4
+    },
+    {
       "actor": "G0038",
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
-    },
-    {
-      "actor": "G0039",
-      "quarter": "2024-Q3",
-      "count": 3,
-      "prev_year_count": 6
     },
     {
       "actor": "G0039",
@@ -1005,10 +969,10 @@
       "prev_year_count": 1
     },
     {
-      "actor": "G0040",
-      "quarter": "2024-Q3",
-      "count": 2,
-      "prev_year_count": 3
+      "actor": "G0039",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 4
     },
     {
       "actor": "G0040",
@@ -1049,7 +1013,7 @@
     {
       "actor": "G0040",
       "quarter": "2026-Q2",
-      "count": 2,
+      "count": 3,
       "prev_year_count": 2
     },
     {
@@ -1057,6 +1021,12 @@
       "quarter": "2026-Q3",
       "count": 1,
       "prev_year_count": 1
+    },
+    {
+      "actor": "G0040",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 2
     },
     {
       "actor": "G0041",
@@ -1075,12 +1045,6 @@
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
-    },
-    {
-      "actor": "G0045",
-      "quarter": "2024-Q3",
-      "count": 22,
-      "prev_year_count": 21
     },
     {
       "actor": "G0045",
@@ -1131,10 +1095,10 @@
       "prev_year_count": 11
     },
     {
-      "actor": "G0046",
-      "quarter": "2024-Q3",
-      "count": 19,
-      "prev_year_count": 12
+      "actor": "G0045",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 8
     },
     {
       "actor": "G0046",
@@ -1185,10 +1149,10 @@
       "prev_year_count": 7
     },
     {
-      "actor": "G0047",
-      "quarter": "2024-Q3",
-      "count": 1,
-      "prev_year_count": 2
+      "actor": "G0046",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 4
     },
     {
       "actor": "G0047",
@@ -1239,16 +1203,16 @@
       "prev_year_count": 2
     },
     {
+      "actor": "G0047",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
       "actor": "G0048",
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
-    },
-    {
-      "actor": "G0049",
-      "quarter": "2024-Q3",
-      "count": 2,
-      "prev_year_count": 3
     },
     {
       "actor": "G0049",
@@ -1297,12 +1261,6 @@
       "quarter": "2026-Q3",
       "count": 2,
       "prev_year_count": 0
-    },
-    {
-      "actor": "G0050",
-      "quarter": "2024-Q3",
-      "count": 20,
-      "prev_year_count": 15
     },
     {
       "actor": "G0050",
@@ -1353,16 +1311,16 @@
       "prev_year_count": 8
     },
     {
+      "actor": "G0050",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 4
+    },
+    {
       "actor": "G0051",
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
-    },
-    {
-      "actor": "G0052",
-      "quarter": "2024-Q3",
-      "count": 19,
-      "prev_year_count": 12
     },
     {
       "actor": "G0052",
@@ -1413,14 +1371,14 @@
       "prev_year_count": 7
     },
     {
-      "actor": "G0055",
-      "quarter": "2026-Q2",
-      "count": 1,
-      "prev_year_count": 0
+      "actor": "G0052",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 4
     },
     {
-      "actor": "G0059",
-      "quarter": "2024-Q3",
+      "actor": "G0055",
+      "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
     },
@@ -1440,12 +1398,6 @@
       "actor": "G0059",
       "quarter": "2026-Q2",
       "count": 3,
-      "prev_year_count": 0
-    },
-    {
-      "actor": "G0060",
-      "quarter": "2024-Q3",
-      "count": 1,
       "prev_year_count": 0
     },
     {
@@ -1474,12 +1426,6 @@
     },
     {
       "actor": "G0061",
-      "quarter": "2024-Q3",
-      "count": 0,
-      "prev_year_count": 1
-    },
-    {
-      "actor": "G0061",
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
@@ -1489,12 +1435,6 @@
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
-    },
-    {
-      "actor": "G0064",
-      "quarter": "2024-Q3",
-      "count": 5,
-      "prev_year_count": 5
     },
     {
       "actor": "G0064",
@@ -1545,10 +1485,10 @@
       "prev_year_count": 1
     },
     {
-      "actor": "G0065",
-      "quarter": "2024-Q3",
-      "count": 20,
-      "prev_year_count": 17
+      "actor": "G0064",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 5
     },
     {
       "actor": "G0065",
@@ -1599,16 +1539,16 @@
       "prev_year_count": 9
     },
     {
+      "actor": "G0065",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 6
+    },
+    {
       "actor": "G0066",
       "quarter": "2026-Q2",
       "count": 2,
       "prev_year_count": 0
-    },
-    {
-      "actor": "G0067",
-      "quarter": "2024-Q3",
-      "count": 0,
-      "prev_year_count": 2
     },
     {
       "actor": "G0067",
@@ -1659,16 +1599,16 @@
       "prev_year_count": 2
     },
     {
+      "actor": "G0067",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 2
+    },
+    {
       "actor": "G0068",
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
-    },
-    {
-      "actor": "G0069",
-      "quarter": "2024-Q3",
-      "count": 0,
-      "prev_year_count": 1
     },
     {
       "actor": "G0069",
@@ -1719,6 +1659,12 @@
       "prev_year_count": 2
     },
     {
+      "actor": "G0069",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
       "actor": "G0070",
       "quarter": "2024-Q4",
       "count": 0,
@@ -1735,12 +1681,6 @@
       "quarter": "2026-Q1",
       "count": 0,
       "prev_year_count": 1
-    },
-    {
-      "actor": "G0073",
-      "quarter": "2024-Q3",
-      "count": 21,
-      "prev_year_count": 17
     },
     {
       "actor": "G0073",
@@ -1791,9 +1731,9 @@
       "prev_year_count": 8
     },
     {
-      "actor": "G0078",
-      "quarter": "2024-Q3",
-      "count": 6,
+      "actor": "G0073",
+      "quarter": "2026-Q4",
+      "count": 0,
       "prev_year_count": 6
     },
     {
@@ -1845,10 +1785,10 @@
       "prev_year_count": 1
     },
     {
-      "actor": "G0079",
-      "quarter": "2024-Q3",
-      "count": 19,
-      "prev_year_count": 12
+      "actor": "G0078",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 5
     },
     {
       "actor": "G0079",
@@ -1899,10 +1839,10 @@
       "prev_year_count": 7
     },
     {
-      "actor": "G0080",
-      "quarter": "2024-Q3",
-      "count": 19,
-      "prev_year_count": 14
+      "actor": "G0079",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 4
     },
     {
       "actor": "G0080",
@@ -1953,10 +1893,10 @@
       "prev_year_count": 7
     },
     {
-      "actor": "G0081",
-      "quarter": "2024-Q3",
-      "count": 1,
-      "prev_year_count": 4
+      "actor": "G0080",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 5
     },
     {
       "actor": "G0081",
@@ -2007,6 +1947,12 @@
       "prev_year_count": 0
     },
     {
+      "actor": "G0081",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
       "actor": "G0082",
       "quarter": "2026-Q2",
       "count": 2,
@@ -2027,7 +1973,7 @@
     {
       "actor": "G0088",
       "quarter": "2026-Q2",
-      "count": 2,
+      "count": 3,
       "prev_year_count": 0
     },
     {
@@ -2049,10 +1995,10 @@
       "prev_year_count": 0
     },
     {
-      "actor": "G0091",
-      "quarter": "2024-Q3",
+      "actor": "G0090",
+      "quarter": "2026-Q4",
       "count": 0,
-      "prev_year_count": 2
+      "prev_year_count": 1
     },
     {
       "actor": "G0091",
@@ -2071,12 +2017,6 @@
       "quarter": "2026-Q3",
       "count": 0,
       "prev_year_count": 1
-    },
-    {
-      "actor": "G0092",
-      "quarter": "2024-Q3",
-      "count": 0,
-      "prev_year_count": 5
     },
     {
       "actor": "G0092",
@@ -2125,12 +2065,6 @@
       "quarter": "2026-Q3",
       "count": 0,
       "prev_year_count": 2
-    },
-    {
-      "actor": "G0093",
-      "quarter": "2024-Q3",
-      "count": 2,
-      "prev_year_count": 7
     },
     {
       "actor": "G0093",
@@ -2229,16 +2163,10 @@
       "prev_year_count": 2
     },
     {
-      "actor": "G0095",
-      "quarter": "2024-Q3",
+      "actor": "G0094",
+      "quarter": "2026-Q4",
       "count": 0,
       "prev_year_count": 1
-    },
-    {
-      "actor": "G0096",
-      "quarter": "2024-Q3",
-      "count": 22,
-      "prev_year_count": 20
     },
     {
       "actor": "G0096",
@@ -2289,16 +2217,34 @@
       "prev_year_count": 11
     },
     {
-      "actor": "G0098",
-      "quarter": "2024-Q3",
+      "actor": "G0096",
+      "quarter": "2026-Q4",
       "count": 0,
-      "prev_year_count": 1
+      "prev_year_count": 6
+    },
+    {
+      "actor": "G0098",
+      "quarter": "2025-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "G0098",
+      "quarter": "2026-Q1",
+      "count": 1,
+      "prev_year_count": 0
     },
     {
       "actor": "G0098",
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
+    },
+    {
+      "actor": "G0098",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
     },
     {
       "actor": "G0099",
@@ -2337,16 +2283,16 @@
       "prev_year_count": 2
     },
     {
+      "actor": "G0099",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
       "actor": "G0100",
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
-    },
-    {
-      "actor": "G0102",
-      "quarter": "2024-Q3",
-      "count": 19,
-      "prev_year_count": 16
     },
     {
       "actor": "G0102",
@@ -2397,6 +2343,12 @@
       "prev_year_count": 7
     },
     {
+      "actor": "G0102",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 4
+    },
+    {
       "actor": "G0105",
       "quarter": "2026-Q2",
       "count": 1,
@@ -2411,7 +2363,7 @@
     {
       "actor": "G0112",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 0
     },
     {
@@ -2536,12 +2488,6 @@
     },
     {
       "actor": "G0127",
-      "quarter": "2024-Q3",
-      "count": 3,
-      "prev_year_count": 23
-    },
-    {
-      "actor": "G0127",
       "quarter": "2024-Q4",
       "count": 3,
       "prev_year_count": 7
@@ -2583,10 +2529,10 @@
       "prev_year_count": 1
     },
     {
-      "actor": "G0128",
-      "quarter": "2024-Q3",
-      "count": 4,
-      "prev_year_count": 6
+      "actor": "G0127",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 2
     },
     {
       "actor": "G0128",
@@ -2637,10 +2583,10 @@
       "prev_year_count": 1
     },
     {
-      "actor": "G0129",
-      "quarter": "2024-Q3",
-      "count": 23,
-      "prev_year_count": 17
+      "actor": "G0128",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 2
     },
     {
       "actor": "G0129",
@@ -2691,10 +2637,10 @@
       "prev_year_count": 10
     },
     {
-      "actor": "G0130",
-      "quarter": "2024-Q3",
-      "count": 1,
-      "prev_year_count": 0
+      "actor": "G0129",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 6
     },
     {
       "actor": "G0130",
@@ -2707,12 +2653,6 @@
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
-    },
-    {
-      "actor": "G0131",
-      "quarter": "2024-Q3",
-      "count": 1,
-      "prev_year_count": 5
     },
     {
       "actor": "G0131",
@@ -2763,6 +2703,12 @@
       "prev_year_count": 0
     },
     {
+      "actor": "G0131",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
       "actor": "G0133",
       "quarter": "2025-Q1",
       "count": 0,
@@ -2773,12 +2719,6 @@
       "quarter": "2026-Q2",
       "count": 2,
       "prev_year_count": 0
-    },
-    {
-      "actor": "G0134",
-      "quarter": "2024-Q3",
-      "count": 3,
-      "prev_year_count": 4
     },
     {
       "actor": "G0134",
@@ -2836,12 +2776,6 @@
     },
     {
       "actor": "G0138",
-      "quarter": "2024-Q3",
-      "count": 2,
-      "prev_year_count": 4
-    },
-    {
-      "actor": "G0138",
       "quarter": "2024-Q4",
       "count": 1,
       "prev_year_count": 3
@@ -2891,14 +2825,8 @@
     {
       "actor": "G0142",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 0
-    },
-    {
-      "actor": "G0143",
-      "quarter": "2024-Q3",
-      "count": 20,
-      "prev_year_count": 12
     },
     {
       "actor": "G0143",
@@ -2949,6 +2877,18 @@
       "prev_year_count": 8
     },
     {
+      "actor": "G0143",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 4
+    },
+    {
+      "actor": "G1000",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
       "actor": "G1001",
       "quarter": "2026-Q2",
       "count": 1,
@@ -2980,12 +2920,6 @@
     },
     {
       "actor": "G1003",
-      "quarter": "2024-Q3",
-      "count": 1,
-      "prev_year_count": 0
-    },
-    {
-      "actor": "G1003",
       "quarter": "2025-Q3",
       "count": 0,
       "prev_year_count": 1
@@ -2995,12 +2929,6 @@
       "quarter": "2026-Q3",
       "count": 1,
       "prev_year_count": 0
-    },
-    {
-      "actor": "G1006",
-      "quarter": "2024-Q3",
-      "count": 4,
-      "prev_year_count": 6
     },
     {
       "actor": "G1006",
@@ -3051,10 +2979,10 @@
       "prev_year_count": 1
     },
     {
-      "actor": "G1008",
-      "quarter": "2024-Q3",
-      "count": 1,
-      "prev_year_count": 0
+      "actor": "G1006",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
     },
     {
       "actor": "G1008",
@@ -3091,12 +3019,6 @@
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
-    },
-    {
-      "actor": "G1011",
-      "quarter": "2024-Q3",
-      "count": 0,
-      "prev_year_count": 4
     },
     {
       "actor": "G1011",
@@ -3162,7 +3084,7 @@
       "actor": "G1015",
       "quarter": "2025-Q2",
       "count": 1,
-      "prev_year_count": 0
+      "prev_year_count": 1
     },
     {
       "actor": "G1015",
@@ -3231,18 +3153,6 @@
       "prev_year_count": 0
     },
     {
-      "actor": "G1019",
-      "quarter": "2024-Q3",
-      "count": 0,
-      "prev_year_count": 2
-    },
-    {
-      "actor": "G1020",
-      "quarter": "2024-Q3",
-      "count": 2,
-      "prev_year_count": 1
-    },
-    {
       "actor": "G1020",
       "quarter": "2024-Q4",
       "count": 4,
@@ -3291,6 +3201,12 @@
       "prev_year_count": 1
     },
     {
+      "actor": "G1020",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
       "actor": "G1021",
       "quarter": "2026-Q2",
       "count": 4,
@@ -3313,12 +3229,6 @@
       "quarter": "2026-Q2",
       "count": 2,
       "prev_year_count": 0
-    },
-    {
-      "actor": "G1024",
-      "quarter": "2024-Q3",
-      "count": 1,
-      "prev_year_count": 6
     },
     {
       "actor": "G1024",
@@ -3377,7 +3287,7 @@
     {
       "actor": "G1028",
       "quarter": "2026-Q2",
-      "count": 2,
+      "count": 4,
       "prev_year_count": 0
     },
     {
@@ -3413,7 +3323,7 @@
     {
       "actor": "G1033",
       "quarter": "2025-Q1",
-      "count": 0,
+      "count": 1,
       "prev_year_count": 1
     },
     {
@@ -3436,6 +3346,12 @@
     },
     {
       "actor": "G1033",
+      "quarter": "2026-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "G1033",
       "quarter": "2026-Q2",
       "count": 2,
       "prev_year_count": 1
@@ -3447,10 +3363,10 @@
       "prev_year_count": 1
     },
     {
-      "actor": "G1034",
-      "quarter": "2024-Q3",
-      "count": 1,
-      "prev_year_count": 0
+      "actor": "G1033",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
     },
     {
       "actor": "G1034",
@@ -3514,12 +3430,6 @@
     },
     {
       "actor": "G1038",
-      "quarter": "2024-Q3",
-      "count": 0,
-      "prev_year_count": 4
-    },
-    {
-      "actor": "G1038",
       "quarter": "2024-Q4",
       "count": 1,
       "prev_year_count": 0
@@ -3574,12 +3484,6 @@
     },
     {
       "actor": "G1040",
-      "quarter": "2024-Q3",
-      "count": 0,
-      "prev_year_count": 1
-    },
-    {
-      "actor": "G1040",
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
@@ -3601,12 +3505,6 @@
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
-    },
-    {
-      "actor": "G1043",
-      "quarter": "2024-Q3",
-      "count": 1,
-      "prev_year_count": 1
     },
     {
       "actor": "G1043",
@@ -3639,8 +3537,8 @@
       "prev_year_count": 0
     },
     {
-      "actor": "G1045",
-      "quarter": "2024-Q3",
+      "actor": "G1044",
+      "quarter": "2026-Q4",
       "count": 0,
       "prev_year_count": 1
     },
@@ -3687,10 +3585,10 @@
       "prev_year_count": 0
     },
     {
-      "actor": "G1046",
-      "quarter": "2024-Q3",
-      "count": 3,
-      "prev_year_count": 0
+      "actor": "G1045",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 2
     },
     {
       "actor": "G1046",
@@ -3772,12 +3670,6 @@
     },
     {
       "actor": "G1049",
-      "quarter": "2024-Q3",
-      "count": 1,
-      "prev_year_count": 0
-    },
-    {
-      "actor": "G1049",
       "quarter": "2024-Q4",
       "count": 1,
       "prev_year_count": 0
@@ -3825,6 +3717,12 @@
       "prev_year_count": 1
     },
     {
+      "actor": "G1049",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 2
+    },
+    {
       "actor": "G1050",
       "quarter": "2025-Q2",
       "count": 0,
@@ -3861,10 +3759,10 @@
       "prev_year_count": 0
     },
     {
-      "actor": "G1052",
-      "quarter": "2024-Q3",
-      "count": 4,
-      "prev_year_count": 0
+      "actor": "G1051",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
     },
     {
       "actor": "G1052",
@@ -3915,10 +3813,10 @@
       "prev_year_count": 11
     },
     {
-      "actor": "G1053",
-      "quarter": "2024-Q3",
-      "count": 1,
-      "prev_year_count": 0
+      "actor": "G1052",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 15
     },
     {
       "actor": "G1053",
@@ -3942,12 +3840,6 @@
       "actor": "G1053",
       "quarter": "2026-Q2",
       "count": 2,
-      "prev_year_count": 0
-    },
-    {
-      "actor": "G1054",
-      "quarter": "2024-Q3",
-      "count": 1,
       "prev_year_count": 0
     },
     {
@@ -4054,12 +3946,6 @@
     },
     {
       "actor": "actor240524",
-      "quarter": "2024-Q3",
-      "count": 1,
-      "prev_year_count": 0
-    },
-    {
-      "actor": "actor240524",
       "quarter": "2025-Q3",
       "count": 0,
       "prev_year_count": 1
@@ -4069,12 +3955,6 @@
       "quarter": "2024-Q4",
       "count": 0,
       "prev_year_count": 1
-    },
-    {
-      "actor": "alpha-spider",
-      "quarter": "2024-Q3",
-      "count": 1,
-      "prev_year_count": 3
     },
     {
       "actor": "alpha-spider",
@@ -4119,10 +3999,10 @@
       "prev_year_count": 1
     },
     {
-      "actor": "angry-likho",
-      "quarter": "2024-Q3",
-      "count": 9,
-      "prev_year_count": 3
+      "actor": "alpha-spider",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 2
     },
     {
       "actor": "angry-likho",
@@ -4173,8 +4053,8 @@
       "prev_year_count": 3
     },
     {
-      "actor": "anthropoid-spider",
-      "quarter": "2024-Q3",
+      "actor": "angry-likho",
+      "quarter": "2026-Q4",
       "count": 0,
       "prev_year_count": 3
     },
@@ -4204,12 +4084,6 @@
     },
     {
       "actor": "apt20",
-      "quarter": "2024-Q3",
-      "count": 3,
-      "prev_year_count": 6
-    },
-    {
-      "actor": "apt20",
       "quarter": "2024-Q4",
       "count": 1,
       "prev_year_count": 1
@@ -4257,10 +4131,10 @@
       "prev_year_count": 1
     },
     {
-      "actor": "apt21",
-      "quarter": "2024-Q3",
-      "count": 3,
-      "prev_year_count": 6
+      "actor": "apt20",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 2
     },
     {
       "actor": "apt21",
@@ -4311,22 +4185,16 @@
       "prev_year_count": 1
     },
     {
-      "actor": "atlascross",
-      "quarter": "2024-Q3",
+      "actor": "apt21",
+      "quarter": "2026-Q4",
       "count": 0,
-      "prev_year_count": 1
+      "prev_year_count": 2
     },
     {
       "actor": "blackwood",
       "quarter": "2025-Q1",
       "count": 0,
       "prev_year_count": 3
-    },
-    {
-      "actor": "calypso",
-      "quarter": "2024-Q3",
-      "count": 3,
-      "prev_year_count": 6
     },
     {
       "actor": "calypso",
@@ -4377,10 +4245,10 @@
       "prev_year_count": 1
     },
     {
-      "actor": "careto",
-      "quarter": "2024-Q3",
-      "count": 1,
-      "prev_year_count": 0
+      "actor": "calypso",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 2
     },
     {
       "actor": "careto",
@@ -4431,6 +4299,12 @@
       "prev_year_count": 0
     },
     {
+      "actor": "cl-sta-1009",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
       "actor": "cl-sta-1087",
       "quarter": "2026-Q1",
       "count": 1,
@@ -4468,12 +4342,6 @@
     },
     {
       "actor": "cosmicbeetle",
-      "quarter": "2024-Q3",
-      "count": 1,
-      "prev_year_count": 0
-    },
-    {
-      "actor": "cosmicbeetle",
       "quarter": "2025-Q3",
       "count": 0,
       "prev_year_count": 1
@@ -4507,12 +4375,6 @@
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
-    },
-    {
-      "actor": "dagger-panda",
-      "quarter": "2024-Q3",
-      "count": 1,
-      "prev_year_count": 4
     },
     {
       "actor": "dagger-panda",
@@ -4563,8 +4425,8 @@
       "prev_year_count": 0
     },
     {
-      "actor": "dalbit",
-      "quarter": "2024-Q3",
+      "actor": "dagger-panda",
+      "quarter": "2026-Q4",
       "count": 0,
       "prev_year_count": 1
     },
@@ -4582,12 +4444,6 @@
     },
     {
       "actor": "dragonforce",
-      "quarter": "2024-Q3",
-      "count": 1,
-      "prev_year_count": 0
-    },
-    {
-      "actor": "dragonforce",
       "quarter": "2025-Q3",
       "count": 2,
       "prev_year_count": 1
@@ -4597,12 +4453,6 @@
       "quarter": "2026-Q3",
       "count": 0,
       "prev_year_count": 2
-    },
-    {
-      "actor": "earth-baxia",
-      "quarter": "2024-Q3",
-      "count": 19,
-      "prev_year_count": 12
     },
     {
       "actor": "earth-baxia",
@@ -4653,10 +4503,10 @@
       "prev_year_count": 7
     },
     {
-      "actor": "earth-berberoka",
-      "quarter": "2024-Q3",
-      "count": 1,
-      "prev_year_count": 0
+      "actor": "earth-baxia",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 4
     },
     {
       "actor": "earth-berberoka",
@@ -4669,12 +4519,6 @@
       "quarter": "2025-Q2",
       "count": 0,
       "prev_year_count": 1
-    },
-    {
-      "actor": "flax-typhoon",
-      "quarter": "2024-Q3",
-      "count": 3,
-      "prev_year_count": 0
     },
     {
       "actor": "flax-typhoon",
@@ -4708,12 +4552,6 @@
     },
     {
       "actor": "ghostwriter",
-      "quarter": "2024-Q3",
-      "count": 1,
-      "prev_year_count": 1
-    },
-    {
-      "actor": "ghostwriter",
       "quarter": "2025-Q3",
       "count": 1,
       "prev_year_count": 1
@@ -4737,6 +4575,12 @@
       "prev_year_count": 1
     },
     {
+      "actor": "ghostwriter",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
       "actor": "gold-dupont",
       "quarter": "2025-Q2",
       "count": 1,
@@ -4747,12 +4591,6 @@
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 1
-    },
-    {
-      "actor": "gold-rebellion",
-      "quarter": "2024-Q3",
-      "count": 3,
-      "prev_year_count": 0
     },
     {
       "actor": "gold-rebellion",
@@ -4816,12 +4654,6 @@
     },
     {
       "actor": "handala",
-      "quarter": "2024-Q3",
-      "count": 1,
-      "prev_year_count": 0
-    },
-    {
-      "actor": "handala",
       "quarter": "2024-Q4",
       "count": 0,
       "prev_year_count": 1
@@ -4837,12 +4669,6 @@
       "quarter": "2026-Q3",
       "count": 1,
       "prev_year_count": 0
-    },
-    {
-      "actor": "hive0137",
-      "quarter": "2024-Q3",
-      "count": 3,
-      "prev_year_count": 3
     },
     {
       "actor": "hive0137",
@@ -4893,16 +4719,16 @@
       "prev_year_count": 5
     },
     {
+      "actor": "hive0137",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
       "actor": "hive0163",
       "quarter": "2026-Q1",
       "count": 1,
       "prev_year_count": 0
-    },
-    {
-      "actor": "hurricane-panda",
-      "quarter": "2024-Q3",
-      "count": 3,
-      "prev_year_count": 6
     },
     {
       "actor": "hurricane-panda",
@@ -4953,6 +4779,12 @@
       "prev_year_count": 2
     },
     {
+      "actor": "hurricane-panda",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 2
+    },
+    {
       "actor": "icepeony",
       "quarter": "2024-Q4",
       "count": 1,
@@ -4969,6 +4801,12 @@
       "quarter": "2025-Q4",
       "count": 1,
       "prev_year_count": 0
+    },
+    {
+      "actor": "infy",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
     },
     {
       "actor": "larva-208",
@@ -5002,12 +4840,6 @@
     },
     {
       "actor": "lunar-spider",
-      "quarter": "2024-Q3",
-      "count": 1,
-      "prev_year_count": 4
-    },
-    {
-      "actor": "lunar-spider",
       "quarter": "2024-Q4",
       "count": 1,
       "prev_year_count": 2
@@ -5034,6 +4866,12 @@
       "actor": "lunar-spider",
       "quarter": "2025-Q4",
       "count": 1,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "lunar-spider",
+      "quarter": "2026-Q4",
+      "count": 0,
       "prev_year_count": 1
     },
     {
@@ -5077,12 +4915,6 @@
       "quarter": "2026-Q1",
       "count": 0,
       "prev_year_count": 5
-    },
-    {
-      "actor": "mummy-spider",
-      "quarter": "2024-Q3",
-      "count": 0,
-      "prev_year_count": 3
     },
     {
       "actor": "mummy-spider",
@@ -5121,6 +4953,12 @@
       "prev_year_count": 0
     },
     {
+      "actor": "mythic-likho",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
       "actor": "nexus-zeta",
       "quarter": "2026-Q2",
       "count": 1,
@@ -5151,10 +4989,10 @@
       "prev_year_count": 0
     },
     {
-      "actor": "ransomhub",
-      "quarter": "2024-Q3",
-      "count": 2,
-      "prev_year_count": 3
+      "actor": "plushdaemon",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
     },
     {
       "actor": "ransomhub",
@@ -5205,8 +5043,8 @@
       "prev_year_count": 1
     },
     {
-      "actor": "red-menshen",
-      "quarter": "2024-Q3",
+      "actor": "ransomhub",
+      "quarter": "2026-Q4",
       "count": 0,
       "prev_year_count": 2
     },
@@ -5280,12 +5118,6 @@
       "actor": "romcom",
       "quarter": "2026-Q3",
       "count": 0,
-      "prev_year_count": 1
-    },
-    {
-      "actor": "scully-spider",
-      "quarter": "2024-Q3",
-      "count": 1,
       "prev_year_count": 1
     },
     {
@@ -5343,18 +5175,6 @@
       "prev_year_count": 0
     },
     {
-      "actor": "shroudedsnooper",
-      "quarter": "2024-Q3",
-      "count": 0,
-      "prev_year_count": 1
-    },
-    {
-      "actor": "slime29",
-      "quarter": "2024-Q3",
-      "count": 3,
-      "prev_year_count": 6
-    },
-    {
       "actor": "slime29",
       "quarter": "2024-Q4",
       "count": 1,
@@ -5403,6 +5223,12 @@
       "prev_year_count": 1
     },
     {
+      "actor": "slime29",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 2
+    },
+    {
       "actor": "slime88",
       "quarter": "2026-Q2",
       "count": 1,
@@ -5412,12 +5238,6 @@
       "actor": "sloppylemming",
       "quarter": "2025-Q2",
       "count": 0,
-      "prev_year_count": 1
-    },
-    {
-      "actor": "smoky-spider",
-      "quarter": "2024-Q3",
-      "count": 1,
       "prev_year_count": 1
     },
     {
@@ -5476,12 +5296,6 @@
     },
     {
       "actor": "stac5143",
-      "quarter": "2024-Q3",
-      "count": 3,
-      "prev_year_count": 0
-    },
-    {
-      "actor": "stac5143",
       "quarter": "2024-Q4",
       "count": 2,
       "prev_year_count": 0
@@ -5524,12 +5338,6 @@
     },
     {
       "actor": "storm-0249",
-      "quarter": "2024-Q3",
-      "count": 1,
-      "prev_year_count": 1
-    },
-    {
-      "actor": "storm-0249",
       "quarter": "2024-Q4",
       "count": 3,
       "prev_year_count": 3
@@ -5571,10 +5379,10 @@
       "prev_year_count": 1
     },
     {
-      "actor": "storm-0494",
-      "quarter": "2024-Q3",
-      "count": 1,
-      "prev_year_count": 0
+      "actor": "storm-0249",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
     },
     {
       "actor": "storm-0494",
@@ -5614,12 +5422,6 @@
     },
     {
       "actor": "storm-0506",
-      "quarter": "2024-Q3",
-      "count": 3,
-      "prev_year_count": 0
-    },
-    {
-      "actor": "storm-0506",
       "quarter": "2024-Q4",
       "count": 2,
       "prev_year_count": 0
@@ -5659,12 +5461,6 @@
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 6
-    },
-    {
-      "actor": "storm-0826",
-      "quarter": "2024-Q3",
-      "count": 3,
-      "prev_year_count": 0
     },
     {
       "actor": "storm-0826",
@@ -5710,12 +5506,6 @@
     },
     {
       "actor": "storm-1113",
-      "quarter": "2024-Q3",
-      "count": 2,
-      "prev_year_count": 0
-    },
-    {
-      "actor": "storm-1113",
       "quarter": "2024-Q4",
       "count": 2,
       "prev_year_count": 2
@@ -5755,12 +5545,6 @@
       "quarter": "2026-Q2",
       "count": 0,
       "prev_year_count": 1
-    },
-    {
-      "actor": "sweed",
-      "quarter": "2024-Q3",
-      "count": 1,
-      "prev_year_count": 4
     },
     {
       "actor": "sweed",
@@ -5811,10 +5595,10 @@
       "prev_year_count": 0
     },
     {
-      "actor": "ta2101",
-      "quarter": "2024-Q3",
-      "count": 3,
-      "prev_year_count": 0
+      "actor": "sweed",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 2
     },
     {
       "actor": "ta2101",
@@ -5872,12 +5656,6 @@
     },
     {
       "actor": "ta579",
-      "quarter": "2024-Q3",
-      "count": 0,
-      "prev_year_count": 4
-    },
-    {
-      "actor": "ta579",
       "quarter": "2024-Q4",
       "count": 1,
       "prev_year_count": 0
@@ -5961,10 +5739,10 @@
       "prev_year_count": 1
     },
     {
-      "actor": "tianwu",
-      "quarter": "2024-Q3",
-      "count": 19,
-      "prev_year_count": 12
+      "actor": "the-gentlemen",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
     },
     {
       "actor": "tianwu",
@@ -6015,10 +5793,10 @@
       "prev_year_count": 7
     },
     {
-      "actor": "uac-0006",
-      "quarter": "2024-Q3",
-      "count": 1,
-      "prev_year_count": 1
+      "actor": "tianwu",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 4
     },
     {
       "actor": "uac-0006",
@@ -6067,12 +5845,6 @@
       "quarter": "2026-Q3",
       "count": 0,
       "prev_year_count": 1
-    },
-    {
-      "actor": "uac-0050",
-      "quarter": "2024-Q3",
-      "count": 2,
-      "prev_year_count": 3
     },
     {
       "actor": "uac-0050",
@@ -6123,6 +5895,12 @@
       "prev_year_count": 1
     },
     {
+      "actor": "uac-0050",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 4
+    },
+    {
       "actor": "uac-0099",
       "quarter": "2024-Q4",
       "count": 0,
@@ -6165,6 +5943,12 @@
       "prev_year_count": 0
     },
     {
+      "actor": "uac-0226",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
       "actor": "uat-9244",
       "quarter": "2026-Q1",
       "count": 1,
@@ -6178,12 +5962,6 @@
     },
     {
       "actor": "unc3569",
-      "quarter": "2024-Q3",
-      "count": 1,
-      "prev_year_count": 0
-    },
-    {
-      "actor": "unc3569",
       "quarter": "2025-Q3",
       "count": 0,
       "prev_year_count": 1
@@ -6192,12 +5970,6 @@
       "actor": "unc3569",
       "quarter": "2026-Q1",
       "count": 1,
-      "prev_year_count": 0
-    },
-    {
-      "actor": "unc3973",
-      "quarter": "2024-Q3",
-      "count": 3,
       "prev_year_count": 0
     },
     {
@@ -6277,6 +6049,12 @@
       "quarter": "2026-Q3",
       "count": 0,
       "prev_year_count": 1
+    },
+    {
+      "actor": "unc5174",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 2
     },
     {
       "actor": "unc5537",
@@ -6340,12 +6118,6 @@
     },
     {
       "actor": "unnamed-group",
-      "quarter": "2024-Q3",
-      "count": 1,
-      "prev_year_count": 0
-    },
-    {
-      "actor": "unnamed-group",
       "quarter": "2025-Q3",
       "count": 2,
       "prev_year_count": 1
@@ -6393,10 +6165,10 @@
       "prev_year_count": 1
     },
     {
-      "actor": "vice-spider",
-      "quarter": "2024-Q3",
-      "count": 7,
-      "prev_year_count": 10
+      "actor": "uta0178",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 3
     },
     {
       "actor": "vice-spider",
@@ -6447,6 +6219,12 @@
       "prev_year_count": 4
     },
     {
+      "actor": "vice-spider",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 3
+    },
+    {
       "actor": "void-arachne",
       "quarter": "2025-Q1",
       "count": 2,
@@ -6473,6 +6251,12 @@
     {
       "actor": "void-arachne",
       "quarter": "2026-Q2",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "void-arachne",
+      "quarter": "2026-Q4",
       "count": 0,
       "prev_year_count": 1
     },
@@ -6508,12 +6292,6 @@
     },
     {
       "actor": "webworm",
-      "quarter": "2024-Q3",
-      "count": 1,
-      "prev_year_count": 4
-    },
-    {
-      "actor": "webworm",
       "quarter": "2024-Q4",
       "count": 0,
       "prev_year_count": 2
@@ -6561,10 +6339,10 @@
       "prev_year_count": 0
     },
     {
-      "actor": "wet-panda",
-      "quarter": "2024-Q3",
-      "count": 1,
-      "prev_year_count": 4
+      "actor": "webworm",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
     },
     {
       "actor": "wet-panda",
@@ -6613,6 +6391,12 @@
       "quarter": "2026-Q3",
       "count": 1,
       "prev_year_count": 0
+    },
+    {
+      "actor": "wet-panda",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
     },
     {
       "actor": "xcatze",
@@ -6635,6 +6419,12 @@
     {
       "actor": "yorotrooper",
       "quarter": "2026-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "yorotrooper",
+      "quarter": "2026-Q4",
       "count": 0,
       "prev_year_count": 1
     }
@@ -6732,21 +6522,6 @@
     }
   ],
   "kev_monthly": [
-    {
-      "month": "2024-07",
-      "added": 14,
-      "ransomware": 2
-    },
-    {
-      "month": "2024-08",
-      "added": 19,
-      "ransomware": 1
-    },
-    {
-      "month": "2024-09",
-      "added": 25,
-      "ransomware": 4
-    },
     {
       "month": "2024-10",
       "added": 17,
@@ -6865,6 +6640,11 @@
     {
       "month": "2026-09",
       "added": 42,
+      "ransomware": 0
+    },
+    {
+      "month": "2026-10",
+      "added": 0,
       "ransomware": 0
     }
   ],
@@ -7099,8 +6879,7 @@
       "actors": [
         "G0032",
         "G0034",
-        "G0067",
-        "cosmicbeetle"
+        "G0067"
       ]
     },
     {
@@ -7175,45 +6954,6 @@
       ]
     },
     {
-      "cve": "CVE-2017-15944",
-      "actors": [
-        "G0004",
-        "G0008",
-        "G0009",
-        "G0016",
-        "G0017",
-        "G0019",
-        "G0022",
-        "G0025",
-        "G0026",
-        "G0027",
-        "G0037",
-        "G0039",
-        "G0045",
-        "G0046",
-        "G0050",
-        "G0052",
-        "G0065",
-        "G0073",
-        "G0079",
-        "G0080",
-        "G0096",
-        "G0102",
-        "G0128",
-        "G0129",
-        "G0143",
-        "apt20",
-        "apt21",
-        "calypso",
-        "earth-baxia",
-        "earth-berberoka",
-        "hurricane-panda",
-        "slime29",
-        "tianwu",
-        "unc3569"
-      ]
-    },
-    {
       "cve": "CVE-2017-3881",
       "actors": [
         "G1041"
@@ -7248,36 +6988,6 @@
       "actors": [
         "G0081",
         "G0091"
-      ]
-    },
-    {
-      "cve": "CVE-2018-0824",
-      "actors": [
-        "G0008",
-        "G0009",
-        "G0016",
-        "G0025",
-        "G0037",
-        "G0045",
-        "G0046",
-        "G0050",
-        "G0052",
-        "G0065",
-        "G0073",
-        "G0079",
-        "G0080",
-        "G0081",
-        "G0096",
-        "G0102",
-        "G0129",
-        "G0131",
-        "G0143",
-        "G1006",
-        "dagger-panda",
-        "earth-baxia",
-        "tianwu",
-        "webworm",
-        "wet-panda"
       ]
     },
     {
@@ -7361,7 +7071,6 @@
       "cve": "CVE-2019-0604",
       "actors": [
         "G0046",
-        "G0049",
         "G0102",
         "G0119",
         "G1020",
@@ -7445,29 +7154,6 @@
       ]
     },
     {
-      "cve": "CVE-2019-9621",
-      "actors": [
-        "G0008",
-        "G0009",
-        "G0016",
-        "G0037",
-        "G0045",
-        "G0046",
-        "G0050",
-        "G0052",
-        "G0065",
-        "G0073",
-        "G0079",
-        "G0080",
-        "G0096",
-        "G0102",
-        "G0129",
-        "G0143",
-        "earth-baxia",
-        "tianwu"
-      ]
-    },
-    {
       "cve": "CVE-2020-0688",
       "actors": [
         "G0035"
@@ -7516,8 +7202,6 @@
         "G0102",
         "G0129",
         "G0143",
-        "G1003",
-        "cosmicbeetle",
         "earth-baxia",
         "ransomhub",
         "tianwu",
@@ -7560,12 +7244,6 @@
       "cve": "CVE-2021-1732",
       "actors": [
         "G1002"
-      ]
-    },
-    {
-      "cve": "CVE-2021-1879",
-      "actors": [
-        "G0016"
       ]
     },
     {
@@ -7632,55 +7310,20 @@
         "G0059",
         "G0065",
         "G0125",
-        "G1003",
         "G1021"
       ]
     },
     {
       "cve": "CVE-2021-26855",
       "actors": [
-        "G0004",
-        "G0008",
-        "G0009",
-        "G0016",
-        "G0017",
-        "G0019",
-        "G0022",
-        "G0025",
-        "G0026",
-        "G0027",
-        "G0037",
-        "G0039",
-        "G0045",
-        "G0046",
-        "G0050",
-        "G0052",
-        "G0065",
-        "G0073",
-        "G0079",
-        "G0080",
-        "G0096",
-        "G0102",
         "G0125",
-        "G0128",
-        "G0129",
-        "G0143",
         "G1043",
         "G1046",
-        "apt20",
-        "apt21",
-        "calypso",
-        "earth-baxia",
-        "earth-berberoka",
         "gold-rebellion",
-        "hurricane-panda",
-        "slime29",
         "stac5143",
         "storm-0506",
         "storm-0826",
         "ta2101",
-        "tianwu",
-        "unc3569",
         "unc3973",
         "unc5174"
       ]
@@ -7688,41 +7331,7 @@
     {
       "cve": "CVE-2021-26857",
       "actors": [
-        "G0004",
-        "G0008",
-        "G0009",
-        "G0016",
-        "G0017",
-        "G0019",
-        "G0022",
-        "G0025",
-        "G0026",
-        "G0027",
-        "G0037",
-        "G0039",
-        "G0045",
-        "G0046",
-        "G0050",
-        "G0052",
-        "G0065",
-        "G0073",
-        "G0079",
-        "G0080",
-        "G0096",
-        "G0102",
-        "G0125",
-        "G0128",
-        "G0129",
-        "G0143",
-        "apt20",
-        "apt21",
-        "calypso",
-        "earth-baxia",
-        "earth-berberoka",
-        "hurricane-panda",
-        "slime29",
-        "tianwu",
-        "unc3569"
+        "G0125"
       ]
     },
     {
@@ -7734,204 +7343,47 @@
     {
       "cve": "CVE-2021-27065",
       "actors": [
-        "G0004",
-        "G0008",
-        "G0009",
-        "G0016",
-        "G0017",
-        "G0019",
-        "G0022",
-        "G0025",
-        "G0026",
-        "G0027",
-        "G0037",
-        "G0039",
-        "G0045",
-        "G0046",
-        "G0050",
-        "G0052",
-        "G0065",
-        "G0073",
-        "G0079",
-        "G0080",
-        "G0096",
-        "G0102",
         "G0125",
-        "G0128",
-        "G0129",
-        "G0143",
-        "G1043",
-        "apt20",
-        "apt21",
-        "calypso",
-        "earth-baxia",
-        "earth-berberoka",
-        "hurricane-panda",
-        "slime29",
-        "tianwu",
-        "unc3569"
-      ]
-    },
-    {
-      "cve": "CVE-2021-30869",
-      "actors": [
-        "G1034"
-      ]
-    },
-    {
-      "cve": "CVE-2021-31196",
-      "actors": [
-        "G0004",
-        "G0008",
-        "G0009",
-        "G0016",
-        "G0017",
-        "G0019",
-        "G0022",
-        "G0025",
-        "G0026",
-        "G0027",
-        "G0037",
-        "G0039",
-        "G0045",
-        "G0046",
-        "G0050",
-        "G0052",
-        "G0065",
-        "G0073",
-        "G0079",
-        "G0080",
-        "G0096",
-        "G0102",
-        "G0128",
-        "G0129",
-        "G0143",
-        "apt20",
-        "apt21",
-        "calypso",
-        "earth-baxia",
-        "earth-berberoka",
-        "hurricane-panda",
-        "slime29",
-        "tianwu",
-        "unc3569"
+        "G1043"
       ]
     },
     {
       "cve": "CVE-2021-31207",
       "actors": [
-        "G0004",
-        "G0008",
-        "G0009",
-        "G0016",
-        "G0017",
-        "G0019",
-        "G0022",
         "G0025",
-        "G0026",
-        "G0027",
-        "G0037",
-        "G0039",
-        "G0045",
         "G0046",
-        "G0050",
-        "G0052",
         "G0065",
-        "G0073",
-        "G0079",
-        "G0080",
         "G0081",
         "G0096",
         "G0102",
         "G0119",
-        "G0128",
-        "G0129",
         "G0131",
-        "G0143",
         "G1006",
         "G1020",
         "G1021",
         "G1043",
         "G1045",
-        "apt20",
-        "apt21",
-        "calypso",
         "dagger-panda",
-        "earth-baxia",
-        "earth-berberoka",
-        "hurricane-panda",
-        "slime29",
-        "tianwu",
-        "unc3569",
         "webworm",
         "wet-panda"
       ]
     },
     {
-      "cve": "CVE-2021-3156",
-      "actors": [
-        "G1003"
-      ]
-    },
-    {
-      "cve": "CVE-2021-33044",
-      "actors": [
-        "G1003"
-      ]
-    },
-    {
-      "cve": "CVE-2021-33045",
-      "actors": [
-        "G1003"
-      ]
-    },
-    {
       "cve": "CVE-2021-34473",
       "actors": [
-        "G0004",
-        "G0008",
-        "G0009",
-        "G0016",
-        "G0017",
-        "G0019",
-        "G0022",
         "G0025",
-        "G0026",
-        "G0027",
         "G0034",
-        "G0037",
-        "G0039",
-        "G0045",
-        "G0046",
-        "G0050",
-        "G0052",
         "G0059",
         "G0065",
-        "G0073",
-        "G0079",
-        "G0080",
         "G0081",
         "G0096",
-        "G0102",
         "G0125",
-        "G0128",
-        "G0129",
         "G0131",
-        "G0143",
         "G1006",
         "G1021",
         "G1043",
         "G1045",
-        "apt20",
-        "apt21",
-        "calypso",
         "dagger-panda",
-        "earth-baxia",
-        "earth-berberoka",
-        "hurricane-panda",
-        "slime29",
-        "tianwu",
-        "unc3569",
         "webworm",
         "wet-panda"
       ]
@@ -7939,47 +7391,17 @@
     {
       "cve": "CVE-2021-34523",
       "actors": [
-        "G0004",
-        "G0008",
-        "G0009",
-        "G0016",
-        "G0017",
-        "G0019",
-        "G0022",
         "G0025",
-        "G0026",
-        "G0027",
-        "G0037",
-        "G0039",
-        "G0045",
         "G0046",
-        "G0050",
-        "G0052",
         "G0065",
-        "G0073",
-        "G0079",
-        "G0080",
         "G0081",
         "G0096",
-        "G0102",
-        "G0128",
-        "G0129",
         "G0131",
-        "G0143",
         "G1006",
         "G1043",
         "G1045",
         "G1052",
-        "apt20",
-        "apt21",
-        "calypso",
         "dagger-panda",
-        "earth-baxia",
-        "earth-berberoka",
-        "hurricane-panda",
-        "slime29",
-        "tianwu",
-        "unc3569",
         "webworm",
         "wet-panda"
       ]
@@ -8032,12 +7454,6 @@
       ]
     },
     {
-      "cve": "CVE-2021-4034",
-      "actors": [
-        "G1003"
-      ]
-    },
-    {
       "cve": "CVE-2021-40444",
       "actors": [
         "G0046",
@@ -8063,14 +7479,7 @@
     {
       "cve": "CVE-2021-42278",
       "actors": [
-        "cosmicbeetle",
         "ransomhub"
-      ]
-    },
-    {
-      "cve": "CVE-2021-42287",
-      "actors": [
-        "cosmicbeetle"
       ]
     },
     {
@@ -8100,45 +7509,15 @@
     {
       "cve": "CVE-2021-44228",
       "actors": [
-        "G0004",
-        "G0008",
-        "G0009",
-        "G0016",
-        "G0017",
-        "G0019",
-        "G0022",
-        "G0025",
-        "G0026",
-        "G0027",
-        "G0037",
-        "G0039",
-        "G0045",
         "G0046",
-        "G0050",
-        "G0052",
         "G0059",
         "G0065",
-        "G0073",
-        "G0079",
-        "G0080",
         "G0096",
         "G0102",
         "G0119",
         "G0125",
-        "G0128",
-        "G0129",
-        "G0143",
         "G1020",
-        "G1021",
-        "apt20",
-        "apt21",
-        "calypso",
-        "earth-baxia",
-        "earth-berberoka",
-        "hurricane-panda",
-        "slime29",
-        "tianwu",
-        "unc3569"
+        "G1021"
       ]
     },
     {
@@ -8153,89 +7532,6 @@
       "cve": "CVE-2022-0609",
       "actors": [
         "G1049"
-      ]
-    },
-    {
-      "cve": "CVE-2022-21587",
-      "actors": [
-        "G0004",
-        "G0008",
-        "G0009",
-        "G0016",
-        "G0017",
-        "G0019",
-        "G0022",
-        "G0025",
-        "G0026",
-        "G0027",
-        "G0037",
-        "G0039",
-        "G0045",
-        "G0046",
-        "G0050",
-        "G0052",
-        "G0065",
-        "G0073",
-        "G0079",
-        "G0080",
-        "G0096",
-        "G0102",
-        "G0128",
-        "G0129",
-        "G0143",
-        "apt20",
-        "apt21",
-        "calypso",
-        "earth-baxia",
-        "earth-berberoka",
-        "hurricane-panda",
-        "slime29",
-        "tianwu",
-        "unc3569"
-      ]
-    },
-    {
-      "cve": "CVE-2022-26134",
-      "actors": [
-        "G1003"
-      ]
-    },
-    {
-      "cve": "CVE-2022-26138",
-      "actors": [
-        "G1003"
-      ]
-    },
-    {
-      "cve": "CVE-2022-26923",
-      "actors": [
-        "G0008",
-        "G0009",
-        "G0016",
-        "G0037",
-        "G0045",
-        "G0046",
-        "G0050",
-        "G0052",
-        "G0065",
-        "G0073",
-        "G0079",
-        "G0080",
-        "G0096",
-        "G0102",
-        "G0129",
-        "G0143",
-        "G1046",
-        "angry-likho",
-        "earth-baxia",
-        "gold-rebellion",
-        "stac5143",
-        "storm-0506",
-        "storm-0826",
-        "ta2101",
-        "tianwu",
-        "unc3973",
-        "vice-spider"
       ]
     },
     {
@@ -8261,7 +7557,6 @@
     {
       "cve": "CVE-2022-3236",
       "actors": [
-        "G1003",
         "G1045"
       ]
     },
@@ -8310,53 +7605,7 @@
     {
       "cve": "CVE-2022-42475",
       "actors": [
-        "G0069",
-        "cosmicbeetle"
-      ]
-    },
-    {
-      "cve": "CVE-2022-47966",
-      "actors": [
-        "G1053"
-      ]
-    },
-    {
-      "cve": "CVE-2022-47986",
-      "actors": [
-        "G0004",
-        "G0008",
-        "G0009",
-        "G0016",
-        "G0017",
-        "G0019",
-        "G0022",
-        "G0025",
-        "G0026",
-        "G0027",
-        "G0037",
-        "G0039",
-        "G0045",
-        "G0046",
-        "G0050",
-        "G0052",
-        "G0065",
-        "G0073",
-        "G0079",
-        "G0080",
-        "G0096",
-        "G0102",
-        "G0128",
-        "G0129",
-        "G0143",
-        "apt20",
-        "apt21",
-        "calypso",
-        "earth-baxia",
-        "earth-berberoka",
-        "hurricane-panda",
-        "slime29",
-        "tianwu",
-        "unc3569"
+        "G0069"
       ]
     },
     {
@@ -8452,7 +7701,6 @@
         "G0143",
         "G1024",
         "G1046",
-        "cosmicbeetle",
         "earth-baxia",
         "gold-rebellion",
         "ransomhub",
@@ -8491,18 +7739,6 @@
       ]
     },
     {
-      "cve": "CVE-2023-28252",
-      "actors": [
-        "G1046",
-        "gold-rebellion",
-        "stac5143",
-        "storm-0506",
-        "storm-0826",
-        "ta2101",
-        "unc3973"
-      ]
-    },
-    {
       "cve": "CVE-2023-28461",
       "actors": [
         "G0008",
@@ -8524,12 +7760,6 @@
         "G1054",
         "earth-baxia",
         "tianwu"
-      ]
-    },
-    {
-      "cve": "CVE-2023-29300",
-      "actors": [
-        "G1053"
       ]
     },
     {
@@ -8601,12 +7831,6 @@
       ]
     },
     {
-      "cve": "CVE-2023-38203",
-      "actors": [
-        "G1053"
-      ]
-    },
-    {
       "cve": "CVE-2023-38831",
       "actors": [
         "G0008",
@@ -8643,12 +7867,6 @@
       "cve": "CVE-2023-38950",
       "actors": [
         "G0117"
-      ]
-    },
-    {
-      "cve": "CVE-2023-41993",
-      "actors": [
-        "G0016"
       ]
     },
     {
@@ -8782,7 +8000,6 @@
       "cve": "CVE-2023-4966",
       "actors": [
         "G1046",
-        "G1053",
         "gold-rebellion",
         "stac5143",
         "storm-0506",
@@ -8922,7 +8139,6 @@
         "G1045",
         "G1046",
         "earth-baxia",
-        "flax-typhoon",
         "gold-rebellion",
         "ransomhub",
         "stac5143",
@@ -9105,51 +8321,19 @@
     {
       "cve": "CVE-2024-36401",
       "actors": [
-        "G0008",
-        "G0009",
-        "G0016",
-        "G0037",
-        "G0045",
-        "G0046",
-        "G0050",
-        "G0052",
-        "G0065",
-        "G0073",
-        "G0079",
-        "G0080",
-        "G0096",
-        "G0102",
-        "G0129",
-        "G0143",
-        "earth-baxia",
-        "tianwu",
         "unc5174"
       ]
     },
     {
       "cve": "CVE-2024-37085",
       "actors": [
-        "G1024",
-        "G1043",
-        "G1046",
-        "gold-rebellion",
-        "stac5143",
-        "storm-0506",
-        "storm-0826",
-        "ta2101",
-        "unc3973"
+        "G1024"
       ]
     },
     {
       "cve": "CVE-2024-37383",
       "actors": [
         "uac-0226"
-      ]
-    },
-    {
-      "cve": "CVE-2024-38106",
-      "actors": [
-        "G0032"
       ]
     },
     {
@@ -9254,12 +8438,6 @@
       ]
     },
     {
-      "cve": "CVE-2024-4671",
-      "actors": [
-        "G0016"
-      ]
-    },
-    {
       "cve": "CVE-2024-47575",
       "actors": [
         "G0008",
@@ -9301,35 +8479,10 @@
       ]
     },
     {
-      "cve": "CVE-2024-4947",
-      "actors": [
-        "G0032"
-      ]
-    },
-    {
-      "cve": "CVE-2024-5274",
-      "actors": [
-        "G0016",
-        "G0032"
-      ]
-    },
-    {
       "cve": "CVE-2024-55591",
       "actors": [
         "G0069",
         "the-gentlemen"
-      ]
-    },
-    {
-      "cve": "CVE-2024-7262",
-      "actors": [
-        "G0012"
-      ]
-    },
-    {
-      "cve": "CVE-2024-7971",
-      "actors": [
-        "G0032"
       ]
     },
     {
@@ -9844,30 +8997,25 @@
       "reported_only": [
         "T1001.003",
         "T1012",
-        "T1021.001",
         "T1027.009",
         "T1036.007",
         "T1055",
         "T1055.012",
         "T1059.001",
-        "T1069.001",
-        "T1070",
-        "T1098",
         "T1102",
         "T1106",
         "T1123",
         "T1125",
         "T1129",
         "T1132.001",
-        "T1136",
         "T1189",
         "T1204.002",
         "T1218",
         "T1218.007",
         "T1218.014",
         "T1497.001",
+        "T1509",
         "T1553.002",
-        "T1555",
         "T1566.001",
         "T1566.002",
         "T1566.003",
@@ -9879,10 +9027,11 @@
         "T1585.001",
         "T1585.002",
         "T1593.001",
-        "T1608.001"
+        "T1608.001",
+        "T1627.001"
       ],
-      "documented_only_count": 32,
-      "overlap": 14
+      "documented_only_count": 34,
+      "overlap": 12
     },
     {
       "actor": "G0007",
@@ -9946,7 +9095,6 @@
         "T1021.006",
         "T1027",
         "T1027.009",
-        "T1027.013",
         "T1033",
         "T1036",
         "T1036.003",
@@ -9997,7 +9145,6 @@
         "T1074",
         "T1074.001",
         "T1074.002",
-        "T1078.001",
         "T1078.002",
         "T1078.003",
         "T1078.004",
@@ -10120,7 +9267,6 @@
         "T1556.006",
         "T1556.009",
         "T1558.003",
-        "T1558.004",
         "T1559",
         "T1560",
         "T1560.001",
@@ -10171,7 +9317,6 @@
         "T1590",
         "T1590.005",
         "T1592",
-        "T1594",
         "T1595",
         "T1595.001",
         "T1595.002",
@@ -10223,7 +9368,6 @@
         "T1021.006",
         "T1027",
         "T1027.009",
-        "T1027.013",
         "T1033",
         "T1036",
         "T1036.003",
@@ -10273,7 +9417,6 @@
         "T1074.001",
         "T1074.002",
         "T1078",
-        "T1078.001",
         "T1078.002",
         "T1078.003",
         "T1078.004",
@@ -10299,7 +9442,6 @@
         "T1102.002",
         "T1104",
         "T1105",
-        "T1112",
         "T1113",
         "T1114",
         "T1114.001",
@@ -10395,7 +9537,6 @@
         "T1556.006",
         "T1556.009",
         "T1558.003",
-        "T1558.004",
         "T1559",
         "T1560",
         "T1560.001",
@@ -10446,7 +9587,6 @@
         "T1590",
         "T1590.005",
         "T1592",
-        "T1594",
         "T1595",
         "T1595.001",
         "T1595.002",
@@ -10492,33 +9632,6 @@
       "overlap": 3
     },
     {
-      "actor": "G0011",
-      "reported_only": [
-        "T1041",
-        "T1059",
-        "T1059.007",
-        "T1082",
-        "T1105",
-        "T1189",
-        "T1195.001",
-        "T1574.001"
-      ],
-      "documented_only_count": 2,
-      "overlap": 0
-    },
-    {
-      "actor": "G0012",
-      "reported_only": [
-        "T1204.001",
-        "T1583.001",
-        "T1583.004",
-        "T1587.004",
-        "T1608.001"
-      ],
-      "documented_only_count": 23,
-      "overlap": 1
-    },
-    {
       "actor": "G0016",
       "reported_only": [
         "T1003",
@@ -10543,7 +9656,6 @@
         "T1027.003",
         "T1027.005",
         "T1027.009",
-        "T1027.013",
         "T1030",
         "T1033",
         "T1036",
@@ -10587,7 +9699,6 @@
         "T1074",
         "T1074.001",
         "T1074.002",
-        "T1078.001",
         "T1078.002",
         "T1082",
         "T1083",
@@ -10608,7 +9719,6 @@
         "T1102.002",
         "T1104",
         "T1111",
-        "T1112",
         "T1113",
         "T1114",
         "T1114.001",
@@ -10702,7 +9812,6 @@
         "T1556.009",
         "T1558",
         "T1558.003",
-        "T1558.004",
         "T1559",
         "T1560",
         "T1560.001",
@@ -10746,7 +9855,6 @@
         "T1590",
         "T1590.005",
         "T1592",
-        "T1594",
         "T1595",
         "T1595.001",
         "T1598",
@@ -10781,11 +9889,8 @@
       "reported_only": [
         "T1001.003",
         "T1012",
-        "T1016",
-        "T1021.001",
         "T1027",
         "T1027.009",
-        "T1033",
         "T1036.005",
         "T1036.007",
         "T1041",
@@ -10793,18 +9898,14 @@
         "T1055.012",
         "T1057",
         "T1059.001",
-        "T1069.001",
-        "T1070",
         "T1071.001",
         "T1082",
         "T1083",
-        "T1098",
         "T1102",
         "T1105",
         "T1106",
         "T1129",
         "T1132.001",
-        "T1136",
         "T1140",
         "T1189",
         "T1204.002",
@@ -10814,7 +9915,6 @@
         "T1497.001",
         "T1547.001",
         "T1553.002",
-        "T1555",
         "T1566.001",
         "T1566.002",
         "T1573.001",
@@ -10823,7 +9923,8 @@
         "T1583.001",
         "T1583.003",
         "T1587.001",
-        "T1608.001"
+        "T1608.001",
+        "T1627.001"
       ],
       "documented_only_count": 0,
       "overlap": 0
@@ -10833,28 +9934,22 @@
       "reported_only": [
         "T1001.003",
         "T1012",
-        "T1021.001",
         "T1027",
         "T1027.009",
-        "T1033",
         "T1036.007",
         "T1041",
         "T1055",
         "T1055.012",
         "T1057",
         "T1059.001",
-        "T1069.001",
-        "T1070",
         "T1071.001",
         "T1082",
         "T1083",
-        "T1098",
         "T1102",
         "T1105",
         "T1106",
         "T1129",
         "T1132.001",
-        "T1136",
         "T1140",
         "T1189",
         "T1218",
@@ -10862,17 +9957,17 @@
         "T1218.014",
         "T1497.001",
         "T1553.002",
-        "T1555",
         "T1566.002",
         "T1573.001",
         "T1574",
         "T1583.001",
         "T1583.003",
         "T1587.001",
-        "T1608.001"
+        "T1608.001",
+        "T1627.001"
       ],
-      "documented_only_count": 8,
-      "overlap": 6
+      "documented_only_count": 9,
+      "overlap": 5
     },
     {
       "actor": "G0022",
@@ -10884,15 +9979,11 @@
         "T1036.007",
         "T1055",
         "T1055.012",
-        "T1069.001",
-        "T1070",
         "T1071.001",
-        "T1098",
         "T1102",
         "T1106",
         "T1129",
         "T1132.001",
-        "T1136",
         "T1140",
         "T1189",
         "T1204.002",
@@ -10901,17 +9992,17 @@
         "T1218.014",
         "T1497.001",
         "T1553.002",
-        "T1555",
         "T1566.001",
         "T1573.001",
         "T1574",
         "T1583.001",
         "T1583.003",
         "T1587.001",
-        "T1608.001"
+        "T1608.001",
+        "T1627.001"
       ],
-      "documented_only_count": 31,
-      "overlap": 13
+      "documented_only_count": 34,
+      "overlap": 10
     },
     {
       "actor": "G0025",
@@ -10922,11 +10013,9 @@
         "T1007",
         "T1012",
         "T1016",
-        "T1021.001",
         "T1021.002",
         "T1027",
         "T1027.009",
-        "T1033",
         "T1036.005",
         "T1036.007",
         "T1041",
@@ -10935,8 +10024,6 @@
         "T1057",
         "T1059.001",
         "T1059.003",
-        "T1069.001",
-        "T1070",
         "T1071",
         "T1071.001",
         "T1072",
@@ -10944,13 +10031,11 @@
         "T1083",
         "T1087.001",
         "T1095",
-        "T1098",
         "T1102",
         "T1105",
         "T1106",
         "T1129",
         "T1132.001",
-        "T1136",
         "T1140",
         "T1189",
         "T1204.002",
@@ -10961,7 +10046,6 @@
         "T1543.003",
         "T1547.001",
         "T1553.002",
-        "T1555",
         "T1555.003",
         "T1556.002",
         "T1566.001",
@@ -10973,7 +10057,8 @@
         "T1583.003",
         "T1583.004",
         "T1587.001",
-        "T1608.001"
+        "T1608.001",
+        "T1627.001"
       ],
       "documented_only_count": 2,
       "overlap": 0
@@ -10983,11 +10068,8 @@
       "reported_only": [
         "T1001.003",
         "T1012",
-        "T1016",
-        "T1021.001",
         "T1027",
         "T1027.009",
-        "T1033",
         "T1036.005",
         "T1036.007",
         "T1041",
@@ -10995,14 +10077,10 @@
         "T1055.012",
         "T1057",
         "T1059.001",
-        "T1069.001",
-        "T1070",
-        "T1098",
         "T1102",
         "T1106",
         "T1129",
         "T1132.001",
-        "T1136",
         "T1140",
         "T1189",
         "T1204.002",
@@ -11011,7 +10089,6 @@
         "T1218.014",
         "T1497.001",
         "T1553.002",
-        "T1555",
         "T1566.001",
         "T1566.002",
         "T1573.001",
@@ -11020,7 +10097,8 @@
         "T1583.001",
         "T1583.003",
         "T1587.001",
-        "T1608.001"
+        "T1608.001",
+        "T1627.001"
       ],
       "documented_only_count": 7,
       "overlap": 5
@@ -11041,8 +10119,6 @@
         "T1057",
         "T1059.005",
         "T1059.007",
-        "T1069.001",
-        "T1070",
         "T1078.002",
         "T1078.003",
         "T1082",
@@ -11050,21 +10126,18 @@
         "T1087.002",
         "T1090.001",
         "T1095",
-        "T1098",
         "T1102",
         "T1106",
         "T1129",
         "T1132.001",
         "T1134.001",
         "T1135",
-        "T1136",
         "T1218",
         "T1218.007",
         "T1218.014",
         "T1497.001",
         "T1552.001",
         "T1553.002",
-        "T1555",
         "T1555.003",
         "T1560.001",
         "T1566.002",
@@ -11074,10 +10147,11 @@
         "T1574",
         "T1583.003",
         "T1587.001",
-        "T1593.002"
+        "T1593.002",
+        "T1627.001"
       ],
-      "documented_only_count": 36,
-      "overlap": 21
+      "documented_only_count": 37,
+      "overlap": 20
     },
     {
       "actor": "G0032",
@@ -11143,41 +10217,32 @@
         "T1622",
         "T1659"
       ],
-      "documented_only_count": 57,
+      "documented_only_count": 58,
       "overlap": 36
     },
     {
       "actor": "G0034",
       "reported_only": [
-        "T1003",
         "T1007",
         "T1016",
         "T1021.001",
         "T1021.004",
-        "T1055",
         "T1057",
-        "T1059",
         "T1059.003",
         "T1069.002",
-        "T1071",
         "T1090.003",
         "T1091",
         "T1113",
-        "T1114",
         "T1124",
         "T1189",
-        "T1204",
         "T1204.004",
         "T1210",
         "T1213",
         "T1218",
         "T1218.007",
         "T1482",
-        "T1497",
         "T1518.001",
         "T1548.002",
-        "T1552",
-        "T1552.002",
         "T1566",
         "T1566.003",
         "T1567.002",
@@ -11187,13 +10252,13 @@
         "T1608.006",
         "T1659"
       ],
-      "documented_only_count": 56,
-      "overlap": 23
+      "documented_only_count": 63,
+      "overlap": 22
     },
     {
       "actor": "G0035",
       "reported_only": [],
-      "documented_only_count": 51,
+      "documented_only_count": 53,
       "overlap": 5
     },
     {
@@ -11258,7 +10323,6 @@
         "T1072",
         "T1074",
         "T1074.001",
-        "T1078.001",
         "T1078.002",
         "T1078.003",
         "T1078.004",
@@ -11281,7 +10345,6 @@
         "T1102.002",
         "T1104",
         "T1105",
-        "T1112",
         "T1113",
         "T1114",
         "T1114.001",
@@ -11373,7 +10436,6 @@
         "T1556.006",
         "T1556.009",
         "T1558.003",
-        "T1558.004",
         "T1559",
         "T1560.001",
         "T1560.002",
@@ -11417,7 +10479,6 @@
         "T1590",
         "T1590.005",
         "T1592",
-        "T1594",
         "T1595",
         "T1595.001",
         "T1595.002",
@@ -11452,11 +10513,8 @@
       "reported_only": [
         "T1001.003",
         "T1012",
-        "T1016",
-        "T1021.001",
         "T1027",
         "T1027.009",
-        "T1033",
         "T1036.005",
         "T1036.007",
         "T1041",
@@ -11464,18 +10522,14 @@
         "T1055.012",
         "T1057",
         "T1059.001",
-        "T1069.001",
-        "T1070",
         "T1071.001",
         "T1082",
         "T1083",
-        "T1098",
         "T1102",
         "T1105",
         "T1106",
         "T1129",
         "T1132.001",
-        "T1136",
         "T1140",
         "T1189",
         "T1204.002",
@@ -11484,7 +10538,6 @@
         "T1218.014",
         "T1497.001",
         "T1547.001",
-        "T1555",
         "T1566.001",
         "T1566.002",
         "T1573.001",
@@ -11493,7 +10546,8 @@
         "T1583.001",
         "T1583.003",
         "T1587.001",
-        "T1608.001"
+        "T1608.001",
+        "T1627.001"
       ],
       "documented_only_count": 4,
       "overlap": 1
@@ -11512,6 +10566,19 @@
         "T1132",
         "T1140",
         "T1219",
+        "T1398",
+        "T1417.001",
+        "T1418",
+        "T1420",
+        "T1422",
+        "T1426",
+        "T1429",
+        "T1430",
+        "T1437.001",
+        "T1481.003",
+        "T1512",
+        "T1517",
+        "T1533",
         "T1573.001",
         "T1573.002",
         "T1583.001",
@@ -11519,7 +10586,12 @@
         "T1583.004",
         "T1583.008",
         "T1584.004",
-        "T1620"
+        "T1620",
+        "T1636.002",
+        "T1636.003",
+        "T1636.004",
+        "T1641",
+        "T1646"
       ],
       "documented_only_count": 30,
       "overlap": 11
@@ -11587,7 +10659,6 @@
         "T1071.004",
         "T1072",
         "T1074",
-        "T1078.001",
         "T1078.002",
         "T1078.003",
         "T1078.004",
@@ -11710,7 +10781,6 @@
         "T1556.006",
         "T1556.009",
         "T1558.003",
-        "T1558.004",
         "T1559",
         "T1560.002",
         "T1563.002",
@@ -11764,7 +10834,6 @@
         "T1590.005",
         "T1592",
         "T1593.002",
-        "T1594",
         "T1595",
         "T1595.001",
         "T1595.002",
@@ -11787,13 +10856,14 @@
         "T1620",
         "T1621",
         "T1622",
+        "T1627.001",
         "T1649",
         "T1652",
         "T1654",
         "T1657"
       ],
-      "documented_only_count": 4,
-      "overlap": 42
+      "documented_only_count": 5,
+      "overlap": 41
     },
     {
       "actor": "G0046",
@@ -11813,7 +10883,6 @@
         "T1021.006",
         "T1027",
         "T1027.009",
-        "T1027.013",
         "T1036",
         "T1036.003",
         "T1037",
@@ -11853,7 +10922,6 @@
         "T1074",
         "T1074.001",
         "T1074.002",
-        "T1078.001",
         "T1078.002",
         "T1078.004",
         "T1083",
@@ -11873,7 +10941,6 @@
         "T1098.007",
         "T1102",
         "T1104",
-        "T1112",
         "T1114",
         "T1114.001",
         "T1114.002",
@@ -11957,7 +11024,6 @@
         "T1556",
         "T1556.006",
         "T1556.009",
-        "T1558.004",
         "T1559",
         "T1560",
         "T1560.001",
@@ -11998,7 +11064,6 @@
         "T1590",
         "T1590.005",
         "T1592",
-        "T1594",
         "T1595",
         "T1595.001",
         "T1595.002",
@@ -12027,33 +11092,15 @@
     {
       "actor": "G0047",
       "reported_only": [
-        "T1008",
-        "T1027.006",
-        "T1027.009",
-        "T1027.011",
-        "T1027.013",
-        "T1036.004",
-        "T1036.007",
-        "T1037.001",
-        "T1074.001",
-        "T1102.001",
-        "T1132.001",
-        "T1137.001",
         "T1480.001",
-        "T1539",
-        "T1552.002",
-        "T1555.003",
-        "T1564.001",
-        "T1567.002",
         "T1573.001",
         "T1583.004",
         "T1583.007",
         "T1584.003",
-        "T1587.001",
         "T1608"
       ],
-      "documented_only_count": 33,
-      "overlap": 37
+      "documented_only_count": 60,
+      "overlap": 10
     },
     {
       "actor": "G0049",
@@ -12073,13 +11120,11 @@
         "T1190",
         "T1202",
         "T1480",
-        "T1497",
         "T1546",
         "T1547.001",
         "T1559",
         "T1560.003",
         "T1564.003",
-        "T1566",
         "T1567",
         "T1567.002",
         "T1569.002",
@@ -12093,8 +11138,8 @@
         "T1595.002",
         "T1608"
       ],
-      "documented_only_count": 58,
-      "overlap": 18
+      "documented_only_count": 65,
+      "overlap": 16
     },
     {
       "actor": "G0050",
@@ -12146,7 +11191,6 @@
         "T1074.001",
         "T1074.002",
         "T1078",
-        "T1078.001",
         "T1078.002",
         "T1078.004",
         "T1087",
@@ -12255,7 +11299,6 @@
         "T1556.006",
         "T1556.009",
         "T1558.003",
-        "T1558.004",
         "T1559",
         "T1560.001",
         "T1560.002",
@@ -12295,7 +11338,6 @@
         "T1590",
         "T1590.005",
         "T1592",
-        "T1594",
         "T1595",
         "T1595.001",
         "T1595.002",
@@ -12321,8 +11363,8 @@
         "T1654",
         "T1657"
       ],
-      "documented_only_count": 20,
-      "overlap": 58
+      "documented_only_count": 21,
+      "overlap": 57
     },
     {
       "actor": "G0052",
@@ -12347,7 +11389,6 @@
         "T1021.006",
         "T1027",
         "T1027.009",
-        "T1027.013",
         "T1033",
         "T1036",
         "T1036.003",
@@ -12399,7 +11440,6 @@
         "T1074.001",
         "T1074.002",
         "T1078",
-        "T1078.001",
         "T1078.002",
         "T1078.003",
         "T1078.004",
@@ -12424,7 +11464,6 @@
         "T1102.002",
         "T1104",
         "T1105",
-        "T1112",
         "T1113",
         "T1114",
         "T1114.001",
@@ -12522,7 +11561,6 @@
         "T1556.006",
         "T1556.009",
         "T1558.003",
-        "T1558.004",
         "T1559",
         "T1560",
         "T1560.002",
@@ -12571,7 +11609,6 @@
         "T1590",
         "T1590.005",
         "T1592",
-        "T1594",
         "T1595",
         "T1595.001",
         "T1595.002",
@@ -12599,15 +11636,6 @@
         "T1657"
       ],
       "documented_only_count": 4,
-      "overlap": 4
-    },
-    {
-      "actor": "G0059",
-      "reported_only": [
-        "T1497",
-        "T1566"
-      ],
-      "documented_only_count": 74,
       "overlap": 4
     },
     {
@@ -12662,7 +11690,6 @@
         "T1485",
         "T1489",
         "T1491",
-        "T1497",
         "T1497.003",
         "T1518.001",
         "T1546.015",
@@ -12671,7 +11698,6 @@
         "T1548.002",
         "T1564",
         "T1564.001",
-        "T1566",
         "T1573.002",
         "T1574.001",
         "T1583.001",
@@ -12690,8 +11716,8 @@
         "T1620",
         "T1657"
       ],
-      "documented_only_count": 15,
-      "overlap": 16
+      "documented_only_count": 19,
+      "overlap": 15
     },
     {
       "actor": "G0065",
@@ -12899,7 +11925,6 @@
         "T1556.006",
         "T1556.009",
         "T1558.003",
-        "T1558.004",
         "T1559",
         "T1560.001",
         "T1560.002",
@@ -12972,13 +11997,14 @@
         "T1619",
         "T1620",
         "T1622",
+        "T1627.001",
         "T1649",
         "T1652",
         "T1654",
         "T1657"
       ],
-      "documented_only_count": 7,
-      "overlap": 43
+      "documented_only_count": 8,
+      "overlap": 42
     },
     {
       "actor": "G0067",
@@ -13002,8 +12028,22 @@
         "T1195",
         "T1195.002",
         "T1204.004",
+        "T1406",
+        "T1407",
+        "T1420",
+        "T1422",
+        "T1426",
+        "T1429",
+        "T1430",
+        "T1437.001",
+        "T1474.003",
         "T1480.001",
+        "T1481.002",
         "T1497",
+        "T1513",
+        "T1532",
+        "T1533",
+        "T1541",
         "T1555",
         "T1560",
         "T1566.002",
@@ -13013,6 +12053,10 @@
         "T1585.003",
         "T1587.001",
         "T1608.001",
+        "T1636.002",
+        "T1636.003",
+        "T1636.004",
+        "T1646",
         "T1659"
       ],
       "documented_only_count": 22,
@@ -13021,6 +12065,7 @@
     {
       "actor": "G0069",
       "reported_only": [
+        "T0835",
         "T1001",
         "T1005",
         "T1027",
@@ -13077,7 +12122,7 @@
         "T1608.001",
         "T1665"
       ],
-      "documented_only_count": 8,
+      "documented_only_count": 9,
       "overlap": 4
     },
     {
@@ -13152,7 +12197,6 @@
         "T1074.001",
         "T1074.002",
         "T1078",
-        "T1078.001",
         "T1078.002",
         "T1078.003",
         "T1078.004",
@@ -13272,7 +12316,6 @@
         "T1556.006",
         "T1556.009",
         "T1558.003",
-        "T1558.004",
         "T1559",
         "T1560",
         "T1560.001",
@@ -13320,7 +12363,6 @@
         "T1590",
         "T1590.005",
         "T1592",
-        "T1594",
         "T1595",
         "T1595.001",
         "T1595.002",
@@ -13342,30 +12384,28 @@
         "T1619",
         "T1620",
         "T1622",
+        "T1627.001",
         "T1649",
         "T1652",
         "T1654",
         "T1657"
       ],
-      "documented_only_count": 4,
-      "overlap": 17
+      "documented_only_count": 6,
+      "overlap": 15
     },
     {
       "actor": "G0078",
       "reported_only": [
         "T1003",
         "T1005",
-        "T1010",
         "T1012",
         "T1014",
         "T1016",
-        "T1018",
         "T1020",
         "T1027",
         "T1027.002",
         "T1027.003",
         "T1027.006",
-        "T1027.009",
         "T1027.010",
         "T1027.012",
         "T1036",
@@ -13376,52 +12416,34 @@
         "T1053.005",
         "T1055",
         "T1056.001",
-        "T1057",
-        "T1059",
         "T1059.007",
-        "T1070",
-        "T1070.006",
         "T1071",
         "T1071.001",
         "T1082",
-        "T1083",
-        "T1095",
         "T1102",
         "T1113",
         "T1114",
-        "T1115",
         "T1123",
         "T1125",
-        "T1129",
         "T1132",
         "T1190",
         "T1204",
         "T1204.001",
         "T1219",
-        "T1222",
         "T1485",
         "T1489",
         "T1491",
-        "T1497",
         "T1497.003",
-        "T1518",
         "T1518.001",
-        "T1529",
         "T1546.015",
-        "T1547",
         "T1548.002",
-        "T1552",
         "T1552.001",
-        "T1552.002",
         "T1555",
         "T1555.003",
-        "T1564",
         "T1566.002",
         "T1571",
-        "T1573",
         "T1573.001",
         "T1573.002",
-        "T1574",
         "T1574.001",
         "T1583.001",
         "T1583.003",
@@ -13437,8 +12459,8 @@
         "T1620",
         "T1657"
       ],
-      "documented_only_count": 3,
-      "overlap": 13
+      "documented_only_count": 6,
+      "overlap": 10
     },
     {
       "actor": "G0079",
@@ -13463,7 +12485,6 @@
         "T1021.006",
         "T1027",
         "T1027.009",
-        "T1027.013",
         "T1033",
         "T1036",
         "T1036.003",
@@ -13515,7 +12536,6 @@
         "T1074.001",
         "T1074.002",
         "T1078",
-        "T1078.001",
         "T1078.002",
         "T1078.003",
         "T1078.004",
@@ -13541,7 +12561,6 @@
         "T1102.002",
         "T1104",
         "T1105",
-        "T1112",
         "T1113",
         "T1114",
         "T1114.001",
@@ -13638,7 +12657,6 @@
         "T1556.006",
         "T1556.009",
         "T1558.003",
-        "T1558.004",
         "T1559",
         "T1560",
         "T1560.001",
@@ -13687,7 +12705,6 @@
         "T1590",
         "T1590.005",
         "T1592",
-        "T1594",
         "T1595",
         "T1595.001",
         "T1595.002",
@@ -13782,7 +12799,6 @@
         "T1074.001",
         "T1074.002",
         "T1078",
-        "T1078.001",
         "T1078.002",
         "T1078.003",
         "T1078.004",
@@ -13807,7 +12823,6 @@
         "T1102",
         "T1102.002",
         "T1104",
-        "T1112",
         "T1113",
         "T1114",
         "T1114.001",
@@ -13897,7 +12912,6 @@
         "T1556.006",
         "T1556.009",
         "T1558.003",
-        "T1558.004",
         "T1559",
         "T1560",
         "T1560.001",
@@ -13947,7 +12961,6 @@
         "T1591",
         "T1591.002",
         "T1592",
-        "T1594",
         "T1595",
         "T1595.001",
         "T1595.002",
@@ -14055,7 +13068,7 @@
         "T1053",
         "T1078"
       ],
-      "documented_only_count": 0,
+      "documented_only_count": 2,
       "overlap": 0
     },
     {
@@ -14086,15 +13099,12 @@
         "T1055",
         "T1057",
         "T1059.005",
-        "T1059.006",
         "T1059.007",
         "T1068",
-        "T1069",
         "T1070.004",
         "T1071",
         "T1071.001",
         "T1071.004",
-        "T1078.001",
         "T1078.002",
         "T1078.003",
         "T1082",
@@ -14103,7 +13113,6 @@
         "T1090.001",
         "T1112",
         "T1119",
-        "T1132",
         "T1134.001",
         "T1134.002",
         "T1135",
@@ -14111,8 +13120,6 @@
         "T1136.001",
         "T1140",
         "T1204",
-        "T1204.001",
-        "T1204.002",
         "T1219",
         "T1486",
         "T1505.004",
@@ -14120,21 +13127,17 @@
         "T1543.003",
         "T1552",
         "T1552.001",
-        "T1555",
         "T1555.003",
-        "T1560",
         "T1563.002",
         "T1566",
-        "T1566.001",
         "T1567",
         "T1569.002",
         "T1572",
         "T1598",
-        "T1620",
         "T1621"
       ],
-      "documented_only_count": 10,
-      "overlap": 21
+      "documented_only_count": 14,
+      "overlap": 17
     },
     {
       "actor": "G0094",
@@ -14149,12 +13152,18 @@
         "T1132",
         "T1132.001",
         "T1134",
+        "T1417.001",
+        "T1418",
+        "T1437",
+        "T1541",
         "T1550.004",
         "T1560",
-        "T1589"
+        "T1575",
+        "T1589",
+        "T1646"
       ],
       "documented_only_count": 88,
-      "overlap": 42
+      "overlap": 43
     },
     {
       "actor": "G0096",
@@ -14170,7 +13179,6 @@
         "T1021.005",
         "T1021.006",
         "T1027.009",
-        "T1027.013",
         "T1036",
         "T1036.003",
         "T1036.007",
@@ -14208,7 +13216,6 @@
         "T1074",
         "T1074.001",
         "T1074.002",
-        "T1078.001",
         "T1078.002",
         "T1078.003",
         "T1078.004",
@@ -14314,7 +13321,6 @@
         "T1556.006",
         "T1556.009",
         "T1558.003",
-        "T1558.004",
         "T1559",
         "T1560",
         "T1560.002",
@@ -14359,7 +13365,6 @@
         "T1590",
         "T1590.005",
         "T1592",
-        "T1594",
         "T1595",
         "T1595.001",
         "T1598",
@@ -14380,13 +13385,28 @@
         "T1619",
         "T1620",
         "T1622",
+        "T1627.001",
         "T1649",
         "T1652",
         "T1654",
         "T1657"
       ],
-      "documented_only_count": 20,
-      "overlap": 62
+      "documented_only_count": 21,
+      "overlap": 61
+    },
+    {
+      "actor": "G0098",
+      "reported_only": [
+        "T1041",
+        "T1059",
+        "T1059.007",
+        "T1082",
+        "T1105",
+        "T1189",
+        "T1195.001"
+      ],
+      "documented_only_count": 13,
+      "overlap": 1
     },
     {
       "actor": "G0099",
@@ -14418,7 +13438,6 @@
         "T1021.005",
         "T1027",
         "T1027.009",
-        "T1027.013",
         "T1036",
         "T1036.003",
         "T1036.005",
@@ -14458,7 +13477,6 @@
         "T1071.004",
         "T1072",
         "T1074.002",
-        "T1078.001",
         "T1078.003",
         "T1078.004",
         "T1083",
@@ -14564,7 +13582,6 @@
         "T1556",
         "T1556.006",
         "T1556.009",
-        "T1558.004",
         "T1559",
         "T1560",
         "T1560.002",
@@ -14606,7 +13623,6 @@
         "T1590",
         "T1590.005",
         "T1592",
-        "T1594",
         "T1595",
         "T1595.001",
         "T1595.002",
@@ -14633,8 +13649,20 @@
         "T1654",
         "T1657"
       ],
-      "documented_only_count": 14,
-      "overlap": 50
+      "documented_only_count": 15,
+      "overlap": 49
+    },
+    {
+      "actor": "G0112",
+      "reported_only": [
+        "T1398",
+        "T1418",
+        "T1437",
+        "T1636.002",
+        "T1646"
+      ],
+      "documented_only_count": 27,
+      "overlap": 8
     },
     {
       "actor": "G0114",
@@ -14807,7 +13835,6 @@
       "reported_only": [
         "T1001.003",
         "T1005",
-        "T1021.001",
         "T1027",
         "T1027.009",
         "T1036.005",
@@ -14816,33 +13843,29 @@
         "T1055.012",
         "T1057",
         "T1059.001",
-        "T1069.001",
-        "T1070",
         "T1071.001",
         "T1083",
         "T1090.001",
-        "T1098",
         "T1102",
         "T1106",
         "T1129",
         "T1132.001",
-        "T1136",
         "T1189",
         "T1204.002",
         "T1218",
         "T1218.014",
         "T1497.001",
         "T1553.002",
-        "T1555",
         "T1566.001",
         "T1574",
         "T1574.001",
         "T1583.003",
         "T1587.001",
-        "T1608.001"
+        "T1608.001",
+        "T1627.001"
       ],
-      "documented_only_count": 13,
-      "overlap": 16
+      "documented_only_count": 14,
+      "overlap": 15
     },
     {
       "actor": "G0129",
@@ -14864,7 +13887,6 @@
         "T1025",
         "T1027.002",
         "T1027.009",
-        "T1027.013",
         "T1033",
         "T1036",
         "T1036.003",
@@ -14900,7 +13922,6 @@
         "T1074",
         "T1074.002",
         "T1078",
-        "T1078.001",
         "T1078.002",
         "T1078.003",
         "T1078.004",
@@ -15014,7 +14035,6 @@
         "T1556.006",
         "T1556.009",
         "T1558.003",
-        "T1558.004",
         "T1559",
         "T1560",
         "T1560.002",
@@ -15051,7 +14071,6 @@
         "T1590",
         "T1590.005",
         "T1592",
-        "T1594",
         "T1595",
         "T1595.001",
         "T1595.002",
@@ -15070,24 +14089,13 @@
         "T1615",
         "T1619",
         "T1620",
+        "T1627.001",
         "T1649",
         "T1652",
         "T1657"
       ],
       "documented_only_count": 22,
       "overlap": 63
-    },
-    {
-      "actor": "G0130",
-      "reported_only": [
-        "T1027.013",
-        "T1059.001",
-        "T1071.001",
-        "T1497",
-        "T1566"
-      ],
-      "documented_only_count": 5,
-      "overlap": 1
     },
     {
       "actor": "G0131",
@@ -15189,7 +14197,6 @@
         "T1021.006",
         "T1027",
         "T1027.009",
-        "T1027.013",
         "T1036",
         "T1036.003",
         "T1037",
@@ -15235,7 +14242,6 @@
         "T1074.001",
         "T1074.002",
         "T1078",
-        "T1078.001",
         "T1078.003",
         "T1078.004",
         "T1083",
@@ -15351,7 +14357,6 @@
         "T1556.006",
         "T1556.009",
         "T1558.003",
-        "T1558.004",
         "T1559",
         "T1560",
         "T1560.002",
@@ -15400,7 +14405,6 @@
         "T1590",
         "T1590.005",
         "T1592",
-        "T1594",
         "T1595",
         "T1595.001",
         "T1598",
@@ -15429,20 +14433,6 @@
       "overlap": 27
     },
     {
-      "actor": "G1003",
-      "reported_only": [
-        "T1071.001",
-        "T1105",
-        "T1213.001",
-        "T1485",
-        "T1590.002",
-        "T1595",
-        "T1596.005"
-      ],
-      "documented_only_count": 22,
-      "overlap": 25
-    },
-    {
       "actor": "G1004",
       "reported_only": [
         "T1016.001",
@@ -15456,7 +14446,7 @@
         "T1534",
         "T1567"
       ],
-      "documented_only_count": 38,
+      "documented_only_count": 39,
       "overlap": 5
     },
     {
@@ -15490,10 +14480,7 @@
       "reported_only": [
         "T1005",
         "T1012",
-        "T1020",
         "T1027",
-        "T1027.009",
-        "T1027.010",
         "T1033",
         "T1036.007",
         "T1041",
@@ -15505,23 +14492,18 @@
         "T1059.003",
         "T1071.001",
         "T1071.002",
-        "T1074.001",
         "T1083",
         "T1113",
         "T1119",
         "T1123",
-        "T1125",
         "T1129",
         "T1140",
         "T1204.001",
         "T1547.001",
-        "T1547.013",
         "T1548.002",
         "T1560.001",
         "T1566.002",
-        "T1567",
         "T1571",
-        "T1573",
         "T1583.001",
         "T1585.002",
         "T1586.002",
@@ -15564,13 +14546,9 @@
         "T1016",
         "T1021.002",
         "T1021.004",
-        "T1027",
-        "T1027.010",
         "T1027.013",
-        "T1036.004",
         "T1041",
         "T1053.005",
-        "T1059",
         "T1059.001",
         "T1059.003",
         "T1059.006",
@@ -15592,7 +14570,6 @@
         "T1547.001",
         "T1552",
         "T1552.001",
-        "T1553",
         "T1555",
         "T1555.003",
         "T1572",
@@ -15661,7 +14638,6 @@
       "actor": "G1024",
       "reported_only": [
         "T1003",
-        "T1003.001",
         "T1005",
         "T1007",
         "T1008",
@@ -15832,7 +14808,6 @@
         "T1556",
         "T1556.006",
         "T1556.009",
-        "T1558.003",
         "T1559",
         "T1560",
         "T1560.002",
@@ -15895,6 +14870,25 @@
       "overlap": 12
     },
     {
+      "actor": "G1028",
+      "reported_only": [
+        "T1418",
+        "T1420",
+        "T1426",
+        "T1429",
+        "T1437",
+        "T1512",
+        "T1513",
+        "T1517",
+        "T1532",
+        "T1533",
+        "T1544",
+        "T1575"
+      ],
+      "documented_only_count": 3,
+      "overlap": 0
+    },
+    {
       "actor": "G1032",
       "reported_only": [
         "T1003",
@@ -15926,7 +14920,7 @@
       "reported_only": [
         "T1566.002"
       ],
-      "documented_only_count": 8,
+      "documented_only_count": 9,
       "overlap": 12
     },
     {
@@ -15965,24 +14959,6 @@
         "T1570"
       ],
       "documented_only_count": 17,
-      "overlap": 9
-    },
-    {
-      "actor": "G1043",
-      "reported_only": [
-        "T1078.003",
-        "T1083",
-        "T1098",
-        "T1204",
-        "T1210",
-        "T1211",
-        "T1484",
-        "T1484.001",
-        "T1529",
-        "T1543",
-        "T1608"
-      ],
-      "documented_only_count": 39,
       "overlap": 9
     },
     {
@@ -16392,7 +15368,6 @@
         "T1027",
         "T1027.002",
         "T1030",
-        "T1033",
         "T1036.005",
         "T1048",
         "T1053.005",
@@ -16402,7 +15377,6 @@
         "T1056.001",
         "T1057",
         "T1059",
-        "T1059.001",
         "T1071",
         "T1071.001",
         "T1071.002",
@@ -16416,7 +15390,6 @@
         "T1115",
         "T1119",
         "T1124",
-        "T1132",
         "T1132.001",
         "T1133",
         "T1140",
@@ -16467,8 +15440,8 @@
         "T1614",
         "T1659"
       ],
-      "documented_only_count": 24,
-      "overlap": 30
+      "documented_only_count": 25,
+      "overlap": 29
     },
     {
       "actor": "G1053",
@@ -16505,35 +15478,28 @@
       "actor": "G1054",
       "reported_only": [
         "T1001.001",
-        "T1003",
         "T1012",
         "T1027.004",
         "T1027.007",
         "T1027.011",
         "T1030",
         "T1036.007",
-        "T1039",
         "T1041",
         "T1053.005",
         "T1055",
         "T1059.001",
         "T1070.006",
         "T1071.001",
-        "T1087",
         "T1112",
         "T1113",
         "T1115",
         "T1124",
         "T1127.001",
         "T1132.001",
-        "T1133",
-        "T1134.002",
         "T1140",
         "T1204.001",
         "T1218",
-        "T1543.003",
         "T1547.001",
-        "T1564",
         "T1564.001",
         "T1564.003",
         "T1564.006",
@@ -16544,8 +15510,8 @@
         "T1588.001",
         "T1622"
       ],
-      "documented_only_count": 27,
-      "overlap": 16
+      "documented_only_count": 30,
+      "overlap": 13
     },
     {
       "actor": "G1055",
@@ -16639,83 +15605,32 @@
       "overlap": 13
     },
     {
-      "actor": "alpha-spider",
-      "reported_only": [
-        "T1003.001",
-        "T1018",
-        "T1021.001",
-        "T1021.002",
-        "T1027.013",
-        "T1036",
-        "T1036.005",
-        "T1039",
-        "T1047",
-        "T1048",
-        "T1053.005",
-        "T1055",
-        "T1055.001",
-        "T1059.001",
-        "T1059.003",
-        "T1059.006",
-        "T1069.001",
-        "T1069.002",
-        "T1071.001",
-        "T1087.001",
-        "T1098",
-        "T1105",
-        "T1135",
-        "T1189",
-        "T1204.002",
-        "T1482",
-        "T1486",
-        "T1490",
-        "T1547.004",
-        "T1569.002",
-        "T1570"
-      ],
-      "documented_only_count": 0,
-      "overlap": 0
-    },
-    {
       "actor": "angry-likho",
       "reported_only": [
         "T1027.010",
         "T1027.013",
-        "T1033",
         "T1041",
-        "T1055.002",
-        "T1056.001",
         "T1059",
         "T1059.001",
         "T1059.005",
         "T1059.006",
         "T1059.010",
-        "T1068",
         "T1098",
         "T1119",
         "T1132",
-        "T1140",
         "T1189",
         "T1204.001",
         "T1204.002",
         "T1218",
         "T1218.005",
-        "T1219",
         "T1497",
-        "T1498",
         "T1547.001",
         "T1555.003",
-        "T1558.003",
         "T1566.002",
         "T1566.003",
-        "T1566.004",
-        "T1570",
-        "T1572",
         "T1583.001",
-        "T1587.001",
         "T1588.001",
-        "T1608.001",
-        "T1620"
+        "T1608.001"
       ],
       "documented_only_count": 0,
       "overlap": 0
@@ -16725,11 +15640,8 @@
       "reported_only": [
         "T1001.003",
         "T1012",
-        "T1016",
-        "T1021.001",
         "T1027",
         "T1027.009",
-        "T1033",
         "T1036.005",
         "T1036.007",
         "T1041",
@@ -16737,18 +15649,14 @@
         "T1055.012",
         "T1057",
         "T1059.001",
-        "T1069.001",
-        "T1070",
         "T1071.001",
         "T1082",
         "T1083",
-        "T1098",
         "T1102",
         "T1105",
         "T1106",
         "T1129",
         "T1132.001",
-        "T1136",
         "T1140",
         "T1189",
         "T1204.002",
@@ -16758,7 +15666,6 @@
         "T1497.001",
         "T1547.001",
         "T1553.002",
-        "T1555",
         "T1566.001",
         "T1566.002",
         "T1573.001",
@@ -16767,7 +15674,8 @@
         "T1583.001",
         "T1583.003",
         "T1587.001",
-        "T1608.001"
+        "T1608.001",
+        "T1627.001"
       ],
       "documented_only_count": 0,
       "overlap": 0
@@ -16777,11 +15685,8 @@
       "reported_only": [
         "T1001.003",
         "T1012",
-        "T1016",
-        "T1021.001",
         "T1027",
         "T1027.009",
-        "T1033",
         "T1036.005",
         "T1036.007",
         "T1041",
@@ -16789,18 +15694,14 @@
         "T1055.012",
         "T1057",
         "T1059.001",
-        "T1069.001",
-        "T1070",
         "T1071.001",
         "T1082",
         "T1083",
-        "T1098",
         "T1102",
         "T1105",
         "T1106",
         "T1129",
         "T1132.001",
-        "T1136",
         "T1140",
         "T1189",
         "T1204.002",
@@ -16810,7 +15711,6 @@
         "T1497.001",
         "T1547.001",
         "T1553.002",
-        "T1555",
         "T1566.001",
         "T1566.002",
         "T1573.001",
@@ -16819,7 +15719,8 @@
         "T1583.001",
         "T1583.003",
         "T1587.001",
-        "T1608.001"
+        "T1608.001",
+        "T1627.001"
       ],
       "documented_only_count": 0,
       "overlap": 0
@@ -16829,11 +15730,8 @@
       "reported_only": [
         "T1001.003",
         "T1012",
-        "T1016",
-        "T1021.001",
         "T1027",
         "T1027.009",
-        "T1033",
         "T1036.005",
         "T1036.007",
         "T1041",
@@ -16841,18 +15739,14 @@
         "T1055.012",
         "T1057",
         "T1059.001",
-        "T1069.001",
-        "T1070",
         "T1071.001",
         "T1082",
         "T1083",
-        "T1098",
         "T1102",
         "T1105",
         "T1106",
         "T1129",
         "T1132.001",
-        "T1136",
         "T1140",
         "T1189",
         "T1204.002",
@@ -16862,7 +15756,6 @@
         "T1497.001",
         "T1547.001",
         "T1553.002",
-        "T1555",
         "T1566.001",
         "T1566.002",
         "T1573.001",
@@ -16871,7 +15764,8 @@
         "T1583.001",
         "T1583.003",
         "T1587.001",
-        "T1608.001"
+        "T1608.001",
+        "T1627.001"
       ],
       "documented_only_count": 0,
       "overlap": 0
@@ -16898,31 +15792,6 @@
         "T1583.003",
         "T1585.003",
         "T1587.001"
-      ],
-      "documented_only_count": 0,
-      "overlap": 0
-    },
-    {
-      "actor": "cosmicbeetle",
-      "reported_only": [
-        "T1059.001",
-        "T1059.003",
-        "T1078",
-        "T1110.001",
-        "T1136.001",
-        "T1140",
-        "T1190",
-        "T1204",
-        "T1212",
-        "T1485",
-        "T1486",
-        "T1583.001",
-        "T1587.001",
-        "T1588.001",
-        "T1588.002",
-        "T1588.005",
-        "T1590.005",
-        "T1595.002"
       ],
       "documented_only_count": 0,
       "overlap": 0
@@ -16977,27 +15846,14 @@
     {
       "actor": "dragonforce",
       "reported_only": [
-        "T1003.001",
         "T1005",
-        "T1016",
-        "T1018",
-        "T1021.001",
         "T1027",
         "T1053.005",
-        "T1059.001",
         "T1070",
-        "T1071.001",
-        "T1078",
-        "T1078.002",
-        "T1082",
-        "T1083",
         "T1135",
         "T1204.002",
-        "T1482",
         "T1486",
-        "T1490",
-        "T1543.003",
-        "T1547.001"
+        "T1490"
       ],
       "documented_only_count": 0,
       "overlap": 0
@@ -17025,7 +15881,6 @@
         "T1021.006",
         "T1027",
         "T1027.009",
-        "T1027.013",
         "T1033",
         "T1036",
         "T1036.003",
@@ -17078,7 +15933,6 @@
         "T1074.001",
         "T1074.002",
         "T1078",
-        "T1078.001",
         "T1078.002",
         "T1078.003",
         "T1078.004",
@@ -17104,7 +15958,6 @@
         "T1102.002",
         "T1104",
         "T1105",
-        "T1112",
         "T1113",
         "T1114",
         "T1114.001",
@@ -17202,7 +16055,6 @@
         "T1556.006",
         "T1556.009",
         "T1558.003",
-        "T1558.004",
         "T1559",
         "T1560",
         "T1560.001",
@@ -17253,7 +16105,6 @@
         "T1590",
         "T1590.005",
         "T1592",
-        "T1594",
         "T1595",
         "T1595.001",
         "T1595.002",
@@ -17613,24 +16464,6 @@
       "overlap": 0
     },
     {
-      "actor": "handala",
-      "reported_only": [
-        "T1020",
-        "T1027",
-        "T1059",
-        "T1059.010",
-        "T1068",
-        "T1218.009",
-        "T1497.003",
-        "T1561.002",
-        "T1566.001",
-        "T1589",
-        "T1590"
-      ],
-      "documented_only_count": 0,
-      "overlap": 0
-    },
-    {
       "actor": "hive0137",
       "reported_only": [
         "T1005",
@@ -17684,7 +16517,6 @@
         "T1021.001",
         "T1027",
         "T1027.009",
-        "T1033",
         "T1036.005",
         "T1036.007",
         "T1041",
@@ -17697,8 +16529,6 @@
         "T1059.003",
         "T1059.005",
         "T1059.007",
-        "T1069.001",
-        "T1070",
         "T1071.001",
         "T1074.001",
         "T1078.002",
@@ -17708,7 +16538,6 @@
         "T1087.002",
         "T1090.001",
         "T1095",
-        "T1098",
         "T1102",
         "T1105",
         "T1106",
@@ -17716,7 +16545,6 @@
         "T1132.001",
         "T1134.001",
         "T1135",
-        "T1136",
         "T1140",
         "T1189",
         "T1190",
@@ -17729,7 +16557,6 @@
         "T1547.001",
         "T1552.001",
         "T1553.002",
-        "T1555",
         "T1555.003",
         "T1560.001",
         "T1566.001",
@@ -17743,7 +16570,8 @@
         "T1583.003",
         "T1587.001",
         "T1593.002",
-        "T1608.001"
+        "T1608.001",
+        "T1627.001"
       ],
       "documented_only_count": 0,
       "overlap": 0
@@ -17802,8 +16630,6 @@
     {
       "actor": "ransomhub",
       "reported_only": [
-        "T1003",
-        "T1003.001",
         "T1003.002",
         "T1005",
         "T1006",
@@ -17824,8 +16650,6 @@
         "T1027",
         "T1027.013",
         "T1033",
-        "T1036",
-        "T1036.005",
         "T1037",
         "T1037.001",
         "T1039",
@@ -17833,7 +16657,6 @@
         "T1041",
         "T1046",
         "T1047",
-        "T1048",
         "T1049",
         "T1053",
         "T1053.003",
@@ -17874,7 +16697,6 @@
         "T1074.001",
         "T1074.002",
         "T1078",
-        "T1078.002",
         "T1078.004",
         "T1082",
         "T1083",
@@ -17898,7 +16720,6 @@
         "T1102.002",
         "T1104",
         "T1105",
-        "T1110",
         "T1113",
         "T1114",
         "T1114.001",
@@ -17941,7 +16762,6 @@
         "T1213.003",
         "T1217",
         "T1219",
-        "T1222.001",
         "T1482",
         "T1484",
         "T1484.001",
@@ -17976,7 +16796,6 @@
         "T1547",
         "T1547.001",
         "T1547.002",
-        "T1547.004",
         "T1547.005",
         "T1547.009",
         "T1548",
@@ -18182,11 +17001,8 @@
       "reported_only": [
         "T1001.003",
         "T1012",
-        "T1016",
-        "T1021.001",
         "T1027",
         "T1027.009",
-        "T1033",
         "T1036.005",
         "T1036.007",
         "T1041",
@@ -18194,18 +17010,14 @@
         "T1055.012",
         "T1057",
         "T1059.001",
-        "T1069.001",
-        "T1070",
         "T1071.001",
         "T1082",
         "T1083",
-        "T1098",
         "T1102",
         "T1105",
         "T1106",
         "T1129",
         "T1132.001",
-        "T1136",
         "T1140",
         "T1189",
         "T1204.002",
@@ -18215,7 +17027,6 @@
         "T1497.001",
         "T1547.001",
         "T1553.002",
-        "T1555",
         "T1566.001",
         "T1566.002",
         "T1573.001",
@@ -18224,7 +17035,8 @@
         "T1583.001",
         "T1583.003",
         "T1587.001",
-        "T1608.001"
+        "T1608.001",
+        "T1627.001"
       ],
       "documented_only_count": 0,
       "overlap": 0
@@ -19308,17 +18120,6 @@
       "overlap": 0
     },
     {
-      "actor": "storm-1113",
-      "reported_only": [
-        "T1059",
-        "T1059.001",
-        "T1105",
-        "T1204.002"
-      ],
-      "documented_only_count": 0,
-      "overlap": 0
-    },
-    {
       "actor": "swan-vector",
       "reported_only": [
         "T1027",
@@ -19769,7 +18570,6 @@
         "T1021.006",
         "T1027",
         "T1027.009",
-        "T1027.013",
         "T1033",
         "T1036",
         "T1036.003",
@@ -19822,7 +18622,6 @@
         "T1074.001",
         "T1074.002",
         "T1078",
-        "T1078.001",
         "T1078.002",
         "T1078.003",
         "T1078.004",
@@ -19848,7 +18647,6 @@
         "T1102.002",
         "T1104",
         "T1105",
-        "T1112",
         "T1113",
         "T1114",
         "T1114.001",
@@ -19946,7 +18744,6 @@
         "T1556.006",
         "T1556.009",
         "T1558.003",
-        "T1558.004",
         "T1559",
         "T1560",
         "T1560.001",
@@ -19997,7 +18794,6 @@
         "T1590",
         "T1590.005",
         "T1592",
-        "T1594",
         "T1595",
         "T1595.001",
         "T1595.002",
@@ -20513,27 +19309,14 @@
     {
       "actor": "unnamed-group",
       "reported_only": [
-        "T1003.001",
         "T1005",
-        "T1016",
-        "T1018",
-        "T1021.001",
         "T1027",
         "T1053.005",
-        "T1059.001",
         "T1070",
-        "T1071.001",
-        "T1078",
-        "T1078.002",
-        "T1082",
-        "T1083",
         "T1135",
         "T1204.002",
-        "T1482",
         "T1486",
-        "T1490",
-        "T1543.003",
-        "T1547.001"
+        "T1490"
       ],
       "documented_only_count": 0,
       "overlap": 0
@@ -20606,7 +19389,6 @@
         "T1021.005",
         "T1021.006",
         "T1027",
-        "T1027.013",
         "T1027.015",
         "T1033",
         "T1036",
@@ -20683,7 +19465,6 @@
         "T1102.002",
         "T1104",
         "T1105",
-        "T1112",
         "T1113",
         "T1114",
         "T1114.001",
@@ -20764,7 +19545,6 @@
         "T1547",
         "T1547.001",
         "T1547.002",
-        "T1547.004",
         "T1547.005",
         "T1547.009",
         "T1548",
@@ -20779,7 +19559,6 @@
         "T1556.006",
         "T1556.009",
         "T1558.003",
-        "T1558.004",
         "T1559",
         "T1560",
         "T1560.001",
@@ -21018,8 +19797,8 @@
   "source_health": [
     {
       "name": "attack",
-      "last_success": "2026-09-29",
-      "record_count": 1057,
+      "last_success": "2026-10-01",
+      "record_count": 1192,
       "stale": false
     },
     {
@@ -21063,14 +19842,20 @@
       "last_success": "2026-09-29",
       "record_count": 1509,
       "stale": false
+    },
+    {
+      "name": "microsoft",
+      "last_success": "2026-10-01",
+      "record_count": 170,
+      "stale": false
     }
   ],
   "notes": {
     "reporting_activity": "Reports per quarter that are linked to at least one resolved actor, from the report sources only. Dated reports only. Each quarter is compared with the same quarter a year earlier.",
     "new_actors": "Actors whose earliest date in any published source falls within 365 days of this build. A source that gives only a year counts only when that whole year falls inside the period.",
     "kev_monthly": "CVEs CISA added to the KEV catalogue each month, and how many KEV marks as known ransomware use.",
-    "kev_actor_links": "KEV CVEs named in reports from 2024-07-01 on that are also linked to a resolved actor. A shared report, not an attribution.",
-    "reported_vs_documented": "Technique IDs found in an actor's reports from 2024-07-01 on, compared with the techniques ATT&CK documents for that actor.",
+    "kev_actor_links": "KEV CVEs named in reports from 2024-10-01 on that are also linked to a resolved actor. A shared report, not an attribution.",
+    "reported_vs_documented": "Technique IDs found in an actor's reports from 2024-10-01 on, compared with the techniques ATT&CK documents for that actor.",
     "source_health": "Each source's newest good snapshot and record count. Stale means this build's fetch failed and the previous snapshot was used."
   }
 }

@@ -1,0 +1,38 @@
+{
+  "id": "clay-typhoon",
+  "name": "Clay Typhoon",
+  "aliases": [
+    {
+      "value": "Clay Typhoon",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Storm-2416",
+      "sources": [
+        "microsoft"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "CN",
+      "source": "microsoft"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 0
+}

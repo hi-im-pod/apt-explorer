@@ -16,7 +16,8 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -24,7 +25,17 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Swirl Typhoon",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -44,11 +55,18 @@
       ]
     },
     {
-      "value": "Swirl Typhoon",
+      "value": "STALKER PANDA",
       "sources": [
         "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Bronze Butler",
+      "sources": [
         "etda",
-        "malpedia"
+        "microsoft"
       ]
     },
     {
@@ -60,13 +78,6 @@
     },
     {
       "value": "Nian",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "STALKER PANDA",
       "sources": [
         "misp",
         "malpedia"
@@ -87,12 +98,6 @@
       ]
     },
     {
-      "value": "Bronze Butler",
-      "sources": [
-        "etda"
-      ]
-    },
-    {
       "value": "CTG-2006",
       "sources": [
         "etda"
@@ -109,6 +114,12 @@
       "sources": [
         "etda"
       ]
+    },
+    {
+      "value": "TELLURIUM",
+      "sources": [
+        "microsoft"
+      ]
     }
   ],
   "origin": [
@@ -123,6 +134,10 @@
     {
       "value": "CN",
       "source": "malpedia"
+    },
+    {
+      "value": "CN",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -785,5 +800,5 @@
     "73e1915ed4e87b70f4d068beaf3a12c9a4ddbb0a"
   ],
   "conflicts": [],
-  "evidence_count": 23
+  "evidence_count": 28
 }

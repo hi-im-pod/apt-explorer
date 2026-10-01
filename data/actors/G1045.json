@@ -8,7 +8,8 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -16,19 +17,21 @@
       "sources": [
         "misp",
         "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "UNC2286",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
       "value": "FamousSparrow",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "UNC2286",
       "sources": [
         "misp",
         "etda",
@@ -55,7 +58,8 @@
       "value": "OPERATOR PANDA",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -77,6 +81,10 @@
     {
       "value": "CN",
       "source": "malpedia"
+    },
+    {
+      "value": "CN",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -588,5 +596,5 @@
     "294d42c456a41c69c9068df0f5eaffc93b132377"
   ],
   "conflicts": [],
-  "evidence_count": 15
+  "evidence_count": 19
 }

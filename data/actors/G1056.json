@@ -7,7 +7,8 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -63,6 +64,12 @@
       "value": "UNC6780",
       "sources": [
         "attack"
+      ]
+    },
+    {
+      "value": "Storm-2999",
+      "sources": [
+        "microsoft"
       ]
     }
   ],
@@ -378,5 +385,5 @@
     "cf10f938c88f1abf5b505032183a99625845c131"
   ],
   "conflicts": [],
-  "evidence_count": 10
+  "evidence_count": 11
 }

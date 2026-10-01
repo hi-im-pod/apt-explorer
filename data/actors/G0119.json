@@ -10,16 +10,17 @@
       ]
     },
     {
-      "value": "Evil Corp",
+      "value": "Manatee Tempest",
       "sources": [
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
-      "value": "Manatee Tempest",
+      "value": "Evil Corp",
       "sources": [
         "attack",
         "misp",
@@ -32,7 +33,8 @@
       "sources": [
         "attack",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -44,6 +46,21 @@
       ]
     },
     {
+      "value": "INDRIK SPIDER",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Mustard Tempest",
+      "sources": [
+        "etda",
+        "microsoft"
+      ]
+    },
+    {
       "value": "GOLD DRAKE",
       "sources": [
         "misp",
@@ -52,13 +69,6 @@
     },
     {
       "value": "GOLD WINTER",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "INDRIK SPIDER",
       "sources": [
         "misp",
         "malpedia"
@@ -77,12 +87,6 @@
       ]
     },
     {
-      "value": "Mustard Tempest",
-      "sources": [
-        "etda"
-      ]
-    },
-    {
       "value": "Blue Lelantos",
       "sources": [
         "etda"
@@ -92,6 +96,12 @@
       "value": "EvilCorp",
       "sources": [
         "malpedia"
+      ]
+    },
+    {
+      "value": "DEV-0206",
+      "sources": [
+        "microsoft"
       ]
     }
   ],
@@ -107,6 +117,10 @@
     {
       "value": "RU",
       "source": "malpedia"
+    },
+    {
+      "value": "RU",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -772,5 +786,5 @@
     "9af5be97efbcd8023c4eaf7d48cd028c09f3f30a"
   ],
   "conflicts": [],
-  "evidence_count": 18
+  "evidence_count": 22
 }

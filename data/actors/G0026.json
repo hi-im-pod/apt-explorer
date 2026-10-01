@@ -7,7 +7,8 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -16,7 +17,26 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Wekby",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Satin Typhoon",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -28,19 +48,51 @@
       ]
     },
     {
-      "value": "Wekby",
+      "value": "DYNAMITE PANDA",
       "sources": [
         "misp",
-        "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
-      "value": "Satin Typhoon",
+      "value": "SCANDIUM",
       "sources": [
         "misp",
-        "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "APT4",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "MAVERICK PANDA",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "SODIUM",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Salmon Typhoon",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -51,17 +103,17 @@
       ]
     },
     {
-      "value": "DYNAMITE PANDA",
+      "value": "Red Wraith",
       "sources": [
-        "misp",
-        "malpedia"
+        "etda",
+        "microsoft"
       ]
     },
     {
-      "value": "SCANDIUM",
+      "value": "SILVERVIPER",
       "sources": [
-        "misp",
-        "malpedia"
+        "etda",
+        "microsoft"
       ]
     },
     {
@@ -72,35 +124,7 @@
       ]
     },
     {
-      "value": "APT4",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "MAVERICK PANDA",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
       "value": "BRONZE EDISON",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "SODIUM",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Salmon Typhoon",
       "sources": [
         "misp",
         "malpedia"
@@ -180,15 +204,15 @@
       ]
     },
     {
-      "value": "Red Wraith",
+      "value": "COMBINE",
       "sources": [
-        "etda"
+        "microsoft"
       ]
     },
     {
-      "value": "SILVERVIPER",
+      "value": "Elderwood Group",
       "sources": [
-        "etda"
+        "microsoft"
       ]
     }
   ],
@@ -204,6 +228,10 @@
     {
       "value": "CN",
       "source": "malpedia"
+    },
+    {
+      "value": "CN",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -365,10 +393,6 @@
   ],
   "techniques_reported": [
     {
-      "id": "T1082",
-      "count": 3
-    },
-    {
       "id": "T1027",
       "count": 2
     },
@@ -377,15 +401,11 @@
       "count": 2
     },
     {
-      "id": "T1057",
-      "count": 2
-    },
-    {
       "id": "T1059.001",
       "count": 2
     },
     {
-      "id": "T1105",
+      "id": "T1082",
       "count": 2
     },
     {
@@ -421,19 +441,7 @@
       "count": 1
     },
     {
-      "id": "T1016",
-      "count": 1
-    },
-    {
-      "id": "T1021.001",
-      "count": 1
-    },
-    {
       "id": "T1027.009",
-      "count": 1
-    },
-    {
-      "id": "T1033",
       "count": 1
     },
     {
@@ -453,11 +461,7 @@
       "count": 1
     },
     {
-      "id": "T1069.001",
-      "count": 1
-    },
-    {
-      "id": "T1070",
+      "id": "T1057",
       "count": 1
     },
     {
@@ -469,11 +473,11 @@
       "count": 1
     },
     {
-      "id": "T1098",
+      "id": "T1102",
       "count": 1
     },
     {
-      "id": "T1102",
+      "id": "T1105",
       "count": 1
     },
     {
@@ -482,10 +486,6 @@
     },
     {
       "id": "T1129",
-      "count": 1
-    },
-    {
-      "id": "T1136",
       "count": 1
     },
     {
@@ -510,10 +510,6 @@
     },
     {
       "id": "T1553.002",
-      "count": 1
-    },
-    {
-      "id": "T1555",
       "count": 1
     },
     {
@@ -542,6 +538,10 @@
     },
     {
       "id": "T1608.001",
+      "count": 1
+    },
+    {
+      "id": "T1627.001",
       "count": 1
     }
   ],
@@ -1397,5 +1397,5 @@
     "3e7ddfd34b1cad4204f2367d65f46e4ca84a9e99"
   ],
   "conflicts": [],
-  "evidence_count": 35
+  "evidence_count": 47
 }

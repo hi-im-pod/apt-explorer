@@ -7,18 +7,20 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "UNC4393",
-      "sources": [
-        "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
       "value": "CURLY SPIDER",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "UNC4393",
       "sources": [
         "misp",
         "malpedia"
@@ -120,38 +122,14 @@
   "techniques_reported": [
     {
       "id": "T1033",
-      "count": 4
+      "count": 3
     },
     {
       "id": "T1219",
-      "count": 4
+      "count": 3
     },
     {
       "id": "T1572",
-      "count": 4
-    },
-    {
-      "id": "T1055.002",
-      "count": 3
-    },
-    {
-      "id": "T1056.001",
-      "count": 3
-    },
-    {
-      "id": "T1059.001",
-      "count": 3
-    },
-    {
-      "id": "T1068",
-      "count": 3
-    },
-    {
-      "id": "T1140",
-      "count": 3
-    },
-    {
-      "id": "T1566.004",
       "count": 3
     },
     {
@@ -187,7 +165,19 @@
       "count": 2
     },
     {
+      "id": "T1055.002",
+      "count": 2
+    },
+    {
+      "id": "T1056.001",
+      "count": 2
+    },
+    {
       "id": "T1059",
+      "count": 2
+    },
+    {
+      "id": "T1059.001",
       "count": 2
     },
     {
@@ -196,6 +186,10 @@
     },
     {
       "id": "T1059.004",
+      "count": 2
+    },
+    {
+      "id": "T1068",
       "count": 2
     },
     {
@@ -259,6 +253,10 @@
       "count": 2
     },
     {
+      "id": "T1140",
+      "count": 2
+    },
+    {
       "id": "T1190",
       "count": 2
     },
@@ -295,10 +293,6 @@
       "count": 2
     },
     {
-      "id": "T1498",
-      "count": 2
-    },
-    {
       "id": "T1518.001",
       "count": 2
     },
@@ -319,15 +313,15 @@
       "count": 2
     },
     {
-      "id": "T1558.003",
-      "count": 2
-    },
-    {
       "id": "T1566",
       "count": 2
     },
     {
       "id": "T1566.001",
+      "count": 2
+    },
+    {
+      "id": "T1566.004",
       "count": 2
     },
     {
@@ -339,23 +333,11 @@
       "count": 2
     },
     {
-      "id": "T1570",
-      "count": 2
-    },
-    {
       "id": "T1573.002",
       "count": 2
     },
     {
-      "id": "T1587.001",
-      "count": 2
-    },
-    {
       "id": "T1595.002",
-      "count": 2
-    },
-    {
-      "id": "T1620",
       "count": 2
     },
     {
@@ -807,6 +789,10 @@
       "count": 1
     },
     {
+      "id": "T1498",
+      "count": 1
+    },
+    {
       "id": "T1505",
       "count": 1
     },
@@ -923,6 +909,10 @@
       "count": 1
     },
     {
+      "id": "T1558.003",
+      "count": 1
+    },
+    {
       "id": "T1559",
       "count": 1
     },
@@ -968,6 +958,10 @@
     },
     {
       "id": "T1569.002",
+      "count": 1
+    },
+    {
+      "id": "T1570",
       "count": 1
     },
     {
@@ -1024,6 +1018,10 @@
     },
     {
       "id": "T1587",
+      "count": 1
+    },
+    {
+      "id": "T1587.001",
       "count": 1
     },
     {
@@ -1120,6 +1118,10 @@
     },
     {
       "id": "T1619",
+      "count": 1
+    },
+    {
+      "id": "T1620",
       "count": 1
     },
     {
@@ -1506,5 +1508,5 @@
     "698ff8977a18d9c466c65698cb5986b92d62c05b"
   ],
   "conflicts": [],
-  "evidence_count": 6
+  "evidence_count": 8
 }

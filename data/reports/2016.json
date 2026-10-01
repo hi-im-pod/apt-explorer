@@ -10802,7 +10802,9 @@
     "url": "https://unit42.paloaltonetworks.com/the-oilrig-campaign-attacks-on-saudi-arabian-organizations-deliver-helminth-backdoor/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/562c238f0de8971bf762f60c4b33d6b3273d80f9.pdf",
-    "actors": [],
+    "actors": [
+      "G0049"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13593,7 +13595,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/30385c5bbf3c93dc7771e486b9bc8ed5e2674f98.pdf",
     "actors": [
-      "apt6"
+      "G0027"
     ],
     "actor_names_unresolved": [],
     "cves": [],

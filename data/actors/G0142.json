@@ -108,6 +108,14 @@
   },
   "malware": [
     {
+      "name": "Hornbill",
+      "source": "attack"
+    },
+    {
+      "name": "Sunbird",
+      "source": "attack"
+    },
+    {
       "name": "WarzoneRAT",
       "source": "attack"
     }
@@ -179,11 +187,12 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 1
+      "count": 2
     }
   ],
   "reports": [
     "71115e8a2d8a4945ef3d59d68218faaa13f604ab",
+    "c2273eba6ef71613e99154a831f18fca5f7b5326",
     "8aa09365daf1885aba46f3f46d07582ae06754d9",
     "99f2020eac7ef80a3e840e280c5b307fc741494c",
     "4b91d90ea50514d038257a729599bddfa7a16bbb",

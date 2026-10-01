@@ -4709,15 +4709,33 @@
       "T1125",
       "T1140",
       "T1195.002",
+      "T1406",
+      "T1407",
+      "T1420",
+      "T1422",
+      "T1426",
+      "T1429",
+      "T1430",
+      "T1437.001",
+      "T1474.003",
       "T1480.001",
+      "T1481.002",
       "T1497",
+      "T1513",
+      "T1532",
+      "T1533",
+      "T1541",
       "T1555",
       "T1560",
       "T1567.002",
       "T1584.004",
       "T1585.003",
       "T1587.001",
-      "T1608.001"
+      "T1608.001",
+      "T1636.002",
+      "T1636.003",
+      "T1636.004",
+      "T1646"
     ],
     "sources": [
       "orkl"
@@ -5770,7 +5788,15 @@
     ],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1417.001",
+      "T1418",
+      "T1437",
+      "T1541",
+      "T1575",
+      "T1646",
+      "T1660"
+    ],
     "sources": [
       "orkl"
     ]
@@ -6953,10 +6979,31 @@
     "url": "https://www.welivesecurity.com/en/eset-research/vajraspy-patchwork-espionage-apps/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b36d2f14704d33920e77dc0a8488401a9ab9517b.pdf",
-    "actors": [],
+    "actors": [
+      "G0040"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1398",
+      "T1417.001",
+      "T1418",
+      "T1420",
+      "T1422",
+      "T1426",
+      "T1429",
+      "T1430",
+      "T1437.001",
+      "T1481.003",
+      "T1512",
+      "T1517",
+      "T1533",
+      "T1636.002",
+      "T1636.003",
+      "T1636.004",
+      "T1641",
+      "T1646"
+    ],
     "sources": [
       "orkl"
     ]
@@ -7716,7 +7763,24 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1398",
+      "T1406",
+      "T1417.001",
+      "T1418",
+      "T1420",
+      "T1426",
+      "T1429",
+      "T1512",
+      "T1532",
+      "T1541",
+      "T1616",
+      "T1636.002",
+      "T1636.003",
+      "T1636.004",
+      "T1646",
+      "T1655.001"
+    ],
     "sources": [
       "orkl"
     ]
@@ -8430,7 +8494,37 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1406.002",
+      "T1414",
+      "T1417.001",
+      "T1417.002",
+      "T1418",
+      "T1421",
+      "T1422",
+      "T1426",
+      "T1429",
+      "T1430",
+      "T1453",
+      "T1481.002",
+      "T1512",
+      "T1513",
+      "T1516",
+      "T1517",
+      "T1533",
+      "T1582",
+      "T1616",
+      "T1624.001",
+      "T1626.001",
+      "T1629.002",
+      "T1636.002",
+      "T1636.003",
+      "T1636.004",
+      "T1637",
+      "T1646",
+      "T1655.001",
+      "T1660"
+    ],
     "sources": [
       "orkl"
     ]
@@ -15894,7 +15988,15 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1406",
+      "T1417",
+      "T1420",
+      "T1426",
+      "T1513",
+      "T1533",
+      "T1646"
+    ],
     "sources": [
       "orkl"
     ]
@@ -20569,6 +20671,7 @@
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
+      "T0817",
       "T1027",
       "T1055.012",
       "T1059.001",
@@ -21545,6 +21648,10 @@
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
+      "T0814",
+      "T0868",
+      "T0869",
+      "T0888",
       "T1021",
       "T1046",
       "T1047",
@@ -21552,6 +21659,7 @@
       "T1078",
       "T1105",
       "T1110",
+      "T1544",
       "T1552.001",
       "T1573"
     ],
@@ -21622,7 +21730,13 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T0869",
+      "T1406",
+      "T1430",
+      "T1532",
+      "T1636.003"
+    ],
     "sources": [
       "orkl"
     ]
@@ -28403,7 +28517,9 @@
     "url": "https://www.securityweek.com/five-threat-groups-target-industrial-systems-dragos",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3079b744130de3a5d00695c945cce48ac81032b2.pdf",
-    "actors": [],
+    "actors": [
+      "G0032"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -29312,7 +29428,9 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1437"
+    ],
     "sources": [
       "orkl"
     ]
@@ -34075,7 +34193,9 @@
     "url": "https://www.cyberscoop.com/xenotime-ics-cyber-attacks-trisis-dragos/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3ecebfdeffc9e54793c55652ad64ff6afc68081f.pdf",
-    "actors": [],
+    "actors": [
+      "G0088"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -34191,7 +34311,8 @@
       "T1204",
       "T1539",
       "T1560",
-      "T1567"
+      "T1567",
+      "T1660"
     ],
     "sources": [
       "orkl"
@@ -36045,7 +36166,30 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1406",
+      "T1414",
+      "T1417",
+      "T1422",
+      "T1429",
+      "T1430",
+      "T1512",
+      "T1513",
+      "T1516",
+      "T1517",
+      "T1541",
+      "T1582",
+      "T1616",
+      "T1624.001",
+      "T1626.001",
+      "T1628",
+      "T1628.002",
+      "T1629",
+      "T1633",
+      "T1636",
+      "T1646",
+      "T1660"
+    ],
     "sources": [
       "orkl"
     ]
@@ -37163,10 +37307,26 @@
     "url": "https://www.cyfirma.com/outofband/apt-bahamut-attacks-indian-intelligence-operative-using-android-malware/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/485371cb373a505eff108375fb9f2744deb36e80.pdf",
-    "actors": [],
+    "actors": [
+      "G0112"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1398",
+      "T1417.001",
+      "T1418",
+      "T1420",
+      "T1426",
+      "T1429",
+      "T1430",
+      "T1437",
+      "T1512",
+      "T1636.002",
+      "T1636.003",
+      "T1636.004",
+      "T1646"
+    ],
     "sources": [
       "orkl"
     ]
@@ -44458,7 +44618,13 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1406",
+      "T1409",
+      "T1417",
+      "T1418",
+      "T1517"
+    ],
     "sources": [
       "orkl"
     ]
@@ -45238,6 +45404,7 @@
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
+      "T0869",
       "T1007",
       "T1012",
       "T1033",
@@ -45533,7 +45700,20 @@
     ],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1418",
+      "T1420",
+      "T1426",
+      "T1429",
+      "T1437",
+      "T1512",
+      "T1513",
+      "T1517",
+      "T1532",
+      "T1533",
+      "T1544",
+      "T1575"
+    ],
     "sources": [
       "orkl"
     ]
@@ -47287,6 +47467,7 @@
       "T1106",
       "T1119",
       "T1218.003",
+      "T1406.002",
       "T1485",
       "T1489",
       "T1490",
@@ -49593,7 +49774,9 @@
     "url": "https://cloud.google.com/blog/topics/threat-intelligence/russia-targeting-signal-messenger",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6dafa509fd5d2c83cd3a79a73e2ae8d499983db8.pdf",
-    "actors": [],
+    "actors": [
+      "G0034"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -54464,7 +54647,18 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1417.001",
+      "T1418",
+      "T1426",
+      "T1481.001",
+      "T1516",
+      "T1575",
+      "T1603",
+      "T1646",
+      "T1655.001",
+      "T1660"
+    ],
     "sources": [
       "orkl"
     ]
@@ -60507,6 +60701,8 @@
       "T1591.002",
       "T1591.004",
       "T1592",
+      "T1627",
+      "T1627.001",
       "T1659",
       "T1665"
     ],
@@ -61969,7 +62165,9 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1575"
+    ],
     "sources": [
       "orkl"
     ]
@@ -64739,7 +64937,11 @@
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
-      "T1567"
+      "T1418",
+      "T1426",
+      "T1513",
+      "T1567",
+      "T1616"
     ],
     "sources": [
       "orkl"
@@ -64998,6 +65200,9 @@
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
+      "T0807",
+      "T0809",
+      "T0831",
       "T1140"
     ],
     "sources": [
@@ -71624,7 +71829,9 @@
     "url": "https://www.us-cert.gov/ics/advisories/ICSA-11-094-02B",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a9721a5d156b7750de34f1869c424ca0ea58dd77.pdf",
-    "actors": [],
+    "actors": [
+      "G0034"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2011-4041"
@@ -73395,7 +73602,9 @@
     "url": "https://www.us-cert.gov/ics/alerts/ICS-ALERT-14-281-01B",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/add962e0d20dcb97657f52750d13c42dbd884fb4.pdf",
-    "actors": [],
+    "actors": [
+      "G0034"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2014-0751",
@@ -76460,7 +76669,11 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1513",
+      "T1575",
+      "T1616"
+    ],
     "sources": [
       "orkl"
     ]
@@ -77229,7 +77442,15 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1418",
+      "T1429",
+      "T1430",
+      "T1437",
+      "T1512",
+      "T1513",
+      "T1541"
+    ],
     "sources": [
       "orkl"
     ]
@@ -80940,6 +81161,7 @@
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
+      "T0886",
       "T1046",
       "T1078.002",
       "T1486",
@@ -81570,7 +81792,9 @@
     "url": "https://www.lookout.com/blog/lookout-discovers-novel-confucius-apt-android-spyware-linked-to-india-pakistan-conflict",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c2273eba6ef71613e99154a831f18fca5f7b5326.pdf",
-    "actors": [],
+    "actors": [
+      "G0142"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -81956,6 +82180,7 @@
       "T1119",
       "T1140",
       "T1218.011",
+      "T1426",
       "T1518",
       "T1560",
       "T1566.001",
@@ -82497,7 +82722,12 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1418",
+      "T1426",
+      "T1437",
+      "T1533"
+    ],
     "sources": [
       "orkl"
     ]
@@ -83777,7 +84007,14 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T0869",
+      "T1430",
+      "T1521.002",
+      "T1532",
+      "T1636.002",
+      "T1636.004"
+    ],
     "sources": [
       "orkl"
     ]
@@ -85190,7 +85427,9 @@
     "url": "https://web.archive.org/web/20231208015605/https:/news.sophos.com/en-us/2021/11/23/android-apt-spyware-targeting-middle-east-victims-improves-its-capabilities/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ccb964a7fb791d229effd3d7eb28a107e1a0cf5f.pdf",
-    "actors": [],
+    "actors": [
+      "G1028"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -85784,6 +86023,7 @@
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
+      "T0846",
       "T1021",
       "T1021.001",
       "T1021.004",
@@ -88821,7 +89061,21 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1406.002",
+      "T1417.001",
+      "T1418",
+      "T1426",
+      "T1481.001",
+      "T1516",
+      "T1603",
+      "T1617",
+      "T1631",
+      "T1646",
+      "T1655.001",
+      "T1660",
+      "T1670"
+    ],
     "sources": [
       "orkl"
     ]
@@ -89515,7 +89769,17 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1406",
+      "T1418",
+      "T1421",
+      "T1422",
+      "T1424",
+      "T1426",
+      "T1429",
+      "T1430",
+      "T1517"
+    ],
     "sources": [
       "orkl"
     ]
@@ -90784,6 +91048,7 @@
       "T1098.004",
       "T1136",
       "T1136.001",
+      "T1453",
       "T1543.002",
       "T1546.004",
       "T1547.013",
@@ -92579,7 +92844,12 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1624.001",
+      "T1630.001",
+      "T1655.001",
+      "T1660"
+    ],
     "sources": [
       "orkl"
     ]
@@ -93747,6 +94017,13 @@
     "cves": [],
     "techniques": [
       "T1071",
+      "T1406",
+      "T1418",
+      "T1421",
+      "T1424",
+      "T1426",
+      "T1429",
+      "T1430",
       "T1571",
       "T1573"
     ],
@@ -94272,7 +94549,19 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1418",
+      "T1422",
+      "T1426",
+      "T1430",
+      "T1437.001",
+      "T1509",
+      "T1533",
+      "T1636.002",
+      "T1636.003",
+      "T1638",
+      "T1646"
+    ],
     "sources": [
       "orkl"
     ]
@@ -96986,7 +97275,31 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1398",
+      "T1406",
+      "T1407",
+      "T1414",
+      "T1417.001",
+      "T1418",
+      "T1418.001",
+      "T1420",
+      "T1422",
+      "T1426",
+      "T1429",
+      "T1430",
+      "T1481.003",
+      "T1512",
+      "T1517",
+      "T1532",
+      "T1533",
+      "T1624.001",
+      "T1636.002",
+      "T1636.003",
+      "T1636.004",
+      "T1646",
+      "T1660"
+    ],
     "sources": [
       "orkl"
     ]
@@ -98674,7 +98987,9 @@
     "url": "https://www.us-cert.gov/ncas/alerts/TA17-293A",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f3426320cabc355f756fd039f450b88f535b5e6f.pdf",
-    "actors": [],
+    "actors": [
+      "G1000"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -99815,7 +100130,9 @@
     "url": "https://web.archive.org/web/20240226125457/https:/research.checkpoint.com/2020/hamas-android-malware-on-idf-soldiers-this-is-how-it-happened/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f65d3ec4fde46a7c0f6d437b27bf223ce32dc246.pdf",
-    "actors": [],
+    "actors": [
+      "G1028"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -102410,7 +102727,8 @@
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
-      "T1027.002"
+      "T1027.002",
+      "T1406.002"
     ],
     "sources": [
       "orkl"
@@ -105195,7 +105513,9 @@
     ],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T0835"
+    ],
     "sources": [
       "orkl"
     ]
@@ -105267,7 +105587,8 @@
       "T1602",
       "T1620",
       "T1621",
-      "T1622"
+      "T1622",
+      "T1628"
     ],
     "sources": [
       "orkl"
@@ -105580,7 +105901,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1f4c31af34263573f191262457eb99bc5edd690e.pdf",
     "actors": [
-      "G0011"
+      "G0098"
     ],
     "actor_names_unresolved": [],
     "cves": [],
@@ -106650,6 +106971,20 @@
       "CVE-2024-2617"
     ],
     "techniques": [
+      "T0807",
+      "T0809",
+      "T0816",
+      "T0822",
+      "T0823",
+      "T0827",
+      "T0829",
+      "T0840",
+      "T0846",
+      "T0852",
+      "T0859",
+      "T0886",
+      "T0888",
+      "T0892",
       "T1003",
       "T1016",
       "T1018",
@@ -106865,7 +107200,14 @@
       "T1059.001",
       "T1071.001",
       "T1082",
-      "T1132.001"
+      "T1132.001",
+      "T1398",
+      "T1426",
+      "T1437.001",
+      "T1533",
+      "T1541",
+      "T1636.003",
+      "T1646"
     ],
     "sources": [
       "orkl"
@@ -107830,7 +108172,8 @@
       "T1566",
       "T1566.002",
       "T1589",
-      "T1598"
+      "T1598",
+      "T1660"
     ],
     "sources": [
       "orkl"

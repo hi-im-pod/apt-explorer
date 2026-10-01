@@ -1,7 +1,16 @@
 {
   "id": "domestic-kitten",
-  "name": "Domestic Kitten",
+  "name": "Bouncing Golf",
   "aliases": [
+    {
+      "value": "Bouncing Golf",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia"
+      ]
+    },
     {
       "value": "Domestic Kitten",
       "sources": [
@@ -12,14 +21,6 @@
     },
     {
       "value": "APT-C-50",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Bouncing Golf",
       "sources": [
         "misp",
         "etda",
@@ -87,11 +88,17 @@
   },
   "malware": [
     {
+      "name": "GolfSpy",
+      "source": "attack"
+    },
+    {
       "name": "FurBall",
       "source": "malpedia"
     }
   ],
-  "techniques_documented": [],
+  "techniques_documented": [
+    "T1655.001"
+  ],
   "techniques_reported": [],
   "cves": [],
   "timeline": [
@@ -128,5 +135,5 @@
     "9e10c53bcb169107a22b8eef9ea6162a753ce736"
   ],
   "conflicts": [],
-  "evidence_count": 6
+  "evidence_count": 7
 }

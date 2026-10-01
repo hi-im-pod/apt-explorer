@@ -7,7 +7,8 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -16,7 +17,8 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -25,7 +27,8 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -33,7 +36,8 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -123,6 +127,12 @@
       "sources": [
         "etda"
       ]
+    },
+    {
+      "value": "REFINED KITTEN",
+      "sources": [
+        "microsoft"
+      ]
     }
   ],
   "origin": [
@@ -137,6 +147,10 @@
     {
       "value": "IR",
       "source": "malpedia"
+    },
+    {
+      "value": "IR",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -359,6 +373,9 @@
     }
   ],
   "techniques_documented": [
+    "T0852",
+    "T0853",
+    "T0865",
     "T1003.001",
     "T1003.004",
     "T1003.005",
@@ -394,11 +411,11 @@
   "techniques_reported": [
     {
       "id": "T1059.001",
-      "count": 8
+      "count": 7
     },
     {
       "id": "T1204.002",
-      "count": 6
+      "count": 5
     },
     {
       "id": "T1566.001",
@@ -414,10 +431,6 @@
     },
     {
       "id": "T1041",
-      "count": 4
-    },
-    {
-      "id": "T1071.001",
       "count": 4
     },
     {
@@ -446,6 +459,10 @@
     },
     {
       "id": "T1055.002",
+      "count": 3
+    },
+    {
+      "id": "T1071.001",
       "count": 3
     },
     {
@@ -553,10 +570,6 @@
       "count": 1
     },
     {
-      "id": "T1027.013",
-      "count": 1
-    },
-    {
       "id": "T1036.005",
       "count": 1
     },
@@ -633,10 +646,6 @@
       "count": 1
     },
     {
-      "id": "T1497",
-      "count": 1
-    },
-    {
       "id": "T1497.003",
       "count": 1
     },
@@ -678,10 +687,6 @@
     },
     {
       "id": "T1564.001",
-      "count": 1
-    },
-    {
-      "id": "T1566",
       "count": 1
     },
     {
@@ -1517,5 +1522,5 @@
     "0825c023ddbc93c1a00d1fa0cc4525da247d0640"
   ],
   "conflicts": [],
-  "evidence_count": 25
+  "evidence_count": 30
 }

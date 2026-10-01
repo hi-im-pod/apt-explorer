@@ -5,187 +5,40 @@
     {
       "value": "Saint Bear",
       "sources": [
-        "attack",
-        "misp",
-        "malpedia"
+        "attack"
       ]
     },
     {
       "value": "Storm-0587",
       "sources": [
-        "attack",
-        "misp",
-        "etda",
-        "malpedia"
+        "attack"
       ]
     },
     {
       "value": "TA471",
       "sources": [
-        "attack",
-        "misp",
-        "etda",
-        "malpedia"
+        "attack"
       ]
     },
     {
       "value": "UAC-0056",
       "sources": [
-        "attack",
-        "misp",
-        "etda",
-        "malpedia"
+        "attack"
       ]
     },
     {
       "value": "Lorec53",
       "sources": [
-        "attack",
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "SaintBear",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "UNC2589",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Nodaria",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "FROZENVISTA",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Nascent Ursa",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "DEV-0587",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "EMBER BEAR",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Lorec Bear",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Bleeding Bear",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Cadet Blizzard",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Ember Bear",
-      "sources": [
-        "etda"
+        "attack"
       ]
     }
   ],
-  "origin": [
-    {
-      "value": "RU",
-      "source": "misp"
-    },
-    {
-      "value": "RU",
-      "source": "etda"
-    },
-    {
-      "value": "RU",
-      "source": "malpedia"
-    }
-  ],
+  "origin": [],
   "sponsor": [],
-  "motivation": [
-    {
-      "value": "Information theft and espionage",
-      "source": "etda"
-    }
-  ],
+  "motivation": [],
   "claimed_targets": {
-    "countries": [
-      {
-        "value": "Georgia",
-        "source": "etda"
-      },
-      {
-        "value": "Ukraine",
-        "source": "etda"
-      },
-      {
-        "value": "United States",
-        "source": "etda"
-      }
-    ],
-    "sectors": [
-      {
-        "value": "Energy",
-        "source": "etda"
-      },
-      {
-        "value": "Financial",
-        "source": "etda"
-      },
-      {
-        "value": "Government",
-        "source": "etda"
-      },
-      {
-        "value": "Media",
-        "source": "etda"
-      },
-      {
-        "value": "Transportation",
-        "source": "etda"
-      }
-    ]
+    "countries": [],
+    "sectors": []
   },
   "malware": [
     {
@@ -195,10 +48,6 @@
     {
       "name": "Saint Bot",
       "source": "attack"
-    },
-    {
-      "name": "Graphiron",
-      "source": "malpedia"
     }
   ],
   "techniques_documented": [
@@ -256,7 +105,7 @@
     },
     {
       "quarter": "2023-Q1",
-      "count": 2
+      "count": 1
     },
     {
       "quarter": "2023-Q2",
@@ -265,12 +114,11 @@
   ],
   "reports": [
     "effd076232525b4f6636ad2f68fc6dcf91b9e381",
-    "232cfeb4ee7a1e9aae111eebb5574dcc970e0d9b",
     "81ddba4dbf75eebdced9d95bf116f9d1fbce0094",
     "2dcf8a821046d08371dfd07bf2812c8c681d6b68",
     "4622da4f28cb5b28c61aaebc8eaa43ed4bfd45e2",
     "d883d94dd0cc7257751177e42a32bd5a85796b03"
   ],
   "conflicts": [],
-  "evidence_count": 18
+  "evidence_count": 0
 }

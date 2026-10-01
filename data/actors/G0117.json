@@ -12,16 +12,17 @@
       ]
     },
     {
-      "value": "UNC757",
+      "value": "Lemon Sandstorm",
       "sources": [
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
-      "value": "Lemon Sandstorm",
+      "value": "UNC757",
       "sources": [
         "attack",
         "misp",
@@ -34,7 +35,16 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "PIONEER KITTEN",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -49,13 +59,6 @@
       "sources": [
         "attack",
         "etda"
-      ]
-    },
-    {
-      "value": "PIONEER KITTEN",
-      "sources": [
-        "misp",
-        "malpedia"
       ]
     },
     {
@@ -96,6 +99,10 @@
     {
       "value": "IR",
       "source": "malpedia"
+    },
+    {
+      "value": "IR",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -455,5 +462,5 @@
     "73b5e3e155f9690b5a1c231760d78e2471cc9af4"
   ],
   "conflicts": [],
-  "evidence_count": 18
+  "evidence_count": 21
 }

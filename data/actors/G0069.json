@@ -8,7 +8,37 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "TEMP.Zagros",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Mango Sandstorm",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "MERCURY",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -30,24 +60,6 @@
       ]
     },
     {
-      "value": "TEMP.Zagros",
-      "sources": [
-        "attack",
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Mango Sandstorm",
-      "sources": [
-        "attack",
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
       "value": "TA450",
       "sources": [
         "attack",
@@ -58,14 +70,6 @@
     },
     {
       "value": "Earth Vetala",
-      "sources": [
-        "attack",
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "MERCURY",
       "sources": [
         "attack",
         "misp",
@@ -149,6 +153,18 @@
       "sources": [
         "etda"
       ]
+    },
+    {
+      "value": "STATIC KITTEN",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "SeedWorm",
+      "sources": [
+        "microsoft"
+      ]
     }
   ],
   "origin": [
@@ -163,6 +179,10 @@
     {
       "value": "IR",
       "source": "malpedia"
+    },
+    {
+      "value": "IR",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -385,6 +405,10 @@
     },
     {
       "name": "CrackMapExec",
+      "source": "attack"
+    },
+    {
+      "name": "DCHSpy",
       "source": "attack"
     },
     {
@@ -630,6 +654,10 @@
     {
       "id": "T1620",
       "count": 2
+    },
+    {
+      "id": "T0835",
+      "count": 1
     },
     {
       "id": "T1001",
@@ -1240,5 +1268,5 @@
     "ae77ae44f928145c03c6e57eba130b647209b380"
   ],
   "conflicts": [],
-  "evidence_count": 33
+  "evidence_count": 39
 }

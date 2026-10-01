@@ -10,25 +10,27 @@
       ]
     },
     {
-      "value": "Quedagh",
-      "sources": [
-        "attack",
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
       "value": "IRIDIUM",
       "sources": [
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
       "value": "Seashell Blizzard",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Quedagh",
       "sources": [
         "attack",
         "misp",
@@ -43,6 +45,42 @@
         "misp",
         "etda",
         "malpedia"
+      ]
+    },
+    {
+      "value": "APT44",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Sandworm",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "UAC-0113",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Blue Echidna",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -62,22 +100,6 @@
       ]
     },
     {
-      "value": "APT44",
-      "sources": [
-        "attack",
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Sandworm",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
       "value": "TEMP.Noble",
       "sources": [
         "misp",
@@ -86,23 +108,15 @@
       ]
     },
     {
+      "value": "BE2",
+      "sources": [
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
       "value": "UAC-0082",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "UAC-0113",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Blue Echidna",
       "sources": [
         "misp",
         "etda",
@@ -118,6 +132,14 @@
       ]
     },
     {
+      "value": "VOODOO BEAR",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
       "value": "Voodoo Bear",
       "sources": [
         "attack",
@@ -125,17 +147,17 @@
       ]
     },
     {
-      "value": "BE2",
+      "value": "PHANTOM",
       "sources": [
-        "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
-      "value": "VOODOO BEAR",
+      "value": "BlackEnergy Lite",
       "sources": [
-        "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -219,15 +241,81 @@
       ]
     },
     {
-      "value": "PHANTOM",
+      "value": "Energetic Bear",
       "sources": [
-        "malpedia"
+        "etda"
       ]
     },
     {
-      "value": "BlackEnergy Lite",
+      "value": "Dragonfly",
       "sources": [
-        "malpedia"
+        "etda"
+      ]
+    },
+    {
+      "value": "Crouching Yeti",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Group 24",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Koala Team",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Iron Liberty",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "TG-4192",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Electrum",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "ATK 6",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "ITG15",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Bromine",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Ghost Blizzard",
+      "sources": [
+        "etda"
+      ]
+    },
+    {
+      "value": "Blue Kraken",
+      "sources": [
+        "etda"
       ]
     }
   ],
@@ -255,6 +343,10 @@
     {
       "value": "RU",
       "source": "malpedia"
+    },
+    {
+      "value": "RU",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -485,6 +577,10 @@
       {
         "value": "Vietnam",
         "source": "etda"
+      },
+      {
+        "value": "Greece",
+        "source": "etda"
       }
     ],
     "sectors": [
@@ -529,6 +625,30 @@
         "source": "etda"
       },
       {
+        "value": "Aviation",
+        "source": "etda"
+      },
+      {
+        "value": "Construction",
+        "source": "etda"
+      },
+      {
+        "value": "Defense",
+        "source": "etda"
+      },
+      {
+        "value": "IT",
+        "source": "etda"
+      },
+      {
+        "value": "Manufacturing",
+        "source": "etda"
+      },
+      {
+        "value": "Pharmaceutical",
+        "source": "etda"
+      },
+      {
         "value": "Financial",
         "source": "etda"
       },
@@ -569,6 +689,10 @@
     },
     {
       "name": "BlackEnergy",
+      "source": "attack"
+    },
+    {
+      "name": "CHEMISTGAMES",
       "source": "attack"
     },
     {
@@ -725,6 +849,9 @@
     }
   ],
   "techniques_documented": [
+    "T0807",
+    "T0819",
+    "T0884",
     "T1003.001",
     "T1003.003",
     "T1005",
@@ -769,6 +896,7 @@
     "T1213.006",
     "T1218.011",
     "T1219",
+    "T1409",
     "T1485",
     "T1486",
     "T1489",
@@ -803,17 +931,11 @@
     "T1594",
     "T1595.002",
     "T1598.003",
-    "T1608.001"
+    "T1608.001",
+    "T1660",
+    "T1676"
   ],
   "techniques_reported": [
-    {
-      "id": "T1082",
-      "count": 4
-    },
-    {
-      "id": "T1005",
-      "count": 3
-    },
     {
       "id": "T1059.001",
       "count": 3
@@ -823,7 +945,11 @@
       "count": 3
     },
     {
-      "id": "T1027",
+      "id": "T1082",
+      "count": 3
+    },
+    {
+      "id": "T1005",
       "count": 2
     },
     {
@@ -835,19 +961,11 @@
       "count": 2
     },
     {
-      "id": "T1218",
-      "count": 2
-    },
-    {
       "id": "T1219",
       "count": 2
     },
     {
       "id": "T1555.003",
-      "count": 2
-    },
-    {
-      "id": "T1566",
       "count": 2
     },
     {
@@ -857,10 +975,6 @@
     {
       "id": "T1566.002",
       "count": 2
-    },
-    {
-      "id": "T1003",
-      "count": 1
     },
     {
       "id": "T1007",
@@ -883,6 +997,10 @@
       "count": 1
     },
     {
+      "id": "T1027",
+      "count": 1
+    },
+    {
       "id": "T1033",
       "count": 1
     },
@@ -895,19 +1013,11 @@
       "count": 1
     },
     {
-      "id": "T1055",
-      "count": 1
-    },
-    {
       "id": "T1056.001",
       "count": 1
     },
     {
       "id": "T1057",
-      "count": 1
-    },
-    {
-      "id": "T1059",
       "count": 1
     },
     {
@@ -923,14 +1033,6 @@
       "count": 1
     },
     {
-      "id": "T1071",
-      "count": 1
-    },
-    {
-      "id": "T1083",
-      "count": 1
-    },
-    {
       "id": "T1090.003",
       "count": 1
     },
@@ -940,10 +1042,6 @@
     },
     {
       "id": "T1113",
-      "count": 1
-    },
-    {
-      "id": "T1114",
       "count": 1
     },
     {
@@ -963,10 +1061,6 @@
       "count": 1
     },
     {
-      "id": "T1204",
-      "count": 1
-    },
-    {
       "id": "T1204.002",
       "count": 1
     },
@@ -983,6 +1077,10 @@
       "count": 1
     },
     {
+      "id": "T1218",
+      "count": 1
+    },
+    {
       "id": "T1218.007",
       "count": 1
     },
@@ -995,10 +1093,6 @@
       "count": 1
     },
     {
-      "id": "T1497",
-      "count": 1
-    },
-    {
       "id": "T1518.001",
       "count": 1
     },
@@ -1007,11 +1101,7 @@
       "count": 1
     },
     {
-      "id": "T1552",
-      "count": 1
-    },
-    {
-      "id": "T1552.002",
+      "id": "T1566",
       "count": 1
     },
     {
@@ -1072,6 +1162,11 @@
       "cve": "CVE-2010-3333",
       "kev": true,
       "ransomware": false
+    },
+    {
+      "cve": "CVE-2011-4041",
+      "kev": false,
+      "ransomware": null
     },
     {
       "cve": "CVE-2012-0158",
@@ -1499,7 +1594,7 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 13
+      "count": 16
     },
     {
       "quarter": "2026-Q3",
@@ -1514,9 +1609,12 @@
     "1ba49d11e3564e352356e2e732822fd6b909ca34",
     "2edb15bace7713c4bc00e72bc9af44f61d0e4991",
     "4eea9fb2ebb3f0422c23aca3fd31ced4206bd00e",
+    "6dafa509fd5d2c83cd3a79a73e2ae8d499983db8",
     "7536dff22fdcc49216f41052a3e7457349d86d20",
     "89cb14e7a461f50795ba36556ae6b810fdf0340b",
     "96f850f203e3968233d7811abffdda7811bae635",
+    "a9721a5d156b7750de34f1869c424ca0ea58dd77",
+    "add962e0d20dcb97657f52750d13c42dbd884fb4",
     "b9c4dfe07661a3d571925d873103fc1d091feb10",
     "c5145a4d713500abfaf5c9ccad27e03a846d91ba",
     "d9b5942d25e92a654ed74ad3bb841c8a5755ae00",
@@ -1721,5 +1819,5 @@
     "91425b85971a490e4cb1bb64446cb19509cb6cdd"
   ],
   "conflicts": [],
-  "evidence_count": 52
+  "evidence_count": 65
 }

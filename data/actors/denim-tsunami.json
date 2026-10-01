@@ -6,7 +6,8 @@
       "value": "Denim Tsunami",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -22,6 +23,12 @@
         "misp",
         "malpedia"
       ]
+    },
+    {
+      "value": "DEV-0291",
+      "sources": [
+        "microsoft"
+      ]
     }
   ],
   "origin": [
@@ -32,6 +39,10 @@
     {
       "value": "AT",
       "source": "malpedia"
+    },
+    {
+      "value": "AT",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -98,5 +109,5 @@
     "c4e4713cc565871b4913264a59885b79c52f911c"
   ],
   "conflicts": [],
-  "evidence_count": 3
+  "evidence_count": 4
 }

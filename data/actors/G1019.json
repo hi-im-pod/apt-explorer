@@ -8,7 +8,14 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Storm-1125",
+      "sources": [
+        "microsoft"
       ]
     }
   ],
@@ -24,6 +31,10 @@
     {
       "value": "BY",
       "source": "malpedia"
+    },
+    {
+      "value": "BY",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -73,6 +84,7 @@
     "T1074.002",
     "T1090",
     "T1113",
+    "T1655.001",
     "T1659"
   ],
   "techniques_reported": [],
@@ -99,5 +111,5 @@
     "f0f6021f6a10f761bcd6f5b027cb2e345fa3d273"
   ],
   "conflicts": [],
-  "evidence_count": 3
+  "evidence_count": 4
 }

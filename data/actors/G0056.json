@@ -7,7 +7,8 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -16,7 +17,8 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -28,15 +30,22 @@
       ]
     },
     {
+      "value": "Magenta Dust",
+      "sources": [
+        "etda",
+        "microsoft"
+      ]
+    },
+    {
       "value": "Promethium",
       "sources": [
         "etda"
       ]
     },
     {
-      "value": "Magenta Dust",
+      "value": "SmallPity",
       "sources": [
-        "etda"
+        "microsoft"
       ]
     }
   ],
@@ -52,6 +61,10 @@
     {
       "value": "TR",
       "source": "malpedia"
+    },
+    {
+      "value": "TR",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -497,5 +510,5 @@
     "f4c3883bdb12af3225b3b57f2d8352cb37586312"
   ],
   "conflicts": [],
-  "evidence_count": 10
+  "evidence_count": 13
 }

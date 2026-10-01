@@ -6,21 +6,30 @@
       "value": "Storm-0062",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
       "value": "Oro0lxy",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
       "value": "DarkShadow",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Shadow Typhoon",
+      "sources": [
+        "microsoft"
       ]
     }
   ],
@@ -32,6 +41,10 @@
     {
       "value": "CN",
       "source": "malpedia"
+    },
+    {
+      "value": "CN",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -47,5 +60,5 @@
   "timeline": [],
   "reports": [],
   "conflicts": [],
-  "evidence_count": 3
+  "evidence_count": 6
 }

@@ -6,14 +6,24 @@
       "value": "Wisteria Tsunami",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
       "value": "DEV-0605",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "MintedSoil",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -22,16 +32,14 @@
         "misp",
         "malpedia"
       ]
-    },
-    {
-      "value": "MintedSoil",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
     }
   ],
-  "origin": [],
+  "origin": [
+    {
+      "value": "IN",
+      "source": "microsoft"
+    }
+  ],
   "sponsor": [],
   "motivation": [],
   "claimed_targets": {
@@ -45,5 +53,5 @@
   "timeline": [],
   "reports": [],
   "conflicts": [],
-  "evidence_count": 4
+  "evidence_count": 7
 }

@@ -1,0 +1,68 @@
+{
+  "id": "hazel-sandstorm",
+  "name": "Hazel Sandstorm",
+  "aliases": [
+    {
+      "value": "Hazel Sandstorm",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "EUROPIUM",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "HELIX KITTEN",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "COBALT GYPSY",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Crambus",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "OilRig",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "APT34",
+      "sources": [
+        "microsoft"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "value": "IR",
+      "source": "microsoft"
+    }
+  ],
+  "sponsor": [],
+  "motivation": [],
+  "claimed_targets": {
+    "countries": [],
+    "sectors": []
+  },
+  "malware": [],
+  "techniques_documented": [],
+  "techniques_reported": [],
+  "cves": [],
+  "timeline": [],
+  "reports": [],
+  "conflicts": [],
+  "evidence_count": 0
+}

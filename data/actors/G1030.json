@@ -8,7 +8,8 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -17,7 +18,8 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -26,7 +28,18 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "BlackShadow",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -39,12 +52,18 @@
       ]
     },
     {
-      "value": "BlackShadow",
+      "value": "SPECTRAL KITTEN",
       "sources": [
-        "attack",
         "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "SharpBoys",
+      "sources": [
         "etda",
-        "malpedia"
+        "microsoft"
       ]
     },
     {
@@ -69,20 +88,7 @@
       ]
     },
     {
-      "value": "SPECTRAL KITTEN",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
       "value": "DEV-0227",
-      "sources": [
-        "etda"
-      ]
-    },
-    {
-      "value": "SharpBoys",
       "sources": [
         "etda"
       ]
@@ -91,6 +97,24 @@
       "value": "Spectral Kitten",
       "sources": [
         "etda"
+      ]
+    },
+    {
+      "value": "Deadwood",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "FireAnt",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Justice Blade",
+      "sources": [
+        "microsoft"
       ]
     }
   ],
@@ -106,6 +130,10 @@
     {
       "value": "IR",
       "source": "malpedia"
+    },
+    {
+      "value": "IR",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -247,5 +275,5 @@
     "8f99e28d978b22cfe04a25286d94b10b5b89a9fc"
   ],
   "conflicts": [],
-  "evidence_count": 19
+  "evidence_count": 25
 }

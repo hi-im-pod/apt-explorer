@@ -6,7 +6,8 @@
       "value": "Carmine Tsunami",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -47,5 +48,5 @@
   "timeline": [],
   "reports": [],
   "conflicts": [],
-  "evidence_count": 3
+  "evidence_count": 4
 }

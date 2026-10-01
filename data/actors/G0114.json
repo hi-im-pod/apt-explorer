@@ -18,6 +18,20 @@
       ]
     },
     {
+      "value": "THORIUM",
+      "sources": [
+        "etda",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Tumbleweed Typhoon",
+      "sources": [
+        "etda",
+        "microsoft"
+      ]
+    },
+    {
       "value": "BRONZE VAPOR",
       "sources": [
         "misp",
@@ -31,21 +45,15 @@
       ]
     },
     {
-      "value": "THORIUM",
-      "sources": [
-        "etda"
-      ]
-    },
-    {
-      "value": "Tumbleweed Typhoon",
-      "sources": [
-        "etda"
-      ]
-    },
-    {
       "value": "Nuclear Taurus",
       "sources": [
         "etda"
+      ]
+    },
+    {
+      "value": "Karst",
+      "sources": [
+        "microsoft"
       ]
     }
   ],
@@ -61,6 +69,10 @@
     {
       "value": "CN",
       "source": "malpedia"
+    },
+    {
+      "value": "CN",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -499,5 +511,5 @@
     "6a5077e6dac44c1ba63d36b7562496996f56032a"
   ],
   "conflicts": [],
-  "evidence_count": 5
+  "evidence_count": 7
 }

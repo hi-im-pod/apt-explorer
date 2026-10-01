@@ -14586,8 +14586,7 @@
       "G0010",
       "G0027",
       "G0049",
-      "G1033",
-      "unc215"
+      "G1033"
     ],
     "actor_names_unresolved": [],
     "cves": [
@@ -16592,7 +16591,9 @@
     "url": "https://dragos.com/wp-content/uploads/Dragos-Oil-and-Gas-Threat-Perspective-2019.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/82628c0f0782627fc5bfee9a1c9de51324243bdf.pdf",
-    "actors": [],
+    "actors": [
+      "G0088"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2019-0708"
@@ -27203,8 +27204,7 @@
       "G0010",
       "G0027",
       "G0049",
-      "G1033",
-      "unc215"
+      "G1033"
     ],
     "actor_names_unresolved": [],
     "cves": [],

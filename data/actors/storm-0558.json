@@ -7,13 +7,15 @@
       "sources": [
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
       "value": "Antique Typhoon",
       "sources": [
-        "etda"
+        "etda",
+        "microsoft"
       ]
     }
   ],
@@ -29,6 +31,10 @@
     {
       "value": "CN",
       "source": "malpedia"
+    },
+    {
+      "value": "CN",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -75,5 +81,5 @@
   "timeline": [],
   "reports": [],
   "conflicts": [],
-  "evidence_count": 2
+  "evidence_count": 4
 }

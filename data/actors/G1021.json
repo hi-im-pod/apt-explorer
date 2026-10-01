@@ -8,7 +8,8 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -17,7 +18,8 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -48,7 +50,8 @@
       "value": "HighGround",
       "sources": [
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -76,6 +79,10 @@
     {
       "value": "CN",
       "source": "malpedia"
+    },
+    {
+      "value": "CN",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -386,5 +393,5 @@
     "cc5d7666513f64ca44895b65adb2bd3a09065eb1"
   ],
   "conflicts": [],
-  "evidence_count": 14
+  "evidence_count": 17
 }

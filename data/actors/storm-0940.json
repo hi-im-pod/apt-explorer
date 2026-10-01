@@ -6,21 +6,24 @@
       "value": "Storm-0940",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
       "value": "CovertNetwork-1658",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
       "value": "ORB07",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     }
   ],
@@ -32,6 +35,10 @@
     {
       "value": "CN",
       "source": "malpedia"
+    },
+    {
+      "value": "CN",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -47,5 +54,5 @@
   "timeline": [],
   "reports": [],
   "conflicts": [],
-  "evidence_count": 3
+  "evidence_count": 6
 }

@@ -8,7 +8,18 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Marbled Dust",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -21,20 +32,12 @@
       ]
     },
     {
-      "value": "Marbled Dust",
-      "sources": [
-        "attack",
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
       "value": "SILICON",
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -42,7 +45,16 @@
       "sources": [
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "COSMIC WOLF",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -50,13 +62,6 @@
       "sources": [
         "attack",
         "etda"
-      ]
-    },
-    {
-      "value": "COSMIC WOLF",
-      "sources": [
-        "misp",
-        "malpedia"
       ]
     },
     {
@@ -78,6 +83,10 @@
     {
       "value": "TR",
       "source": "malpedia"
+    },
+    {
+      "value": "TR",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -311,5 +320,5 @@
     "3e64e115d08c0deb6f54d35e63e936e7995b7687"
   ],
   "conflicts": [],
-  "evidence_count": 17
+  "evidence_count": 22
 }

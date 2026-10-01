@@ -90,9 +90,16 @@
     {
       "name": "PsExec",
       "source": "attack"
+    },
+    {
+      "name": "Triton",
+      "source": "attack"
     }
   ],
-  "techniques_documented": [],
+  "techniques_documented": [
+    "T0817",
+    "T0862"
+  ],
   "techniques_reported": [
     {
       "id": "T1053",
@@ -152,7 +159,7 @@
     },
     {
       "quarter": "2019-Q3",
-      "count": 1
+      "count": 2
     },
     {
       "quarter": "2020-Q4",
@@ -176,7 +183,7 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 2
+      "count": 3
     },
     {
       "quarter": "2026-Q3",
@@ -185,6 +192,7 @@
   ],
   "reports": [
     "98a5a6013e530e6026865dbe7fc4c051a3cfc5ea",
+    "3ecebfdeffc9e54793c55652ad64ff6afc68081f",
     "52d03ce75c2366b0e57d064f58d72054b3709a27",
     "91b0f1cc0c9de6ed0a08f421b67c7506b57b4239",
     "055ba19adf2555a8191068020526947cad083822",
@@ -195,6 +203,7 @@
     "8d4c669ba1eb89136a3c362cf15ad8afc21f48e3",
     "8c13671830767aa6915d23d636cbb6611c80ed05",
     "1b9d20cd96eca138bf6e4345f5a4d649e9d7f951",
+    "82628c0f0782627fc5bfee9a1c9de51324243bdf",
     "9a7673f139106112ee7f8b7995ca1ac60c53287e",
     "4f9ea104937bd8a2b0d1d82ee770973ad959bf74",
     "5c07af4282c03028d1fb0bbe16a5311e3de8f1ef",

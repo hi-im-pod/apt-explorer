@@ -239,15 +239,18 @@
       "Agrius",
       "Pink Sandstorm",
       "AMERICIUM",
-      "Agonizing Serpens",
       "BlackShadow",
+      "Agonizing Serpens",
+      "SPECTRAL KITTEN",
+      "SharpBoys",
       "DEV-0022",
       "UNC2428",
       "Black Shadow",
-      "SPECTRAL KITTEN",
       "DEV-0227",
-      "SharpBoys",
-      "Spectral Kitten"
+      "Spectral Kitten",
+      "Deadwood",
+      "FireAnt",
+      "Justice Blade"
     ],
     "origin": [
       "IR"
@@ -258,7 +261,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -302,8 +306,8 @@
     "name": "Akira",
     "aliases": [
       "Akira",
-      "GOLD SAHARA",
       "PUNK SPIDER",
+      "GOLD SAHARA",
       "Storm-1567",
       "Howling Scorpius"
     ],
@@ -313,24 +317,43 @@
     "sources": [
       "attack",
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
-    "id": "alpha-spider",
-    "name": "Alpha Spider",
+    "id": "G1000",
+    "name": "ALLANITE",
     "aliases": [
-      "Alpha Spider",
-      "ALPHV Ransomware Group",
-      "Velvet Tempest",
-      "DEV-0504",
-      "ALPHA SPIDER"
+      "ALLANITE",
+      "Palmetto Fusion",
+      "Allanite",
+      "ENERGETIC BEAR",
+      "BERSERK BEAR",
+      "CASTLE",
+      "DYMALLOY",
+      "TG-4192",
+      "Dragonfly",
+      "Crouching Yeti",
+      "Group 24",
+      "Havex",
+      "Koala Team",
+      "IRON LIBERTY",
+      "ATK6",
+      "ITG15",
+      "BROMINE",
+      "Blue Kraken",
+      "Ghost Blizzard"
     ],
-    "origin": [],
-    "report_count": 62,
-    "last_reported": "2025-12-30",
+    "origin": [
+      "RU"
+    ],
+    "report_count": 1,
+    "last_reported": "2026-04-06",
     "sources": [
+      "attack",
       "misp",
+      "etda",
       "malpedia"
     ]
   },
@@ -424,19 +447,24 @@
     "name": "Andariel",
     "aliases": [
       "Andariel",
-      "Silent Chollima",
       "Onyx Sleet",
+      "Silent Chollima",
       "PLUTONIUM",
+      "Sapphire Sleet",
+      "Black Artemis",
       "Bluenoroff",
       "APT 38",
       "Stardust Chollima",
       "TEMP.Hermit",
       "TA444",
-      "Sapphire Sleet",
-      "Nickel Academy",
-      "Black Artemis",
       "Alluring Pisces",
+      "Nickel Academy",
       "APT45",
+      "Diamond Sleet",
+      "ZINC",
+      "COPERNICIUM",
+      "UNC1069",
+      "CryptoCore",
       "GRASS NEPTUNE",
       "Lazarus Group",
       "Operation DarkSeoul",
@@ -464,15 +492,12 @@
       "Citrine Sleet",
       "DEV-0139",
       "DEV-1222",
-      "Diamond Sleet",
-      "ZINC",
-      "COPERNICIUM",
       "TA404",
       "Lazarus group",
       "BeagleBoyz",
       "Moonstone Sleet",
-      "UNC1069",
-      "CryptoCore",
+      "Lazarus",
+      "CageyChameleon",
       "OperationTroy",
       "Guardian of Peace",
       "GOP",
@@ -495,9 +520,15 @@
       "Selective Pisces",
       "Covellite",
       "CTG-2460",
-      "Lazarus",
       "Genie Spider",
-      "CageyChameleon"
+      "LABYRINTH CHOLLIMA",
+      "SILENT CHOLLIMA",
+      "StoneFly",
+      "Tdrop2 campaign",
+      "DarkSeoul",
+      "Black Chollima",
+      "STARDUST CHOLLIMA",
+      "BlueNoroff"
     ],
     "origin": [
       "KP"
@@ -508,7 +539,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -653,9 +685,9 @@
     "aliases": [
       "AppleJeus",
       "UNC4736",
+      "Jade Sleet",
       "UNC2970",
       "UNC4899",
-      "Jade Sleet",
       "TraderTraitor",
       "Gleaming Pisces",
       "Citrine Sleet",
@@ -682,7 +714,9 @@
       "UNC577",
       "UNC4034",
       "Diamond Sleet",
-      "Slow Pisces"
+      "Slow Pisces",
+      "Storm-0954",
+      "LABYRINTH CHOLLIMA"
     ],
     "origin": [
       "KP"
@@ -693,7 +727,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -736,16 +771,16 @@
       "APT-C-23",
       "Arid Viper",
       "Two-tailed Scorpion",
-      "Desert Falcon",
       "Desert Falcons",
       "Pinstripe Lightning",
       "Scimitar",
+      "Desert Falcon",
+      "NIOBIUM",
+      "RENEGADE JACKAL",
       "Mantis",
       "TAG-63",
       "AridViper",
       "Bearded Barbie",
-      "NIOBIUM",
-      "RENEGADE JACKAL",
       "Grey Karkadann",
       "Big Bang APT",
       "ATK 66",
@@ -756,13 +791,14 @@
     "origin": [
       "PS"
     ],
-    "report_count": 25,
+    "report_count": 27,
     "last_reported": "2026-04-06",
     "sources": [
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -864,23 +900,27 @@
     "name": "APT12",
     "aliases": [
       "APT12",
+      "Calc Team",
+      "Hexagon Typhoon",
       "IXESHE",
       "DynCalc",
       "BeeBus",
-      "Calc Team",
       "DNSCalc",
       "Group 22",
       "Crimson Iron",
-      "Hexagon Typhoon",
-      "Numbered Panda",
       "NUMBERED PANDA",
+      "Numbered Panda",
       "TG-2754",
       "BRONZE GLOBE",
       "DNSCALC",
       "APT 12",
       "CTG-8223",
       "Bronze Globe",
-      "DynCALC"
+      "DynCALC",
+      "HYDROGEN",
+      "Red Anubis",
+      "DNS-Calc",
+      "HORDE"
     ],
     "origin": [
       "CN"
@@ -891,7 +931,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -943,8 +984,8 @@
     "aliases": [
       "APT17",
       "Hidden Lynx",
-      "Group 8",
       "Heart Typhoon",
+      "Group 8",
       "Tailgater Team",
       "Elderwood",
       "Elderwood Gang",
@@ -953,18 +994,24 @@
       "Dogfish",
       "Axiom",
       "Group 72",
-      "Deputy Dog",
       "AURORA PANDA",
-      "BRONZE KEYSTONE",
       "HELIUM",
+      "Deputy Dog",
+      "TG-8153",
+      "BRONZE KEYSTONE",
       "SNEAKY PANDA",
       "Aurora Panda",
       "APT 17",
       "Sneaky Panda",
       "Bronze Keystone",
-      "TG-8153",
       "TEMP.Avengers",
-      "ATK 2"
+      "ATK 2",
+      "ATG3",
+      "Red Typhoon",
+      "KAOS",
+      "SportsFans",
+      "DeputyDog",
+      "Tailgater"
     ],
     "origin": [
       "CN"
@@ -975,7 +1022,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -984,18 +1032,20 @@
     "aliases": [
       "APT18",
       "TG-0416",
-      "Wisp Team",
       "Wekby",
       "Satin Typhoon",
-      "Dynamite Panda",
+      "Wisp Team",
       "DYNAMITE PANDA",
       "SCANDIUM",
-      "PLA Navy",
       "APT4",
       "MAVERICK PANDA",
-      "BRONZE EDISON",
       "SODIUM",
       "Salmon Typhoon",
+      "Dynamite Panda",
+      "Red Wraith",
+      "SILVERVIPER",
+      "PLA Navy",
+      "BRONZE EDISON",
       "SAMURAI PANDA",
       "Threat Group-0416",
       "Samurai Panda",
@@ -1008,8 +1058,8 @@
       "Salmon Typhoo",
       "APT 18",
       "Scandium",
-      "Red Wraith",
-      "SILVERVIPER"
+      "COMBINE",
+      "Elderwood Group"
     ],
     "origin": [
       "CN"
@@ -1020,7 +1070,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -1030,6 +1081,9 @@
       "APT19",
       "Codoso",
       "Sunshop Group",
+      "JerseyMikes",
+      "Taffeta Typhoon",
+      "Checkered Typhoon",
       "APT9",
       "Shell Crew",
       "WebMasters",
@@ -1037,20 +1091,18 @@
       "Group 13",
       "PinkPanther",
       "Black Vine",
-      "JerseyMikes",
-      "Taffeta Typhoon",
       "Pupa",
       "Red Pegasus",
-      "Checkered Typhoon",
       "Group 27",
-      "C0d0so0",
       "DEEP PANDA",
-      "TEMP.Avengers",
-      "BRONZE FIRESTONE",
       "APT26",
       "TURBINE PANDA",
-      "BRONZE EXPRESS",
       "TECHNETIUM",
+      "C0d0so0",
+      "TG-3551",
+      "TEMP.Avengers",
+      "BRONZE FIRESTONE",
+      "BRONZE EXPRESS",
       "NIGHTSHADE PANDA",
       "Codoso Team",
       "Turbine Panda",
@@ -1058,12 +1110,17 @@
       "Bronze Express",
       "APT 19",
       "Deep Panda",
-      "TG-3551",
       "Bronze Firestone",
       "Nightshade Panda",
       "APT 9",
       "FlowerLady",
-      "FlowerShow"
+      "FlowerShow",
+      "CHLORINE",
+      "ATG50",
+      "Red Gargoyle",
+      "TG-0055",
+      "Red Kobold",
+      "BEARCLAW"
     ],
     "origin": [
       "CN"
@@ -1074,7 +1131,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -1128,20 +1186,21 @@
     "name": "APT28",
     "aliases": [
       "APT28",
-      "Swallowtail",
-      "Group 74",
       "Sednit",
       "Sofacy",
+      "Tsar Team",
+      "Forest Blizzard",
+      "Swallowtail",
+      "Group 74",
       "Pawn Storm",
       "Fancy Bear",
-      "Tsar Team",
+      "STRONTIUM",
       "TG-4127",
-      "Forest Blizzard",
       "FROZENLAKE",
       "GruesomeLarch",
+      "Blue Athena",
       "IRON TWILIGHT",
       "SNAKEMACKEREL",
-      "STRONTIUM",
       "SIG40",
       "T-APT-12",
       "ITG05",
@@ -1150,15 +1209,19 @@
       "BlueDelta",
       "TA422",
       "Fighting Ursa",
-      "Blue Athena",
       "UAC-0063",
+      "FANCY BEAR",
       "APT 28",
       "Grey-Cloud",
-      "FANCY BEAR",
       "ATK5",
       "APT-C-20",
       "UAC-0001",
       "LAKE RELIC",
+      "ATG2",
+      "Z-Lom Team",
+      "Operation Pawn Storm",
+      "CrisisFour",
+      "HELLFIRE",
       "Threat Group-4127",
       "Strontium",
       "Snakemackerel",
@@ -1167,23 +1230,19 @@
       "TAG-0700",
       "TAG-110",
       "TsarTeam",
-      "Group-4127",
-      "ATG2",
-      "Z-Lom Team",
-      "Operation Pawn Storm",
-      "CrisisFour",
-      "HELLFIRE"
+      "Group-4127"
     ],
     "origin": [
       "RU"
     ],
-    "report_count": 230,
+    "report_count": 231,
     "last_reported": "2026-07-23",
     "sources": [
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -1192,11 +1251,11 @@
     "aliases": [
       "APT29",
       "UNC2452",
+      "Midnight Blizzard",
+      "NOBELIUM",
       "The Dukes",
       "UNC3524",
-      "Midnight Blizzard",
       "IRON HEMLOCK",
-      "NOBELIUM",
       "YTTRIUM",
       "Cozy Bear",
       "Blue Kitsune",
@@ -1210,10 +1269,10 @@
       "Cloaked Ursa",
       "BlueBravo",
       "Solar Phoenix",
+      "COZY BEAR",
       "NobleBaron",
       "Dark Halo",
       "SolarStorm",
-      "COZY BEAR",
       "SeaDuke",
       "ATK7",
       "TA421",
@@ -1243,7 +1302,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -1251,23 +1311,25 @@
     "name": "APT3",
     "aliases": [
       "APT3",
-      "Buckeye",
       "TG-0110",
-      "Group 6",
+      "Buckeye",
       "Red Sylvan",
       "Brocade Typhoon",
-      "Gothic Panda",
-      "UPS Team",
+      "Group 6",
       "GOTHIC PANDA",
       "UPS",
-      "Boyusec",
       "BORON",
+      "Gothic Panda",
+      "UPS Team",
+      "Boyusec",
       "BRONZE MAYFAIR",
       "Pirpi",
       "Threat Group-0110",
       "APT 3",
       "Bronze Mayfair",
-      "Boron"
+      "Boron",
+      "OLDCARP",
+      "CYBRAN"
     ],
     "origin": [
       "CN"
@@ -1278,7 +1340,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -1289,13 +1352,13 @@
       "RADIUM",
       "Raspberry Typhoon",
       "ISTHMUS CASTLE",
+      "LotusBlossom",
+      "LOTUS PANDA",
       "APT 30",
       "Override Panda",
       "CTG-5326",
       "Bronze Geneva",
-      "Bronze Sterling",
-      "LotusBlossom",
-      "LOTUS PANDA"
+      "Bronze Sterling"
     ],
     "origin": [
       "CN"
@@ -1306,7 +1369,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -1314,10 +1378,10 @@
     "name": "APT32",
     "aliases": [
       "APT32",
-      "SeaLotus",
       "OceanLotus",
-      "APT-C-00",
       "Canvas Cyclone",
+      "SeaLotus",
+      "APT-C-00",
       "BISMUTH",
       "APT 32",
       "Ocean Buffalo",
@@ -1335,7 +1399,8 @@
       "SectorF01",
       "Pond Loach",
       "APT-LY-100",
-      "Lotus Bane"
+      "Lotus Bane",
+      "OCEAN BUFFALO"
     ],
     "origin": [
       "VN"
@@ -1346,7 +1411,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -1369,7 +1435,8 @@
       "ATK 35",
       "Cobalt Trinity",
       "Yellow Orc",
-      "Curious Serpens"
+      "Curious Serpens",
+      "REFINED KITTEN"
     ],
     "origin": [
       "IR"
@@ -1380,7 +1447,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -1397,9 +1465,7 @@
       "Group 123",
       "Red Eyes",
       "Venus 121",
-      "Ruby Sleet",
       "Moldy Pisces",
-      "Opal Sleet",
       "TEMP.Reaper",
       "Operation Daybreak",
       "Operation Erebus",
@@ -1407,23 +1473,21 @@
       "ATK4",
       "APT-C-28",
       "PLAIN NEPTUNE",
-      "OSMIUM",
-      "Konni",
-      "Vedalia",
-      "CERIUM",
       "Cerium",
       "Geumseong121",
       "Hermit",
       "ATK 4",
       "ITG10",
+      "Ruby Sleet",
       "Crooked Pisces",
       "Osmium",
+      "Opal Sleet",
       "TA-RedAnt"
     ],
     "origin": [
       "KP"
     ],
-    "report_count": 91,
+    "report_count": 89,
     "last_reported": "2026-05-28",
     "sources": [
       "attack",
@@ -1456,13 +1520,14 @@
     "name": "APT39",
     "aliases": [
       "APT39",
-      "ITG07",
       "Chafer",
+      "ITG07",
+      "Cadelle",
+      "Burgundy Sandstorm",
       "TA454",
       "Radio Serpens",
-      "Burgundy Sandstorm",
-      "Remix Kitten",
       "REMIX KITTEN",
+      "Remix Kitten",
       "COBALT HICKMAN",
       "CINDER ION",
       "APT 39",
@@ -1477,7 +1542,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -1487,8 +1553,9 @@
       "APT41",
       "Brass Typhoon",
       "BARIUM",
-      "Double Dragon",
       "TG-2633",
+      "Leopard Typhoon",
+      "Double Dragon",
       "Red Kelpie",
       "Blackfly",
       "Earth Baku",
@@ -1496,26 +1563,29 @@
       "Grayfly",
       "TA415",
       "BrazenBamboo",
-      "Leopard Typhoon",
-      "Wicked Panda",
       "LEAD",
-      "WICKED SPIDER",
       "WICKED PANDA",
+      "Wicked Panda",
+      "Winnti Group",
+      "TG-3279",
+      "WICKED SPIDER",
       "BRONZE ATLAS",
       "BRONZE EXPORT",
       "Amoeba",
       "HOODOO",
       "Winnti",
       "SPIRE CASTLE",
+      "Mana Team",
       "APT 41",
       "Bronze Atlas",
-      "Winnti Group",
       "Barium",
       "Pigfish",
       "Starchy Taurus",
       "Lead",
-      "TG-3279",
-      "Casper"
+      "Casper",
+      "Mana",
+      "KAOS",
+      "Red Diablo"
     ],
     "origin": [
       "CN"
@@ -1526,7 +1596,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -1562,15 +1633,11 @@
       "BRONZE FLEETWOOD",
       "UNC2630",
       "TEMP.Bottle",
-      "Poisoned Flight",
-      "Keyhole Panda",
       "TG-2754",
+      "Poisoned Flight",
       "KEYHOLE PANDA",
+      "Keyhole Panda",
       "BASALT CASTLE",
-      "APT 5",
-      "Bronze Fleetwood",
-      "Manganese",
-      "TABCTENG",
       "Backdoor-DPD",
       "COVENANT",
       "CYSERVICE",
@@ -1578,7 +1645,12 @@
       "Red Horus",
       "Red Naga",
       "Auriga",
-      "ATG48"
+      "ATG48",
+      "APT 5",
+      "Bronze Fleetwood",
+      "Manganese",
+      "TABCTENG",
+      "tabcteng"
     ],
     "origin": [
       "CN"
@@ -1589,26 +1661,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
-    ]
-  },
-  {
-    "id": "apt6",
-    "name": "APT6",
-    "aliases": [
-      "APT6",
-      "1.php Group",
-      "APT 6"
-    ],
-    "origin": [
-      "CN"
-    ],
-    "report_count": 1,
-    "last_reported": "2016-04-07",
-    "sources": [
-      "misp",
-      "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -1648,16 +1702,16 @@
     "aliases": [
       "Aquatic Panda",
       "RedHotel",
+      "Charcoal Typhoon",
       "TAG-22",
       "Earth Lusca",
-      "Charcoal Typhoon",
       "Red Dev 10",
       "Red Scylla",
       "CHROMIUM",
       "ControlX",
-      "FISHMONGER",
       "BRONZE UNIVERSITY",
       "AQUATIC PANDA",
+      "FISHMONGER",
       "BountyGlad",
       "Fishmonger",
       "Bronze University",
@@ -1672,7 +1726,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -1907,28 +1962,6 @@
     ]
   },
   {
-    "id": "bamboo-spider",
-    "name": "BAMBOO SPIDER",
-    "aliases": [
-      "BAMBOO SPIDER",
-      "Storm-0302",
-      "TA544",
-      "NARWHAL SPIDER",
-      "GOLD ESSEX",
-      "Narwhal Spider",
-      "Gold Essex",
-      "Bamboo Spider"
-    ],
-    "origin": [],
-    "report_count": 6,
-    "last_reported": "2022-02-08",
-    "sources": [
-      "misp",
-      "etda",
-      "malpedia"
-    ]
-  },
-  {
     "id": "batshadow",
     "name": "BatShadow",
     "aliases": [
@@ -2019,6 +2052,39 @@
     "sources": [
       "misp",
       "malpedia"
+    ]
+  },
+  {
+    "id": "berry-sandstorm",
+    "name": "Berry Sandstorm",
+    "aliases": [
+      "Berry Sandstorm",
+      "Storm-0852"
+    ],
+    "origin": [
+      "IR"
+    ],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
+    ]
+  },
+  {
+    "id": "berserk-bear",
+    "name": "Berserk Bear",
+    "aliases": [
+      "Berserk Bear",
+      "Dragonfly 2.0",
+      "Dymalloy"
+    ],
+    "origin": [
+      "RU"
+    ],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "etda"
     ]
   },
   {
@@ -2246,12 +2312,15 @@
     "aliases": [
       "BlackTech",
       "Palmerworm",
+      "Canary Typhoon",
       "T-APT-03",
       "Red Djinn",
       "Manga Taurus",
       "Earth Hundun",
-      "Canary Typhoon",
+      "APT24",
       "CIRCUIT PANDA",
+      "PITTY PANDA",
+      "Temp.Pittytiger",
       "Temp.Overboard",
       "HUAPI",
       "Mobwork",
@@ -2265,13 +2334,14 @@
     "origin": [
       "CN"
     ],
-    "report_count": 47,
+    "report_count": 49,
     "last_reported": "2026-04-06",
     "sources": [
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -2367,7 +2437,8 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -2518,6 +2589,26 @@
     ]
   },
   {
+    "id": "domestic-kitten",
+    "name": "Bouncing Golf",
+    "aliases": [
+      "Bouncing Golf",
+      "Domestic Kitten",
+      "APT-C-50"
+    ],
+    "origin": [
+      "IR"
+    ],
+    "report_count": 9,
+    "last_reported": "2022-10-20",
+    "sources": [
+      "attack",
+      "misp",
+      "etda",
+      "malpedia"
+    ]
+  },
+  {
     "id": "breachlaboratory",
     "name": "BreachLaboratory",
     "aliases": [
@@ -2553,18 +2644,19 @@
       "BRONZE BUTLER",
       "Tick",
       "REDBALDKNIGHT",
+      "Swirl Typhoon",
       "TEMP.Tick",
       "Stalker Taurus",
-      "Swirl Typhoon",
+      "STALKER PANDA",
+      "Bronze Butler",
       "TempTick",
       "Nian",
-      "STALKER PANDA",
       "PLA Unit 61419",
       "TICK CASTLE",
-      "Bronze Butler",
       "CTG-2006",
       "RedBaldNight",
-      "Stalker Panda"
+      "Stalker Panda",
+      "TELLURIUM"
     ],
     "origin": [
       "CN"
@@ -2575,7 +2667,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -2667,23 +2760,6 @@
     ]
   },
   {
-    "id": "cadelle",
-    "name": "Cadelle",
-    "aliases": [
-      "Cadelle"
-    ],
-    "origin": [
-      "IR"
-    ],
-    "report_count": 0,
-    "last_reported": null,
-    "sources": [
-      "misp",
-      "etda",
-      "malpedia"
-    ]
-  },
-  {
     "id": "caliente-bandits",
     "name": "Caliente Bandits",
     "aliases": [
@@ -2739,14 +2815,18 @@
     "aliases": [
       "Caramel Tsunami",
       "SOURGUM",
-      "Candiru"
+      "Candiru",
+      "DEV-0236"
     ],
-    "origin": [],
+    "origin": [
+      "IL"
+    ],
     "report_count": 1,
     "last_reported": "2021-07-15",
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -2851,7 +2931,8 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -2973,11 +3054,12 @@
     "aliases": [
       "Chimera",
       "Red Charon",
-      "BRONZE VAPOR",
-      "Bronze Vapor",
       "THORIUM",
       "Tumbleweed Typhoon",
-      "Nuclear Taurus"
+      "BRONZE VAPOR",
+      "Bronze Vapor",
+      "Nuclear Taurus",
+      "Karst"
     ],
     "origin": [
       "CN"
@@ -2988,7 +3070,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -3071,7 +3154,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -3105,6 +3189,24 @@
       "misp",
       "etda",
       "malpedia"
+    ]
+  },
+  {
+    "id": "citrine-sleet",
+    "name": "Citrine Sleet",
+    "aliases": [
+      "Citrine Sleet",
+      "Storm-0139",
+      "Storm-1222",
+      "LABYRINTH CHOLLIMA"
+    ],
+    "origin": [
+      "KP"
+    ],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
     ]
   },
   {
@@ -3202,6 +3304,22 @@
     "sources": [
       "misp",
       "malpedia"
+    ]
+  },
+  {
+    "id": "clay-typhoon",
+    "name": "Clay Typhoon",
+    "aliases": [
+      "Clay Typhoon",
+      "Storm-2416"
+    ],
+    "origin": [
+      "CN"
+    ],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
     ]
   },
   {
@@ -3356,14 +3474,16 @@
     "id": "coinbase-cartel",
     "name": "Coinbase Cartel",
     "aliases": [
-      "Coinbase Cartel"
+      "Coinbase Cartel",
+      "Storm-2981"
     ],
     "origin": [],
     "report_count": 0,
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -3423,7 +3543,7 @@
     "origin": [
       "IN"
     ],
-    "report_count": 11,
+    "report_count": 12,
     "last_reported": "2026-04-06",
     "sources": [
       "attack",
@@ -3454,18 +3574,19 @@
       "Nickel Tapestry",
       "UNC5267",
       "WaterPlum",
+      "Storm-1877",
       "Tenacious Pungsan",
+      "Storm-0287",
+      "Jasper Sleet",
       "WageMole",
       "Famous Chollima",
-      "Storm-1877",
       "Void Dokkaebi",
       "DeceptiveDevelopment",
       "Gwisin Gang",
       "DEV#POPPER",
       "TAG-121",
       "Operation Contagious Interview",
-      "Storm-0287",
-      "Jasper Sleet"
+      "Coral Sleet"
     ],
     "origin": [
       "KP"
@@ -3476,7 +3597,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -3627,11 +3749,13 @@
     "name": "Cotton Sandstorm",
     "aliases": [
       "Cotton Sandstorm",
+      "NEPTUNIUM",
+      "HAYWIRE KITTEN",
       "Emennet Pasargad",
       "Holy Souls",
       "MARNANBRIDGE",
-      "NEPTUNIUM",
-      "HAYWIRE KITTEN"
+      "ViceLeaker",
+      "Vice Leaker"
     ],
     "origin": [
       "IR"
@@ -3640,7 +3764,8 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -3655,6 +3780,22 @@
     "sources": [
       "misp",
       "malpedia"
+    ]
+  },
+  {
+    "id": "crescent-typhoon",
+    "name": "Crescent Typhoon",
+    "aliases": [
+      "Crescent Typhoon",
+      "CESIUM"
+    ],
+    "origin": [
+      "CN"
+    ],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
     ]
   },
   {
@@ -3755,26 +3896,27 @@
       "Crimson Sandstorm",
       "TA456",
       "Yellow Liderc",
-      "TA455",
       "Smoke Sandstorm",
-      "Bohrium",
       "UNC1549",
+      "Cuboid Sandstorm",
+      "TA455",
+      "Bohrium",
       "Tortoiseshell",
       "Imperial Kitten",
-      "Cuboid Sandstorm",
-      "BOHRIUM",
       "IMPERIAL KITTEN",
       "DEV-0228",
+      "Tortoise Shell",
+      "BOHRIUM",
       "DUSTYCAVE",
       "Nimbus Manticore",
-      "Tortoise Shell",
       "DEV-0056",
       "Yellow Dev 13",
       "Curium",
       "Marcella Flores",
       "Houseblend",
       "Devious Serpens",
-      "Cobalt Fireside"
+      "Cobalt Fireside",
+      "HOUSEBLEND"
     ],
     "origin": [
       "IR"
@@ -3785,7 +3927,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -3831,25 +3974,6 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
-    ]
-  },
-  {
-    "id": "cyber-av3ngers",
-    "name": "Cyber Av3ngers",
-    "aliases": [
-      "Cyber Av3ngers",
-      "CyberAv3ngers",
-      "Shahid Kaveh Group"
-    ],
-    "origin": [
-      "IR"
-    ],
-    "report_count": 4,
-    "last_reported": "2024-12-18",
-    "sources": [
-      "misp",
-      "etda",
       "malpedia"
     ]
   },
@@ -3994,6 +4118,27 @@
     "last_reported": null,
     "sources": [
       "misp",
+      "malpedia"
+    ]
+  },
+  {
+    "id": "cyber-av3ngers",
+    "name": "CyberAv3ngers",
+    "aliases": [
+      "CyberAv3ngers",
+      "Cyber Av3ngers",
+      "Shahid Kaveh Group",
+      "Soldiers of Soloman"
+    ],
+    "origin": [
+      "IR"
+    ],
+    "report_count": 4,
+    "last_reported": "2024-12-18",
+    "sources": [
+      "attack",
+      "misp",
+      "etda",
       "malpedia"
     ]
   },
@@ -4218,33 +4363,34 @@
       "Darkhotel",
       "Zigzag Hail",
       "DUBNIUM",
+      "Fallout Team",
+      "APT-C-60",
       "DarkHotel",
       "APT-C-06",
       "SIG25",
-      "Fallout Team",
       "Shadow Crane",
       "T-APT-02",
       "Luder",
-      "APT-C-60",
-      "APT-Q-12",
       "TieOnJoe",
       "Purple Pygmy",
-      "Karba",
+      "APT-Q-12",
       "Nemim",
-      "Nemin",
       "Tapaoux",
+      "Karba",
+      "Nemin",
       "Pioneer",
       "TUNGSTEN BRIDGE",
       "ATK52",
+      "Dark Hotel",
+      "TEMPLAR",
+      "Egobot",
+      "PALADIN",
       "Dubnium",
       "CTG-1948",
       "Tungsten Bridge",
       "ATK 52",
       "Higaisa",
-      "Dark Hotel",
-      "TEMPLAR",
-      "Egobot",
-      "PALADIN"
+      "SHADOW CRANE"
     ],
     "origin": [
       "KR"
@@ -4255,7 +4401,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -4402,7 +4549,8 @@
     "aliases": [
       "Denim Tsunami",
       "KNOTWEED",
-      "DSIRF"
+      "DSIRF",
+      "DEV-0291"
     ],
     "origin": [
       "AT"
@@ -4411,7 +4559,8 @@
     "last_reported": "2022-07-28",
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -4465,7 +4614,8 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -4563,25 +4713,6 @@
     ]
   },
   {
-    "id": "domestic-kitten",
-    "name": "Domestic Kitten",
-    "aliases": [
-      "Domestic Kitten",
-      "APT-C-50",
-      "Bouncing Golf"
-    ],
-    "origin": [
-      "IR"
-    ],
-    "report_count": 9,
-    "last_reported": "2022-10-20",
-    "sources": [
-      "misp",
-      "etda",
-      "malpedia"
-    ]
-  },
-  {
     "id": "doppel-spider",
     "name": "DOPPEL SPIDER",
     "aliases": [
@@ -4623,7 +4754,9 @@
     "name": "Dragonbridge",
     "aliases": [
       "Dragonbridge",
-      "Spamouflage Dragon"
+      "Spamouflage Dragon",
+      "Taizi Flood",
+      "Spamouflage"
     ],
     "origin": [
       "CN"
@@ -4632,7 +4765,8 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -4640,44 +4774,21 @@
     "name": "Dragonfly",
     "aliases": [
       "Dragonfly",
+      "TEMP.Isotope",
+      "DYMALLOY",
+      "Berserk Bear",
       "TG-4192",
       "Crouching Yeti",
-      "Ghost Blizzard",
-      "DYMALLOY",
       "IRON LIBERTY",
-      "BROMINE",
-      "Allanite",
-      "Palmetto Fusion",
-      "Group 24",
-      "Koala Team",
-      "ITG15",
-      "Blue Kraken",
-      "Berserk Bear",
       "Energetic Bear",
-      "ALLANITE",
-      "ENERGETIC BEAR",
-      "BERSERK BEAR",
-      "CASTLE",
-      "Havex",
-      "ATK6",
-      "TEMP.Isotope",
-      "Dragonfly 2.0",
-      "Dymalloy",
-      "Iron Liberty",
-      "Electrum",
-      "ATK 6",
-      "Bromine"
+      "Ghost Blizzard",
+      "BROMINE"
     ],
-    "origin": [
-      "RU"
-    ],
+    "origin": [],
     "report_count": 28,
     "last_reported": "2026-04-06",
     "sources": [
-      "attack",
-      "misp",
-      "etda",
-      "malpedia"
+      "attack"
     ]
   },
   {
@@ -5155,23 +5266,34 @@
       "Ember Bear",
       "DEV-0586",
       "Cadet Blizzard",
-      "Ruinous Ursa",
       "UNC2589",
-      "Bleeding Bear",
-      "Frozenvista",
       "UAC-0056",
-      "EMBER BEAR"
+      "Bleeding Bear",
+      "Ruinous Ursa",
+      "SaintBear",
+      "TA471",
+      "Lorec53",
+      "Nodaria",
+      "FROZENVISTA",
+      "Storm-0587",
+      "Nascent Ursa",
+      "EMBER BEAR",
+      "DEV-0587",
+      "Saint Bear",
+      "Lorec Bear",
+      "Frozenvista"
     ],
     "origin": [
       "RU"
     ],
-    "report_count": 5,
+    "report_count": 6,
     "last_reported": "2024-09-05",
     "sources": [
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -5497,13 +5619,13 @@
       "FIN6",
       "ITG08",
       "Camouflage Tempest",
+      "Storm-0538",
       "TAAL",
       "White Giant",
-      "Storm-0538",
       "Golden Chickens",
       "TA4557",
-      "Skeleton Spider",
       "SKELETON SPIDER",
+      "Skeleton Spider",
       "MageCart Group 6",
       "GOLD FRANKLIN",
       "ATK88",
@@ -5532,7 +5654,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -5569,10 +5692,10 @@
     "aliases": [
       "FIN8",
       "Syssphinx",
+      "Storm-0288",
       "ATK113",
       "PUNCH COMET",
-      "ATK 113",
-      "Storm-0288"
+      "ATK 113"
     ],
     "origin": [],
     "report_count": 8,
@@ -5581,7 +5704,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -5621,7 +5745,8 @@
       "Flax Typhoon",
       "Ethereal Panda",
       "RedJuliett",
-      "Storm-0919"
+      "Storm-0919",
+      "ETHEREAL PANDA"
     ],
     "origin": [
       "CN"
@@ -5631,7 +5756,8 @@
     "sources": [
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -5684,12 +5810,12 @@
     "name": "Fox Kitten",
     "aliases": [
       "Fox Kitten",
-      "UNC757",
       "Lemon Sandstorm",
+      "UNC757",
       "RUBIDIUM",
+      "PIONEER KITTEN",
       "Parisite",
       "Pioneer Kitten",
-      "PIONEER KITTEN",
       "PARISITE",
       "Cobalt Foxglove",
       "Rubidium",
@@ -5704,7 +5830,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -5718,7 +5845,8 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -5737,6 +5865,22 @@
       "misp",
       "etda",
       "malpedia"
+    ]
+  },
+  {
+    "id": "frontier-blizzard",
+    "name": "Frontier Blizzard",
+    "aliases": [
+      "Frontier Blizzard",
+      "UNC5792"
+    ],
+    "origin": [
+      "RU"
+    ],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
     ]
   },
   {
@@ -5823,8 +5967,8 @@
       "GALLIUM",
       "Granite Typhoon",
       "Alloy Taurus",
-      "Red Dev 4",
       "PHANTOM PANDA",
+      "Red Dev 4",
       "Operation Soft Cell",
       "Gallium",
       "Phantom Panda"
@@ -5838,7 +5982,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -5986,6 +6131,28 @@
       "misp",
       "etda",
       "malpedia"
+    ]
+  },
+  {
+    "id": "ghost-blizzard",
+    "name": "Ghost Blizzard",
+    "aliases": [
+      "Ghost Blizzard",
+      "BROMINE",
+      "BERSERK BEAR",
+      "TG-4192",
+      "Koala Team",
+      "Blue Kraken",
+      "Crouching Yeti",
+      "Dragonfly"
+    ],
+    "origin": [
+      "RU"
+    ],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
     ]
   },
   {
@@ -6463,7 +6630,8 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -6743,11 +6911,11 @@
       "Silk Typhoon",
       "Operation Exchange Marauder",
       "Red Dev 13",
-      "ATK233",
       "MURKY PANDA",
+      "ATK233",
+      "timmy",
       "Hafnium",
-      "Murky Panda",
-      "timmy"
+      "Murky Panda"
     ],
     "origin": [
       "CN"
@@ -6758,7 +6926,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -6805,6 +6974,27 @@
     "last_reported": "2021-10-18",
     "sources": [
       "etda"
+    ]
+  },
+  {
+    "id": "hazel-sandstorm",
+    "name": "Hazel Sandstorm",
+    "aliases": [
+      "Hazel Sandstorm",
+      "EUROPIUM",
+      "HELIX KITTEN",
+      "COBALT GYPSY",
+      "Crambus",
+      "OilRig",
+      "APT34"
+    ],
+    "origin": [
+      "IR"
+    ],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
     ]
   },
   {
@@ -6873,13 +7063,13 @@
       "Spirlin",
       "Lyceum",
       "Siamesekitten",
+      "Storm-0133",
       "LYCEUM",
       "COBALT LYCEUM",
       "UNC1530",
       "MYSTICDOME",
       "siamesekitten",
       "Chrono Kitten",
-      "Storm-0133",
       "Hexane",
       "Cobalt Lyceum",
       "ATK 120",
@@ -6894,7 +7084,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -7145,7 +7336,8 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -7353,18 +7545,19 @@
     "name": "Indrik Spider",
     "aliases": [
       "Indrik Spider",
-      "Evil Corp",
       "Manatee Tempest",
+      "Evil Corp",
       "DEV-0243",
       "UNC2165",
+      "INDRIK SPIDER",
+      "Mustard Tempest",
       "GOLD DRAKE",
       "GOLD WINTER",
-      "INDRIK SPIDER",
       "Gold Drake",
       "Gold Winter",
-      "Mustard Tempest",
       "Blue Lelantos",
-      "EvilCorp"
+      "EvilCorp",
+      "DEV-0206"
     ],
     "origin": [
       "RU"
@@ -7375,7 +7568,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -7476,7 +7670,8 @@
     "name": "InvisiMole",
     "aliases": [
       "InvisiMole",
-      "UAC-0035"
+      "UAC-0035",
+      "Storm-0593"
     ],
     "origin": [
       "RU"
@@ -7486,7 +7681,8 @@
     "sources": [
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -7768,25 +7964,26 @@
     "name": "Ke3chang",
     "aliases": [
       "Ke3chang",
-      "GREF",
       "Playful Dragon",
       "Nylon Typhoon",
       "APT15",
       "Mirage",
+      "GREF",
       "NICKEL",
       "Royal APT",
       "Metushy",
       "Social Network Team",
       "Red Vulture",
       "PurpleHaze",
-      "Vixen Panda",
       "VIXEN PANDA",
+      "Vixen Panda",
       "Ke3Chang",
       "Lurid",
       "BRONZE PALACE",
       "BRONZE DAVENPORT",
       "BRONZE IDLEWOOD",
       "RIVER CASTLE",
+      "RedRiver",
       "RoyalAPT",
       "APT 15",
       "Bronze Palace",
@@ -7797,7 +7994,7 @@
       "BackdoorDiplomacy",
       "Playful Taurus",
       "Flea",
-      "RedRiver"
+      "ke3chang"
     ],
     "origin": [
       "CN"
@@ -7808,7 +8005,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -7877,18 +8075,24 @@
     "aliases": [
       "Kimsuky",
       "Black Banshee",
-      "Velvet Chollima",
       "Emerald Sleet",
-      "Springtail",
+      "Velvet Chollima",
       "THALLIUM",
       "APT43",
+      "Springtail",
       "Thallium",
       "TA406",
       "UAT-5394",
       "Sparkling Pisces",
       "Larva-24005",
+      "Opal Sleet",
+      "OSMIUM",
+      "Konni",
       "TA427",
       "Operation Stolen Pencil",
+      "RGB-D5",
+      "Greendinosa",
+      "Vedalia",
       "Earth Kumiho",
       "PatheticSlug",
       "SharpTongue",
@@ -7897,19 +8101,22 @@
       "ARCHIPELAGO",
       "KTA082",
       "Larva-25004",
-      "RGB-D5",
-      "Greendinosa"
+      "VELVET CHOLLIMA",
+      "Planedown",
+      "Ruby Sleet",
+      "CERIUM"
     ],
     "origin": [
       "KP"
     ],
-    "report_count": 89,
+    "report_count": 91,
     "last_reported": "2026-04-29",
     "sources": [
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -8034,8 +8241,8 @@
       "LAPSUS$",
       "DEV-0537",
       "Strawberry Tempest",
-      "LAPSUS",
       "SLIPPY SPIDER",
+      "LAPSUS",
       "UNC3661",
       "Lapsus",
       "Lapsus$",
@@ -8044,13 +8251,14 @@
     "origin": [
       "BR"
     ],
-    "report_count": 4,
+    "report_count": 6,
     "last_reported": "2026-08-06",
     "sources": [
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -8179,7 +8387,7 @@
       "Diamond Sleet"
     ],
     "origin": [],
-    "report_count": 447,
+    "report_count": 448,
     "last_reported": "2026-09-18",
     "sources": [
       "attack"
@@ -8241,29 +8449,29 @@
     "name": "Leviathan",
     "aliases": [
       "Leviathan",
-      "TEMP.Jumper",
       "TEMP.Periscope",
       "Gingham Typhoon",
+      "TEMP.Jumper",
+      "APT40",
       "MUDCARP",
       "BRONZE MOHAWK",
-      "APT40",
       "ITG09",
       "TA423",
       "Red Ladon",
       "ISLANDDREAMS",
-      "Kryptonite Panda",
-      "Gadolinium",
       "GADOLINIUM",
       "KRYPTONITE PANDA",
+      "Kryptonite Panda",
+      "Gadolinium",
       "ATK29",
       "ISLAND CASTLE",
+      "JJDoor",
+      "Feverdream",
       "APT 40",
       "Bronze Mohawk",
       "Mudcarp",
       "ATK 29",
-      "Jumper Taurus",
-      "JJDoor",
-      "Feverdream"
+      "Jumper Taurus"
     ],
     "origin": [
       "CN"
@@ -8274,7 +8482,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -8344,7 +8553,8 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -8365,7 +8575,9 @@
     "id": "liminal-panda",
     "name": "LIMINAL PANDA",
     "aliases": [
-      "LIMINAL PANDA"
+      "LIMINAL PANDA",
+      "Pepper Typhoon",
+      "CL-STA-0969"
     ],
     "origin": [
       "CN"
@@ -8374,7 +8586,8 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -8575,6 +8788,19 @@
     ]
   },
   {
+    "id": "luna-tempest",
+    "name": "Luna Tempest",
+    "aliases": [
+      "Luna Tempest"
+    ],
+    "origin": [],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
+    ]
+  },
+  {
     "id": "lunar-spider",
     "name": "LUNAR SPIDER",
     "aliases": [
@@ -8682,24 +8908,25 @@
     "name": "Magic Hound",
     "aliases": [
       "Magic Hound",
+      "Mint Sandstorm",
       "TA453",
       "Charming Kitten",
       "Phosphorus",
-      "Mint Sandstorm",
       "Newscaster",
       "APT35",
       "TunnelVision",
       "Educated Manticore",
       "CharmingCypress",
       "Agent Serpens",
+      "Parastoo",
       "ITG18",
       "Newscaster Team",
       "COBALT MIRAGE",
       "RICH ION",
-      "Parastoo",
       "iKittens",
       "Group 83",
       "NewsBeef",
+      "PHOSPHORUS",
       "COBALT ILLUSION",
       "APT 35",
       "Cobalt Illusion",
@@ -8710,7 +8937,7 @@
       "UNC788",
       "Yellow Garuda",
       "Ballistic Bobcat",
-      "PHOSPHORUS"
+      "CHARMING KITTEN"
     ],
     "origin": [
       "IR"
@@ -8721,7 +8948,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -8827,22 +9055,6 @@
     ]
   },
   {
-    "id": "mana-team",
-    "name": "Mana Team",
-    "aliases": [
-      "Mana Team"
-    ],
-    "origin": [
-      "CN"
-    ],
-    "report_count": 0,
-    "last_reported": null,
-    "sources": [
-      "misp",
-      "malpedia"
-    ]
-  },
-  {
     "id": "markopolo",
     "name": "Markopolo",
     "aliases": [
@@ -8888,18 +9100,18 @@
     "name": "menuPass",
     "aliases": [
       "menuPass",
-      "Cicada",
       "Red Apollo",
-      "CVNX",
+      "Cicada",
       "POTASSIUM",
       "APT10",
+      "CVNX",
+      "Purple Typhoon",
       "HOGFISH",
       "BRONZE RIVERSIDE",
       "TA429",
       "Granite Taurus",
-      "Purple Typhoon",
-      "Stone Panda",
       "STONE PANDA",
+      "Stone Panda",
       "Menupass Team",
       "happyyongzi",
       "Cloud Hopper",
@@ -8914,7 +9126,17 @@
       "ATK 41",
       "ITG01",
       "Earth Kasha",
-      "Cuckoo Spear"
+      "Cuckoo Spear",
+      "GOLEM",
+      "Evilgrab",
+      "AEON",
+      "LIVESAFE",
+      "ChChes",
+      "Haymaker",
+      "Webmonder",
+      "Foxtrot",
+      "Foxmail",
+      "MenuPass"
     ],
     "origin": [
       "CN"
@@ -8925,7 +9147,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -9152,7 +9375,8 @@
     "aliases": [
       "Moonstone Sleet",
       "Storm-1789",
-      "Stressed Pungsan"
+      "Stressed Pungsan",
+      "LABYRINTH CHOLLIMA"
     ],
     "origin": [
       "KP"
@@ -9161,7 +9385,8 @@
     "last_reported": "2024-05-28",
     "sources": [
       "attack",
-      "etda"
+      "etda",
+      "microsoft"
     ]
   },
   {
@@ -9201,15 +9426,15 @@
     "name": "Moses Staff",
     "aliases": [
       "Moses Staff",
-      "DEV-0500",
       "Marigold Sandstorm",
-      "MosesStaff",
+      "DEV-0500",
       "VENGEFUL KITTEN",
+      "MosesStaff",
+      "DEV-500",
       "Abraham's Ax",
       "Cobalt Sapling",
       "Vengeful Kitten",
-      "White Dev 95",
-      "DEV-500"
+      "White Dev 95"
     ],
     "origin": [
       "IR"
@@ -9220,7 +9445,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -9244,7 +9470,8 @@
     "id": "G1019",
     "name": "MoustachedBouncer",
     "aliases": [
-      "MoustachedBouncer"
+      "MoustachedBouncer",
+      "Storm-1125"
     ],
     "origin": [
       "BY"
@@ -9255,7 +9482,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -9277,13 +9505,13 @@
     "name": "MuddyWater",
     "aliases": [
       "MuddyWater",
-      "Static Kitten",
-      "Seedworm",
       "TEMP.Zagros",
       "Mango Sandstorm",
+      "MERCURY",
+      "Static Kitten",
+      "Seedworm",
       "TA450",
       "Earth Vetala",
-      "MERCURY",
       "Boggy Serpens",
       "COBALT ULSTER",
       "ATK51",
@@ -9295,7 +9523,9 @@
       "ATK 51",
       "T-APT-14",
       "ITG17",
-      "Yellow Nix"
+      "Yellow Nix",
+      "STATIC KITTEN",
+      "SeedWorm"
     ],
     "origin": [
       "IR"
@@ -9306,7 +9536,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -9352,21 +9583,21 @@
       "Mustang Panda",
       "TA416",
       "RedDelta",
-      "Red Lich",
       "BRONZE PRESIDENT",
       "TANTALUM",
+      "Red Lich",
+      "Twill Typhoon",
       "UNC6384",
       "HoneyMyte",
       "Earth Preta",
       "Camaro Dragon",
       "Stately Taurus",
-      "Twill Typhoon",
       "Hive0154",
-      "TEMP.Hex",
       "MUSTANG PANDA",
+      "LuminousMoth",
+      "TEMP.Hex",
       "TEMP.HEX",
       "BASIN",
-      "LuminousMoth",
       "Polaris",
       "BASIN CASTLE",
       "ITG27",
@@ -9392,7 +9623,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -9400,17 +9632,32 @@
     "name": "Mustard Tempest",
     "aliases": [
       "Mustard Tempest",
-      "DEV-0206",
       "TA569",
       "GOLD PRELUDE",
       "UNC1543",
-      "Purple Vallhund"
+      "DEV-0206"
     ],
     "origin": [],
     "report_count": 43,
     "last_reported": "2026-04-06",
     "sources": [
       "attack",
+      "misp",
+      "malpedia"
+    ]
+  },
+  {
+    "id": "mustard-tempest",
+    "name": "Mustard Tempest",
+    "aliases": [
+      "Mustard Tempest",
+      "DEV-0206",
+      "Purple Vallhund"
+    ],
+    "origin": [],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
       "misp",
       "malpedia"
     ]
@@ -9515,6 +9762,29 @@
     "sources": [
       "misp",
       "malpedia"
+    ]
+  },
+  {
+    "id": "bamboo-spider",
+    "name": "NARWHAL SPIDER",
+    "aliases": [
+      "NARWHAL SPIDER",
+      "Storm-0302",
+      "TA544",
+      "BAMBOO SPIDER",
+      "GOLD ESSEX",
+      "Narwhal Spider",
+      "Gold Essex",
+      "Bamboo Spider"
+    ],
+    "origin": [],
+    "report_count": 6,
+    "last_reported": "2022-02-08",
+    "sources": [
+      "misp",
+      "etda",
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -9657,6 +9927,22 @@
       "misp",
       "etda",
       "malpedia"
+    ]
+  },
+  {
+    "id": "night-tsunami",
+    "name": "Night Tsunami",
+    "aliases": [
+      "Night Tsunami",
+      "DEV-0336"
+    ],
+    "origin": [
+      "IL"
+    ],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
     ]
   },
   {
@@ -9805,6 +10091,21 @@
     ]
   },
   {
+    "id": "obsidian-sandstorm",
+    "name": "Obsidian Sandstorm",
+    "aliases": [
+      "Obsidian Sandstorm"
+    ],
+    "origin": [
+      "IR"
+    ],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
+    ]
+  },
+  {
     "id": "oilalpha",
     "name": "OilAlpha",
     "aliases": [
@@ -9859,7 +10160,7 @@
     "origin": [
       "IR"
     ],
-    "report_count": 133,
+    "report_count": 134,
     "last_reported": "2026-08-10",
     "sources": [
       "attack",
@@ -10840,7 +11141,8 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -10882,7 +11184,7 @@
     "origin": [
       "IN"
     ],
-    "report_count": 123,
+    "report_count": 124,
     "last_reported": "2026-08-02",
     "sources": [
       "attack",
@@ -10910,8 +11212,8 @@
     "name": "Pearl Sleet",
     "aliases": [
       "Pearl Sleet",
-      "DEV-0215",
-      "LAWRENCIUM"
+      "LAWRENCIUM",
+      "DEV-0215"
     ],
     "origin": [
       "KP"
@@ -10920,7 +11222,8 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -10974,12 +11277,15 @@
       "Phlox Tempest",
       "DEV-0796"
     ],
-    "origin": [],
+    "origin": [
+      "IL"
+    ],
     "report_count": 0,
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -11002,21 +11308,16 @@
     "name": "PittyTiger",
     "aliases": [
       "PittyTiger",
-      "APT24",
-      "PITTY PANDA",
-      "Temp.Pittytiger",
       "Pitty Panda"
     ],
     "origin": [
       "CN"
     ],
-    "report_count": 4,
+    "report_count": 2,
     "last_reported": "2026-08-06",
     "sources": [
       "attack",
-      "misp",
-      "etda",
-      "malpedia"
+      "etda"
     ]
   },
   {
@@ -11060,10 +11361,15 @@
       "TwoForOne",
       "ATK33",
       "Platinum",
-      "ATK 33"
+      "ATK 33",
+      "Fallow Squall",
+      "PARASITE",
+      "RUBYVINE",
+      "GINGERSNAP"
     ],
     "origin": [
-      "CN"
+      "CN",
+      "SG"
     ],
     "report_count": 8,
     "last_reported": "2026-04-06",
@@ -11071,7 +11377,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -11178,9 +11485,9 @@
     "aliases": [
       "POLONIUM",
       "Plaid Rain",
+      "INCENDIARY JACKAL",
       "UNC4453",
       "GREATRIFT",
-      "INCENDIARY JACKAL",
       "Polonium",
       "Incendiary Jackal"
     ],
@@ -11193,7 +11500,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -11302,8 +11610,9 @@
       "PROMETHIUM",
       "StrongPity",
       "APT-C-41",
+      "Magenta Dust",
       "Promethium",
-      "Magenta Dust"
+      "SmallPity"
     ],
     "origin": [
       "TR"
@@ -11314,7 +11623,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -11331,6 +11641,22 @@
     "sources": [
       "misp",
       "malpedia"
+    ]
+  },
+  {
+    "id": "pumpkin-sandstorm",
+    "name": "Pumpkin Sandstorm",
+    "aliases": [
+      "Pumpkin Sandstorm",
+      "DEV-0146"
+    ],
+    "origin": [
+      "IR"
+    ],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
     ]
   },
   {
@@ -11987,16 +12313,18 @@
     "name": "RomCom",
     "aliases": [
       "RomCom",
+      "Storm-0978",
       "Tropical Scorpius",
       "Void Rabisu",
-      "Storm-0978",
       "TA829",
-      "UAT-5647",
-      "DEV-0978",
       "Storm-0671",
       "UNC2596",
+      "UAT-5647",
+      "DEV-0978",
       "CIGAR",
-      "UAC-0180"
+      "UAC-0180",
+      "Tropicalscorpius",
+      "Underground Team"
     ],
     "origin": [
       "RU"
@@ -12006,7 +12334,8 @@
     "sources": [
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -12025,6 +12354,38 @@
       "misp",
       "etda",
       "malpedia"
+    ]
+  },
+  {
+    "id": "ruby-sleet",
+    "name": "Ruby Sleet",
+    "aliases": [
+      "Ruby Sleet",
+      "CERIUM"
+    ],
+    "origin": [
+      "KP"
+    ],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "malpedia"
+    ]
+  },
+  {
+    "id": "ruby-sleet-2",
+    "name": "Ruby Sleet",
+    "aliases": [
+      "Ruby Sleet",
+      "CERIUM"
+    ],
+    "origin": [
+      "KP"
+    ],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "misp"
     ]
   },
   {
@@ -12073,6 +12434,21 @@
     "sources": [
       "misp",
       "malpedia"
+    ]
+  },
+  {
+    "id": "ruza-flood",
+    "name": "Ruza Flood",
+    "aliases": [
+      "Ruza Flood"
+    ],
+    "origin": [
+      "RU"
+    ],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
     ]
   },
   {
@@ -12130,29 +12506,13 @@
       "Storm-0587",
       "TA471",
       "UAC-0056",
-      "Lorec53",
-      "SaintBear",
-      "UNC2589",
-      "Nodaria",
-      "FROZENVISTA",
-      "Nascent Ursa",
-      "DEV-0587",
-      "EMBER BEAR",
-      "Lorec Bear",
-      "Bleeding Bear",
-      "Cadet Blizzard",
-      "Ember Bear"
+      "Lorec53"
     ],
-    "origin": [
-      "RU"
-    ],
-    "report_count": 6,
+    "origin": [],
+    "report_count": 5,
     "last_reported": "2023-06-14",
     "sources": [
-      "attack",
-      "misp",
-      "etda",
-      "malpedia"
+      "attack"
     ]
   },
   {
@@ -12161,8 +12521,8 @@
     "aliases": [
       "Salt Typhoon",
       "GhostEmperor",
-      "UNC2286",
       "FamousSparrow",
+      "UNC2286",
       "Earth Estries",
       "RedMike",
       "OPERATOR PANDA",
@@ -12177,7 +12537,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -12281,22 +12642,24 @@
     "name": "Sandworm Team",
     "aliases": [
       "Sandworm Team",
-      "Quedagh",
       "IRIDIUM",
       "Seashell Blizzard",
+      "Quedagh",
       "FROZENBARENTS",
-      "ELECTRUM",
-      "IRON VIKING",
       "APT44",
       "Sandworm",
-      "TEMP.Noble",
-      "UAC-0082",
       "UAC-0113",
       "Blue Echidna",
-      "TeleBots",
-      "Voodoo Bear",
+      "ELECTRUM",
+      "IRON VIKING",
+      "TEMP.Noble",
       "BE2",
+      "UAC-0082",
+      "TeleBots",
       "VOODOO BEAR",
+      "Voodoo Bear",
+      "PHANTOM",
+      "BlackEnergy Lite",
       "SANDWORM RELIC",
       "UAC-0145",
       "Telebots",
@@ -12310,20 +12673,49 @@
       "APT 44",
       "Grey Tornado",
       "Razing Ursa",
-      "PHANTOM",
-      "BlackEnergy Lite"
+      "Energetic Bear",
+      "Dragonfly",
+      "Crouching Yeti",
+      "Group 24",
+      "Koala Team",
+      "Iron Liberty",
+      "TG-4192",
+      "Electrum",
+      "ATK 6",
+      "ITG15",
+      "Bromine",
+      "Ghost Blizzard",
+      "Blue Kraken"
     ],
     "origin": [
       "IR",
       "RU"
     ],
-    "report_count": 212,
+    "report_count": 215,
     "last_reported": "2026-09-07",
     "sources": [
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "sangria-tempest",
+    "name": "Sangria Tempest",
+    "aliases": [
+      "Sangria Tempest",
+      "ELBRUS",
+      "CARBON SPIDER"
+    ],
+    "origin": [
+      "UA"
+    ],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
     ]
   },
   {
@@ -12456,16 +12848,18 @@
       "Starfraud",
       "Roasted 0ktapus",
       "LUCR-3",
-      "Star Fraud"
+      "Star Fraud",
+      "SCATTERED SPIDER"
     ],
     "origin": [],
-    "report_count": 8,
+    "report_count": 9,
     "last_reported": "2026-04-17",
     "sources": [
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -12518,12 +12912,12 @@
     "name": "Sea Turtle",
     "aliases": [
       "Sea Turtle",
-      "Teal Kurma",
       "Marbled Dust",
+      "Teal Kurma",
       "SILICON",
       "UNC1326",
-      "Cosmic Wolf",
       "COSMIC WOLF",
+      "Cosmic Wolf",
       "Silicon"
     ],
     "origin": [
@@ -12535,7 +12929,23 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "sefid-flood",
+    "name": "Sefid Flood",
+    "aliases": [
+      "Sefid Flood"
+    ],
+    "origin": [
+      "IR"
+    ],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
     ]
   },
   {
@@ -12776,7 +13186,8 @@
     "aliases": [
       "ShinyHunters",
       "UNC6240",
-      "Bling Libra"
+      "Bling Libra",
+      "Storm-3127"
     ],
     "origin": [],
     "report_count": 8,
@@ -12785,7 +13196,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -12811,7 +13223,12 @@
       "TAG-140",
       "UNC2269",
       "White Dev 55",
-      "Mocking Draco"
+      "Mocking Draco",
+      "Viridian Vortex",
+      "Storm-0156",
+      "MYTHIC LEOPARD",
+      "APT36",
+      "Transparent Tribe"
     ],
     "origin": [
       "PK"
@@ -12822,7 +13239,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -13438,11 +13856,12 @@
       "SEABORGIUM",
       "Callisto Group",
       "COLDRIVER",
+      "BlueCharlie",
+      "Aqua Blizzard",
       "Cold River",
       "Nahr el bared",
       "Nahr Elbard",
       "TAG-53",
-      "BlueCharlie",
       "Blue Callisto",
       "UNC4057",
       "IRON FRONTIER",
@@ -13450,23 +13869,23 @@
       "Winterflounder",
       "BlueAlpha",
       "Blue Otso",
+      "Armageddon",
+      "SectorC08",
       "Callisto",
       "Shuckworm",
       "Actinium",
       "Trident Ursa",
       "DEV-0157",
       "UAC-0010",
-      "Aqua Blizzard",
-      "DNSpionage",
-      "Armageddon",
-      "SectorC08",
       "UNC530",
+      "DNSpionage",
+      "ACTINIUM",
+      "PRIMITIVE BEAR",
       "GOSSAMER BEAR",
       "COLD RELIC",
       "COBALT EDGEWATER",
-      "ACTINIUM",
       "IRON TILDEN",
-      "PRIMITIVE BEAR",
+      "Gamaredon",
       "Cobalt Edgewater",
       "Seaborgium",
       "Calisto",
@@ -13476,19 +13895,20 @@
       "Primitive Bear",
       "Iron Tilden",
       "Reuse Team",
-      "Gamaredon"
+      "shuckworm"
     ],
     "origin": [
       "RU",
       "IR"
     ],
-    "report_count": 28,
+    "report_count": 29,
     "last_reported": "2026-04-06",
     "sources": [
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -13553,7 +13973,9 @@
     "aliases": [
       "Stealth Falcon",
       "FruityArmor",
-      "Project Raven"
+      "Project Raven",
+      "Daffodil Gust",
+      "Fruity Armor"
     ],
     "origin": [
       "AE"
@@ -13564,7 +13986,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -13589,7 +14012,8 @@
     "aliases": [
       "Storm-0062",
       "Oro0lxy",
-      "DarkShadow"
+      "DarkShadow",
+      "Shadow Typhoon"
     ],
     "origin": [
       "CN"
@@ -13598,7 +14022,8 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -13613,7 +14038,8 @@
     "last_reported": "2026-01-15",
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -13628,7 +14054,21 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "storm-0259",
+    "name": "Storm-0259",
+    "aliases": [
+      "Storm-0259"
+    ],
+    "origin": [],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
     ]
   },
   {
@@ -13666,6 +14106,19 @@
     ]
   },
   {
+    "id": "storm-0408",
+    "name": "Storm-0408",
+    "aliases": [
+      "Storm-0408"
+    ],
+    "origin": [],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
+    ]
+  },
+  {
     "id": "storm-0473",
     "name": "Storm-0473",
     "aliases": [
@@ -13680,6 +14133,19 @@
     "sources": [
       "misp",
       "malpedia"
+    ]
+  },
+  {
+    "id": "storm-0485",
+    "name": "Storm-0485",
+    "aliases": [
+      "Storm-0485"
+    ],
+    "origin": [],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
     ]
   },
   {
@@ -13708,7 +14174,8 @@
     "sources": [
       "attack",
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -13754,7 +14221,8 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -13772,7 +14240,8 @@
     "sources": [
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -13851,7 +14320,8 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -13914,7 +14384,8 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -13929,7 +14400,8 @@
     "last_reported": "2025-06-13",
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -13961,7 +14433,8 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -13994,7 +14467,35 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "storm-1194",
+    "name": "Storm-1194",
+    "aliases": [
+      "Storm-1194",
+      "MONTI"
+    ],
+    "origin": [],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
+    ]
+  },
+  {
+    "id": "storm-1249",
+    "name": "Storm-1249",
+    "aliases": [
+      "Storm-1249"
+    ],
+    "origin": [],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
     ]
   },
   {
@@ -14045,7 +14546,8 @@
     "name": "Storm-1516",
     "aliases": [
       "Storm-1516",
-      "CopyCop"
+      "CopyCop",
+      "Neva Flood"
     ],
     "origin": [
       "RU"
@@ -14054,7 +14556,8 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -14068,7 +14571,21 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "storm-1607",
+    "name": "Storm-1607",
+    "aliases": [
+      "Storm-1607"
+    ],
+    "origin": [],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
     ]
   },
   {
@@ -14082,14 +14599,16 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
     "id": "storm-1679",
     "name": "Storm-1679",
     "aliases": [
-      "Storm-1679"
+      "Storm-1679",
+      "Oka Flood"
     ],
     "origin": [
       "RU"
@@ -14098,7 +14617,8 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -14112,7 +14632,8 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -14120,8 +14641,8 @@
     "name": "Storm-1811",
     "aliases": [
       "Storm-1811",
-      "UNC4393",
       "CURLY SPIDER",
+      "UNC4393",
       "STAC5777",
       "Cardinal"
     ],
@@ -14131,7 +14652,8 @@
     "sources": [
       "attack",
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -14150,6 +14672,19 @@
     ]
   },
   {
+    "id": "storm-1865",
+    "name": "Storm-1865",
+    "aliases": [
+      "Storm-1865"
+    ],
+    "origin": [],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
+    ]
+  },
+  {
     "id": "storm-1977",
     "name": "Storm-1977",
     "aliases": [
@@ -14161,6 +14696,38 @@
     "sources": [
       "misp",
       "malpedia"
+    ]
+  },
+  {
+    "id": "storm-1982",
+    "name": "Storm-1982",
+    "aliases": [
+      "Storm-1982",
+      "SneakyCheff",
+      "UNK_SweetSpecter"
+    ],
+    "origin": [
+      "CN"
+    ],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
+    ]
+  },
+  {
+    "id": "storm-2035",
+    "name": "Storm-2035",
+    "aliases": [
+      "Storm-2035"
+    ],
+    "origin": [
+      "IR"
+    ],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
     ]
   },
   {
@@ -14179,7 +14746,8 @@
     "sources": [
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -14197,6 +14765,19 @@
     ]
   },
   {
+    "id": "storm-2227",
+    "name": "Storm-2227",
+    "aliases": [
+      "Storm-2227"
+    ],
+    "origin": [],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
+    ]
+  },
+  {
     "id": "storm-2372",
     "name": "Storm-2372",
     "aliases": [
@@ -14209,21 +14790,52 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
     "id": "storm-2460",
     "name": "Storm-2460",
     "aliases": [
-      "Storm-2460"
+      "Storm-2460",
+      "Lumma Stealer"
     ],
     "origin": [],
     "report_count": 0,
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "storm-2470",
+    "name": "Storm-2470",
+    "aliases": [
+      "Storm-2470"
+    ],
+    "origin": [
+      "CN"
+    ],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
+    ]
+  },
+  {
+    "id": "storm-2477",
+    "name": "Storm-2477",
+    "aliases": [
+      "Storm-2477"
+    ],
+    "origin": [],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
     ]
   },
   {
@@ -14237,7 +14849,8 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -14253,21 +14866,52 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
     "id": "storm-2657",
     "name": "Storm-2657",
     "aliases": [
-      "Storm-2657"
+      "Storm-2657",
+      "Payroll Pirates"
+    ],
+    "origin": [
+      "US"
+    ],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "misp",
+      "malpedia",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "storm-2697",
+    "name": "Storm-2697",
+    "aliases": [
+      "Storm-2697"
     ],
     "origin": [],
     "report_count": 0,
     "last_reported": null,
     "sources": [
-      "misp",
-      "malpedia"
+      "microsoft"
+    ]
+  },
+  {
+    "id": "storm-2755",
+    "name": "Storm-2755",
+    "aliases": [
+      "Storm-2755"
+    ],
+    "origin": [],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
     ]
   },
   {
@@ -14281,7 +14925,8 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -14295,7 +14940,21 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "storm-3075",
+    "name": "Storm-3075",
+    "aliases": [
+      "Storm-3075"
+    ],
+    "origin": [],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
     ]
   },
   {
@@ -14385,7 +15044,8 @@
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -14438,12 +15098,12 @@
     "aliases": [
       "TA2101",
       "Maze Team",
-      "TWISTED SPIDER",
-      "GOLD VILLAGE",
       "Storm-0216",
-      "DEV-0216",
       "UNC2198",
       "TUNNEL SPIDER",
+      "TWISTED SPIDER",
+      "GOLD VILLAGE",
+      "DEV-0216",
       "Twisted Spider",
       "Gold Village"
     ],
@@ -14455,7 +15115,8 @@
     "sources": [
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -14698,19 +15359,19 @@
     "name": "TA505",
     "aliases": [
       "TA505",
-      "Hive0065",
       "Spandex Tempest",
+      "Hive0065",
+      "DEV-0950",
+      "Lace Tempest",
       "CHIMBORAZO",
       "TEMP.Warlock",
       "SectorJ04",
       "FIN11",
-      "DEV-0950",
-      "Lace Tempest",
+      "MONTY SPIDER",
       "UNC902",
       "RAZOR COMET",
       "GOLD EVERGREEN",
       "GOLD RIVERVIEW",
-      "MONTY SPIDER",
       "SectorJ04 Group",
       "GRACEFUL SPIDER",
       "GOLD TAHOE",
@@ -14734,7 +15395,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -15117,7 +15779,8 @@
       "CanisterWorm",
       "PCPCat",
       "SHADOW-WATER-058",
-      "UNC6780"
+      "UNC6780",
+      "Storm-2999"
     ],
     "origin": [],
     "report_count": 16,
@@ -15125,7 +15788,8 @@
     "sources": [
       "attack",
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -15212,7 +15876,7 @@
     "origin": [
       "RU"
     ],
-    "report_count": 19,
+    "report_count": 21,
     "last_reported": "2026-08-06",
     "sources": [
       "attack",
@@ -15430,41 +16094,50 @@
     "name": "Threat Group-3390",
     "aliases": [
       "Threat Group-3390",
-      "Earth Smilodon",
       "TG-3390",
-      "Iron Tiger",
       "Linen Typhoon",
-      "BRONZE UNION",
+      "Earth Smilodon",
       "APT27",
+      "Iron Tiger",
+      "UNC215",
+      "Red Phoenix",
+      "Circle Typhoon",
+      "BRONZE UNION",
+      "1.php Group",
       "TEMP.Hippo",
       "Budworm",
       "Group 35",
-      "Red Phoenix",
       "ZipToken",
       "Iron Taurus",
-      "Circle Typhoon",
+      "EMISSARY PANDA",
+      "Lucky Mouse",
+      "APT6",
+      "DEV-0322",
       "Emissary Panda",
       "LuckyMouse",
       "GreedyTaotie",
-      "EMISSARY PANDA",
-      "Lucky Mouse",
       "SHORE CASTLE",
       "TiltedTemple",
-      "DEV-0322",
+      "APT 6",
       "APT 27",
       "Bronze Union",
-      "ATK 15"
+      "ATK 15",
+      "IODINE",
+      "Hippo",
+      "BOWSER",
+      "Wekby2"
     ],
     "origin": [
       "CN"
     ],
-    "report_count": 291,
+    "report_count": 292,
     "last_reported": "2026-07-15",
     "sources": [
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -15562,7 +16235,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -15595,7 +16269,9 @@
       "LONE CASTLE",
       "HeartBeat",
       "Bronze Huntley",
-      "LoneRanger"
+      "LoneRanger",
+      "Copper Typhoon",
+      "Sharp-R"
     ],
     "origin": [
       "CN"
@@ -15606,7 +16282,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -15834,26 +16511,26 @@
     "name": "Turla",
     "aliases": [
       "Turla",
+      "Secret Blizzard",
       "Group 88",
       "Waterbug",
-      "Secret Blizzard",
-      "IRON HUNTER",
       "Snake",
+      "Blue Python",
+      "IRON HUNTER",
       "SIG23",
       "Pacifier APT",
       "ITG12",
       "Popeye",
       "UNC4210",
       "SUMMIT",
-      "Blue Python",
+      "WRAITH",
+      "Uroburos",
+      "KRYPTON",
       "Krypton",
       "Venomous Bear",
       "VENOMOUS Bear",
-      "WRAITH",
-      "Uroburos",
       "Pfinet",
       "TAG_0530",
-      "KRYPTON",
       "Hippo Team",
       "MAKERSMARK",
       "ATK13",
@@ -15861,6 +16538,7 @@
       "UAC-0024",
       "UAC-0003",
       "TURLA RELIC",
+      "ATG26",
       "White Bear",
       "Skipper Turla",
       "WhiteBear",
@@ -15875,7 +16553,7 @@
       "Wraith",
       "TAG-0530",
       "Pensive Ursa",
-      "ATG26"
+      "VENOMOUS BEAR"
     ],
     "origin": [
       "RU"
@@ -15886,7 +16564,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -16438,23 +17117,6 @@
     ]
   },
   {
-    "id": "unc215",
-    "name": "UNC215",
-    "aliases": [
-      "UNC215"
-    ],
-    "origin": [
-      "CN"
-    ],
-    "report_count": 7,
-    "last_reported": "2021-12-14",
-    "sources": [
-      "misp",
-      "etda",
-      "malpedia"
-    ]
-  },
-  {
     "id": "unc2447",
     "name": "UNC2447",
     "aliases": [
@@ -16889,14 +17551,16 @@
     "id": "unc6040",
     "name": "UNC6040",
     "aliases": [
-      "UNC6040"
+      "UNC6040",
+      "Storm-2581"
     ],
     "origin": [],
     "report_count": 0,
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -17089,6 +17753,19 @@
     "sources": [
       "misp",
       "malpedia"
+    ]
+  },
+  {
+    "id": "G1029",
+    "name": "UNC788",
+    "aliases": [
+      "UNC788"
+    ],
+    "origin": [],
+    "report_count": 1,
+    "last_reported": "2022-04-01",
+    "sources": [
+      "attack"
     ]
   },
   {
@@ -17485,6 +18162,26 @@
     ]
   },
   {
+    "id": "vice-spider",
+    "name": "Vanilla Tempest",
+    "aliases": [
+      "Vanilla Tempest",
+      "DEV-0832",
+      "VICE SPIDER",
+      "Vice Society"
+    ],
+    "origin": [
+      "RU"
+    ],
+    "report_count": 168,
+    "last_reported": "2026-07-20",
+    "sources": [
+      "misp",
+      "malpedia",
+      "microsoft"
+    ]
+  },
+  {
     "id": "vantacore",
     "name": "VantaCore",
     "aliases": [
@@ -17518,36 +18215,22 @@
     ]
   },
   {
-    "id": "vice-spider",
-    "name": "VICE SPIDER",
+    "id": "alpha-spider",
+    "name": "Velvet Tempest",
     "aliases": [
-      "VICE SPIDER",
-      "Vanilla Tempest",
-      "DEV-0832",
-      "Vice Society"
-    ],
-    "origin": [
-      "RU"
-    ],
-    "report_count": 168,
-    "last_reported": "2026-07-20",
-    "sources": [
-      "misp",
-      "malpedia"
-    ]
-  },
-  {
-    "id": "viceleaker",
-    "name": "ViceLeaker",
-    "aliases": [
-      "ViceLeaker"
+      "Velvet Tempest",
+      "DEV-0504",
+      "ALPHA SPIDER",
+      "Alpha Spider",
+      "ALPHV Ransomware Group"
     ],
     "origin": [],
-    "report_count": 0,
-    "last_reported": null,
+    "report_count": 62,
+    "last_reported": "2025-12-30",
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -17664,7 +18347,8 @@
     "sources": [
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -17674,9 +18358,9 @@
       "VOID MANTICORE",
       "Red Sandstorm",
       "BANISHED KITTEN",
-      "HomeLand Justice",
       "Void Manticore",
       "Storm-0842",
+      "HomeLand Justice",
       "Karma",
       "DUNE",
       "COBALT MYSTIQUE",
@@ -17695,7 +18379,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -17703,11 +18388,11 @@
     "name": "Volatile Cedar",
     "aliases": [
       "Volatile Cedar",
+      "VolcanicTimber",
+      "Amethyst Rain",
       "Lebanese Cedar",
       "Dancing Salome",
-      "DeftTorero",
-      "VolcanicTimber",
-      "Amethyst Rain"
+      "DeftTorero"
     ],
     "origin": [
       "LB"
@@ -17718,7 +18403,25 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "volga-flood",
+    "name": "Volga Flood",
+    "aliases": [
+      "Volga Flood",
+      "Storm-1841",
+      "Rybar"
+    ],
+    "origin": [
+      "RU"
+    ],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
     ]
   },
   {
@@ -17726,18 +18429,18 @@
     "name": "Volt Typhoon",
     "aliases": [
       "Volt Typhoon",
+      "BRONZE SILHOUETTE",
       "UNC3236",
       "Insidious Taurus",
-      "BRONZE SILHOUETTE",
       "Redfly",
       "VOLTZITE",
       "Dev-0391",
       "Storm-0391",
       "UAT-5918",
       "UAT-7237",
+      "VANGUARD PANDA",
       "Vanguard Panda",
       "CL-STA-1062",
-      "VANGUARD PANDA",
       "DEV-0391",
       "Voltzite",
       "DazedToad",
@@ -17752,7 +18455,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -18033,6 +18737,21 @@
     ]
   },
   {
+    "id": "wheat-tempest",
+    "name": "Wheat Tempest",
+    "aliases": [
+      "Wheat Tempest",
+      "GOLD",
+      "Gatak"
+    ],
+    "origin": [],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
+    ]
+  },
+  {
     "id": "whitecobra",
     "name": "WhiteCobra",
     "aliases": [
@@ -18170,7 +18889,7 @@
       "Windy Phoenix"
     ],
     "origin": [],
-    "report_count": 15,
+    "report_count": 16,
     "last_reported": "2026-04-06",
     "sources": [
       "attack",
@@ -18272,15 +18991,18 @@
     "aliases": [
       "Wisteria Tsunami",
       "DEV-0605",
-      "CyberRoot",
-      "MintedSoil"
+      "MintedSoil",
+      "CyberRoot"
     ],
-    "origin": [],
+    "origin": [
+      "IN"
+    ],
     "report_count": 0,
     "last_reported": null,
     "sources": [
       "misp",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -18288,25 +19010,26 @@
     "name": "Wizard Spider",
     "aliases": [
       "Wizard Spider",
+      "Periwinkle Tempest",
+      "DEV-0193",
       "UNC1878",
       "TEMP.MixMaster",
       "FIN12",
-      "Periwinkle Tempest",
-      "DEV-0193",
-      "GOLD BLACKBURN",
       "Pistachio Tempest",
       "DEV-0237",
       "Storm-0230",
+      "GOLD BLACKBURN",
+      "WIZARD SPIDER",
       "Grim Spider",
       "ITG23",
       "GRIM SPIDER",
       "GOLD ULRICK",
-      "WIZARD SPIDER",
       "Storm-0193",
       "Trickbot LLC",
       "UNC2053",
       "Gold Blackburn",
-      "Gold Ulrick"
+      "Gold Ulrick",
+      "Conti Team 1"
     ],
     "origin": [
       "RU"
@@ -18317,7 +19040,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {
@@ -18477,6 +19201,22 @@
     ]
   },
   {
+    "id": "yulong-flood",
+    "name": "Yulong Flood",
+    "aliases": [
+      "Yulong Flood",
+      "Storm-1852"
+    ],
+    "origin": [
+      "CN"
+    ],
+    "report_count": 0,
+    "last_reported": null,
+    "sources": [
+      "microsoft"
+    ]
+  },
+  {
     "id": "z-pentest-alliance",
     "name": "Z-Pentest Alliance",
     "aliases": [
@@ -18568,13 +19308,13 @@
       "BRONZE VINEWOOD",
       "Red keres",
       "TIDE CASTLE",
+      "Chameleon",
+      "WebFans",
       "APT 31",
       "Judgment Panda",
       "RedBravo",
       "Bronze Vinewood",
-      "Red Keres",
-      "Chameleon",
-      "WebFans"
+      "Red Keres"
     ],
     "origin": [
       "CN"
@@ -18585,7 +19325,8 @@
       "attack",
       "misp",
       "etda",
-      "malpedia"
+      "malpedia",
+      "microsoft"
     ]
   },
   {

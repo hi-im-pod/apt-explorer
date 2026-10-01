@@ -6,7 +6,8 @@
       "value": "Blue Tsunami",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -25,6 +26,10 @@
     {
       "value": "IL",
       "source": "malpedia"
+    },
+    {
+      "value": "IL",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -40,5 +45,5 @@
   "timeline": [],
   "reports": [],
   "conflicts": [],
-  "evidence_count": 2
+  "evidence_count": 3
 }

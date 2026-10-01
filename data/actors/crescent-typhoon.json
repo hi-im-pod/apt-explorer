@@ -1,23 +1,24 @@
 {
-  "id": "mana-team",
-  "name": "Mana Team",
+  "id": "crescent-typhoon",
+  "name": "Crescent Typhoon",
   "aliases": [
     {
-      "value": "Mana Team",
+      "value": "Crescent Typhoon",
       "sources": [
-        "misp",
-        "malpedia"
+        "microsoft"
+      ]
+    },
+    {
+      "value": "CESIUM",
+      "sources": [
+        "microsoft"
       ]
     }
   ],
   "origin": [
     {
       "value": "CN",
-      "source": "misp"
-    },
-    {
-      "value": "CN",
-      "source": "malpedia"
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -33,5 +34,5 @@
   "timeline": [],
   "reports": [],
   "conflicts": [],
-  "evidence_count": 1
+  "evidence_count": 0
 }

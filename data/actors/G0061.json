@@ -8,7 +8,8 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -16,6 +17,13 @@
       "sources": [
         "attack",
         "etda"
+      ]
+    },
+    {
+      "value": "Storm-0288",
+      "sources": [
+        "etda",
+        "microsoft"
       ]
     },
     {
@@ -34,12 +42,6 @@
     },
     {
       "value": "ATK 113",
-      "sources": [
-        "etda"
-      ]
-    },
-    {
-      "value": "Storm-0288",
       "sources": [
         "etda"
       ]
@@ -278,5 +280,5 @@
     "4aa58052e825a1c2a68d7d12894e662653c9e829"
   ],
   "conflicts": [],
-  "evidence_count": 9
+  "evidence_count": 11
 }

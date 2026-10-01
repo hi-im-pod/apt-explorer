@@ -10,27 +10,6 @@
       ]
     },
     {
-      "value": "APT24",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "PITTY PANDA",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Temp.Pittytiger",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
       "value": "Pitty Panda",
       "sources": [
         "etda"
@@ -40,15 +19,7 @@
   "origin": [
     {
       "value": "CN",
-      "source": "misp"
-    },
-    {
-      "value": "CN",
       "source": "etda"
-    },
-    {
-      "value": "CN",
-      "source": "malpedia"
     }
   ],
   "sponsor": [],
@@ -104,50 +75,13 @@
     {
       "name": "gsecdump",
       "source": "attack"
-    },
-    {
-      "name": "BADAUDIO",
-      "source": "malpedia"
     }
   ],
   "techniques_documented": [
     "T1078",
     "T1588.002"
   ],
-  "techniques_reported": [
-    {
-      "id": "T1041",
-      "count": 1
-    },
-    {
-      "id": "T1059",
-      "count": 1
-    },
-    {
-      "id": "T1059.007",
-      "count": 1
-    },
-    {
-      "id": "T1082",
-      "count": 1
-    },
-    {
-      "id": "T1105",
-      "count": 1
-    },
-    {
-      "id": "T1189",
-      "count": 1
-    },
-    {
-      "id": "T1195.001",
-      "count": 1
-    },
-    {
-      "id": "T1574.001",
-      "count": 1
-    }
-  ],
+  "techniques_reported": [],
   "cves": [
     {
       "cve": "CVE-2012-0158",
@@ -166,24 +100,14 @@
       "count": 1
     },
     {
-      "quarter": "2025-Q4",
-      "count": 1
-    },
-    {
-      "quarter": "2026-Q1",
-      "count": 1
-    },
-    {
       "quarter": "2026-Q3",
       "count": 1
     }
   ],
   "reports": [
     "d995bbd0756859cc37fca4975dbd8a9c74356b3f",
-    "1f4c31af34263573f191262457eb99bc5edd690e",
-    "927127a9ff37420b191af7b81035bf637fa6ba55",
     "5526b79c5b9c4b25689cd3dcb8799a510d7e668e"
   ],
   "conflicts": [],
-  "evidence_count": 7
+  "evidence_count": 1
 }

@@ -7,7 +7,8 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -36,12 +37,40 @@
       "sources": [
         "etda"
       ]
+    },
+    {
+      "value": "Fallow Squall",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "PARASITE",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "RUBYVINE",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "GINGERSNAP",
+      "sources": [
+        "microsoft"
+      ]
     }
   ],
   "origin": [
     {
       "value": "CN",
       "source": "etda"
+    },
+    {
+      "value": "SG",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -258,6 +287,20 @@
     "8f9ced352ae35a97e06c0066ee2092b28b5f32d8",
     "25aa281300e73d4eee57527c39764f8c22082ea7"
   ],
-  "conflicts": [],
-  "evidence_count": 9
+  "conflicts": [
+    {
+      "field": "origin",
+      "values": [
+        {
+          "value": "CN",
+          "source": "etda"
+        },
+        {
+          "value": "SG",
+          "source": "microsoft"
+        }
+      ]
+    }
+  ],
+  "evidence_count": 10
 }

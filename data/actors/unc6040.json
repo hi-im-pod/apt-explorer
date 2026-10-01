@@ -6,7 +6,14 @@
       "value": "UNC6040",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Storm-2581",
+      "sources": [
+        "microsoft"
       ]
     }
   ],
@@ -24,5 +31,5 @@
   "timeline": [],
   "reports": [],
   "conflicts": [],
-  "evidence_count": 1
+  "evidence_count": 2
 }

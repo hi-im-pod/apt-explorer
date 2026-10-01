@@ -12,6 +12,16 @@
       ]
     },
     {
+      "value": "Mint Sandstorm",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
       "value": "TA453",
       "sources": [
         "attack",
@@ -39,20 +49,12 @@
       ]
     },
     {
-      "value": "Mint Sandstorm",
-      "sources": [
-        "attack",
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
       "value": "Newscaster",
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -60,7 +62,8 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -96,6 +99,14 @@
       ]
     },
     {
+      "value": "Parastoo",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
       "value": "ITG18",
       "sources": [
         "attack",
@@ -124,13 +135,6 @@
       ]
     },
     {
-      "value": "Parastoo",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
       "value": "iKittens",
       "sources": [
         "misp",
@@ -149,6 +153,13 @@
       "sources": [
         "misp",
         "malpedia"
+      ]
+    },
+    {
+      "value": "PHOSPHORUS",
+      "sources": [
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -212,9 +223,9 @@
       ]
     },
     {
-      "value": "PHOSPHORUS",
+      "value": "CHARMING KITTEN",
       "sources": [
-        "malpedia"
+        "microsoft"
       ]
     }
   ],
@@ -230,6 +241,10 @@
     {
       "value": "IR",
       "source": "malpedia"
+    },
+    {
+      "value": "IR",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -595,32 +610,7 @@
     "T1685.001",
     "T1686.003"
   ],
-  "techniques_reported": [
-    {
-      "id": "T1027.013",
-      "count": 1
-    },
-    {
-      "id": "T1059.001",
-      "count": 1
-    },
-    {
-      "id": "T1071.001",
-      "count": 1
-    },
-    {
-      "id": "T1204.002",
-      "count": 1
-    },
-    {
-      "id": "T1497",
-      "count": 1
-    },
-    {
-      "id": "T1566",
-      "count": 1
-    }
-  ],
+  "techniques_reported": [],
   "cves": [
     {
       "cve": "CVE-1999-0191",
@@ -1129,5 +1119,5 @@
     "bc3eccc11b37e8c2ca130f87a4c17f2166aa701d"
   ],
   "conflicts": [],
-  "evidence_count": 41
+  "evidence_count": 45
 }

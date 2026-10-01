@@ -8,7 +8,18 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Onyx Sleet",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -21,20 +32,30 @@
       ]
     },
     {
-      "value": "Onyx Sleet",
-      "sources": [
-        "attack",
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
       "value": "PLUTONIUM",
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Sapphire Sleet",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Black Artemis",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -78,11 +99,11 @@
       ]
     },
     {
-      "value": "Sapphire Sleet",
+      "value": "Alluring Pisces",
       "sources": [
-        "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -94,25 +115,51 @@
       ]
     },
     {
-      "value": "Black Artemis",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Alluring Pisces",
-      "sources": [
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
       "value": "APT45",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Diamond Sleet",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "ZINC",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "COPERNICIUM",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "UNC1069",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "CryptoCore",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -305,27 +352,6 @@
       ]
     },
     {
-      "value": "Diamond Sleet",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "ZINC",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "COPERNICIUM",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
       "value": "TA404",
       "sources": [
         "misp",
@@ -354,17 +380,17 @@
       ]
     },
     {
-      "value": "UNC1069",
+      "value": "Lazarus",
       "sources": [
-        "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
-      "value": "CryptoCore",
+      "value": "CageyChameleon",
       "sources": [
-        "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -508,21 +534,57 @@
       ]
     },
     {
-      "value": "Lazarus",
-      "sources": [
-        "malpedia"
-      ]
-    },
-    {
       "value": "Genie Spider",
       "sources": [
         "malpedia"
       ]
     },
     {
-      "value": "CageyChameleon",
+      "value": "LABYRINTH CHOLLIMA",
       "sources": [
-        "malpedia"
+        "microsoft"
+      ]
+    },
+    {
+      "value": "SILENT CHOLLIMA",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "StoneFly",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Tdrop2 campaign",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "DarkSeoul",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Black Chollima",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "STARDUST CHOLLIMA",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "BlueNoroff",
+      "sources": [
+        "microsoft"
       ]
     }
   ],
@@ -538,6 +600,10 @@
     {
       "value": "KP",
       "source": "malpedia"
+    },
+    {
+      "value": "KP",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -1683,5 +1749,5 @@
     "e204f491c98755fe0239112758a0938409dce32a"
   ],
   "conflicts": [],
-  "evidence_count": 52
+  "evidence_count": 64
 }

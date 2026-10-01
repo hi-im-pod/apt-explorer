@@ -10157,6 +10157,7 @@
     "techniques": [
       "T1003",
       "T1218",
+      "T1404",
       "T1557"
     ],
     "sources": [
@@ -10325,6 +10326,7 @@
     "techniques": [
       "T1003",
       "T1218",
+      "T1404",
       "T1557"
     ],
     "sources": [
@@ -10426,8 +10428,7 @@
       "G0093",
       "G0096",
       "G0125",
-      "hurricane-panda",
-      "unc215"
+      "hurricane-panda"
     ],
     "actor_names_unresolved": [],
     "cves": [],
@@ -23947,7 +23948,20 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1418",
+      "T1420",
+      "T1426",
+      "T1429",
+      "T1437",
+      "T1512",
+      "T1513",
+      "T1517",
+      "T1532",
+      "T1533",
+      "T1544",
+      "T1575"
+    ],
     "sources": [
       "orkl"
     ]
@@ -23983,7 +23997,20 @@
     ],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1418",
+      "T1420",
+      "T1426",
+      "T1429",
+      "T1437",
+      "T1512",
+      "T1513",
+      "T1517",
+      "T1532",
+      "T1533",
+      "T1544",
+      "T1575"
+    ],
     "sources": [
       "orkl"
     ]
@@ -24036,7 +24063,20 @@
     ],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1418",
+      "T1420",
+      "T1426",
+      "T1429",
+      "T1437",
+      "T1512",
+      "T1513",
+      "T1517",
+      "T1532",
+      "T1533",
+      "T1544",
+      "T1575"
+    ],
     "sources": [
       "orkl",
       "paper"
@@ -28311,7 +28351,15 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1418",
+      "T1429",
+      "T1430",
+      "T1437",
+      "T1512",
+      "T1513",
+      "T1541"
+    ],
     "sources": [
       "orkl"
     ]
@@ -29787,6 +29835,9 @@
       "T1124",
       "T1140",
       "T1203",
+      "T1424",
+      "T1533",
+      "T1544",
       "T1547",
       "T1566"
     ],
@@ -29929,6 +29980,9 @@
       "T1124",
       "T1140",
       "T1203",
+      "T1424",
+      "T1533",
+      "T1544",
       "T1547",
       "T1566"
     ],
@@ -31250,6 +31304,7 @@
       "T1219",
       "T1480",
       "T1543.003",
+      "T1544",
       "T1546",
       "T1547.001",
       "T1548.002",
@@ -34039,7 +34094,8 @@
       "T1087",
       "T1098",
       "T1102",
-      "T1133"
+      "T1133",
+      "T1532"
     ],
     "sources": [
       "orkl"
@@ -37566,7 +37622,13 @@
     ],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1426",
+      "T1429",
+      "T1430",
+      "T1437",
+      "T1533"
+    ],
     "sources": [
       "orkl"
     ]
@@ -37585,7 +37647,13 @@
     ],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1426",
+      "T1429",
+      "T1430",
+      "T1437",
+      "T1533"
+    ],
     "sources": [
       "orkl",
       "paper"
@@ -37752,7 +37820,13 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1426",
+      "T1429",
+      "T1430",
+      "T1437",
+      "T1533"
+    ],
     "sources": [
       "orkl"
     ]
@@ -41386,7 +41460,9 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1471"
+    ],
     "sources": [
       "orkl"
     ]
@@ -41481,7 +41557,9 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1471"
+    ],
     "sources": [
       "orkl"
     ]
@@ -48562,7 +48640,12 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1417",
+      "T1418",
+      "T1437",
+      "T1516"
+    ],
     "sources": [
       "orkl"
     ]
@@ -48596,7 +48679,12 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1417",
+      "T1418",
+      "T1437",
+      "T1516"
+    ],
     "sources": [
       "orkl"
     ]
@@ -50380,7 +50468,21 @@
     "actors": [],
     "actor_names_unresolved": [],
     "cves": [],
-    "techniques": [],
+    "techniques": [
+      "T1406",
+      "T1407",
+      "T1417",
+      "T1418",
+      "T1422",
+      "T1426",
+      "T1430",
+      "T1509",
+      "T1513",
+      "T1516",
+      "T1517",
+      "T1521",
+      "T1532"
+    ],
     "sources": [
       "orkl"
     ]
@@ -53681,7 +53783,9 @@
       "CVE-2019-15126"
     ],
     "techniques": [
-      "T1505"
+      "T1505",
+      "T1516",
+      "T1517"
     ],
     "sources": [
       "orkl",
@@ -60336,8 +60440,7 @@
     "actors": [
       "G0010",
       "G0027",
-      "G0049",
-      "unc215"
+      "G0049"
     ],
     "actor_names_unresolved": [],
     "cves": [],
@@ -62035,7 +62138,15 @@
       "T1027",
       "T1071",
       "T1140",
-      "T1204"
+      "T1204",
+      "T1406",
+      "T1418",
+      "T1421",
+      "T1422",
+      "T1426",
+      "T1429",
+      "T1430",
+      "T1474"
     ],
     "sources": [
       "orkl"
@@ -62225,7 +62336,15 @@
       "T1027",
       "T1071",
       "T1140",
-      "T1204"
+      "T1204",
+      "T1406",
+      "T1418",
+      "T1421",
+      "T1422",
+      "T1426",
+      "T1429",
+      "T1430",
+      "T1474"
     ],
     "sources": [
       "orkl"
@@ -65147,6 +65266,7 @@
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
+      "T1406",
       "T1497"
     ],
     "sources": [

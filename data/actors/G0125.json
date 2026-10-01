@@ -7,7 +7,8 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -16,7 +17,8 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -36,6 +38,14 @@
       ]
     },
     {
+      "value": "MURKY PANDA",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
       "value": "ATK233",
       "sources": [
         "misp",
@@ -43,10 +53,10 @@
       ]
     },
     {
-      "value": "MURKY PANDA",
+      "value": "timmy",
       "sources": [
-        "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -59,12 +69,6 @@
       "value": "Murky Panda",
       "sources": [
         "etda"
-      ]
-    },
-    {
-      "value": "timmy",
-      "sources": [
-        "malpedia"
       ]
     }
   ],
@@ -80,6 +84,10 @@
     {
       "value": "CN",
       "source": "malpedia"
+    },
+    {
+      "value": "CN",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -851,5 +859,5 @@
     "6ac96277e3120a9730fd6584cd42217c3527aed1"
   ],
   "conflicts": [],
-  "evidence_count": 15
+  "evidence_count": 19
 }

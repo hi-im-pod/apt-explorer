@@ -17,7 +17,8 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -30,6 +31,33 @@
       ]
     },
     {
+      "value": "Desert Falcons",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Pinstripe Lightning",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Scimitar",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
       "value": "Desert Falcon",
       "sources": [
         "attack",
@@ -38,27 +66,19 @@
       ]
     },
     {
-      "value": "Desert Falcons",
+      "value": "NIOBIUM",
       "sources": [
         "misp",
-        "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
-      "value": "Pinstripe Lightning",
+      "value": "RENEGADE JACKAL",
       "sources": [
         "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Scimitar",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -84,20 +104,6 @@
     },
     {
       "value": "Bearded Barbie",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "NIOBIUM",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "RENEGADE JACKAL",
       "sources": [
         "misp",
         "malpedia"
@@ -385,7 +391,23 @@
   },
   "malware": [
     {
+      "name": "Desert Scorpion",
+      "source": "attack"
+    },
+    {
+      "name": "FrozenCell",
+      "source": "attack"
+    },
+    {
       "name": "Micropsia",
+      "source": "attack"
+    },
+    {
+      "name": "Phenakite",
+      "source": "attack"
+    },
+    {
+      "name": "SpyC23",
       "source": "attack"
     },
     {
@@ -425,8 +447,61 @@
       "source": "malpedia"
     }
   ],
-  "techniques_documented": [],
-  "techniques_reported": [],
+  "techniques_documented": [
+    "T1422",
+    "T1655.001",
+    "T1660"
+  ],
+  "techniques_reported": [
+    {
+      "id": "T1418",
+      "count": 1
+    },
+    {
+      "id": "T1420",
+      "count": 1
+    },
+    {
+      "id": "T1426",
+      "count": 1
+    },
+    {
+      "id": "T1429",
+      "count": 1
+    },
+    {
+      "id": "T1437",
+      "count": 1
+    },
+    {
+      "id": "T1512",
+      "count": 1
+    },
+    {
+      "id": "T1513",
+      "count": 1
+    },
+    {
+      "id": "T1517",
+      "count": 1
+    },
+    {
+      "id": "T1532",
+      "count": 1
+    },
+    {
+      "id": "T1533",
+      "count": 1
+    },
+    {
+      "id": "T1544",
+      "count": 1
+    },
+    {
+      "id": "T1575",
+      "count": 1
+    }
+  ],
   "cves": [
     {
       "cve": "CVE-2018-11776",
@@ -511,12 +586,14 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 2
+      "count": 4
     }
   ],
   "reports": [
     "612b64444abbc2edb607b1a6c9725caa0fd7b1aa",
+    "ccb964a7fb791d229effd3d7eb28a107e1a0cf5f",
     "e9b230db0468f39b27c9e9e8177f67f8b3704584",
+    "f65d3ec4fde46a7c0f6d437b27bf223ce32dc246",
     "0753cdcfa70bed2b0bd0aa2d32bfc6eafa778a1d",
     "36a4bd06471d80d2789f30bdd2f92f44a6634cc6",
     "ffd6e63827e156aa1cc6020365a7972a66eb1f19",
@@ -542,5 +619,5 @@
     "paper:The-Desert-Falcons-targeted-attacks"
   ],
   "conflicts": [],
-  "evidence_count": 26
+  "evidence_count": 32
 }

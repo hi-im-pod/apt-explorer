@@ -18,6 +18,15 @@
       ]
     },
     {
+      "value": "Jade Sleet",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
       "value": "UNC2970",
       "sources": [
         "misp",
@@ -27,14 +36,6 @@
     },
     {
       "value": "UNC4899",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Jade Sleet",
       "sources": [
         "misp",
         "etda",
@@ -207,6 +208,18 @@
       "sources": [
         "etda"
       ]
+    },
+    {
+      "value": "Storm-0954",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "LABYRINTH CHOLLIMA",
+      "sources": [
+        "microsoft"
+      ]
     }
   ],
   "origin": [
@@ -221,6 +234,10 @@
     {
       "value": "KP",
       "source": "malpedia"
+    },
+    {
+      "value": "KP",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -758,5 +775,5 @@
     "57ea89f6a6bc1c614112b01e31a6bbd6d68fe346"
   ],
   "conflicts": [],
-  "evidence_count": 13
+  "evidence_count": 14
 }

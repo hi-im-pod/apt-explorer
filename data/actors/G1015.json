@@ -17,7 +17,8 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -34,7 +35,8 @@
       "sources": [
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -111,6 +113,12 @@
       "value": "Star Fraud",
       "sources": [
         "etda"
+      ]
+    },
+    {
+      "value": "SCATTERED SPIDER",
+      "sources": [
+        "microsoft"
       ]
     }
   ],
@@ -199,6 +207,7 @@
     "T1213.005",
     "T1217",
     "T1219.002",
+    "T1451",
     "T1484.002",
     "T1486",
     "T1490",
@@ -227,6 +236,7 @@
     "T1598.004",
     "T1621",
     "T1657",
+    "T1660",
     "T1684.001",
     "T1685"
   ],
@@ -253,6 +263,10 @@
       "count": 2
     },
     {
+      "quarter": "2024-Q2",
+      "count": 1
+    },
+    {
       "quarter": "2025-Q2",
       "count": 1
     },
@@ -271,10 +285,11 @@
     "39abb567e6ea3fddfdd7909a68b43de2fcd301d6",
     "8086699f78173ab9f776f278c5eaffd0ccee8b9d",
     "90711c6f107284847aa046bc281ff741c80286bb",
+    "d0a8fb80e7f23fe3fcf9e57dad6a0bb85004a50b",
     "cc4cd86ab9312376c23ce7dad79b913db1ef5784",
     "675dd06adff55df31c37dc6376691f0a6600797a",
     "7982f254f8aca6399775584a96b7906781428bcd"
   ],
   "conflicts": [],
-  "evidence_count": 22
+  "evidence_count": 25
 }

@@ -7,7 +7,8 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -16,7 +17,8 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -25,7 +27,8 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -38,6 +41,33 @@
       ]
     },
     {
+      "value": "Smoke Sandstorm",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "UNC1549",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Cuboid Sandstorm",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
       "value": "TA455",
       "sources": [
         "misp",
@@ -46,23 +76,7 @@
       ]
     },
     {
-      "value": "Smoke Sandstorm",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
       "value": "Bohrium",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "UNC1549",
       "sources": [
         "misp",
         "etda",
@@ -86,29 +100,30 @@
       ]
     },
     {
-      "value": "Cuboid Sandstorm",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "BOHRIUM",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
       "value": "IMPERIAL KITTEN",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
       "value": "DEV-0228",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Tortoise Shell",
+      "sources": [
+        "attack",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "BOHRIUM",
       "sources": [
         "misp",
         "malpedia"
@@ -126,12 +141,6 @@
       "sources": [
         "misp",
         "malpedia"
-      ]
-    },
-    {
-      "value": "Tortoise Shell",
-      "sources": [
-        "attack"
       ]
     },
     {
@@ -175,6 +184,12 @@
       "sources": [
         "etda"
       ]
+    },
+    {
+      "value": "HOUSEBLEND",
+      "sources": [
+        "microsoft"
+      ]
     }
   ],
   "origin": [
@@ -189,6 +204,10 @@
     {
       "value": "IR",
       "source": "malpedia"
+    },
+    {
+      "value": "IR",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -448,5 +467,5 @@
     "e30eb85661ec98636d8992a74db6033c7d7617b3"
   ],
   "conflicts": [],
-  "evidence_count": 36
+  "evidence_count": 48
 }

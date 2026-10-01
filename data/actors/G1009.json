@@ -12,6 +12,16 @@
       ]
     },
     {
+      "value": "Marigold Sandstorm",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
       "value": "DEV-0500",
       "sources": [
         "attack",
@@ -21,12 +31,11 @@
       ]
     },
     {
-      "value": "Marigold Sandstorm",
+      "value": "VENGEFUL KITTEN",
       "sources": [
-        "attack",
         "misp",
-        "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -37,10 +46,10 @@
       ]
     },
     {
-      "value": "VENGEFUL KITTEN",
+      "value": "DEV-500",
       "sources": [
-        "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -66,12 +75,6 @@
       "sources": [
         "etda"
       ]
-    },
-    {
-      "value": "DEV-500",
-      "sources": [
-        "malpedia"
-      ]
     }
   ],
   "origin": [
@@ -86,6 +89,10 @@
     {
       "value": "IR",
       "source": "malpedia"
+    },
+    {
+      "value": "IR",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -222,5 +229,5 @@
     "224aa405a6dd8090fde54833f8f339f5b40928eb"
   ],
   "conflicts": [],
-  "evidence_count": 11
+  "evidence_count": 14
 }

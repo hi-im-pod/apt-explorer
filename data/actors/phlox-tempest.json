@@ -6,18 +6,25 @@
       "value": "Phlox Tempest",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
       "value": "DEV-0796",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     }
   ],
-  "origin": [],
+  "origin": [
+    {
+      "value": "IL",
+      "source": "microsoft"
+    }
+  ],
   "sponsor": [],
   "motivation": [],
   "claimed_targets": {
@@ -31,5 +38,5 @@
   "timeline": [],
   "reports": [],
   "conflicts": [],
-  "evidence_count": 2
+  "evidence_count": 4
 }

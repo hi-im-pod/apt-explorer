@@ -7,7 +7,8 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -15,21 +16,32 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
       "value": "Lyceum",
       "sources": [
         "attack",
-        "etda"
+        "etda",
+        "microsoft"
       ]
     },
     {
       "value": "Siamesekitten",
       "sources": [
         "attack",
-        "etda"
+        "etda",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Storm-0133",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -75,13 +87,6 @@
       ]
     },
     {
-      "value": "Storm-0133",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
       "value": "Hexane",
       "sources": [
         "etda"
@@ -118,6 +123,10 @@
     {
       "value": "IR",
       "source": "malpedia"
+    },
+    {
+      "value": "IR",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -323,5 +332,5 @@
     "588b19b571321e82e811aaf1179803da45f8c6cf"
   ],
   "conflicts": [],
-  "evidence_count": 17
+  "evidence_count": 22
 }

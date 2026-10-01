@@ -6,18 +6,20 @@
       "value": "Pearl Sleet",
       "sources": [
         "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "DEV-0215",
-      "sources": [
-        "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
       "value": "LAWRENCIUM",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "DEV-0215",
       "sources": [
         "misp",
         "malpedia"
@@ -32,6 +34,10 @@
     {
       "value": "KP",
       "source": "malpedia"
+    },
+    {
+      "value": "KP",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -47,5 +53,5 @@
   "timeline": [],
   "reports": [],
   "conflicts": [],
-  "evidence_count": 3
+  "evidence_count": 5
 }

@@ -14,13 +14,20 @@
     {
       "value": "UNC6240",
       "sources": [
-        "attack"
+        "attack",
+        "microsoft"
       ]
     },
     {
       "value": "Bling Libra",
       "sources": [
         "attack"
+      ]
+    },
+    {
+      "value": "Storm-3127",
+      "sources": [
+        "microsoft"
       ]
     }
   ],
@@ -305,5 +312,5 @@
     "8d41a8e2a1c3d323e9372fe6c6503e7e23d1a978"
   ],
   "conflicts": [],
-  "evidence_count": 3
+  "evidence_count": 4
 }

@@ -8,20 +8,23 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
       "value": "Websiic",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
       "value": "Storm-0247",
       "sources": [
-        "etda"
+        "etda",
+        "microsoft"
       ]
     }
   ],
@@ -29,6 +32,10 @@
     {
       "value": "CN",
       "source": "etda"
+    },
+    {
+      "value": "CN",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -198,5 +205,5 @@
     "d4c1666a91183fbe2fd1661b0219a2e92d8492f2"
   ],
   "conflicts": [],
-  "evidence_count": 4
+  "evidence_count": 7
 }

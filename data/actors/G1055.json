@@ -14,7 +14,8 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -22,15 +23,8 @@
       "sources": [
         "attack",
         "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "HomeLand Justice",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -38,11 +32,21 @@
       "sources": [
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
       "value": "Storm-0842",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "HomeLand Justice",
       "sources": [
         "misp",
         "etda",
@@ -112,6 +116,10 @@
     {
       "value": "IR",
       "source": "malpedia"
+    },
+    {
+      "value": "IR",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -319,5 +327,5 @@
     "4051cf9a705c95a70e09920166d43e6dad275603"
   ],
   "conflicts": [],
-  "evidence_count": 17
+  "evidence_count": 21
 }

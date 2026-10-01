@@ -8,7 +8,17 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "BRONZE SILHOUETTE",
+      "sources": [
+        "attack",
+        "misp",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -26,14 +36,6 @@
         "attack",
         "misp",
         "etda",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "BRONZE SILHOUETTE",
-      "sources": [
-        "attack",
-        "misp",
         "malpedia"
       ]
     },
@@ -86,6 +88,14 @@
       ]
     },
     {
+      "value": "VANGUARD PANDA",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
       "value": "Vanguard Panda",
       "sources": [
         "attack",
@@ -94,13 +104,6 @@
     },
     {
       "value": "CL-STA-1062",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "VANGUARD PANDA",
       "sources": [
         "misp",
         "malpedia"
@@ -143,6 +146,10 @@
     {
       "value": "CN",
       "source": "malpedia"
+    },
+    {
+      "value": "CN",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -471,5 +478,5 @@
     "58fc13f649bea13d627496f46994ec6cd4248b75"
   ],
   "conflicts": [],
-  "evidence_count": 30
+  "evidence_count": 33
 }

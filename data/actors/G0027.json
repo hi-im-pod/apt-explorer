@@ -9,6 +9,26 @@
       ]
     },
     {
+      "value": "TG-3390",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Linen Typhoon",
+      "sources": [
+        "attack",
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
       "value": "Earth Smilodon",
       "sources": [
         "attack",
@@ -18,12 +38,12 @@
       ]
     },
     {
-      "value": "TG-3390",
+      "value": "APT27",
       "sources": [
         "attack",
         "misp",
-        "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -36,12 +56,30 @@
       ]
     },
     {
-      "value": "Linen Typhoon",
+      "value": "UNC215",
       "sources": [
-        "attack",
         "misp",
         "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Red Phoenix",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Circle Typhoon",
+      "sources": [
+        "misp",
+        "etda",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -53,10 +91,10 @@
       ]
     },
     {
-      "value": "APT27",
+      "value": "1.php Group",
       "sources": [
-        "attack",
         "misp",
+        "etda",
         "malpedia"
       ]
     },
@@ -85,14 +123,6 @@
       ]
     },
     {
-      "value": "Red Phoenix",
-      "sources": [
-        "misp",
-        "etda",
-        "malpedia"
-      ]
-    },
-    {
       "value": "ZipToken",
       "sources": [
         "misp",
@@ -109,11 +139,35 @@
       ]
     },
     {
-      "value": "Circle Typhoon",
+      "value": "EMISSARY PANDA",
       "sources": [
         "misp",
-        "etda",
-        "malpedia"
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Lucky Mouse",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "APT6",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
+      ]
+    },
+    {
+      "value": "DEV-0322",
+      "sources": [
+        "misp",
+        "malpedia",
+        "microsoft"
       ]
     },
     {
@@ -138,20 +192,6 @@
       ]
     },
     {
-      "value": "EMISSARY PANDA",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
-      "value": "Lucky Mouse",
-      "sources": [
-        "misp",
-        "malpedia"
-      ]
-    },
-    {
       "value": "SHORE CASTLE",
       "sources": [
         "misp",
@@ -166,10 +206,9 @@
       ]
     },
     {
-      "value": "DEV-0322",
+      "value": "APT 6",
       "sources": [
-        "misp",
-        "malpedia"
+        "etda"
       ]
     },
     {
@@ -189,6 +228,30 @@
       "sources": [
         "etda"
       ]
+    },
+    {
+      "value": "IODINE",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Hippo",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "BOWSER",
+      "sources": [
+        "microsoft"
+      ]
+    },
+    {
+      "value": "Wekby2",
+      "sources": [
+        "microsoft"
+      ]
     }
   ],
   "origin": [
@@ -203,6 +266,10 @@
     {
       "value": "CN",
       "source": "malpedia"
+    },
+    {
+      "value": "CN",
+      "source": "microsoft"
     }
   ],
   "sponsor": [],
@@ -214,6 +281,14 @@
   ],
   "claimed_targets": {
     "countries": [
+      {
+        "value": "United States",
+        "source": "etda"
+      },
+      {
+        "value": "Israel",
+        "source": "etda"
+      },
       {
         "value": "Australia",
         "source": "etda"
@@ -240,10 +315,6 @@
       },
       {
         "value": "Iran",
-        "source": "etda"
-      },
-      {
-        "value": "Israel",
         "source": "etda"
       },
       {
@@ -285,10 +356,6 @@
       {
         "value": "United Kingdom",
         "source": "etda"
-      },
-      {
-        "value": "United States",
-        "source": "etda"
       }
     ],
     "sectors": [
@@ -305,6 +372,22 @@
         "source": "misp"
       },
       {
+        "value": "Government",
+        "source": "etda"
+      },
+      {
+        "value": "Education",
+        "source": "etda"
+      },
+      {
+        "value": "IT",
+        "source": "etda"
+      },
+      {
+        "value": "Telecommunications",
+        "source": "etda"
+      },
+      {
         "value": "Aerospace",
         "source": "etda"
       },
@@ -317,15 +400,7 @@
         "source": "etda"
       },
       {
-        "value": "Education",
-        "source": "etda"
-      },
-      {
         "value": "Embassies",
-        "source": "etda"
-      },
-      {
-        "value": "Government",
         "source": "etda"
       },
       {
@@ -334,10 +409,6 @@
       },
       {
         "value": "Technology",
-        "source": "etda"
-      },
-      {
-        "value": "Telecommunications",
         "source": "etda"
       },
       {
@@ -526,7 +597,7 @@
   "techniques_reported": [
     {
       "id": "T1082",
-      "count": 5
+      "count": 4
     },
     {
       "id": "T1027",
@@ -553,14 +624,6 @@
       "count": 3
     },
     {
-      "id": "T1016",
-      "count": 2
-    },
-    {
-      "id": "T1021.001",
-      "count": 2
-    },
-    {
       "id": "T1036.005",
       "count": 2
     },
@@ -573,19 +636,11 @@
       "count": 2
     },
     {
-      "id": "T1057",
-      "count": 2
-    },
-    {
       "id": "T1059.003",
       "count": 2
     },
     {
       "id": "T1083",
-      "count": 2
-    },
-    {
-      "id": "T1105",
       "count": 2
     },
     {
@@ -621,15 +676,19 @@
       "count": 1
     },
     {
+      "id": "T1016",
+      "count": 1
+    },
+    {
       "id": "T1018",
       "count": 1
     },
     {
-      "id": "T1027.009",
+      "id": "T1021.001",
       "count": 1
     },
     {
-      "id": "T1033",
+      "id": "T1027.009",
       "count": 1
     },
     {
@@ -649,19 +708,15 @@
       "count": 1
     },
     {
+      "id": "T1057",
+      "count": 1
+    },
+    {
       "id": "T1059.005",
       "count": 1
     },
     {
       "id": "T1059.007",
-      "count": 1
-    },
-    {
-      "id": "T1069.001",
-      "count": 1
-    },
-    {
-      "id": "T1070",
       "count": 1
     },
     {
@@ -689,11 +744,11 @@
       "count": 1
     },
     {
-      "id": "T1098",
+      "id": "T1102",
       "count": 1
     },
     {
-      "id": "T1102",
+      "id": "T1105",
       "count": 1
     },
     {
@@ -710,10 +765,6 @@
     },
     {
       "id": "T1135",
-      "count": 1
-    },
-    {
-      "id": "T1136",
       "count": 1
     },
     {
@@ -746,10 +797,6 @@
     },
     {
       "id": "T1553.002",
-      "count": 1
-    },
-    {
-      "id": "T1555",
       "count": 1
     },
     {
@@ -794,6 +841,10 @@
     },
     {
       "id": "T1608.001",
+      "count": 1
+    },
+    {
+      "id": "T1627.001",
       "count": 1
     }
   ],
@@ -1729,7 +1780,7 @@
     },
     {
       "quarter": "2016-Q2",
-      "count": 1
+      "count": 2
     },
     {
       "quarter": "2016-Q3",
@@ -2173,6 +2224,7 @@
     "4812e3e7c965cf14148feb5c4b2cb583612972a8",
     "7a4063cf9f0ab09042c47cf4b0a410ec1ba47d82",
     "ff43b11fe41fc57beca4d67230f1545eb86259b6",
+    "30385c5bbf3c93dc7771e486b9bc8ed5e2674f98",
     "5ff49fde7468addf7495dc60efc9406bde48504f",
     "5ee4cfb8802fd6a2dc6d936357a6ce16878778cf",
     "0a0c97b21075f4588f10503ae1c26a4685e061d1",
@@ -2186,5 +2238,5 @@
     "2f6abbda2e6cd11dc0d295681de0261acc8d7e29"
   ],
   "conflicts": [],
-  "evidence_count": 46
+  "evidence_count": 64
 }
