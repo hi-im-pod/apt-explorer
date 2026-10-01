@@ -161,6 +161,9 @@ class Reference:
     rows: list[Row]
     actor_display: dict[str, str]
     ambiguous: dict[str, list[str]]
+    # For each name key, how the published report titles write it. Anything with `titles`,
+    # `malware_titles` and `actor_titles` counts will do (see resolve/title_terms.TitleStat).
+    title_stats: Mapping[str, object] = field(default_factory=dict)
     _actor_by_key: dict[str, list[ActorName]] = field(default_factory=dict, repr=False)
     _software_by_key: dict[str, list[SoftwareName]] = field(default_factory=dict, repr=False)
 
@@ -246,7 +249,7 @@ def only_actors(ref: Reference, names: Mapping[str, str]) -> Reference:
     """
     rows = [Row(r.keys, r.names, tuple(a if a in names else None for a in r.actors), r.cves) for r in ref.rows]
     return Reference([e for e in ref.actor_names if e.actor_id in names], ref.software_names, rows,
-                     dict(names), ref.ambiguous)
+                     dict(names), ref.ambiguous, ref.title_stats)
 
 
 # Name variants
@@ -310,7 +313,12 @@ SIGNALS: dict[str, str] = {
     "cooc_actor": "The paper lists the name in the same report row as an actor the resolver knows.",
     "cve_actor": "A report that uses the name cites a rare CVE that other reports tie to a known actor.",
     "non_latin": "The name is written in a script other than Latin.",
+    "title_malware_ctx": "Report titles write the name next to a word for malware, as in 'Name stealer' or 'Name ransomware'.",
+    "title_actor_ctx": "Report titles write the name next to a word for an actor, as in 'Name threat actor' or 'Name APT'.",
 }
+
+# A title context counts once this many report titles show it, so one odd headline does not decide.
+MIN_CONTEXT_TITLES = 2
 
 # Rules that pick a label outright. The ground truth has no example of either
 # label, so the evaluation cannot say how often they are right.
@@ -560,6 +568,14 @@ def analyse(name: str, ref: Reference, exclude_key: str | None = None) -> Analys
         evidence["cve_actor"] = Evidence(
             "cve_actor", f"A report that uses this name cites {cve}, which the dataset's other reports tie to {ref.actor_display.get(top, top)}.")
         related_actor = related_actor or top
+
+    stat = ref.title_stats.get(key)
+    for signal, count, words in (
+            ("title_malware_ctx", getattr(stat, "malware_titles", 0), "a word for malware, such as 'stealer' or 'loader'"),
+            ("title_actor_ctx", getattr(stat, "actor_titles", 0), "a word for an actor, such as 'threat actor' or 'APT'")):
+        features[signal] = 1.0 if count >= MIN_CONTEXT_TITLES else 0.0
+        if count >= MIN_CONTEXT_TITLES:
+            evidence[signal] = Evidence(signal, f"{count} report titles write this name next to {words}.")
 
     script = _script(name)
     features["non_latin"] = 0.0 if script == "latin" else 1.0

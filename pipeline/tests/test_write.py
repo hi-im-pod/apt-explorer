@@ -165,7 +165,7 @@ def test_a_path_no_schema_governs_is_refused(tmp_path, rel):
 
 
 @pytest.mark.parametrize("rel", ["actors/index.json", "reports/undated.json", "campaigns.json", "vulns.json", "sources.json",
-                                 "resolution.json", "trends.json", "build.json", "slugs.json", "guesses.json", "NOTICE.md"])
+                                 "resolution.json", "trends.json", "build.json", "slugs.json", "guesses.json", "terms.json", "NOTICE.md"])
 def test_a_missing_top_level_file_is_refused(tmp_path, rel):
     payload = sample_payload()
     del payload[rel]

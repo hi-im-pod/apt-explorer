@@ -72,7 +72,7 @@ MIN_MATCH_PRECISION = 0.5
 NAME_ONLY_SIGNALS = ("cluster_id", "vendor_suffix", "malware_word", "non_latin")
 # Signals that only add context to a guess, and are shown even when the model
 # gives them no weight.
-CONTEXT_SIGNALS = ("actor_resemblance", "software_resemblance", "cooc_actor", "cve_actor")
+CONTEXT_SIGNALS = ("actor_resemblance", "software_resemblance", "cooc_actor", "cve_actor", "title_malware_ctx", "title_actor_ctx")
 
 
 @dataclass(frozen=True)
@@ -577,25 +577,60 @@ def _merge_unresolved(rows: Iterable[Mapping]) -> list[tuple[str, int]]:
                   key=lambda t: (-t[1], t[0].casefold()))
 
 
+@dataclass
+class Prepared:
+    """The reference, the fitted model and its evaluation: everything a guess needs."""
+    ref: Reference
+    model: Model
+    evaluation: dict
+    published: set[str]
+    by_kind: dict[str, bool]
+    truth_counts: dict[str, int]
+    total: int
+
+
+def make_reference(registry: Registry, software: Iterable[SoftwareRecord], paper_reports: Iterable[ReportRecord],
+                   published_actors: Mapping[str, str], shown_sources: Iterable[str] | None = None) -> Reference:
+    """The reference scored against: published actors only, from the sources a page may show."""
+    return sim.only_actors(sim.build_reference(registry, list(software), list(paper_reports), shown_sources),
+                           published_actors)
+
+
+def prepare(ref: Reference, labels: Sequence[Label] | None, truth: Callable[[str], str | None],
+            published_actors: Mapping[str, str]) -> Prepared | None:
+    """Fit and evaluate on `ref`. None without enough ground truth, because a guess with no measurement behind it has nothing to say."""
+    fitted = fit(labels or [], ref, truth) if labels else None
+    if fitted is None:
+        return None
+    model, evaluation = fitted
+    return Prepared(ref, model, evaluation, set(published_actors),
+                    {row["kind"]: row["published"] for row in evaluation["matching"]["by_kind"]},
+                    {row["label"]: row["count"] for row in evaluation["ground_truth"]["by_label"]},
+                    evaluation["ground_truth"]["n"])
+
+
+def guess_name(name: str, count: int, prepared: Prepared) -> dict:
+    """The guess for one name, scored against the prepared reference."""
+    return _guess(name, count, sim.analyse(name, prepared.ref), prepared.model, prepared.ref, prepared.published,
+                  prepared.by_kind, prepared.truth_counts, prepared.total)
+
+
 def build_guesses(registry: Registry, software: Iterable[SoftwareRecord], paper_reports: Iterable[ReportRecord],
                   unresolved: Iterable[Mapping], labels: Sequence[Label] | None, published_actors: Mapping[str, str],
-                  shown_sources: Iterable[str] | None = None) -> dict:
+                  shown_sources: Iterable[str] | None = None, prepared: Prepared | None = None) -> dict:
     """The contents of guesses.json.
 
     `unresolved` is resolution.json's unresolved_names. `labels` is the labelled
     set, or None when there is none. Without enough ground truth the file
     carries no evaluation and no guesses, because a guess with no measurement
-    behind it would have nothing to say for itself.
+    behind it would have nothing to say for itself. `prepared` is a fit made
+    earlier on a reference that carries title statistics; without it one is made here.
     """
-    published = set(published_actors)
-    ref = sim.only_actors(sim.build_reference(registry, list(software), list(paper_reports), shown_sources), published_actors)
-    fitted = fit(labels or [], ref, registry.lookup) if labels else None
-    if fitted is None:
+    if prepared is None:
+        ref = make_reference(registry, software, paper_reports, published_actors, shown_sources)
+        prepared = prepare(ref, labels, registry.lookup, published_actors)
+    if prepared is None:
         return {"evaluation": None, "guesses": []}
-    model, evaluation = fitted
-    by_kind = {row["kind"]: row["published"] for row in evaluation["matching"]["by_kind"]}
-    truth_counts = {row["label"]: row["count"] for row in evaluation["ground_truth"]["by_label"]}
-    total = evaluation["ground_truth"]["n"]
 
     status = {norm(label.name): label for label in labels or []}
     typed = {norm(r["name"]) for r in unresolved if r.get("typed_as")}
@@ -609,9 +644,8 @@ def build_guesses(registry: Registry, software: Iterable[SoftwareRecord], paper_
             guesses.append({"name": name, "count": count, "label": row.label, "confidence": None, "band": "confirmed",
                             "matched_actor_id": None, "matched_actor_name": None, "evidence": [], "status": CONFIRMED_STATUS})
             continue
-        analysis = sim.analyse(name, ref)
-        guesses.append(_guess(name, count, analysis, model, ref, published, by_kind, truth_counts, total))
-    return {"evaluation": evaluation, "guesses": guesses}
+        guesses.append(guess_name(name, count, prepared))
+    return {"evaluation": prepared.evaluation, "guesses": guesses}
 
 
 # The evaluation entry point

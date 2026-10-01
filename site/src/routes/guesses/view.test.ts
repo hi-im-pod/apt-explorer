@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import type { Guess } from '$lib/data/types';
+import type { Guess, Term } from '$lib/data/types';
 import {
 	bandText,
 	confidenceText,
@@ -10,7 +10,12 @@ import {
 	labelText,
 	percentText,
 	weightText,
-	directionText
+	directionText,
+	filterTerms,
+	seenRangeText,
+	termCountText,
+	yearShares,
+	yearsText
 } from './view';
 
 function guess(over: Partial<Guess>): Guess {
@@ -143,5 +148,57 @@ describe('gainText', () => {
 	it('returns null when either figure is missing', () => {
 		expect(gainText(null, 0.5)).toBeNull();
 		expect(gainText(0.5, null)).toBeNull();
+	});
+});
+
+function term(over: Partial<Term>): Term {
+	return {
+		name: 'Larkspur',
+		reports: 3,
+		publishers: 2,
+		first_seen: '2022-01-10',
+		last_seen: '2024-05-02',
+		by_year: [{ year: 2022, count: 1 }, { year: 2024, count: 2 }],
+		shapes: [],
+		examples: [],
+		guess: guess({ name: 'Larkspur' }),
+		...over
+	};
+}
+
+describe('terms seen in titles', () => {
+	it('makes each noun agree with its count', () => {
+		expect(termCountText({ reports: 3, publishers: 2 })).toBe('3 reports from 2 publishers');
+		expect(termCountText({ reports: 1, publishers: 1 })).toBe('1 report from 1 publisher');
+	});
+
+	it('states a date range, or a single date alone, or says there is none', () => {
+		expect(seenRangeText('2022-01-10', '2024-05-02')).toBe('Seen 2022-01-10 to 2024-05-02');
+		expect(seenRangeText('2023', '2023')).toBe('Seen 2023');
+		expect(seenRangeText(null, '2023')).toBe('Seen 2023');
+		expect(seenRangeText(null, null)).toBe('No date');
+	});
+
+	it('spells the years for a reader who does not see the bars', () => {
+		expect(yearsText([{ year: 2022, count: 1 }, { year: 2024, count: 2 }])).toBe('2022: 1, 2024: 2');
+		expect(yearsText([])).toBe('');
+	});
+
+	it('scales the year bars to the busiest year, with a floor so a small year still shows', () => {
+		const shares = yearShares([{ year: 2020, count: 1 }, { year: 2021, count: 50 }]);
+		expect(shares[1].share).toBe(1);
+		expect(shares[0].share).toBeCloseTo(0.06);
+		expect(yearShares([])).toEqual([]);
+	});
+
+	it('filters by name or by the actor it may be the same as', () => {
+		const rows = [
+			term({ name: 'Larkspur' }),
+			term({ name: 'Moonrise', guess: guess({ matched_actor_name: 'APT28' }) })
+		];
+		expect(filterTerms(rows, '')).toHaveLength(2);
+		expect(filterTerms(rows, ' lark ').map((t) => t.name)).toEqual(['Larkspur']);
+		expect(filterTerms(rows, 'apt28').map((t) => t.name)).toEqual(['Moonrise']);
+		expect(filterTerms(rows, 'zzz')).toEqual([]);
 	});
 });

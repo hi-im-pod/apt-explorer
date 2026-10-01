@@ -13,16 +13,23 @@
 		filterGuesses,
 		gainText,
 		kindText,
+		filterTerms,
 		labelText,
 		percentText,
+		seenRangeText,
+		termCountText,
 		weightText,
-		directionText
+		directionText,
+		yearShares,
+		yearsText
 	} from './view';
 
 	let { data } = $props();
 
 	const evaluation = $derived(data.guesses.evaluation);
 	const rows = $derived(data.guesses.guesses);
+	const termDoc = $derived(data.terms);
+	const termRows = $derived(data.terms.terms);
 
 	// The filters change what is listed, so they need scripts. They appear
 	// only after the page has loaded; without scripts the whole list shows.
@@ -40,6 +47,16 @@
 	const usedBands = $derived(new Set((evaluation?.bands ?? []).filter((b) => b.n > 0).map((b) => b.band)));
 	const bandCounts = $derived(countBy(rows, (g) => g.band, BANDS));
 	const bandsInUse = $derived(BANDS.filter((b) => bandCounts[b] > 0));
+
+	const TERMS_SHOWN = 25;
+	let termQuery = $state('');
+	let termsOpen = $state(false);
+	const termMatches = $derived(filterTerms(termRows, termQuery));
+	// Without scripts every term is listed. With scripts the list starts short, and a search or
+	// "Show all" widens it.
+	const termsShown = $derived(
+		ready && !termsOpen && termQuery.trim() === '' ? termMatches.slice(0, TERMS_SHOWN) : termMatches
+	);
 
 	function clear() {
 		label = 'all';
@@ -96,7 +113,13 @@
 		it, we hid each known name in turn and asked the program to recover its label. Those results come
 		first, and they are modest.
 	</p>
-	<p class="jump"><a href="#guess-list">Go to the guesses</a></p>
+	<p class="jump">
+		<a href="#guess-list">Go to the guesses</a>
+		{#if termRows.length > 0}
+			<span aria-hidden="true">·</span>
+			<a href="#title-terms">Go to the names seen in titles</a>
+		{/if}
+	</p>
 </div>
 
 <section id="evaluation" aria-labelledby="evaluation-heading">
@@ -438,6 +461,117 @@
 		{/if}
 	{/if}
 </section>
+
+{#if termRows.length > 0}
+	<section id="title-terms" aria-labelledby="title-terms-heading">
+		<h2 id="title-terms-heading">Seen in Titles</h2>
+		<p class="banner" role="note">
+			<strong>Not actors.</strong> These are phrases that report titles repeat. No source lists them as
+			an actor, and none of them appears as an actor anywhere else on this site.
+		</p>
+		<p>
+			A report title often names the group or the malware it covers. A phrase that {termDoc.min_reports} or more titles
+			repeat, from {termDoc.min_publishers} or more publishers, may be a name the sources have not caught up with. This list
+			holds {formatCount(termRows.length)}
+			{termRows.length === 1 ? 'such phrase' : 'such phrases'}, found in
+			{formatCount(termDoc.titles_read)} titles.
+			{#if termDoc.hidden_as_not_names > 0}
+				The guesser judged {formatCount(termDoc.hidden_as_not_names)}
+				{termDoc.hidden_as_not_names === 1 ? 'more phrase' : 'more phrases'} not to be names, and those are
+				left out.
+			{/if}
+			Each phrase goes through the same guesser as the names above, so every label is a guess and
+			carries the confidence measured there.
+		</p>
+		<p class="section-note">
+			A publisher is the organisation a report lists. Where a report lists none, it is the website the
+			report links to. Only titles this site already shows are read. Nothing else from a report is used.
+		</p>
+
+		{#if ready}
+			<form class="filters" onsubmit={(e) => e.preventDefault()}>
+				<label class="search">
+					<span class="field">Search</span>
+					<input type="search" bind:value={termQuery} placeholder="Phrase or possible actor" />
+				</label>
+			</form>
+			<p class="count" aria-live="polite">
+				Showing {formatCount(termsShown.length)} of {formatCount(termRows.length)}
+			</p>
+		{/if}
+
+		{#if termsShown.length === 0}
+			<p class="empty">No phrase matches this search.</p>
+		{:else}
+			<ol class="guesses terms">
+				{#each termsShown as t (t.name)}
+					<li class="guess">
+						<div class="head">
+							<span class="name">{t.name}</span>
+							<span class="data seen">{termCountText(t)}</span>
+						</div>
+						<p class="verdict">
+							<span class="label-pill {t.guess.label}" class:confirmed={t.guess.band === 'confirmed'}>{labelText(t.guess.label)}</span>
+							<span class="conf {t.guess.band}">{confidenceText(t.guess)}</span>
+							<span class="status">{t.guess.status}</span>
+						</p>
+						{#if t.guess.matched_actor_id != null}
+							<p class="match">
+								Possibly the same as
+								<a href="{base}/actors/{t.guess.matched_actor_id}/">{t.guess.matched_actor_name ?? t.guess.matched_actor_id}</a>
+							</p>
+						{/if}
+						<p class="when data">{seenRangeText(t.first_seen, t.last_seen)}</p>
+						{#if t.by_year.length > 0}
+							<ul class="years" aria-label="Reports per year: {yearsText(t.by_year)}">
+								{#each yearShares(t.by_year) as y (y.year)}
+									<li aria-hidden="true">
+										<span class="y data">{y.year}</span>
+										<span class="ybar"><span class="yfill" style:width="{y.share * 100}%"></span></span>
+										<span class="n data">{y.count}</span>
+									</li>
+								{/each}
+							</ul>
+						{/if}
+						<details>
+							<summary>Example titles ({t.examples.length})</summary>
+							<ul class="examples">
+								{#each t.examples as e (e.id)}
+									<li>
+										<a href={e.url} rel="noopener noreferrer">{e.title}</a>
+										<span class="weight data">
+											{[e.organisation, e.published].filter(Boolean).join(', ')}
+										</span>
+									</li>
+								{/each}
+							</ul>
+						</details>
+						{#if t.guess.evidence.length > 0}
+							<details>
+								<summary>Evidence ({t.guess.evidence.length})</summary>
+								<ul class="evidence">
+									{#each t.guess.evidence as e, i (i)}
+										<li>
+											<span class="detail">{e.detail}</span>
+											<span class="weight data">{weightText(e.weight)}</span>
+										</li>
+									{/each}
+								</ul>
+							</details>
+						{/if}
+					</li>
+				{/each}
+			</ol>
+			{#if ready && !termsOpen && termQuery.trim() === '' && termMatches.length > TERMS_SHOWN}
+				<p>
+					<button type="button" class="link" onclick={() => (termsOpen = true)}>
+						Show all {formatCount(termMatches.length)}
+					</button>
+				</p>
+			{/if}
+		{/if}
+	</section>
+{/if}
 
 <style>
 	.intro,
@@ -865,5 +999,66 @@
 	.weight {
 		color: var(--text-muted);
 		font-size: 0.75rem;
+	}
+
+	.when {
+		margin: 0.25rem 0;
+		color: var(--text-muted);
+		font-size: 0.75rem;
+	}
+
+	/* Reports per year: one thin bar per year on a shared scale. The text label on the list
+	   carries the same numbers for a screen reader. */
+	.years {
+		display: grid;
+		gap: 0.125rem;
+		max-width: 20rem;
+		margin: 0.375rem 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	.years li {
+		display: grid;
+		grid-template-columns: 2.5rem minmax(0, 1fr) 1.5rem;
+		align-items: center;
+		gap: 0.5rem;
+		font-size: 0.75rem;
+	}
+
+	.years .y,
+	.years .n {
+		color: var(--text-muted);
+	}
+
+	.years .n {
+		text-align: right;
+	}
+
+	.ybar {
+		display: block;
+		height: 0.375rem;
+	}
+
+	.yfill {
+		display: block;
+		height: 100%;
+		background: var(--text-muted);
+	}
+
+	.examples {
+		margin: 0.5rem 0 0;
+		padding: 0;
+		border-top: 1px solid var(--border);
+		list-style: none;
+		font-size: 0.9375rem;
+	}
+
+	.examples li {
+		display: grid;
+		gap: 0.125rem;
+		padding: 0.4375rem 0;
+		border-bottom: 1px solid var(--grid);
+		overflow-wrap: anywhere;
 	}
 </style>

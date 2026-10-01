@@ -26,7 +26,7 @@ from aptx.build.report_index import build_reports_index, short_id
 # without first checking whether it exists.
 REQUIRED = ("actors/index.json", "reports/index.json", "reports/undated.json", "campaigns.json", "vulns.json",
             "sources.json", "resolution.json", "trends.json", "build.json", "slugs.json", "guesses.json",
-            "NOTICE.md")
+            "terms.json", "NOTICE.md")
 
 _ACTOR_FILE = re.compile(r"actors/([^/]+)\.json")
 _SHARD = re.compile(r"reports/([0-9]{4}|undated)\.json")

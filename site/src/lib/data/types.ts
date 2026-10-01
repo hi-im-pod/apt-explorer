@@ -609,13 +609,17 @@ export interface Trends {
 // ---------------------------------------------------------------------------
 // guesses.json
 
-/** @schema guesses.schema.json#/$defs/guessLabel */
+/**
+ * @schema guesses.schema.json#/$defs/guessLabel
+ * @schema terms.schema.json#/$defs/guessLabel
+ */
 export type GuessLabel = 'actor' | 'malware' | 'tool' | 'not-an-entity';
 
 /**
  * unvalidated: no known name carries the label, so there is no confidence.
  * confirmed: a person set the label.
  * @schema guesses.schema.json#/$defs/guessBand
+ * @schema terms.schema.json#/$defs/guessBand
  */
 export type GuessBand = 'high' | 'medium' | 'low' | 'unvalidated' | 'confirmed';
 
@@ -625,7 +629,10 @@ export type EvalBand = 'high' | 'medium' | 'low';
 /** @schema guesses.schema.json#/$defs/matchKind */
 export type MatchKind = 'variant' | 'contains' | 'fuzzy';
 
-/** @schema guesses.schema.json#/$defs/guessStatus */
+/**
+ * @schema guesses.schema.json#/$defs/guessStatus
+ * @schema terms.schema.json#/$defs/guessStatus
+ */
 export type GuessStatus = 'pending confirmation' | 'confirmed';
 
 /** @schema guesses.schema.json#/$defs/signalStat/properties/implied_label */
@@ -634,6 +641,7 @@ export type ImpliedLabel = 'actor' | 'malware' | 'tool' | 'not-an-entity';
 /**
  * One signal behind a guess, as a sentence the pipeline wrote itself.
  * @schema guesses.schema.json#/$defs/evidenceItem
+ * @schema terms.schema.json#/$defs/evidenceItem
  */
 export interface EvidenceItem {
 	signal: string;
@@ -645,6 +653,7 @@ export interface EvidenceItem {
 /**
  * One unresolved name and what it probably is.
  * @schema guesses.schema.json#/$defs/guess
+ * @schema terms.schema.json#/$defs/guess
  */
 export interface Guess {
 	name: string;
@@ -800,4 +809,62 @@ export interface Guesses {
 	/** Null when there were too few known names to measure, and then guesses is empty. */
 	evaluation: Evaluation | null;
 	guesses: Guess[];
+}
+
+// ---------------------------------------------------------------------------
+// terms.json
+
+/**
+ * Reports in one year that carry a term.
+ * @schema terms.schema.json#/$defs/yearCount
+ */
+export interface YearCount {
+	year: number;
+	count: number;
+}
+
+/**
+ * A published report title, as the reports pages show it.
+ * @schema terms.schema.json#/$defs/example
+ */
+export interface TermExample {
+	id: string;
+	title: string;
+	published: IsoDate | null;
+	organisation: string | null;
+	url: string;
+}
+
+/**
+ * A name that titles repeat, from more than one publisher, and that no source lists.
+ * @schema terms.schema.json#/$defs/term
+ */
+export interface Term {
+	name: string;
+	reports: number;
+	publishers: number;
+	first_seen: IsoDate | null;
+	last_seen: IsoDate | null;
+	/** Dated reports only, oldest year first. */
+	by_year: YearCount[];
+	/** How the name was spotted in titles, such as id, suffix, group, malware, camel or context. */
+	shapes: string[];
+	/** Up to three, from different publishers where possible. */
+	examples: TermExample[];
+	/** Its count is the term's report count. */
+	guess: Guess;
+}
+
+/**
+ * The whole of terms.json. A term changes nothing else and is never promoted to an actor.
+ * @schema terms.schema.json#
+ */
+export interface Terms {
+	min_reports: number;
+	min_publishers: number;
+	titles_read: number;
+	/** Terms the scorer labelled not-an-entity, which are not listed. */
+	hidden_as_not_names: number;
+	/** Empty when no model could be fitted. */
+	terms: Term[];
 }

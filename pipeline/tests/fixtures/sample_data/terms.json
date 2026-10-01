@@ -1,0 +1,65 @@
+{
+  "min_reports": 3,
+  "min_publishers": 2,
+  "titles_read": 4,
+  "hidden_as_not_names": 0,
+  "terms": [
+    {
+      "name": "Larkspur",
+      "reports": 3,
+      "publishers": 2,
+      "first_seen": "2024-03-02",
+      "last_seen": "2024-11-20",
+      "by_year": [
+        {
+          "year": 2024,
+          "count": 3
+        }
+      ],
+      "shapes": [
+        "context",
+        "malware"
+      ],
+      "examples": [
+        {
+          "id": "sample:larkspur-3",
+          "title": "Larkspur stealer returns with a new loader",
+          "published": "2024-11-20",
+          "organisation": "Harbor CERT",
+          "url": "https://example.org/harbor-cert/2024/larkspur-returns/"
+        },
+        {
+          "id": "sample:larkspur-2",
+          "title": "Tracking the Larkspur loader",
+          "published": "2024-06-11",
+          "organisation": null,
+          "url": "https://example.net/blog/tracking-larkspur"
+        },
+        {
+          "id": "sample:larkspur-1",
+          "title": "Larkspur malware samples in the wild",
+          "published": "2024-03-02",
+          "organisation": "Harbor CERT",
+          "url": "https://example.org/harbor-cert/2024/larkspur-samples/"
+        }
+      ],
+      "guess": {
+        "name": "Larkspur",
+        "count": 3,
+        "label": "malware",
+        "confidence": null,
+        "band": "unvalidated",
+        "matched_actor_id": null,
+        "matched_actor_name": null,
+        "evidence": [
+          {
+            "signal": "title_malware_ctx",
+            "detail": "3 report titles write this name next to a word for malware, such as 'stealer' or 'loader'.",
+            "weight": null
+          }
+        ],
+        "status": "pending confirmation"
+      }
+    }
+  ]
+}

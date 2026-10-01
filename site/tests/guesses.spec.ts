@@ -1,8 +1,8 @@
 import { existsSync, mkdirSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { test, expect, type Locator, type Page } from '@playwright/test';
-import type { ActorsIndex, Evaluation, Guess, Guesses } from '../src/lib/data/types';
-import { confidenceText, percentText } from '../src/routes/guesses/view';
+import type { ActorsIndex, Evaluation, Guess, Guesses, Term, Terms } from '../src/lib/data/types';
+import { confidenceText, percentText, termCountText } from '../src/routes/guesses/view';
 
 // The page must show what this build's data says, so the expectations are
 // read from the same file the site is built from. A build without the file
@@ -86,7 +86,7 @@ test.beforeAll(() => mkdirSync(SHOTS, { recursive: true }));
 test('the page says every label is pending confirmation and changes nothing else', async ({ page }) => {
 	await page.goto(PAGE);
 	await expect(page.getByRole('heading', { level: 1 })).toHaveText('Name Guesses');
-	const banner = page.getByRole('note');
+	const banner = page.locator('.intro').getByRole('note');
 	await expect(banner).toContainText('Pending confirmation');
 	await expect(banner).toContainText(/none\s+of\s+them\s+changes\s+an\s+actor,\s+an\s+alias,\s+a\s+report\s+link\s+or\s+a\s+match\s+rate/i);
 	await expect(banner).toBeVisible();
@@ -166,7 +166,7 @@ test('the confidence bands, labels and confusion matrix are tables of the evalua
 
 test('every guess is listed, with its label, confidence and count', async ({ page }) => {
 	await page.goto(PAGE);
-	const items = page.locator('.guesses .guess');
+	const items = page.locator('#guess-list .guesses .guess');
 	await expect(items).toHaveCount(real.guesses.length);
 	for (const i of [0, real.guesses.length - 1]) {
 		const g = real.guesses[i];
@@ -178,7 +178,7 @@ test('every guess is listed, with its label, confidence and count', async ({ pag
 
 test('evidence is closed until opened, then shows each sentence and weight', async ({ page }) => {
 	await page.goto(PAGE);
-	const first = page.locator('.guess', { has: page.locator('details') }).first();
+	const first = page.locator('#guess-list .guess', { has: page.locator('details') }).first();
 	const g = real.guesses.find((x) => x.evidence.length > 0)!;
 	const sentence = first.locator('.detail').first();
 	await expect(sentence).toBeHidden();
@@ -190,12 +190,12 @@ test('evidence is closed until opened, then shows each sentence and weight', asy
 
 test('the filters narrow the list, count what they show and can be cleared', async ({ page }) => {
 	await page.goto(PAGE);
-	const items = page.locator('.guesses .guess');
-	const count = page.locator('.count');
+	const items = page.locator('#guess-list .guesses .guess');
+	const count = page.locator('#guess-list .count');
 	await expect(count).toHaveText(`Showing ${real.guesses.length} of ${real.guesses.length}`);
 
 	const actors = real.guesses.filter((g) => g.label === 'actor');
-	await page.getByLabel('Label').selectOption('actor');
+	await page.locator('#guess-list').getByLabel('Label').selectOption('actor');
 	await expect(items).toHaveCount(actors.length);
 	await expect(count).toHaveText(`Showing ${actors.length} of ${real.guesses.length}`);
 	for (const text of await items.locator('.label-pill').allInnerTexts()) expect(text).toBe('Actor');
@@ -204,23 +204,23 @@ test('the filters narrow the list, count what they show and can be cleared', asy
 	// really uses. Hard-coding "high" broke when calibration left nobody in that band.
 	const band = actors[0].band;
 	const inBand = actors.filter((g) => g.band === band);
-	await page.getByLabel('Confidence').selectOption(band);
+	await page.locator('#guess-list').getByLabel('Confidence').selectOption(band);
 	await expect(items).toHaveCount(inBand.length);
 
-	await page.getByRole('searchbox', { name: 'Search' }).fill('zzzz-no-such-name');
+	await page.locator('#guess-list').getByRole('searchbox', { name: 'Search' }).fill('zzzz-no-such-name');
 	await expect(items).toHaveCount(0);
 	await expect(page.locator('#guess-list .empty')).toContainText(/no guess matches/i);
 
-	await page.getByRole('button', { name: 'Clear the filters' }).click();
+	await page.locator('#guess-list').getByRole('button', { name: 'Clear the filters' }).click();
 	await expect(items).toHaveCount(real.guesses.length);
-	await expect(page.getByLabel('Label')).toHaveValue('all');
+	await expect(page.locator('#guess-list').getByLabel('Label')).toHaveValue('all');
 });
 
 test('the text filter finds a name and ignores case', async ({ page }) => {
 	await page.goto(PAGE);
 	const target = real.guesses[0].name;
-	await page.getByRole('searchbox', { name: 'Search' }).fill(`  ${target.toUpperCase()} `);
-	const names = await page.locator('.guess .name').allInnerTexts();
+	await page.locator('#guess-list').getByRole('searchbox', { name: 'Search' }).fill(`  ${target.toUpperCase()} `);
+	const names = await page.locator('#guess-list .guess .name').allInnerTexts();
 	expect(names).toContain(target);
 	expect(names.every((n) => n.toLowerCase().includes(target.toLowerCase()))).toBe(true);
 });
@@ -228,7 +228,7 @@ test('the text filter finds a name and ignores case', async ({ page }) => {
 test('a matched actor links to that actor profile', async ({ page }) => {
 	const body: Guesses = { evaluation: real.evaluation, guesses: synthGuesses(3) };
 	await openWith(page, body);
-	const link = page.locator('.guess').first().getByRole('link', { name: index[0].name });
+	const link = page.locator('#guess-list .guess').first().getByRole('link', { name: index[0].name });
 	expect(await link.evaluate((el) => new URL((el as HTMLAnchorElement).href).pathname)).toBe(`/apt-explorer/actors/${index[0].id}/`);
 	await link.click();
 	await expect(page).toHaveURL(new RegExp(`/actors/${index[0].id}/$`));
@@ -247,34 +247,34 @@ test.describe('other volumes', () => {
 		await expect(page.locator('#evaluation .empty')).toContainText(/too few names/i);
 		await expect(page.locator('#guess-list .empty')).toContainText(/method could not be measured/i);
 		await expect(page.locator('table')).toHaveCount(0);
-		await expect(page.locator('.guess')).toHaveCount(0);
-		await expect(page.locator('.filters')).toHaveCount(0);
+		await expect(page.locator('#guess-list .guess')).toHaveCount(0);
+		await expect(page.locator('#guess-list .filters')).toHaveCount(0);
 	});
 
 	test('a measured method with nothing to guess says so', async ({ page }) => {
 		await openWith(page, { evaluation: real.evaluation, guesses: [] });
 		await expect(page.locator('#guess-list .empty')).toContainText(/no unresolved name needs a guess/i);
-		await expect(page.locator('.guess')).toHaveCount(0);
+		await expect(page.locator('#guess-list .guess')).toHaveCount(0);
 	});
 
 	test('one guess reads in the singular', async ({ page }) => {
 		await openWith(page, { evaluation: real.evaluation, guesses: synthGuesses(1) });
-		await expect(page.locator('.guess')).toHaveCount(1);
+		await expect(page.locator('#guess-list .guess')).toHaveCount(1);
 		await expect(page.locator('#guess-list')).toContainText('1 name resolves to no actor');
-		await expect(page.locator('.count')).toHaveText('Showing 1 of 1');
+		await expect(page.locator('#guess-list .count')).toHaveText('Showing 1 of 1');
 	});
 
 	test('two hundred guesses all render, and a long unbroken name stays inside its card', async ({ page }) => {
 		await page.setViewportSize({ width: 375, height: 800 });
 		await openWith(page, { evaluation: real.evaluation, guesses: synthGuesses(200) });
-		await expect(page.locator('.guess')).toHaveCount(200);
-		await expect(page.locator('.count')).toHaveText('Showing 200 of 200');
+		await expect(page.locator('#guess-list .guess')).toHaveCount(200);
+		await expect(page.locator('#guess-list .count')).toHaveText('Showing 200 of 200');
 		const report = await page.evaluate(() => ({
 			scroll: document.documentElement.scrollWidth,
 			client: document.documentElement.clientWidth
 		}));
 		expect(report.scroll).toBeLessThanOrEqual(report.client);
-		const long = page.locator('.guess', { hasText: 'Unbroken-Name' }).first();
+		const long = page.locator('#guess-list .guess', { hasText: 'Unbroken-Name' }).first();
 		const card = await long.boundingBox();
 		const name = await long.locator('.name').boundingBox();
 		expect(name!.x + name!.width).toBeLessThanOrEqual(card!.x + card!.width + 1);
@@ -288,14 +288,14 @@ for (const width of [1280, 375]) {
 			await useTheme(page, t);
 			await page.goto(PAGE);
 			await expect(page.locator('html')).toHaveAttribute('data-theme', t);
-			await expect(page.locator('.filters')).toBeVisible();
+			await expect(page.locator('#guess-list .filters')).toBeVisible();
 
 			const report = await page.evaluate(() => {
 				const clipped = [...document.querySelectorAll('main, main *')]
 					.filter((e) => !e.closest('.visually-hidden') && !e.closest('.scroll'))
 					.filter((e) => e.scrollWidth > e.clientWidth + 1 && getComputedStyle(e).overflowX !== 'visible')
 					.map((e) => `${e.tagName}.${e.className}`);
-				const outside = [...document.querySelectorAll('.guess, .banner, .filters select, .filters input, .track')]
+				const outside = [...document.querySelectorAll('#guess-list .guess, .banner, .filters select, .filters input, .track')]
 					.filter((e) => e.getBoundingClientRect().right > document.documentElement.clientWidth + 1)
 					.map((e) => `${e.tagName}.${e.className}`);
 				return { scroll: document.documentElement.scrollWidth, client: document.documentElement.clientWidth, clipped, outside };
@@ -306,7 +306,7 @@ for (const width of [1280, 375]) {
 
 			// Text must be readable on what it sits on in this theme.
 			const bg = await style(page.locator('body'), 'background-color');
-			const card = page.locator('.guess').first();
+			const card = page.locator('#guess-list .guess').first();
 			// A guess is a ledger row, not a card: it sits on the page with a hairline under it.
 			expect(await style(card, 'background-color')).toBe('rgba(0, 0, 0, 0)');
 			expect(await style(card, 'border-bottom-width')).toBe('1px');
@@ -315,18 +315,18 @@ for (const width of [1280, 375]) {
 			expect(contrast(await style(card.locator('summary'), 'color'), bg)).toBeGreaterThanOrEqual(4.5);
 			expect(contrast(await style(page.locator('h1'), 'color'), bg)).toBeGreaterThanOrEqual(4.5);
 			// The banner is a caution: its edge is the unconfirmed amber, thick enough to see.
-			const banner = page.locator('.banner');
+			const banner = page.locator('.intro .banner');
 			expect(await style(banner, 'border-left-width')).toBe('6px');
 			expect(contrast(await style(banner, 'border-left-color'), bg)).toBeGreaterThanOrEqual(3);
 
 			// An unconfirmed guess wears a dashed amber outline that can be seen on this theme.
-			const pill = page.locator('.label-pill:not(.confirmed)').first();
+			const pill = page.locator('#guess-list .label-pill:not(.confirmed)').first();
 			expect(await style(pill, 'border-top-style')).toBe('dashed');
 			expect(await style(pill, 'border-top-color')).toBe(await style(banner, 'border-left-color'));
 			expect(contrast(await style(pill, 'border-top-color'), bg)).toBeGreaterThanOrEqual(3);
 
 			// A guess with a measured confidence shows it on a scale with two threshold ticks.
-			const scaled = page.locator('.guess', { has: page.locator('.conf') }).first();
+			const scaled = page.locator('#guess-list .guess', { has: page.locator('.conf') }).first();
 			await expect(scaled.locator('.scale')).toBeVisible();
 			await expect(scaled.locator('.scale .tick')).toHaveCount(2);
 			await expect(scaled.locator('.scale')).toHaveAttribute('aria-hidden', 'true');
@@ -369,10 +369,10 @@ for (const width of [1280, 375]) {
 test('with scripts blocked, the whole list and the evaluation still read', async ({ page }) => {
 	await page.route('**/*.js', (r) => r.abort());
 	await page.goto(PAGE);
-	await expect(page.locator('.guess')).toHaveCount(real.guesses.length);
+	await expect(page.locator('#guess-list .guess')).toHaveCount(real.guesses.length);
 	await expect(page.locator('#evaluation .rate')).toContainText(percentText(real.evaluation!.accuracy));
-	await expect(page.locator('.filters')).toHaveCount(0);
-	await expect(page.getByRole('note')).toContainText('Pending confirmation');
+	await expect(page.locator('#guess-list .filters')).toHaveCount(0);
+	await expect(page.locator('.intro').getByRole('note')).toContainText('Pending confirmation');
 });
 
 test('the page loads without console errors', async ({ page }) => {
@@ -382,4 +382,177 @@ test('the page loads without console errors', async ({ page }) => {
 	await page.goto(PAGE);
 	await page.waitForLoadState('networkidle');
 	expect(errors).toEqual([]);
+});
+
+/** Terms of every shape: one matched to an actor, one undated, the rest with two years. */
+function synthTerms(n: number): Terms {
+	const terms = Array.from({ length: n }, (_, i): Term => {
+		const guess: Guess = {
+			name: `Larkspur ${String(i).padStart(3, '0')}`,
+			count: n - i + 3,
+			label: i % 2 === 0 ? 'malware' : 'actor',
+			confidence: null,
+			band: 'unvalidated',
+			matched_actor_id: i === 0 ? index[0].id : null,
+			matched_actor_name: i === 0 ? index[0].name : null,
+			evidence: [{ signal: 'title_malware_ctx', detail: 'Titles call it a stealer.', weight: null }],
+			status: 'pending confirmation'
+		};
+		return {
+			name: guess.name,
+			reports: n - i + 3,
+			publishers: 2 + (i % 3),
+			first_seen: i === 1 ? null : '2022-05-01',
+			last_seen: i === 1 ? null : '2024-03-02',
+			by_year: i === 1 ? [] : [{ year: 2022, count: 1 }, { year: 2024, count: n - i + 2 }],
+			shapes: ['malware'],
+			examples: [0, 1, 2].map((k) => ({
+				id: `ex-${i}-${k}`,
+				title: `Larkspur campaign report ${i}-${k}`,
+				published: '2024-03-02',
+				organisation: k === 0 ? 'Example Labs' : null,
+				url: `https://pub${k}.example.org/${i}-${k}`
+			})),
+			guess
+		};
+	});
+	return { min_reports: 3, min_publishers: 2, titles_read: 1234, hidden_as_not_names: 2, terms };
+}
+
+async function openWithTerms(page: Page, body: Terms) {
+	await page.route('**/apt-explorer/data/terms.json', (r) =>
+		r.fulfill({ contentType: 'application/json', body: JSON.stringify(body) })
+	);
+	await page.goto('/apt-explorer/methodology/');
+	await page.getByRole('link', { name: 'The Name Guesses page' }).click();
+	await expect(page).toHaveURL(/\/guesses\/$/);
+}
+
+test.describe('names seen in titles', () => {
+	test('terms are listed with their counts, years, example links and the actor they may match', async ({ page }) => {
+		const body = synthTerms(6);
+		await openWithTerms(page, body);
+		const section = page.locator('#title-terms');
+		await expect(section.getByRole('heading', { level: 2 })).toHaveText('Seen in Titles');
+		await expect(section.getByRole('note')).toContainText('Not actors.');
+		await expect(section).toContainText('found in 1,234 titles');
+		await expect(section).toContainText('2 more phrases');
+		const items = section.locator('.terms .guess');
+		await expect(items).toHaveCount(6);
+
+		const first = items.first();
+		await expect(first.locator('.name')).toHaveText(body.terms[0].name);
+		await expect(first).toContainText(termCountText(body.terms[0]));
+		await expect(first.locator('.when')).toHaveText('Seen 2022-05-01 to 2024-03-02');
+		await expect(first.locator('.years')).toHaveAttribute('aria-label', /2022: 1, 2024: \d+/);
+		await expect(first.locator('.years li')).toHaveCount(2);
+		const link = first.getByRole('link', { name: index[0].name });
+		await expect(first.locator('.match')).toContainText('Possibly the same as');
+		expect(await link.evaluate((el) => new URL((el as HTMLAnchorElement).href).pathname)).toBe(
+			`/apt-explorer/actors/${index[0].id}/`
+		);
+
+		// Only the first has a match. The others make no claim about any actor.
+		await expect(section.locator('.match')).toHaveCount(1);
+
+		const exampleRows = first.locator('.examples li');
+		await expect(exampleRows.first()).toBeHidden();
+		await first.locator('summary', { hasText: 'Example titles (3)' }).click();
+		await expect(exampleRows).toHaveCount(3);
+		const example = first.getByRole('link', { name: 'Larkspur campaign report 0-0' });
+		await expect(example).toBeVisible();
+		await expect(example).toHaveAttribute('href', 'https://pub0.example.org/0-0');
+		await expect(example).toHaveAttribute('rel', 'noopener noreferrer');
+		await expect(exampleRows.first()).toContainText('Example Labs, 2024-03-02');
+
+		// An undated term says so rather than printing an empty range.
+		await expect(items.nth(1).locator('.when')).toHaveText('No date');
+		await expect(items.nth(1).locator('.years')).toHaveCount(0);
+	});
+
+	test('the jump link appears with the terms and leads to them', async ({ page }) => {
+		await openWithTerms(page, synthTerms(3));
+		const jump = page.locator('.jump').getByRole('link', { name: 'Go to the names seen in titles' });
+		await expect(jump).toHaveAttribute('href', '#title-terms');
+	});
+
+	test('a long list opens at 25, widens on request, and a search finds any term', async ({ page }) => {
+		await openWithTerms(page, synthTerms(60));
+		const section = page.locator('#title-terms');
+		const items = section.locator('.terms .guess');
+		await expect(items).toHaveCount(25);
+		await expect(section.locator('.count')).toHaveText('Showing 25 of 60');
+
+		const search = section.getByRole('searchbox', { name: 'Search' });
+		await search.fill('larkspur 059');
+		await expect(items).toHaveCount(1);
+		await expect(items.first().locator('.name')).toHaveText('Larkspur 059');
+		await search.fill('zzzz-no-such');
+		await expect(items).toHaveCount(0);
+		await expect(section.locator('.empty')).toContainText(/no phrase matches/i);
+		await search.fill('');
+
+		await section.getByRole('button', { name: 'Show all 60' }).click();
+		await expect(items).toHaveCount(60);
+		await expect(section.getByRole('button', { name: /Show all/ })).toHaveCount(0);
+	});
+
+	test('the guess list above is unchanged by the terms', async ({ page }) => {
+		await openWithTerms(page, synthTerms(30));
+		await expect(page.locator('#guess-list .guess')).toHaveCount(real.guesses.length);
+		await expect(page.locator('.intro').getByRole('note')).toContainText('Pending confirmation');
+	});
+
+	test('no terms means no section and no jump link', async ({ page }) => {
+		await openWithTerms(page, { min_reports: 3, min_publishers: 2, titles_read: 0, hidden_as_not_names: 0, terms: [] });
+		await expect(page.locator('#title-terms')).toHaveCount(0);
+		await expect(page.locator('.jump').getByRole('link')).toHaveCount(1);
+	});
+
+	test('with scripts blocked, every term in the build is listed', async ({ page }) => {
+		const built = readJson<Terms>('terms.json');
+		await page.route('**/*.js', (r) => r.abort());
+		await page.goto(PAGE);
+		if (built.terms.length === 0) {
+			await expect(page.locator('#title-terms')).toHaveCount(0);
+		} else {
+			await expect(page.locator('#title-terms .terms .guess')).toHaveCount(built.terms.length);
+			await expect(page.locator('#title-terms .filters')).toHaveCount(0);
+		}
+	});
+
+	for (const width of [1280, 375]) {
+		for (const t of themes) {
+			test(`at ${width}px in ${t}, the terms fit the screen and are painted`, async ({ page }) => {
+				await page.setViewportSize({ width, height: 900 });
+				await useTheme(page, t);
+				await openWithTerms(page, synthTerms(8));
+				await expect(page.locator('html')).toHaveAttribute('data-theme', t);
+				const section = page.locator('#title-terms');
+				const item = section.locator('.terms .guess').first();
+				await item.locator('summary', { hasText: 'Example titles' }).click();
+				const report = await page.evaluate(() => ({
+					scroll: document.documentElement.scrollWidth,
+					client: document.documentElement.clientWidth,
+					outside: [...document.querySelectorAll('#title-terms .guess, #title-terms .banner, #title-terms .examples a')]
+						.filter((e) => e.getBoundingClientRect().right > document.documentElement.clientWidth + 1)
+						.map((e) => `${e.tagName}.${e.className}`)
+				}));
+				expect(report.outside).toEqual([]);
+				expect(report.scroll).toBeLessThanOrEqual(report.client);
+				const bg = await style(page.locator('body'), 'background-color');
+				expect(contrast(await style(item.locator('.name'), 'color'), bg)).toBeGreaterThanOrEqual(4.5);
+				expect(contrast(await style(item.locator('.when'), 'color'), bg)).toBeGreaterThanOrEqual(4.5);
+				expect(contrast(await style(item.locator('.examples a').first(), 'color'), bg)).toBeGreaterThanOrEqual(4.5);
+				// The busiest year fills its track, so the bars read as shares of it.
+				const bars = item.locator('.years .ybar');
+				const track = await bars.nth(1).boundingBox();
+				const fill = await bars.nth(1).locator('.yfill').boundingBox();
+				expect(track!.width).toBeGreaterThan(20);
+				expect(fill!.width / track!.width).toBeCloseTo(1, 1);
+				await section.scrollIntoViewIfNeeded();
+				await page.screenshot({ path: fileURLToPath(new URL(`terms-${width}-${t}.png`, SHOTS)) });
+			});
+		}
+	}
 });

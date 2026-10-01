@@ -110,7 +110,7 @@ def test_the_payload_is_the_files_of_data_and_the_writer_accepts_it():
     payload = run(*WORLD())
     assert {"actors/index.json", "actors/G0007.json", "actors/glass-heron.json", "reports/undated.json",
             "campaigns.json", "vulns.json", "sources.json", "resolution.json", "trends.json", "build.json",
-            "NOTICE.md"} <= set(payload)
+            "guesses.json", "terms.json", "NOTICE.md"} <= set(payload)
     assert payload["NOTICE.md"] == render_notice("2026")
 
 
@@ -575,6 +575,25 @@ def test_the_sources_whose_titles_are_read_can_be_chosen():
     orkl = B("orkl", reports=[R("orkl", "1", title, "https://ex.org/o", "2025-06-01")])
     row = report_by_title(run(*WORLD(orkl=orkl), title_sources=frozenset({"paper"})), title)
     assert row["actors"] == [] and row["actors_from_title"] == []
+
+
+def test_terms_read_only_the_titles_of_sources_whose_titles_may_be_read():
+    orkl = B("orkl", reports=[R("orkl", "1", "Zorklo Stealer spreads", "https://ex.org/o", "2025-06-01")])
+    assert run(*WORLD(orkl=orkl))["terms.json"]["titles_read"] == 1
+    assert run(*WORLD(orkl=orkl), title_sources=frozenset({"paper"}))["terms.json"]["titles_read"] == 0
+
+
+def test_a_report_whose_title_is_only_its_link_is_not_a_term_title():
+    url = "https://ex.org/o"
+    orkl = B("orkl", reports=[R("orkl", "1", url, url, "2025-06-01")])
+    assert run(*WORLD(orkl=orkl))["terms.json"]["titles_read"] == 0
+
+
+def test_without_a_labelled_set_there_are_no_terms():
+    orkl = B("orkl", reports=[R("orkl", str(i), "Zorklo Stealer spreads", f"https://pub{i}.org/o", "2025-06-01")
+                              for i in range(4)])
+    doc = run(*WORLD(orkl=orkl))["terms.json"]
+    assert doc["terms"] == [] and doc["titles_read"] == 4
 
 
 def test_a_title_cannot_expose_a_name_that_only_an_evidence_only_source_holds():

@@ -9,6 +9,7 @@ import {
 	getReports,
 	getResolution,
 	getSources,
+	getTerms,
 	getTrends,
 	getVulns
 } from './index';
@@ -42,6 +43,7 @@ describe('data layer URLs', () => {
 		['getVulns', getVulns, '/apt-explorer/data/vulns.json'],
 		['getTrends', getTrends, '/apt-explorer/data/trends.json'],
 		['getGuesses', getGuesses, '/apt-explorer/data/guesses.json'],
+		['getTerms', getTerms, '/apt-explorer/data/terms.json'],
 		['getSources', getSources, '/apt-explorer/data/sources.json'],
 		['getResolution', getResolution, '/apt-explorer/data/resolution.json'],
 		['getBuild', getBuild, '/apt-explorer/data/build.json']

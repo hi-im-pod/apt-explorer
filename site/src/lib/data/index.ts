@@ -20,6 +20,7 @@ import type {
 	ReportsShard,
 	Resolution,
 	Sources,
+	Terms,
 	Trends,
 	Vulns
 } from './types';
@@ -213,6 +214,10 @@ export function getTrends(fetch: Fetch): Promise<Trends> {
 
 export function getGuesses(fetch: Fetch): Promise<Guesses> {
 	return getJson(fetch, 'guesses.json');
+}
+
+export function getTerms(fetch: Fetch): Promise<Terms> {
+	return getJson(fetch, 'terms.json');
 }
 
 export function getSources(fetch: Fetch): Promise<Sources> {

@@ -31,7 +31,7 @@ SOURCES_MD = ROOT / "SOURCES.md"
 # The year shards are not listed because which years exist depends on the data;
 # build.json's report_years names them.
 REQUIRED = ["actors/index.json", "reports/index.json", "reports/undated.json", "campaigns.json", "vulns.json",
-            "sources.json", "resolution.json", "trends.json", "build.json", "slugs.json", "guesses.json"]
+            "sources.json", "resolution.json", "trends.json", "build.json", "slugs.json", "guesses.json", "terms.json"]
 
 SCHEMA_NAMES = sorted(p.name.removesuffix(".schema.json") for p in SCHEMA_DIR.glob("*.schema.json"))
 

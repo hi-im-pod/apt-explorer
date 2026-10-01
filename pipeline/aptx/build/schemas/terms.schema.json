@@ -1,0 +1,294 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "data/terms.json",
+  "description": "Names that published report titles repeat, from more than one publisher, and that no source lists as an actor or as software. Each carries its counts, example titles and the scorer's guess. A term never changes an actor, an alias, a report link or a count elsewhere, and is never promoted to an actor.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "min_reports",
+    "min_publishers",
+    "titles_read",
+    "hidden_as_not_names",
+    "terms"
+  ],
+  "properties": {
+    "min_reports": {
+      "$ref": "#/$defs/positiveCount",
+      "description": "A term needs at least this many reports."
+    },
+    "min_publishers": {
+      "$ref": "#/$defs/positiveCount",
+      "description": "A term needs at least this many publishers."
+    },
+    "titles_read": {
+      "$ref": "#/$defs/count",
+      "description": "Published titles that were read."
+    },
+    "hidden_as_not_names": {
+      "$ref": "#/$defs/count",
+      "description": "Terms the scorer labelled not-an-entity, which are not listed."
+    },
+    "terms": {
+      "description": "Most reported first. Empty when no model could be fitted.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/term"
+      }
+    }
+  },
+  "$defs": {
+    "guess": {
+      "description": "One unresolved name and what it probably is.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "count",
+        "label",
+        "confidence",
+        "band",
+        "matched_actor_id",
+        "matched_actor_name",
+        "evidence",
+        "status"
+      ],
+      "properties": {
+        "name": {
+          "$ref": "#/$defs/text"
+        },
+        "count": {
+          "$ref": "#/$defs/positiveCount",
+          "description": "Published reports carrying the name, as in resolution.json."
+        },
+        "label": {
+          "$ref": "#/$defs/guessLabel"
+        },
+        "confidence": {
+          "description": "The share of similar guesses that were right in the evaluation, or null when no measurement stands behind the label (band unvalidated or confirmed).",
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "band": {
+          "$ref": "#/$defs/guessBand"
+        },
+        "matched_actor_id": {
+          "description": "For an actor guess, the published actor the name is probably another name for, or null. It is set only for kinds of match that were right at least half the time in the evaluation.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^(?!index$)(G[0-9]{4}|[a-z0-9]+(-[a-z0-9]+)*)$"
+        },
+        "matched_actor_name": {
+          "description": "That actor's display name, or null.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "evidence": {
+          "description": "The signals behind the guess. weight is the signal's weight in the model, positive when it supports the guessed label and negative when it argues against it, or null when it is context only.",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidenceItem"
+          }
+        },
+        "status": {
+          "$ref": "#/$defs/guessStatus"
+        }
+      }
+    },
+    "evidenceItem": {
+      "description": "One signal, in a sentence this project wrote from its own computed values.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "signal",
+        "detail",
+        "weight"
+      ],
+      "properties": {
+        "signal": {
+          "$ref": "#/$defs/text"
+        },
+        "detail": {
+          "$ref": "#/$defs/text"
+        },
+        "weight": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      }
+    },
+    "guessLabel": {
+      "enum": [
+        "actor",
+        "malware",
+        "tool",
+        "not-an-entity"
+      ]
+    },
+    "guessBand": {
+      "description": "high, medium or low from the confidence. unvalidated means no known name carries the label, so no confidence is given. confirmed means a person set the label.",
+      "enum": [
+        "high",
+        "medium",
+        "low",
+        "unvalidated",
+        "confirmed"
+      ]
+    },
+    "guessStatus": {
+      "enum": [
+        "pending confirmation",
+        "confirmed"
+      ]
+    },
+    "text": {
+      "description": "Non-empty text with no leading or trailing whitespace and no line breaks.",
+      "type": "string",
+      "pattern": "^\\S(.*\\S)?$"
+    },
+    "count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "positiveCount": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "term": {
+      "description": "One name that titles repeat and no source lists.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "reports",
+        "publishers",
+        "first_seen",
+        "last_seen",
+        "by_year",
+        "shapes",
+        "examples",
+        "guess"
+      ],
+      "properties": {
+        "name": {
+          "$ref": "#/$defs/text"
+        },
+        "reports": {
+          "$ref": "#/$defs/positiveCount",
+          "description": "Published report titles that carry the name."
+        },
+        "publishers": {
+          "$ref": "#/$defs/positiveCount",
+          "description": "Distinct publishers among those reports: the organisation the site shows, else the registrable domain of the report link."
+        },
+        "first_seen": {
+          "description": "A date as the report row gives it: YYYY, YYYY-MM or YYYY-MM-DD. Null when no report carried a date.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$"
+        },
+        "last_seen": {
+          "description": "A date as the report row gives it: YYYY, YYYY-MM or YYYY-MM-DD. Null when no report carried a date.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$"
+        },
+        "by_year": {
+          "description": "Reports per year, for the dated reports, oldest first.",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/yearCount"
+          }
+        },
+        "shapes": {
+          "description": "The ways the name was spotted in titles, such as id, suffix, group, malware, camel or context.",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/text"
+          }
+        },
+        "examples": {
+          "description": "Up to three titles with links, from different publishers where possible.",
+          "type": "array",
+          "maxItems": 3,
+          "items": {
+            "$ref": "#/$defs/example"
+          }
+        },
+        "guess": {
+          "$ref": "#/$defs/guess",
+          "description": "The scorer's guess for this term, in the shape guesses.json uses. Its count is the term's report count."
+        }
+      }
+    },
+    "yearCount": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "year",
+        "count"
+      ],
+      "properties": {
+        "year": {
+          "type": "integer",
+          "minimum": 1900,
+          "maximum": 2999
+        },
+        "count": {
+          "$ref": "#/$defs/positiveCount"
+        }
+      }
+    },
+    "example": {
+      "description": "A published report title, as the reports pages show it.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "published",
+        "organisation",
+        "url"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/text"
+        },
+        "title": {
+          "$ref": "#/$defs/text"
+        },
+        "published": {
+          "description": "A date as the report row gives it: YYYY, YYYY-MM or YYYY-MM-DD. Null when no report carried a date.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$"
+        },
+        "organisation": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "url": {
+          "type": "string",
+          "pattern": "^https?://\\S+$"
+        }
+      }
+    }
+  }
+}

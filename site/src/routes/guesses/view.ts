@@ -3,7 +3,7 @@
  * applies. They live outside the component so a test can pin them down
  * without rendering anything.
  */
-import type { Guess, GuessBand, GuessLabel, MatchKind } from '$lib/data/types';
+import type { Guess, GuessBand, GuessLabel, MatchKind, Term, YearCount } from '$lib/data/types';
 
 /** A share as a whole percent. A missing figure is n/a, never 0%. */
 export const percentText = (x: number | null): string => (x == null ? 'n/a' : `${Math.round(x * 100)}%`);
@@ -103,4 +103,38 @@ export function gainText(accuracy: number | null, baseline: number | null): stri
 	const points = Math.round((accuracy - baseline) * 100);
 	if (points === 0) return 'level with';
 	return `${Math.abs(points)} points ${points > 0 ? 'above' : 'below'}`;
+}
+
+/** "3 reports from 2 publishers", each noun agreeing with its count. */
+export function termCountText(t: Pick<Term, 'reports' | 'publishers'>): string {
+	const r = t.reports === 1 ? 'report' : 'reports';
+	const p = t.publishers === 1 ? 'publisher' : 'publishers';
+	return `${t.reports} ${r} from ${t.publishers} ${p}`;
+}
+
+/** When a term was first and last seen, as one phrase. A single date stands alone. */
+export function seenRangeText(first: string | null, last: string | null): string {
+	if (first == null && last == null) return 'No date';
+	if (first == null || last == null || first === last) return `Seen ${first ?? last}`;
+	return `Seen ${first} to ${last}`;
+}
+
+/** The per-year counts as text, for a reader who does not see the bars. */
+export function yearsText(years: YearCount[]): string {
+	return years.map((y) => `${y.year}: ${y.count}`).join(', ');
+}
+
+/** Each year's bar as a share of the busiest year, never below a visible sliver. */
+export function yearShares(years: YearCount[]): { year: number; count: number; share: number }[] {
+	const max = Math.max(1, ...years.map((y) => y.count));
+	return years.map((y) => ({ ...y, share: Math.max(0.06, y.count / max) }));
+}
+
+/** The terms whose name or guessed actor contains the query, in their original order. */
+export function filterTerms(rows: Term[], query: string): Term[] {
+	const q = query.trim().toLowerCase();
+	if (q === '') return rows;
+	return rows.filter(
+		(t) => t.name.toLowerCase().includes(q) || (t.guess.matched_actor_name ?? '').toLowerCase().includes(q)
+	);
 }

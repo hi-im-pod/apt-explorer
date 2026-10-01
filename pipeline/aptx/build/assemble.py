@@ -64,14 +64,15 @@ from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from itertools import combinations
 
-from aptx.build import guesses, slugs, trends
+from aptx.build import guesses, slugs, terms, trends
 from aptx.build.countries import country_name, iso2
 from aptx.build.notice import SOURCE_INFO, SOURCE_ORDER, render_notice, require_year, source_attribution
 from aptx.build.report_index import build_reports_index
 from aptx.core.dates import parse_date
 from aptx.core.models import ActorRecord, CampaignRecord, ReportRecord, SourceBundle, VulnRecord
 from aptx.core.urls import norm_url
-from aptx.resolve import titles
+from aptx.resolve import title_terms, titles
+from aptx.resolve.names import norm
 # _display_name is private to the registry, but assembly must name an actor from the
 # members it may show. The registry's own name can come from an evidence-only source.
 from aptx.resolve.registry import Registry, ResolvedActor, _display_name
@@ -204,12 +205,10 @@ def assemble(bundles, registry: Registry, policies: Mapping[str, str], link_stat
     payload["vulns.json"] = vulns
     payload["sources.json"] = sources
     payload["resolution.json"] = _resolution(registry, reports, facts)
-    payload["guesses.json"] = guesses.build_guesses(
-        registry, [s for b in by_source.values() for s in b.software],
-        [r for b in by_source.values() for r in b.reports if r.source == "paper"],
-        payload["resolution.json"]["unresolved_names"], list(facts.guess_labels),
+    payload["guesses.json"], payload["terms.json"] = _guesses_and_terms(
+        registry, by_source, payload["resolution.json"]["unresolved_names"], list(facts.guess_labels),
         {p.id: _display_name(p.members) for p in shown},
-        shown_sources={key for key, policy in policies.items() if policy in _SHOWS_FACTS})
+        {key for key, policy in policies.items() if policy in _SHOWS_FACTS}, reports)
     payload["trends.json"] = trends.compute(
         [{"id": r.id, "published": r.published, "actors": r.actors, "techniques": r.techniques, "cves": r.cves}
          for r in reports if r.trendable],
@@ -227,6 +226,30 @@ def assemble(bundles, registry: Registry, policies: Mapping[str, str], link_stat
     payload["slugs.json"] = slugs.document_for_build(registry, policies)
     # END slugs hook
     return payload
+
+
+def _guesses_and_terms(registry: Registry, by_source, unresolved: list[dict], labels, published_actors: dict[str, str],
+                       shown_sources: set[str], reports: list["_Report"]) -> tuple[dict, dict]:
+    """guesses.json and terms.json, which share one reference and one fitted model.
+
+    The reference carries how the published titles write each name, so a name's title context is a
+    signal in the model. The terms come from the same titles, so they are scored by the model that
+    was measured with them.
+    """
+    ref = guesses.make_reference(
+        registry, [s for b in by_source.values() for s in b.software],
+        [r for b in by_source.values() for r in b.reports if r.source == "paper"], published_actors, shown_sources)
+    index = title_terms.TitleIndex(terms.titles_from_reports(reports))
+    known_keys = {e.key for e in ref.actor_names} | {e.key for e in ref.software_names}
+    candidates = terms.find_candidates(
+        index, lambda name: norm(name) in known_keys or registry.lookup(name) is not None
+        or registry.non_actor(name) is not None)
+    stats = index.stats([*(row.name for row in labels or []), *(row["name"] for row in unresolved),
+                         *(c.name for c in candidates.values())])
+    ref.title_stats = stats
+    prepared = guesses.prepare(ref, labels, registry.lookup, published_actors)
+    guess_doc = guesses.build_guesses(registry, [], [], unresolved, labels, published_actors, prepared=prepared)
+    return guess_doc, terms.build_terms(index, candidates, stats, prepared)
 
 
 # Inputs
@@ -454,6 +477,8 @@ class _Report:
     cves: list[str]
     techniques: list[str]
     sources: list[str]
+    # True when the title came from a source whose titles may be read (see TITLE_MATCH_SOURCES).
+    title_readable: bool = False
 
     @property
     def trendable(self) -> bool:
@@ -586,7 +611,8 @@ def _report(group: list[ReportRecord], policies, malpedia_links, group_links, re
     actors, unresolved = _attach(group, urls, policies, malpedia_links, group_links, registry, published_ids)
     matcher, title_sources = titled
     # Only the title the site shows is read, and only when a source that may be read supplied it.
-    named = matcher.match(title) & published_ids if titled_by and titled_by[0].source in title_sources else set()
+    readable = bool(titled_by and titled_by[0].source in title_sources)
+    named = matcher.match(title) & published_ids if readable else set()
     from_title = sorted(named - set(actors))
     return _Report(
         id=report_id, title=title, published=published, basis=basis,
@@ -595,7 +621,7 @@ def _report(group: list[ReportRecord], policies, malpedia_links, group_links, re
         actors=sorted(set(actors) | named), actors_from_title=from_title, unresolved=unresolved,
         cves=sorted({c for r in group for v in r.cves if _CVE.fullmatch(c := v.strip().upper())}),
         techniques=sorted({t for r in group for t in r.techniques if t in valid_techniques}),
-        sources=sorted({r.source for r in group}, key=_ORD.get))
+        sources=sorted({r.source for r in group}, key=_ORD.get), title_readable=readable)
 
 
 def _date(group: list[ReportRecord], today: str) -> tuple[str | None, str]:
