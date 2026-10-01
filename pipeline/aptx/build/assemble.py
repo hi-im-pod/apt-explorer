@@ -55,7 +55,7 @@ weaker and is kept apart as actors_from_title: a link-only source keeps no post,
 its title, so the title is all there is to read. Only the title the site shows is read,
 and only when it comes from a source in TITLE_MATCH_SOURCES, and only for the aliases
 the site already publishes (resolve/titles.py). ORKL's actor tags are matching evidence and are
-ignored here even when its policy is widened, and its titles are not read.
+ignored here even when its policy is widened. Its titles are read like any other link-only title.
 """
 import re
 from collections import Counter, defaultdict
@@ -84,9 +84,9 @@ _SHOWS_FACTS = frozenset({"full", "derived-only"})
 _SHOWS_REPORTS = frozenset({"full", "derived-only", "link-only"})
 _ORD = {key: i for i, key in enumerate(SOURCE_ORDER)}
 
-# Sources whose report titles may name an actor. ORKL is left out on purpose: its 29,000 titles
-# are the bulk of the data, and its titles have not been judged for this yet.
-TITLE_MATCH_SOURCES = frozenset({"microsoftblog", "talos", "eset", "dfir", "paper"})
+# Sources whose report titles may name an actor. ORKL's were judged offline against its Malpedia
+# and ATT&CK tags before it was added (precision 0.83 as a lower bound, see the README).
+TITLE_MATCH_SOURCES = frozenset({"microsoftblog", "talos", "eset", "dfir", "orkl", "paper"})
 
 _GENERATED_AT = re.compile(r"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z")
 _URL = re.compile(r"https?://\S+")

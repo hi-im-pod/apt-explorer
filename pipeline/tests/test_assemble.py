@@ -563,18 +563,18 @@ def test_a_report_several_sources_publish_is_titled_once_and_keeps_one_link():
     assert row["actors"] == ["G0007"] and row["actors_from_title"] == ["G0007"]
 
 
-def test_orkl_titles_are_not_read():
+def test_orkl_titles_are_read_but_its_tags_still_are_not():
     title = "Fancy Bear returns with a new loader"
     orkl = B("orkl", reports=[R("orkl", "1", title, "https://ex.org/o", "2025-06-01")])
     row = report_by_title(run(*WORLD(orkl=orkl)), title)
-    assert row["actors"] == [] and row["actors_from_title"] == []
+    assert row["actors"] == ["G0007"] and row["actors_from_title"] == ["G0007"]
 
 
 def test_the_sources_whose_titles_are_read_can_be_chosen():
     title = "Fancy Bear returns with a new loader"
     orkl = B("orkl", reports=[R("orkl", "1", title, "https://ex.org/o", "2025-06-01")])
-    row = report_by_title(run(*WORLD(orkl=orkl), title_sources=frozenset({"orkl"})), title)
-    assert row["actors_from_title"] == ["G0007"]
+    row = report_by_title(run(*WORLD(orkl=orkl), title_sources=frozenset({"paper"})), title)
+    assert row["actors"] == [] and row["actors_from_title"] == []
 
 
 def test_a_title_cannot_expose_a_name_that_only_an_evidence_only_source_holds():

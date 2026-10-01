@@ -332,11 +332,11 @@
 	{/if}
 	<h3>Actors named in a title</h3>
 	<p>
-		The Microsoft, Talos and ESET blogs and The DFIR Report are link-only, so the site keeps no
+		The Microsoft, Talos and ESET blogs, The DFIR Report and ORKL are link-only, so the site keeps no
 		post text. It can still read the title it shows. When that title contains the name of an
 		actor that has a page here, the report is linked to that actor, and the report panel lists
 		it under "Named in the title", apart from the actors a source tags. The paper's own report
-		titles are read the same way. ORKL titles are not read.
+		titles are read the same way. ORKL's actor tags are still never shown or used for these links.
 	</p>
 	<p>
 		The match is cautious. It reads whole words and uses only the names this site already

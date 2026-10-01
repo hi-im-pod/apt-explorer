@@ -251,8 +251,8 @@
 				<p class="policy">
 					{sourceLabel('orkl').name} is a link-only source while its terms are confirmed, so it
 					supplies only the report's title, date and links. The actors, CVEs and techniques above
-					were added by this project. Actors come from Malpedia, MITRE ATT&CK and the paper, never
-					from ORKL's tags or titles, and CVE and technique IDs are matched in the report text.
+					were added by this project. Actors come from Malpedia, MITRE ATT&CK and the paper, or
+					from a title that names them, never from ORKL's tags, and CVE and technique IDs are matched in the report text.
 					<a href="{base}/about/#publish-link-only">What link-only means</a>
 				</p>
 			{/if}
