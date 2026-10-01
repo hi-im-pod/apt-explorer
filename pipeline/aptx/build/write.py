@@ -198,6 +198,9 @@ def _cross_problems(parsed: dict[str, object]) -> list[str]:
             for actor in report["actors"]:
                 if actor not in known:
                     problems.append(f"{rel}: report {report['id']} names actor {actor}, which has no actor file")
+            stray = sorted(set(report["actors_from_title"]) - set(report["actors"]))
+            if stray:
+                problems.append(f"{rel}: report {report['id']} lists {stray} in actors_from_title but not in actors")
 
     if sorted(parsed["build.json"]["report_years"]) != sorted(years):
         problems.append(f"build.json: report_years {parsed['build.json']['report_years']} does not match "

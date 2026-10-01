@@ -68,6 +68,7 @@ export function synthReports(): Report[] {
 			url_ok: i % 5 === 0 ? false : true,
 			archive_url: `https://example.org/archive/${i}.pdf`,
 			actors: ['synth-busy'],
+			actors_from_title: [],
 			actor_names_unresolved: [],
 			cves: [],
 			techniques: [],

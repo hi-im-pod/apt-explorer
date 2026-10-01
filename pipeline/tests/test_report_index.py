@@ -16,9 +16,19 @@ def report(rid, title="A title", published="2024-05-01", org=None, actors=(), cv
         "id": rid, "title": title, "published": published,
         "date_basis": "publisher" if published else "unknown", "organisation": org,
         "url": None, "url_ok": None, "archive_url": None, "actors": list(actors),
-        "actor_names_unresolved": [], "cves": list(cves), "techniques": list(techniques),
+        "actors_from_title": [], "actor_names_unresolved": [], "cves": list(cves), "techniques": list(techniques),
         "sources": list(sources),
     }
+
+
+def test_the_actors_that_only_a_title_names_travel_in_their_own_column():
+    row = report(sha(1), actors=["G0007", "G0006"])
+    row["actors_from_title"] = ["G0006"]
+    idx = build([row])
+    by_id = dict(enumerate(idx["tables"]["actors"]))
+    cols = idx["columns"]
+    assert [by_id[i] for i in cols["actors_from_title"][0]] == ["G0006"]
+    assert len(cols["actors"][0]) == 2
 
 
 def sha(n):

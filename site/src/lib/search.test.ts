@@ -20,6 +20,7 @@ interface Rep {
 	published: string | null;
 	organisation: string | null;
 	actors: string[];
+	actorsFromTitle: string[];
 	cves: string[];
 	techniques: string[];
 	sources: string[];
@@ -31,6 +32,7 @@ function report(over: Partial<Rep> & Pick<Rep, 'id'>): Rep {
 		published: '2024-05-01',
 		organisation: 'Harbor CERT',
 		actors: [],
+		actorsFromTitle: [],
 		cves: [],
 		techniques: [],
 		sources: ['dfir'],
@@ -75,6 +77,7 @@ function makeIndex(reps: Rep[], kev: string[] = [], idLen = 8): ReportsIndex {
 			organisation: sorted.map((r) => (r.organisation == null ? null : at('organisations', r.organisation))),
 			sources: sorted.map((r) => r.sources.reduce((m, s) => m + 2 ** at('sources', s), 0)),
 			actors: sorted.map((r) => r.actors.map((a) => at('actors', a))),
+			actors_from_title: sorted.map((r) => r.actorsFromTitle.map((a) => at('actors', a))),
 			cves: sorted.map((r) => r.cves.map((c) => at('cves', c))),
 			techniques: sorted.map((r) => r.techniques.map((t) => at('techniques', t)))
 		}
@@ -183,6 +186,19 @@ describe('toRows', () => {
 		});
 		// The full report is read only when the panel opens, so a row has no copy of it.
 		expect(lazarus).not.toHaveProperty('report');
+	});
+
+	it('keeps the actors that only a title names apart from the tagged ones, and still counts them as actors', () => {
+		const titled = toRows(
+			makeIndex([report({ id: 'r-titled', actors: ['G0007', 'G0032'], actorsFromTitle: ['G0032'] })]),
+			[],
+			actors
+		)[0];
+		expect(titled.actors).toEqual(['G0007', 'G0032']);
+		expect(titled.actorsFromTitle).toEqual(['G0032']);
+		expect(applyFilters([titled], { actor: 'G0032' })).toHaveLength(1);
+		expect(applyFilters([titled], { q: 'lazarus' })).toHaveLength(1);
+		expect(rows.every((r) => r.actorsFromTitle.length === 0)).toBe(true);
 	});
 
 	it('marks a row KEV only when one of its CVEs is in the catalogue', () => {

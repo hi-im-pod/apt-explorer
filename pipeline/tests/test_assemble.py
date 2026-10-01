@@ -532,6 +532,74 @@ def test_dfir_names_never_attach_a_report():
     assert report_by_title(run(*WORLD(dfir=dfir)), "Dfir")["actors"] == []
 
 
+def _titled(source, title, **kw):
+    return B(source, reports=[R(source, "t1", title, "https://vendor.example/t1", "2025-06-01",
+                                basis="publisher", **kw)])
+
+
+def test_a_title_naming_a_published_alias_adds_the_actor_to_actors_and_to_actors_from_title():
+    title = "Fancy Bear returns with a new loader"
+    payload = run(*WORLD(microsoftblog=_titled("microsoftblog", title)))
+    row = report_by_title(payload, title)
+    assert row["actors"] == ["G0007"]
+    assert row["actors_from_title"] == ["G0007"]
+    assert payload["actors/G0007.json"]["reports"] == [row["id"]]
+
+
+def test_an_actor_a_report_is_tagged_with_and_titled_with_stays_a_tagged_link():
+    title = "Fancy Bear returns with a new loader"
+    paper = B("paper", reports=[R("paper", "a.pdf", title, "https://ex.org/p", "2019-05-01",
+                                  actor_names=["Sofacy"])])
+    row = report_by_title(run(*WORLD(paper=paper)), title)
+    assert row["actors"] == ["G0007"] and row["actors_from_title"] == []
+
+
+def test_a_report_several_sources_publish_is_titled_once_and_keeps_one_link():
+    title = "Fancy Bear returns with a new loader"
+    url = "https://vendor.example/same"
+    talos = B("talos", reports=[R("talos", "1", title, url, "2025-06-01", basis="publisher")])
+    eset = B("eset", reports=[R("eset", "1", title, url, "2025-06-01", basis="publisher")])
+    row = report_by_title(run(*WORLD(talos=talos, eset=eset)), title)
+    assert row["actors"] == ["G0007"] and row["actors_from_title"] == ["G0007"]
+
+
+def test_orkl_titles_are_not_read():
+    title = "Fancy Bear returns with a new loader"
+    orkl = B("orkl", reports=[R("orkl", "1", title, "https://ex.org/o", "2025-06-01")])
+    row = report_by_title(run(*WORLD(orkl=orkl)), title)
+    assert row["actors"] == [] and row["actors_from_title"] == []
+
+
+def test_the_sources_whose_titles_are_read_can_be_chosen():
+    title = "Fancy Bear returns with a new loader"
+    orkl = B("orkl", reports=[R("orkl", "1", title, "https://ex.org/o", "2025-06-01")])
+    row = report_by_title(run(*WORLD(orkl=orkl), title_sources=frozenset({"orkl"})), title)
+    assert row["actors_from_title"] == ["G0007"]
+
+
+def test_a_title_cannot_expose_a_name_that_only_an_evidence_only_source_holds():
+    etda = B("etda", actors=[A("etda", "e1", "APT 28", aliases=["Quiet Raven"])])
+    title = "Quiet Raven returns with a new loader"
+    payload = run(*WORLD(etda=etda, dfir=_titled("dfir", title)), policies={"etda": "evidence-only"})
+    row = report_by_title(payload, title)
+    assert row["actors"] == [] and row["actors_from_title"] == []
+
+
+def test_a_title_naming_an_actor_that_has_no_page_links_nothing():
+    etda = B("etda", actors=[A("etda", "e2", "Hidden Raven")])
+    title = "Hidden Raven returns with a new loader"
+    payload = run(*WORLD(etda=etda, dfir=_titled("dfir", title)), policies={"etda": "evidence-only"})
+    assert report_by_title(payload, title)["actors"] == []
+
+
+def test_a_title_naming_only_software_links_nothing():
+    attack = WORLD()[0].model_copy(update={"software": [SoftwareRecord(
+        source="attack", source_id="S0002", name="Mimikatz", kind="tool", retrieved_at=SNAP)]})
+    title = "Mimikatz in the wild"
+    payload = run(attack, *WORLD(dfir=_titled("dfir", title))[1:])
+    assert report_by_title(payload, title)["actors"] == []
+
+
 def test_a_report_naming_an_actor_that_is_not_published_drops_the_link_without_listing_the_name():
     etda = B("etda", actors=[A("etda", "e2", "Hidden Panda")])
     paper = B("paper", reports=[R("paper", "a.pdf", "Paper report", "https://ex.org/p", "2019-05-01",

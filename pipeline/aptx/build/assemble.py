@@ -42,15 +42,20 @@ What each policy lets through:
     derived-only  the same, since the connector has already reduced the record to
                   derived facts (ETDA and Malpedia).
     link-only     report metadata and links only. Nothing the source says about an
-                  actor is published, and it attaches no report to an actor.
+                  actor is published, and its tags attach no report to an actor. A
+                  vendor's own title may still name one (see below).
     evidence-only merge evidence only. Nothing from the source is published, but
                   the edges it caused still count in evidence_count.
 
-Report-to-actor links come from three places only, so a source that may not be
-shown can never decide an attribution: Malpedia's report_links (when Malpedia is
-publishable), the group references in ATT&CK, and the actor names the paper
-gives for its own reports. ORKL's actor tags are matching evidence and are
-ignored here even when its policy is widened.
+Report-to-actor links come from four places, so a source that may not be shown can
+never decide an attribution: Malpedia's report_links (when Malpedia is publishable),
+the group references in ATT&CK, the actor names the paper gives for its own reports,
+and a title that names a published actor. The first three are tags. The fourth is
+weaker and is kept apart as actors_from_title: a link-only source keeps no post, only
+its title, so the title is all there is to read. Only the title the site shows is read,
+and only when it comes from a source in TITLE_MATCH_SOURCES, and only for the aliases
+the site already publishes (resolve/titles.py). ORKL's actor tags are matching evidence and are
+ignored here even when its policy is widened, and its titles are not read.
 """
 import re
 from collections import Counter, defaultdict
@@ -66,6 +71,7 @@ from aptx.build.report_index import build_reports_index
 from aptx.core.dates import parse_date
 from aptx.core.models import ActorRecord, CampaignRecord, ReportRecord, SourceBundle, VulnRecord
 from aptx.core.urls import norm_url
+from aptx.resolve import titles
 # _display_name is private to the registry, but assembly must name an actor from the
 # members it may show. The registry's own name can come from an evidence-only source.
 from aptx.resolve.registry import Registry, ResolvedActor, _display_name
@@ -77,6 +83,10 @@ POLICY_VALUES = frozenset({"full", "derived-only", "link-only", "evidence-only"}
 _SHOWS_FACTS = frozenset({"full", "derived-only"})
 _SHOWS_REPORTS = frozenset({"full", "derived-only", "link-only"})
 _ORD = {key: i for i, key in enumerate(SOURCE_ORDER)}
+
+# Sources whose report titles may name an actor. ORKL is left out on purpose: its 29,000 titles
+# are the bulk of the data, and its titles have not been judged for this yet.
+TITLE_MATCH_SOURCES = frozenset({"microsoftblog", "talos", "eset", "dfir", "paper"})
 
 _GENERATED_AT = re.compile(r"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z")
 _URL = re.compile(r"https?://\S+")
@@ -132,7 +142,8 @@ class BuildFacts:
 
 
 def assemble(bundles, registry: Registry, policies: Mapping[str, str], link_status: Mapping[str, bool] | None = None,
-             generated_at: str | None = None, *, facts: BuildFacts) -> dict:
+             generated_at: str | None = None, *, facts: BuildFacts,
+             title_sources: frozenset[str] = TITLE_MATCH_SOURCES) -> dict:
     """The payload for write.write_all(), or a ValueError when the inputs cannot make one safely."""
     generated_at = _timestamp(generated_at)
     year = require_year(facts.copyright_year)
@@ -145,8 +156,14 @@ def assemble(bundles, registry: Registry, policies: Mapping[str, str], link_stat
     shown = _published_actors(registry, policies)
     published_ids = {p.id for p in shown}
 
+    # Only the aliases a page shows are read, so a title can never reveal a name that only an
+    # evidence-only source holds.
+    matcher = titles.build(
+        {p.id: [a["value"] for a in _aliases(p, _display_name(p.members), {m.source for m in p.members}.__contains__)]
+         for p in shown},
+        registry.lookup, lambda phrase: registry.non_actor(phrase) is not None)
     reports = _merge_reports(by_source, policies, facts, registry, published_ids, link_status or {}, today,
-                             valid_techniques)
+                             valid_techniques, (matcher, title_sources))
     vulns = _vulns(by_source, policies, reports)
     campaigns = _campaigns(by_source, policies, registry, published_ids, valid_techniques)
     kev = {v["cve"]: v for v in vulns if v["kev_date_added"] is not None}
@@ -432,6 +449,7 @@ class _Report:
     url_ok: bool | None
     archive_url: str | None
     actors: list[str]
+    actors_from_title: list[str]
     unresolved: list[str]
     cves: list[str]
     techniques: list[str]
@@ -448,7 +466,7 @@ class _Report:
             "id": self.id, "title": self.title, "published": self.published, "date_basis": self.basis,
             "organisation": self.organisation, "url": self.url, "url_ok": self.url_ok,
             "archive_url": self.archive_url, "actors": sorted(self.actors),
-            "actor_names_unresolved": self.unresolved, "cves": self.cves, "techniques": self.techniques,
+            "actors_from_title": self.actors_from_title, "actor_names_unresolved": self.unresolved, "cves": self.cves, "techniques": self.techniques,
             "sources": self.sources,
         }
 
@@ -478,7 +496,8 @@ def _keys(r: ReportRecord) -> list[tuple]:
     return keys
 
 
-def _merge_reports(by_source, policies, facts, registry, published_ids, link_status, today, valid_techniques):
+def _merge_reports(by_source, policies, facts, registry, published_ids, link_status, today, valid_techniques,
+                   titled):
     records: list[ReportRecord] = []
     for source in SOURCE_ORDER:
         if policies[source] in _SHOWS_REPORTS and source in by_source:
@@ -511,7 +530,7 @@ def _merge_reports(by_source, policies, facts, registry, published_ids, link_sta
     out = []
     for group in groups.values():
         report = _report(group, policies, malpedia_links, group_links, registry, published_ids, checked, today,
-                         valid_techniques)
+                         valid_techniques, titled)
         if report:
             out.append(report)
     return sorted(out, key=lambda r: r.id)
@@ -537,7 +556,7 @@ def _group_links(facts: BuildFacts, policies) -> dict[str, set[str]]:
 
 
 def _report(group: list[ReportRecord], policies, malpedia_links, group_links, registry, published_ids, checked,
-            today, valid_techniques) -> "_Report | None":
+            today, valid_techniques, titled) -> "_Report | None":
     group = sorted(group, key=lambda r: (_REPORT_PRIORITY.get(r.source, 9), _ORD[r.source], r.source_id))
 
     urls = _dedupe(u for r in group if (u := _valid_url(r.url)))
@@ -551,7 +570,8 @@ def _report(group: list[ReportRecord], policies, malpedia_links, group_links, re
     if archive == url:
         archive = None
 
-    title = next((t for r in group if (t := _tidy(r.title))), None) or url
+    titled_by = next(((r, t) for r in group if (t := _tidy(r.title))), None)
+    title = titled_by[1] if titled_by else url
     if title is None:
         return None
     sha1s = sorted({s for r in group if _SHA1.fullmatch(s := (r.sha1 or "").strip().lower())})
@@ -564,11 +584,15 @@ def _report(group: list[ReportRecord], policies, malpedia_links, group_links, re
 
     published, basis = _date(group, today)
     actors, unresolved = _attach(group, urls, policies, malpedia_links, group_links, registry, published_ids)
+    matcher, title_sources = titled
+    # Only the title the site shows is read, and only when a source that may be read supplied it.
+    named = matcher.match(title) & published_ids if titled_by and titled_by[0].source in title_sources else set()
+    from_title = sorted(named - set(actors))
     return _Report(
         id=report_id, title=title, published=published, basis=basis,
         organisation=next((o for r in group if (o := _tidy(r.organisation))), None),
         url=url, url_ok=checked.get(norm_url(url)) if url else None, archive_url=archive,
-        actors=actors, unresolved=unresolved,
+        actors=sorted(set(actors) | named), actors_from_title=from_title, unresolved=unresolved,
         cves=sorted({c for r in group for v in r.cves if _CVE.fullmatch(c := v.strip().upper())}),
         techniques=sorted({t for r in group for t in r.techniques if t in valid_techniques}),
         sources=sorted({r.source for r in group}, key=_ORD.get))
@@ -591,9 +615,9 @@ def _date(group: list[ReportRecord], today: str) -> tuple[str | None, str]:
 def _attach(group, urls, policies, malpedia_links, group_links, registry, published_ids):
     """The actors a report is tagged with, and the names that resolved to no single actor.
 
-    Only three things attach a report: Malpedia's own report links, ATT&CK's group references
+    Only three things tag a report: Malpedia's own report links, ATT&CK's group references
     and the paper's actor names. ORKL's tags never do, and a link-only source's names are not
-    read at all.
+    read at all. A title that names an actor is added later, by _report, and kept separate.
     """
     names: list[str] = []
     actors: set[str] = set()

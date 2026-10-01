@@ -232,6 +232,8 @@ export interface Report {
 	url_ok: boolean | null;
 	archive_url: string | null;
 	actors: ActorId[];
+	/** The part of actors that only the report's title names. No source tags the report with them. */
+	actors_from_title: ActorId[];
 	actor_names_unresolved: string[];
 	cves: CveId[];
 	techniques: TechniqueId[];
@@ -284,6 +286,8 @@ export interface ReportsIndexColumns {
 	sources: number[];
 	/** Positions in tables.actors. */
 	actors: number[][];
+	/** Positions in tables.actors of the actors that only the title names. Each is also in actors. */
+	actors_from_title: number[][];
 	/** Positions in tables.cves. */
 	cves: number[][];
 	/** Positions in tables.techniques. */

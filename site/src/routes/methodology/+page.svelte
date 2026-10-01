@@ -330,6 +330,21 @@
 			allows this because the project works out those identifiers itself.
 		</p>
 	{/if}
+	<h3>Actors named in a title</h3>
+	<p>
+		The Microsoft, Talos and ESET blogs and The DFIR Report are link-only, so the site keeps no
+		post text. It can still read the title it shows. When that title contains the name of an
+		actor that has a page here, the report is linked to that actor, and the report panel lists
+		it under "Named in the title", apart from the actors a source tags. The paper's own report
+		titles are read the same way. ORKL titles are not read.
+	</p>
+	<p>
+		The match is cautious. It reads whole words and uses only the names this site already
+		publishes. It skips a name that belongs to two actors, a name that is also an ordinary word,
+		and the names of malware that a title can mention without being about the actor. A missing
+		link is a better error than a wrong one. A title is the publisher's own statement, but it is
+		weaker than a tag, and it can name an actor in passing.
+	</p>
 </section>
 
 <section id="limitations" aria-labelledby="limitations-heading">

@@ -20,6 +20,11 @@ _NON_WORD = re.compile(r"[^\w]+")
 _SUFFIXES = frozenset({"group", "team"})
 
 
+def words(text: str) -> list[str]:
+    """The case-folded word tokens of a name or a title, before any suffix is dropped."""
+    return _NON_WORD.sub(" ", unicodedata.normalize("NFKC", text).casefold()).split()
+
+
 def norm(name: str) -> str:
     """The matching key for an actor or software name.
 
@@ -33,7 +38,7 @@ def norm(name: str) -> str:
     because every junk alias would otherwise share it and merge unrelated
     actors.
     """
-    tokens = _NON_WORD.sub(" ", unicodedata.normalize("NFKC", name).casefold()).split()
+    tokens = words(name)
     if len(tokens) > 1 and tokens[-1] in _SUFFIXES:
         tokens.pop()
     return "".join(tokens)

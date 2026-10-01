@@ -9,6 +9,7 @@
     "url_ok": true,
     "archive_url": "https://example.org/archive/679e21c7078e9a02a32db04c1a2f8c0192aecaf6.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -26,6 +27,7 @@
     "url_ok": true,
     "archive_url": "https://example.org/archive/685c7008478130c2f828c5da2c92b3bc94794801.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -45,6 +47,7 @@
     "actors": [
       "G0032"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -66,6 +69,7 @@
     "actors": [
       "G0007"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],

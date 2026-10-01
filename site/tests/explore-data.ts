@@ -67,6 +67,7 @@ export function withExtraRows(base: ReportsIndex, extras: Extra[], builtAt = bas
 		organisation: c.organisation[i],
 		sources: c.sources[i],
 		actors: c.actors[i],
+		actorsFromTitle: c.actors_from_title[i],
 		cves: c.cves[i],
 		techniques: c.techniques[i]
 	}));
@@ -80,6 +81,7 @@ export function withExtraRows(base: ReportsIndex, extras: Extra[], builtAt = bas
 			organisation: e.organisation ? at(tables.organisations, e.organisation) : null,
 			sources: mask,
 			actors: (e.actors ?? []).map((a) => at(tables.actors, a)),
+			actorsFromTitle: [],
 			cves: [],
 			techniques: []
 		});
@@ -108,6 +110,7 @@ export function withExtraRows(base: ReportsIndex, extras: Extra[], builtAt = bas
 			organisation: rows.map((r) => r.organisation),
 			sources: rows.map((r) => r.sources),
 			actors: rows.map((r) => r.actors),
+			actors_from_title: rows.map((r) => r.actorsFromTitle),
 			cves: rows.map((r) => r.cves),
 			techniques: rows.map((r) => r.techniques)
 		}

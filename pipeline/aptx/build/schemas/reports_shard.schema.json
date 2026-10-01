@@ -21,6 +21,7 @@
         "url_ok",
         "archive_url",
         "actors",
+        "actors_from_title",
         "actor_names_unresolved",
         "cves",
         "techniques",
@@ -60,7 +61,15 @@
           "description": "An archived copy held by a source, or null."
         },
         "actors": {
-          "description": "Resolved actors the report is tagged with.",
+          "description": "Resolved actors the report is tagged with, including those in actors_from_title.",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/actorId"
+          },
+          "uniqueItems": true
+        },
+        "actors_from_title": {
+          "description": "The subset of actors that a source's title names and no tag confirms. A link-only source's post is never read, so this is the title's word and nothing else.",
           "type": "array",
           "items": {
             "$ref": "#/$defs/actorId"

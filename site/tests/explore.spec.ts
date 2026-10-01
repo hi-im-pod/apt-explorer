@@ -344,6 +344,30 @@ test('a live original link comes first, and a non-ORKL report shows its full det
 	await expect(dialog).toContainText(/CCS '25/);
 });
 
+test('an actor named only in the title is listed apart from the tagged actors', async ({ page }) => {
+	const c = index.columns;
+	const at = c.actors_from_title.findIndex((ids, i) => ids.length > 0 && c.actors[i].length > ids.length);
+	const titled = at >= 0 ? at : c.actors_from_title.findIndex((ids) => ids.length > 0);
+	expect(titled, 'the data has no report whose title names an actor').toBeGreaterThanOrEqual(0);
+	const id = c.id[titled];
+	const named = c.actors_from_title[titled].map((p) => index.tables.actors[p]);
+	const tagged = c.actors[titled].map((p) => index.tables.actors[p]).filter((a) => !named.includes(a));
+	await open(page, `?report=${encodeURIComponent(id)}`);
+	const dialog = panel(page);
+	const titledSection = dialog.getByRole('region', { name: 'Named in the title' });
+	for (const a of named) {
+		const link = titledSection.getByRole('link', { name: nameOf(a), exact: true });
+		expect(await hrefPath(link)).toBe(`/apt-explorer/actors/${a}/`);
+	}
+	if (tagged.length) {
+		const taggedSection = dialog.getByRole('region', { name: 'Actors', exact: true });
+		for (const a of tagged) await expect(taggedSection.getByRole('link', { name: nameOf(a), exact: true })).toBeVisible();
+		for (const a of named) await expect(taggedSection.getByRole('link', { name: nameOf(a), exact: true })).toHaveCount(0);
+	} else {
+		await expect(dialog.getByRole('region', { name: 'Actors', exact: true })).toHaveCount(0);
+	}
+});
+
 test('an unreachable original puts the archive link first and says why', async ({ page }) => {
 	await open(page, `?report=${ORKL_DEAD}`);
 	const dialog = panel(page);

@@ -23,6 +23,13 @@
 	the paper, and finds CVE and technique IDs by matching the report text.
 	The publisher and the names that matched no actor stay hidden.
 
+	Actors are shown in two groups. A tagged actor was named by a source's
+	own data. An actor "named in the title" was found by matching the title
+	against known aliases, for the vendor blogs that publish no tags. The two
+	are kept apart so a title match never passes as a tag. The split comes
+	from the table row, not the report's record, so nothing shifts when the
+	record loads.
+
 	The table row already holds the title, date, publisher, sources, actors,
 	CVEs and techniques, so the panel shows them at once. The links and the
 	names that matched no actor live only in the report's own record, which
@@ -179,20 +186,34 @@
 				{/if}
 			</section>
 
-			{#if row.actors.length}
+			{#snippet actorChip(id: string)}
+				<li>
+					{#if actorNames.has(id)}
+						<a href="{base}/actors/{id}/">{actorNames.get(id)}</a>
+					{:else}
+						{id}
+					{/if}
+				</li>
+			{/snippet}
+			{@const tagged = row.actors.filter((id) => !row.actorsFromTitle.includes(id))}
+			{#if tagged.length}
 				<section aria-labelledby="panel-actors">
 					<h3 id="panel-actors">Actors</h3>
 					<ul class="chips">
-						{#each row.actors as id (id)}
-							<li>
-								{#if actorNames.has(id)}
-									<a href="{base}/actors/{id}/">{actorNames.get(id)}</a>
-								{:else}
-									{id}
-								{/if}
-							</li>
-						{/each}
+						{#each tagged as id (id)}{@render actorChip(id)}{/each}
 					</ul>
+				</section>
+			{/if}
+			{#if row.actorsFromTitle.length}
+				<section aria-labelledby="panel-titled">
+					<h3 id="panel-titled">Named in the title</h3>
+					<ul class="chips">
+						{#each row.actorsFromTitle as id (id)}{@render actorChip(id)}{/each}
+					</ul>
+					<p class="hint">
+						Found by matching the title against known actor names. The publisher's own tags
+						did not confirm these.
+					</p>
 				</section>
 			{/if}
 			{#if !row.linkOnly && report && report.actor_names_unresolved.length}
@@ -231,7 +252,7 @@
 					{sourceLabel('orkl').name} is a link-only source while its terms are confirmed, so it
 					supplies only the report's title, date and links. The actors, CVEs and techniques above
 					were added by this project. Actors come from Malpedia, MITRE ATT&CK and the paper, never
-					from ORKL's tags, and CVE and technique IDs are matched in the report text.
+					from ORKL's tags or titles, and CVE and technique IDs are matched in the report text.
 					<a href="{base}/about/#publish-link-only">What link-only means</a>
 				</p>
 			{/if}
@@ -518,6 +539,13 @@
 		padding: 0.125rem 0.625rem;
 		border-radius: 999px;
 		background: var(--accent-soft);
+	}
+
+	.hint {
+		margin: 0.5rem 0 0;
+		color: var(--text-muted);
+		font-size: 0.8125rem;
+		line-height: 1.4;
 	}
 
 	.chips.plain li {
