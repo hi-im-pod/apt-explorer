@@ -16,9 +16,14 @@ import json
 import logging
 import os
 import sys
+import threading
+import time
+from collections import Counter
 from collections.abc import Collection, Iterable, Sequence
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import urlsplit
 
 from aptx.build import assemble as assembly
 from aptx.build import guesses, slugs
@@ -27,6 +32,7 @@ from aptx.build.notice import SOURCE_ORDER
 from aptx.build.write import WriteRefused, write_all
 from aptx.core import http
 from aptx.core.models import SourceBundle
+from aptx.core import state as saved_state
 from aptx.core.snapshot import SnapshotStore
 from aptx.resolve.registry import resolve
 from aptx.sources import attack, etda, malpedia, paper
@@ -35,6 +41,7 @@ from aptx.sources.base import Connector, now_iso
 from aptx.sources.dfir import DfirConnector
 from aptx.sources.etda import EtdaConnector
 from aptx.sources.epss import EpssConnector
+from aptx.sources.feed import FeedConnector
 from aptx.sources.kev import KevConnector
 from aptx.sources.malpedia import MalpediaConnector
 from aptx.sources.microsoft import MicrosoftConnector
@@ -231,38 +238,98 @@ def report_urls(data_dir: Path) -> list[str]:
     return sorted(urls)
 
 
-def check_links(store: SnapshotStore, urls: Iterable[str], sample: int = 300, *, now: str | None = None) -> dict[str, dict]:
-    """Check up to `sample` URLs, oldest-checked first, and merge the results into the stored ones.
+# One run's limits. There are about 30,000 published links and one host, the VX Underground
+# mirror, holds a third of them. Each host is asked once a second at most (http.MIN_INTERVAL),
+# so the per-host cap is what keeps one publisher from setting how long the run takes, and the
+# time budget is what keeps the run well under the job's own limit.
+LINK_SAMPLE = 8000
+LINKS_PER_HOST = 1000
+LINK_WORKERS = 16
+LINK_MINUTES = 40.0
 
-    Never-checked URLs sort first, so the sample rotates through every published
-    link over successive weeks. Earlier results for other URLs are kept.
+
+def _host(url: str) -> str:
+    return urlsplit(url).netloc.lower()
+
+
+def plan_link_check(urls: Iterable[str], results: dict, sample: int, per_host: int) -> list[str]:
+    """The URLs to check this run, oldest-checked first, at most `per_host` for any one host.
+
+    Never-checked URLs sort first, so successive weeks rotate through every published link.
+    A URL skipped for its host's cap keeps its place in line for the next run.
     """
-    now = now or now_iso()
-    path = store.root / LINK_STATUS
-    results = _read_json(path)
     # An empty checked_at sorts before any timestamp, which is what puts unchecked URLs first.
     def last_checked(u: str) -> str:
         r = results.get(u)
         return str(r.get("checked_at") or "") if isinstance(r, dict) else ""
     # Ties, which are every URL on the first run, are broken by a hash of the URL. Sorting them
-    # alphabetically would spend the whole sample on a few hosts and wait out the per-host pause
-    # between every request, while a hash spreads the sample across hosts and stays repeatable.
-    todo = sorted(set(urls), key=lambda u: (last_checked(u), hashlib.sha1(u.encode("utf-8")).hexdigest()))[:max(sample, 0)]
+    # alphabetically would spend the whole sample on a few hosts, while a hash spreads the sample
+    # across hosts and stays repeatable.
+    ordered = sorted(set(urls), key=lambda u: (last_checked(u), hashlib.sha1(u.encode("utf-8")).hexdigest()))
+    taken: Counter[str] = Counter()
+    todo: list[str] = []
+    for u in ordered:
+        if len(todo) >= max(sample, 0):
+            break
+        h = _host(u)
+        if taken[h] >= per_host:
+            continue
+        taken[h] += 1
+        todo.append(u)
+    return todo
 
-    for i, url in enumerate(todo, 1):
-        try:
-            code = http.probe(url)
-            entry = {"ok": _status_ok(code), "status": code, "checked_at": now}
-        except Exception as e:  # noqa: BLE001 - one bad URL must not end the check
-            # The exception's name says what went wrong, such as ConnectTimeout.
-            entry = {"ok": False, "status": type(e).__name__, "checked_at": now}
-        results[url] = entry
-        if i % 25 == 0:
-            # Saved as it goes, because a full sample takes minutes and the run may be cut off.
-            _write_json(path, results)
+
+def check_links(store: SnapshotStore, urls: Iterable[str], sample: int = LINK_SAMPLE, *, now: str | None = None,
+                per_host: int = LINKS_PER_HOST, workers: int = LINK_WORKERS,
+                minutes: float | None = LINK_MINUTES) -> dict[str, dict]:
+    """Check a sample of URLs and merge the results into the stored ones.
+
+    Hosts run side by side, one thread per host, so each host still sees a single polite
+    stream (http.probe waits out the per-host pause) while a slow host does not hold up
+    the rest. After `minutes` no new URL is started, and the ones left over stay unchecked
+    and sort first next time. Earlier results for other URLs are kept.
+    """
+    now = now or now_iso()
+    path = store.root / LINK_STATUS
+    results = _read_json(path)
+    todo = plan_link_check(urls, results, sample, per_host)
+
+    by_host: dict[str, list[str]] = {}
+    for u in todo:
+        by_host.setdefault(_host(u), []).append(u)
+    # The longest queues start first, so the run does not end waiting on one big host.
+    queues = sorted(by_host.values(), key=len, reverse=True)
+
+    deadline = None if minutes is None else time.monotonic() + minutes * 60
+    lock = threading.Lock()
+    done: set[str] = set()
+
+    def check_host(queue: list[str]) -> None:
+        for url in queue:
+            if deadline is not None and time.monotonic() >= deadline:
+                return
+            try:
+                code = http.probe(url)
+                entry = {"ok": _status_ok(code), "status": code, "checked_at": now}
+            except Exception as e:  # noqa: BLE001 - one bad URL must not end the check
+                # The exception's name says what went wrong, such as ConnectTimeout.
+                entry = {"ok": False, "status": type(e).__name__, "checked_at": now}
+            with lock:
+                results[url] = entry
+                done.add(url)
+                if len(done) % 100 == 0:
+                    # Saved as it goes, because a full run takes a while and may be cut off.
+                    _write_json(path, results)
+
+    with ThreadPoolExecutor(max_workers=max(1, workers)) as pool:
+        list(pool.map(check_host, queues))
     _write_json(path, results)
-    log.info("links: checked %d, %d not ok", len(todo), sum(1 for u in todo if not results[u]["ok"]))
-    return {u: results[u] for u in todo}
+    left = len(todo) - len(done)
+    if left:
+        log.warning("links: stopped at the %s-minute budget with %d of %d planned URLs unchecked", minutes, left, len(todo))
+    log.info("links: checked %d across %d hosts, %d not ok", len(done), len(queues),
+             sum(1 for u in done if not results[u]["ok"]))
+    return {u: results[u] for u in todo if u in done}
 
 
 # Entry point
@@ -282,9 +349,20 @@ def _parser() -> argparse.ArgumentParser:
                    help="allow a build that starts the slug registry from nothing; every other build needs "
                         "the registry the last one published")
     lk = sub.add_parser("links", help="check a rotating sample of the published report links")
-    lk.add_argument("--sample", type=int, default=300, help="how many URLs to check this run")
+    lk.add_argument("--sample", type=int, default=LINK_SAMPLE, help="most URLs to check this run")
+    lk.add_argument("--per-host", type=int, default=LINKS_PER_HOST, help="most URLs to check on any one host")
+    lk.add_argument("--workers", type=int, default=LINK_WORKERS, help="hosts checked side by side")
+    lk.add_argument("--minutes", type=float, default=LINK_MINUTES, help="stop starting new checks after this long")
     lk.add_argument("--data", type=Path, default=Path("../data"), help="the data/ directory whose reports to check")
+    st = sub.add_parser("state", help="pack or restore the snapshots that cannot be fetched again")
+    st.add_argument("action", choices=["pack", "unpack"])
+    st.add_argument("archive", type=Path, help="the .tar.gz to write (pack) or read (unpack)")
     return p
+
+
+def feed_sources() -> list[str]:
+    """The sources whose snapshots keep posts the publisher no longer serves."""
+    return [c.name for c in default_connectors() if isinstance(c, FeedConnector)]
 
 
 def main(argv: Sequence[str] | None = None, *, store: SnapshotStore | None = None,
@@ -298,11 +376,24 @@ def main(argv: Sequence[str] | None = None, *, store: SnapshotStore | None = Non
         logging.getLogger("httpx").setLevel(logging.WARNING)
     store = store or SnapshotStore()
 
+    if args.command == "state":
+        feeds = feed_sources()
+        if args.action == "pack":
+            names = saved_state.pack(store, args.archive, feeds)
+        elif not args.archive.is_file():
+            print(f"{args.archive} does not exist", file=sys.stderr)
+            return 1
+        else:
+            names = saved_state.unpack(store, args.archive, feeds)
+        print(f"{args.action}ed {len(names)} files: {', '.join(names)}")
+        return 0
+
     if args.command == "links":
         if not (args.data / "reports").is_dir():
             print(f"no reports under {args.data}; run `python -m aptx run` first", file=sys.stderr)
             return 1
-        checked = check_links(store, report_urls(args.data), args.sample)
+        checked = check_links(store, report_urls(args.data), args.sample, per_host=args.per_host,
+                              workers=args.workers, minutes=args.minutes)
         print(f"checked {len(checked)} links, {sum(1 for r in checked.values() if not r['ok'])} not ok")
         return 0
 

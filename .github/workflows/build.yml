@@ -5,7 +5,10 @@
 # the repository's history holds code only and never a weekly data commit.
 # Raw source snapshots are never committed and never uploaded as an artifact,
 # because artifacts of a public repository can be downloaded by anyone and
-# the snapshots hold report text that this project must not re-host.
+# the snapshots hold report text that this project must not re-host. The one
+# exception is the saved state (state-in and state-out below): the blog feeds'
+# titles, links and dates, and the link check's statuses. Nothing else can
+# enter it, because `aptx state` checks every path against an allowlist.
 name: build
 
 on:
@@ -28,14 +31,50 @@ env:
   APTX_CACHE: ${{ github.workspace }}/.cache/snapshots
 
 jobs:
+  # The snapshot cache below can be evicted (GitHub drops an entry that sits
+  # unused for seven days), and a lost cache only costs a slow re-download,
+  # except for two things: the older posts of the blog feeds, which the
+  # publishers no longer serve, and the link check's results. Those two are
+  # kept on a draft release instead, by state-in and state-out. The jobs that
+  # touch the release hold contents: write and run nothing but the script, so
+  # the job that installs and runs the pipeline never has a write token.
+  state-in:
+    name: fetch saved state
+    if: github.event_name != 'schedule' || vars.PUBLISH_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    outputs:
+      found: ${{ steps.fetch.outputs.found }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          sparse-checkout: .github/scripts
+      - id: fetch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash .github/scripts/pipeline-state.sh fetch state-in/state.tgz
+      - if: steps.fetch.outputs.found == 'true'
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: state-in
+          path: state-in/state.tgz
+          if-no-files-found: error
+          retention-days: 1
+
   data:
     name: fetch and build data
+    needs: [state-in]
     # PUBLISH_ENABLED is a repository variable that stays unset until the
     # publishing gate (telling the first author and the PI, crediting the
     # paper) is passed. It keeps the cron from calling the source APIs on a
     # repository that is not meant to be live yet. A manual dispatch always
     # runs, so the whole chain can be tried before the gate opens.
     if: github.event_name != 'schedule' || vars.PUBLISH_ENABLED == 'true'
+    outputs:
+      packed: ${{ steps.pack.outputs.packed }}
     runs-on: ubuntu-latest
     # Stay under the six-hour hosted-runner limit, so the cache-save step
     # below still gets to run when a cold first run is slow.
@@ -54,6 +93,10 @@ jobs:
       - name: Install the pipeline
         run: pip install -e pipeline
 
+      # This cache holds the snapshots that can be fetched again, so an
+      # eviction costs time and nothing more. keepalive.yml touches it midweek
+      # so that it is rarely evicted at all.
+      #
       # Restore and save are separate steps for two reasons. The combined
       # action saves only when the whole job succeeds, but fresh snapshots
       # are worth keeping even if a later step fails. And a key that is
@@ -68,6 +111,20 @@ jobs:
           path: .cache/snapshots
           key: snapshots-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: snapshots-
+
+      # The saved state goes in after the cache, so it wins when both hold a
+      # copy. It is the durable one. `aptx state unpack` refuses any file
+      # that is not a feed snapshot or the link results.
+      - name: Fetch the saved state
+        if: needs.state-in.outputs.found == 'true'
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: state-in
+          path: state-in
+      - name: Restore the saved state
+        if: needs.state-in.outputs.found == 'true'
+        working-directory: pipeline
+        run: python -m aptx state unpack ../state-in/state.tgz
 
       # The pipeline writes into an existing data/ without removing files it
       # no longer produces, so an actor that the committed copy has and the
@@ -88,9 +145,13 @@ jobs:
         timeout-minutes: 300
         run: python -m aptx run --out ../data
 
+      # Each run checks the links that have waited longest, at most 1,000 per
+      # host, one request a second per host, and stops at 40 minutes. The
+      # limits are the defaults in aptx/cli.py. The results carry over, so
+      # the whole list is covered across several weeks.
       - name: Check a sample of report links
         working-directory: pipeline
-        run: python -m aptx links --sample 300
+        run: python -m aptx links
 
       # The link results only reach the published data when the data is
       # assembled again, so rebuild from the snapshots already on disk.
@@ -107,6 +168,26 @@ jobs:
           path: .cache/snapshots
           key: ${{ steps.snapshots.outputs.cache-primary-key }}
 
+      # Pack the durable state for state-out, which holds the only write
+      # token. always() so that a failure later in the job still keeps the
+      # feed posts and link results gathered so far.
+      - name: Pack the saved state
+        id: pack
+        if: ${{ always() && steps.snapshots.outcome == 'success' }}
+        working-directory: pipeline
+        run: |
+          python -m aptx state pack ../state-out/state.tgz
+          echo "packed=true" >> "$GITHUB_OUTPUT"
+      # Feed titles, links, dates and link statuses only, see core/state.py.
+      - name: Upload the saved state
+        if: ${{ always() && steps.pack.outputs.packed == 'true' }}
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: state-out
+          path: state-out/state.tgz
+          if-no-files-found: error
+          retention-days: 1
+
       # Only the derived data leaves this job. It is the site's input.
       - name: Upload data
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
@@ -115,6 +196,30 @@ jobs:
           path: data/
           if-no-files-found: error
           retention-days: 14
+
+  # Writes the new state to the draft release. It runs even when a later step
+  # of the data job failed, because the state packed before that is still
+  # worth keeping, and it never runs the pipeline.
+  state-out:
+    name: save state
+    needs: [data]
+    if: ${{ always() && needs.data.outputs.packed == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          sparse-checkout: .github/scripts
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: state-out
+          path: state-out
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash .github/scripts/pipeline-state.sh store state-out/state.tgz
 
   site:
     name: build site

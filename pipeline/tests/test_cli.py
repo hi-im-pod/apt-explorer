@@ -335,6 +335,69 @@ def test_a_first_sample_is_spread_across_hosts_rather_than_alphabetical(tmp_path
     assert len({u.split("/")[2] for u in got}) == 4
 
 
+def test_no_host_gets_more_than_its_share_of_a_run(tmp_path):
+    urls = [f"https://big.test/{n}" for n in range(50)] + [f"https://small{n}.test/x" for n in range(5)]
+    plan = cli.plan_link_check(urls, {}, sample=100, per_host=10)
+    assert sum(u.startswith("https://big.test/") for u in plan) == 10
+    assert sum(u.startswith("https://small") for u in plan) == 5
+
+
+def test_a_url_skipped_for_its_hosts_cap_comes_first_next_run(tmp_path):
+    urls = [f"https://big.test/{n}" for n in range(20)]
+    first = cli.plan_link_check(urls, {}, sample=100, per_host=10)
+    results = {u: {"ok": True, "status": 200, "checked_at": NOW} for u in first}
+    second = cli.plan_link_check(urls, results, sample=100, per_host=10)
+    assert not set(first) & set(second) and len(second) == 10
+
+
+@respx.mock
+def test_a_host_is_never_asked_faster_than_the_pause_even_with_many_workers(tmp_path, monkeypatch):
+    import time
+    monkeypatch.setattr(http, "MIN_INTERVAL", 0.05)
+    monkeypatch.setattr(http, "_last", {})
+    stamps: dict[str, list[float]] = {}
+
+    def answer(request):
+        stamps.setdefault(request.url.host, []).append(time.monotonic())
+        return httpx.Response(200)
+
+    respx.route(method="HEAD").mock(side_effect=answer)
+    urls = [f"https://{h}.test/{n}" for h in ("a", "b", "c") for n in range(5)]
+    got = cli.check_links(SnapshotStore(tmp_path), urls, now=NOW, workers=8)
+    assert len(got) == 15
+    for host, times in stamps.items():
+        gaps = [b - a for a, b in zip(times, times[1:])]
+        assert len(times) == 5 and min(gaps) >= 0.04, host
+
+
+@respx.mock
+def test_hosts_are_checked_side_by_side(tmp_path, monkeypatch):
+    import threading
+    monkeypatch.setattr(http, "_last", {})
+    # Two requests can only both be waiting here if two hosts are being checked at once.
+    meet = threading.Barrier(2, timeout=5)
+
+    def answer(request):
+        meet.wait()
+        return httpx.Response(200)
+
+    respx.route(method="HEAD").mock(side_effect=answer)
+    got = cli.check_links(SnapshotStore(tmp_path), ["https://a.test/x", "https://b.test/x"], now=NOW, workers=2)
+    assert all(r["ok"] for r in got.values()) and len(got) == 2
+
+
+@respx.mock
+def test_a_run_past_its_time_budget_stops_and_leaves_the_rest_unchecked(tmp_path, caplog):
+    respx.route(method="HEAD").mock(return_value=httpx.Response(200))
+    s = SnapshotStore(tmp_path)
+    urls = [f"https://a.test/{n}" for n in range(5)]
+    with caplog.at_level("WARNING"):
+        got = cli.check_links(s, urls, now=NOW, minutes=0)
+    assert got == {} and "unchecked" in caplog.text
+    # Nothing was recorded, so the next run starts with the same URLs.
+    assert len(cli.plan_link_check(urls, cli.load_link_status(s), 100, 100)) == 5
+
+
 @respx.mock
 def test_the_links_command_reads_urls_from_the_published_reports(tmp_path, store, capsys):
     data = tmp_path / "data"

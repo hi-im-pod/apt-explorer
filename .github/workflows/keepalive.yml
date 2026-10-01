@@ -1,0 +1,39 @@
+# Keeps the snapshot cache from being evicted between weekly builds.
+#
+# GitHub removes a cache entry that has not been used for seven days, and the
+# weekly build runs exactly seven days apart, so a late run would find it gone.
+# Restoring the entry midweek counts as a use. A lost cache costs a slow
+# re-download and nothing else, because the data that cannot be fetched again
+# is kept on a draft release, see build.yml.
+#
+# This workflow reads the cache and discards it. It has no token, calls no
+# source, and writes nothing.
+name: keepalive
+
+on:
+  schedule:
+    - cron: "41 3 * * 4" # Thursdays at 03:41 UTC, midway between two builds.
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: keepalive
+  cancel-in-progress: true
+
+jobs:
+  touch:
+    name: touch the snapshot cache
+    # Follows the same gate as the weekly build.
+    if: github.event_name != 'schedule' || vars.PUBLISH_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      # The key can never match, so the restore falls through to the newest
+      # entry whose key starts with the prefix, which is the one the next
+      # build will load.
+      - uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: .cache/snapshots
+          key: snapshots-keepalive-${{ github.run_id }}
+          restore-keys: snapshots-
