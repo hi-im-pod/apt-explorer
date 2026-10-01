@@ -1,6 +1,6 @@
 {
   "window_start": "2024-10-01",
-  "generated_at": "2026-10-01T07:23:19Z",
+  "generated_at": "2026-10-01T11:22:28Z",
   "reporting_activity": [
     {
       "actor": "G0001",
@@ -827,7 +827,7 @@
     {
       "actor": "G0034",
       "quarter": "2026-Q1",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 7
     },
     {
@@ -1301,7 +1301,7 @@
     {
       "actor": "G0050",
       "quarter": "2026-Q2",
-      "count": 16,
+      "count": 17,
       "prev_year_count": 8
     },
     {
@@ -2867,7 +2867,7 @@
     {
       "actor": "G0143",
       "quarter": "2026-Q2",
-      "count": 7,
+      "count": 8,
       "prev_year_count": 7
     },
     {
@@ -3251,7 +3251,7 @@
     {
       "actor": "G1024",
       "quarter": "2025-Q3",
-      "count": 4,
+      "count": 5,
       "prev_year_count": 1
     },
     {
@@ -3276,7 +3276,7 @@
       "actor": "G1024",
       "quarter": "2026-Q3",
       "count": 0,
-      "prev_year_count": 4
+      "prev_year_count": 5
     },
     {
       "actor": "G1028",
@@ -3359,7 +3359,7 @@
     {
       "actor": "G1033",
       "quarter": "2026-Q3",
-      "count": 0,
+      "count": 1,
       "prev_year_count": 1
     },
     {
@@ -4527,6 +4527,12 @@
       "prev_year_count": 3
     },
     {
+      "actor": "frostyneighbor",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
       "actor": "gelsemium",
       "quarter": "2024-Q4",
       "count": 1,
@@ -4633,6 +4639,12 @@
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 6
+    },
+    {
+      "actor": "gopherwhisper",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
     },
     {
       "actor": "greyvibe",
@@ -4839,6 +4851,18 @@
       "prev_year_count": 1
     },
     {
+      "actor": "longnosedgoblin",
+      "quarter": "2025-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "longnosedgoblin",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
       "actor": "lunar-spider",
       "quarter": "2024-Q4",
       "count": 1,
@@ -4859,13 +4883,19 @@
     {
       "actor": "lunar-spider",
       "quarter": "2025-Q3",
-      "count": 0,
+      "count": 1,
       "prev_year_count": 1
     },
     {
       "actor": "lunar-spider",
       "quarter": "2025-Q4",
       "count": 1,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "lunar-spider",
+      "quarter": "2026-Q3",
+      "count": 0,
       "prev_year_count": 1
     },
     {
@@ -5009,7 +5039,7 @@
     {
       "actor": "ransomhub",
       "quarter": "2025-Q2",
-      "count": 3,
+      "count": 4,
       "prev_year_count": 4
     },
     {
@@ -5034,7 +5064,7 @@
       "actor": "ransomhub",
       "quarter": "2026-Q2",
       "count": 0,
-      "prev_year_count": 3
+      "prev_year_count": 4
     },
     {
       "actor": "ransomhub",
@@ -5735,7 +5765,7 @@
     {
       "actor": "the-gentlemen",
       "quarter": "2026-Q3",
-      "count": 0,
+      "count": 1,
       "prev_year_count": 1
     },
     {
@@ -6329,7 +6359,7 @@
     {
       "actor": "webworm",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 2
     },
     {
@@ -6466,6 +6496,16 @@
       "basis": "report"
     },
     {
+      "actor": "frostyneighbor",
+      "first_seen": "2026-05-14",
+      "basis": "report"
+    },
+    {
+      "actor": "gopherwhisper",
+      "first_seen": "2026-04-23",
+      "basis": "report"
+    },
+    {
       "actor": "greyvibe",
       "first_seen": "2026-05-28",
       "basis": "report"
@@ -6478,6 +6518,11 @@
     {
       "actor": "hive0163",
       "first_seen": "2026-03-12",
+      "basis": "report"
+    },
+    {
+      "actor": "longnosedgoblin",
+      "first_seen": "2025-12-18",
       "basis": "report"
     },
     {
@@ -7203,6 +7248,7 @@
         "G0129",
         "G0143",
         "earth-baxia",
+        "lunar-spider",
         "ransomhub",
         "tianwu",
         "vice-spider"
@@ -7853,6 +7899,7 @@
         "G1049",
         "G1052",
         "earth-baxia",
+        "frostyneighbor",
         "ghostwriter",
         "gold-rebellion",
         "stac5143",
@@ -8386,6 +8433,7 @@
         "G0129",
         "G0143",
         "earth-baxia",
+        "frostyneighbor",
         "ghostwriter",
         "tianwu"
       ]
@@ -16135,6 +16183,27 @@
       "overlap": 0
     },
     {
+      "actor": "frostyneighbor",
+      "reported_only": [
+        "T1027",
+        "T1027.009",
+        "T1036.005",
+        "T1041",
+        "T1053.005",
+        "T1057",
+        "T1059",
+        "T1071.001",
+        "T1082",
+        "T1204.002",
+        "T1566.001",
+        "T1583",
+        "T1588.002",
+        "T1608"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
       "actor": "gelsemium",
       "reported_only": [
         "T1014",
@@ -16572,6 +16641,42 @@
         "T1593.002",
         "T1608.001",
         "T1627.001"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "longnosedgoblin",
+      "reported_only": [
+        "T1027.013",
+        "T1027.015",
+        "T1036.005",
+        "T1053.005",
+        "T1055",
+        "T1056.001",
+        "T1059.001",
+        "T1059.003",
+        "T1071.001",
+        "T1074.001",
+        "T1082",
+        "T1083",
+        "T1102.002",
+        "T1105",
+        "T1106",
+        "T1125",
+        "T1217",
+        "T1218",
+        "T1480",
+        "T1560",
+        "T1564.003",
+        "T1567.002",
+        "T1573.001",
+        "T1573.002",
+        "T1574.014",
+        "T1585.003",
+        "T1588.001",
+        "T1620",
+        "T1622"
       ],
       "documented_only_count": 0,
       "overlap": 0

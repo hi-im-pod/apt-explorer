@@ -181,12 +181,17 @@
   "cves": [],
   "timeline": [
     {
+      "quarter": "2019-Q3",
+      "count": 1
+    },
+    {
       "quarter": "2023-Q1",
       "count": 1
     }
   ],
   "reports": [
-    "007e0129347fec461e4591b03298dcd7ceec468e"
+    "007e0129347fec461e4591b03298dcd7ceec468e",
+    "paper:APT%20or%20not%20APT%20What's%20Behind%20the%20Aggah%20Campaign"
   ],
   "conflicts": [],
   "evidence_count": 4

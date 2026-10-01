@@ -251,9 +251,14 @@
     {
       "quarter": "2026-Q2",
       "count": 2
+    },
+    {
+      "quarter": "2026-Q3",
+      "count": 1
     }
   ],
   "reports": [
+    "talos:ransomware-incidents-in-japan-in-the-first-half-of-2026",
     "19e036bc976ca7c072f5549832bf534df1c7c785",
     "867af853d8d2f568d65e019b740f3d3315c973e7",
     "aa20732e94bdf7496b5e13cfc3563fba6addfd54",

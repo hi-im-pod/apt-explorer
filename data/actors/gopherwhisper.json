@@ -30,8 +30,15 @@
   "techniques_documented": [],
   "techniques_reported": [],
   "cves": [],
-  "timeline": [],
-  "reports": [],
+  "timeline": [
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "eset:en-eset-research-gopherwhisper-burrow-full-malware"
+  ],
   "conflicts": [],
   "evidence_count": 1
 }

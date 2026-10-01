@@ -336,12 +336,21 @@
       "ransomware": true
     },
     {
+      "cve": "CVE-2017-11882",
+      "kev": true,
+      "ransomware": true
+    },
+    {
       "cve": "CVE-2023-38831",
       "kev": true,
       "ransomware": true
     }
   ],
   "timeline": [
+    {
+      "quarter": "2020-Q3",
+      "count": 1
+    },
     {
       "quarter": "2021-Q3",
       "count": 1
@@ -386,7 +395,8 @@
     "0eb229d05054aa61c3bcb0f37bf5412b071865ee",
     "paper:India's%20Chief%20of%20Defence%20Staff%20Crashes%20SideCopy%20APT%20takes%20advantage%20of%20the%20fire",
     "0b1764f058dae3ad01b60b4d305caecafe09f8e5",
-    "2f44839afed1c12fd6e2e7f0fa8dd38dd632b065"
+    "2f44839afed1c12fd6e2e7f0fa8dd38dd632b065",
+    "paper:Seqrite-WhitePaper-Operation-SideCopy"
   ],
   "conflicts": [],
   "evidence_count": 6

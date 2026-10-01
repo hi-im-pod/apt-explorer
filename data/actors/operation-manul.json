@@ -35,8 +35,15 @@
   "techniques_documented": [],
   "techniques_reported": [],
   "cves": [],
-  "timeline": [],
-  "reports": [],
+  "timeline": [
+    {
+      "quarter": "2016-Q3",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "paper:EFF_OperationManul(08-03-2016)"
+  ],
   "conflicts": [],
   "evidence_count": 0
 }

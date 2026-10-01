@@ -9,6 +9,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5f95ace76755b99a8642bc1be82cd69a0a79ffe1.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -30,6 +31,7 @@
       "ransomhub",
       "vice-spider"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -47,6 +49,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a4d05869b38f97b36fcd48772fec803f766944b8.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -84,6 +87,7 @@
       "hurricane-panda",
       "slime29"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -103,6 +107,7 @@
     "actors": [
       "void-arachne"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -143,6 +148,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/bb97e325e6de5e470f7a6f851534518cf7b1cd28.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-20393"
@@ -170,6 +176,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/9ad55b68207a448474f199825cb0784c9e29cfc8.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -187,6 +194,7 @@
     "url_ok": null,
     "archive_url": null,
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -206,6 +214,7 @@
     "actors": [
       "G0067"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -228,6 +237,7 @@
       "hive0137",
       "uac-0050"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-11882"
@@ -270,6 +280,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2d748de8f242cb2d232362b7880100c6cfa1802b.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-6218",
@@ -290,6 +301,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ac01531bddc32b58c133b3ed7429b025001ffad9.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -328,6 +340,7 @@
       "tianwu",
       "unc5174"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -349,6 +362,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2884aad90131c3813c517d71f7cc275052c7d121.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -391,6 +405,7 @@
       "G0064",
       "G0078"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -408,6 +423,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3d486a648c557297dd3abd246d6af1d69a47b54e.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -425,6 +441,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/40a24dff8248f89b26da99fb31b3bf9d84cd0f7d.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -442,6 +459,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4a34931f8947947a21622b9e09e804675e88c5c3.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -458,7 +476,12 @@
     "url": "https://www.welivesecurity.com/en/eset-research/longnosedgoblin-tries-sniff-out-governmental-affairs-southeast-asia-japan/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/89a95122b0a4d563a054163efc886c6053bff9c8.pdf",
-    "actors": [],
+    "actors": [
+      "longnosedgoblin"
+    ],
+    "actors_from_title": [
+      "longnosedgoblin"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -509,6 +532,7 @@
     "actors": [
       "infy"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -526,6 +550,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/bb2f4249a629254ae0f9ed4079f5d87cccc027da.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -545,6 +570,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -562,6 +588,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/434101591fa739498b8efd5b91c428b1dd938cc5.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -581,6 +608,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -598,6 +626,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5bf5c8f4e073a1fe16223f384a2594e19899633a.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -617,6 +646,7 @@
     "actors": [
       "mythic-likho"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -634,6 +664,7 @@
     "url_ok": null,
     "archive_url": null,
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -651,6 +682,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ec1a9cb66c13ecedea94eccee0ffc7ad555a2615.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -668,6 +700,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1137e8b9cb61c71a76fa284aff924e4f6936f935.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-55182"
@@ -689,6 +722,7 @@
     "actors": [
       "G0127"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -708,6 +742,7 @@
     "actors": [
       "G0099"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -725,6 +760,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4457a996b9621445b7c0530c09897472de84bf56.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -785,6 +821,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ba37eed3b1a8cf9072ed976477079344b0b69d83.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -805,6 +842,7 @@
       "G0039",
       "unc5174"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-55182",
@@ -828,6 +866,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/94a0d686474c24bc8ffae9951c46ecfab0bc4156.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-11882",
@@ -929,6 +968,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5b4b5c1a287061d4f811c12fa91e34b0cd1009b5.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2018-6065"
@@ -950,6 +990,7 @@
     "actors": [
       "G0090"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -967,6 +1008,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/0ad80da25bf105ad1b1ba6a8260db8721641ced0.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -1008,6 +1050,7 @@
       "G0127",
       "lunar-spider"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1027,6 +1070,7 @@
     "actors": [
       "G0034"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1044,6 +1088,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2ee5e2315e76fdf355ed8d5272dfb84e9a94ccdd.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -1079,6 +1124,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4dee3cbe33d4d1644943798069eebc833d329dd5.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1096,6 +1142,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5838a93b133088fcdb5b91fffdcc93add6bb7e5a.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1115,6 +1162,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1132,6 +1180,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5a27f71fd5fac010be600c54680a46ac9336d113.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1149,6 +1198,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5d2bba227ea31c26a295bca051517ab9d8c9d11e.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-55182"
@@ -1168,6 +1218,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/998d58b5124a816b5eae7f892bd6677408972cb1.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -1195,6 +1246,7 @@
     "actors": [
       "ghostwriter"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1214,6 +1266,7 @@
     "actors": [
       "uta0178"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -1247,6 +1300,7 @@
     "actors": [
       "uta0178"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2021-22005",
@@ -1303,6 +1357,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f87b9315b43629d02a837fff672c0cb84cb8a806.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1320,6 +1375,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f8f2fd08335c95f04521f6a6e3be16d88e0b1dcc.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-1338",
@@ -1340,6 +1396,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/8b39e1a34e304013ef4a2ac0f04d4a37658507ea.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -1375,6 +1432,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/20767af628bcc604df37855fc6a5e97a305e1a3c.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1392,6 +1450,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3c35dbb243d34cc2fbd9d018d9da5a1ae749f0a0.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1409,6 +1468,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6bfa827f98bc9fb1d5d7e6436f53687eb41cde1e.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1426,6 +1486,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e3cd9859ceb78a286f574e14633fa2b8c18a9c1d.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1443,6 +1504,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e8bbcab2a44fbc4e9f63eab01e0c27ea3ed8215c.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2021-3156",
@@ -1493,6 +1555,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/0882a35561cf45bfc3aaa61bed233ad64eef8806.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -1519,6 +1582,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/41dc099583f2aebf46ad0960455294e1e03d04ec.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1536,6 +1600,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7afc3fbb662c9e07f35c4a26ccdedf0dd63209b4.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1553,6 +1618,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7be9913adcb77245c31c0bce9479f8f06bad3cca.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2018-0171",
@@ -1580,6 +1646,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7b8664219a16da699b4a2a98ddfd54eaecf3963a.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -1625,6 +1692,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1642,6 +1710,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/640b2ead9c53caeecfe0eddaedfd4b9b453e63e7.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2007-4723",
@@ -1729,6 +1798,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a7f1a5d514d0a4a2354225a4e8c47706d694ff60.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1746,6 +1816,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c5d6e42e94abf42afc32c9af10ebe808aceef889.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1769,6 +1840,7 @@
       "sweed",
       "uac-0050"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -1812,6 +1884,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/89bfea0c772b79d11d7f31caf6ba298d7039d320.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2009-2765",
@@ -1838,6 +1911,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3d96571044d5f283870b99f941ba7839c2af0a66.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1857,6 +1931,7 @@
     "actors": [
       "G1020"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -1882,6 +1957,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a352ce27bb67dd09c1673e7f2e65f6635bea2910.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-11882",
@@ -1933,6 +2009,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/eafcc6e472bceec12f64b325bd9ce261b94cdcdb.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1952,6 +2029,7 @@
     "actors": [
       "G0047"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [
       "Operation Armageddon"
     ],
@@ -1974,6 +2052,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5edf0a47ad6a68613f9ee0f25a1595d066bdd25a.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2011,6 +2090,7 @@
       "earth-baxia",
       "tianwu"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -2041,6 +2121,7 @@
     "actors": [
       "G0069"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2060,6 +2141,7 @@
     "actors": [
       "G1049"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2079,6 +2161,7 @@
     "actors": [
       "plushdaemon"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -2114,6 +2197,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ce78c615ad6bb50d01b05a6dca99ab93fdb0be44.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2131,6 +2215,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/160b46f0231c962bfa7d39e11feeeea44e3c4abb.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2148,6 +2233,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3c4b7952f8aec4f509225d163896cdd345a4fe66.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2023-48022"
@@ -2167,6 +2253,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6f0e61ca938067ee2a79c7b4fcfafc99731763fa.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2186,6 +2273,7 @@
     "actors": [
       "the-gentlemen"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -2218,6 +2306,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/0abca7f6853a0084222b0ec29759892fd5258264.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2237,6 +2326,7 @@
     "actors": [
       "G0032"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -2264,6 +2354,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/603943fe72cb40ca0c512dbc73b351bf3e03d66e.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2281,6 +2372,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a5224c271580d986f69bb84e5e39df1f4a1b6e47.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2298,6 +2390,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2b9bf64ef56d84b26b9b0ba137847ea1887823ff.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2317,6 +2410,7 @@
     "actors": [
       "G1044"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2334,6 +2428,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6a7fbb5bbccc65506bd2aa9751f68b1ad1dc8f0a.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2353,6 +2448,7 @@
     "actors": [
       "angry-likho"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2372,6 +2468,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2389,6 +2486,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/d7dd50dd1185f59be051b307150d877f2b82bd2c.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2408,6 +2506,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2425,6 +2524,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f34f88d238237f10833e9e565e772908d54ef5c9.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2442,6 +2542,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4f0e092c739b71566c6d9ee733efd0af698cc66f.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2459,6 +2560,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/73bcbb22ae3ebff753793f265be0a0e60bf33b67.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-12480"
@@ -2484,6 +2586,7 @@
       "G0078",
       "uac-0050"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2501,6 +2604,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/864f9d59af4b4b84b8ed7675fe8dd02a4ddd42a6.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-21042",
@@ -2525,6 +2629,7 @@
     "actors": [
       "G0032"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2544,6 +2649,7 @@
     "actors": [
       "G0007"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2561,6 +2667,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1f25dd3f039ca2ee184648a116ea161f40348bd4.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2578,6 +2685,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/44d819fbd46687008dfa476f247a5143a2f8daba.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2024-36401",
@@ -2603,6 +2711,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/51ba4d92c4f0d8b4c26169a3dcd9d952bcf0a911.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2623,6 +2732,7 @@
       "storm-0249",
       "vice-spider"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -2647,6 +2757,7 @@
       "G0034",
       "G0067"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-0144",
@@ -2680,6 +2791,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3022e37224e3fa2abe43f2cadd50fc8b64422d27.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2697,6 +2809,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6ea59b62458520febeb62152f791c51227c19eb5.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-61882"
@@ -2716,6 +2829,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/eaaa3e7dd6533ddaffd83ca50d6a994ef7ee1e07.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -2749,6 +2863,7 @@
       "ransomhub",
       "vice-spider"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2768,6 +2883,7 @@
     "actors": [
       "sweed"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -2800,6 +2916,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/535c200e8f2d1982d134dd36f465b226bdbbf8d1.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2820,6 +2937,7 @@
       "G0032",
       "G0094"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2837,6 +2955,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5641ccdd87b21afcc8fce523343f731265cb2dcf.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -2891,6 +3010,7 @@
       "hurricane-panda",
       "slime29"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -2938,6 +3058,7 @@
     "actors": [
       "cl-sta-1009"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2955,6 +3076,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6eb19e94f90f0ab6421e5952e054b051013e98ad.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2972,6 +3094,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/8f0848632d41b6ec86cebf7a02caea7b01d61159.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2991,6 +3114,7 @@
     "actors": [
       "G1051"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3008,6 +3132,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f8fe36cdd0e671c519dd289a674e7db3e12e9fa1.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2023-20118"
@@ -3027,6 +3152,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c3120ab6dc49ab85ab3c5bc60e5956ac91730f5e.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3044,6 +3170,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/18e01fbf329f5089cacb71e552b345fbe2e14216.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3061,6 +3188,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/32e66e33d71d6351d0a2710e678d14d1370e88b1.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-2783"
@@ -3082,6 +3210,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -3117,6 +3246,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2f031f4e5d776ee60a40d575f1fe8b43f9ae7f8e.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3137,6 +3267,7 @@
       "G0032",
       "G1049"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -3173,6 +3304,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/147667a4c2352c6976b126c8526e3de8c1711045.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3190,6 +3322,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c1c565ff69ab040ff11e458bd7db382739194105.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3207,6 +3340,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c9894d7590a9bd72e74224451158cf0b40430e50.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -3275,6 +3409,7 @@
       "webworm",
       "wet-panda"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -3294,6 +3429,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3c87a06d6a9c0f5827422db2d32a8125f8293fe2.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3311,6 +3447,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4153c705b9efebc497026b4049a56c2fe63f942d.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-11882",
@@ -3371,6 +3508,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6fd58aa4f179d8cc08ae23e60ba445ebc178d7f1.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3388,6 +3526,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f8194c31866f6407de6be1159f58c429e876d276.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -3428,6 +3567,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3447,6 +3587,7 @@
     "actors": [
       "G1033"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3466,6 +3607,7 @@
     "actors": [
       "G1045"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-5777"
@@ -3495,6 +3637,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3512,6 +3655,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/835f2918b1ae6c2259aec2d756d83d8543bdc5dd.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3529,6 +3673,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e3b75920f8d52f5196897b6e17a4efe03087b203.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3546,6 +3691,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a90dd5fe9bc1d7b3990d2d5a888acdca60ca1d3d.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2021-35464"
@@ -3580,6 +3726,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3599,6 +3746,7 @@
     "actors": [
       "angry-likho"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3618,6 +3766,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3635,6 +3784,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/d2187fee126028c218a8a4a9f07f6d8b453bb01a.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3654,6 +3804,7 @@
     "actors": [
       "uta0178"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-41430",
@@ -3708,6 +3859,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3725,6 +3877,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4a6b98a38b4fb3577aeba9e95e6446604499d190.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3742,6 +3895,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/85a987395f71a3b1cf9cc204cc9d7fd88712a335.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3761,6 +3915,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3782,6 +3937,7 @@
       "G0078",
       "uac-0050"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-11882"
@@ -3801,6 +3957,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6ca08bcd5c750ae535856ab696321e43cc3836a0.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2024-238976"
@@ -3836,6 +3993,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f260bc5667c5378141a6ba8199d930d6224b9d31.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2024-238976"
@@ -3870,6 +4028,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/71a95b439623b661cdc8471148877cac8be199df.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3887,6 +4046,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/25530753d450a9efcd314bd472ae304aa8f69cfa.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3906,6 +4066,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -3940,6 +4101,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/77dc6aab4a779c5a3cba34f10b81e02a9397b397.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3957,6 +4119,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/9e209dbf254194a4b6803eb27c0eef645ae3c0ed.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3974,6 +4137,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a263b97f21e1a2602208995c6ed79be50fba33a9.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3993,6 +4157,7 @@
     "actors": [
       "uac-0226"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2023-43770",
@@ -4016,6 +4181,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b3d60662e282059cc6824b31009f75e9d8c0382f.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4033,6 +4199,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/be4069bc5bae6ca8a4f243c99cb65d1de4d4e294.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4050,6 +4217,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/883c750f13689fb8f7e7bcf7fe4b96705f558290.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4067,6 +4235,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/970b6ceaaeab6e8fb93ea9a3957bafcf0c83b4fa.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4084,6 +4253,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/62611882936bfa19cdd71a4c171ae0ee0a1535e3.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4101,6 +4271,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/76a0d997993031d46f1eb295987dbec0ed2435e5.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -4137,6 +4308,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4154,6 +4326,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f9dfa404bbc4acff4199b02ea56f64d1e790a6de.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-10035"
@@ -4173,6 +4346,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ba083fa0d04e1a3f7c8600b3be8047b752819510.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4190,6 +4364,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/26037988f2a71f44567a0066c80466904d78dbda.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4207,6 +4382,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7aa1e51ef00334e14d2222645231d500b2c84db6.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4243,6 +4419,7 @@
       "earth-baxia",
       "tianwu"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -4280,6 +4457,7 @@
     "actors": [
       "yorotrooper"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4299,6 +4477,7 @@
     "actors": [
       "angry-likho"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4318,6 +4497,7 @@
     "actors": [
       "G0034"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4335,6 +4515,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2bcd3fd6f3c40f265109afc891a6783fff5505dc.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2023-28771",
@@ -4356,6 +4537,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3307b6faa9118e66d311ddb5f22a4dc56b2b4d38.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4375,6 +4557,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4392,6 +4575,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2820cbcdbce7817f0f805acbb7d5a32388b4cbe0.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4411,6 +4595,7 @@
     "actors": [
       "angry-likho"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4428,6 +4613,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/61ee4d2259264c9936cf509052ff3b5a021fd33e.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4445,6 +4631,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6e70c0df70d089be213f9ea4fa33a2e184030a74.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4462,6 +4649,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f5a39926e59bb028f7b3e1bcbfcc0a58d97c1a91.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4481,6 +4669,7 @@
     "actors": [
       "G0069"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4498,6 +4687,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5e85c6db08a44976caf33bca52dabd10455b7bb3.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -4541,7 +4731,11 @@
       "G0129",
       "G0143",
       "earth-baxia",
+      "lunar-spider",
       "tianwu"
+    ],
+    "actors_from_title": [
+      "lunar-spider"
     ],
     "actor_names_unresolved": [
       "Winnti Umbrella"
@@ -4565,6 +4759,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/fb677c30beef156b7a07a9a19a09efd9fd98465e.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4582,6 +4777,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/97f5c1a0f40531490a530b60a0350033ccae5e02.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4601,6 +4797,7 @@
     "actors": [
       "G1024"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2024-40766"
@@ -4641,6 +4838,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f38d2716d30ada54aacf423c69567acc2105bf3f.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4660,6 +4858,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4677,6 +4876,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6220a62f47f47d05299d1cf07fe2da655bd6400d.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4696,6 +4896,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -4730,6 +4931,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7adcfbd2c034d8e53fb98beebd1eae28d22984ac.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4747,6 +4949,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b3428b32858b69c2844053ef92c44bc35566d14c.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4766,6 +4969,7 @@
     "actors": [
       "G1033"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4785,6 +4989,7 @@
     "actors": [
       "uta0178"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -4806,6 +5011,7 @@
     "actors": [
       "G0096"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4842,6 +5048,7 @@
       "earth-baxia",
       "tianwu"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -4864,6 +5071,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a88d221c105c0640a7664d1d3e92236268e1b23b.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4881,6 +5089,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/630d0db4ba89d6a54d48a993e27e8c94d727872a.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4898,6 +5107,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/845070dd173221d826d4e84b6a5a30bb5f99a0e1.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4915,6 +5125,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f8375217a2f8cc3d5f7cb1470e5f2f4553595be0.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4932,6 +5143,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/fd850acb9d31b05f8158ba30d069734f39b04611.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4949,6 +5161,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2c50856eed4bfa330ec817343006621baa489bb3.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4966,6 +5179,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/47622096847fa072deec307c90e0f374951dd8d0.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -4992,6 +5206,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/70cce569a80ac96ac7b8c9cccc5ca86d93572173.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5011,6 +5226,7 @@
     "actors": [
       "G1057"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2021-35587"
@@ -5062,6 +5278,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ccfcfddfa6bf3224d437dae9a4195083516d0263.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5081,6 +5298,7 @@
     "actors": [
       "G0047"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -5117,6 +5335,7 @@
     "actors": [
       "G1024"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2020-3259",
@@ -5140,6 +5359,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e0a741c74ad2b9c9a6af5588c2be233a72acc144.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5157,6 +5377,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e341ae3a2fa394b3fe32cdb26471ee187c5eae75.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5174,6 +5395,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/187818d2354a6fd588cf8370ccc4e93f0976ddc4.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5191,6 +5413,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6752b27387de536e63aa4a337565d92be1dcd31a.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-31324"
@@ -5210,6 +5433,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c2a345765403019988611c5c40b71cfe07550c61.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5229,6 +5453,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5246,6 +5471,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b32ae29064afae6f51bf294138a689b0bb866f72.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5263,6 +5489,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f912d3e708a84fdf3ddfbb6c3bc8a39e5f6793f0.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -5326,6 +5553,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1f51bd369182ebb87c17bfdb780510d2361eddfe.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5345,6 +5573,7 @@
     "actors": [
       "G0007"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5362,6 +5591,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/0c369be913a7b66d090e3930c4ae74baf379701a.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2013-1599",
@@ -5392,6 +5622,7 @@
       "smoky-spider",
       "uac-0006"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5411,6 +5642,7 @@
     "actors": [
       "G1024"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5428,6 +5660,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/9b6914c795cff208dc52bbc368dfeb4d133c72d1.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5445,6 +5678,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7a73b7bd2ee54be7658a7b9ebf45ee2a3dd96bf8.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -5482,6 +5716,7 @@
     "actors": [
       "hive0137"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -5508,6 +5743,7 @@
     "actors": [
       "G0129"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5525,6 +5761,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4dd18c84b3d9efe983e4f45840cb804c12dd2ed8.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5542,6 +5779,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c515f819a0e84fdcce83c32d2cae4b1ad8134ba5.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5559,6 +5797,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/24cb47c17b86d95f894a44ad678f4fcd2c78581d.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5578,6 +5817,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5595,6 +5835,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/cb4c3c7bcbad260922b370fa6d1f1555f3420f5f.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -5614,6 +5855,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f0d6ba837edee8146dee896d1e7e119e4d1aab31.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5633,6 +5875,7 @@
     "actors": [
       "G0094"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5650,6 +5893,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6e6eea24dd718fe0424a74e59b42de5127663d37.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5667,6 +5911,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/9ba718ee4256b979c9a2bc8ac546cc3f5a9f245e.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5686,6 +5931,7 @@
     "actors": [
       "the-gentlemen"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -5727,6 +5973,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/caee5f1ec4aeac2d66389622cccc85bb0aabefe3.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -5800,6 +6047,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/48cdee8591ee296edb2f100da19e6981aeea04a0.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5819,6 +6067,7 @@
     "actors": [
       "G0067"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5836,6 +6085,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a89313932e57e6beeb9032c9737a36da817f8ca0.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5853,6 +6103,7 @@
     "url_ok": null,
     "archive_url": null,
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5870,6 +6121,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2eeef5aa97b609cdbc7faa51c49654f4aacef0e3.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5887,6 +6139,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3f1a023499cd38e50d16e2021d9403b1886aecab.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5906,6 +6159,7 @@
     "actors": [
       "G0047"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [
       "Operation Armageddon"
     ],
@@ -5927,6 +6181,7 @@
     "actors": [
       "G0129"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -5976,6 +6231,7 @@
     "actors": [
       "G0007"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5993,6 +6249,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3f0ae885610798d93dd06111427a8694b7ae4fd7.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -6022,6 +6279,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6890f97b76084593958ddc4b04bd15e6091e864e.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -6067,6 +6325,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6084,6 +6343,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a77686ce86fb9e2204d2fbf6539b0021faee6e8f.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6101,6 +6361,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/d3ab06012533c4c254aa8f04cc3ececea7c9d325.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6118,6 +6379,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4ff510ce6bddc3d9fde2a45e631bb4cdc7494efa.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6137,6 +6399,7 @@
     "actors": [
       "G0007"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6154,6 +6417,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c4e7449e9f4f36634eb07ecd100540a17eea566f.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6171,6 +6435,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/cd006acc6cbd745ba01ad333cbfb070c61a4ecf3.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6188,6 +6453,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2cac938e942dcb86b183c337b9633af65e7154eb.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6205,6 +6471,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6e2c0980d245bda5ab45799725a7a3e386442af5.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6224,6 +6491,7 @@
     "actors": [
       "vice-spider"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6243,6 +6511,7 @@
     "actors": [
       "G0032"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-16237"
@@ -6267,6 +6536,7 @@
     "actors": [
       "coralraider"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6284,6 +6554,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/012ee3ea191ddbe6a1fcca13064d59bc341b62df.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6303,6 +6574,7 @@
     "actors": [
       "G0134"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6320,6 +6592,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4133fba19a652d40cc4963a0f31e9653a83406dc.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6356,6 +6629,7 @@
       "earth-baxia",
       "tianwu"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -6375,6 +6649,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7d9480867e368d93f06570a95981fefd4232ce38.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6392,6 +6667,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/be5cb4b2fbbbd0eec6e23ffdb275ccd5e05b1233.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6411,6 +6687,7 @@
     "actors": [
       "unc5537"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6428,6 +6705,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ee4fa19b26a0154bf8cce53ddbae95c68c7a18d0.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -6458,6 +6736,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/22aec504519f8ad0d57e5a2b2f750a3a1d5f0aff.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6475,6 +6754,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/410756807c42a3d9972e6eb6350d26b46406173b.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6492,6 +6772,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/45fa33dccdbe7cbf17a92f1ed6d68b25860026d5.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6511,6 +6792,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6547,6 +6829,7 @@
       "earth-baxia",
       "tianwu"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -6575,6 +6858,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/fb5018ee8607de197e23dc8c4b40bdbe84e83dbc.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6592,6 +6876,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/99ae3b80c67ccc6c0aca3f85494425bfcdf9cbf7.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6619,6 +6904,7 @@
       "G1006",
       "uac-0050"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -6651,6 +6937,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1005335d2b1f6beb11591d6d0d1ab9eaa0921a3c.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6688,6 +6975,7 @@
       "hurricane-panda",
       "slime29"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6705,6 +6993,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7818ef59de29da9459e54601d50bfe2a6f0fa5a1.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -6755,6 +7044,7 @@
     "actors": [
       "G0099"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -6787,6 +7077,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2100d875ca73088d11d73375521a2927ef841c57.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6804,6 +7095,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/934f0730434b2d986320c4beb8480ac4a039c1a4.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6821,6 +7113,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/29dbd59b629ff9472039fac32ec8ef17682c3c2e.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6838,6 +7131,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/744b0fbb9a1bea96d4f05037604a0cd5097051bb.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6855,6 +7149,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/8827d480dc9cfbe4eb7cf1da736ad9605c653d9b.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6874,6 +7169,7 @@
     "actors": [
       "ghostwriter"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2024-42009"
@@ -6895,6 +7191,7 @@
     "actors": [
       "hive0137"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6914,6 +7211,7 @@
     "actors": [
       "G0096"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6931,6 +7229,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c00c16fcb5283e4789ef6e34fe764471505d2d42.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6948,6 +7247,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/137263d75e06ee43d7fd29d45813ea6e87dafa9c.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2023-27532",
@@ -6972,6 +7272,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/68bf06d7d495c06cc0396c86301f68e80c9a72ab.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -6998,6 +7299,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ace2c3b4db7c78540bd6338865791d47d8db6fe9.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7015,6 +7317,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/33763c536d461fc1237fdea8c73051ea7da47e93.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7032,6 +7335,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a8e8df1b95d93ccedbc10cca2a35f1342d43365b.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-53770"
@@ -7051,6 +7355,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/09ccd0af4b62e4ed4aa667cb22ecf1c901d62d07.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7068,6 +7373,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a5ebb6e129d722ed05d3ec14b9828e1c017540f3.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7085,6 +7391,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b0a44eca5096b0ef19e35bd1b922ca6361514045.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-8088"
@@ -7104,6 +7411,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1bef42e815cc9f5ae525124a7aa2df6b16a38c33.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7123,6 +7431,7 @@
     "actors": [
       "gelsemium"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7140,6 +7449,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/96095d8a87563b7559753949a35fd157aeaabd60.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7157,6 +7467,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/af771e2a33fc545ce7a4a2a0f89910843eb484c0.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7176,6 +7487,7 @@
     "actors": [
       "G0092"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7193,6 +7505,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f91e16bec89f9bedff5aa0cd80390f0e2fd6919e.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7210,6 +7523,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1156234dad87e29276371637d96c15a8c3d1b961.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7229,6 +7543,7 @@
     "actors": [
       "romcom"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2023-36884",
@@ -7282,6 +7597,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/045fd4223e4ea74fc65300aa8e0e7d48178d38d9.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7299,6 +7615,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5d1682633db061c840b597ea17b4fd2976494ca0.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7316,6 +7633,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/88e7d11101b22c7ded915a3a534cfe9a26cdf1d5.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7335,6 +7653,7 @@
     "actors": [
       "G0034"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7352,6 +7671,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2a38cc6d2a5c5fbf3d74592a5fe9a1865d96b97b.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7371,6 +7691,7 @@
     "actors": [
       "G1020"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7390,6 +7711,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -7412,6 +7734,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/eae3c5f9033217b38aeb13b195484397e4c247fb.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7435,6 +7758,7 @@
       "G1038",
       "ta579"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7459,6 +7783,7 @@
       "hurricane-panda",
       "red-menshen"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -7489,7 +7814,12 @@
     "url": "https://thedfirreport.com/2025/08/05/from-bing-search-to-ransomware-bumblebee-and-adaptixc2-deliver-akira-2/",
     "url_ok": null,
     "archive_url": null,
-    "actors": [],
+    "actors": [
+      "G1024"
+    ],
+    "actors_from_title": [
+      "G1024"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7509,6 +7839,7 @@
     "actors": [
       "coralraider"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7528,6 +7859,7 @@
     "actors": [
       "coralraider"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7545,6 +7877,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e5fe074eecf1ac2d0d650c535ba09b284b9315c0.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -7605,6 +7938,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f99ce383d7c1b1158098b7e6a6ebf79f13f55897.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7622,6 +7956,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1bcfaf3f0e8266352910d4f8e29950fe5bbf7faa.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7645,6 +7980,7 @@
       "ransomhub",
       "vice-spider"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2023-34362",
@@ -7668,6 +8004,7 @@
     "actors": [
       "G0010"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -7689,6 +8026,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7706,6 +8044,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6fa3223ffa21c9ab83c29aebfc8b96de05bff9a0.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7723,6 +8062,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/83aec13b004b5e29828d01dd8cc9deb720f85a5a.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7740,6 +8080,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/d807470f35df92442ce64dce13d331f0ab1d2bfc.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7757,6 +8098,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/15879bafe597979ff8fb78bba47d075c48f23381.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7774,6 +8116,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/43827f6e63e179d019a0af63b167255322e29bc9.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7795,6 +8138,7 @@
       "G1049",
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -7841,6 +8185,7 @@
     "actors": [
       "hive0137"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -7878,6 +8223,7 @@
     "actors": [
       "angry-likho"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7897,6 +8243,7 @@
     "actors": [
       "angry-likho"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7914,6 +8261,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/10b597cb57adeef2983f1b087af23b738d258268.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -7948,6 +8296,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a66bcaf07e11e7e0cae543134e1964a22d060389.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -7977,6 +8326,7 @@
     "actors": [
       "G0094"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [
       "Kimsuki"
     ],
@@ -8016,6 +8366,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3d0279b0f663980c2f96892edbee8ed035b70922.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8033,6 +8384,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/712d50a4fba826d692e7b2587e09eeb22372e4a3.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2022-1388",
@@ -8056,6 +8408,7 @@
     "actors": [
       "vice-spider"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8073,6 +8426,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ea1dea924ed3c168a5e4449df4fc44c3d6876a1f.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8090,6 +8444,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ef234c465545a072651ce55d13200f5601360f19.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8109,6 +8464,7 @@
     "actors": [
       "G1015"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8128,6 +8484,7 @@
     "actors": [
       "G1017"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8145,6 +8502,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ca4da019c7f1c6d3e2bb8bf876cbf1e41f020bb1.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -8175,6 +8533,7 @@
     "actors": [
       "G0007"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8192,6 +8551,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e7de273bb8909c7ebc218f095072d305af6fc4bb.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8209,6 +8569,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/0400b2ed7a561748ba09d80659c682567873b89e.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -8228,6 +8589,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2f03a5787e258c2951250b2f0526457b1b6a7715.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-49704",
@@ -8272,6 +8634,7 @@
     "actors": [
       "noname057-16"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -8318,6 +8681,7 @@
       "earth-baxia",
       "tianwu"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -8370,6 +8734,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3572a02db8bcc3666f64a1c9d6ca8ccfabd2740b.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8387,6 +8752,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6eef036c95ea0d3bac1ef0c65e6d6269055d766b.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-49704",
@@ -8410,6 +8776,7 @@
     "actors": [
       "G0069"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8429,6 +8796,7 @@
     "actors": [
       "G0067"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8446,6 +8814,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/56f18d7bea6dcbb304f1eae9f12506f29ac9ee63.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8463,6 +8832,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/786731141f8b591b0d998cb2c77b02b26b325ba2.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8480,6 +8850,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c99bd83871e9f0fb90342cca7154bc6f736441fc.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -8517,6 +8888,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/de9dec0c6d2a7d17bc8d0327dd9de214104f13ec.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8536,6 +8908,7 @@
     "actors": [
       "G0096"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2021-28474",
@@ -8559,6 +8932,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/540a7322f7a110d9357ec131ebad30bafbf0c206.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8578,6 +8952,7 @@
     "actors": [
       "vice-spider"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -8613,6 +8988,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/fdb5c86e529dd2bfaf12a0c3a402fbcdd57c0514.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8649,6 +9025,7 @@
       "earth-baxia",
       "tianwu"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -8683,6 +9060,7 @@
     "actors": [
       "G0007"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8700,6 +9078,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/59eb6f4ecb8f7286007dcb57343a470435ee997b.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2021-20035",
@@ -8726,6 +9105,7 @@
     "actors": [
       "larva-208"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8743,6 +9123,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b46dc03afdc84aaf35f9d364fa7636547e22c462.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -8801,6 +9182,7 @@
       "earth-baxia",
       "tianwu"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -8820,6 +9202,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f72ebeb5360ced52a66dbb59df13c9b9270270ef.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8837,6 +9220,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/36946615affd0ae9bdf0753f641e7d7142ecb996.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8854,6 +9238,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6108121def4cf785019ac84253958f3b057e3c0c.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8873,6 +9258,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -8907,6 +9293,7 @@
     "url_ok": null,
     "archive_url": null,
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8924,6 +9311,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/cdfaf37f45face1ed7d14916dbd061b1893f8963.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2014-3931",
@@ -8950,6 +9338,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/46f7701738004eb887395460266978cf31cec181.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8967,6 +9356,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/30e589fca69eed4305c7bff1a8259101cc2f0c73.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8984,6 +9374,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/711fdf21b530886b36ca4b1af3b558d718655ebc.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9001,6 +9392,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7635422f39a4f0df30a2ef6af1344c16a6b32b2a.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9018,6 +9410,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/dec88ee829910d71dc2b8f03cf4e62f0936837a6.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2024-8190",
@@ -9041,6 +9434,7 @@
     "actors": [
       "hive0137"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9058,6 +9452,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/21a2263bdae97fd13a0343a95a636c38396ccf02.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9080,6 +9475,7 @@
       "G0050",
       "G0093"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2015-2291",
@@ -9117,6 +9513,7 @@
     "actors": [
       "hive0137"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9134,6 +9531,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2f6468b4a2249bec0d1e759543d38206cf224904.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9151,6 +9549,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4210e8781aa09ba520b1659f9470c62b845e7bbe.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9170,6 +9569,7 @@
     "actors": [
       "G1015"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9187,6 +9587,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/baf22f7cb2090d828711063754f6a29ac386028a.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -9209,6 +9610,7 @@
       "dragonforce",
       "unnamed-group"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -9235,6 +9637,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4fcf6b6bafbc9ad2245a084aaa3bfabf891adb0c.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9254,6 +9657,7 @@
     "actors": [
       "unc5174"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2021-26855",
@@ -9285,6 +9689,7 @@
       "dragonforce",
       "unnamed-group"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9302,6 +9707,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f2ffe2df6ae6f92d1751401d0df5e14ed6c34340.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9319,6 +9725,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/fbc6a17588439a0ddd7d8e82bbe9078fe916e81c.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9336,6 +9743,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3ed830709d642d67b2c99b7743cd8c0abd9e8352.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9353,6 +9761,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c4809aa48add623b7a30ada16b71edfa0009a37a.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9372,6 +9781,7 @@
     "actors": [
       "romcom"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9388,7 +9798,12 @@
     "url": "https://thedfirreport.com/2025/06/30/hide-your-rdp-password-spray-leads-to-ransomhub-deployment/",
     "url_ok": null,
     "archive_url": null,
-    "actors": [],
+    "actors": [
+      "ransomhub"
+    ],
+    "actors_from_title": [
+      "ransomhub"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9408,6 +9823,7 @@
     "actors": [
       "vice-spider"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -9445,6 +9861,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f496bd6b024cd286a4255a7ace6117a96bcc725c.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -9473,6 +9890,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/19813450c59d23b65d7e9d622d7830ed22a4bb59.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -9508,6 +9926,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/207d8bd199d382b5a09d20a2ab3642a44bf26765.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9525,6 +9944,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/37c868873c5b1b4d54419f3639c920c7da9c0c7f.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9542,6 +9962,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4bc5852ea0c299551482763b81bba0a86c8a5902.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -9573,6 +9994,7 @@
     "actors": [
       "uac-0226"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9590,6 +10012,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/88e6c0507028884b56f837182b43f2648f5f0083.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9607,6 +10030,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/9dd5e613ee819d9d3d504594826fe4f3db550ea9.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9626,6 +10050,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -9663,6 +10088,7 @@
     "actors": [
       "angry-likho"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9707,6 +10133,7 @@
       "red-menshen",
       "tianwu"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -9730,6 +10157,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/087e139a24c46628fd7160e65a097ef99c47ad19.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2024-1708",
@@ -9752,6 +10180,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9788,6 +10217,7 @@
       "earth-baxia",
       "tianwu"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -9807,6 +10237,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b3f683dffc95cc44c0282dee6c901da491962751.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9824,6 +10255,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c606a5ff18f5bd32a46b6aaa8158da5fc299a303.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9843,6 +10275,7 @@
     "actors": [
       "G0007"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9860,6 +10293,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/686e4f6063df65d024de32409732694be662c24c.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9877,6 +10311,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b8ab1c40ec561c070f1e2b53d6b3b0fc0281e9d7.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9913,6 +10348,7 @@
       "earth-baxia",
       "tianwu"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -9934,6 +10370,7 @@
     "actors": [
       "G1008"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9951,6 +10388,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/11fcd89425219e6f04a62fc062c9284bbb39ac82.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9968,6 +10406,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/31c48fc8cdb310e4e16062d6da85f94988681bd0.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -10017,6 +10456,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/797eccc0458f8d7b77899d89a13b2758076a4675.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10034,6 +10474,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/8228bb6af437f81c8240f10bee7bd5be550f1329.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10053,6 +10494,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10072,6 +10514,7 @@
     "actors": [
       "angry-likho"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10089,6 +10532,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1871e42352d139b9e16365595cc2558be67ab6a5.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-3248"
@@ -10108,6 +10552,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1ec91c546374c767a8ece5a09167a875d4726bb3.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10135,6 +10580,7 @@
       "ta579",
       "uac-0006"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10152,6 +10598,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/19dab96c4214619d53f7681094333f8c26e1003b.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2015-1548",
@@ -10172,6 +10619,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/61f1279ef3d940a7d4dd3b8944d4eacd249772a1.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10189,6 +10637,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/d364aa9006e9c142e07520d3afac7a2f3ff54adb.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -10209,6 +10658,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/dba06366bee21a001a5713237051051e42998b2b.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10226,6 +10676,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e87844701ef2adf90506c0f75dcfdd1d22b67a9b.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10262,6 +10713,7 @@
       "earth-baxia",
       "tianwu"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -10284,6 +10736,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/99991eaf65d75557167442a9a42f49937f515211.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10301,6 +10754,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/18753b578e1674c6a8ef04c2e767d152929dae41.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -10369,6 +10823,7 @@
       "G0046",
       "storm-1113"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10388,6 +10843,7 @@
     "actors": [
       "G0046"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -10422,6 +10878,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/152d467da1375efc847d7474cbf2324647ccee01.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2024-40711"
@@ -10441,6 +10898,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/58e3d0ee843ce4355edf4ad424db575558e2bbc7.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-43200"
@@ -10460,6 +10918,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a8d9922c6d919867e25b1c397ab9ba497e199694.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10477,6 +10936,7 @@
     "url_ok": true,
     "archive_url": "https://archive.orkl.eu/c21631840d82b4ce1c76b63c154748ab3013bffc.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10496,6 +10956,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10515,6 +10976,7 @@
     "actors": [
       "G0094"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10534,6 +10996,7 @@
     "actors": [
       "scully-spider"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10551,6 +11014,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b0de11762f319423ade3867e01b97c132b6f7eef.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10577,6 +11041,7 @@
       "webworm",
       "wet-panda"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2023-46747",
@@ -10601,6 +11066,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10618,6 +11084,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/67c34167bd3eaba55ee89be1914d97864f382c1c.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2024-1709",
@@ -10657,6 +11124,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/606ec43dbf5f8c68ecaabaeb1bb6ab615c3350cb.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10674,6 +11142,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7ae532f4cbbad727f480ef49481aea8871fc65de.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10691,6 +11160,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/9b17848da751505edfac06ef3898e3ed48f30345.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10708,6 +11178,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a687d5154b466bc7eb655cec3c81e4278ac0a82c.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10727,6 +11198,7 @@
     "actors": [
       "hive0137"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10744,6 +11216,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/cac96c624b42001d5dc17bd45c5b1ef4daf3c0a0.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2024-4577"
@@ -10763,6 +11236,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/cb17cfd4d3c6aa3d991a3d61cbaf8ceb9586447a.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10782,6 +11256,7 @@
     "actors": [
       "G0049"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -10826,6 +11301,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/731646b712fba1e4210f2dd355a839bd4a31b1ec.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10845,6 +11321,7 @@
     "actors": [
       "G1057"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10864,6 +11341,7 @@
     "actors": [
       "G1002"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10881,6 +11359,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2c83d7e4fdbd9d776f9f0a7ab96b520945960b77.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10898,6 +11377,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5797af5d769f7994e279233dcd2d3cf5399e9480.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10917,6 +11397,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -10939,6 +11420,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/d45deff273c4dd0490494ce159d72c001f12674f.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10956,6 +11438,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e60695fb97ee1b9491cf512d4b8da8a28072719c.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10975,6 +11458,7 @@
     "actors": [
       "red-menshen"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10996,6 +11480,7 @@
       "G0078",
       "uac-0050"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -11031,6 +11516,7 @@
     "actors": [
       "red-menshen"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11048,6 +11534,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/aa86ce393810274e58f9a3c041a76c377fa604b0.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11065,6 +11552,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/8d41c61031d5a8513d30ffd0518a59e9ae0530cd.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11082,6 +11570,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/cf3d6517be71019c1e554a714d40672ffccae3d6.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11099,6 +11588,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/083df5bf97c2e3c3130c76a8acc8d8fbb64f7f2a.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11118,6 +11608,7 @@
     "actors": [
       "G0096"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11137,6 +11628,7 @@
     "actors": [
       "void-arachne"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -11171,6 +11663,7 @@
     "actors": [
       "G1002"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11188,6 +11681,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ff65b0acfa1b95239740065d7685f6a7e7895f71.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11224,6 +11718,7 @@
       "earth-baxia",
       "tianwu"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -11284,6 +11779,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3dd53e433f46f2b4211560b4790f3bac0c761fac.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11304,6 +11800,7 @@
       "G0080",
       "sweed"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-11882"
@@ -11323,6 +11820,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7f70590d2c14a86dbe7cc3a31817710972e8179b.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11340,6 +11838,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c2eea6a82cdc7220b159fad9af1a709a175d4723.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11357,6 +11856,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c766091a4be705cc8d3fbbc362e955e3858984f9.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11374,6 +11874,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f3f74742e95b73a608dc8690e6e3c323d170a8b0.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11393,6 +11894,7 @@
     "actors": [
       "G0102"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11412,6 +11914,7 @@
     "actors": [
       "careto"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11431,6 +11934,7 @@
     "actors": [
       "G0007"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -11455,6 +11959,7 @@
     "actors": [
       "G0007"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -11480,6 +11985,7 @@
     "actors": [
       "scully-spider"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11497,6 +12003,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6152483e59b406af1acbe7fab823da7da3b426e3.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-0944",
@@ -11519,6 +12026,7 @@
     "actors": [
       "scully-spider"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -11582,6 +12090,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a4dc1d3aeb49ea619f5aa971eb6cb5461f5e8910.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2023-20118"
@@ -11603,6 +12112,7 @@
     "actors": [
       "G0034"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11622,6 +12132,7 @@
     "actors": [
       "scully-spider"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11641,6 +12152,7 @@
     "actors": [
       "angry-likho"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11658,6 +12170,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/865a343ac1dbbd8187d00ab55893ff7ffb38fb70.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11675,6 +12188,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c6f88dc04b2072f43dc6ff6cab59e255e3a4e982.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11692,6 +12206,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/009d86c3125ea4cd1a071f6001cb8c72ab626121.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11711,6 +12226,7 @@
     "actors": [
       "angry-likho"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11728,6 +12244,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/408ec4ab6cf8616eafa1731229c84a20339497b5.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11745,6 +12262,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6ac0c8a27211142834290b9162c5db0aef27e16a.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11762,6 +12280,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7118f71efcf0383ef6409c7ccfcc84e425d39071.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11779,6 +12298,7 @@
     "url_ok": true,
     "archive_url": "https://archive.orkl.eu/20ea0f14265c677912397afa388dc1c699cfc2f2.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11798,6 +12318,7 @@
     "actors": [
       "G0049"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11820,6 +12341,7 @@
       "G1038",
       "ta579"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11842,6 +12364,7 @@
       "G0050",
       "G0093"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2020-1472",
@@ -11890,6 +12413,7 @@
       "G0037",
       "G0080"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11907,6 +12431,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6e79983ac94ad5e15236d3692a4f7143e01b7c61.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11924,6 +12449,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/da0bf60854bc638e80421e8ee77fe9447d6a3618.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11941,6 +12467,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/fd2503804af56d0a8df0ec1aae1467c2a4a4f234.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11961,6 +12488,7 @@
       "G0008",
       "anthropoid-spider"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11981,6 +12509,7 @@
       "G1049",
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2023-38831"
@@ -12002,6 +12531,7 @@
     "actors": [
       "G0094"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12021,6 +12551,7 @@
     "actors": [
       "G0007"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2020-35730",
@@ -12064,6 +12595,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/02dbf35b325f6710792d5bd4945a54857af38828.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12081,6 +12613,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a631aeebe8791d1354dda316276380f42472ffe0.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12098,6 +12631,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b3b03a38967b4084a44f96e956d8c67612dd468a.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12115,6 +12649,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/02247521d3bc55b6eaf4e921f7fd5b75dc328187.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12132,6 +12667,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/22b9507eb5bdf5edf59ddd5be0900a5619908126.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12151,6 +12687,7 @@
     "actors": [
       "unc5174"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2023-46747",
@@ -12179,6 +12716,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b44406a3b590eb4a86abecb605318f282a1e0813.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -12201,6 +12739,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/20ed3316457ac850b69ea2092323b44eda8d92b5.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12220,6 +12759,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2021-34523",
@@ -12254,6 +12794,7 @@
     "actors": [
       "swan-vector"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -12295,6 +12836,7 @@
       "G0022",
       "G0093"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12314,6 +12856,7 @@
     "actors": [
       "G0067"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2022-41128"
@@ -12333,6 +12876,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b815c62bdbaacd154cd6364b3b9065837cdee61f.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12353,6 +12897,7 @@
       "G0016",
       "G0067"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12370,6 +12915,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4781919ba0563c02cf491e7072d0c087a948a821.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12387,6 +12933,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/21eea78f1664ed42a91bf3bee015e9665e26b278.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -12427,6 +12974,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12444,6 +12992,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e11e02f542d5c81d10e8cbe4784a132603d432c1.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12463,6 +13012,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12480,6 +13030,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2dba37f9891ab392d0b77b39ecf1c70051a1761f.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12497,6 +13048,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6b8d1b3feb7dfc5417554ae878e3f40d10a8e458.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12514,6 +13066,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a157319000df48d7518360cce4bde5cf731164d1.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12531,6 +13084,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/af28c691e38fd960655cce48b48ead08d829b0c8.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12550,6 +13104,7 @@
     "actors": [
       "G1033"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12567,6 +13122,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/71c11e20f0be0689a60358d783109c0e9b4ef604.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12589,6 +13145,7 @@
       "ransomhub",
       "vice-spider"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12606,6 +13163,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/30563a73c58fbb3046b695ddfe2197be912f81cf.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12625,6 +13183,7 @@
     "actors": [
       "G1024"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12642,6 +13201,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c8569b4b5ddcba678eafff72d6a9557f6a3b8266.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12662,6 +13222,7 @@
       "G0037",
       "G0080"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -12694,6 +13255,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/334a2d3ae2ce84bad1b4913bb95df8907dd68f5f.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12713,6 +13275,7 @@
     "actors": [
       "G0067"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12730,6 +13293,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6dc07c5b992c82cd8ca2a0d657d0c9b57136d03e.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12749,6 +13313,7 @@
     "actors": [
       "G0037"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12768,6 +13333,7 @@
     "actors": [
       "G0037"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12785,6 +13351,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b197e2407d30577e4f552b7169deccabd78f5bcd.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12802,6 +13369,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5a7cea0a838c40b821978a2db79d18a732f0345c.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -12847,6 +13415,7 @@
       "hurricane-panda",
       "red-menshen"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12864,6 +13433,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c754c47ba6a989f801f04fa14ac2eb5f75d54716.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12883,6 +13453,7 @@
     "actors": [
       "G0134"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -12916,6 +13487,7 @@
     "actors": [
       "angry-likho"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12933,6 +13505,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/19d3073e1c841388417a4d8f73c88075508df484.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12950,6 +13523,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/787bb40322af47f6d9997b0154c131f97aef118c.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -13002,6 +13576,7 @@
     "actors": [
       "G1020"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13038,6 +13613,7 @@
       "earth-baxia",
       "tianwu"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -13059,6 +13635,7 @@
     "actors": [
       "G0007"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13076,6 +13653,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/22b8f619c48453c3bfb43cbe2690c7ef43a0737e.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13093,6 +13671,7 @@
     "url_ok": null,
     "archive_url": null,
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13110,6 +13689,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e13581982de826d8fe2725be39118277a7e65c6c.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13127,6 +13707,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5f40e4498ab33fb194420ce4b1cbf892e71cf104.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13147,6 +13728,7 @@
       "G0032",
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -13184,6 +13766,7 @@
     "actors": [
       "G1045"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2022-3236",
@@ -13208,6 +13791,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ec8f819146307c99d9a2abf00349ac9e4e30bba3.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13227,6 +13811,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13274,6 +13859,7 @@
       "unc3973",
       "vice-spider"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -13543,6 +14129,7 @@
     "actors": [
       "G0032"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -13593,6 +14180,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13610,6 +14198,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/bd9356ffad4ac794aa09c494341773b756f15d8d.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13627,6 +14216,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/d0179e3e2135b9015d4731b614040f77185a786e.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13644,6 +14234,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/deaff445b1398ed6f26183fdc58a672def8b56f1.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -13676,6 +14267,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/463b61592345847f676676c8b0da98688aba3234.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13693,6 +14285,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4d612928d40b956cf990c917aca29944d7abb949.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13710,6 +14303,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6e2bb887c7a06fec4664952fda93fdb386c77b32.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13727,6 +14321,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a9849999165cd673d057728bc414f4d808a480cf.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13747,6 +14342,7 @@
       "G0080",
       "sweed"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-11882"
@@ -13766,6 +14362,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/38733da9e1eb91eae47551d1169741932dedeb07.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13783,6 +14380,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/97b475ea4c8ba83bd6d5820b3914047d76d42b3e.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -13806,6 +14404,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/118c154c5e3d0ccfa0093055d8dcc54ff41bd9f7.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13825,6 +14424,7 @@
     "actors": [
       "hive0137"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13842,6 +14442,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a93b36d97bb842373a1cfc5c7a3077636ba73d31.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2021-40449"
@@ -13868,6 +14469,7 @@
       "G0078",
       "G0094"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13885,6 +14487,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e66c3e6b12e93b94f0885ef6f8d74cbfa9702bbc.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13904,6 +14507,7 @@
     "actors": [
       "G0047"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [
       "Operation Armageddon"
     ],
@@ -13931,6 +14535,7 @@
       "ta2101",
       "unc3973"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13948,6 +14553,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/812d82de57b60dff6b0b80ed6e221bbef4c94631.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13965,6 +14571,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/931b46eba461610891ce2293b534fc8480b4adb8.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13985,6 +14592,7 @@
       "angry-likho",
       "vice-spider"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14004,6 +14612,7 @@
     "actors": [
       "vice-spider"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14023,6 +14632,7 @@
     "actors": [
       "unc5174"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14042,6 +14652,7 @@
     "actors": [
       "G0016"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14068,6 +14679,7 @@
       "ta2101",
       "unc3973"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14087,6 +14699,7 @@
     "actors": [
       "G1049"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14106,6 +14719,7 @@
     "actors": [
       "red-menshen"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2019-3010"
@@ -14125,6 +14739,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f6f80f23c28e94d71404812338183d2a7a8e512f.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14142,6 +14757,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4c9485393bdc558e107119d0b16bf8b5be09f756.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14159,6 +14775,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1be08a7577799c8cefd2bd74320f259fa8434e5f.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14176,6 +14793,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/bf692be40212cac33003c16330cd19205a4c08df.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -14205,6 +14823,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14224,6 +14843,7 @@
     "actors": [
       "G0047"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14243,6 +14863,7 @@
     "actors": [
       "G0049"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14260,6 +14881,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b5909a0e0f4d20ff2b6ff59e1a098b7619a114ca.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14279,6 +14901,7 @@
     "actors": [
       "G0004"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -14314,6 +14937,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/abb0f2de2563ec5d3db160d96f9d992940e2826e.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14333,6 +14957,7 @@
     "actors": [
       "G0004"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14353,6 +14978,7 @@
       "smoky-spider",
       "uac-0006"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14372,6 +14998,7 @@
     "actors": [
       "uta0178"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14391,6 +15018,7 @@
     "actors": [
       "G0004"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14410,6 +15038,7 @@
     "actors": [
       "G1008"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -14471,6 +15100,7 @@
     "actors": [
       "scully-spider"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14498,6 +15128,7 @@
       "webworm",
       "wet-panda"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14523,6 +15154,7 @@
       "ta2101",
       "unc3973"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-11882",
@@ -14559,6 +15191,7 @@
     "actors": [
       "gold-dupont"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-24983",
@@ -14582,6 +15215,7 @@
     "actors": [
       "uac-0226"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14599,6 +15233,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4c7e7cf8c5f4a0edc17653a0ac37e33e2fa23a2c.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14619,6 +15254,7 @@
       "G0060",
       "G0138"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -14647,6 +15283,7 @@
     "actors": [
       "uac-0226"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14666,6 +15303,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -14700,6 +15338,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/dcfff04747a2efe5558855939b8a29377faa05c2.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14719,6 +15358,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14736,6 +15376,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/0b5c0825a53d5adf56cf604114a2a0061b148062.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14753,6 +15394,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/83249a05d1701c3293c5c1633fa466b8f9f4d668.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14774,6 +15416,7 @@
       "G0078",
       "uac-0050"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14791,6 +15434,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c7de8c64b54cbe26356a550ac81c176bcb0c6576.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2023-46805",
@@ -14822,6 +15466,7 @@
       "ta2101",
       "unc3973"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14847,6 +15492,7 @@
       "ta2101",
       "unc3973"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14866,6 +15512,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14885,6 +15532,7 @@
     "actors": [
       "ransomhub"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14902,6 +15550,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/590d6486d3f9bf48e1005ce46f8ae6433bf7bc49.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14919,6 +15568,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6deda340d82bd78534b055b3460a4e1cf67663f4.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14936,6 +15586,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/75c28bab07aa263409b2fce6d891594d54dfa8a9.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -14956,6 +15607,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/9666493b33140a2618b75860da3f6c9dab952fe3.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14973,6 +15625,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/97415f0ec14d7d918a7f7d43e783bd7eb037f96e.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14990,6 +15643,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/9bae4fe1d65398552c25affd215cb8fc09d8510d.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15007,6 +15661,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/d2c5fdfc8ed005186040e01d1fdfe0774abbbe84.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15024,6 +15679,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/dc83e3e6c01d73c0459f2f225ffe78fb82150b24.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15041,6 +15697,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1e584a46f202634dc324d01333acb23c04840c9d.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -15077,6 +15734,7 @@
     "actors": [
       "storm-0249"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15094,6 +15752,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3a9608be95d64f2a3b6a6971e2f2a7f8621cc2c0.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -15140,6 +15799,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15157,6 +15817,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7d5ce887dee556e3d55125f45ba38dc482e5dc83.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -15185,6 +15846,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/9b42cad386604341069d03d7c6845dbe710d268e.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15221,6 +15883,7 @@
       "earth-baxia",
       "tianwu"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -15269,6 +15932,7 @@
       "earth-baxia",
       "tianwu"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -15288,6 +15952,7 @@
     "url_ok": null,
     "archive_url": null,
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15307,6 +15972,7 @@
     "actors": [
       "vice-spider"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15326,6 +15992,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15346,6 +16013,7 @@
       "G0034",
       "larva-208"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-26633"
@@ -15365,6 +16033,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6ea9a4fe6a2ee2b2c40c38ac8a0a1aa804ef4c34.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -15400,6 +16069,7 @@
       "uac-0006",
       "uac-0050"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-0411"
@@ -15448,6 +16118,7 @@
       "G0078",
       "uac-0050"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15465,6 +16136,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ef8280161d12eb94930d7ae8f5e70b8589bae91f.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15482,6 +16154,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/015a36a2b95615b73478a7a90c00593760d5d2fa.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -15509,6 +16182,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/8f9fee342c91c7ecbf623ccb90b9702637ba5618.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15526,6 +16200,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a77f8793853dc0ccaed2274aeec11cb7fbeb6f14.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15543,6 +16218,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/0c64582643fe90dacdb8ed76a4724a523907621e.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15563,6 +16239,7 @@
       "G0032",
       "G1049"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15580,6 +16257,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3d93cbbcdf97ec223d5c791ed4c7f0fb0ee26f1e.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-2783"
@@ -15599,6 +16277,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/718756a8fa3ac425693553d6ae60fcf744bc6f5b.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15616,6 +16295,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c7c0dc12bb7660ab4f8a107077bd993dc1f1fbe0.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15640,6 +16320,7 @@
       "G0125",
       "hurricane-panda"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -15684,6 +16365,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7e477191e314d523622816394b3ae3be1780543a.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15701,6 +16383,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f445fa90756c48a153ddc2bbe57a9b633ce6a344.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15720,6 +16403,7 @@
     "actors": [
       "angry-likho"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15737,6 +16421,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/9843ce975fc4f03006395ea2f8d1f84c9a6b67b3.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -15767,6 +16452,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/05fb542ed33efa562b9cd3f8865e268316a53bbf.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15789,6 +16475,7 @@
       "G0050",
       "G0093"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15816,6 +16503,7 @@
       "webworm",
       "wet-panda"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -15851,6 +16539,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7dd057ab41b4f45ffa29e29508f2e9fe438236cb.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15876,6 +16565,7 @@
       "ta2101",
       "unc3973"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15896,6 +16586,7 @@
       "G0045",
       "G1054"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -15959,6 +16650,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7a13e7e48622d546380796e14046a1bac1f87576.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15984,6 +16676,7 @@
       "ta2101",
       "unc3973"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -16001,6 +16694,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a3fde87f597cecbd40ba069b1bdf2876c13ead98.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -16018,6 +16712,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/08340d16e73c0bf527e01088c0337613290b2f85.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -16050,6 +16745,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/73867b091fb7760b4c3cbed781d13018c8a80eee.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -16069,6 +16765,7 @@
     "actors": [
       "angry-likho"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -16089,6 +16786,7 @@
       "G1020",
       "ransomhub"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -16140,6 +16838,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/0d230dcdf198c2c92d5f39f24ef9d496bc20252d.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -16167,6 +16866,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/0daf6e6c593ad8b87aa7d0dfc25d8549601b492f.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2009-3960",
@@ -16198,6 +16898,7 @@
       "G0064",
       "G0078"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -16237,6 +16938,7 @@
     "actors": [
       "angry-likho"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -16254,6 +16956,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/923dee492c30d01fa3111a18ba7a1e6bc521ae79.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -16273,6 +16976,7 @@
     "actors": [
       "G1024"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -16298,6 +17002,7 @@
       "ta2101",
       "unc3973"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -16379,6 +17084,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/fe4579c2aef364d4c55d4fef05b201b53a715ff4.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2021-36260",
@@ -16401,6 +17107,7 @@
     "actors": [
       "G0067"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -16420,6 +17127,7 @@
     "actors": [
       "G1048"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2022-41328",
@@ -16442,6 +17150,7 @@
     "actors": [
       "G1051"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2024-1709"
@@ -16493,6 +17202,7 @@
     "actors": [
       "angry-likho"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2023-48788",
@@ -16526,6 +17236,7 @@
       "G1006",
       "uac-0050"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2024-43451"
@@ -16545,6 +17256,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1f46723dca26b3154f3d5de63641f1f60f1af8f5.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2023-1389"
@@ -16590,6 +17302,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/38eeaa111502bdac332844b486cae89905a19ae6.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -16607,6 +17320,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/98ec31a64c58eaf4fc86232829e26359cbb25801.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -16626,6 +17340,7 @@
     "actors": [
       "angry-likho"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -16643,6 +17358,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e827bc10b2f874326b6262202cb248a3a2ee58ed.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -16660,6 +17376,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/0a96d30f5a43b60ec17b6f63c112ecd36a4e5be7.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -16677,6 +17394,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5a761631ccb4e063d1ef272238faf829f3d67180.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -16716,6 +17434,7 @@
       "G0099",
       "uac-0050"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2024-43451"
@@ -16737,6 +17456,7 @@
     "actors": [
       "G1024"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -16756,6 +17476,7 @@
     "actors": [
       "G0117"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2023-38950",
@@ -16801,6 +17522,7 @@
     "actors": [
       "hive0137"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -16818,6 +17540,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/44c87b106adbb35b61cebf4c6ac8015a4691a493.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -16837,6 +17560,7 @@
     "actors": [
       "G0034"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -16875,6 +17599,7 @@
       "ta2101",
       "unc3973"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -16900,6 +17625,7 @@
       "ta2101",
       "unc3973"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2024-26169"
@@ -16921,6 +17647,7 @@
     "actors": [
       "G1053"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-10271",
@@ -16959,6 +17686,7 @@
     "actors": [
       "G0125"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2021-26855",
@@ -16984,6 +17712,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f8c95e12c9868ca9817fae9f279dccc270b9ae6d.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17009,6 +17738,7 @@
       "ta2101",
       "unc3973"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17026,6 +17756,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/329ebd8fc4a208509413c50b266a072fc894fe71.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17048,6 +17779,7 @@
       "G0064",
       "G0078"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -17067,6 +17799,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6a72c2b58d37e5579e874aa9121c6d3645b8abb6.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17084,6 +17817,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7daa71b8d599ed86ad641a782b6c5d7236ce3260.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17110,6 +17844,7 @@
       "ta2101",
       "unc3973"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17135,6 +17870,7 @@
       "ta2101",
       "unc3973"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17154,6 +17890,7 @@
     "actors": [
       "G0121"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-11882"
@@ -17175,6 +17912,7 @@
     "actors": [
       "G0067"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17200,6 +17938,7 @@
       "ta2101",
       "unc3973"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17225,6 +17964,7 @@
       "ta2101",
       "unc3973"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17242,6 +17982,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/115098a96b9469c0b0c09a659d64d3e929ac67c1.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17259,6 +18000,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/12f59324adc5bd9c8ac41a3092db5f4a153f4c8c.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17284,6 +18026,7 @@
       "ta2101",
       "unc3973"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17301,6 +18044,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5b4c8593232d902b6351ca93aec1559cca3d6eb6.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2023-20198",
@@ -17348,6 +18092,7 @@
     "actors": [
       "G0070"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -17382,6 +18127,7 @@
       "G1020",
       "storm-0249"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17399,6 +18145,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1936e910e230f3531a0088bda6dd5b8cb768b9af.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2019-0708"
@@ -17418,6 +18165,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/31709d64827fb968451922a231cf95a05f719b58.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17435,6 +18183,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/50583f63e3c12ac6ab19ce90bd9913d50bba051d.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17452,6 +18201,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6a7651eab34cee2cc8375f453a6e23c49b92a1bc.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17471,6 +18221,7 @@
     "actors": [
       "void-arachne"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17488,6 +18239,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/75ae8f4e0be3857d1e4ea4b9f2eabee0acc50a9d.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -17511,6 +18263,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7648d998e7ef2b175e3a7d19bfb7ec14495a1097.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17531,6 +18284,7 @@
       "G0064",
       "G0078"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17556,6 +18310,7 @@
       "ta2101",
       "unc3973"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17573,6 +18328,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e7bc514bb28a57ca183add306074bb3dfb55f6cf.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17590,6 +18346,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/eee883f355cda70d1a099078c70c915c20855b1e.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2024-4577"
@@ -17617,6 +18374,7 @@
       "ta2101",
       "unc3973"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17634,6 +18392,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/20e756348ab1001b08a049d046bfa64d572b6368.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17651,6 +18410,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/be48fcbf0bb242bfc07005c81fc85259d76aa711.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2023-20118"
@@ -17673,6 +18433,7 @@
       "G0050",
       "unit-8200"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17690,6 +18451,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/398ea876f914362ed0537c3b4a38fc8a03a7514a.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17712,6 +18474,7 @@
       "G0064",
       "G0078"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17729,6 +18492,7 @@
     "url_ok": null,
     "archive_url": null,
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17746,6 +18510,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e6ad50610e7fbcbe8aa981c3d6f2323f7a1909f0.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17763,6 +18528,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/90162a161c12b667be2d8ebfac1dc584e28d100a.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17780,6 +18546,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e6c9b019bdaffdc848609440d2a46257167c53f0.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17797,6 +18564,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/0dd80fb2ffa694424004fcca67a2551d662bdafd.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17818,6 +18586,7 @@
       "G0078",
       "uac-0050"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17837,6 +18606,7 @@
     "actors": [
       "angry-likho"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17856,6 +18626,7 @@
     "actors": [
       "G0067"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17876,6 +18647,7 @@
       "G1046",
       "mallard-spider"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -17899,6 +18671,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/859a1bf990fa3a01b8d8dee0d4e479bef1f322db.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2024-20720",
@@ -17924,6 +18697,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/923776e82a8dbc0be742450bbf5eb6b769d3a9ad.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17967,6 +18741,7 @@
       "webworm",
       "wet-panda"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -18010,6 +18785,7 @@
       "webworm",
       "wet-panda"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2024-24919"
@@ -18034,6 +18810,7 @@
     "actors": [
       "angry-likho"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -18053,6 +18830,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -18112,6 +18890,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/becf5ad08aae7de2c31996dbe6515852775593ee.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -18131,6 +18910,7 @@
     "actors": [
       "G1045"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2018-0171",
@@ -18153,6 +18933,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/cec5d8d5b9cd2ed53b40f1a250aaa668cdf5042f.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -18196,6 +18977,7 @@
       "webworm",
       "wet-panda"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -18213,6 +18995,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5cdf67eb5882eb1f489f8260b028f76b7a439ac4.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -18230,6 +19013,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/dcb73b67a5192ac019362c234725d518a523f9ae.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2009-3960",
@@ -18288,6 +19072,7 @@
       "G1020",
       "angry-likho"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -18307,6 +19092,7 @@
     "actors": [
       "angry-likho"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -18324,6 +19110,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e57298055c00603d5e76069271d8721d61bbecfd.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -18341,6 +19128,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/48d72fd0186650810192393ff93fa68499db8fd6.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -18378,6 +19166,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/0a3c05618b9a3176a1923973b71b8770cb844281.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -18395,6 +19184,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2f85c223c0a47f87a182fb85f751701bcdebbc8a.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -18432,6 +19222,7 @@
       "hurricane-panda",
       "slime29"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2024-0012"
@@ -18451,6 +19242,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5492aae59e5587e063bc257bbfacad8b65bf2bbf.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -18470,6 +19262,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -18487,6 +19280,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/636cea64409ea9e0d3c44e368618e724ba862be6.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -18506,6 +19300,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -18523,6 +19318,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b0aed098cb73b1580de661355d3863fed3fe2f99.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2023-20198",
@@ -18545,6 +19341,7 @@
     "actors": [
       "G1020"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -18564,6 +19361,7 @@
     "actors": [
       "G0094"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -18597,6 +19395,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e6778fdd79d8571c2eb00df2870bcaa6c965436b.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -18616,6 +19415,7 @@
     "actors": [
       "hive0137"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -18633,6 +19433,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/48196639c95c8c8ba62ed37a8d607e8dac630230.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -18650,6 +19451,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/49621b89941a6a61f1ad66562a00a1b24031aed2.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -18667,6 +19469,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7231b9ee4606a747ce58b8e0f3bfd2ae23aad213.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -18712,6 +19515,7 @@
       "G1006",
       "hive0137"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -18731,6 +19535,7 @@
     "actors": [
       "G0034"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2021-34473",
@@ -18758,6 +19563,7 @@
     "actors": [
       "ransomhub"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2020-1472",
@@ -18779,6 +19585,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/d793c8e7b0c76a65352059bfa72605d048af8909.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2023-20198",
@@ -18805,6 +19612,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/28c01d7f3d435aa4890f0a0413a6593d70046b3e.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -18842,6 +19650,7 @@
     "actors": [
       "G0034"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -18879,6 +19688,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ae416540f6bc8a09dae9656b297141580b9f515b.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -18896,6 +19706,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1c6f4e9cd95df2174b083e1eb9e0a67c68c9ee65.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -18913,6 +19724,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6b0303e92d1d83da2b8816c6df6de2fd2d48913e.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2020-1472",
@@ -18939,6 +19751,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/d45a240c2e60a5f54ffd59203a5d3985f1984573.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -18958,6 +19771,7 @@
     "actors": [
       "G0049"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -18977,6 +19791,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -18997,6 +19812,7 @@
       "smoky-spider",
       "uac-0006"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19017,6 +19833,7 @@
       "G0037",
       "magecart"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19034,6 +19851,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/750f3cfc1a649b860c16b6cdd326685b410dc45f.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19054,6 +19872,7 @@
       "G0032",
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19074,6 +19893,7 @@
       "smoky-spider",
       "uac-0006"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-0411"
@@ -19093,6 +19913,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/14e550e656e2bef8509c63025f5db8ee10ef80c7.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19115,6 +19936,7 @@
       "G0064",
       "G0078"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19132,6 +19954,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c113d860308817fd565d73657bc12da6d142c7bd.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19149,6 +19972,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f55ecb9f75f3f5085a76148ceda9d96db5818c97.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19166,6 +19990,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/19137905e407e99f961b9dfe31c0a4ca49f37bbf.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19185,6 +20010,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19202,6 +20028,7 @@
     "url_ok": true,
     "archive_url": "https://archive.orkl.eu/e17ed83df7cca8994111f678a95f5f317294c2c7.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-1204"
@@ -19221,6 +20048,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/081a73120b80975d8405f407192fb7447443ec05.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19247,6 +20075,7 @@
       "ta2101",
       "unc3973"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19264,6 +20093,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4b8b58965e1cb6851afba22922345357a948aba8.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19283,6 +20113,7 @@
     "actors": [
       "G0007"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19302,6 +20133,7 @@
     "actors": [
       "angry-likho"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -19322,6 +20154,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/898cebf5fd29f7b7846441d66a5bdd33a7014ab1.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19339,6 +20172,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/d3797335f0479622479d26cecfbee23ce34162e5.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-0683"
@@ -19364,6 +20198,7 @@
       "uac-0050",
       "vice-spider"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -19423,6 +20258,7 @@
       "tianwu",
       "void-arachne"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -19446,6 +20282,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19473,6 +20310,7 @@
       "webworm",
       "wet-panda"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19492,6 +20330,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -19532,6 +20371,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/04dbee712985398f4e1a3f0cfe5f4bc3f3c0577f.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -19556,6 +20396,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c8ae673b2a254bc3f0a8ac04c7ef91bd87888c89.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2024-27198"
@@ -19575,6 +20416,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/22b1a3038701db3411391a0fccda307290a68458.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19594,6 +20436,7 @@
     "actors": [
       "vice-spider"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -19639,6 +20482,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5b022db57ed4ee23f04456dab3a240ffcc3768cd.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19656,6 +20500,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/de20240a54e4a4d8dcc1a3d4c7e5102726269ada.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19675,6 +20520,7 @@
     "actors": [
       "angry-likho"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19695,6 +20541,7 @@
       "G1046",
       "mallard-spider"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-0199",
@@ -19719,6 +20566,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/37d087169d2bd363bc461552f900cf1b1f854864.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19738,6 +20586,7 @@
     "actors": [
       "G0096"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19755,6 +20604,7 @@
     "url_ok": true,
     "archive_url": "https://archive.orkl.eu/d4cf7043f86b775aafdf91a4758f8e8e4fb2ebbf.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19772,6 +20622,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f8b56cdf8ac2641660351f4a0c587ecaa361564c.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19789,6 +20640,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/23dc40dd9a52f43ec2a588ff28ac2e9b07ab2c87.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19806,6 +20658,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/558f5a37d7ec0de7dcebe7e44ecf2143011d0424.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19823,6 +20676,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f7375857d8f83da003dfb0c89c351886a8ff453d.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -19892,6 +20746,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/0bc0b74957b1994a572dfdfc00213a5f17b53ebc.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19911,6 +20766,7 @@
     "actors": [
       "yorotrooper"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -19972,6 +20828,7 @@
       "webworm",
       "wet-panda"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -19994,6 +20851,7 @@
       "G1046",
       "mallard-spider"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20011,6 +20869,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/99db473fa33344cdaf8abb14f8cf764dd0202836.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20030,6 +20889,7 @@
     "actors": [
       "G0050"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20052,6 +20912,7 @@
       "G1020",
       "ransomhub"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20071,6 +20932,7 @@
     "actors": [
       "G1017"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20088,6 +20950,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2a95ef7c02b941d99ed61e484270302d7e6e8f4d.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2022-40684",
@@ -20110,6 +20973,7 @@
     "actors": [
       "G1033"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20127,6 +20991,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/9ac4f7ed4ed746c6ade2c92f5cfac199eb197b32.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20146,6 +21011,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20163,6 +21029,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c6b8d925f49963ad25b38f6a0897a19c2d09e51f.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2018-13379",
@@ -20185,6 +21052,7 @@
     "actors": [
       "G1052"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20204,6 +21072,7 @@
     "actors": [
       "G0034"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2014-4114"
@@ -20223,6 +21092,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c3ca1785b96d9090cd2f88fbf2276a0337679cc1.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2021-36260",
@@ -20243,6 +21113,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/da55acbd5c41b91182fcfc928e21088699231e48.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20280,6 +21151,7 @@
       "hurricane-panda",
       "slime29"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20299,6 +21171,7 @@
     "actors": [
       "angry-likho"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20318,6 +21191,7 @@
     "actors": [
       "G0007"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20335,6 +21209,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/84bc0c20f0da4f106b06a5fbb54d4a33ed00e31c.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20354,6 +21229,7 @@
     "actors": [
       "G0007"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20371,6 +21247,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3d21ee038a509724bab0bc79ccf51c7223d87e93.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20416,6 +21293,7 @@
       "tianwu",
       "uac-0050"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -20455,6 +21333,7 @@
       "hurricane-panda",
       "slime29"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -20491,6 +21370,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f36c9432be4129eeb2b193b5d70c6c847ef1a98d.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -20518,6 +21398,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/bbfb3bc935fdbfba9d224ffb718f13779ec34d5b.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20535,6 +21416,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/dc071a987c7e9b22ce0d8e8fbfa645a94446cbc7.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20571,6 +21453,7 @@
       "earth-baxia",
       "tianwu"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -20590,6 +21473,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/fd6ccd5997c47fda6e6994bc252cefca1c9c980e.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20607,6 +21491,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/47e12686fd25e3dca0f568a04c8c469ac3af3148.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2021-26855"
@@ -20628,6 +21513,7 @@
     "actors": [
       "G0034"
     ],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20645,6 +21531,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/132ed3160c0dca1e6b513b871cdc075fc844bb95.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20662,6 +21549,7 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/eeed032dbdd98727b304a9f1b3f3ae5b4f70198b.pdf",
     "actors": [],
+    "actors_from_title": [],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
