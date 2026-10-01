@@ -150,18 +150,20 @@
 <section id="new-actors" aria-labelledby="h-new-actors">
 	<h2 id="h-new-actors">Newly Documented Actors</h2>
 	{#if newActors.length}
-		<ul class="new-actors">
-			{#each newActors as a (a.actor)}
-				<li>
-					<span class="actor">{name(a.actor)}</span>
-					<span class="meta"
-						>First seen <time datetime={a.first_seen}>{formatDate(a.first_seen)}</time>, {basisText(
-							a.basis
-						)}</span
-					>
-				</li>
-			{/each}
-		</ul>
+		<div class="new-actors-box" role="region" aria-label="Newly documented actors, scrolls" tabindex="0">
+			<ul class="new-actors">
+				{#each newActors as a (a.actor)}
+					<li>
+						<span class="actor">{name(a.actor)}</span>
+						<span class="meta"
+							>First seen <time datetime={a.first_seen}>{formatDate(a.first_seen)}</time>, {basisText(
+								a.basis
+							)}</span
+						>
+					</li>
+				{/each}
+			</ul>
+		</div>
 	{:else}
 		<p class="empty">No actor was first documented in the last {newSpan}.</p>
 	{/if}
@@ -353,11 +355,27 @@
 		color: var(--text-muted);
 	}
 
+	.new-actors-box {
+		max-height: 18.75rem;
+		overflow-y: auto;
+		overscroll-behavior: contain;
+		border-top: 1px solid var(--text);
+		border-bottom: 1px solid var(--border);
+	}
+
+	.new-actors-box:focus-visible {
+		outline: 2px solid var(--focus);
+		outline-offset: 2px;
+	}
+
 	.new-actors {
 		margin: 0;
 		padding: 0;
-		border-top: 1px solid var(--text);
 		list-style: none;
+	}
+
+	.new-actors li:last-child {
+		border-bottom: 0;
 	}
 
 	.after-list {

@@ -46,7 +46,10 @@ async function open(page: Page) {
 async function described(page: Page, key: Key): Promise<Locator> {
 	if (CHARTS.includes(key)) return chart(page, key);
 	const table = section(page, key).getByRole('table');
-	return (await table.count()) ? table : section(page, key).getByRole('list').first();
+	if (await table.count()) return table;
+	// A long list scrolls in its own box, so the box is what the note sits beneath.
+	const box = section(page, key).getByRole('region', { name: /scrolls/i });
+	return (await box.count()) ? box : section(page, key).getByRole('list').first();
 }
 
 async function noHorizontalScroll(page: Page) {
@@ -509,6 +512,25 @@ test('newly documented actors are listed with their first date and basis', async
 		const item = list.getByRole('listitem').filter({ hasText: nameOf(a.actor) });
 		await expect(item.locator(`time[datetime="${a.first_seen}"]`)).toBeVisible();
 	}
+});
+
+test('a long list of newly documented actors scrolls in its own box, not the page', async ({ page }) => {
+	await open(page);
+	const box = section(page, 'new_actors').getByRole('region', { name: /newly documented actors/i });
+	const m = await box.evaluate((el) => ({
+		client: el.clientHeight,
+		scroll: el.scrollHeight,
+		overflowY: getComputedStyle(el).overflowY,
+		max: parseFloat(getComputedStyle(el).maxHeight)
+	}));
+	expect(m.overflowY).toBe('auto');
+	expect(m.client).toBeLessThanOrEqual(m.max + 1);
+	if (m.scroll > m.client) {
+		await box.focus();
+		await page.keyboard.press('PageDown');
+		await expect.poll(() => box.evaluate((el) => el.scrollTop)).toBeGreaterThan(0);
+	}
+	await noHorizontalScroll(page);
 });
 
 test('with scripts blocked, the headings, notes and tables still read', async ({ page }) => {
