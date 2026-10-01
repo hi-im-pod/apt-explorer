@@ -68,7 +68,9 @@ class Release:
         self.dir = tmp_path / "release"
         self.bin = tmp_path / "bin"
         self.bin.mkdir()
-        (self.bin / "gh").write_text(STUB_GH, encoding="utf-8", newline="\n")
+        stub = self.bin / "gh"
+        stub.write_text(STUB_GH, encoding="utf-8", newline="\n")
+        stub.chmod(0o755)
         self.out = tmp_path / "output.txt"
         self.out.write_text("", encoding="utf-8")
         self.tmp = tmp_path
