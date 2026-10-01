@@ -12,6 +12,8 @@ from aptx.sources.attack import AttackConnector
 from aptx.sources.base import Connector
 
 FIX = Path(__file__).parent / "fixtures" / "attack_min.json"
+ICS = Path(__file__).parent / "fixtures" / "attack_ics_min.json"
+MOBILE = Path(__file__).parent / "fixtures" / "attack_mobile_min.json"
 
 # The two lines of attack-stix-data's LICENSE.txt that matter here, in the
 # file's own layout: the licence paragraph, then the quoted designation.
@@ -153,13 +155,21 @@ def fast_http(monkeypatch):
     monkeypatch.setattr(http, "BACKOFF_BASE", 0)
 
 
-@respx.mock
-def test_fetch_saves_the_bundle_and_the_licence(tmp_path, fast_http):
-    respx.get(attack.BUNDLE_URL).mock(return_value=httpx.Response(200, content=FIX.read_bytes()))
+def _mock_matrices(enterprise=None, ics=None, mobile=None):
+    for matrix, fixture in (("enterprise", enterprise or FIX), ("ics", ics or ICS), ("mobile", mobile or MOBILE)):
+        payload = fixture if isinstance(fixture, bytes) else fixture.read_bytes()
+        respx.get(attack.bundle_url(matrix)).mock(return_value=httpx.Response(200, content=payload))
     respx.get(attack.LICENCE_URL).mock(return_value=httpx.Response(200, content=LICENCE_TXT))
+
+
+@respx.mock
+def test_fetch_saves_every_matrix_and_the_licence(tmp_path, fast_http):
+    _mock_matrices()
     store = SnapshotStore(tmp_path)
     AttackConnector().fetch(store)
     assert store.latest("attack", "enterprise-attack.json") == FIX.read_bytes()
+    assert store.latest("attack", "ics-attack.json") == ICS.read_bytes()
+    assert store.latest("attack", "mobile-attack.json") == MOBILE.read_bytes()
     assert attack.copyright_year(store) == "2026"
 
 
@@ -167,9 +177,18 @@ def test_fetch_saves_the_bundle_and_the_licence(tmp_path, fast_http):
 def test_fetch_refuses_a_bundle_with_no_objects(tmp_path, fast_http):
     # On a first run there is no earlier snapshot for the size guard to
     # compare against, so an empty bundle must be refused on its content.
-    respx.get(attack.BUNDLE_URL).mock(return_value=httpx.Response(
-        200, content=json.dumps({"type": "bundle", "objects": []}).encode()))
-    respx.get(attack.LICENCE_URL).mock(return_value=httpx.Response(200, content=LICENCE_TXT))
+    _mock_matrices(enterprise=json.dumps({"type": "bundle", "objects": []}).encode())
+    store = SnapshotStore(tmp_path)
+    with pytest.raises(ValueError):
+        AttackConnector().fetch(store)
+    assert store.latest_date("attack") is None
+
+
+@respx.mock
+def test_fetch_refuses_an_empty_ics_bundle_before_saving_anything(tmp_path, fast_http):
+    # Every bundle is checked before any is saved, so a bad Mobile or ICS file
+    # cannot leave a half-new snapshot behind a good Enterprise one.
+    _mock_matrices(ics=json.dumps({"type": "bundle", "objects": []}).encode())
     store = SnapshotStore(tmp_path)
     with pytest.raises(ValueError):
         AttackConnector().fetch(store)
@@ -181,8 +200,7 @@ def test_shrunken_bundle_keeps_the_old_snapshot_and_its_date(tmp_path, fast_http
     old = tmp_path / "attack" / "2026-01-02"
     old.mkdir(parents=True)
     (old / "enterprise-attack.json").write_bytes(FIX.read_bytes() + b" " * 100_000)
-    respx.get(attack.BUNDLE_URL).mock(return_value=httpx.Response(200, content=FIX.read_bytes()))
-    respx.get(attack.LICENCE_URL).mock(return_value=httpx.Response(200, content=LICENCE_TXT))
+    _mock_matrices()
     store = SnapshotStore(tmp_path)
     with pytest.raises(ShrunkSnapshotError):
         AttackConnector().fetch(store)
@@ -199,3 +217,60 @@ def test_technique_ids_holds_live_techniques_and_sub_techniques_only(store):
 
 def test_technique_ids_is_empty_without_a_snapshot(tmp_path):
     assert attack.technique_ids(SnapshotStore(tmp_path)) == frozenset()
+
+
+@pytest.fixture
+def all_matrices(tmp_path):
+    s = SnapshotStore(tmp_path)
+    s.save("attack", "enterprise-attack.json", FIX.read_bytes())
+    s.save("attack", "ics-attack.json", ICS.read_bytes())
+    s.save("attack", "mobile-attack.json", MOBILE.read_bytes())
+    return s
+
+
+def test_ics_and_mobile_add_groups_campaigns_and_software(all_matrices):
+    b = AttackConnector().normalize(all_matrices)
+    assert {a.source_id for a in b.actors} == {"G0007", "G9001", "G9002"}
+    assert {c.source_id for c in b.campaigns} == {"C0001", "C9001"}
+    assert {s.source_id for s in b.software} == {"S0044", "S0002", "S9001", "S9002", "S9003"}
+    kinds = {s.source_id: s.kind for s in b.software}
+    assert (kinds["S9001"], kinds["S9002"], kinds["S9003"]) == ("malware", "malware", "tool")
+
+
+def test_a_group_in_several_matrices_is_one_record_and_enterprise_wins(all_matrices):
+    # APT28 is in all three bundles under one STIX ID. It must not be doubled,
+    # its Enterprise aliases must survive, and the ICS technique joins the
+    # technique list that Enterprise already gave it.
+    apt28 = [a for a in AttackConnector().normalize(all_matrices).actors if a.source_id == "G0007"]
+    assert len(apt28) == 1
+    assert apt28[0].aliases == ["Fancy Bear", "Sofacy"]
+    assert apt28[0].techniques == ["T0801", "T1059"]
+
+
+def test_matrix_only_groups_keep_their_own_links(all_matrices):
+    by_id = {a.source_id: a for a in AttackConnector().normalize(all_matrices).actors}
+    assert by_id["G9001"].techniques == ["T0801"] and by_id["G9001"].malware == ["Fixture PLC Worm"]
+    assert by_id["G9001"].aliases == ["FICS"]
+    assert by_id["G9002"].techniques == ["T1404"] and by_id["G9002"].malware == ["Fixture Phone Implant"]
+    [c] = [c for c in AttackConnector().normalize(all_matrices).campaigns if c.source_id == "C9001"]
+    assert c.actor_refs == ["G9001"]
+
+
+def test_technique_ids_include_ics_and_mobile(all_matrices):
+    assert attack.technique_ids(all_matrices) == frozenset(
+        {"T1059", "T1059.001", "T1003", "T0801", "T1404"})
+
+
+def test_a_missing_ics_or_mobile_snapshot_leaves_enterprise_alone(tmp_path):
+    # A store written before ICS and Mobile were added holds Enterprise only.
+    s = SnapshotStore(tmp_path)
+    s.save("attack", "enterprise-attack.json", FIX.read_bytes())
+    b = AttackConnector().normalize(s)
+    assert {a.source_id for a in b.actors} == {"G0007"}
+
+
+def test_without_enterprise_nothing_is_read_even_if_ics_exists(tmp_path):
+    s = SnapshotStore(tmp_path)
+    s.save("attack", "ics-attack.json", ICS.read_bytes())
+    b = AttackConnector().normalize(s)
+    assert (b.actors, b.campaigns, b.software) == ([], [], [])

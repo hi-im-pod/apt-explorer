@@ -34,7 +34,7 @@ The other sources fit inside that licence:
 
 - MISP and KEV are CC0.
 - For adapted material, the paper's CC BY 4.0 (section 3(a)(4)) requires that "the Adapter's License You apply must not prevent recipients of the Adapted Material from complying with this Public License." BY-NC-SA 4.0 keeps its attribution intact.
-- ATT&CK values stay under MITRE's licence, so MITRE's copyright designation and licence paragraph travel with every copy of `data/`.
+- ATT&CK values stay under MITRE's licence, so MITRE's copyright designation and licence paragraph travel with every copy of `data/`. This covers the Enterprise, ICS and Mobile matrices, which are three files in the one `attack-stix-data` repository and share its single `LICENSE.txt`.
 
 Share-alike does not reach the code. The pipeline and site code are not adaptations of the data, so the code licence is chosen separately. The repository must not apply a code licence to `data/`.
 

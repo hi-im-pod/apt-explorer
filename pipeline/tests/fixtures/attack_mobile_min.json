@@ -1,0 +1,73 @@
+{
+  "type": "bundle",
+  "id": "bundle--00000000-0000-4000-8000-000000000003",
+  "objects": [
+    {
+      "type": "x-mitre-collection",
+      "id": "x-mitre-collection--00000000-0000-4000-8000-000000000012",
+      "name": "Mobile ATT&CK"
+    },
+    {
+      "type": "intrusion-set",
+      "id": "intrusion-set--00000000-0000-4000-8000-000000009002",
+      "name": "Fixture Mobile Group",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "G9002",
+          "url": "https://attack.mitre.org/x/G9002"
+        }
+      ]
+    },
+    {
+      "type": "malware",
+      "id": "malware--00000000-0000-4000-8000-000000009002",
+      "name": "Fixture Phone Implant",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "S9002",
+          "url": "https://attack.mitre.org/x/S9002"
+        }
+      ]
+    },
+    {
+      "type": "tool",
+      "id": "tool--00000000-0000-4000-8000-000000009003",
+      "name": "Fixture Phone Tool",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "S9003",
+          "url": "https://attack.mitre.org/x/S9003"
+        }
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "id": "attack-pattern--00000000-0000-4000-8000-000000001404",
+      "name": "Exploit OS Vulnerability",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1404",
+          "url": "https://attack.mitre.org/x/T1404"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--00000000-0000-4000-8000-000000009011",
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--00000000-0000-4000-8000-000000009002",
+      "target_ref": "attack-pattern--00000000-0000-4000-8000-000000001404"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--00000000-0000-4000-8000-000000009012",
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--00000000-0000-4000-8000-000000009002",
+      "target_ref": "malware--00000000-0000-4000-8000-000000009002"
+    }
+  ]
+}

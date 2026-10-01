@@ -1,9 +1,14 @@
-"""MITRE ATT&CK® enterprise STIX: groups, campaigns and software.
+"""MITRE ATT&CK® STIX for the Enterprise, ICS and Mobile matrices: groups, campaigns and software.
 
 ATT&CK is the reference the other sources are matched against. Its group IDs
 become actor IDs on the site, its campaigns become campaign pages, and its
 software entries let the resolver recognise a name as malware or a tool rather
 than an actor.
+
+The three matrices are separate bundles that share one ID space. A group that
+works in more than one matrix has the same STIX ID and ATT&CK ID in each, so the
+bundles are merged on STIX ID, and a group gains the techniques its ICS and
+Mobile relationships name.
 """
 import json
 import logging
@@ -19,11 +24,20 @@ from aptx.sources.base import Connector
 log = logging.getLogger(__name__)
 
 NAME = "attack"
-BUNDLE = "enterprise-attack.json"
 LICENCE = "LICENSE.txt"
 _REPO = "https://raw.githubusercontent.com/mitre-attack/attack-stix-data/master"
-BUNDLE_URL = f"{_REPO}/enterprise-attack/enterprise-attack.json"
 LICENCE_URL = f"{_REPO}/LICENSE.txt"
+# Enterprise comes first: where two bundles hold the same object, its copy wins.
+MATRICES = ("enterprise", "ics", "mobile")
+
+
+def bundle_file(matrix: str) -> str:
+    return f"{matrix}-attack.json"
+
+
+def bundle_url(matrix: str) -> str:
+    return f"{_REPO}/{matrix}-attack/{matrix}-attack.json"
+
 
 # The object types that become records. Only these count as dropped when they
 # lack an ATT&CK ID, so collections and relationships never inflate the count.
@@ -71,16 +85,31 @@ def _labels(values, exclude: str | None = None) -> list[str]:
 
 
 def _load(store: SnapshotStore) -> tuple[dict[str, dict], list[dict]] | None:
-    """Live objects by STIX ID, and the live relationships between them."""
-    raw = store.latest(NAME, BUNDLE)
-    if raw is None:
+    """Live objects by STIX ID, and the live relationships between them.
+
+    The matrices are merged. Relationships are checked against the merged
+    objects, so a group from the Enterprise bundle can use a technique that only
+    the ICS bundle defines. None means there is no Enterprise snapshot; a
+    missing ICS or Mobile snapshot, as in a cache from before they were fetched,
+    only means those matrices add nothing.
+    """
+    if store.latest(NAME, bundle_file(MATRICES[0])) is None:
         return None
-    objects = json.loads(raw).get("objects") or []
-    live = {o["id"]: o for o in objects
-            if o.get("type") != "relationship" and o.get("id") and _live(o)}
-    rels = [o for o in objects
-            if o.get("type") == "relationship" and _live(o)
-            and o.get("source_ref") in live and o.get("target_ref") in live]
+    live: dict[str, dict] = {}
+    all_rels: dict[str, dict] = {}
+    for matrix in MATRICES:
+        raw = store.latest(NAME, bundle_file(matrix))
+        if raw is None:
+            continue
+        for o in json.loads(raw).get("objects") or []:
+            if not o.get("id") or not _live(o):
+                continue
+            if o.get("type") == "relationship":
+                all_rels.setdefault(o["id"], o)
+            else:
+                live.setdefault(o["id"], o)
+    rels = [o for o in all_rels.values()
+            if o.get("source_ref") in live and o.get("target_ref") in live]
     return live, rels
 
 
@@ -98,13 +127,16 @@ class AttackConnector(Connector):
     name = NAME
 
     def fetch(self, store: SnapshotStore) -> None:
-        # Both files are downloaded and the bundle checked before anything is
-        # saved. The licence is saved last: were it saved alone, its new dated
-        # folder would make an old bundle look fresh.
-        bundle = http.get_bytes(BUNDLE_URL)
+        # Every file is downloaded and every bundle checked before anything is
+        # saved, so one bad matrix keeps the whole last snapshot. The licence is
+        # saved last: were it saved alone, its new dated folder would make an
+        # old bundle look fresh.
+        bundles = {m: http.get_bytes(bundle_url(m)) for m in MATRICES}
         licence = http.get_bytes(LICENCE_URL)
-        _check_bundle(bundle)
-        store.save(NAME, BUNDLE, bundle)
+        for payload in bundles.values():
+            _check_bundle(payload)
+        for matrix, payload in bundles.items():
+            store.save(NAME, bundle_file(matrix), payload)
         store.save(NAME, LICENCE, licence)
 
     def normalize(self, store: SnapshotStore) -> SourceBundle:

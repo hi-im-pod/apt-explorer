@@ -1,0 +1,112 @@
+{
+  "type": "bundle",
+  "id": "bundle--00000000-0000-4000-8000-000000000002",
+  "objects": [
+    {
+      "type": "x-mitre-collection",
+      "id": "x-mitre-collection--00000000-0000-4000-8000-000000000011",
+      "name": "ICS ATT&CK"
+    },
+    {
+      "type": "intrusion-set",
+      "id": "intrusion-set--00000000-0000-4000-8000-000000000007",
+      "name": "APT28",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "G0007",
+          "url": "https://attack.mitre.org/x/G0007"
+        }
+      ],
+      "aliases": [
+        "APT28"
+      ]
+    },
+    {
+      "type": "intrusion-set",
+      "id": "intrusion-set--00000000-0000-4000-8000-000000009001",
+      "name": "Fixture ICS Group",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "G9001",
+          "url": "https://attack.mitre.org/x/G9001"
+        }
+      ],
+      "aliases": [
+        "Fixture ICS Group",
+        "FICS"
+      ]
+    },
+    {
+      "type": "campaign",
+      "id": "campaign--00000000-0000-4000-8000-000000009001",
+      "name": "Fixture Plant Outage",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "C9001",
+          "url": "https://attack.mitre.org/x/C9001"
+        }
+      ],
+      "first_seen": "2022-03-01T00:00:00.000Z",
+      "last_seen": "2022-03-09T00:00:00.000Z"
+    },
+    {
+      "type": "malware",
+      "id": "malware--00000000-0000-4000-8000-000000009001",
+      "name": "Fixture PLC Worm",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "S9001",
+          "url": "https://attack.mitre.org/x/S9001"
+        }
+      ],
+      "x_mitre_aliases": [
+        "Fixture PLC Worm",
+        "PLCW"
+      ]
+    },
+    {
+      "type": "attack-pattern",
+      "id": "attack-pattern--00000000-0000-4000-8000-000000000801",
+      "name": "Monitor Process State",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T0801",
+          "url": "https://attack.mitre.org/x/T0801"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--00000000-0000-4000-8000-000000009001",
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--00000000-0000-4000-8000-000000000007",
+      "target_ref": "attack-pattern--00000000-0000-4000-8000-000000000801"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--00000000-0000-4000-8000-000000009002",
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--00000000-0000-4000-8000-000000009001",
+      "target_ref": "attack-pattern--00000000-0000-4000-8000-000000000801"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--00000000-0000-4000-8000-000000009003",
+      "relationship_type": "attributed-to",
+      "source_ref": "campaign--00000000-0000-4000-8000-000000009001",
+      "target_ref": "intrusion-set--00000000-0000-4000-8000-000000009001"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--00000000-0000-4000-8000-000000009004",
+      "relationship_type": "uses",
+      "source_ref": "intrusion-set--00000000-0000-4000-8000-000000009001",
+      "target_ref": "malware--00000000-0000-4000-8000-000000009001"
+    }
+  ]
+}
