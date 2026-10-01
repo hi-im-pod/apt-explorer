@@ -70,11 +70,11 @@ The repository also holds a test workflow and a weekly build workflow in `.githu
 
 ## Sources and Licences
 
-The project reads eight sources: MITRE ATT&CK®, the MISP galaxy threat-actor cluster, ETDA's Threat Group Cards, Malpedia, ORKL, the CISA Known Exploited Vulnerabilities Catalog, The DFIR Report, and the dataset released with the paper credited below.
+The project reads nine sources: MITRE ATT&CK®, the MISP galaxy threat-actor cluster, ETDA's Threat Group Cards, Malpedia, ORKL, the CISA Known Exploited Vulnerabilities Catalog, The DFIR Report, Microsoft Threat Intelligence's threat actor naming table, and the dataset released with the paper credited below.
 
 Each source has its own licence, and the licence decides what the site may publish from it. [SOURCES.md](SOURCES.md) quotes every licence, records the decision for each source, and is the authority for the policy in code. In short:
 
-- **Published in full:** MITRE ATT&CK®, the MISP galaxy, the CISA KEV catalog and the paper's dataset.
+- **Published in full:** MITRE ATT&CK®, the MISP galaxy, the CISA KEV catalog, Microsoft's threat actor naming table and the paper's dataset.
 - **Published as derived facts only:** ETDA and Malpedia. Normalized names and values appear, and their descriptive text does not.
 - **Linked to, not copied:** ORKL and The DFIR Report. The site shows a report's own title, publication date and original URL. ORKL's permission request is still pending, and its actor tags are used only as matching evidence and never shown.
 

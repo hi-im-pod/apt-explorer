@@ -140,7 +140,7 @@ def test_a_source_with_no_snapshot_at_all_is_stale_and_empty_and_the_build_succe
 def test_skip_fetch_never_fetches_and_only_limits_which_sources_are_fetched(tmp_path, store):
     cs = connectors()
     cli.run(tmp_path / "a", store, cs, fetch=False, generated_at=NOW)
-    assert [c.fetches for c in cs] == [0] * 8
+    assert [c.fetches for c in cs] == [0] * 9
     cli.run(tmp_path / "b", store, cs, only={"misp", "kev"}, generated_at=NOW)
     assert {c.name: c.fetches for c in cs if c.fetches} == {"misp": 1, "kev": 1}
 
@@ -165,7 +165,7 @@ def test_a_damaged_fetch_status_file_does_not_stop_a_build(tmp_path, store):
 def test_each_policy_is_asked_once_per_build(tmp_path, store):
     cs = connectors()
     cli.run(tmp_path / "data", store, cs, generated_at=NOW)
-    assert [c.policy_calls for c in cs] == [1] * 8
+    assert [c.policy_calls for c in cs] == [1] * 9
 
 
 def test_the_registry_is_built_from_evidence_only_sources_too(tmp_path, store):
@@ -245,7 +245,7 @@ def test_the_status_table_is_printed(tmp_path, store, capsys):
     assert "dfir" in text and "STALE" in text and "RuntimeError: down" in text
 
 
-def test_the_default_connectors_are_the_eight_sources_in_notice_order():
+def test_the_default_connectors_are_the_nine_sources_in_notice_order():
     assert [c.name for c in cli.default_connectors()] == list(SOURCE_ORDER)
 
 

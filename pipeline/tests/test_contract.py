@@ -613,7 +613,7 @@ def _attribution(key: str, row: dict[str, str]) -> str:
 @pytest.fixture(scope="module")
 def licence_table() -> dict[str, dict[str, str]]:
     table = _licence_table()
-    assert len(table) == 8, f"SOURCES.md rows found for {sorted(table)}"
+    assert len(table) == 9, f"SOURCES.md rows found for {sorted(table)}"
     return table
 
 

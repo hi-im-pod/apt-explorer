@@ -78,5 +78,15 @@
     "licence": "CC BY 4.0",
     "licence_url": "https://creativecommons.org/licenses/by/4.0/",
     "attribution": "Data from Yuldoshkhujaev, S., Jeon, M., Kim, D., Nikiforakis, N., Koo, H. A Decade-long Landscape of Advanced Persistent Threats: Longitudinal Analysis and Global Trends. Proceedings of the 2025 ACM SIGSAC Conference on Computer and Communications Security (CCS '25). Dataset: https://doi.org/10.5281/zenodo.16869733, licensed under CC BY 4.0, https://creativecommons.org/licenses/by/4.0/. Modified: rows were parsed, split and filtered by apt-explorer."
+  },
+  {
+    "name": "microsoft",
+    "last_success": "2026-09-28",
+    "record_count": 212,
+    "stale": false,
+    "publish": "full",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Threat actor naming data from Microsoft Threat Intelligence, Microsoft Corporation, https://github.com/microsoft/mstic (PublicFeeds/ThreatActorNaming), licensed under CC BY 4.0, https://creativecommons.org/licenses/by/4.0/. Modified: names and origin values were normalized and merged with other sources by apt-explorer. This project is not endorsed by or affiliated with Microsoft."
   }
 ]

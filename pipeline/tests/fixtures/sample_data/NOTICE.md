@@ -6,6 +6,8 @@ They carry this licence because they adapt two share-alike sources. Values from 
 
 No additional terms or conditions apply to these files. The licence of the apt-explorer code does not apply to them.
 
+Related work: APT Map (https://lngt-apt-study-map.vercel.app/) is a separate interactive map of hand-curated incident rows, built from the dataset released with the paper that appears below as the `paper` source.
+
 ## MITRE ATT&CK
 
 Values from MITRE ATT&CK® stay under MITRE's licence, which requires its copyright designation and licence in every copy:
@@ -51,3 +53,9 @@ Report titles and links from The DFIR Report, https://thedfirreport.com/. © The
 ### Yuldoshkhujaev et al., CCS '25 dataset, Zenodo 16869733 (`paper`)
 
 Data from Yuldoshkhujaev, S., Jeon, M., Kim, D., Nikiforakis, N., Koo, H. A Decade-long Landscape of Advanced Persistent Threats: Longitudinal Analysis and Global Trends. Proceedings of the 2025 ACM SIGSAC Conference on Computer and Communications Security (CCS '25). Dataset: https://doi.org/10.5281/zenodo.16869733, licensed under CC BY 4.0, https://creativecommons.org/licenses/by/4.0/. Modified: rows were parsed, split and filtered by apt-explorer.
+
+### Microsoft Threat Intelligence threat actor naming (`microsoft`)
+
+Threat actor naming data from Microsoft Threat Intelligence, Microsoft Corporation, https://github.com/microsoft/mstic (PublicFeeds/ThreatActorNaming), licensed under CC BY 4.0, https://creativecommons.org/licenses/by/4.0/. Modified: names and origin values were normalized and merged with other sources by apt-explorer. This project is not endorsed by or affiliated with Microsoft.
+
+The repository's legal notices also state: "The licenses for this project do not grant you rights to use any Microsoft names, logos, or trademarks."

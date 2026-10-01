@@ -13,7 +13,7 @@ from aptx.resolve.registry import resolve
 NOW = "2026-09-30T04:00:00Z"
 SNAP = "2026-09-28"
 POLICIES = {"attack": "full", "misp": "full", "etda": "derived-only", "malpedia": "derived-only",
-            "orkl": "link-only", "kev": "full", "dfir": "link-only", "paper": "full"}
+            "orkl": "link-only", "kev": "full", "dfir": "link-only", "paper": "full", "microsoft": "full"}
 TECHNIQUES = frozenset({"T1059", "T1105", "T1190", "T1566", "T1566.002", "T1505.003", "T1090.003"})
 FACTS = BuildFacts(copyright_year="2026", valid_techniques=TECHNIQUES,
                    snapshot_dates={key: SNAP for key in SOURCE_ORDER})

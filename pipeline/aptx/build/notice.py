@@ -15,7 +15,7 @@ from dataclasses import dataclass
 
 # The order sources.json lists them in, and the order NOTICE.md credits them
 # in after MITRE, which has its own section.
-SOURCE_ORDER = ("attack", "misp", "etda", "malpedia", "orkl", "kev", "dfir", "paper")
+SOURCE_ORDER = ("attack", "misp", "etda", "malpedia", "orkl", "kev", "dfir", "paper", "microsoft")
 
 _YEAR = re.compile(r"[0-9]{4}")
 
@@ -46,8 +46,10 @@ class SourceInfo:
     # and appears only in ATT&CK's first paragraph.
     _paragraphs: tuple[str, ...]
     # A sentence NOTICE.md adds under the credit that sources.json does not
-    # carry, such as KEV's condition on the CISA logo.
+    # carry, such as KEV's condition on the CISA logo. It is quoted from the
+    # source, and extra_lead says where the quote comes from.
     extra: str | None = None
+    extra_lead: str = "The licence also states:"
 
     def paragraphs(self, copyright_year: str | None = None) -> tuple[str, ...]:
         if any("{year}" in p for p in self._paragraphs):
@@ -124,7 +126,8 @@ SOURCE_INFO: dict[str, SourceInfo] = {i.key: i for i in (
             "https://www.cisa.gov/known-exploited-vulnerabilities-catalog, CC0 1.0.",
         ),
         extra="Use of the information does not authorize you to use the CISA Logo or DHS Seal, nor should such "
-              "use be interpreted as an endorsement by CISA or DHS."),
+              "use be interpreted as an endorsement by CISA or DHS.",
+        extra_lead="The KEV licence also states:"),
     SourceInfo(
         key="dfir",
         title="The DFIR Report",
@@ -147,6 +150,21 @@ SOURCE_INFO: dict[str, SourceInfo] = {i.key: i for i in (
             "https://creativecommons.org/licenses/by/4.0/. Modified: rows were parsed, split and filtered by "
             "apt-explorer.",
         )),
+    SourceInfo(
+        key="microsoft",
+        title="Microsoft Threat Intelligence threat actor naming",
+        licence="CC BY 4.0",
+        licence_url="https://creativecommons.org/licenses/by/4.0/",
+        _paragraphs=(
+            "Threat actor naming data from Microsoft Threat Intelligence, Microsoft Corporation, "
+            "https://github.com/microsoft/mstic (PublicFeeds/ThreatActorNaming), licensed under CC BY 4.0, "
+            "https://creativecommons.org/licenses/by/4.0/. Modified: names and origin values were "
+            "normalized and merged with other sources by apt-explorer. This project is not endorsed by or "
+            "affiliated with Microsoft.",
+        ),
+        extra="The licenses for this project do not grant you rights to use any Microsoft names, logos, or "
+              "trademarks.",
+        extra_lead="The repository's legal notices also state:"),
 )}
 assert tuple(SOURCE_INFO) == SOURCE_ORDER
 
@@ -191,5 +209,5 @@ def render_notice(copyright_year: str | None) -> str:
         blocks.append(f"### {info.title} (`{key}`)")
         blocks.extend(info.paragraphs(year))
         if info.extra:
-            blocks.append(f"The KEV licence also states: \"{info.extra}\"")
+            blocks.append(f"{info.extra_lead} \"{info.extra}\"")
     return "\n\n".join(blocks) + "\n"
