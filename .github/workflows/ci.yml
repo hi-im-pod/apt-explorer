@@ -23,10 +23,6 @@ jobs:
     name: pipeline tests
     runs-on: ubuntu-latest
     timeout-minutes: 15
-    env:
-      # Tests that touch the snapshot store must not write into the
-      # checkout, so the store is moved to the runner's scratch space.
-      APTX_CACHE: ${{ runner.temp }}/aptx-cache
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -40,6 +36,11 @@ jobs:
         run: pip install -e "pipeline[test]"
       - name: Run pytest
         working-directory: pipeline
+        # Tests that touch the snapshot store must not write into the
+        # checkout, so the store is moved to the runner's scratch space.
+        # The runner context exists only inside steps, not in job-level env.
+        env:
+          APTX_CACHE: ${{ runner.temp }}/aptx-cache
         run: python -m pytest -q
 
   site:
