@@ -219,6 +219,8 @@ def report_urls(data_dir: Path) -> list[str]:
     """Every distinct original URL in the published report shards."""
     urls: set[str] = set()
     for shard in sorted((Path(data_dir) / "reports").glob("*.json")):
+        if shard.name == "index.json":
+            continue
         for row in json.loads(shard.read_text(encoding="utf-8")):
             if row.get("url"):
                 urls.add(row["url"])

@@ -124,8 +124,9 @@ def test_an_empty_build_is_still_a_complete_tree():
 def test_bundles_may_arrive_as_a_dict_or_a_list_in_any_order():
     world = WORLD()
     as_dict = {b.source: b for b in reversed(world)}
-    payload = assemble(as_dict, resolve([a for b in world for a in b.actors], []), POLICIES,
-                       generated_at=NOW, facts=FACTS)
+    payload = assemble(as_dict, resolve([a for b in world for a in b.actors], [], shown_sources=slugs.shown_sources(POLICIES),
+                               build_date=NOW[:10]),
+                       POLICIES, generated_at=NOW, facts=FACTS)
     assert payload == run(*world)
 
 

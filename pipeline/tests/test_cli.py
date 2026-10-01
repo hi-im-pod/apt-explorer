@@ -443,3 +443,15 @@ def test_the_workflow_never_deletes_the_slug_registry_before_the_build():
     command = _clear_step_command()
     assert "! -name slugs.json" in command
     assert "! -name NOTICE.md" in command
+
+
+def test_report_urls_reads_the_shards_and_skips_the_index(tmp_path):
+    reports = tmp_path / "reports"
+    reports.mkdir()
+    (reports / "2024.json").write_text(
+        json.dumps([{"url": "https://b.example/x"}, {"url": None}, {"url": "https://a.example/y"}]),
+        encoding="utf-8",
+    )
+    (reports / "undated.json").write_text(json.dumps([{"url": "https://a.example/y"}]), encoding="utf-8")
+    (reports / "index.json").write_text(json.dumps({"total": 3, "years": {"2024": 2}}), encoding="utf-8")
+    assert cli.report_urls(tmp_path) == ["https://a.example/y", "https://b.example/x"]
