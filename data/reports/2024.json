@@ -1340,10 +1340,10 @@
   },
   {
     "id": "b2fcc8df93282696196d20c2c84266dcaf293c35",
-    "title": "The Curious Case of an Egg-Cellent Resume - The DFIR Report",
+    "title": "The Curious Case of an Egg-Cellent Resume",
     "published": "2024-12-02",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2024/12/02/the-curious-case-of-an-egg-cellent-resume/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b2fcc8df93282696196d20c2c84266dcaf293c35.pdf",
@@ -1401,7 +1401,8 @@
       "T1572"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -3403,6 +3404,23 @@
     ]
   },
   {
+    "id": "dfir:2024-10-28-inside-the-open-directory-of-the-you-dun-threat-group",
+    "title": "Inside the Open Directory of the “You Dun” Threat Group",
+    "published": "2024-10-28",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2024/10/28/inside-the-open-directory-of-the-you-dun-threat-group/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
+    ]
+  },
+  {
     "id": "fadb2d02c0d1ffcc9a87048700de5b1896869137",
     "title": "CloudScout: Evasive Panda scouting cloud services",
     "published": "2024-10-28",
@@ -5332,10 +5350,10 @@
   },
   {
     "id": "2d2b97a37fe5e90dcb511358ef5c177899f5f5f1",
-    "title": "Nitrogen Campaign Drops Sliver and Ends With BlackCat Ransomware - The DFIR Report",
+    "title": "Nitrogen Campaign Drops Sliver and Ends With BlackCat Ransomware",
     "published": "2024-09-30",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2024/09/30/nitrogen-campaign-drops-sliver-and-ends-with-blackcat-ransomware/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2d2b97a37fe5e90dcb511358ef5c177899f5f5f1.pdf",
@@ -5380,7 +5398,8 @@
       "T1570"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -7836,8 +7855,8 @@
     "id": "8f580a6b7195b359872695027f204ab54fd6e72b",
     "title": "BlackSuit Ransomware",
     "published": "2024-08-26",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2024/08/26/blacksuit-ransomware/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/8f580a6b7195b359872695027f204ab54fd6e72b.pdf",
@@ -7894,7 +7913,8 @@
       "T1569.002"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -8597,6 +8617,23 @@
     ],
     "sources": [
       "orkl"
+    ]
+  },
+  {
+    "id": "dfir:2024-08-12-threat-actors-toolkit-leveraging-sliver-poshc2-batch-scripts",
+    "title": "Threat Actors' Toolkit: Leveraging Sliver, PoshC2 & Batch Scripts",
+    "published": "2024-08-12",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2024/08/12/threat-actors-toolkit-leveraging-sliver-poshc2-batch-scripts/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
     ]
   },
   {
@@ -12356,6 +12393,84 @@
     ]
   },
   {
+    "id": "d2f3594bc3abe99b58c93498d4a80b3a84308728",
+    "title": "IcedID Brings ScreenConnect and CSharp Streamer to ALPHV Ransomware Deployment",
+    "published": "2024-06-10",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2024/06/10/icedid-brings-screenconnect-and-csharp-streamer-to-alphv-ransomware-deployment/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/d2f3594bc3abe99b58c93498d4a80b3a84308728.pdf",
+    "actors": [
+      "G0008",
+      "G0009",
+      "G0016",
+      "G0037",
+      "G0045",
+      "G0046",
+      "G0050",
+      "G0052",
+      "G0065",
+      "G0073",
+      "G0079",
+      "G0080",
+      "G0096",
+      "G0102",
+      "G0127",
+      "G0129",
+      "G0143",
+      "alpha-spider",
+      "earth-baxia",
+      "lunar-spider",
+      "ransomhub",
+      "tianwu",
+      "vice-spider"
+    ],
+    "actor_names_unresolved": [
+      "Winnti Umbrella"
+    ],
+    "cves": [],
+    "techniques": [
+      "T1003.001",
+      "T1003.006",
+      "T1016",
+      "T1018",
+      "T1020",
+      "T1021.001",
+      "T1033",
+      "T1039",
+      "T1053.005",
+      "T1059.001",
+      "T1059.003",
+      "T1059.005",
+      "T1069.002",
+      "T1070.004",
+      "T1071.001",
+      "T1078.002",
+      "T1082",
+      "T1083",
+      "T1087.001",
+      "T1087.002",
+      "T1135",
+      "T1197",
+      "T1204.002",
+      "T1213",
+      "T1218.010",
+      "T1218.011",
+      "T1219",
+      "T1482",
+      "T1486",
+      "T1560.001",
+      "T1566",
+      "T1569.002",
+      "T1614.001"
+    ],
+    "sources": [
+      "orkl",
+      "dfir"
+    ]
+  },
+  {
     "id": "df9b4e7887b2574d77ca794d702ee533443bf260",
     "title": "New Threat: A Deep Dive Into the Zergeca Botnet",
     "published": "2024-06-09",
@@ -14994,10 +15109,10 @@
   },
   {
     "id": "efb9ae16fbbdec7ecacab9e783f2475d0bdf09d1",
-    "title": "From IcedID to Dagon Locker Ransomware in 29 Days - The DFIR Report",
+    "title": "From IcedID to Dagon Locker Ransomware in 29 Days",
     "published": "2024-04-29",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2024/04/29/from-icedid-to-dagon-locker-ransomware-in-29-days/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/efb9ae16fbbdec7ecacab9e783f2475d0bdf09d1.pdf",
@@ -15045,7 +15160,8 @@
       "T1614.001"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -16989,8 +17105,8 @@
     "id": "051a69981cfdec4db89081a317572b13207fe85a",
     "title": "From OneNote to RansomNote: An Ice Cold Intrusion",
     "published": "2024-04-01",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2024/04/01/from-onenote-to-ransomnote-an-ice-cold-intrusion/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/051a69981cfdec4db89081a317572b13207fe85a.pdf",
@@ -17053,7 +17169,8 @@
       "T1566"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -18891,6 +19008,23 @@
     ]
   },
   {
+    "id": "dfir:2024-03-04-threat-brief-wordpress-exploit-leads-to-godzilla-web-shell-discovery-new-cve",
+    "title": "Threat Brief: WordPress Plugin Exploit Leads to Godzilla Web Shell, Discovery & New CVE",
+    "published": "2024-03-04",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2024/03/04/threat-brief-wordpress-exploit-leads-to-godzilla-web-shell-discovery-new-cve/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
+    ]
+  },
+  {
     "id": "68628fa55fc66a52cf15670c92405f44c44b894e",
     "title": "GitHub Bug Used to Infect Game Hackers With Lua Malware",
     "published": "2024-03-03",
@@ -19686,8 +19820,8 @@
     "id": "98656c9d160044911262ba48761c147e58a78340",
     "title": "SEO Poisoning to Domain Control: The Gootloader Saga Continues",
     "published": "2024-02-26",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2024/02/26/seo-poisoning-to-domain-control-the-gootloader-saga-continues/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/98656c9d160044911262ba48761c147e58a78340.pdf",
@@ -19698,7 +19832,8 @@
     "cves": [],
     "techniques": [],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -21941,6 +22076,23 @@
     "techniques": [],
     "sources": [
       "orkl"
+    ]
+  },
+  {
+    "id": "dfir:2024-01-29-buzzing-on-christmas-eve-trigona-ransomware-in-3-hours",
+    "title": "Buzzing on Christmas Eve: Trigona Ransomware in 3 Hours",
+    "published": "2024-01-29",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2024/01/29/buzzing-on-christmas-eve-trigona-ransomware-in-3-hours/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
     ]
   },
   {

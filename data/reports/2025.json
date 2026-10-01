@@ -178,6 +178,23 @@
     ]
   },
   {
+    "id": "eset:en-eset-research-revisiting-cve-2025-50165-critical-flaw-windows-imaging-component",
+    "title": "Revisiting CVE-2025-50165: A critical flaw in Windows Imaging Component",
+    "published": "2025-12-22",
+    "date_basis": "publisher",
+    "organisation": "ESET Research",
+    "url": "https://www.welivesecurity.com/en/eset-research/revisiting-cve-2025-50165-critical-flaw-windows-imaging-component/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "eset"
+    ]
+  },
+  {
     "id": "3fb8e3cf876ed07ad3f71fe286cd202c1d89dfb9",
     "title": "Operation Artemis: Analysis of HWP-Based DLL Side Loading Attacks",
     "published": "2025-12-21",
@@ -436,8 +453,8 @@
     "id": "89a95122b0a4d563a054163efc886c6053bff9c8",
     "title": "LongNosedGoblin tries to sniff out governmental affairs in Southeast Asia and Japan",
     "published": "2025-12-18",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "ESET Research",
     "url": "https://www.welivesecurity.com/en/eset-research/longnosedgoblin-tries-sniff-out-governmental-affairs-southeast-asia-japan/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/89a95122b0a4d563a054163efc886c6053bff9c8.pdf",
@@ -476,7 +493,8 @@
       "T1622"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "eset"
     ]
   },
   {
@@ -9362,6 +9380,23 @@
     ]
   },
   {
+    "id": "dfir:2025-06-30-hide-your-rdp-password-spray-leads-to-ransomhub-deployment",
+    "title": "Hide Your RDP: Password Spray Leads to RansomHub Deployment",
+    "published": "2025-06-30",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2025/06/30/hide-your-rdp-password-spray-leads-to-ransomhub-deployment/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
+    ]
+  },
+  {
     "id": "a8ce80f53b46d7e77ddca58569f849fd1d4faad4",
     "title": "c-b.io | RE // DFIR // CTF",
     "published": "2025-06-29",
@@ -11794,10 +11829,10 @@
   },
   {
     "id": "e6548e04d4a3a51fd485edb93e1fe3837bf19067",
-    "title": "Another Confluence Bites the Dust: Falling to ELPACO-team Ransomware - The DFIR Report",
+    "title": "Another Confluence Bites the Dust: Falling to ELPACO-team Ransomware",
     "published": "2025-05-19",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2025/05/19/another-confluence-bites-the-dust-falling-to-elpaco-team-ransomware/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e6548e04d4a3a51fd485edb93e1fe3837bf19067.pdf",
@@ -11838,7 +11873,8 @@
       "T1543.003"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -13045,6 +13081,23 @@
     "techniques": [],
     "sources": [
       "orkl"
+    ]
+  },
+  {
+    "id": "dfir:2025-04-28-navigating-through-the-fog",
+    "title": "Navigating Through The Fog",
+    "published": "2025-04-28",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2025/04/28/navigating-through-the-fog/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
     ]
   },
   {
@@ -15223,6 +15276,23 @@
     "techniques": [],
     "sources": [
       "orkl"
+    ]
+  },
+  {
+    "id": "dfir:2025-03-31-fake-zoom-ends-in-blacksuit-ransomware",
+    "title": "Fake Zoom Ends in BlackSuit Ransomware",
+    "published": "2025-03-31",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2025/03/31/fake-zoom-ends-in-blacksuit-ransomware/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
     ]
   },
   {
@@ -17650,6 +17720,23 @@
     ]
   },
   {
+    "id": "dfir:2025-02-24-confluence-exploit-leads-to-lockbit-ransomware",
+    "title": "Confluence Exploit Leads to LockBit Ransomware",
+    "published": "2025-02-24",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2025/02/24/confluence-exploit-leads-to-lockbit-ransomware/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
+    ]
+  },
+  {
     "id": "e6ad50610e7fbcbe8aa981c3d6f2323f7a1909f0",
     "title": "LCRYX Ransomware: How a VB Ransomware Locks Your System",
     "published": "2025-02-24",
@@ -19497,10 +19584,10 @@
   },
   {
     "id": "48b8addb3e40a7f846774985d88c3e591b143efa",
-    "title": "Cobalt Strike and a Pair of SOCKS Lead to LockBit Ransomware - The DFIR Report",
+    "title": "Cobalt Strike and a Pair of SOCKS Lead to LockBit Ransomware",
     "published": "2025-01-27",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2025/01/27/cobalt-strike-and-a-pair-of-socks-lead-to-lockbit-ransomware/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/48b8addb3e40a7f846774985d88c3e591b143efa.pdf",
@@ -19538,7 +19625,8 @@
       "T1615"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {

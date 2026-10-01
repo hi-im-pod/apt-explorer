@@ -76,7 +76,8 @@ MIN_FUZZY_SIMILARITY = 0.8
 
 # How a source is named in a sentence a reader sees. The order is the order of the list.
 _SOURCE_NAMES = {"attack": "ATT&CK", "misp": "MISP", "etda": "ETDA", "malpedia": "Malpedia", "orkl": "ORKL",
-                 "kev": "CISA KEV", "dfir": "The DFIR Report", "paper": "the paper", "microsoft": "Microsoft", "epss": "EPSS"}
+                 "kev": "CISA KEV", "dfir": "The DFIR Report", "paper": "the paper", "microsoft": "Microsoft", "epss": "EPSS",
+                 "talos": "Cisco Talos", "eset": "ESET", "microsoftblog": "Microsoft Security"}
 
 _NON_WORD = re.compile(r"[^\w]+")
 _NUMBERS = re.compile(r"\d+")

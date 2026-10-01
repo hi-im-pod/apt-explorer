@@ -67,6 +67,21 @@ export const SOURCE_LABELS: Readonly<Record<SourceKey, SourceLabel>> = {
 		name: 'EPSS exploit prediction scores',
 		short: 'EPSS',
 		role: 'The modelled chance that each listed CVE is exploited in the next 30 days.'
+	},
+	talos: {
+		name: 'Cisco Talos blog',
+		short: 'Talos',
+		role: 'Titles, dates and links for Talos research posts.'
+	},
+	eset: {
+		name: 'ESET WeLiveSecurity blog',
+		short: 'ESET',
+		role: 'Titles, dates and links for ESET blog posts.'
+	},
+	microsoftblog: {
+		name: 'Microsoft Security blog',
+		short: 'MS Security',
+		role: 'Titles, dates and links for Microsoft Security blog posts.'
 	}
 };
 

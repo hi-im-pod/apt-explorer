@@ -4775,8 +4775,8 @@
     "id": "a33062f301411b934bbbd17ce600b4e994063a8e",
     "title": "Emotet Strikes Again - LNK File Leads to Domain Wide Ransomware",
     "published": "2022-11-28",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2022/11/28/emotet-strikes-again-lnk-file-leads-to-domain-wide-ransomware/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a33062f301411b934bbbd17ce600b4e994063a8e.pdf",
@@ -4814,7 +4814,8 @@
       "T1570"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -6526,6 +6527,23 @@
     "techniques": [],
     "sources": [
       "orkl"
+    ]
+  },
+  {
+    "id": "dfir:2022-11-14-bumblebee-zeros-in-on-meterpreter",
+    "title": "BumbleBee Zeros in on Meterpreter",
+    "published": "2022-11-14",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2022/11/14/bumblebee-zeros-in-on-meterpreter/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
     ]
   },
   {
@@ -8313,6 +8331,23 @@
     "techniques": [],
     "sources": [
       "orkl"
+    ]
+  },
+  {
+    "id": "dfir:2022-10-31-follina-exploit-leads-to-domain-compromise",
+    "title": "Follina Exploit Leads to Domain Compromise",
+    "published": "2022-10-31",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2022/10/31/follina-exploit-leads-to-domain-compromise/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
     ]
   },
   {
@@ -13867,8 +13902,8 @@
     "id": "cd5742992501ef75e3297ebd6bf29b404dd505a9",
     "title": "BumbleBee: Round Two",
     "published": "2022-09-26",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2022/09/26/bumblebee-round-two/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/cd5742992501ef75e3297ebd6bf29b404dd505a9.pdf",
@@ -13922,7 +13957,8 @@
       "T1570"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -16617,10 +16653,10 @@
   },
   {
     "id": "f991ff9f99d7377f2bbe581513b076c4315664ca",
-    "title": "Dead or Alive? An Emotet Story - The DFIR Report",
+    "title": "Dead or Alive? An Emotet Story",
     "published": "2022-09-12",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2022/09/12/dead-or-alive-an-emotet-story/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f991ff9f99d7377f2bbe581513b076c4315664ca.pdf",
@@ -16677,7 +16713,8 @@
       "T1570"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -24937,10 +24974,10 @@
   },
   {
     "id": "c2b59de92052209cbcb40bbe53c4c82efb43ed02",
-    "title": "BumbleBee Roasts Its Way to Domain Admin - The DFIR Report",
+    "title": "BumbleBee Roasts Its Way to Domain Admin",
     "published": "2022-08-08",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2022/08/08/bumblebee-roasts-its-way-to-domain-admin/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c2b59de92052209cbcb40bbe53c4c82efb43ed02.pdf",
@@ -25003,7 +25040,8 @@
       "T1570"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -31036,8 +31074,8 @@
     "id": "776f531892b1f77d433cc9d50ffaf806bf466e11",
     "title": "SELECT XMRig FROM SQLServer",
     "published": "2022-07-11",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2022/07/11/select-xmrig-from-sqlserver/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/776f531892b1f77d433cc9d50ffaf806bf466e11.pdf",
@@ -31060,7 +31098,8 @@
       "T1564.002"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -35853,6 +35892,23 @@
     ]
   },
   {
+    "id": "dfir:2022-06-16-sans-ransomware-summit-2022-can-you-detect-this",
+    "title": "SANS Ransomware Summit 2022, Can You Detect This?",
+    "published": "2022-06-16",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2022/06/16/sans-ransomware-summit-2022-can-you-detect-this/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
+    ]
+  },
+  {
     "id": "08f835dd4d4863545f4b4edfd1ceb35c0e1c2905",
     "title": "First Conti, then Hive: Costa Rica gets hit with ransomware again",
     "published": "2022-06-15",
@@ -37717,6 +37773,23 @@
     "techniques": [],
     "sources": [
       "orkl"
+    ]
+  },
+  {
+    "id": "dfir:2022-06-06-will-the-real-msiexec-please-stand-up-exploit-leads-to-data-exfiltration",
+    "title": "Will the Real Msiexec Please Stand Up? Exploit Leads to Data Exfiltration",
+    "published": "2022-06-06",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2022/06/06/will-the-real-msiexec-please-stand-up-exploit-leads-to-data-exfiltration/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
     ]
   },
   {
@@ -45827,8 +45900,8 @@
     "id": "fd826df6a1a0e5f8bffba5cd046d5401ad065143",
     "title": "SEO Poisoning - A Gootloader Story",
     "published": "2022-05-09",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2022/05/09/seo-poisoning-a-gootloader-story/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/fd826df6a1a0e5f8bffba5cd046d5401ad065143.pdf",
@@ -45882,7 +45955,8 @@
       "T1615"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -51417,8 +51491,8 @@
     "id": "afbf53ebfe87e135ff606a8cd45883bcb6778610",
     "title": "Quantum Ransomware",
     "published": "2022-04-25",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2022/04/25/quantum-ransomware/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/afbf53ebfe87e135ff606a8cd45883bcb6778610.pdf",
@@ -51470,7 +51544,8 @@
       "T1614.001"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -59397,8 +59472,8 @@
     "id": "480660da5c8100c5dfd39c14a1043a57a75992fe",
     "title": "Stolen Images Campaign Ends in Conti Ransomware",
     "published": "2022-04-04",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2022/04/04/stolen-images-campaign-ends-in-conti-ransomware/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/480660da5c8100c5dfd39c14a1043a57a75992fe.pdf",
@@ -59436,7 +59511,8 @@
       "T1614.001"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -67110,6 +67186,23 @@
     ]
   },
   {
+    "id": "dfir:2022-03-21-phosphorus-automates-initial-access-using-proxyshell",
+    "title": "PHOSPHORUS Automates Initial Access Using ProxyShell",
+    "published": "2022-03-21",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2022/03/21/phosphorus-automates-initial-access-using-proxyshell/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
+    ]
+  },
+  {
     "id": "e3e28d4b87314e087cff9491bef8566028f1b90c",
     "title": "VPN Appliance Forensics – Compass Security Blog",
     "published": "2022-03-21",
@@ -72343,8 +72436,8 @@
     "id": "5b984bbed623c6fb862952fb0f8fd70eb9aff4f0",
     "title": "2021 Year In Review",
     "published": "2022-03-07",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2022/03/07/2021-year-in-review/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5b984bbed623c6fb862952fb0f8fd70eb9aff4f0.pdf",
@@ -72374,7 +72467,8 @@
     "cves": [],
     "techniques": [],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -80100,8 +80194,8 @@
     "id": "4f2ff67f3e384e7900fd3e22ba239b1abb2cb525",
     "title": "Qbot and Zerologon Lead To Full Domain Compromise",
     "published": "2022-02-21",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2022/02/21/qbot-and-zerologon-lead-to-full-domain-compromise/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4f2ff67f3e384e7900fd3e22ba239b1abb2cb525.pdf",
@@ -80152,7 +80246,8 @@
       "T1569.002"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -85255,8 +85350,8 @@
     "id": "ef2c299062baee9399dd53920e6af279b2154936",
     "title": "Qbot Likes to Move It, Move It",
     "published": "2022-02-07",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2022/02/07/qbot-likes-to-move-it-move-it/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ef2c299062baee9399dd53920e6af279b2154936.pdf",
@@ -85283,7 +85378,8 @@
       "T1555.003"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -89894,8 +89990,8 @@
     "id": "56a1c4f26464cd35679bfed01d11b3dd39bbf402",
     "title": "Cobalt Strike, a Defender’s Guide - Part 2",
     "published": "2022-01-24",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2022/01/24/cobalt-strike-a-defenders-guide-part-2/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/56a1c4f26464cd35679bfed01d11b3dd39bbf402.pdf",
@@ -89925,7 +90021,8 @@
     "cves": [],
     "techniques": [],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {

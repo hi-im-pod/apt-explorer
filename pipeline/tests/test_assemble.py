@@ -14,7 +14,7 @@ NOW = "2026-09-30T04:00:00Z"
 SNAP = "2026-09-28"
 POLICIES = {"attack": "full", "misp": "full", "etda": "derived-only", "malpedia": "derived-only",
             "orkl": "link-only", "kev": "full", "dfir": "link-only", "paper": "full", "microsoft": "full",
-            "epss": "full"}
+            "epss": "full", "talos": "link-only", "eset": "link-only", "microsoftblog": "link-only"}
 TECHNIQUES = frozenset({"T1059", "T1105", "T1190", "T1566", "T1566.002", "T1505.003", "T1090.003"})
 FACTS = BuildFacts(copyright_year="2026", valid_techniques=TECHNIQUES,
                    snapshot_dates={key: SNAP for key in SOURCE_ORDER})

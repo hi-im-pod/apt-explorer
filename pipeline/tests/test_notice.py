@@ -38,7 +38,8 @@ def test_a_missing_or_malformed_year_stops_the_build(year):
 
 def test_every_source_is_credited_once_in_a_fixed_order():
     text = render_notice("2026")
-    assert SOURCE_ORDER == ("attack", "misp", "etda", "malpedia", "orkl", "kev", "dfir", "paper", "microsoft", "epss")
+    assert SOURCE_ORDER == ("attack", "misp", "etda", "malpedia", "orkl", "kev", "dfir", "paper", "microsoft", "epss",
+                            "talos", "eset", "microsoftblog")
     assert set(SOURCE_INFO) == set(SOURCE_ORDER)
     for key in SOURCE_ORDER[1:]:
         assert text.count(f"(`{key}`)") == 1

@@ -41,6 +41,7 @@ from aptx.sources.microsoft import MicrosoftConnector
 from aptx.sources.misp import MispConnector
 from aptx.sources.orkl import OrklConnector
 from aptx.sources.paper import PaperConnector
+from aptx.sources.vendors import EsetConnector, MicrosoftBlogConnector, TalosConnector
 
 log = logging.getLogger("aptx")
 
@@ -58,10 +59,10 @@ LINK_STATUS = Path("links") / "status.json"
 
 
 def default_connectors() -> list[Connector]:
-    """The ten sources, listed here and nowhere else, in the order notice.SOURCE_ORDER uses."""
+    """The thirteen sources, listed here and nowhere else, in the order notice.SOURCE_ORDER uses."""
     return [AttackConnector(), MispConnector(), EtdaConnector(), MalpediaConnector(),
             OrklConnector(), KevConnector(), DfirConnector(), PaperConnector(), MicrosoftConnector(),
-            EpssConnector()]
+            EpssConnector(), TalosConnector(), EsetConnector(), MicrosoftBlogConnector()]
 
 
 # Small JSON files in the snapshot store

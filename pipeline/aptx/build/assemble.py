@@ -93,7 +93,7 @@ MAX_UNRESOLVED_NAMES = 200
 
 # Where a report's title, organisation and original URL come from when sources
 # disagree: the publisher's own feed first, then ORKL, then the paper's dataset.
-_REPORT_PRIORITY = {"dfir": 0, "orkl": 1, "paper": 2}
+_REPORT_PRIORITY = {"dfir": 0, "talos": 0, "eset": 0, "microsoftblog": 0, "orkl": 1, "paper": 2}
 
 # Which date wins when records of one report disagree, best evidence first.
 _BASIS_RANK = {"publisher": 0, "malpedia-library": 1, "paper": 2, "title-date": 3, "file-metadata": 4, "orkl-ingest": 5}

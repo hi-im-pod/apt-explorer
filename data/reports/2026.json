@@ -1,10 +1,231 @@
 [
   {
+    "id": "microsoftblog:en-us-security-blog-2026-09-30-secure-whats-next-your-guide-to-microsoft-security-at-microsoft-ignite-2026",
+    "title": "​​Secure what’s next: Your guide to Microsoft Security at Microsoft Ignite 2026",
+    "published": "2026-09-30",
+    "date_basis": "publisher",
+    "organisation": "Microsoft Security",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/30/secure-whats-next-your-guide-to-microsoft-security-at-microsoft-ignite-2026/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "microsoftblog"
+    ]
+  },
+  {
+    "id": "microsoftblog:en-us-security-blog-2026-09-30-unauthenticated-command-injection-on-internet-facing-mail-servers-tracking-cve-2026-73570",
+    "title": "Unauthenticated command injection on internet-facing mail servers: tracking CVE-2026-73570",
+    "published": "2026-09-30",
+    "date_basis": "publisher",
+    "organisation": "Microsoft Security",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/30/unauthenticated-command-injection-on-internet-facing-mail-servers-tracking-cve-2026-73570/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "microsoftblog"
+    ]
+  },
+  {
+    "id": "talos:china-nexus-uat-11587-targets-government-and-policy-organizations-across-asia-with-antino-backdoor",
+    "title": "China-nexus UAT-11587 targets government and policy organizations across Asia with Antino backdoor",
+    "published": "2026-09-30",
+    "date_basis": "publisher",
+    "organisation": "Cisco Talos",
+    "url": "https://blog.talosintelligence.com/china-nexus-uat-11587-targets-government-and-policy-organizations-across-asia-with-antino-backdoor/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "talos"
+    ]
+  },
+  {
+    "id": "microsoftblog:en-us-security-blog-2026-09-29-beyond-source-code-a-path-to-the-keys-to-the-kingdom",
+    "title": "​​Beyond source code: A path to the keys to the kingdom",
+    "published": "2026-09-29",
+    "date_basis": "publisher",
+    "organisation": "Microsoft Security",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/29/beyond-source-code-a-path-to-the-keys-to-the-kingdom/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "microsoftblog"
+    ]
+  },
+  {
+    "id": "microsoftblog:en-us-security-blog-2026-09-29-phishing-abuses-rmm-tools-persistent-access",
+    "title": "Phishing Abuses RMM Tools for Persistent Access",
+    "published": "2026-09-29",
+    "date_basis": "publisher",
+    "organisation": "Microsoft Security",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/29/phishing-abuses-rmm-tools-persistent-access/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "microsoftblog"
+    ]
+  },
+  {
+    "id": "microsoftblog:en-us-security-blog-2026-09-29-star-blizzard-refines-phishing-and-malware-delivery-with-the-redflick-technique",
+    "title": "Star Blizzard refines phishing and malware delivery with the RedFlick technique",
+    "published": "2026-09-29",
+    "date_basis": "publisher",
+    "organisation": "Microsoft Security",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/29/star-blizzard-refines-phishing-and-malware-delivery-with-the-redflick-technique/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "microsoftblog"
+    ]
+  },
+  {
+    "id": "talos:securing-the-keys-to-the-kingdom-announcing-executive-threat-detection",
+    "title": "Securing the keys to the kingdom: Announcing Executive Threat Detection",
+    "published": "2026-09-29",
+    "date_basis": "publisher",
+    "organisation": "Cisco Talos",
+    "url": "https://blog.talosintelligence.com/securing-the-keys-to-the-kingdom-announcing-executive-threat-detection/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "talos"
+    ]
+  },
+  {
+    "id": "microsoftblog:en-us-security-blog-2026-09-28-needymantis-unpacking-a-post-compromise-malware-family-used-in-targeted-operations",
+    "title": "NeedyMantis: Unpacking a post-compromise malware family used in targeted operations",
+    "published": "2026-09-28",
+    "date_basis": "publisher",
+    "organisation": "Microsoft Security",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/28/needymantis-unpacking-a-post-compromise-malware-family-used-in-targeted-operations/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "microsoftblog"
+    ]
+  },
+  {
+    "id": "microsoftblog:en-us-security-blog-2026-09-25-storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals",
+    "title": "Storm-3168: Agentic-driven cloud attacks using compromised service principals",
+    "published": "2026-09-25",
+    "date_basis": "publisher",
+    "organisation": "Microsoft Security",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "microsoftblog"
+    ]
+  },
+  {
+    "id": "microsoftblog:en-us-security-blog-2026-09-24-beyond-ransomware-tracking-storm-2570-consistent-tradecraft-across-deployments",
+    "title": "Beyond the ransomware: Tracking Storm-2570’s consistent tradecraft across deployments",
+    "published": "2026-09-24",
+    "date_basis": "publisher",
+    "organisation": "Microsoft Security",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/24/beyond-ransomware-tracking-storm-2570-consistent-tradecraft-across-deployments/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "microsoftblog"
+    ]
+  },
+  {
+    "id": "microsoftblog:en-us-security-blog-2026-09-24-whats-new-in-microsoft-security-september-2026",
+    "title": "​​​​​​​​What’s new in Microsoft Security: September 2026​​",
+    "published": "2026-09-24",
+    "date_basis": "publisher",
+    "organisation": "Microsoft Security",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/24/whats-new-in-microsoft-security-september-2026/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "microsoftblog"
+    ]
+  },
+  {
+    "id": "talos:trust-and-the-enticing-consultancy-offer",
+    "title": "Trust and the enticing consultancy offer",
+    "published": "2026-09-24",
+    "date_basis": "publisher",
+    "organisation": "Cisco Talos",
+    "url": "https://blog.talosintelligence.com/trust-and-the-enticing-consultancy-offer/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "talos"
+    ]
+  },
+  {
+    "id": "microsoftblog:en-us-security-blog-2026-09-23-reimagining-the-soc-for-the-agentic-era-in-microsoft-defender",
+    "title": "Reimagining the SOC for the agentic era in Microsoft Defender",
+    "published": "2026-09-23",
+    "date_basis": "publisher",
+    "organisation": "Microsoft Security",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/23/reimagining-the-soc-for-the-agentic-era-in-microsoft-defender/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "microsoftblog"
+    ]
+  },
+  {
     "id": "19f38ef695903486bbe533ed0b22733c8766f725",
     "title": "The Closed Quorum: Inside the first reported autonomous AI C2 implant",
     "published": "2026-09-22",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "Cisco Talos",
     "url": "https://blog.talosintelligence.com/the-closed-quorum-inside-the-first-reported-autonomous-ai-c2-implant/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/19f38ef695903486bbe533ed0b22733c8766f725.pdf",
@@ -35,7 +256,25 @@
       "T1685"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "talos"
+    ]
+  },
+  {
+    "id": "talos:introducing-cairn-frontier-tracking-for-ai-integrated-malware",
+    "title": "Introducing CAIRN: Frontier tracking for AI-integrated malware",
+    "published": "2026-09-22",
+    "date_basis": "publisher",
+    "organisation": "Cisco Talos",
+    "url": "https://blog.talosintelligence.com/introducing-cairn-frontier-tracking-for-ai-integrated-malware/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "talos"
     ]
   },
   {
@@ -148,8 +387,8 @@
     "id": "0bbe08391e07869882c39a9bbe8de8537363be06",
     "title": "Beware the SparroWock: The backdoor that bites, the commands that catch",
     "published": "2026-09-17",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "ESET Research",
     "url": "https://www.welivesecurity.com/en/eset-research/beware-sparrowock-backdoor-bites-commands-catch/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/0bbe08391e07869882c39a9bbe8de8537363be06.pdf",
@@ -195,7 +434,8 @@
       "T1680"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "eset"
     ]
   },
   {
@@ -215,6 +455,57 @@
     "techniques": [],
     "sources": [
       "orkl"
+    ]
+  },
+  {
+    "id": "talos:ransomware-incidents-in-japan-in-the-first-half-of-2026",
+    "title": "Ransomware incidents in Japan in the first half of 2026: Investigation of The Gentlemen’s infrastructure and evidence of Qilin's AI use",
+    "published": "2026-09-17",
+    "date_basis": "publisher",
+    "organisation": "Cisco Talos",
+    "url": "https://blog.talosintelligence.com/ransomware-incidents-in-japan-in-the-first-half-of-2026/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "talos"
+    ]
+  },
+  {
+    "id": "talos:should-you-care-about-an-ai-slowdown",
+    "title": "Should you care about an “AI slowdown?”",
+    "published": "2026-09-17",
+    "date_basis": "publisher",
+    "organisation": "Cisco Talos",
+    "url": "https://blog.talosintelligence.com/should-you-care-about-an-ai-slowdown/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "talos"
+    ]
+  },
+  {
+    "id": "talos:securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities",
+    "title": "Securing the unpatchable in an age of AI-driven vulnerabilities",
+    "published": "2026-09-16",
+    "date_basis": "publisher",
+    "organisation": "Cisco Talos",
+    "url": "https://blog.talosintelligence.com/securing-the-unpatchable-in-an-age-of-ai-driven-vulnerabilities/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "talos"
     ]
   },
   {
@@ -286,6 +577,23 @@
     ]
   },
   {
+    "id": "talos:weve-got-one-word-for-it-and-its-usually-the-wrong-one",
+    "title": "We've got one word for it, and it's usually the wrong one",
+    "published": "2026-09-10",
+    "date_basis": "publisher",
+    "organisation": "Cisco Talos",
+    "url": "https://blog.talosintelligence.com/weve-got-one-word-for-it-and-its-usually-the-wrong-one/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "talos"
+    ]
+  },
+  {
     "id": "30230640d02274696585ba21e4ece09908a664ad",
     "title": "Koktevrat – wieloetapowy Android RAT dystrybuowany pod przykrywką aplikacji MandatGO",
     "published": "2026-09-09",
@@ -300,6 +608,74 @@
     "techniques": [],
     "sources": [
       "orkl"
+    ]
+  },
+  {
+    "id": "talos:fmc-ongoing-exploitation",
+    "title": "Active exploitation of Cisco Secure Firewall Management Center vulnerabilities",
+    "published": "2026-09-09",
+    "date_basis": "publisher",
+    "organisation": "Cisco Talos",
+    "url": "https://blog.talosintelligence.com/fmc-ongoing-exploitation/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "talos"
+    ]
+  },
+  {
+    "id": "talos:clearfake-webdav-infection-chain",
+    "title": "ClearFake WebDAV infection chain delivers Amatera stealer, ZigCryptoStealer, and NetSupport Manager",
+    "published": "2026-09-08",
+    "date_basis": "publisher",
+    "organisation": "Cisco Talos",
+    "url": "https://blog.talosintelligence.com/clearfake-webdav-infection-chain/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "talos"
+    ]
+  },
+  {
+    "id": "talos:clickfix-moves-into-the-browser",
+    "title": "ClickFix moves into the browser: Cryptocurrency theft with Google-hosted C2",
+    "published": "2026-09-08",
+    "date_basis": "publisher",
+    "organisation": "Cisco Talos",
+    "url": "https://blog.talosintelligence.com/clickfix-moves-into-the-browser/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "talos"
+    ]
+  },
+  {
+    "id": "talos:microsoft-patch-tuesday-for-september-2026",
+    "title": "Microsoft Patch Tuesday for September 2026 — Snort rules and prominent vulnerabilities",
+    "published": "2026-09-08",
+    "date_basis": "publisher",
+    "organisation": "Cisco Talos",
+    "url": "https://blog.talosintelligence.com/microsoft-patch-tuesday-for-september-2026/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "talos"
     ]
   },
   {
@@ -581,6 +957,23 @@
     ]
   },
   {
+    "id": "talos:the-story-behind-the-intelligence",
+    "title": "The story behind the intelligence",
+    "published": "2026-09-03",
+    "date_basis": "publisher",
+    "organisation": "Cisco Talos",
+    "url": "https://blog.talosintelligence.com/the-story-behind-the-intelligence/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "talos"
+    ]
+  },
+  {
     "id": "5e6b50aa2a88166871508bd5d11464b42367c359",
     "title": "Fake GlobalProtect MSI Targets Myanmar Using Cloudflare and Google Sheets as C2",
     "published": "2026-09-02",
@@ -739,6 +1132,23 @@
     ],
     "sources": [
       "orkl"
+    ]
+  },
+  {
+    "id": "talos:sorry-i-cant-help-with-that-how-your-guardrails-might-become-the-attackers-best-friend",
+    "title": "“Sorry, I can’t help with that”: How your guardrails might become the attacker’s best friend",
+    "published": "2026-08-27",
+    "date_basis": "publisher",
+    "organisation": "Cisco Talos",
+    "url": "https://blog.talosintelligence.com/sorry-i-cant-help-with-that-how-your-guardrails-might-become-the-attackers-best-friend/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "talos"
     ]
   },
   {
@@ -3113,6 +3523,23 @@
     ]
   },
   {
+    "id": "eset:en-eset-research-forgotten-uefi-shims-undermining-secure-boot",
+    "title": "Forgotten UEFI shims undermining Secure Boot",
+    "published": "2026-07-14",
+    "date_basis": "publisher",
+    "organisation": "ESET Research",
+    "url": "https://www.welivesecurity.com/en/eset-research/forgotten-uefi-shims-undermining-secure-boot/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "eset"
+    ]
+  },
+  {
     "id": "f31e53112c633447c83173d07c91799cb246f4f2",
     "title": "Sequel to ChainVeil npm malware: ViteVenom - Checkmarx Zero",
     "published": "2026-07-14",
@@ -3165,6 +3592,23 @@
     "techniques": [],
     "sources": [
       "orkl"
+    ]
+  },
+  {
+    "id": "eset:en-eset-research-eset-threat-report-h1-2026",
+    "title": "ESET Threat Report H1 2026",
+    "published": "2026-07-08",
+    "date_basis": "publisher",
+    "organisation": "ESET Research",
+    "url": "https://www.welivesecurity.com/en/eset-research/eset-threat-report-h1-2026/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "eset"
     ]
   },
   {
@@ -3365,8 +3809,8 @@
     "id": "13c9ba1cc9daa8f77f5006055e587253d078d6ca",
     "title": "Gamaredon in 2025: Leveraging tunnels, workers, dead drops, and new alliances",
     "published": "2026-06-25",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "ESET Research",
     "url": "https://www.welivesecurity.com/en/eset-research/gamaredon-2025-leveraging-tunnels-workers-dead-drops-new-alliances/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/13c9ba1cc9daa8f77f5006055e587253d078d6ca.pdf",
@@ -3381,7 +3825,8 @@
     ],
     "techniques": [],
     "sources": [
-      "orkl"
+      "orkl",
+      "eset"
     ]
   },
   {
@@ -3445,6 +3890,23 @@
     ]
   },
   {
+    "id": "eset:en-eset-research-eset-takes-part-operation-endgame-disrupt-amadey-stealc",
+    "title": "ESET takes part in Operation Endgame to disrupt Amadey and Stealc",
+    "published": "2026-06-24",
+    "date_basis": "publisher",
+    "organisation": "ESET Research",
+    "url": "https://www.welivesecurity.com/en/eset-research/eset-takes-part-operation-endgame-disrupt-amadey-stealc/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "eset"
+    ]
+  },
+  {
     "id": "f7fb11c0eeab60c7d42bb8f7e3eb22f79804e6f5",
     "title": "Amadey and StealC: Malware-as-a-Service Unavailable",
     "published": "2026-06-24",
@@ -3465,8 +3927,8 @@
     "id": "19e036bc976ca7c072f5549832bf534df1c7c785",
     "title": "Killing me gently: Inside Gentlemen’s EDR killer framework",
     "published": "2026-06-18",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "ESET Research",
     "url": "https://www.welivesecurity.com/en/eset-research/killing-me-gently-inside-gentlemens-edr-killer-framework/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/19e036bc976ca7c072f5549832bf534df1c7c785.pdf",
@@ -3485,7 +3947,8 @@
       "T1685"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "eset"
     ]
   },
   {
@@ -3544,6 +4007,25 @@
     ]
   },
   {
+    "id": "eset:en-eset-research-fishmongers-arsenal-upgraded-sprysocks-windows",
+    "title": "FishMonger’s arsenal upgraded: SprySOCKS for Windows",
+    "published": "2026-06-16",
+    "date_basis": "publisher",
+    "organisation": "ESET Research",
+    "url": "https://www.welivesecurity.com/en/eset-research/fishmongers-arsenal-upgraded-sprysocks-windows/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [
+      "G1006"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "eset"
+    ]
+  },
+  {
     "id": "267c78beee543c458bad5f06f49375a85480c740",
     "title": "ホテル業界を標的とした不審メールの分析（パート1: キャンペーン概要編）",
     "published": "2026-06-11",
@@ -3592,6 +4074,23 @@
     "techniques": [],
     "sources": [
       "orkl"
+    ]
+  },
+  {
+    "id": "eset:en-eset-research-oceanlotus-external-espionage-domestic-targeting",
+    "title": "OceanLotus: From external espionage to domestic targeting",
+    "published": "2026-06-11",
+    "date_basis": "publisher",
+    "organisation": "ESET Research",
+    "url": "https://www.welivesecurity.com/en/eset-research/oceanlotus-external-espionage-domestic-targeting/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "eset"
     ]
   },
   {
@@ -3908,6 +4407,23 @@
     ]
   },
   {
+    "id": "eset:en-eset-research-eset-apt-activity-report-q4-2025-q1-2026",
+    "title": "ESET APT Activity Report Q4 2025–Q1 2026",
+    "published": "2026-05-28",
+    "date_basis": "publisher",
+    "organisation": "ESET Research",
+    "url": "https://www.welivesecurity.com/en/eset-research/eset-apt-activity-report-q4-2025-q1-2026/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "eset"
+    ]
+  },
+  {
     "id": "fd1312beb750f6210a8d4251c11b10229621f265",
     "title": "GREYVIBE: A Russia-nexus group leveraging AI across state-aligned operations - WithSecure™",
     "published": "2026-05-28",
@@ -4115,6 +4631,23 @@
     ]
   },
   {
+    "id": "eset:en-eset-research-webworm-new-burrowing-techniques",
+    "title": "Webworm: New burrowing techniques",
+    "published": "2026-05-20",
+    "date_basis": "publisher",
+    "organisation": "ESET Research",
+    "url": "https://www.welivesecurity.com/en/eset-research/webworm-new-burrowing-techniques/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "eset"
+    ]
+  },
+  {
     "id": "24b2c0cd8aaa5149844c69c1e96744d81febe212",
     "title": "Disrupting Fox Tempest: A cybercrime service that turned “verified” software into a pathway for ransomware",
     "published": "2026-05-19",
@@ -4312,8 +4845,8 @@
     "id": "044f17d2b0b222b8bf06787200d521bc2ac26d86",
     "title": "FrostyNeighbor: Fresh mischief and digital shenanigans",
     "published": "2026-05-14",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "ESET Research",
     "url": "https://www.welivesecurity.com/en/eset-research/frostyneighbor-fresh-mischief-digital-shenanigans/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/044f17d2b0b222b8bf06787200d521bc2ac26d86.pdf",
@@ -4362,7 +4895,8 @@
       "T1608"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "eset"
     ]
   },
   {
@@ -4641,6 +5175,23 @@
     ]
   },
   {
+    "id": "eset:en-eset-research-fake-call-logs-real-payments-how-callphantom-tricks-android-users",
+    "title": "Fake call logs, real payments: How CallPhantom tricks Android users",
+    "published": "2026-05-07",
+    "date_basis": "publisher",
+    "organisation": "ESET Research",
+    "url": "https://www.welivesecurity.com/en/eset-research/fake-call-logs-real-payments-how-callphantom-tricks-android-users/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "eset"
+    ]
+  },
+  {
     "id": "a9d483f7f223e2fc68e5290ed43680e87f32700d",
     "title": "TCLBANKER: Brazilian Banking Trojan Spreading via WhatsApp and Outlook",
     "published": "2026-05-06",
@@ -4678,8 +5229,8 @@
     "id": "68b4b737b3c7a1f57bee8e279500eacaab3b2930",
     "title": "A rigged game: ScarCruft compromises gaming platform in a supply-chain attack",
     "published": "2026-05-05",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "ESET Research",
     "url": "https://www.welivesecurity.com/en/eset-research/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/68b4b737b3c7a1f57bee8e279500eacaab3b2930.pdf",
@@ -4738,7 +5289,8 @@
       "T1646"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "eset"
     ]
   },
   {
@@ -8058,6 +8610,23 @@
     ]
   },
   {
+    "id": "eset:en-eset-research-gopherwhisper-burrow-full-malware",
+    "title": "GopherWhisper: A burrow full of malware",
+    "published": "2026-04-23",
+    "date_basis": "publisher",
+    "organisation": "ESET Research",
+    "url": "https://www.welivesecurity.com/en/eset-research/gopherwhisper-burrow-full-malware/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "eset"
+    ]
+  },
+  {
     "id": "3434003b39057dce2a171f8f276f0bc26d53f2d5",
     "title": "Mustang Panda Strikes India and South Korea with Updated LOTUSLITE Backdoor in Espionage Campaign",
     "published": "2026-04-22",
@@ -8213,6 +8782,23 @@
     "techniques": [],
     "sources": [
       "orkl"
+    ]
+  },
+  {
+    "id": "eset:en-eset-research-new-ngate-variant-hides-in-a-trojanized-nfc-payment-app",
+    "title": "New NGate variant hides in a trojanized NFC payment app",
+    "published": "2026-04-21",
+    "date_basis": "publisher",
+    "organisation": "ESET Research",
+    "url": "https://www.welivesecurity.com/en/eset-research/new-ngate-variant-hides-in-a-trojanized-nfc-payment-app/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "eset"
     ]
   },
   {
@@ -48185,42 +48771,6 @@
     ]
   },
   {
-    "id": "693e7f65b26b8441b3cbf4fa37ecec8a33c2be4a",
-    "title": "Collect, Exfiltrate, Sleep, Repeat - The DFIR Report",
-    "published": "2026-04-06",
-    "date_basis": "orkl-ingest",
-    "organisation": null,
-    "url": "https://thedfirreport.com/2023/02/06/collect-exfiltrate-sleep-repeat/",
-    "url_ok": null,
-    "archive_url": "https://archive.orkl.eu/693e7f65b26b8441b3cbf4fa37ecec8a33c2be4a.pdf",
-    "actors": [],
-    "actor_names_unresolved": [],
-    "cves": [],
-    "techniques": [
-      "T1007",
-      "T1033",
-      "T1049",
-      "T1053",
-      "T1056.001",
-      "T1057",
-      "T1059.001",
-      "T1082",
-      "T1083",
-      "T1087.002",
-      "T1112",
-      "T1113",
-      "T1124",
-      "T1204.002",
-      "T1518.001",
-      "T1560.001",
-      "T1566",
-      "T1573.001"
-    ],
-    "sources": [
-      "orkl"
-    ]
-  },
-  {
     "id": "6943346c2f2fe8226ff1f32d6d141779f7beda2f",
     "title": "Federate Google Cloud with Active Directory",
     "published": "2026-04-06",
@@ -71480,39 +72030,6 @@
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
-    "sources": [
-      "orkl"
-    ]
-  },
-  {
-    "id": "a87f3838ccb83a662cb6942ae497605be74aeacb",
-    "title": "Trickbot Leads Up to Fake 1Password Installation",
-    "published": "2026-04-06",
-    "date_basis": "orkl-ingest",
-    "organisation": null,
-    "url": "https://thedfirreport.com/2021/08/16/trickbot-leads-up-to-fake-1password-installation/",
-    "url_ok": null,
-    "archive_url": "https://archive.orkl.eu/a87f3838ccb83a662cb6942ae497605be74aeacb.pdf",
-    "actors": [],
-    "actor_names_unresolved": [],
-    "cves": [],
-    "techniques": [
-      "T1003.001",
-      "T1016",
-      "T1018",
-      "T1033",
-      "T1046",
-      "T1047",
-      "T1053.005",
-      "T1055.012",
-      "T1059.001",
-      "T1069",
-      "T1071.001",
-      "T1082",
-      "T1105",
-      "T1134",
-      "T1482"
-    ],
     "sources": [
       "orkl"
     ]
@@ -104613,6 +105130,23 @@
     ]
   },
   {
+    "id": "eset:en-eset-research-edr-killers-explained-beyond-the-drivers",
+    "title": "EDR killers explained: Beyond the drivers",
+    "published": "2026-03-19",
+    "date_basis": "publisher",
+    "organisation": "ESET Research",
+    "url": "https://www.welivesecurity.com/en/eset-research/edr-killers-explained-beyond-the-drivers/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "eset"
+    ]
+  },
+  {
     "id": "1ce956db1b0ac0abcbd73421018a72eb41055f58",
     "title": "Technical Analysis of SnappyClient | ThreatLabz",
     "published": "2026-03-18",
@@ -105090,8 +105624,8 @@
     "id": "c1a7f01d41afcbfb4bbfc50fa8d0de97df9f94ba",
     "title": "Sednit reloaded: Back in the trenches",
     "published": "2026-03-10",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "ESET Research",
     "url": "https://www.welivesecurity.com/en/eset-research/sednit-reloaded-back-trenches/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c1a7f01d41afcbfb4bbfc50fa8d0de97df9f94ba.pdf",
@@ -105124,7 +105658,8 @@
       "T1587.001"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "eset"
     ]
   },
   {
@@ -105961,6 +106496,23 @@
     "techniques": [],
     "sources": [
       "orkl"
+    ]
+  },
+  {
+    "id": "eset:en-eset-research-promptspy-ushers-in-era-android-threats-using-genai",
+    "title": "PromptSpy ushers in the era of Android threats using GenAI",
+    "published": "2026-02-19",
+    "date_basis": "publisher",
+    "organisation": "ESET Research",
+    "url": "https://www.welivesecurity.com/en/eset-research/promptspy-ushers-in-era-android-threats-using-genai/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "eset"
     ]
   },
   {
@@ -106912,8 +107464,8 @@
     "id": "519955ff60d4e7266277ea95975d937306300556",
     "title": "DynoWiper update: Technical analysis and attribution",
     "published": "2026-01-30",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "ESET Research",
     "url": "https://www.welivesecurity.com/en/eset-research/dynowiper-update-technical-analysis-attribution/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/519955ff60d4e7266277ea95975d937306300556.pdf",
@@ -106936,7 +107488,8 @@
       "T1680"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "eset"
     ]
   },
   {
@@ -107187,8 +107740,8 @@
     "id": "95eaf05dc912d34a0e8947c140919754aad402f2",
     "title": "Love? Actually: Fake dating app used as lure in targeted spyware campaign in Pakistan",
     "published": "2026-01-28",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "ESET Research",
     "url": "https://www.welivesecurity.com/en/eset-research/love-actually-fake-dating-app-used-lure-targeted-spyware-campaign-pakistan/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/95eaf05dc912d34a0e8947c140919754aad402f2.pdf",
@@ -107210,7 +107763,8 @@
       "T1646"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "eset"
     ]
   },
   {
@@ -107407,6 +107961,23 @@
     "techniques": [],
     "sources": [
       "orkl"
+    ]
+  },
+  {
+    "id": "eset:en-eset-research-eset-research-sandworm-cyberattack-poland-power-grid-late-2025",
+    "title": "ESET Research: Sandworm behind cyberattack on Poland’s power grid in late 2025",
+    "published": "2026-01-23",
+    "date_basis": "publisher",
+    "organisation": "ESET Research",
+    "url": "https://www.welivesecurity.com/en/eset-research/eset-research-sandworm-cyberattack-poland-power-grid-late-2025/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "eset"
     ]
   },
   {

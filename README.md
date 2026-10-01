@@ -70,13 +70,13 @@ The repository also holds a test workflow and a weekly build workflow in `.githu
 
 ## Sources and Licences
 
-The project reads ten sources: MITRE ATT&CK®, the MISP galaxy threat-actor cluster, ETDA's Threat Group Cards, Malpedia, ORKL, the CISA Known Exploited Vulnerabilities Catalog, The DFIR Report, Microsoft Threat Intelligence's threat actor naming table, FIRST's Exploit Prediction Scoring System (EPSS), and the dataset released with the paper credited below.
+The project reads thirteen sources: MITRE ATT&CK®, the MISP galaxy threat-actor cluster, ETDA's Threat Group Cards, Malpedia, ORKL, the CISA Known Exploited Vulnerabilities Catalog, The DFIR Report, Microsoft Threat Intelligence's threat actor naming table, FIRST's Exploit Prediction Scoring System (EPSS), three vendor blogs (Cisco Talos, ESET's research posts and the Microsoft Security blog), and the dataset released with the paper credited below.
 
 Each source has its own licence, and the licence decides what the site may publish from it. [SOURCES.md](SOURCES.md) quotes every licence, records the decision for each source, and is the authority for the policy in code. In short:
 
 - **Published in full:** MITRE ATT&CK®, the MISP galaxy, the CISA KEV catalog, Microsoft's threat actor naming table, FIRST's EPSS scores and the paper's dataset.
 - **Published as derived facts only:** ETDA and Malpedia. Normalized names and values appear, and their descriptive text does not.
-- **Linked to, not copied:** ORKL and The DFIR Report. The site shows a report's own title, publication date and original URL. ORKL's permission request is still pending, and its actor tags are used only as matching evidence and never shown.
+- **Linked to, not copied:** ORKL, The DFIR Report and the three vendor blogs. The site shows a report's own title, publication date and original URL. ORKL's permission request is still pending, and its actor tags are used only as matching evidence and never shown.
 
 Because ETDA and Malpedia are share-alike, the files in `data/` are offered under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). `data/NOTICE.md` carries the attribution for every source, including MITRE's copyright designation. The code in `pipeline/` and `site/` is released under the [MIT licence](LICENSE), which does not apply to `data/`. The fonts, Mona Sans and Martian Mono, are installed from Fontsource under the SIL Open Font License 1.1.
 

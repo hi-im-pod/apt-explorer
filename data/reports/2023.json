@@ -610,6 +610,23 @@
     ]
   },
   {
+    "id": "dfir:2023-12-18-lets-opendir-some-presents-an-analysis-of-a-persistent-actors-activity",
+    "title": "Lets Open(Dir) Some Presents: An Analysis of a Persistent Actor’s Activity",
+    "published": "2023-12-18",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2023/12/18/lets-opendir-some-presents-an-analysis-of-a-persistent-actors-activity/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
+    ]
+  },
+  {
     "id": "e89b9b7877c66bdf37e26b1309936b0c8a8cfdb5",
     "title": "Innovation in Cyber Intrusions: The Evolution of TA544 - Yoroi",
     "published": "2023-12-18",
@@ -2008,8 +2025,8 @@
     "id": "139649973edbf0461f5f96b523106acef4407105",
     "title": "SQL Brute Force Leads to BlueSky Ransomware",
     "published": "2023-12-04",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2023/12/04/sql-brute-force-leads-to-bluesky-ransomware/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/139649973edbf0461f5f96b523106acef4407105.pdf",
@@ -2059,7 +2076,8 @@
       "T1569.002"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -4951,6 +4969,23 @@
     ]
   },
   {
+    "id": "dfir:2023-10-30-netsupport-intrusion-results-in-domain-compromise",
+    "title": "NetSupport Intrusion Results in Domain Compromise",
+    "published": "2023-10-30",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2023/10/30/netsupport-intrusion-results-in-domain-compromise/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
+    ]
+  },
+  {
     "id": "e20eefc3cd228234ca8394a78a46c0b91d4fe8bd",
     "title": "How to Use Process Hacker and DnSpy to Unpack .NET Malware",
     "published": "2023-10-30",
@@ -7248,6 +7283,23 @@
     ]
   },
   {
+    "id": "dfir:2023-09-25-from-screenconnect-to-hive-ransomware-in-61-hours",
+    "title": "From ScreenConnect to Hive Ransomware in 61 hours",
+    "published": "2023-09-25",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2023/09/25/from-screenconnect-to-hive-ransomware-in-61-hours/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
+    ]
+  },
+  {
     "id": "af3aa2d0e436bb55fdc32603321c006096596d04",
     "title": "Let's go door with KCP",
     "published": "2023-09-24",
@@ -9447,10 +9499,10 @@
   },
   {
     "id": "b2014c2445876f947baa40b93241789301f29474",
-    "title": "HTML Smuggling Leads to Domain Wide Ransomware - The DFIR Report",
+    "title": "HTML Smuggling Leads to Domain Wide Ransomware",
     "published": "2023-08-28",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2023/08/28/html-smuggling-leads-to-domain-wide-ransomware/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b2014c2445876f947baa40b93241789301f29474.pdf",
@@ -9514,7 +9566,8 @@
       "T1614.001"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -14978,10 +15031,10 @@
   },
   {
     "id": "64df87cac686a9d3f82ec3e06e6364718b9afeb1",
-    "title": "A Truly Graceful Wipe Out - The DFIR Report",
+    "title": "A Truly Graceful Wipe Out",
     "published": "2023-06-12",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2023/06/12/a-truly-graceful-wipe-out/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/64df87cac686a9d3f82ec3e06e6364718b9afeb1.pdf",
@@ -15026,7 +15079,8 @@
       "T1566.002"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -15042,83 +15096,6 @@
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
-    "sources": [
-      "orkl"
-    ]
-  },
-  {
-    "id": "d2f3594bc3abe99b58c93498d4a80b3a84308728",
-    "title": "IcedID Brings ScreenConnect and CSharp Streamer to ALPHV Ransomware Deployment - The DFIR Report",
-    "published": "2023-06-10",
-    "date_basis": "malpedia-library",
-    "organisation": null,
-    "url": "https://thedfirreport.com/2024/06/10/icedid-brings-screenconnect-and-csharp-streamer-to-alphv-ransomware-deployment/",
-    "url_ok": null,
-    "archive_url": "https://archive.orkl.eu/d2f3594bc3abe99b58c93498d4a80b3a84308728.pdf",
-    "actors": [
-      "G0008",
-      "G0009",
-      "G0016",
-      "G0037",
-      "G0045",
-      "G0046",
-      "G0050",
-      "G0052",
-      "G0065",
-      "G0073",
-      "G0079",
-      "G0080",
-      "G0096",
-      "G0102",
-      "G0127",
-      "G0129",
-      "G0143",
-      "alpha-spider",
-      "earth-baxia",
-      "lunar-spider",
-      "ransomhub",
-      "tianwu",
-      "vice-spider"
-    ],
-    "actor_names_unresolved": [
-      "Winnti Umbrella"
-    ],
-    "cves": [],
-    "techniques": [
-      "T1003.001",
-      "T1003.006",
-      "T1016",
-      "T1018",
-      "T1020",
-      "T1021.001",
-      "T1033",
-      "T1039",
-      "T1053.005",
-      "T1059.001",
-      "T1059.003",
-      "T1059.005",
-      "T1069.002",
-      "T1070.004",
-      "T1071.001",
-      "T1078.002",
-      "T1082",
-      "T1083",
-      "T1087.001",
-      "T1087.002",
-      "T1135",
-      "T1197",
-      "T1204.002",
-      "T1213",
-      "T1218.010",
-      "T1218.011",
-      "T1219",
-      "T1482",
-      "T1486",
-      "T1560.001",
-      "T1566",
-      "T1569.002",
-      "T1614.001"
-    ],
     "sources": [
       "orkl"
     ]
@@ -16504,8 +16481,8 @@
     "id": "3daa55dde07770e30de74e806c4c0411f30aecbc",
     "title": "IcedID Macro Ends in Nokoyawa Ransomware",
     "published": "2023-05-22",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2023/05/22/icedid-macro-ends-in-nokoyawa-ransomware/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3daa55dde07770e30de74e806c4c0411f30aecbc.pdf",
@@ -16550,7 +16527,8 @@
       "T1566.001"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -23772,8 +23750,8 @@
     "id": "eb3444ea8d32605e1e3085e287554ec9bb571a0c",
     "title": "Malicious ISO File Leads to Domain Wide Ransomware",
     "published": "2023-04-03",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2023/04/03/malicious-iso-file-leads-to-domain-wide-ransomware/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/eb3444ea8d32605e1e3085e287554ec9bb571a0c.pdf",
@@ -23840,7 +23818,8 @@
       "T1615"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -27599,6 +27578,23 @@
     ]
   },
   {
+    "id": "dfir:2023-03-16-default-post",
+    "title": "From a Single Click: How Lunar Spider Enabled a Near Two-Month IntrusionDefault Post",
+    "published": "2023-03-16",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2023/03/16/default-post/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
+    ]
+  },
+  {
     "id": "f3ec7b4b608b7f6524dd80883689532074970154",
     "title": "CryptBot",
     "published": "2023-03-16",
@@ -29891,6 +29887,23 @@
     "techniques": [],
     "sources": [
       "orkl"
+    ]
+  },
+  {
+    "id": "dfir:2023-03-06-2022-year-in-review",
+    "title": "2022 Year in Review",
+    "published": "2023-03-06",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2023/03/06/2022-year-in-review/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
     ]
   },
   {
@@ -34020,6 +34033,43 @@
     ]
   },
   {
+    "id": "693e7f65b26b8441b3cbf4fa37ecec8a33c2be4a",
+    "title": "Collect, Exfiltrate, Sleep, Repeat",
+    "published": "2023-02-06",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2023/02/06/collect-exfiltrate-sleep-repeat/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/693e7f65b26b8441b3cbf4fa37ecec8a33c2be4a.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1007",
+      "T1033",
+      "T1049",
+      "T1053",
+      "T1056.001",
+      "T1057",
+      "T1059.001",
+      "T1082",
+      "T1083",
+      "T1087.002",
+      "T1112",
+      "T1113",
+      "T1124",
+      "T1204.002",
+      "T1518.001",
+      "T1560.001",
+      "T1566",
+      "T1573.001"
+    ],
+    "sources": [
+      "orkl",
+      "dfir"
+    ]
+  },
+  {
     "id": "9ade31bf4fd8e2cd047c286bf6229731f897786e",
     "title": "CERT-UA",
     "published": "2023-02-06",
@@ -36310,6 +36360,23 @@
     ]
   },
   {
+    "id": "dfir:2023-01-23-sharefinder-how-threat-actors-discover-file-shares",
+    "title": "ShareFinder: How Threat Actors Discover File Shares",
+    "published": "2023-01-23",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2023/01/23/sharefinder-how-threat-actors-discover-file-shares/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
+    ]
+  },
+  {
     "id": "072d5d465b4ae498548381127a085f176924a7b9",
     "title": "Lookout Discovers Surveillance Campaigns Targeting Uyghurs",
     "published": "2023-01-22",
@@ -38053,10 +38120,10 @@
   },
   {
     "id": "c17e16bba1b71d5a3aa5cb6fc11535cf624ab052",
-    "title": "Unwrapping Ursnifs Gifts - The DFIR Report",
+    "title": "Unwrapping Ursnifs Gifts",
     "published": "2023-01-09",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2023/01/09/unwrapping-ursnifs-gifts/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c17e16bba1b71d5a3aa5cb6fc11535cf624ab052.pdf",
@@ -38093,7 +38160,8 @@
       "T1570"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {

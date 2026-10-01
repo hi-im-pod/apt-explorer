@@ -6023,6 +6023,23 @@
     ]
   },
   {
+    "id": "dfir:2020-12-13-defender-control",
+    "title": "Defender Control",
+    "published": "2020-12-13",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2020/12/13/defender-control/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
+    ]
+  },
+  {
     "id": "e0a1332e3c8d656bf7451d346847636472961441",
     "title": "SUNBURST Countermeasures",
     "published": "2020-12-13",
@@ -11436,8 +11453,8 @@
     "id": "6f96e418062deb99420360f9b5a69a30067da8e4",
     "title": "PYSA/Mespinoza Ransomware",
     "published": "2020-11-23",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2020/11/23/pysa-mespinoza-ransomware/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6f96e418062deb99420360f9b5a69a30067da8e4.pdf",
@@ -11467,7 +11484,8 @@
       "T1570"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -14404,6 +14422,23 @@
     ]
   },
   {
+    "id": "dfir:2020-11-12-cryptominers-exploiting-weblogic-rce-cve-2020-14882",
+    "title": "Cryptominers Exploiting WebLogic RCE CVE-2020-14882",
+    "published": "2020-11-12",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2020/11/12/cryptominers-exploiting-weblogic-rce-cve-2020-14882/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
+    ]
+  },
+  {
     "id": "e9f32f7b199787f8b8bb42c90054f2db6a1fee0f",
     "title": "Cisco Talos Intelligence Group - Comprehensive Threat Intelligence_ CRAT wants to plunder your endpoints",
     "published": "2020-11-12",
@@ -15600,8 +15635,8 @@
     "id": "5f5ec28132cdbe45891d349342385331108620ba",
     "title": "Ryuk Speed Run, 2 Hours to Ransom",
     "published": "2020-11-05",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2020/11/05/ryuk-speed-run-2-hours-to-ransom/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5f5ec28132cdbe45891d349342385331108620ba.pdf",
@@ -15653,7 +15688,8 @@
       "T1569.002"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -20154,10 +20190,10 @@
   },
   {
     "id": "7ae0a3826a2672444eaf06af5a301b4c6478f65a",
-    "title": "Ryuk in 5 Hours - The DFIR Report",
+    "title": "Ryuk in 5 Hours",
     "published": "2020-10-18",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2020/10/18/ryuk-in-5-hours/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7ae0a3826a2672444eaf06af5a301b4c6478f65a.pdf",
@@ -20202,7 +20238,8 @@
       "T1486"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -21866,8 +21903,8 @@
     "id": "3b496fa37a1d7a0f3a9480971f7cd95643956604",
     "title": "Ryuk's Return",
     "published": "2020-10-08",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2020/10/08/ryuks-return/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3b496fa37a1d7a0f3a9480971f7cd95643956604.pdf",
@@ -21910,7 +21947,8 @@
       "T1486"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -30063,10 +30101,10 @@
   },
   {
     "id": "df19e4d3f18b8c389900656e605805bba4656a14",
-    "title": "NetWalker Ransomware in 1 Hour - The DFIR Report",
+    "title": "NetWalker Ransomware in 1 Hour",
     "published": "2020-08-31",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2020/08/31/netwalker-ransomware-in-1-hour/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/df19e4d3f18b8c389900656e605805bba4656a14.pdf",
@@ -30099,7 +30137,8 @@
       "T1018"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -34256,6 +34295,26 @@
     ]
   },
   {
+    "id": "dfir:2020-08-03-dridex-from-word-to-domain-dominance",
+    "title": "Dridex - From Word to Domain Dominance",
+    "published": "2020-08-03",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2020/08/03/dridex-from-word-to-domain-dominance/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [
+      "G0092",
+      "G0119"
+    ],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
+    ]
+  },
+  {
     "id": "e48fb7f0c269ae01624a54e4dd7022c6009078f9",
     "title": "Belarus Authorities Arrest GandCrab Ransomware Operator",
     "published": "2020-08-03",
@@ -38161,6 +38220,23 @@
     "techniques": [],
     "sources": [
       "orkl"
+    ]
+  },
+  {
+    "id": "dfir:2020-07-13-ransomware-again-but-we-changed-the-rdp-port",
+    "title": "Ransomware Again...But We Changed the RDP Port!?!?!",
+    "published": "2020-07-13",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2020/07/13/ransomware-again-but-we-changed-the-rdp-port/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
     ]
   },
   {
@@ -42377,8 +42453,8 @@
     "id": "3caf9d4c04dfe7a516b0be35c8c0091b0a9e65b3",
     "title": "Snatch Ransomware",
     "published": "2020-06-21",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2020/06/21/snatch-ransomware/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3caf9d4c04dfe7a516b0be35c8c0091b0a9e65b3.pdf",
@@ -42387,7 +42463,8 @@
     "cves": [],
     "techniques": [],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -43752,10 +43829,10 @@
   },
   {
     "id": "34a785482ebd4dfa32ec8c33acb326120a10ea1a",
-    "title": "The Little Ransomware That Couldn’t (Dharma) - The DFIR Report",
+    "title": "The Little Ransomware That Couldn’t (Dharma)",
     "published": "2020-06-16",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2020/06/16/the-little-ransomware-that-couldnt-dharma/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/34a785482ebd4dfa32ec8c33acb326120a10ea1a.pdf",
@@ -43764,7 +43841,8 @@
     "cves": [],
     "techniques": [],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -45160,6 +45238,23 @@
     "techniques": [],
     "sources": [
       "orkl"
+    ]
+  },
+  {
+    "id": "dfir:2020-06-10-lockbit-ransomware-why-you-no-spread",
+    "title": "Lockbit Ransomware, Why You No Spread?",
+    "published": "2020-06-10",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2020/06/10/lockbit-ransomware-why-you-no-spread/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
     ]
   },
   {
@@ -51714,6 +51809,23 @@
     ]
   },
   {
+    "id": "dfir:2020-05-08-adfind-recon",
+    "title": "AdFind Recon",
+    "published": "2020-05-08",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2020/05/08/adfind-recon/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
+    ]
+  },
+  {
     "id": "0881fa9501ccad08b2c215a75de1081d31536937",
     "title": "Sodinokibi / REvil / Maze ransomware (TTPs & IOC)",
     "published": "2020-05-07",
@@ -53174,6 +53286,23 @@
     ]
   },
   {
+    "id": "dfir:2020-04-30-tricky-pyxie",
+    "title": "Tricky Pyxie",
+    "published": "2020-04-30",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2020/04/30/tricky-pyxie/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
+    ]
+  },
+  {
     "id": "paper:Anomali%20Suspects%20that%20China-Backed%20APT%20Pirate%20Panda%20May%20Be%20Seeking%20Access%20to%20Vietnam%20Government%20Data%20Center",
     "title": "Anomali Suspects that China-Backed APT Pirate Panda May Be Seeking Access to Vietnam Government Data Center",
     "published": "2020-04-30",
@@ -54154,8 +54283,8 @@
     "id": "fa061e1e56d557b53bd1b364d594842f9d9242bf",
     "title": "Ursnif via LOLbins",
     "published": "2020-04-24",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2020/04/24/ursnif-via-lolbins/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/fa061e1e56d557b53bd1b364d594842f9d9242bf.pdf",
@@ -54185,7 +54314,8 @@
     "cves": [],
     "techniques": [],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -54714,6 +54844,23 @@
     ],
     "sources": [
       "orkl"
+    ]
+  },
+  {
+    "id": "dfir:2020-04-20-sqlserver-or-the-miner-in-the-basement",
+    "title": "Sqlserver, or the Miner in the Basement",
+    "published": "2020-04-20",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2020/04/20/sqlserver-or-the-miner-in-the-basement/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
     ]
   },
   {
@@ -55390,6 +55537,23 @@
     "techniques": [],
     "sources": [
       "orkl"
+    ]
+  },
+  {
+    "id": "dfir:2020-04-14-dharma-ransomware",
+    "title": "Dharma Ransomware",
+    "published": "2020-04-14",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2020/04/14/dharma-ransomware/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
     ]
   },
   {
@@ -56448,6 +56612,23 @@
     "techniques": [],
     "sources": [
       "orkl"
+    ]
+  },
+  {
+    "id": "dfir:2020-04-04-gogoogle-ransomware",
+    "title": "GoGoogle Ransomware",
+    "published": "2020-04-04",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2020/04/04/gogoogle-ransomware/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
     ]
   },
   {

@@ -3106,8 +3106,8 @@
     "id": "3b407c56de2595ffddfc27a8e91ce2ded96d9b18",
     "title": "Diavol Ransomware",
     "published": "2021-12-13",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2021/12/13/diavol-ransomware/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3b407c56de2595ffddfc27a8e91ce2ded96d9b18.pdf",
@@ -3139,7 +3139,8 @@
       "T1567.002"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -6305,8 +6306,8 @@
     "id": "64e1e4cdab99fefe919b03ea76f82364cd9d41b1",
     "title": "CONTInuing the Bazar Ransomware Story",
     "published": "2021-11-29",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2021/11/29/continuing-the-bazar-ransomware-story/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/64e1e4cdab99fefe919b03ea76f82364cd9d41b1.pdf",
@@ -6358,7 +6359,8 @@
       "T1590.005"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -9608,8 +9610,8 @@
     "id": "39a7c810ea0bbe87870f054ce243a272e263efaf",
     "title": "Exchange Exploit Leads to Domain Wide Ransomware",
     "published": "2021-11-15",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2021/11/15/exchange-exploit-leads-to-domain-wide-ransomware/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/39a7c810ea0bbe87870f054ce243a272e263efaf.pdf",
@@ -9641,7 +9643,8 @@
       "T1572"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -13586,8 +13589,8 @@
     "id": "b454dce5e95ce2aabd0f02a180a6a85e5470f8d2",
     "title": "From Zero to Domain Admin",
     "published": "2021-11-01",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2021/11/01/from-zero-to-domain-admin/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b454dce5e95ce2aabd0f02a180a6a85e5470f8d2.pdf",
@@ -13636,7 +13639,8 @@
       "T1570"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -17327,8 +17331,8 @@
     "id": "9c516fb58cb70db768fb119f3823c4b83909ac0a",
     "title": "IcedID to XingLocker Ransomware in 24 hours",
     "published": "2021-10-18",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2021/10/18/icedid-to-xinglocker-ransomware-in-24-hours/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/9c516fb58cb70db768fb119f3823c4b83909ac0a.pdf",
@@ -17377,7 +17381,8 @@
       "T1518.001"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -20568,8 +20573,8 @@
     "id": "297f62e26c67ffacef5e08e21f9e227d2a2b19bd",
     "title": "BazarLoader and the Conti Leaks",
     "published": "2021-10-04",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2021/10/04/bazarloader-and-the-conti-leaks/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/297f62e26c67ffacef5e08e21f9e227d2a2b19bd.pdf",
@@ -20638,7 +20643,8 @@
       "T1570"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -26115,8 +26121,8 @@
     "id": "476b03b0c91dbbdceefb1567f94c989c073685fc",
     "title": "BazarLoader to Conti Ransomware in 32 Hours",
     "published": "2021-09-13",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2021/09/13/bazarloader-to-conti-ransomware-in-32-hours/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/476b03b0c91dbbdceefb1567f94c989c073685fc.pdf",
@@ -26164,7 +26170,8 @@
       "T1569.002"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -29386,8 +29393,8 @@
     "id": "dcebda6cc76878ca0859ef7c2f797b67c3ac7da3",
     "title": "Cobalt Strike, a Defender's Guide",
     "published": "2021-08-29",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2021/08/29/cobalt-strike-a-defenders-guide/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/dcebda6cc76878ca0859ef7c2f797b67c3ac7da3.pdf",
@@ -29417,7 +29424,8 @@
     "cves": [],
     "techniques": [],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -32280,6 +32288,40 @@
     "techniques": [],
     "sources": [
       "orkl"
+    ]
+  },
+  {
+    "id": "a87f3838ccb83a662cb6942ae497605be74aeacb",
+    "title": "Trickbot Leads Up to Fake 1Password Installation",
+    "published": "2021-08-16",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2021/08/16/trickbot-leads-up-to-fake-1password-installation/",
+    "url_ok": null,
+    "archive_url": "https://archive.orkl.eu/a87f3838ccb83a662cb6942ae497605be74aeacb.pdf",
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [
+      "T1003.001",
+      "T1016",
+      "T1018",
+      "T1033",
+      "T1046",
+      "T1047",
+      "T1053.005",
+      "T1055.012",
+      "T1059.001",
+      "T1069",
+      "T1071.001",
+      "T1082",
+      "T1105",
+      "T1134",
+      "T1482"
+    ],
+    "sources": [
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -35726,8 +35768,8 @@
     "id": "a0200b1812cdf7beb84e17c8a6a056f1799c38af",
     "title": "BazarCall to Conti Ransomware via Trickbot and Cobalt Strike",
     "published": "2021-08-01",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2021/08/01/bazarcall-to-conti-ransomware-via-trickbot-and-cobalt-strike/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a0200b1812cdf7beb84e17c8a6a056f1799c38af.pdf",
@@ -35774,7 +35816,8 @@
       "T1566.001"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -40027,8 +40070,8 @@
     "id": "d2418c076b79a9fbd864deb6bd8f3e5889f577c0",
     "title": "IcedID and Cobalt Strike vs Antivirus",
     "published": "2021-07-19",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2021/07/19/icedid-and-cobalt-strike-vs-antivirus/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/d2418c076b79a9fbd864deb6bd8f3e5889f577c0.pdf",
@@ -40079,7 +40122,8 @@
       "T1570"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -46459,8 +46503,8 @@
     "id": "19a5471944319d2428bce7f9a9ff63e98ce66a21",
     "title": "Hancitor Continues to Push Cobalt Strike",
     "published": "2021-06-28",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2021/06/28/hancitor-continues-to-push-cobalt-strike/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/19a5471944319d2428bce7f9a9ff63e98ce66a21.pdf",
@@ -46501,7 +46545,8 @@
       "T1543.003"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -48412,8 +48457,8 @@
     "id": "9e56e0b4dfd862330c7e428c734c1c6c235fa190",
     "title": "From Word to Lateral Movement in 1 Hour",
     "published": "2021-06-20",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2021/06/20/from-word-to-lateral-movement-in-1-hour/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/9e56e0b4dfd862330c7e428c734c1c6c235fa190.pdf",
@@ -48461,7 +48506,8 @@
       "T1518.001"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -53068,6 +53114,23 @@
     ],
     "sources": [
       "orkl"
+    ]
+  },
+  {
+    "id": "dfir:2021-06-03-weblogic-rce-leads-to-xmrig",
+    "title": "WebLogic RCE Leads to XMRig",
+    "published": "2021-06-03",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2021/06/03/weblogic-rce-leads-to-xmrig/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
     ]
   },
   {
@@ -58712,8 +58775,8 @@
     "id": "ec14be3cc488c68aa11538b12bb29e5c71bab049",
     "title": "Conti Ransomware",
     "published": "2021-05-12",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2021/05/12/conti-ransomware/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ec14be3cc488c68aa11538b12bb29e5c71bab049.pdf",
@@ -58764,7 +58827,8 @@
       "T1569.002"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -62366,8 +62430,8 @@
     "id": "080eae2165a5dae2f006dfff47b0f31b56814042",
     "title": "Trickbot Brief: Creds and Beacons",
     "published": "2021-05-02",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2021/05/02/trickbot-brief-creds-and-beacons/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/080eae2165a5dae2f006dfff47b0f31b56814042.pdf",
@@ -62414,7 +62478,8 @@
       "T1571"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -71892,8 +71957,8 @@
     "id": "a630fbe16b63a3f1fc42a0254abc5e2b81238415",
     "title": "Sodinokibi (aka REvil) Ransomware",
     "published": "2021-03-29",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2021/03/29/sodinokibi-aka-revil-ransomware/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a630fbe16b63a3f1fc42a0254abc5e2b81238415.pdf",
@@ -71947,7 +72012,8 @@
       "T1566.001"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -77134,8 +77200,8 @@
     "id": "2038a0eba536a55962c210b05d6ef146bd28ce28",
     "title": "Bazar Drops the Anchor",
     "published": "2021-03-08",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2021/03/08/bazar-drops-the-anchor/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c25df8ec2f6ec74d93910b13f97a24950867678e.pdf",
@@ -77181,7 +77247,8 @@
       "T1566.002"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -79935,6 +80002,23 @@
     "techniques": [],
     "sources": [
       "orkl"
+    ]
+  },
+  {
+    "id": "dfir:2021-02-28-laravel-debug-leaking-secrets",
+    "title": "Laravel Apps Leaking Secrets",
+    "published": "2021-02-28",
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
+    "url": "https://thedfirreport.com/2021/02/28/laravel-debug-leaking-secrets/",
+    "url_ok": null,
+    "archive_url": null,
+    "actors": [],
+    "actor_names_unresolved": [],
+    "cves": [],
+    "techniques": [],
+    "sources": [
+      "dfir"
     ]
   },
   {
@@ -86950,8 +87034,8 @@
     "id": "4bee8c11a5708d97ef59c1da0efc457564bbeca7",
     "title": "Bazar, No Ryuk?",
     "published": "2021-01-31",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2021/01/31/bazar-no-ryuk/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4bee8c11a5708d97ef59c1da0efc457564bbeca7.pdf",
@@ -87000,7 +87084,8 @@
       "T1569.002"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -90597,10 +90682,10 @@
   },
   {
     "id": "d2ea8e9a6aa9f061c2b9b463a46fdb849d3033e5",
-    "title": "All That for a Coinminer? - The DFIR Report",
+    "title": "All That for a Coinminer?",
     "published": "2021-01-18",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2021/01/18/all-that-for-a-coinminer/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/d2ea8e9a6aa9f061c2b9b463a46fdb849d3033e5.pdf",
@@ -90619,7 +90704,8 @@
       "T1564.001"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
@@ -92812,8 +92898,8 @@
     "id": "841e2793873e3b285ff1c9add3902d0f5ee1672b",
     "title": "Trickbot Still Alive and Well",
     "published": "2021-01-11",
-    "date_basis": "malpedia-library",
-    "organisation": null,
+    "date_basis": "publisher",
+    "organisation": "The DFIR Report",
     "url": "https://thedfirreport.com/2021/01/11/trickbot-still-alive-and-well/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/841e2793873e3b285ff1c9add3902d0f5ee1672b.pdf",
@@ -92862,7 +92948,8 @@
       "T1571"
     ],
     "sources": [
-      "orkl"
+      "orkl",
+      "dfir"
     ]
   },
   {
