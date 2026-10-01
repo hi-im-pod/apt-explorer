@@ -471,6 +471,8 @@ export interface Build {
 	report_count: number;
 	/** When the recent window starts, the same date as trends.json window_start. */
 	recent_since: IsoDate;
+	/** How many months back the window reaches before it is rounded down to a whole quarter. */
+	recent_months: number;
 }
 
 // ---------------------------------------------------------------------------

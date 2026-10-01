@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import { sourceLabel } from '$lib/data/labels';
-	import { formatCount, formatDate } from '$lib/format';
+	import { formatCount, formatDate, lastSpan } from '$lib/format';
 	import { aliasGrid, numberWord, publishShort } from '$lib/home';
 
 	let { data } = $props();
@@ -30,7 +30,7 @@
 		{
 			path: '/trends/',
 			title: 'Trends',
-			text: 'Which groups and techniques show up in the last two years of reporting.',
+			text: `Which groups and techniques show up in ${lastSpan(data.build?.recent_months)} of reporting.`,
 			count: data.build ? `Since ${formatDate(data.build.recent_since)}` : null
 		},
 		{

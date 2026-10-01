@@ -15,7 +15,7 @@
 	import Chart from '$lib/components/Chart.svelte';
 	import type { KevActorLink } from '$lib/data/types';
 	import { sourceLabel } from '$lib/data/labels';
-	import { formatCount, formatDate } from '$lib/format';
+	import { formatCount, formatDate, lastSpan, spanInWords } from '$lib/format';
 	import {
 		KEV_HEIGHT,
 		NEW_ACTORS_HEIGHT,
@@ -27,7 +27,13 @@
 		techniqueHeight
 	} from './charts';
 	import KevTable from './KevTable.svelte';
-	import { kevMonthly, newActorMonths, reportedVsDocumented, reportingActivity } from './series';
+	import {
+		NEW_ACTOR_MONTHS,
+		kevMonthly,
+		newActorMonths,
+		reportedVsDocumented,
+		reportingActivity
+	} from './series';
 
 	let { data } = $props();
 
@@ -38,6 +44,8 @@
 	const t = $derived(data.trends);
 	const name = (id: string) => data.names[id] ?? id;
 	const since = $derived(formatDate(t.window_start));
+	const recent = $derived(lastSpan(data.build?.recent_months));
+	const newSpan = spanInWords(NEW_ACTOR_MONTHS);
 
 	const activity = $derived(reportingActivity(t, TOP_ACTIVITY));
 	const activityPlot = $derived(activityChart(activity, data.names));
@@ -80,14 +88,14 @@
 	<title>Trends · APT Explorer</title>
 	<meta
 		name="description"
-		content="Reporting activity, newly documented actors and exploited vulnerabilities over the last two years, recomputed every week from open sources."
+		content="Reporting activity, newly documented actors and exploited vulnerabilities over {recent}, recomputed every week from open sources."
 	/>
 </svelte:head>
 
 <div class="intro">
 	<h1>Trends</h1>
 	<p class="lede">
-		What current sources report over the last two years, counted in whole quarters from {since}: which actors are being written about, which are
+		What current sources report over {recent}, counted in whole quarters from {since}: which actors are being written about, which are
 		new, and which exploited vulnerabilities appear in reports. The figures are recomputed with every
 		weekly build; these were computed on
 		<time datetime={t.generated_at}>{formatDate(t.generated_at)}</time>. Each chart's counting rule
@@ -155,13 +163,13 @@
 			{/each}
 		</ul>
 	{:else}
-		<p class="empty">No actor was first documented in the last twelve months.</p>
+		<p class="empty">No actor was first documented in the last {newSpan}.</p>
 	{/if}
 	{#if chartNewActors}
 		<div class="after-list">
-			<p class="lead">New actors per month over the same twelve months.</p>
+			<p class="lead">New actors per month over the same {newSpan}.</p>
 			<Chart
-				title="Newly documented actors per month over the last twelve months"
+				title="Newly documented actors per month over the last {newSpan}"
 				note={t.notes.new_actors}
 				plot={newPlot}
 				height={NEW_ACTORS_HEIGHT}

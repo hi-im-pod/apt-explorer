@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { test, expect, type Page } from '@playwright/test';
-import { formatCount, formatDate } from '../src/lib/format';
+import { formatCount, formatDate, lastSpan } from '../src/lib/format';
 import { sourceLabel } from '../src/lib/data/labels';
 import { aliasGrid, numberWord, publishShort } from '../src/lib/home';
 import type { Actor, Build, Guesses, Resolution, Sources } from '../src/lib/data/types';
@@ -79,6 +79,16 @@ test('Ways in has a link and a real count for each view', async ({ page }) => {
 		await expect(items.nth(i)).toContainText(new RegExp(count));
 	}
 	await expect(items.nth(4).getByRole('link', { name: 'Sources', exact: true })).toHaveAttribute('href', '/apt-explorer/about/#sources');
+});
+
+test('the length of the recent window in the copy follows the build', async ({ page }) => {
+	const span = lastSpan(readData<Build>('build.json').recent_months);
+	await page.goto('/apt-explorer/');
+	await expect(page.getByRole('region', { name: 'Ways in' })).toContainText(`show up in ${span} of reporting`);
+	await page.goto('/apt-explorer/about/');
+	await expect(page.getByRole('main')).toContainText(`computed from current sources over ${span}`);
+	await page.goto('/apt-explorer/trends/');
+	await expect(page.getByRole('main')).toContainText(`What current sources report over ${span}`);
 });
 
 test('the source table lists every source with its policy, terms and health', async ({ page }) => {

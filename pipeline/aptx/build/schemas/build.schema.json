@@ -9,7 +9,8 @@
     "version",
     "report_years",
     "report_count",
-    "recent_since"
+    "recent_since",
+    "recent_months"
   ],
   "properties": {
     "built_at": {
@@ -36,6 +37,11 @@
     "recent_since": {
       "description": "The date the recent window starts, the same as trends.json window_start, so a page can say it without loading trends.json.",
       "$ref": "#/$defs/date"
+    },
+    "recent_months": {
+      "description": "How many months back the recent window reaches before it is rounded down to a whole quarter, so a page can say \"the last two years\" without a figure of its own.",
+      "type": "integer",
+      "minimum": 1
     }
   },
   "$defs": {

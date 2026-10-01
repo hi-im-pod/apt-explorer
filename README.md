@@ -45,7 +45,7 @@ Raw source snapshots are kept in `.cache/snapshots/` at the repository root, whi
 
 A rebuild from the same snapshots is deterministic except for the build timestamps in `data/build.json`, `data/reports/index.json` and `data/trends.json`.
 
-`python -m aptx links` checks a rotating sample of the published report links. So far it has checked only about 1% of them.
+`python -m aptx links` checks a rotating sample of the published report links. The link health shown on the site covers only the links checked so far.
 
 ### The Site
 
@@ -66,7 +66,7 @@ npm run test:e2e               # Playwright, builds and serves the site itself
 
 The base path always comes from `BASE_PATH`, because GitHub Pages serves a project site under `/<repository>/` and the site may later move to a server under another prefix. The preview address needs its trailing slash. On Git Bash for Windows, prefix the commands with `MSYS2_ENV_CONV_EXCL=BASE_PATH` so that the shell does not rewrite the path.
 
-The repository also holds a test workflow and a weekly build workflow in `.github/workflows/`. The weekly build refreshes the data inside the runner and deploys to GitHub Pages without committing anything. It stays off until I set the repository variable `PUBLISH_ENABLED`.
+The repository also holds a test workflow and a weekly build workflow in `.github/workflows/`. The weekly build runs on Mondays at 03:17 UTC. It refreshes the data inside the runner and deploys to GitHub Pages without committing anything. The repository variable `PUBLISH_ENABLED` gates the scheduled run and the deploy, and a manual run always builds.
 
 ## Sources and Licences
 
@@ -96,10 +96,10 @@ The authors released their data on [Zenodo (record 16869733)](https://doi.org/10
 
 ## Known Limitations
 
-- **Report dates have different bases.** A date can come from the Malpedia library, from a date in the report's own title, from the report file's metadata, from the paper's dataset, or from the day ORKL ingested the report. The last one is when ORKL saw the report, not when it was published. In the current build, 5,450 of 29,577 reports carry that ingest date. Each report records its basis, and a report with no usable date is kept out of the dated trends.
-- **Some sources give evidence only.** ETDA and Malpedia contribute names and values but no descriptive text, and ORKL and The DFIR Report contribute links and metadata only. ETDA has not updated its data since 16 August 2025, and the source health panel says so.
-- **The guesses are pending and scored.** Some names in the paper's reports match no actor in the registry. The Name Guesses page labels each one (actor, malware, tool or not an entity) and names the closest known actor, under the heading "pending confirmation". No guess changes an actor, an alias or a report link. To measure the method, I hid 64 known names in turn and asked it to recover each label. It was right for 48 (75%), against 73% for a version that uses only the shape of the name and 69% for always answering "actor". The gap is small and every guess falls in the low confidence band, so I treat the guesses as leads and not as findings.
+- **Report dates have different bases.** A date can come from the Malpedia library, from a date in the report's own title, from the report file's metadata, from the paper's dataset, or from the day ORKL ingested the report. The last one is when ORKL saw the report, not when it was published. Every weekly build changes how many reports carry that ingest date, because ORKL adds reports faster than other sources date them. Each report records its basis, and a report with no usable date is kept out of the dated trends.
+- **Some sources give evidence only.** ETDA and Malpedia contribute names and values but no descriptive text, and ORKL, The DFIR Report and the three vendor blogs contribute links and metadata only. ETDA has not updated its data since 16 August 2025, and the source health panel says so.
+- **The guesses are pending and scored.** Some names in the paper's reports match no actor in the registry. The Name Guesses page labels each one (actor, malware, tool or not an entity) and names the closest known actor, under the heading "pending confirmation". No guess changes an actor, an alias or a report link. To measure the method, I hide each known name in turn and ask it to recover the label, then compare it with a version that uses only the shape of the name and with always answering "actor". The Name Guesses page shows the current scores. The gap over those baselines is small and every guess falls in the low confidence band, so I treat the guesses as leads and not as findings.
 - **There are no per-campaign victims yet.** No current structured source gives victim country or sector per report. The site shows the countries that ETDA claims for an actor, and the sectors that ETDA, MISP and Malpedia claim, as a whole and labelled as such. Per-campaign victims wait for stage 2.
-- **The merge is only as good as the aliases.** Of the 443 actor names in the paper's data, the registry resolves 334 (75.4%). That rate measures agreement with the paper's labels, not correctness. A name carried by two ATT&CK groups is never used to merge them, and 107 such aliases are listed on the Methodology page.
-- **Report links are lightly checked.** The link checker has covered about 1% of the published URLs. A report may link to an archive or a mirror copy next to the original publisher's page, and the report panel says which is which.
-- **The trends cover recent reporting only.** This build starts on 1 July 2024, the start of the quarter that holds the day two years before the build. The paper covers 2014 to 2023 and is used as history, not as a trend source.
+- **The merge is only as good as the aliases.** The Methodology page gives the share of the paper's actor names that the registry resolves. That rate measures agreement with the paper's labels, not correctness. A name carried by two ATT&CK groups is never used to merge them, and the Methodology page lists every such alias.
+- **Report links are lightly checked.** The link checker covers only a small sample of the published URLs. A report may link to an archive or a mirror copy next to the original publisher's page, and the report panel says which is which.
+- **The trends cover recent reporting only.** The recent window reaches back 24 months (`WINDOW_MONTHS` in `pipeline/aptx/build/trends.py`), rounded down to the start of a quarter, and the Trends page states the date it starts. The paper covers 2014 to 2023 and is used as history, not as a trend source.

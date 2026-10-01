@@ -228,15 +228,17 @@ export interface MonthCount {
 	count: number;
 }
 
+/** The new-actors window in months, mirroring the pipeline's 365-day rule. Prose reads its length from here. */
+export const NEW_ACTOR_MONTHS = 12;
+
 /**
- * New actors per month, over the twelve months up to the build, matching
- * the 365-day rule the pipeline uses. The range never starts before the
- * window.
+ * New actors per month, over NEW_ACTOR_MONTHS up to the build. The range
+ * never starts before the window.
  */
 export function newActorMonths(t: Trends): MonthCount[] {
 	const lastMonth = monthOf(t.generated_at);
 	const [y, n] = monthParts(lastMonth);
-	const twelveBack = monthOf(new Date(Date.UTC(y, n - 12, 1)).toISOString());
+	const twelveBack = monthOf(new Date(Date.UTC(y, n - NEW_ACTOR_MONTHS, 1)).toISOString());
 	const first = later(twelveBack, monthOf(t.window_start));
 	const counts = new Map<Month, number>();
 	for (const a of t.new_actors) {

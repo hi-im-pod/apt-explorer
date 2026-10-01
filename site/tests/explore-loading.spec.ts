@@ -51,7 +51,7 @@ test('a slow line gets a note that says why, and the table still arrives', async
 	await page.goto(EXPLORE);
 	await expect(status(page)).toContainText('Loading reports and campaigns');
 	await expect(status(page)).toContainText('This is taking a while', { timeout: 8000 });
-	await expect(status(page)).toContainText('about 1 MB');
+	await expect(status(page)).toContainText('reuse the saved copy');
 	await expect(status(page)).toContainText(/showing/i, { timeout: 20_000 });
 	// The note goes away once the rows are there.
 	await expect(status(page)).not.toContainText('taking a while');

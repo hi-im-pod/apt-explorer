@@ -3,7 +3,7 @@ from dataclasses import replace
 
 import pytest
 
-from aptx.build import slugs, write
+from aptx.build import slugs, trends, write
 from aptx.build.assemble import BuildFacts, assemble
 from aptx.build.notice import SOURCE_ORDER, render_notice, source_attribution
 from aptx.core.models import (ActorRecord, CampaignRecord, ReportRecord, SoftwareRecord, SourceBundle,
@@ -826,6 +826,7 @@ def test_build_json_says_when_and_which_shards():
     assert payload["build.json"]["report_years"] == [2023, 2025]
     assert payload["build.json"]["report_count"] == 3
     assert payload["build.json"]["recent_since"] == payload["trends.json"]["window_start"]
+    assert payload["build.json"]["recent_months"] == trends.WINDOW_MONTHS
     assert payload["build.json"]["version"]
 
 

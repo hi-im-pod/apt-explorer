@@ -202,7 +202,8 @@ def assemble(bundles, registry: Registry, policies: Mapping[str, str], link_stat
         "built_at": generated_at, "version": facts.version,
         "report_years": sorted(int(k) for k in shards if k != "undated"),
         "report_count": sum(len(rows) for rows in shards.values()),
-        "recent_since": payload["trends.json"]["window_start"]}
+        "recent_since": payload["trends.json"]["window_start"],
+        "recent_months": trends.WINDOW_MONTHS}
     payload["NOTICE.md"] = render_notice(year)
     # BEGIN slugs hook: the frozen slug registry was computed inside resolve(), and this only checks
     # that it saw the same visible sources as the policies and publishes it as data/slugs.json.

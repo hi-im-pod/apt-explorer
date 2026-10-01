@@ -210,7 +210,7 @@ VALID = [
     ("sources", [_source()]),
     ("trends", _trends()),
     ("build", {"built_at": "2026-09-28T03:21:05Z", "version": "0.1.0", "report_years": [], "report_count": 0,
-            "recent_since": "2024-01-01"}),
+            "recent_since": "2024-01-01", "recent_months": 24}),
 ]
 
 INVALID = [

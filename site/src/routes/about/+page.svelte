@@ -2,7 +2,7 @@
 	import { base } from '$app/paths';
 	import type { PublishPolicy } from '$lib/data';
 	import { PUBLISH_POLICIES, sourceLabel } from '$lib/data/labels';
-	import { formatCount, formatDate } from '$lib/format';
+	import { formatCount, formatDate, lastSpan } from '$lib/format';
 	import { LINK_KINDS } from '$lib/links';
 
 	let { data } = $props();
@@ -69,7 +69,7 @@
 			<a href="https://zenodo.org/records/16869733">Zenodo record 16869733</a>
 			under <a href={paper.licence_url}>{paper.licence}</a>. The dataset covers reports from 2014 to 2023, and this site
 			shows it as a labelled layer of its own. The trends are computed from current sources over
-			the last two years, and no view reproduces a figure from the paper.
+			{lastSpan(data.build?.recent_months)}, and no view reproduces a figure from the paper.
 		</p>
 		<div class="attribution">
 			<p class="label">Dataset attribution</p>

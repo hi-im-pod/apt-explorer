@@ -11,7 +11,7 @@ import {
 
 const BUILT = '2026-09-28T03:21:05Z';
 const V = `?v=${encodeURIComponent(BUILT)}`;
-const build = { built_at: BUILT, version: 'x', report_years: [2024], report_count: 0, recent_since: '2024-07-01' };
+const build = { built_at: BUILT, version: 'x', report_years: [2024], report_count: 0, recent_since: '2024-07-01', recent_months: 24 };
 const SHA = 'ab12cd34ef56ab12cd34ef56ab12cd34ef56ab12';
 const indexFile = (built_at = BUILT) => ({
 	built_at,

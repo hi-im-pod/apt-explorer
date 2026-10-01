@@ -265,8 +265,7 @@
 		{:else if phase === 'loading'}
 			Loading reports and campaigns…
 			{#if slow}
-				This is taking a while. The report list is about 1 MB, and later visits reuse the saved
-				copy.
+				This is taking a while. Later visits reuse the saved copy.
 			{/if}
 		{:else}
 			Showing <strong>{formatCount(shown.length)}</strong> of {formatCount(rows.length)} reports and

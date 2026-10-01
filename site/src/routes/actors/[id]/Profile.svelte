@@ -1,11 +1,12 @@
 <script lang="ts">
 	import { base } from '$app/paths';
+	import { page } from '$app/state';
 	import type { Actor, SourceKey, SourcedValue } from '$lib/data';
 	import { sourceLabel } from '$lib/data/labels';
 	import ConflictNote from '$lib/components/ConflictNote.svelte';
 	import SourceBadge from '$lib/components/SourceBadge.svelte';
 	import Timeline from '$lib/components/Timeline.svelte';
-	import { formatCount, formatDate } from '$lib/format';
+	import { formatCount, formatDate, lastSpan } from '$lib/format';
 	import { countryName } from '../actors';
 	import More from './More.svelte';
 	import {
@@ -56,6 +57,7 @@
 		actor.timeline.length > 0 || hasTechniques || actor.cves.length > 0 || reports.length > 0
 	);
 	const recentTechniques = $derived(actor.techniques_reported);
+	const recent = $derived(lastSpan(page.data.build?.recent_months));
 	const unseen = $derived(documentedOnly(actor));
 
 	const firstReports = $derived(reports.slice(0, FIRST_REPORTS));
@@ -252,7 +254,7 @@
 		{#if hasTechniques}
 			<section id="techniques" aria-labelledby="techniques-heading">
 				<h2 id="techniques-heading">
-					{recentTechniques.length > 0 ? 'Techniques seen in the last two years' : 'Techniques in ATT&CK'}
+					{recentTechniques.length > 0 ? `Techniques seen in ${recent}` : 'Techniques in ATT&CK'}
 				</h2>
 				{#if recentTechniques.length > 0}
 					<ul class="tech" aria-labelledby="techniques-heading">
@@ -266,7 +268,7 @@
 						</More>
 					{/if}
 					<p class="key">
-						Counts come from technique IDs in the text of the actor's reports from the last two years,
+						Counts come from technique IDs in the text of the actor's reports from {recent},
 						in whole quarters.
 						{#if documented.size > 0}“Reports only” means recent reports name the technique but MITRE
 							ATT&CK® does not list it for this actor.{/if}
@@ -290,7 +292,7 @@
 					{/if}
 					{#if recentTechniques.length === 0}
 						<p class="key">
-							MITRE ATT&CK® lists these for the actor. No report from the last two years names a technique ID.
+							MITRE ATT&CK® lists these for the actor. No report from {recent} names a technique ID.
 						</p>
 					{/if}
 				{/if}

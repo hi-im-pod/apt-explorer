@@ -150,7 +150,7 @@
 		<p>
 			Each actor or malware guess carries a confidence. It is the share of scored names with a
 			similar score that the method labelled correctly, and each name was scored with a calibration
-			made without it. High means 0.85 or more and medium means 0.70 or more. A band is used only
+			made without it. High means {BAND_THRESHOLDS.high.toFixed(2)} or more and medium means {BAND_THRESHOLDS.medium.toFixed(2)} or more. A band is used only
 			when enough scored names reached it. A guess that would fall in a band that is not used is
 			shown one band lower, with its confidence held just under that band's threshold. A guess that
 			rests on no measured signal is always low.
