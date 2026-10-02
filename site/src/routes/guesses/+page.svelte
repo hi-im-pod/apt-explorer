@@ -107,11 +107,11 @@
 		them changes an actor, an alias, a report link or a match rate anywhere else on this site.
 	</p>
 	<p class="lede">
-		Some names in the paper's reports match no actor in the registry. This page gives each one a
-		label (actor, malware, tool or not an entity) and, for a probable actor, the closest known actor.
-		The program compares each name with the names the sources already list. To learn how far to trust
-		it, we hid each known name in turn and asked the program to recover its label. Those results come
-		first, and they are modest.
+		Some names in the paper's reports match no actor in the registry. A program labels each one
+		(actor, malware, tool or not an entity) by comparing it with the names the sources already list,
+		and for a probable actor it names the closest known actor. To measure how far to trust it, we hid
+		each known name in turn and asked it to recover the label. Those results come first, and they are
+		modest.
 	</p>
 	<p class="jump">
 		<a href="#guess-list">Go to the guesses</a>
@@ -131,8 +131,7 @@
 	{:else}
 		<p>
 			The method was scored on {formatCount(evaluation.ground_truth.n)} names whose answer a source
-			already lists. Each was treated as if it were unresolved, with its own entry hidden from the
-			reference. The label was right for {formatCount(evaluation.correct)} of them.
+			already lists, each with its own entry hidden. The label was right for {formatCount(evaluation.correct)} of them.
 		</p>
 		<p class="rate">
 			<span class="data big">{percentText(evaluation.accuracy)}</span>
@@ -163,17 +162,16 @@
 			{/if}
 			The names are few, so a gap of a few points is within noise.
 			{#if usedBands.has('high')}
-				The method helps most where it says High, as the next table shows.
+				The method helps most where it says High.
 			{:else}
-				No guess reaches the High band, and the next table says why.
+				No guess reaches the High band.
 			{/if}
 		</p>
 
 		<h3>Confidence</h3>
 		<p>
-			Each actor or malware guess carries a confidence. It is the share of scored names with a
-			similar score that the method labelled correctly, and each name was scored with a calibration
-			made without it. High means {BAND_THRESHOLDS.high.toFixed(2)} or more and medium means {BAND_THRESHOLDS.medium.toFixed(2)} or more. A band is used only
+			Each actor or malware guess carries a confidence: the share of scored names with a similar
+			score that the method labelled correctly, using a calibration made without that name. High means {BAND_THRESHOLDS.high.toFixed(2)} or more and medium means {BAND_THRESHOLDS.medium.toFixed(2)} or more. A band is used only
 			when enough scored names reached it. A guess that would fall in a band that is not used is
 			shown one band lower, with its confidence held just under that band's threshold. A guess that
 			rests on no measured signal is always low.
@@ -241,8 +239,7 @@
 
 		<h3>Confusion</h3>
 		<p>
-			Each row is the known label and each column is the label the method gave. The diagonal holds
-			the correct answers.
+			Rows are the known label and columns are the label the method gave.
 		</p>
 		<div class="scroll">
 			<table class="confusion">
@@ -302,9 +299,8 @@
 		<h3>Signals</h3>
 		<p>
 			A signal is one thing the program checks about a name. A signal is kept only when the model
-			does worse without it. The model separates actor from malware. Each kept signal is shown with
-			the label it pushes a name toward and how strongly, and a larger strength is a stronger push.
-			In a guess, a positive weight supports that guess and a negative weight argues against it.
+			does worse without it. The model separates actor from malware. In a guess, a positive weight
+			supports it and a negative weight argues against it.
 		</p>
 		<ul class="signals">
 			{#each evaluation.signals as s (s.signal)}
@@ -364,8 +360,7 @@
 	{:else}
 		<p>
 			{formatCount(rows.length)}
-			{rows.length === 1 ? 'name resolves' : 'names resolve'} to no actor, the most often seen first. Open
-			a row to read the evidence behind its label.
+			{rows.length === 1 ? 'name resolves' : 'names resolve'} to no actor, the most often seen first.
 		</p>
 
 		{#if ready}
@@ -404,8 +399,8 @@
 				<i class="tick" style:left="{BAND_THRESHOLDS.high * 100}%"></i>
 			</span>
 			<span>
-				The bar beside a label is its measured confidence, from 0 to 100%. The two ticks mark the
-				Medium ({BAND_THRESHOLDS.medium * 100}%) and High ({BAND_THRESHOLDS.high * 100}%) thresholds.
+				The bar is measured confidence, from 0 to 100%. Ticks mark the Medium ({BAND_THRESHOLDS.medium * 100}%)
+				and High ({BAND_THRESHOLDS.high * 100}%) thresholds.
 			</span>
 		</p>
 
@@ -467,10 +462,10 @@
 		<h2 id="title-terms-heading">Seen in Titles</h2>
 		<p class="banner" role="note">
 			<strong>Not actors.</strong> These are phrases that report titles repeat. No source lists them as
-			an actor, and none of them appears as an actor anywhere else on this site.
+			an actor, and none appears as one anywhere else on this site.
 		</p>
 		<p>
-			A report title often names the group or the malware it covers. A phrase that {termDoc.min_reports} or more titles
+			A phrase that {termDoc.min_reports} or more titles
 			repeat, from {termDoc.min_publishers} or more publishers, may be a name the sources have not caught up with. This list
 			holds {formatCount(termRows.length)}
 			{termRows.length === 1 ? 'such phrase' : 'such phrases'}, found in
@@ -480,12 +475,11 @@
 				{termDoc.hidden_as_not_names === 1 ? 'more phrase' : 'more phrases'} not to be names, and those are
 				left out.
 			{/if}
-			Each phrase goes through the same guesser as the names above, so every label is a guess and
-			carries the confidence measured there.
+			Each phrase goes through the same guesser as the names above, so every label is a guess.
 		</p>
 		<p class="section-note">
-			A publisher is the organisation a report lists. Where a report lists none, it is the website the
-			report links to. Only titles this site already shows are read. Nothing else from a report is used.
+			A publisher is the organization a report lists, or the website it links to when none is listed.
+			Only titles this site already shows are read, and nothing else from a report is used.
 		</p>
 
 		{#if ready}
