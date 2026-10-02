@@ -2,18 +2,18 @@
 	import { base } from '$app/paths';
 	import type { PublishPolicy } from '$lib/data';
 	import { PUBLISH_POLICIES, sourceLabel } from '$lib/data/labels';
-	import { formatCount, formatDate, lastSpan } from '$lib/format';
+	import { formatCount, formatDate } from '$lib/format';
 	import { LINK_KINDS } from '$lib/links';
 
 	let { data } = $props();
 
-	// Licence names, links and attribution text all come from sources.json,
+	// License names, links and attribution text all come from sources.json,
 	// which the pipeline's tests hold to SOURCES.md. Nothing here retypes
-	// them, so a new copyright year or licence reaches the page with the data.
+	// them, so a new copyright year or license reaches the page with the data.
 	const attack = $derived(data.sources.find((s) => s.name === 'attack'));
 	const paper = $derived(data.sources.find((s) => s.name === 'paper'));
 
-	const DATA_LICENCE_URL = 'https://creativecommons.org/licenses/by-nc-sa/4.0/';
+	const DATA_LICENSE_URL = 'https://creativecommons.org/licenses/by-nc-sa/4.0/';
 	const POLICIES: PublishPolicy[] = ['full', 'derived-only', 'link-only', 'evidence-only'];
 
 	/** "A, B and C" */
@@ -29,7 +29,7 @@
 	<title>About · APT Explorer</title>
 	<meta
 		name="description"
-		content="What APT Explorer is, the paper it builds on, and the licence and attribution for every source it uses."
+		content="What APT Explorer is, the paper it builds on, and the license and attribution for every source it uses."
 	/>
 </svelte:head>
 
@@ -44,9 +44,8 @@
 		Different sources give the same actor different names: one vendor's APT28 is another's Fancy
 		Bear, Sofacy or Sednit. The site merges actor records from MITRE ATT&CK®, the MISP galaxy, ETDA's
 		Threat Group Cards and Malpedia, and records the evidence behind each merge. Where sources
-		disagree on a value, such as an actor's origin, the site shows every value with its source
-		instead of picking one. The <a href="{base}/methodology/">Methodology</a> page reports how well
-		the merge works.
+		disagree, such as on an actor's origin, the site shows every value with its source. The
+		<a href="{base}/methodology/">Methodology</a> page reports how well the merge works.
 	</p>
 	<p>
 		Reports belong to their authors. The site publishes derived facts, metadata and links, and it
@@ -67,9 +66,8 @@
 		<p>
 			The authors released their data as
 			<a href="https://zenodo.org/records/16869733">Zenodo record 16869733</a>
-			under <a href={paper.licence_url}>{paper.licence}</a>. The dataset covers reports from 2014 to 2023, and this site
-			shows it as a labelled layer of its own. The trends are computed from current sources over
-			{lastSpan(data.build?.recent_months)}, and no view reproduces a figure from the paper.
+			under <a href={paper.licence_url}>{paper.licence}</a>. The dataset covers reports from 2014 to 2023 and appears
+			here as a separate, labeled layer. No view reproduces a figure from the paper.
 		</p>
 		<div class="attribution">
 			<p class="label">Dataset attribution</p>
@@ -83,15 +81,13 @@
 	<p>
 		<a href="https://lngt-apt-study-map.vercel.app/">APT Map</a> is an interactive map of
 		hand-curated incident rows, built from the dataset released with the paper above. It shows
-		incidents from the victim's side or the attacker's side, and it filters them by year, country
-		and actor. A detail panel for each incident gives the CVE, whether a zero-day was used, the
-		source, the attack vector, the malware, the targeted sectors and the duration. Community
-		additions to the map are made by GitHub pull request.
+		incidents from the victim's side or the attacker's side and filters them by year, country and
+		actor. Community additions are made by GitHub pull request.
 	</p>
 	<p>
 		APT Explorer answers a different question. It is an explorer of actors and of the reports
 		written about them, and its pipeline can be rebuilt from open sources. The two projects share a
-		starting point, and the credit for the dataset belongs to the paper's authors.
+		starting point, and the dataset credit belongs to the paper's authors.
 	</p>
 	<ul class="related">
 		<li><a href="https://lngt-apt-study-map.vercel.app/">APT Map, the interactive site</a></li>
@@ -105,11 +101,10 @@
 </section>
 
 <section id="sources" aria-labelledby="sources-heading">
-	<h2 id="sources-heading">Sources and Licences</h2>
+	<h2 id="sources-heading">Sources and Licenses</h2>
 	<p class="section-note">
-		Each source's licence decides what the site may publish from it. The project's SOURCES.md file
-		quotes every licence and records the decision. The entries below come from the same data the
-		site is built from, so they show this build's state.
+		Each source's license decides what the site may publish from it. The project's SOURCES.md file
+		quotes every license and records the decision.
 	</p>
 	<ul class="sources">
 		{#each data.sources as s (s.name)}
@@ -124,7 +119,7 @@
 							<dd><a class="policy" href="#publish-{s.publish}">{s.publish}</a></dd>
 						</div>
 						<div>
-							<dt>Licence</dt>
+							<dt>License</dt>
 							<dd><a href={s.licence_url}>{s.licence}</a></dd>
 						</div>
 						<div>
@@ -154,7 +149,7 @@
 	<h2 id="publish-heading">What Each Publish Value Means</h2>
 	<p class="section-note">
 		A source's publish value limits what the site may show from it. It never reduces what the
-		licence requires: attribution, NonCommercial and ShareAlike terms apply in full.
+		license requires: attribution, NonCommercial and ShareAlike terms apply in full.
 	</p>
 	<dl class="policies">
 		{#each POLICIES as p (p)}
@@ -174,10 +169,10 @@
 <section id="report-links" aria-labelledby="report-links-heading">
 	<h2 id="report-links-heading">Original, Archive and Mirror Links</h2>
 	<p class="section-note">
-		A report can have two links: the publisher's own page and a copy of it held by someone else.
-		The site labels each link by where it goes, so a copy is never passed off as the original. The
-		<a href="{base}/methodology/#report-links">Methodology</a> page explains how the label is chosen
-		and where it can be wrong.
+		A report can have two links: the publisher's own page and a copy held by someone else. The
+		site labels each link by where it goes, so a copy is never passed off as the original. The
+		<a href="{base}/methodology/#report-links">Methodology</a> page explains how and where the
+		label can be wrong.
 	</p>
 	<dl class="kinds">
 		{#each LINK_KINDS as k (k.kind)}
@@ -188,36 +183,36 @@
 		{/each}
 	</dl>
 	<p class="section-note">
-		Some reports have no known original. Their records point only to a mirror, or to a link whose
-		publisher the site cannot confirm, and the panel then says that no original publisher link is
-		known or confirmed. The site does not guess one.
+		Some reports have no known original. Their records point only to a mirror or to a link whose
+		publisher the site cannot confirm, and the panel says no original publisher link is known or
+		confirmed. The site does not guess one.
 	</p>
 </section>
 
 <section id="data-licence" aria-labelledby="licence-heading">
-	<h2 id="licence-heading">Data Licence</h2>
+	<h2 id="licence-heading">Data License</h2>
 	<p>
 		The published data is offered under the
-		<a href={DATA_LICENCE_URL}
-			>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International licence (CC BY-NC-SA
+		<a href={DATA_LICENSE_URL}
+			>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA
 			4.0)</a
 		>.
 	</p>
 	<p>
-		It carries this licence because it adapts two share-alike sources: values from ETDA's Threat
+		It carries this license because it adapts two share-alike sources: values from ETDA's Threat
 		Group Cards and from Malpedia are normalized and merged with the other sources. Anyone who
 		reuses the data receives the same NonCommercial and ShareAlike terms and must credit the sources
 		listed above.
 	</p>
 	<p>
-		No additional terms apply to the data, and the licence of the APT Explorer code does not cover
+		No additional terms apply to the data, and the license of the APT Explorer code does not cover
 		it. The same notice ships with the data as <a href="{base}/data/NOTICE.md">NOTICE.md</a>.
 	</p>
 	{#if attack}
 		<h3>MITRE ATT&CK</h3>
 		<p>
-			Values from MITRE ATT&CK stay under MITRE's licence, which requires its copyright designation
-			and licence in every copy:
+			Values from MITRE ATT&CK stay under MITRE's license, which requires its copyright designation
+			and license in every copy:
 		</p>
 		<blockquote class="notice"><p>{attack.attribution}</p></blockquote>
 	{/if}

@@ -28,8 +28,7 @@
 			<h1>{data.stub.display_name} was merged into {data.stub.successor.display_name}</h1>
 			<p>
 				The records tracked under this name were matched to {data.stub.successor.display_name} in a later
-				build, and the two are now one profile. This address stays up so that older links still lead
-				somewhere.
+				build, and the two are now one profile.
 			</p>
 			<p class="go">
 				<a href="{base}/actors/{data.stub.successor.slug}/">Go to the profile of {data.stub.successor.display_name}</a>
@@ -37,8 +36,7 @@
 		{:else}
 			<h1>{data.stub.display_name} is no longer listed</h1>
 			<p>
-				The sources this site builds from no longer describe an actor under this name. This address
-				stays up so that older links still lead somewhere.
+				The sources this site builds from no longer describe an actor under this name.
 			</p>
 			<p class="go"><a href="{base}/actors/">See all actors</a></p>
 		{/if}

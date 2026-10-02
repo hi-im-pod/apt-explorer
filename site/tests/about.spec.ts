@@ -50,7 +50,7 @@ test('a stale source says so on the About page', async ({ page }) => {
 test('the data licence notice gives CC BY-NC-SA 4.0 and MITRE\'s full notice', async ({ page }) => {
 	await page.goto(ABOUT);
 	const notice = page.locator('#data-licence');
-	await expect(notice.getByRole('heading', { level: 2 })).toHaveText('Data Licence');
+	await expect(notice.getByRole('heading', { level: 2 })).toHaveText('Data License');
 	await expect(
 		notice.locator('a[href="https://creativecommons.org/licenses/by-nc-sa/4.0/"]').first()
 	).toBeVisible();

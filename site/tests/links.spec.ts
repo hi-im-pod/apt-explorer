@@ -121,7 +121,7 @@ for (const vp of viewports) {
 				await expectInsidePanel(page, '.links li');
 			});
 
-			test('a mirror is never labelled as the original and the panel says no original is known', async ({ page }) => {
+			test('a mirror is never labeled as the original and the panel says no original is known', async ({ page }) => {
 				await editReport(page, LONE.id, { archive_url: null });
 				await openPanel(page, LONE.id);
 				const links = panel(page).getByRole('list', { name: /links/i }).getByRole('link');
@@ -227,7 +227,7 @@ for (const vp of viewports) {
 				await expect(section.getByRole('heading', { level: 2 })).toHaveText('Report Links');
 				await expect(section).toBeVisible();
 				await expect(section).toContainText('host alone');
-				await expect(section).toContainText('never labelled as the original');
+				await expect(section).toContainText('never labeled as the original');
 				await expect(section).toContainText('does not confirm that the host is the publisher');
 				await expect(section).toContainText('Link, publisher not confirmed');
 				for (const host of ['t.co', 'Wikipedia', 'Dropbox', 'Malpedia']) await expect(section).toContainText(host);

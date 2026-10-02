@@ -183,14 +183,14 @@ test('the current page is marked in the header', async ({ page }) => {
 	await expect(about).toHaveAttribute('aria-current', 'page');
 });
 
-test('the footer shows the build date and links to sources and licences', async ({ page }) => {
+test('the footer shows the build date and links to sources and licenses', async ({ page }) => {
 	await page.goto('/apt-explorer/');
 	const footer = page.getByRole('contentinfo');
 	// The date comes from build.json, so a new build does not break the test.
 	const built = readData<{ built_at: string }>('build.json').built_at;
 	await expect(footer.locator('time')).toHaveAttribute('datetime', built);
 	await expect(footer.locator('time')).toHaveText(formatDate(built));
-	await footer.getByRole('link', { name: /sources and licences/i }).click();
+	await footer.getByRole('link', { name: /sources and licenses/i }).click();
 	await expect(page).toHaveURL(/\/apt-explorer\/about\/#sources$/);
 	await expect(page.locator('#sources')).toBeInViewport();
 });

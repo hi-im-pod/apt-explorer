@@ -40,7 +40,6 @@
 				{g.sources.length > 1 ? 'give' : 'gives'} <span class="value">{display(g.value)}</span></span
 			>{i < groups.length - 1 ? ';' : '.'}
 		{/each}
-		The site shows every value and does not choose between them.
 	</p>
 </div>
 

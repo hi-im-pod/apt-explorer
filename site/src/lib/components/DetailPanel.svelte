@@ -125,8 +125,7 @@
 		{#if !row}
 			<h2 id="panel-title" tabindex="-1" bind:this={heading}>{kindLabel} not found</h2>
 			<p>
-				<code>{requested?.id}</code> is not in the current data. A later build may have removed it,
-				or the link may be mistyped.
+				<code>{requested?.id}</code> is not in the current data. A later build may have removed it.
 			</p>
 		{:else if row.kind === 'report'}
 			<h2 id="panel-title" tabindex="-1" bind:this={heading}>{row.title}</h2>
@@ -263,9 +262,9 @@
 			{#if row.linkOnly}
 				<p class="policy">
 					{sourceLabel('orkl').name} is a link-only source while its terms are confirmed, so it
-					supplies only the report's title, date and links. The actors, CVEs and techniques above
-					were added by this project. Actors come from Malpedia, MITRE ATT&CK and the paper, or
-					from a title that names them, never from ORKL's tags, and CVE and technique IDs are matched in the report text.
+					supplies only the report's title, date and links. This project added the actors, CVEs and
+					techniques above. Actors come from Malpedia, MITRE ATT&CK, the paper or a title that names
+					them, never from ORKL's tags. CVE and technique IDs are matched in the report text.
 					<a href="{base}/about/#publish-link-only">What link-only means</a>
 				</p>
 			{/if}

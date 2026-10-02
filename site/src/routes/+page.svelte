@@ -80,8 +80,7 @@
 	<div class="hero-grid">
 		<p class="grid-caption" id="grid-caption">
 			{data.actor.name}, as {numberWord(grid.columns.length)} sources name it. A filled square means
-			that source lists the name. The rows sample the {grid.total} names, from the most widely listed
-			to the least.
+			that source lists the name. The rows sample the {grid.total} names, most widely listed first.
 		</p>
 		<div class="alias-card">
 			<table class="alias-grid" aria-labelledby="grid-caption">
@@ -165,8 +164,8 @@
 		</tbody>
 	</table>
 	<p class="key">
-		Each source is fetched every week. When a fetch fails, the build keeps the last good snapshot and
-		marks the source stale. <a href="{base}/about/#sources">Full licence table and fetch dates</a>
+		Sources are fetched weekly. A failed fetch keeps the last good snapshot and marks the source
+		stale. <a href="{base}/about/#sources">Full license table and fetch dates</a>
 	</p>
 	<p class="credit">
 		Built on the dataset of Yuldoshkhujaev et al. (CCS '25). <a href="{base}/about/#paper-heading"

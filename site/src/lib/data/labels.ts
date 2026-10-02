@@ -56,7 +56,7 @@ export const SOURCE_LABELS: Readonly<Record<SourceKey, SourceLabel>> = {
 	paper: {
 		name: "Yuldoshkhujaev et al., CCS '25 dataset",
 		short: "CCS '25 data",
-		role: 'Reports from 2014 to 2023, shown as a labelled layer.'
+		role: 'Reports from 2014 to 2023, shown as a labeled layer.'
 	},
 	microsoft: {
 		name: 'Microsoft threat actor naming table',
@@ -66,7 +66,7 @@ export const SOURCE_LABELS: Readonly<Record<SourceKey, SourceLabel>> = {
 	epss: {
 		name: 'EPSS exploit prediction scores',
 		short: 'EPSS',
-		role: 'The modelled chance that each listed CVE is exploited in the next 30 days.'
+		role: 'The modeled chance that each listed CVE is exploited in the next 30 days.'
 	},
 	talos: {
 		name: 'Cisco Talos blog',
@@ -97,7 +97,7 @@ export function sourceLabel(key: SourceKey): SourceLabel {
 export const PUBLISH_POLICIES: Readonly<Record<PublishPolicy, string>> = {
 	full: 'Every field the pipeline takes from the source may appear, with a source badge and its provenance.',
 	'derived-only':
-		"Short factual values may appear with a source badge: names, aliases, country and sector values, motivation, dates and identifiers. The source's own text is never copied. The licence duties still apply in full.",
+		"Short factual values may appear with a source badge: names, aliases, country and sector values, motivation, dates and identifiers. The source's own text is never copied. The license duties still apply in full.",
 	'link-only':
 		"Only each item's title, publisher, publication date and link appear, plus identifiers this project computes itself, such as a content hash.",
 	'evidence-only':

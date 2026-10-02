@@ -268,9 +268,8 @@
 						</More>
 					{/if}
 					<p class="key">
-						Counts come from technique IDs in the text of the actor's reports from {recent},
-						in whole quarters.
-						{#if documented.size > 0}“Reports only” means recent reports name the technique but MITRE
+						Counts come from technique IDs in the actor's report text.
+						{#if documented.size > 0}“Reports only” means reports name the technique but MITRE
 							ATT&CK® does not list it for this actor.{/if}
 					</p>
 				{/if}
@@ -292,7 +291,7 @@
 					{/if}
 					{#if recentTechniques.length === 0}
 						<p class="key">
-							MITRE ATT&CK® lists these for the actor. No report from {recent} names a technique ID.
+							No report from {recent} names a technique ID.
 						</p>
 					{/if}
 				{/if}
@@ -321,7 +320,7 @@
 				{/if}
 				<p class="key">
 					KEV marks a CVE in CISA's Known Exploited Vulnerabilities Catalog, and “ransomware” marks one
-					that the catalogue records as used in ransomware campaigns.
+					that the catalog records as used in ransomware campaigns.
 				</p>
 			</section>
 		{/if}
@@ -340,8 +339,7 @@
 					</More>
 				{/if}
 				<p class="key">
-					{reports.length === 1 ? '1 report' : `${formatCount(reports.length)} reports`}, newest first. A
-					title opens the publisher's copy, and Details opens the report in
+					Newest first. Details opens the report in
 					<a href="{base}/explore/?actor={encodeURIComponent(actor.id)}">Explore</a>.
 				</p>
 			</section>
@@ -366,7 +364,6 @@
 					<li><b>{n.code}</b> {sourceLabel(n.key).short}</li>
 				{/each}
 			</ul>
-			<p class="key">A filled box means the source lists the name.</p>
 		</section>
 
 		{#if attribution.length > 0}
@@ -392,8 +389,7 @@
 			<section aria-labelledby="targets-heading">
 				<h2 id="targets-heading">Claimed targets (actor-level, per source)</h2>
 				<p class="key lead">
-					Sources give these countries and sectors for the actor as a whole. They do not say which
-					report or campaign hit which target.
+					Sources give these for the actor as a whole, not for a report or campaign.
 				</p>
 				<dl class="claims">
 					{#if targets.countries.length > 0}
