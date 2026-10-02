@@ -184,7 +184,8 @@
 	</dl>
 	<p class="section-note">
 		Some reports have no known original. Their records point only to a mirror or to a link whose
-		publisher the site cannot confirm, and the panel says so. The site does not guess one.
+		publisher the site cannot confirm, and the panel says no original publisher link is known or
+		confirmed. The site does not guess one.
 	</p>
 </section>
 
