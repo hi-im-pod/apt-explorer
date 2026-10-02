@@ -96,8 +96,7 @@
 			</div>
 		</div>
 		<figcaption>
-			Dated reports per quarter, {label(columns[0].quarter)} to {label(columns[columns.length - 1].quarter)}.
-			A quarter without a bar had no dated report.
+			Dated reports, {label(columns[0].quarter)} to {label(columns[columns.length - 1].quarter)}.
 			{#if undated > 0}
 				{undated === 1 ? '1 undated report is' : `${formatCount(undated)} undated reports are`} not shown.
 			{/if}

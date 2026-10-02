@@ -145,7 +145,7 @@
 	</div>
 {:else}
 	<p class="empty">
-		No actor matches “{query.trim()}”. Try another spelling or another of the actor's names.
+		No actor matches “{query.trim()}”.
 	</p>
 {/if}
 
