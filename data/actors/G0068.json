@@ -304,11 +304,13 @@
       "values": [
         {
           "value": "CN",
-          "source": "etda"
+          "source": "etda",
+          "name": "Platinum"
         },
         {
           "value": "SG",
-          "source": "microsoft"
+          "source": "microsoft",
+          "name": "Fallow Squall"
         }
       ]
     }

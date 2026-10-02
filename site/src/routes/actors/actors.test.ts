@@ -6,6 +6,7 @@ function entry(over: Partial<ActorsIndexEntry> & { id: string; name: string }): 
 	return {
 		aliases: [over.name],
 		origin: [],
+		origin_conflict: false,
 		report_count: 0,
 		last_reported: null,
 		sources: ['attack'],

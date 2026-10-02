@@ -118,7 +118,7 @@
 							<dd>
 								{#if entry.origin.length > 0}
 									{entry.origin.map(countryName).join(', ')}
-									{#if entry.origin.length > 1}<span class="disagree">sources disagree</span>{/if}
+									{#if entry.origin_conflict}<span class="disagree">sources disagree</span>{/if}
 								{:else}
 									<span class="muted">not reported</span>
 								{/if}

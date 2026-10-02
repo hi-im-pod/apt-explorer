@@ -376,7 +376,7 @@
 							<dd>
 								{#if f.values.length > 0}{@render valueList(f.values, f.field, 'values')}{/if}
 								{#each actor.conflicts.filter((c) => c.field === f.field) as c}
-									<ConflictNote conflict={c} display={f.field === 'origin' ? countryName : undefined} />
+									<ConflictNote conflict={c} actorName={actor.name} display={f.field === 'origin' ? countryName : undefined} />
 								{/each}
 							</dd>
 						</div>

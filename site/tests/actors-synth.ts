@@ -31,6 +31,7 @@ export function synthIndex(): ActorsIndex {
 			name: `Synthetic Actor ${n}`,
 			aliases: [`Synthetic Actor ${n}`, `Cluster ${n}`, `${LONG}-${n}`],
 			origin: i % 3 === 0 ? ['CN', 'RU'] : [],
+			origin_conflict: i % 3 === 0,
 			report_count: i,
 			last_reported: i % 4 === 0 ? null : `2026-0${1 + (i % 9)}-1${i % 10}`,
 			sources: ['attack', 'misp']
@@ -41,6 +42,7 @@ export function synthIndex(): ActorsIndex {
 		name: 'Busy Synthetic Actor',
 		aliases: ['Busy Synthetic Actor', 'Quiet Otter', LONG],
 		origin: ['KP'],
+		origin_conflict: false,
 		report_count: SYNTH_REPORTS,
 		last_reported: '2026-09-20',
 		sources: ['attack', 'misp', 'malpedia']
@@ -117,9 +119,9 @@ export function synthActor(reports: Report[]): Actor {
 			{
 				field: 'origin',
 				values: [
-					{ value: 'KP', source: 'misp' },
-					{ value: 'CN', source: 'malpedia' },
-					{ value: 'RU', source: 'etda' }
+					{ value: 'KP', source: 'misp', name: 'Busy Synthetic Actor' },
+					{ value: 'CN', source: 'malpedia', name: 'Busy Synthetic Actor' },
+					{ value: 'RU', source: 'etda', name: 'Quiet Otter' }
 				]
 			}
 		],

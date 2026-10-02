@@ -200,11 +200,13 @@ const NAMES_IN_LEDE = 5;
 
 /**
  * The sentence or two under the actor's name, built only from the data: a few
- * of its other names, and how many sources agree on an origin. Null when
+ * of its other names, and how many sources agree on an origin. Several origins
+ * count as a disagreement only when the pipeline recorded an origin conflict;
+ * a source that lists two countries disagrees with no one. Null when
  * there is nothing to say, so the page shows no empty line. An actor that only
  * a vendor's cluster ID stands behind says so instead.
  */
-export function ledeFor(actor: Pick<Actor, 'name' | 'aliases' | 'origin' | 'cluster_only'>): string | null {
+export function ledeFor(actor: Pick<Actor, 'name' | 'aliases' | 'origin' | 'conflicts' | 'cluster_only'>): string | null {
 	if (actor.cluster_only) {
 		const source = actor.aliases[0]?.sources[0];
 		const vendor = source ? SOURCE_LABELS[source]?.name ?? source : 'A vendor';
@@ -224,7 +226,11 @@ export function ledeFor(actor: Pick<Actor, 'name' | 'aliases' | 'origin' | 'clus
 		const n = origins[0].sources.length;
 		parts.push(`Linked to ${countryName(origins[0].value)} by ${countWord(n)} ${n === 1 ? 'source' : 'sources'}.`);
 	} else if (origins.length > 1) {
-		parts.push('Sources disagree on the origin.');
+		if (actor.conflicts.some((c) => c.field === 'origin')) parts.push('Sources disagree on the origin.');
+		else {
+			const names = origins.map((o) => countryName(o.value));
+			parts.push(`Linked to ${names.slice(0, -1).join(', ')} and ${names[names.length - 1]}.`);
+		}
 	}
 	return parts.length > 0 ? parts.join(' ') : null;
 }

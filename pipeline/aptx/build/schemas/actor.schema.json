@@ -161,6 +161,27 @@
         }
       }
     },
+    "conflictValue": {
+      "description": "One side of a conflict: the value, the source, and the name that source uses for the record, since two records of one source can disagree.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "source",
+        "name"
+      ],
+      "properties": {
+        "value": {
+          "$ref": "#/$defs/label"
+        },
+        "source": {
+          "$ref": "#/$defs/sourceKey"
+        },
+        "name": {
+          "$ref": "#/$defs/label"
+        }
+      }
+    },
     "claimedTargets": {
       "description": "Countries and sectors the sources say the actor targets. These are actor-level claims, not facts about any one campaign.",
       "type": "object",
@@ -276,10 +297,10 @@
           ]
         },
         "values": {
-          "description": "Every published value, each with its source.",
+          "description": "Every published value, each with its source and the name of the record that gave it.",
           "type": "array",
           "items": {
-            "$ref": "#/$defs/sourcedValue"
+            "$ref": "#/$defs/conflictValue"
           },
           "uniqueItems": true,
           "minItems": 2

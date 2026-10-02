@@ -3692,15 +3692,18 @@
       "values": [
         {
           "value": "RU",
-          "source": "misp"
+          "source": "misp",
+          "name": "FIN7"
         },
         {
           "value": "UA",
-          "source": "etda"
+          "source": "etda",
+          "name": "Carbanak"
         },
         {
           "value": "RU",
-          "source": "malpedia"
+          "source": "malpedia",
+          "name": "FIN7"
         }
       ]
     },
@@ -3709,19 +3712,23 @@
       "values": [
         {
           "value": "Cybercrime",
-          "source": "misp"
+          "source": "misp",
+          "name": "FIN7"
         },
         {
           "value": "Financial crime",
-          "source": "etda"
+          "source": "etda",
+          "name": "Carbanak"
         },
         {
           "value": "Financial gain",
-          "source": "etda"
+          "source": "etda",
+          "name": "Carbanak"
         },
         {
           "value": "Cybercrime",
-          "source": "malpedia"
+          "source": "malpedia",
+          "name": "FIN7"
         }
       ]
     }

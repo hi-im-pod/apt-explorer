@@ -161,7 +161,7 @@ def _report(**changes):
 
 
 def _index_entry(**changes):
-    entry = {"id": "G0007", "name": "APT28", "aliases": [], "origin": [], "report_count": 0,
+    entry = {"id": "G0007", "name": "APT28", "aliases": [], "origin": [], "origin_conflict": False, "report_count": 0,
              "last_reported": None, "sources": ["attack"]}
     entry.update(changes)
     return entry
@@ -397,6 +397,8 @@ def integrity_problems(tree: dict) -> list[str]:
         where = f"actor {entry['id']}"
         if page["name"] != entry["name"] or [a["value"] for a in page["aliases"]] != entry["aliases"]:
             add(f"{where}: the index and the actor page show different names or aliases")
+        if entry["origin_conflict"] != any(c["field"] == "origin" for c in page["conflicts"]):
+            add(f"{where}: origin_conflict does not match the conflicts on the actor page")
         if entry["report_count"] != len(page["reports"]):
             add(f"{where}: report_count {entry['report_count']} but the page lists {len(page['reports'])}")
         if set(page["reports"]) != tagged[entry["id"]]:

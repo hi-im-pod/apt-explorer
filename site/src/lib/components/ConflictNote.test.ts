@@ -40,8 +40,8 @@ describe('ConflictNote', () => {
 				conflict: {
 					field: 'origin',
 					values: [
-						{ value: 'US', source: 'misp' },
-						{ value: 'GB', source: 'malpedia' }
+						{ value: 'US', source: 'misp', name: 'Alpha' },
+						{ value: 'GB', source: 'malpedia', name: 'Alpha' }
 					]
 				}
 			}
@@ -60,9 +60,9 @@ describe('ConflictNote', () => {
 				conflict: {
 					field: 'origin',
 					values: [
-						{ value: 'US', source: 'misp' },
-						{ value: 'US', source: 'etda' },
-						{ value: 'GB', source: 'malpedia' }
+						{ value: 'US', source: 'misp', name: 'Alpha' },
+						{ value: 'US', source: 'etda', name: 'Alpha' },
+						{ value: 'GB', source: 'malpedia', name: 'Alpha' }
 					]
 				},
 				display: (v: string) => names[v] ?? v
@@ -71,5 +71,46 @@ describe('ConflictNote', () => {
 		const t = text(body);
 		expect(t).toContain('MISP and ETDA give United States');
 		expect(t).toContain('Malpedia gives United Kingdom');
+	});
+
+	it('names the records behind each value, and leaves out the actor own name', () => {
+		const { body } = render(ConflictNote, {
+			props: {
+				conflict: {
+					field: 'origin',
+					values: [
+						{ value: 'IR', source: 'misp', name: 'IRIDIUM' },
+						{ value: 'IR', source: 'etda', name: 'Seashell Blizzard' },
+						{ value: 'RU', source: 'misp', name: 'Sandworm Team' },
+						{ value: 'RU', source: 'etda', name: 'Energetic Bear' },
+						{ value: 'RU', source: 'etda', name: 'TeleBots' },
+						{ value: 'RU', source: 'etda', name: 'Voodoo Bear' },
+						{ value: 'RU', source: 'etda', name: 'BlackEnergy' }
+					]
+				},
+				actorName: 'Sandworm Team'
+			}
+		});
+		const t = text(body);
+		expect(t).toContain('MISP and ETDA give IR (IRIDIUM and Seashell Blizzard)');
+		expect(t).toContain('MISP and ETDA give RU (Sandworm Team, Energetic Bear, TeleBots and 2 more)');
+	});
+
+	it('shows no names when the only record is the actor itself', () => {
+		const { body } = render(ConflictNote, {
+			props: {
+				conflict: {
+					field: 'origin',
+					values: [
+						{ value: 'US', source: 'misp', name: 'apt28' },
+						{ value: 'GB', source: 'etda', name: 'Fancy Bear' }
+					]
+				},
+				actorName: 'APT28'
+			}
+		});
+		const t = text(body);
+		expect(t).toContain('MISP gives US;');
+		expect(t).toContain('ETDA gives GB (Fancy Bear)');
 	});
 });

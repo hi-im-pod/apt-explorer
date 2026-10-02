@@ -95,8 +95,10 @@ export interface ActorsIndexEntry {
 	name: string;
 	/** In the order the actor page lists them. May hold very long unbroken strings. */
 	aliases: string[];
-	/** Distinct values across sources. More than one means the sources disagree. */
+	/** Distinct values across sources. More than one is not a disagreement by itself. */
 	origin: string[];
+	/** True when two records give origins that share nothing; the actor page names them. */
+	origin_conflict: boolean;
 	report_count: number;
 	/** Null when none of the actor's reports is dated. */
 	last_reported: IsoDate | null;
@@ -185,7 +187,17 @@ export interface TimelinePoint {
  */
 export interface Conflict {
 	field: ConflictField;
-	values: SourcedValue[];
+	values: ConflictValue[];
+}
+
+/**
+ * One side of a conflict: the value, its source, and the name that record carries.
+ * @schema actor.schema.json#/$defs/conflictValue
+ */
+export interface ConflictValue {
+	value: string;
+	source: SourceKey;
+	name: string;
 }
 
 /**

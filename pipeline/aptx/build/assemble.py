@@ -378,18 +378,21 @@ def _same_country(a: str, b: str) -> bool:
     return ca == cb if ca and cb else a.casefold() == b.casefold()
 
 
-def _conflict(field_name: str, entries: list[tuple[str, str]], agree) -> list[dict]:
-    """A conflict when two sources give values that share nothing, showing every side.
+def _conflict(field_name: str, entries: list[tuple[str, str, str, str]], agree) -> list[dict]:
+    """A conflict when two records give values that share nothing, showing every side and who said it.
 
-    A source that lists two origins does not conflict with itself, and two sources
-    conflict only when none of their values agree.
+    Entries are (value, source, record name, record key). Records are compared one by one, so two
+    records from the same source can conflict, which is how a name two groups share shows up.
+    A record that lists two values does not conflict with itself, and two records conflict only
+    when none of their values agree.
     """
     values: dict[str, list[str]] = defaultdict(list)
-    for value, source in entries:
-        values[source].append(value)
-    for s1, s2 in combinations(sorted(values, key=_ORD.get), 2):
-        if not any(agree(a, b) for a in values[s1] for b in values[s2]):
-            return [{"field": field_name, "values": _sourced(entries)}]
+    for value, _, _, record in entries:
+        values[record].append(value)
+    for r1, r2 in combinations(values, 2):
+        if not any(agree(a, b) for a in values[r1] for b in values[r2]):
+            sides = _dedupe((v, s, n) for v, s, n, _ in entries)
+            return [{"field": field_name, "values": [{"value": v, "source": s, "name": n} for v, s, n in sides]}]
     return []
 
 
@@ -416,6 +419,10 @@ def _actor(p: _Published, reports: list["_Report"], kev: dict[str, dict], valid_
     origin = _dedupe((c, m.source) for m in members for v in m.origin if (c := iso2(v)))
     sponsor = _dedupe((t, m.source) for m in members for v in m.sponsor if (t := _tidy(v)))
     motivation = _dedupe((t, m.source) for m in members for v in m.motivation if (t := _tidy(v)))
+
+    def said(values, clean):
+        return [(c, m.source, _tidy(m.name) or m.source_id, f"{m.source}:{m.source_id}")
+                for m in members for v in values(m) if (c := clean(v))]
     countries = _dedupe((country_name(c), m.source) for m in members for v in m.targets_countries
                         if (c := iso2(v)))
     sectors = _dedupe((t, m.source) for m in members for v in m.targets_sectors
@@ -447,9 +454,9 @@ def _actor(p: _Published, reports: list["_Report"], kev: dict[str, dict], valid_
         "cves": [{"cve": c, "kev": c in kev, "ransomware": kev[c]["ransomware"] if c in kev else None} for c in cves],
         "timeline": [{"quarter": q, "count": n} for q, n in sorted(quarters.items())],
         "reports": [r.id for r in mine],
-        "conflicts": (_conflict("origin", origin, lambda a, b: a == b)
-                      + _conflict("sponsor", sponsor, _same_country)
-                      + _conflict("motivation", motivation, _agree_words)),
+        "conflicts": (_conflict("origin", said(lambda m: m.origin, iso2), lambda a, b: a == b)
+                      + _conflict("sponsor", said(lambda m: m.sponsor, _tidy), _same_country)
+                      + _conflict("motivation", said(lambda m: m.motivation, _tidy), _agree_words)),
         # Every edge counts, including those from sources that are not shown. The number says
         # how much evidence the merge rests on, and names none of it.
         "evidence_count": len(p.resolved.evidence),
@@ -463,6 +470,7 @@ def _actor(p: _Published, reports: list["_Report"], kev: dict[str, dict], valid_
         "name": name,
         "aliases": [a["value"] for a in aliases],
         "origin": _dedupe(v for v, _ in origin),
+        "origin_conflict": any(c["field"] == "origin" for c in doc["conflicts"]),
         "report_count": len(mine),
         "last_reported": max(dates) if dates else None,
         "sources": sorted(visible_sources, key=_ORD.get),

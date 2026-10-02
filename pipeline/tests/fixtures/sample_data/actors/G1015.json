@@ -137,11 +137,13 @@
       "values": [
         {
           "value": "US",
-          "source": "misp"
+          "source": "misp",
+          "name": "Scattered Spider"
         },
         {
           "value": "GB",
-          "source": "malpedia"
+          "source": "malpedia",
+          "name": "Scattered Spider"
         }
       ]
     }

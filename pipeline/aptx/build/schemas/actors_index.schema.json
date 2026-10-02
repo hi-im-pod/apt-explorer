@@ -16,6 +16,7 @@
         "name",
         "aliases",
         "origin",
+        "origin_conflict",
         "report_count",
         "last_reported",
         "sources"
@@ -38,12 +39,16 @@
           "uniqueItems": true
         },
         "origin": {
-          "description": "Distinct origin values across published sources. More than one value means the sources disagree, and the actor page shows who said what.",
+          "description": "Distinct origin values across published sources. More than one value does not mean the sources disagree; a source can list two countries. See origin_conflict.",
           "type": "array",
           "items": {
             "$ref": "#/$defs/label"
           },
           "uniqueItems": true
+        },
+        "origin_conflict": {
+          "description": "True when the actor page records an origin conflict, so two records give origins that share nothing. The actor page shows who said what.",
+          "type": "boolean"
         },
         "report_count": {
           "$ref": "#/$defs/count",

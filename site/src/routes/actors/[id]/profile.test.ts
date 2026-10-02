@@ -267,10 +267,44 @@ describe('ledeFor', () => {
 					origin: [
 						{ value: 'CN', source: 'misp' },
 						{ value: 'RU', source: 'etda' }
+					],
+					conflicts: [
+						{
+							field: 'origin',
+							values: [
+								{ value: 'CN', source: 'misp', name: 'X' },
+								{ value: 'RU', source: 'etda', name: 'X' }
+							]
+						}
 					]
 				})
 			)
 		).toBe('Sources disagree on the origin.');
+	});
+
+	it('lists several origins without calling them a disagreement when no origin conflict was recorded', () => {
+		expect(
+			ledeFor(
+				actor({
+					origin: [
+						{ value: 'CN', source: 'etda' },
+						{ value: 'RU', source: 'etda' },
+						{ value: 'RU', source: 'misp' }
+					]
+				})
+			)
+		).toBe('Linked to China and Russia.');
+		expect(
+			ledeFor(
+				actor({
+					origin: [
+						{ value: 'CN', source: 'etda' },
+						{ value: 'RU', source: 'etda' },
+						{ value: 'US', source: 'misp' }
+					]
+				})
+			)
+		).toBe('Linked to China, Russia and United States.');
 	});
 
 	it('says an actor that only a vendor cluster ID stands behind is unconfirmed, and names the vendor', () => {

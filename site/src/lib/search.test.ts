@@ -105,6 +105,7 @@ const actors: ActorsIndex = [
 		name: 'APT28',
 		aliases: ['APT28', 'Fancy Bear', 'Sofacy'],
 		origin: ['RU'],
+		origin_conflict: false,
 		report_count: 3,
 		last_reported: '2024-02-21',
 		sources: ['attack']
@@ -114,6 +115,7 @@ const actors: ActorsIndex = [
 		name: 'Lazarus Group',
 		aliases: ['Lazarus Group', 'HIDDEN COBRA'],
 		origin: ['KP'],
+		origin_conflict: false,
 		report_count: 1,
 		last_reported: '2024-04-03',
 		sources: ['attack']

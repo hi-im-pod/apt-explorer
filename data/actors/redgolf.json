@@ -118,15 +118,18 @@
       "values": [
         {
           "value": "state-sponsored espionage and financially motivated",
-          "source": "misp"
+          "source": "misp",
+          "name": "RedGolf"
         },
         {
           "value": "Information theft and espionage",
-          "source": "etda"
+          "source": "etda",
+          "name": "RedGolf"
         },
         {
           "value": "state-sponsored espionage and financially motivated",
-          "source": "malpedia"
+          "source": "malpedia",
+          "name": "RedGolf"
         }
       ]
     }

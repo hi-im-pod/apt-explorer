@@ -91,15 +91,18 @@
       "values": [
         {
           "value": "KP",
-          "source": "misp"
+          "source": "misp",
+          "name": "OnionDog"
         },
         {
           "value": "KR",
-          "source": "etda"
+          "source": "etda",
+          "name": "OnionDog"
         },
         {
           "value": "KP",
-          "source": "malpedia"
+          "source": "malpedia",
+          "name": "OnionDog"
         }
       ]
     }

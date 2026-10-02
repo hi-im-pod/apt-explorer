@@ -328,14 +328,33 @@ def test_russia_and_ru_are_not_a_conflict():
 
 def test_ru_against_cn_is_a_conflict_and_every_side_is_shown():
     actor = _origin_run(("misp", "RU"), ("malpedia", "cn"))
-    assert actor["conflicts"] == [{"field": "origin", "values": [{"value": "RU", "source": "misp"},
-                                                                {"value": "CN", "source": "malpedia"}]}]
+    assert actor["conflicts"] == [{"field": "origin", "values": [
+        {"value": "RU", "source": "misp", "name": "APT28"}, {"value": "CN", "source": "malpedia", "name": "APT28"}]}]
 
 
 def test_a_source_listing_two_origins_does_not_conflict_with_itself():
     records = [A("attack", "G0007", "APT28"), A("misp", "m1", "APT28", origin=["RU", "BY"])]
     actor = run(B("attack", actors=records[:1]), B("misp", actors=records[1:]))["actors/G0007.json"]
     assert actor["conflicts"] == []
+
+
+def test_two_records_of_one_source_conflict_and_the_conflict_names_each_record():
+    # One source holds two records that merged because they share a name. They give different origins.
+    records = [A("misp", "m1", "Sandworm", aliases=["APT28"], origin=["RU"]),
+               A("misp", "m2", "Iridium", aliases=["APT28"], origin=["IR"])]
+    actor = run(B("attack", actors=[A("attack", "G0007", "APT28")]), B("misp", actors=records))["actors/G0007.json"]
+    assert actor["conflicts"] == [{"field": "origin", "values": [
+        {"value": "RU", "source": "misp", "name": "Sandworm"}, {"value": "IR", "source": "misp", "name": "Iridium"}]}]
+
+
+def test_the_index_row_says_whether_the_origins_conflict():
+    records = [A("misp", "m1", "Sandworm", aliases=["APT28"], origin=["RU"]),
+               A("misp", "m2", "Iridium", aliases=["APT28"], origin=["IR"])]
+    payload = run(B("attack", actors=[A("attack", "G0007", "APT28")]), B("misp", actors=records))
+    assert next(e for e in payload["actors/index.json"] if e["id"] == "G0007")["origin_conflict"] is True
+    listed = run(B("attack", actors=[A("attack", "G0007", "APT28")]),
+                 B("misp", actors=[A("misp", "m1", "APT28", origin=["RU", "BY"])]))
+    assert next(e for e in listed["actors/index.json"] if e["id"] == "G0007")["origin_conflict"] is False
 
 
 def test_sources_that_share_an_origin_do_not_conflict():
