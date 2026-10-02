@@ -25,6 +25,7 @@ function report(over: Partial<Report> & { id: string }): Report {
 		archive_url: null,
 		actors: [],
 		actors_from_title: [],
+		actors_from_text: [],
 		actor_names_unresolved: [],
 		cves: [],
 		techniques: [],

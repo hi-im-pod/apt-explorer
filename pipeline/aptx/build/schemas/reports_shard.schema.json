@@ -22,6 +22,7 @@
         "archive_url",
         "actors",
         "actors_from_title",
+        "actors_from_text",
         "actor_names_unresolved",
         "cves",
         "techniques",
@@ -61,7 +62,7 @@
           "description": "An archived copy held by a source, or null."
         },
         "actors": {
-          "description": "Resolved actors the report is tagged with, including those in actors_from_title.",
+          "description": "Resolved actors the report is tagged with, including those in actors_from_title and actors_from_text.",
           "type": "array",
           "items": {
             "$ref": "#/$defs/actorId"
@@ -70,6 +71,14 @@
         },
         "actors_from_title": {
           "description": "The subset of actors that a source's title names and no tag confirms. A link-only source's post is never read, so this is the title's word and nothing else.",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/actorId"
+          },
+          "uniqueItems": true
+        },
+        "actors_from_text": {
+          "description": "The subset of actors that the report's text names, often enough or near the start, and that no tag and no title confirms. The text is read once at fetch and never stored, so this holds only which actors were found.",
           "type": "array",
           "items": {
             "$ref": "#/$defs/actorId"

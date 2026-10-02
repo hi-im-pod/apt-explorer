@@ -51,12 +51,15 @@ aliases and, under strict criteria, new actors (resolve/pairs.py).
     evidence-only merge evidence only. Nothing from the source is published, but
                   the edges it caused still count in evidence_count.
 
-Report-to-actor links come from four places, so a source that may not be shown can
+Report-to-actor links come from five places, so a source that may not be shown can
 never decide an attribution: Malpedia's report_links (when Malpedia is publishable),
 the group references in ATT&CK, the actor names the paper gives for its own reports,
-and a title that names a published actor. The first three are tags. The fourth is
-weaker and is kept apart as actors_from_title: a link-only source keeps no post, only
-its title, so the title is all there is to read. Only the title the site shows is read,
+a title that names a published actor, and a report's text that names one. The first
+three are tags. The fourth is weaker and is kept apart as actors_from_title: a link-only
+source keeps no post, only its title, so the title is all there is to read. The fifth is
+kept apart as actors_from_text. Text is never stored. A source that reads its text at fetch
+(ORKL) keeps only the names it found and how often, and the build keeps a name when it
+occurs often enough or opens the text (TEXT_MIN_MENTIONS, TEXT_OPENING_WORDS). Only the title the site shows is read,
 and only when it comes from a source in TITLE_MATCH_SOURCES, and only for the aliases
 the site already publishes (resolve/titles.py). ORKL's actor tags are matching evidence and are
 ignored here even when its policy is widened. Its titles are read like any other link-only title.
@@ -92,6 +95,14 @@ _ORD = {key: i for i, key in enumerate(SOURCE_ORDER)}
 # Sources whose report titles may name an actor. ORKL's were judged offline against its Malpedia
 # and ATT&CK tags before it was added (precision 0.83 as a lower bound, see the README).
 TITLE_MATCH_SOURCES = frozenset({"microsoftblog", "talos", "eset", "dfir", "orkl", "paper"})
+
+# Sources whose text is read at fetch for the actors it names. Only ORKL, whose full text is already
+# read for CVEs and techniques, keeps the names it finds.
+TEXT_MATCH_SOURCES = frozenset({"orkl"})
+# A name counts as used in the text when it occurs this many times, or when it occurs within the first
+# TEXT_OPENING_WORDS words. One passing mention further in is not what a report names.
+TEXT_MIN_MENTIONS = 2
+TEXT_OPENING_WORDS = 300
 
 _GENERATED_AT = re.compile(r"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z")
 _URL = re.compile(r"https?://\S+")
@@ -146,6 +157,19 @@ class BuildFacts:
     guess_labels: tuple = ()
 
 
+def name_matcher(registry: Registry, policies: Mapping[str, str]) -> titles.TitleMatcher:
+    """A matcher over the aliases the site publishes, for titles and for report text.
+
+    Only the aliases a page shows are read, so a title or a text can never reveal a name that only an
+    evidence-only source holds.
+    """
+    shown = _published_actors(registry, _check_policies(policies))
+    return titles.build(
+        {p.id: [a["value"] for a in _aliases(p, _display_name(p.members), {m.source for m in p.members}.__contains__)]
+         for p in shown},
+        registry.lookup, lambda phrase: registry.non_actor(phrase) is not None)
+
+
 def assemble(bundles, registry: Registry, policies: Mapping[str, str], link_status: Mapping[str, bool] | None = None,
              generated_at: str | None = None, *, facts: BuildFacts,
              title_sources: frozenset[str] = TITLE_MATCH_SOURCES) -> dict:
@@ -161,12 +185,7 @@ def assemble(bundles, registry: Registry, policies: Mapping[str, str], link_stat
     shown = _published_actors(registry, policies)
     published_ids = {p.id for p in shown}
 
-    # Only the aliases a page shows are read, so a title can never reveal a name that only an
-    # evidence-only source holds.
-    matcher = titles.build(
-        {p.id: [a["value"] for a in _aliases(p, _display_name(p.members), {m.source for m in p.members}.__contains__)]
-         for p in shown},
-        registry.lookup, lambda phrase: registry.non_actor(phrase) is not None)
+    matcher = name_matcher(registry, policies)
     reports = _merge_reports(by_source, policies, facts, registry, published_ids, link_status or {}, today,
                              valid_techniques, (matcher, title_sources))
     vulns = _vulns(by_source, policies, reports)
@@ -477,6 +496,7 @@ class _Report:
     archive_url: str | None
     actors: list[str]
     actors_from_title: list[str]
+    actors_from_text: list[str]
     unresolved: list[str]
     cves: list[str]
     techniques: list[str]
@@ -495,7 +515,8 @@ class _Report:
             "id": self.id, "title": self.title, "published": self.published, "date_basis": self.basis,
             "organisation": self.organisation, "url": self.url, "url_ok": self.url_ok,
             "archive_url": self.archive_url, "actors": sorted(self.actors),
-            "actors_from_title": self.actors_from_title, "actor_names_unresolved": self.unresolved, "cves": self.cves, "techniques": self.techniques,
+            "actors_from_title": self.actors_from_title, "actors_from_text": self.actors_from_text,
+            "actor_names_unresolved": self.unresolved, "cves": self.cves, "techniques": self.techniques,
             "sources": self.sources,
         }
 
@@ -618,14 +639,40 @@ def _report(group: list[ReportRecord], policies, malpedia_links, group_links, re
     readable = bool(titled_by and titled_by[0].source in title_sources)
     named = matcher.match(title) & published_ids if readable else set()
     from_title = sorted(named - set(actors))
+    in_text = _named_in_text(group, matcher, published_ids)
+    from_text = sorted(in_text - set(actors) - named)
     return _Report(
         id=report_id, title=title, published=published, basis=basis,
         organisation=next((o for r in group if (o := _tidy(r.organisation))), None),
         url=url, url_ok=checked.get(norm_url(url)) if url else None, archive_url=archive,
-        actors=sorted(set(actors) | named), actors_from_title=from_title, unresolved=unresolved,
+        actors=sorted(set(actors) | named | in_text), actors_from_title=from_title, actors_from_text=from_text,
+        unresolved=unresolved,
         cves=sorted({c for r in group for v in r.cves if _CVE.fullmatch(c := v.strip().upper())}),
         techniques=sorted({t for r in group for t in r.techniques if t in valid_techniques}),
         sources=sorted({r.source for r in group}, key=_ORD.get), title_readable=readable)
+
+
+def _named_in_text(group: list[ReportRecord], matcher: titles.TitleMatcher, published_ids: set[str]) -> set[str]:
+    """The published actors the stored name mentions point to, when they are used often enough or up front.
+
+    The mentions were found against the vocabulary at fetch time, so each name is resolved again here.
+    A name that has since become ambiguous, or whose actor is no longer shown, resolves to nothing.
+    Mentions of several aliases of one actor add up. A single word with no digit ("Lazarus") is also an
+    ordinary word often enough that one mention near the top proves nothing, so only a name of two words
+    or more, or one with a digit, can link an actor by opening the report.
+    """
+    totals: dict[str, list[int]] = {}
+    for r in group:
+        if r.source not in TEXT_MATCH_SOURCES:
+            continue
+        for m in r.name_mentions:
+            specific = len(m.name.split()) > 1 or any(c.isdigit() for c in m.name)
+            for actor in matcher.match(m.name) & published_ids:
+                seen = totals.setdefault(actor, [0, TEXT_OPENING_WORDS])
+                seen[0] += m.count
+                if specific:
+                    seen[1] = min(seen[1], m.first)
+    return {a for a, (n, opening) in totals.items() if n >= TEXT_MIN_MENTIONS or opening < TEXT_OPENING_WORDS}
 
 
 def _date(group: list[ReportRecord], today: str) -> tuple[str | None, str]:

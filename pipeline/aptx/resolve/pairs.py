@@ -39,8 +39,8 @@ _LEAD = frozenset({"the", "this", "that", "these", "those", "a", "an", "it", "it
 _MAX_LETTERS = 40
 _MIN_LETTERS = 3
 _ID_ONLY = re.compile(r"(?:CVE|CWE|MS|KB)[-\d]+|[\d.]+|[0-9a-f]{16,}", re.IGNORECASE)
-# A vendor's own cluster label: Storm-3168, UNC2452, UAT-11587, DEV-0537, CL-STA-0048.
-_CLUSTER_ID = re.compile(r"(?:storm|unc|uat|uta|unk|uac|dev|tag|ta|fin|temp|ref|cl-[a-z]{3})[-\s]?\d{1,5}", re.IGNORECASE)
+# A vendor's own cluster label: Storm-3168, UNC2452, UAT-11587, DEV-0537, CL-STA-0048, GTG-20006.
+_CLUSTER_ID = re.compile(r"(?:storm|unc|uat|uta|unk|uac|dev|tag|ta|fin|temp|ref|gtg|cl-[a-z]{3})[-\s]?\d{1,5}", re.IGNORECASE)
 
 
 def is_cluster_id(name: str) -> bool:

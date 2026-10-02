@@ -9,6 +9,7 @@ from aptx.core import http
 from aptx.core.dates import resolve_report_date
 from aptx.core.snapshot import SnapshotStore
 from aptx.core.urls import norm_url
+from aptx.resolve import titles
 from aptx.sources import base, orkl
 from aptx.sources.base import Connector
 from aptx.sources.orkl import API, OrklConnector, actor_tags
@@ -371,3 +372,81 @@ def test_only_vx_underground_entries_are_checked_against_their_file_name(tmp_pat
     e = dict(TALOS, title="Completely different words here", references=["https://example.com/zzz-qqq-xxx"],
              report_names=["zzz-qqq-xxx.pdf"], sources=["ORKL"])
     assert OrklConnector().normalize(_store(tmp_path, [e])).reports[0].title == "Completely different words here"
+
+
+# Names in the text
+
+def _names():
+    aliases = {"G0007": ["APT28", "Fancy Bear"], "G0500": ["Storm-0558"]}
+
+    def lookup(name):
+        key = titles.norm(name)
+        hits = {a for a, v in aliases.items() if any(titles.norm(x) == key for x in v)}
+        return next(iter(hits)) if len(hits) == 1 else None
+    return titles.build(aliases, lookup, lambda phrase: False)
+
+
+def _with_text(entry, text):
+    return {**entry, "plain_text": text}
+
+
+def test_derive_keeps_the_names_found_in_the_text_and_never_the_text():
+    text = "Intro sentence. Fancy Bear returned. Fancy Bear and APT28 again."
+    d = OrklConnector._derive(_with_text(TALOS, text), _names())
+    assert d["mentions"] == [{"name": "fancy bear", "count": 2, "first": 2}, {"name": "apt28", "count": 1, "first": 8}]
+    assert "Intro sentence" not in json.dumps(d)
+    assert "mentions" not in OrklConnector._derive(TALOS)
+
+
+def test_a_read_text_with_no_names_still_records_that_it_was_read():
+    assert OrklConnector._derive(_with_text(TALOS, "Nothing here."), _names())["mentions"] == []
+    assert OrklConnector._derive(_with_text(TALOS, None), _names())["mentions"] == []
+
+
+def test_normalize_carries_the_stored_mentions_and_drops_malformed_ones(tmp_path, link_only):
+    line = OrklConnector._derive(_with_text(TALOS, "APT28 APT28"), _names())
+    line["mentions"] += [{"name": "", "count": 1, "first": 0}, {"name": "x", "count": 0, "first": 0}, "junk",
+                         {"name": "y", "count": 1, "first": -1}]
+    s = SnapshotStore(tmp_path / "cache")
+    s.save("orkl", "entries.jsonl", (json.dumps(line) + "\n").encode("utf-8"))
+    report = _by_id(OrklConnector().normalize(s))[TALOS["id"]]
+    assert [(m.name, m.count, m.first) for m in report.name_mentions] == [("apt28", 2, 0)]
+
+
+@respx.mock
+def test_a_matcher_reads_lines_saved_without_names_and_pages_to_the_end(tmp_path, fast_http):
+    s = _store(tmp_path, [TALOS, KIMSUKY, CERTFR])
+    route = _mock({0: [_with_text(TALOS, "APT28 APT28"), KIMSUKY], 2: [CERTFR]}, total=3)
+    c = OrklConnector()
+    c.matcher = _names()
+    c.fetch(s)
+    assert route.call_count == 2
+    lines = _lines(s)
+    assert all("mentions" in line for line in lines)
+    assert lines[0]["mentions"] == [{"name": "apt28", "count": 2, "first": 0}]
+
+
+@respx.mock
+def test_once_every_line_is_read_a_weekly_run_stops_at_the_first_known_entry(tmp_path, fast_http):
+    c = OrklConnector()
+    c.matcher = _names()
+    s = SnapshotStore(tmp_path)
+    lines = [json.dumps(OrklConnector._derive(e, c.matcher)) for e in (KIMSUKY, CERTFR)]
+    s.save("orkl", "entries.jsonl", ("\n".join(lines) + "\n").encode("utf-8"))
+    route = _mock({0: [TALOS, KIMSUKY], 2: [CERTFR]}, total=3)
+    c.fetch(s)
+    assert route.call_count == 1
+    assert [e["id"] for e in _lines(s)] == [TALOS["id"], KIMSUKY["id"], CERTFR["id"]]
+
+
+@respx.mock
+def test_unread_lines_do_not_excuse_a_truncated_answer(tmp_path, fast_http):
+    s = _store(tmp_path, [KIMSUKY, CERTFR])
+    before = s.latest("orkl", "entries.jsonl")
+    _mock({i: [TALOS, KIMSUKY] for i in range(0, 20, 2)}, total=3)
+    c = OrklConnector()
+    c.matcher = _names()
+    # The server repeats a page, so the run stops before the end of the library.
+    with pytest.raises(ValueError):
+        c.fetch(s)
+    assert s.latest("orkl", "entries.jsonl") == before

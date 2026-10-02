@@ -199,11 +199,18 @@ def run(out: Path, store: SnapshotStore, connectors: Sequence[Connector] | None 
 
     status_path = store.root / FETCH_STATUS
     recorded = _read_json(status_path)
-    attempts = _fetch_all(store, connectors, only) if fetch else {}
-    if attempts:
-        _write_json(status_path, {**recorded, **attempts})
-    known = {**recorded, **attempts}
-    fetch_failed = frozenset(n for n in names if isinstance(known.get(n), dict) and known[n].get("ok") is False)
+    attempts: dict[str, dict] = {}
+
+    def fetch_group(group: Sequence[Connector]) -> None:
+        attempts.update(_fetch_all(store, group, only))
+        if attempts:
+            _write_json(status_path, {**recorded, **attempts})
+
+    # ORKL is fetched last. It reads each report's text for the actors it names, and those names are
+    # the aliases the other sources publish, so the registry must exist before ORKL's fetch.
+    orkl = [c for c in connectors if isinstance(c, OrklConnector)]
+    if fetch:
+        fetch_group([c for c in connectors if c not in orkl])
 
     # Asked once per source. ETDA's answer depends on its licence text having
     # not changed, so the CLI never reads SOURCES.md for it directly.
@@ -214,7 +221,8 @@ def run(out: Path, store: SnapshotStore, connectors: Sequence[Connector] | None 
     valid_techniques = attack.technique_ids(store)
     lib_dates = malpedia.library_dates(store) if policies["malpedia"] in _MALPEDIA_SHOWN else {}
     bundles: dict[str, SourceBundle] = {}
-    for c in connectors:
+
+    def normalize(c: Connector) -> None:
         if isinstance(c, OrklConnector):
             # ORKL needs ATT&CK's technique set and Malpedia's library dates, and connectors never
             # import each other, so the CLI passes both.
@@ -224,6 +232,10 @@ def run(out: Path, store: SnapshotStore, connectors: Sequence[Connector] | None 
         b = bundles[c.name]
         log.info("%s: %d actors, %d reports, %d campaigns, %d vulns, %d software", c.name,
                  len(b.actors), len(b.reports), len(b.campaigns), len(b.vulns), len(b.software))
+
+    for c in connectors:
+        if c not in orkl:
+            normalize(c)
 
     # The registry gets every source's records, evidence-only ones included, because merging
     # needs them. Assembly decides what may be shown.
@@ -244,6 +256,23 @@ def run(out: Path, store: SnapshotStore, connectors: Sequence[Connector] | None 
     # built without it. The second resolve merges the records the first pass allowed.
     if _add_vendor_pairs(connectors, store, bundles, registry, policies, _labels(labels)):
         registry = build_registry()
+
+    if fetch and orkl:
+        matcher = assembly.name_matcher(registry, policies)
+        for c in orkl:
+            c.matcher = matcher
+        try:
+            fetch_group(orkl)
+        finally:
+            for c in orkl:
+                c.matcher = None
+    for c in orkl:
+        normalize(c)
+    # Reports are grouped in connector order, so the dict is put back in it.
+    bundles = {c.name: bundles[c.name] for c in connectors}
+
+    known = {**recorded, **attempts}
+    fetch_failed = frozenset(n for n in names if isinstance(known.get(n), dict) and known[n].get("ok") is False)
 
     facts = BuildFacts(
         copyright_year=attack.copyright_year(store),

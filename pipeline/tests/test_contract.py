@@ -154,7 +154,7 @@ def test_shared_definitions_are_identical_across_schemas():
 def _report(**changes):
     report = {"id": "0" * 40, "title": "A report", "published": "2024-05-01",
               "date_basis": "orkl-ingest", "organisation": None, "url": "https://example.org/a",
-              "url_ok": None, "archive_url": None, "actors": [], "actors_from_title": [], "actor_names_unresolved": [],
+              "url_ok": None, "archive_url": None, "actors": [], "actors_from_title": [], "actors_from_text": [], "actor_names_unresolved": [],
               "cves": [], "techniques": [], "sources": ["orkl"]}
     report.update(changes)
     return report

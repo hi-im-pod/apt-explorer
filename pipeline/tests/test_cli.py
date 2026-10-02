@@ -22,6 +22,9 @@ REPORT_URL = "https://example.test/apt28-report"
 LICENCE = "\"© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation.\"\n"
 
 
+FETCH_LOG: list[str] = []
+
+
 class Fake(Connector):
     """A connector that returns a fixed bundle and can be told to fail its fetch."""
 
@@ -32,6 +35,7 @@ class Fake(Connector):
 
     def fetch(self, store):
         self.fetches += 1
+        FETCH_LOG.append(self.name)
         if self.fail:
             raise self.fail
 
@@ -48,10 +52,12 @@ class FakeOrkl(OrklConnector):
 
     def __init__(self, policy="link-only"):
         self.seen = None
+        self.fetched_with = "never fetched"
         self._policy = policy
 
     def fetch(self, store):
-        pass
+        self.fetched_with = self.matcher
+        FETCH_LOG.append("orkl")
 
     def policy(self, store, sources_md=None):
         return self._policy
@@ -192,6 +198,21 @@ def test_orkl_gets_no_malpedia_dates_when_malpedia_is_evidence_only(tmp_path, st
     orkl = FakeOrkl()
     cli.run(tmp_path / "data", store, connectors(orkl=orkl, malpedia=Fake("malpedia", policy="evidence-only")), generated_at=NOW)
     assert orkl.seen["lib_dates"] == {}
+
+
+def test_orkl_is_fetched_last_with_a_matcher_of_the_published_names_and_then_loses_it(tmp_path, store):
+    FETCH_LOG.clear()
+    orkl = FakeOrkl()
+    cli.run(tmp_path / "data", store, connectors(orkl=orkl), generated_at=NOW)
+    assert FETCH_LOG[-1] == "orkl" and FETCH_LOG.count("orkl") == 1
+    assert orkl.fetched_with is not None and orkl.fetched_with.match("Fancy Bear") == {"G0007"}
+    assert orkl.matcher is None
+
+
+def test_orkl_gets_no_matcher_when_the_build_does_not_fetch(tmp_path, store):
+    orkl = FakeOrkl()
+    cli.run(tmp_path / "data", store, connectors(orkl=orkl), fetch=False, generated_at=NOW)
+    assert orkl.fetched_with == "never fetched"
 
 
 def test_the_real_orkl_class_is_recognised_by_type_not_by_name(tmp_path, store):

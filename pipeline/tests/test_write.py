@@ -256,6 +256,21 @@ def test_an_actor_only_the_title_names_must_also_be_in_the_reports_actors(tmp_pa
     refused(tmp_path, payload, match="actors_from_title")
 
 
+def test_an_actor_only_the_text_names_must_also_be_in_the_reports_actors(tmp_path):
+    payload = sample_payload()
+    payload["reports/2024.json"][0]["actors"] = []
+    payload["reports/2024.json"][0]["actors_from_text"] = ["G0007"]
+    refused(tmp_path, payload, match="actors_from_text")
+
+
+def test_an_actor_cannot_be_named_by_both_the_title_and_the_text(tmp_path):
+    payload = sample_payload()
+    payload["reports/2024.json"][0]["actors"] = ["G0007"]
+    payload["reports/2024.json"][0]["actors_from_title"] = ["G0007"]
+    payload["reports/2024.json"][0]["actors_from_text"] = ["G0007"]
+    refused(tmp_path, payload, match="actors_from_text")
+
+
 @pytest.mark.parametrize("rel,path", [("campaigns.json", (0, "actors")), ("vulns.json", (0, "actors"))])
 def test_a_campaign_or_vuln_naming_an_actor_with_no_file_is_refused(tmp_path, rel, path):
     payload = sample_payload()

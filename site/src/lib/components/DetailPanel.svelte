@@ -23,12 +23,13 @@
 	the paper, and finds CVE and technique IDs by matching the report text.
 	The publisher and the names that matched no actor stay hidden.
 
-	Actors are shown in two groups. A tagged actor was named by a source's
+	Actors are shown in three groups. A tagged actor was named by a source's
 	own data. An actor "named in the title" was found by matching the title
-	against known aliases, for the vendor blogs that publish no tags. The two
-	are kept apart so a title match never passes as a tag. The split comes
-	from the table row, not the report's record, so nothing shifts when the
-	record loads.
+	against known aliases, for the vendor blogs that publish no tags. An actor
+	"named in the text" was found the same way in the report's body, which the
+	pipeline reads once and does not keep. The groups are kept apart so a
+	match never passes as a tag. The split comes from the table row, not the
+	report's record, so nothing shifts when the record loads.
 
 	The table row already holds the title, date, publisher, sources, actors,
 	CVEs and techniques, so the panel shows them at once. The links and the
@@ -195,7 +196,7 @@
 					{/if}
 				</li>
 			{/snippet}
-			{@const tagged = row.actors.filter((id) => !row.actorsFromTitle.includes(id))}
+			{@const tagged = row.actors.filter((id) => !row.actorsFromTitle.includes(id) && !row.actorsFromText.includes(id))}
 			{#if tagged.length}
 				<section aria-labelledby="panel-actors">
 					<h3 id="panel-actors">Actors</h3>
@@ -213,6 +214,18 @@
 					<p class="hint">
 						Found by matching the title against known actor names. The publisher's own tags
 						did not confirm these.
+					</p>
+				</section>
+			{/if}
+			{#if row.actorsFromText.length}
+				<section aria-labelledby="panel-texted">
+					<h3 id="panel-texted">Named in the text</h3>
+					<ul class="chips">
+						{#each row.actorsFromText as id (id)}{@render actorChip(id)}{/each}
+					</ul>
+					<p class="hint">
+						Found by matching the report's text against known actor names. The publisher's
+						own tags did not confirm these.
 					</p>
 				</section>
 			{/if}

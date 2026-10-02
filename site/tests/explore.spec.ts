@@ -368,6 +368,26 @@ test('an actor named only in the title is listed apart from the tagged actors', 
 	}
 });
 
+test('an actor named only in the text is listed apart from the tagged and the titled ones', async ({ page }) => {
+	const c = index.columns;
+	const row = c.actors.findIndex((ids, i) => ids.length >= 2 && c.actors_from_title[i].length === 0);
+	expect(row, 'the data has no report with two actors and none from its title').toBeGreaterThanOrEqual(0);
+	const texted = structuredClone(index);
+	texted.columns.actors_from_text[row] = [c.actors[row][1]];
+	const named = index.tables.actors[c.actors[row][1]];
+	const tagged = index.tables.actors[c.actors[row][0]];
+	await page.route(INDEX, (route) => route.fulfill({ json: texted }));
+	await open(page, `?report=${encodeURIComponent(c.id[row])}`);
+	const dialog = panel(page);
+	const textSection = dialog.getByRole('region', { name: 'Named in the text' });
+	const link = textSection.getByRole('link', { name: nameOf(named), exact: true });
+	expect(await hrefPath(link)).toBe(`/apt-explorer/actors/${named}/`);
+	const taggedSection = dialog.getByRole('region', { name: 'Actors', exact: true });
+	await expect(taggedSection.getByRole('link', { name: nameOf(tagged), exact: true })).toBeVisible();
+	await expect(taggedSection.getByRole('link', { name: nameOf(named), exact: true })).toHaveCount(0);
+	await expect(dialog.getByRole('region', { name: 'Named in the title' })).toHaveCount(0);
+});
+
 test('an unreachable original puts the archive link first and says why', async ({ page }) => {
 	await open(page, `?report=${ORKL_DEAD}`);
 	const dialog = panel(page);

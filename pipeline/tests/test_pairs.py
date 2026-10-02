@@ -43,7 +43,7 @@ def test_a_vendor_cluster_id_is_never_the_name_an_actor_is_shown_under():
     assert (d.primary, d.alias) == ("Larkspur", "UNC9999")
 
 
-@pytest.mark.parametrize("name,yes", [("Storm-3168", True), ("UNC2452", True), ("UAT 11587", True), ("CL-STA-0048", True),
+@pytest.mark.parametrize("name,yes", [("Storm-3168", True), ("UNC2452", True), ("UAT 11587", True), ("CL-STA-0048", True), ("GTG-20006", True),
                                       ("JadePuffer", False), ("APT28", False)])
 def test_cluster_ids(name, yes):
     assert pairs.is_cluster_id(name) is yes

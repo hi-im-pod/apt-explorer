@@ -23,14 +23,19 @@ The matcher is deliberately cautious. A wrong link on a report is worse than a m
 The denylists come from measuring the matcher over every ORKL title (see the offline evaluation in
 the build notes): each word is there because it matched titles that mean something else.
 """
+from bisect import bisect_left
 from collections.abc import Callable, Iterable, Mapping
 
-from aptx.resolve.names import norm, words
+from aptx.resolve.names import capitalised_words, norm, words
 
 # The longest alias, in words, that is looked for in a title.
 _MAX_WORDS = 5
 
 _MIN_SINGLE_WORD = 5
+
+# A report's text is read this far. A PDF can run to hundreds of thousands of words, and a name used only
+# after this point is not what the report is about.
+_MAX_TEXT_WORDS = 200_000
 
 # Ordinary words and software or place names that are also an actor's name. A title is matched
 # on one of these only as part of a longer name.
@@ -41,6 +46,9 @@ GENERIC: frozenset[str] = frozenset({
     "monsoon", "moonlight", "nitro", "panda", "patchwork", "phantom", "platinum", "poseidon",
     "reaper", "scarab", "siesta", "silence", "slingshot", "snake", "sphinx", "strider", "summit",
     "mantis", "underground", "venom", "vermin",
+    # Measured over ORKL's report text, where each is a browser, a wallet, a city or an ordinary noun.
+    "castle", "chromium", "combine", "comment", "covenant", "electrum", "foxmail", "heartbeat", "mercury",
+    "mirage", "navigator", "oxygen", "polaris", "shanghai", "silicon", "superman", "trident", "watchdog",
 })
 
 # Names of malware families, loaders and criminal services that a registry lists as an actor's
@@ -52,7 +60,19 @@ TOOLS: frozenset[str] = frozenset({
 })
 
 # Aliases that are an ordinary phrase, so a title using the phrase is not naming the actor.
-PHRASES: frozenset[str] = frozenset({"copypaste"})
+PHRASES: frozenset[str] = frozenset({"copypaste", "group3", "group6", "socialnetwork", "atk7"})
+
+
+def _written_as_name(marked: list[tuple[str, bool]]) -> bool:
+    """Whether the words were written as a name: capitalised, or carrying a digit.
+
+    A trailing "group" or "team" is the writer's own word, not part of the name, so it may be lower case.
+    """
+    words_ = [w for w, _ in marked]
+    if any(c.isdigit() for w in words_ for c in w):
+        return True
+    body = marked[:-1] if len(marked) > 1 and marked[-1][0] in ("group", "team") else marked
+    return all(flag for _, flag in body)
 
 
 def _usable(alias: str) -> bool:
@@ -83,6 +103,7 @@ class TitleMatcher:
         self._keys = dict(keys)
         self._is_software = is_software
         self._spellings = {k: set(v) for k, v in (spellings or {}).items()}
+        self._sorted = sorted(self._keys)
 
     def __bool__(self) -> bool:
         return bool(self._keys)
@@ -93,6 +114,44 @@ class TitleMatcher:
         if key in GENERIC:
             return tuple(phrase) in self._spellings.get(key, ())
         return True
+
+    def _may_start(self, token: str) -> bool:
+        """Whether some name key begins with `token`, so a scan can skip a word that starts none."""
+        i = bisect_left(self._sorted, token)
+        return i < len(self._sorted) and self._sorted[i].startswith(token)
+
+    def mentions(self, text: str) -> dict[str, dict]:
+        """The names `text` uses, as {name: {"actor", "n", "at"}}.
+
+        The same rules as match(), for running text instead of a title, with one more: a name
+        must be written as a name. Prose says "machete" and "silence", so a word with no digit
+        counts only when it is capitalised ("Machete"). `n` is how many times the name occurs and
+        `at` is the word position of the first one, so a reader can tell an opening line from a
+        passing reference. The name is the words as the matcher saw them, lower-cased.
+        """
+        marked = capitalised_words(text)[:_MAX_TEXT_WORDS]
+        tokens = [w for w, _ in marked]
+        found: dict[str, dict] = {}
+        i = 0
+        while i < len(tokens):
+            if not self._may_start(tokens[i]):
+                i += 1
+                continue
+            step = 1
+            for n in range(min(_MAX_WORDS, len(tokens) - i), 0, -1):
+                phrase = " ".join(tokens[i:i + n])
+                if self._is_software(phrase):
+                    step = n
+                    break
+                actor = self._keys.get(norm(phrase))
+                if actor is not None and self._fits(norm(phrase), tokens[i:i + n]):
+                    step = n
+                    if _written_as_name(marked[i:i + n]):
+                        hit = found.setdefault(phrase, {"actor": actor, "n": 0, "at": i})
+                        hit["n"] += 1
+                    break
+            i += step
+        return found
 
     def match(self, title: str) -> set[str]:
         tokens = words(title)
@@ -125,7 +184,8 @@ def build(aliases: Mapping[str, Iterable[str]], lookup: Callable[[str], str | No
     spellings: dict[str, set[tuple[str, ...]]] = {}
     for actor, values in aliases.items():
         for value in values:
-            if _usable(value) and lookup(value) == actor:
+            # A key of digits alone ("3 1 3" for the 313 Team) is a number wherever it is written.
+            if _usable(value) and not norm(value).isdigit() and lookup(value) == actor:
                 keys[norm(value)] = actor
                 spellings.setdefault(norm(value), set()).add(tuple(words(value)))
     return TitleMatcher(keys, is_software, spellings)

@@ -49,6 +49,14 @@ class ActorRecord(_Record):
     retrieved_at: str
 
 
+class NameMention(_Record):
+    """A published actor's name, found in a report's text. The text itself is never kept."""
+    name: str
+    # How many times the name occurs, and the word position of the first one.
+    count: int
+    first: int
+
+
 class ReportRecord(_Record):
     source: str
     source_id: str
@@ -62,6 +70,9 @@ class ReportRecord(_Record):
     archive_url: str | None = None
     sha1: str | None = None
     actor_names: list[str] = []
+    # Names of published actors that the report's text uses, found while the text was read in memory.
+    # Only a link-only source with a text pass sets this, and only the matched names are kept.
+    name_mentions: list[NameMention] = []
     cves: list[str] = []
     techniques: list[str] = []
     retrieved_at: str

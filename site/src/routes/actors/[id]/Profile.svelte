@@ -237,7 +237,7 @@
 	{#if reports.length === 0}
 		<p class="no-reports">
 			No published report is linked to this actor yet. A report is linked when Malpedia, MITRE
-			ATT&CK® or the CCS '25 data connects it to the actor, or when a vendor blog's title names it.
+			ATT&CK® or the CCS '25 data connects it to the actor, or when a title or the report's text names it.
 		</p>
 	{/if}
 </header>

@@ -25,6 +25,19 @@ def words(text: str) -> list[str]:
     return _NON_WORD.sub(" ", unicodedata.normalize("NFKC", text).casefold()).split()
 
 
+def capitalised_words(text: str) -> list[tuple[str, bool]]:
+    """words(text), each with whether the word was written with a capital letter or a digit first.
+
+    Prose and names differ in case: "Sandworm" is a name and "machete" is a tool. The tokens are
+    exactly those words() returns, so an index into one is an index into the other.
+    """
+    out: list[tuple[str, bool]] = []
+    for raw in _NON_WORD.sub(" ", unicodedata.normalize("NFKC", text)).split():
+        flag = raw[0].isupper() or raw[0].isdigit()
+        out.extend((w, flag) for w in _NON_WORD.sub(" ", raw.casefold()).split())
+    return out
+
+
 def norm(name: str) -> str:
     """The matching key for an actor or software name.
 

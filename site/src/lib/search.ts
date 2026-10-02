@@ -36,6 +36,8 @@ export interface ExploreRow {
 	actors: string[];
 	/** The part of actors that only the title names. Empty for a campaign. */
 	actorsFromTitle: string[];
+	/** The part of actors that only the report's text names. Empty for a campaign. */
+	actorsFromText: string[];
 	sources: SourceKey[];
 	cves: string[];
 	techniques: string[];
@@ -150,6 +152,7 @@ export function toRows(index: ReportsIndex, campaigns: Campaign[], actors: Actor
 			organisation,
 			actors: actorPositions.map((p) => tables.actors[p]),
 			actorsFromTitle: columns.actors_from_title[i].map((p) => tables.actors[p]),
+			actorsFromText: columns.actors_from_text[i].map((p) => tables.actors[p]),
 			sources,
 			cves,
 			techniques,
@@ -174,6 +177,7 @@ export function toRows(index: ReportsIndex, campaigns: Campaign[], actors: Actor
 				organisation: null,
 				actors: c.actors,
 				actorsFromTitle: [],
+				actorsFromText: [],
 				sources: [c.source],
 				cves: [],
 				techniques: c.techniques,

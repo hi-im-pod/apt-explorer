@@ -6,8 +6,8 @@ import pytest
 from aptx.build import slugs, trends, write
 from aptx.build.assemble import BuildFacts, assemble
 from aptx.build.notice import SOURCE_ORDER, render_notice, source_attribution
-from aptx.core.models import (ActorRecord, CampaignRecord, ReportRecord, SoftwareRecord, SourceBundle,
-                              VulnRecord)
+from aptx.core.models import (ActorRecord, CampaignRecord, NameMention, ReportRecord, SoftwareRecord,
+                              SourceBundle, VulnRecord)
 from aptx.resolve.registry import resolve
 
 NOW = "2026-09-30T04:00:00Z"
@@ -617,6 +617,80 @@ def test_a_title_naming_only_software_links_nothing():
     title = "Mimikatz in the wild"
     payload = run(attack, *WORLD(dfir=_titled("dfir", title))[1:])
     assert report_by_title(payload, title)["actors"] == []
+
+
+def _texted(mentions, title="A report that names nobody in its title", source="orkl", **kw):
+    kw.setdefault("basis", "publisher")
+    return B(source, reports=[R(source, "x1", title, "https://ex.org/x1", "2025-06-01",
+                                name_mentions=mentions, **kw)])
+
+
+def test_a_name_the_text_uses_twice_links_the_actor_apart_from_the_title_and_the_tags():
+    mentions = [NameMention(name="fancy bear", count=2, first=900)]
+    row = report_by_title(run(*WORLD(orkl=_texted(mentions))), "A report that names nobody in its title")
+    assert row["actors"] == ["G0007"]
+    assert row["actors_from_text"] == ["G0007"] and row["actors_from_title"] == []
+
+
+def test_a_single_late_mention_links_nothing():
+    mentions = [NameMention(name="fancy bear", count=1, first=300)]
+    row = report_by_title(run(*WORLD(orkl=_texted(mentions))), "A report that names nobody in its title")
+    assert row["actors"] == [] and row["actors_from_text"] == []
+
+
+def test_a_single_mention_in_the_opening_words_links_the_actor():
+    mentions = [NameMention(name="fancy bear", count=1, first=299)]
+    row = report_by_title(run(*WORLD(orkl=_texted(mentions))), "A report that names nobody in its title")
+    assert row["actors"] == ["G0007"] and row["actors_from_text"] == ["G0007"]
+
+
+def test_a_single_plain_word_near_the_top_is_not_enough():
+    mentions = [NameMention(name="sofacy", count=1, first=10)]
+    row = report_by_title(run(*WORLD(orkl=_texted(mentions))), "A report that names nobody in its title")
+    assert row["actors"] == [] and row["actors_from_text"] == []
+
+
+def test_mentions_of_several_names_of_one_actor_add_up():
+    mentions = [NameMention(name="fancy bear", count=1, first=900), NameMention(name="sofacy", count=1, first=1200)]
+    row = report_by_title(run(*WORLD(orkl=_texted(mentions))), "A report that names nobody in its title")
+    assert row["actors_from_text"] == ["G0007"]
+
+
+def test_an_actor_the_title_already_names_is_not_also_named_in_the_text():
+    title = "Fancy Bear returns with a new loader"
+    mentions = [NameMention(name="fancy bear", count=5, first=0)]
+    row = report_by_title(run(*WORLD(orkl=_texted(mentions, title))), title)
+    assert row["actors"] == ["G0007"]
+    assert row["actors_from_title"] == ["G0007"] and row["actors_from_text"] == []
+
+
+def test_an_actor_a_report_is_tagged_with_is_not_also_named_in_the_text():
+    mentions = [NameMention(name="fancy bear", count=5, first=0)]
+    paper = B("paper", reports=[R("paper", "a.pdf", "Tagged", "https://ex.org/p", "2019-05-01", actor_names=["Sofacy"])])
+    orkl = B("orkl", reports=[R("orkl", "o1", "Tagged", "https://ex.org/p", "2019-05-01", name_mentions=mentions)])
+    row = report_by_title(run(*WORLD(paper=paper, orkl=orkl)), "Tagged")
+    assert row["actors"] == ["G0007"] and row["actors_from_text"] == []
+
+
+def test_only_the_sources_whose_text_may_be_read_name_actors_in_it():
+    mentions = [NameMention(name="fancy bear", count=5, first=0)]
+    row = report_by_title(run(*WORLD(talos=_texted(mentions, source="talos"))),
+                          "A report that names nobody in its title")
+    assert row["actors"] == [] and row["actors_from_text"] == []
+
+
+def test_a_text_cannot_name_an_actor_that_has_no_page():
+    etda = B("etda", actors=[A("etda", "e2", "Hidden Raven")])
+    mentions = [NameMention(name="hidden raven", count=5, first=0)]
+    payload = run(*WORLD(etda=etda, orkl=_texted(mentions)), policies={"etda": "evidence-only"})
+    row = report_by_title(payload, "A report that names nobody in its title")
+    assert row["actors"] == [] and row["actors_from_text"] == []
+
+
+def test_a_name_that_is_no_longer_a_published_alias_links_nothing():
+    mentions = [NameMention(name="retired alias", count=5, first=0)]
+    row = report_by_title(run(*WORLD(orkl=_texted(mentions))), "A report that names nobody in its title")
+    assert row["actors"] == [] and row["actors_from_text"] == []
 
 
 def test_a_report_naming_an_actor_that_is_not_published_drops_the_link_without_listing_the_name():

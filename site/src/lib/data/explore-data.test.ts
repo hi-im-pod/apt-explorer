@@ -27,6 +27,7 @@ const indexFile = (built_at = BUILT) => ({
 		sources: [1],
 		actors: [[]],
 		actors_from_title: [[]],
+		actors_from_text: [[]],
 		cves: [[]],
 		techniques: [[]]
 	}

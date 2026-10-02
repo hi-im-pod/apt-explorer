@@ -114,3 +114,57 @@ def test_a_name_made_of_one_ordinary_word_and_group_needs_the_aliass_own_words(m
 def test_an_ordinary_phrase_that_is_an_alias_never_matches():
     built = titles.build({"G1": ["Copy-Paste"]}, lambda name: "G1", lambda phrase: False)
     assert not built
+
+
+# mentions: names in running text
+
+def test_text_mentions_count_each_name_and_note_where_the_first_one_is(matcher):
+    text = "Fancy Bear used a loader. Later, Fancy Bear and APT28 reused it, and Star Blizzard did not."
+    found = matcher.mentions(text)
+    assert found["fancy bear"] == {"actor": "G0007", "n": 2, "at": 0}
+    assert found["apt28"]["actor"] == "G0007" and found["apt28"]["n"] == 1
+    assert found["star blizzard"]["actor"] == "G1033"
+
+
+def test_a_name_in_text_must_be_written_as_a_name(matcher):
+    assert matcher.mentions("the equation group is a phrase here, and so is the lazarus group") == {}
+    assert set(matcher.mentions("The Lazarus Group and Kimsuky")) == {"lazarus group", "kimsuky"}
+    assert "kimsuky" not in matcher.mentions("the kimsuky operators")
+
+
+def test_a_cluster_id_in_text_counts_without_capitals(matcher):
+    assert "storm 0558" in matcher.mentions("the storm-0558 cluster")
+
+
+def test_text_mentions_skip_software_ordinary_words_and_shared_names(matcher):
+    text = "Cobalt Strike, Mimikatz, Panda, Cobalt and Shared Name appear. So does Konni."
+    assert matcher.mentions(text) == {}
+
+
+def test_a_name_inside_a_longer_word_is_not_a_mention(matcher):
+    assert matcher.mentions("Kimsukyware and APT280 and xAPT28") == {}
+
+
+def test_mentions_in_an_empty_text(matcher):
+    assert matcher.mentions("") == {}
+
+
+def test_a_number_written_in_digits_is_never_a_name():
+    aliases = {"313-team": ["3 1 3 Team", "313 Team"], "G0007": ["APT28"]}
+
+    def find(name):
+        key = titles.norm(name)
+        return next((a for a, vs in aliases.items() if any(titles.norm(v) == key for v in vs)), None)
+
+    m = titles.build(aliases, find, lambda phrase: False)
+    assert m.mentions("Updated on 3 1 3 and again on 313.") == {}
+    assert m.match("The 313 Team claims it") == set()
+
+
+@pytest.mark.parametrize("word", ["Chromium", "Comment", "Shanghai", "Electrum", "Trident", "Watchdog"])
+def test_ordinary_words_that_are_also_an_actors_alias_are_not_names_alone(word):
+    aliases = {"G1": [word, f"{word} Crew"]}
+    m = titles.build(aliases, lambda n: "G1" if titles.norm(n) in {titles.norm(word), titles.norm(word + " Crew")} else None,
+                     lambda phrase: False)
+    assert m.mentions(f"The {word} browser. {word} again.") == {}
+    assert set(m.mentions(f"The {word} Crew struck.")) == {f"{word.lower()} crew"}

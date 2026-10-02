@@ -21,6 +21,7 @@ interface Rep {
 	organisation: string | null;
 	actors: string[];
 	actorsFromTitle: string[];
+	actorsFromText: string[];
 	cves: string[];
 	techniques: string[];
 	sources: string[];
@@ -33,6 +34,7 @@ function report(over: Partial<Rep> & Pick<Rep, 'id'>): Rep {
 		organisation: 'Harbor CERT',
 		actors: [],
 		actorsFromTitle: [],
+		actorsFromText: [],
 		cves: [],
 		techniques: [],
 		sources: ['dfir'],
@@ -78,6 +80,7 @@ function makeIndex(reps: Rep[], kev: string[] = [], idLen = 8): ReportsIndex {
 			sources: sorted.map((r) => r.sources.reduce((m, s) => m + 2 ** at('sources', s), 0)),
 			actors: sorted.map((r) => r.actors.map((a) => at('actors', a))),
 			actors_from_title: sorted.map((r) => r.actorsFromTitle.map((a) => at('actors', a))),
+			actors_from_text: sorted.map((r) => r.actorsFromText.map((a) => at('actors', a))),
 			cves: sorted.map((r) => r.cves.map((c) => at('cves', c))),
 			techniques: sorted.map((r) => r.techniques.map((t) => at('techniques', t)))
 		}
@@ -199,6 +202,19 @@ describe('toRows', () => {
 		expect(applyFilters([titled], { actor: 'G0032' })).toHaveLength(1);
 		expect(applyFilters([titled], { q: 'lazarus' })).toHaveLength(1);
 		expect(rows.every((r) => r.actorsFromTitle.length === 0)).toBe(true);
+	});
+
+	it('keeps the actors that only the text names apart, and still counts them as actors', () => {
+		const texted = toRows(
+			makeIndex([report({ id: 'r-text', actors: ['G0007', 'G0032'], actorsFromText: ['G0032'] })]),
+			[],
+			actors
+		)[0];
+		expect(texted.actors).toEqual(['G0007', 'G0032']);
+		expect(texted.actorsFromText).toEqual(['G0032']);
+		expect(texted.actorsFromTitle).toEqual([]);
+		expect(applyFilters([texted], { actor: 'G0032' })).toHaveLength(1);
+		expect(applyFilters([texted], { q: 'lazarus' })).toHaveLength(1);
 	});
 
 	it('marks a row KEV only when one of its CVEs is in the catalogue', () => {

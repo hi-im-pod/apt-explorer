@@ -234,6 +234,8 @@ export interface Report {
 	actors: ActorId[];
 	/** The part of actors that only the report's title names. No source tags the report with them. */
 	actors_from_title: ActorId[];
+	/** The part of actors that only the report's text names, found while reading it. No source tags the report with them. */
+	actors_from_text: ActorId[];
 	actor_names_unresolved: string[];
 	cves: CveId[];
 	techniques: TechniqueId[];
@@ -288,6 +290,8 @@ export interface ReportsIndexColumns {
 	actors: number[][];
 	/** Positions in tables.actors of the actors that only the title names. Each is also in actors. */
 	actors_from_title: number[][];
+	/** Positions in tables.actors of the actors that only the report's text names. Each is also in actors. */
+	actors_from_text: number[][];
 	/** Positions in tables.cves. */
 	cves: number[][];
 	/** Positions in tables.techniques. */

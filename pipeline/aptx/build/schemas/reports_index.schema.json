@@ -99,6 +99,7 @@
         "sources",
         "actors",
         "actors_from_title",
+        "actors_from_text",
         "cves",
         "techniques"
       ],
@@ -152,6 +153,13 @@
         },
         "actors_from_title": {
           "description": "Positions in tables.actors of the actors that only the report's title names. Each is also in actors.",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/positions"
+          }
+        },
+        "actors_from_text": {
+          "description": "Positions in tables.actors of the actors that only the report's text names. Each is also in actors.",
           "type": "array",
           "items": {
             "$ref": "#/$defs/positions"

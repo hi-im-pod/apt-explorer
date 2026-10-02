@@ -325,9 +325,10 @@
 		</p>
 		<p>
 			The actors, CVEs and techniques listed for an ORKL report were added by this project, and
-			the table can filter and search on them. Actors come from the three sources named above. CVE
-			and technique IDs are found by matching patterns in the report text. The link-only rule
-			allows this because the project works out those identifiers itself.
+			the table can filter and search on them. Actors come from the sources named above, or from a
+			title or text that names them. CVE and technique IDs are found by matching patterns in the
+			report text. The link-only rule allows this because the project works out those
+			identifiers itself.
 		</p>
 	{/if}
 	<h3>Actors named in a title</h3>
@@ -344,6 +345,21 @@
 		and the names of malware that a title can mention without being about the actor. A missing
 		link is a better error than a wrong one. A title is the publisher's own statement, but it is
 		weaker than a tag, and it can name an actor in passing.
+	</p>
+	<h3>Actors named in the text</h3>
+	<p>
+		ORKL's report text is read once, when the report is fetched. The pipeline looks in it for the
+		names of actors that have a page here and keeps only which actors it found, how often, and
+		where the name first appears. The text itself is never stored or published. The report panel
+		lists these actors under "Named in the text", apart from tagged actors and from those named in
+		the title.
+	</p>
+	<p>
+		This match is stricter than the title match, because a report mentions actors in passing. A
+		name counts when it appears at least twice. A name of several words, or one with a digit, such
+		as Fancy Bear or APT29, also counts when it appears once in the opening 300 words. It skips the
+		same names as the title match. Only actors published when a report was read can be found in it,
+		so an actor added later is found only in reports read after that.
 	</p>
 	<h3>Names a vendor post states</h3>
 	<p>

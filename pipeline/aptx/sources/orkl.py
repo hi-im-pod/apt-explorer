@@ -6,6 +6,9 @@ links, plus the CVE and technique IDs this project finds in the text itself.
 
 Report text is read once, during fetch(), for that regex pass, and is never
 stored: each snapshot line is derived from the entry and has no plain_text.
+The same pass looks for the names of published actors (see aptx.resolve.titles) and
+keeps, per name, how often it occurs and where it first appears. Which actors a
+report is shown with is decided later, in the build, from those counts.
 
 ORKL's threat-actor tags are kept in the snapshot as matching evidence, so the
 policy can flip without a refetch if ORKL agrees. While ORKL is link-only,
@@ -20,9 +23,10 @@ from urllib.parse import quote, unquote, urlsplit
 
 from aptx.core import http
 from aptx.core.dates import resolve_report_date, split_title_date
-from aptx.core.models import ReportRecord, SourceBundle
+from aptx.core.models import NameMention, ReportRecord, SourceBundle
 from aptx.core.snapshot import SnapshotStore
 from aptx.extract.ids import find_cves, technique_candidates
+from aptx.resolve.titles import TitleMatcher
 from aptx.sources.base import Connector, publish_policy
 
 log = logging.getLogger(__name__)
@@ -148,12 +152,36 @@ def _title(entry: dict, url: str | None) -> str:
     return entry["id"]
 
 
+# Names kept per report. A report that names more actors than this is a catalogue, not a report about one.
+MAX_MENTIONS = 25
+
+
+def _mentions(matcher: TitleMatcher, text: str) -> list[dict]:
+    found = matcher.mentions(text)
+    kept = sorted(found.items(), key=lambda kv: (-kv[1]["n"], kv[1]["at"], kv[0]))[:MAX_MENTIONS]
+    return [{"name": name, "count": hit["n"], "first": hit["at"]} for name, hit in kept]
+
+
+def _stored_mentions(entry: dict) -> list[NameMention]:
+    """The names a snapshot line holds, checked again like any stored value. Malformed ones are dropped."""
+    out = []
+    for m in entry.get("mentions") or []:
+        if (isinstance(m, dict) and isinstance(m.get("name"), str) and m["name"].strip()
+                and isinstance(m.get("count"), int) and m["count"] > 0
+                and isinstance(m.get("first"), int) and m["first"] >= 0):
+            out.append(NameMention(name=m["name"].strip(), count=m["count"], first=m["first"]))
+    return out
+
+
 class OrklConnector(Connector):
     name = NAME
+    # The names of published actors, set by the CLI before fetch() so the text pass can look for them.
+    # Without it a line carries no "mentions", which marks it as not yet read for names.
+    matcher: TitleMatcher | None = None
 
     @staticmethod
-    def _derive(entry: dict) -> dict:
-        """One snapshot line: the entry's metadata plus the IDs found in its text.
+    def _derive(entry: dict, matcher: TitleMatcher | None = None) -> dict:
+        """One snapshot line: the entry's metadata plus the IDs and actor names found in its text.
 
         The regex pass runs here, on plain_text, and the text is not copied
         into the line, so no report text is ever stored.
@@ -170,7 +198,7 @@ class OrklConnector(Connector):
             if main:
                 tags.append({"main_name": main, "aliases": _strings(tag.get("aliases")),
                              "source_name": _text(tag.get("source_name"))})
-        return {
+        line = {
             "id": entry_id.strip(),
             "sha1": sha1 if _SHA1.fullmatch(sha1) else None,
             "title": entry.get("title") if isinstance(entry.get("title"), str) else "",
@@ -188,6 +216,9 @@ class OrklConnector(Connector):
             # to old entries without refetching them.
             "techniques_raw": technique_candidates(text),
         }
+        if matcher is not None:
+            line["mentions"] = _mentions(matcher, text)
+        return line
 
     def fetch(self, store: SnapshotStore) -> None:
         """Page through the library, newest first, and save entries.jsonl.
@@ -198,6 +229,11 @@ class OrklConnector(Connector):
         are not picked up; deleting the snapshot forces a full backfill.
         Nothing is saved when the run fails part-way, or when a weekly run
         never reaches a known entry.
+
+        With a matcher set, a line is only as good as the names it was read for, so a line
+        saved without "mentions" is read again. That is a full pass the first time the matcher
+        is set. Names added to the registry later are not looked for in older entries; a
+        full backfill does that.
         """
         info = http.get_json(f"{API}/library/info")
         data = info.get("data") if isinstance(info, dict) else None
@@ -205,11 +241,13 @@ class OrklConnector(Connector):
         # Without a count the coverage check below is skipped, not failed.
         total = total if isinstance(total, int) and total > 0 else 0
         previous = _read_lines(store)
-        known = {e["id"] for e in previous}
+        unread = {e["id"] for e in previous if self.matcher is not None and "mentions" not in e}
+        known = {e["id"] for e in previous} - unread
 
         fresh: list[dict] = []
         seen: set[str] = set()
         offset = pages = dropped = 0
+        ended = False
         while True:
             body = http.get_json(f"{API}/library/entries", params={
                 "limit": PAGE_SIZE, "offset": offset, "order_by": "created_at", "order": "desc"})
@@ -231,12 +269,13 @@ class OrklConnector(Connector):
                 # can arrive twice.
                 if entry_id not in seen:
                     seen.add(entry_id)
-                    fresh.append(self._derive(entry))
+                    fresh.append(self._derive(entry, self.matcher))
                     added += 1
             pages += 1
             if pages % PROGRESS_EVERY == 0:
                 log.info("orkl: %d pages, %d new entries of %d", pages, len(fresh), total)
             if reached_known or len(page) < PAGE_SIZE:
+                ended = len(page) < PAGE_SIZE
                 break
             if added == 0:
                 # A full page with nothing new means the server is repeating
@@ -247,11 +286,13 @@ class OrklConnector(Connector):
 
         if dropped:
             log.warning("orkl: dropped %d entries without an id", dropped)
-        if previous and not reached_known:
+        if previous and not reached_known and not (unread and ended):
             # A weekly run must meet an entry it already holds; that is what
             # proves the answer was complete. An empty or truncated answer
             # would otherwise re-save the old lines under today's date, and
-            # the source would look fresh when it was not fetched at all.
+            # the source would look fresh when it was not fetched at all. A
+            # run that rereads unread lines instead proves it by paging to the
+            # end of the library.
             raise ValueError(f"orkl: paging ended after {len(fresh)} new entries without reaching "
                              "a known entry; snapshot not saved")
         fresh_ids = {e["id"] for e in fresh}
@@ -310,6 +351,7 @@ class OrklConnector(Connector):
                 archive_url=_http_url(files.get("pdf")),
                 sha1=e.get("sha1"),
                 actor_names=names,
+                name_mentions=_stored_mentions(e),
                 cves=list(e.get("cves") or []),
                 techniques=[t for t in e.get("techniques_raw") or [] if t in valid_techniques],
                 retrieved_at=retrieved_at,
