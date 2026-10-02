@@ -591,3 +591,53 @@ def test_a_pair_that_would_join_two_actors_is_refused(tmp_path, store):
 def test_a_pair_of_two_unknown_names_makes_no_actor_without_a_cluster_id(tmp_path, store):
     out, _ = built(tmp_path, store, microsoftblog=FakeBlog("microsoftblog", [("Newcomer", "Otherthing")]))
     assert [a["id"] for a in json.loads((out / "actors" / "index.json").read_text(encoding="utf-8"))] == ["G0007"]
+
+
+# run(): vendor cluster IDs in a vendor's own titles
+
+def blog_with_titles(name, *titles):
+    reports = [ReportRecord(source=name, source_id=f"post-{i}", title=t, published="2026-09-30", date_basis="publisher",
+                            url=f"https://blog.example.test/{i}/", retrieved_at=SNAP) for i, t in enumerate(titles)]
+    return Fake(name, SourceBundle(source=name, reports=reports), policy="derived-only")
+
+
+def built_actors(tmp_path, store, **blog):
+    out = tmp_path / "data"
+    cli.run(out, store, connectors(**blog), generated_at=NOW)
+    index = json.loads((out / "actors" / "index.json").read_text(encoding="utf-8"))
+    return out, {a["name"]: json.loads((out / "actors" / f"{a['id']}.json").read_text(encoding="utf-8")) for a in index}
+
+
+def test_a_cluster_id_in_its_vendors_title_becomes_an_unconfirmed_actor_that_the_title_links(tmp_path, store):
+    out, actors = built_actors(tmp_path, store, talos=blog_with_titles("talos", "China-nexus UAT-11587 targets Asia"))
+    assert actors["UAT-11587"]["cluster_only"] is True and actors["APT28"]["cluster_only"] is False
+    assert [a["sources"] for a in actors["UAT-11587"]["aliases"]] == [["talos"]]
+    rows = json.loads((out / "reports" / "2026.json").read_text(encoding="utf-8"))
+    assert [r["actors_from_title"] for r in rows] == [[actors["UAT-11587"]["id"]]]
+
+
+def test_a_cluster_id_in_another_vendors_title_makes_no_actor(tmp_path, store):
+    _, actors = built_actors(tmp_path, store, microsoftblog=blog_with_titles("microsoftblog", "UAT-11587 on a Microsoft post"))
+    assert "UAT-11587" not in actors
+
+
+def test_a_cluster_id_from_a_source_that_may_not_show_facts_makes_no_actor(tmp_path, store):
+    blog = blog_with_titles("talos", "UAT-11587 targets Asia")
+    blog._policy = "link-only"
+    _, actors = built_actors(tmp_path, store, talos=blog)
+    assert "UAT-11587" not in actors
+
+
+def test_a_cluster_id_that_a_pair_names_is_not_unconfirmed(tmp_path, store):
+    talos = blog_with_titles("talos", "UAT-9999 hits a ministry")
+    pair = FakeBlog("microsoftblog", [("Storm-9999", "APT28")])
+    _, actors = built_actors(tmp_path, store, talos=talos, microsoftblog=pair)
+    assert actors["UAT-9999"]["cluster_only"] is True
+    assert "Storm-9999" in [a["value"] for a in actors["APT28"]["aliases"]] and not actors["APT28"]["cluster_only"]
+
+
+def test_a_cluster_id_that_a_known_actor_already_lists_adds_no_actor(tmp_path, store):
+    talos = blog_with_titles("talos", "UAT-9999 hits a ministry")
+    pair = FakeBlog("eset", [("UAT-9999", "APT28")])
+    _, actors = built_actors(tmp_path, store, talos=talos, eset=pair)
+    assert "UAT-9999" not in actors and "UAT-9999" in [a["value"] for a in actors["APT28"]["aliases"]]

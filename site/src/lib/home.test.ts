@@ -18,7 +18,8 @@ function actor(aliases: [string, string[]][], name = 'Alpha'): Actor {
 		timeline: [],
 		reports: [],
 		conflicts: [],
-		evidence_count: 0
+		evidence_count: 0,
+		cluster_only: false
 	};
 }
 

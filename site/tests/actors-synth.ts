@@ -123,7 +123,8 @@ export function synthActor(reports: Report[]): Actor {
 				]
 			}
 		],
-		evidence_count: 212
+		evidence_count: 212,
+		cluster_only: false
 	};
 }
 

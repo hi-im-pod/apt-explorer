@@ -177,6 +177,29 @@ def _add_vendor_pairs(connectors: Sequence[Connector], store: SnapshotStore, bun
     return added
 
 
+def _add_title_clusters(bundles: dict[str, SourceBundle], registry, policies: dict[str, str]) -> int:
+    """Name an actor for each vendor cluster ID that the vendor's own post titles carry and nobody else lists.
+
+    The record is the ID alone, from the source whose title carries it. Assembly marks an actor that has
+    nothing else behind it as an unconfirmed cluster. A later post that ties the ID to a name merges in.
+    """
+    shown = {p.id for p in assembly._published_actors(registry, policies)}
+    found: dict[str, ActorRecord] = {}
+    for source, bundle in bundles.items():
+        if policies.get(source) not in assembly._SHOWS_FACTS:
+            continue
+        for r in bundle.reports:
+            for name in name_pairs.title_clusters(r.title, source):
+                key = norm(name)
+                if key in found or registry.lookup(name) in shown or registry.non_actor(name):
+                    continue
+                found[key] = ActorRecord(source=source, source_id=f"{assembly.CLUSTER_ONLY_PREFIX}{key}", name=name, retrieved_at=r.retrieved_at)
+    for record in found.values():
+        b = bundles[record.source]
+        bundles[record.source] = b.model_copy(update={"actors": [*b.actors, record]})
+    return len(found)
+
+
 def run(out: Path, store: SnapshotStore, connectors: Sequence[Connector] | None = None, fetch: bool = True, *,
         only: Collection[str] | None = None, generated_at: str | None = None,
         slugs_path: Path | None = None,
@@ -255,6 +278,9 @@ def run(out: Path, store: SnapshotStore, connectors: Sequence[Connector] | None 
     # A vendor post that says two names are one adds an alias or an actor, judged against the registry
     # built without it. The second resolve merges the records the first pass allowed.
     if _add_vendor_pairs(connectors, store, bundles, registry, policies, _labels(labels)):
+        registry = build_registry()
+    # A cluster ID in a vendor's own title that no pair tied to a name is still an actor worth listing.
+    if _add_title_clusters(bundles, registry, policies):
         registry = build_registry()
 
     if fetch and orkl:

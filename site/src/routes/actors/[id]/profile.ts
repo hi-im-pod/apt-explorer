@@ -201,9 +201,15 @@ const NAMES_IN_LEDE = 5;
 /**
  * The sentence or two under the actor's name, built only from the data: a few
  * of its other names, and how many sources agree on an origin. Null when
- * there is nothing to say, so the page shows no empty line.
+ * there is nothing to say, so the page shows no empty line. An actor that only
+ * a vendor's cluster ID stands behind says so instead.
  */
-export function ledeFor(actor: Pick<Actor, 'name' | 'aliases' | 'origin'>): string | null {
+export function ledeFor(actor: Pick<Actor, 'name' | 'aliases' | 'origin' | 'cluster_only'>): string | null {
+	if (actor.cluster_only) {
+		const source = actor.aliases[0]?.sources[0];
+		const vendor = source ? SOURCE_LABELS[source]?.name ?? source : 'A vendor';
+		return `Unconfirmed vendor cluster. ${vendor} used this ID in a post title, and no source lists it as an actor yet.`;
+	}
 	const parts: string[] = [];
 	const others = actor.aliases.map((a) => a.value).filter((v) => v !== actor.name);
 	if (others.length > 0) {

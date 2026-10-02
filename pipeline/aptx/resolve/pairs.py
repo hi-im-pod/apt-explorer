@@ -47,6 +47,26 @@ def is_cluster_id(name: str) -> bool:
     return _CLUSTER_ID.fullmatch(name.strip()) is not None
 
 
+# A vendor numbers the clusters it has not yet tied to a known actor, and its own post titles are
+# the one place that proves the number is the vendor's. Each format maps to the one source whose
+# titles may name it. Other formats are left out on purpose: TA02, TA03 and TA16 are Proofpoint
+# campaign numbers or product names that look the same, and a number without a vendor behind it
+# says nothing. A hyphen is required, so "Dev 2024" in a headline is not a cluster.
+CLUSTER_ISSUERS = {"UAT": "talos", "Storm": "microsoftblog", "DEV": "microsoftblog"}
+_TITLE_CLUSTER = re.compile(r"(?<![A-Za-z0-9])(UAT|Storm|STORM|DEV)-(\d{4,5})(?![A-Za-z0-9])")
+
+
+def title_clusters(title: str, source: str) -> list[str]:
+    """The vendor cluster IDs `source` issues that `title` names, in the order written, each once."""
+    out: list[str] = []
+    for m in _TITLE_CLUSTER.finditer(title):
+        prefix = "Storm" if m.group(1).casefold() == "storm" else m.group(1)
+        name = f"{prefix}-{m.group(2)}"
+        if CLUSTER_ISSUERS[prefix] == source and name not in out:
+            out.append(name)
+    return out
+
+
 def _clean(side: str) -> str | None:
     """The side as a name, with a leading sentence word removed, or None when it is not one."""
     words = side.split()

@@ -172,7 +172,7 @@ def _actor(**changes):
              "origin": [], "sponsor": [], "motivation": [],
              "claimed_targets": {"countries": [], "sectors": []}, "malware": [],
              "techniques_documented": [], "techniques_reported": [], "cves": [], "timeline": [],
-             "reports": [], "conflicts": [], "evidence_count": 0}
+             "reports": [], "conflicts": [], "evidence_count": 0, "cluster_only": False}
     actor.update(changes)
     return actor
 

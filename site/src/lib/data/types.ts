@@ -211,6 +211,8 @@ export interface Actor {
 	reports: ReportId[];
 	conflicts: Conflict[];
 	evidence_count: number;
+	/** Only a vendor's cluster ID in one of its post titles stands behind this actor. */
+	cluster_only: boolean;
 }
 
 // ---------------------------------------------------------------------------

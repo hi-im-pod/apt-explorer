@@ -370,6 +370,13 @@
 		keep apart, or to turn a malware family into an actor. The rule is provisional, and every alias
 		it adds carries the blog's source badge.
 	</p>
+	<p>
+		A cluster ID in a post title can also add an actor. When a Talos title carries a UAT- ID, or a
+		Microsoft title carries a Storm- or DEV- ID, and no source lists that ID, it becomes an actor
+		labeled "unconfirmed vendor cluster" with that post as its report. Only the vendor that issues the
+		format counts, and other shapes such as UNC and TA are left out because they match unrelated labels.
+		The label drops once a source or a stated pair names the cluster.
+	</p>
 </section>
 
 <section id="limitations" aria-labelledby="limitations-heading">

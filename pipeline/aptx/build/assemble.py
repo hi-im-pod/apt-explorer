@@ -96,6 +96,9 @@ _ORD = {key: i for i, key in enumerate(SOURCE_ORDER)}
 # and ATT&CK tags before it was added (precision 0.83 as a lower bound, see the README).
 TITLE_MATCH_SOURCES = frozenset({"microsoftblog", "talos", "eset", "dfir", "orkl", "paper"})
 
+# The source_id prefix of an actor record that is only a vendor cluster ID found in a post title (cli.py).
+CLUSTER_ONLY_PREFIX = "cluster:"
+
 # Sources whose text is read at fetch for the actors it names. Only ORKL, whose full text is already
 # read for CVEs and techniques, keeps the names it finds.
 TEXT_MATCH_SOURCES = frozenset({"orkl"})
@@ -451,6 +454,9 @@ def _actor(p: _Published, reports: list["_Report"], kev: dict[str, dict], valid_
         # how much evidence the merge rests on, and names none of it.
         "evidence_count": len(p.resolved.evidence),
     }
+    # True when a vendor's cluster ID in a title is all there is: no source lists the actor and no post
+    # has tied the ID to a name.
+    doc["cluster_only"] = all(m.source_id.startswith(CLUSTER_ONLY_PREFIX) for m in members)
     dates = [r.published for r in mine if r.published]
     entry = {
         "id": p.id,

@@ -19,7 +19,8 @@
     "timeline",
     "reports",
     "conflicts",
-    "evidence_count"
+    "evidence_count",
+    "cluster_only"
   ],
   "properties": {
     "id": {
@@ -114,6 +115,10 @@
     "evidence_count": {
       "$ref": "#/$defs/count",
       "description": "Shared-alias evidence edges behind this actor's merge. Edges from evidence-only sources are counted here but never named."
+    },
+    "cluster_only": {
+      "description": "True when the only thing behind this actor is a vendor's cluster ID in one of that vendor's post titles. No source lists the actor and no post ties the ID to a name.",
+      "type": "boolean"
     }
   },
   "$defs": {

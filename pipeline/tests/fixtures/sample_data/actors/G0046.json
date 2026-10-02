@@ -103,5 +103,6 @@
     "dfir:2024-03-malicious-installer-ads-leading-to-a-backdoor"
   ],
   "conflicts": [],
-  "evidence_count": 5
+  "evidence_count": 5,
+  "cluster_only": false
 }

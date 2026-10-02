@@ -179,7 +179,7 @@
 <header class="actor-head">
 	<p class="crumbs"><a href="{base}/actors/">All actors</a></p>
 	<h1>{actor.name}</h1>
-	{#if lede}<p class="lede">{lede}</p>{/if}
+	{#if lede}<p class="lede" class:unconfirmed={actor.cluster_only}>{lede}</p>{/if}
 	<dl class="facts">
 		<div>
 			<dt>Reports</dt>
@@ -452,6 +452,12 @@
 		color: var(--text-muted);
 		font-size: 1.1875rem;
 		line-height: 1.5;
+	}
+
+	/* A cluster ID that nothing else confirms is dashed amber, like a name guess. */
+	.lede.unconfirmed {
+		padding-left: 0.875rem;
+		border-left: 2px dashed var(--unconfirmed);
 	}
 
 	dt {

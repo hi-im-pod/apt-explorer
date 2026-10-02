@@ -100,3 +100,19 @@ def test_two_new_names_need_a_cluster_id_and_a_guesser_that_calls_both_actors():
 def test_the_guesser_alone_does_not_promote_two_new_names():
     d = decide("Newcomer", "Otherthing", guess=actor_guess())
     assert not d.accepted and "cluster ID" in d.reason
+
+
+
+@pytest.mark.parametrize("title,source,expected", [
+    ("China-nexus UAT-11587 targets government organizations across Asia", "talos", ["UAT-11587"]),
+    ("Storm-2570 abuses a trusted installer", "microsoftblog", ["Storm-2570"]),
+    ("STORM-0558 and DEV-0537 in one post, Storm-0558 again", "microsoftblog", ["Storm-0558", "DEV-0537"]),
+    ("UAT-11587 on a Microsoft title", "microsoftblog", []),
+    ("Storm-2570 on a Talos title", "talos", []),
+    ("Proofpoint tracks TA585 and STRT-TA03", "microsoftblog", []),
+    ("Dev 2024 roadmap and Storm 2570 with no hyphen", "microsoftblog", []),
+    ("UAT-1 and Storm-123456 are not IDs", "talos", []),
+    ("Prefixed XStorm-2570 is not an ID", "microsoftblog", []),
+])
+def test_a_title_names_only_the_cluster_ids_its_own_vendor_issues(title, source, expected):
+    assert pairs.title_clusters(title, source) == expected

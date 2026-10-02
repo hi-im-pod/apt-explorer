@@ -51,6 +51,7 @@ function actor(over: Partial<Actor>): Actor {
 		reports: [],
 		conflicts: [],
 		evidence_count: 0,
+		cluster_only: false,
 		...over
 	};
 }
@@ -270,6 +271,13 @@ describe('ledeFor', () => {
 				})
 			)
 		).toBe('Sources disagree on the origin.');
+	});
+
+	it('says an actor that only a vendor cluster ID stands behind is unconfirmed, and names the vendor', () => {
+		const a = actor({ name: 'UAT-11587', aliases: [{ value: 'UAT-11587', sources: ['talos'] }], cluster_only: true });
+		expect(ledeFor(a)).toBe(
+			'Unconfirmed vendor cluster. Cisco Talos blog used this ID in a post title, and no source lists it as an actor yet.'
+		);
 	});
 
 	it('is null for an actor with no other names and no origin', () => {
