@@ -51,7 +51,7 @@ def notes(window_start: str) -> dict[str, str]:
             f"Actors whose earliest date in any published source falls within {NEW_ACTOR_DAYS} days of this "
             f"build. A source that gives only a year counts only when that whole year falls inside the period."),
         "kev_monthly": (
-            "CVEs CISA added to the KEV catalogue each month, and how many KEV marks as known ransomware use."),
+            "CVEs CISA added to the KEV catalog each month, and how many KEV marks as known ransomware use."),
         "kev_actor_links": (
             f"KEV CVEs named in reports from {window_start} on that are also linked to a resolved actor. "
             f"A shared report, not an attribution."),

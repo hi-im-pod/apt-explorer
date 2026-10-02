@@ -239,7 +239,7 @@
     "unmeasured_signals": [
       {
         "signal": "exact_name_listed",
-        "reason": "Every ground-truth name is labelled because a source lists it, so leaving that source out removes the signal, and keeping it would make the test circular. A guess that rests on it is shown as unvalidated."
+        "reason": "Every ground-truth name is labeled because a source lists it, so leaving that source out removes the signal, and keeping it would make the test circular. A guess that rests on it is shown as unvalidated."
       }
     ],
     "matching": {
@@ -270,7 +270,7 @@
       ]
     },
     "limitations": [
-      "The ground truth has fewer than 10 names labelled tool or not-an-entity, so guesses with those labels are shown as unvalidated.",
+      "The ground truth has fewer than 10 names labeled tool or not-an-entity, so guesses with those labels are shown as unvalidated.",
       "The ground-truth names are ones that a source lists, so they are better known than a typical unresolved name.",
       "Signals were chosen on the same 64 names that score them, so the figures are likely a little optimistic. Confidence is calibrated without each name in turn, which removes a second source of the same bias.",
       "No guess is shown as high confidence. The band needs at least 20 held-out names with 85% or more right, and 15 qualified, of which 15 were right.",

@@ -472,7 +472,7 @@ def _report(samples, predictions, candidates, kept, fires, change, model, valida
     limits = []
     if not validated >= set(LABELS):
         missing = [label for label in LABELS if label not in validated]
-        limits.append("The ground truth has fewer than %d names labelled %s, so guesses with those labels are shown as unvalidated."
+        limits.append("The ground truth has fewer than %d names labeled %s, so guesses with those labels are shown as unvalidated."
                       % (MIN_LABEL_SUPPORT, " or ".join(missing)))
     limits.append("The ground-truth names are ones that a source lists, so they are better known than a typical unresolved name.")
     limits.append("Signals were chosen on the same %d names that score them, so the figures are likely a little optimistic. "
@@ -496,7 +496,7 @@ def _report(samples, predictions, candidates, kept, fires, change, model, valida
         "signals": signals,
         "unmeasured_signals": [{
             "signal": "exact_name_listed",
-            "reason": "Every ground-truth name is labelled because a source lists it, so leaving that source out removes the signal, "
+            "reason": "Every ground-truth name is labeled because a source lists it, so leaving that source out removes the signal, "
                       "and keeping it would make the test circular. A guess that rests on it is shown as unvalidated."}],
         "matching": {"actor_names": len(actors), "matchable": sum(1 for s, _ in actors if s.matchable), "by_kind": by_kind},
         "limitations": limits,

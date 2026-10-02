@@ -112,7 +112,7 @@ SOURCE_INFO: dict[str, SourceInfo] = {i.key: i for i in (
     SourceInfo(
         key="orkl",
         title="ORKL",
-        licence="No licence stated",
+        licence="No license stated",
         licence_url="https://orkl.eu/about",
         _paragraphs=(
             "Report metadata from ORKL, the community cyber threat intelligence library, https://orkl.eu.",
@@ -177,7 +177,7 @@ SOURCE_INFO: dict[str, SourceInfo] = {i.key: i for i in (
     SourceInfo(
         key="talos",
         title="Cisco Talos blog",
-        licence="No licence stated",
+        licence="No license stated",
         licence_url="https://www.cisco.com/c/en/us/about/legal/terms-conditions.html",
         _paragraphs=(
             "Post titles and links from the Cisco Talos blog, https://blog.talosintelligence.com/. © Cisco "
@@ -187,7 +187,7 @@ SOURCE_INFO: dict[str, SourceInfo] = {i.key: i for i in (
     SourceInfo(
         key="eset",
         title="ESET WeLiveSecurity blog",
-        licence="No licence stated",
+        licence="No license stated",
         licence_url="https://www.welivesecurity.com/en/company/legal-information/",
         _paragraphs=(
             "Post titles and links from the ESET WeLiveSecurity blog, https://www.welivesecurity.com/. © ESET. "
@@ -197,7 +197,7 @@ SOURCE_INFO: dict[str, SourceInfo] = {i.key: i for i in (
     SourceInfo(
         key="microsoftblog",
         title="Microsoft Security blog",
-        licence="No licence stated",
+        licence="No license stated",
         licence_url="https://www.microsoft.com/en-us/legal/terms-of-use",
         _paragraphs=(
             "Post titles and links from the Microsoft Security blog, https://www.microsoft.com/en-us/security/blog/. "

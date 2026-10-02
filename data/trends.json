@@ -25701,7 +25701,7 @@
   "notes": {
     "reporting_activity": "Reports per quarter that are linked to at least one resolved actor, from the report sources only. Dated reports only. Each quarter is compared with the same quarter a year earlier.",
     "new_actors": "Actors whose earliest date in any published source falls within 365 days of this build. A source that gives only a year counts only when that whole year falls inside the period.",
-    "kev_monthly": "CVEs CISA added to the KEV catalogue each month, and how many KEV marks as known ransomware use.",
+    "kev_monthly": "CVEs CISA added to the KEV catalog each month, and how many KEV marks as known ransomware use.",
     "kev_actor_links": "KEV CVEs named in reports from 2024-10-01 on that are also linked to a resolved actor. A shared report, not an attribution.",
     "reported_vs_documented": "Technique IDs found in an actor's reports from 2024-10-01 on, compared with the techniques ATT&CK documents for that actor.",
     "source_health": "Each source's newest good snapshot and record count. Stale means this build's fetch failed and the previous snapshot was used."
