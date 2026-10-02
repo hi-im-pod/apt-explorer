@@ -95,11 +95,9 @@
 <div class="intro">
 	<h1>Trends</h1>
 	<p class="lede">
-		What current sources report over {recent}, counted in whole quarters from {since}: which actors are being written about, which are
-		new, and which exploited vulnerabilities appear in reports. The figures are recomputed with every
-		weekly build; these were computed on
-		<time datetime={t.generated_at}>{formatDate(t.generated_at)}</time>. Each chart's counting rule
-		is printed beneath it.
+		What current sources report over {recent}, counted in whole quarters from {since}. The figures
+		are recomputed with every weekly build; these were computed on
+		<time datetime={t.generated_at}>{formatDate(t.generated_at)}</time>.
 	</p>
 </div>
 
@@ -107,16 +105,15 @@
 	<h2 id="h-reporting-activity">Reporting Activity</h2>
 	{#if activity.actors.length}
 		<p class="lead">
-			The {activity.actors.length} actors with the most reports since {since}, quarter by quarter. Cells
-			with a stronger colour mean more reports, on one scale that runs from 0 to {activityTop}.
+			The {activity.actors.length} actors with the most reports, on one scale from 0 to {activityTop}.
 		</p>
 		<Chart
-			title="Reports per quarter for the {activity.actors.length} most reported actors, as a grid with one row per actor"
+			title="Reports per quarter for the {activity.actors.length} most reported actors"
 			note={t.notes.reporting_activity}
 			plot={activityPlot}
 			height={activityHeight(activity.actors.length)}
 			axis="time"
-			legend={[{ label: 'Reports in the quarter, stronger colour for more', token: '--chart-2' }]}
+			legend={[{ label: 'Reports in the quarter', token: '--chart-2' }]}
 		>
 			{#snippet table()}
 				<table class="numbers">
@@ -169,9 +166,9 @@
 	{/if}
 	{#if chartNewActors}
 		<div class="after-list">
-			<p class="lead">New actors per month over the same {newSpan}.</p>
+			<p class="lead">New actors per month.</p>
 			<Chart
-				title="Newly documented actors per month over the last {newSpan}"
+				title="Newly documented actors per month"
 				note={t.notes.new_actors}
 				plot={newPlot}
 				height={NEW_ACTORS_HEIGHT}
@@ -186,7 +183,7 @@
 <section id="kev-monthly" aria-labelledby="h-kev-monthly">
 	<h2 id="h-kev-monthly">Exploited Vulnerabilities per Month</h2>
 	<Chart
-		title="CVEs added to CISA's KEV catalogue each month, split by known ransomware use"
+		title="CVEs added to CISA's KEV catalog each month, split by known ransomware use"
 		note={t.notes.kev_monthly}
 		plot={kevPlot}
 		height={KEV_HEIGHT}
@@ -228,8 +225,7 @@
 	{/if}
 	<p class="note">{t.notes.kev_actor_links}</p>
 	<p class="note">
-		EPSS is the Exploit Prediction Scoring System from FIRST. Each score is the modelled chance that the CVE is
-		exploited in the next 30 days, shown as published. It is not a measure of impact.
+		EPSS is the Exploit Prediction Scoring System from FIRST. Scores are shown as published and are not a measure of impact.
 	</p>
 </section>
 
@@ -237,11 +233,10 @@
 	<h2 id="h-reported-vs-documented">Reported Versus Documented Techniques</h2>
 	{#if techniques.length}
 		<p class="lead">
-			Up to {TOP_TECHNIQUES} actors, those whose recent reports name the most techniques ATT&CK does not
-			list for them first.
+			Up to {TOP_TECHNIQUES} actors, ordered by how many reported techniques ATT&CK does not list for them.
 		</p>
 		<Chart
-			title="Techniques in recent reports per actor, split into those ATT&CK also documents and those only reported"
+			title="Techniques in reports per actor, split by whether ATT&CK also documents them"
 			note={t.notes.reported_vs_documented}
 			plot={techniquePlot}
 			height={techniqueHeight(techniques.length)}
