@@ -52,8 +52,7 @@
 	<h1>Methodology</h1>
 	<p class="lede">
 		This page reports how the actor registry is built and how well it matches the actor names in the
-		data released with the <a href="{base}/about/#paper">CCS '25 paper</a>. Every number comes from
-		the data this build was made from, so it changes when the data does.
+		data released with the <a href="{base}/about/#paper">CCS '25 paper</a>.
 	</p>
 </div>
 
@@ -61,8 +60,7 @@
 	<h2 id="registry-heading">The Registry</h2>
 	<p>
 		The registry merges actor records from MITRE ATT&CK®, the MISP galaxy, ETDA's Threat Group Cards
-		and Malpedia into one actor per group. It keeps the evidence for each merge, so the result can
-		be checked.
+		and Malpedia into one actor per group and keeps the evidence for each merge.
 	</p>
 	<dl class="stats">
 		{#each cards as c (c.label)}
@@ -90,12 +88,11 @@
 		</li>
 		<li>
 			<strong>Shared names make candidates.</strong> Two records are candidates for a merge when they
-			share a normalized name or alias. Each shared name is kept as an evidence link, so every merge
-			traces back to the names that caused it.
+			share a normalized name or alias. Each shared name is kept as an evidence link.
 		</li>
 		<li>
 			<strong>Some names are left alone.</strong> A shared name never merges two groups that ATT&CK
-			lists under different IDs. The name is recorded as an ambiguity and both groups stay separate.
+			lists under different IDs. The name is recorded as an ambiguity.
 		</li>
 		<li>
 			<strong>Software is not an actor.</strong> A name that matches a Malpedia malware family or an
@@ -118,7 +115,7 @@
 			The CCS '25 dataset labels its reports with {formatCount(match.names_total)} actor names. The
 			registry resolves {formatCount(match.resolved)} of them to an actor. Another {formatCount(
 				match.typed_non_actor
-			)} are typed as malware or a tool, so they are not actors at all. The remaining {formatCount(
+			)} are typed as malware or a tool. The remaining {formatCount(
 				unmatched
 			)} match neither.
 		</p>
@@ -141,10 +138,9 @@
 			<li><span class="swatch unmatched"></span>Unmatched</li>
 		</ul>
 		<p class="section-note">
-			The match rate is the share of names that resolve to an actor. Software names do not raise it.
-			It measures agreement between the paper's labels and the registry. It does not say how many of
-			the resolved names are correct, because a resolved name is only as reliable as the aliases
-			behind it.
+			Software names do not raise the match rate. It measures agreement with the paper's labels, not
+			how many resolved names are correct, because a resolved name is only as reliable as the
+			aliases behind it.
 		</p>
 	{/if}
 </section>
@@ -201,8 +197,8 @@
 			These names appear in reports and resolve to no actor, most frequent first. A name typed as
 			malware or a tool is software, not a missing actor. A name with no type may be an actor that
 			none of the sources lists.
-			<a href="{base}/guesses/">The Name Guesses page</a> gives a program's label for each one, with how
-			often that method was right, and marks every label as pending confirmation.
+			<a href="{base}/guesses/">The Name Guesses page</a> gives a program's label for each one and the method's measured accuracy, with every label
+			pending confirmation.
 		</p>
 		<table>
 			<thead>
@@ -246,8 +242,7 @@
 	</ol>
 	<p>
 		A date before 1990 or a placeholder such as 0001-01-01 counts as missing, and the next rule
-		applies. A report that passes none of the rules is undated. It is listed on its own and is
-		never in a timeline or a trend.
+		applies. A report that passes none of the rules is undated, and it is never in a timeline or a trend.
 	</p>
 </section>
 
@@ -263,7 +258,7 @@
 		<li>
 			<strong>Known copy hosts are copies.</strong> An address on vx-underground.org,
 			archive.orkl.eu, app.box.com, web.archive.org, archive.org, archive.ph, archive.is or
-			archive.today is labelled as a mirror, an archive or a snapshot, and is never labelled as the
+			archive.today is labeled as a mirror, an archive or a snapshot, and is never labeled as the
 			original. A GitHub address counts as a mirror only under the CyberMonitor account, because the
 			same host also serves publishers' own repositories.
 		</li>
@@ -271,13 +266,13 @@
 			<strong>Hosts that serve other people's pages are not called the original.</strong> An
 			address on a link shortener (t.co, bit.ly and similar), a reference site (Wikipedia, ETDA's
 			Threat Group Cards or Malpedia), a file host (Google Drive, Dropbox, Mega, SlideShare, Scribd,
-			Pastebin and similar) or a cache is labelled "Link, publisher not confirmed". The site cannot
+			Pastebin and similar) or a cache is labeled "Link, publisher not confirmed". The site cannot
 			tell who wrote the page behind such an address.
 		</li>
 		<li>
-			<strong>Any other web address is labelled as the original.</strong> This is a rule, not a
-			check. The site does not confirm that the host is the publisher, so a copy on a host that is
-			not on either list above would be labelled as an original.
+			<strong>Any other web address is labeled as the original.</strong> This is a rule, not a
+			check: the site does not confirm that the host is the publisher, so a copy on a host in
+			neither list above would be labeled as an original.
 		</li>
 		<li>
 			<strong>An unreadable address is dropped.</strong> A link that is not a web address cannot be
@@ -291,13 +286,13 @@
 		</li>
 		<li>
 			<strong>A missing original is stated, not filled in.</strong> When a report has only copies,
-			the panel says that no original publisher link is known and names what the copies are. When
-			it has only a link that is not confirmed, the panel says that no original is confirmed.
+			the panel says no original publisher link is known and names the copies. With only an
+			unconfirmed link, it says no original is confirmed.
 		</li>
 	</ol>
 	<p class="section-note">
-		Many ORKL records give a mirror address and no publisher address. Finding the publisher for
-		each of them needs another source, and the pipeline does not look one up yet.
+		Many ORKL records give a mirror address and no publisher address, and the pipeline does not
+		yet look one up.
 	</p>
 </section>
 
@@ -305,8 +300,7 @@
 	<h2 id="publishing-heading">What Is Published</h2>
 	<p>
 		Each source has a publish value that limits what the site may show from it. The
-		<a href="{base}/about/#publish-values">About page</a> gives the value and the licence for every
-		source.
+		<a href="{base}/about/#publish-values">About page</a> gives each source's value and license.
 	</p>
 	<h3><code>evidence-only</code></h3>
 	<p>{PUBLISH_POLICIES['evidence-only']}</p>
@@ -325,8 +319,8 @@
 		</p>
 		<p>
 			The actors, CVEs and techniques listed for an ORKL report were added by this project, and
-			the table can filter and search on them. Actors come from the three sources named above. CVE
-			and technique IDs are found by matching patterns in the report text. The link-only rule
+			the table can filter and search on them. Actors come from the three sources named above, and
+			CVE and technique IDs are matched in the report text. The link-only rule
 			allows this because the project works out those identifiers itself.
 		</p>
 	{/if}
@@ -339,16 +333,15 @@
 		titles are read the same way. ORKL's actor tags are still never shown or used for these links.
 	</p>
 	<p>
-		The match is cautious. It reads whole words and uses only the names this site already
+		The match reads whole words and uses only the names this site already
 		publishes. It skips a name that belongs to two actors, a name that is also an ordinary word,
-		and the names of malware that a title can mention without being about the actor. A missing
-		link is a better error than a wrong one. A title is the publisher's own statement, but it is
+		and the names of malware that a title can mention without being about the actor. A title is the publisher's own statement, but it is
 		weaker than a tag, and it can name an actor in passing.
 	</p>
 	<h3>Names a vendor post states</h3>
 	<p>
-		A vendor names an actor differently from everyone else, so a post titled with the vendor's
-		label, such as Storm-3168, can miss the report that uses the actor's own name. The Microsoft,
+		A post titled with a vendor's own label, such as Storm-3168, can miss the report that uses the
+		actor's usual name. The Microsoft,
 		Talos and ESET blogs often say outright that two names are one actor, as in "JadePuffer, tracked by
 		Microsoft as Storm-3168". The pipeline reads each post's text in memory for phrases that equate two
 		names, such as "also known as", "tracked as" and "a.k.a.", then keeps the two names and drops the
@@ -359,7 +352,7 @@
 		A stated pair is used in two cases. When one name is an actor this site already publishes, the
 		other becomes an alias of that actor. When neither name is known, the pair adds a new actor only
 		if one name is a vendor cluster label such as Storm-3168 or UNC2452 and the name guesser calls
-		both names an actor. The guesser alone is not enough, because it calls almost any capitalised
+		both names an actor. The guesser alone is not enough, because it calls almost any capitalized
 		name an actor, malware families included. A pair is never used to join two actors the sources
 		keep apart, or to turn a malware family into an actor. The rule is provisional, and every alias
 		it adds carries the blog's source badge.
