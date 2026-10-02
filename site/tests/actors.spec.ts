@@ -159,6 +159,51 @@ test(`the index handles ${SYNTH_ACTORS} actors, and search narrows them`, async 
 	await expect(rows.first()).toContainText(/matches the alias/i);
 });
 
+for (const [width, height] of [[1280, 800], [375, 800]] as const) {
+	test(`at ${width}px the long index scrolls inside its own box and the page stays short`, async ({ page }) => {
+		await page.setViewportSize({ width, height });
+		await openSynthIndex(page);
+		const box = page.getByRole('region', { name: 'Actors, scrolls' });
+		await expect(box).toBeVisible();
+		const m = await box.evaluate((el) => ({
+			client: el.clientHeight,
+			scroll: el.scrollHeight,
+			overflowY: getComputedStyle(el).overflowY,
+			page: document.documentElement.scrollHeight,
+			view: innerHeight,
+			tab: (el as HTMLElement).tabIndex
+		}));
+		expect(m.overflowY).toBe('auto');
+		expect(m.tab).toBe(0);
+		expect(m.scroll, 'the list is taller than its box').toBeGreaterThan(m.client * 3);
+		expect(m.client, 'the box leaves room for the page around it').toBeLessThanOrEqual(height * 0.75);
+		expect(m.page, 'the page does not grow with the list').toBeLessThan(m.scroll / 3);
+
+		// Scrolling the box moves the rows and not the page, and the last row is reachable.
+		await box.evaluate((el) => el.scrollIntoView({ block: 'end' }));
+		const pageY = await page.evaluate(() => scrollY);
+		const first = page.getByRole('list', { name: 'Actors' }).getByRole('listitem').first();
+		const before = (await first.boundingBox())!.y;
+		await box.evaluate((el) => (el.scrollTop = 600));
+		expect((await first.boundingBox())!.y).toBeLessThan(before - 300);
+		expect(await page.evaluate(() => scrollY), 'the page did not move').toBe(pageY);
+		await box.evaluate((el) => (el.scrollTop = el.scrollHeight));
+		await expect(page.getByRole('list', { name: 'Actors' }).getByRole('listitem').last()).toBeInViewport();
+	});
+}
+
+test('the column names stay in view while the list scrolls', async ({ page }) => {
+	await page.setViewportSize({ width: 1280, height: 800 });
+	await openSynthIndex(page);
+	const box = page.getByRole('region', { name: 'Actors, scrolls' });
+	const head = box.locator('.columns');
+	const top = async () => (await head.boundingBox())!.y;
+	const y = await top();
+	await box.evaluate((el) => (el.scrollTop = 1200));
+	expect(await top()).toBeCloseTo(y, 0);
+	expect(await head.evaluate((el) => getComputedStyle(el).backgroundColor)).not.toBe('rgba(0, 0, 0, 0)');
+});
+
 for (const t of themes) {
 	test(`at 375px in ${t}, the index with ${SYNTH_ACTORS} long-aliased actors fits the screen`, async ({ page }) => {
 		await page.setViewportSize({ width: 375, height: 800 });

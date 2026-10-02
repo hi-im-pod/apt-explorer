@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { tick } from 'svelte';
 	import { base } from '$app/paths';
 	import { formatCount, formatDate } from '$lib/format';
 	import type { Snapshot } from './$types';
@@ -8,14 +9,18 @@
 
 	let query = $state('');
 	let order = $state<ActorOrder>('recent');
+	let box = $state<HTMLElement>();
 
-	// Coming back from a profile restores the search and sort, so a reader
-	// working through a filtered list does not have to type it again.
-	export const snapshot: Snapshot<{ query: string; order: ActorOrder }> = {
-		capture: () => ({ query, order }),
+	// Coming back from a profile restores the search, the sort and how far the
+	// list was scrolled, so a reader working through it does not lose their place.
+	export const snapshot: Snapshot<{ query: string; order: ActorOrder; top: number }> = {
+		capture: () => ({ query, order, top: box?.scrollTop ?? 0 }),
 		restore: (value) => {
 			query = value.query;
 			order = value.order;
+			void tick().then(() => {
+				if (box) box.scrollTop = value.top;
+			});
 		}
 	};
 
@@ -81,61 +86,63 @@
 </p>
 
 {#if rows.length > 0}
-	<div class="columns" aria-hidden="true">
-		<span>Actor</span>
-		<span>Origin</span>
-		<span>Reports</span>
-		<span>Last reported</span>
-	</div>
-	<ol class="actors" aria-label="Actors">
-		{#each rows as { entry, via } (entry.id)}
-			{@const aka = others(entry.name, entry.aliases)}
-			<li>
-				<div class="who">
-					<p class="title">
-						<a class="name" href="{base}/actors/{entry.id}/">{entry.name}</a>
-						<span class="id data">{entry.id}</span>
-					</p>
-					{#if aka.length > 0}
-						<p class="aliases">
-							<span class="visually-hidden">Also known as </span>{aka.slice(0, SHOWN_ALIASES).join(', ')}{#if aka.length > SHOWN_ALIASES},
-								and {formatCount(aka.length - SHOWN_ALIASES)} more{/if}
+	<div class="box" role="region" aria-label="Actors, scrolls" tabindex="0" bind:this={box}>
+		<div class="columns" aria-hidden="true">
+			<span>Actor</span>
+			<span>Origin</span>
+			<span>Reports</span>
+			<span>Last reported</span>
+		</div>
+		<ol class="actors" aria-label="Actors">
+			{#each rows as { entry, via } (entry.id)}
+				{@const aka = others(entry.name, entry.aliases)}
+				<li>
+					<div class="who">
+						<p class="title">
+							<a class="name" href="{base}/actors/{entry.id}/">{entry.name}</a>
+							<span class="id data">{entry.id}</span>
 						</p>
-					{/if}
-					{#if via}
-						<p class="via">Matches the alias <mark>{via}</mark></p>
-					{/if}
-				</div>
-				<dl class="stats">
-					<div class="origin">
-						<dt>Origin</dt>
-						<dd>
-							{#if entry.origin.length > 0}
-								{entry.origin.map(countryName).join(', ')}
-								{#if entry.origin.length > 1}<span class="disagree">sources disagree</span>{/if}
-							{:else}
-								<span class="muted">not reported</span>
-							{/if}
-						</dd>
+						{#if aka.length > 0}
+							<p class="aliases">
+								<span class="visually-hidden">Also known as </span>{aka.slice(0, SHOWN_ALIASES).join(', ')}{#if aka.length > SHOWN_ALIASES},
+									and {formatCount(aka.length - SHOWN_ALIASES)} more{/if}
+							</p>
+						{/if}
+						{#if via}
+							<p class="via">Matches the alias <mark>{via}</mark></p>
+						{/if}
 					</div>
-					<div>
-						<dt>Reports</dt>
-						<dd class="data">{formatCount(entry.report_count)}</dd>
-					</div>
-					<div>
-						<dt>Last reported</dt>
-						<dd>
-							{#if entry.last_reported}
-								<time class="data" datetime={entry.last_reported}>{formatDate(entry.last_reported)}</time>
-							{:else}
-								<span class="muted">none</span>
-							{/if}
-						</dd>
-					</div>
-				</dl>
-			</li>
-		{/each}
-	</ol>
+					<dl class="stats">
+						<div class="origin">
+							<dt>Origin</dt>
+							<dd>
+								{#if entry.origin.length > 0}
+									{entry.origin.map(countryName).join(', ')}
+									{#if entry.origin.length > 1}<span class="disagree">sources disagree</span>{/if}
+								{:else}
+									<span class="muted">not reported</span>
+								{/if}
+							</dd>
+						</div>
+						<div>
+							<dt>Reports</dt>
+							<dd class="data">{formatCount(entry.report_count)}</dd>
+						</div>
+						<div>
+							<dt>Last reported</dt>
+							<dd>
+								{#if entry.last_reported}
+									<time class="data" datetime={entry.last_reported}>{formatDate(entry.last_reported)}</time>
+								{:else}
+									<span class="muted">none</span>
+								{/if}
+							</dd>
+						</div>
+					</dl>
+				</li>
+			{/each}
+		</ol>
+	</div>
 {:else}
 	<p class="empty">
 		No actor matches “{query.trim()}”. Try another spelling or another of the actor's names.
@@ -213,6 +220,25 @@
 		font-size: 0.875rem;
 	}
 
+	/* The list scrolls in its own box so the page stays short. The cap leaves
+	   the controls in view, and a row cut off at the bottom shows there is more. */
+	.box {
+		position: relative;
+		max-height: max(20rem, 72dvh);
+		overflow-y: auto;
+		overscroll-behavior: contain;
+		border-bottom: 1px solid var(--border);
+	}
+
+	.box:focus-visible {
+		outline: 2px solid var(--focus);
+		outline-offset: 2px;
+	}
+
+	.box .actors > li:last-child {
+		border-bottom: 0;
+	}
+
 	/* The ledger: an ink rule under the column names, hairlines between rows. */
 	.columns,
 	.actors > li {
@@ -240,10 +266,19 @@
 	@media (min-width: 52rem) {
 		.columns {
 			display: grid;
+			position: sticky;
+			top: 0;
+			z-index: 1;
 			padding: 0 0 0.5rem;
+			border-bottom: 1px solid var(--text);
+			background: var(--bg);
 			color: var(--text-muted);
 			font-family: var(--font-data);
 			font-size: 0.6875rem;
+		}
+
+		.actors {
+			border-top: 0;
 		}
 
 		.columns,
