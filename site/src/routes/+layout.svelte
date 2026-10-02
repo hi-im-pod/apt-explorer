@@ -61,7 +61,7 @@
 			</p>
 		{/if}
 		<p class="links">
-			<a href="{base}/about/#sources">Sources and licences</a>
+			<a href="{base}/about/#sources">Sources and licenses</a>
 			<a href="{base}/methodology/">Methodology</a>
 			<a href="{base}/guesses/">Name guesses</a>
 		</p>

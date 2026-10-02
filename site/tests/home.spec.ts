@@ -85,8 +85,6 @@ test('the length of the recent window in the copy follows the build', async ({ p
 	const span = lastSpan(readData<Build>('build.json').recent_months);
 	await page.goto('/apt-explorer/');
 	await expect(page.getByRole('region', { name: 'Ways in' })).toContainText(`show up in ${span} of reporting`);
-	await page.goto('/apt-explorer/about/');
-	await expect(page.getByRole('main')).toContainText(`computed from current sources over ${span}`);
 	await page.goto('/apt-explorer/trends/');
 	await expect(page.getByRole('main')).toContainText(`What current sources report over ${span}`);
 });

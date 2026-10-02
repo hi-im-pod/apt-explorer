@@ -14,8 +14,7 @@
 		<p class="code data" aria-hidden="true">404</p>
 		<h1>Not found</h1>
 		<p>
-			Nothing is published at <code>{page.url.pathname}</code>. The link may be mistyped, or the
-			page may have moved.
+			Nothing is published at <code>{page.url.pathname}</code>.
 		</p>
 	{:else}
 		<p class="code data" aria-hidden="true">{page.status}</p>
