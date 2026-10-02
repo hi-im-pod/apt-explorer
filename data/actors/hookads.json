@@ -20,9 +20,23 @@
   "malware": [],
   "techniques_documented": [],
   "techniques_reported": [],
-  "cves": [],
-  "timeline": [],
-  "reports": [],
+  "cves": [
+    {
+      "cve": "CVE-2018-8174",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2018-Q4",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "73383d019fccffe38792bea4a881c1028acc02ec",
+    "c5f2a6cbd58c66e1455ceedc1e74b83167e0bdee"
+  ],
   "conflicts": [],
   "evidence_count": 1
 }

@@ -462,6 +462,11 @@
   ],
   "cves": [
     {
+      "cve": "CVE-2012-0158",
+      "kev": true,
+      "ransomware": true
+    },
+    {
       "cve": "CVE-2012-11882",
       "kev": false,
       "ransomware": null
@@ -894,7 +899,7 @@
     },
     {
       "quarter": "2017-Q4",
-      "count": 1
+      "count": 5
     },
     {
       "quarter": "2018-Q1",
@@ -906,11 +911,11 @@
     },
     {
       "quarter": "2018-Q3",
-      "count": 6
+      "count": 8
     },
     {
       "quarter": "2018-Q4",
-      "count": 4
+      "count": 5
     },
     {
       "quarter": "2019-Q1",
@@ -954,7 +959,7 @@
     },
     {
       "quarter": "2021-Q3",
-      "count": 17
+      "count": 18
     },
     {
       "quarter": "2021-Q4",
@@ -962,7 +967,7 @@
     },
     {
       "quarter": "2022-Q1",
-      "count": 30
+      "count": 32
     },
     {
       "quarter": "2022-Q2",
@@ -1030,7 +1035,7 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 6
+      "count": 7
     },
     {
       "quarter": "2026-Q3",
@@ -1042,6 +1047,7 @@
     "6e7b82fb349e438298c2e0cbab760d0218aa573a",
     "cfdb3d32d6a31891c317b4412de451d8e41c7b68",
     "1914d07949e371f5649f869e11154120e5b36d33",
+    "2202f3041527fdb2abda8d11392fa6c3f52cc938",
     "569f2e517010664cc011396549a81584c1724009",
     "8aca84a099d3677ed953bbaec4343d41cc6724f1",
     "fc88f4052b7fc9bda472f445f6d022cc92880914",
@@ -1185,6 +1191,7 @@
     "a06cc14ddc51a07beb016c0b721851b6ec822fad",
     "e478bd6e38438d4097a5c51be36921bd01da95d5",
     "1f4c59b8588d1271b0171e9c055b1d222561c08e",
+    "2f737b269f9fa7d83859c7d2b9cd16d5f9f1a961",
     "5e3ee3e27893b664edf63ddfd4b6a3436e5e3e8a",
     "4f16e01c6f07c94e57ab46122d5a672b05c203b2",
     "c994c0711a66be1e2a3dbde3628a7a2060ffb0c5",
@@ -1196,6 +1203,7 @@
     "e23b7a6e0c210aa2e92ad779c5dded5962f19b89",
     "b70ce7aa5495414f0cb55bc1a945a4b0dae20cbb",
     "9ba783a94daa38c698da0e67e8b856bc4e3d8968",
+    "3cdc8147aa35dd062902578557af7badf4669ef7",
     "815d7c8d30ef17acfcb1c98a2301fe341bfe7627",
     "9e26b1f609bf14e037b4913faf1a26abd52850d1",
     "c0ad619c2a45c6587da13b39cc29a4a09b1de841",
@@ -1222,6 +1230,7 @@
     "bcecea6cd429761694a5866c86664e167a247da8",
     "2b8f1f71c8638df5eb2ad1540426f475e6f92887",
     "02c222792c65765833e9bb8d77453ba1912e416e",
+    "f7b071c84544db76caeb05fe3794ea5fc45385df",
     "bece82bb7d386e822b5ca0da7e4a8a16f75f7fb8",
     "fdcdfaec0ba0af69d1c968377ff71c999f90b668",
     "7b05fc1433a685543434e57e506ae9b26691e725",
@@ -1354,13 +1363,16 @@
     "e9fed1810d863c8e8dc15945245375d11c62b113",
     "0cfc49eacece7037e8bad568e7ea993816fb2b62",
     "758d6fbdac76f237dea044f336fc70cdadc5ccdc",
+    "4a22ceafcbdd3e8b7a349e8c80792be8377ff4d2",
     "c7b5a51bd8eda27a92786b06e84862643c799102",
     "6d51828b1e4ab577dcd127934e36b2547ed3e2a5",
     "b8a1f025fec78996380d3e1045fea11c877610e2",
     "5710eabda070b17a8a61712aa9a321c08af606ff",
     "ed2fefcf7c3a2fbdf94824ad6698560f2c3b14f0",
     "20f75badaa04bcac0c13ed2d0cbcb1e7bd305acf",
+    "00b5096fa62da3207a20ccc6fe9d0a029f88780c",
     "8d2dfecda96a023dc8204c6347fcaa176cdedf9c",
+    "d6522982e708b677133fe10ca887d435a995f4a3",
     "4aa74525b31d6c90e741fc82c46b6964c118f44e",
     "f7aa6ab1c5f0c699e10b98535e53aa364a360a0e",
     "4b7cd07ad68ff8bde356ee84ea22b0e918899684",
@@ -1368,6 +1380,10 @@
     "e20d4a86631d905166dcf39d903bcc1e4920b58b",
     "23c9e5a2d6944095ff966c4a3ebab8d480228585",
     "ef95281fe837e37b7614b192f2d084f9824ce4f0",
+    "ac5f795f2d8a40dcf050105dec4739e94e60c14f",
+    "afe81831957d3de208c6d35ad3a2c139f1a9f704",
+    "ca676e9c6c05be3a8fafdd40bf0b861a11bbb875",
+    "ecdcb0ceddec7d80739b5772bca5c2797a352f0b",
     "1c8fcda6344f74a8b148f92ba86838bb0d12e221",
     "5240476ab8b5103b068116acc3544a7c438db28f",
     "5006b7723df4a0b9949190a39ec32ac54a04696c",

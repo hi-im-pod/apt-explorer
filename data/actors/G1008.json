@@ -145,6 +145,10 @@
   ],
   "techniques_reported": [
     {
+      "id": "T1047",
+      "count": 3
+    },
+    {
       "id": "T1005",
       "count": 2
     },
@@ -153,15 +157,27 @@
       "count": 2
     },
     {
+      "id": "T1016",
+      "count": 2
+    },
+    {
       "id": "T1041",
       "count": 2
     },
     {
-      "id": "T1047",
+      "id": "T1057",
       "count": 2
     },
     {
       "id": "T1082",
+      "count": 2
+    },
+    {
+      "id": "T1105",
+      "count": 2
+    },
+    {
+      "id": "T1129",
       "count": 2
     },
     {
@@ -189,15 +205,15 @@
       "count": 2
     },
     {
-      "id": "T1016",
-      "count": 1
-    },
-    {
       "id": "T1027",
       "count": 1
     },
     {
       "id": "T1033",
+      "count": 1
+    },
+    {
+      "id": "T1036",
       "count": 1
     },
     {
@@ -217,15 +233,15 @@
       "count": 1
     },
     {
-      "id": "T1057",
-      "count": 1
-    },
-    {
       "id": "T1059",
       "count": 1
     },
     {
       "id": "T1059.003",
+      "count": 1
+    },
+    {
+      "id": "T1071",
       "count": 1
     },
     {
@@ -238,10 +254,6 @@
     },
     {
       "id": "T1083",
-      "count": 1
-    },
-    {
-      "id": "T1105",
       "count": 1
     },
     {
@@ -261,7 +273,19 @@
       "count": 1
     },
     {
-      "id": "T1129",
+      "id": "T1185",
+      "count": 1
+    },
+    {
+      "id": "T1204",
+      "count": 1
+    },
+    {
+      "id": "T1218",
+      "count": 1
+    },
+    {
+      "id": "T1547",
       "count": 1
     },
     {
@@ -270,6 +294,10 @@
     },
     {
       "id": "T1560.001",
+      "count": 1
+    },
+    {
+      "id": "T1566",
       "count": 1
     },
     {
@@ -349,7 +377,7 @@
   "timeline": [
     {
       "quarter": "2020-Q3",
-      "count": 1
+      "count": 4
     },
     {
       "quarter": "2021-Q3",
@@ -357,15 +385,19 @@
     },
     {
       "quarter": "2021-Q4",
-      "count": 2
+      "count": 4
     },
     {
       "quarter": "2022-Q1",
-      "count": 2
+      "count": 4
+    },
+    {
+      "quarter": "2023-Q1",
+      "count": 1
     },
     {
       "quarter": "2023-Q2",
-      "count": 1
+      "count": 3
     },
     {
       "quarter": "2023-Q4",
@@ -377,25 +409,37 @@
     },
     {
       "quarter": "2025-Q2",
-      "count": 2
+      "count": 3
     },
     {
       "quarter": "2026-Q2",
-      "count": 1
+      "count": 2
     }
   ],
   "reports": [
+    "1c8a5f7b3b82774e02ab27ae72b610e5a935a817",
     "595081ab859d0cf8eeedaccbe02707be792584b3",
+    "c606a5ff18f5bd32a46b6aaa8158da5fc299a303",
     "79f4b1bcebeeb5fb35820153d72dea177ecc15e0",
     "4bf5f63f9ac5ee363cccdecd9541e313fe8d962c",
     "6ad77b985f6bb09a34b6c121621cbbc727001a2a",
     "1391f10eb893f4c3853f113bf29fe8ea7aba8e77",
     "80aa237c13069511c89ff0c575af09473fb889a7",
+    "61badf982230a7be17883d02811f2bbca5462972",
+    "81dfcca65de0385c92003b11e8e4fefeb16cc3b3",
+    "ee5af12f843ff904915a1e03d5ab0eee05d354e1",
     "54ae563ee5d4d0905ec776281189045c24678cbb",
+    "e01fc3749d02228694686a1263f96e55e96c22a7",
     "0eb229d05054aa61c3bcb0f37bf5412b071865ee",
+    "98afe418c8a3a8f63cdf208f0e7309280bd2d189",
     "paper:India's%20Chief%20of%20Defence%20Staff%20Crashes%20SideCopy%20APT%20takes%20advantage%20of%20the%20fire",
     "0b1764f058dae3ad01b60b4d305caecafe09f8e5",
+    "9733480f514c4e3772a7f0639faee592b9bc4649",
+    "d4f40f88a12229a061e464934a23a03bb17e9a72",
     "2f44839afed1c12fd6e2e7f0fa8dd38dd632b065",
+    "4003f82d709155be4c5af42b8386846aca091747",
+    "a1bdc13886c38c08ab612c67fa129cf822a0c586",
+    "b63d9763ff14b6e519a3487fe769c08cdb775b1e",
     "paper:Seqrite-WhitePaper-Operation-SideCopy"
   ],
   "conflicts": [],

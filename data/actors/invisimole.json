@@ -66,9 +66,44 @@
   "malware": [],
   "techniques_documented": [],
   "techniques_reported": [],
-  "cves": [],
-  "timeline": [],
-  "reports": [],
+  "cves": [
+    {
+      "cve": "CVE-2007-5633",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2017-0144",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-0708",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2018-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "c5669bdd03f21f186243a00cf75b0478dd81cc0c",
+    "9eaca02eda05e8da117331d5bfabacc2e5a96465",
+    "de0d09629024d95f0f4d124660c961fd1740cfa6",
+    "641d18d3ceb7d016e9feab4cbd35f4ce2535f810",
+    "78edc2128be0b585ea78c2db232ff78ad4f4c50b"
+  ],
   "conflicts": [],
   "evidence_count": 3
 }

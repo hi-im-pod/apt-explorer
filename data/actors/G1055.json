@@ -220,14 +220,22 @@
   "techniques_reported": [
     {
       "id": "T1003.001",
-      "count": 1
-    },
-    {
-      "id": "T1003.002",
-      "count": 1
+      "count": 2
     },
     {
       "id": "T1021.001",
+      "count": 2
+    },
+    {
+      "id": "T1485",
+      "count": 2
+    },
+    {
+      "id": "T1486",
+      "count": 2
+    },
+    {
+      "id": "T1003.002",
       "count": 1
     },
     {
@@ -235,11 +243,23 @@
       "count": 1
     },
     {
+      "id": "T1046",
+      "count": 1
+    },
+    {
       "id": "T1047",
       "count": 1
     },
     {
+      "id": "T1048.003",
+      "count": 1
+    },
+    {
       "id": "T1053.005",
+      "count": 1
+    },
+    {
+      "id": "T1059",
       "count": 1
     },
     {
@@ -255,6 +275,10 @@
       "count": 1
     },
     {
+      "id": "T1098",
+      "count": 1
+    },
+    {
       "id": "T1105",
       "count": 1
     },
@@ -263,7 +287,15 @@
       "count": 1
     },
     {
+      "id": "T1112",
+      "count": 1
+    },
+    {
       "id": "T1133",
+      "count": 1
+    },
+    {
+      "id": "T1190",
       "count": 1
     },
     {
@@ -275,11 +307,11 @@
       "count": 1
     },
     {
-      "id": "T1485",
+      "id": "T1490",
       "count": 1
     },
     {
-      "id": "T1486",
+      "id": "T1505.003",
       "count": 1
     },
     {
@@ -313,13 +345,15 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 3
+      "count": 5
     }
   ],
   "reports": [
     "66f85176a55fbfa291cddb9edf387f831f001945",
     "82147dccc5d9fade824c1f4aabb9cc56e67aff0c",
     "cb9d2136c2ad5e1d4734e3e11077c435379a0c5f",
+    "0a61b4030102a7fbd115923f958e87e715b14b65",
+    "1b7bc94d05fa6b53de1741bcfe83727bb5c048eb",
     "1ece5414b21495039c276b44deb296abbfb9fd0f",
     "979f227e0a49d53b1ede7ef459392e5a992b33aa",
     "07ef14e0eef5219bb8e907f0f9abe18da4d44e2c",

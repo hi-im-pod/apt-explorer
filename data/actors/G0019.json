@@ -1072,7 +1072,7 @@
     },
     {
       "quarter": "2015-Q2",
-      "count": 7
+      "count": 13
     },
     {
       "quarter": "2015-Q3",
@@ -1092,7 +1092,7 @@
     },
     {
       "quarter": "2017-Q3",
-      "count": 1
+      "count": 2
     },
     {
       "quarter": "2017-Q4",
@@ -1136,7 +1136,7 @@
     },
     {
       "quarter": "2020-Q2",
-      "count": 6
+      "count": 9
     },
     {
       "quarter": "2020-Q3",
@@ -1168,7 +1168,7 @@
     },
     {
       "quarter": "2022-Q2",
-      "count": 15
+      "count": 16
     },
     {
       "quarter": "2022-Q3",
@@ -1176,7 +1176,7 @@
     },
     {
       "quarter": "2022-Q4",
-      "count": 6
+      "count": 7
     },
     {
       "quarter": "2023-Q1",
@@ -1228,11 +1228,13 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 4
+      "count": 6
     }
   ],
   "reports": [
+    "51f4b3e37b2c173308136a0f84cccce8a6e4c0d9",
     "5caa3af9facac2e25b868e6afb482d156eacad78",
+    "5dcae616df5c1c95c2d4d5b23ad148a44bf93475",
     "827d84c8046d4315615f2ddcde516ca5deaae7f5",
     "d975b8d1e008be23684b727df57bc61c2c36853b",
     "fc6c438a8be2a3f8e89c7dfcab4c0cc7165a9306",
@@ -1286,6 +1288,7 @@
     "a6ce26a1f0d840ffe57d86d14b83da2d80c227cf",
     "df3419b829a5823c1ced56bcb5ba2251ba9af7de",
     "6d9d67d93fa7cc83fe150bac08003047e53d9096",
+    "3991aeb7aa51f81e0742f06b833b055aae662bf9",
     "389d529c64799c785f09b5eee33416671a7d58d3",
     "f809259eee27f4aaac938b49ed4d729dc53ddfcf",
     "803ef0222532423cce241e2ad9e7dc8c1212cf11",
@@ -1302,6 +1305,7 @@
     "1820c13e296fe1851fc14dae94a71288015f6690",
     "5c71309c596a65e8e8066e44d9edba2cb53d9f57",
     "5e6364d8cd7bb4c9a2bc13f52603176fe89b2888",
+    "f23502bdaf0f5dd0da7283fc742f6c6bbb24997f",
     "d2e86ebc2b883824ec38db0b5d558d53dea6b0ff",
     "1f0926c83c7bda4395e15bc4d0700a983731c229",
     "5dfc005642eb3fd62f17d40b42fd03ae7e9e578b",
@@ -1363,10 +1367,13 @@
     "6a8db29acedce8aa2a50c3c0f210b403c6bc0085",
     "07abf8d563b06610e15d6e277748aedee6c310d2",
     "8237747eb96c9e5e85032aef65037b335ecb8ae1",
+    "ca1f0c2370634f0b9dd21ff4644b33e36cf6d381",
     "e87b05f20ef33f02be1c02a25f10630522686344",
     "2b37df41129549e854cb0c2a9e091471c7fe6bf0",
+    "bb491c9d3a9db19f672d491687fa2ef05d88819b",
     "140f905caba9014a29fed5a5dcf1be7b6102969b",
     "3ef29c4e3e966f6e2b4de053cf342694654ca351",
+    "656b03054e3f09f5f3ab01473591315390e17234",
     "e2634f0395353cffdb76c3cd8472c821dcc65828",
     "db4237de5b592f87d4c8775722bdc5589dce6950",
     "d9868cea48675bc539618753e8d6292ab75d65e9",
@@ -1405,6 +1412,7 @@
     "713132cb020bd00fba7e6a97fdec10757fce7e50",
     "44bbdfdf4d6abd5b5be832db1dbe7ddc72b8a551",
     "b3f3da446b1616fdd12188610e3f0966fcb6b127",
+    "9aeaa7f47dd023c4761bf94880bf966ef2a6e911",
     "b55a1b9004afc876f13ea36c12dd298dbffdf83d",
     "7bc7b4099f30921a875a42212f83e8db60f23142",
     "dbb37b1a14f59614ff5764adc6813452847410a0",
@@ -1414,10 +1422,16 @@
     "0a0c97b21075f4588f10503ae1c26a4685e061d1",
     "37584381a0a0c2d566b8ce13965ffa7226cdaa71",
     "b91ed59b5aea02b712f1ea974fb4cf171ea8ba44",
+    "af489e7e52483efe28d8f20f15be5d1dbae62a55",
+    "742abbd1dd3b2d31f494bba5f77f4a34a1adf99a",
     "7d9db4ecd30602ef092aeec100c170bb2ec838e6",
     "paper:The%20Naikon%20APT%20-%20Securelist",
+    "7e03e711a841cd0eb1b6fc7446b2a069ada19f2a",
     "259282de423fa65b39e9c6894ab98ec0a85e15a7",
+    "475918352a3eef65f9dd7e38c2f19a07daf5f92d",
+    "5b22b494cfe329c352948530cb19b6dc5067ca44",
     "6501a5d94de6b7bb176f1fbabb3b85d00c41d232",
+    "9c3eb1a4391be36ebd61fa1094e29d9e847625c9",
     "paper:Indicators_of_Compormise_Hellsing",
     "paper:The%20Chronicles%20of%20the%20Hellsing%20APT_%20the%20Empire%20Strikes%20Back%20-%20Securelist",
     "875abf02dad2a434d708e495ffc8afe4b2500aae",

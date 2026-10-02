@@ -1,9 +1,15 @@
 {
   "window_start": "2024-10-01",
-  "generated_at": "2026-10-01T11:22:28Z",
+  "generated_at": "2026-10-02T02:45:09Z",
   "reporting_activity": [
     {
       "actor": "G0001",
+      "quarter": "2026-Q2",
+      "count": 2,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "G0003",
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
@@ -30,7 +36,7 @@
       "actor": "G0004",
       "quarter": "2025-Q3",
       "count": 1,
-      "prev_year_count": 3
+      "prev_year_count": 4
     },
     {
       "actor": "G0004",
@@ -47,13 +53,13 @@
     {
       "actor": "G0004",
       "quarter": "2026-Q2",
-      "count": 4,
+      "count": 6,
       "prev_year_count": 3
     },
     {
       "actor": "G0004",
       "quarter": "2026-Q3",
-      "count": 0,
+      "count": 1,
       "prev_year_count": 1
     },
     {
@@ -65,38 +71,38 @@
     {
       "actor": "G0005",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 3,
       "prev_year_count": 0
     },
     {
       "actor": "G0006",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 6,
       "prev_year_count": 0
     },
     {
       "actor": "G0007",
       "quarter": "2024-Q4",
       "count": 2,
-      "prev_year_count": 5
+      "prev_year_count": 8
     },
     {
       "actor": "G0007",
       "quarter": "2025-Q1",
       "count": 3,
-      "prev_year_count": 5
+      "prev_year_count": 6
     },
     {
       "actor": "G0007",
       "quarter": "2025-Q2",
       "count": 5,
-      "prev_year_count": 4
+      "prev_year_count": 6
     },
     {
       "actor": "G0007",
       "quarter": "2025-Q3",
       "count": 5,
-      "prev_year_count": 1
+      "prev_year_count": 3
     },
     {
       "actor": "G0007",
@@ -113,13 +119,13 @@
     {
       "actor": "G0007",
       "quarter": "2026-Q2",
-      "count": 13,
+      "count": 29,
       "prev_year_count": 5
     },
     {
       "actor": "G0007",
       "quarter": "2026-Q3",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 5
     },
     {
@@ -131,7 +137,7 @@
     {
       "actor": "G0008",
       "quarter": "2024-Q4",
-      "count": 12,
+      "count": 13,
       "prev_year_count": 18
     },
     {
@@ -156,7 +162,7 @@
       "actor": "G0008",
       "quarter": "2025-Q4",
       "count": 4,
-      "prev_year_count": 12
+      "prev_year_count": 13
     },
     {
       "actor": "G0008",
@@ -167,7 +173,7 @@
     {
       "actor": "G0008",
       "quarter": "2026-Q2",
-      "count": 9,
+      "count": 12,
       "prev_year_count": 9
     },
     {
@@ -221,7 +227,7 @@
     {
       "actor": "G0009",
       "quarter": "2026-Q2",
-      "count": 9,
+      "count": 11,
       "prev_year_count": 7
     },
     {
@@ -257,7 +263,7 @@
     {
       "actor": "G0010",
       "quarter": "2025-Q3",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 0
     },
     {
@@ -275,14 +281,20 @@
     {
       "actor": "G0010",
       "quarter": "2026-Q2",
-      "count": 5,
+      "count": 14,
       "prev_year_count": 0
     },
     {
       "actor": "G0010",
       "quarter": "2026-Q3",
       "count": 0,
-      "prev_year_count": 1
+      "prev_year_count": 2
+    },
+    {
+      "actor": "G0011",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
     },
     {
       "actor": "G0011",
@@ -299,7 +311,7 @@
     {
       "actor": "G0012",
       "quarter": "2025-Q3",
-      "count": 0,
+      "count": 1,
       "prev_year_count": 2
     },
     {
@@ -311,26 +323,32 @@
     {
       "actor": "G0012",
       "quarter": "2026-Q2",
-      "count": 4,
+      "count": 8,
       "prev_year_count": 0
+    },
+    {
+      "actor": "G0012",
+      "quarter": "2026-Q3",
+      "count": 0,
+      "prev_year_count": 1
     },
     {
       "actor": "G0013",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 0
     },
     {
       "actor": "G0016",
       "quarter": "2024-Q4",
-      "count": 11,
-      "prev_year_count": 16
+      "count": 13,
+      "prev_year_count": 17
     },
     {
       "actor": "G0016",
       "quarter": "2025-Q1",
       "count": 6,
-      "prev_year_count": 9
+      "prev_year_count": 10
     },
     {
       "actor": "G0016",
@@ -348,7 +366,7 @@
       "actor": "G0016",
       "quarter": "2025-Q4",
       "count": 4,
-      "prev_year_count": 11
+      "prev_year_count": 13
     },
     {
       "actor": "G0016",
@@ -359,7 +377,7 @@
     {
       "actor": "G0016",
       "quarter": "2026-Q2",
-      "count": 12,
+      "count": 24,
       "prev_year_count": 9
     },
     {
@@ -467,7 +485,7 @@
     {
       "actor": "G0019",
       "quarter": "2026-Q2",
-      "count": 4,
+      "count": 6,
       "prev_year_count": 0
     },
     {
@@ -483,15 +501,33 @@
       "prev_year_count": 2
     },
     {
+      "actor": "G0020",
+      "quarter": "2025-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "G0020",
+      "quarter": "2026-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "G0020",
+      "quarter": "2026-Q2",
+      "count": 3,
+      "prev_year_count": 0
+    },
+    {
       "actor": "G0021",
       "quarter": "2024-Q4",
       "count": 0,
-      "prev_year_count": 4
+      "prev_year_count": 5
     },
     {
       "actor": "G0021",
       "quarter": "2026-Q2",
-      "count": 3,
+      "count": 5,
       "prev_year_count": 0
     },
     {
@@ -533,7 +569,7 @@
     {
       "actor": "G0022",
       "quarter": "2026-Q2",
-      "count": 5,
+      "count": 8,
       "prev_year_count": 1
     },
     {
@@ -557,7 +593,7 @@
     {
       "actor": "G0024",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 0
     },
     {
@@ -599,7 +635,7 @@
     {
       "actor": "G0025",
       "quarter": "2026-Q2",
-      "count": 4,
+      "count": 7,
       "prev_year_count": 2
     },
     {
@@ -653,7 +689,7 @@
     {
       "actor": "G0026",
       "quarter": "2026-Q2",
-      "count": 5,
+      "count": 8,
       "prev_year_count": 0
     },
     {
@@ -707,7 +743,7 @@
     {
       "actor": "G0027",
       "quarter": "2026-Q2",
-      "count": 8,
+      "count": 13,
       "prev_year_count": 2
     },
     {
@@ -731,62 +767,68 @@
     {
       "actor": "G0029",
       "quarter": "2026-Q2",
+      "count": 2,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "G0030",
+      "quarter": "2026-Q1",
       "count": 1,
       "prev_year_count": 0
     },
     {
       "actor": "G0030",
       "quarter": "2026-Q2",
-      "count": 4,
+      "count": 6,
       "prev_year_count": 0
     },
     {
       "actor": "G0032",
       "quarter": "2024-Q4",
-      "count": 4,
-      "prev_year_count": 12
+      "count": 7,
+      "prev_year_count": 14
     },
     {
       "actor": "G0032",
       "quarter": "2025-Q1",
-      "count": 2,
-      "prev_year_count": 3
-    },
-    {
-      "actor": "G0032",
-      "quarter": "2025-Q2",
-      "count": 4,
-      "prev_year_count": 3
-    },
-    {
-      "actor": "G0032",
-      "quarter": "2025-Q3",
-      "count": 3,
-      "prev_year_count": 3
-    },
-    {
-      "actor": "G0032",
-      "quarter": "2025-Q4",
       "count": 6,
       "prev_year_count": 4
     },
     {
       "actor": "G0032",
+      "quarter": "2025-Q2",
+      "count": 6,
+      "prev_year_count": 3
+    },
+    {
+      "actor": "G0032",
+      "quarter": "2025-Q3",
+      "count": 7,
+      "prev_year_count": 4
+    },
+    {
+      "actor": "G0032",
+      "quarter": "2025-Q4",
+      "count": 6,
+      "prev_year_count": 7
+    },
+    {
+      "actor": "G0032",
       "quarter": "2026-Q1",
-      "count": 2,
-      "prev_year_count": 2
+      "count": 4,
+      "prev_year_count": 6
     },
     {
       "actor": "G0032",
       "quarter": "2026-Q2",
-      "count": 20,
-      "prev_year_count": 4
+      "count": 50,
+      "prev_year_count": 6
     },
     {
       "actor": "G0032",
       "quarter": "2026-Q3",
       "count": 7,
-      "prev_year_count": 3
+      "prev_year_count": 7
     },
     {
       "actor": "G0032",
@@ -795,6 +837,12 @@
       "prev_year_count": 6
     },
     {
+      "actor": "G0033",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
       "actor": "G0034",
       "quarter": "2024-Q4",
       "count": 3,
@@ -803,14 +851,14 @@
     {
       "actor": "G0034",
       "quarter": "2025-Q1",
-      "count": 7,
+      "count": 8,
       "prev_year_count": 1
     },
     {
       "actor": "G0034",
       "quarter": "2025-Q2",
       "count": 1,
-      "prev_year_count": 7
+      "prev_year_count": 8
     },
     {
       "actor": "G0034",
@@ -828,12 +876,12 @@
       "actor": "G0034",
       "quarter": "2026-Q1",
       "count": 2,
-      "prev_year_count": 7
+      "prev_year_count": 8
     },
     {
       "actor": "G0034",
       "quarter": "2026-Q2",
-      "count": 16,
+      "count": 25,
       "prev_year_count": 1
     },
     {
@@ -857,7 +905,13 @@
     {
       "actor": "G0035",
       "quarter": "2026-Q2",
-      "count": 7,
+      "count": 9,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "G0036",
+      "quarter": "2026-Q2",
+      "count": 1,
       "prev_year_count": 0
     },
     {
@@ -899,7 +953,7 @@
     {
       "actor": "G0037",
       "quarter": "2026-Q2",
-      "count": 13,
+      "count": 15,
       "prev_year_count": 11
     },
     {
@@ -917,7 +971,7 @@
     {
       "actor": "G0038",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 7,
       "prev_year_count": 0
     },
     {
@@ -959,7 +1013,7 @@
     {
       "actor": "G0039",
       "quarter": "2026-Q2",
-      "count": 3,
+      "count": 4,
       "prev_year_count": 0
     },
     {
@@ -1013,7 +1067,7 @@
     {
       "actor": "G0040",
       "quarter": "2026-Q2",
-      "count": 3,
+      "count": 7,
       "prev_year_count": 2
     },
     {
@@ -1031,7 +1085,7 @@
     {
       "actor": "G0041",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 0
     },
     {
@@ -1042,8 +1096,20 @@
     },
     {
       "actor": "G0044",
+      "quarter": "2024-Q4",
+      "count": 2,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "G0044",
+      "quarter": "2025-Q4",
+      "count": 0,
+      "prev_year_count": 2
+    },
+    {
+      "actor": "G0044",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 5,
       "prev_year_count": 0
     },
     {
@@ -1056,7 +1122,7 @@
       "actor": "G0045",
       "quarter": "2025-Q1",
       "count": 20,
-      "prev_year_count": 12
+      "prev_year_count": 13
     },
     {
       "actor": "G0045",
@@ -1085,7 +1151,7 @@
     {
       "actor": "G0045",
       "quarter": "2026-Q2",
-      "count": 18,
+      "count": 27,
       "prev_year_count": 10
     },
     {
@@ -1122,7 +1188,7 @@
       "actor": "G0046",
       "quarter": "2025-Q3",
       "count": 7,
-      "prev_year_count": 19
+      "prev_year_count": 20
     },
     {
       "actor": "G0046",
@@ -1139,7 +1205,7 @@
     {
       "actor": "G0046",
       "quarter": "2026-Q2",
-      "count": 15,
+      "count": 26,
       "prev_year_count": 9
     },
     {
@@ -1163,7 +1229,7 @@
     {
       "actor": "G0047",
       "quarter": "2025-Q1",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 0
     },
     {
@@ -1188,12 +1254,12 @@
       "actor": "G0047",
       "quarter": "2026-Q1",
       "count": 0,
-      "prev_year_count": 1
+      "prev_year_count": 2
     },
     {
       "actor": "G0047",
       "quarter": "2026-Q2",
-      "count": 4,
+      "count": 13,
       "prev_year_count": 3
     },
     {
@@ -1218,7 +1284,7 @@
       "actor": "G0049",
       "quarter": "2024-Q4",
       "count": 5,
-      "prev_year_count": 3
+      "prev_year_count": 5
     },
     {
       "actor": "G0049",
@@ -1236,7 +1302,7 @@
       "actor": "G0049",
       "quarter": "2025-Q3",
       "count": 0,
-      "prev_year_count": 2
+      "prev_year_count": 3
     },
     {
       "actor": "G0049",
@@ -1253,7 +1319,7 @@
     {
       "actor": "G0049",
       "quarter": "2026-Q2",
-      "count": 11,
+      "count": 19,
       "prev_year_count": 3
     },
     {
@@ -1301,7 +1367,7 @@
     {
       "actor": "G0050",
       "quarter": "2026-Q2",
-      "count": 17,
+      "count": 22,
       "prev_year_count": 8
     },
     {
@@ -1383,22 +1449,40 @@
       "prev_year_count": 0
     },
     {
+      "actor": "G0056",
+      "quarter": "2026-Q2",
+      "count": 3,
+      "prev_year_count": 0
+    },
+    {
       "actor": "G0059",
       "quarter": "2025-Q1",
       "count": 0,
-      "prev_year_count": 1
+      "prev_year_count": 2
+    },
+    {
+      "actor": "G0059",
+      "quarter": "2025-Q2",
+      "count": 1,
+      "prev_year_count": 0
     },
     {
       "actor": "G0059",
       "quarter": "2025-Q3",
-      "count": 0,
+      "count": 1,
       "prev_year_count": 1
     },
     {
       "actor": "G0059",
       "quarter": "2026-Q2",
-      "count": 3,
-      "prev_year_count": 0
+      "count": 11,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "G0059",
+      "quarter": "2026-Q3",
+      "count": 0,
+      "prev_year_count": 1
     },
     {
       "actor": "G0060",
@@ -1421,13 +1505,13 @@
     {
       "actor": "G0060",
       "quarter": "2026-Q2",
-      "count": 0,
+      "count": 1,
       "prev_year_count": 1
     },
     {
       "actor": "G0061",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 4,
       "prev_year_count": 0
     },
     {
@@ -1475,7 +1559,7 @@
     {
       "actor": "G0064",
       "quarter": "2026-Q2",
-      "count": 7,
+      "count": 10,
       "prev_year_count": 4
     },
     {
@@ -1529,7 +1613,7 @@
     {
       "actor": "G0065",
       "quarter": "2026-Q2",
-      "count": 13,
+      "count": 14,
       "prev_year_count": 8
     },
     {
@@ -1547,7 +1631,7 @@
     {
       "actor": "G0066",
       "quarter": "2026-Q2",
-      "count": 2,
+      "count": 3,
       "prev_year_count": 0
     },
     {
@@ -1560,7 +1644,7 @@
       "actor": "G0067",
       "quarter": "2025-Q1",
       "count": 3,
-      "prev_year_count": 2
+      "prev_year_count": 3
     },
     {
       "actor": "G0067",
@@ -1589,7 +1673,7 @@
     {
       "actor": "G0067",
       "quarter": "2026-Q2",
-      "count": 3,
+      "count": 12,
       "prev_year_count": 3
     },
     {
@@ -1632,7 +1716,7 @@
       "actor": "G0069",
       "quarter": "2025-Q3",
       "count": 2,
-      "prev_year_count": 0
+      "prev_year_count": 3
     },
     {
       "actor": "G0069",
@@ -1649,7 +1733,7 @@
     {
       "actor": "G0069",
       "quarter": "2026-Q2",
-      "count": 10,
+      "count": 16,
       "prev_year_count": 1
     },
     {
@@ -1681,6 +1765,18 @@
       "quarter": "2026-Q1",
       "count": 0,
       "prev_year_count": 1
+    },
+    {
+      "actor": "G0070",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "G0071",
+      "quarter": "2026-Q2",
+      "count": 2,
+      "prev_year_count": 0
     },
     {
       "actor": "G0073",
@@ -1721,7 +1817,7 @@
     {
       "actor": "G0073",
       "quarter": "2026-Q2",
-      "count": 12,
+      "count": 17,
       "prev_year_count": 7
     },
     {
@@ -1775,7 +1871,7 @@
     {
       "actor": "G0078",
       "quarter": "2026-Q2",
-      "count": 6,
+      "count": 7,
       "prev_year_count": 4
     },
     {
@@ -1829,7 +1925,7 @@
     {
       "actor": "G0079",
       "quarter": "2026-Q2",
-      "count": 7,
+      "count": 8,
       "prev_year_count": 7
     },
     {
@@ -1883,7 +1979,7 @@
     {
       "actor": "G0080",
       "quarter": "2026-Q2",
-      "count": 12,
+      "count": 14,
       "prev_year_count": 11
     },
     {
@@ -1920,7 +2016,7 @@
       "actor": "G0081",
       "quarter": "2025-Q3",
       "count": 0,
-      "prev_year_count": 1
+      "prev_year_count": 2
     },
     {
       "actor": "G0081",
@@ -1937,7 +2033,7 @@
     {
       "actor": "G0081",
       "quarter": "2026-Q2",
-      "count": 5,
+      "count": 7,
       "prev_year_count": 2
     },
     {
@@ -1954,9 +2050,21 @@
     },
     {
       "actor": "G0082",
-      "quarter": "2026-Q2",
-      "count": 2,
+      "quarter": "2024-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "G0082",
+      "quarter": "2025-Q2",
+      "count": 1,
       "prev_year_count": 0
+    },
+    {
+      "actor": "G0082",
+      "quarter": "2026-Q2",
+      "count": 7,
+      "prev_year_count": 1
     },
     {
       "actor": "G0085",
@@ -1967,13 +2075,13 @@
     {
       "actor": "G0087",
       "quarter": "2026-Q2",
-      "count": 3,
+      "count": 4,
       "prev_year_count": 0
     },
     {
       "actor": "G0088",
       "quarter": "2026-Q2",
-      "count": 3,
+      "count": 5,
       "prev_year_count": 0
     },
     {
@@ -2009,7 +2117,7 @@
     {
       "actor": "G0091",
       "quarter": "2026-Q2",
-      "count": 2,
+      "count": 4,
       "prev_year_count": 0
     },
     {
@@ -2057,7 +2165,7 @@
     {
       "actor": "G0092",
       "quarter": "2026-Q2",
-      "count": 14,
+      "count": 21,
       "prev_year_count": 1
     },
     {
@@ -2123,38 +2231,38 @@
     {
       "actor": "G0094",
       "quarter": "2025-Q1",
-      "count": 1,
+      "count": 4,
       "prev_year_count": 4
     },
     {
       "actor": "G0094",
       "quarter": "2025-Q2",
-      "count": 3,
-      "prev_year_count": 1
+      "count": 4,
+      "prev_year_count": 3
     },
     {
       "actor": "G0094",
       "quarter": "2025-Q3",
       "count": 2,
-      "prev_year_count": 0
+      "prev_year_count": 1
     },
     {
       "actor": "G0094",
       "quarter": "2025-Q4",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 1
     },
     {
       "actor": "G0094",
       "quarter": "2026-Q1",
       "count": 2,
-      "prev_year_count": 1
+      "prev_year_count": 4
     },
     {
       "actor": "G0094",
       "quarter": "2026-Q2",
-      "count": 13,
-      "prev_year_count": 3
+      "count": 41,
+      "prev_year_count": 4
     },
     {
       "actor": "G0094",
@@ -2166,12 +2274,18 @@
       "actor": "G0094",
       "quarter": "2026-Q4",
       "count": 0,
-      "prev_year_count": 1
+      "prev_year_count": 2
+    },
+    {
+      "actor": "G0095",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
     },
     {
       "actor": "G0096",
       "quarter": "2024-Q4",
-      "count": 11,
+      "count": 12,
       "prev_year_count": 20
     },
     {
@@ -2190,13 +2304,13 @@
       "actor": "G0096",
       "quarter": "2025-Q3",
       "count": 11,
-      "prev_year_count": 22
+      "prev_year_count": 24
     },
     {
       "actor": "G0096",
       "quarter": "2025-Q4",
       "count": 6,
-      "prev_year_count": 11
+      "prev_year_count": 12
     },
     {
       "actor": "G0096",
@@ -2207,7 +2321,7 @@
     {
       "actor": "G0096",
       "quarter": "2026-Q2",
-      "count": 14,
+      "count": 22,
       "prev_year_count": 10
     },
     {
@@ -2237,7 +2351,7 @@
     {
       "actor": "G0098",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 5,
       "prev_year_count": 0
     },
     {
@@ -2248,15 +2362,21 @@
     },
     {
       "actor": "G0099",
+      "quarter": "2024-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "G0099",
       "quarter": "2025-Q1",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 0
     },
     {
       "actor": "G0099",
       "quarter": "2025-Q3",
       "count": 2,
-      "prev_year_count": 0
+      "prev_year_count": 1
     },
     {
       "actor": "G0099",
@@ -2268,12 +2388,12 @@
       "actor": "G0099",
       "quarter": "2026-Q1",
       "count": 0,
-      "prev_year_count": 1
+      "prev_year_count": 2
     },
     {
       "actor": "G0099",
       "quarter": "2026-Q2",
-      "count": 3,
+      "count": 7,
       "prev_year_count": 0
     },
     {
@@ -2291,7 +2411,7 @@
     {
       "actor": "G0100",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 7,
       "prev_year_count": 0
     },
     {
@@ -2333,7 +2453,7 @@
     {
       "actor": "G0102",
       "quarter": "2026-Q2",
-      "count": 14,
+      "count": 15,
       "prev_year_count": 9
     },
     {
@@ -2349,21 +2469,33 @@
       "prev_year_count": 4
     },
     {
+      "actor": "G0103",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
       "actor": "G0105",
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
     },
     {
+      "actor": "G0106",
+      "quarter": "2026-Q2",
+      "count": 5,
+      "prev_year_count": 0
+    },
+    {
       "actor": "G0107",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 0
     },
     {
       "actor": "G0112",
       "quarter": "2026-Q2",
-      "count": 2,
+      "count": 4,
       "prev_year_count": 0
     },
     {
@@ -2381,7 +2513,7 @@
     {
       "actor": "G0115",
       "quarter": "2026-Q2",
-      "count": 4,
+      "count": 5,
       "prev_year_count": 0
     },
     {
@@ -2399,7 +2531,7 @@
     {
       "actor": "G0117",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 0
     },
     {
@@ -2410,6 +2542,12 @@
     },
     {
       "actor": "G0119",
+      "quarter": "2025-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "G0119",
       "quarter": "2026-Q1",
       "count": 0,
       "prev_year_count": 1
@@ -2417,13 +2555,13 @@
     {
       "actor": "G0119",
       "quarter": "2026-Q2",
-      "count": 4,
-      "prev_year_count": 0
+      "count": 9,
+      "prev_year_count": 1
     },
     {
       "actor": "G0120",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 4,
       "prev_year_count": 0
     },
     {
@@ -2447,7 +2585,19 @@
     {
       "actor": "G0121",
       "quarter": "2026-Q2",
-      "count": 2,
+      "count": 5,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "G0122",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "G0123",
+      "quarter": "2026-Q2",
+      "count": 1,
       "prev_year_count": 0
     },
     {
@@ -2477,7 +2627,7 @@
     {
       "actor": "G0125",
       "quarter": "2026-Q2",
-      "count": 2,
+      "count": 5,
       "prev_year_count": 0
     },
     {
@@ -2537,7 +2687,7 @@
     {
       "actor": "G0128",
       "quarter": "2024-Q4",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 1
     },
     {
@@ -2562,7 +2712,7 @@
       "actor": "G0128",
       "quarter": "2025-Q4",
       "count": 2,
-      "prev_year_count": 1
+      "prev_year_count": 2
     },
     {
       "actor": "G0128",
@@ -2573,7 +2723,7 @@
     {
       "actor": "G0128",
       "quarter": "2026-Q2",
-      "count": 5,
+      "count": 9,
       "prev_year_count": 0
     },
     {
@@ -2609,7 +2759,7 @@
     {
       "actor": "G0129",
       "quarter": "2025-Q3",
-      "count": 10,
+      "count": 11,
       "prev_year_count": 23
     },
     {
@@ -2621,20 +2771,20 @@
     {
       "actor": "G0129",
       "quarter": "2026-Q1",
-      "count": 7,
+      "count": 8,
       "prev_year_count": 12
     },
     {
       "actor": "G0129",
       "quarter": "2026-Q2",
-      "count": 25,
+      "count": 33,
       "prev_year_count": 7
     },
     {
       "actor": "G0129",
       "quarter": "2026-Q3",
-      "count": 1,
-      "prev_year_count": 10
+      "count": 2,
+      "prev_year_count": 11
     },
     {
       "actor": "G0129",
@@ -2651,7 +2801,7 @@
     {
       "actor": "G0130",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 0
     },
     {
@@ -2693,7 +2843,7 @@
     {
       "actor": "G0131",
       "quarter": "2026-Q2",
-      "count": 2,
+      "count": 3,
       "prev_year_count": 2
     },
     {
@@ -2735,7 +2885,7 @@
     {
       "actor": "G0134",
       "quarter": "2025-Q2",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 2
     },
     {
@@ -2759,8 +2909,8 @@
     {
       "actor": "G0134",
       "quarter": "2026-Q2",
-      "count": 1,
-      "prev_year_count": 1
+      "count": 10,
+      "prev_year_count": 2
     },
     {
       "actor": "G0134",
@@ -2779,6 +2929,12 @@
       "quarter": "2024-Q4",
       "count": 1,
       "prev_year_count": 3
+    },
+    {
+      "actor": "G0138",
+      "quarter": "2025-Q1",
+      "count": 1,
+      "prev_year_count": 0
     },
     {
       "actor": "G0138",
@@ -2802,12 +2958,12 @@
       "actor": "G0138",
       "quarter": "2026-Q1",
       "count": 3,
-      "prev_year_count": 0
+      "prev_year_count": 1
     },
     {
       "actor": "G0138",
       "quarter": "2026-Q2",
-      "count": 4,
+      "count": 16,
       "prev_year_count": 1
     },
     {
@@ -2818,14 +2974,26 @@
     },
     {
       "actor": "G0139",
+      "quarter": "2025-Q3",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "G0139",
       "quarter": "2026-Q2",
-      "count": 5,
+      "count": 6,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "G0140",
+      "quarter": "2026-Q2",
+      "count": 1,
       "prev_year_count": 0
     },
     {
       "actor": "G0142",
       "quarter": "2026-Q2",
-      "count": 2,
+      "count": 5,
       "prev_year_count": 0
     },
     {
@@ -2884,14 +3052,26 @@
     },
     {
       "actor": "G1000",
+      "quarter": "2025-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "G1000",
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
     },
     {
+      "actor": "G1000",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
       "actor": "G1001",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 0
     },
     {
@@ -2926,7 +3106,25 @@
     },
     {
       "actor": "G1004",
+      "quarter": "2025-Q3",
+      "count": 1,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "G1004",
+      "quarter": "2026-Q2",
+      "count": 21,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "G1004",
       "quarter": "2026-Q3",
+      "count": 1,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "G1005",
+      "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
     },
@@ -2934,7 +3132,7 @@
       "actor": "G1006",
       "quarter": "2024-Q4",
       "count": 0,
-      "prev_year_count": 6
+      "prev_year_count": 7
     },
     {
       "actor": "G1006",
@@ -2946,13 +3144,13 @@
       "actor": "G1006",
       "quarter": "2025-Q2",
       "count": 2,
-      "prev_year_count": 2
+      "prev_year_count": 3
     },
     {
       "actor": "G1006",
       "quarter": "2025-Q3",
       "count": 1,
-      "prev_year_count": 4
+      "prev_year_count": 5
     },
     {
       "actor": "G1006",
@@ -2969,7 +3167,7 @@
     {
       "actor": "G1006",
       "quarter": "2026-Q2",
-      "count": 4,
+      "count": 6,
       "prev_year_count": 2
     },
     {
@@ -2993,7 +3191,7 @@
     {
       "actor": "G1008",
       "quarter": "2025-Q2",
-      "count": 2,
+      "count": 3,
       "prev_year_count": 0
     },
     {
@@ -3005,8 +3203,8 @@
     {
       "actor": "G1008",
       "quarter": "2026-Q2",
-      "count": 1,
-      "prev_year_count": 2
+      "count": 2,
+      "prev_year_count": 3
     },
     {
       "actor": "G1009",
@@ -3070,81 +3268,105 @@
     },
     {
       "actor": "G1012",
-      "quarter": "2026-Q2",
-      "count": 4,
-      "prev_year_count": 0
-    },
-    {
-      "actor": "G1015",
-      "quarter": "2024-Q4",
+      "quarter": "2025-Q1",
       "count": 0,
       "prev_year_count": 2
     },
     {
-      "actor": "G1015",
-      "quarter": "2025-Q2",
-      "count": 1,
-      "prev_year_count": 1
-    },
-    {
-      "actor": "G1015",
+      "actor": "G1012",
       "quarter": "2025-Q3",
       "count": 2,
       "prev_year_count": 0
     },
     {
-      "actor": "G1015",
+      "actor": "G1012",
       "quarter": "2026-Q2",
-      "count": 2,
-      "prev_year_count": 1
+      "count": 7,
+      "prev_year_count": 0
     },
     {
-      "actor": "G1015",
+      "actor": "G1012",
       "quarter": "2026-Q3",
       "count": 0,
       "prev_year_count": 2
     },
     {
+      "actor": "G1015",
+      "quarter": "2024-Q4",
+      "count": 0,
+      "prev_year_count": 4
+    },
+    {
+      "actor": "G1015",
+      "quarter": "2025-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "G1015",
+      "quarter": "2025-Q2",
+      "count": 2,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "G1015",
+      "quarter": "2025-Q3",
+      "count": 5,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "G1015",
+      "quarter": "2026-Q2",
+      "count": 41,
+      "prev_year_count": 2
+    },
+    {
+      "actor": "G1015",
+      "quarter": "2026-Q3",
+      "count": 0,
+      "prev_year_count": 5
+    },
+    {
       "actor": "G1016",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 3,
       "prev_year_count": 0
     },
     {
       "actor": "G1017",
       "quarter": "2024-Q4",
       "count": 0,
-      "prev_year_count": 1
+      "prev_year_count": 2
     },
     {
       "actor": "G1017",
       "quarter": "2025-Q1",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 6
     },
     {
       "actor": "G1017",
       "quarter": "2025-Q3",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 0
     },
     {
       "actor": "G1017",
       "quarter": "2026-Q1",
       "count": 0,
-      "prev_year_count": 1
+      "prev_year_count": 2
     },
     {
       "actor": "G1017",
       "quarter": "2026-Q2",
-      "count": 2,
+      "count": 13,
       "prev_year_count": 0
     },
     {
       "actor": "G1017",
       "quarter": "2026-Q3",
       "count": 0,
-      "prev_year_count": 1
+      "prev_year_count": 2
     },
     {
       "actor": "G1018",
@@ -3156,7 +3378,7 @@
       "actor": "G1020",
       "quarter": "2024-Q4",
       "count": 4,
-      "prev_year_count": 0
+      "prev_year_count": 1
     },
     {
       "actor": "G1020",
@@ -3215,7 +3437,7 @@
     {
       "actor": "G1022",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 3,
       "prev_year_count": 0
     },
     {
@@ -3227,7 +3449,7 @@
     {
       "actor": "G1023",
       "quarter": "2026-Q2",
-      "count": 2,
+      "count": 5,
       "prev_year_count": 0
     },
     {
@@ -3269,7 +3491,7 @@
     {
       "actor": "G1024",
       "quarter": "2026-Q2",
-      "count": 7,
+      "count": 8,
       "prev_year_count": 2
     },
     {
@@ -3282,19 +3504,31 @@
       "actor": "G1028",
       "quarter": "2024-Q4",
       "count": 0,
+      "prev_year_count": 2
+    },
+    {
+      "actor": "G1028",
+      "quarter": "2025-Q3",
+      "count": 0,
       "prev_year_count": 1
     },
     {
       "actor": "G1028",
       "quarter": "2026-Q2",
-      "count": 4,
+      "count": 7,
       "prev_year_count": 0
     },
     {
       "actor": "G1030",
       "quarter": "2024-Q4",
       "count": 0,
-      "prev_year_count": 2
+      "prev_year_count": 3
+    },
+    {
+      "actor": "G1031",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
     },
     {
       "actor": "G1032",
@@ -3315,10 +3549,16 @@
       "prev_year_count": 0
     },
     {
+      "actor": "G1032",
+      "quarter": "2026-Q3",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
       "actor": "G1033",
       "quarter": "2024-Q4",
-      "count": 0,
-      "prev_year_count": 1
+      "count": 3,
+      "prev_year_count": 2
     },
     {
       "actor": "G1033",
@@ -3330,7 +3570,7 @@
       "actor": "G1033",
       "quarter": "2025-Q2",
       "count": 1,
-      "prev_year_count": 0
+      "prev_year_count": 1
     },
     {
       "actor": "G1033",
@@ -3342,7 +3582,7 @@
       "actor": "G1033",
       "quarter": "2025-Q4",
       "count": 1,
-      "prev_year_count": 0
+      "prev_year_count": 3
     },
     {
       "actor": "G1033",
@@ -3353,7 +3593,7 @@
     {
       "actor": "G1033",
       "quarter": "2026-Q2",
-      "count": 2,
+      "count": 3,
       "prev_year_count": 1
     },
     {
@@ -3371,26 +3611,26 @@
     {
       "actor": "G1034",
       "quarter": "2024-Q4",
-      "count": 1,
+      "count": 3,
       "prev_year_count": 0
     },
     {
       "actor": "G1034",
       "quarter": "2025-Q1",
       "count": 0,
-      "prev_year_count": 1
+      "prev_year_count": 2
     },
     {
       "actor": "G1034",
       "quarter": "2025-Q3",
       "count": 0,
-      "prev_year_count": 1
+      "prev_year_count": 2
     },
     {
       "actor": "G1034",
       "quarter": "2025-Q4",
       "count": 0,
-      "prev_year_count": 1
+      "prev_year_count": 3
     },
     {
       "actor": "G1034",
@@ -3413,7 +3653,7 @@
     {
       "actor": "G1035",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 0
     },
     {
@@ -3423,8 +3663,26 @@
       "prev_year_count": 1
     },
     {
+      "actor": "G1036",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "G1037",
+      "quarter": "2024-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
       "actor": "G1037",
       "quarter": "2025-Q2",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "G1037",
+      "quarter": "2025-Q4",
       "count": 0,
       "prev_year_count": 1
     },
@@ -3474,12 +3732,12 @@
       "actor": "G1039",
       "quarter": "2025-Q1",
       "count": 0,
-      "prev_year_count": 1
+      "prev_year_count": 2
     },
     {
       "actor": "G1039",
       "quarter": "2026-Q2",
-      "count": 3,
+      "count": 6,
       "prev_year_count": 0
     },
     {
@@ -3503,7 +3761,7 @@
     {
       "actor": "G1041",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 0
     },
     {
@@ -3545,13 +3803,13 @@
     {
       "actor": "G1045",
       "quarter": "2024-Q4",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 2
     },
     {
       "actor": "G1045",
       "quarter": "2025-Q1",
-      "count": 3,
+      "count": 5,
       "prev_year_count": 1
     },
     {
@@ -3562,27 +3820,33 @@
     },
     {
       "actor": "G1045",
+      "quarter": "2025-Q3",
+      "count": 1,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "G1045",
       "quarter": "2025-Q4",
       "count": 2,
-      "prev_year_count": 1
+      "prev_year_count": 2
     },
     {
       "actor": "G1045",
       "quarter": "2026-Q1",
       "count": 1,
-      "prev_year_count": 3
+      "prev_year_count": 5
     },
     {
       "actor": "G1045",
       "quarter": "2026-Q2",
-      "count": 2,
+      "count": 13,
       "prev_year_count": 1
     },
     {
       "actor": "G1045",
       "quarter": "2026-Q3",
       "count": 2,
-      "prev_year_count": 0
+      "prev_year_count": 1
     },
     {
       "actor": "G1045",
@@ -3636,19 +3900,19 @@
       "actor": "G1047",
       "quarter": "2025-Q2",
       "count": 0,
-      "prev_year_count": 1
+      "prev_year_count": 2
     },
     {
       "actor": "G1047",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 0
     },
     {
       "actor": "G1048",
       "quarter": "2025-Q1",
       "count": 1,
-      "prev_year_count": 0
+      "prev_year_count": 1
     },
     {
       "actor": "G1048",
@@ -3665,7 +3929,7 @@
     {
       "actor": "G1048",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 0
     },
     {
@@ -3690,7 +3954,7 @@
       "actor": "G1049",
       "quarter": "2025-Q3",
       "count": 1,
-      "prev_year_count": 1
+      "prev_year_count": 2
     },
     {
       "actor": "G1049",
@@ -3707,13 +3971,13 @@
     {
       "actor": "G1049",
       "quarter": "2026-Q2",
-      "count": 3,
+      "count": 6,
       "prev_year_count": 2
     },
     {
       "actor": "G1049",
       "quarter": "2026-Q3",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 1
     },
     {
@@ -3779,7 +4043,7 @@
     {
       "actor": "G1052",
       "quarter": "2025-Q2",
-      "count": 17,
+      "count": 18,
       "prev_year_count": 0
     },
     {
@@ -3797,14 +4061,14 @@
     {
       "actor": "G1052",
       "quarter": "2026-Q1",
-      "count": 13,
+      "count": 15,
       "prev_year_count": 12
     },
     {
       "actor": "G1052",
       "quarter": "2026-Q2",
-      "count": 10,
-      "prev_year_count": 17
+      "count": 11,
+      "prev_year_count": 18
     },
     {
       "actor": "G1052",
@@ -3881,7 +4145,7 @@
     {
       "actor": "G1054",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 0
     },
     {
@@ -3905,6 +4169,12 @@
     {
       "actor": "G1055",
       "quarter": "2026-Q2",
+      "count": 5,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "G1056",
+      "quarter": "2026-Q1",
       "count": 3,
       "prev_year_count": 0
     },
@@ -3923,6 +4193,12 @@
     {
       "actor": "G1057",
       "quarter": "2025-Q3",
+      "count": 3,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "G1057",
+      "quarter": "2025-Q4",
       "count": 1,
       "prev_year_count": 0
     },
@@ -3935,13 +4211,19 @@
     {
       "actor": "G1057",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 14,
       "prev_year_count": 1
     },
     {
       "actor": "G1057",
       "quarter": "2026-Q3",
       "count": 3,
+      "prev_year_count": 3
+    },
+    {
+      "actor": "G1057",
+      "quarter": "2026-Q4",
+      "count": 0,
       "prev_year_count": 1
     },
     {
@@ -3953,6 +4235,18 @@
     {
       "actor": "aeroblade",
       "quarter": "2024-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "aggressive-inventory-zombies",
+      "quarter": "2024-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "aggressive-inventory-zombies",
+      "quarter": "2025-Q4",
       "count": 0,
       "prev_year_count": 1
     },
@@ -3989,7 +4283,7 @@
     {
       "actor": "alpha-spider",
       "quarter": "2026-Q2",
-      "count": 0,
+      "count": 10,
       "prev_year_count": 1
     },
     {
@@ -4005,6 +4299,42 @@
       "prev_year_count": 2
     },
     {
+      "actor": "alphv",
+      "quarter": "2024-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "alphv",
+      "quarter": "2025-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "alphv",
+      "quarter": "2026-Q2",
+      "count": 16,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "alphv",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "altdos",
+      "quarter": "2026-Q2",
+      "count": 13,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "amaranth-dragon",
+      "quarter": "2026-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
       "actor": "angry-likho",
       "quarter": "2024-Q4",
       "count": 11,
@@ -4013,14 +4343,14 @@
     {
       "actor": "angry-likho",
       "quarter": "2025-Q1",
-      "count": 12,
+      "count": 13,
       "prev_year_count": 7
     },
     {
       "actor": "angry-likho",
       "quarter": "2025-Q2",
       "count": 8,
-      "prev_year_count": 4
+      "prev_year_count": 5
     },
     {
       "actor": "angry-likho",
@@ -4038,7 +4368,7 @@
       "actor": "angry-likho",
       "quarter": "2026-Q1",
       "count": 3,
-      "prev_year_count": 12
+      "prev_year_count": 13
     },
     {
       "actor": "angry-likho",
@@ -4059,6 +4389,12 @@
       "prev_year_count": 3
     },
     {
+      "actor": "anonymous-ksa",
+      "quarter": "2025-Q3",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
       "actor": "anthropoid-spider",
       "quarter": "2024-Q4",
       "count": 0,
@@ -4081,6 +4417,12 @@
       "quarter": "2026-Q2",
       "count": 0,
       "prev_year_count": 1
+    },
+    {
+      "actor": "apt-c-27",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
     },
     {
       "actor": "apt20",
@@ -4121,7 +4463,7 @@
     {
       "actor": "apt20",
       "quarter": "2026-Q2",
-      "count": 3,
+      "count": 4,
       "prev_year_count": 0
     },
     {
@@ -4175,7 +4517,7 @@
     {
       "actor": "apt21",
       "quarter": "2026-Q2",
-      "count": 3,
+      "count": 5,
       "prev_year_count": 0
     },
     {
@@ -4189,12 +4531,174 @@
       "quarter": "2026-Q4",
       "count": 0,
       "prev_year_count": 2
+    },
+    {
+      "actor": "arcanedoor",
+      "quarter": "2025-Q2",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "armored-likho",
+      "quarter": "2026-Q3",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "awaken-likho",
+      "quarter": "2024-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "awaken-likho",
+      "quarter": "2025-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "awaken-likho",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "azzasec",
+      "quarter": "2025-Q2",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "bamboo-spider",
+      "quarter": "2024-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "bamboo-spider",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "batshadow",
+      "quarter": "2025-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "batshadow",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "bearlyfy",
+      "quarter": "2026-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "berserk-bear",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "bitwise-spider",
+      "quarter": "2026-Q2",
+      "count": 4,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "blackgear",
+      "quarter": "2026-Q2",
+      "count": 2,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "blackjack",
+      "quarter": "2025-Q2",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "blackmaskers",
+      "quarter": "2025-Q2",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "blackmeta",
+      "quarter": "2025-Q2",
+      "count": 0,
+      "prev_year_count": 1
     },
     {
       "actor": "blackwood",
       "quarter": "2025-Q1",
       "count": 0,
       "prev_year_count": 3
+    },
+    {
+      "actor": "bladedfeline",
+      "quarter": "2025-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "bladedfeline",
+      "quarter": "2026-Q2",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "blue-termite",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "bluebottle",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "bondnet",
+      "quarter": "2025-Q2",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "boolka",
+      "quarter": "2025-Q2",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "breeze-comet",
+      "quarter": "2026-Q3",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "buhtrap",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "bytetobreach",
+      "quarter": "2025-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "bytetobreach",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
     },
     {
       "actor": "calypso",
@@ -4251,6 +4755,12 @@
       "prev_year_count": 2
     },
     {
+      "actor": "caramel-tsunami",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
       "actor": "careto",
       "quarter": "2024-Q4",
       "count": 1,
@@ -4281,6 +4791,12 @@
       "prev_year_count": 1
     },
     {
+      "actor": "cavern-manticore",
+      "quarter": "2026-Q3",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
       "actor": "ceranakeeper",
       "quarter": "2024-Q4",
       "count": 1,
@@ -4289,6 +4805,66 @@
     {
       "actor": "ceranakeeper",
       "quarter": "2025-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "chainedshark",
+      "quarter": "2026-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "chamelgang",
+      "quarter": "2025-Q2",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "chernovite",
+      "quarter": "2026-Q2",
+      "count": 2,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "cia",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "circus-spider",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "cl-sta-0043",
+      "quarter": "2025-Q2",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "cl-sta-0043",
+      "quarter": "2025-Q3",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "cl-sta-0043",
+      "quarter": "2026-Q3",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "cl-sta-0048",
+      "quarter": "2025-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "cl-sta-0048",
+      "quarter": "2026-Q1",
       "count": 0,
       "prev_year_count": 1
     },
@@ -4311,10 +4887,34 @@
       "prev_year_count": 0
     },
     {
+      "actor": "cloudsorcerer",
+      "quarter": "2025-Q3",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "cloudsorcerer",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "coinbase-cartel",
+      "quarter": "2026-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
       "actor": "coralraider",
       "quarter": "2024-Q4",
       "count": 1,
       "prev_year_count": 0
+    },
+    {
+      "actor": "coralraider",
+      "quarter": "2025-Q2",
+      "count": 0,
+      "prev_year_count": 1
     },
     {
       "actor": "coralraider",
@@ -4336,9 +4936,27 @@
     },
     {
       "actor": "coralraider",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "coralraider",
       "quarter": "2026-Q3",
       "count": 0,
       "prev_year_count": 3
+    },
+    {
+      "actor": "corkow",
+      "quarter": "2026-Q2",
+      "count": 3,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "cosmic-leopard",
+      "quarter": "2025-Q2",
+      "count": 0,
+      "prev_year_count": 1
     },
     {
       "actor": "cosmicbeetle",
@@ -4353,6 +4971,54 @@
       "prev_year_count": 0
     },
     {
+      "actor": "cryptochameleon",
+      "quarter": "2025-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "crystalray",
+      "quarter": "2025-Q3",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "curly-comrades",
+      "quarter": "2025-Q3",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "curly-comrades",
+      "quarter": "2025-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "curly-comrades",
+      "quarter": "2026-Q3",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "curly-comrades",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "cyber-anarchy-squad",
+      "quarter": "2024-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "cyber-anarchy-squad",
+      "quarter": "2025-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
       "actor": "cyber-av3ngers",
       "quarter": "2024-Q4",
       "count": 4,
@@ -4365,6 +5031,30 @@
       "prev_year_count": 4
     },
     {
+      "actor": "cyber-av3ngers",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "cyber-berkut",
+      "quarter": "2026-Q2",
+      "count": 3,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "cyber-caliphate-army",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "cyber-fighters-of-izz-ad-din-al-qassam",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
       "actor": "cyber-serp",
       "quarter": "2026-Q1",
       "count": 1,
@@ -4375,6 +5065,24 @@
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
+    },
+    {
+      "actor": "cyber-toufan",
+      "quarter": "2026-Q2",
+      "count": 2,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "cyberniggers",
+      "quarter": "2025-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "cyberniggers",
+      "quarter": "2025-Q3",
+      "count": 0,
+      "prev_year_count": 1
     },
     {
       "actor": "dagger-panda",
@@ -4409,13 +5117,13 @@
     {
       "actor": "dagger-panda",
       "quarter": "2026-Q1",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 6
     },
     {
       "actor": "dagger-panda",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 3,
       "prev_year_count": 2
     },
     {
@@ -4431,14 +5139,128 @@
       "prev_year_count": 1
     },
     {
+      "actor": "daixin-team",
+      "quarter": "2026-Q2",
+      "count": 5,
+      "prev_year_count": 0
+    },
+    {
       "actor": "darkcasino",
       "quarter": "2024-Q4",
       "count": 0,
       "prev_year_count": 1
     },
     {
+      "actor": "darkcasino",
+      "quarter": "2025-Q1",
+      "count": 0,
+      "prev_year_count": 2
+    },
+    {
+      "actor": "darkcasino",
+      "quarter": "2026-Q2",
+      "count": 2,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "darkgaboon",
+      "quarter": "2025-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "darkgaboon",
+      "quarter": "2026-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "darkpink",
+      "quarter": "2025-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "darkpink",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "darkspectre",
+      "quarter": "2025-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "darkspectre",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "deadeye-jackal",
+      "quarter": "2026-Q2",
+      "count": 2,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "dev-0270",
+      "quarter": "2026-Q2",
+      "count": 2,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "dienet",
+      "quarter": "2025-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "dienet",
+      "quarter": "2026-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "domestic-kitten",
+      "quarter": "2026-Q2",
+      "count": 4,
+      "prev_year_count": 0
+    },
+    {
       "actor": "doppel-spider",
       "quarter": "2026-Q2",
+      "count": 2,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "dragonbreath",
+      "quarter": "2025-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "dragonbreath",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "dragonbreath",
+      "quarter": "2026-Q3",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "dragonbreath",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "dragonforce",
+      "quarter": "2025-Q1",
       "count": 1,
       "prev_year_count": 0
     },
@@ -4450,9 +5272,51 @@
     },
     {
       "actor": "dragonforce",
+      "quarter": "2026-Q1",
+      "count": 1,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "dragonforce",
+      "quarter": "2026-Q2",
+      "count": 4,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "dragonforce",
       "quarter": "2026-Q3",
       "count": 0,
       "prev_year_count": 2
+    },
+    {
+      "actor": "dragonrank",
+      "quarter": "2025-Q3",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "driftingcloud",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "drivesurge",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "earth-alux",
+      "quarter": "2025-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "earth-alux",
+      "quarter": "2026-Q1",
+      "count": 0,
+      "prev_year_count": 1
     },
     {
       "actor": "earth-baxia",
@@ -4493,7 +5357,7 @@
     {
       "actor": "earth-baxia",
       "quarter": "2026-Q2",
-      "count": 6,
+      "count": 7,
       "prev_year_count": 7
     },
     {
@@ -4515,10 +5379,124 @@
       "prev_year_count": 1
     },
     {
+      "actor": "earth-freybug",
+      "quarter": "2025-Q2",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "earth-krahang",
+      "quarter": "2025-Q1",
+      "count": 0,
+      "prev_year_count": 2
+    },
+    {
+      "actor": "earth-kurma",
+      "quarter": "2025-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "earth-kurma",
+      "quarter": "2026-Q2",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "earth-lamia",
+      "quarter": "2025-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "earth-lamia",
+      "quarter": "2026-Q2",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "earth-minotaur",
+      "quarter": "2024-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "earth-minotaur",
+      "quarter": "2025-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "earth-yako",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "ec2-grouper",
+      "quarter": "2024-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "ec2-grouper",
+      "quarter": "2025-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "elusive-comet",
+      "quarter": "2025-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "elusive-comet",
+      "quarter": "2026-Q2",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
       "actor": "excobalt",
       "quarter": "2025-Q2",
       "count": 0,
       "prev_year_count": 1
+    },
+    {
+      "actor": "excobalt",
+      "quarter": "2025-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "excobalt",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "exfilsquad",
+      "quarter": "2026-Q3",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "fishmedley",
+      "quarter": "2025-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "fishmedley",
+      "quarter": "2026-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "flax-typhoon",
+      "quarter": "2025-Q2",
+      "count": 0,
+      "prev_year_count": 2
     },
     {
       "actor": "flax-typhoon",
@@ -4527,8 +5505,92 @@
       "prev_year_count": 3
     },
     {
+      "actor": "flax-typhoon",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "flyingyeti",
+      "quarter": "2025-Q2",
+      "count": 0,
+      "prev_year_count": 2
+    },
+    {
+      "actor": "fox-tempest",
+      "quarter": "2026-Q2",
+      "count": 3,
+      "prev_year_count": 0
+    },
+    {
       "actor": "frostyneighbor",
       "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "funksec",
+      "quarter": "2024-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "funksec",
+      "quarter": "2025-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "funksec",
+      "quarter": "2025-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "funksec",
+      "quarter": "2026-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "fusioncore",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "fxmsp",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "gamacopy",
+      "quarter": "2025-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "gamacopy",
+      "quarter": "2026-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "gamacopy",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "gambleforce",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "gammax",
+      "quarter": "2026-Q3",
       "count": 1,
       "prev_year_count": 0
     },
@@ -4552,9 +5614,51 @@
     },
     {
       "actor": "gelsemium",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "gelsemium",
       "quarter": "2026-Q3",
       "count": 0,
       "prev_year_count": 1
+    },
+    {
+      "actor": "ghost-stadium",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "ghostnet",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "ghostredirector",
+      "quarter": "2025-Q3",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "ghostredirector",
+      "quarter": "2026-Q3",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "ghostsec",
+      "quarter": "2024-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "ghostwriter",
+      "quarter": "2025-Q1",
+      "count": 1,
+      "prev_year_count": 0
     },
     {
       "actor": "ghostwriter",
@@ -4570,8 +5674,14 @@
     },
     {
       "actor": "ghostwriter",
+      "quarter": "2026-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "ghostwriter",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 3,
       "prev_year_count": 0
     },
     {
@@ -4587,6 +5697,24 @@
       "prev_year_count": 1
     },
     {
+      "actor": "gitloker",
+      "quarter": "2025-Q2",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "goffee",
+      "quarter": "2025-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "goffee",
+      "quarter": "2026-Q2",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
       "actor": "gold-dupont",
       "quarter": "2025-Q2",
       "count": 1,
@@ -4595,7 +5723,7 @@
     {
       "actor": "gold-dupont",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 3,
       "prev_year_count": 1
     },
     {
@@ -4607,7 +5735,7 @@
     {
       "actor": "gold-rebellion",
       "quarter": "2025-Q1",
-      "count": 14,
+      "count": 15,
       "prev_year_count": 1
     },
     {
@@ -4632,7 +5760,7 @@
       "actor": "gold-rebellion",
       "quarter": "2026-Q1",
       "count": 1,
-      "prev_year_count": 14
+      "prev_year_count": 15
     },
     {
       "actor": "gold-rebellion",
@@ -4641,13 +5769,115 @@
       "prev_year_count": 6
     },
     {
-      "actor": "gopherwhisper",
+      "actor": "goldenjackal",
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
     },
     {
+      "actor": "gopherwhisper",
+      "quarter": "2026-Q2",
+      "count": 2,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "gray-sandstorm",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "graybravo",
+      "quarter": "2025-Q3",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "graybravo",
+      "quarter": "2025-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "graybravo",
+      "quarter": "2026-Q3",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "graybravo",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "graycharlie",
+      "quarter": "2026-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "grayling",
+      "quarter": "2024-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "greedybear",
+      "quarter": "2025-Q3",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "greedybear",
+      "quarter": "2026-Q3",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "greencharlie",
+      "quarter": "2025-Q3",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "greenspot",
+      "quarter": "2025-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "greenspot",
+      "quarter": "2026-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
       "actor": "greyvibe",
+      "quarter": "2026-Q2",
+      "count": 2,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "gtfire",
+      "quarter": "2026-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "gtg-1002",
+      "quarter": "2025-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "gtg-1002",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "guacamaya",
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
@@ -4665,6 +5895,30 @@
       "prev_year_count": 1
     },
     {
+      "actor": "hacking-team",
+      "quarter": "2025-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "hacking-team",
+      "quarter": "2026-Q2",
+      "count": 2,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "hacking-team",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "hagga",
+      "quarter": "2026-Q2",
+      "count": 2,
+      "prev_year_count": 0
+    },
+    {
       "actor": "handala",
       "quarter": "2024-Q4",
       "count": 0,
@@ -4677,10 +5931,58 @@
       "prev_year_count": 1
     },
     {
+      "actor": "handala",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "head-mare",
+      "quarter": "2024-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "head-mare",
+      "quarter": "2025-Q3",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "head-mare",
+      "quarter": "2025-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
       "actor": "head-mare",
       "quarter": "2026-Q3",
       "count": 1,
       "prev_year_count": 0
+    },
+    {
+      "actor": "hellhounds",
+      "quarter": "2024-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "hellhounds",
+      "quarter": "2026-Q2",
+      "count": 2,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "hive-0145",
+      "quarter": "2025-Q3",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "hive-0145",
+      "quarter": "2026-Q3",
+      "count": 0,
+      "prev_year_count": 1
     },
     {
       "actor": "hive0137",
@@ -4743,6 +6045,60 @@
       "prev_year_count": 0
     },
     {
+      "actor": "hollowquill",
+      "quarter": "2025-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "hollowquill",
+      "quarter": "2026-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "houken",
+      "quarter": "2025-Q3",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "houken",
+      "quarter": "2026-Q3",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "houndstooth-typhoon",
+      "quarter": "2025-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "houndstooth-typhoon",
+      "quarter": "2025-Q2",
+      "count": 0,
+      "prev_year_count": 2
+    },
+    {
+      "actor": "houndstooth-typhoon",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "hummingbad",
+      "quarter": "2026-Q2",
+      "count": 3,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "hunt3r-kill3rs",
+      "quarter": "2025-Q2",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
       "actor": "hurricane-panda",
       "quarter": "2024-Q4",
       "count": 1,
@@ -4809,9 +6165,27 @@
       "prev_year_count": 1
     },
     {
+      "actor": "infraud-organization",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
       "actor": "infy",
       "quarter": "2025-Q4",
       "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "infy",
+      "quarter": "2026-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "infy",
+      "quarter": "2026-Q2",
+      "count": 2,
       "prev_year_count": 0
     },
     {
@@ -4821,9 +6195,111 @@
       "prev_year_count": 1
     },
     {
-      "actor": "larva-208",
+      "actor": "invisimole",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "irleaks",
+      "quarter": "2025-Q3",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "ironhusky",
+      "quarter": "2025-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "ironhusky",
+      "quarter": "2026-Q2",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "jadepuffer",
+      "quarter": "2026-Q3",
+      "count": 5,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "javaghost",
       "quarter": "2025-Q1",
       "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "javaghost",
+      "quarter": "2026-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "kairos",
+      "quarter": "2024-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "kairos",
+      "quarter": "2025-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "karakurt",
+      "quarter": "2026-Q2",
+      "count": 2,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "kelvinsecurity",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "keymous",
+      "quarter": "2025-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "keymous",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "killnet",
+      "quarter": "2025-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "kromsec",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "krybit",
+      "quarter": "2026-Q2",
+      "count": 2,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "labhost",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "larva-208",
+      "quarter": "2025-Q1",
+      "count": 2,
       "prev_year_count": 0
     },
     {
@@ -4836,7 +6312,7 @@
       "actor": "larva-208",
       "quarter": "2026-Q1",
       "count": 0,
-      "prev_year_count": 1
+      "prev_year_count": 2
     },
     {
       "actor": "larva-208",
@@ -4845,27 +6321,99 @@
       "prev_year_count": 1
     },
     {
+      "actor": "larva-24009",
+      "quarter": "2026-Q3",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "larva-26002",
+      "quarter": "2026-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "larva-26005",
+      "quarter": "2026-Q3",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "leetmx",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
       "actor": "lightbasin",
       "quarter": "2025-Q1",
       "count": 0,
       "prev_year_count": 1
     },
     {
+      "actor": "lightbasin",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "lilacsquid",
+      "quarter": "2025-Q2",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "liminal-panda",
+      "quarter": "2024-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "liminal-panda",
+      "quarter": "2025-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "linkc-pub",
+      "quarter": "2025-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "linkc-pub",
+      "quarter": "2026-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "longhorn",
+      "quarter": "2026-Q2",
+      "count": 2,
+      "prev_year_count": 0
+    },
+    {
       "actor": "longnosedgoblin",
       "quarter": "2025-Q4",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 0
     },
     {
       "actor": "longnosedgoblin",
       "quarter": "2026-Q4",
       "count": 0,
-      "prev_year_count": 1
+      "prev_year_count": 2
+    },
+    {
+      "actor": "lucky-cat",
+      "quarter": "2026-Q2",
+      "count": 2,
+      "prev_year_count": 0
     },
     {
       "actor": "lunar-spider",
       "quarter": "2024-Q4",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 2
     },
     {
@@ -4890,7 +6438,7 @@
       "actor": "lunar-spider",
       "quarter": "2025-Q4",
       "count": 1,
-      "prev_year_count": 1
+      "prev_year_count": 2
     },
     {
       "actor": "lunar-spider",
@@ -4931,6 +6479,18 @@
     {
       "actor": "magecart",
       "quarter": "2026-Q2",
+      "count": 6,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "magic-kitten",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "malkamak",
+      "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
     },
@@ -4945,6 +6505,36 @@
       "quarter": "2026-Q1",
       "count": 0,
       "prev_year_count": 5
+    },
+    {
+      "actor": "mocha-manakin",
+      "quarter": "2025-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "mocha-manakin",
+      "quarter": "2026-Q2",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "modernstealer",
+      "quarter": "2026-Q3",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "mogilevich",
+      "quarter": "2025-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "mr-rot13",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
     },
     {
       "actor": "mummy-spider",
@@ -4973,8 +6563,38 @@
     {
       "actor": "mummy-spider",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 1
+    },
+    {
+      "actor": "murenshark",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "mysterious-elephant",
+      "quarter": "2025-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "mysterious-elephant",
+      "quarter": "2025-Q4",
+      "count": 2,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "mysterious-elephant",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "mysterious-elephant",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 2
     },
     {
       "actor": "mythic-likho",
@@ -4989,10 +6609,34 @@
       "prev_year_count": 1
     },
     {
+      "actor": "netrunnerpr",
+      "quarter": "2026-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "newspenguin",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
       "actor": "nexus-zeta",
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
+    },
+    {
+      "actor": "nighteagle",
+      "quarter": "2025-Q3",
+      "count": 3,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "nighteagle",
+      "quarter": "2026-Q3",
+      "count": 0,
+      "prev_year_count": 3
     },
     {
       "actor": "noname057-16",
@@ -5008,9 +6652,195 @@
     },
     {
       "actor": "noname057-16",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "noname057-16",
       "quarter": "2026-Q3",
       "count": 0,
       "prev_year_count": 1
+    },
+    {
+      "actor": "nullbulge",
+      "quarter": "2025-Q3",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "oldgremlin",
+      "quarter": "2026-Q2",
+      "count": 3,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "oniondog",
+      "quarter": "2026-Q2",
+      "count": 2,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "operation-cobalt-whisper",
+      "quarter": "2024-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "operation-cobalt-whisper",
+      "quarter": "2025-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "operation-digital-eye",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "operation-dragon-castling",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "operation-earth-kitsune",
+      "quarter": "2026-Q2",
+      "count": 2,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "operation-forumtroll",
+      "quarter": "2025-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "operation-forumtroll",
+      "quarter": "2026-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "operation-jacana",
+      "quarter": "2024-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "operation-layover",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "operation-parliament",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "operation-rusticweb",
+      "quarter": "2024-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "operation-salmonslalom",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "operation-shadow-force",
+      "quarter": "2025-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "operation-shadow-force",
+      "quarter": "2026-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "operation-shadowhammer",
+      "quarter": "2026-Q2",
+      "count": 2,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "operation-shady-rat",
+      "quarter": "2026-Q2",
+      "count": 2,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "operation-sharpshooter",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "operation-triangulation",
+      "quarter": "2024-Q4",
+      "count": 1,
+      "prev_year_count": 2
+    },
+    {
+      "actor": "operation-triangulation",
+      "quarter": "2025-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "operation-tunnelsnake",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "orova",
+      "quarter": "2026-Q3",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "ourmine",
+      "quarter": "2026-Q2",
+      "count": 2,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "paytool",
+      "quarter": "2025-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "paytool",
+      "quarter": "2026-Q1",
+      "count": 1,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "perswaysion",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "phantomcontrol",
+      "quarter": "2026-Q2",
+      "count": 2,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "plushdaemon",
+      "quarter": "2025-Q1",
+      "count": 1,
+      "prev_year_count": 0
     },
     {
       "actor": "plushdaemon",
@@ -5020,7 +6850,67 @@
     },
     {
       "actor": "plushdaemon",
+      "quarter": "2026-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "plushdaemon",
       "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "poison-carp",
+      "quarter": "2026-Q2",
+      "count": 3,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "poisonseed",
+      "quarter": "2025-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "poisonseed",
+      "quarter": "2025-Q3",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "poisonseed",
+      "quarter": "2026-Q2",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "poisonseed",
+      "quarter": "2026-Q3",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "predatory-sparrow",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "prolific-puma",
+      "quarter": "2024-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "prolific-puma",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "punk-003",
+      "quarter": "2025-Q3",
       "count": 0,
       "prev_year_count": 1
     },
@@ -5046,7 +6936,7 @@
       "actor": "ransomhub",
       "quarter": "2025-Q3",
       "count": 1,
-      "prev_year_count": 2
+      "prev_year_count": 4
     },
     {
       "actor": "ransomhub",
@@ -5063,7 +6953,7 @@
     {
       "actor": "ransomhub",
       "quarter": "2026-Q2",
-      "count": 0,
+      "count": 2,
       "prev_year_count": 4
     },
     {
@@ -5115,6 +7005,96 @@
       "prev_year_count": 1
     },
     {
+      "actor": "redkitten",
+      "quarter": "2026-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "ref5961",
+      "quarter": "2024-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "ref7707",
+      "quarter": "2025-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "ref7707",
+      "quarter": "2025-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "ref7707",
+      "quarter": "2026-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "ref7707",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "ref7707",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "resumelooters",
+      "quarter": "2025-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "returned-libra",
+      "quarter": "2024-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "returned-libra",
+      "quarter": "2025-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "returned-libra",
+      "quarter": "2025-Q2",
+      "count": 0,
+      "prev_year_count": 2
+    },
+    {
+      "actor": "returned-libra",
+      "quarter": "2026-Q2",
+      "count": 3,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "riddle-spider",
+      "quarter": "2026-Q2",
+      "count": 8,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "roaming-mantis",
+      "quarter": "2026-Q2",
+      "count": 7,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "roaming-tiger",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
       "actor": "romcom",
       "quarter": "2024-Q4",
       "count": 1,
@@ -5129,26 +7109,98 @@
     {
       "actor": "romcom",
       "quarter": "2025-Q3",
-      "count": 1,
-      "prev_year_count": 0
+      "count": 2,
+      "prev_year_count": 1
     },
     {
       "actor": "romcom",
       "quarter": "2025-Q4",
-      "count": 0,
+      "count": 2,
       "prev_year_count": 1
     },
     {
       "actor": "romcom",
       "quarter": "2026-Q2",
-      "count": 0,
+      "count": 3,
       "prev_year_count": 1
     },
     {
       "actor": "romcom",
       "quarter": "2026-Q3",
       "count": 0,
+      "prev_year_count": 2
+    },
+    {
+      "actor": "romcom",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 2
+    },
+    {
+      "actor": "rubycarp",
+      "quarter": "2025-Q2",
+      "count": 0,
       "prev_year_count": 1
+    },
+    {
+      "actor": "ruskinet",
+      "quarter": "2025-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "ruskinet",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "salty-spider",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "sandcat",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "sandman-apt",
+      "quarter": "2024-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "scattered-lapsus-hunters",
+      "quarter": "2025-Q4",
+      "count": 4,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "scattered-lapsus-hunters",
+      "quarter": "2026-Q3",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "scattered-lapsus-hunters",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 4
+    },
+    {
+      "actor": "scripted-sparrow",
+      "quarter": "2025-Q4",
+      "count": 2,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "scripted-sparrow",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 2
     },
     {
       "actor": "scully-spider",
@@ -5166,7 +7218,7 @@
       "actor": "scully-spider",
       "quarter": "2025-Q2",
       "count": 5,
-      "prev_year_count": 0
+      "prev_year_count": 1
     },
     {
       "actor": "scully-spider",
@@ -5189,7 +7241,7 @@
     {
       "actor": "scully-spider",
       "quarter": "2026-Q2",
-      "count": 0,
+      "count": 1,
       "prev_year_count": 5
     },
     {
@@ -5199,10 +7251,142 @@
       "prev_year_count": 3
     },
     {
+      "actor": "shadow-aether-015",
+      "quarter": "2026-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "shadow-earth-053",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "shadow-network",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "shadow-void-042",
+      "quarter": "2025-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "shadow-void-042",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
       "actor": "shadow-water-063",
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
+    },
+    {
+      "actor": "shadowbyt3",
+      "quarter": "2026-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "shadowsyndicate",
+      "quarter": "2025-Q3",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "shadowsyndicate",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "shadowsyndicate",
+      "quarter": "2026-Q3",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "shadypanda",
+      "quarter": "2025-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "shadypanda",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "shahid-hemmat",
+      "quarter": "2024-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "shahid-hemmat",
+      "quarter": "2025-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "sharppanda",
+      "quarter": "2025-Q2",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "sharppanda",
+      "quarter": "2026-Q2",
+      "count": 3,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "siegedsec",
+      "quarter": "2024-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "silkparasite",
+      "quarter": "2026-Q3",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "silkspecter",
+      "quarter": "2024-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "silkspecter",
+      "quarter": "2025-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "sinobi",
+      "quarter": "2025-Q3",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "sinobi",
+      "quarter": "2026-Q3",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "skidsec",
+      "quarter": "2024-Q4",
+      "count": 0,
+      "prev_year_count": 1
     },
     {
       "actor": "slime29",
@@ -5309,7 +7493,7 @@
     {
       "actor": "smoky-spider",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 2,
       "prev_year_count": 2
     },
     {
@@ -5319,7 +7503,37 @@
       "prev_year_count": 1
     },
     {
+      "actor": "smugx",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "sneakychef",
+      "quarter": "2025-Q2",
+      "count": 0,
+      "prev_year_count": 2
+    },
+    {
+      "actor": "snowsoul",
+      "quarter": "2026-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "snowsoul",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
       "actor": "solar-spider",
+      "quarter": "2025-Q2",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "spacebears",
       "quarter": "2025-Q2",
       "count": 0,
       "prev_year_count": 1
@@ -5365,6 +7579,18 @@
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 6
+    },
+    {
+      "actor": "stargazer-goblin",
+      "quarter": "2025-Q3",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "starry-addax",
+      "quarter": "2025-Q2",
+      "count": 0,
+      "prev_year_count": 1
     },
     {
       "actor": "storm-0249",
@@ -5493,6 +7719,12 @@
       "prev_year_count": 6
     },
     {
+      "actor": "storm-0539",
+      "quarter": "2024-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
       "actor": "storm-0826",
       "quarter": "2024-Q4",
       "count": 2,
@@ -5535,6 +7767,18 @@
       "prev_year_count": 6
     },
     {
+      "actor": "storm-0940",
+      "quarter": "2024-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "storm-0940",
+      "quarter": "2025-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
       "actor": "storm-1113",
       "quarter": "2024-Q4",
       "count": 2,
@@ -5563,6 +7807,72 @@
       "quarter": "2026-Q2",
       "count": 0,
       "prev_year_count": 1
+    },
+    {
+      "actor": "storm-1152",
+      "quarter": "2024-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "storm-1516",
+      "quarter": "2025-Q2",
+      "count": 2,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "storm-1516",
+      "quarter": "2025-Q3",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "storm-1516",
+      "quarter": "2026-Q2",
+      "count": 0,
+      "prev_year_count": 2
+    },
+    {
+      "actor": "storm-1516",
+      "quarter": "2026-Q3",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "storm-2077",
+      "quarter": "2025-Q3",
+      "count": 1,
+      "prev_year_count": 2
+    },
+    {
+      "actor": "storm-2077",
+      "quarter": "2026-Q3",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "storm-2372",
+      "quarter": "2025-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "storm-2372",
+      "quarter": "2026-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "storm-2561",
+      "quarter": "2026-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "storm-2949",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
     },
     {
       "actor": "swan-vector",
@@ -5631,6 +7941,12 @@
       "prev_year_count": 2
     },
     {
+      "actor": "sylhet-gang-sg",
+      "quarter": "2025-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
       "actor": "ta2101",
       "quarter": "2024-Q4",
       "count": 2,
@@ -5669,7 +7985,7 @@
     {
       "actor": "ta2101",
       "quarter": "2026-Q2",
-      "count": 2,
+      "count": 4,
       "prev_year_count": 6
     },
     {
@@ -5679,7 +7995,43 @@
       "prev_year_count": 0
     },
     {
+      "actor": "ta4903",
+      "quarter": "2025-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
       "actor": "ta4922",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "ta4922",
+      "quarter": "2026-Q3",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "ta558",
+      "quarter": "2025-Q2",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "ta570",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "ta571",
+      "quarter": "2024-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "ta575",
       "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
@@ -5727,6 +8079,12 @@
       "prev_year_count": 1
     },
     {
+      "actor": "ta584",
+      "quarter": "2026-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
       "actor": "ta866",
       "quarter": "2024-Q4",
       "count": 1,
@@ -5737,6 +8095,78 @@
       "quarter": "2025-Q4",
       "count": 0,
       "prev_year_count": 1
+    },
+    {
+      "actor": "tag-124",
+      "quarter": "2025-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "tag-124",
+      "quarter": "2025-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "tag-124",
+      "quarter": "2025-Q3",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "tag-124",
+      "quarter": "2026-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "tag-124",
+      "quarter": "2026-Q2",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "taidoor",
+      "quarter": "2026-Q2",
+      "count": 2,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "team46",
+      "quarter": "2024-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "team46",
+      "quarter": "2025-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "team46",
+      "quarter": "2025-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "team46",
+      "quarter": "2026-Q2",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "teamspy-crew",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "the-big-bang",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
     },
     {
       "actor": "the-gentlemen",
@@ -5771,6 +8201,30 @@
     {
       "actor": "the-gentlemen",
       "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "the-shadow-brokers",
+      "quarter": "2026-Q2",
+      "count": 3,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "thehatman",
+      "quarter": "2026-Q3",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "thewizards",
+      "quarter": "2025-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "thewizards",
+      "quarter": "2026-Q2",
       "count": 0,
       "prev_year_count": 1
     },
@@ -5829,6 +8283,60 @@
       "prev_year_count": 4
     },
     {
+      "actor": "tidrone",
+      "quarter": "2025-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "tidrone",
+      "quarter": "2025-Q3",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "tidrone",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "toxic-panda",
+      "quarter": "2024-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "toxic-panda",
+      "quarter": "2025-Q3",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "toxic-panda",
+      "quarter": "2025-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "toxic-panda",
+      "quarter": "2026-Q3",
+      "count": 1,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "traveling-spider",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "twosail-junk",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
       "actor": "uac-0006",
       "quarter": "2024-Q4",
       "count": 3,
@@ -5867,7 +8375,7 @@
     {
       "actor": "uac-0006",
       "quarter": "2026-Q2",
-      "count": 1,
+      "count": 6,
       "prev_year_count": 2
     },
     {
@@ -5880,7 +8388,7 @@
       "actor": "uac-0050",
       "quarter": "2024-Q4",
       "count": 1,
-      "prev_year_count": 6
+      "prev_year_count": 7
     },
     {
       "actor": "uac-0050",
@@ -5937,6 +8445,24 @@
       "prev_year_count": 1
     },
     {
+      "actor": "uac-0099",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "uac-0102",
+      "quarter": "2025-Q3",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "uac-0118",
+      "quarter": "2026-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
       "actor": "uac-0149",
       "quarter": "2025-Q1",
       "count": 0,
@@ -5947,6 +8473,36 @@
       "quarter": "2025-Q2",
       "count": 0,
       "prev_year_count": 2
+    },
+    {
+      "actor": "uac-0184",
+      "quarter": "2025-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "uac-0215",
+      "quarter": "2024-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "uac-0215",
+      "quarter": "2025-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "uac-0219",
+      "quarter": "2025-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "uac-0219",
+      "quarter": "2026-Q2",
+      "count": 0,
+      "prev_year_count": 1
     },
     {
       "actor": "uac-0226",
@@ -5979,7 +8535,91 @@
       "prev_year_count": 1
     },
     {
+      "actor": "uat-10608",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "uat-11795",
+      "quarter": "2026-Q3",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "uat-6382",
+      "quarter": "2025-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "uat-6382",
+      "quarter": "2026-Q2",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "uat-7810",
+      "quarter": "2026-Q3",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "uat-8099",
+      "quarter": "2025-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "uat-8099",
+      "quarter": "2026-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "uat-8099",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "uat-8302",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "uat-8616",
+      "quarter": "2026-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "uat-8837",
+      "quarter": "2026-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
       "actor": "uat-9244",
+      "quarter": "2026-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "uat-9686",
+      "quarter": "2025-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "uat-9686",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "uat-9921",
       "quarter": "2026-Q1",
       "count": 1,
       "prev_year_count": 0
@@ -5999,6 +8639,12 @@
     {
       "actor": "unc3569",
       "quarter": "2026-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "unc3890",
+      "quarter": "2026-Q2",
       "count": 1,
       "prev_year_count": 0
     },
@@ -6045,6 +8691,12 @@
       "prev_year_count": 6
     },
     {
+      "actor": "unc4990",
+      "quarter": "2025-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
       "actor": "unc5174",
       "quarter": "2025-Q1",
       "count": 0,
@@ -6117,7 +8769,19 @@
       "prev_year_count": 1
     },
     {
+      "actor": "unc6201",
+      "quarter": "2026-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
       "actor": "unc6353",
+      "quarter": "2026-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "unc6619",
       "quarter": "2026-Q1",
       "count": 1,
       "prev_year_count": 0
@@ -6131,6 +8795,30 @@
     {
       "actor": "unfading-sea-haze",
       "quarter": "2025-Q2",
+      "count": 0,
+      "prev_year_count": 2
+    },
+    {
+      "actor": "ung0002",
+      "quarter": "2025-Q3",
+      "count": 2,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "ung0002",
+      "quarter": "2026-Q3",
+      "count": 0,
+      "prev_year_count": 2
+    },
+    {
+      "actor": "ung0901",
+      "quarter": "2025-Q3",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "ung0901",
+      "quarter": "2026-Q3",
       "count": 0,
       "prev_year_count": 1
     },
@@ -6159,6 +8847,42 @@
       "prev_year_count": 2
     },
     {
+      "actor": "unnamed-group-usa",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "unnamed-groups-china",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "unnamed-groups-iran",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "unnamed-groups-russia",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "usdod",
+      "quarter": "2025-Q3",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "usdod",
+      "quarter": "2026-Q2",
+      "count": 4,
+      "prev_year_count": 0
+    },
+    {
       "actor": "uta0178",
       "quarter": "2025-Q2",
       "count": 1,
@@ -6185,7 +8909,7 @@
     {
       "actor": "uta0178",
       "quarter": "2026-Q2",
-      "count": 0,
+      "count": 4,
       "prev_year_count": 1
     },
     {
@@ -6199,6 +8923,18 @@
       "quarter": "2026-Q4",
       "count": 0,
       "prev_year_count": 3
+    },
+    {
+      "actor": "utg-q-010",
+      "quarter": "2025-Q3",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "vantacore",
+      "quarter": "2026-Q3",
+      "count": 1,
+      "prev_year_count": 0
     },
     {
       "actor": "vice-spider",
@@ -6255,6 +8991,24 @@
       "prev_year_count": 3
     },
     {
+      "actor": "vicioustrap",
+      "quarter": "2025-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "vicioustrap",
+      "quarter": "2026-Q2",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "viking-spider",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
       "actor": "void-arachne",
       "quarter": "2025-Q1",
       "count": 2,
@@ -6264,6 +9018,12 @@
       "actor": "void-arachne",
       "quarter": "2025-Q2",
       "count": 1,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "void-arachne",
+      "quarter": "2025-Q3",
+      "count": 2,
       "prev_year_count": 0
     },
     {
@@ -6281,14 +9041,38 @@
     {
       "actor": "void-arachne",
       "quarter": "2026-Q2",
-      "count": 0,
+      "count": 3,
       "prev_year_count": 1
+    },
+    {
+      "actor": "void-arachne",
+      "quarter": "2026-Q3",
+      "count": 0,
+      "prev_year_count": 2
     },
     {
       "actor": "void-arachne",
       "quarter": "2026-Q4",
       "count": 0,
       "prev_year_count": 1
+    },
+    {
+      "actor": "void-balaur",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "void-banshee",
+      "quarter": "2025-Q3",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "void-blizzard",
+      "quarter": "2025-Q2",
+      "count": 1,
+      "prev_year_count": 0
     },
     {
       "actor": "void-blizzard",
@@ -6298,9 +9082,27 @@
     },
     {
       "actor": "void-blizzard",
+      "quarter": "2026-Q2",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "void-blizzard",
       "quarter": "2026-Q3",
       "count": 3,
       "prev_year_count": 0
+    },
+    {
+      "actor": "warp-panda",
+      "quarter": "2025-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "warp-panda",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
     },
     {
       "actor": "water-barghest",
@@ -6321,6 +9123,60 @@
       "prev_year_count": 5
     },
     {
+      "actor": "water-curupira",
+      "quarter": "2025-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "water-gamayun",
+      "quarter": "2025-Q1",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "water-gamayun",
+      "quarter": "2026-Q1",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "water-kurita",
+      "quarter": "2025-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "water-kurita",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "water-makara",
+      "quarter": "2024-Q4",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "water-makara",
+      "quarter": "2025-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "water-saci",
+      "quarter": "2025-Q4",
+      "count": 2,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "water-saci",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 2
+    },
+    {
       "actor": "webworm",
       "quarter": "2024-Q4",
       "count": 0,
@@ -6359,7 +9215,7 @@
     {
       "actor": "webworm",
       "quarter": "2026-Q2",
-      "count": 2,
+      "count": 7,
       "prev_year_count": 2
     },
     {
@@ -6427,6 +9283,36 @@
       "quarter": "2026-Q4",
       "count": 0,
       "prev_year_count": 1
+    },
+    {
+      "actor": "whitecobra",
+      "quarter": "2025-Q3",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "whitecobra",
+      "quarter": "2026-Q3",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "wildcard",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "wildneutron",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "wildpressure",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 0
     },
     {
       "actor": "xcatze",
@@ -6435,6 +9321,24 @@
       "prev_year_count": 0
     },
     {
+      "actor": "xdspy",
+      "quarter": "2025-Q2",
+      "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "xdspy",
+      "quarter": "2026-Q2",
+      "count": 1,
+      "prev_year_count": 1
+    },
+    {
+      "actor": "yorotrooper",
+      "quarter": "2024-Q4",
+      "count": 0,
+      "prev_year_count": 1
+    },
+    {
       "actor": "yorotrooper",
       "quarter": "2025-Q1",
       "count": 1,
@@ -6442,8 +9346,14 @@
     },
     {
       "actor": "yorotrooper",
-      "quarter": "2025-Q4",
+      "quarter": "2025-Q3",
       "count": 1,
+      "prev_year_count": 0
+    },
+    {
+      "actor": "yorotrooper",
+      "quarter": "2025-Q4",
+      "count": 2,
       "prev_year_count": 0
     },
     {
@@ -6454,9 +9364,15 @@
     },
     {
       "actor": "yorotrooper",
-      "quarter": "2026-Q4",
+      "quarter": "2026-Q3",
       "count": 0,
       "prev_year_count": 1
+    },
+    {
+      "actor": "yorotrooper",
+      "quarter": "2026-Q4",
+      "count": 0,
+      "prev_year_count": 2
     }
   ],
   "new_actors": [
@@ -6466,18 +9382,58 @@
       "basis": "report"
     },
     {
-      "actor": "G0066",
-      "first_seen": "2026-04-06",
-      "basis": "report"
-    },
-    {
       "actor": "G0105",
       "first_seen": "2026-04-06",
       "basis": "report"
     },
     {
       "actor": "G1056",
-      "first_seen": "2026-07-02",
+      "first_seen": "2026-02-05",
+      "basis": "report"
+    },
+    {
+      "actor": "amaranth-dragon",
+      "first_seen": "2026-02-04",
+      "basis": "report"
+    },
+    {
+      "actor": "armored-likho",
+      "first_seen": "2026-07-28",
+      "basis": "report"
+    },
+    {
+      "actor": "batshadow",
+      "first_seen": "2025-10-07",
+      "basis": "report"
+    },
+    {
+      "actor": "bearlyfy",
+      "first_seen": "2026-03-26",
+      "basis": "report"
+    },
+    {
+      "actor": "breeze-comet",
+      "first_seen": "2026-09-03",
+      "basis": "report"
+    },
+    {
+      "actor": "bytetobreach",
+      "first_seen": "2025-11-17",
+      "basis": "report"
+    },
+    {
+      "actor": "cavern-manticore",
+      "first_seen": "2026-07-28",
+      "basis": "report"
+    },
+    {
+      "actor": "chainedshark",
+      "first_seen": "2026-02-13",
+      "basis": "report"
+    },
+    {
+      "actor": "chernovite",
+      "first_seen": "2026-04-06",
       "basis": "report"
     },
     {
@@ -6491,8 +9447,48 @@
       "basis": "report"
     },
     {
+      "actor": "coinbase-cartel",
+      "first_seen": "2026-02-09",
+      "basis": "report"
+    },
+    {
       "actor": "cyber-serp",
       "first_seen": "2026-03-29",
+      "basis": "report"
+    },
+    {
+      "actor": "cyber-toufan",
+      "first_seen": "2026-04-06",
+      "basis": "report"
+    },
+    {
+      "actor": "daixin-team",
+      "first_seen": "2026-04-06",
+      "basis": "report"
+    },
+    {
+      "actor": "darkspectre",
+      "first_seen": "2025-12-30",
+      "basis": "report"
+    },
+    {
+      "actor": "dragonbreath",
+      "first_seen": "2025-11-15",
+      "basis": "report"
+    },
+    {
+      "actor": "drivesurge",
+      "first_seen": "2026-05-31",
+      "basis": "report"
+    },
+    {
+      "actor": "exfilsquad",
+      "first_seen": "2026-07-28",
+      "basis": "report"
+    },
+    {
+      "actor": "fox-tempest",
+      "first_seen": "2026-05-19",
       "basis": "report"
     },
     {
@@ -6501,8 +9497,28 @@
       "basis": "report"
     },
     {
+      "actor": "fusioncore",
+      "first_seen": "2026-04-06",
+      "basis": "report"
+    },
+    {
+      "actor": "gammax",
+      "first_seen": "2026-08-09",
+      "basis": "report"
+    },
+    {
+      "actor": "ghost-stadium",
+      "first_seen": "2026-05-27",
+      "basis": "report"
+    },
+    {
       "actor": "gopherwhisper",
       "first_seen": "2026-04-23",
+      "basis": "report"
+    },
+    {
+      "actor": "graycharlie",
+      "first_seen": "2026-02-18",
       "basis": "report"
     },
     {
@@ -6511,8 +9527,18 @@
       "basis": "report"
     },
     {
-      "actor": "head-mare",
-      "first_seen": "2026-08-07",
+      "actor": "gtfire",
+      "first_seen": "2026-02-26",
+      "basis": "report"
+    },
+    {
+      "actor": "gtg-1002",
+      "first_seen": "2025-11-28",
+      "basis": "report"
+    },
+    {
+      "actor": "guacamaya",
+      "first_seen": "2026-04-06",
       "basis": "report"
     },
     {
@@ -6521,8 +9547,58 @@
       "basis": "report"
     },
     {
+      "actor": "hummingbad",
+      "first_seen": "2026-04-06",
+      "basis": "report"
+    },
+    {
+      "actor": "jadepuffer",
+      "first_seen": "2026-07-28",
+      "basis": "report"
+    },
+    {
+      "actor": "kelvinsecurity",
+      "first_seen": "2026-04-06",
+      "basis": "report"
+    },
+    {
+      "actor": "krybit",
+      "first_seen": "2026-04-07",
+      "basis": "report"
+    },
+    {
+      "actor": "labhost",
+      "first_seen": "2026-04-25",
+      "basis": "report"
+    },
+    {
+      "actor": "larva-24009",
+      "first_seen": "2026-08-02",
+      "basis": "report"
+    },
+    {
+      "actor": "larva-26002",
+      "first_seen": "2026-03-20",
+      "basis": "report"
+    },
+    {
+      "actor": "larva-26005",
+      "first_seen": "2026-08-03",
+      "basis": "report"
+    },
+    {
       "actor": "longnosedgoblin",
       "first_seen": "2025-12-18",
+      "basis": "report"
+    },
+    {
+      "actor": "modernstealer",
+      "first_seen": "2026-08-07",
+      "basis": "report"
+    },
+    {
+      "actor": "mr-rot13",
+      "first_seen": "2026-05-11",
       "basis": "report"
     },
     {
@@ -6531,8 +9607,78 @@
       "basis": "report"
     },
     {
+      "actor": "netrunnerpr",
+      "first_seen": "2026-02-12",
+      "basis": "report"
+    },
+    {
+      "actor": "newspenguin",
+      "first_seen": "2026-04-06",
+      "basis": "report"
+    },
+    {
+      "actor": "orova",
+      "first_seen": "2026-08-10",
+      "basis": "report"
+    },
+    {
+      "actor": "phantomcontrol",
+      "first_seen": "2026-04-06",
+      "basis": "report"
+    },
+    {
+      "actor": "redkitten",
+      "first_seen": "2026-01-29",
+      "basis": "report"
+    },
+    {
+      "actor": "ruskinet",
+      "first_seen": "2025-10-30",
+      "basis": "report"
+    },
+    {
+      "actor": "scattered-lapsus-hunters",
+      "first_seen": "2025-10-17",
+      "basis": "report"
+    },
+    {
+      "actor": "scripted-sparrow",
+      "first_seen": "2025-12-01",
+      "basis": "report"
+    },
+    {
+      "actor": "shadow-aether-015",
+      "first_seen": "2026-01-13",
+      "basis": "report"
+    },
+    {
+      "actor": "shadow-earth-053",
+      "first_seen": "2026-04-30",
+      "basis": "report"
+    },
+    {
+      "actor": "shadow-void-042",
+      "first_seen": "2025-12-11",
+      "basis": "report"
+    },
+    {
       "actor": "shadow-water-063",
       "first_seen": "2026-05-19",
+      "basis": "report"
+    },
+    {
+      "actor": "shadowbyt3",
+      "first_seen": "2026-02-25",
+      "basis": "report"
+    },
+    {
+      "actor": "shadypanda",
+      "first_seen": "2025-12-01",
+      "basis": "report"
+    },
+    {
+      "actor": "silkparasite",
+      "first_seen": "2026-08-19",
       "basis": "report"
     },
     {
@@ -6541,8 +9687,68 @@
       "basis": "report"
     },
     {
+      "actor": "snowsoul",
+      "first_seen": "2026-03-16",
+      "basis": "report"
+    },
+    {
+      "actor": "storm-2561",
+      "first_seen": "2026-03-12",
+      "basis": "report"
+    },
+    {
+      "actor": "storm-2949",
+      "first_seen": "2026-05-18",
+      "basis": "report"
+    },
+    {
       "actor": "ta4922",
       "first_seen": "2026-06-03",
+      "basis": "report"
+    },
+    {
+      "actor": "ta584",
+      "first_seen": "2026-01-28",
+      "basis": "report"
+    },
+    {
+      "actor": "thehatman",
+      "first_seen": "2026-09-03",
+      "basis": "report"
+    },
+    {
+      "actor": "uat-10608",
+      "first_seen": "2026-04-02",
+      "basis": "report"
+    },
+    {
+      "actor": "uat-11795",
+      "first_seen": "2026-07-16",
+      "basis": "report"
+    },
+    {
+      "actor": "uat-7810",
+      "first_seen": "2026-07-07",
+      "basis": "report"
+    },
+    {
+      "actor": "uat-8099",
+      "first_seen": "2025-10-02",
+      "basis": "report"
+    },
+    {
+      "actor": "uat-8302",
+      "first_seen": "2026-05-05",
+      "basis": "report"
+    },
+    {
+      "actor": "uat-8616",
+      "first_seen": "2026-02-25",
+      "basis": "report"
+    },
+    {
+      "actor": "uat-8837",
+      "first_seen": "2026-01-15",
       "basis": "report"
     },
     {
@@ -6551,8 +9757,23 @@
       "basis": "report"
     },
     {
+      "actor": "uat-9686",
+      "first_seen": "2025-12-17",
+      "basis": "report"
+    },
+    {
+      "actor": "uat-9921",
+      "first_seen": "2026-02-10",
+      "basis": "report"
+    },
+    {
       "actor": "unc2814",
       "first_seen": "2026-02-25",
+      "basis": "report"
+    },
+    {
+      "actor": "unc6201",
+      "first_seen": "2026-02-17",
       "basis": "report"
     },
     {
@@ -6561,8 +9782,33 @@
       "basis": "report"
     },
     {
+      "actor": "unc6619",
+      "first_seen": "2026-02-05",
+      "basis": "report"
+    },
+    {
       "actor": "unc6692",
       "first_seen": "2026-04-23",
+      "basis": "report"
+    },
+    {
+      "actor": "vantacore",
+      "first_seen": "2026-08-28",
+      "basis": "report"
+    },
+    {
+      "actor": "warp-panda",
+      "first_seen": "2025-12-04",
+      "basis": "report"
+    },
+    {
+      "actor": "water-kurita",
+      "first_seen": "2025-10-16",
+      "basis": "report"
+    },
+    {
+      "actor": "water-saci",
+      "first_seen": "2025-10-27",
       "basis": "report"
     }
   ],
@@ -6709,7 +9955,14 @@
     {
       "cve": "CVE-2009-3129",
       "actors": [
+        "G0005",
         "G0029"
+      ]
+    },
+    {
+      "cve": "CVE-2009-4324",
+      "actors": [
+        "G0005"
       ]
     },
     {
@@ -6735,7 +9988,22 @@
       "cve": "CVE-2010-3333",
       "actors": [
         "G0029",
-        "G0081"
+        "G0081",
+        "apt21"
+      ]
+    },
+    {
+      "cve": "CVE-2010-3962",
+      "actors": [
+        "G0020",
+        "G0022",
+        "the-shadow-brokers"
+      ]
+    },
+    {
+      "cve": "CVE-2011-0611",
+      "actors": [
+        "G0005"
       ]
     },
     {
@@ -6750,15 +10018,31 @@
         "G0011",
         "G0029",
         "G0030",
+        "G0045",
+        "G0078",
         "G0081",
         "G0100",
-        "G1002"
+        "G1002",
+        "apt21",
+        "roaming-tiger"
+      ]
+    },
+    {
+      "cve": "CVE-2012-1723",
+      "actors": [
+        "G0010"
       ]
     },
     {
       "cve": "CVE-2012-1889",
       "actors": [
         "G0001"
+      ]
+    },
+    {
+      "cve": "CVE-2012-3152",
+      "actors": [
+        "G0123"
       ]
     },
     {
@@ -6774,9 +10058,28 @@
       ]
     },
     {
+      "cve": "CVE-2013-1347",
+      "actors": [
+        "G0073"
+      ]
+    },
+    {
+      "cve": "CVE-2013-2423",
+      "actors": [
+        "G0073"
+      ]
+    },
+    {
+      "cve": "CVE-2013-3346",
+      "actors": [
+        "G0010"
+      ]
+    },
+    {
       "cve": "CVE-2013-3893",
       "actors": [
-        "G0001"
+        "G0001",
+        "G0025"
       ]
     },
     {
@@ -6811,6 +10114,12 @@
       ]
     },
     {
+      "cve": "CVE-2013-5065",
+      "actors": [
+        "G0010"
+      ]
+    },
+    {
       "cve": "CVE-2014-0497",
       "actors": [
         "G0012"
@@ -6824,11 +10133,26 @@
       ]
     },
     {
+      "cve": "CVE-2014-1776",
+      "actors": [
+        "G0020",
+        "G0022",
+        "the-shadow-brokers"
+      ]
+    },
+    {
+      "cve": "CVE-2014-3931",
+      "actors": [
+        "nighteagle"
+      ]
+    },
+    {
       "cve": "CVE-2014-4113",
       "actors": [
         "G0008",
         "G0009",
         "G0016",
+        "G0022",
         "G0037",
         "G0045",
         "G0046",
@@ -6854,6 +10178,12 @@
       ]
     },
     {
+      "cve": "CVE-2014-4148",
+      "actors": [
+        "longhorn"
+      ]
+    },
+    {
       "cve": "CVE-2014-6271",
       "actors": [
         "G1041"
@@ -6862,7 +10192,10 @@
     {
       "cve": "CVE-2014-6332",
       "actors": [
-        "G0030"
+        "G0022",
+        "G0030",
+        "G0039",
+        "G0045"
       ]
     },
     {
@@ -6888,6 +10221,24 @@
       ]
     },
     {
+      "cve": "CVE-2015-2545",
+      "actors": [
+        "taidoor"
+      ]
+    },
+    {
+      "cve": "CVE-2015-3113",
+      "actors": [
+        "G0022"
+      ]
+    },
+    {
+      "cve": "CVE-2015-5119",
+      "actors": [
+        "hacking-team"
+      ]
+    },
+    {
       "cve": "CVE-2015-8651",
       "actors": [
         "G0032"
@@ -6900,9 +10251,40 @@
       ]
     },
     {
+      "cve": "CVE-2016-0165",
+      "actors": [
+        "G0038"
+      ]
+    },
+    {
+      "cve": "CVE-2016-0189",
+      "actors": [
+        "G0005",
+        "operation-earth-kitsune"
+      ]
+    },
+    {
+      "cve": "CVE-2016-1010",
+      "actors": [
+        "G0038"
+      ]
+    },
+    {
       "cve": "CVE-2016-1019",
       "actors": [
         "G0032"
+      ]
+    },
+    {
+      "cve": "CVE-2016-3088",
+      "actors": [
+        "G0106"
+      ]
+    },
+    {
+      "cve": "CVE-2016-3393",
+      "actors": [
+        "G0038"
       ]
     },
     {
@@ -6910,13 +10292,35 @@
       "actors": [
         "G0032",
         "G0055",
-        "G0063"
+        "G0063",
+        "G0080"
+      ]
+    },
+    {
+      "cve": "CVE-2016-4171",
+      "actors": [
+        "G0038"
+      ]
+    },
+    {
+      "cve": "CVE-2016-7836",
+      "actors": [
+        "G0060"
+      ]
+    },
+    {
+      "cve": "CVE-2017-0005",
+      "actors": [
+        "G0128"
       ]
     },
     {
       "cve": "CVE-2017-0143",
       "actors": [
-        "G0091"
+        "G0020",
+        "G0022",
+        "G0091",
+        "the-shadow-brokers"
       ]
     },
     {
@@ -6928,20 +10332,36 @@
       ]
     },
     {
+      "cve": "CVE-2017-0147",
+      "actors": [
+        "G0012"
+      ]
+    },
+    {
       "cve": "CVE-2017-0199",
       "actors": [
+        "G0012",
         "G0047",
         "G0049",
         "G0064",
+        "G0069",
         "G0078",
         "G0080",
         "G0081",
         "G0091",
         "G1046",
+        "gold-rebellion",
+        "magecart",
         "mallard-spider",
         "smoky-spider",
         "uac-0006",
         "uac-0050"
+      ]
+    },
+    {
+      "cve": "CVE-2017-0213",
+      "actors": [
+        "webworm"
       ]
     },
     {
@@ -6965,23 +10385,30 @@
     {
       "cve": "CVE-2017-11774",
       "actors": [
-        "G0049"
+        "G0049",
+        "G0064"
       ]
     },
     {
       "cve": "CVE-2017-11882",
       "actors": [
         "G0027",
+        "G0037",
+        "G0049",
         "G0050",
         "G0064",
         "G0078",
         "G0080",
         "G0081",
         "G0091",
+        "G0094",
+        "G0100",
         "G0121",
         "G1046",
         "gold-rebellion",
         "hive0137",
+        "mysterious-elephant",
+        "sharppanda",
         "stac5143",
         "storm-0506",
         "storm-0826",
@@ -7011,9 +10438,34 @@
       ]
     },
     {
+      "cve": "CVE-2017-7269",
+      "actors": [
+        "operation-tunnelsnake"
+      ]
+    },
+    {
       "cve": "CVE-2017-7921",
       "actors": [
         "G0069"
+      ]
+    },
+    {
+      "cve": "CVE-2017-8291",
+      "actors": [
+        "G0067"
+      ]
+    },
+    {
+      "cve": "CVE-2017-8570",
+      "actors": [
+        "G0012",
+        "G0142"
+      ]
+    },
+    {
+      "cve": "CVE-2017-8759",
+      "actors": [
+        "G0080"
       ]
     },
     {
@@ -7029,10 +10481,20 @@
       ]
     },
     {
+      "cve": "CVE-2018-0798",
+      "actors": [
+        "sharppanda"
+      ]
+    },
+    {
       "cve": "CVE-2018-0802",
       "actors": [
+        "G0037",
+        "G0067",
         "G0081",
-        "G0091"
+        "G0091",
+        "G0100",
+        "sharppanda"
       ]
     },
     {
@@ -7040,17 +10502,26 @@
       "actors": [
         "G0035",
         "G0046",
+        "G0059",
         "G0102",
         "G0119",
         "G1020",
         "G1021",
-        "G1040"
+        "G1040",
+        "dev-0270"
       ]
     },
     {
       "cve": "CVE-2018-20250",
       "actors": [
         "G0047"
+      ]
+    },
+    {
+      "cve": "CVE-2018-6065",
+      "actors": [
+        "romcom",
+        "shadow-void-042"
       ]
     },
     {
@@ -7074,7 +10545,8 @@
         "G0143",
         "G1041",
         "earth-baxia",
-        "tianwu"
+        "tianwu",
+        "yorotrooper"
       ]
     },
     {
@@ -7097,13 +10569,23 @@
         "G0129",
         "G0143",
         "earth-baxia",
-        "tianwu"
+        "tianwu",
+        "yorotrooper"
       ]
     },
     {
       "cve": "CVE-2018-8174",
       "actors": [
-        "G0091"
+        "G0012",
+        "G0037",
+        "G0091",
+        "G1023"
+      ]
+    },
+    {
+      "cve": "CVE-2018-8373",
+      "actors": [
+        "G0012"
       ]
     },
     {
@@ -7113,19 +10595,61 @@
       ]
     },
     {
+      "cve": "CVE-2018-8453",
+      "actors": [
+        "G0038",
+        "sandcat"
+      ]
+    },
+    {
+      "cve": "CVE-2018-8611",
+      "actors": [
+        "G0038"
+      ]
+    },
+    {
       "cve": "CVE-2019-0604",
       "actors": [
         "G0046",
         "G0102",
         "G0119",
         "G1020",
-        "G1021"
+        "G1021",
+        "G1055"
+      ]
+    },
+    {
+      "cve": "CVE-2019-0703",
+      "actors": [
+        "G0020",
+        "G0022",
+        "the-shadow-brokers"
+      ]
+    },
+    {
+      "cve": "CVE-2019-0708",
+      "actors": [
+        "G0094",
+        "lightbasin"
+      ]
+    },
+    {
+      "cve": "CVE-2019-0797",
+      "actors": [
+        "G0038",
+        "sandcat"
       ]
     },
     {
       "cve": "CVE-2019-10149",
       "actors": [
         "G0035"
+      ]
+    },
+    {
+      "cve": "CVE-2019-1132",
+      "actors": [
+        "buhtrap"
       ]
     },
     {
@@ -7159,7 +10683,26 @@
         "G0129",
         "G0143",
         "earth-baxia",
-        "tianwu"
+        "tianwu",
+        "unc6619"
+      ]
+    },
+    {
+      "cve": "CVE-2019-1458",
+      "actors": [
+        "operation-earth-kitsune"
+      ]
+    },
+    {
+      "cve": "CVE-2019-1652",
+      "actors": [
+        "G0096"
+      ]
+    },
+    {
+      "cve": "CVE-2019-1653",
+      "actors": [
+        "G0096"
       ]
     },
     {
@@ -7167,6 +10710,7 @@
       "actors": [
         "G0035",
         "G0046",
+        "G0096",
         "G0102",
         "G0119",
         "G1020",
@@ -7177,13 +10721,21 @@
       "cve": "CVE-2019-2725",
       "actors": [
         "G0115",
-        "G1053"
+        "G1053",
+        "returned-libra"
       ]
     },
     {
       "cve": "CVE-2019-3010",
       "actors": [
         "red-menshen"
+      ]
+    },
+    {
+      "cve": "CVE-2019-3396",
+      "actors": [
+        "G0096",
+        "G0106"
       ]
     },
     {
@@ -7199,6 +10751,24 @@
       ]
     },
     {
+      "cve": "CVE-2019-8605",
+      "actors": [
+        "twosail-junk"
+      ]
+    },
+    {
+      "cve": "CVE-2019-9621",
+      "actors": [
+        "nighteagle"
+      ]
+    },
+    {
+      "cve": "CVE-2020-0674",
+      "actors": [
+        "operation-earth-kitsune"
+      ]
+    },
+    {
       "cve": "CVE-2020-0688",
       "actors": [
         "G0035"
@@ -7208,6 +10778,7 @@
       "cve": "CVE-2020-10189",
       "actors": [
         "G0046",
+        "G0096",
         "G0102",
         "G0119",
         "G1020",
@@ -7239,6 +10810,7 @@
         "G0050",
         "G0052",
         "G0065",
+        "G0069",
         "G0073",
         "G0079",
         "G0080",
@@ -7252,6 +10824,12 @@
         "ransomhub",
         "tianwu",
         "vice-spider"
+      ]
+    },
+    {
+      "cve": "CVE-2020-14871",
+      "actors": [
+        "lightbasin"
       ]
     },
     {
@@ -7309,9 +10887,16 @@
       ]
     },
     {
+      "cve": "CVE-2021-21972",
+      "actors": [
+        "G1048"
+      ]
+    },
+    {
       "cve": "CVE-2021-22005",
       "actors": [
-        "uta0178"
+        "uta0178",
+        "warp-panda"
       ]
     },
     {
@@ -7362,8 +10947,12 @@
     {
       "cve": "CVE-2021-26855",
       "actors": [
+        "G0027",
+        "G0059",
+        "G0096",
         "G0125",
         "G1043",
+        "G1045",
         "G1046",
         "gold-rebellion",
         "stac5143",
@@ -7377,20 +10966,32 @@
     {
       "cve": "CVE-2021-26857",
       "actors": [
-        "G0125"
+        "G0027",
+        "G0059",
+        "G0125",
+        "G1045",
+        "dev-0270"
       ]
     },
     {
       "cve": "CVE-2021-26858",
       "actors": [
-        "G0125"
+        "G0027",
+        "G0059",
+        "G0125",
+        "G1045",
+        "dev-0270"
       ]
     },
     {
       "cve": "CVE-2021-27065",
       "actors": [
+        "G0027",
+        "G0059",
         "G0125",
-        "G1043"
+        "G1043",
+        "G1045",
+        "dev-0270"
       ]
     },
     {
@@ -7409,9 +11010,16 @@
         "G1021",
         "G1043",
         "G1045",
+        "alpha-spider",
         "dagger-panda",
         "webworm",
         "wet-panda"
+      ]
+    },
+    {
+      "cve": "CVE-2021-3156",
+      "actors": [
+        "excobalt"
       ]
     },
     {
@@ -7429,6 +11037,7 @@
         "G1021",
         "G1043",
         "G1045",
+        "alpha-spider",
         "dagger-panda",
         "webworm",
         "wet-panda"
@@ -7447,6 +11056,7 @@
         "G1043",
         "G1045",
         "G1052",
+        "alpha-spider",
         "dagger-panda",
         "webworm",
         "wet-panda"
@@ -7473,7 +11083,8 @@
         "G0129",
         "G0143",
         "earth-baxia",
-        "tianwu"
+        "tianwu",
+        "yorotrooper"
       ]
     },
     {
@@ -7490,13 +11101,21 @@
         "G0008",
         "G0045",
         "G0050",
-        "G0093"
+        "G0093",
+        "G1015",
+        "scattered-lapsus-hunters"
       ]
     },
     {
       "cve": "CVE-2021-35587",
       "actors": [
         "G1057"
+      ]
+    },
+    {
+      "cve": "CVE-2021-4034",
+      "actors": [
+        "excobalt"
       ]
     },
     {
@@ -7517,8 +11136,15 @@
       ]
     },
     {
+      "cve": "CVE-2021-40449",
+      "actors": [
+        "ironhusky"
+      ]
+    },
+    {
       "cve": "CVE-2021-40539",
       "actors": [
+        "G0027",
         "G1017"
       ]
     },
@@ -7555,6 +11181,8 @@
     {
       "cve": "CVE-2021-44228",
       "actors": [
+        "G0027",
+        "G0032",
         "G0046",
         "G0059",
         "G0065",
@@ -7562,8 +11190,10 @@
         "G0102",
         "G0119",
         "G0125",
+        "G0138",
         "G1020",
-        "G1021"
+        "G1021",
+        "karakurt"
       ]
     },
     {
@@ -7575,9 +11205,60 @@
       ]
     },
     {
+      "cve": "CVE-2022-0543",
+      "actors": [
+        "returned-libra"
+      ]
+    },
+    {
       "cve": "CVE-2022-0609",
       "actors": [
+        "G0032",
         "G1049"
+      ]
+    },
+    {
+      "cve": "CVE-2022-1040",
+      "actors": [
+        "driftingcloud"
+      ]
+    },
+    {
+      "cve": "CVE-2022-1388",
+      "actors": [
+        "G0129"
+      ]
+    },
+    {
+      "cve": "CVE-2022-20775",
+      "actors": [
+        "uat-8616"
+      ]
+    },
+    {
+      "cve": "CVE-2022-21999",
+      "actors": [
+        "gelsemium"
+      ]
+    },
+    {
+      "cve": "CVE-2022-24521",
+      "actors": [
+        "G0008",
+        "alphv"
+      ]
+    },
+    {
+      "cve": "CVE-2022-26134",
+      "actors": [
+        "dragonforce",
+        "returned-libra"
+      ]
+    },
+    {
+      "cve": "CVE-2022-29464",
+      "actors": [
+        "dragonforce"
       ]
     },
     {
@@ -7592,11 +11273,13 @@
         "G1021",
         "G1046",
         "G1052",
+        "dragonforce",
         "gold-rebellion",
         "stac5143",
         "storm-0506",
         "storm-0826",
         "ta2101",
+        "ta570",
         "unc3973"
       ]
     },
@@ -7604,6 +11287,12 @@
       "cve": "CVE-2022-3236",
       "actors": [
         "G1045"
+      ]
+    },
+    {
+      "cve": "CVE-2022-37969",
+      "actors": [
+        "G0008"
       ]
     },
     {
@@ -7615,6 +11304,7 @@
     {
       "cve": "CVE-2022-40684",
       "actors": [
+        "G1017",
         "G1024"
       ]
     },
@@ -7651,7 +11341,15 @@
     {
       "cve": "CVE-2022-42475",
       "actors": [
-        "G0069"
+        "G0069",
+        "G1017",
+        "G1048"
+      ]
+    },
+    {
+      "cve": "CVE-2023-20118",
+      "actors": [
+        "vicioustrap"
       ]
     },
     {
@@ -7673,6 +11371,12 @@
       ]
     },
     {
+      "cve": "CVE-2023-20867",
+      "actors": [
+        "G0129"
+      ]
+    },
+    {
       "cve": "CVE-2023-22518",
       "actors": [
         "G0008",
@@ -7688,6 +11392,12 @@
         "G0045",
         "G0050",
         "G0093"
+      ]
+    },
+    {
+      "cve": "CVE-2023-23376",
+      "actors": [
+        "G0008"
       ]
     },
     {
@@ -7724,6 +11434,18 @@
         "tianwu",
         "unc3973",
         "vice-spider"
+      ]
+    },
+    {
+      "cve": "CVE-2023-23752",
+      "actors": [
+        "gambleforce"
+      ]
+    },
+    {
+      "cve": "CVE-2023-25717",
+      "actors": [
+        "uat-7810"
       ]
     },
     {
@@ -7779,9 +11501,16 @@
         "G0102",
         "G0129",
         "G0143",
+        "G1017",
         "G1054",
         "earth-baxia",
         "tianwu"
+      ]
+    },
+    {
+      "cve": "CVE-2023-28252",
+      "actors": [
+        "G0008"
       ]
     },
     {
@@ -7809,15 +11538,35 @@
       ]
     },
     {
+      "cve": "CVE-2023-2868",
+      "actors": [
+        "unnamed-groups-china"
+      ]
+    },
+    {
       "cve": "CVE-2023-32315",
       "actors": [
         "G0034"
       ]
     },
     {
+      "cve": "CVE-2023-32434",
+      "actors": [
+        "operation-triangulation"
+      ]
+    },
+    {
+      "cve": "CVE-2023-32435",
+      "actors": [
+        "operation-triangulation"
+      ]
+    },
+    {
       "cve": "CVE-2023-34048",
       "actors": [
-        "uta0178"
+        "G0129",
+        "uta0178",
+        "warp-panda"
       ]
     },
     {
@@ -7828,6 +11577,7 @@
         "G0092",
         "alpha-spider",
         "ransomhub",
+        "shadowsyndicate",
         "vice-spider"
       ]
     },
@@ -7855,6 +11605,7 @@
         "G1046",
         "G1054",
         "earth-baxia",
+        "gold-rebellion",
         "mallard-spider",
         "tianwu"
       ]
@@ -7877,8 +11628,15 @@
       ]
     },
     {
+      "cve": "CVE-2023-38606",
+      "actors": [
+        "operation-triangulation"
+      ]
+    },
+    {
       "cve": "CVE-2023-38831",
       "actors": [
+        "G0007",
         "G0008",
         "G0009",
         "G0016",
@@ -7902,11 +11660,14 @@
         "frostyneighbor",
         "ghostwriter",
         "gold-rebellion",
+        "head-mare",
+        "mysterious-elephant",
         "stac5143",
         "storm-0506",
         "storm-0826",
         "ta2101",
         "tianwu",
+        "uac-0099",
         "unc3973"
       ]
     },
@@ -7917,8 +11678,15 @@
       ]
     },
     {
+      "cve": "CVE-2023-41990",
+      "actors": [
+        "operation-triangulation"
+      ]
+    },
+    {
       "cve": "CVE-2023-42793",
       "actors": [
+        "G0032",
         "G0034",
         "G0138"
       ]
@@ -7955,6 +11723,12 @@
       ]
     },
     {
+      "cve": "CVE-2023-46604",
+      "actors": [
+        "G0138"
+      ]
+    },
+    {
       "cve": "CVE-2023-46747",
       "actors": [
         "G0025",
@@ -7965,6 +11739,7 @@
         "dagger-panda",
         "unc5174",
         "uta0178",
+        "warp-panda",
         "webworm",
         "wet-panda"
       ]
@@ -8003,7 +11778,8 @@
         "unc3973",
         "unc5174",
         "uta0178",
-        "vice-spider"
+        "vice-spider",
+        "warp-panda"
       ]
     },
     {
@@ -8041,6 +11817,12 @@
         "tianwu",
         "unc3973",
         "vice-spider"
+      ]
+    },
+    {
+      "cve": "CVE-2023-4911",
+      "actors": [
+        "excobalt"
       ]
     },
     {
@@ -8118,6 +11900,7 @@
         "alpha-spider",
         "angry-likho",
         "ransomhub",
+        "shadowsyndicate",
         "vice-spider"
       ]
     },
@@ -8138,6 +11921,7 @@
         "angry-likho",
         "dagger-panda",
         "ransomhub",
+        "shadowsyndicate",
         "unc5174",
         "vice-spider",
         "webworm",
@@ -8158,9 +11942,21 @@
       ]
     },
     {
+      "cve": "CVE-2024-21410",
+      "actors": [
+        "G0007"
+      ]
+    },
+    {
       "cve": "CVE-2024-21412",
       "actors": [
         "angry-likho"
+      ]
+    },
+    {
+      "cve": "CVE-2024-21413",
+      "actors": [
+        "G0007"
       ]
     },
     {
@@ -8197,7 +11993,8 @@
         "unc3973",
         "unc5174",
         "uta0178",
-        "vice-spider"
+        "vice-spider",
+        "warp-panda"
       ]
     },
     {
@@ -8297,6 +12094,7 @@
         "stac5143",
         "storm-0506",
         "storm-0826",
+        "storm-2077",
         "ta2101",
         "tianwu",
         "unc3973",
@@ -8358,6 +12156,7 @@
         "storm-0249",
         "storm-0506",
         "storm-0826",
+        "storm-2077",
         "ta2101",
         "tianwu",
         "unc3973",
@@ -8393,7 +12192,14 @@
     {
       "cve": "CVE-2024-38812",
       "actors": [
-        "uta0178"
+        "uta0178",
+        "warp-panda"
+      ]
+    },
+    {
+      "cve": "CVE-2024-39717",
+      "actors": [
+        "G1017"
       ]
     },
     {
@@ -8479,6 +12285,7 @@
         "G1046",
         "angry-likho",
         "earth-baxia",
+        "gold-rebellion",
         "hurricane-panda",
         "mallard-spider",
         "red-menshen",
@@ -8527,6 +12334,12 @@
       ]
     },
     {
+      "cve": "CVE-2024-4947",
+      "actors": [
+        "G0032"
+      ]
+    },
+    {
       "cve": "CVE-2024-55591",
       "actors": [
         "G0069",
@@ -8542,6 +12355,7 @@
         "G0131",
         "G1006",
         "dagger-panda",
+        "houken",
         "unc5174",
         "webworm",
         "wet-panda"
@@ -8556,6 +12370,7 @@
         "G0131",
         "G1006",
         "dagger-panda",
+        "houken",
         "unc5174",
         "webworm",
         "wet-panda"
@@ -8570,6 +12385,7 @@
     {
       "cve": "CVE-2024-9380",
       "actors": [
+        "houken",
         "unc5174"
       ]
     },
@@ -8641,6 +12457,8 @@
       "cve": "CVE-2025-0994",
       "actors": [
         "G1045",
+        "uat-6382",
+        "uat-8302",
         "unc5174"
       ]
     },
@@ -8664,9 +12482,16 @@
       ]
     },
     {
+      "cve": "CVE-2025-22457",
+      "actors": [
+        "uta0178"
+      ]
+    },
+    {
       "cve": "CVE-2025-24813",
       "actors": [
         "G1046",
+        "gold-rebellion",
         "mallard-spider"
       ]
     },
@@ -8680,7 +12505,8 @@
       "cve": "CVE-2025-26633",
       "actors": [
         "G0034",
-        "larva-208"
+        "larva-208",
+        "water-gamayun"
       ]
     },
     {
@@ -8703,6 +12529,9 @@
         "G0129",
         "G0143",
         "earth-baxia",
+        "hacking-team",
+        "operation-forumtroll",
+        "team46",
         "tianwu"
       ]
     },
@@ -8745,6 +12574,7 @@
         "G0129",
         "G0143",
         "earth-baxia",
+        "earth-lamia",
         "tianwu",
         "unc5174"
       ]
@@ -8756,9 +12586,21 @@
       ]
     },
     {
+      "cve": "CVE-2025-3248",
+      "actors": [
+        "jadepuffer"
+      ]
+    },
+    {
       "cve": "CVE-2025-32975",
       "actors": [
         "angry-likho"
+      ]
+    },
+    {
+      "cve": "CVE-2025-33053",
+      "actors": [
+        "G0038"
       ]
     },
     {
@@ -8792,6 +12634,24 @@
       ]
     },
     {
+      "cve": "CVE-2025-47812",
+      "actors": [
+        "nighteagle"
+      ]
+    },
+    {
+      "cve": "CVE-2025-48927",
+      "actors": [
+        "nighteagle"
+      ]
+    },
+    {
+      "cve": "CVE-2025-48928",
+      "actors": [
+        "nighteagle"
+      ]
+    },
+    {
       "cve": "CVE-2025-49113",
       "actors": [
         "G0007",
@@ -8806,6 +12666,7 @@
         "G0094",
         "G0096",
         "G1046",
+        "gold-rebellion",
         "mallard-spider"
       ]
     },
@@ -8826,6 +12687,12 @@
       "cve": "CVE-2025-53521",
       "actors": [
         "uta0178"
+      ]
+    },
+    {
+      "cve": "CVE-2025-53690",
+      "actors": [
+        "uat-8837"
       ]
     },
     {
@@ -8873,7 +12740,9 @@
         "earth-baxia",
         "hurricane-panda",
         "red-menshen",
+        "shadow-earth-053",
         "tianwu",
+        "uat-10608",
         "unc5174",
         "webworm",
         "wet-panda"
@@ -8884,13 +12753,15 @@
       "actors": [
         "G0069",
         "G0094",
-        "G1045"
+        "G1045",
+        "nighteagle"
       ]
     },
     {
       "cve": "CVE-2025-61882",
       "actors": [
-        "G0094"
+        "G0094",
+        "scattered-lapsus-hunters"
       ]
     },
     {
@@ -8900,6 +12771,7 @@
         "G0047",
         "G0067",
         "G0138",
+        "infy",
         "romcom"
       ]
     },
@@ -8930,6 +12802,8 @@
         "G0047",
         "G0067",
         "G0138",
+        "amaranth-dragon",
+        "infy",
         "romcom",
         "uac-0226"
       ]
@@ -8971,7 +12845,8 @@
         "G0102",
         "G0115",
         "G0119",
-        "guru-spider"
+        "guru-spider",
+        "uat-8616"
       ]
     },
     {
@@ -8992,7 +12867,14 @@
     {
       "cve": "CVE-2026-22769",
       "actors": [
+        "unc6201",
         "uta0178"
+      ]
+    },
+    {
+      "cve": "CVE-2026-2441",
+      "actors": [
+        "mysterious-elephant"
       ]
     },
     {
@@ -9011,6 +12893,12 @@
       "cve": "CVE-2026-35273",
       "actors": [
         "G1057"
+      ]
+    },
+    {
+      "cve": "CVE-2026-41940",
+      "actors": [
+        "mr-rot13"
       ]
     },
     {
@@ -9088,13 +12976,19 @@
         "T1020",
         "T1027",
         "T1041",
+        "T1046",
         "T1048",
+        "T1053",
         "T1053.005",
         "T1055",
         "T1056.003",
+        "T1059",
         "T1059.005",
+        "T1070",
         "T1082",
         "T1087.003",
+        "T1090",
+        "T1098",
         "T1102",
         "T1114",
         "T1114.003",
@@ -9103,21 +12997,26 @@
         "T1132.001",
         "T1137.001",
         "T1187",
+        "T1204",
         "T1212",
         "T1218.005",
         "T1480",
         "T1497.003",
+        "T1547",
         "T1556.006",
         "T1564",
+        "T1564.004",
+        "T1566.002",
         "T1567.002",
+        "T1567.004",
         "T1573.002",
         "T1583.004",
         "T1584.005",
         "T1587.001",
         "T1587.004"
       ],
-      "documented_only_count": 63,
-      "overlap": 30
+      "documented_only_count": 8,
+      "overlap": 85
     },
     {
       "actor": "G0008",
@@ -9668,16 +13567,50 @@
       "actor": "G0010",
       "reported_only": [
         "T1001",
+        "T1008",
+        "T1010",
+        "T1020",
         "T1021",
+        "T1027",
+        "T1033",
+        "T1036.004",
+        "T1041",
+        "T1047",
+        "T1048",
+        "T1053",
+        "T1053.005",
         "T1059",
+        "T1069",
         "T1071",
+        "T1074.001",
+        "T1087",
+        "T1119",
         "T1135",
+        "T1204",
+        "T1204.002",
+        "T1213",
+        "T1480.001",
         "T1543",
+        "T1546",
+        "T1547.009",
         "T1557",
-        "T1569"
+        "T1566",
+        "T1567",
+        "T1569",
+        "T1571",
+        "T1573",
+        "T1573.001",
+        "T1574.001",
+        "T1583.001",
+        "T1583.004",
+        "T1583.007",
+        "T1590.005",
+        "T1592.002",
+        "T1598.003",
+        "T1608"
       ],
-      "documented_only_count": 65,
-      "overlap": 3
+      "documented_only_count": 47,
+      "overlap": 21
     },
     {
       "actor": "G0016",
@@ -9929,8 +13862,8 @@
         "T1654",
         "T1657"
       ],
-      "documented_only_count": 18,
-      "overlap": 48
+      "documented_only_count": 17,
+      "overlap": 49
     },
     {
       "actor": "G0017",
@@ -10202,28 +14135,65 @@
       "overlap": 20
     },
     {
+      "actor": "G0030",
+      "reported_only": [
+        "T1005",
+        "T1027",
+        "T1027.007",
+        "T1036",
+        "T1041",
+        "T1055",
+        "T1059.003",
+        "T1070.004",
+        "T1071.001",
+        "T1105",
+        "T1106",
+        "T1140",
+        "T1204.002",
+        "T1480.002",
+        "T1547.001",
+        "T1573",
+        "T1620"
+      ],
+      "documented_only_count": 19,
+      "overlap": 2
+    },
+    {
       "actor": "G0032",
       "reported_only": [
         "T1001",
+        "T1003",
         "T1007",
         "T1020",
+        "T1021",
         "T1027",
+        "T1027.002",
+        "T1036",
         "T1036.012",
+        "T1048",
         "T1053",
         "T1055",
         "T1056",
         "T1059",
+        "T1059.002",
+        "T1059.004",
         "T1059.006",
         "T1059.007",
+        "T1071",
+        "T1087",
         "T1087.001",
         "T1087.002",
         "T1087.004",
+        "T1090",
         "T1091",
         "T1095",
         "T1102",
+        "T1102.001",
         "T1112",
+        "T1119",
         "T1129",
         "T1135",
+        "T1136",
         "T1190",
         "T1195",
         "T1195.001",
@@ -10231,16 +14201,23 @@
         "T1199",
         "T1204",
         "T1204.004",
+        "T1217",
+        "T1219",
         "T1480",
+        "T1496",
         "T1496.001",
         "T1497",
+        "T1518",
         "T1539",
+        "T1543",
+        "T1546.016",
         "T1547",
         "T1547.004",
         "T1547.005",
         "T1550.004",
         "T1552.004",
         "T1555",
+        "T1555.001",
         "T1555.003",
         "T1564",
         "T1564.004",
@@ -10256,17 +14233,20 @@
         "T1584.005",
         "T1588.003",
         "T1589.001",
+        "T1590",
         "T1593.002",
         "T1608",
+        "T1608.001",
         "T1608.004",
         "T1609",
         "T1614",
         "T1614.001",
         "T1622",
+        "T1657",
         "T1659"
       ],
-      "documented_only_count": 58,
-      "overlap": 36
+      "documented_only_count": 51,
+      "overlap": 43
     },
     {
       "actor": "G0034",
@@ -10557,6 +14537,40 @@
       "overlap": 32
     },
     {
+      "actor": "G0038",
+      "reported_only": [
+        "T1007",
+        "T1008",
+        "T1020",
+        "T1027",
+        "T1036",
+        "T1053",
+        "T1059.003",
+        "T1070.004",
+        "T1074",
+        "T1090",
+        "T1105",
+        "T1106",
+        "T1112",
+        "T1134",
+        "T1140",
+        "T1197",
+        "T1204.002",
+        "T1218.011",
+        "T1480.001",
+        "T1518",
+        "T1518.001",
+        "T1546.003",
+        "T1583.001",
+        "T1583.003",
+        "T1587.001",
+        "T1588.003",
+        "T1620"
+      ],
+      "documented_only_count": 5,
+      "overlap": 11
+    },
+    {
       "actor": "G0039",
       "reported_only": [
         "T1001.003",
@@ -10608,9 +14622,14 @@
         "T1027",
         "T1036",
         "T1037.001",
+        "T1041",
         "T1055",
+        "T1070.006",
         "T1071.001",
         "T1102",
+        "T1102.002",
+        "T1113",
+        "T1124",
         "T1132",
         "T1140",
         "T1219",
@@ -10624,6 +14643,7 @@
         "T1430",
         "T1437.001",
         "T1481.003",
+        "T1497",
         "T1512",
         "T1517",
         "T1533",
@@ -10641,8 +14661,34 @@
         "T1641",
         "T1646"
       ],
-      "documented_only_count": 30,
-      "overlap": 11
+      "documented_only_count": 28,
+      "overlap": 13
+    },
+    {
+      "actor": "G0044",
+      "reported_only": [
+        "T1003.001",
+        "T1027",
+        "T1037",
+        "T1055",
+        "T1056.001",
+        "T1069.002",
+        "T1071.001",
+        "T1087.001",
+        "T1087.002",
+        "T1095",
+        "T1113",
+        "T1140",
+        "T1204.002",
+        "T1543.003",
+        "T1547.001",
+        "T1555",
+        "T1564.001",
+        "T1566.001",
+        "T1569.002"
+      ],
+      "documented_only_count": 6,
+      "overlap": 0
     },
     {
       "actor": "G0045",
@@ -11687,6 +15733,22 @@
       "overlap": 4
     },
     {
+      "actor": "G0059",
+      "reported_only": [
+        "T1001",
+        "T1027",
+        "T1078.003",
+        "T1140",
+        "T1543.003",
+        "T1555.003",
+        "T1569.002",
+        "T1587.001",
+        "T1595"
+      ],
+      "documented_only_count": 74,
+      "overlap": 4
+    },
+    {
       "actor": "G0060",
       "reported_only": [
         "T1518.001",
@@ -12092,6 +16154,7 @@
         "T1532",
         "T1533",
         "T1541",
+        "T1546.015",
         "T1555",
         "T1560",
         "T1566.002",
@@ -12107,8 +16170,8 @@
         "T1646",
         "T1659"
       ],
-      "documented_only_count": 22,
-      "overlap": 7
+      "documented_only_count": 21,
+      "overlap": 8
     },
     {
       "actor": "G0069",
@@ -13122,10 +17185,21 @@
     {
       "actor": "G0092",
       "reported_only": [
+        "T1012",
         "T1036.007",
+        "T1059",
+        "T1082",
         "T1102",
+        "T1114",
+        "T1204",
         "T1219",
+        "T1518",
+        "T1539",
+        "T1546",
         "T1547.001",
+        "T1552",
+        "T1553",
+        "T1555",
         "T1560.001"
       ],
       "documented_only_count": 29,
@@ -13193,6 +17267,7 @@
         "T1001",
         "T1025",
         "T1036",
+        "T1037.001",
         "T1048.003",
         "T1053",
         "T1098",
@@ -13439,22 +17514,41 @@
         "T1654",
         "T1657"
       ],
-      "documented_only_count": 21,
-      "overlap": 61
+      "documented_only_count": 20,
+      "overlap": 62
     },
     {
       "actor": "G0098",
       "reported_only": [
+        "T1005",
+        "T1012",
+        "T1016.001",
+        "T1021.006",
+        "T1027.001",
+        "T1036.005",
         "T1041",
+        "T1049",
+        "T1055",
+        "T1057",
         "T1059",
         "T1059.007",
+        "T1071.001",
         "T1082",
+        "T1083",
         "T1105",
+        "T1129",
+        "T1132.002",
+        "T1140",
         "T1189",
-        "T1195.001"
+        "T1195.001",
+        "T1480",
+        "T1497.003",
+        "T1547.012",
+        "T1573",
+        "T1622"
       ],
-      "documented_only_count": 13,
-      "overlap": 1
+      "documented_only_count": 12,
+      "overlap": 2
     },
     {
       "actor": "G0099",
@@ -13463,14 +17557,16 @@
         "T1071.001",
         "T1082",
         "T1112",
+        "T1547.001",
+        "T1566",
         "T1573.001",
         "T1573.002",
         "T1583.004",
         "T1583.008",
         "T1584.004"
       ],
-      "documented_only_count": 33,
-      "overlap": 5
+      "documented_only_count": 31,
+      "overlap": 7
     },
     {
       "actor": "G0102",
@@ -13701,16 +17797,38 @@
       "overlap": 49
     },
     {
+      "actor": "G0106",
+      "reported_only": [
+        "T1021",
+        "T1036",
+        "T1049",
+        "T1055",
+        "T1078",
+        "T1110",
+        "T1132",
+        "T1496"
+      ],
+      "documented_only_count": 30,
+      "overlap": 6
+    },
+    {
       "actor": "G0112",
       "reported_only": [
+        "T0869",
         "T1398",
         "T1418",
+        "T1421",
+        "T1422",
+        "T1424",
         "T1437",
+        "T1517",
+        "T1521.002",
+        "T1532",
         "T1636.002",
         "T1646"
       ],
-      "documented_only_count": 27,
-      "overlap": 8
+      "documented_only_count": 26,
+      "overlap": 9
     },
     {
       "actor": "G0114",
@@ -13925,6 +18043,7 @@
         "T1010",
         "T1012",
         "T1016.001",
+        "T1016.002",
         "T1020",
         "T1021",
         "T1021.001",
@@ -14180,6 +18299,8 @@
         "T1041",
         "T1057",
         "T1059.001",
+        "T1059.003",
+        "T1059.007",
         "T1071.001",
         "T1082",
         "T1083",
@@ -14187,10 +18308,13 @@
         "T1105",
         "T1112",
         "T1113",
+        "T1218.005",
         "T1547",
         "T1547.001",
         "T1547.004",
         "T1564",
+        "T1566",
+        "T1571",
         "T1573.001",
         "T1573.002",
         "T1583.003",
@@ -14201,8 +18325,8 @@
         "T1614",
         "T1614.001"
       ],
-      "documented_only_count": 8,
-      "overlap": 6
+      "documented_only_count": 7,
+      "overlap": 7
     },
     {
       "actor": "G0138",
@@ -14500,28 +18624,39 @@
     {
       "actor": "G1006",
       "reported_only": [
+        "T1001",
         "T1003.002",
         "T1012",
         "T1021.002",
+        "T1027.002",
+        "T1027.009",
+        "T1027.012",
+        "T1036.007",
+        "T1041",
         "T1055.012",
         "T1059.003",
         "T1071",
         "T1071.001",
         "T1072",
         "T1082",
+        "T1083",
         "T1087.001",
         "T1095",
         "T1105",
+        "T1132",
+        "T1202",
         "T1555.003",
         "T1556.002",
+        "T1564.001",
+        "T1573",
         "T1573.001",
         "T1573.002",
         "T1574",
         "T1583.003",
         "T1583.008"
       ],
-      "documented_only_count": 32,
-      "overlap": 12
+      "documented_only_count": 28,
+      "overlap": 16
     },
     {
       "actor": "G1008",
@@ -14530,6 +18665,7 @@
         "T1012",
         "T1027",
         "T1033",
+        "T1036",
         "T1036.007",
         "T1041",
         "T1047",
@@ -14538,6 +18674,7 @@
         "T1057",
         "T1059",
         "T1059.003",
+        "T1071",
         "T1071.001",
         "T1071.002",
         "T1083",
@@ -14546,10 +18683,15 @@
         "T1123",
         "T1129",
         "T1140",
+        "T1185",
+        "T1204",
         "T1204.001",
+        "T1218",
+        "T1547",
         "T1547.001",
         "T1548.002",
         "T1560.001",
+        "T1566",
         "T1566.002",
         "T1571",
         "T1583.001",
@@ -14585,6 +18727,138 @@
       ],
       "documented_only_count": 14,
       "overlap": 5
+    },
+    {
+      "actor": "G1015",
+      "reported_only": [
+        "T0846",
+        "T1003",
+        "T1003.001",
+        "T1021",
+        "T1027",
+        "T1033",
+        "T1053",
+        "T1053.005",
+        "T1056.001",
+        "T1059",
+        "T1059.006",
+        "T1078.002",
+        "T1106",
+        "T1112",
+        "T1114.002",
+        "T1115",
+        "T1134",
+        "T1190",
+        "T1199",
+        "T1212",
+        "T1213.002",
+        "T1218",
+        "T1219",
+        "T1489",
+        "T1526",
+        "T1546.008",
+        "T1548",
+        "T1548.002",
+        "T1552",
+        "T1555",
+        "T1563.002",
+        "T1566",
+        "T1566.001",
+        "T1566.002",
+        "T1566.004",
+        "T1567",
+        "T1569.002",
+        "T1584",
+        "T1584.001",
+        "T1585.002",
+        "T1586.003",
+        "T1589.001",
+        "T1591.002",
+        "T1593.001",
+        "T1594",
+        "T1597.002",
+        "T1598.002",
+        "T1606",
+        "T1611",
+        "T1648"
+      ],
+      "documented_only_count": 23,
+      "overlap": 43
+    },
+    {
+      "actor": "G1016",
+      "reported_only": [
+        "T1003",
+        "T1007",
+        "T1012",
+        "T1018",
+        "T1021",
+        "T1027",
+        "T1027.002",
+        "T1027.005",
+        "T1033",
+        "T1039",
+        "T1040",
+        "T1053",
+        "T1055",
+        "T1057",
+        "T1059",
+        "T1059.007",
+        "T1069.001",
+        "T1069.002",
+        "T1070",
+        "T1070.004",
+        "T1071",
+        "T1071.003",
+        "T1071.004",
+        "T1074",
+        "T1074.002",
+        "T1090",
+        "T1095",
+        "T1112",
+        "T1132",
+        "T1132.001",
+        "T1134",
+        "T1136",
+        "T1213",
+        "T1489",
+        "T1497",
+        "T1505",
+        "T1518",
+        "T1518.001",
+        "T1529",
+        "T1543",
+        "T1543.003",
+        "T1546",
+        "T1546.007",
+        "T1547",
+        "T1550",
+        "T1552",
+        "T1553",
+        "T1553.002",
+        "T1559",
+        "T1560",
+        "T1560.002",
+        "T1564",
+        "T1564.003",
+        "T1567",
+        "T1569",
+        "T1569.002",
+        "T1573",
+        "T1573.002",
+        "T1574",
+        "T1574.011",
+        "T1583",
+        "T1583.003",
+        "T1587",
+        "T1587.003",
+        "T1588",
+        "T1588.003",
+        "T1608",
+        "T1608.003"
+      ],
+      "documented_only_count": 26,
+      "overlap": 27
     },
     {
       "actor": "G1020",
@@ -14653,6 +18927,17 @@
       ],
       "documented_only_count": 11,
       "overlap": 8
+    },
+    {
+      "actor": "G1022",
+      "reported_only": [
+        "T1211",
+        "T1555.003",
+        "T1560.002",
+        "T1574"
+      ],
+      "documented_only_count": 22,
+      "overlap": 3
     },
     {
       "actor": "G1023",
@@ -14920,21 +19205,34 @@
     {
       "actor": "G1028",
       "reported_only": [
+        "T1398",
+        "T1406",
+        "T1407",
+        "T1414",
+        "T1417.001",
         "T1418",
+        "T1418.001",
         "T1420",
         "T1426",
         "T1429",
+        "T1430",
         "T1437",
+        "T1481.003",
         "T1512",
         "T1513",
         "T1517",
         "T1532",
         "T1533",
         "T1544",
-        "T1575"
+        "T1575",
+        "T1624.001",
+        "T1636.002",
+        "T1636.003",
+        "T1636.004",
+        "T1646"
       ],
-      "documented_only_count": 3,
-      "overlap": 0
+      "documented_only_count": 1,
+      "overlap": 2
     },
     {
       "actor": "G1032",
@@ -14966,10 +19264,16 @@
     {
       "actor": "G1033",
       "reported_only": [
-        "T1566.002"
+        "T1027.006",
+        "T1027.013",
+        "T1059.005",
+        "T1071.001",
+        "T1547.001",
+        "T1566.002",
+        "T1568.001"
       ],
-      "documented_only_count": 9,
-      "overlap": 12
+      "documented_only_count": 7,
+      "overlap": 14
     },
     {
       "actor": "G1034",
@@ -14990,10 +19294,11 @@
         "T1560.001",
         "T1569.002",
         "T1583.004",
+        "T1583.006",
         "T1587.001"
       ],
-      "documented_only_count": 16,
-      "overlap": 1
+      "documented_only_count": 14,
+      "overlap": 3
     },
     {
       "actor": "G1040",
@@ -15012,19 +19317,47 @@
     {
       "actor": "G1045",
       "reported_only": [
+        "T1003.001",
+        "T1003.003",
         "T1005",
+        "T1008",
+        "T1012",
+        "T1020",
+        "T1021",
+        "T1025",
         "T1027.007",
+        "T1027.009",
+        "T1027.010",
+        "T1027.013",
+        "T1030",
         "T1033",
+        "T1036",
         "T1036.001",
         "T1036.004",
+        "T1036.005",
+        "T1036.008",
+        "T1039",
         "T1041",
+        "T1047",
+        "T1049",
+        "T1053.005",
+        "T1055",
+        "T1055.001",
+        "T1057",
+        "T1059.001",
         "T1059.003",
+        "T1068",
         "T1070.004",
         "T1070.009",
         "T1071",
         "T1071.001",
+        "T1078",
+        "T1078.002",
         "T1082",
         "T1083",
+        "T1087",
+        "T1087.001",
+        "T1087.002",
         "T1090.001",
         "T1090.002",
         "T1095",
@@ -15032,26 +19365,43 @@
         "T1106",
         "T1113",
         "T1120",
+        "T1134",
         "T1134.002",
         "T1140",
+        "T1203",
         "T1480.002",
+        "T1482",
+        "T1505.003",
+        "T1518.001",
         "T1543.003",
+        "T1547",
         "T1547.001",
         "T1559",
+        "T1564.001",
+        "T1564.003",
         "T1564.010",
         "T1569.002",
+        "T1570",
         "T1571",
         "T1573.001",
         "T1573.002",
+        "T1574",
         "T1574.001",
         "T1583.003",
+        "T1583.004",
+        "T1584",
+        "T1588.001",
+        "T1588.005",
+        "T1590",
+        "T1595",
         "T1608.001",
+        "T1608.002",
         "T1620",
         "T1665",
         "T1680"
       ],
-      "documented_only_count": 12,
-      "overlap": 2
+      "documented_only_count": 10,
+      "overlap": 4
     },
     {
       "actor": "G1046",
@@ -15296,28 +19646,59 @@
       "overlap": 21
     },
     {
+      "actor": "G1047",
+      "reported_only": [
+        "T1018",
+        "T1021.004",
+        "T1027.013",
+        "T1036.003",
+        "T1046",
+        "T1057",
+        "T1059.001",
+        "T1059.008",
+        "T1068",
+        "T1070.004",
+        "T1574.006"
+      ],
+      "documented_only_count": 17,
+      "overlap": 5
+    },
+    {
       "actor": "G1048",
       "reported_only": [
         "T1003",
         "T1016",
         "T1021",
         "T1027",
+        "T1036.005",
+        "T1041",
+        "T1055.009",
+        "T1056",
         "T1059",
+        "T1059.008",
         "T1070",
         "T1070.003",
+        "T1071",
+        "T1074",
+        "T1090",
         "T1105",
         "T1129",
         "T1140",
         "T1202",
+        "T1205.002",
+        "T1219",
         "T1497",
         "T1497.001",
         "T1547",
         "T1560",
+        "T1563.001",
+        "T1573",
         "T1573.001",
+        "T1601",
         "T1620"
       ],
-      "documented_only_count": 39,
-      "overlap": 10
+      "documented_only_count": 35,
+      "overlap": 14
     },
     {
       "actor": "G1049",
@@ -15566,56 +19947,102 @@
       "reported_only": [
         "T1003.002",
         "T1037.003",
-        "T1053.005"
+        "T1046",
+        "T1048.003",
+        "T1053.005",
+        "T1059",
+        "T1112",
+        "T1505.003"
       ],
-      "documented_only_count": 48,
-      "overlap": 15
+      "documented_only_count": 45,
+      "overlap": 18
     },
     {
       "actor": "G1056",
       "reported_only": [
+        "T1003",
+        "T1008",
+        "T1021",
         "T1021.007",
         "T1027",
         "T1027.014",
         "T1027.016",
+        "T1036.003",
+        "T1036.004",
         "T1041",
+        "T1046",
+        "T1048.003",
+        "T1053.003",
         "T1059",
+        "T1068",
         "T1070.004",
+        "T1071",
         "T1071.001",
+        "T1072",
         "T1074",
+        "T1080",
+        "T1082",
+        "T1083",
+        "T1087",
+        "T1090",
         "T1090.003",
         "T1102.001",
         "T1119",
         "T1129",
+        "T1133",
         "T1195.002",
+        "T1195.003",
         "T1199",
+        "T1213",
+        "T1490",
+        "T1491.001",
+        "T1496",
         "T1497.001",
+        "T1497.003",
+        "T1525",
         "T1526",
+        "T1529",
         "T1530",
         "T1547",
+        "T1548.003",
         "T1552",
         "T1552.001",
         "T1552.005",
         "T1552.007",
         "T1564.006",
+        "T1565",
         "T1566",
         "T1567",
         "T1567.001",
+        "T1570",
+        "T1572",
+        "T1573",
         "T1573.002",
         "T1580",
+        "T1583.008",
+        "T1584.001",
+        "T1586.003",
         "T1587.004",
         "T1588.002",
         "T1588.005",
         "T1588.006",
         "T1588.007",
+        "T1590",
         "T1591.002",
         "T1591.004",
         "T1592.001",
+        "T1594",
+        "T1595",
+        "T1608.002",
         "T1609",
-        "T1613"
+        "T1610",
+        "T1611",
+        "T1613",
+        "T1614",
+        "T1648"
       ],
-      "documented_only_count": 24,
-      "overlap": 12
+      "documented_only_count": 15,
+      "overlap": 21
     },
     {
       "actor": "G1057",
@@ -15651,6 +20078,50 @@
       ],
       "documented_only_count": 33,
       "overlap": 13
+    },
+    {
+      "actor": "alpha-spider",
+      "reported_only": [
+        "T1003",
+        "T1020",
+        "T1036",
+        "T1040",
+        "T1048",
+        "T1053",
+        "T1072",
+        "T1078",
+        "T1083",
+        "T1098",
+        "T1133",
+        "T1212",
+        "T1222",
+        "T1482",
+        "T1484",
+        "T1486",
+        "T1490",
+        "T1528",
+        "T1537",
+        "T1555",
+        "T1558",
+        "T1586",
+        "T1590",
+        "T1592",
+        "T1615"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "alphv",
+      "reported_only": [
+        "T1555",
+        "T1557",
+        "T1558",
+        "T1586",
+        "T1598"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
     },
     {
       "actor": "angry-likho",
@@ -15774,6 +20245,98 @@
       "overlap": 0
     },
     {
+      "actor": "batshadow",
+      "reported_only": [
+        "T1036.005",
+        "T1041",
+        "T1059.001",
+        "T1059.003",
+        "T1071.001",
+        "T1082",
+        "T1105",
+        "T1113",
+        "T1204.002",
+        "T1218",
+        "T1219",
+        "T1486",
+        "T1518.001",
+        "T1564.001",
+        "T1566.001",
+        "T1566.003"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "bladedfeline",
+      "reported_only": [
+        "T1003.001",
+        "T1041",
+        "T1048.001",
+        "T1059.001",
+        "T1059.003",
+        "T1059.006",
+        "T1059.007",
+        "T1070.004",
+        "T1070.006",
+        "T1071.001",
+        "T1078",
+        "T1105",
+        "T1132.001",
+        "T1140",
+        "T1190",
+        "T1546",
+        "T1547.001",
+        "T1559",
+        "T1569.002",
+        "T1573.001",
+        "T1573.002",
+        "T1583",
+        "T1583.001",
+        "T1583.003",
+        "T1586.002",
+        "T1595.002"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "breeze-comet",
+      "reported_only": [
+        "T1003.002",
+        "T1018",
+        "T1021.001",
+        "T1021.002",
+        "T1021.004",
+        "T1041",
+        "T1053.005",
+        "T1057",
+        "T1059.001",
+        "T1068",
+        "T1070.004",
+        "T1071.001",
+        "T1074.001",
+        "T1082",
+        "T1090.001",
+        "T1090.002",
+        "T1090.003",
+        "T1095",
+        "T1105",
+        "T1110.003",
+        "T1136.001",
+        "T1190",
+        "T1203",
+        "T1204.004",
+        "T1547.001",
+        "T1555",
+        "T1566.004",
+        "T1584.001",
+        "T1584.006"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
       "actor": "calypso",
       "reported_only": [
         "T1001.003",
@@ -15845,6 +20408,43 @@
       "overlap": 0
     },
     {
+      "actor": "chernovite",
+      "reported_only": [
+        "T0814",
+        "T0868",
+        "T0869",
+        "T0888",
+        "T1021",
+        "T1046",
+        "T1047",
+        "T1059",
+        "T1078",
+        "T1105",
+        "T1110",
+        "T1544",
+        "T1552.001",
+        "T1573"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "cl-sta-0048",
+      "reported_only": [
+        "T1027"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "cyber-anarchy-squad",
+      "reported_only": [
+        "T1190"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
       "actor": "cyber-serp",
       "reported_only": [
         "T1027",
@@ -15852,6 +20452,17 @@
         "T1071.001",
         "T1105",
         "T1566"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "cyber-toufan",
+      "reported_only": [
+        "T1027",
+        "T1485",
+        "T1583",
+        "T1595"
       ],
       "documented_only_count": 0,
       "overlap": 0
@@ -15884,9 +20495,73 @@
       "overlap": 0
     },
     {
+      "actor": "daixin-team",
+      "reported_only": [
+        "T1003",
+        "T1078",
+        "T1098",
+        "T1190",
+        "T1486",
+        "T1550.002",
+        "T1563.001",
+        "T1563.002",
+        "T1567",
+        "T1598.002"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "darkpink",
+      "reported_only": [
+        "T1027.006",
+        "T1036.007",
+        "T1059.001",
+        "T1102.002",
+        "T1127.001",
+        "T1140",
+        "T1204",
+        "T1547",
+        "T1547.004",
+        "T1555.003",
+        "T1566.001"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "domestic-kitten",
+      "reported_only": [
+        "T1418",
+        "T1426",
+        "T1437",
+        "T1533"
+      ],
+      "documented_only_count": 1,
+      "overlap": 0
+    },
+    {
       "actor": "doppel-spider",
       "reported_only": [
         "T1489"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "dragonbreath",
+      "reported_only": [
+        "T1014",
+        "T1055.009",
+        "T1057",
+        "T1068",
+        "T1195.001",
+        "T1497",
+        "T1518.001",
+        "T1543.003",
+        "T1564.010",
+        "T1588.002",
+        "T1622"
       ],
       "documented_only_count": 0,
       "overlap": 0
@@ -15898,6 +20573,8 @@
         "T1027",
         "T1053.005",
         "T1070",
+        "T1070.004",
+        "T1083",
         "T1135",
         "T1204.002",
         "T1486",
@@ -16183,6 +20860,120 @@
       "overlap": 0
     },
     {
+      "actor": "earth-lamia",
+      "reported_only": [
+        "T1003.001",
+        "T1003.002",
+        "T1005",
+        "T1008",
+        "T1036.005",
+        "T1041",
+        "T1053.005",
+        "T1059.001",
+        "T1059.003",
+        "T1068",
+        "T1078",
+        "T1078.003",
+        "T1087.001",
+        "T1087.002",
+        "T1095",
+        "T1098.007",
+        "T1104",
+        "T1105",
+        "T1132.001",
+        "T1136.001",
+        "T1140",
+        "T1190",
+        "T1482",
+        "T1505.003",
+        "T1570",
+        "T1571",
+        "T1573.001",
+        "T1574.001",
+        "T1583.001",
+        "T1583.003",
+        "T1587.001",
+        "T1590",
+        "T1592",
+        "T1595.001",
+        "T1595.002",
+        "T1608.001",
+        "T1608.002",
+        "T1620"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "ec2-grouper",
+      "reported_only": [
+        "T1021",
+        "T1098",
+        "T1496",
+        "T1580"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "excobalt",
+      "reported_only": [
+        "T1014",
+        "T1021.004",
+        "T1027.009",
+        "T1027.011",
+        "T1027.015",
+        "T1030",
+        "T1036",
+        "T1036.005",
+        "T1041",
+        "T1056.004",
+        "T1059.004",
+        "T1068",
+        "T1071.001",
+        "T1074.001",
+        "T1082",
+        "T1090.001",
+        "T1098.004",
+        "T1105",
+        "T1218",
+        "T1547.006",
+        "T1548.001",
+        "T1554",
+        "T1564",
+        "T1564.001",
+        "T1571",
+        "T1573",
+        "T1574.006"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "fishmedley",
+      "reported_only": [
+        "T1003.001",
+        "T1003.002",
+        "T1007",
+        "T1016",
+        "T1021.002",
+        "T1057",
+        "T1059.001",
+        "T1059.003",
+        "T1072",
+        "T1087.001",
+        "T1095",
+        "T1140",
+        "T1543.003",
+        "T1555.003",
+        "T1556.002",
+        "T1583.001",
+        "T1583.004"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
       "actor": "frostyneighbor",
       "reported_only": [
         "T1027",
@@ -16199,6 +20990,64 @@
         "T1583",
         "T1588.002",
         "T1608"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "fusioncore",
+      "reported_only": [
+        "T1003",
+        "T1005",
+        "T1010",
+        "T1012",
+        "T1016",
+        "T1018",
+        "T1027",
+        "T1036",
+        "T1047",
+        "T1055",
+        "T1056",
+        "T1057",
+        "T1059",
+        "T1070.004",
+        "T1070.006",
+        "T1071",
+        "T1082",
+        "T1083",
+        "T1102",
+        "T1213",
+        "T1222",
+        "T1486",
+        "T1490",
+        "T1496",
+        "T1497",
+        "T1497.001",
+        "T1518.001",
+        "T1547.001",
+        "T1560",
+        "T1567.002",
+        "T1573",
+        "T1614",
+        "T1620"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "gammax",
+      "reported_only": [
+        "T1021",
+        "T1021.001",
+        "T1041",
+        "T1059",
+        "T1078",
+        "T1105",
+        "T1140",
+        "T1203",
+        "T1486",
+        "T1490",
+        "T1547"
       ],
       "documented_only_count": 0,
       "overlap": 0
@@ -16233,6 +21082,38 @@
       "overlap": 0
     },
     {
+      "actor": "ghostredirector",
+      "reported_only": [
+        "T1008",
+        "T1027",
+        "T1027.009",
+        "T1059.001",
+        "T1059.003",
+        "T1071.001",
+        "T1083",
+        "T1105",
+        "T1106",
+        "T1112",
+        "T1134",
+        "T1140",
+        "T1190",
+        "T1219",
+        "T1546",
+        "T1559",
+        "T1565",
+        "T1583.001",
+        "T1583.004",
+        "T1587.001",
+        "T1588.002",
+        "T1588.003",
+        "T1608.001",
+        "T1608.002",
+        "T1608.006"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
       "actor": "ghostwriter",
       "reported_only": [
         "T1027",
@@ -16242,9 +21123,16 @@
         "T1053.005",
         "T1057",
         "T1059",
+        "T1071",
         "T1071.001",
         "T1082",
+        "T1105",
+        "T1140",
+        "T1203",
         "T1204.002",
+        "T1218.010",
+        "T1518.001",
+        "T1547.001",
         "T1566.001",
         "T1583",
         "T1588.002",
@@ -16533,6 +21421,194 @@
       "overlap": 0
     },
     {
+      "actor": "goldenjackal",
+      "reported_only": [
+        "T1005",
+        "T1016.001",
+        "T1018",
+        "T1025",
+        "T1027.013",
+        "T1036.005",
+        "T1036.008",
+        "T1041",
+        "T1046",
+        "T1048.002",
+        "T1052.001",
+        "T1053.005",
+        "T1057",
+        "T1059.001",
+        "T1059.003",
+        "T1059.006",
+        "T1070.004",
+        "T1071.001",
+        "T1074.001",
+        "T1082",
+        "T1083",
+        "T1087.001",
+        "T1090.001",
+        "T1091",
+        "T1092",
+        "T1106",
+        "T1112",
+        "T1114.001",
+        "T1119",
+        "T1120",
+        "T1132.001",
+        "T1135",
+        "T1204.002",
+        "T1210",
+        "T1518",
+        "T1543.003",
+        "T1547.001",
+        "T1552.001",
+        "T1552.004",
+        "T1560.002",
+        "T1564.001",
+        "T1567.002",
+        "T1569.002",
+        "T1572",
+        "T1583.003",
+        "T1583.004",
+        "T1584.006",
+        "T1585.003",
+        "T1587.001",
+        "T1588.002"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "gopherwhisper",
+      "reported_only": [
+        "T1001.003",
+        "T1005",
+        "T1007",
+        "T1020",
+        "T1036",
+        "T1036.004",
+        "T1036.005",
+        "T1041",
+        "T1048.002",
+        "T1055.002",
+        "T1055.012",
+        "T1071.001",
+        "T1082",
+        "T1083",
+        "T1102.002",
+        "T1105",
+        "T1106",
+        "T1119",
+        "T1129",
+        "T1132.001",
+        "T1132.002",
+        "T1134.002",
+        "T1140",
+        "T1480",
+        "T1518",
+        "T1543.003",
+        "T1555.003",
+        "T1560.003",
+        "T1567",
+        "T1573.001",
+        "T1573.002",
+        "T1583.006",
+        "T1587.001",
+        "T1588.002",
+        "T1588.003"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "graybravo",
+      "reported_only": [
+        "T1005",
+        "T1036",
+        "T1059.001",
+        "T1059.010",
+        "T1071.001",
+        "T1090.002",
+        "T1105",
+        "T1189",
+        "T1204.002",
+        "T1204.004",
+        "T1566",
+        "T1583.001",
+        "T1583.003",
+        "T1583.004",
+        "T1586.002",
+        "T1588.002",
+        "T1650"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "gtg-1002",
+      "reported_only": [
+        "T1003",
+        "T1012",
+        "T1021",
+        "T1027",
+        "T1046",
+        "T1059",
+        "T1068",
+        "T1071",
+        "T1071.001",
+        "T1078",
+        "T1078.004",
+        "T1082",
+        "T1087",
+        "T1090",
+        "T1105",
+        "T1110",
+        "T1119",
+        "T1190",
+        "T1203",
+        "T1204",
+        "T1567",
+        "T1567.002",
+        "T1590",
+        "T1593",
+        "T1595"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "head-mare",
+      "reported_only": [
+        "T1059.001",
+        "T1059.003",
+        "T1071.001",
+        "T1082",
+        "T1106",
+        "T1566"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "hellhounds",
+      "reported_only": [
+        "T1021.004",
+        "T1027.002",
+        "T1071.004",
+        "T1078",
+        "T1082",
+        "T1140",
+        "T1190",
+        "T1199",
+        "T1480.001",
+        "T1485",
+        "T1543.002",
+        "T1568.001",
+        "T1568.002"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
       "actor": "hive0137",
       "reported_only": [
         "T1005",
@@ -16571,6 +21647,22 @@
         "T1592.001",
         "T1620",
         "T1622"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "hollowquill",
+      "reported_only": [
+        "T1027.009",
+        "T1036",
+        "T1053.005",
+        "T1055.004",
+        "T1132.001",
+        "T1204.002",
+        "T1497.003",
+        "T1547.001",
+        "T1566.001"
       ],
       "documented_only_count": 0,
       "overlap": 0
@@ -16646,6 +21738,96 @@
       "overlap": 0
     },
     {
+      "actor": "jadepuffer",
+      "reported_only": [
+        "T1005",
+        "T1016",
+        "T1021",
+        "T1041",
+        "T1046",
+        "T1053.003",
+        "T1057",
+        "T1059.006",
+        "T1070.004",
+        "T1071.001",
+        "T1082",
+        "T1083",
+        "T1136",
+        "T1190",
+        "T1485",
+        "T1486",
+        "T1490",
+        "T1530",
+        "T1552.001",
+        "T1555",
+        "T1595"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "karakurt",
+      "reported_only": [
+        "T1048",
+        "T1078",
+        "T1083",
+        "T1133",
+        "T1190",
+        "T1219",
+        "T1566",
+        "T1566.001",
+        "T1567.002",
+        "T1589.001",
+        "T1589.002",
+        "T1591.002"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "larva-208",
+      "reported_only": [
+        "T1005",
+        "T1027",
+        "T1041",
+        "T1059.001",
+        "T1071.001",
+        "T1082",
+        "T1210",
+        "T1213",
+        "T1219",
+        "T1555.003",
+        "T1567.002",
+        "T1608.004"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "lightbasin",
+      "reported_only": [
+        "T1021.001",
+        "T1021.004",
+        "T1027",
+        "T1046",
+        "T1059",
+        "T1059.001",
+        "T1070.004",
+        "T1070.006",
+        "T1071",
+        "T1082",
+        "T1090",
+        "T1105",
+        "T1132.001",
+        "T1133",
+        "T1190",
+        "T1518.001",
+        "T1553.002"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
       "actor": "longnosedgoblin",
       "reported_only": [
         "T1027.013",
@@ -16694,6 +21876,51 @@
       "overlap": 0
     },
     {
+      "actor": "mysterious-elephant",
+      "reported_only": [
+        "T1003",
+        "T1005",
+        "T1020",
+        "T1027",
+        "T1041",
+        "T1048",
+        "T1053",
+        "T1053.005",
+        "T1059",
+        "T1059.001",
+        "T1068",
+        "T1070",
+        "T1078",
+        "T1082",
+        "T1095",
+        "T1105",
+        "T1113",
+        "T1125",
+        "T1189",
+        "T1202",
+        "T1203",
+        "T1204.001",
+        "T1218",
+        "T1218.005",
+        "T1497.001",
+        "T1552",
+        "T1555",
+        "T1555.001",
+        "T1555.003",
+        "T1560",
+        "T1566",
+        "T1566.001",
+        "T1566.002",
+        "T1567.002",
+        "T1573",
+        "T1583.001",
+        "T1620",
+        "T1622"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
       "actor": "noname057-16",
       "reported_only": [
         "T1071.001",
@@ -16709,25 +21936,123 @@
       "overlap": 0
     },
     {
+      "actor": "operation-cobalt-whisper",
+      "reported_only": [
+        "T1033",
+        "T1053.005",
+        "T1055.002",
+        "T1059.005",
+        "T1071.001",
+        "T1204.002",
+        "T1566.001"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "orova",
+      "reported_only": [
+        "T1021",
+        "T1040",
+        "T1071.001",
+        "T1078",
+        "T1140",
+        "T1486",
+        "T1490",
+        "T1547",
+        "T1550"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "phantomcontrol",
+      "reported_only": [
+        "T1055.012",
+        "T1547.001"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
       "actor": "plushdaemon",
       "reported_only": [
+        "T1005",
+        "T1008",
+        "T1012",
         "T1016",
+        "T1016.002",
+        "T1020",
+        "T1027.007",
         "T1027.009",
         "T1027.013",
+        "T1033",
         "T1036.005",
         "T1036.008",
+        "T1041",
         "T1057",
+        "T1059.003",
+        "T1059.006",
         "T1070.004",
         "T1071.001",
+        "T1071.004",
+        "T1074.001",
+        "T1082",
+        "T1083",
+        "T1090",
+        "T1095",
+        "T1104",
+        "T1105",
         "T1106",
+        "T1112",
+        "T1113",
+        "T1120",
+        "T1123",
+        "T1125",
+        "T1132.001",
+        "T1190",
+        "T1195.002",
+        "T1217",
+        "T1219",
+        "T1222.001",
+        "T1518",
         "T1518.001",
+        "T1547.001",
+        "T1547.004",
+        "T1553.002",
+        "T1560.002",
         "T1573",
+        "T1573.001",
         "T1583.001",
         "T1583.002",
         "T1583.004",
+        "T1588.001",
+        "T1588.002",
+        "T1588.003",
+        "T1588.005",
         "T1608.001",
+        "T1608.002",
+        "T1614",
         "T1659",
         "T1665"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "prolific-puma",
+      "reported_only": [
+        "T1041",
+        "T1046",
+        "T1059.004",
+        "T1070.004",
+        "T1083",
+        "T1105",
+        "T1486",
+        "T1489",
+        "T1491.001",
+        "T1568.002",
+        "T1570"
       ],
       "documented_only_count": 0,
       "overlap": 0
@@ -16802,6 +22127,7 @@
         "T1074.001",
         "T1074.002",
         "T1078",
+        "T1078.003",
         "T1078.004",
         "T1082",
         "T1083",
@@ -17011,20 +22337,29 @@
         "T1012",
         "T1016",
         "T1021",
+        "T1027.001",
+        "T1027.002",
         "T1027.007",
+        "T1027.011",
         "T1027.013",
         "T1036.001",
         "T1041",
+        "T1053.005",
+        "T1059.007",
+        "T1068",
         "T1069",
         "T1071.001",
         "T1082",
         "T1083",
         "T1087",
+        "T1112",
         "T1113",
         "T1114.001",
         "T1135",
         "T1185",
+        "T1189",
         "T1204.002",
+        "T1219",
         "T1480",
         "T1482",
         "T1497",
@@ -17032,18 +22367,75 @@
         "T1546.015",
         "T1547.001",
         "T1552.001",
+        "T1553.002",
         "T1555.003",
         "T1560",
+        "T1565",
         "T1566.001",
+        "T1566.002",
+        "T1571",
         "T1572",
         "T1573.002",
+        "T1574.001",
         "T1583",
+        "T1583.008",
         "T1587.001",
         "T1587.004",
+        "T1588.003",
         "T1588.005",
         "T1588.006",
         "T1608",
         "T1614",
+        "T1622",
+        "T1657"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "ruskinet",
+      "reported_only": [
+        "T1041",
+        "T1048.003",
+        "T1059",
+        "T1068",
+        "T1070.004",
+        "T1136",
+        "T1190",
+        "T1203",
+        "T1491.001",
+        "T1499",
+        "T1547.001",
+        "T1566.001",
+        "T1583.001",
+        "T1583.006",
+        "T1589",
+        "T1595"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "scattered-lapsus-hunters",
+      "reported_only": [
+        "T1003.003",
+        "T1046",
+        "T1078.002",
+        "T1087",
+        "T1114.003",
+        "T1134",
+        "T1190",
+        "T1219",
+        "T1486",
+        "T1528",
+        "T1552.005",
+        "T1555.003",
+        "T1566.004",
+        "T1567.002",
+        "T1589.002",
+        "T1593",
+        "T1621",
+        "T1650",
         "T1657"
       ],
       "documented_only_count": 0,
@@ -17097,6 +22489,25 @@
         "T1583.008",
         "T1587.001",
         "T1608.001"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "sharppanda",
+      "reported_only": [
+        "T1006",
+        "T1016",
+        "T1027",
+        "T1053",
+        "T1071",
+        "T1082",
+        "T1105",
+        "T1203",
+        "T1204",
+        "T1497",
+        "T1518",
+        "T1566"
       ],
       "documented_only_count": 0,
       "overlap": 0
@@ -18598,6 +24009,40 @@
       "overlap": 0
     },
     {
+      "actor": "tag-124",
+      "reported_only": [
+        "T1583.001",
+        "T1583.003",
+        "T1583.004",
+        "T1584.001",
+        "T1587.001",
+        "T1608.004"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "team46",
+      "reported_only": [
+        "T1020",
+        "T1041",
+        "T1055.012",
+        "T1056.001",
+        "T1071",
+        "T1083",
+        "T1090.004",
+        "T1115",
+        "T1132.001",
+        "T1187",
+        "T1204.002",
+        "T1566.002",
+        "T1573.001",
+        "T1573.002"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
       "actor": "the-gentlemen",
       "reported_only": [
         "T1014",
@@ -18648,6 +24093,33 @@
         "T1552",
         "T1569.002",
         "T1685"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "thewizards",
+      "reported_only": [
+        "T1027.007",
+        "T1027.009",
+        "T1027.014",
+        "T1055",
+        "T1055.004",
+        "T1059.003",
+        "T1082",
+        "T1095",
+        "T1105",
+        "T1106",
+        "T1112",
+        "T1124",
+        "T1480.002",
+        "T1518.001",
+        "T1573.001",
+        "T1583.001",
+        "T1583.004",
+        "T1587.001",
+        "T1588.002",
+        "T1659"
       ],
       "documented_only_count": 0,
       "overlap": 0
@@ -19049,6 +24521,20 @@
       "overlap": 0
     },
     {
+      "actor": "uac-0118",
+      "reported_only": [
+        "T1083",
+        "T1134",
+        "T1222",
+        "T1222.001",
+        "T1485",
+        "T1529",
+        "T1680"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
       "actor": "uac-0226",
       "reported_only": [
         "T1005",
@@ -19071,6 +24557,68 @@
         "T1564.004",
         "T1566.001",
         "T1573.001"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "uat-8099",
+      "reported_only": [
+        "T1003",
+        "T1005",
+        "T1007",
+        "T1049",
+        "T1057",
+        "T1059.003",
+        "T1083",
+        "T1098",
+        "T1133",
+        "T1136.001",
+        "T1496",
+        "T1528",
+        "T1548",
+        "T1560",
+        "T1649"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "unc3890",
+      "reported_only": [
+        "T1041",
+        "T1053",
+        "T1053.005",
+        "T1056",
+        "T1056.001",
+        "T1056.003",
+        "T1059",
+        "T1059.001",
+        "T1059.003",
+        "T1071",
+        "T1071.001",
+        "T1078",
+        "T1102",
+        "T1102.002",
+        "T1105",
+        "T1199",
+        "T1204",
+        "T1204.002",
+        "T1219",
+        "T1543",
+        "T1543.003",
+        "T1555",
+        "T1555.003",
+        "T1566",
+        "T1566.002",
+        "T1567",
+        "T1569",
+        "T1569.002",
+        "T1572",
+        "T1587",
+        "T1587.001",
+        "T1588",
+        "T1588.002"
       ],
       "documented_only_count": 0,
       "overlap": 0
@@ -19412,6 +24960,51 @@
       "overlap": 0
     },
     {
+      "actor": "ung0002",
+      "reported_only": [
+        "T1005",
+        "T1027",
+        "T1027.002",
+        "T1041",
+        "T1053.005",
+        "T1056",
+        "T1059",
+        "T1059.005",
+        "T1071.001",
+        "T1082",
+        "T1105",
+        "T1140",
+        "T1189",
+        "T1202",
+        "T1218",
+        "T1566.001",
+        "T1574.001",
+        "T1583.001",
+        "T1583.006",
+        "T1587",
+        "T1598.002"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
+      "actor": "ung0901",
+      "reported_only": [
+        "T1005",
+        "T1036",
+        "T1041",
+        "T1059.001",
+        "T1071.001",
+        "T1082",
+        "T1218.011",
+        "T1482",
+        "T1537",
+        "T1566.001"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
       "actor": "unnamed-group",
       "reported_only": [
         "T1005",
@@ -19429,13 +25022,26 @@
     {
       "actor": "uta0178",
       "reported_only": [
+        "T1003",
         "T1003.003",
+        "T1005",
+        "T1007",
+        "T1020",
         "T1021.001",
         "T1021.004",
+        "T1027",
         "T1036",
         "T1036.004",
+        "T1036.008",
         "T1037",
+        "T1039",
         "T1041",
+        "T1046",
+        "T1055.002",
+        "T1056.003",
+        "T1057",
+        "T1059",
+        "T1069.002",
         "T1070.004",
         "T1070.006",
         "T1071.001",
@@ -19455,9 +25061,14 @@
         "T1213",
         "T1213.002",
         "T1505.003",
+        "T1518.001",
         "T1530",
+        "T1547",
         "T1548.003",
         "T1550.001",
+        "T1552.001",
+        "T1555",
+        "T1556.002",
         "T1560.001",
         "T1564.006",
         "T1572",
@@ -19802,6 +25413,44 @@
       "overlap": 0
     },
     {
+      "actor": "warp-panda",
+      "reported_only": [
+        "T1021.004",
+        "T1036.004",
+        "T1041",
+        "T1070.004",
+        "T1070.006",
+        "T1071.001",
+        "T1071.004",
+        "T1078.001",
+        "T1078.004",
+        "T1083",
+        "T1090",
+        "T1090.003",
+        "T1095",
+        "T1098.001",
+        "T1114.002",
+        "T1190",
+        "T1213",
+        "T1213.002",
+        "T1505.003",
+        "T1530",
+        "T1550.001",
+        "T1560.001",
+        "T1564.006",
+        "T1572",
+        "T1573.002",
+        "T1583.001",
+        "T1583.003",
+        "T1583.007",
+        "T1584.008",
+        "T1588.001",
+        "T1608.003"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
       "actor": "water-barghest",
       "reported_only": [
         "T1082",
@@ -19822,28 +25471,86 @@
       "overlap": 0
     },
     {
+      "actor": "water-makara",
+      "reported_only": [
+        "T1036.008",
+        "T1059.007",
+        "T1204.002",
+        "T1218.005",
+        "T1566.001",
+        "T1568.002"
+      ],
+      "documented_only_count": 0,
+      "overlap": 0
+    },
+    {
       "actor": "webworm",
       "reported_only": [
         "T1003.001",
         "T1003.002",
         "T1007",
+        "T1008",
         "T1016",
         "T1021.002",
+        "T1027.001",
+        "T1027.002",
+        "T1033",
+        "T1036.004",
+        "T1036.005",
+        "T1040",
+        "T1053.002",
+        "T1053.005",
+        "T1055",
+        "T1055.001",
         "T1055.012",
+        "T1056.001",
         "T1057",
         "T1059.001",
         "T1059.003",
+        "T1059.005",
+        "T1068",
+        "T1069.002",
         "T1071",
+        "T1071.001",
+        "T1071.004",
         "T1072",
+        "T1078.002",
+        "T1082",
+        "T1083",
         "T1087.001",
+        "T1087.002",
+        "T1090.001",
         "T1095",
+        "T1102.002",
+        "T1105",
+        "T1106",
+        "T1112",
+        "T1119",
+        "T1132.001",
         "T1140",
+        "T1197",
+        "T1218.011",
         "T1543.003",
+        "T1546.015",
+        "T1547.001",
+        "T1548.002",
+        "T1553.002",
         "T1555.003",
         "T1556.002",
+        "T1560.001",
+        "T1564.001",
+        "T1566.001",
+        "T1566.002",
+        "T1569.002",
+        "T1571",
+        "T1572",
+        "T1573.001",
         "T1574",
         "T1583.001",
-        "T1583.004"
+        "T1583.004",
+        "T1595.002",
+        "T1614.001",
+        "T1620"
       ],
       "documented_only_count": 0,
       "overlap": 0
@@ -19882,18 +25589,30 @@
         "T1012",
         "T1016",
         "T1018",
+        "T1027",
+        "T1036",
+        "T1041",
         "T1046",
+        "T1053.005",
         "T1056.001",
         "T1059.001",
+        "T1071",
         "T1078.002",
         "T1083",
         "T1087",
+        "T1095",
+        "T1106",
+        "T1204.001",
         "T1204.002",
         "T1547.001",
         "T1552.001",
         "T1560.001",
+        "T1566.001",
         "T1567.002",
-        "T1589.002"
+        "T1589.002",
+        "T1590",
+        "T1590.005",
+        "T1595"
       ],
       "documented_only_count": 0,
       "overlap": 0
@@ -19962,20 +25681,20 @@
     },
     {
       "name": "talos",
-      "last_success": "2026-10-01",
-      "record_count": 15,
+      "last_success": "2026-10-02",
+      "record_count": 17,
       "stale": false
     },
     {
       "name": "eset",
-      "last_success": "2026-10-01",
+      "last_success": "2026-10-02",
       "record_count": 23,
       "stale": false
     },
     {
       "name": "microsoftblog",
-      "last_success": "2026-10-01",
-      "record_count": 10,
+      "last_success": "2026-10-02",
+      "record_count": 13,
       "stale": false
     }
   ],

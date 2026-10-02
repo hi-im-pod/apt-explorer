@@ -120,8 +120,26 @@
   "techniques_documented": [],
   "techniques_reported": [],
   "cves": [],
-  "timeline": [],
-  "reports": [],
+  "timeline": [
+    {
+      "quarter": "2011-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2013-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "13b1ef05fe2f82ebaa552a2f7bbe00b1dd19a71a",
+    "e07f88d2754985ce52665a5ad48c202706d4ec9f",
+    "254132938c6ff6eeaa5e3b1e8d8d506472c028b7",
+    "deb92a55dffa951697d3367750df2cf8e4480f8f"
+  ],
   "conflicts": [],
   "evidence_count": 0
 }

@@ -20,9 +20,22 @@
   "malware": [],
   "techniques_documented": [],
   "techniques_reported": [],
-  "cves": [],
-  "timeline": [],
-  "reports": [],
+  "cves": [
+    {
+      "cve": "CVE-2025-2783",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2025-Q1",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "3d93cbbcdf97ec223d5c791ed4c7f0fb0ee26f1e"
+  ],
   "conflicts": [],
   "evidence_count": 1
 }

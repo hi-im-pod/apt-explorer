@@ -19,10 +19,62 @@
   },
   "malware": [],
   "techniques_documented": [],
-  "techniques_reported": [],
+  "techniques_reported": [
+    {
+      "id": "T1003",
+      "count": 2
+    },
+    {
+      "id": "T1078",
+      "count": 2
+    },
+    {
+      "id": "T1098",
+      "count": 2
+    },
+    {
+      "id": "T1190",
+      "count": 2
+    },
+    {
+      "id": "T1486",
+      "count": 2
+    },
+    {
+      "id": "T1550.002",
+      "count": 2
+    },
+    {
+      "id": "T1563.001",
+      "count": 2
+    },
+    {
+      "id": "T1563.002",
+      "count": 2
+    },
+    {
+      "id": "T1567",
+      "count": 2
+    },
+    {
+      "id": "T1598.002",
+      "count": 2
+    }
+  ],
   "cves": [],
-  "timeline": [],
-  "reports": [],
+  "timeline": [
+    {
+      "quarter": "2026-Q2",
+      "count": 5
+    }
+  ],
+  "reports": [
+    "9a415a67984b4776e7f3340bf27fa9f56f7412cf",
+    "d58bd89ca2f329a743f46d9f8731d93ba7298d87",
+    "04ecfaec730c3be623cdc89466087e67b5c6cedf",
+    "4a340383012fb6806c4430de5f1e3b01501e323a",
+    "e001eac821f12458392d95766a5d57c5cb3397f8"
+  ],
   "conflicts": [],
   "evidence_count": 1
 }

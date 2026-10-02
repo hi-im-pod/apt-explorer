@@ -332,8 +332,8 @@
 	{/if}
 	<h3>Actors named in a title</h3>
 	<p>
-		The Microsoft, Talos and ESET blogs, The DFIR Report and ORKL are link-only, so the site keeps no
-		post text. It can still read the title it shows. When that title contains the name of an
+		The site keeps no post text from the Microsoft, Talos and ESET blogs, The DFIR Report or ORKL.
+		It can still read the title it shows. When that title contains the name of an
 		actor that has a page here, the report is linked to that actor, and the report panel lists
 		it under "Named in the title", apart from the actors a source tags. The paper's own report
 		titles are read the same way. ORKL's actor tags are still never shown or used for these links.
@@ -344,6 +344,25 @@
 		and the names of malware that a title can mention without being about the actor. A missing
 		link is a better error than a wrong one. A title is the publisher's own statement, but it is
 		weaker than a tag, and it can name an actor in passing.
+	</p>
+	<h3>Names a vendor post states</h3>
+	<p>
+		A vendor names an actor differently from everyone else, so a post titled with the vendor's
+		label, such as Storm-3168, can miss the report that uses the actor's own name. The Microsoft,
+		Talos and ESET blogs often say outright that two names are one actor, as in "JadePuffer, tracked by
+		Microsoft as Storm-3168". The pipeline reads each post's text in memory for phrases that equate two
+		names, such as "also known as", "tracked as" and "a.k.a.", then keeps the two names and drops the
+		sentence. Phrases such as "overlaps with" and "similar to" are not read, because they say the two
+		are different.
+	</p>
+	<p>
+		A stated pair is used in two cases. When one name is an actor this site already publishes, the
+		other becomes an alias of that actor. When neither name is known, the pair adds a new actor only
+		if one name is a vendor cluster label such as Storm-3168 or UNC2452 and the name guesser calls
+		both names an actor. The guesser alone is not enough, because it calls almost any capitalised
+		name an actor, malware families included. A pair is never used to join two actors the sources
+		keep apart, or to turn a malware family into an actor. The rule is provisional, and every alias
+		it adds carries the blog's source badge.
 	</p>
 </section>
 

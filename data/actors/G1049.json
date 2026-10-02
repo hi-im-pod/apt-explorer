@@ -706,7 +706,32 @@
       "ransomware": true
     },
     {
+      "cve": "CVE-2024-21338",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-38106",
+      "kev": true,
+      "ransomware": false
+    },
+    {
       "cve": "CVE-2024-38193",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2024-4947",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2024-5274",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2024-7971",
       "kev": true,
       "ransomware": false
     },
@@ -728,12 +753,20 @@
   ],
   "timeline": [
     {
+      "quarter": "2019-Q1",
+      "count": 2
+    },
+    {
       "quarter": "2022-Q2",
-      "count": 1
+      "count": 5
+    },
+    {
+      "quarter": "2023-Q1",
+      "count": 3
     },
     {
       "quarter": "2024-Q3",
-      "count": 1
+      "count": 2
     },
     {
       "quarter": "2024-Q4",
@@ -757,18 +790,22 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 3
+      "count": 6
     },
     {
       "quarter": "2026-Q3",
-      "count": 1
+      "count": 2
     }
   ],
   "reports": [
+    "3042e2dbd28723fe6ea76b7032c26358893758cc",
     "2b64e553d6096610324d2fe093130c330bb68fd7",
+    "029bf6b2c39eb2f383430ff91aff23e1ad7168a3",
     "300cd46b5e5a3d24e13f3a24293e336393753472",
     "6cdadb8ce579931ddaef19f9f0a8564f296f5764",
+    "9541733b25f80be3f7ce6f1f1cc080d878199d50",
     "ad9e4f7adc2f7811d5076af75920df2e7cf44295",
+    "b1c475fc1375b007a6bc93982d2c1e5f7d8cab5b",
     "a750aecc1f31e94389d47528fd86f91d344daba4",
     "520c03e377f6fa57eadac06ad1f0ddd1ae301bac",
     "5dd93c9f77a37e72459e7bf5fb94f9849e677a21",
@@ -777,7 +814,17 @@
     "311a9b40ed193e8fc9b816af46980ce582f02045",
     "7f124ced5727f5311a3ec61438ed9926556ce38e",
     "57ea89f6a6bc1c614112b01e31a6bbd6d68fe346",
-    "paper:AA22-108A%20TraderTraitor%20North%20Korean%20State-Sponsored%20%20APT%20Targets%20Blockchain%20Companies%20(PDF)"
+    "59f6074eedfe0f5dcb0c6e4054b6baaac0568587",
+    "e9325a67d4681c8cdfc1e2a18783142e2e74826c",
+    "2a3132b356393fb5ac433f1b17f2d59aff8341d2",
+    "e7533ec7f90bd08ee99f8ce908dd6ce7d19f863d",
+    "011ead2314a6284bbe3826d5632a1c8f3aa6a6f3",
+    "49f91b6196d02311aa43b5c72bbd28b7d1d3b905",
+    "8ef7d2d848ee57f0155a71bf24aa20a16ba7b995",
+    "94b43b07b6113aa5c4530d9fc69b62f1e2a9086a",
+    "paper:AA22-108A%20TraderTraitor%20North%20Korean%20State-Sponsored%20%20APT%20Targets%20Blockchain%20Companies%20(PDF)",
+    "945d5aa87d4b390615a49a23961dac1a1d3cb558",
+    "fbad8df2abd0b5873afd9f89431e064caca83e38"
   ],
   "conflicts": [],
   "evidence_count": 14

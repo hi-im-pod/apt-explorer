@@ -151,10 +151,183 @@
     "T1555.004",
     "T1573.001"
   ],
-  "techniques_reported": [],
+  "techniques_reported": [
+    {
+      "id": "T1005",
+      "count": 2
+    },
+    {
+      "id": "T1027",
+      "count": 2
+    },
+    {
+      "id": "T1041",
+      "count": 2
+    },
+    {
+      "id": "T1106",
+      "count": 2
+    },
+    {
+      "id": "T1112",
+      "count": 2
+    },
+    {
+      "id": "T1140",
+      "count": 2
+    },
+    {
+      "id": "T1007",
+      "count": 1
+    },
+    {
+      "id": "T1008",
+      "count": 1
+    },
+    {
+      "id": "T1012",
+      "count": 1
+    },
+    {
+      "id": "T1016",
+      "count": 1
+    },
+    {
+      "id": "T1020",
+      "count": 1
+    },
+    {
+      "id": "T1033",
+      "count": 1
+    },
+    {
+      "id": "T1036",
+      "count": 1
+    },
+    {
+      "id": "T1047",
+      "count": 1
+    },
+    {
+      "id": "T1053",
+      "count": 1
+    },
+    {
+      "id": "T1057",
+      "count": 1
+    },
+    {
+      "id": "T1059",
+      "count": 1
+    },
+    {
+      "id": "T1059.003",
+      "count": 1
+    },
+    {
+      "id": "T1070.004",
+      "count": 1
+    },
+    {
+      "id": "T1071.001",
+      "count": 1
+    },
+    {
+      "id": "T1074",
+      "count": 1
+    },
+    {
+      "id": "T1082",
+      "count": 1
+    },
+    {
+      "id": "T1090",
+      "count": 1
+    },
+    {
+      "id": "T1105",
+      "count": 1
+    },
+    {
+      "id": "T1134",
+      "count": 1
+    },
+    {
+      "id": "T1197",
+      "count": 1
+    },
+    {
+      "id": "T1204.002",
+      "count": 1
+    },
+    {
+      "id": "T1218.011",
+      "count": 1
+    },
+    {
+      "id": "T1480.001",
+      "count": 1
+    },
+    {
+      "id": "T1518",
+      "count": 1
+    },
+    {
+      "id": "T1518.001",
+      "count": 1
+    },
+    {
+      "id": "T1546.003",
+      "count": 1
+    },
+    {
+      "id": "T1573.001",
+      "count": 1
+    },
+    {
+      "id": "T1583.001",
+      "count": 1
+    },
+    {
+      "id": "T1583.003",
+      "count": 1
+    },
+    {
+      "id": "T1587.001",
+      "count": 1
+    },
+    {
+      "id": "T1588.003",
+      "count": 1
+    },
+    {
+      "id": "T1620",
+      "count": 1
+    }
+  ],
   "cves": [
     {
       "cve": "CVE-2010-3333",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2016-0165",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2016-1010",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2016-3393",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2016-4171",
       "kev": true,
       "ransomware": false
     },
@@ -172,6 +345,26 @@
       "cve": "CVE-2016-4657",
       "kev": true,
       "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-8453",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-8611",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-0797",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2025-33053",
+      "kev": true,
+      "ransomware": false
     }
   ],
   "timeline": [
@@ -185,11 +378,17 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 1
+      "count": 7
     }
   ],
   "reports": [
+    "0e8d39dc67c1d1c2d8fe5b1422fa40ec8c95c062",
     "1a19f18f1318931bce9d649307030e643ea25e68",
+    "62a20ed01648ec5a644894b87643d6265571f94b",
+    "8a0f5da9a44cc0b3e55970d8286dd6d668a52f90",
+    "a9acd781af1754971fa93253a8d65f4d99c0d45a",
+    "e3e73abbc8fb87df552c21a40867605d32ab0397",
+    "f9977a1b43af34af32ab5dc6053f521b58f99816",
     "32c2e322e6e97466dc82e81fc94acc14eee10192",
     "6060d8839dc4054fd3d57b2935eb79b2876f75d6"
   ],

@@ -1538,6 +1538,11 @@
       "ransomware": false
     },
     {
+      "cve": "CVE-2014-6352",
+      "kev": true,
+      "ransomware": false
+    },
+    {
       "cve": "CVE-2014-8439",
       "kev": true,
       "ransomware": false
@@ -1546,6 +1551,11 @@
       "cve": "CVE-2015-1641",
       "kev": true,
       "ransomware": false
+    },
+    {
+      "cve": "CVE-2015-1701",
+      "kev": true,
+      "ransomware": true
     },
     {
       "cve": "CVE-2015-1770",
@@ -1631,6 +1641,16 @@
       "cve": "CVE-2016-4117",
       "kev": true,
       "ransomware": true
+    },
+    {
+      "cve": "CVE-2016-5165",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2016-5195",
+      "kev": true,
+      "ransomware": false
     },
     {
       "cve": "CVE-2017-0199",
@@ -2488,6 +2508,11 @@
       "ransomware": true
     },
     {
+      "cve": "CVE-2022-37969",
+      "kev": true,
+      "ransomware": true
+    },
+    {
       "cve": "CVE-2022-41080",
       "kev": true,
       "ransomware": true
@@ -2538,6 +2563,11 @@
       "ransomware": true
     },
     {
+      "cve": "CVE-2023-23376",
+      "kev": true,
+      "ransomware": true
+    },
+    {
       "cve": "CVE-2023-23397",
       "kev": true,
       "ransomware": false
@@ -2559,6 +2589,11 @@
     },
     {
       "cve": "CVE-2023-27997",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-28252",
       "kev": true,
       "ransomware": true
     },
@@ -2710,35 +2745,43 @@
     },
     {
       "quarter": "2015-Q1",
-      "count": 1
+      "count": 4
     },
     {
       "quarter": "2015-Q3",
-      "count": 1
+      "count": 3
+    },
+    {
+      "quarter": "2016-Q1",
+      "count": 3
     },
     {
       "quarter": "2016-Q2",
       "count": 1
     },
     {
-      "quarter": "2016-Q4",
+      "quarter": "2016-Q3",
       "count": 1
+    },
+    {
+      "quarter": "2016-Q4",
+      "count": 2
     },
     {
       "quarter": "2017-Q1",
-      "count": 2
+      "count": 5
     },
     {
       "quarter": "2017-Q2",
-      "count": 4
+      "count": 5
     },
     {
       "quarter": "2017-Q3",
-      "count": 1
+      "count": 2
     },
     {
       "quarter": "2017-Q4",
-      "count": 2
+      "count": 4
     },
     {
       "quarter": "2018-Q1",
@@ -2750,7 +2793,7 @@
     },
     {
       "quarter": "2018-Q3",
-      "count": 3
+      "count": 5
     },
     {
       "quarter": "2018-Q4",
@@ -2762,11 +2805,11 @@
     },
     {
       "quarter": "2019-Q2",
-      "count": 11
+      "count": 15
     },
     {
       "quarter": "2019-Q3",
-      "count": 1
+      "count": 3
     },
     {
       "quarter": "2019-Q4",
@@ -2782,7 +2825,7 @@
     },
     {
       "quarter": "2020-Q3",
-      "count": 18
+      "count": 20
     },
     {
       "quarter": "2020-Q4",
@@ -2794,7 +2837,7 @@
     },
     {
       "quarter": "2021-Q2",
-      "count": 58
+      "count": 61
     },
     {
       "quarter": "2021-Q3",
@@ -2850,7 +2893,7 @@
     },
     {
       "quarter": "2024-Q4",
-      "count": 12
+      "count": 13
     },
     {
       "quarter": "2025-Q1",
@@ -2874,7 +2917,7 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 9
+      "count": 12
     },
     {
       "quarter": "2026-Q3",
@@ -2888,8 +2931,11 @@
     "044f17d2b0b222b8bf06787200d521bc2ac26d86",
     "2714442444754db767799b8702e99df7327c5556",
     "748f9be92f6186781f2f4882175bb2cf773e518c",
+    "7b791dbf7a70a1a0d81056d383c752d2d858b5d7",
     "7ebe87146d492bcc5403dc80e26c230457c6a507",
     "91f205ec2b0e19eb9e1b2a0006019960d1868e5a",
+    "af5382a738e0ba6828563f846abc64453866376c",
+    "e1e88bfe3d6b5b483692d31f0518c4571bd542ee",
     "e6f9047c696ca88a8516eb34501e08ce57e0b106",
     "fe52dee64e719ea763f6e8b485eb690cd77c5290",
     "70c74bb1af2ec467700132b6d52e74538abdf0cf",
@@ -2928,6 +2974,7 @@
     "5db18b94a6e016493e08356ce09dd6d6ee7dbdd1",
     "b2fcc8df93282696196d20c2c84266dcaf293c35",
     "61622eb1a446462e09d1d72284314820c3198578",
+    "f5be6d41943b1acbd1ce5c55d970e900593acdf3",
     "40b30a63e7740f48d3db9a6825bc38db41641d0d",
     "c598373141fe9cd22af62ce83df294f66661eedd",
     "a10c709b14126378d3f8d56b9ef1898f8c261cbd",
@@ -3378,7 +3425,9 @@
     "913f0063d12fcf2caea5ff7b9757f2e093d7a1d3",
     "a9c4c67a8b0ee1573b20b31467145049d39216b5",
     "70cb67abeca8116b4097aa5b7f23ee01f5626d6f",
+    "2f724ea21224fa7fd1450da8ddef6e35d7059980",
     "62b31028930669c8edb852457314ad2aa6b3a521",
+    "a1c9fcac08d8fd9cfb76080a83aa694e4d6e7b70",
     "0ba1f2de8fff45674c76ba94ef6f45916cb02838",
     "432eaf15aadacac0fdd7b5e0f497b3cb552e3ed8",
     "727123751d4b0ce36795c4bf15f08f2e62b1bb76",
@@ -3417,6 +3466,7 @@
     "adf535b4db699630baf7c7605a9f8e5523d5d08f",
     "7b809e9703d64b08d9f13fea0f9e4ab16167f8e0",
     "35a60ac1f374a9784d4594f0ff7fec04531afc35",
+    "b739a0449f8708bfa457175dd6ad7a75d63c8b90",
     "37be476f12b6aeec889357490879bdba0e2c8231",
     "71075ae026e71c5a64fdef54478f66d64aa8e901",
     "d345e0b88df00d0b7565f20f16d8ac07fb736d00",
@@ -3520,10 +3570,12 @@
     "18d9bae2981f45046835347429f8a07088dd7887",
     "e206d38ab09e09cf9821d1d49045fa5f4ea2a50b",
     "cd55169258de5e40a997dde40524859403264c9e",
+    "f60783926da05ba81e9780327e6a2596bbf6760f",
     "df19e4d3f18b8c389900656e605805bba4656a14",
     "6a69ee59f3367889738d04e4802efb3a166ca2d8",
     "c85ee6fab483929a087e59a11d299dd597c69570",
     "c18d3a77b57b75a9f941ee88e8267120b9465f07",
+    "b27768f53e5a614b9aedefa624921deb14c399b5",
     "8523f13281f31e2c6b8a51b7f56268100a533c69",
     "75ce802fc0723328a492651833c43e1f274c4a87",
     "7e5436a96c5443aabe0d8cccfe494e4517aa42b0",
@@ -3566,6 +3618,8 @@
     "a1e695e9787e11f85b3c078601dd011cf6e5b475",
     "7e7421266f14e54dd74b8f644383dcab2295643c",
     "72fd9c6eb05ac339aace5c8771b6da7ef8de688b",
+    "9468ff9d1bc06b4c9f187e4ab55ae485750d6c5b",
+    "98775eb539a512859a786f6292cc6f6db04916b2",
     "71083d94086c266f9a5ddb48deb74ab91308a85d",
     "1b22d34782cd0151a5d776f27352589c2df3ad7a",
     "paper:An%20APT%20Blueprint%20Gaining%20New%20Visibility%20into%20Financial%20Threats",
@@ -3573,7 +3627,11 @@
     "4b75f585b8ff8f6c826fb2d2cac3bfd52b633c01",
     "9e16dd26cc89fa9f4c871cdc60ba552b01e86db8",
     "d87ad4f477186057c7943cc45ad163cfd45f6ba2",
+    "7de0fbb852cc5be3fce91725a1b0aeb9abe3a43b",
     "paper:Sea%20Lotus%20APT%20organization's%20attack%20techniques%20against%20China%20in%20the%20first%20quarter%20of%202019%20revealed",
+    "45f6f8e4083506c34159f31c2fefd1d93e9b590b",
+    "d0506df85bd5faf87a4a67e6affcde4ce9dda48f",
+    "d686d9d7596d3bb1697aee1841d770f90f7df982",
     "5be619397f2620f04c1da265d64104913ff07701",
     "c3b5b9a94d74e8fe4c2d76882ab6d7dcb17524d5",
     "a0fe7b3d93f31f4b3c43555c0a853e2ab892bd8d",
@@ -3588,25 +3646,44 @@
     "fe6b4819bbf4b7b5c664def98fb930d9f8ec1e5e",
     "6a34208ac703c1fb4633ba448fb78bc79eb3ae19",
     "e15f7532efb0ef38750132b7300d5b0e8c8960b6",
+    "05afe2ddb7ee4ca32988e7f841d182f25d862c41",
+    "805a2c0666ee96476ab824c78032d3eca3cf5a89",
     "60424b447beb8798de1d15675baeef3f36a589a2",
     "332752e71bda8d3da3eba84ee6d6ba829bf1eafb",
     "c1b7c2bec86e8edf8bba650c6fa506319198e3c3",
     "1c8e61b3f0589bbbbbc85b0e94bbfe4c9ddbe11f",
     "3521306f97b7e1656871b6e95ef9d02d72be1d0f",
     "2a8dd227c58b7bc6a83f21f1947198ca7fcacc79",
+    "06c63b54de2848bff9557bc9c49bf75906273fb2",
+    "54fb362a0c807a40c4d0a0bc35bde59ed84f0f98",
     "480644fd3f8d7038109dfa8d211ce09d5e09496e",
     "46e511b8438266866b8baa20ea39337bcf9ccaec",
     "593ca46381c0802486e51d32f10b1726af4abab5",
+    "6ca19dd5d60b05d9ad0a1817f6bd071ef4f02fb1",
     "5d15daca1c572e35217e821461e69ff0369078ad",
+    "62c2ad292705cf6714a93f82625fed4a5fa340f5",
     "6fc906897c5820e13db9717e4f62cbfd1dea8e75",
     "a4d255a5acc56a1f8203364db0f65d781328a1af",
     "072218900503798227d428dfbb797f8c1fd5e395",
     "35dca219989c2e1ff1625e047454381f4625dae5",
     "c38b1d51363d56d47ee4794f35f8e1e665403dfd",
+    "c5d51aa7c50818c5981fb74368a3a8e63e18cf15",
+    "e1db2196ab704524b98e7706ce3566a9e030051e",
+    "b7dc94c416b4e9c080448f76a9cfbdfd211c1a8c",
     "bfe1b8233b454139f91e6332de0b608cceb73cb0",
+    "35f1522128ae21490cc812f5929b961fe0cbdf5c",
+    "8dcd6158f82898310af73d9fbeae8e626dbfdb7b",
     "aa0f49e2902cdde49e5ac0fb0e0a4602d35a0462",
+    "65fc9d406cde5d3458817e0c2da702ed7f7f4eaa",
+    "bca963b1781629c7cce4aacd8ebc21cbedc6512b",
+    "ce79d14d80cd8b7850284801a7ed469035eb1c62",
     "3ab65d4a2a006403474d0471441ac295955e31dd",
+    "608cb9d67d1afa94db103e549c2442e5e9fc7788",
+    "9666783a96ea6ed4a2859848bd3fb99c75798d85",
+    "1791883bc5093ded0c68a033964c0f659f749c02",
+    "2b48767adb8cf497d8ea235e224cde9d4fa2af04",
     "7d4f77e0ed23b61a33a96469a8c5d411ca1aac01",
+    "99af231600ee8fd83b4b4fb057429e60cd9d21c4",
     "58c9be6ce39d271b69c9dd3314c77326a6d8f955"
   ],
   "conflicts": [

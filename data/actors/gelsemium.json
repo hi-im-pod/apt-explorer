@@ -310,11 +310,21 @@
       "count": 1
     }
   ],
-  "cves": [],
+  "cves": [
+    {
+      "cve": "CVE-2022-21999",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
   "timeline": [
     {
       "quarter": "2018-Q3",
       "count": 1
+    },
+    {
+      "quarter": "2021-Q2",
+      "count": 2
     },
     {
       "quarter": "2021-Q4",
@@ -322,7 +332,7 @@
     },
     {
       "quarter": "2022-Q2",
-      "count": 1
+      "count": 2
     },
     {
       "quarter": "2024-Q4",
@@ -331,13 +341,21 @@
     {
       "quarter": "2025-Q3",
       "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
     }
   ],
   "reports": [
+    "f0487f5496a4edf0b00f792aab65d938674ca196",
     "639f89c875e141c4558c8c0f84620f460e5894d9",
     "ad6740045c5dc9af006d2517ce6f8b17bda5a79d",
+    "6528bdcbf271fbb98da79aa767fd0abf13f0cb3c",
     "cfc313980665c4ad34e2576b7aed8954c7d89631",
     "434bfe8feea363bbccfa107c9d24e6a5a5a756f2",
+    "57a55b597baf196da4dad97da2f09f00da989f6d",
+    "fe525e2f19f42ab94bcd660e2e7b0e43a75df85d",
     "e92bd262bf3aef9e5ab84b92059e6fc3d2ab79cd"
   ],
   "conflicts": [],

@@ -47,8 +47,15 @@
   "techniques_documented": [],
   "techniques_reported": [],
   "cves": [],
-  "timeline": [],
-  "reports": [],
+  "timeline": [
+    {
+      "quarter": "2020-Q4",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "f6c3a8ceb232130b764b5c80c93a776d416bfb3b"
+  ],
   "conflicts": [],
   "evidence_count": 0
 }

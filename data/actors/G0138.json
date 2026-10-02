@@ -1259,6 +1259,11 @@
   ],
   "cves": [
     {
+      "cve": "CVE-2012-1889",
+      "kev": true,
+      "ransomware": false
+    },
+    {
       "cve": "CVE-2013-4979",
       "kev": false,
       "ransomware": null
@@ -1367,6 +1372,11 @@
       "cve": "CVE-2017-15399",
       "kev": false,
       "ransomware": null
+    },
+    {
+      "cve": "CVE-2017-5689",
+      "kev": true,
+      "ransomware": false
     },
     {
       "cve": "CVE-2017-8291",
@@ -1539,6 +1549,11 @@
       "ransomware": true
     },
     {
+      "cve": "CVE-2023-46604",
+      "kev": true,
+      "ransomware": true
+    },
+    {
       "cve": "CVE-2024-26229",
       "kev": false,
       "ransomware": null
@@ -1576,8 +1591,24 @@
   ],
   "timeline": [
     {
+      "quarter": "2013-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2013-Q2",
+      "count": 3
+    },
+    {
+      "quarter": "2013-Q3",
+      "count": 1
+    },
+    {
       "quarter": "2015-Q4",
       "count": 1
+    },
+    {
+      "quarter": "2016-Q1",
+      "count": 2
     },
     {
       "quarter": "2017-Q2",
@@ -1588,8 +1619,12 @@
       "count": 1
     },
     {
+      "quarter": "2018-Q2",
+      "count": 4
+    },
+    {
       "quarter": "2018-Q3",
-      "count": 1
+      "count": 4
     },
     {
       "quarter": "2019-Q3",
@@ -1601,7 +1636,11 @@
     },
     {
       "quarter": "2020-Q1",
-      "count": 5
+      "count": 8
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 3
     },
     {
       "quarter": "2020-Q4",
@@ -1613,7 +1652,7 @@
     },
     {
       "quarter": "2021-Q2",
-      "count": 3
+      "count": 5
     },
     {
       "quarter": "2021-Q3",
@@ -1621,15 +1660,15 @@
     },
     {
       "quarter": "2021-Q4",
-      "count": 5
+      "count": 6
     },
     {
       "quarter": "2022-Q2",
-      "count": 1
+      "count": 3
     },
     {
       "quarter": "2022-Q3",
-      "count": 10
+      "count": 11
     },
     {
       "quarter": "2022-Q4",
@@ -1637,11 +1676,11 @@
     },
     {
       "quarter": "2023-Q1",
-      "count": 9
+      "count": 10
     },
     {
       "quarter": "2023-Q2",
-      "count": 2
+      "count": 3
     },
     {
       "quarter": "2023-Q3",
@@ -1660,6 +1699,10 @@
       "count": 1
     },
     {
+      "quarter": "2025-Q1",
+      "count": 1
+    },
+    {
       "quarter": "2025-Q2",
       "count": 1
     },
@@ -1669,7 +1712,7 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 4
+      "count": 16
     },
     {
       "quarter": "2026-Q3",
@@ -1680,13 +1723,26 @@
     "24bb6d01f2508e4001990348616aff2cadc34cd1",
     "83acfa3564bb29071720fe0642f57d930e02dbb7",
     "7ac0a8fc12a526672cccc6de65b7943bb700f3c4",
+    "13b07a8aa7ec97800abd13eb430c71e29c67cf57",
+    "1da69d02f58b3fe5d89fab7cf5cbb09ad86fbee1",
     "1f797c4832edd2005abaa9076ccc40d3f16bccde",
+    "43471ddfed1ab83e9447d3566ecdfb694204ff68",
+    "4a7154b6411b812d13450055fdde2c6cef1b80ab",
     "56ed9733c1fe64731b5a572f30fd58d756a9d14c",
+    "6a5da83c5d61e5a4d4c61ece6b91b7924f2d11eb",
+    "7f13be3af704c8a62e551cdf67259f7bcec5e917",
+    "83ff54e4aff9baaf784d2c76111733343ff81c68",
+    "86a87d83999aaae5e8d7843af674472ba84fde1e",
+    "8c837a104de9bcf7216be990d777b45fbef73d46",
+    "a1f4022853c363dcd8b8dd8cc93bab9423032c43",
     "bbd2e38e0a210917ec9f3b697f17ed91da4eafa3",
+    "cab1d334efc14a7e9238a6349486de0763d4e0ab",
+    "d5f36a2fd75153f708adea4baee7d155aa6e09ae",
     "4d121bcd6d12a8de873f9b4d1819ae1253614445",
     "a052ffc6a85eecd3f0a1b632c5fb52bcee845eed",
     "4ab76f396dd4cf9d81d4636158c06bfbdc488de7",
     "33d56385d9aaf9d6692724ce8e253b771e294ae6",
+    "37d087169d2bd363bc461552f900cf1b1f854864",
     "83dbf3ac01f347dcb82ecea7b4e3f259049662d8",
     "f058f562cfdfdc5aea92985f74627e3f507edb1b",
     "296690290086bf1651c74db8b1f2337bd39ecd3a",
@@ -1699,6 +1755,7 @@
     "287a22d1ee13a4ac02679ca01da10c205a7b6a3e",
     "d5782a5ae293d83bb9798f6793b72ec72a400d5f",
     "61441439fbdfa37eafd90ced35fbe9acd58b2b4e",
+    "b677a3627fae4bbab0f1ff87deabeed64ed81699",
     "4672fc36c4981b36b0ed234fceaeca884226e31d",
     "fddfe4b139190d30f8574b4b86a3bc0877310be5",
     "fe4118b12ef6374ac98402ffe6896b70a3cf9600",
@@ -1706,6 +1763,7 @@
     "aa0a42476a20300252c58e1ceebd320ca258d2e2",
     "b05990f3c45c74d60a4449961031da915bb91063",
     "1dee7a6195d27712adf1cf29121fcfcdbb070942",
+    "c297dcddfb201981175ccfd766294cca4f3c76f8",
     "e8b2072c9f1a2b095eb36a682c9c57bb3ca8f5bc",
     "f62b66f925f7fe8fea27e22142daf0de30c4f28a",
     "53223f41ffe20e9661f9dbd4333f4f46cf210282",
@@ -1714,39 +1772,65 @@
     "1ee8f4b78d4f341ae6fad3619649be8cd6d73218",
     "63f76d448d4a2755c314a7bc50dba79c7ae0fad0",
     "2bd387ccf00914086aa6eb9f119f7923a04fb12b",
+    "e6fe405bf3991b7f0f36210cd5a0ad25f55954e9",
     "ec694b8e26248596bddf5f0d6617822b537d0201",
     "9fed14d392e7fa043af1885a188a8f98aa7d2ba1",
     "3f2c224705dbf8658a97e8cbf6ca322ddf72862f",
     "6846c7985c22ad1294b9472a9cc3baff53a58f61",
     "b827fd356c2d2022f50721b9d2ccdede281bc62d",
     "d25a60177ac4d1696f5c91f5f88bc7bd6a46bca2",
+    "e671cbb84b42f12efd7d7b438915f59570aa14a6",
+    "ec0ff900599235d4e4103a9c6ea980ff54cc0a2c",
     "f3324c79f4fdd01c3a4db6be1844c3a13f3cac7a",
     "2616f9e6a6edc9ee2e656ed4fd892d1665ea90ef",
     "47b4760a8c97074eb2b62bcfcaf0ea544cb1cd53",
     "d29ffab19faa011ce3afc093ff0b087f3f33763f",
     "4c61ffc79acb3f842c8a0d64c6d005b75452939f",
+    "891b11bdb24c4938990040dc5edbd41039728402",
     "e09362b4f79762939c2cd2e9002962dd4ec4d7b2",
     "1af559f92444deae37f9793aa35e6dadcdeea6ab",
+    "e5cd980286cbec1c30d14aa433765db98baaf304",
     "f35c94bced01b50ed62c883f0a09ff211a24fa02",
     "4e71371a868ff37a0bb64cf49739addc4a20bc3a",
+    "e68c113ca98d90157913ad4c7d6820d0935616d3",
     "d3794eabf0197a7014f021654a1faf75d0080d77",
     "38bbcccb57987dc9471da4684601574024179fd6",
     "aeeec3e82bad1f1e8973a715f3c9dc737edb92f0",
+    "7f4e64c4886017fa251a4507dd2719bff795893b",
+    "5c63bc6b2f561c273749abb1912e28d83a2f6458",
+    "db7a4bf1dae5b69e89e9f8468b47bc60f567f9a4",
     "24b089f66141a590b8d2b32cff928f14e3a0d550",
     "0dd88c4d988fa9a583d6265388c0375ee1c93131",
     "fc29ba5080306e4fe1b09b15979c236e78fb947a",
     "e553083dd46f0a8dcf0bc0a12b5265d6973b7a1c",
     "d6b452fe46682f1bd964eb8cae720076bf30c592",
+    "734ce354764637d386dcf805fbf41cda22b7fc20",
+    "8d45b1a37d3fc6784fa2f55d4fde6f10e19802c5",
+    "ce054cf44ff8f515508a7f77b72ea6edd24fa5a1",
     "5007fb82a883c1ba9b478e5e613d028a4538c5b0",
     "0ee5735cc82721915571813bb86d4ec6da6f29f4",
     "d1579aab0e68123813f387eeef0e383a9c675528",
     "paper:Is%20LazarusAPT38%20Targeting%20Critical%20Infrastructures",
     "dd94de18f8a02f10335543bec2f7eb9f1b90655e",
     "6cf561669f2861e10a0cecc99ebe93947e65d0b3",
+    "8effee21c8fbff2291a0f9bdff0900cce8a8e1ac",
+    "d9f35bf692aa5dc38758dbbd3a645bd3f4a000c7",
+    "9ec73a98fdbceb783f5061a0da13d34e1c5a5745",
     "ff023277406257f779a1fb42a52b82031ab2c032",
+    "ef3dd05bee369a7cfb633d03e0545097845a73bc",
+    "fda2269c57aa0ef18a92be81641da06ea6132652",
+    "6470021efdeb316fd19cb16537ce9102ed7e59d1",
+    "eed223bf90057f418c2cd92e914df23585a6a486",
     "4d6b0434ff5803c7ead0474434cfa23eaee932b5",
     "05ef6cbe45e1dcfab77569f14b61db8f99aacd89",
-    "e204f491c98755fe0239112758a0938409dce32a"
+    "78dab7bfa54655ca33db7a247674c7b98924c865",
+    "5ec7109b992643aabb83ba6187230e3033699875",
+    "e204f491c98755fe0239112758a0938409dce32a",
+    "c6ce890a544b01e5dafd4add9326b4178424c4e2",
+    "4e6876f16b77dbb33aad5384dbf0549d717edb31",
+    "ad20028faeb00930005b25d66188301683e653fc",
+    "fcd3e57f6ea8de52f10e120df008a3df8eec65cb",
+    "c0d85dfff9ce55913cea8ed1d04b0a7e17336636"
   ],
   "conflicts": [],
   "evidence_count": 64

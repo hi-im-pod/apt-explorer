@@ -34,8 +34,16 @@
   "techniques_documented": [],
   "techniques_reported": [],
   "cves": [],
-  "timeline": [],
-  "reports": [],
+  "timeline": [
+    {
+      "quarter": "2023-Q1",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "5669fa6adf6841e8d550e03636e13e39cc8e4560",
+    "3503d0fe32eebd50f23b4e7c3add863b20878a41"
+  ],
   "conflicts": [],
   "evidence_count": 0
 }

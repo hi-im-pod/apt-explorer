@@ -1,9 +1,11 @@
-"""A publisher's RSS feed, kept as titles, dates and links only.
+"""A publisher's RSS feed, kept as titles, dates and links, plus stated name pairs for opt-in sources.
 
-Several publishers reserve their text, and SOURCES.md lists their feeds as
-link-only. A snapshot therefore keeps three fields per post: title, link and
-published date. The raw feed, with its excerpts, categories and authors, is
-parsed in memory and never saved.
+Several publishers reserve their text, so a snapshot keeps three fields per
+post: title, link and published date. The raw feed, with its excerpts,
+categories and authors, is parsed in memory and never saved. A source that
+SOURCES.md lists as derived-only may set read_pairs, and its snapshot then also
+holds the two names of each pair the post states (see aptx.resolve.pairs),
+never the sentence they came from.
 
 One subclass per publisher sets the class attributes below. Each publisher is
 its own source, so each has its own SOURCES.md row, notice entry and policy.
@@ -23,11 +25,14 @@ from aptx.core.dates import parse_date
 from aptx.core.models import ReportRecord, SourceBundle
 from aptx.core.snapshot import SnapshotStore
 from aptx.core.urls import norm_url
+from aptx.resolve import pairs as name_pairs
 from aptx.sources.base import Connector
 
 log = logging.getLogger(__name__)
 
 SNAPSHOT = "posts.json"
+# Two names per post that the post itself says are one actor. Names only, never the sentence they came from.
+PAIRS = "pairs.json"
 
 _HTTP_URL = re.compile(r"(https?)(://\S+)", re.IGNORECASE)
 _TAG = re.compile(r"<[^>]*>")
@@ -93,6 +98,42 @@ def feed_items(payload: bytes, name: str) -> list[dict]:
     return items
 
 
+def _body(entry) -> str:
+    """The post's text as one plain line, for reading in memory only. It is never stored."""
+    parts = entry.get("content") or []
+    raw = parts[0].get("value", "") if parts else entry.get("summary") or ""
+    return _one_line(html.unescape(_TAG.sub(" ", raw)))
+
+
+def feed_pairs(payload: bytes) -> list[dict]:
+    """The name pairs each post states, as {"link", "names": [a, b]}. See aptx.resolve.pairs.
+
+    The post text is read here and dropped. Only the two names of each pair leave this function.
+    """
+    out = []
+    for entry in feedparser.parse(payload).entries:
+        link = _http_url(entry.get("link") or "")
+        if not link:
+            continue
+        for a, b in name_pairs.extract(_body(entry)):
+            out.append({"link": link, "names": [a, b]})
+    return out
+
+
+def stored_pairs(store: SnapshotStore, name: str) -> list[dict]:
+    """The newest snapshot's pairs, checked again like stored items. Anything malformed is dropped."""
+    raw = store.latest(name, PAIRS)
+    if raw is None:
+        return []
+    out = []
+    for i in json.loads(raw.decode("utf-8")):
+        names = i.get("names") if isinstance(i, dict) else None
+        link = _http_url(str(i.get("link") or "")) if isinstance(i, dict) else ""
+        if link and isinstance(names, list) and len(names) == 2 and all(isinstance(n, str) and n.strip() for n in names):
+            out.append({"link": link, "names": [_one_line(n) for n in names]})
+    return out
+
+
 def stored_items(store: SnapshotStore, name: str) -> list[dict]:
     """The newest snapshot's items, cleaned the same way as fresh feed items.
 
@@ -148,6 +189,9 @@ class FeedConnector(Connector):
     # A cap on one fetch, so a feed that never runs out cannot loop. The cap is
     # logged when it is hit.
     max_pages: int = 100
+    # Whether the post text is read, in memory, for the name pairs it states. Only a source that
+    # SOURCES.md lets show derived facts may set this.
+    read_pairs: bool = False
 
     def accepts(self, link: str) -> bool:
         return urlsplit(link).path.startswith(self.path_prefix)
@@ -184,7 +228,8 @@ class FeedConnector(Connector):
         return found
 
     def fetch(self, store: SnapshotStore) -> None:
-        items = feed_items(http.get_bytes(self.feed_url), self.name)
+        payload = http.get_bytes(self.feed_url)
+        items = feed_items(payload, self.name)
         if not items:
             # An empty feed or an error page answered with 200 must not be
             # merged and re-saved under today's date, or the source would
@@ -200,6 +245,15 @@ class FeedConnector(Connector):
             items = items + self._older_pages(seen)
         merged = merge(items, old)
         store.save(self.name, SNAPSHOT, json.dumps(merged, ensure_ascii=False, indent=1).encode("utf-8"))
+        if not self.read_pairs:
+            return
+        # A post the feed has dropped keeps the pairs it was saved with, like its title. A post the feed still
+        # lists is read again, so an edited post cannot leave a stale pair behind.
+        fresh = feed_pairs(payload)
+        current = {norm_url(p["link"]) for p in fresh} | {norm_url(i["link"]) for i in items}
+        kept = [p for p in stored_pairs(store, self.name) if norm_url(p["link"]) not in current]
+        both = [p for p in fresh + kept if self.accepts(p["link"])]
+        store.save(self.name, PAIRS, json.dumps(both, ensure_ascii=False, indent=1).encode("utf-8"))
 
     def _source_id(self, link: str) -> str:
         # Built from the normalized link so http, https and www. variants give
@@ -209,6 +263,19 @@ class FeedConnector(Connector):
         key = norm_url(link)
         host, _, path = key.partition("/")
         return (path if host == self.host and path else key).replace("/", "-")
+
+    def pairs(self, store: SnapshotStore) -> list[dict]:
+        """The name pairs of the posts that are still kept, as {"link", "names", "retrieved_at"}.
+
+        These are candidates only. The CLI judges them against every other source's actors before
+        any becomes a record, so the connector never decides who an actor is.
+        """
+        if not self.read_pairs or store.latest(self.name, PAIRS) is None:
+            return []
+        retrieved_at = store.latest_date(self.name)
+        kept = {norm_url(i["link"]) for i in self._kept(stored_items(store, self.name))}
+        return [{**p, "retrieved_at": retrieved_at} for p in stored_pairs(store, self.name)
+                if norm_url(p["link"]) in kept]
 
     def normalize(self, store: SnapshotStore) -> SourceBundle:
         if store.latest(self.name, SNAPSHOT) is None:

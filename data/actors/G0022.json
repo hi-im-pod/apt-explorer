@@ -1006,11 +1006,11 @@
     },
     {
       "quarter": "2015-Q2",
-      "count": 2
+      "count": 3
     },
     {
       "quarter": "2015-Q3",
-      "count": 4
+      "count": 6
     },
     {
       "quarter": "2016-Q2",
@@ -1018,11 +1018,15 @@
     },
     {
       "quarter": "2016-Q3",
-      "count": 4
+      "count": 5
+    },
+    {
+      "quarter": "2016-Q4",
+      "count": 1
     },
     {
       "quarter": "2017-Q2",
-      "count": 5
+      "count": 6
     },
     {
       "quarter": "2017-Q3",
@@ -1038,11 +1042,11 @@
     },
     {
       "quarter": "2018-Q2",
-      "count": 2
+      "count": 3
     },
     {
       "quarter": "2018-Q3",
-      "count": 2
+      "count": 3
     },
     {
       "quarter": "2019-Q1",
@@ -1050,7 +1054,7 @@
     },
     {
       "quarter": "2019-Q2",
-      "count": 6
+      "count": 7
     },
     {
       "quarter": "2019-Q3",
@@ -1162,15 +1166,18 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 5
+      "count": 8
     }
   ],
   "reports": [
+    "21cdfad30c76154a52afefd82f2f5a033258ba41",
     "371d3812254e338817802dde4756029a1767d694",
     "38a5cc2d66914089971edbce1748bfe048527edf",
     "5caa3af9facac2e25b868e6afb482d156eacad78",
     "827d84c8046d4315615f2ddcde516ca5deaae7f5",
+    "d920d18f5f0097fde995ebb847f099d605b74f8c",
     "d975b8d1e008be23684b727df57bc61c2c36853b",
+    "daa90bd7ea3a3a6b26a47c906152749c6610144e",
     "fa350b6bf21be8af393d235d0a815caae5f5802d",
     "760e14c40a2f98f490e90f5dc8564faed8876f60",
     "b37836d031ce99e6f0a41bafb30ba9a6badeb8a6",
@@ -1307,12 +1314,15 @@
     "71083d94086c266f9a5ddb48deb74ab91308a85d",
     "530c04eb6369ec8a5f433e970deaea34b79d0570",
     "7960be96f5038b5a44680ccb0c7e2598615ed7c6",
+    "44314872aa39608f2ef48872a89f4ed0cfca9331",
     "ad7c4675b78eb3238978c0a5cb0e848975fcf8ae",
     "cc79d68f7bbad680581f53cc4a797e27ff7f2d6d",
     "f4887377e8b0eb2d20f2034c66d50f59af967524",
     "47c64412c5ada2a14fcb56a230321fde32cb9acd",
     "ba6f0382399628d54a9a44d5ca868890d2e10645",
+    "6fa8f171b0c54e32f84947822529ec3577304030",
     "89540497d08e70e4a9400ca3f0594d37bbd188ab",
+    "804842701cbd8afdc6d668ccb46c58de6fc68bcb",
     "paper:The_destruction_of_APT3",
     "ca1583533d1d3f1e95986c97bf401f17e3e236fd",
     "575387ef16724c2727b65c2db13d71c9d8884541",
@@ -1322,9 +1332,12 @@
     "4bae883feddc4e8b1c2593c848b7f434b125b6e4",
     "b55a1b9004afc876f13ea36c12dd298dbffdf83d",
     "d3549e1f2aad3cadcae13a201f5291cc3d2eaec6",
+    "9cc3ca07a2cbef2b46877824a30554ae2fe86857",
     "paper:APT3%20is%20Boyusec,%20a%20Chinese%20Intelligence%20Contractor",
     "7bc7b4099f30921a875a42212f83e8db60f23142",
     "dbb37b1a14f59614ff5764adc6813452847410a0",
+    "36cc8f9d42465b2ac2681772862e21ecb2eaa137",
+    "434c2503ef99474f07f97e682ae5401905e5c5fd",
     "4d310db9ae970b9a8cd3ea413b0d8e3d7d446146",
     "paper:Buckeye.cyberespionage.group.shifts.gaze.from.US.to.Hong.Kong.-.Symantec",
     "7a4063cf9f0ab09042c47cf4b0a410ec1ba47d82",
@@ -1333,9 +1346,12 @@
     "0a0c97b21075f4588f10503ae1c26a4685e061d1",
     "37584381a0a0c2d566b8ce13965ffa7226cdaa71",
     "89d864620134f6f4b26364adf01c8833532221c0",
+    "c0a9e3877c768092cece9e844f645848896283f0",
     "3e337d629d17d73fd95d44b7e09777c4e59a5e4d",
+    "da36e8623013f441bc3dd841e695ceb1f03db496",
     "0aada2f7f4fb4955eb21b3f10cf6edf1523f1d0c",
     "26a25894944ffb493f34c8141286305665b91dcb",
+    "9717e88fb0173d82f45f5d41a3b0b1bfa39efa66",
     "fe5038eef3441bac0276cba4f5ef6c0ef504ccf9",
     "paper:OperationDoubleTap",
     "88654f3accec4e2ce5dd66588265caaa4bae2f55",

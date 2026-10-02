@@ -19,10 +19,27 @@
   },
   "malware": [],
   "techniques_documented": [],
-  "techniques_reported": [],
+  "techniques_reported": [
+    {
+      "id": "T1055.012",
+      "count": 1
+    },
+    {
+      "id": "T1547.001",
+      "count": 1
+    }
+  ],
   "cves": [],
-  "timeline": [],
-  "reports": [],
+  "timeline": [
+    {
+      "quarter": "2026-Q2",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "668a50acf47d3737dcdc541041160ae3b4d2a720",
+    "ddf054c812302bce65a6b5ba9aaa80be8276e1a7"
+  ],
   "conflicts": [],
   "evidence_count": 1
 }

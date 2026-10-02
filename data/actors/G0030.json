@@ -360,7 +360,84 @@
     "T1560.003",
     "T1588.002"
   ],
-  "techniques_reported": [],
+  "techniques_reported": [
+    {
+      "id": "T1005",
+      "count": 1
+    },
+    {
+      "id": "T1027",
+      "count": 1
+    },
+    {
+      "id": "T1027.007",
+      "count": 1
+    },
+    {
+      "id": "T1036",
+      "count": 1
+    },
+    {
+      "id": "T1041",
+      "count": 1
+    },
+    {
+      "id": "T1055",
+      "count": 1
+    },
+    {
+      "id": "T1059.003",
+      "count": 1
+    },
+    {
+      "id": "T1070.004",
+      "count": 1
+    },
+    {
+      "id": "T1071.001",
+      "count": 1
+    },
+    {
+      "id": "T1083",
+      "count": 1
+    },
+    {
+      "id": "T1105",
+      "count": 1
+    },
+    {
+      "id": "T1106",
+      "count": 1
+    },
+    {
+      "id": "T1140",
+      "count": 1
+    },
+    {
+      "id": "T1204.002",
+      "count": 1
+    },
+    {
+      "id": "T1480.002",
+      "count": 1
+    },
+    {
+      "id": "T1543.003",
+      "count": 1
+    },
+    {
+      "id": "T1547.001",
+      "count": 1
+    },
+    {
+      "id": "T1573",
+      "count": 1
+    },
+    {
+      "id": "T1620",
+      "count": 1
+    }
+  ],
   "cves": [
     {
       "cve": "CVE-2009-3129",
@@ -423,6 +500,21 @@
       "ransomware": false
     },
     {
+      "cve": "CVE-2016-2776",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2016-6662",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2017-1182",
+      "kev": false,
+      "ransomware": null
+    },
+    {
       "cve": "CVE-2017-11882",
       "kev": true,
       "ransomware": true
@@ -444,41 +536,89 @@
     },
     {
       "quarter": "2015-Q2",
-      "count": 2
+      "count": 6
     },
     {
       "quarter": "2015-Q4",
-      "count": 1
+      "count": 4
     },
     {
       "quarter": "2016-Q1",
-      "count": 1
+      "count": 5
+    },
+    {
+      "quarter": "2016-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2016-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 2
     },
     {
       "quarter": "2018-Q1",
-      "count": 2
+      "count": 3
+    },
+    {
+      "quarter": "2019-Q2",
+      "count": 1
     },
     {
       "quarter": "2019-Q3",
       "count": 1
     },
     {
+      "quarter": "2022-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2026-Q1",
+      "count": 1
+    },
+    {
       "quarter": "2026-Q2",
-      "count": 4
+      "count": 6
     }
   ],
   "reports": [
     "2e7c4e1fccea3de15d43482a10e7f69e543ba3c6",
+    "30ed76f483ef6d3f1bf92db12229d4d8fdd515c5",
     "89d52c5903d7584dbaf756fff7acf700be7e2ac5",
     "aec24163a02d978fa755305b1cc865aa49c9361e",
     "bc70d78d2119f95c53618648d5819752be71649a",
+    "cbb0e19845f0e302c142e7db242020b24a2160a5",
+    "603ca5a30dbb70f4435e6fcb27820241f7b330c1",
+    "2b66529f13c4448490bd36a2f919b68c07157fe8",
+    "7380ac4a639427340d32dc6acd4b9b432ac8482e",
     "537bd87d34bbeab8077bb7e199475a9dffa9f58f",
+    "c38fc4d7de7c5546e9395c0399ea02441da355b2",
     "f4036e666095678b4051549ce5091f442df8fe2e",
+    "445a0c557162916570822593c5b9e727dc775ffe",
     "70fae1539b2e714ac6876d64dacbead9671fc003",
+    "355d51b0f3cd8ef28b64a573b72000a2b9ff2c74",
+    "51b16efe644751eb277bf605f1ea01e33d4cea25",
+    "3773109fc3b0607f90b13d91f3c57da2b6aa618d",
+    "72b119031cde0a78ff6f778c6b8670f4d1f86b16",
+    "57b1fe8ffc1077abb782decf7a1a902338d17d8f",
+    "1f2eee38b44ad3e9fdd50b4845af7b9ec98c244c",
+    "777fc2e7355924588a27d693cdfcc31bcf8ec76b",
+    "0f039079ba6009da4b271025646069812e72af54",
+    "31c81ceafb1de9c731e7e003e3a638b9841a78e4",
+    "615b2813bc1d111640b030c0a405324dcd9481a6",
     "93269fb4566d06a8bc741fe1498cf33c5ce5a9bc",
+    "3f54af264da2ece6c5fa3fcfe0af45a02899c7d4",
+    "8c24226faacc952e606ef9d3fdda0216f13b9f5b",
+    "b2e67b0e7e9ca99cc9a37f0d1b7603fdf0365a53",
     "8a5dd7e1cb4e277dbdf8323aeda0d79dce182249",
+    "2e815cc8c07ded552e4c52d1649c1e9d3cdbea52",
     "9cd1ca5133ac7d86efbbf3b0700028b9b3524374",
+    "9a5a70c89b869cca099738e01d342948ed873688",
+    "fd47e3b95ea1e9cc3f077a45dccd6c355ad16b08",
     "paper:unit42-operation-lotus-blossom",
+    "3bcbddd61cc7df02fad5bdc692e956bac590fe98",
     "76c546c2e97b8e9c430d9a0678c23784f175d9d2",
     "paper:FTA%201012%20STTEAM%20Final"
   ],

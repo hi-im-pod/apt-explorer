@@ -66,12 +66,12 @@ Exploit Prediction Scoring System (EPSS) scores from FIRST, https://www.first.or
 
 ### Cisco Talos blog (`talos`)
 
-Post titles and links from the Cisco Talos blog, https://blog.talosintelligence.com/. © Cisco and/or its affiliates. All rights reserved; post content is not reproduced here. This project is not endorsed by Cisco.
+Post titles and links from the Cisco Talos blog, https://blog.talosintelligence.com/. © Cisco and/or its affiliates. All rights reserved; post content is not reproduced here. Where a post states that two names are one actor, those two names are kept as an alias. This project is not endorsed by Cisco.
 
 ### ESET WeLiveSecurity blog (`eset`)
 
-Post titles and links from the ESET WeLiveSecurity blog, https://www.welivesecurity.com/. © ESET. All rights reserved; post content is not reproduced here. This project is not endorsed by ESET.
+Post titles and links from the ESET WeLiveSecurity blog, https://www.welivesecurity.com/. © ESET. All rights reserved; post content is not reproduced here. Where a post states that two names are one actor, those two names are kept as an alias. This project is not endorsed by ESET.
 
 ### Microsoft Security blog (`microsoftblog`)
 
-Post titles and links from the Microsoft Security blog, https://www.microsoft.com/en-us/security/blog/. © Microsoft. All rights reserved; post content is not reproduced here. This project is not endorsed by or affiliated with Microsoft.
+Post titles and links from the Microsoft Security blog, https://www.microsoft.com/en-us/security/blog/. © Microsoft. All rights reserved; post content is not reproduced here. Where a post states that two names are one actor, those two names are kept as an alias. This project is not endorsed by or affiliated with Microsoft.

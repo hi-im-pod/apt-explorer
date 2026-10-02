@@ -174,12 +174,29 @@
   "cves": [],
   "timeline": [
     {
+      "quarter": "2012-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2012-Q3",
+      "count": 2
+    },
+    {
       "quarter": "2014-Q3",
       "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 2
     }
   ],
   "reports": [
-    "paper:KL_report_syrian_malware"
+    "c403518d43b936b6e052cd192a4aba8596e92375",
+    "9b9c639527fe02a622a9559e1a612c4628da4c49",
+    "paper:KL_report_syrian_malware",
+    "5f39b8f9e571cee77c0937b4d21de93bcd21c703",
+    "a1b16b4d66b6defd553e7c3dbf2c916c65d82864",
+    "e72b562d1b28e0acd3f3ba705a8338bceee7c725"
   ],
   "conflicts": [],
   "evidence_count": 5

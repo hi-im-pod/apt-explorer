@@ -420,6 +420,11 @@
       "ransomware": true
     },
     {
+      "cve": "CVE-2017-5689",
+      "kev": true,
+      "ransomware": false
+    },
+    {
       "cve": "CVE-2017-6327",
       "kev": true,
       "ransomware": false
@@ -695,6 +700,11 @@
       "ransomware": true
     },
     {
+      "cve": "CVE-2023-26360",
+      "kev": true,
+      "ransomware": false
+    },
+    {
       "cve": "CVE-2023-46747",
       "kev": true,
       "ransomware": true
@@ -732,7 +742,19 @@
   ],
   "timeline": [
     {
+      "quarter": "2013-Q2",
+      "count": 1
+    },
+    {
       "quarter": "2014-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2014-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2015-Q2",
       "count": 1
     },
     {
@@ -741,7 +763,7 @@
     },
     {
       "quarter": "2016-Q4",
-      "count": 2
+      "count": 7
     },
     {
       "quarter": "2017-Q3",
@@ -749,11 +771,11 @@
     },
     {
       "quarter": "2017-Q4",
-      "count": 1
+      "count": 2
     },
     {
       "quarter": "2018-Q1",
-      "count": 1
+      "count": 3
     },
     {
       "quarter": "2018-Q2",
@@ -765,7 +787,7 @@
     },
     {
       "quarter": "2018-Q4",
-      "count": 2
+      "count": 3
     },
     {
       "quarter": "2019-Q1",
@@ -789,7 +811,7 @@
     },
     {
       "quarter": "2020-Q2",
-      "count": 5
+      "count": 8
     },
     {
       "quarter": "2020-Q3",
@@ -813,7 +835,7 @@
     },
     {
       "quarter": "2021-Q4",
-      "count": 6
+      "count": 7
     },
     {
       "quarter": "2022-Q1",
@@ -857,7 +879,7 @@
     },
     {
       "quarter": "2024-Q3",
-      "count": 1
+      "count": 2
     },
     {
       "quarter": "2025-Q1",
@@ -877,7 +899,7 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 5
+      "count": 7
     },
     {
       "quarter": "2026-Q3",
@@ -887,7 +909,9 @@
   "reports": [
     "5ac892de5893e31aa9af699a2d232851010722a8",
     "1995be502eeb600a49c43e00f0f7aa636aca9526",
+    "370a70e1f811565efc1f649b56d7ab5e684a06bb",
     "3b7cd178303c3da0b5c3f4487b396e19c6cc5589",
+    "4b99c48bfd3add9e6af972f7a9e437379da28163",
     "86daccefefc7a00cf34e663f852f8c4879fe0641",
     "ae099d9e7405f60814eb9b880caba39e16f8119d",
     "b4085bb3d44c2adbec0cf7cc1e88d47ba6efb25d",
@@ -901,6 +925,7 @@
     "e6404bf266d5cbd42db8f1c064c5a946ccc73de1",
     "d56881263ebd54121556ce60a18451deda0df261",
     "d46ca97249f49dd39e6c7989805583a6f3a5b2ae",
+    "5a49b14444cb1b60b683972560b2899d1de5639f",
     "8c5f458c42dacd87e817aa0fd3fa9583dc27fbfc",
     "812fab2a9498760768de019c8e75848af55663d3",
     "b5dbcf77e13cf178285a017f956282e61ad937b6",
@@ -941,6 +966,7 @@
     "ca099d18524bd774b7c704a90ddcfbdfce22099f",
     "e3a7c8074629b1dbf0f8e9d666b2ffb541c08be6",
     "32343e29daac413e21a72ed25decf3be28f7c0e2",
+    "b567d54124a81007e52172c7045ea2bf69d010cb",
     "d29ffab19faa011ce3afc093ff0b087f3f33763f",
     "c3f02d9bf57696c07b7a61bee9b56ccecee66dfc",
     "f00543563e8e8be9e2099a9577db3d0a8acf5972",
@@ -970,8 +996,11 @@
     "22a138c89aaa5863b6c32a8c74e0b30b639ec717",
     "24e4ae0088a53c995ad6558f0db7054f7452e8ac",
     "07abf8d563b06610e15d6e277748aedee6c310d2",
+    "ed6a7415fce176c79774be3de06ba77aca1084ff",
+    "4376f75a751e11328aa408c2b6905282ddbb5d31",
     "c312eb909488fffe707b0b92b951e3bc858e07a4",
     "fa6799c2a3238a01a83b19bac031f5d1d80b0847",
+    "bf960788ade6af039d3696d8e638aef602c5b7ff",
     "paper:Anomali%20Suspects%20that%20China-Backed%20APT%20Pirate%20Panda%20May%20Be%20Seeking%20Access%20to%20Vietnam%20Government%20Data%20Center",
     "db4237de5b592f87d4c8775722bdc5589dce6950",
     "d9868cea48675bc539618753e8d6292ab75d65e9",
@@ -996,18 +1025,30 @@
     "d1bb4ab4a3ea1dc2463487f593ebe2f7ed6e1704",
     "35e08265a41e32c77ebe08160d03ce089538a540",
     "6a7ef30b7ef4ecd4c85430aaa1234ad2c1493b3d",
+    "4ff8102057f0c9765c7455c7e4734fc1733ec80d",
     "89540497d08e70e4a9400ca3f0594d37bbd188ab",
     "9de4109c60d0abbf4d986815169f04a78ceaf101",
     "84419dc1e56b82b8ff79db2f7519b2b51785bab3",
+    "4965ed073067deeb6e8d354301e6f9923fb2687e",
     "528d8f38f83904dc5732ed358917cb599d26a8d5",
+    "e85833ddbbdcca20615005ba55a4b0ba8d0b8899",
     "6d53d93b12d72bb8d31ed12ead0661a1d017ffeb",
+    "f074db30357544cff31b254f985f75853d52b6bc",
     "4ae52dfd4d0c0fa607005c9792fb24b3dd73858c",
     "84045a5dfb4de13510f6d885ae1eacf533288264",
     "56740f8a224c7f7024704d33d8558126b078aad5",
+    "ef9fb290ad2bef98cd50f966dd8228714d0f68a0",
     "45fa8fc6430e5231bccfd20416ceb9329046709c",
+    "666e778c17b66baae9fb71d2bf42e78d7df79010",
+    "ffaa720b34da0f6093392bda7daa26a281c492af",
+    "1c664e6ab6a1e36fb0a1dccb231acfb26e943b19",
+    "9dde2e74ac98e8f34156184878686d5f8a87bbd8",
     "a4e2328f703b7818a1c057ae1e9e1ccdab11f9ea",
     "99866d9171664e7c7a58962b943161b25a7e0624",
-    "a3ef4191458420c5bd70ef0e4dabba570872f84f"
+    "93b3ec0cec9636d7815424be3030ae54c2eb79b5",
+    "9a2de0730e62aa24cdff1d1920b9535d1795be7e",
+    "a3ef4191458420c5bd70ef0e4dabba570872f84f",
+    "c6cb2ff6fccac2325f3cf4978f15675dddc38407"
   ],
   "conflicts": [],
   "evidence_count": 18

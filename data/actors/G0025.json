@@ -802,6 +802,11 @@
       "ransomware": null
     },
     {
+      "cve": "CVE-2013-3163",
+      "kev": true,
+      "ransomware": false
+    },
+    {
       "cve": "CVE-2013-3644",
       "kev": false,
       "ransomware": null
@@ -1314,15 +1319,19 @@
     },
     {
       "quarter": "2013-Q3",
-      "count": 2
+      "count": 5
     },
     {
       "quarter": "2014-Q1",
       "count": 3
     },
     {
+      "quarter": "2014-Q3",
+      "count": 3
+    },
+    {
       "quarter": "2014-Q4",
-      "count": 2
+      "count": 3
     },
     {
       "quarter": "2015-Q1",
@@ -1354,7 +1363,7 @@
     },
     {
       "quarter": "2017-Q2",
-      "count": 4
+      "count": 5
     },
     {
       "quarter": "2017-Q3",
@@ -1386,7 +1395,7 @@
     },
     {
       "quarter": "2019-Q3",
-      "count": 5
+      "count": 7
     },
     {
       "quarter": "2019-Q4",
@@ -1494,7 +1503,7 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 4
+      "count": 7
     },
     {
       "quarter": "2026-Q3",
@@ -1504,8 +1513,11 @@
   "reports": [
     "5ac892de5893e31aa9af699a2d232851010722a8",
     "1995be502eeb600a49c43e00f0f7aa636aca9526",
+    "0ae315cf0988809029089d94815bdc4294af794a",
+    "57320fe25634e4be00de00cdc22c7bd947205685",
     "5caa3af9facac2e25b868e6afb482d156eacad78",
     "827d84c8046d4315615f2ddcde516ca5deaae7f5",
+    "8bec79106c1efb07cad4dfe4cd92a2748e8c7fc1",
     "d975b8d1e008be23684b727df57bc61c2c36853b",
     "fa350b6bf21be8af393d235d0a815caae5f5802d",
     "760e14c40a2f98f490e90f5dc8564faed8876f60",
@@ -1694,9 +1706,11 @@
     "4fd3db0442ae7fd5633ebdd008040734e6d8e068",
     "6eb91b46cb6e98fe6f9e4b542d243da97352459f",
     "002d8d0f84568a958a0c0073b9daca8bad4b23d4",
+    "af25d4e70ea4fb23a7d059a81824b89aba484519",
     "paper:Encore!%20APT17%20hacked%20Chinese%20targets%20and%20offered%20the%20data%20for%20sale",
     "2b4e8c200897e9c96f4d563a486931351a9905b3",
     "3a623b3b402039a425497e1ec9936ef76ed265ed",
+    "f13e902f9976373e0874505c2a82b5e5059a2d93",
     "f169c9f142f0a1a141f8c915b87a07623b146df4",
     "530c04eb6369ec8a5f433e970deaea34b79d0570",
     "7960be96f5038b5a44680ccb0c7e2598615ed7c6",
@@ -1719,6 +1733,7 @@
     "56740f8a224c7f7024704d33d8558126b078aad5",
     "8645583eea4dea7637acac308440d25fb743ba77",
     "b55a1b9004afc876f13ea36c12dd298dbffdf83d",
+    "0a08e9a734456952921c6270c46fe414ffccc3c5",
     "7bc7b4099f30921a875a42212f83e8db60f23142",
     "632c7917320c1c6dee3509df328f0b5ff4fcf086",
     "dbb37b1a14f59614ff5764adc6813452847410a0",
@@ -1741,10 +1756,17 @@
     "0383b78d3a8e9951a9124ea85a3e083606a94f11",
     "paper:Operation_CloudyOmega_Ichitaro",
     "0c2f13e1290caeb1e6c077096a5952ea3c57b187",
+    "c85c8a2f50087ffd1a718e49e8aba6ff10c77813",
+    "114583db8690cd01c60d5758dbe2e2dc1e96fb25",
+    "1bf6c5eaaf996f463b25837c15b400c895862419",
+    "21a5b79498a242f6869649cb808d02366dba6e89",
     "51e8e24162c94d68637f8252ea6e8f5707b52a23",
     "6337243d45dc72d75d01f74a699b6a240cbbc8f3",
     "paper:Operation_SnowMan",
     "65ca8fedb800ca4f2d52961ffdded12d84bd6fdb",
+    "bbb264276ff60417c65d1f18ccd6c08f0bb34092",
+    "29fbd7088fb69f59b6e9cb3cbca33532ba4cee63",
+    "56e81b475c654f9aa7ba6b4cf6ddb92797fa8305",
     "e4aa40ce1a865021e0b178a4c444126743335d32",
     "875abf02dad2a434d708e495ffc8afe4b2500aae",
     "24bd1e9d9c67263a2a65c017545634f004dcbfc8"

@@ -37,6 +37,11 @@
       "ransomware": true
     },
     {
+      "cve": "CVE-2017-0199",
+      "kev": true,
+      "ransomware": true
+    },
+    {
       "cve": "CVE-2019-0604",
       "kev": true,
       "ransomware": true
@@ -45,6 +50,11 @@
       "cve": "CVE-2019-0708",
       "kev": true,
       "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-2215",
+      "kev": true,
+      "ransomware": false
     },
     {
       "cve": "CVE-2019-2725",
@@ -80,35 +90,39 @@
   "timeline": [
     {
       "quarter": "2018-Q3",
-      "count": 2
+      "count": 5
+    },
+    {
+      "quarter": "2018-Q4",
+      "count": 7
     },
     {
       "quarter": "2019-Q1",
-      "count": 2
-    },
-    {
-      "quarter": "2019-Q2",
       "count": 3
     },
     {
+      "quarter": "2019-Q2",
+      "count": 6
+    },
+    {
       "quarter": "2019-Q3",
-      "count": 1
+      "count": 2
     },
     {
       "quarter": "2019-Q4",
-      "count": 1
+      "count": 2
     },
     {
       "quarter": "2020-Q1",
-      "count": 10
+      "count": 18
     },
     {
       "quarter": "2020-Q2",
-      "count": 8
+      "count": 10
     },
     {
       "quarter": "2020-Q3",
-      "count": 5
+      "count": 7
     },
     {
       "quarter": "2020-Q4",
@@ -116,19 +130,19 @@
     },
     {
       "quarter": "2021-Q1",
-      "count": 1
-    },
-    {
-      "quarter": "2021-Q2",
-      "count": 3
-    },
-    {
-      "quarter": "2021-Q3",
       "count": 2
     },
     {
+      "quarter": "2021-Q2",
+      "count": 6
+    },
+    {
+      "quarter": "2021-Q3",
+      "count": 4
+    },
+    {
       "quarter": "2021-Q4",
-      "count": 3
+      "count": 5
     },
     {
       "quarter": "2022-Q3",
@@ -156,11 +170,16 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 1
+      "count": 6
     }
   ],
   "reports": [
     "1062e14aacea30c6afa7aaeb91324b72be25c0c4",
+    "38d2382a77b6cf64f07741493a986034d830cc15",
+    "3e58e6bdc409d0498c76749dbdc044772063afdb",
+    "c438228333d35955dffb1ed04eec30c6173e6f32",
+    "d0e3615e6b8f7e9912f7e220c7c0541d9b8a674d",
+    "f0f6ff2557c0869c98d3e02427b666852d180b6a",
     "a90ac4e3c02a1ea796f99068f59350546a1537eb",
     "bea3c1e9bf89592ff4a32953708cace24081c354",
     "c61886b75dde6cc796b294f11655c0664ec1b281",
@@ -168,25 +187,37 @@
     "cd3666f75e63d2dfdd7f1d027d303a6507692bb8",
     "0620c9c33afaa52740d509ba23f1e8d417098a09",
     "5146f2c397ee9343d59dec88160bad750d8e4e1c",
+    "bc8797724142a130a52170988e1728e298738d4c",
     "fcc1292cfea5b604460191bdf7df8f72a3be6d8a",
     "fb2e2eeef9452e2b2fe7ea64590201d50d1dee41",
     "0cd997cc2c1f679cd0d734a0c7b257ca9acdbe06",
+    "9a360e2dbbd44152abac03686890f33a0dd4f66d",
     "afd44adf1849e1227356a12359196c029b2620f4",
+    "f01ee4e5d788623042e18326c49e0ed303aa95a2",
     "22f73a673b94190f29938f6ee82dbbb5afd3d95f",
+    "abaf8457d33e2a49af18745ee800deaa2d5676a0",
+    "210b9044a7385d0e3c8ca5957789936bd47aac40",
     "49f41b9bb7d13908d907fe1b35d6e09227bffc50",
+    "6fec5d93f01b3c21f25ae160ac0287f139ba53c6",
     "e2800dd0f3d20da804613174e5e5b4b9234b0bc7",
+    "7cf5c318ac3142b8a3ada5fa392203d6319820da",
     "c2114f749b0013b53ac921685825a45677477733",
+    "7da513ae51f209723a19bbbb617f732205141247",
     "8bc8e93791e8902040c227e7b14d54466a3af745",
     "9029dc135c03bbdf18067d08d11a1fe234fd0c69",
     "4d302f0337f30bae51a162132e1bde5aa82db975",
     "a47abaf4da7764511f0ee6dbe2a1d60f4790ac5a",
     "21de5d50f42061c8db17d001c4a3029a4d0f9137",
     "85b513aa7777969db0ef5476a925992cde7892c4",
+    "9f33ac8c02c1b2e991f33fbf60f5b856772a9acf",
+    "19bec4c151e4be8d4bfe8be4e6bd9cc0095da643",
     "51394ccb24a526bd9c46b7ef7f4d4f2a9ce41940",
     "f3460ae2716ba00c86b1c1aa2afa5de65a1f2b0c",
     "26616b75591bd213ba4a0c5508755481f0a74bbc",
+    "488ad90c305220093b270984a0ac1ef56cd7b236",
     "b7f1af0c0248ab7106bef87fea76007eda734981",
     "5d588e4f8a7cf4710325233b4dc129bd5c975811",
+    "66dd51847a32d34bd66023e2d0b44ef23ea3fbd4",
     "ae88a28c39416fbe5ae48a7885044b12c339ff1c",
     "c8c746d9e8d70884b7fd270e6060c7084dad8196",
     "a4339737e3fd1490b59b12ec23bbce462f4c3b4a",
@@ -196,21 +227,45 @@
     "e43c9fecfb9048439c809644ffda4725983103aa",
     "24b089f66141a590b8d2b32cff928f14e3a0d550",
     "c837699eefecc3ce1b59533cac86de5e19f2de1c",
+    "e4733e8ce6165f62cf534058b46be4018288d5e9",
+    "cec044d46ae7de3aff4e3e523e33cadab8be7abe",
     "14cc938b28cf45badecfbd417f9aba63c4f12058",
+    "efe766a6469a68572bdfbbcec86b3e521fe578ad",
+    "9e96e893e70535aacbc087d16f73a909fd2602d9",
     "34b84eab4ed1e10193690ec45fb2578e877cad38",
     "451443542c754aaa301a5e9c2c34d4cb5cbb0e97",
+    "7719a0ddf6edc37f0c65df42b3dc045fd2fdb3fd",
     "2cb1a1fb413d4854bcdbb4b8474f2b2696e5f5dd",
     "89951f8270cd950887f5acf99c65638d2c68b6de",
+    "ab7c5aed38bf67ce249bd52bf7fef8858d27d330",
+    "b37d0dd03d4edc477ed8ad02a1a2854e5b2cf497",
     "eeb279bf4ecacd5ec7e071d89a9de6e93a2b2e4b",
+    "28f851701af2a39688dc59934697a6b8615093d9",
     "df8c6e17acdd0d83a9127877a405b9425a1e5fd2",
+    "1995ea9d90d057d9aaa59af1f81473712369de77",
     "f2f120a0bd41748b0d69d8616fdd2a7713d1510e",
+    "1932e05dd6ba26e752fb89960c24fee7afe7a42b",
     "1b9d20cd96eca138bf6e4345f5a4d649e9d7f951",
+    "652a2ea7da90c8259a4f7d5e4e3097714c4d6625",
     "a2b58817a1bb63945895f6b4d0a0afcc98e53b8b",
+    "b453a778c1b177a6d3088a62c8fca791c0da4384",
     "e7b7c9cb511edac1e8d98207440454ef90677bd9",
+    "30af1a19b23ca61cf74933ef78ac32574263a393",
     "a40ff89c2c82c824c8adac234c07ca918aa8e2b5",
     "fa25a2eca914cc7782885545ce6326349b1b48dd",
     "0fcb2c5164bfd3e4bd0481dd8de6f7cbfb4445a5",
+    "db124ef1398b101534493b8de1f918c114f7c1ee",
+    "9f039ced134e4e38ccc0120475707a6f7b745f26",
+    "cb0a4e34912e75beaae9028b7e33ddd6aba2ea32",
+    "04ac3ed97520232a52d5a19e1f7bba0471ef46ab",
+    "89ef914a2fc0cad83a2cb7bedc92830b97dd0749",
+    "37fb4bfd4dd3010f5f23e7af93412e06dbfd02c6",
+    "66666c11f93bcd21b50089ef6039cabfedf731c2",
+    "be19101834cd02b71e494feb1a1d48eb989c5eb3",
     "98a8f2b5b7f8b857c29ae388ac1eebfc6c8844d3",
+    "ec7120f075cc1d5270b25c7c9432be4a16bca183",
+    "b70bd0a2905180f48da69433e07a9c823951672d",
+    "f5245d91f6f0100b998ac6e37cc9b337f2f3df34",
     "2221802c63d5047b4b123902b4a8c9bda3f1be2e"
   ],
   "conflicts": [],

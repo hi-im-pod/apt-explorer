@@ -860,6 +860,11 @@
       "ransomware": false
     },
     {
+      "cve": "CVE-2009-4324",
+      "kev": true,
+      "ransomware": false
+    },
+    {
       "cve": "CVE-2010-0738",
       "kev": true,
       "ransomware": true
@@ -873,6 +878,11 @@
       "cve": "CVE-2010-2152",
       "kev": false,
       "ransomware": null
+    },
+    {
+      "cve": "CVE-2010-2883",
+      "kev": true,
+      "ransomware": false
     },
     {
       "cve": "CVE-2010-3915",
@@ -1148,6 +1158,11 @@
       "cve": "CVE-2017-11882",
       "kev": true,
       "ransomware": true
+    },
+    {
+      "cve": "CVE-2017-118822",
+      "kev": false,
+      "ransomware": null
     },
     {
       "cve": "CVE-2017-15303",
@@ -1575,6 +1590,11 @@
       "ransomware": true
     },
     {
+      "cve": "CVE-2021-35211",
+      "kev": true,
+      "ransomware": true
+    },
+    {
       "cve": "CVE-2021-36942",
       "kev": true,
       "ransomware": true
@@ -1603,6 +1623,11 @@
       "cve": "CVE-2021-42321",
       "kev": true,
       "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-44077",
+      "kev": true,
+      "ransomware": false
     },
     {
       "cve": "CVE-2021-44207",
@@ -1751,6 +1776,10 @@
       "count": 1
     },
     {
+      "quarter": "2011-Q4",
+      "count": 1
+    },
+    {
       "quarter": "2012-Q4",
       "count": 1
     },
@@ -1772,7 +1801,11 @@
     },
     {
       "quarter": "2015-Q3",
-      "count": 3
+      "count": 6
+    },
+    {
+      "quarter": "2015-Q4",
+      "count": 2
     },
     {
       "quarter": "2016-Q1",
@@ -1796,7 +1829,7 @@
     },
     {
       "quarter": "2017-Q2",
-      "count": 3
+      "count": 4
     },
     {
       "quarter": "2017-Q3",
@@ -1808,27 +1841,27 @@
     },
     {
       "quarter": "2018-Q1",
-      "count": 7
+      "count": 8
     },
     {
       "quarter": "2018-Q2",
-      "count": 5
-    },
-    {
-      "quarter": "2018-Q3",
-      "count": 5
-    },
-    {
-      "quarter": "2019-Q1",
-      "count": 3
-    },
-    {
-      "quarter": "2019-Q2",
       "count": 7
     },
     {
-      "quarter": "2019-Q3",
+      "quarter": "2018-Q3",
       "count": 6
+    },
+    {
+      "quarter": "2019-Q1",
+      "count": 4
+    },
+    {
+      "quarter": "2019-Q2",
+      "count": 8
+    },
+    {
+      "quarter": "2019-Q3",
+      "count": 9
     },
     {
       "quarter": "2019-Q4",
@@ -1836,7 +1869,7 @@
     },
     {
       "quarter": "2020-Q1",
-      "count": 13
+      "count": 16
     },
     {
       "quarter": "2020-Q2",
@@ -1852,23 +1885,23 @@
     },
     {
       "quarter": "2021-Q1",
-      "count": 31
+      "count": 32
     },
     {
       "quarter": "2021-Q2",
-      "count": 20
+      "count": 21
     },
     {
       "quarter": "2021-Q3",
-      "count": 7
+      "count": 11
     },
     {
       "quarter": "2021-Q4",
-      "count": 8
+      "count": 9
     },
     {
       "quarter": "2022-Q1",
-      "count": 15
+      "count": 17
     },
     {
       "quarter": "2022-Q2",
@@ -1876,15 +1909,15 @@
     },
     {
       "quarter": "2022-Q3",
-      "count": 12
+      "count": 15
     },
     {
       "quarter": "2022-Q4",
-      "count": 9
+      "count": 10
     },
     {
       "quarter": "2023-Q1",
-      "count": 9
+      "count": 11
     },
     {
       "quarter": "2023-Q2",
@@ -1936,7 +1969,7 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 8
+      "count": 13
     },
     {
       "quarter": "2026-Q3",
@@ -1946,13 +1979,18 @@
   "reports": [
     "52f859f75007550de14412e1dc834d10d06e1b3a",
     "0ad712c3e42d3065da15afdd2078d4f6f6e07268",
+    "13df10f1da37a2272d1d7ebdd72f0898a311e046",
     "500775ea85be6e7d6730f0f358cbbc4fc74d81a9",
+    "56431f3e820e255605aa40ba4927121fff1ddd50",
     "5caa3af9facac2e25b868e6afb482d156eacad78",
+    "70cef634f8bec3e588a8566daf7b5064091d0a6e",
     "7a85816b699c2306fde64ad75a477e780dd765ea",
     "827d84c8046d4315615f2ddcde516ca5deaae7f5",
     "92abe5d1c8459ef534f3795f7f137a40c58314a3",
     "96ceefd1027aca44cad0ada5de630d01bacfc012",
+    "d6fdc69202fef1c0f4e171e9fcae238e25ab4bcf",
     "d975b8d1e008be23684b727df57bc61c2c36853b",
+    "f02085685d2ed5f7ad48570e76437fb1acbf6bc4",
     "fa350b6bf21be8af393d235d0a815caae5f5802d",
     "760e14c40a2f98f490e90f5dc8564faed8876f60",
     "b37836d031ce99e6f0a41bafb30ba9a6badeb8a6",
@@ -1997,6 +2035,8 @@
     "8ef50b3946a56f51b3d2f77bf9161ff4b46ab6a5",
     "cdfbe300ad2f230c5f48a697d8a430eceb475fc5",
     "6503b8318c081cae088bf9040e0e8463d13d17d1",
+    "00b60f5a1b841b212a0efe07621e0dfedfb091b0",
+    "5af93af18d82bd2525635dc8a5d29126e05207ee",
     "8cea119b0444f3278dd356de8fe50ef3df1a7a65",
     "e05cd0cb9e0c88b8d43e346a6a3b293f983cf2dd",
     "47b8da3bea0c3580d92023398518498a0e33c21a",
@@ -2011,6 +2051,7 @@
     "df3419b829a5823c1ced56bcb5ba2251ba9af7de",
     "6d9d67d93fa7cc83fe150bac08003047e53d9096",
     "7f9cb1bef17ba0e6104e3c5517ae2013ae67e805",
+    "267f9cb74d32fd083bdd662cd763a91a45e22019",
     "f6cff6d784e3e436b59bb2eaa5e26feca32c3823",
     "389d529c64799c785f09b5eee33416671a7d58d3",
     "f809259eee27f4aaac938b49ed4d729dc53ddfcf",
@@ -2020,9 +2061,12 @@
     "b4f1bcbef3b1af8fe39101d47b6d70e34214e0eb",
     "ebebc6910795eff746182e7b9f1070896f3c14c6",
     "12ace14e9dfca1adafff6eda46eb2b0d449f6114",
+    "08b2b8fb1f64a57c9bf0d7f3a8580e3ddf49de59",
     "8269696ef27d5db68cfb4b51946e7ccd937d98fe",
     "86c3f2f720c7c35b69cb2fffc2f9ff0d06351f3a",
+    "a2d2cbdf233083b31b7ba339cb019e49fcd809e8",
     "d44d93c12fce2403517bf53705dfd78dbb61ae51",
+    "e12cf7b6f86868926d6e764d6001943cc3318f73",
     "e93fbf3bc680023e383c1179424f054b94a7e86f",
     "34e4f1dc826d372999d0efcf7258fd9e838de383",
     "c23f5a16e0c9d8e1cc24ba947efd40fc29a2009b",
@@ -2053,14 +2097,17 @@
     "f26af09a17755077943af2874a229d5226fef82a",
     "paper:The%20APT%20Fallout%20of%20Vulnerabilities%20such%20as%20ProxyLogon,%20%20OGNL%20Injection,%20and%20log4shell",
     "0062160b097ca093312a5e53e98b79941fdbc9b4",
+    "408fbd1401da7a9ab0ee8714b53aab94616b2e20",
     "4f0355253ebee79e42ab89eb08f8fb4cc0b7f289",
     "cf3704f598d0b030a896938a6a390a191a97218e",
     "3e046aafda21dee8c3fac802ba7a8686a2507c05",
+    "c02a6fc83d40c3e25c0346c86b518de82b9da1c1",
     "c17307c0c37e409e7fc8a7b163b82670f3fce9b2",
     "a10fdbb00164a28f7e97989a6ad86edb5f89751d",
     "d29ffab19faa011ce3afc093ff0b087f3f33763f",
     "ff86dd3ec5a70fe1e1bb7680e1df4697c6212fe2",
     "79d3f827458e1a269c0ce006fda644028779533d",
+    "22d0ae19a7809e806bdfdf5ffb899e01b21c78ef",
     "5879f7a783531da3de5dc49323b224193d33a9bc",
     "30ad6651ace290ebc521ef6732d1dae186eab3f3",
     "ccdbcbf9b76c8ee17ce0000dd743abae605af27c",
@@ -2068,11 +2115,15 @@
     "2aeb2eacfc08fac049dbeb48b3fec5bfd314a568",
     "paper:4%20Chinese%20APT%20Groups%20Identified%20Targeting%20Mail%20Server%20of%20Afghan%20Telecommunications%20Firm%20Roshan",
     "c941673a6db00af57b7c88da9c06352e35a23992",
+    "655f50d451967b399c644a56500c5cc790b4fadd",
     "1ba7f6230882e997e4b64861a2904ec29969f401",
     "7702289fd8aca1ad8dbc3e9c536a03821fe61b65",
+    "a80de40b93c28e2460d5eb67bc11d0c63e1ceec6",
     "f4daa44acca79a8008c87139d620169459af59a0",
     "bb5145f5085fdff3b36b59741897749e6310a05b",
     "214bf6c0da676d094fb6f0ea1d536a20ecc9df80",
+    "ff1e351f698c4a2368d694a4e37afc924bc295c3",
+    "c2ea6bb5aa0ee82da58e9f9c96640aca6fab93b6",
     "1ef105f6522d7b71a6681d382f1160bbd1566fc7",
     "1d00d3a43d5c520122f5f24258c6b9703fb7e60b",
     "1503f513ad692362b121ac5e4d4e6bef12bccc03",
@@ -2091,6 +2142,7 @@
     "ff0c64bc5af60cf58e220e97964af1fc81cf77c5",
     "ba5c5b4a201cd3bcd09deb529df534ab917dc353",
     "01d5f589f56547de69752f135d32c6723a4b3055",
+    "4bc769800b75bf69648547f78a202e98c7505dbb",
     "a5b18d33f92a2d419c68d98fcc5feb716b78d57e",
     "f29079c38ee0d5b3a9afb0462b4475e226e9b4ab",
     "e64887a1f356882c048e65c4cc1fa999b1ed0b62",
@@ -2123,6 +2175,7 @@
     "c41bf56a5a401306ba768fc3ad24f2e1bc801de5",
     "5d0c88a18fbbde84bbb2a7dfd71668318c7c2227",
     "2483e82a22ac9f871cd62ad39f7b83c99371d517",
+    "449c50fa76fa2545a649262dfe8fff05b2fcedf3",
     "paper:APT27+turns+to+ransomware",
     "3a0edf0ff1855d507297a7687ebf6d7801fa4ee0",
     "0d6e2cd5a8c62b5a04344af2b6a6999932c5ab2c",
@@ -2157,7 +2210,9 @@
     "2dffc3e2cf175bc15ffba805a6e869f40dfd36a1",
     "16c40c38294e6214024cb00abbc841af3c7bf539",
     "e87b05f20ef33f02be1c02a25f10630522686344",
+    "26bdb6296878e8406cc599e90b76f3ddfb991dc6",
     "e2634f0395353cffdb76c3cd8472c821dcc65828",
+    "c374d7592129aeff542318d60a9a2fd321c54696",
     "ff45d521e043f6ec359bee1121591d5b6484635a",
     "paper:Is%20APT%2027%20Abusing%20COVID-19%20To%20Attack%20People%20!",
     "bd0c197453f05585b435008cdde10e54190a83d6",
@@ -2169,6 +2224,7 @@
     "653171288c2d534959efd7c9060e178593465be9",
     "441f48b969b4448c18c6382282db8ac548f8a3e5",
     "701aa2ef6158529c9dbcae135e3a58a9778bdd17",
+    "9a651d9d1f8b25b2a0d63ebc9ef356d17eb82238",
     "f130f98ce44559c0328409c1be9db6c0663c1520",
     "e2a5ff7e5beea32042a46bdf69cdc96792d1ea6d",
     "3d7721eeaf864f9e6c49847c78630685ba49e78e",
@@ -2180,26 +2236,34 @@
     "4fd3db0442ae7fd5633ebdd008040734e6d8e068",
     "6eb91b46cb6e98fe6f9e4b542d243da97352459f",
     "3da581445ed0023a04f62320e1de0f44e772528d",
+    "5fc19ff2dd153e8dd8e69740bb7f63a175986da7",
+    "1486155a4fdba37407cb86965e3a5e894a7fe0a1",
     "61ac8f21bfe03ac9d3446a71584a92a9a8da0730",
     "c417329a7eae9f54d26b9cafe4325ee95320f48b",
     "b43c8a29b106f92b9521b4d057e29d23692ff86d",
     "002d8d0f84568a958a0c0073b9daca8bad4b23d4",
     "2fec8fc3e8b6c2fad752121e356b5268355474f5",
+    "e50cd4c996c6cd7bb4a47dc7f7a86e3cb8c15837",
     "71083d94086c266f9a5ddb48deb74ab91308a85d",
     "530c04eb6369ec8a5f433e970deaea34b79d0570",
     "9ddcf2053edf7a3ec8fb74ab679878d82c6641e7",
     "bca1058e620ada77efb5a8c2bb90d17827e4b726",
+    "c6cffb1cd62dc107ed5930395a868175afc0f696",
     "7960be96f5038b5a44680ccb0c7e2598615ed7c6",
     "eab263d2cfdab0601a467d8bcc1fb18ff70e0733",
     "fa738be5d10521d4f90279de7ab0c3000544c539",
     "47c64412c5ada2a14fcb56a230321fde32cb9acd",
+    "c87357cd72ac78d9576b6ec545308e99ad909892",
     "fe1ecb3fe582b44e53db1af17692b656a85e7a71",
     "5fc8f0edc719046ed5a8e9f4c7654e808c07c705",
     "d756a710363dff192c32481266645104a903305c",
     "02a54821df905cc36b4d7433febead45a7881633",
+    "78aebb86a5aeacd70d5c49ef7c4b915db651a44f",
     "b1cbc5a600b3fbfb5a9ee6b12860adff9c3d2c2e",
     "ba6f0382399628d54a9a44d5ca868890d2e10645",
     "89540497d08e70e4a9400ca3f0594d37bbd188ab",
+    "035f7ce343df0a51728acb98c5fd196fad498092",
+    "26d09f32676a356465adfafa3d04245df6fa361e",
     "556300e1150497aff2f95406dea1c8e32d0346c5",
     "6c2a04c303f73b5babacb999ff10008584eaf254",
     "ca1583533d1d3f1e95986c97bf401f17e3e236fd",
@@ -2209,6 +2273,7 @@
     "575387ef16724c2727b65c2db13d71c9d8884541",
     "paper:Territorial%20Dispute%20-%20NSA's%20perspective%20on%20APT%20landscape",
     "713132cb020bd00fba7e6a97fdec10757fce7e50",
+    "225668aaec54ba89957ca87b940be31d30be0be2",
     "6334806dd0432eac1530a599f02e993881e0a5f2",
     "67d5b56d384ebc3eff678ca4a3544fcbcfd48e6e",
     "b49facd3aa055abb703c0f64b8a6ab0fdde08401",
@@ -2217,6 +2282,7 @@
     "44bbdfdf4d6abd5b5be832db1dbe7ddc72b8a551",
     "1655e090c52d870c8bb518408742fc5e6cead70b",
     "c541610a0a2f23c4527d321f151c9e94c8b53902",
+    "050b6e66385eb2986de3777763de1524dc500938",
     "b55a1b9004afc876f13ea36c12dd298dbffdf83d",
     "7bc7b4099f30921a875a42212f83e8db60f23142",
     "dbb37b1a14f59614ff5764adc6813452847410a0",
@@ -2226,8 +2292,13 @@
     "ff43b11fe41fc57beca4d67230f1545eb86259b6",
     "30385c5bbf3c93dc7771e486b9bc8ed5e2674f98",
     "5ff49fde7468addf7495dc60efc9406bde48504f",
+    "060957bd034772155905e49648e869f2bfc0adfb",
+    "2e7bfba595146d0274eaf32479cb7ea8eebda153",
+    "3e45a371a5d1ada49c0e193372e3e1fe12191049",
     "5ee4cfb8802fd6a2dc6d936357a6ce16878778cf",
+    "848e4a0403977a8a7c990dbdb69212e724456993",
     "0a0c97b21075f4588f10503ae1c26a4685e061d1",
+    "d93b09b770b91c7e24d22107ece6172745369b3c",
     "37584381a0a0c2d566b8ce13965ffa7226cdaa71",
     "b3adbf55224a9dc1ee6e21e24ca9f1ccbe890ca4",
     "7bbb84f357561c7812b078f90e0f1db20476f4c5",
@@ -2235,6 +2306,7 @@
     "875abf02dad2a434d708e495ffc8afe4b2500aae",
     "24bd1e9d9c67263a2a65c017545634f004dcbfc8",
     "6ac96277e3120a9730fd6584cd42217c3527aed1",
+    "fd81d98729029a483e0c5c69d908ab96014edbe5",
     "2f6abbda2e6cd11dc0d295681de0261acc8d7e29"
   ],
   "conflicts": [],

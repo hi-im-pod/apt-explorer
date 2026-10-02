@@ -192,11 +192,21 @@
     "T1684.001"
   ],
   "techniques_reported": [],
-  "cves": [],
+  "cves": [
+    {
+      "cve": "CVE-2018-13379",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
   "timeline": [
     {
       "quarter": "2022-Q3",
-      "count": 2
+      "count": 4
+    },
+    {
+      "quarter": "2022-Q4",
+      "count": 1
     },
     {
       "quarter": "2024-Q2",
@@ -216,6 +226,9 @@
     "07336685a65e86562afab4823368e7472ade3b78",
     "686b64604331d09ecd155ffe6a379958f2d87b32",
     "e2b253b023aae7abc86c8ea77b5d6bc2b8b82d35",
+    "6c10f1a3c3f3d335e88ac2e4def3e9938a23fed9",
+    "096e1d09230cc7b707c7b5d527832540d2daca0c",
+    "f4db1ab0c2319e94527d7e28892db26858bea3c6",
     "paper:APT42%20Crooked%20Charms,%20Cons%20%20and%20Compromises",
     "3df30e5ad2316e211c51bbd15210f3e06ed3ff7e"
   ],

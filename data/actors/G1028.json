@@ -455,18 +455,66 @@
   "techniques_reported": [
     {
       "id": "T1418",
-      "count": 1
+      "count": 2
     },
     {
       "id": "T1420",
-      "count": 1
+      "count": 2
     },
     {
       "id": "T1426",
-      "count": 1
+      "count": 2
     },
     {
       "id": "T1429",
+      "count": 2
+    },
+    {
+      "id": "T1512",
+      "count": 2
+    },
+    {
+      "id": "T1517",
+      "count": 2
+    },
+    {
+      "id": "T1532",
+      "count": 2
+    },
+    {
+      "id": "T1533",
+      "count": 2
+    },
+    {
+      "id": "T1398",
+      "count": 1
+    },
+    {
+      "id": "T1406",
+      "count": 1
+    },
+    {
+      "id": "T1407",
+      "count": 1
+    },
+    {
+      "id": "T1414",
+      "count": 1
+    },
+    {
+      "id": "T1417.001",
+      "count": 1
+    },
+    {
+      "id": "T1418.001",
+      "count": 1
+    },
+    {
+      "id": "T1422",
+      "count": 1
+    },
+    {
+      "id": "T1430",
       "count": 1
     },
     {
@@ -474,23 +522,11 @@
       "count": 1
     },
     {
-      "id": "T1512",
+      "id": "T1481.003",
       "count": 1
     },
     {
       "id": "T1513",
-      "count": 1
-    },
-    {
-      "id": "T1517",
-      "count": 1
-    },
-    {
-      "id": "T1532",
-      "count": 1
-    },
-    {
-      "id": "T1533",
       "count": 1
     },
     {
@@ -499,6 +535,30 @@
     },
     {
       "id": "T1575",
+      "count": 1
+    },
+    {
+      "id": "T1624.001",
+      "count": 1
+    },
+    {
+      "id": "T1636.002",
+      "count": 1
+    },
+    {
+      "id": "T1636.003",
+      "count": 1
+    },
+    {
+      "id": "T1636.004",
+      "count": 1
+    },
+    {
+      "id": "T1646",
+      "count": 1
+    },
+    {
+      "id": "T1660",
       "count": 1
     }
   ],
@@ -522,7 +582,11 @@
   "timeline": [
     {
       "quarter": "2015-Q1",
-      "count": 1
+      "count": 8
+    },
+    {
+      "quarter": "2015-Q3",
+      "count": 2
     },
     {
       "quarter": "2015-Q4",
@@ -546,7 +610,7 @@
     },
     {
       "quarter": "2019-Q3",
-      "count": 1
+      "count": 2
     },
     {
       "quarter": "2020-Q1",
@@ -558,23 +622,27 @@
     },
     {
       "quarter": "2020-Q3",
-      "count": 2
+      "count": 3
     },
     {
       "quarter": "2020-Q4",
-      "count": 1
+      "count": 4
     },
     {
       "quarter": "2021-Q2",
       "count": 2
     },
     {
+      "quarter": "2021-Q3",
+      "count": 1
+    },
+    {
       "quarter": "2022-Q1",
-      "count": 3
+      "count": 4
     },
     {
       "quarter": "2022-Q2",
-      "count": 1
+      "count": 2
     },
     {
       "quarter": "2023-Q2",
@@ -582,31 +650,48 @@
     },
     {
       "quarter": "2023-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2024-Q3",
       "count": 1
     },
     {
       "quarter": "2026-Q2",
-      "count": 4
+      "count": 7
     }
   ],
   "reports": [
     "612b64444abbc2edb607b1a6c9725caa0fd7b1aa",
+    "a46d95b419457293066c75e9dc62eb3fa6e01529",
+    "bd304e1edd18b18a7d280ee093ef02f8e5706aca",
     "ccb964a7fb791d229effd3d7eb28a107e1a0cf5f",
     "e9b230db0468f39b27c9e9e8177f67f8b3704584",
+    "ef20c0cd1a9ecb6f1446454a091bb2e5f64a51e1",
     "f65d3ec4fde46a7c0f6d437b27bf223ce32dc246",
+    "b9da9325aa7d7e8f3042b12b046c04aa2b4f7842",
     "0753cdcfa70bed2b0bd0aa2d32bfc6eafa778a1d",
+    "3e50e9a9205057173f9b9c8760a59b21a1ab328c",
     "36a4bd06471d80d2789f30bdd2f92f44a6634cc6",
+    "7d32a9e77fa37f3605b0a08557c94b74a35963bb",
     "ffd6e63827e156aa1cc6020365a7972a66eb1f19",
     "7a7ab98f401cb4a50772eef64812702cb1e4b124",
     "3435670a303b3fd872bb04c76c58d6951076afeb",
+    "e39a17e99954a19dda0fa3f7f32c133bf25fc161",
     "e73db1470ec074c7e62fbc4ca4356a1bc83acfd4",
+    "ca612c811c5ebb9343512ff7e9083c7f738ba79c",
     "842b5f840ce9983955afc34bc842e9f926dcde13",
     "dc641767dfecf2604e634d2a849c5988dc010621",
     "75609cca39e6bd39390f11e23753c951fd5f0f7e",
+    "0ac687364c7a585bd646624aba51f26db3e8042e",
+    "188c717c64fcfd20a2e2d6d0e51f60abc0b2397e",
+    "860db458e386b07690499747f5f55603d485996f",
+    "4f6fd9f93f088245f1a0da3a1c2233fe9b0a95a9",
     "57d854291be5afd32de86dc5fb670c2ee511ac66",
     "c19c3cf6fc7f11ece1d8db1f0eaf19dd9017d91a",
     "c3540b25293ee33d44c189ce1946a445c6b5964a",
     "56bae7808247d2efd2f0821de519232a60e75c89",
+    "065415890ba0b306c2e07ff0f42eb39934cdd6fc",
     "paper:MICROPSIA%20(APT-C-23)",
     "ecc2daeb3c747d13f4f94c6058df8564a1474ca3",
     "d41dd6180e8d6709c0ce1454fad5ae53da3d6977",
@@ -616,7 +701,16 @@
     "1211cf3539f2d02c5335b8d05beb81c20920b206",
     "529a4959c9cfdc81513c035bf78b20540e9b1a30",
     "75c2325f529d34155445af6a82bb22ec4277a80f",
-    "paper:The-Desert-Falcons-targeted-attacks"
+    "c2979f8f88d101cd7a337a7d634e14fe3fbf39ad",
+    "efd5f7767010b9682d2ecaae6f2704e3914f1558",
+    "45c43189d5b79921a726a3659a4bc2b328b469b5",
+    "e6003db362c1b47dbd510da97fbf981d20afb0c1",
+    "643a87ff78ac84112c75d12b9c4464c03c9a25c0",
+    "f93b9e9c6a66b8a21dd8b4a0ab2839e96869c0cf",
+    "paper:The-Desert-Falcons-targeted-attacks",
+    "0f4d8ba248dde47b514161014a57885aed084ce2",
+    "9134d57a818f98608a53b53dcfb520716d9eb1c3",
+    "ac6cd5e26a1b5f8a305c7c466bd47a7e3c9b54c3"
   ],
   "conflicts": [],
   "evidence_count": 32

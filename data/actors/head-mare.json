@@ -24,16 +24,57 @@
     }
   ],
   "techniques_documented": [],
-  "techniques_reported": [],
-  "cves": [],
+  "techniques_reported": [
+    {
+      "id": "T1059.001",
+      "count": 1
+    },
+    {
+      "id": "T1059.003",
+      "count": 1
+    },
+    {
+      "id": "T1071.001",
+      "count": 1
+    },
+    {
+      "id": "T1082",
+      "count": 1
+    },
+    {
+      "id": "T1106",
+      "count": 1
+    },
+    {
+      "id": "T1566",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2023-38831",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
   "timeline": [
+    {
+      "quarter": "2024-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q4",
+      "count": 1
+    },
     {
       "quarter": "2026-Q3",
       "count": 1
     }
   ],
   "reports": [
-    "91f90a05c5ca8aacc0a851d919688d61cedfeacd"
+    "91f90a05c5ca8aacc0a851d919688d61cedfeacd",
+    "7895a7017121f0f8f8e45f90fd2d17ae387e9709",
+    "d04a6871cbb2255d875dcfb975ce3157efa93278"
   ],
   "conflicts": [],
   "evidence_count": 1

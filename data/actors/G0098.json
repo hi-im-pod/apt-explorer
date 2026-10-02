@@ -322,6 +322,90 @@
   "techniques_reported": [
     {
       "id": "T1041",
+      "count": 3
+    },
+    {
+      "id": "T1082",
+      "count": 3
+    },
+    {
+      "id": "T1005",
+      "count": 2
+    },
+    {
+      "id": "T1012",
+      "count": 2
+    },
+    {
+      "id": "T1016.001",
+      "count": 2
+    },
+    {
+      "id": "T1049",
+      "count": 2
+    },
+    {
+      "id": "T1057",
+      "count": 2
+    },
+    {
+      "id": "T1071.001",
+      "count": 2
+    },
+    {
+      "id": "T1083",
+      "count": 2
+    },
+    {
+      "id": "T1106",
+      "count": 2
+    },
+    {
+      "id": "T1129",
+      "count": 2
+    },
+    {
+      "id": "T1132.002",
+      "count": 2
+    },
+    {
+      "id": "T1140",
+      "count": 2
+    },
+    {
+      "id": "T1480",
+      "count": 2
+    },
+    {
+      "id": "T1497.003",
+      "count": 2
+    },
+    {
+      "id": "T1547.012",
+      "count": 2
+    },
+    {
+      "id": "T1573",
+      "count": 2
+    },
+    {
+      "id": "T1622",
+      "count": 2
+    },
+    {
+      "id": "T1021.006",
+      "count": 1
+    },
+    {
+      "id": "T1027.001",
+      "count": 1
+    },
+    {
+      "id": "T1036.005",
+      "count": 1
+    },
+    {
+      "id": "T1055",
       "count": 1
     },
     {
@@ -330,10 +414,6 @@
     },
     {
       "id": "T1059.007",
-      "count": 1
-    },
-    {
-      "id": "T1082",
       "count": 1
     },
     {
@@ -380,6 +460,11 @@
       "ransomware": true
     },
     {
+      "cve": "CVE-2017-11882",
+      "kev": true,
+      "ransomware": true
+    },
+    {
       "cve": "CVE-2017-12824",
       "kev": false,
       "ransomware": null
@@ -403,6 +488,11 @@
       "cve": "CVE-2017-8291",
       "kev": true,
       "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-0802",
+      "kev": true,
+      "ransomware": true
     },
     {
       "cve": "CVE-2018-2628",
@@ -551,12 +641,16 @@
       "count": 2
     },
     {
+      "quarter": "2016-Q1",
+      "count": 2
+    },
+    {
       "quarter": "2017-Q2",
-      "count": 4
+      "count": 7
     },
     {
       "quarter": "2018-Q1",
-      "count": 1
+      "count": 2
     },
     {
       "quarter": "2018-Q3",
@@ -572,31 +666,31 @@
     },
     {
       "quarter": "2019-Q3",
-      "count": 2
+      "count": 3
     },
     {
       "quarter": "2019-Q4",
-      "count": 3
+      "count": 4
     },
     {
       "quarter": "2020-Q1",
-      "count": 4
+      "count": 5
     },
     {
       "quarter": "2020-Q2",
-      "count": 4
+      "count": 5
     },
     {
       "quarter": "2020-Q3",
-      "count": 3
+      "count": 4
     },
     {
       "quarter": "2020-Q4",
-      "count": 3
+      "count": 4
     },
     {
       "quarter": "2021-Q1",
-      "count": 2
+      "count": 3
     },
     {
       "quarter": "2021-Q2",
@@ -604,7 +698,7 @@
     },
     {
       "quarter": "2021-Q4",
-      "count": 5
+      "count": 10
     },
     {
       "quarter": "2022-Q1",
@@ -612,7 +706,7 @@
     },
     {
       "quarter": "2022-Q3",
-      "count": 2
+      "count": 4
     },
     {
       "quarter": "2022-Q4",
@@ -632,45 +726,63 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 1
+      "count": 5
     }
   ],
   "reports": [
     "3e2c93a53f0884a2084346fc97ff4dadfc79a05a",
+    "5a68bd822c2d30873ab0d93e2f0f27a652758001",
+    "78b17745ea42239d31be0258204d0e4b434d5df0",
+    "7d28e672783fefa2afb312037110267350380896",
+    "fc69c34f5de302538fed6626a2a90e8a88332472",
     "1f4c31af34263573f191262457eb99bc5edd690e",
     "927127a9ff37420b191af7b81035bf637fa6ba55",
     "88a4cfd8e88bd252a570ccceadd2cec23f6ef9e2",
     "0932877395a2dfe8ef29853de15071e88306878d",
     "011d85f9602c8af14d9cf5bb0721633c1702f8bc",
+    "f015024b79ada683219cf30adbd0b6afec2c3554",
     "eefe398c114ddbed11c97fdc1ab2d684b4193d0e",
+    "ef68cfc8becfca82fe097ed4f4f99222dabab6d0",
     "df14862e85f709fbba2b4c9a66ed9cf590baf6c9",
     "d4401ff6a8861b612745ed4acaca8093fb548ed8",
+    "8523538d5bfa0d8036c55146e5afd8d8cd7fba49",
     "c759a2089f71dd4809d180f16bff0115e96477ea",
     "393031d781b28cf189c08ec67fb235f912396acb",
+    "fd23a11e29611250b2220eb6dde76c555c6e7e70",
+    "8e01ad660d73046d50660df8fea934d68df3f75c",
     "d3a9b52a250e4abc5d6e92b3033dcc832e3ce269",
     "f7f4af75a1514fd3ede9f55d515306ef022c940a",
+    "2aeb2eacfc08fac049dbeb48b3fec5bfd314a568",
     "b29056a7d71a0119d0296a203efe53692c584726",
+    "f6705f1b02eae009c4bce78ab1f5fc85aae130be",
     "afbdece55f3c92223b9e8259f93129d6c91ba9c0",
+    "25dd1d24941dfa23d6df193032f0d10c89bc1a56",
     "abbc5f734da546dc11ba430aac88119e74b92082",
     "cd98ff1cf9217495ce3ccc27c189298278841548",
     "cb5e5cc82efdf44699b86d0eb3385955f209043b",
+    "c3e95b98a42aea55c27c8407bc456e7c685738f9",
     "f7eced39802e8636248b5e0caaf653f00798f91a",
     "3efa9d0258be1347593ef75ef706181476703351",
     "57e8d714b5d438ce9e92de0b265e73d7e9f44956",
     "b7f33ecd7247d20fa23e11250864ab4ccae1f1f2",
+    "cef33dc50babfe0596325fd895831a0f4d4a6ff0",
     "6a69ee59f3367889738d04e4802efb3a166ca2d8",
     "3bdd11d0b197ebbc1542554c51f8796f7c3477a2",
     "a34f8a68f18d5f0fab426f07d5c837e63e7b8ffc",
     "61251cc065cb364dbba4585d1d97b0d81062cfc1",
     "4d2a889ed7776b47a5816895b7f3bedc76491848",
+    "be817c0c478cfa05874fef422809f2fecc8ac9a6",
+    "041aa91cd6399a294a9dbc98c78b3f3325431790",
     "6f75f06c26f671d30e5941ae089af416dc96193a",
     "1ccd9bed77a597e46da58c0c6c8bd2daba7f633c",
     "9d6b4577326ac39d5d3bdc410b55ed6fc43274c3",
     "21c7a362a59f4f75ae9b6c3ff24c56376ef30739",
     "5007fb82a883c1ba9b478e5e613d028a4538c5b0",
     "fa9bd0d9a3cb816a856162e187080f5acc63b35c",
+    "1e96d812b18ed2acbadc4e097d1833c795d7f115",
     "f4bdbbe370f56e03edfab1e83985016508bfe76e",
     "38526774d000095e8b66228e7e1751c06aef5ece",
+    "f3bf0c397b65d9b96a79c68e4327ddbaf215bfee",
     "1b9d20cd96eca138bf6e4345f5a4d649e9d7f951",
     "e73fd8b9d56f1a9d6fa037f3df40f5f8a25ad5c4",
     "02581a19776565cd2db685843cdeeb08d8cdeff3",
@@ -678,11 +790,17 @@
     "c7e71326d026cc46c7eb49de77a8193fe131afbb",
     "642c735584a0d3a74c18024a049b0680aaf21adf",
     "f53aa3d8c7b6f9185fd3d7957aeb4d6cd1192ffb",
+    "92a975f6194ef286729af425eebfe87362f059c2",
     "paper:Analysis%20of%20BlackTech's%20latest%20APT%20attack",
     "359be5d4f63e21ff56c51dd8924b9f9146b2170d",
+    "4687f711eb5433fa25b03a56568b529fe606f3a2",
+    "7c07a6c907e151bfdb785f4ada9de8e1e6d8d003",
+    "82879db102b38ec818b19521dc6133147418dd06",
     "df18330841082d967b74c11762561c16666ed9a2",
     "e1d483cd78bc58a07dfd5c56e36cb9fdd4ced452",
     "425756a436b47fb30bbe7e834928dd1a8a9e6ce6",
+    "3a65d66a1cf6c2862255f745902011d7b2213d12",
+    "e3a45a80568e2b9dffa06eb20b89edc60a33713e",
     "b5c45a57d80b706004fa9966a59b9b3486457817",
     "f4b6fa581d2a5c22cc93842511c6d45bcbe37aa7"
   ],

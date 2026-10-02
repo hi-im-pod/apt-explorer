@@ -125,9 +125,24 @@
   ],
   "cves": [
     {
+      "cve": "CVE-2018-20781",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2019-1002100",
+      "kev": false,
+      "ransomware": null
+    },
+    {
       "cve": "CVE-2019-5736",
       "kev": false,
       "ransomware": null
+    },
+    {
+      "cve": "CVE-2021-26084",
+      "kev": true,
+      "ransomware": true
     }
   ],
   "timeline": [
@@ -137,42 +152,109 @@
     },
     {
       "quarter": "2020-Q3",
-      "count": 1
+      "count": 6
     },
     {
       "quarter": "2020-Q4",
-      "count": 1
+      "count": 4
     },
     {
       "quarter": "2021-Q1",
-      "count": 2
+      "count": 9
     },
     {
       "quarter": "2021-Q2",
-      "count": 1
+      "count": 5
     },
     {
       "quarter": "2021-Q3",
+      "count": 4
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 13
+    },
+    {
+      "quarter": "2022-Q1",
       "count": 2
     },
     {
+      "quarter": "2022-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2023-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q3",
+      "count": 1
+    },
+    {
       "quarter": "2026-Q2",
-      "count": 5
+      "count": 6
     }
   ],
   "reports": [
     "3aaeec4d214ece4501a1bbc285b20b27df61cdf5",
     "3adfde82ee8ee76f5b3e78caf3ecdec71325220d",
+    "713d1a800c60a5a380e002ae20117af1a1dd1f01",
     "8332803119bcc8679f311360bca98d6572b5b4af",
     "a44a575f120ca7935e006a0b1bf6e5f40ee69e17",
     "e4eb021d70cf2bf95753bfeca34f554da86b8dea",
+    "cfa1b91e1d42cd6d86d703f1f4ccf1e27b00340d",
+    "5990239edd77c73c031624b123c3bce1c9ac918c",
+    "4b77bb19c7ec1981844875df9a25eb8591ac937d",
+    "b333758c4a7b3b88e9d2256494d08ac92b51fec4",
+    "311738fae5c9d0e6adbc7de99358ef137754cca4",
+    "d12c245b4200a327920a4aeb4cd67cdcc5fbb7fa",
+    "4c965dbd44ffbfe6ab39efb6ff4849607bc90b3b",
+    "50e713a194b516e044be2b8bfbe07f08b94fdc0e",
+    "27bde9b98e824fe6d93f76a0629353e9920b6797",
+    "51f1706e46df1804fa7f2b46adf09e471715f370",
+    "dd27b22428de7c983474b2d1b1388ad9e5bcdaaa",
+    "e4cdb943fc2885ac39e7a9683d884aaf22aca881",
+    "8cead2e537922622bc66d24a9d7a78c4a1e5a3f3",
+    "810a8dca80dddf840f64e4acb92e41e3aea42368",
+    "0116b413d3acef096092d84e5fe30c5c16c05896",
+    "1dbf7e3410dfac499d049ccee26b3b533aa5bbf4",
+    "5cac0ffaff6e3ddce573fd61773371acb474369f",
+    "4e1738f045235307c32ec0f3a8c368e2ce6ab67d",
+    "b725a848f76d9bef302b08f25c8052abb559ae40",
+    "9367f1b9c5f2966b5a6ff1eab11b8c1b7cdea0d1",
+    "fed5513daa061e0ebb277c5b2cf29cc70b3dc303",
+    "0631f79e913cbb5d487788f14c0c2284fa45afd9",
+    "455204ed99cad95b3b73bd2542300bccb96f767d",
     "6e76324fd3b54f11f5eda90ef40c5eb20c7adf7a",
     "d89fd3072ca54b3027546576a3d11ec24b6af17e",
+    "1f93c59425c52f837953fd1a2b2802a6872b3008",
     "2fa573dbd31f91e77fb409838bdb4b343c8bf759",
+    "c6d3710a0931de503afd4fb4c52f84ae313292eb",
+    "0797685de78241f5b79d3ea29592667314903b57",
+    "024c6ec890b98ecac052d867212f293efa299a64",
+    "24f0d1e2a0f55f4548037b5f8f6d248fdcceb6b2",
+    "bdd272a3d12333e3ef1af19b58b3aff8de965c93",
+    "41ac97aeb54a64aecac10419e81a9f41c6bc9da5",
+    "438d68c8de123a74ef627d6d2405d9443fb82902",
+    "be7575b471e64e59fe8b406e75b8fc39b18979c8",
     "b075b3490db2935c09d7b942e2c1ae079cf0a29f",
+    "b4b416122866e534f65100078bb1025a45ae1c96",
     "d81e73f678a9dc9b12af503559063122ecc78502",
+    "f3e4de6544095407d94fdecb0ee988fad9d467b5",
+    "3b6f44180d41aa6f022942317bb5efe535a1ea4f",
+    "b1f3f7700f1677f0f1e0c8e0ea161c7f8007306d",
+    "6688de90f2f4a42dab64bd0cad8eadce99c3b62d",
     "6ac1a1ffa58d5996976af1211c3a62a563b705e2",
+    "07d6c89b969ac75280bcaa8779fb8ae0132b4923",
     "31e082a1ca4f7e12ac0cc0a32185d5c7c55752e6",
+    "69669084c7d122c353ef6ce100f18c6df45d493b",
+    "0c1e924baae3ecbc5fa96e88a1afd0d7d55e8b97",
+    "7d997b911c8b4aff60f2523d8c366138c303f750",
+    "e64a854479cc097ab40a4ee4200b011823be2436",
     "paper:APT15"
   ],
   "conflicts": [],

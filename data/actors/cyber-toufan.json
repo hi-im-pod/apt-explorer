@@ -28,10 +28,35 @@
   },
   "malware": [],
   "techniques_documented": [],
-  "techniques_reported": [],
+  "techniques_reported": [
+    {
+      "id": "T1027",
+      "count": 1
+    },
+    {
+      "id": "T1485",
+      "count": 1
+    },
+    {
+      "id": "T1583",
+      "count": 1
+    },
+    {
+      "id": "T1595",
+      "count": 1
+    }
+  ],
   "cves": [],
-  "timeline": [],
-  "reports": [],
+  "timeline": [
+    {
+      "quarter": "2026-Q2",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "1557ff8a5bd8142c8f99fd63b591efc20b5e1435",
+    "af43fee6adc3e620b49931ac5498d49855572dca"
+  ],
   "conflicts": [],
   "evidence_count": 1
 }

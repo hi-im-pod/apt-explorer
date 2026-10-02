@@ -1903,6 +1903,11 @@
       "ransomware": true
     },
     {
+      "cve": "CVE-2017-5689",
+      "kev": true,
+      "ransomware": false
+    },
+    {
       "cve": "CVE-2017-6327",
       "kev": true,
       "ransomware": false
@@ -2934,6 +2939,10 @@
     },
     {
       "quarter": "2015-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2016-Q1",
       "count": 1
     },
     {
@@ -2946,19 +2955,19 @@
     },
     {
       "quarter": "2017-Q2",
-      "count": 9
+      "count": 16
     },
     {
       "quarter": "2017-Q4",
-      "count": 3
+      "count": 4
     },
     {
       "quarter": "2018-Q1",
-      "count": 2
+      "count": 3
     },
     {
       "quarter": "2018-Q2",
-      "count": 5
+      "count": 9
     },
     {
       "quarter": "2018-Q3",
@@ -2966,19 +2975,19 @@
     },
     {
       "quarter": "2018-Q4",
-      "count": 4
-    },
-    {
-      "quarter": "2019-Q1",
       "count": 7
     },
     {
+      "quarter": "2019-Q1",
+      "count": 10
+    },
+    {
       "quarter": "2019-Q2",
-      "count": 17
+      "count": 24
     },
     {
       "quarter": "2019-Q3",
-      "count": 3
+      "count": 4
     },
     {
       "quarter": "2019-Q4",
@@ -2990,7 +2999,7 @@
     },
     {
       "quarter": "2020-Q2",
-      "count": 20
+      "count": 21
     },
     {
       "quarter": "2020-Q3",
@@ -2998,19 +3007,19 @@
     },
     {
       "quarter": "2020-Q4",
-      "count": 46
+      "count": 51
     },
     {
       "quarter": "2021-Q1",
-      "count": 46
+      "count": 48
     },
     {
       "quarter": "2021-Q2",
-      "count": 59
+      "count": 60
     },
     {
       "quarter": "2021-Q3",
-      "count": 62
+      "count": 63
     },
     {
       "quarter": "2021-Q4",
@@ -3018,7 +3027,7 @@
     },
     {
       "quarter": "2022-Q1",
-      "count": 55
+      "count": 56
     },
     {
       "quarter": "2022-Q2",
@@ -3030,7 +3039,7 @@
     },
     {
       "quarter": "2022-Q4",
-      "count": 15
+      "count": 16
     },
     {
       "quarter": "2023-Q1",
@@ -3086,7 +3095,7 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 17
+      "count": 22
     },
     {
       "quarter": "2026-Q3",
@@ -3100,14 +3109,19 @@
     "baaf5323f2119a31de412d8652004b4b0b1ee5ba",
     "044f17d2b0b222b8bf06787200d521bc2ac26d86",
     "2714442444754db767799b8702e99df7327c5556",
+    "008b3fbf514dead6cf61cfb2c9127fbf688aaaed",
     "0d47000f0e6189fc85017db4d3ce4989447267b8",
     "28e9a3d1415943980b6214a0473241f0cd4d0c92",
     "3264963acb73ff23add60985ee4d3814b2358a58",
     "500ee34397a059485d711ed7ea90706af851f3df",
+    "5aa76a3f06505517354d3b3bc7ee7d0c35976d4f",
+    "684315df0f073fbac567137a9c692eb12eede0f1",
     "748f9be92f6186781f2f4882175bb2cf773e518c",
     "7ebe87146d492bcc5403dc80e26c230457c6a507",
+    "8f2af18f2d5711fc5241660848dc005f6d1ec78b",
     "91f205ec2b0e19eb9e1b2a0006019960d1868e5a",
     "b3499fa332d046d07d5bcd5611655ac36dfa1577",
+    "d9e36d91ff8d0676be017c5fe6a78df7dcd45913",
     "da3685afbc2e65105173b849ed6c94ef8f422ac5",
     "e6f9047c696ca88a8516eb34501e08ce57e0b106",
     "f89fd483e24d3aa97c64d5a0e590ca2c934dbd8b",
@@ -3256,6 +3270,7 @@
     "f36b089b9ec23f9a1c328ef4592dd1c28f220f48",
     "30e7dbb6ac8ad7bd0b1ee2da0ff6e4e4b4cc5250",
     "2ff25a4d2dc113f6abc23fde1a0f46d57c7911dd",
+    "00431974c0075c895c7f1d8842efa8112c9f2703",
     "c801695128ac2fc981656d32de5b8b0b7677da8f",
     "06b68c70fac490a7473249ef7783a595177782db",
     "84df6b30a57466410de82fe41c9ac6cc9b71d1b3",
@@ -3412,6 +3427,7 @@
     "c5c01cdb76544273a66422046c878f45da62c8e8",
     "c60a748e57368ea3485503b8f6101244b4654728",
     "0185e56b0a0bbac28ae51efc875421cc39c4d86c",
+    "35428b46bb9785b339a3459fb35e184d711dbb99",
     "4f2ff67f3e384e7900fd3e22ba239b1abb2cb525",
     "45213dc42215f5e804142c9d8bca148d8a8f4259",
     "307f91db1aaec77b04e5c21f941b2920a6937c46",
@@ -3529,6 +3545,7 @@
     "7702289fd8aca1ad8dbc3e9c536a03821fe61b65",
     "cf9d08391f722238414b7d96692deb0067bda765",
     "5bd333a77d96d1798885f97ce59f70b7949135f5",
+    "e65ee5e116b52059fda570b40073aecefa46059f",
     "paper:Detecting%20Cobalt%20Strike%20Government-Sponsored%20Threat%20Groups%20(APT32)",
     "139cc895f32d47164b1b03cbe333ca16171532e0",
     "75263ce57f2b8c3bfe32f7f06c6541621a45c0d2",
@@ -3590,6 +3607,7 @@
     "e6ba34bbe78d34c34d977f69154df54c16da9590",
     "12830c1b1fd37b4be618466e09411a64cbd6359c",
     "2dfff56b76e700de011bca3be1985e5a51da5457",
+    "30797a31636c766a6f2c2cb9da8f8a3718c9eee2",
     "34560d1903165277659d65f52594cebe7aae768f",
     "9678a3d78e7cc2e3b7272727b69a6f20c8b4ca8f",
     "cae2c8cf609d198fac69e62ea3ad709e780a5d34",
@@ -3632,12 +3650,14 @@
     "0e33812cdd6028a00c42ed1694cc246f40e3d2fb",
     "1fb493f4fac7f782729f6d2667eb5aded32eddd6",
     "41b4eaba5fe24d785a859eeed4ca45dd911ef623",
+    "96046878c8cd896a0e9a716150f5fb0ffe9545cb",
     "aad302df572c61e3f31f09ceac912cc6b4cf2e9f",
     "2d98a214de7a8a280ebe92a6883684593e3d33d3",
     "a0d8763d28a159e4d66248b0f4daf28b60193dac",
     "8a0d35c3569ccabf539172f02fe9aecf106a37e6",
     "b1b5d57f8780ce069a49b8555e7832973a8c7aba",
     "9fc813c649024772b809abde9c20844d86cbd5ed",
+    "e3dbd3c172440c49bdabb7381a7fdfe04a1c6b60",
     "14ba5ae43f1e5953309d6fe134aed75734091a05",
     "e59c5b1170e2b9c010b0a5ede6be5484db71c94b",
     "4bee8c11a5708d97ef59c1da0efc457564bbeca7",
@@ -3671,17 +3691,22 @@
     "3b82a58b0eaa09d7edb4e3387f8ea6a52c6444eb",
     "aa4357f3ecb24c4f4eb086b826849a6bc21a73ef",
     "7ceeb06ac7cac799f0ed9d71d6190b2d033eb8f0",
+    "6568b7547682f1607dd85afc661f984734338a5f",
     "f23ee1269cb8c01631ac7b978beac8aff6d5bff7",
     "15fe81e24bfbb3b20b2deddd8beeb6c137956a79",
     "bdefdfe0e1efec2c7cc9f517535fbc4672388960",
     "d164d5bea0819c3f3354926187edaca7806a850f",
+    "d76d4b299e46b36cc9d195dfea4b3752c5833ed2",
     "291c9f75be5db44e71d84666512d431a4cc5013b",
     "ac844dfefd92df69384d56efeb86e1dfb08c0c9f",
+    "e478084b347a3024017a4f5647a23a7aa53f9407",
     "b36eef5d7f7b4ed6fccb282f8bcc2dcd062ef074",
     "eea6ef271c53563d5e71d31d047c026ff1c35ebc",
     "efe77708bf35a911b07e019db06745486a29b89e",
     "0ce540c2d1bd86cd34a82fe8bde1d282e4d51957",
+    "79e1cebd3bcf3285922148cceb2d66ab22bff04b",
     "0596bcc60dac1a861c045210659726d6987f9469",
+    "34ca92f2cf9d17f44a084b1dfd89861416010109",
     "paper:New%20APT32%20Malware%20Campaign%20Targets%20Cambodian%20Government",
     "b0770e0e84ea79d934c47c48012fbcd301cc99a5",
     "a10d68dc8ae68d910957e976da3ad428ab33c8bb",
@@ -3739,6 +3764,7 @@
     "2298d37600e023fa53a3204d25d1a0a20c0f78e2",
     "c9940c1746f5ad56c7cbac1d4095fdff766491cc",
     "fa061e1e56d557b53bd1b364d594842f9d9242bf",
+    "ba03485d7acd3907b509ddf9c59b1eccf0747a0e",
     "d93d462bb6257f0eea7fff5f522a324c6cd507a1",
     "paper:Catching%20APT41%20exploiting%20a%20zero-day%20vulnerability",
     "87efc930fd24ab9cb6c0db2c892b0dab87c59a3b",
@@ -3763,7 +3789,9 @@
     "72fd9c6eb05ac339aace5c8771b6da7ef8de688b",
     "886172220393d7ad328c317abef6f8208e1dd935",
     "ac7434961a98d0994f352e917c30b1bf118cbb7f",
+    "ea663d99d72d87bcf25a6e2c3befba9cb2be81d7",
     "71083d94086c266f9a5ddb48deb74ab91308a85d",
+    "2b11ea5b0277264f527bfaff62e4ae5510b7521a",
     "0249a2a0094532a953b3cf069e4098b9bd06dc8d",
     "1b22d34782cd0151a5d776f27352589c2df3ad7a",
     "paper:An%20APT%20Blueprint%20Gaining%20New%20Visibility%20into%20Financial%20Threats",
@@ -3771,25 +3799,37 @@
     "130bedbf6c33e32735d9e5081e80957508c0f376",
     "4b75f585b8ff8f6c826fb2d2cac3bfd52b633c01",
     "619395650b3c940cb49565b2d3ec3f720aab829c",
+    "743d880b0a59a5081661c287bdc551606604e91c",
     "8863a15b9fcd585363d988fe65bcd04b6ae1183d",
     "paper:Sea%20Lotus%20APT%20organization's%20attack%20techniques%20against%20China%20in%20the%20first%20quarter%20of%202019%20revealed",
     "0acc6bd7228fe5a1b059de2ba51e76cbe9717fc4",
+    "6645296c925133446d4e213a547235692761d5c2",
     "5be619397f2620f04c1da265d64104913ff07701",
+    "3b37d23631ce93b9bfaef0c4633b40aea8920ca8",
+    "4d70767a9f41fee42a3cf55984a16590c61c2ee4",
     "b21732aa3237d8ea8967100cf7878358c40d2ccc",
+    "f4fe55ce1b5441d8a25095a740c365c4d089d0e6",
     "c3b5b9a94d74e8fe4c2d76882ab6d7dcb17524d5",
+    "3d76b742d165cf1702e8d6f410d4c5b65e4962f7",
     "62bbc02131956eb0228ab9a5ab64fd88ba12e1d8",
     "paper:OceanLotus-Steganography-Malware-Analysis-White-Paper",
     "a0fe7b3d93f31f4b3c43555c0a853e2ab892bd8d",
     "734ae623b5c32fe7a38fb962effa6f2305b6d79e",
+    "76ef25e7ad940f0892e6ea07a7364777bed00261",
     "bddc3d85b7f57b186c0bf3e794469bbe0d685368",
     "cd32735b9f4fbb8bf8c7b3d35436b0479ceb2d76",
     "902a15e550ff733437a4aefef4b6781dffc82ac8",
     "31aeff98e5ecc985d570f5b88204900aba65a6cd",
+    "b1787c783377f3921d0238b34afa74c3318ff3c6",
     "c340ee8a35dd62395f18fa4979462ddcacf07944",
+    "08442ce9f008bfb4df2bbc74f88e53c04ceda2d0",
     "68a8f729972e4da9b02ec3b6de47893ad9eec2e8",
     "7507a0820eb04bbefa5400a220b3858b2fe58333",
     "fb43ff546455506c41067543baf645a7b61a3fd8",
     "03b44872d273ab9d1dc4e6dd8817b248c175f65c",
+    "322844134be46553017e7176d7f4f796e595d4c1",
+    "6a7ef30b7ef4ecd4c85430aaa1234ad2c1493b3d",
+    "3b2d947a0db2be931e548b29e8f0604494cc4766",
     "6a34208ac703c1fb4633ba448fb78bc79eb3ae19",
     "e15f7532efb0ef38750132b7300d5b0e8c8960b6",
     "332752e71bda8d3da3eba84ee6d6ba829bf1eafb",
@@ -3797,23 +3837,38 @@
     "1c8e61b3f0589bbbbbc85b0e94bbfe4c9ddbe11f",
     "3521306f97b7e1656871b6e95ef9d02d72be1d0f",
     "251139b66d8a6e68a38000d1e05befd26bf535ca",
+    "1f4fb94a88d7ad303157e3a5ce3d5ec33833a3bf",
+    "cffa0201901e5c88040f4b3688b60bb3a11c3f76",
+    "f8e9e357ff59df2cdcb81b18271e8f544663cd0e",
+    "34af865d15b3440fc02eb90953a31349fa73b209",
     "b802d4a3eae2d091c99443ba66af628df01114eb",
     "2a8dd227c58b7bc6a83f21f1947198ca7fcacc79",
+    "43b8a4716abedd6f8b2c9e2cda5b038407a0cfb4",
     "a98b3a495b906d5e966dd4afa536b736030aaa35",
+    "2c7e63b27ea0679d869360dd329f0f72ff3e1e3a",
     "722af4246b12fc3ffe9fe577e2f4fa0c0ee68f6c",
     "480644fd3f8d7038109dfa8d211ce09d5e09496e",
     "b14204853e9ec3f569a4783e38ce7edc945a9eaf",
+    "bce3c61603239578e7a1f06fef1c30903ff0d391",
     "1c077e95fd513ff03dc3cecb9678794ac01f0ad4",
+    "5e153f054666cf6abb4511662292809360b67d3b",
+    "d3b5aa6085c4ed0c90681c8cbd1d680cb5cff17a",
     "6fc906897c5820e13db9717e4f62cbfd1dea8e75",
     "a4d255a5acc56a1f8203364db0f65d781328a1af",
+    "36fa8bba18fe8a9f05d179ba92af022b5e0048d3",
     "62bad1275ebdb062b9df708c1b71c34e5b92f310",
     "beb9c2fa64d9154d6d65e518db526ffeb3950db2",
+    "caa0568c776554b0fc234a5788be5bf86a302da6",
     "fd935612ea036144030f0ca7fce0810b09c6eec4",
+    "efd33a3a075c0c9f4f5aa79d1049e557f19d1b60",
     "1c8b853a0f1d42979c2d231a728cfb2173c5e991",
     "272dc619d21855eb7060799ac46c95d910de76dc",
+    "acc147f6e66a4f0ae9417cdf613eb19f7fe870ef",
     "86bd49705271eaa7afcd9bf869ac3cf8767e1c5b",
     "c38b1d51363d56d47ee4794f35f8e1e665403dfd",
     "21b8768b4a631b50c13f20d5668f12e237835874",
+    "ab6e43805082397804a7072037fc834d97d8afe3",
+    "98e849a6be7fb956f5b17a183a2e00048f3bab25",
     "paper:OceanLotusReport",
     "6d83deba61a70b59ad085ba18539057a9bbfba62",
     "8bcee3db2cad1e80e97b6174f744f913b66b72f5"

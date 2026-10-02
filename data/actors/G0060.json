@@ -469,6 +469,11 @@
       "ransomware": null
     },
     {
+      "cve": "CVE-2011-0611",
+      "kev": true,
+      "ransomware": false
+    },
+    {
       "cve": "CVE-2011-1331",
       "kev": false,
       "ransomware": null
@@ -525,6 +530,11 @@
     },
     {
       "cve": "CVE-2014-4113",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2014-6332",
       "kev": true,
       "ransomware": false
     },
@@ -666,8 +676,12 @@
   ],
   "timeline": [
     {
+      "quarter": "2015-Q3",
+      "count": 1
+    },
+    {
       "quarter": "2017-Q2",
-      "count": 2
+      "count": 3
     },
     {
       "quarter": "2017-Q3",
@@ -675,7 +689,7 @@
     },
     {
       "quarter": "2017-Q4",
-      "count": 2
+      "count": 4
     },
     {
       "quarter": "2018-Q2",
@@ -718,8 +732,12 @@
       "count": 4
     },
     {
+      "quarter": "2021-Q2",
+      "count": 1
+    },
+    {
       "quarter": "2021-Q4",
-      "count": 2
+      "count": 3
     },
     {
       "quarter": "2022-Q3",
@@ -748,9 +766,14 @@
     {
       "quarter": "2025-Q2",
       "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
     }
   ],
   "reports": [
+    "bfd169da180b1bc33b4c59da11011f3285bda453",
     "33d56385d9aaf9d6692724ce8e253b771e294ae6",
     "f058f562cfdfdc5aea92985f74627e3f507edb1b",
     "a5af4ba85da685a118afff56a007b6ec5e9c203d",
@@ -762,8 +785,10 @@
     "586056209352af94432542eaa4865ffb6026b96e",
     "ec694b8e26248596bddf5f0d6617822b537d0201",
     "71a6cdf9a7133b7f18c54ae88788fe8d4f2b7798",
+    "a76c80dba40420752b57e31844214f76a50999d8",
     "d29ffab19faa011ce3afc093ff0b087f3f33763f",
     "434bfe8feea363bbccfa107c9d24e6a5a5a756f2",
+    "a38f1756375eda8c1dbd04b6ba91ea25b6bcba45",
     "255a4321e5fdaf8d1f88f8efec947a7b0e674947",
     "fe88cf32c0db9cf5d15f3202c19793ccb5045fbb",
     "459d4afeac4f379012af4f4d6e233c041fdd16c7",
@@ -793,11 +818,15 @@
     "89540497d08e70e4a9400ca3f0594d37bbd188ab",
     "9de4109c60d0abbf4d986815169f04a78ceaf101",
     "dd16552805b96e7cafc27d7edcd05e15014e4091",
+    "7527a3a05e51b4e142d9ed973388113c0058f232",
     "a4154f5822b5ea9bfc117d3fa87666c5b71e4d46",
+    "176cd4a98a3bad0ed26c77cfb15f9df5ab1a7cef",
     "ca5db110c6eff4afde63016823a546599e49dba6",
     "80ffb5ab6a8a5f2ce5a02f10a8b131b48d5b0672",
+    "538f1dc323e63226df8cf1fa8f2517f48216854a",
     "e8e651ded2d19cb62556e14a2e79eec1e897c55d",
-    "73e1915ed4e87b70f4d068beaf3a12c9a4ddbb0a"
+    "73e1915ed4e87b70f4d068beaf3a12c9a4ddbb0a",
+    "90c2f74e68082299e25ec11754906f9a998d2dcc"
   ],
   "conflicts": [],
   "evidence_count": 28

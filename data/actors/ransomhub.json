@@ -30,6 +30,22 @@
   "techniques_documented": [],
   "techniques_reported": [
     {
+      "id": "T1059.001",
+      "count": 3
+    },
+    {
+      "id": "T1059.003",
+      "count": 3
+    },
+    {
+      "id": "T1059.006",
+      "count": 3
+    },
+    {
+      "id": "T1078",
+      "count": 3
+    },
+    {
       "id": "T1016",
       "count": 2
     },
@@ -47,18 +63,6 @@
     },
     {
       "id": "T1053.005",
-      "count": 2
-    },
-    {
-      "id": "T1059.001",
-      "count": 2
-    },
-    {
-      "id": "T1059.003",
-      "count": 2
-    },
-    {
-      "id": "T1059.006",
       "count": 2
     },
     {
@@ -82,10 +86,6 @@
       "count": 2
     },
     {
-      "id": "T1078",
-      "count": 2
-    },
-    {
       "id": "T1082",
       "count": 2
     },
@@ -102,11 +102,23 @@
       "count": 2
     },
     {
+      "id": "T1098",
+      "count": 2
+    },
+    {
       "id": "T1105",
       "count": 2
     },
     {
+      "id": "T1134.001",
+      "count": 2
+    },
+    {
       "id": "T1135",
+      "count": 2
+    },
+    {
+      "id": "T1136.001",
       "count": 2
     },
     {
@@ -119,6 +131,22 @@
     },
     {
       "id": "T1482",
+      "count": 2
+    },
+    {
+      "id": "T1547",
+      "count": 2
+    },
+    {
+      "id": "T1547.001",
+      "count": 2
+    },
+    {
+      "id": "T1566.001",
+      "count": 2
+    },
+    {
+      "id": "T1566.004",
       "count": 2
     },
     {
@@ -346,6 +374,10 @@
       "count": 1
     },
     {
+      "id": "T1078.003",
+      "count": 1
+    },
+    {
       "id": "T1078.004",
       "count": 1
     },
@@ -375,10 +407,6 @@
     },
     {
       "id": "T1091",
-      "count": 1
-    },
-    {
-      "id": "T1098",
       "count": 1
     },
     {
@@ -482,15 +510,7 @@
       "count": 1
     },
     {
-      "id": "T1134.001",
-      "count": 1
-    },
-    {
       "id": "T1136",
-      "count": 1
-    },
-    {
-      "id": "T1136.001",
       "count": 1
     },
     {
@@ -694,14 +714,6 @@
       "count": 1
     },
     {
-      "id": "T1547",
-      "count": 1
-    },
-    {
-      "id": "T1547.001",
-      "count": 1
-    },
-    {
       "id": "T1547.002",
       "count": 1
     },
@@ -794,19 +806,11 @@
       "count": 1
     },
     {
-      "id": "T1566.001",
-      "count": 1
-    },
-    {
       "id": "T1566.002",
       "count": 1
     },
     {
       "id": "T1566.003",
-      "count": 1
-    },
-    {
-      "id": "T1566.004",
       "count": 1
     },
     {
@@ -1001,6 +1005,11 @@
       "ransomware": true
     },
     {
+      "cve": "CVE-2017-0144",
+      "kev": true,
+      "ransomware": true
+    },
+    {
       "cve": "CVE-2017-0213",
       "kev": true,
       "ransomware": true
@@ -1047,6 +1056,11 @@
     },
     {
       "cve": "CVE-2019-19781",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-0787",
       "kev": true,
       "ransomware": true
     },
@@ -1206,6 +1220,11 @@
       "ransomware": true
     },
     {
+      "cve": "CVE-2021-42287",
+      "kev": true,
+      "ransomware": true
+    },
+    {
       "cve": "CVE-2021-44228",
       "kev": true,
       "ransomware": true
@@ -1241,6 +1260,11 @@
       "ransomware": true
     },
     {
+      "cve": "CVE-2022-42475",
+      "kev": true,
+      "ransomware": true
+    },
+    {
       "cve": "CVE-2023-0669",
       "kev": true,
       "ransomware": true
@@ -1249,6 +1273,11 @@
       "cve": "CVE-2023-21746",
       "kev": false,
       "ransomware": null
+    },
+    {
+      "cve": "CVE-2023-22515",
+      "kev": true,
+      "ransomware": true
     },
     {
       "cve": "CVE-2023-23397",
@@ -1261,7 +1290,27 @@
       "ransomware": true
     },
     {
+      "cve": "CVE-2023-27997",
+      "kev": true,
+      "ransomware": true
+    },
+    {
       "cve": "CVE-2023-34362",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-3519",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-46604",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-46747",
       "kev": true,
       "ransomware": true
     },
@@ -1368,7 +1417,7 @@
     },
     {
       "quarter": "2024-Q3",
-      "count": 2
+      "count": 4
     },
     {
       "quarter": "2024-Q4",
@@ -1389,9 +1438,15 @@
     {
       "quarter": "2025-Q4",
       "count": 2
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 2
     }
   ],
   "reports": [
+    "5526f8cfcb8330fcbfb47450ab5cc83902f2aa71",
+    "54e84f877ecf6fe1002d484bdf32634d394bc293",
     "766f3167d1b570fc5b0005e9268412836c330c51",
     "f38787c00c0da4deeeccbe57f37fbccc5ba42046",
     "c0b6b55f4177ff960648364581fcf125ad3a6cd4",
@@ -1405,6 +1460,8 @@
     "d2e5c1715b8db8d133e6a4b4dd5edcbb2a626a1c",
     "2d2b97a37fe5e90dcb511358ef5c177899f5f5f1",
     "f2a01ee1d220f3af6c240fad7832a48e7d42e789",
+    "a740c1b4eaad06e9ed274fb516a40a636672415b",
+    "ed72512cb366176d151572037f5fcda299abd010",
     "d2f3594bc3abe99b58c93498d4a80b3a84308728",
     "26102c9b2e236dfa31af44975b637ac76d80a262",
     "d8ff6f12abff62c096145208ce3ecaf85d87f09c",

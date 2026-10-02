@@ -44,6 +44,10 @@ What each policy lets through:
     link-only     report metadata and links only. Nothing the source says about an
                   actor is published, and its tags attach no report to an actor. A
                   vendor's own title may still name one (see below).
+
+The vendor blogs (Talos, ESET, Microsoft Security) are derived-only: besides their
+reports they contribute the name pairs a post states, which the CLI turns into
+aliases and, under strict criteria, new actors (resolve/pairs.py).
     evidence-only merge evidence only. Nothing from the source is published, but
                   the edges it caused still count in evidence_count.
 

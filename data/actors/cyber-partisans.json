@@ -29,9 +29,27 @@
   "malware": [],
   "techniques_documented": [],
   "techniques_reported": [],
-  "cves": [],
-  "timeline": [],
-  "reports": [],
+  "cves": [
+    {
+      "cve": "CVE-2022-26696",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2022-35803",
+      "kev": false,
+      "ransomware": null
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2022-Q4",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "266e6d494782a838c28c31ffd32cecd764ffa49f"
+  ],
   "conflicts": [],
   "evidence_count": 1
 }

@@ -461,6 +461,16 @@
       "ransomware": true
     },
     {
+      "cve": "CVE-2016-4119",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2017-0199",
+      "kev": true,
+      "ransomware": true
+    },
+    {
       "cve": "CVE-2018-13379",
       "kev": true,
       "ransomware": true
@@ -515,11 +525,27 @@
       "count": 1
     },
     {
+      "quarter": "2018-Q4",
+      "count": 2
+    },
+    {
       "quarter": "2019-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2019-Q4",
       "count": 1
     },
     {
+      "quarter": "2020-Q3",
+      "count": 2
+    },
+    {
       "quarter": "2021-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q1",
       "count": 2
     },
     {
@@ -527,22 +553,64 @@
       "count": 1
     },
     {
+      "quarter": "2022-Q3",
+      "count": 1
+    },
+    {
       "quarter": "2022-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2023-Q2",
+      "count": 4
+    },
+    {
+      "quarter": "2023-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q2",
       "count": 1
     },
     {
       "quarter": "2026-Q2",
-      "count": 2
+      "count": 7
     }
   ],
   "reports": [
+    "69d206c444ba7b11ad515448394172916ac6c6e8",
+    "6a5da83c5d61e5a4d4c61ece6b91b7924f2d11eb",
+    "6ee25ae1a750485439c41cf0d61eafd7acb8475b",
     "7cc6d00e992b5cb07353fe26be042d94fc46eac3",
     "825df7f8654a1229796a2b6b98e1cd77e73754e0",
+    "a66baa56bcd1419c23a9eb8ad4e9195ff41628be",
+    "f2cc6a198f17e91c6e87fc9df99c9056434ed2eb",
+    "11fcd89425219e6f04a62fc062c9284bbb39ac82",
+    "e6f3c0119eb27367d5fdd913d4962e0e7beeda03",
+    "be5f16a4a1558170bdd5877bfc221097ec6d1fe6",
+    "b7b7062157a6f8a803a4c7b071cd543471080967",
+    "f5a3423d495388aadb8cb22e1e044a2042f956db",
+    "556d5e692dcc26947f4fbeed44cb02f657d13679",
+    "6ff69b57c35dd58159e9c6a6680750c57dc94c9e",
+    "6c869d11ac485d29123dcaae9b7cab3b4a3fecf1",
     "a32de70007629718b37895834b71c889798328b0",
+    "63f76d448d4a2755c314a7bc50dba79c7ae0fad0",
     "paper:AA22-108A%20TraderTraitor%20North%20Korean%20State-Sponsored%20%20APT%20Targets%20Blockchain%20Companies%20(PDF)",
+    "03059c470bc4fbb0a1e94f1a3e9b995e0b7c0a5f",
+    "db900b0bbcb72e26075f31e82295f82154e26842",
     "2d98a214de7a8a280ebe92a6883684593e3d33d3",
     "6d128e3974e14636963b7fcc71493641859d52eb",
+    "2c627f182d7d4f171044ecd861d10cd19087f8f6",
+    "c4fb1d1834fd0a9e2e38a8b863841bd820c757b3",
+    "31f35c90cdb66136f672d7ae64a275c316c0426c",
     "paper:APT38%20DYEPACK%20FRAMEWORK",
+    "47d1561328a24be4b621a26850b012c78ec86f94",
+    "624020f94895ff5a017b48113597576168edbd62",
+    "37e523977a82a5bf0f8cff84b5b183efc266d133",
     "a6400050e83a0571c5df8b7feff2617213a3439d",
     "9a6098c60b1f484550326ece77eb9339ddf2e6fe",
     "paper:APT38",

@@ -76,10 +76,103 @@
   },
   "malware": [],
   "techniques_documented": [],
-  "techniques_reported": [],
-  "cves": [],
-  "timeline": [],
-  "reports": [],
+  "techniques_reported": [
+    {
+      "id": "T1048",
+      "count": 1
+    },
+    {
+      "id": "T1078",
+      "count": 1
+    },
+    {
+      "id": "T1083",
+      "count": 1
+    },
+    {
+      "id": "T1133",
+      "count": 1
+    },
+    {
+      "id": "T1190",
+      "count": 1
+    },
+    {
+      "id": "T1219",
+      "count": 1
+    },
+    {
+      "id": "T1566",
+      "count": 1
+    },
+    {
+      "id": "T1566.001",
+      "count": 1
+    },
+    {
+      "id": "T1567.002",
+      "count": 1
+    },
+    {
+      "id": "T1589.001",
+      "count": 1
+    },
+    {
+      "id": "T1589.002",
+      "count": 1
+    },
+    {
+      "id": "T1591.002",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2020-1472",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-44228",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2021-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 11
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "2d81a17f2aabece0c5f6ed8a60ef260693a14801",
+    "f4851fbcd2e90bbab5a66ea5677f385de8ce1f4a",
+    "5273d6f22057b317bbb2f9cb2cb5745347cec562",
+    "ee88fa0b47089f39d85550666ef3360f666d50d2",
+    "59cb3be7a9fdda01c3fb206368c54dadc2de0748",
+    "7bdeaa1a8b5a59cb1bc368d1c9daef6c77fd0879",
+    "7ac96b19ba20f1a7979195a876b39863f7f4ac1c",
+    "953fc799570219708d52b394d42ab6c1319f0fe1",
+    "e8879a5e08da082060d613624e4596381b0a54e6",
+    "e92cb25e9fca435e0d4d01e961eea2b00a2d496c",
+    "f1e2a22798e745685f8c1b805dd6eb8b169e885f",
+    "231bd20dd9f470e63459ec19332e7797a09d86f8",
+    "6a285a217f6c9a46f3ea2ef76ca9f226453afeab",
+    "7c71a0360726a0b7a281e33fc2b2713c017613f1",
+    "88ebc7f53b644c922b16a9119faca0d1abcf7617"
+  ],
   "conflicts": [],
   "evidence_count": 3
 }

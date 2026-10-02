@@ -31,9 +31,11 @@ from aptx.build.assemble import BuildFacts
 from aptx.build.notice import SOURCE_ORDER
 from aptx.build.write import WriteRefused, write_all
 from aptx.core import http
-from aptx.core.models import SourceBundle
+from aptx.core.models import ActorRecord, SourceBundle
 from aptx.core import state as saved_state
 from aptx.core.snapshot import SnapshotStore
+from aptx.resolve import pairs as name_pairs
+from aptx.resolve.names import norm
 from aptx.resolve.registry import resolve
 from aptx.sources import attack, etda, malpedia, paper
 from aptx.sources.attack import AttackConnector
@@ -132,6 +134,49 @@ def _labels(path: Path | None) -> tuple[guesses.Label, ...]:
         return ()
 
 
+def _pair_records(decisions: Sequence[name_pairs.Decision], by_pair: dict, lookup, shown: dict[str, str],
+                  source: str) -> list[ActorRecord]:
+    """One record per accepted pair: a bridge adds an alias under the known actor's own spelling, a new pair names an actor."""
+    out = []
+    for d in decisions:
+        if not d.accepted:
+            continue
+        known = next((n for n in d.names if lookup(n) in shown), None)
+        name, alias = (shown[lookup(known)], next(n for n in d.names if n != known)) if known else (d.primary, d.alias)
+        key = ":".join(sorted(norm(n) for n in d.names))
+        out.append(ActorRecord(source=source, source_id=f"pair:{key}", name=name, aliases=[alias],
+                               retrieved_at=by_pair[key]))
+    return out
+
+
+def _add_vendor_pairs(connectors: Sequence[Connector], store: SnapshotStore, bundles: dict[str, SourceBundle],
+                      registry, policies: dict[str, str], labels) -> int:
+    """Turn the name pairs vendor posts state into actor records, and return how many were added."""
+    shown = {p.id: assembly._display_name(p.members) for p in assembly._published_actors(registry, policies)}
+    shown_sources = {k for k, v in policies.items() if v in assembly._SHOWS_FACTS}
+    soft = [s for b in bundles.values() for s in b.software]
+    ref = guesses.make_reference(registry, soft, [r for b in bundles.values() for r in b.reports if r.source == "paper"],
+                                 shown, shown_sources)
+    prepared = guesses.prepare(ref, labels, registry.lookup, shown)
+    guess = (lambda name: guesses.guess_name(name, 1, prepared)) if prepared else None
+    added = 0
+    for c in connectors:
+        found = getattr(c, "pairs", None)
+        if found is None or policies.get(c.name) not in assembly._SHOWS_FACTS:
+            continue
+        rows = found(store)
+        by_pair = {":".join(sorted(norm(n) for n in r["names"])): r["retrieved_at"] for r in rows}
+        decisions = name_pairs.select([tuple(r["names"]) for r in rows], registry.lookup, registry.non_actor,
+                                      set(shown), guess)
+        for d in decisions:
+            log.info("%s: pair %s / %s %s (%s)", c.name, *d.names, "added" if d.accepted else "skipped", d.reason)
+        records = _pair_records(decisions, by_pair, registry.lookup, shown, c.name)
+        if records:
+            bundles[c.name] = bundles[c.name].model_copy(update={"actors": [*bundles[c.name].actors, *records]})
+            added += len(records)
+    return added
+
+
 def run(out: Path, store: SnapshotStore, connectors: Sequence[Connector] | None = None, fetch: bool = True, *,
         only: Collection[str] | None = None, generated_at: str | None = None,
         slugs_path: Path | None = None,
@@ -186,11 +231,19 @@ def run(out: Path, store: SnapshotStore, connectors: Sequence[Connector] | None 
     # sources the policies let a page show may name or anchor an actor.
     generated_at = assembly._timestamp(generated_at)
     previous_slugs = slugs.read_registry(slugs_path if slugs_path is not None else out / "slugs.json")
-    registry = resolve([a for b in bundles.values() for a in b.actors],
+    shown_sources = slugs.shown_sources(policies)
+
+    def build_registry():
+        return resolve([a for b in bundles.values() for a in b.actors],
                        [s for b in bundles.values() for s in b.software],
-                       previous_slugs=previous_slugs, shown_sources=slugs.shown_sources(policies),
-                       build_date=generated_at[:10])
+                       previous_slugs=previous_slugs, shown_sources=shown_sources, build_date=generated_at[:10])
+
+    registry = build_registry()
     # END slugs hook
+    # A vendor post that says two names are one adds an alias or an actor, judged against the registry
+    # built without it. The second resolve merges the records the first pass allowed.
+    if _add_vendor_pairs(connectors, store, bundles, registry, policies, _labels(labels)):
+        registry = build_registry()
 
     facts = BuildFacts(
         copyright_year=attack.copyright_year(store),

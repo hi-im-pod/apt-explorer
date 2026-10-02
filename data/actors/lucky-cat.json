@@ -88,6 +88,41 @@
   "techniques_reported": [],
   "cves": [
     {
+      "cve": "CVE-2010-0188",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2010-2883",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2010-3333",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2010-3654",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2011-0611",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2011-2462",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-0199",
+      "kev": true,
+      "ransomware": true
+    },
+    {
       "cve": "CVE-2017-11882",
       "kev": true,
       "ransomware": true
@@ -120,12 +155,28 @@
   ],
   "timeline": [
     {
+      "quarter": "2012-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2012-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q1",
+      "count": 1
+    },
+    {
       "quarter": "2020-Q3",
-      "count": 2
+      "count": 3
     },
     {
       "quarter": "2021-Q1",
-      "count": 2
+      "count": 3
+    },
+    {
+      "quarter": "2021-Q2",
+      "count": 1
     },
     {
       "quarter": "2022-Q3",
@@ -133,16 +184,31 @@
     },
     {
       "quarter": "2023-Q1",
-      "count": 1
+      "count": 2
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 2
     }
   ],
   "reports": [
+    "0ccb8b3ccb6ca918a60f5d7ab03aa1c5b0b85e9e",
+    "58714af2d21c3df87d56054f71b35496efaf226b",
+    "0405bdbb8be2f4ef64de67d955a380aaaf699ea8",
     "ce5d2096b4d274477ef7da69a6ebf55018dd7249",
     "586056209352af94432542eaa4865ffb6026b96e",
+    "8b5b25e4a673c5bf9eb1b553c8d728e3a60f269d",
     "43aeb55296e8cd21ff13ec65ba4677154af6a9be",
     "6a688916cf8672f92df48613cd092add20cb383d",
+    "ded6f2d29b6625d8f35693b94c77857e92118daa",
+    "58941938a97c5eb10d67e78059327d1c82e05316",
     "c8b52d9e6db3ad3aebde6be2a6454a3111b140d0",
-    "c58ac19d02322eb584b9a933873258b4bb46c63d"
+    "c58ac19d02322eb584b9a933873258b4bb46c63d",
+    "e619fa9d7a9c66c68052d90613d75f9cbf6e4ab8",
+    "3392452b5245a2e5b7299367f5588c75d44cca25",
+    "bdb218fdc0cce0bc57f77a9a1e6d3cc7e81b55f9",
+    "3b16add7ab715f65d3265e0c7a4290ed10c2bf86",
+    "7e9daad350d3f16c89b39113046abb890ab49ddc"
   ],
   "conflicts": [],
   "evidence_count": 6

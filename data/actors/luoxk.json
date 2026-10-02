@@ -20,9 +20,23 @@
   "malware": [],
   "techniques_documented": [],
   "techniques_reported": [],
-  "cves": [],
-  "timeline": [],
-  "reports": [],
+  "cves": [
+    {
+      "cve": "CVE-2018-2893",
+      "kev": false,
+      "ransomware": null
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2018-Q3",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "05ae263878814c2ed7b1aaccc541174eec13b490",
+    "a2c76a9cb36c42c1c8a1e55d22ad73088442a6c0"
+  ],
   "conflicts": [],
   "evidence_count": 1
 }

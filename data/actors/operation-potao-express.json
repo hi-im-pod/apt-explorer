@@ -41,9 +41,29 @@
   "malware": [],
   "techniques_documented": [],
   "techniques_reported": [],
-  "cves": [],
-  "timeline": [],
-  "reports": [],
+  "cves": [
+    {
+      "cve": "CVE-2014-1761",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2014-4114",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2015-Q3",
+      "count": 3
+    }
+  ],
+  "reports": [
+    "18e19f0aa8caf36fbb424ab650f87bb192d3434a",
+    "3f11377a0b8a174b5e827fc5a58107a136ec8e31",
+    "97e8c74938e0bcbe89462ecfa96bee4ea4d12dd0"
+  ],
   "conflicts": [],
   "evidence_count": 0
 }

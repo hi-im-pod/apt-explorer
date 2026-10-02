@@ -56,12 +56,22 @@
   "cves": [],
   "timeline": [
     {
+      "quarter": "2021-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 1
+    },
+    {
       "quarter": "2022-Q3",
       "count": 1
     }
   ],
   "reports": [
-    "678b6a1820753ba476409b596830e9a878310ba7"
+    "678b6a1820753ba476409b596830e9a878310ba7",
+    "b7823430522ae3449c7b213f3dfa9c6f18f01d9a",
+    "0f91695a9e615af26bb58f6e66c1cb5b96f6155a"
   ],
   "conflicts": [],
   "evidence_count": 2

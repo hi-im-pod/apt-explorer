@@ -53,6 +53,21 @@
   "techniques_reported": [],
   "cves": [
     {
+      "cve": "CVE-2014-2217",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2017-11317",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-11357",
+      "kev": true,
+      "ransomware": true
+    },
+    {
       "cve": "CVE-2019-18935",
       "kev": true,
       "ransomware": true
@@ -61,12 +76,14 @@
   "timeline": [
     {
       "quarter": "2020-Q2",
-      "count": 3
+      "count": 5
     }
   ],
   "reports": [
+    "db6b251339c94d17817c786d731e5510374feece",
     "792eb038dbd36f553b1cb062a168a57c01f69ee7",
     "d9e41bb3cd7ad22a358930b9eb53495e4409803a",
+    "fec9058186378298db4de86f210a21e7af068fed",
     "03c57228e99df9e0536038c7fe3bf74f77fd4377"
   ],
   "conflicts": [],

@@ -92,9 +92,22 @@
   "malware": [],
   "techniques_documented": [],
   "techniques_reported": [],
-  "cves": [],
-  "timeline": [],
-  "reports": [],
+  "cves": [
+    {
+      "cve": "CVE-2017-5638",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2017-Q3",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "2af1cf8ac72832ec56cd0f4b6de1e7c4ebb64709"
+  ],
   "conflicts": [],
   "evidence_count": 5
 }

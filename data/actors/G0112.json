@@ -141,7 +141,39 @@
   ],
   "techniques_reported": [
     {
+      "id": "T1430",
+      "count": 3
+    },
+    {
+      "id": "T1418",
+      "count": 2
+    },
+    {
+      "id": "T1426",
+      "count": 2
+    },
+    {
+      "id": "T1429",
+      "count": 2
+    },
+    {
+      "id": "T1636.002",
+      "count": 2
+    },
+    {
+      "id": "T1636.004",
+      "count": 2
+    },
+    {
+      "id": "T0869",
+      "count": 1
+    },
+    {
       "id": "T1398",
+      "count": 1
+    },
+    {
+      "id": "T1406",
       "count": 1
     },
     {
@@ -149,23 +181,19 @@
       "count": 1
     },
     {
-      "id": "T1418",
-      "count": 1
-    },
-    {
       "id": "T1420",
       "count": 1
     },
     {
-      "id": "T1426",
+      "id": "T1421",
       "count": 1
     },
     {
-      "id": "T1429",
+      "id": "T1422",
       "count": 1
     },
     {
-      "id": "T1430",
+      "id": "T1424",
       "count": 1
     },
     {
@@ -177,15 +205,19 @@
       "count": 1
     },
     {
-      "id": "T1636.002",
+      "id": "T1517",
+      "count": 1
+    },
+    {
+      "id": "T1521.002",
+      "count": 1
+    },
+    {
+      "id": "T1532",
       "count": 1
     },
     {
       "id": "T1636.003",
-      "count": 1
-    },
-    {
-      "id": "T1636.004",
       "count": 1
     },
     {
@@ -205,6 +237,11 @@
       "ransomware": null
     },
     {
+      "cve": "CVE-2017-8570",
+      "kev": true,
+      "ransomware": false
+    },
+    {
       "cve": "CVE-2017-8750",
       "kev": false,
       "ransomware": null
@@ -213,23 +250,23 @@
   "timeline": [
     {
       "quarter": "2017-Q2",
-      "count": 1
-    },
-    {
-      "quarter": "2017-Q4",
       "count": 2
     },
     {
-      "quarter": "2018-Q3",
+      "quarter": "2017-Q4",
       "count": 3
+    },
+    {
+      "quarter": "2018-Q3",
+      "count": 6
     },
     {
       "quarter": "2018-Q4",
-      "count": 3
+      "count": 4
     },
     {
       "quarter": "2019-Q1",
-      "count": 1
+      "count": 3
     },
     {
       "quarter": "2019-Q2",
@@ -240,35 +277,60 @@
       "count": 1
     },
     {
+      "quarter": "2020-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 2
+    },
+    {
       "quarter": "2022-Q2",
-      "count": 1
+      "count": 3
     },
     {
       "quarter": "2022-Q4",
-      "count": 1
+      "count": 2
     },
     {
       "quarter": "2026-Q2",
-      "count": 2
+      "count": 4
     }
   ],
   "reports": [
     "485371cb373a505eff108375fb9f2744deb36e80",
+    "c84668adcda73b057b4e6cce3957ef87917bd906",
     "d8f1166bd61a5dfe20d464af25a639856b306fb4",
+    "d957fa1536e1e5daefd1a37c09c5942ae595c1de",
+    "9e685fade2b1d0dafcd12df62d35ca603ed40e03",
     "e695755280ab29560ebc445003ee3a3a1cd5328f",
+    "53567858c9a86ced087b5ba3b70f3cac3f70571a",
     "d0c53005e801ae155173cf94555915c2ddba9643",
+    "9d1ae3f2deaaf046491845ffe367858bd812009e",
+    "890ddcd3dac8fbccf378ccaeb92b0c9a88d4273b",
+    "e26b4fa94a4993874e0e3b0ed31249023ed3eb18",
+    "9782e6360e97367764f28ad9eeb6a2b7bb830e3e",
+    "bb7e553d6c9a075884e28a826b910db065f1eaf3",
     "512479da6af4e92b9d86b6eb8a5fcf5e9f21df9d",
     "82067ed3e216dadbbebd7bde327c7d9ea42bd5b6",
+    "a381de3afcf0409c41f8afb59ab001556886bf8f",
+    "afd144a2ebda4289999795c8842b2f6a23dda209",
     "db7ce48692735110a2f8e1b24c2f3178ca32e3c8",
     "32054571e93dbab573614595ed27bc301bef9df5",
     "3e599de2f9e4fcf383811d108da149e929ac811e",
+    "ad20b45af1f452e4208143018a5d09d4e5b1d9eb",
     "acc670862c4fc12a28385b0c4438d1e32fd917ed",
+    "3a8b95623bfbca0404372fe5d4a9fa89dbfa3aa8",
+    "1614224bb566bb4c8e82501440d26fb707108757",
+    "74fd6c79c3d93482d5df2e0a6bd86ce6d10a232c",
     "79ccc0053998efff9d299565ace7f992f9c9d377",
     "a110d78ce9322857fd7d8f5f6d90f1eb6eb07c3e",
     "b6c547c6d2911413cd04f4e8a5f218097c6b3a28",
     "823df99bb42c74b5e0484e6fb20c36a450175f4a",
+    "830f30a18d49f0557f3315b7d96207fba01d0351",
     "a7aeb82c38c24d916f743f63d8dd3a44245f8824",
-    "60b374976e1a1a88d1f431bb295b737d180acbfe"
+    "60b374976e1a1a88d1f431bb295b737d180acbfe",
+    "e3538b374b9061e198dfd2dd287193cf15f5138f"
   ],
   "conflicts": [],
   "evidence_count": 8

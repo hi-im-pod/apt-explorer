@@ -172,11 +172,20 @@
       "cve": "CVE-2020-0674",
       "kev": true,
       "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-0796",
+      "kev": true,
+      "ransomware": true
     }
   ],
   "timeline": [
     {
       "quarter": "2020-Q2",
+      "count": 8
+    },
+    {
+      "quarter": "2021-Q1",
       "count": 4
     },
     {
@@ -186,10 +195,18 @@
   ],
   "reports": [
     "c2d126d84639e3321771b89aa487a49259193212",
+    "df2b0c38d578d431b4b112be019a28af408c96dd",
+    "5d0c88a18fbbde84bbb2a7dfd71668318c7c2227",
+    "a7bd9bba0b95f2c2137b5ec5d595667c77804378",
+    "f5fe05bacb521d2e227db5b5aa5c865a1a20d631",
     "482fcaea88cec22fa8cd9ec73d5d5ae28e6ce43b",
+    "3c11fd4ba17376de4c0c80bcdc590b77a06b4ff0",
     "c94bc354cf2db157a6e99172d3a837a625d91e00",
+    "a95b65c51aa3655e486a5b843d4ffdddbe375eb5",
     "21d17d8989661a5be08a19a688c6e33dc67b4022",
-    "1b3ad758d95d3cdcda33384c51a1243ce5206751"
+    "669dfb147a873710ed364e8ecb3e9238bee3f889",
+    "1b3ad758d95d3cdcda33384c51a1243ce5206751",
+    "e0974628ddea51d61fa5c71f4b880039f3b71cb7"
   ],
   "conflicts": [],
   "evidence_count": 0

@@ -229,3 +229,63 @@ def test_a_feed_with_no_research_posts_is_not_an_error(tmp_path):
     s = SnapshotStore(tmp_path)
     EsetConnector().fetch(s)
     assert titles(s, "eset") == [] and EsetConnector().normalize(s).reports == []
+
+
+# Name pairs: read from a post in memory, and only the two names are kept
+
+PAIRS_BODY = ("<item><title>Storm-1: cloud attacks</title><link>https://blog.talosintelligence.com/storm-1/</link>"
+              "<pubDate>Fri, 18 Sep 2026 10:00:00 +0000</pubDate>"
+              "<content:encoded><![CDATA[<p>LARKSPUR, tracked by Microsoft as Storm-1, abused tokens. "
+              "SECRET-SENTENCE stays out.</p>]]></content:encoded></item>")
+
+
+def pair_feed(item=PAIRS_BODY):
+    return ('<?xml version="1.0"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">'
+            "<channel><title>x</title>" + item + "</channel></rss>").encode("utf-8")
+
+
+@respx.mock
+def test_a_vendor_feed_keeps_the_pairs_a_post_states_and_nothing_else_of_its_text(tmp_path):
+    respx.get(TalosConnector.feed_url).mock(return_value=httpx.Response(200, content=pair_feed()))
+    s = SnapshotStore(tmp_path)
+    c = TalosConnector()
+    c.fetch(s)
+    assert b"SECRET-SENTENCE" not in s.latest("talos", "pairs.json") and b"SECRET-SENTENCE" not in s.latest("talos", SNAPSHOT)
+    [row] = c.pairs(s)
+    assert row["names"] == ["LARKSPUR", "Storm-1"] and row["link"] == "https://blog.talosintelligence.com/storm-1/"
+    assert row["retrieved_at"] == s.latest_date("talos")
+    assert c.normalize(s).actors == []
+
+
+@respx.mock
+def test_a_feed_that_is_not_opted_in_reads_no_pairs(tmp_path):
+    respx.get(URL).mock(return_value=httpx.Response(200, content=pair_feed(PAIRS_BODY.replace("blog.talosintelligence.com", "blog.example.test"))))
+    s = SnapshotStore(tmp_path)
+    Flat().fetch(s)
+    assert s.latest("flat", "pairs.json") is None and Flat().pairs(s) == []
+
+
+@respx.mock
+def test_a_post_the_feed_dropped_keeps_its_pairs_and_an_edited_post_loses_the_old_one(tmp_path):
+    s = SnapshotStore(tmp_path)
+    c = TalosConnector()
+    respx.get(TalosConnector.feed_url).mock(return_value=httpx.Response(200, content=pair_feed()))
+    c.fetch(s)
+    other = PAIRS_BODY.replace("storm-1/", "other/").replace("LARKSPUR", "NIGHTJAR").replace("Storm-1", "Storm-2")
+    respx.get(TalosConnector.feed_url).mock(return_value=httpx.Response(200, content=pair_feed(other)))
+    c.fetch(s)
+    assert sorted(tuple(p["names"]) for p in c.pairs(s)) == [("LARKSPUR", "Storm-1"), ("NIGHTJAR", "Storm-2")]
+    edited = PAIRS_BODY.replace("tracked by Microsoft as Storm-1", "which has no other name")
+    respx.get(TalosConnector.feed_url).mock(return_value=httpx.Response(200, content=pair_feed(edited)))
+    c.fetch(s)
+    assert [tuple(p["names"]) for p in c.pairs(s)] == [("NIGHTJAR", "Storm-2")]
+
+
+def test_dropped_posts_of_eset_outside_research_do_not_keep_pairs(tmp_path):
+    s = SnapshotStore(tmp_path)
+    s.save("eset", "pairs.json", json.dumps([
+        {"link": "https://www.welivesecurity.com/en/scams/x/", "names": ["A", "B"]},
+        {"link": "https://www.welivesecurity.com/en/eset-research/y/", "names": ["Larkspur", "Storm-1"]}]).encode())
+    s.save("eset", SNAPSHOT, json.dumps([
+        {"title": "T", "link": "https://www.welivesecurity.com/en/eset-research/y/", "published": "2026-06-01"}]).encode())
+    assert [p["names"] for p in EsetConnector().pairs(s)] == [["Larkspur", "Storm-1"]]

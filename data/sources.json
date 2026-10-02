@@ -101,32 +101,32 @@
   },
   {
     "name": "talos",
-    "last_success": "2026-10-01",
-    "record_count": 15,
+    "last_success": "2026-10-02",
+    "record_count": 17,
     "stale": false,
-    "publish": "link-only",
+    "publish": "derived-only",
     "licence": "No licence stated",
     "licence_url": "https://www.cisco.com/c/en/us/about/legal/terms-conditions.html",
-    "attribution": "Post titles and links from the Cisco Talos blog, https://blog.talosintelligence.com/. © Cisco and/or its affiliates. All rights reserved; post content is not reproduced here. This project is not endorsed by Cisco."
+    "attribution": "Post titles and links from the Cisco Talos blog, https://blog.talosintelligence.com/. © Cisco and/or its affiliates. All rights reserved; post content is not reproduced here. Where a post states that two names are one actor, those two names are kept as an alias. This project is not endorsed by Cisco."
   },
   {
     "name": "eset",
-    "last_success": "2026-10-01",
+    "last_success": "2026-10-02",
     "record_count": 23,
     "stale": false,
-    "publish": "link-only",
+    "publish": "derived-only",
     "licence": "No licence stated",
     "licence_url": "https://www.welivesecurity.com/en/company/legal-information/",
-    "attribution": "Post titles and links from the ESET WeLiveSecurity blog, https://www.welivesecurity.com/. © ESET. All rights reserved; post content is not reproduced here. This project is not endorsed by ESET."
+    "attribution": "Post titles and links from the ESET WeLiveSecurity blog, https://www.welivesecurity.com/. © ESET. All rights reserved; post content is not reproduced here. Where a post states that two names are one actor, those two names are kept as an alias. This project is not endorsed by ESET."
   },
   {
     "name": "microsoftblog",
-    "last_success": "2026-10-01",
-    "record_count": 10,
+    "last_success": "2026-10-02",
+    "record_count": 13,
     "stale": false,
-    "publish": "link-only",
+    "publish": "derived-only",
     "licence": "No licence stated",
     "licence_url": "https://www.microsoft.com/en-us/legal/terms-of-use",
-    "attribution": "Post titles and links from the Microsoft Security blog, https://www.microsoft.com/en-us/security/blog/. © Microsoft. All rights reserved; post content is not reproduced here. This project is not endorsed by or affiliated with Microsoft."
+    "attribution": "Post titles and links from the Microsoft Security blog, https://www.microsoft.com/en-us/security/blog/. © Microsoft. All rights reserved; post content is not reproduced here. Where a post states that two names are one actor, those two names are kept as an alias. This project is not endorsed by or affiliated with Microsoft."
   }
 ]

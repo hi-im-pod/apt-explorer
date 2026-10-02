@@ -21,8 +21,36 @@
   "techniques_documented": [],
   "techniques_reported": [],
   "cves": [],
-  "timeline": [],
-  "reports": [],
+  "timeline": [
+    {
+      "quarter": "2022-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2023-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2023-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q1",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "9ddf4e101640dd9a869b7474be9bf57179cdb3c1",
+    "d72d2c6e545832b39e023572b309b85423c248e1",
+    "33b79568da8ca7e4747013d36190657d184030b9",
+    "c75fc62f54534f215b5add299c5484bf35e3b28d",
+    "06714e331edf2f7281e15606b95ac8052d389889",
+    "da5fc0f85ac954c58d4b1a636fa34695e23eaa6a"
+  ],
   "conflicts": [],
   "evidence_count": 1
 }

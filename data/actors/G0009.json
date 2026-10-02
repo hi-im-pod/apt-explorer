@@ -1743,6 +1743,11 @@
       "ransomware": false
     },
     {
+      "cve": "CVE-2021-22941",
+      "kev": true,
+      "ransomware": true
+    },
+    {
       "cve": "CVE-2021-26084",
       "kev": true,
       "ransomware": true
@@ -2190,24 +2195,36 @@
   ],
   "timeline": [
     {
+      "quarter": "2013-Q2",
+      "count": 1
+    },
+    {
       "quarter": "2014-Q1",
       "count": 4
     },
     {
       "quarter": "2014-Q3",
-      "count": 2
+      "count": 3
     },
     {
       "quarter": "2014-Q4",
-      "count": 1
+      "count": 3
     },
     {
       "quarter": "2015-Q1",
-      "count": 2
+      "count": 3
+    },
+    {
+      "quarter": "2015-Q2",
+      "count": 1
     },
     {
       "quarter": "2015-Q3",
-      "count": 2
+      "count": 3
+    },
+    {
+      "quarter": "2015-Q4",
+      "count": 1
     },
     {
       "quarter": "2016-Q1",
@@ -2215,7 +2232,7 @@
     },
     {
       "quarter": "2017-Q1",
-      "count": 1
+      "count": 2
     },
     {
       "quarter": "2017-Q2",
@@ -2283,11 +2300,11 @@
     },
     {
       "quarter": "2022-Q1",
-      "count": 55
+      "count": 56
     },
     {
       "quarter": "2022-Q2",
-      "count": 61
+      "count": 62
     },
     {
       "quarter": "2022-Q3",
@@ -2299,7 +2316,7 @@
     },
     {
       "quarter": "2023-Q1",
-      "count": 16
+      "count": 17
     },
     {
       "quarter": "2023-Q2",
@@ -2351,7 +2368,7 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 9
+      "count": 11
     }
   ],
   "reports": [
@@ -2360,7 +2377,9 @@
     "748f9be92f6186781f2f4882175bb2cf773e518c",
     "78d8c0fb0fdf7cf830f19e88397acdf1b781974c",
     "7ebe87146d492bcc5403dc80e26c230457c6a507",
+    "8013be663d79fb5f14661031d7f10ee878a500cd",
     "91f205ec2b0e19eb9e1b2a0006019960d1868e5a",
+    "b4b79b0d2d47462d8954efda70963d68a4062f41",
     "e6f9047c696ca88a8516eb34501e08ce57e0b106",
     "e804534fe0425747f6f2516f5d8ca7bbac3d88fa",
     "fe52dee64e719ea763f6e8b485eb690cd77c5290",
@@ -2487,6 +2506,7 @@
     "7bf258a7762f1bb3a049287074f875242dcf2437",
     "2ad735c2f0d7f502e329007c676fd6cf80737300",
     "4b3eddafe4361bc33925007f4cb5dac8fe9adb6b",
+    "ea4c904ad8a56f18e04728c9700d481b4f8f943d",
     "0d37b69929b89e39661baf14219fbb32b15a0625",
     "7cb24cc595c3aca655b66d961c523a915af58560",
     "1460844da0d4a71e4f8aff5a4f7c3a5d70efb5d7",
@@ -2601,10 +2621,12 @@
     "a94e6463300a5a4f60c724638f5bbe7cce2a31e7",
     "231bd20dd9f470e63459ec19332e7797a09d86f8",
     "a0f919f969560658ffb04947c186714754fef6f5",
+    "065fe12cd3ae9dd718d0d2d9032ff16f2e12d7a8",
     "c4cdd952e7f7cba9fb4acfce16ce851fa9b471d9",
     "936a6f27cb71f8354a0aeb97a1f2377c77abd286",
     "32cfaef324d7f3ebc2cb3b67635e5385271d33ff",
     "ae45e11605ada416b2bbee9670c2551a7625d5c7",
+    "e5e41a37e8da3a680b4b812c9d44afcdc0a494ea",
     "ea6ce067a3a25f585984e9931b76131e254fc714",
     "b23b0904022d122b2a4745094ae1c081f9b421d6",
     "cc65fac49d2b42618b3799cec854e6006489b310",
@@ -2947,19 +2969,28 @@
     "3521306f97b7e1656871b6e95ef9d02d72be1d0f",
     "6fc906897c5820e13db9717e4f62cbfd1dea8e75",
     "a4d255a5acc56a1f8203364db0f65d781328a1af",
+    "55d4f5b4633075c9980e1a83abff9abbc592815b",
     "paper:kingslayer-a-supply-chain-attack",
     "paper:TA_Fidelis_Turbo_1602_0",
+    "6f37ce8764f92cb554d200a8cebfd5da1b8a4119",
     "paper:Terracotta-VPN-Report-Final-8-3",
+    "758520009778853bd186c8527b1cd73ee373ca36",
     "paper:the-black-vine-cyberespionage-group",
+    "940615997789ceefea673c8a248829338c6ed7b0",
     "0383b78d3a8e9951a9124ea85a3e083606a94f11",
     "paper:Anthem_hack_all_roads_lead_to_China",
+    "02be2ef6587e940656cde835354d0073c4dce232",
+    "43e16b3820272f2b4ed27032f6ccbf5b81b6eb1d",
+    "663588a0e7a2953fe56aa80dd56923a12cb61aef",
     "paper:DEEP_PANDA_Sakula",
+    "76a6ea858e3524682ad3ee30251003228db50fb3",
     "f9e86e04d2b5c8a28ec4e69ec9f8ea15c46892ad",
     "paper:AdversaryIntelligenceReport_DeepPanda_0",
     "4b2a0cb6ff2c622a8b31608757008a9a225cf796",
     "c7afca26feabcb0374cbbe2cee010696212d4f85",
     "paper:deep-panda-webshells",
-    "paper:h12756-wp-shell-crew"
+    "paper:h12756-wp-shell-crew",
+    "1d53861aafea11d9a60e798b90d623c8e7c7b9e7"
   ],
   "conflicts": [],
   "evidence_count": 0

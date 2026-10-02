@@ -73,6 +73,11 @@
       "ransomware": null
     },
     {
+      "cve": "CVE-2019-17100",
+      "kev": false,
+      "ransomware": null
+    },
+    {
       "cve": "CVE-2021-26855",
       "kev": true,
       "ransomware": true
@@ -136,7 +141,7 @@
   "timeline": [
     {
       "quarter": "2022-Q2",
-      "count": 2
+      "count": 9
     },
     {
       "quarter": "2022-Q3",
@@ -150,7 +155,14 @@
   "reports": [
     "29646bd71e8daa952efa40cfb3836392f68d7a4b",
     "8269696ef27d5db68cfb4b51946e7ccd937d98fe",
+    "18c269d1eaa29438861255b754cdf766df09110a",
+    "090631c38f31c0ea9cbbcfa403aa5d6c708a6145",
+    "1ef4dd20473dbefaa1429c86d00b1c205e1e1065",
+    "65aaa1d8d2458c325330efa5bedf63d1d372f3c7",
+    "71cd5d4538f8bb3f97d236d24cd47389af8bd795",
     "8a1d66455b304913f385a3ce7e6c23e7060211b2",
+    "e2749aec5ba5feebaa131f40164eac0e80f82998",
+    "e974e90531799c1bde9a2457c3cade4d85a4910c",
     "ebfda0e6fa14e173ec63d10b7d616d453cf18bb0"
   ],
   "conflicts": [],

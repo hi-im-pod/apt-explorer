@@ -835,6 +835,10 @@
     },
     {
       "quarter": "2014-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2014-Q4",
       "count": 1
     },
     {
@@ -979,13 +983,14 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 3
+      "count": 4
     }
   ],
   "reports": [
     "5caa3af9facac2e25b868e6afb482d156eacad78",
     "827d84c8046d4315615f2ddcde516ca5deaae7f5",
     "d975b8d1e008be23684b727df57bc61c2c36853b",
+    "e79ae483f0b8148d3e0094490a2765c845d0ed99",
     "fa350b6bf21be8af393d235d0a815caae5f5802d",
     "760e14c40a2f98f490e90f5dc8564faed8876f60",
     "b37836d031ce99e6f0a41bafb30ba9a6badeb8a6",
@@ -1131,6 +1136,9 @@
     "0a0c97b21075f4588f10503ae1c26a4685e061d1",
     "e92d19e7054c2d384d2afac5027e9fae5ea51596",
     "37584381a0a0c2d566b8ce13965ffa7226cdaa71",
+    "7fc85f6c70527da8b2c4e6a32e1d4e18c007fcb6",
+    "17ecec5eaf46f6cdecc027a2182704ac4d9e5960",
+    "a3ef4191458420c5bd70ef0e4dabba570872f84f",
     "paper:th3bug_Watering_Hole_PoisonIvy",
     "875abf02dad2a434d708e495ffc8afe4b2500aae",
     "24bd1e9d9c67263a2a65c017545634f004dcbfc8"

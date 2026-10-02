@@ -181,17 +181,69 @@
   "cves": [],
   "timeline": [
     {
+      "quarter": "2019-Q2",
+      "count": 4
+    },
+    {
       "quarter": "2019-Q3",
+      "count": 4
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2021-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q4",
       "count": 1
     },
     {
       "quarter": "2023-Q1",
       "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 2
     }
   ],
   "reports": [
+    "512bbcf8e7a6bda696ed3afa7aa87e5cbf2cedd9",
+    "647a249f79356be4a65f832fb13bba46db401089",
     "007e0129347fec461e4591b03298dcd7ceec468e",
-    "paper:APT%20or%20not%20APT%20What's%20Behind%20the%20Aggah%20Campaign"
+    "03a062c4adcdf1c55c05f0bc94be89a80f1be390",
+    "404a0154aff6e951c80d337c4912431814208409",
+    "b3f9de2f2fa396cf85533debb90a162a1417d4a0",
+    "014a12601b357e8e9dcd0f277ef1624da7db5e1a",
+    "eae41c81336f70a0f210b2ce6f12bc6301fed073",
+    "1db17a44207946c9b5c54fd1b31fcdd141ecc8ab",
+    "87ef51726ff2f45fcbc0f9a96470b217c8a0b9b5",
+    "06fe5f6e0504e8aa2a12b3f455c4892517c254e4",
+    "c980fda2111ab25fa8c4978f3686151c641de920",
+    "ddde687c3d41c62493ca1c459073347c6beb0112",
+    "5c527016c0b5f5d6c64d6eb15e26b766636df878",
+    "6a1ea97b84c3736bb8f1b568bb12c052010ef239",
+    "paper:APT%20or%20not%20APT%20What's%20Behind%20the%20Aggah%20Campaign",
+    "09e383b509c553ec6a6f664345bb85d4d3ba51ca",
+    "2d5093aa3b548d26271d7cc4a861694610bd972b",
+    "d49c695cb892eaf1735b48a96145d668016c2f01",
+    "522d64182a924c491a6ce64019b82d100fd83fb6",
+    "85bcaafddb3ff5885c24b6c80dbb6a400225c7e7",
+    "d983112a3f954a98d504b21b89afdc1b40f17703"
   ],
   "conflicts": [],
   "evidence_count": 4

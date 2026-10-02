@@ -243,51 +243,51 @@
   "techniques_reported": [
     {
       "id": "T1003.001",
-      "count": 1
+      "count": 2
     },
     {
       "id": "T1007",
-      "count": 1
+      "count": 2
     },
     {
       "id": "T1020",
-      "count": 1
+      "count": 2
     },
     {
       "id": "T1021.001",
-      "count": 1
+      "count": 2
     },
     {
       "id": "T1027",
-      "count": 1
+      "count": 2
     },
     {
       "id": "T1047",
-      "count": 1
+      "count": 2
     },
     {
       "id": "T1056.001",
-      "count": 1
+      "count": 2
     },
     {
       "id": "T1071",
-      "count": 1
+      "count": 2
     },
     {
       "id": "T1098",
-      "count": 1
+      "count": 2
     },
     {
       "id": "T1133",
-      "count": 1
+      "count": 2
     },
     {
       "id": "T1486",
-      "count": 1
+      "count": 2
     },
     {
       "id": "T1588.003",
-      "count": 1
+      "count": 2
     }
   ],
   "cves": [
@@ -601,7 +601,7 @@
     },
     {
       "quarter": "2018-Q4",
-      "count": 2
+      "count": 3
     },
     {
       "quarter": "2019-Q2",
@@ -613,7 +613,7 @@
     },
     {
       "quarter": "2019-Q4",
-      "count": 4
+      "count": 6
     },
     {
       "quarter": "2020-Q1",
@@ -621,7 +621,7 @@
     },
     {
       "quarter": "2020-Q2",
-      "count": 9
+      "count": 11
     },
     {
       "quarter": "2020-Q3",
@@ -633,11 +633,11 @@
     },
     {
       "quarter": "2021-Q1",
-      "count": 13
+      "count": 15
     },
     {
       "quarter": "2021-Q2",
-      "count": 8
+      "count": 10
     },
     {
       "quarter": "2021-Q3",
@@ -645,19 +645,19 @@
     },
     {
       "quarter": "2021-Q4",
-      "count": 5
+      "count": 9
     },
     {
       "quarter": "2022-Q1",
-      "count": 6
+      "count": 7
     },
     {
       "quarter": "2022-Q2",
-      "count": 4
+      "count": 5
     },
     {
       "quarter": "2022-Q3",
-      "count": 1
+      "count": 3
     },
     {
       "quarter": "2022-Q4",
@@ -676,15 +676,25 @@
       "count": 1
     },
     {
+      "quarter": "2025-Q2",
+      "count": 1
+    },
+    {
       "quarter": "2026-Q2",
-      "count": 4
+      "count": 9
     }
   ],
   "reports": [
+    "1181ed4147bb92a065c6bdefcb46520d3c3142d0",
+    "21e79ade5f18d6a6a7d9a7f112f5f2854334cf60",
     "3df5114c66641cb17e201b3b8162071e48ccb87a",
+    "510c442441cf5af8e18767e5585810c1c2dc82a4",
+    "855c2f7b1f7198bd4b6532ac4493e91a3822d49c",
     "bb67f0ad05fd270db8df909b03dbfcb050cfe491",
     "de062939f894b7798413bedc47b9800df9ca8ce0",
     "e118acd9c5e9ad8c4095dd63705751d8499f4146",
+    "fa96586c709f3b44258afb5fe85fc2d983334d6d",
+    "e7a8afe336429efa2b249023bdeed038a84302c2",
     "bd1466b2a449dbc5d2ebc1a66be297ceb82549aa",
     "d52c74992402c3a2f159f7de3077b0d85b3eebe9",
     "cde43eaf8ea4c9b58646b372bb7db0a3e1d3edba",
@@ -692,13 +702,17 @@
     "d746d37f8923673b5745db6676cebd77a92b28af",
     "64b120f4adf614e820c042cc581c6028c8f026ea",
     "325471781a0efd42a1f32340e1a5c2915b23580f",
+    "f070296de65fd9fbfc400915b12ac06fba2a7426",
+    "feaa60adf4ddf9ec14a45ae3bb539a1d2ec6ca0b",
     "c54d26ab2a699f875e204909a10e0d5010f63134",
+    "1e719b95140d815ef52dced0c55a470bf597fa2f",
     "6e9553c0cd65809465809a31b2814f4f26acbefd",
     "4b048db96ed4d3cb4f0fe703ebcc95af9889cc95",
     "6624a6664d9788be85bfb632ab2654234d13a4fd",
     "453d139f93c44025a55eb04233d11d36c750dd07",
     "066ce916f87ed2a3916562f973127110b5fc38fd",
     "e478bd6e38438d4097a5c51be36921bd01da95d5",
+    "918062ac5b98532d9d8515afadbf084a0fa6158d",
     "da543a6b0f68bf6a6de7ec5bf2c919d3662e5ef2",
     "e23b7a6e0c210aa2e92ad779c5dded5962f19b89",
     "cb862843b9be67c80427cd51c504846f662a1803",
@@ -706,8 +720,12 @@
     "13782a82dbbdf8808a408cb2cacee077d459a56d",
     "91b173de62ca58909fa333c9330161541e241104",
     "07de03e7f9a2c7ecb34b0063cfff43aaab5ef451",
+    "0ee897925fc7714570cad5bb110c52576fb94f3b",
+    "5c6e9a0c9b010d13fcec86f016f6992dd9865687",
     "b46634e31db6e507d518b51c52bcb70d6d4e8787",
     "a2de863438e744f95b7c11f7e1d6bb97576020d1",
+    "0414d5a7eeee863f13dd2587363be009bc97d180",
+    "caa4abbdec9070ccf9f62615f1e4f85b7117f93f",
     "eb3d5540700ba477687d41226b6c3072a7e7d17c",
     "84fb4151154b1cb5cc9c06eafb1e624e10969ac1",
     "02c222792c65765833e9bb8d77453ba1912e416e",
@@ -718,18 +736,22 @@
     "395e66c042c24d580e10e4a8713b3361b7bd32b9",
     "873100689f680b09503a92983aa44068c5f2764b",
     "f7a6340e057171adc54f492b1964a14e947befee",
+    "050567be4c1de8c6084f0642f4f6c41da499c79e",
     "7c191107fadf7d4326a1539d50889d4244605753",
     "9270422bab8c6e6c6fb74cf4b1ba3a69880d18d3",
+    "676a673c3b3c94ceea714051e8e30e63897e5eec",
     "cae2c8cf609d198fac69e62ea3ad709e780a5d34",
     "1dc3456216f353409c0c7b0e134762d0cef74e47",
     "ea1b020661fd5714bc1902a2501a020e7f4bb4d9",
     "a370c9e1f5d24dcbd5d1780341cd961d2d444dd8",
     "c90eda83b017149ebf1216261a9cf0bc84cbdff0",
     "fac2fc9d53f0ac8f605c148942a6cbff69964950",
+    "44fe46adf8493e17f93f1d7c6a39ee29019869b8",
     "ee75bc2e2e73b421136e09ad9b6db6b163b38e26",
     "f39996640948b9a73fcd53c2a41a3ba9bc285a09",
     "18c049520f8211bb477bbaf0b98ed6e129f2e07a",
     "1c1dd830c28d3981de3c71fbd7dd3dd31d2f4e6e",
+    "f5275b540ba93ba8d885002c468e159dff1db761",
     "fe88cf32c0db9cf5d15f3202c19793ccb5045fbb",
     "2d98a214de7a8a280ebe92a6883684593e3d33d3",
     "5d18e498ed688aa7e38da271bb50c5916d192b5e",
@@ -753,7 +775,9 @@
     "dfir:2020-08-03-dridex-from-word-to-domain-dominance",
     "212d3dffbd27bca3d0ba7e3c544db6385b26548c",
     "5e6cfc1c4120b7e4816fb45ed6d4df1716020c90",
+    "93e5e5925a0017305ca4214a40b4470b5b1fcff3",
     "752ddf9b1ffa4fdb5c30048cbd26996b3280e8f4",
+    "7488a9a96db7283a3051f2398ed1900b2b148e73",
     "b31245aa28777ce928ce0325c7a77db3a42edc1a",
     "ed6e3a7a09ebe123f19899f7c1635887fbe1bdec",
     "df60bb2850cd056f36be17aa79d6bbb0dd02938a",
@@ -768,8 +792,10 @@
     "f2144ce8647afe942d16e8886735e5ef139ce02d",
     "195a98133c9887e60b063376103644dc66249f8a",
     "b6872c99d05c806cb177c20ded7ab1b43f923995",
+    "14b69eb1215daf5239f664a05e484159c30167b1",
     "7756165a23ba62cca5f1fc8781f62ba0e68cee92",
     "331d21f3eedc1d0f1659945426fd3ded4143b695",
+    "f254db93c00a9af044f18b26138e997a0f0df08d",
     "a1c740befdd58b64970b341b546b128a2afe108a",
     "cac412357246fa36d3d80d31b17b34d66462bcfa",
     "1a27b348127a9bb76ff3c76bcec1702f1ae885a8",
@@ -777,6 +803,7 @@
     "1b59b4206edb926de59ae06cdc65413c32d8fc13",
     "06ab6ba1277b8f94fa6ebd760161fa9ce088cf07",
     "3c950811f5a3bb720abd0592f776d52a75890aa9",
+    "7dd914bbc1fdd41d15198c1ddd67064e6424181f",
     "aeffe23dbc5ed366c413f580fc8f67b1ce72e675",
     "d3295ede58dd63a3548784896391e114ce24dd77",
     "35546374d21fa7ceabada074c60afb6369450ce0",

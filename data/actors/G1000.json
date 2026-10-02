@@ -194,12 +194,22 @@
   "cves": [],
   "timeline": [
     {
+      "quarter": "2019-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q4",
+      "count": 1
+    },
+    {
       "quarter": "2026-Q2",
       "count": 1
     }
   ],
   "reports": [
-    "f3426320cabc355f756fd039f450b88f535b5e6f"
+    "f3426320cabc355f756fd039f450b88f535b5e6f",
+    "5838a93b133088fcdb5b91fffdcc93add6bb7e5a",
+    "9a35a526d379b2b65c333da1a0cf93772fd28a33"
   ],
   "conflicts": [],
   "evidence_count": 10

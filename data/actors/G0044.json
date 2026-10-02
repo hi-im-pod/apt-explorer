@@ -44,32 +44,285 @@
     "T1553.002",
     "T1583.001"
   ],
-  "techniques_reported": [],
-  "cves": [],
+  "techniques_reported": [
+    {
+      "id": "T1003.001",
+      "count": 1
+    },
+    {
+      "id": "T1027",
+      "count": 1
+    },
+    {
+      "id": "T1037",
+      "count": 1
+    },
+    {
+      "id": "T1055",
+      "count": 1
+    },
+    {
+      "id": "T1056.001",
+      "count": 1
+    },
+    {
+      "id": "T1069.002",
+      "count": 1
+    },
+    {
+      "id": "T1071.001",
+      "count": 1
+    },
+    {
+      "id": "T1087.001",
+      "count": 1
+    },
+    {
+      "id": "T1087.002",
+      "count": 1
+    },
+    {
+      "id": "T1095",
+      "count": 1
+    },
+    {
+      "id": "T1113",
+      "count": 1
+    },
+    {
+      "id": "T1140",
+      "count": 1
+    },
+    {
+      "id": "T1204.002",
+      "count": 1
+    },
+    {
+      "id": "T1543.003",
+      "count": 1
+    },
+    {
+      "id": "T1547.001",
+      "count": 1
+    },
+    {
+      "id": "T1555",
+      "count": 1
+    },
+    {
+      "id": "T1564.001",
+      "count": 1
+    },
+    {
+      "id": "T1566.001",
+      "count": 1
+    },
+    {
+      "id": "T1569.002",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2013-3906",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-0199",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-0796",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-26855",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-34527",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
   "timeline": [
     {
       "quarter": "2013-Q2",
+      "count": 5
+    },
+    {
+      "quarter": "2015-Q1",
       "count": 1
     },
     {
       "quarter": "2015-Q2",
+      "count": 5
+    },
+    {
+      "quarter": "2016-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2017-Q1",
       "count": 2
     },
     {
-      "quarter": "2020-Q2",
+      "quarter": "2017-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2018-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2018-Q2",
+      "count": 3
+    },
+    {
+      "quarter": "2019-Q2",
       "count": 1
     },
     {
-      "quarter": "2026-Q2",
+      "quarter": "2019-Q3",
+      "count": 4
+    },
+    {
+      "quarter": "2019-Q4",
+      "count": 3
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 4
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 6
+    },
+    {
+      "quarter": "2020-Q3",
+      "count": 4
+    },
+    {
+      "quarter": "2020-Q4",
       "count": 1
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 5
+    },
+    {
+      "quarter": "2021-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 4
+    },
+    {
+      "quarter": "2023-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 5
     }
   ],
   "reports": [
+    "2f6ebd7fd80e3c9cdc3d6f95db081fe0d58daf07",
+    "b52b55541ba3a2f05e5b45cfa755fd73f721f5f8",
+    "c50d23725bf49884bbbe6a1a1fcffed428538775",
+    "d26843641c0850a9ce492329c4af2775feaa3320",
     "dbe7775f831ef5d971234ece2cc6efb10027fb0d",
+    "d47bdebe26d6a9315060fbc0652acfd3451e6c2f",
+    "982e97c6f3b7d74eb0d2553fdfd73397f80f702a",
+    "4267c0947c6c196ac1f13f4ae440231f1828a67e",
+    "2f4421953eab17da7490549a7d745b2e228c0bd0",
+    "302ce766c8617917cbaa29874d8093ba2e4d90b9",
+    "9c4887304a34b7a24f922f2e2c9b898a4d0df049",
+    "b86bc64e0d8ea568d722e602600f3370ecd4800c",
+    "b7823430522ae3449c7b213f3dfa9c6f18f01d9a",
+    "32343e29daac413e21a72ed25decf3be28f7c0e2",
+    "6496e6ce2d27f9d07eed314ff3b270c000683217",
+    "0f91695a9e615af26bb58f6e66c1cb5b96f6155a",
+    "253d1d1205d5b6a58c8513104935e738a0c1a256",
+    "07fb710f592d9ee494779bc1070497f59bf652b9",
+    "fb46da6d19c3185f58a688265eda12c296db944f",
+    "df2b0c38d578d431b4b112be019a28af408c96dd",
+    "5d0c88a18fbbde84bbb2a7dfd71668318c7c2227",
+    "a7bd9bba0b95f2c2137b5ec5d595667c77804378",
+    "f5fe05bacb521d2e227db5b5aa5c865a1a20d631",
+    "cf44615d4ae1972b8a20986fa7f2410695776cec",
+    "d2f65e820f287018bcbda644affa13610034585e",
+    "964d1402954f35daa80c32477d96673bd3e8d9e3",
+    "436af4e7eecd2267f8eabe8460562ff0d6ee7fd1",
+    "91490bca948f8cb14b76a6fed80d4898a9fa2e8c",
+    "0953a87a680ee134d2a8eaedec907f5c27028f32",
     "b7b6535cee4727e614a9216490109cae65482984",
+    "f3bf6eef8991a752c4ae4dfb5b93dde46721d020",
+    "1936abcedd5c269851436ed6e042df7db8b618e1",
+    "2c9321d90b7ad0c450f6f4ff08e87b53d06374bc",
+    "6c8d8e7bb7ba7bf456fe6cba8d80c3f4585baede",
+    "97f7158c70143ca04d3e2a3da284dc67d68d8ccf",
+    "2c5dab1fd7db17ec2685922a42807cc3cffd9328",
+    "33e67d5669920778611140f7b293a4d807de35e5",
+    "76ce945416db065037c1741168a6a8b772dcbf07",
+    "74559b87e19605bfccf46bc2e4d951dbd80727f8",
+    "7f98a609e1dcd3f69a822d3636c28f7a9e2dd105",
+    "ef6f81e3b6800dda8fd8dd77d1a54828f9e733e1",
+    "a5d75799445029bcebfdceed99e2ff11ce13150a",
+    "23c4da5ae9f9c3789f291586639fde5041fa974c",
+    "2b4e8c200897e9c96f4d563a486931351a9905b3",
+    "3a623b3b402039a425497e1ec9936ef76ed265ed",
+    "0d7eb14fdb39b733902394fb88190ca5686f2e9f",
+    "1a0f0365a1b997260e1186d63683721f2c8442c6",
+    "da8dad620d4d9636c5ee912395a327dcdd02d04e",
+    "3521306f97b7e1656871b6e95ef9d02d72be1d0f",
+    "0c9d4d28544bc5576d7adcbaedd0da1e18d7f4be",
+    "8b0df8f67fe04d3a8b6f82f3ca50a302f52f9777",
+    "b92945bebb3bf87939b0993b388f1eefa61a19f2",
+    "4b6319176b1caca3eac47744e74716aafa8e7e3a",
+    "8645583eea4dea7637acac308440d25fb743ba77",
+    "affa81ab17dd8a0e884e10a393b7027a4e6a580c",
+    "632c7917320c1c6dee3509df328f0b5ff4fcf086",
+    "a7b7383847ce82b11952ff0b53b247ab9ea63da0",
+    "374d6db0012eeddb6f1d5183e2f0394c36ebcbbf",
+    "e145677abc89e1f985cfed2742d06c50cd57eb39",
+    "77fbc6c3f48fdcb4f0376e6e0da425f99ed9b850",
+    "8b870691f84547afc34c08c494f92a21f6d1dc3e",
+    "1eee55bfc35583cdb0cff3d8a8235924450bac9b",
     "b5ed62ff2039bcc3dccc82fdea7e98b441f8d3ea",
     "paper:Novetta_winntianalysis(04-07-2015)",
-    "e5da7bcfbc463031d214d9fb40b16eef7bf5ca2a"
+    "70ee75103d9fc301b7638712ba13c86014b8a0ad",
+    "c9a33400ab60741ff0c77a9829f3e04cfe39f2d2",
+    "6e60baaf05ba757e581b583f9933e860327ec4e8",
+    "9ef48e2993b8c6d2a3ad99cd6a416658f153f7f7",
+    "e5da7bcfbc463031d214d9fb40b16eef7bf5ca2a",
+    "ed9b3e321bc8e3f070c9bef76e4b7d7cfa0716ab",
+    "3a34d6152f2d287f58e67a03d96408b74d5c470e"
   ],
   "conflicts": [],
   "evidence_count": 0

@@ -122,11 +122,19 @@
   "timeline": [
     {
       "quarter": "2020-Q2",
-      "count": 1
+      "count": 3
+    },
+    {
+      "quarter": "2020-Q3",
+      "count": 2
     }
   ],
   "reports": [
-    "6d5fedda30e086a09d6be72c89e2721e84f7a07c"
+    "32b93358605116386f5d03bfb85d4dede4f88f8b",
+    "7ac29552e8c8c311921f35dd24d26c32721e2b92",
+    "6d5fedda30e086a09d6be72c89e2721e84f7a07c",
+    "88163df8acc8824c3280b9672c9ff2a6b813ea63",
+    "f082fa77a337e3c1b0e324ab6f0d05e812e26946"
   ],
   "conflicts": [],
   "evidence_count": 2

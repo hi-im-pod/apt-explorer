@@ -26,9 +26,23 @@
   "malware": [],
   "techniques_documented": [],
   "techniques_reported": [],
-  "cves": [],
-  "timeline": [],
-  "reports": [],
+  "cves": [
+    {
+      "cve": "CVE-2021-20016",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2021-Q2",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "597502602df9b03c54f3f1940033d0a9964933f7",
+    "8c5d6c7b36fe57414203a40929f19120e34500e1"
+  ],
   "conflicts": [],
   "evidence_count": 2
 }

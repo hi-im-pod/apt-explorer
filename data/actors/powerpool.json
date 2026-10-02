@@ -105,13 +105,20 @@
   "cves": [],
   "timeline": [
     {
-      "quarter": "2020-Q4",
+      "quarter": "2018-Q3",
       "count": 2
+    },
+    {
+      "quarter": "2020-Q4",
+      "count": 3
     }
   ],
   "reports": [
+    "351ed461f80b9e8cf7fb12045ed2974318a78741",
     "7263b00a040f0f4ef128187ace6d9efb91f02d4c",
-    "fa45f3b24634cd6b910f773692c97e3c3aa492d2"
+    "fa45f3b24634cd6b910f773692c97e3c3aa492d2",
+    "a5ea54743db4e226180b9338670ec3ac86615c29",
+    "c908b3913cfb795ae11ebaee4424e0bc6ff6bed5"
   ],
   "conflicts": [],
   "evidence_count": 4

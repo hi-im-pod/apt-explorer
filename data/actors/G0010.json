@@ -1027,11 +1027,71 @@
   ],
   "techniques_reported": [
     {
+      "id": "T1102",
+      "count": 3
+    },
+    {
+      "id": "T1012",
+      "count": 2
+    },
+    {
+      "id": "T1057",
+      "count": 2
+    },
+    {
+      "id": "T1059",
+      "count": 2
+    },
+    {
+      "id": "T1071",
+      "count": 2
+    },
+    {
+      "id": "T1071.001",
+      "count": 2
+    },
+    {
+      "id": "T1082",
+      "count": 2
+    },
+    {
+      "id": "T1083",
+      "count": 2
+    },
+    {
+      "id": "T1135",
+      "count": 2
+    },
+    {
+      "id": "T1590.005",
+      "count": 2
+    },
+    {
+      "id": "T1592.002",
+      "count": 2
+    },
+    {
+      "id": "T1598.003",
+      "count": 2
+    },
+    {
       "id": "T1001",
       "count": 1
     },
     {
-      "id": "T1012",
+      "id": "T1008",
+      "count": 1
+    },
+    {
+      "id": "T1010",
+      "count": 1
+    },
+    {
+      "id": "T1016",
+      "count": 1
+    },
+    {
+      "id": "T1020",
       "count": 1
     },
     {
@@ -1039,11 +1099,67 @@
       "count": 1
     },
     {
-      "id": "T1059",
+      "id": "T1025",
       "count": 1
     },
     {
-      "id": "T1071",
+      "id": "T1027",
+      "count": 1
+    },
+    {
+      "id": "T1033",
+      "count": 1
+    },
+    {
+      "id": "T1036.004",
+      "count": 1
+    },
+    {
+      "id": "T1036.005",
+      "count": 1
+    },
+    {
+      "id": "T1041",
+      "count": 1
+    },
+    {
+      "id": "T1047",
+      "count": 1
+    },
+    {
+      "id": "T1048",
+      "count": 1
+    },
+    {
+      "id": "T1053",
+      "count": 1
+    },
+    {
+      "id": "T1053.005",
+      "count": 1
+    },
+    {
+      "id": "T1055",
+      "count": 1
+    },
+    {
+      "id": "T1059.001",
+      "count": 1
+    },
+    {
+      "id": "T1069",
+      "count": 1
+    },
+    {
+      "id": "T1074.001",
+      "count": 1
+    },
+    {
+      "id": "T1078.003",
+      "count": 1
+    },
+    {
+      "id": "T1087",
       "count": 1
     },
     {
@@ -1051,11 +1167,47 @@
       "count": 1
     },
     {
-      "id": "T1102",
+      "id": "T1102.002",
       "count": 1
     },
     {
-      "id": "T1135",
+      "id": "T1105",
+      "count": 1
+    },
+    {
+      "id": "T1112",
+      "count": 1
+    },
+    {
+      "id": "T1119",
+      "count": 1
+    },
+    {
+      "id": "T1120",
+      "count": 1
+    },
+    {
+      "id": "T1140",
+      "count": 1
+    },
+    {
+      "id": "T1189",
+      "count": 1
+    },
+    {
+      "id": "T1204",
+      "count": 1
+    },
+    {
+      "id": "T1204.002",
+      "count": 1
+    },
+    {
+      "id": "T1213",
+      "count": 1
+    },
+    {
+      "id": "T1480.001",
       "count": 1
     },
     {
@@ -1063,11 +1215,67 @@
       "count": 1
     },
     {
+      "id": "T1546",
+      "count": 1
+    },
+    {
+      "id": "T1547.009",
+      "count": 1
+    },
+    {
       "id": "T1557",
       "count": 1
     },
     {
+      "id": "T1566",
+      "count": 1
+    },
+    {
+      "id": "T1567",
+      "count": 1
+    },
+    {
+      "id": "T1567.002",
+      "count": 1
+    },
+    {
       "id": "T1569",
+      "count": 1
+    },
+    {
+      "id": "T1571",
+      "count": 1
+    },
+    {
+      "id": "T1573",
+      "count": 1
+    },
+    {
+      "id": "T1573.001",
+      "count": 1
+    },
+    {
+      "id": "T1574.001",
+      "count": 1
+    },
+    {
+      "id": "T1583.001",
+      "count": 1
+    },
+    {
+      "id": "T1583.004",
+      "count": 1
+    },
+    {
+      "id": "T1583.007",
+      "count": 1
+    },
+    {
+      "id": "T1584.003",
+      "count": 1
+    },
+    {
+      "id": "T1608",
       "count": 1
     }
   ],
@@ -1083,7 +1291,17 @@
       "ransomware": false
     },
     {
+      "cve": "CVE-2009-1125",
+      "kev": false,
+      "ransomware": null
+    },
+    {
       "cve": "CVE-2009-3129",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2010-0232",
       "kev": true,
       "ransomware": false
     },
@@ -1395,31 +1613,35 @@
     },
     {
       "quarter": "2014-Q1",
-      "count": 5
+      "count": 9
     },
     {
       "quarter": "2014-Q2",
-      "count": 2
+      "count": 4
     },
     {
       "quarter": "2014-Q3",
-      "count": 5
+      "count": 9
     },
     {
       "quarter": "2014-Q4",
-      "count": 4
+      "count": 7
     },
     {
       "quarter": "2015-Q1",
-      "count": 4
+      "count": 6
     },
     {
       "quarter": "2015-Q3",
       "count": 2
     },
     {
+      "quarter": "2016-Q1",
+      "count": 1
+    },
+    {
       "quarter": "2016-Q2",
-      "count": 2
+      "count": 3
     },
     {
       "quarter": "2016-Q3",
@@ -1427,67 +1649,67 @@
     },
     {
       "quarter": "2017-Q1",
-      "count": 3
+      "count": 5
     },
     {
       "quarter": "2017-Q2",
-      "count": 6
-    },
-    {
-      "quarter": "2017-Q3",
-      "count": 10
-    },
-    {
-      "quarter": "2017-Q4",
-      "count": 3
-    },
-    {
-      "quarter": "2018-Q1",
-      "count": 6
-    },
-    {
-      "quarter": "2018-Q2",
-      "count": 2
-    },
-    {
-      "quarter": "2018-Q3",
-      "count": 3
-    },
-    {
-      "quarter": "2018-Q4",
-      "count": 2
-    },
-    {
-      "quarter": "2019-Q2",
-      "count": 9
-    },
-    {
-      "quarter": "2019-Q3",
-      "count": 4
-    },
-    {
-      "quarter": "2019-Q4",
-      "count": 2
-    },
-    {
-      "quarter": "2020-Q1",
-      "count": 6
-    },
-    {
-      "quarter": "2020-Q2",
-      "count": 9
-    },
-    {
-      "quarter": "2020-Q3",
       "count": 7
     },
     {
+      "quarter": "2017-Q3",
+      "count": 14
+    },
+    {
+      "quarter": "2017-Q4",
+      "count": 5
+    },
+    {
+      "quarter": "2018-Q1",
+      "count": 8
+    },
+    {
+      "quarter": "2018-Q2",
+      "count": 3
+    },
+    {
+      "quarter": "2018-Q3",
+      "count": 5
+    },
+    {
+      "quarter": "2018-Q4",
+      "count": 3
+    },
+    {
+      "quarter": "2019-Q2",
+      "count": 15
+    },
+    {
+      "quarter": "2019-Q3",
+      "count": 5
+    },
+    {
+      "quarter": "2019-Q4",
+      "count": 3
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 7
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 10
+    },
+    {
+      "quarter": "2020-Q3",
+      "count": 9
+    },
+    {
       "quarter": "2020-Q4",
-      "count": 6
+      "count": 8
     },
     {
       "quarter": "2021-Q1",
-      "count": 4
+      "count": 6
     },
     {
       "quarter": "2021-Q2",
@@ -1495,15 +1717,15 @@
     },
     {
       "quarter": "2021-Q3",
-      "count": 2
+      "count": 3
     },
     {
       "quarter": "2021-Q4",
-      "count": 2
+      "count": 4
     },
     {
       "quarter": "2022-Q1",
-      "count": 3
+      "count": 4
     },
     {
       "quarter": "2022-Q2",
@@ -1514,12 +1736,16 @@
       "count": 2
     },
     {
-      "quarter": "2023-Q1",
+      "quarter": "2022-Q4",
       "count": 1
     },
     {
+      "quarter": "2023-Q1",
+      "count": 2
+    },
+    {
       "quarter": "2023-Q2",
-      "count": 3
+      "count": 4
     },
     {
       "quarter": "2023-Q3",
@@ -1543,7 +1769,7 @@
     },
     {
       "quarter": "2025-Q3",
-      "count": 1
+      "count": 2
     },
     {
       "quarter": "2026-Q1",
@@ -1551,16 +1777,26 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 5
+      "count": 14
     }
   ],
   "reports": [
     "e5601249a7bf572e57017b663b7f756a3233ea71",
     "5d5d25c09afa56059b0547dae67cb9dd2786cfeb",
     "7b8d84456ebcaf9c13fa0b4f7f033e08ac242620",
+    "1210081acbdafc6009f83374e11868febf055ab2",
     "1b512ed9c4563d9e6b8d6f1e0b7310876ded7668",
+    "271a0a78250b906bdabc02c1dc53d2d4f97659c5",
+    "2bdd9415068aa483830153d0db7a33e8b9773066",
+    "2fa4fbb9266c13d15cf5539cb7154f1cce2212a4",
     "3415c6fb5f013db840d3c0b04f1496fb8ccd222c",
+    "64001e7c87f3c165a408141a8b33a3c0b7184c1c",
+    "bad33db3e1d047251448300badfe81a6fa31eda5",
+    "c391d488a06c542b5cb84978f553e15532424a3e",
+    "d44bca15032e689218f2b89194f665abab317948",
+    "e89cbdd8e7b6c3854fd2467cbf54fc88f7320e0e",
     "53c65ab9c07e0f0ff915aff028fd63a676b9b743",
+    "bdcc83093677dc0ad36b2937396bc3d8b51dca57",
     "c51758db09dab761d3c3c4fa32b3ac123fc1788a",
     "bfb99dfb985b83f5e9ccdebf19a1bf1a71941730",
     "813db24dce8c1099138912ac48b6d34e8d9c9b92",
@@ -1575,8 +1811,11 @@
     "983294ce5c27defd61ec5df87893dc9a2bd9fa7c",
     "6c3116aa5f0d0e4944b09d3ca1cd7a0b7077cfd2",
     "b031465c809a1a7e6a24b482347ae2307cf371a4",
+    "a60b7adeb90ec9de3bc2a24d14a0f14fbc167ffd",
     "efb90cc230f9f566fd7dc3a0bfbc45a8ecaa65d9",
+    "1dc350e97394d1cc92778d17e858154ef2a55a69",
     "f6b16f11d7b92e70f3098aa37ba7b0197415050c",
+    "7f3e46c42095721ba79b1a47e26e662eb7492057",
     "0d969a05942fd365a42743393f658a8804bab908",
     "bf57cd7da671c34f993361a8144efd73968fe7fe",
     "d108b16da45c62878d635efbf096587fe7b63b72",
@@ -1584,32 +1823,43 @@
     "a4a698e467acc8ef2673767c7ceee66e8dce124b",
     "4b47a80a2983729a26ea1d4b658bbdb0a9ca13b8",
     "2e93385d25ecce95e28ec32ef58b27bda25ef0f4",
+    "9e701245648f79296014e896f98f3cf4ad0f9c29",
     "6fa104a20edcc485c333b7fa7b1ff6daec19835c",
     "f47a8d5806add6a11973a4a82a1edcdf4f1cae03",
+    "6fd1ac4573645bdc962f20a5e02767a90f8f8aa2",
     "ff86dd3ec5a70fe1e1bb7680e1df4697c6212fe2",
     "1bb0a7b7f784cca21f919f0f760a9ce948f6e668",
+    "fc1aa901ac6e96ed8217c960f63827c05612a68c",
     "1444993e836f6e7037e3e4d0c906f8ee59bdd24e",
     "7529364cc1f0c39d6656c405d6f8faacb1744fc3",
+    "d71dbeb71a64244d838d480dc56c630dd20fcbfa",
     "637162990948282bd43e16cdbeaae4a59b4b959a",
     "1b2ff3206088d60b5b7c14a56514a0648a576314",
     "fe88cf32c0db9cf5d15f3202c19793ccb5045fbb",
     "708df04536ab717a9f730664f22941f10fdeec78",
+    "e2e9b16dce6e21324bb01db353aaf7ac3d04f287",
     "d59b51c9ca16d61dc204064220cc562cced3a414",
+    "db733ab8c3b1ed38604febd14cb748c733cb544a",
     "19d4efdd3e528c6aee16eec51f162b8641c027bb",
     "cb5e5cc82efdf44699b86d0eb3385955f209043b",
     "201269ab296c57608c21f5dc2db15738b73409da",
     "3cc1c874e6e5f884d479499ce35b16e5c64f983c",
+    "83cbdd4346e4997e1eff42ce0b05022e21ce1d80",
     "291c9f75be5db44e71d84666512d431a4cc5013b",
     "3c88c9a3d78d17145b817fd3efa9a98e7b2773d4",
+    "b77ba3f9a77abca1ec91aef5df3bb62e03511ee9",
     "f2e6b87d1ffe8ae4cd1b52c92130f378fe0c2a41",
+    "8988934123e3fb811bd5b25b477243d105cbc86d",
     "d48d4b89e3fa402cd56461daf284987b9674d515",
     "368fba00e58d5f2a5cb8f95c702dd8117cd4c02f",
     "4c643410718f6765b1a80f105ab470040e864707",
     "17b0d6481ade736c376051631a3e2d0274066e6f",
     "75ce802fc0723328a492651833c43e1f274c4a87",
     "19cf361089a302524207249a3c86c2a390ce19a4",
+    "28db38f3b9c045668e3ac951ac5f2d079bb5e71a",
     "8546d2803da2b86613ade68d8185aad6cd650fcc",
     "05005048baf66e1cc14d11e2b3de96afd3173099",
+    "28095117d1856d17cde35cfbe554437bdbaac785",
     "bf1e6d61f88eae47312b6fe8208fa32a7f12caea",
     "101d6e4515e730e85c9751f702244cd46b45cb61",
     "7bcdfae2ef025893a57007a928a4c633f6beea1d",
@@ -1620,51 +1870,73 @@
     "7f978cc7c21fa0cc47c0f13d09854c54bc0282dd",
     "68b971b44c01fa3821825e239cf6b227673106ea",
     "bd0c197453f05585b435008cdde10e54190a83d6",
+    "e8e790862c07bc63edd424aa6bc657e2a8985509",
     "e93581b79d670bf7ec5fdcbdf5e1ed00f7981bc6",
     "fed84094f8bd8822542b76820b569235ff6cd98a",
     "24b089f66141a590b8d2b32cff928f14e3a0d550",
     "d6b452fe46682f1bd964eb8cae720076bf30c592",
     "99a302673af1471d74389fe1b9aadec2e5e6b647",
     "2e2565557232e2a51fbc6523fea96ce5129b2218",
+    "e00c02157a078e6c59483e4c906b9c0b777fc81f",
     "b43c8a29b106f92b9521b4d057e29d23692ff86d",
     "66174a105244f393279b85f4cfd094691bda5270",
+    "a9ff780af7df653977cdee61e239be20786c16fb",
     "b81a47fa9064957696f69c1257edc46ff588b5bd",
     "df6bbcf3b05769922f5565357fb9052a2d6ff638",
     "06c446f1f21a70403c943ffbbc4b927d950ce614",
+    "1841d973f24ff8b0d5b01734013d0a58f6da7791",
     "9d996d92194bf386a8e7555d618eb5cf183e379a",
+    "60f028f5aeaf977ffbe5a44e5e66a23bec66deff",
+    "05b6b611eaa9c4be6a42b5d1b3433181ffbc9b44",
     "4d2de6d3b7a1acf7cbe9f9394ae1fb404d088c9c",
     "a6ba7a30e00dec1c0341a901572825a60753e53b",
+    "dbad3b6cc693ce114265fda76ccf0f2ad1ede181",
     "f64fc37ac8721ab6d509eac7c2f8f95b5fd59fbd",
     "44ea6ae12ca986a5d64d3207c7aa4fb3cf33559f",
     "d7b7412db84ca8f3b161d4c197cf6a7ab3a25e95",
+    "e5d0ca2b19a5e8f47c177cb120cee449fd03fe98",
     "fa738be5d10521d4f90279de7ab0c3000544c539",
+    "32c2fdcb171d90bc9dfefb2ee598d72e9d786450",
     "7a6c2758ab6d57566892cf41e4729459ab58c991",
     "32efc4989796136722e0868797e06b31a21d8468",
+    "817ab8f94579ca19b4101134d4cd491f0a93aacb",
     "9b486363dd53bb335c366d460d3fab0178630e56",
+    "79b4ccf2d8652f9da7ca26f5b4956491f3f03cdf",
+    "97689346a7edcb951fb872f135dd3f59739c85a1",
     "c2ec1036a969d9b8e470e0b1bcaf88069a058b98",
     "paper:Eset-Turla-Outlook-Backdoor",
     "47329954004ab02d786c68fad37a9b78410f33cc",
     "04146a1e3e7dd4d5e3e2fbd5b0fe8f06720a6a6b",
     "1e9e086f1b01c3b32e9debfc6d28bc6ed8cd7b94",
+    "268243aeac1ebe3132de1a0ce0a0e023dfba476b",
     "fa52103ec752e0b604a908f72f6d68376f982c6a",
     "paper:Territorial%20Dispute%20-%20NSA's%20perspective%20on%20APT%20landscape",
     "3679bcb061a90c9daee667fa244a4d159c195f89",
     "paper:Turla%20Neuron%20Malware%20Update",
+    "271f50a46d59c5b87598a7c4c48ea3cb3e46b1c2",
     "f84083ad9f0109d7e61114eb24432931c8d65924",
+    "a91289e835991b389e01254492d0fe84aeb21752",
     "64ee9966b41640d4a8477e2bf5ad288422dd0829",
     "1655e090c52d870c8bb518408742fc5e6cead70b",
     "316cd38c3939a4f862b611888a489672c014b651",
+    "c6ae240fe72e85a0e413aefda3bd980ade0df153",
     "074b04779bd356b303c6cc77c1afc7853c582e59",
+    "287efc1026a2c7c86d4a84a2cd38966e1c56967d",
     "414063ee995f01c01b6be279d2e6069fd331b4e3",
     "3dc6e80fc5ef663d8c211416165bf7110c0888df",
     "a4f76114a903f17203a1710175e89d065dbebf6d",
     "b70fa29bd9b02be4bc5d8658bdca40751f0cf90a",
+    "e68ff416b7c5de1bf140db24fb194e6e224d83eb",
     "paper:eset-gazer",
+    "d671c682d3223531f2c6392ae82f47398e5c3d44",
+    "fa09a8304feed960628c4d7a044af0b38818189a",
+    "1c739f136e774b8f4bf13b42ac271b297c091b27",
     "5d606e28dce67792b2960e4805b322b594e5111f",
     "cafd73676c25dd9ebdbcee41ceb043ab15e79113",
     "7b1df3bd28db8b60e6c2aa78d276de04aa7014f9",
     "2c5e1689900d6f92ec985be4f9f1df9f9b52de30",
     "c541610a0a2f23c4527d321f151c9e94c8b53902",
+    "1f354e6f8edde4231514f6e08b3e2ff2685f8749",
     "dbaa61309a306717ebc147705d25a9f465ecad7c",
     "98c43a61087eb816cb118a730fd4298f2194ae6c",
     "0df9b24c7c8efb2f7fdb66ef7eb173bb7803aeac",
@@ -1672,32 +1944,51 @@
     "59eade5ba74425f83e36de05945c282b8ddd3a85",
     "781aed2c402da73f0a776f7c84c86f6e2bd5d602",
     "d06b05c9f20c34154b3134a02f9bdfcac5b570e9",
+    "df61224a1d3381b901548218c7fe7db3f12f8d2b",
     "e2138ae6cbbedd971467d19c6ab004226ca3723d",
     "496e1a81f7e9383637ac8e81892dec60fbd208ad",
+    "59bfa3c50b455dd9207cfebb77de4082f50dd22c",
     "paper:Bitdefender-Whitepaper-PAC-A4-en-EN1",
+    "6289dff2cbd2750c76517007989483922179fa40",
     "dbee63b0f8cd29139b4d12b867e3a80de139c0df",
     "paper:APT%20Case%20RUAG%20-%20Technical%20Report",
+    "db5431a5c9b6ac0af2d3d12e00a30b755fe6306f",
     "1627e2d9b0b50209d3f9bc345ae15dcf00a4206c",
     "320456d541590567eec647d887462186ba90e979",
+    "d055ed78d134e377b39a2172957b377946a37da3",
+    "d6b2e4dba3b801252a62e0dade5c8ab71d2eefb1",
     "01788e62e6f5cb397aa16189fb18561d75717d3f",
     "paper:Project_Cobra_Analysis",
     "65461414b734a43c8d2ae0da1357ff684c11f107",
     "paper:New%20Pacifier%20APT%20Components%20Point%20to%20Russian-Linked%20Turla%20Group",
     "61819b006ba4052d4d5ca3e3fd8b382513c65d52",
+    "b94b14a3091398c40f1dcfe0117ffadcb08af665",
     "paper:Turla_2_Penquin",
     "68c7d766a4c835fff047e765a8289b3837dddc78",
+    "96173322b936132aa4cdc0328e4a247d40ae5152",
+    "d38b634f3a43d98fa5332164d4dc73a1fe1d085a",
     "b4fbcc29f1af3851850d3e6e530d175f993c3138",
     "40578a9d842e6db4d344ae64c91e79782cc7fd8c",
     "632c0f439e498a22bfdf454e832d4e08b71b1e00",
+    "85d646dd5793e5ee7ef75a1eb3f786da4b266c5e",
+    "8db9acb833eb8178584fa2f03bf57c383643368e",
     "cecdff97a0dc514f5075029538a42f1cb4036210",
+    "d8ed1aefd32b92343b6a74682898077c76975329",
     "paper:KL_Epic_Turla_Technical_Appendix_20140806",
+    "63e36939c3f90c4ca9d492b03cf04d9f03a4ec2f",
     "paper:circl-tr25-analysis-turla-pfinet-snake-uroburos",
+    "78537f3d1bc1f38eaae86ccf9d49cbab2def3647",
     "ff5bc26da0de686838ed36b0e3c4658458839cb2",
     "7a5dc8c998526a7adb8c97dbfb85b68de40585a9",
+    "c27cf8c2ee57f8a404470cad93d21f2ae62a78d1",
     "5aa2c243e09dac4024f357dac1e4742d7ab66249",
     "b66a9db83329c23a8910bb3bd379926623012d52",
     "paper:Reuters_Turla",
+    "0cdc130b827c7c656e02630fcbdae21fc58e2de8",
+    "94d04c5da4ed33cd78d033ad371aa8472e53d701",
     "b91020137054f555dc2d725d7a4ddcac1886ebd2",
+    "917691a4f8af50a09926f97bf1be2e0cb71f8c68",
+    "ba8e76f2342f770b3ac237e43917b2448f9a99d0",
     "bdc54b0b77bff81ab4e9d45574c3f98777fb9701",
     "9e42753263f89db549ef5204335542b065f08337"
   ],

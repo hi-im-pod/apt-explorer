@@ -63,9 +63,93 @@
   "malware": [],
   "techniques_documented": [],
   "techniques_reported": [],
-  "cves": [],
-  "timeline": [],
-  "reports": [],
+  "cves": [
+    {
+      "cve": "CVE-2017-3506",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-2725",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-14882",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-14883",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-26084",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-44228",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-0543",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2022-26134",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-21839",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2022-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2023-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2023-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 3
+    }
+  ],
+  "reports": [
+    "a8fc4a0fc73d95fe3761368fc6409cb730725369",
+    "3053d8fc62fda388518356d4e8f1be78ee7fcc58",
+    "39e418238499c6a961d7b1223aa2f76f93f5cfe2",
+    "2c1011cc5db707b1f6ee92ed2b00c67d761ac60c",
+    "a98e9cc9cca17aef9d6ae4568f8e91e30a42964b",
+    "5680c21a347bfdc57a46d79a2acb6749a0c88f0c",
+    "450e0c1bafaf799092970ee54d315bdb8597f681",
+    "3d6f14c33e71f44bea4cd45c01d3adbc02bf919a",
+    "d6f8a407f5fc83783221d4ce2871324ae459d6c5",
+    "2bff4646e24752a9c5b39e9e0d696c6d41d64051",
+    "d999ab9bf850a57eff4acbfc8241fb72dd795758",
+    "72e2479bbb5eea0128fb8ca309856be3abd56f26"
+  ],
   "conflicts": [],
   "evidence_count": 8
 }

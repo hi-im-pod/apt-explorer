@@ -249,6 +249,11 @@
       "ransomware": true
     },
     {
+      "cve": "CVE-2017-5689",
+      "kev": true,
+      "ransomware": false
+    },
+    {
       "cve": "CVE-2018-0798",
       "kev": true,
       "ransomware": false
@@ -282,7 +287,7 @@
   "timeline": [
     {
       "quarter": "2014-Q3",
-      "count": 1
+      "count": 2
     },
     {
       "quarter": "2018-Q2",
@@ -290,7 +295,7 @@
     },
     {
       "quarter": "2018-Q3",
-      "count": 1
+      "count": 2
     },
     {
       "quarter": "2018-Q4",
@@ -301,28 +306,48 @@
       "count": 1
     },
     {
+      "quarter": "2019-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 3
+    },
+    {
       "quarter": "2020-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2020-Q3",
       "count": 1
     },
     {
       "quarter": "2020-Q4",
-      "count": 3
+      "count": 4
     },
     {
       "quarter": "2021-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2021-Q2",
       "count": 1
     },
     {
       "quarter": "2022-Q2",
-      "count": 1
+      "count": 3
     },
     {
       "quarter": "2022-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q4",
       "count": 1
     },
     {
       "quarter": "2023-Q2",
-      "count": 1
+      "count": 2
     },
     {
       "quarter": "2024-Q2",
@@ -334,27 +359,47 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 2
+      "count": 5
     }
   ],
   "reports": [
     "59ef2cc33a40fc9bb40d99da43f637ef8f3c8ef6",
+    "7d22cfe7119a4e4d8fef5a9d17855a5239d64dd6",
     "97ef2edc56fa5160e0f89c3caefccd4d0b6c3ea3",
+    "9a2bd4114a37545bcd5499c08c33159808dc495f",
+    "cd734a8f8f6349cf28a379073393fcb8747f4b22",
     "417cf90b80b99d6168d4f464d12984ff6a0146f3",
     "2e5f6913d6d733eaadbca5616815ec02ae2b3883",
     "0e32d494558bf8022af8e3647247dd9579f5bc01",
+    "35582e0385f1c70337690d02cb6c5765ba230814",
+    "e22831058918083986ead5c6bf0b60d70722be12",
+    "301ab391e567862bd65ecb304dd02d8a48cb38a7",
     "5382813415de82cbb20133022d2365ec7f7d04e6",
+    "52622f0b8391e6a2438fcc5896eecea46fdd5679",
+    "5d43a680689f1b9f7151a6cfc61a765fccf60370",
     "ec8f2ac3fba54c46a0da97686bf17ab381efe68f",
+    "f9d1fe354389d9376c35bf9aa49484de1ce6303f",
+    "37277b311ae10dfcad47a237be7a5fe480d381e6",
+    "adbbbdf36944a3e51ff7183688fcabab88739f60",
     "459d4afeac4f379012af4f4d6e233c041fdd16c7",
     "4a4377490bee85f4dca76c6bd53294fcde43e3e9",
     "5fbc6d29a61db83e0aaa5262e68751d0fc91aae7",
+    "cf886239c1cab092d29f8ca866ce86016be54c26",
     "3e00505761f68698ed40985d4e29f73d26cba7d8",
+    "84838de308f10054250e737881e8882ed3115a9e",
     "285f30defe400ccd6a007c8d2ec4d01b758c1605",
+    "6cdc26c2be6183cd8534b8f0f8ecd740c5326641",
+    "0663cef97989f69df67f59cab5071d3b4ef742f1",
+    "9dca61ee16721d73633fabccd0ac9880552b3abb",
+    "f9be263b232d231a32aed9a83ea0e83fb9b5e3d1",
+    "0e1fb7524a3cbac3c015969837ab28c18fab96c6",
     "d33e578b15b89c6fc24a156ddb39ceb449669213",
     "ad122d87969c575dd5e33baa8fb1d9c81ba87a37",
     "26c00470bdfb728522161a5cf595371a5c1b43cc",
+    "292a3ff01b063ada47a2268414eb3afcdd56dbc8",
     "a63d05371334849b3eba4be4d1bdd15b466cebb7",
     "71ede3a8ab87fb6c7a347f1f7f1f99cd20a932b1",
+    "0e5301e830d7b19600b2d110115d7c0f0ab86b02",
     "paper:fireeye-sidewinder-targeted-attack"
   ],
   "conflicts": [],

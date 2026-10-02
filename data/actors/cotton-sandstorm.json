@@ -85,8 +85,21 @@
   "techniques_documented": [],
   "techniques_reported": [],
   "cves": [],
-  "timeline": [],
-  "reports": [],
+  "timeline": [
+    {
+      "quarter": "2019-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2023-Q1",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "84319f3dc52080e9a3575970c41c8b1df3b628c8",
+    "35b300c60b91fd33818189e10b38e19c011a499c",
+    "4fc435b9910d49c31616ca9577cb1b18ae24b15c"
+  ],
   "conflicts": [],
   "evidence_count": 11
 }

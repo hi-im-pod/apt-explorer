@@ -5,7 +5,8 @@ publisher, may be an actor or a malware family the sources have not caught up wi
 counts those names and runs each through the same scorer as the unresolved names in guesses.json.
 
 A term never changes anything else. It is shown with its counts, three example titles and the
-scorer's guess, and at most as "possibly the same as X". It is never promoted to an actor.
+scorer's guess, and at most as "possibly the same as X". It is never promoted to an actor here.
+Only a vendor post's stated name pair can add one (resolve/pairs.py).
 
 Only titles the site already publishes are read, from the sources a page may show. The titles'
 own words are the only text used: no post text is read or copied.

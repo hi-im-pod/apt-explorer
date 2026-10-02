@@ -70,11 +70,17 @@
   "timeline": [
     {
       "quarter": "2020-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2020-Q3",
       "count": 1
     }
   ],
   "reports": [
-    "005000464a9f344017647ae24c95407f58b0187d"
+    "f3d8c965c69d11a8fbff5076f77fd1511c9fa30e",
+    "005000464a9f344017647ae24c95407f58b0187d",
+    "51a36bdf696216147bf2183ab6173990ec7ead7c"
   ],
   "conflicts": [],
   "evidence_count": 0

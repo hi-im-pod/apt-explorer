@@ -102,15 +102,48 @@
   "malware": [],
   "techniques_documented": [],
   "techniques_reported": [],
-  "cves": [],
+  "cves": [
+    {
+      "cve": "CVE-2017-12149",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-31207",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-34473",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-34523",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
   "timeline": [
     {
+      "quarter": "2021-Q3",
+      "count": 2
+    },
+    {
       "quarter": "2023-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2024-Q2",
       "count": 1
     }
   ],
   "reports": [
-    "paper:Unmasking%20CamoFei%20An%20In-depth%20Analysis%20of%20an%20Emerging%20APT%20Group%20Focused%20on%20Healthcare%20Sectors%20in%20East%20Asia"
+    "c3da622133926e6f86647b7de7b14d9ccdf9c963",
+    "paper:Unmasking%20CamoFei%20An%20In-depth%20Analysis%20of%20an%20Emerging%20APT%20Group%20Focused%20on%20Healthcare%20Sectors%20in%20East%20Asia",
+    "e04bb9387fa8bebff895d3c0b75a2ee632c6a0f8",
+    "c131afc01f35015dc79100f2e44834862fca3a93",
+    "f8ececb02bc1739df56a38090b01b3905998f9a8"
   ],
   "conflicts": [],
   "evidence_count": 4

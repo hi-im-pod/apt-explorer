@@ -157,20 +157,29 @@
       "cve": "CVE-2018-0802",
       "kev": true,
       "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-22941",
+      "kev": true,
+      "ransomware": true
     }
   ],
   "timeline": [
     {
+      "quarter": "2016-Q3",
+      "count": 1
+    },
+    {
       "quarter": "2018-Q3",
-      "count": 3
+      "count": 7
     },
     {
       "quarter": "2018-Q4",
-      "count": 1
+      "count": 5
     },
     {
       "quarter": "2019-Q2",
-      "count": 1
+      "count": 3
     },
     {
       "quarter": "2019-Q3",
@@ -178,11 +187,19 @@
     },
     {
       "quarter": "2020-Q1",
-      "count": 1
+      "count": 2
     },
     {
       "quarter": "2020-Q2",
+      "count": 3
+    },
+    {
+      "quarter": "2020-Q3",
       "count": 1
+    },
+    {
+      "quarter": "2021-Q2",
+      "count": 2
     },
     {
       "quarter": "2023-Q1",
@@ -191,14 +208,31 @@
   ],
   "reports": [
     "f422d36d9da2fc805e51c36319350bfa834c5df6",
+    "894e846a5a3097ae4794e98ce887b94b25ecf4e7",
+    "cecf8dd2b7948ef9d364dd78a1e924e37afcdcc8",
+    "5fb78e3ebc01baf8a7573c8bc35cf08457226b25",
+    "07abf8d563b06610e15d6e277748aedee6c310d2",
+    "2cf7651e07d0a7157a45043c7fe9fdb605576b06",
     "5687700fffca8bb7c37d2ac6ea7b375916a4907b",
     "1075c23e31806d2f3f9456817c8a58f81c5836cc",
+    "3f09b706a9e3966177e427d316628cd1175d9c86",
     "b2d41d9df27085f0362d6ce402bd438191e44611",
     "41c70ebe7812a4294dd57b68c88f759a5e0ce383",
+    "00b2a29e11fa2c5db8fb77cb6cc30ee33c225b3e",
+    "7509d21a19f1d24b5f7fa5a811b3e49ed21debdf",
     "2373a41ce9dd7c86d4491d978fddf887d9a1fc87",
+    "322844134be46553017e7176d7f4f796e595d4c1",
+    "6a7ef30b7ef4ecd4c85430aaa1234ad2c1493b3d",
+    "28458032a40b50f350e89714c3f22e0581cd243c",
+    "3675d00b51d4592758a90f1a61541a83fe64942f",
     "5cd0e57ee8d76d9ee8e08467a2811b888b20bbb5",
+    "28c43bdc8747bb0a8a0751b37de1f86ecb166d74",
+    "fdafb1db14a87d60b51780a11dea215b7e939ef1",
     "40aa0ef5a5f3a7318de9208871684cfa5f188c70",
-    "2036f6c6c100cf783e8bf0e95046196e5ba188c1"
+    "6c85d2da296aacfd7bf2288cb901f013ebe5824d",
+    "aa8e8d8c27e8e6670cbd6f9d4b3f13dc5dbbb746",
+    "2036f6c6c100cf783e8bf0e95046196e5ba188c1",
+    "e81acf7cd329874bf40a81aae6274867e7d850fd"
   ],
   "conflicts": [],
   "evidence_count": 8

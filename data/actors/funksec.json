@@ -21,8 +21,20 @@
   "techniques_documented": [],
   "techniques_reported": [],
   "cves": [],
-  "timeline": [],
-  "reports": [],
+  "timeline": [
+    {
+      "quarter": "2024-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q1",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "3d21ee038a509724bab0bc79ccf51c7223d87e93",
+    "21184f85b7f48469a573125e07ba916f61393a9f"
+  ],
   "conflicts": [],
   "evidence_count": 1
 }

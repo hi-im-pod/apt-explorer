@@ -70,8 +70,21 @@
   "techniques_documented": [],
   "techniques_reported": [],
   "cves": [],
-  "timeline": [],
-  "reports": [],
+  "timeline": [
+    {
+      "quarter": "2012-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "19bc7ee65787581b8e014ef993fe2112802a5442",
+    "1b18444bdb4c5cb85bbb16e59c7dead3475815a5",
+    "4e2df35f7021446e5a671731476e449b38d19e08"
+  ],
   "conflicts": [],
   "evidence_count": 4
 }

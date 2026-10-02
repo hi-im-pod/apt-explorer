@@ -168,17 +168,74 @@
   "cves": [],
   "timeline": [
     {
+      "quarter": "2018-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2018-Q4",
+      "count": 2
+    },
+    {
       "quarter": "2019-Q1",
       "count": 1
     },
     {
-      "quarter": "2022-Q1",
+      "quarter": "2019-Q3",
       "count": 1
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2020-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2023-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 7
     }
   ],
   "reports": [
+    "011d63d51b59f8b98fb7ec39be28e6f1b81fc2a0",
+    "24ec545b3086e36b80ea308ef87269268f79df5e",
+    "2c77423758cd17b4a4471e66d04ab2e66baaa30b",
+    "3cd82a5f4227db4f0e7edd838d36d2afe986f9e3",
+    "57881f46e5671935c508ba0849c24a824d35bfaa",
+    "b4eff8c4131cdc164e9734c1d4d4a79072ad3511",
+    "ec0bd701c80a7a3776a628b4952ce6921d75dd97",
+    "616e62419d2576eba3abb69f228d2258054649ec",
+    "a38871871c47155f67d82889f158861f3ee5230f",
+    "deeede755b6727c8e18f95917826ced762429b29",
+    "11ebead41a810ad5744ff343605fa07309b3fffe",
     "137293cfe2aa7df93d22e44862dbfac8f6ff3aa5",
-    "ac2bcbe0818c394ec66612060f81d4f6860ade30"
+    "dd93245fcec67cfc366fd262787629e183daeda0",
+    "d7d77a0e207720f96c841d4fd6fb94f22222cd93",
+    "65f83a515449e805ee4fb278203ec5b66f5b6fdd",
+    "084fabe6f6bb41cd07b3df61f389c6720b765a18",
+    "4b58d1b0033e7fe087d9d9516318ecc662a95109",
+    "5020098299aac9de9130653e3df183221d6a2c74",
+    "ac2bcbe0818c394ec66612060f81d4f6860ade30",
+    "952ea40b3109a2b101b170075c5e50be663f50d3",
+    "d9c14f59771593707f0087314a313b6daeee583d",
+    "7ba09f8ce76f0e16973c12df7728c44903f7b3a8",
+    "f2f7eb6445d87c3a5e7ec907d0e2a6faee3827ef"
   ],
   "conflicts": [],
   "evidence_count": 2

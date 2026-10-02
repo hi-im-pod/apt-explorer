@@ -181,8 +181,8 @@ SOURCE_INFO: dict[str, SourceInfo] = {i.key: i for i in (
         licence_url="https://www.cisco.com/c/en/us/about/legal/terms-conditions.html",
         _paragraphs=(
             "Post titles and links from the Cisco Talos blog, https://blog.talosintelligence.com/. © Cisco "
-            "and/or its affiliates. All rights reserved; post content is not reproduced here. This project is "
-            "not endorsed by Cisco.",
+            "and/or its affiliates. All rights reserved; post content is not reproduced here. "
+            "Where a post states that two names are one actor, those two names are kept as an alias. This project is not endorsed by Cisco.",
         )),
     SourceInfo(
         key="eset",
@@ -191,7 +191,8 @@ SOURCE_INFO: dict[str, SourceInfo] = {i.key: i for i in (
         licence_url="https://www.welivesecurity.com/en/company/legal-information/",
         _paragraphs=(
             "Post titles and links from the ESET WeLiveSecurity blog, https://www.welivesecurity.com/. © ESET. "
-            "All rights reserved; post content is not reproduced here. This project is not endorsed by ESET.",
+            "All rights reserved; post content is not reproduced here. "
+            "Where a post states that two names are one actor, those two names are kept as an alias. This project is not endorsed by ESET.",
         )),
     SourceInfo(
         key="microsoftblog",
@@ -200,8 +201,8 @@ SOURCE_INFO: dict[str, SourceInfo] = {i.key: i for i in (
         licence_url="https://www.microsoft.com/en-us/legal/terms-of-use",
         _paragraphs=(
             "Post titles and links from the Microsoft Security blog, https://www.microsoft.com/en-us/security/blog/. "
-            "© Microsoft. All rights reserved; post content is not reproduced here. This project is not "
-            "endorsed by or affiliated with Microsoft.",
+            "© Microsoft. All rights reserved; post content is not reproduced here. "
+            "Where a post states that two names are one actor, those two names are kept as an alias. This project is not endorsed by or affiliated with Microsoft.",
         )),
 )}
 assert tuple(SOURCE_INFO) == SOURCE_ORDER

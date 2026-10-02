@@ -74,8 +74,15 @@
   "techniques_documented": [],
   "techniques_reported": [],
   "cves": [],
-  "timeline": [],
-  "reports": [],
+  "timeline": [
+    {
+      "quarter": "2017-Q1",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "e5395ae3b48658a35c56df32d378ee4afab3ced6"
+  ],
   "conflicts": [],
   "evidence_count": 2
 }

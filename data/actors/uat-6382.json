@@ -29,9 +29,27 @@
   "malware": [],
   "techniques_documented": [],
   "techniques_reported": [],
-  "cves": [],
-  "timeline": [],
-  "reports": [],
+  "cves": [
+    {
+      "cve": "CVE-2025-0944",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-0994",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2025-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "6152483e59b406af1acbe7fab823da7da3b426e3"
+  ],
   "conflicts": [],
   "evidence_count": 1
 }

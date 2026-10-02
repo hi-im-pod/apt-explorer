@@ -116,9 +116,25 @@
     {
       "quarter": "2015-Q2",
       "count": 1
+    },
+    {
+      "quarter": "2015-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2016-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
     }
   ],
   "reports": [
+    "e548a286b6eb3a55e4f8d7e16f68ebf730215e5b",
+    "6b4514e39fad91d98adddb705aa3c906ba50f454",
+    "058923ab9e3f8cc46888448aef6e2a41caacad38",
+    "07d4bd7ac5d7a7662acf7b4adf836fa9482dfa7e",
     "paper:1506306551185339"
   ],
   "conflicts": [],

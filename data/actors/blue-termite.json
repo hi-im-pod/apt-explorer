@@ -126,6 +126,16 @@
   "techniques_reported": [],
   "cves": [
     {
+      "cve": "CVE-2012-5054",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2013-0634",
+      "kev": false,
+      "ransomware": null
+    },
+    {
       "cve": "CVE-2015-5119",
       "kev": true,
       "ransomware": false
@@ -133,12 +143,35 @@
   ],
   "timeline": [
     {
+      "quarter": "2014-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2015-Q2",
+      "count": 1
+    },
+    {
       "quarter": "2015-Q3",
+      "count": 4
+    },
+    {
+      "quarter": "2015-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
       "count": 1
     }
   ],
   "reports": [
-    "9723b822bb83020963b2b2557da56ca1ba6e46f9"
+    "6a957d5d7bf952a6fc6ed9ff6b6d6370b4c85d2d",
+    "4bfa7e0065fdcedaee712fcf08200bc0233aea09",
+    "9c9b98bad0b5576e11cc94e5106ef1a3c6a3bb76",
+    "53dc4b2438c53d81010605836596a42c1447f5ef",
+    "9723b822bb83020963b2b2557da56ca1ba6e46f9",
+    "cda12c9c9d7f07bffd595b7f52726113ad4098e4",
+    "fee0f49a312915de5c41ebdd1eaf8aefacde1eaf",
+    "a4520f8f85d13aa469ff3e1b6d333e4c9a290e7a"
   ],
   "conflicts": [],
   "evidence_count": 5

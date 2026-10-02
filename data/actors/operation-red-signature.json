@@ -44,9 +44,35 @@
   "malware": [],
   "techniques_documented": [],
   "techniques_reported": [],
-  "cves": [],
-  "timeline": [],
-  "reports": [],
+  "cves": [
+    {
+      "cve": "CVE-2017-5689",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-7269",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-8373",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2018-Q3",
+      "count": 4
+    }
+  ],
+  "reports": [
+    "571e95d54b4a889fefdd6dcbfbf3229c4e882d6c",
+    "57849370296edd38929812a6832edeacaf56685e",
+    "ba6f0382399628d54a9a44d5ca868890d2e10645",
+    "bfe3a1ebb08fa9f9d032b7ed097e8191d67047eb"
+  ],
   "conflicts": [],
   "evidence_count": 2
 }

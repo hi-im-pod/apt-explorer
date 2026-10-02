@@ -609,22 +609,70 @@
   "techniques_reported": [
     {
       "id": "T1041",
-      "count": 2
+      "count": 3
     },
     {
       "id": "T1059.001",
-      "count": 2
+      "count": 3
     },
     {
       "id": "T1059.003",
-      "count": 2
+      "count": 3
     },
     {
       "id": "T1071.001",
-      "count": 2
+      "count": 3
     },
     {
       "id": "T1082",
+      "count": 3
+    },
+    {
+      "id": "T1140",
+      "count": 3
+    },
+    {
+      "id": "T1547.001",
+      "count": 3
+    },
+    {
+      "id": "T1573.001",
+      "count": 3
+    },
+    {
+      "id": "T1587.001",
+      "count": 3
+    },
+    {
+      "id": "T1588.002",
+      "count": 3
+    },
+    {
+      "id": "T1005",
+      "count": 2
+    },
+    {
+      "id": "T1027",
+      "count": 2
+    },
+    {
+      "id": "T1048",
+      "count": 2
+    },
+    {
+      "id": "T1059.007",
+      "count": 2
+    },
+    {
+      "id": "T1090.002",
+      "count": 2
+    },
+    {
+      "id": "T1095",
+      "count": 2
+    },
+    {
+      "id": "T1102.001",
       "count": 2
     },
     {
@@ -632,23 +680,51 @@
       "count": 2
     },
     {
-      "id": "T1140",
+      "id": "T1110.001",
       "count": 2
     },
     {
-      "id": "T1547.001",
+      "id": "T1110.003",
       "count": 2
     },
     {
-      "id": "T1573.001",
+      "id": "T1136.001",
       "count": 2
     },
     {
-      "id": "T1587.001",
+      "id": "T1190",
       "count": 2
     },
     {
-      "id": "T1588.002",
+      "id": "T1505.003",
+      "count": 2
+    },
+    {
+      "id": "T1567",
+      "count": 2
+    },
+    {
+      "id": "T1571",
+      "count": 2
+    },
+    {
+      "id": "T1583.003",
+      "count": 2
+    },
+    {
+      "id": "T1588.005",
+      "count": 2
+    },
+    {
+      "id": "T1590.002",
+      "count": 2
+    },
+    {
+      "id": "T1595.002",
+      "count": 2
+    },
+    {
+      "id": "T1595.003",
       "count": 2
     },
     {
@@ -661,14 +737,6 @@
     },
     {
       "id": "T1001",
-      "count": 1
-    },
-    {
-      "id": "T1005",
-      "count": 1
-    },
-    {
-      "id": "T1027",
       "count": 1
     },
     {
@@ -700,10 +768,6 @@
       "count": 1
     },
     {
-      "id": "T1048",
-      "count": 1
-    },
-    {
       "id": "T1053",
       "count": 1
     },
@@ -713,10 +777,6 @@
     },
     {
       "id": "T1059.005",
-      "count": 1
-    },
-    {
-      "id": "T1059.007",
       "count": 1
     },
     {
@@ -736,27 +796,7 @@
       "count": 1
     },
     {
-      "id": "T1090.002",
-      "count": 1
-    },
-    {
-      "id": "T1095",
-      "count": 1
-    },
-    {
-      "id": "T1102.001",
-      "count": 1
-    },
-    {
       "id": "T1105",
-      "count": 1
-    },
-    {
-      "id": "T1110.001",
-      "count": 1
-    },
-    {
-      "id": "T1110.003",
       "count": 1
     },
     {
@@ -769,14 +809,6 @@
     },
     {
       "id": "T1134.002",
-      "count": 1
-    },
-    {
-      "id": "T1136.001",
-      "count": 1
-    },
-    {
-      "id": "T1190",
       "count": 1
     },
     {
@@ -793,10 +825,6 @@
     },
     {
       "id": "T1497.003",
-      "count": 1
-    },
-    {
-      "id": "T1505.003",
       "count": 1
     },
     {
@@ -828,39 +856,11 @@
       "count": 1
     },
     {
-      "id": "T1567",
-      "count": 1
-    },
-    {
-      "id": "T1571",
-      "count": 1
-    },
-    {
       "id": "T1583",
       "count": 1
     },
     {
-      "id": "T1583.003",
-      "count": 1
-    },
-    {
-      "id": "T1588.005",
-      "count": 1
-    },
-    {
-      "id": "T1590.002",
-      "count": 1
-    },
-    {
       "id": "T1591",
-      "count": 1
-    },
-    {
-      "id": "T1595.002",
-      "count": 1
-    },
-    {
-      "id": "T1595.003",
       "count": 1
     },
     {
@@ -984,6 +984,16 @@
       "ransomware": true
     },
     {
+      "cve": "CVE-2021-44228",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-45046",
+      "kev": true,
+      "ransomware": true
+    },
+    {
       "cve": "CVE-2022-42475",
       "kev": true,
       "ransomware": true
@@ -1076,26 +1086,30 @@
     },
     {
       "quarter": "2017-Q4",
-      "count": 4
+      "count": 5
     },
     {
       "quarter": "2018-Q1",
-      "count": 6
-    },
-    {
-      "quarter": "2018-Q2",
-      "count": 3
-    },
-    {
-      "quarter": "2018-Q4",
       "count": 7
     },
     {
-      "quarter": "2019-Q2",
+      "quarter": "2018-Q2",
+      "count": 5
+    },
+    {
+      "quarter": "2018-Q4",
       "count": 9
     },
     {
+      "quarter": "2019-Q2",
+      "count": 11
+    },
+    {
       "quarter": "2019-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q4",
       "count": 1
     },
     {
@@ -1112,31 +1126,35 @@
     },
     {
       "quarter": "2020-Q4",
-      "count": 3
+      "count": 5
     },
     {
       "quarter": "2021-Q1",
-      "count": 4
+      "count": 7
     },
     {
       "quarter": "2021-Q2",
-      "count": 1
+      "count": 4
     },
     {
       "quarter": "2022-Q1",
-      "count": 15
+      "count": 21
     },
     {
       "quarter": "2022-Q2",
-      "count": 2
+      "count": 3
     },
     {
       "quarter": "2022-Q3",
+      "count": 4
+    },
+    {
+      "quarter": "2022-Q4",
       "count": 2
     },
     {
       "quarter": "2023-Q2",
-      "count": 1
+      "count": 4
     },
     {
       "quarter": "2023-Q3",
@@ -1153,6 +1171,10 @@
     {
       "quarter": "2024-Q2",
       "count": 1
+    },
+    {
+      "quarter": "2024-Q3",
+      "count": 3
     },
     {
       "quarter": "2025-Q2",
@@ -1172,15 +1194,21 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 10
+      "count": 16
     }
   ],
   "reports": [
+    "7b19abff222b2a3635907d2a5515fc4b8cb35209",
     "27c08e0a03e65cea5d3652ff2168aaf8dd9657f9",
     "5c778a0a80a658b98989a084d150dd58e2286dc8",
     "991774ab6b6476c1d435912a17d1630bf5ffdb31",
     "ba6dab9f5b6059cacb528dd039f4c1ae06a6b031",
+    "d3961c4f02ece82d4fcf7982ecddcb70e01ba092",
     "ed67f53dd3e7e8cd890929f2c8faeb25118318a2",
+    "c1c1c57c38154de1f978522203f93d2258c80aaa",
+    "23d1107a99c7ba2b55de80cda5c229ef8ec2eeed",
+    "267c1b09a466f44b67f58c7d1861d27990f9a7a8",
+    "4e81801f659176008194e670b44055c9df448779",
     "973a3d9c5b01a7d62278b4dcd5ad72efd7c36819",
     "b3499fa332d046d07d5bcd5611655ac36dfa1577",
     "ba530fe00299e206d2d60acc854d6e28aa03aae6",
@@ -1196,6 +1224,9 @@
     "12a9542b083279b27263cb2c3b6c59b12cbc8881",
     "ce41dbf8053d70f2e4018b525bf64a2285908096",
     "ce1c9aed40cb251890cac05f24f7bff10ee03d94",
+    "2b4c01b72da733ca1d48255806a769007e1d455c",
+    "08829d09f17839b9295f5612c9be6043f0308058",
+    "6cb7ac5730c33ab58bf85a9f4aa2dea9ca6f4515",
     "d32d58830492765f4294cd215ff38d915a69ed88",
     "5e5faec00f51ee063b925d21d820804bec696dcd",
     "247bc49a579b858eb7c50a9a6cb23ab022c8e1d2",
@@ -1205,63 +1236,94 @@
     "d3bf493f5cb37521928b92e9eee3af89d0f3bf82",
     "ce73f52df8f33bf83063f204fb7ac940c551b569",
     "ed10a313a617e03120050d08eee67f2644a88608",
+    "f221fa7da69985d7085dc3e729221c8e3703c614",
+    "e9380431f116a50219e89925936203026472e0db",
+    "fee7becef17bc8e56a9ae72fff67422bf014f00a",
+    "a61fa9c8e9449f790e961a6aa7fa5ee85e2e926d",
+    "d92cbcf714dc73c288ffa563320dc65800777d40",
+    "65cafc0c284da4331d0897c9d8bfba6930d657d9",
+    "aa76e16211b2b60ca8e3c325cdc19cc6c011cc77",
     "4aff5111ed563aa98e40360f0c1fb8aad682b602",
     "6d96c56b3170a7edbd2b85d0cd1ee19b3987733f",
     "4e197fb87d964e5ed3091e1cefce34e3fa289edd",
+    "537f7cbeb9c3f774c1c835d31761baa3a6f8131c",
     "bfbd5e895ba954740642786811d9184617c3c828",
     "b1af1f7452016917a87994bc7fd8261952324084",
     "28f75864f3af4e6ceda243cce1fc9ae2357a38fe",
+    "367ba69c8a0502752e921709a50e98b72a8903da",
+    "56ec53ca944e207ca6d8a0a358925d4463d3c796",
+    "6a0d04d3cc1a07d02e70fd57f8ef3612faa4251d",
     "712510153b13519f8d2917fd2f956a2cb7e3aedd",
     "9c5645505004dc6a1526db0701194180cf14033b",
+    "4fb0eeec5de4c63b6668bc3dbb719470c93acc76",
     "953cc88780b2238c65cc25f5630469abfa416b46",
     "1eac3045b64245a6f5f42a005dce416c800d604e",
     "20ceb7bd73b288a0f83d8e9c7c70f2f6bdb876a9",
+    "3484919fdefa596c3988aafb83efbdf8f4220515",
     "35d8864336f82a2732edd20ce9e5d9d70bbebc0c",
     "47c5d728a2f928529ee6d55c55563c78c5eeca10",
     "503a49981eb14d6378dffa21a0e92728d7e069c2",
     "5f3f611d0981bc28ab8f03a57ed3c57942a118d0",
     "cd6ceecd02ed516cf106bf855e81fd26b1b51aed",
+    "b85ea9ca27ec6fa64db92af7311389d9af65196b",
     "e58ce98ef061a0c2dd538e2fe1cc6dc9df402285",
     "e699b65ac7f5c9c09cc5b9bada429369da92fb0e",
     "d8423a0dd2d765f1f1b1c71931da6c78d2b3ae32",
+    "c09e4404fe00745c657cdbdaf5b1b65d3cf11403",
+    "97f1f48e7257230f943bcc15f31e510e7697eb81",
+    "5be3843cf77559436c2d39837750fa0af0934ef3",
     "cbf2c8b08c7445c3b7dfbbb4d2d07b5ce1b6d709",
     "3fb6629ff0e1e8632833f77c9f2078e121e1fff8",
+    "fb96b40fbefcc43f7c0e3770395f12deeda5f4d6",
     "fe88cf32c0db9cf5d15f3202c19793ccb5045fbb",
     "141b4e143958399b55532eca5ef036e16785f0e3",
+    "21b493cfc5b2b83830e1bfcffba9012a13e1467a",
     "abe5c0cc8b169ac1d264a85bad0caf4c63f450e3",
+    "c4d9d91ad656e483d82407e5f25ab4ac8f4b7d67",
     "aeeec3e82bad1f1e8973a715f3c9dc737edb92f0",
     "44db4d587983673cad0fcc51edf382cb186968a4",
     "acd59b18a0dc3ef92c23178da16b314b08c0eb04",
+    "d307520e91accfb3a8c7cc8dad6da275842580ac",
+    "fe47022fa90d63408f3de78c137c90c738930f6c",
     "18bc0dba0a44b0f87d3431151a441ba3c19ecc2d",
     "4e9c0663e2dcebc58b9f4277c7531a39078cbd92",
     "587a7a2e1f2251135b851ad40fdf13359efa9b63",
+    "2c73c5e44f6898c54e35e237513f905f9a83c58b",
     "1b9d20cd96eca138bf6e4345f5a4d649e9d7f951",
     "a2c44d6f87fc6ec9067b543489eda3e5212a92f6",
     "53120754ecd813bb757f2b256d64c5236a50ddac",
     "a3dbdd2093752222a601b266ba0170cbd8e1b565",
     "ae3f5f3ef2ca2f5e90c1909b47566255452291ed",
     "f09b15eefe23d664f889c7ffcfd4fb1be6667ff7",
+    "fe0704857c336bcfbb1a2309d319e1c952b96533",
     "3cc32494460630c192e446f0d71371e1844fa964",
+    "051f1b403b5d1624d2e0e187866643675086a23d",
     "f25a7e7aa5d804e1e37ddf35bee341acd0461823",
     "d2750382053af98fc40d15d1412c50e4cace8591",
     "dbc6091818e127de82037d85aacb7c481c4f5cf9",
+    "1d264e749506e2f25e541df3f5e97f2a354a1dd1",
     "6152f56e275c4e8e8d99084d812553230619fe3f",
     "23c0a1812535edbe41637784380ff52e7f9fb777",
     "31a8d8375950c344cb78209108b22421c173c360",
     "f99231c89457414326ccd31b09ab8342a4825b8a",
     "540d7980a86c5f4f0bfeaa8a5aac5640204fb2b2",
+    "6790c6cb64bf2b73a1977091ea852a235e58cdf7",
     "925ce088ef1ff0bd3008fc998c554db7aaff5e4b",
     "cd799bccd0560735d3c5bb4efb7b95bcdc392ad1",
+    "ed2e653577bfc48e3354a65f006bce987454a0a2",
+    "6817e4a7d63d81d0cf3949652e899d2e87b9a22d",
     "d9b406b39487be2476de4e3c51dc0831808ce03b",
     "f432928368e65f4a4419f22327a0f4aa528ffda2",
     "3ba6037dd03e2b92eae5ec5b7818723d13db4a5e",
     "e3ee9b5378471d6c5e41d7249f8d0dd5d00b16f5",
     "b53699b4a48d16d8f0745bbd3ae62762e2174fd1",
     "2eadb32aa2640db33aab1230057689ab132ba286",
+    "de737c1431c555752fb92a0f0202124150a23156",
     "3aa1366f97a1345531af82567897baeef7624dd3",
     "be779da4b4b92b7671afe5c8ac51066694615f21",
     "ddb0dcbd13485f05e8b8327cf0a47c62ecc0e35a",
     "391659a97773a0330bafdee3af6fdbcfeaa11280",
+    "880d02146357a02e65406c3eb4279c9243641c7c",
     "paper:A%20dive%20into%20MuddyWater%20APT%20targeting%20Middle-East",
     "e7c9267347df149a3cc54c3f67e45d49c37eef76",
     "20f15de94c959541b0e44e8e901aa23682b1b486",

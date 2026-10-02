@@ -163,23 +163,52 @@
   "cves": [],
   "timeline": [
     {
+      "quarter": "2018-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2018-Q3",
+      "count": 2
+    },
+    {
       "quarter": "2019-Q1",
       "count": 1
     },
     {
-      "quarter": "2019-Q4",
+      "quarter": "2019-Q3",
       "count": 1
     },
     {
-      "quarter": "2020-Q4",
+      "quarter": "2019-Q4",
       "count": 2
+    },
+    {
+      "quarter": "2020-Q4",
+      "count": 4
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
     }
   ],
   "reports": [
+    "14b3694b56520d0e3d1fd476692c9de8a74668ee",
+    "a38958e2c9832631ccf0fed75896fb4660a886b9",
     "8406efff010535b5b3970c90f1c66c48cd42a334",
+    "8512bae80420fb1c9004c2989ab2b56bfb5d4644",
     "paper:Silent%20Librarian%20APT%20right%20on%20schedule%20for%202021%20academic%20year",
     "c98008b03a7bbcf446705b7e63dff4a2d51a98b8",
-    "edbd146351a40f307247b887b8f95e625cb62336"
+    "da12027541e09fe201aaf8cfc8fa30c6fa7fbf63",
+    "627211bb85ab7df8a5e52634fde3c6961ea995e2",
+    "edbd146351a40f307247b887b8f95e625cb62336",
+    "613a50544f789798e20000953fdfdaf25b7e05f9",
+    "a7c2fa12ea117b3e6e742b5da6a82419147e219c",
+    "4fd96570c10a7a91698238b177cabfd751be1fab",
+    "a5f3ebd3f4ec9a3a006b2b9160ed34e1a9b43677"
   ],
   "conflicts": [],
   "evidence_count": 15

@@ -40,8 +40,15 @@
   ],
   "techniques_reported": [],
   "cves": [],
-  "timeline": [],
-  "reports": [],
+  "timeline": [
+    {
+      "quarter": "2021-Q4",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "124ec482bddde6b4892339ee5334c030e9a3639d"
+  ],
   "conflicts": [],
   "evidence_count": 2
 }

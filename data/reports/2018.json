@@ -274,8 +274,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-12-21%20-%20FIN7%20Not%20Finished%20-%20Morphisec%20Spots%20New%20Campaign.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1c95e199f8d2dae27209b62edc4fcc397a8511eb.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0046"
+    ],
+    "actors_from_title": [
+      "G0046"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -359,8 +363,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-12-21%20-%20Let's%20Learn-%20In-Depth%20on%20APT28-Sofacy%20Zebrocy%20Golang%20Loader.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/926b1b059475fe65cd6eedaa8a10827a5b1cd1c0.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0007"
+    ],
+    "actors_from_title": [
+      "G0007"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -474,8 +482,12 @@
     "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2016/2016.08.06.APT-C-09/%5BCN%5D_APT-C-09.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/fc24eb10e1af16744360738351528a688100844f.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0040"
+    ],
+    "actors_from_title": [
+      "G0040"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2013-3906"
@@ -575,8 +587,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-12-20%20-%20Chinese%20Hackers%20Indicted%20-%20Members%20of%20APT%2010%20Group%20Targeted%20Intellectual%20Property%20and%20Confidential%20Business%20Information.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6bbccebbdf3f209517e249a7c7c7b33691405589.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0045"
+    ],
+    "actors_from_title": [
+      "G0045"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -670,8 +686,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-12-20%20-%20Middle%20East%20Cyber-Espionage-%20analyzing%20WindShift's%20implant-%20OSX.WindTail%20(part%201).pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ad20b45af1f452e4208143018a5d09d4e5b1d9eb.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0112"
+    ],
+    "actors_from_title": [
+      "G0112"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -939,8 +959,12 @@
     "url": "https://www.antiy.net/p/greenspotoperations-grow-for-many-years/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/747b1318011148cf17126069b038302cb6c6e5b3.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "greenspot"
+    ],
+    "actors_from_title": [
+      "greenspot"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2012-0158",
@@ -979,8 +1003,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-12-18%20-%20Sofacy%20Creates%20New%20%E2%80%98Go%E2%80%99%20Variant%20of%20Zebrocy%20Tool.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c8ccb078d9ae85d637042ab76cdce60c32435828.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0007"
+    ],
+    "actors_from_title": [
+      "G0007"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -1166,8 +1194,12 @@
     "url": "https://blog.certfa.com/posts/the-return-of-the-charming-kitten/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/399a718c060f261ec5b127b9d6209a5a8da89748.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0059"
+    ],
+    "actors_from_title": [
+      "G0059"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1202,8 +1234,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-12-13%20-%20The%20Return%20of%20The%20Charming%20Kitten.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/71604d34248fce6612d642a12e104d20cfeaf7b5.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0059"
+    ],
+    "actors_from_title": [
+      "G0059"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1277,8 +1313,12 @@
     "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2018/2018.12.13.Tildeb_Shadow_Brokers/tech-brief-tildeb-analyzing-the-18-year-old-implant-from-the-shadow-brokers-leak.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e0e24015e1791320e5e81cd74aa57d88d4f5ef08.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "the-shadow-brokers"
+    ],
+    "actors_from_title": [
+      "the-shadow-brokers"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1344,8 +1384,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-12-12%20-%20%E2%80%98Operation%20Sharpshooter%E2%80%99%20Targets%20Global%20Defense,%20Critical%20Infrastructure.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/213ff8b9140a46d2f65da802c53e4758990e2cc8.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "operation-sharpshooter"
+    ],
+    "actors_from_title": [
+      "operation-sharpshooter"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1463,8 +1507,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-12-12%20-%20Dear%20Joohn-%20The%20Sofacy%20Group%E2%80%99s%20Global%20Campaign.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e1330b0ce55ae574d167eb5ccc8c3b010bb624a2.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0007"
+    ],
+    "actors_from_title": [
+      "G0007"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1482,9 +1530,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f9c7b343afa46a5051d17fbf8299f46e28319ee6.pdf",
     "actors": [
-      "G0032"
+      "G0032",
+      "operation-sharpshooter"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "operation-sharpshooter"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1580,8 +1631,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-12-10%20-%20Seedworm-%20Group%20Compromises%20Government%20Agencies,%20Oil%20&%20Gas,%20NGOs,%20Telecoms,%20and%20IT%20Firms.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1d264e749506e2f25e541df3f5e97f2a354a1dd1.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0069"
+    ],
+    "actors_from_title": [
+      "G0069"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1840,8 +1895,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-12-05%20-%20Farewell%20to%20Kelihos%20and%20ZOMBIE%20SPIDER.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/9228ae6e910d31d589dba9c5b69e37464366d3a3.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "zombie-spider"
+    ],
+    "actors_from_title": [
+      "zombie-spider"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1932,8 +1991,12 @@
     "url": "https://www.crowdstrike.com/blog/farewell-to-kelihos-and-zombie-spider/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e62786aff45ba93211980d281b071acf1e753fdb.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "zombie-spider"
+    ],
+    "actors_from_title": [
+      "zombie-spider"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2043,8 +2106,12 @@
     "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2018/2018.08.02.Gorgon_Group/The%20Gorgon%20Group%20Slithering%20Between%20Nation%20State%20and%20Cybercrime.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4a22ceafcbdd3e8b7a349e8c80792be8377ff4d2.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0078"
+    ],
+    "actors_from_title": [
+      "G0078"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-0199"
@@ -2313,8 +2380,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-11-29%20-%20Golden%20Chickens-%20Uncovering%20A%20Malware-as-a-Service%20(MaaS)%20Provider%20and%20Two%20New%20Threat%20Actors%20Using%20It.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/590b80a0e854d4a2b273642983bdf2746dd83e25.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0037"
+    ],
+    "actors_from_title": [
+      "G0037"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2331,8 +2402,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-11-29%20-%20Snakemackerel%20delivers%20Zekapab%20malware.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/9e7da1ef09f6631b50cd32492c6533e79026e5e6.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0007"
+    ],
+    "actors_from_title": [
+      "G0007"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2433,8 +2508,12 @@
     "url": "https://medium.com/@quoscient/golden-chickens-uncovering-a-malware-as-a-service-maas-provider-and-two-new-threat-actors-using-61cf0cb87648",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f4692578839756b2d5e3b0738ab8d59eb24da6e5.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0037"
+    ],
+    "actors_from_title": [
+      "G0037"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2591,8 +2670,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-11-28%20-%20Russian%20Hackers%20Haven't%20Stopped%20Probing%20the%20US%20Power%20Grid%20(Temp.Isotope).pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ff45f1bbf9e967317f673c04bbd72a1ba9a839fb.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0035"
+    ],
+    "actors_from_title": [
+      "G0035"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2665,8 +2748,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-11-27%20-%20Let's%20Learn-%20In-Depth%20on%20Sofacy%20Cannon%20Loader-Backdoor%20Review.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3feb57c015928b80e07f83c94f3a71be90d0ef45.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0007"
+    ],
+    "actors_from_title": [
+      "G0007"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2724,8 +2811,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-11-27%20-%20Meet%20CrowdStrike%E2%80%99s%20Adversary%20of%20the%20Month%20for%20November-%20HELIX%20KITTEN.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/df3cf581ef844f764786696267cedd8aefd18515.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0049"
+    ],
+    "actors_from_title": [
+      "G0049"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2021-22941"
@@ -2784,8 +2875,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-11-26%20-%20Examining%20XLoader,%20FakeSpy,%20and%20the%20Yanbian%20Gang.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/aca85d743dc877743e9d98e628c249b5ec9826e4.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "yanbian-gang"
+    ],
+    "actors_from_title": [
+      "yanbian-gang"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2823,8 +2918,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-11-26%20-%20A%20Look%20into%20the%20Connection%20Between%20XLoader%20and%20FakeSpy,%20and%20Their%20Possible%20Ties%20With%20the%20Yanbian%20Gang.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ddfe1843c8b56228de4d1e9c88b310e7460e8633.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "yanbian-gang"
+    ],
+    "actors_from_title": [
+      "yanbian-gang"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2917,8 +3016,12 @@
     "url": "http://blog.morphisec.com/fin7-not-finished-morphisec-spots-new-campaign",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4f8f7c7d0c4b9161966cdfc33a4eb3eec9584222.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0046"
+    ],
+    "actors_from_title": [
+      "G0046"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2935,8 +3038,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-11-21%20-%20FIN7%20Not%20Finished%20%E2%80%93%20Morphisec%20Spots%20New%20Campaign.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6bcb135002d5c724d6025d9ec2383e7df56b5d7f.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0046"
+    ],
+    "actors_from_title": [
+      "G0046"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2953,8 +3060,12 @@
     "url": "https://www.bleepingcomputer.com/news/security/magecart-group-sabotages-rival-to-ruin-data-and-reputation/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/9f039ced134e4e38ccc0120475707a6f7b745f26.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "magecart"
+    ],
+    "actors_from_title": [
+      "magecart"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2971,8 +3082,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-11-21%20-%20MageCart%20Group%20Sabotages%20Rival%20to%20Ruin%20Data%20and%20Reputation.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/cb0a4e34912e75beaae9028b7e33ddd6aba2ea32.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "magecart"
+    ],
+    "actors_from_title": [
+      "magecart"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2989,8 +3104,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-11-20%20-%20Lazarus%20Continues%20Heists,%20Mounts%20Attacks%20on%20Financial%20Organizations%20in%20Latin%20America.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/08578bbcc995d48eccd1f5f9e5a776a04f5f0fe0.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0032"
+    ],
+    "actors_from_title": [
+      "G0032"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3046,8 +3165,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-11-20%20-%20Sofacy%20Continues%20Global%20Attacks%20and%20Wheels%20Out%20New%20%E2%80%98Cannon%E2%80%99%20Trojan.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1ac7127bebd803d75f28fa37db17f88fcc7d2a84.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0007"
+    ],
+    "actors_from_title": [
+      "G0007"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3064,8 +3187,12 @@
     "url": "https://unit42.paloaltonetworks.com/unit42-sofacy-continues-global-attacks-wheels-new-cannon-trojan/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4bfbc405442070fc9c883a9eefb4c3fe35451570.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0007"
+    ],
+    "actors_from_title": [
+      "G0007"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3140,8 +3267,12 @@
     "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2018/2018.11.19.APT29_Phishing/not-so-cozy-an-uncomfortable-examination-of-a-suspected-apt29-phishing-campaign.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ad4a68888093e0ce4d64f65aa14740dae5e72267.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0016"
+    ],
+    "actors_from_title": [
+      "G0016"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3158,8 +3289,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-11-20%20-%20Sednit-%20What%E2%80%99s%20going%20on%20with%20Zebrocy-.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/fb85669ba9617b1b8c73db01a22d3970da850bab.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0007"
+    ],
+    "actors_from_title": [
+      "G0007"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3196,8 +3331,12 @@
     "url": "https://www.bleepingcomputer.com/news/security/visiondirect-data-breach-caused-by-magecart-attack/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/04ac3ed97520232a52d5a19e1f7bba0471ef46ab.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "magecart"
+    ],
+    "actors_from_title": [
+      "magecart"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3214,8 +3353,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-11-19%20-%20VisionDirect%20Data%20Breach%20Caused%20by%20MageCart%20Attack.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/89ef914a2fc0cad83a2cb7bedc92830b97dd0749.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "magecart"
+    ],
+    "actors_from_title": [
+      "magecart"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3232,8 +3375,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-11-19%20-%20Not%20So%20Cozy-%20An%20Uncomfortable%20Examination%20of%20a%20Suspected%20APT29%20Phishing%20Campaign.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b8fe53e376a1ab24e9284adcccaa11863c9ebdba.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0016"
+    ],
+    "actors_from_title": [
+      "G0016"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3329,8 +3476,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-11-18%20-%20CozyBear%20%E2%80%93%20In%20from%20the%20Cold-.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/d83df2da99a9736dd44c687974e48b7df88133ef.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0016"
+    ],
+    "actors_from_title": [
+      "G0016"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3426,8 +3577,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-11-16%20-%20Analyzing%20OilRig%E2%80%99s%20Ops%20Tempo%20from%20Testing%20to%20Weaponization%20to%20Delivery.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/8095389db59381cbf56f1944572dd1114d612d5b.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0049"
+    ],
+    "actors_from_title": [
+      "G0049"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3537,8 +3692,12 @@
     "url": "https://go.recordedfuture.com/hubfs/reports/cta-2018-1113.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b9dd008b786fd6eacdfb7ba6ae2b193f13ba5e40.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0065"
+    ],
+    "actors_from_title": [
+      "G0065"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2010-1256",
@@ -3564,8 +3723,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-11-14%20-%20Big%20Game%20Hunting-%20The%20Evolution%20of%20INDRIK%20SPIDER%20From%20Dridex%20Wire%20Fraud%20to%20BitPaymer%20Targeted%20Ransomware.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7dd914bbc1fdd41d15198c1ddd67064e6424181f.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0119"
+    ],
+    "actors_from_title": [
+      "G0119"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3642,8 +3805,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-11-13%20-%20HookAds%20Malvertising%20Installing%20Malware%20via%20the%20Fallout%20Exploit%20Kit.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/73383d019fccffe38792bea4a881c1028acc02ec.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "hookads"
+    ],
+    "actors_from_title": [
+      "hookads"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2018-8174"
@@ -3680,8 +3847,12 @@
     "url": "https://www.bleepingcomputer.com/news/security/hookads-malvertising-installing-malware-via-the-fallout-exploit-kit/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c5f2a6cbd58c66e1455ceedc1e74b83167e0bdee.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "hookads"
+    ],
+    "actors_from_title": [
+      "hookads"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4006,8 +4177,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-11-08%20-%20FASTCash-%20How%20the%20Lazarus%20Group%20is%20Emptying%20Millions%20from%20ATMs.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/9ba008092d2c43c51f97ac6c2beb9649a7763b83.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0032"
+    ],
+    "actors_from_title": [
+      "G0032"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-0144",
@@ -4068,8 +4243,12 @@
     "url": "https://cdn.riskiq.com/wp-content/uploads/2018/11/RiskIQ-Flashpoint-Inside-MageCart-Report.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/37fb4bfd4dd3010f5f23e7af93412e06dbfd02c6.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "magecart"
+    ],
+    "actors_from_title": [
+      "magecart"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4334,8 +4513,16 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-11-03%20-%20L%C3%A0%201937CN%20hay%20OceanLotus%20hay%20Lazarus%20%E2%80%A6.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/322844134be46553017e7176d7f4f796e595d4c1.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0032",
+      "G0050",
+      "goblin-panda"
+    ],
+    "actors_from_title": [
+      "G0032",
+      "G0050",
+      "goblin-panda"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-11882"
@@ -4356,14 +4543,21 @@
     "archive_url": "https://archive.orkl.eu/6a7ef30b7ef4ecd4c85430aaa1234ad2c1493b3d.pdf",
     "actors": [
       "G0019",
+      "G0032",
+      "G0050",
       "G0060",
       "G0075",
       "G0081",
       "G0131",
       "dagger-panda",
+      "goblin-panda",
       "ta428"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G0032",
+      "G0050",
+      "goblin-panda"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-11882"
@@ -4421,8 +4615,12 @@
     "url": "https://www.fortinet.com/blog/threat-research/cta-security-playbook--goblin-panda.html",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/28458032a40b50f350e89714c3f22e0581cd243c.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "goblin-panda"
+    ],
+    "actors_from_title": [
+      "goblin-panda"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2012-0158",
@@ -4442,8 +4640,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-11-01%20-%20CTA%20Adversary%20Playbook-%20Goblin%20Panda.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3675d00b51d4592758a90f1a61541a83fe64942f.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "goblin-panda"
+    ],
+    "actors_from_title": [
+      "goblin-panda"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2012-0158",
@@ -4725,8 +4927,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-10-26%20-%20Meet%20CrowdStrike%E2%80%99s%20Adversary%20of%20the%20Month%20for%20October-%20DUNGEON%20SPIDER.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/649418a849178b254e35e47b4e4435cbe79b2f56.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "dungeon-spider"
+    ],
+    "actors_from_title": [
+      "dungeon-spider"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2021-22941"
@@ -4745,8 +4951,12 @@
     "url": "https://www.crowdstrike.com/blog/meet-crowdstrikes-adversary-of-the-month-for-october-dungeon-spider/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/cdd6460d115d5eb89ceaea658772edf17a94c26e.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "dungeon-spider"
+    ],
+    "actors_from_title": [
+      "dungeon-spider"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4763,8 +4973,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-10-25%20-%20New%20sLoad%20malware%20downloader%20being%20leveraged%20by%20APT%20group%20TA554%20to%20spread%20Ramnit.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/174d89caa534323990e768bf4e2762a066fae1c4.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "ta554"
+    ],
+    "actors_from_title": [
+      "ta554"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4781,8 +4995,12 @@
     "url": "https://unit42.paloaltonetworks.com/unit42-new-techniques-uncover-attribute-cobalt-gang-commodity-builders-infrastructure-revealed/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1a49b58f567e70e021979faa34f2ff1bbe3a017e.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0080"
+    ],
+    "actors_from_title": [
+      "G0080"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-0199"
@@ -4801,8 +5019,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-10-25%20-%20New%20Techniques%20to%20Uncover%20and%20Attribute%20Cobalt%20Gang%20Commodity%20Builders%20and%20Infrastructure%20Revealed.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/20614f6c16cc5d086a962c7096dc36f1f5e31bf9.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0080"
+    ],
+    "actors_from_title": [
+      "G0080"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-0199"
@@ -5102,8 +5324,12 @@
     "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2018/2018.10.17.GreyEnergy/blog_GreyEnergy_Updated.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/279f5467a697ab8ea2ecc9a896ac005b7f525721.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "greyenergy"
+    ],
+    "actors_from_title": [
+      "greyenergy"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5300,8 +5526,12 @@
     "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2018/2018.10.17.OceanLotus_SpyRATs/SpyRATsofOceanLotusMalwareWhitePaper.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3b2d947a0db2be931e548b29e8f0604494cc4766.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0050"
+    ],
+    "actors_from_title": [
+      "G0050"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5318,8 +5548,12 @@
     "url": "https://www.welivesecurity.com/2018/10/17/greyenergy-updated-arsenal-dangerous-threat-actors/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3cb8632368cdd23d9c6ab9ed57d5476b4def0525.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "greyenergy"
+    ],
+    "actors_from_title": [
+      "greyenergy"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5375,8 +5609,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-10-17%20-%20ESET%20unmasks%20%E2%80%98GREYENERGY%E2%80%99%20cyber-espionage%20group.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/681add68fe74024ffc240f366e8dfcf42bfeec2f.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "greyenergy"
+    ],
+    "actors_from_title": [
+      "greyenergy"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5509,8 +5747,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-10-17%20-%20GreyEnergy-%20Updated%20arsenal%20of%20one%20of%20the%20most%20dangerous%20threat%20actors.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f9c91e4b7fc0ba4b4b6e2f608337f82a4c32e248.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "greyenergy"
+    ],
+    "actors_from_title": [
+      "greyenergy"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5756,8 +5998,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-10-11%20-%20New%20TeleBots%20backdoor-%20First%20evidence%20linking%20Industroyer%20to%20NotPetya.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b4c6fff216a7b6a6ed0eaf443b6180266600281f.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0034"
+    ],
+    "actors_from_title": [
+      "G0034"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5871,8 +6117,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-10-10%20-%20MuddyWater%20expands%20operations.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6790c6cb64bf2b73a1977091ea852a235e58cdf7.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0069"
+    ],
+    "actors_from_title": [
+      "G0069"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5930,8 +6180,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-10-10%20-%20Gallmaker-%20New%20Attack%20Group%20Eschews%20Malware%20to%20Live%20off%20the%20Land.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/de2b3d4d0ba286f5daf682578931e0c040a61d84.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0084"
+    ],
+    "actors_from_title": [
+      "G0084"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5966,8 +6220,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-10-09%20-%20Magecart%20Group%20Compromises%20Plugin%20Used%20in%20Thousands%20of%20Stores,%20Makes%20Rookie%20Mistake.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/66666c11f93bcd21b50089ef6039cabfedf731c2.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "magecart"
+    ],
+    "actors_from_title": [
+      "magecart"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5984,8 +6242,12 @@
     "url": "https://www.bleepingcomputer.com/news/security/magecart-group-compromises-plugin-used-in-thousands-of-stores-makes-rookie-mistake/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/be19101834cd02b71e494feb1a1d48eb989c5eb3.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "magecart"
+    ],
+    "actors_from_title": [
+      "magecart"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6052,8 +6314,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-10-08%20-%20BSides%20Belfast%202018-%20Lazarus%20On%20The%20Rise-%20Insights%20From%20SWIFT%20Bank%20Attacks.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/187da4730c0ff99e88af80e24ef58420d52e4482.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0032"
+    ],
+    "actors_from_title": [
+      "G0032"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6094,8 +6360,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-10-08%20-%20Delivery%20(Key)Boy.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4ff8102057f0c9765c7455c7e4734fc1733ec80d.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0081"
+    ],
+    "actors_from_title": [
+      "G0081"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6112,8 +6382,12 @@
     "url": "https://www.mandiant.com/sites/default/files/2021-09/rpt-apt38-2018-web_v5-1.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/624020f94895ff5a017b48113597576168edbd62.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0082"
+    ],
+    "actors_from_title": [
+      "G0082"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2015-8651",
@@ -6134,8 +6408,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-10-08%20-%20Cobalt%20Group%202.0.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ade0169b6ecba2044978655deae8e5a3fbf232ee.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0080"
+    ],
+    "actors_from_title": [
+      "G0080"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6191,8 +6469,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-10-04%20-%20APT28-%20New%20Espionage%20Operations%20Target%20Military%20and%20Government%20Organizations.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/60ad4288fa0287d712b8d34cce07086dfa8667ca.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0007"
+    ],
+    "actors_from_title": [
+      "G0007"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6229,8 +6511,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-10-04%20-%20Indicators%20of%20Compromise%20for%20Malware%20used%20by%20APT28.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/72b9bebf91b1440bdfa1cf5881809663de3e9e8f.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0007"
+    ],
+    "actors_from_title": [
+      "G0007"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6247,8 +6533,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-10-04%20-%20Shedding%20Skin%20%E2%80%93%20Turla%E2%80%99s%20Fresh%20Faces.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/817ab8f94579ca19b4101134d4cd491f0a93aacb.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0010"
+    ],
+    "actors_from_title": [
+      "G0010"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6285,8 +6575,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-10-03%20-%20APT37-%20Final1stspy%20Reaping%20the%20FreeMilk.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/084afd71d1242f51ffa13cdb03166b1299937283.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0067"
+    ],
+    "actors_from_title": [
+      "G0067"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6321,8 +6615,12 @@
     "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2018/2018.10.03.APT38/rpt-apt38-2018-web_v4.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/37e523977a82a5bf0f8cff84b5b183efc266d133.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0082"
+    ],
+    "actors_from_title": [
+      "G0082"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2015-8651",
@@ -6443,8 +6741,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-10-02%20-%20Alert%20(TA18-275A)%20HIDDEN%20COBRA-%20FASTCash%20Campaign.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/0ee6d1fdd1c85e72fff2392cf7fc7b721ac27c97.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0032"
+    ],
+    "actors_from_title": [
+      "G0032"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6519,8 +6821,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-10-02%20-%20Alert%20(TA18-275A)-%20HIDDEN%20COBRA%20%E2%80%93%20FASTCash%20Campaign.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/cb81760c6ab3a0df9eb412ec65ac05a66f2832cc.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0032"
+    ],
+    "actors_from_title": [
+      "G0032"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6663,8 +6969,12 @@
     "url": "https://www.bleepingcomputer.com/news/security/roaming-mantis-group-testing-coinhive-miner-redirects-on-iphones/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/952ea40b3109a2b101b170075c5e50be663f50d3.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "roaming-mantis"
+    ],
+    "actors_from_title": [
+      "roaming-mantis"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6719,8 +7029,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-10-01%20-%20NOKKI%20Almost%20Ties%20the%20Knot%20with%20DOGCALL-%20Reaper%20Group%20Uses%20New%20Malware%20to%20Deploy%20RAT.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ca3c780533dec9eee8a7a14aa9997b2e3deb8510.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0067"
+    ],
+    "actors_from_title": [
+      "G0067"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6773,8 +7087,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-10-01%20-%20Roaming%20Mantis%20Group%20Testing%20Coinhive%20Miner%20Redirects%20on%20iPhones.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/d9c14f59771593707f0087314a313b6daeee583d.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "roaming-mantis"
+    ],
+    "actors_from_title": [
+      "roaming-mantis"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6827,8 +7145,12 @@
     "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2018/2018.09.07.Domestic_Kitten/Domestic%20Kitten%20An%20Iranian%20Surveillance%20Operation.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6bc74c0f6105d807ef6fa586a562f016460a802f.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "domestic-kitten"
+    ],
+    "actors_from_title": [
+      "domestic-kitten"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6845,8 +7167,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-09-28%20-%20Meet%20CrowdStrike%E2%80%99s%20Adversary%20of%20the%20Month%20for%20September-%20COBALT%20SPIDER.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/d817681e3a94d0883bb63f2a78e259d704da53b5.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0080"
+    ],
+    "actors_from_title": [
+      "G0080"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6917,8 +7243,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-09-27%20-%20APT28%20Uses%20LoJax,%20First%20UEFI%20Rootkit%20Seen%20in%20the%20Wild.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6fa8fbfa24856a83d0943f976e62bcc1ad4ca0dd.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0007"
+    ],
+    "actors_from_title": [
+      "G0007"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2014-8273"
@@ -6937,8 +7267,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-09-27%20-%20LoJax-%20First%20UEFI%20rootkit%20found%20in%20the%20wild,%20courtesy%20of%20the%20Sednit%20group.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7e4a630be9062f6bb897378f7c2a8ac41d17f98d.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0007"
+    ],
+    "actors_from_title": [
+      "G0007"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6975,8 +7309,12 @@
     "url": "https://www.welivesecurity.com/2018/09/27/lojax-first-uefi-rootkit-found-wild-courtesy-sednit-group/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/9a48eb6cd28886f757ed818c19e444ae422b9f50.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0007"
+    ],
+    "actors_from_title": [
+      "G0007"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7014,8 +7352,12 @@
     "url": "https://www.bleepingcomputer.com/news/security/apt28-uses-lojax-first-uefi-rootkit-seen-in-the-wild/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/df19aef07e6147e1244bee150caa4f8b90c8fd20.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0007"
+    ],
+    "actors_from_title": [
+      "G0007"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7527,8 +7869,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-09-18%20-%20Magecart%20Skimming%20Attack%20Targets%20Mobile%20Users%20of%20Hotel%20Chain%20Booking%20Websites.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ec7120f075cc1d5270b25c7c9432be4a16bca183.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "magecart"
+    ],
+    "actors_from_title": [
+      "magecart"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7713,8 +8059,12 @@
     "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2018/2018.09.13.APT10_Targeting_Japanese/APT10%20Targeting%20Japanese%20Corporations%20Using%20Updated%20TTPs.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/cd622003433b7744a621fc95a1902e3df81c3059.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0045"
+    ],
+    "actors_from_title": [
+      "G0045"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7751,8 +8101,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-09-13%20-%20APT10%20Targeting%20Japanese%20Corporations%20Using%20Updated%20TTPs.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/637c9421fd02d9548fc9cf5678d0bfc882db8b58.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0045"
+    ],
+    "actors_from_title": [
+      "G0045"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7809,8 +8163,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-09-12%20-%20OilRig%20Uses%20Updated%20BONDUPDATER%20to%20Target%20Middle%20Eastern%20Government.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1e7ad08f71dada3571e04e76effefffcb9b2a89a.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0049"
+    ],
+    "actors_from_title": [
+      "G0049"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7902,8 +8260,12 @@
     "url": "https://www.bleepingcomputer.com/news/security/feedify-hacked-with-magecart-information-stealing-script/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b70bd0a2905180f48da69433e07a9c823951672d.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "magecart"
+    ],
+    "actors_from_title": [
+      "magecart"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7940,8 +8302,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-09-12%20-%20Feedify%20Hacked%20with%20Magecart%20Information%20Stealing%20Script.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f5245d91f6f0100b998ac6e37cc9b337f2f3df34.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "magecart"
+    ],
+    "actors_from_title": [
+      "magecart"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8153,8 +8519,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-09-10%20-%20LuckyMouse%20signs%20malicious%20NDISProxy%20driver%20with%20certificate%20of%20Chinese%20IT%20company.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/78aebb86a5aeacd70d5c49ef7c4b915db651a44f.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0027"
+    ],
+    "actors_from_title": [
+      "G0027"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8255,9 +8625,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5cd0e57ee8d76d9ee8e08467a2811b888b20bbb5.pdf",
     "actors": [
+      "G0065",
       "goblin-panda"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G0065"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8296,8 +8669,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-09-07%20-%20Domestic%20Kitten%20APT%20Operates%20in%20Silence%20Since%202016.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/72a5e5401d9551b4f1975669192b2cfce2147a3f.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "domestic-kitten"
+    ],
+    "actors_from_title": [
+      "domestic-kitten"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8546,8 +8923,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-09-05%20-%20PowerPool%20malware%20exploits%20ALPC%20LPE%20zero%E2%80%91day%20vulnerability.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a5ea54743db4e226180b9338670ec3ac86615c29.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "powerpool"
+    ],
+    "actors_from_title": [
+      "powerpool"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8606,8 +8987,12 @@
     "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2018/2018.05.23.Confucius_Update/Confucius_Update.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c49e6365631d1feafe04dcbfdc7baac5c049d43f.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0142"
+    ],
+    "actors_from_title": [
+      "G0142"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-5689",
@@ -8628,8 +9013,12 @@
     "url": "https://www.welivesecurity.com/2018/09/05/powerpool-malware-exploits-zero-day-vulnerability/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c908b3913cfb795ae11ebaee4424e0bc6ff6bed5.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "powerpool"
+    ],
+    "actors_from_title": [
+      "powerpool"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8859,8 +9248,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-08-31%20-%20Who%20is%20Mr%20An,%20and%20was%20he%20working%20for%20APT10-.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/eeb7abd3cf832a9b7e81b2c94732f1e51eff68af.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0045"
+    ],
+    "actors_from_title": [
+      "G0045"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8993,9 +9386,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3a252430bcb61f4ad5e4065f398046be8d4a0171.pdf",
     "actors": [
+      "G0045",
       "G0065"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G0045"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2018-0802"
@@ -9015,9 +9411,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3a8b95623bfbca0404372fe5d4a9fa89dbfa3aa8.pdf",
     "actors": [
-      "G0049"
+      "G0049",
+      "G0112"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G0112"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9171,8 +9570,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-08-30%20-%20Two%20Birds,%20One%20STONE%20PANDA.pdf",
     "url_ok": true,
     "archive_url": "https://archive.orkl.eu/b2cb1371b273c9a75d94981e085a194e8c663ff3.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0045"
+    ],
+    "actors_from_title": [
+      "G0045"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2018-0802"
@@ -9267,8 +9670,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-08-30%20-%20Rocke-%20The%20Champion%20of%20Monero%20Miners.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ea4efa0b1384a283a4c2b33d6f2a90fbce54d2d3.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0106"
+    ],
+    "actors_from_title": [
+      "G0106"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-10271",
@@ -9289,9 +9696,14 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1614224bb566bb4c8e82501440d26fb707108757.pdf",
     "actors": [
+      "G0112",
+      "G0142",
       "urpage"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G0112",
+      "G0142"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-12824",
@@ -9312,8 +9724,12 @@
     "url": "https://www.crowdstrike.com/blog/meet-crowdstrikes-adversary-of-the-month-for-august-goblin-panda/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/28c43bdc8747bb0a8a0751b37de1f86ecb166d74.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "goblin-panda"
+    ],
+    "actors_from_title": [
+      "goblin-panda"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2012-0158"
@@ -9390,8 +9806,16 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-08-29%20-%20The%20Urpage%20Connection%20to%20Bahamut,%20Confucius%20and%20Patchwork.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/74fd6c79c3d93482d5df2e0a6bd86ce6d10a232c.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0112",
+      "G0142",
+      "urpage"
+    ],
+    "actors_from_title": [
+      "G0112",
+      "G0142",
+      "urpage"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-12824",
@@ -9413,9 +9837,14 @@
     "archive_url": "https://archive.orkl.eu/79ccc0053998efff9d299565ace7f992f9c9d377.pdf",
     "actors": [
       "G0040",
-      "G0112"
+      "G0112",
+      "G0142",
+      "urpage"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G0142",
+      "urpage"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-12824",
@@ -9437,9 +9866,14 @@
     "archive_url": "https://archive.orkl.eu/a110d78ce9322857fd7d8f5f6d90f1eb6eb07c3e.pdf",
     "actors": [
       "G0040",
-      "G0112"
+      "G0112",
+      "G0142",
+      "urpage"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G0142",
+      "urpage"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-12824",
@@ -9498,8 +9932,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-08-29%20-%20Meet%20CrowdStrike%E2%80%99s%20Adversary%20of%20the%20Month%20for%20August-%20GOBLIN%20PANDA.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/fdafb1db14a87d60b51780a11dea215b7e939ef1.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "goblin-panda"
+    ],
+    "actors_from_title": [
+      "goblin-panda"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2012-0158",
@@ -9677,8 +10115,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-08-26%20-%20Remember%20Fancy%20Bear-.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/436b2bac228f3fa510b55b69b496ffb5ac14a970.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0007"
+    ],
+    "actors_from_title": [
+      "G0007"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9731,8 +10173,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-08-24%20-%20Cobalt%20Dickens%20threat%20group%20looks%20to%20be%20similar%20to%20indicted%20hackers.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/613a50544f789798e20000953fdfdaf25b7e05f9.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0122"
+    ],
+    "actors_from_title": [
+      "G0122"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9749,8 +10195,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-08-24%20-%20Back%20to%20School-%20COBALT%20DICKENS%20Targets%20Universities.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a7c2fa12ea117b3e6e742b5da6a82419147e219c.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0122"
+    ],
+    "actors_from_title": [
+      "G0122"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9806,8 +10256,12 @@
     "url": "https://www.bleepingcomputer.com/news/security/lazarus-group-deploys-its-first-mac-malware-in-cryptocurrency-exchange-hack/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5f93a873f06ddcd273cd5e4be290f67b15dfe5a2.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0032"
+    ],
+    "actors_from_title": [
+      "G0032"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9824,8 +10278,14 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-08-23%20-%20Operation%20AppleJeus-%20Lazarus%20hits%20cryptocurrency%20exchange%20with%20fake%20installer%20and%20macOS%20malware.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/8effee21c8fbff2291a0f9bdff0900cce8a8e1ac.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0032",
+      "G0138"
+    ],
+    "actors_from_title": [
+      "G0032",
+      "G0138"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9842,8 +10302,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-08-23%20-%20Lazarus%20Group%20Deploys%20Its%20First%20Mac%20Malware%20in%20Cryptocurrency%20Exchange%20Hack.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/90e521d286720ac932a852b68bf4c998bd5e2761.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0032"
+    ],
+    "actors_from_title": [
+      "G0032"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9879,9 +10343,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/d9f35bf692aa5dc38758dbbd3a645bd3f4a000c7.pdf",
     "actors": [
-      "G0032"
+      "G0032",
+      "G0138"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G0138"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9918,8 +10385,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-08-22%20-%20Turla%20Outlook%20Backdoor%20Uses%20Clever%20Tactics%20for%20Stealth%20and%20Persistence.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/79b4ccf2d8652f9da7ca26f5b4956491f3f03cdf.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0010"
+    ],
+    "actors_from_title": [
+      "G0010"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9936,8 +10407,12 @@
     "url": "https://www.bleepingcomputer.com/news/security/turla-outlook-backdoor-uses-clever-tactics-for-stealth-and-persistence/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/97689346a7edcb951fb872f135dd3f59739c85a1.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0010"
+    ],
+    "actors_from_title": [
+      "G0010"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10079,8 +10554,12 @@
     "url": "https://www.bleepingcomputer.com/news/security/microsoft-disrupts-apt28-hacking-campaign-aimed-at-us-midterm-elections/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/558f8defa89094045dd08bcfd8856fdc719b86d4.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0007"
+    ],
+    "actors_from_title": [
+      "G0007"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10097,8 +10576,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-08-21%20-%20Supply%20Chain%20Attack%20Operation%20Red%20Signature%20Targets%20South%20Korean%20Organizations.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/571e95d54b4a889fefdd6dcbfbf3229c4e882d6c.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "operation-red-signature"
+    ],
+    "actors_from_title": [
+      "operation-red-signature"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-7269"
@@ -10117,8 +10600,12 @@
     "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2018/2018.08.21.Operation_Red_Signature/supply-chain-attack-operation-red-signature-targets-south-korean-organizations.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/57849370296edd38929812a6832edeacaf56685e.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "operation-red-signature"
+    ],
+    "actors_from_title": [
+      "operation-red-signature"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-5689",
@@ -10176,9 +10663,12 @@
       "apt21",
       "calypso",
       "hurricane-panda",
+      "operation-red-signature",
       "slime29"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "operation-red-signature"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-7269"
@@ -10200,9 +10690,12 @@
     "actors": [
       "G0025",
       "G0073",
-      "G0128"
+      "G0128",
+      "operation-red-signature"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "operation-red-signature"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-7269"
@@ -10257,8 +10750,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-08-21%20-%20Microsoft%20Disrupts%20APT28%20Hacking%20Campaign%20Aimed%20at%20US%20Midterm%20Elections.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f125565fe24d66657c0efce9557185984be9f204.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0007"
+    ],
+    "actors_from_title": [
+      "G0007"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10528,8 +11025,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-08-17%20-%20Prince%20of%20Persia-%20The%20Sands%20of%20Foudre.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/af58d377ac2b6a4eda39d9e31d89d9674bdbd0ad.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "infy"
+    ],
+    "actors_from_title": [
+      "infy"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10564,8 +11065,12 @@
     "url": "https://www.intezer.com/prince-of-persia-the-sands-of-foudre/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/d3da19f6754adbd5db53617ebb96081c185f6939.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "infy"
+    ],
+    "actors_from_title": [
+      "infy"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10693,8 +11198,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-08-15%20-%20APT10%20was%20managed%20by%20the%20Tianjin%20bureau%20of%20the%20Chinese%20Ministry%20of%20State%20Security.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/84820125228da08475d3c83550353a8b1d3f8771.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0045"
+    ],
+    "actors_from_title": [
+      "G0045"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10711,8 +11220,12 @@
     "url": "https://intrusiontruth.wordpress.com/2018/08/15/apt10-was-managed-by-the-tianjin-bureau-of-the-chinese-ministry-of-state-security/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/cda5364037f9b0a96a4c6d23a8079a9189379122.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0045"
+    ],
+    "actors_from_title": [
+      "G0045"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10750,8 +11263,12 @@
     "url": "https://cdn.area1security.com/reports/Area-1-Security-OperationDoos-IRN2%20Targets%20Saudi%20Arabian%20Oil%20and%20Gas%20Industry%20With%20Career-Themed%20Phishing%20Attack.pdf?utm_source=external%20share&amp;utm_email=asset&amp;utm_campaign=report&amp;utm_content=operationdoos",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f2709b82b355ec9d5afedbba14e7f8e3f540c582.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0049"
+    ],
+    "actors_from_title": [
+      "G0049"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10896,8 +11413,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-08-09%20-%20More%20on%20Huaying%20Haitai%20and%20Laoying%20Baichaun,%20the%20companies%20associated%20with%20APT10.%20Is%20there%20a%20state%20connection-.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6db364bac56841bb19f92f92a0f2269934d7afa8.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0045"
+    ],
+    "actors_from_title": [
+      "G0045"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11013,8 +11534,12 @@
     "url": "https://unit42.paloaltonetworks.com/unit42-darkhydrus-uses-phishery-harvest-credentials-middle-east/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/232246a9a70c3ae1598e671e57df537a1b952cc1.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0079"
+    ],
+    "actors_from_title": [
+      "G0079"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11067,8 +11592,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-08-07%20-%20DarkHydrus%20Uses%20Phishery%20to%20Harvest%20Credentials%20in%20the%20Middle%20East.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e90442753123b25145a8e357ef812420866dbed3.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0079"
+    ],
+    "actors_from_title": [
+      "G0079"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11103,8 +11632,12 @@
     "url": "https://app.box.com/s/dj0libdgcbb232zyhj3fq1ehkqyti1xm",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/257650cc95d4f77ec70553ce9bbf0a4e393ea4e3.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0067"
+    ],
+    "actors_from_title": [
+      "G0067"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2016-0147",
@@ -11144,8 +11677,12 @@
     "url": "https://app.box.com/s/w317rctu3q7wwn8pzy51fgwuvshsd2ig",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6fa8f171b0c54e32f84947822529ec3577304030.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0022"
+    ],
+    "actors_from_title": [
+      "G0022"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11345,8 +11882,12 @@
     "url": "https://unit42.paloaltonetworks.com/unit42-gorgon-group-slithering-nation-state-cybercrime/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/00b5096fa62da3207a20ccc6fe9d0a029f88780c.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0078"
+    ],
+    "actors_from_title": [
+      "G0078"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-0199"
@@ -11365,8 +11906,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-08-02%20-%20Three%20Carbanak%20cyber%20heist%20gang%20members%20arrested.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/05afe2ddb7ee4ca32988e7f841d182f25d862c41.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0008"
+    ],
+    "actors_from_title": [
+      "G0008"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11424,8 +11969,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-08-02%20-%20Goblin%20Panda%20against%20the%20Bears.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6c85d2da296aacfd7bf2288cb901f013ebe5824d.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "goblin-panda"
+    ],
+    "actors_from_title": [
+      "goblin-panda"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-8570"
@@ -11480,8 +12029,12 @@
     "url": "https://www.computerweekly.com/news/252446153/Three-Carbanak-cyber-heist-gang-members-arrested",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/805a2c0666ee96476ab824c78032d3eca3cf5a89.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0008"
+    ],
+    "actors_from_title": [
+      "G0008"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11530,9 +12083,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/aa8e8d8c27e8e6670cbd6f9d4b3f13dc5dbbb746.pdf",
     "actors": [
-      "G0019"
+      "G0019",
+      "goblin-panda"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "goblin-panda"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-11882",
@@ -11552,8 +12108,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-08-02%20-%20The%20Gorgon%20Group-%20Slithering%20Between%20Nation%20State%20and%20Cybercrime.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/d6522982e708b677133fe10ca887d435a995f4a3.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0078"
+    ],
+    "actors_from_title": [
+      "G0078"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-0199"
@@ -11590,8 +12150,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-08-02%20-%20Raspite.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f940bbf33df1d764a30e7565a4cfa55532047574.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0077"
+    ],
+    "actors_from_title": [
+      "G0077"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11608,8 +12172,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-08-01%20-%20On%20the%20Hunt%20for%20FIN7-%20Pursuing%20an%20Enigmatic%20and%20Evasive%20Global%20Criminal%20Operation.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/180e190a6e08372a2688b571644dadb584a364e2.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0046"
+    ],
+    "actors_from_title": [
+      "G0046"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11626,8 +12194,12 @@
     "url": "https://www.crowdstrike.com/blog/arrests-put-new-focus-on-carbon-spider-adversary-group/",
     "url_ok": true,
     "archive_url": "https://archive.orkl.eu/32e5783381e5fe1fb21a4771d8277e29e1502f9c.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0046"
+    ],
+    "actors_from_title": [
+      "G0046"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2014-4114",
@@ -11688,8 +12260,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-08-01%20-%20Arrests%20Put%20New%20Focus%20on%20CARBON%20SPIDER%20Adversary%20Group.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/eccd6fa0f4cb0851aac0c4323bd38096681b3519.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0046"
+    ],
+    "actors_from_title": [
+      "G0046"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2014-4114",
@@ -12200,8 +12776,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-07-27%20-%20Luoxk%20Malware%20%E2%80%93%20Exploiting%20CVE-2018-2893.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/05ae263878814c2ed7b1aaccc541174eec13b490.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "luoxk"
+    ],
+    "actors_from_title": [
+      "luoxk"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2018-2893"
@@ -12240,8 +12820,12 @@
     "url": "https://www.systemtek.co.uk/2018/07/luoxk-malware-exploiting-cve-2018-2893/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a2c76a9cb36c42c1c8a1e55d22ad73088442a6c0.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "luoxk"
+    ],
+    "actors_from_title": [
+      "luoxk"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2018-2893"
@@ -12260,8 +12844,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-07-27%20-%20New%20Threat%20Actor%20Group%20DarkHydrus%20Targets%20Middle%20East%20Government.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/d64bd73b5c65e4dc7d5ad65095da42bc5b97c7a9.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0079"
+    ],
+    "actors_from_title": [
+      "G0079"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12419,8 +13007,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-07-25%20-%20Leafminer-%20New%20Espionage%20Campaigns%20Targeting%20Middle%20Eastern%20Regions.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2f65910686272fe3db998d7b05d6056eccecd22f.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0077"
+    ],
+    "actors_from_title": [
+      "G0077"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2014-0160"
@@ -12465,8 +13057,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-07-25%20-%20OilRig%20Targets%20Technology%20Service%20Provider%20and%20Government%20Agency%20with%20QUADAGENT.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3443d427defa718caf068fcdf2e1b66d694401d4.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0049"
+    ],
+    "actors_from_title": [
+      "G0049"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12483,8 +13079,12 @@
     "url": "https://www.proofpoint.com/us/threat-insight/post/parasite-http-rat-cooks-stew-stealthy-tricks",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4366fc8d7612d560ec800ffb5b13fda164fa6f58.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0068"
+    ],
+    "actors_from_title": [
+      "G0068"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12501,8 +13101,12 @@
     "url": "https://unit42.paloaltonetworks.com/unit42-oilrig-targets-technology-service-provider-government-agency-quadagent/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/464d86c441b46dcfab43d3147b18ae5c6aea0640.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0049"
+    ],
+    "actors_from_title": [
+      "G0049"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12541,8 +13145,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-07-25%20-%20Parasite%20HTTP%20RAT%20cooks%20up%20a%20stew%20of%20stealthy%20tricks.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/bfdba0559b3fe3a139d893cc210ed6ad3bd2d9c3.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0068"
+    ],
+    "actors_from_title": [
+      "G0068"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12969,8 +13577,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-07-19%20-%20TA505%20Abusing%20SettingContent-ms%20within%20PDF%20files%20to%20Distribute%20FlawedAmmyy%20RAT.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f97772a6650ad326399d6f381499e4705cf7d6a5.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0092"
+    ],
+    "actors_from_title": [
+      "G0092"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13159,8 +13771,12 @@
     "url": "https://blog.trendmicro.com/trendlabs-security-intelligence/blackgear-cyberespionage-campaign-resurfaces-abuses-social-media-for-cc-communication/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6816ed12a920fc8ad4e77cee2d0b379eec85ec95.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "blackgear"
+    ],
+    "actors_from_title": [
+      "blackgear"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13177,8 +13793,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-07-17%20-%20Blackgear%20Cyberespionage%20Campaign%20Resurfaces,%20Abuses%20Social%20Media%20for%20C&C%20Communication.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/79d306e7a46d06a65ede75907afb15259600a933.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "blackgear"
+    ],
+    "actors_from_title": [
+      "blackgear"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13299,8 +13919,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-07-16%20-%20APT%20Sidewinder-%20Tricks%20powershell,%20Anti%20Forensics%20and%20execution%20side%20loading.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/292a3ff01b063ada47a2268414eb3afcdd56dbc8.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0121"
+    ],
+    "actors_from_title": [
+      "G0121"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-11882"
@@ -13358,9 +13982,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/9ec73a98fdbceb783f5061a0da13d34e1c5a5745.pdf",
     "actors": [
-      "G0032"
+      "G0032",
+      "G0138"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G0138"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-5689"
@@ -13631,8 +14258,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-07-11%20-%20Chinese%20Espionage%20Group%20TEMP.Periscope%20Targets%20Cambodia%20Ahead%20of%20July%202018%20Elections%20and%20Reveals%20Broad%20Operations%20Globally.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1db444c63cec17e0c4ca60eed1e0062985db913d.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0065"
+    ],
+    "actors_from_title": [
+      "G0065"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13969,8 +14600,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-07-08%20-%20APT%20Attack%20In%20the%20Middle%20East-%20The%20Big%20Bang.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2d1d747a0d281075aa610c0532ef06a17e21fc90.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "the-big-bang"
+    ],
+    "actors_from_title": [
+      "the-big-bang"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14031,9 +14666,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/d41dd6180e8d6709c0ce1454fad5ae53da3d6977.pdf",
     "actors": [
-      "G1028"
+      "G1028",
+      "the-big-bang"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "the-big-bang"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14402,8 +15040,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-07-03%20-%20Iranian%20APT%20Charming%20Kitten%20impersonates%20ClearSky,%20the%20security%20firm%20that%20uncovered%20its%20campaigns.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c3b4b477a39f44fd422d0fea1345577d82d58ad3.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0059"
+    ],
+    "actors_from_title": [
+      "G0059"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14733,8 +15375,12 @@
     "url": "https://go.recordedfuture.com/hubfs/reports/cta-2018-0626.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/431d7a889ea5fab4ae41da846fac67a72e1ff43b.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "redalpha"
+    ],
+    "actors_from_title": [
+      "redalpha"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-0199",
@@ -14793,8 +15439,12 @@
     "url": "https://unit42.paloaltonetworks.com/unit42-rancor-targeted-attacks-south-east-asia-using-plaintee-ddkong-malware-families/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/bc4b6608c351b17fc772c99133cc1caaff9a2347.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0075"
+    ],
+    "actors_from_title": [
+      "G0075"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14829,8 +15479,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-06-26%20-%20RANCOR-%20Targeted%20Attacks%20in%20South%20East%20Asia%20Using%20PLAINTEE%20and%20DDKONG%20Malware%20Families.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c89f09d5d126baf2994435e3793e7e098e1e79db.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0075"
+    ],
+    "actors_from_title": [
+      "G0075"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14926,9 +15580,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ef3dd05bee369a7cfb633d03e0545097845a73bc.pdf",
     "actors": [
-      "G0032"
+      "G0032",
+      "G0138"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G0138"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15069,8 +15726,12 @@
     "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2018/2018.06.13.LuckyMouse/luckymouse-hits-national-data-center.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/035f7ce343df0a51728acb98c5fd196fad498092.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0027"
+    ],
+    "actors_from_title": [
+      "G0027"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-118822"
@@ -15255,8 +15916,12 @@
     "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2018/2018.06.14.another-potential-muddywater-campaign/another-potential-muddywater-campaign-uses-powershell-based-prb-backdoor.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ed2e653577bfc48e3354a65f006bce987454a0a2.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0069"
+    ],
+    "actors_from_title": [
+      "G0069"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-5689"
@@ -15422,8 +16087,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-06-18%20-%20Joshua%20Adam%20Schulte%20Charged%20with%20the%20Unauthorized%20Disclosure%20of%20Classified%20Information%20and%20Other%20Offenses%20Relating%20to%20the%20Theft%20of%20Classified%20Material%20from%20the%20Central%20Intelligence%20Agency.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/66f53d7c27b63a525294d80a05158564cfc21e09.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "cia"
+    ],
+    "actors_from_title": [
+      "cia"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15460,8 +16129,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-06-18%20-%20Decrypting%20APT33%E2%80%99s%20Dropshot%20Malware%20with%20Radare2%20and%20Cutter%20%E2%80%93%20Part%202.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/94246e717b16be52cc510d1c1defb06c90fc9f67.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0064"
+    ],
+    "actors_from_title": [
+      "G0064"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15478,8 +16151,12 @@
     "url": "https://www.justice.gov/opa/pr/joshua-adam-schulte-charged-unauthorized-disclosure-classified-information-and-other-offenses",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ce2dfa1aef0bba6483546e159a4c32c26b3fbade.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "cia"
+    ],
+    "actors_from_title": [
+      "cia"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15667,8 +16344,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-06-15%20-%20Meet%20CrowdStrike%E2%80%99s%20Adversary%20of%20the%20Month%20for%20June-%20MUSTANG%20PANDA.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e19b51ef24c22ea3f8ae486c6fca5add8c9a3394.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0129"
+    ],
+    "actors_from_title": [
+      "G0129"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-0199",
@@ -15748,8 +16429,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-06-14%20-%20Another%20Potential%20MuddyWater%20Campaign%20uses%20Powershell-based%20PRB-Backdoor.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6817e4a7d63d81d0cf3949652e899d2e87b9a22d.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0069"
+    ],
+    "actors_from_title": [
+      "G0069"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15825,8 +16510,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-06-13%20-%20LuckyMouse%20hits%20national%20data%20center%20to%20organize%20country-level%20waterholing%20campaign.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/26d09f32676a356465adfafa3d04245df6fa361e.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0027"
+    ],
+    "actors_from_title": [
+      "G0027"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-11882"
@@ -15908,8 +16597,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-06-13%20-%20Lateral%20Movement%20Technique%20Employed%20by%20Hidden%20Cobra.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/82b911659f54d4d4772b6a330f5b06283acbf99b.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0032"
+    ],
+    "actors_from_title": [
+      "G0032"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -16192,8 +16885,12 @@
     "url": "https://www.welivesecurity.com/2018/06/07/invisimole-equipped-spyware-undercover/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/641d18d3ceb7d016e9feab4cbd35f4ce2535f810.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "invisimole"
+    ],
+    "actors_from_title": [
+      "invisimole"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -16210,8 +16907,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-06-07%20-%20InvisiMole-%20Surprisingly%20equipped%20spyware,%20undercover%20since%202013.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/78edc2128be0b585ea78c2db232ff78ad4f4c50b.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "invisimole"
+    ],
+    "actors_from_title": [
+      "invisimole"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -16348,8 +17049,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-06-06%20-%20Sofacy%20Group%E2%80%99s%20Parallel%20Attacks.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/8e71b7bc7a40ae5451de4994497ff87291c40f7b.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0007"
+    ],
+    "actors_from_title": [
+      "G0007"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -16566,8 +17271,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-05-31%20-%20APT28%20Rollercoaster-%20The%20Lowdown%20on%20Hijacked%20Lo.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/d0cad6ed159b9fa9fb718fc0651354a8948667b7.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0007"
+    ],
+    "actors_from_title": [
+      "G0007"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -16660,8 +17369,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-05-29%20-%20Alert%20(TA18-149A)-%20HIDDEN%20COBRA%20%E2%80%93%20Joanap%20Backdoor%20Trojan%20and%20Brambul%20Server%20Message%20Block%20Worm.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/536a8dcb4a52483d71d7a19a828ed09c185170bf.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0032"
+    ],
+    "actors_from_title": [
+      "G0032"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -16793,8 +17506,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-05-29%20-%20MAR-10135536-3%20-%20HIDDEN%20COBRA%20RAT-Worm.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/fd8f5bcd4d66ddb2a65b4c7bf3732919edb4ea4c.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0032"
+    ],
+    "actors_from_title": [
+      "G0032"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17205,8 +17922,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-05-22%20-%20Nmap%20Script%20to%20scan%20for%20Winnti%20infections.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1a0f0365a1b997260e1186d63683721f2c8442c6.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0044"
+    ],
+    "actors_from_title": [
+      "G0044"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17243,8 +17964,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-05-22%20-%20Turla%20Mosquito-%20A%20shift%20towards%20more%20generic%20tools.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/268243aeac1ebe3132de1a0ce0a0e023dfba476b.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0010"
+    ],
+    "actors_from_title": [
+      "G0010"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17261,8 +17986,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-05-22%20-%20The%20destruction%20of%20APT3.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/804842701cbd8afdc6d668ccb46c58de6fc68bcb.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0022"
+    ],
+    "actors_from_title": [
+      "G0022"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17303,9 +18032,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/da8dad620d4d9636c5ee912395a327dcdd02d04e.pdf",
     "actors": [
-      "G0025"
+      "G0025",
+      "G0044"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G0044"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17422,8 +18154,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-05-21%20-%20Decrypting%20APT33%E2%80%99s%20Dropshot%20Malware%20with%20Radare2%20and%20Cutter%20%E2%80%93%20Part%201.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7438f34aa5769a574b0bb8607daade87245f6bf3.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0064"
+    ],
+    "actors_from_title": [
+      "G0064"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17440,8 +18176,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-05-21%20-%20An%20In-Depth%20Analysis%20of%20Samsam%20Ransomware%20and%20BOSS%20SPIDER.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/95c0c53bda8d9ebea888c236540de56033e6a151.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "boss-spider"
+    ],
+    "actors_from_title": [
+      "boss-spider"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17515,9 +18255,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/217c1c9c9845ee6820e939fde18f80c7d61493a9.pdf",
     "actors": [
-      "G0134"
+      "G0134",
+      "stealth-mango-and-tangelo"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "stealth-mango-and-tangelo"
+    ],
     "actor_names_unresolved": [
       "Stealth Mango"
     ],
@@ -17536,8 +18279,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-05-18%20-%20Stealth%20Mango%20and%20Tangelo-%20Nation%20state%20mobile%20surveillanceware%20stealing%20data%20from%20military%20&%20government%20officials.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/418d4ce8ce717e64a6a1251c6661fb1662dcb4e6.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "stealth-mango-and-tangelo"
+    ],
+    "actors_from_title": [
+      "stealth-mango-and-tangelo"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17554,8 +18301,12 @@
     "url": "https://securelist.com/roaming-mantis-dabbles-in-mining-and-phishing-multilingually/85607/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7ba09f8ce76f0e16973c12df7728c44903f7b3a8.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "roaming-mantis"
+    ],
+    "actors_from_title": [
+      "roaming-mantis"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17572,8 +18323,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-05-18%20-%20Meet%20CrowdStrike%E2%80%99s%20Adversary%20of%20the%20Month%20for%20May-%20MYTHIC%20LEOPARD.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e2a704d7e008dc189849ffeeafaf44333cc6f3b9.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0134"
+    ],
+    "actors_from_title": [
+      "G0134"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17769,9 +18524,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/21f75f584df130b0d4571707b4100ca4c7e25d1d.pdf",
     "actors": [
-      "G0134"
+      "G0134",
+      "stealth-mango-and-tangelo"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "stealth-mango-and-tangelo"
+    ],
     "actor_names_unresolved": [
       "Stealth Mango"
     ],
@@ -18470,6 +19228,7 @@
       "G0009",
       "G0016",
       "G0037",
+      "G0044",
       "G0045",
       "G0046",
       "G0050",
@@ -18485,7 +19244,9 @@
       "earth-baxia",
       "tianwu"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G0044"
+    ],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -18562,8 +19323,12 @@
     "url": "https://www.mcafee.com/enterprise/en-us/assets/white-papers/wp-dissecting-operation-troy.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/fda2269c57aa0ef18a92be81641da06ea6132652.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0138"
+    ],
+    "actors_from_title": [
+      "G0138"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -18920,8 +19685,12 @@
     "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2018/2018.04.24.Operation_GhostSecret/operation-ghostsecret.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6470021efdeb316fd19cb16537ce9102ed7e59d1.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0138"
+    ],
+    "actors_from_title": [
+      "G0138"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19033,8 +19802,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-04-24%20-%20Sednit%20update-%20Analysis%20of%20Zebrocy.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7aa7e986317b4a9900954c20206a2e9b7cccbb18.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0007"
+    ],
+    "actors_from_title": [
+      "G0007"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19088,8 +19861,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-04-24%20-%20Analyzing%20Operation%20GhostSecret-%20Attack%20Seeks%20to%20Steal%20Data%20Worldwide.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/eed223bf90057f418c2cd92e914df23585a6a486.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0138"
+    ],
+    "actors_from_title": [
+      "G0138"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19169,8 +19946,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-04-23%20-%20Energetic%20Bear-Crouching%20Yeti-%20attacks%20on%20servers.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3a0864fedc8fb041ebb7836eccdae581b6359a17.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0035"
+    ],
+    "actors_from_title": [
+      "G0035"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19187,8 +19968,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-04-23%20-%20New%20Orangeworm%20attack%20group%20targets%20the%20healthcare%20sector%20in%20the%20U.S.,%20Europe,%20and%20Asia.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3c063ebc8df3ba1b3b85af769ff3e96642a9a313.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0071"
+    ],
+    "actors_from_title": [
+      "G0071"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19338,8 +20123,12 @@
     "url": "https://app.box.com/s/mmsfl4zgirj7zlncmx5162vkn1n6q0f2",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/70cd520c9b5860acb9e27cb19ad0b1270687d688.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0035"
+    ],
+    "actors_from_title": [
+      "G0035"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19374,8 +20163,12 @@
     "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2018/2018.04.23.HOGFISH_REDLEAVES_CAMPAIGN/Accenture-Hogfish-Threat-Analysis.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ca851ce01b6f9c123af07bd5c41d267b5f0c49ce.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0045"
+    ],
+    "actors_from_title": [
+      "G0045"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19413,8 +20206,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-04-20%20-%20Researchers%20Discover%20New%20variants%20of%20APT34%20Malware.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f5522b9d97d03771cabf65e4607eecaf809afcb1.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0049"
+    ],
+    "actors_from_title": [
+      "G0049"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19547,8 +20344,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-04-18%20-%20GOLD%20GALLEON-%20How%20a%20Nigerian%20Cyber%20Crew%20Plunders%20the%20Shipping%20Industry.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/26e7a3a724fd68744b3b0eb4f92fa75169d93765.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "gold-galleon"
+    ],
+    "actors_from_title": [
+      "gold-galleon"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19565,8 +20366,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-04-18%20-%20APT33.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3893d8fe2940bb18b0d401d35d8babfb04ffa408.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0064"
+    ],
+    "actors_from_title": [
+      "G0064"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-11774",
@@ -20014,8 +20819,12 @@
     "url": "https://securelist.com/roaming-mantis-uses-dns-hijacking-to-infect-android-smartphones/85178/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f2f7eb6445d87c3a5e7ec907d0e2a6faee3827ef.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "roaming-mantis"
+    ],
+    "actors_from_title": [
+      "roaming-mantis"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20180,8 +20989,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-04-12%20-%20Operation%20Parliament,%20who%20is%20doing%20what-.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2adc55270558e81170337d0749fac2b222efceab.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "operation-parliament"
+    ],
+    "actors_from_title": [
+      "operation-parliament"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20246,8 +21059,12 @@
     "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2018/2018.04.12.operation-parliament/Operation-Parliament.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f0d3b63788e00dc8682feae721a4df8d7471fc85.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "operation-parliament"
+    ],
+    "actors_from_title": [
+      "operation-parliament"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20265,8 +21082,12 @@
     "url": "https://securelist.com/operation-parliament-who-is-doing-what/85237/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/fc75d1fee6ac386c68cac7c6656890c96c2078af.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "operation-parliament"
+    ],
+    "actors_from_title": [
+      "operation-parliament"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20452,8 +21273,12 @@
     "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2018/2018.04.04.MacOS_Backdoor_OceanLotus/MacOS_Backdoor_OceanLotus.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1f4fb94a88d7ad303157e3a5ce3d5ec33833a3bf.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0050"
+    ],
+    "actors_from_title": [
+      "G0050"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-5689"
@@ -20510,8 +21335,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-04-05%20-%20Reaper%20Group%E2%80%99s%20Updated%20Mobile%20Arsenal.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/447e60e4658d67f9293f478836bebd26c63a7ef4.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0067"
+    ],
+    "actors_from_title": [
+      "G0067"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20528,8 +21357,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-04-05%20-%20Silent%20Librarian%20University%20Attacks%20Continue%20Unabated%20in%20Days%20Following%20Indictment.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4fd96570c10a7a91698238b177cabfd751be1fab.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0122"
+    ],
+    "actors_from_title": [
+      "G0122"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20546,8 +21379,12 @@
     "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2017/2017.05.24.OPERATION_COBALT_KITTY/operation-cobalt-kitty.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/cffa0201901e5c88040f4b3688b60bb3a11c3f76.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0050"
+    ],
+    "actors_from_title": [
+      "G0050"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20584,8 +21421,12 @@
     "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2017/2017.05.14.cyber-espionage-apt32/cyber-espionage-apt32.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f8e9e357ff59df2cdcb81b18271e8f544663cd0e.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0050"
+    ],
+    "actors_from_title": [
+      "G0050"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2016-7255"
@@ -20604,8 +21445,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-04-04%20-%20New%20MacOS%20Backdoor%20Linked%20to%20OceanLotus%20Found.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/34af865d15b3440fc02eb90953a31349fa73b209.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0050"
+    ],
+    "actors_from_title": [
+      "G0050"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20735,8 +21580,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-04-03%20-%20Lazarus%20KillDisks%20Central%20American%20casino.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/61eb018358e97869d84d80395afca89ddae8f6ad.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0032"
+    ],
+    "actors_from_title": [
+      "G0032"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -21300,8 +22149,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-03-26%20-%20Silent%20Librarian-%20More%20to%20the%20Story%20of%20the%20Iranian%20Mabna%20Institute%20Indictment.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a5f3ebd3f4ec9a3a006b2b9160ed34e1a9b43677.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0122"
+    ],
+    "actors_from_title": [
+      "G0122"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -21354,8 +22207,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-03-25%20-%20Let's%20Learn-%20Internals%20of%20Iranian-Based%20Threat%20Group%20-Chafer-%20Malware-%20Autoit%20and%20PowerShell%20Persistence.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/110caa3c84dd4a44619953b30d95cc7923fca938.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0087"
+    ],
+    "actors_from_title": [
+      "G0087"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -21521,8 +22378,12 @@
     "url": "https://www.welivesecurity.com/2018/03/22/glupteba-no-longer-windigo/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b00bf0e53b018a12287820b6f2f255929c8ae5f9.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0124"
+    ],
+    "actors_from_title": [
+      "G0124"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -21539,8 +22400,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-03-22%20-%20Glupteba%20is%20no%20longer%20part%20of%20Windigo.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c302db00cc6bf5147bda783cac7ad5e70097342b.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0124"
+    ],
+    "actors_from_title": [
+      "G0124"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -21817,8 +22682,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-03-16%20-%20Suspected%20Chinese%20Cyber%20Espionage%20Group%20(TEMP.Periscope)%20Targeting%20U.S.%20Engineering%20and%20Maritime%20Industries.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/133bfa1ab622f3cfa233d2def5bb92ebcbd45294.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0065"
+    ],
+    "actors_from_title": [
+      "G0065"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-11882"
@@ -21837,8 +22706,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-03-16%20-%20Royal%20APT%20-%20APT15%20Repository.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/8e5296c83ec8859d08aa8a03db4761e8b492949a.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0004"
+    ],
+    "actors_from_title": [
+      "G0004"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -21942,8 +22815,12 @@
     "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2018/2018.03.09.APT15_is_alive_and_strong/New%20tools%20uncovered%20from%20hacking%20group%20APT15.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2ce1536757accf7b76da6cc2900300e702ac7f3a.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0004"
+    ],
+    "actors_from_title": [
+      "G0004"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -21960,8 +22837,12 @@
     "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2018/2018.03.14.tropic-trooper-new-strategy/Tropic%20Trooper%E2%80%99s%20New%20Strategy.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4965ed073067deeb6e8d354301e6f9923fb2687e.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0081"
+    ],
+    "actors_from_title": [
+      "G0081"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-11882",
@@ -22065,8 +22946,12 @@
     "url": "https://www.symantec.com/blogs/threat-intelligence/inception-framework-hiding-behind-proxies",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/80db5155a1795159e35e747dde804304ddabb12c.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0100"
+    ],
+    "actors_from_title": [
+      "G0100"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2012-0158",
@@ -22106,8 +22991,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-03-14%20-%20Inception%20Framework-%20Alive%20and%20Well,%20and%20Hiding%20Behind%20Proxies.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/9458d3a7042c2a4433132107c77f6386ed349223.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0100"
+    ],
+    "actors_from_title": [
+      "G0100"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2012-0158",
@@ -22145,8 +23034,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-03-14%20-%20Tropic%20Trooper%E2%80%99s%20New%20Strategy.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e85833ddbbdcca20615005ba55a4b0ba8d0b8899.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0081"
+    ],
+    "actors_from_title": [
+      "G0081"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-11882",
@@ -22388,8 +23281,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-03-13%20-%20HenBox-%20The%20Chickens%20Come%20Home%20to%20Roost.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f68cd5af820680bdff86cc8b36cc184dd155d004.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "henbox"
+    ],
+    "actors_from_title": [
+      "henbox"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -22480,8 +23377,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-03-12%20-%20Campaign%20Possibly%20Connected%20to%20%E2%80%9CMuddyWater%E2%80%9D%20Surfaces%20in%20the%20Middle%20East%20and%20Central%20Asia.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/de737c1431c555752fb92a0f0202124150a23156.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0069"
+    ],
+    "actors_from_title": [
+      "G0069"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -22539,8 +23440,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-03-10%20-%20APT15%20is%20alive%20and%20strong-%20An%20analysis%20of%20RoyalCli%20and%20RoyalDNS.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/d5889e533ff64deace5b09915315bbae4fba34ba.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0004"
+    ],
+    "actors_from_title": [
+      "G0004"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -22580,8 +23485,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-03-09%20-%20New%20traces%20of%20Hacking%20Team%20in%20the%20wild.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/076aa1b28b576502e90f0e67f490c40a21554e72.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "hacking-team"
+    ],
+    "actors_from_title": [
+      "hacking-team"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -22783,9 +23692,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7dcaea7c97091bd953bfb58e83ee329c92ba04d6.pdf",
     "actors": [
-      "G1033"
+      "G1033",
+      "hacking-team"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "hacking-team"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -22845,8 +23757,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-03-09%20-%20Masha%20and%20these%20Bears%20-%202018%20Sofacy%20Activity.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a97744e94f53fe598bd42fdc7f9ca11ef24596c4.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0007"
+    ],
+    "actors_from_title": [
+      "G0007"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -23073,8 +23989,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-03-08%20-%20Hidden%20Cobra%20Targets%20Turkish%20Financial%20Sector%20With%20New%20Bankshot%20Implant.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/d16d3d086a22ea69f76f5aef51d4ef0f8c1a885a.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0032"
+    ],
+    "actors_from_title": [
+      "G0032"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2018-4878"
@@ -23324,9 +24244,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/0c9d4d28544bc5576d7adcbaedd0da1e18d7f4be.pdf",
     "actors": [
-      "G0025"
+      "G0025",
+      "G0044"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G0044"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -23363,8 +24286,12 @@
     "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2017/2017.11.02.LeetMX/LeetMX%20-%20a%20Yearlong%20Cyber-Attack%20Campaign%20Against%20Targets%20in%20Latin%20America%20-%20ClearSky%20Cyber%20Security.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7cc47ac6e2afeaccc7f6b81e7aee36a98b2fcc08.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "leetmx"
+    ],
+    "actors_from_title": [
+      "leetmx"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -23455,8 +24382,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-03-05%20-%20Suricata%20rules%20to%20detect%20Winnti%20communication.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/8b0df8f67fe04d3a8b6f82f3ca50a302f52f9777.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0044"
+    ],
+    "actors_from_title": [
+      "G0044"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -23474,9 +24405,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b92945bebb3bf87939b0993b388f1eefa61a19f2.pdf",
     "actors": [
-      "G0025"
+      "G0025",
+      "G0044"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G0044"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -23513,8 +24447,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-03-02%20-%20McAfee%20Uncovers%20Operation%20Honeybee,%20a%20Malicious%20Document%20Campaign%20Targeting%20Humanitarian%20Aid%20Groups.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/13fd2ec83248d736df1a16eebbb95ebac7d11acd.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "honeybee"
+    ],
+    "actors_from_title": [
+      "honeybee"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -23586,8 +24524,12 @@
     "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2018/2018.02.28.sofacy-attacks-multiple-government-entities/Sofacy%20Attacks%20Multiple%20Government%20Entities.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c8e577f6df534895f4b9e25a8da67a7b32d381af.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0007"
+    ],
+    "actors_from_title": [
+      "G0007"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -24032,8 +24974,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-02-28%20-%20Chafer-%20Latest%20Attacks%20Reveal%20Heightened%20Ambitions.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/77f76d86a9475b17ae0cb840f9ddc1da6eb2236d.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0087"
+    ],
+    "actors_from_title": [
+      "G0087"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -24050,8 +24996,12 @@
     "url": "https://unit42.paloaltonetworks.com/unit42-sofacy-attacks-multiple-government-entities/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b9ec4dfea94feeae747f92c7df258eb01cbaa6a7.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0007"
+    ],
+    "actors_from_title": [
+      "G0007"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -24086,8 +25036,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-02-28%20-%20Sofacy%20Attacks%20Multiple%20Government%20Entities.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e12355412a608f2bf3134cd76b6ca5e3e7470541.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0007"
+    ],
+    "actors_from_title": [
+      "G0007"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -24327,8 +25281,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-02-23%20-%20OopsIE!%20OilRig%20Uses%20ThreeDollars%20to%20Deliver%20New%20Trojan.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/28980a77a49f3a5ffd74be0ef63eed6c8a5ea4d7.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0049"
+    ],
+    "actors_from_title": [
+      "G0049"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -24345,8 +25303,12 @@
     "url": "https://unit42.paloaltonetworks.com/unit42-oopsie-oilrig-uses-threedollars-deliver-new-trojan/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/37a8bb82703d741dd84886cb0921ed6f41ed2b54.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0049"
+    ],
+    "actors_from_title": [
+      "G0049"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -24437,8 +25399,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-02-21%20-%20Avast%20tracks%20down%20Tempting%20Cedar%20Spyware.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/00edff4a70bd3263f700787e16a96641be5e86fd.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "tempting-cedar-spyware"
+    ],
+    "actors_from_title": [
+      "tempting-cedar-spyware"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -24491,8 +25457,12 @@
     "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2018/2018.02.21.Tempting_Cedar/Avast%20tracks%20down%20Tempting%20Cedar%20Spyware.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/19b2258d841699869a494c3752d0f7ec9b1ba3d2.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "tempting-cedar-spyware"
+    ],
+    "actors_from_title": [
+      "tempting-cedar-spyware"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -24564,8 +25534,12 @@
     "url": "https://blog.avast.com/avast-tracks-down-tempting-cedar-spyware",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/9cc78803c4e157c1c98d2fad79a8051acd9ed80c.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "tempting-cedar-spyware"
+    ],
+    "actors_from_title": [
+      "tempting-cedar-spyware"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -24695,8 +25669,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-02-20%20-%20A%20Slice%20of%202017%20Sofacy%20Activity.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1b37222930c1bfeb7a364c4daaadaab810e78129.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0007"
+    ],
+    "actors_from_title": [
+      "G0007"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-0262",
@@ -24716,8 +25694,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-02-20%20-%20APT37%20(Reaper)-%20The%20Overlooked%20North%20Korean%20Actor.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/551519390ffb683b17c7faedada4819608d279ee.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0067"
+    ],
+    "actors_from_title": [
+      "G0067"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2018-0802",
@@ -24798,8 +25780,12 @@
     "url": "https://www.fireeye.com/blog/threat-research/2018/02/apt37-overlooked-north-korean-actor.html",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/9b5c40b8240164f3b0308b8066d3d67a95a33ec5.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0067"
+    ],
+    "actors_from_title": [
+      "G0067"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2018-0802"
@@ -25219,8 +26205,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-02-13%20-%20Lotus%20Blossom%20Continues%20ASEAN%20Targeting.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/445a0c557162916570822593c5b9e727dc775ffe.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0030"
+    ],
+    "actors_from_title": [
+      "G0030"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-1182",
@@ -25303,8 +26293,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-02-12%20-%20Lazarus%20Resurfaces,%20Targets%20Global%20Banks%20and%20Bitcoin%20Users.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7b48b37ed5e88abce498263e0e01a9aa35491bd2.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0032"
+    ],
+    "actors_from_title": [
+      "G0032"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -25564,8 +26558,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-02-08%20-%20Meet%20CrowdStrike%E2%80%99s%20Adversary%20of%20the%20Month%20for%20February-%20MUMMY%20SPIDER.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5dc37ad952b03ade9d8764e9f89d1b9f66cb58d0.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "mummy-spider"
+    ],
+    "actors_from_title": [
+      "mummy-spider"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2021-22941"
@@ -25602,8 +26600,12 @@
     "url": "https://documents.trendmicro.com/assets/research-deciphering-confucius-cyberespionage-operations.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7a459f92c2ba0f37f6e378a60f00890953381338.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0142"
+    ],
+    "actors_from_title": [
+      "G0142"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2015-1641",
@@ -26082,8 +27084,12 @@
     "url": "https://app.box.com/s/hqvakm9c1tqmsq69xz253rhpwipb44vf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/43b8a4716abedd6f8b2c9e2cda5b038407a0cfb4.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0050"
+    ],
+    "actors_from_title": [
+      "G0050"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -26192,8 +27198,12 @@
     "url": "https://app.box.com/s/1utq97k5oowxze0qsvbeur8u4zs0yny5",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ce610914fa4b49e4ba6fb04d36d88a488eddc774.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0007"
+    ],
+    "actors_from_title": [
+      "G0007"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -26338,8 +27348,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-02-01%20-%20Operation%20PZChao-%20a%20possible%20return%20of%20the%20Iron%20Tiger%20APT.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/225668aaec54ba89957ca87b940be31d30be0be2.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0027"
+    ],
+    "actors_from_title": [
+      "G0027"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -26407,8 +27421,12 @@
     "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2018/2018.01.31.Comnie_Continues_to_Target_Organizations_in_East_Asia/unit42-comnie-continues-target-organizations-east-asia.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a2425e6cac6127d7c43e5135ede2b9cc7fdb2543.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "blackgear"
+    ],
+    "actors_from_title": [
+      "blackgear"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -26625,8 +27643,12 @@
     "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2018/2018.01.25.oilrig_Middle_East/unit42-oilrig-uses-rgdoor-iis-backdoor-targets-middle-east.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/15ca73fd7d7d91a93d1d31c372977ded81ce4098.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0049"
+    ],
+    "actors_from_title": [
+      "G0049"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -26998,8 +28020,12 @@
     "url": "https://unit42.paloaltonetworks.com/unit42-oilrig-uses-rgdoor-iis-backdoor-targets-middle-east/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/10181783f42db4e1b066e402190c92a6e74eeef8.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0049"
+    ],
+    "actors_from_title": [
+      "G0049"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -27016,8 +28042,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-01-25%20-%20OilRig%20uses%20RGDoor%20IIS%20Backdoor%20on%20Targets%20in%20the%20Middle%20East.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2bcab1aff1c36d15e7f031a1ed37f286e0d53232.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0049"
+    ],
+    "actors_from_title": [
+      "G0049"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -27133,8 +28163,12 @@
     "url": "https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/a-look-into-the-lazarus-groups-operations",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2211695dfe8dacd0de9a8e0c7436c5308ea23f6f.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0032"
+    ],
+    "actors_from_title": [
+      "G0032"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -27151,8 +28185,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-01-24%20-%20A%20Look%20into%20the%20Lazarus%20Group%E2%80%99s%20Operations.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2376907486b9271dbceb5f76e9a237561dc060d5.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0032"
+    ],
+    "actors_from_title": [
+      "G0032"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -27248,8 +28286,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-01-24%20-%20Lazarus%20Campaign%20Targeting%20Cryptocurrencies%20Reveals%20Remote%20Controller%20Tool,%20an%20Evolved%20RATANKBA,%20and%20More.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/9829f79999cb3c722e9edee9bbab4211144146d1.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0032"
+    ],
+    "actors_from_title": [
+      "G0032"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -27612,8 +28654,12 @@
     "url": "http://securityaffairs.co/wordpress/68059/cyber-crime/eviltraffic-malvertising-campaign.html",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7055e17ac06753e78cab1d819fe0412dc15d55ab.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "eviltraffic"
+    ],
+    "actors_from_title": [
+      "eviltraffic"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -27668,8 +28714,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-01-22%20-%20Op%20EvilTraffic%20CSE%20CybSec%20ZLAB%20Malware%20Analysis%20Report%20%E2%80%93%20Exclusive,%20tens%20of%20thousands%20of%20compromised%20sites%20involved%20in%20a%20new%20massive%20malvertising%20campaign.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b640c76a0f46e9fb9cb69f65bad387cd380d9723.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "eviltraffic"
+    ],
+    "actors_from_title": [
+      "eviltraffic"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -27852,8 +28902,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-01-17%20-%20Turla%20group%20malware.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/271f50a46d59c5b87598a7c4c48ea3cb3e46b1c2.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0010"
+    ],
+    "actors_from_title": [
+      "G0010"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -28405,8 +29459,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-01-16%20-%20First%20Activities%20of%20Cobalt%20Group%20in%202018-%20Spear%20Phishing%20Russian%20Banks.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/9cac75c9c4688436744dc15370481612966d84bd.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0080"
+    ],
+    "actors_from_title": [
+      "G0080"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-11882"
@@ -28470,8 +29528,12 @@
     "url": "https://app.box.com/s/o72u9tsw4zifxmktac4oreizhlud67ga",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a91289e835991b389e01254492d0fe84aeb21752.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0010"
+    ],
+    "actors_from_title": [
+      "G0010"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -28542,8 +29604,12 @@
     "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2018/2018.01.12.update-pawn-storm-new-targets-politically/Pawn_Storm_Update_2018.Jan.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/71cf247af339cad51681bf1b3e5ad9702b92d676.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0007"
+    ],
+    "actors_from_title": [
+      "G0007"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-5689"
@@ -28978,8 +30044,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202018/2018-01-10%20-%20Analysis%20of%20BlackTech's%20latest%20APT%20attack.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/92a975f6194ef286729af425eebfe87362f059c2.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0098"
+    ],
+    "actors_from_title": [
+      "G0098"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-11882",

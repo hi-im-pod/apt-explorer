@@ -62,9 +62,43 @@
   ],
   "techniques_documented": [],
   "techniques_reported": [],
-  "cves": [],
-  "timeline": [],
-  "reports": [],
+  "cves": [
+    {
+      "cve": "CVE-2010-1885",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2011-0611",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2011-1255",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2012-1889",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2014-0322",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2016-Q1",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "606f656561781dba6fdef666ece6a0cc24709f01",
+    "42fcf2d7a8a80a6a16246288f073677f64c4d39a"
+  ],
   "conflicts": [],
   "evidence_count": 4
 }

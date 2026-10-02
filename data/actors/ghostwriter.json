@@ -185,7 +185,15 @@
   "techniques_reported": [
     {
       "id": "T1027",
-      "count": 1
+      "count": 2
+    },
+    {
+      "id": "T1057",
+      "count": 2
+    },
+    {
+      "id": "T1059",
+      "count": 2
     },
     {
       "id": "T1027.009",
@@ -204,11 +212,7 @@
       "count": 1
     },
     {
-      "id": "T1057",
-      "count": 1
-    },
-    {
-      "id": "T1059",
+      "id": "T1071",
       "count": 1
     },
     {
@@ -220,7 +224,31 @@
       "count": 1
     },
     {
+      "id": "T1105",
+      "count": 1
+    },
+    {
+      "id": "T1140",
+      "count": 1
+    },
+    {
+      "id": "T1203",
+      "count": 1
+    },
+    {
       "id": "T1204.002",
+      "count": 1
+    },
+    {
+      "id": "T1218.010",
+      "count": 1
+    },
+    {
+      "id": "T1518.001",
+      "count": 1
+    },
+    {
+      "id": "T1547.001",
       "count": 1
     },
     {
@@ -254,23 +282,39 @@
   ],
   "timeline": [
     {
+      "quarter": "2020-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2021-Q1",
+      "count": 1
+    },
+    {
       "quarter": "2021-Q2",
+      "count": 6
+    },
+    {
+      "quarter": "2021-Q3",
       "count": 2
     },
     {
       "quarter": "2021-Q4",
-      "count": 1
+      "count": 4
     },
     {
       "quarter": "2022-Q1",
-      "count": 3
+      "count": 9
     },
     {
       "quarter": "2022-Q2",
-      "count": 2
+      "count": 4
     },
     {
       "quarter": "2022-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2023-Q1",
       "count": 1
     },
     {
@@ -286,6 +330,10 @@
       "count": 1
     },
     {
+      "quarter": "2025-Q1",
+      "count": 1
+    },
+    {
       "quarter": "2025-Q3",
       "count": 1
     },
@@ -295,25 +343,51 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 1
+      "count": 3
     }
   ],
   "reports": [
     "044f17d2b0b222b8bf06787200d521bc2ac26d86",
+    "088c74be8c8fa93424ea14af560c0c2390466a71",
+    "a0208af54f70c0f3178ebf76ed8cf4491a49f9ea",
     "f701bdae3ae5d3caf47f349d5529b3e6ee098f09",
     "075c05d08e575ac604b3f9bd89a7c79d0989be72",
+    "20e756348ab1001b08a049d046bfa64d572b6368",
     "5efd1aaa7e3c4c9a1cc9fa5797247df496798a53",
     "d58565ae7773721281b6b209ae5bd9b74f5db2b5",
     "30f2a48048ed6d31502762c7efb4b1404b60b606",
+    "837a50f4de4d20e8539b7ffe292ec772afadc9e4",
     "91acb4a1d7712dcdd3c3a17f7cc234f5109cf4c8",
+    "08bb4fdf1d919b7bf8fd3e2521972b3ade4b46fd",
+    "b2e4b4c6640dcfb1be4198cff0caee607843c149",
     "b520b9cb7fe1850b3915d6c3ee8ac09a0c6d8037",
+    "c6d3550251b6c5e8a4094d0df5989f125a44a35d",
     "a94e6463300a5a4f60c724638f5bbe7cce2a31e7",
+    "7539bc21765043153751da9f7f50bc2cf2d7a896",
+    "f17186eac039dfcddc163ec9d6460d883c2bbc42",
     "7ce215c45e30d9dbd9cb49667c5ce6258e74a86c",
+    "5703e3e582a6c725cfa73d31419407bf0d16da3e",
     "0a93c55b24c514cc021e9989662b5bfd12418b61",
+    "e2ffc4f50fd588b8522d5f5a5979b96ce1e36d73",
     "2972b297a603cd2b70e365ce6db4d58846cdb802",
+    "8118ddac5fb59aabbf4e1c94be6c2c45b37b4fda",
+    "92d0d9a08eaf3151ec759fa45b6916fb7d4c9b00",
+    "2d2fab6f663b7fcc3653c268776cd2c94408225b",
+    "6469725946a9df751cc04a6d1349d6cdbcd94c5d",
+    "d0527d04ea6fd22ee86525cd438559f8db57d972",
     "f7ab89e669d11e63e8f62a6fdb63127078fe0f23",
+    "8f1cc9dc5704b5aaefe4e678528bb74365e1cc1d",
+    "0ca71adf2348d4d939ff356cde433eb1a3c43896",
+    "6dc4a3dea0a4b0cee42cb88adb0c19c3e698921e",
+    "527f99103d3ffe2592664261212bb8418570d97f",
+    "b17f0ca8438ed72dbb8b8615e1df4df7d81cc028",
     "d4b7cea45a61e93a4fcb2ae2e2f8022c1e7da2f4",
-    "84aa89ff766bcd002bf1a6641157aed3388547f5"
+    "1f835a6462c601b7ac721bd365f53a77f0764188",
+    "84aa89ff766bcd002bf1a6641157aed3388547f5",
+    "09c6252fc443d17076f6360556e44366022fee48",
+    "250463c8dd908680992d968309c24505cd0a9965",
+    "b2bbaca5fdb07013e5ec893784921f9c35eaf238",
+    "c2879644732eede8e1cb82055e94cf421f92e8bd"
   ],
   "conflicts": [],
   "evidence_count": 13

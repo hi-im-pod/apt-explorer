@@ -73,9 +73,83 @@
     }
   ],
   "techniques_documented": [],
-  "techniques_reported": [],
-  "cves": [],
+  "techniques_reported": [
+    {
+      "id": "T1006",
+      "count": 1
+    },
+    {
+      "id": "T1016",
+      "count": 1
+    },
+    {
+      "id": "T1027",
+      "count": 1
+    },
+    {
+      "id": "T1053",
+      "count": 1
+    },
+    {
+      "id": "T1071",
+      "count": 1
+    },
+    {
+      "id": "T1082",
+      "count": 1
+    },
+    {
+      "id": "T1105",
+      "count": 1
+    },
+    {
+      "id": "T1203",
+      "count": 1
+    },
+    {
+      "id": "T1204",
+      "count": 1
+    },
+    {
+      "id": "T1497",
+      "count": 1
+    },
+    {
+      "id": "T1518",
+      "count": 1
+    },
+    {
+      "id": "T1566",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2017-11882",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-0798",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2018-0802",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2023-0669",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
   "timeline": [
+    {
+      "quarter": "2021-Q2",
+      "count": 2
+    },
     {
       "quarter": "2022-Q1",
       "count": 1
@@ -83,11 +157,25 @@
     {
       "quarter": "2023-Q1",
       "count": 1
+    },
+    {
+      "quarter": "2024-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 3
     }
   ],
   "reports": [
+    "34f5ef6bd7002510efde5ca70cfff470115003cf",
+    "4ee20a58ccfd865cf078ab4ea37e0c04e79da68b",
+    "f203ff9c9404df74489d9bc1206163083c9e6e99",
+    "0477b3c4a22417b05d5a39c6e9b876408fcae6d0",
     "d1a6a9b7fbd5a94cdd7b325883da3e413d4f8ffc",
-    "2c2f98f4d2d94d3d7a72c7329d3f3c200e65c7a9"
+    "2c2f98f4d2d94d3d7a72c7329d3f3c200e65c7a9",
+    "22d9c394d7f3b7605d6149f4c7975bbf56ef2509",
+    "f1cb527c7fa7997f0076e389562b17cd413e6a43"
   ],
   "conflicts": [],
   "evidence_count": 4

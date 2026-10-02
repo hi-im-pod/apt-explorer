@@ -157,8 +157,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202013/2013-12-12%20-%20OPERATION%20%E2%80%9CKE3CHANG%E2%80%9D-Targeted%20Attacks%20Against%20Ministries%20of%20Foreign%20Affairs.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7cd0d1416c5a11ac14d3de477bf39fdcb63fe6fa.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0004"
+    ],
+    "actors_from_title": [
+      "G0004"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -215,8 +219,12 @@
     "url": "https://app.box.com/s/8w1uu9e2l7jwq40gtea7xem6ezg79ffu",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b670b7a7904baded891a4c6e7afe692998989668.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0004"
+    ],
+    "actors_from_title": [
+      "G0004"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2010-2883",
@@ -423,8 +431,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202013/2013-11-06%20-%20VICEROY%20TIGER%20Delivers%20New%20Zero-Day%20Exploit.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/83f9adfadbd4d93c4e289301f27f8c7b5676118c.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0040"
+    ],
+    "actors_from_title": [
+      "G0040"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2021-22941"
@@ -677,8 +689,12 @@
     "url": "https://app.box.com/s/ebjeefvfx58arny58fb9vv6up39f293w",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/751d00dab0fac4c2b0d1c140e9897fb99a399be1.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "dagger-panda"
+    ],
+    "actors_from_title": [
+      "dagger-panda"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2010-3333",
@@ -773,8 +789,12 @@
     "url": "https://app.box.com/s/h9vlkkgq0yaat56muq6nei95nchysbay",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/cfd4451a15223fdf667285b12a8829a4b409495a.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0004"
+    ],
+    "actors_from_title": [
+      "G0004"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -791,8 +811,12 @@
     "url": "https://media.kaspersky.com/en/icefog-apt-threat.pdf",
     "url_ok": true,
     "archive_url": "https://archive.orkl.eu/d43e176960e0afabe5da009a19097669b3a0ef58.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "dagger-panda"
+    ],
+    "actors_from_title": [
+      "dagger-panda"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2010-3333",
@@ -833,8 +857,12 @@
     "url": "https://app.box.com/s/k34la7wec8mf3gzxphkynem95en886d3",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/254132938c6ff6eeaa5e3b1e8d8d506472c028b7.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "operation-shady-rat"
+    ],
+    "actors_from_title": [
+      "operation-shady-rat"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -851,8 +879,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202013/2013-09-25%20-%20The%20Icefog%20APT-%20A%20Tale%20of%20Cloak%20and%20Three%20Daggers.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/33a4a460c3fd07e10fe677b0c935b4b7f96dbaea.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "dagger-panda"
+    ],
+    "actors_from_title": [
+      "dagger-panda"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2012-0158",
@@ -892,8 +924,12 @@
     "url": "https://securelist.com/the-icefog-apt-a-tale-of-cloak-and-three-daggers/57331/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6d685eb465754b8576514093c47dc5a6e13e4b5a.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "dagger-panda"
+    ],
+    "actors_from_title": [
+      "dagger-panda"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2012-0158",
@@ -1027,8 +1063,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202013/2013-09-21%20-%20Operation%20DeputyDog-%20Zero-Day%20(CVE-2013-3893)%20Attack%20Against%20Japanese%20Targets.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/bbb264276ff60417c65d1f18ccd6c08f0bb34092.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0025"
+    ],
+    "actors_from_title": [
+      "G0025"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2013-3893"
@@ -1105,8 +1145,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202013/2013-09-17%20-%20Hidden%20Lynx%20%E2%80%93%20Professional%20Hackers%20for%20Hire.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/29fbd7088fb69f59b6e9cb3cbca33532ba4cee63.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0025"
+    ],
+    "actors_from_title": [
+      "G0025"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1123,8 +1167,12 @@
     "url": "https://web.archive.org/web/20130920000343/https://www.symantec.com/connect/blogs/hidden-lynx-professional-hackers-hire",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/56e81b475c654f9aa7ba6b4cf6ddb92797fa8305.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0025"
+    ],
+    "actors_from_title": [
+      "G0025"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1192,8 +1240,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202013/2013-09-11%20-%20The%20%E2%80%9CKimsuky%E2%80%9D%20Operation-%20A%20North%20Korean%20APT-.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/cea240bf3c483f330a26156a27549192f4ae052e.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0094"
+    ],
+    "actors_from_title": [
+      "G0094"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1228,8 +1280,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202013/2013-09-06%20-%20Evasive%20Tactics-%20Taidoor.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1c4fff2e36204882930b281ded29f3c0693f611e.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "taidoor"
+    ],
+    "actors_from_title": [
+      "taidoor"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2012-0158"
@@ -1248,8 +1304,12 @@
     "url": "https://www.fireeye.com/blog/threat-research/2013/09/evasive-tactics-taidoor-3.html",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/377e9928f860f55d873ff6276e6d406860c202a2.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "taidoor"
+    ],
+    "actors_from_title": [
+      "taidoor"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2012-0158"
@@ -1524,8 +1584,12 @@
     "url": "http://contagioexchange.blogspot.com/2013/08/taleret-strings-apt-1.html",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a05c5a1360a24cd63a3387be7dd99d10d8ddb956.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0006"
+    ],
+    "actors_from_title": [
+      "G0006"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1542,8 +1606,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202013/2013-08-12%20-%20Taleret%20strings%20-%20APT%20(1).pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/babef8b30b3f64e33fe95f921d169b8dd3ce04af.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0006"
+    ],
+    "actors_from_title": [
+      "G0006"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1560,8 +1628,12 @@
     "url": "https://app.box.com/s/f5wyu7306nti3lbp58uesioijsl9zamm",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/aae01ca44ca11f33692bcfd9a20e36105ddfa2b9.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0040"
+    ],
+    "actors_from_title": [
+      "G0040"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2012-0158",
@@ -2076,8 +2148,12 @@
     "url": "https://app.box.com/s/b91tgqhiw7zyivfnxe3sbrtzfgk6n08f",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c6ce890a544b01e5dafd4add9326b4178424c4e2.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0138"
+    ],
+    "actors_from_title": [
+      "G0138"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2112,8 +2188,12 @@
     "url": "https://app.box.com/s/qw0kvewoi3uxy4g3xkc31ammxttbft5z",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4e6876f16b77dbb33aad5384dbf0549d717edb31.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0138"
+    ],
+    "actors_from_title": [
+      "G0138"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2012-1889"
@@ -2152,8 +2232,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202013/2013-06-26%20-%20Four%20Years%20of%20DarkSeoul%20Cyberattacks%20Against%20South%20Korea%20Continue%20on%20Anniversary%20of%20Korean%20War.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ad20028faeb00930005b25d66188301683e653fc.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0138"
+    ],
+    "actors_from_title": [
+      "G0138"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2170,8 +2254,12 @@
     "url": "https://web.archive.org/web/20130701021735/https://www.symantec.com/connect/blogs/four-years-darkseoul-cyberattacks-against-south-korea-continue-anniversary-korean-war",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/fcd3e57f6ea8de52f10e120df008a3df8eec65cb.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0138"
+    ],
+    "actors_from_title": [
+      "G0138"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2317,8 +2405,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202013/2013-06-07%20-%20KeyBoy,%20Targeted%20Attacks%20against%20Vietnam%20and%20India.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c6cb2ff6fccac2325f3cf4978f15675dddc38407.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0081"
+    ],
+    "actors_from_title": [
+      "G0081"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2012-0158"
@@ -2337,8 +2429,12 @@
     "url": "https://app.box.com/s/1qx5mkzkcvwq3eazh2ygxowfbbadofby",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4fd06d33aa1a087709277eb71d204e2fbf8b9243.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "apt21"
+    ],
+    "actors_from_title": [
+      "apt21"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2010-3333",
@@ -2358,8 +2454,12 @@
     "url": "https://securelist.com/blog/research/35936/nettraveler-is-running-red-star-apt-attacks-compromise-high-profile-victims/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/679141963cda8d5e36d3c906ced09fab77e6cfd0.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "apt21"
+    ],
+    "actors_from_title": [
+      "apt21"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2010-3333",
@@ -2379,8 +2479,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202013/2013-06-04%20-%20%E2%80%9CNetTraveler%20is%20Running!%E2%80%9D%20%E2%80%93%20Red%20Star%20APT%20Attacks%20Compromise%20High-Profile%20Victims.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/724a4ab0bbcf68f3dcf79fd2e31739418181b222.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "apt21"
+    ],
+    "actors_from_title": [
+      "apt21"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2012-0158"
@@ -2399,8 +2503,12 @@
     "url": "https://www.kaspersky.com/about/press-releases/2013_kaspersky-lab-uncovers--operation-nettraveler--a-global-cyberespionage-campaign-targeting-government-affiliated-organizations-and-research-institutes",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/954abe72265caf8354e5c09eeeb45c01485a0e44.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "apt21"
+    ],
+    "actors_from_title": [
+      "apt21"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2012-0158"
@@ -2419,8 +2527,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202013/2013-06-04%20-%20Kaspersky%20Lab%20Uncovers%20%E2%80%98Operation%20NetTraveler,%E2%80%99%20a%20Global%20Cyberespionage%20Campaign%20Targeting%20Government-Affiliated%20Organizations%20and%20Research%20Institutes.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f9524e08c18c3093b9c6fd51d9408dd85ddbd7ef.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "apt21"
+    ],
+    "actors_from_title": [
+      "apt21"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2010-3333",
@@ -2494,8 +2606,12 @@
     "url": "https://app.box.com/s/6po2pgedkjf4br5p7tm51go7p5g3z6g3",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1d53861aafea11d9a60e798b90d623c8e7c7b9e7.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0009"
+    ],
+    "actors_from_title": [
+      "G0009"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2748,8 +2864,12 @@
     "url": "https://app.box.com/s/2k6oduwj3aetbetxdjx6gjqcg7mrcvvj",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ffdfed40c5b1e08a6469c2f38e6a51347a37dd1b.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0040"
+    ],
+    "actors_from_title": [
+      "G0040"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2950,8 +3070,12 @@
     "url": "https://app.box.com/s/d3q764or208vbbg26gtcasv5uxnkcij1",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e2631efe178d16691329f27a853a41a48387bfc4.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0040"
+    ],
+    "actors_from_title": [
+      "G0040"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3058,8 +3182,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202013/2013-04-12%20-%20Who%20is%20Samurai%20Panda.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7489f3558b6a66b3fea3beb8c556aec4c0c5e41d.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0026"
+    ],
+    "actors_from_title": [
+      "G0026"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2021-22941"
@@ -3078,8 +3206,12 @@
     "url": "http://www.crowdstrike.com/blog/whois-samurai-panda/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a56835fde62acec7b09d1159b3d167dac51c5fa1.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0026"
+    ],
+    "actors_from_title": [
+      "G0026"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3096,8 +3228,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202013/2013-04-11%20-%20Winnti%20FAQ.%20More%20Than%20Just%20a%20Game.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6e60baaf05ba757e581b583f9933e860327ec4e8.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0044"
+    ],
+    "actors_from_title": [
+      "G0044"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3114,8 +3250,12 @@
     "url": "https://securelist.com/winnti-faq-more-than-just-a-game/57585/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/9ef48e2993b8c6d2a3ad99cd6a416658f153f7f7.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0044"
+    ],
+    "actors_from_title": [
+      "G0044"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3153,8 +3293,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202013/2013-04-11%20-%20Winnti.%20More%20than%20just%20a%20game.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ed9b3e321bc8e3f070c9bef76e4b7d7cfa0716ab.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0044"
+    ],
+    "actors_from_title": [
+      "G0044"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3207,8 +3351,12 @@
     "url": "http://www.crowdstrike.com/blog/whois-clever-kitten/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/751e0e8aff2f2f4c869e8c1f03b896e9b84400cf.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "clever-kitten"
+    ],
+    "actors_from_title": [
+      "clever-kitten"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3225,8 +3373,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202013/2013-04-04%20-%20Who%20is%20Clever%20Kitten.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/70406b190ed3a3a19ea6d85c10733e7966fae9fd.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "clever-kitten"
+    ],
+    "actors_from_title": [
+      "clever-kitten"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2021-22941"
@@ -3284,8 +3436,12 @@
     "url": "https://app.box.com/s/dlzp6f7hv9q3r0kreqvu8yyt36lzdbxw",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3a34d6152f2d287f58e67a03d96408b74d5c470e.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0044"
+    ],
+    "actors_from_title": [
+      "G0044"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3396,8 +3552,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202013/2013-03-29%20-%20Whois%20Numbered%20Panda.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/fda8d1f7f07a3477e538dfd78f3de3cd627ae232.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0005"
+    ],
+    "actors_from_title": [
+      "G0005"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3432,8 +3592,12 @@
     "url": "https://app.box.com/s/x2jgr4j1bgfas2h2b4h09mam9nn4qwu3",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/26353a7703ce0b186450134a5321ac37d1405380.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0006"
+    ],
+    "actors_from_title": [
+      "G0006"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3468,8 +3632,12 @@
     "url": "http://www.crowdstrike.com/blog/whois-anchor-panda/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ae01929bb3d3e0f63cbad3efbd8697a690bf14de.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "apt14"
+    ],
+    "actors_from_title": [
+      "apt14"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3486,8 +3654,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202013/2013-03-22%20-%20Who%20is%20Anchor%20Panda.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/756ff771df78ef39676c133c2f09485d1ce1af86.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "apt14"
+    ],
+    "actors_from_title": [
+      "apt14"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3504,8 +3676,12 @@
     "url": "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2013/2013.03.21.Darkseoul/FTA%201008%20-%20Darkseoul-Jokra%20Analysis%20and%20Recovery.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c0d85dfff9ce55913cea8ed1d04b0a7e17336636.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0138"
+    ],
+    "actors_from_title": [
+      "G0138"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3569,8 +3745,12 @@
     "url": "https://threatpost.com/researchers-uncover-teamspy-attack-campaign-targeting-government-research-targets-032013/77646/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/0c27ccc1c091068776e0048135e12664335410da.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "teamspy-crew"
+    ],
+    "actors_from_title": [
+      "teamspy-crew"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3605,8 +3785,12 @@
     "url": "https://app.box.com/s/742gtrl1fedxy8iqwjuqsiru1m8i0l2g",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/57a17587785f54a103ea970277bd7c4cc179a82c.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "teamspy-crew"
+    ],
+    "actors_from_title": [
+      "teamspy-crew"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2012-0507"
@@ -3625,8 +3809,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202013/2013-03-20%20-%20Researchers%20Uncover%20%E2%80%98TeamSpy%E2%80%99%20Attack%20Campaign%20Against%20Government,%20Research%20Targets.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/89ed77f357900447e1b4062f82a3716a896cc55d.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "teamspy-crew"
+    ],
+    "actors_from_title": [
+      "teamspy-crew"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3778,8 +3966,12 @@
     "url": "https://app.box.com/s/0leqi6xaid7v745y3kujcyi5vgvf73su",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/349984643361273d5d3b638e369c45cbb409676c.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0006"
+    ],
+    "actors_from_title": [
+      "G0006"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3798,9 +3990,12 @@
     "archive_url": "https://archive.orkl.eu/a879974532a71996c78c036a35d432617af61c0e.pdf",
     "actors": [
       "G0022",
+      "G0049",
       "G0093"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G0049"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4063,8 +4258,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202013/2013-02-19%20-%20APT1-%20Q&A%20on%20Attacks%20by%20the%20Comment%20Crew.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/67024f738e48026bc25b94825ef91010525b2b2c.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0006"
+    ],
+    "actors_from_title": [
+      "G0006"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4081,8 +4280,12 @@
     "url": "https://en.wikipedia.org/wiki/PLA_Unit_61398",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7210709e0485a3217c30c7a51fe9a781bb1a32b3.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0006"
+    ],
+    "actors_from_title": [
+      "G0006"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4117,8 +4320,12 @@
     "url": "https://papers.vx-underground.org/papers/Malware%20Defense/Malware%20Analysis%202013/2013-02-19%20-%20PLA%20Unit%2061398.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/85e7115b84fbebc7115a99a358fb269724ecc922.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0006"
+    ],
+    "actors_from_title": [
+      "G0006"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4173,8 +4380,12 @@
     "url": "https://app.box.com/s/t8w9gavaci6jye519zp13tjdicnd7xzu",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3974687624eb85cdcf1fc9ccfb68eea052971e84.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0006"
+    ],
+    "actors_from_title": [
+      "G0006"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],

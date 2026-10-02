@@ -256,6 +256,66 @@
   "techniques_reported": [],
   "cves": [
     {
+      "cve": "CVE-2009-0927",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2009-09274",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2009-3129",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2009-4324",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2009-43243",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2010-0188",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2010-1297",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2011-0609",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2011-06095",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2011-06098",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2011-0611",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2011-06116",
+      "kev": false,
+      "ransomware": null
+    },
+    {
       "cve": "CVE-2012-0158",
       "kev": true,
       "ransomware": true
@@ -278,8 +338,12 @@
   ],
   "timeline": [
     {
-      "quarter": "2013-Q1",
+      "quarter": "2012-Q3",
       "count": 1
+    },
+    {
+      "quarter": "2013-Q1",
+      "count": 2
     },
     {
       "quarter": "2014-Q2",
@@ -290,22 +354,33 @@
       "count": 3
     },
     {
+      "quarter": "2016-Q2",
+      "count": 3
+    },
+    {
       "quarter": "2016-Q4",
       "count": 1
     },
     {
       "quarter": "2026-Q2",
-      "count": 1
+      "count": 3
     }
   ],
   "reports": [
+    "c30b2c205c2e4d5069f4dac557a7fa31d1973e35",
+    "d548f0ca881bd306ce510e1c3a7afdbdd33115f2",
     "f2542f40abe18c9a6097f44805ba03325996607a",
     "aced1deec4e99e43f11e29c9e4e18f5658e55d15",
+    "d611ca60c87498c89b450dda0f06a3cffebe53ae",
+    "660bd04b0d4b33301fcb47a98f3d671f126f66c0",
+    "829bd809578a0305bc0438fd719e9c6da8f9fd96",
     "dfb9d2e921a64e9d9dfd05425078371958be7cc3",
     "paper:Darwin_fav_APT_Group",
     "paper:NYTimes_Attackers_Evolve_Quickly",
     "paper:ASERT-Threat-Intelligence-Brief-2014-07-Illuminating-Etumbot-APT",
-    "3a597a0c55b0f2a8484f8fc0ee579f289a2bb45a"
+    "3a597a0c55b0f2a8484f8fc0ee579f289a2bb45a",
+    "fda8d1f7f07a3477e538dfd78f3de3cd627ae232",
+    "c00b7449b733f070c148c5b6c0a4df087a3f34f1"
   ],
   "conflicts": [],
   "evidence_count": 31

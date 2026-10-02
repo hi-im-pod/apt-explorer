@@ -43,9 +43,23 @@
   "malware": [],
   "techniques_documented": [],
   "techniques_reported": [],
-  "cves": [],
-  "timeline": [],
-  "reports": [],
+  "cves": [
+    {
+      "cve": "CVE-2023-38831",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2024-Q2",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "1aab0c2b1e4e09575c14ae646cca115e3e621117",
+    "5725f0c6a3d7d3148f4de364e2e2a530e70fb7cf"
+  ],
   "conflicts": [],
   "evidence_count": 2
 }

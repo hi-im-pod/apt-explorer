@@ -3171,7 +3171,7 @@
     },
     {
       "quarter": "2018-Q1",
-      "count": 6
+      "count": 7
     },
     {
       "quarter": "2018-Q2",
@@ -3179,19 +3179,19 @@
     },
     {
       "quarter": "2018-Q3",
-      "count": 6
-    },
-    {
-      "quarter": "2018-Q4",
-      "count": 6
-    },
-    {
-      "quarter": "2019-Q1",
       "count": 8
     },
     {
+      "quarter": "2018-Q4",
+      "count": 7
+    },
+    {
+      "quarter": "2019-Q1",
+      "count": 9
+    },
+    {
       "quarter": "2019-Q2",
-      "count": 12
+      "count": 13
     },
     {
       "quarter": "2019-Q3",
@@ -3203,7 +3203,7 @@
     },
     {
       "quarter": "2020-Q1",
-      "count": 22
+      "count": 26
     },
     {
       "quarter": "2020-Q2",
@@ -3223,11 +3223,11 @@
     },
     {
       "quarter": "2021-Q2",
-      "count": 68
+      "count": 69
     },
     {
       "quarter": "2021-Q3",
-      "count": 66
+      "count": 68
     },
     {
       "quarter": "2021-Q4",
@@ -3303,7 +3303,7 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 13
+      "count": 14
     },
     {
       "quarter": "2026-Q3",
@@ -3314,6 +3314,7 @@
     "52f859f75007550de14412e1dc834d10d06e1b3a",
     "044f17d2b0b222b8bf06787200d521bc2ac26d86",
     "0ad712c3e42d3065da15afdd2078d4f6f6e07268",
+    "2688d3efc336bc7e41529d56511b8372966f1c0a",
     "5caa3af9facac2e25b868e6afb482d156eacad78",
     "6ef0b705b6cce4b4cc962baaf74cae30018ba40d",
     "748f9be92f6186781f2f4882175bb2cf773e518c",
@@ -3799,6 +3800,8 @@
     "a953c983ef09ac3b82dbcc2a84a42b2383dea487",
     "db7ee71024da34e6fc1dfd15bb349163e4c6bc2a",
     "214bf6c0da676d094fb6f0ea1d536a20ecc9df80",
+    "0f3bf0752bfd0844fdd3d4b2a306b8532155d44e",
+    "911af01098450e2c928a385dbf82c2bfc1aef28d",
     "d2418c076b79a9fbd864deb6bd8f3e5889f577c0",
     "paper:U.S.,%20allies%20accuse%20China%20of%20hacking%20Microsoft%20and%20condoning%20other%20cyberattacks%20(APT40)",
     "2b7585da9f910b26ab3e6bdd77c6551c01f7952b",
@@ -3819,6 +3822,7 @@
     "53b986c433bee187c7f07cd278d7a9b21f7c5a94",
     "9e56e0b4dfd862330c7e428c734c1c6c235fa190",
     "1729fb83b35e14e874d718d7a23a58ef058613f9",
+    "750a60885232db955bfe13dc3030340dffb3e83a",
     "13008e9e9db2b71bd6840636f4bf2e80682ba493",
     "14a508bb67653fa47c17d10c942e100e0403d144",
     "1ef105f6522d7b71a6681d382f1160bbd1566fc7",
@@ -4042,6 +4046,7 @@
     "ff45d521e043f6ec359bee1121591d5b6484635a",
     "paper:Is%20APT%2027%20Abusing%20COVID-19%20To%20Attack%20People%20!",
     "ca4bb5ad760457166ffcf906f6f6933ce099701b",
+    "10aefb5a1860b6de2213353bc01db651b9e87e98",
     "4c0557257d8151dfe1719524c0d1eb9c6dfe620c",
     "bc631f050b58ddc7a5901be93f7ad482ffffb852",
     "fed84094f8bd8822542b76820b569235ff6cd98a",
@@ -4051,8 +4056,11 @@
     "ab2c0ce2f1476cf0d37c66d886c9239de04131d0",
     "62a60a899f1f74a95d28bdfcc989588ba683b461",
     "d6b452fe46682f1bd964eb8cae720076bf30c592",
+    "57baafb8b571293c298b93a2a23364bcbc7aa807",
     "67ed982fef7800a433d55e59ffe9e0da74cad52b",
+    "84595f3967d442700888c8a0bdf316730c8b43fa",
     "paper:APT40%20is%20run%20by%20the%20Hainan%20department%20of%20the%20Chinese%20Ministry%20of%20State%20Security",
+    "b8b3b40dc9a787dceb2c4815abc956cbf90767bd",
     "c8bf814c658e9b5814ffa4ea761c3df778f1d0d9",
     "701aa2ef6158529c9dbcae135e3a58a9778bdd17",
     "f130f98ce44559c0328409c1be9db6c0663c1520",
@@ -4083,6 +4091,7 @@
     "bca1058e620ada77efb5a8c2bb90d17827e4b726",
     "7960be96f5038b5a44680ccb0c7e2598615ed7c6",
     "4b75f585b8ff8f6c826fb2d2cac3bfd52b633c01",
+    "debe18beec4daca610db8c706a8ab76d65d43c3c",
     "e27b9b119fc2582da216e2aee28873737ca2f1e6",
     "eab263d2cfdab0601a467d8bcc1fb18ff70e0733",
     "paper:Sea%20Lotus%20APT%20organization's%20attack%20techniques%20against%20China%20in%20the%20first%20quarter%20of%202019%20revealed",
@@ -4091,6 +4100,7 @@
     "bddc3d85b7f57b186c0bf3e794469bbe0d685368",
     "47c64412c5ada2a14fcb56a230321fde32cb9acd",
     "a2a65bfa519c45744519914d91ef68b62eeb5046",
+    "28c6146ba26d24b855913e5ab5e1e2c9fc536051",
     "6c3b0f70362d993f6d48d87bcb2013a237ab4dc0",
     "dfff56f62bd7c79fa154711302746dae9d5ca7d8",
     "cd32735b9f4fbb8bf8c7b3d35436b0479ceb2d76",
@@ -4099,20 +4109,24 @@
     "7507a0820eb04bbefa5400a220b3858b2fe58333",
     "fb43ff546455506c41067543baf645a7b61a3fd8",
     "03b44872d273ab9d1dc4e6dd8817b248c175f65c",
+    "b9dd008b786fd6eacdfb7ba6ae2b193f13ba5e40",
     "e1df7c52e9fd6492e4f03cfbc92c38e8cfbab629",
     "paper:Chinese%20Threat%20Actor%20TEMP.Periscope%20Targets%20UK-Based%20Engineering%20Company%20Using%20Russian%20APT%20Techniques",
     "6a34208ac703c1fb4633ba448fb78bc79eb3ae19",
     "d756a710363dff192c32481266645104a903305c",
+    "5cd0e57ee8d76d9ee8e08467a2811b888b20bbb5",
     "3a252430bcb61f4ad5e4065f398046be8d4a0171",
     "ba6f0382399628d54a9a44d5ca868890d2e10645",
     "e15f7532efb0ef38750132b7300d5b0e8c8960b6",
     "89540497d08e70e4a9400ca3f0594d37bbd188ab",
+    "1db444c63cec17e0c4ca60eed1e0062985db913d",
     "b543f8f071dd258eccfb2b89442a6a73c2ad00ce",
     "1c8e61b3f0589bbbbbc85b0e94bbfe4c9ddbe11f",
     "ca1583533d1d3f1e95986c97bf401f17e3e236fd",
     "3521306f97b7e1656871b6e95ef9d02d72be1d0f",
     "c58538b894e29ea2cf2947132505c031114b1da5",
     "a2fcd0788548ee02f0cc94d778a7c0e5e2245634",
+    "133bfa1ab622f3cfa233d2def5bb92ebcbd45294",
     "db83049e73fff8406aeae37e3007f0c404c3303e",
     "575387ef16724c2727b65c2db13d71c9d8884541",
     "713132cb020bd00fba7e6a97fdec10757fce7e50",

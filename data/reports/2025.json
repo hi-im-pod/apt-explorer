@@ -8,8 +8,12 @@
     "url": "https://www.koi.ai/blog/darkspectre-unmasking-the-threat-actor-behind-7-8-million-infected-browsers",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5f95ace76755b99a8642bc1be82cd69a0a79ffe1.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "darkspectre"
+    ],
+    "actors_from_title": [
+      "darkspectre"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -28,10 +32,13 @@
     "archive_url": "https://archive.orkl.eu/766f3167d1b570fc5b0005e9268412836c330c51.pdf",
     "actors": [
       "alpha-spider",
+      "alphv",
       "ransomhub",
       "vice-spider"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "alphv"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -300,8 +307,12 @@
     "url": "https://botcrawl.com/chinese-apt-longnosedgoblin-targets-government-networks-in-southeast-asia-and-japan/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ac01531bddc32b58c133b3ed7429b025001ffad9.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "longnosedgoblin"
+    ],
+    "actors_from_title": [
+      "longnosedgoblin"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -403,9 +414,12 @@
       "G0040",
       "G0045",
       "G0064",
-      "G0078"
+      "G0078",
+      "G0094"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G0094"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -440,8 +454,12 @@
     "url": "https://www.helpnetsecurity.com/2025/12/18/tracking-scripted-sparrow-phishing-campaigns/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/40a24dff8248f89b26da99fb31b3bf9d84cd0f7d.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "scripted-sparrow"
+    ],
+    "actors_from_title": [
+      "scripted-sparrow"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -587,8 +605,12 @@
     "url": "https://blog.talosintelligence.com/uat-9686/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/434101591fa739498b8efd5b91c428b1dd938cc5.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "uat-9686"
+    ],
+    "actors_from_title": [
+      "uat-9686"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -967,8 +989,14 @@
     "url": "https://www.trendmicro.com/en_us/research/25/l/SHADOW-VOID-042.html",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5b4b5c1a287061d4f811c12fa91e34b0cd1009b5.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "romcom",
+      "shadow-void-042"
+    ],
+    "actors_from_title": [
+      "romcom",
+      "shadow-void-042"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2018-6065"
@@ -1087,8 +1115,12 @@
     "url": "https://www.recordedfuture.com/research/graybravos-castleloader-activity-clusters-target-multiple-industries",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2ee5e2315e76fdf355ed8d5272dfb84e9a94ccdd.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "graybravo"
+    ],
+    "actors_from_title": [
+      "graybravo"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -1141,8 +1173,12 @@
     "url": "https://blackpointcyber.com/blog/python-driven-castleloader-analysis/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5838a93b133088fcdb5b91fffdcc93add6bb7e5a.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G1000"
+    ],
+    "actors_from_title": [
+      "G1000"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1298,9 +1334,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1eaaa225d4b6c5ff7bfcda6eb005e19623d271ef.pdf",
     "actors": [
-      "uta0178"
+      "uta0178",
+      "warp-panda"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "warp-panda"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2021-22005",
@@ -1467,8 +1506,12 @@
     "url": "https://www.trendmicro.com/en_us/research/25/l/water-saci.html",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6bfa827f98bc9fb1d5d7e6436f53687eb41cde1e.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "water-saci"
+    ],
+    "actors_from_title": [
+      "water-saci"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1503,8 +1546,12 @@
     "url": "https://ptsecurity.com/research/pt-esc-threat-intelligence/ex-cobalt-a-review-of-the-group-s-attack-tools-for-2024-2025",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e8bbcab2a44fbc4e9f63eab01e0c27ea3ed8215c.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "excobalt"
+    ],
+    "actors_from_title": [
+      "excobalt"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2021-3156",
@@ -1554,8 +1601,12 @@
     "url": "https://sosransomware.com/en/ransomware-groups/scattered-lapsus-hunters-the-cybercrime-alliance-that-will-shake-global-businesses-in-2025/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/0882a35561cf45bfc3aaa61bed233ad64eef8806.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "scattered-lapsus-hunters"
+    ],
+    "actors_from_title": [
+      "scattered-lapsus-hunters"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -1581,8 +1632,12 @@
     "url": "https://www.koi.ai/blog/4-million-browsers-infected-inside-shadypanda-7-year-malware-campaign",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/41dc099583f2aebf46ad0960455294e1e03d04ec.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "shadypanda"
+    ],
+    "actors_from_title": [
+      "shadypanda"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1599,8 +1654,12 @@
     "url": "https://www.fortra.com/resources/guides/scripted-sparrow-prolific-bec-threat-group",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7afc3fbb662c9e07f35c4a26ccdedf0dd63209b4.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "scripted-sparrow"
+    ],
+    "actors_from_title": [
+      "scripted-sparrow"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -1645,8 +1704,12 @@
     "url": "https://socradar.io/blog/ai-powered-gtg-1002-campaign/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7b8664219a16da699b4a2a98ddfd54eaecf3963a.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "gtg-1002"
+    ],
+    "actors_from_title": [
+      "gtg-1002"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -1929,9 +1992,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/756478188a674ba930328c7c03f8ddf420bdc321.pdf",
     "actors": [
-      "G1020"
+      "G1020",
+      "romcom"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "romcom"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -2305,8 +2371,12 @@
     "url": "https://www.kelacyber.com/blog/bytetobreach-a-deep-dive-into-a-persistent-data-leak-operator/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/0abca7f6853a0084222b0ec29759892fd5258264.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "bytetobreach"
+    ],
+    "actors_from_title": [
+      "bytetobreach"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2389,8 +2459,12 @@
     "url": "https://www.elastic.co/security-labs/roningloader",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2b9bf64ef56d84b26b9b0ba137847ea1887823ff.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "dragonbreath"
+    ],
+    "actors_from_title": [
+      "dragonbreath"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2427,8 +2501,12 @@
     "url": "https://pushsecurity.com/blog/scattered-lapsus-hunters/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6a7fbb5bbccc65506bd2aa9751f68b1ad1dc8f0a.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "scattered-lapsus-hunters"
+    ],
+    "actors_from_title": [
+      "scattered-lapsus-hunters"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2790,8 +2868,12 @@
     "url": "https://www.bitdefender.com/en-us/blog/businessinsights/curly-comrades-evasion-persistence-hidden-hyper-v-virtual-machines",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3022e37224e3fa2abe43f2cadd50fc8b64422d27.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "curly-comrades"
+    ],
+    "actors_from_title": [
+      "curly-comrades"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -2808,8 +2890,12 @@
     "url": "https://www.levelblue.com/blogs/spiderlabs-blog/scattered-lapsuss-hunters-anatomy-of-a-federated-cybercriminal-brand",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6ea59b62458520febeb62152f791c51227c19eb5.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "scattered-lapsus-hunters"
+    ],
+    "actors_from_title": [
+      "scattered-lapsus-hunters"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-61882"
@@ -2828,8 +2914,12 @@
     "url": "https://www.seqrite.com/blog/operation-peek-a-baku-silent-lynx-apt-dushanbe-espionage/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/eaaa3e7dd6533ddaffd83ca50d6a994ef7ee1e07.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "yorotrooper"
+    ],
+    "actors_from_title": [
+      "yorotrooper"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -2954,8 +3044,12 @@
     "url": "https://cybelangel.com/blog/ruskinet-hacktivism-apt-threats/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5641ccdd87b21afcc8fce523343f731265cb2dcf.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "ruskinet"
+    ],
+    "actors_from_title": [
+      "ruskinet"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -3169,8 +3263,12 @@
     "url": "https://www.trendmicro.com/en_us/research/25/j/active-water-saci-campaign-whatsapp-update.html",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/18e01fbf329f5089cacb71e552b345fbe2e14216.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "water-saci"
+    ],
+    "actors_from_title": [
+      "water-saci"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3187,8 +3285,12 @@
     "url": "https://securelist.com/forumtroll-apt-hacking-team-dante-spyware/117851/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/32e66e33d71d6351d0a2710e678d14d1370e88b1.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "hacking-team"
+    ],
+    "actors_from_title": [
+      "hacking-team"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-2783"
@@ -3446,8 +3548,12 @@
     "url": "https://www.anomali.com/blog/anomali-cyber-watch-f5-breach-mysterious-elephant-apt-malicious-mcp-servers",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/4153c705b9efebc497026b4049a56c2fe63f942d.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "mysterious-elephant"
+    ],
+    "actors_from_title": [
+      "mysterious-elephant"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-11882",
@@ -3690,8 +3796,12 @@
     "url": "https://www.picussecurity.com/resource/blog/scattered-lapsus-hunters-2025s-most-dangerous-cybercrime-supergroup",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a90dd5fe9bc1d7b3990d2d5a888acdca60ca1d3d.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "scattered-lapsus-hunters"
+    ],
+    "actors_from_title": [
+      "scattered-lapsus-hunters"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2021-35464"
@@ -3744,9 +3854,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/16ed313feb7972a23826f4499f9fba32fec5547d.pdf",
     "actors": [
-      "angry-likho"
+      "angry-likho",
+      "water-kurita"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "water-kurita"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3894,8 +4007,12 @@
     "url": "https://www.security.com/threat-intelligence/jewelbug-apt-russia",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/85a987395f71a3b1cf9cc204cc9d7fd88712a335.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "ref7707"
+    ],
+    "actors_from_title": [
+      "ref7707"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -3935,9 +4052,12 @@
     "actors": [
       "G0064",
       "G0078",
+      "mysterious-elephant",
       "uac-0050"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "mysterious-elephant"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-11882"
@@ -4045,8 +4165,12 @@
     "url": "https://unit42.paloaltonetworks.com/scattered-lapsus-hunters/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/25530753d450a9efcd314bd472ae304aa8f69cfa.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G1057"
+    ],
+    "actors_from_title": [
+      "G1057"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4270,8 +4394,12 @@
     "url": "https://www.aryaka.com/docs/reports/batshadow-vietnamese-threat-group-vampire-bot-report.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/76a0d997993031d46f1eb295987dbec0ed2435e5.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "batshadow"
+    ],
+    "actors_from_title": [
+      "batshadow"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -4417,9 +4545,12 @@
       "G0129",
       "G0143",
       "earth-baxia",
-      "tianwu"
+      "tianwu",
+      "uat-8099"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "uat-8099"
+    ],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -4536,8 +4667,12 @@
     "url": "https://www.netscout.com/blog/asert/keymous-threat-actor-profile",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3307b6faa9118e66d311ddb5f22a4dc56b2b4d38.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "keymous"
+    ],
+    "actors_from_title": [
+      "keymous"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4574,8 +4709,12 @@
     "url": "https://github.com/KittenBusters/CharmingKitten",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2820cbcdbce7817f0f805acbb7d5a32388b4cbe0.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0059"
+    ],
+    "actors_from_title": [
+      "G0059"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4648,8 +4787,12 @@
     "url": "https://unit42.paloaltonetworks.com/phantom-taurus/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f5a39926e59bb028f7b3e1bcbfcc0a58d97c1a91.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "cl-sta-0043"
+    ],
+    "actors_from_title": [
+      "cl-sta-0043"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -4930,8 +5073,16 @@
     "url": "https://www.resecurity.com/blog/article/trinity-of-chaos-the-lapsus-shinyhunters-and-scattered-spider-alliance-embarks-on-global-cybercrime-spree",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7adcfbd2c034d8e53fb98beebd1eae28d22984ac.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G1004",
+      "G1015",
+      "G1057"
+    ],
+    "actors_from_title": [
+      "G1004",
+      "G1015",
+      "G1057"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5046,9 +5197,12 @@
       "G0129",
       "G0143",
       "earth-baxia",
+      "storm-2077",
       "tianwu"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "storm-2077"
+    ],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -5160,8 +5314,12 @@
     "url": "https://blog.checkpoint.com/research/iranian-threat-actor-nimbus-manticore-expands-campaigns-into-europe-with-advanced-malware-and-fake-job-lures/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2c50856eed4bfa330ec817343006621baa489bb3.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G1012"
+    ],
+    "actors_from_title": [
+      "G1012"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5205,8 +5363,12 @@
     "url": "https://www.varonis.com/blog/salesforce-vishing-threat-unc604",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/70cce569a80ac96ac7b8c9cccc5ca86d93572173.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G1057"
+    ],
+    "actors_from_title": [
+      "G1057"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5277,8 +5439,12 @@
     "url": "https://research.checkpoint.com/2025/nimbus-manticore-deploys-new-malware-targeting-europe",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ccfcfddfa6bf3224d437dae9a4195083516d0263.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G1012"
+    ],
+    "actors_from_title": [
+      "G1012"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5296,9 +5462,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/bdcc83093677dc0ad36b2937396bc3d8b51dca57.pdf",
     "actors": [
+      "G0010",
       "G0047"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G0010"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -5394,8 +5563,12 @@
     "url": "https://www.recordedfuture.com/research/copycop-deepens-its-playbook-with-new-websites-and-targets",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/187818d2354a6fd588cf8370ccc4e93f0976ddc4.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "storm-1516"
+    ],
+    "actors_from_title": [
+      "storm-1516"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5659,8 +5832,12 @@
     "url": "https://www.koi.ai/blog/whitecobra-vscode-cursor-extensions-malware",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/9b6914c795cff208dc52bbc368dfeb4d133c72d1.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "whitecobra"
+    ],
+    "actors_from_title": [
+      "whitecobra"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -5815,9 +5992,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/32fd4ad5f243f8cb30a7ff9baefeadcc276d8bb5.pdf",
     "actors": [
+      "G0032",
       "G1052"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G0032"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6138,8 +6318,12 @@
     "url": "https://hexastrike.com/resources/blog/threat-intelligence/valleyrat-exploiting-byovd-to-kill-endpoint-security/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3f1a023499cd38e50d16e2021d9403b1886aecab.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "void-arachne"
+    ],
+    "actors_from_title": [
+      "void-arachne"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6278,8 +6462,12 @@
     "url": "https://www.welivesecurity.com/en/eset-research/ghostredirector-poisons-windows-servers-backdoors-side-potatoes/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6890f97b76084593958ddc4b04bd15e6091e864e.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "ghostredirector"
+    ],
+    "actors_from_title": [
+      "ghostredirector"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -6360,8 +6548,12 @@
     "url": "https://www.recordedfuture.com/research/from-castleloader-to-castlerat-tag-150-advances-operations",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/d3ab06012533c4c254aa8f04cc3ececea7c9d325.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "graybravo"
+    ],
+    "actors_from_title": [
+      "graybravo"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6648,8 +6840,12 @@
     "url": "https://research.checkpoint.com/2025/silver-fox-apt-vulnerable-drivers/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7d9480867e368d93f06570a95981fefd4232ce38.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "void-arachne"
+    ],
+    "actors_from_title": [
+      "void-arachne"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6753,8 +6949,12 @@
     "url": "https://www.esentire.com/blog/threat-actors-deploy-sinobi-ransomware-via-compromised-sonicwall-ssl-vpn-credentials",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/410756807c42a3d9972e6eb6350d26b46406173b.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "sinobi"
+    ],
+    "actors_from_title": [
+      "sinobi"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -6827,9 +7027,12 @@
       "G0129",
       "G0143",
       "earth-baxia",
-      "tianwu"
+      "tianwu",
+      "yorotrooper"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "yorotrooper"
+    ],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -6936,8 +7139,12 @@
     "url": "https://circleid.com/posts/romcom-and-transferloader-iocs-in-the-spotlight",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1005335d2b1f6beb11591d6d0d1ab9eaa0921a3c.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "romcom"
+    ],
+    "actors_from_title": [
+      "romcom"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7316,8 +7523,12 @@
     "url": "https://blog.talosintelligence.com/uat-7237-targets-web-hosting-infra/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/33763c536d461fc1237fdea8c73051ea7da47e93.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G1017"
+    ],
+    "actors_from_title": [
+      "G1017"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7448,8 +7659,12 @@
     "url": "https://blog.nviso.eu/2025/08/12/shedding-light-on-poisonseeds-phishing-kit/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/96095d8a87563b7559753949a35fd157aeaabd60.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "poisonseed"
+    ],
+    "actors_from_title": [
+      "poisonseed"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7485,9 +7700,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/d6b6a4666e1efbf60c50e0c656e5a0079fba7447.pdf",
     "actors": [
-      "G0092"
+      "G0092",
+      "curly-comrades"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "curly-comrades"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7614,8 +7832,12 @@
     "url": "https://www.koi.ai/blog/greedybear-650-attack-tools-one-coordinated-campaign",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5d1682633db061c840b597ea17b4fd2976494ca0.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "greedybear"
+    ],
+    "actors_from_title": [
+      "greedybear"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7689,9 +7911,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3b90654e61d1029918b3a6654f5b74117796b107.pdf",
     "actors": [
+      "G0012",
       "G1020"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G0012"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -7709,9 +7934,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5974cd546fdb0aebbbbebbba06950740007ecc37.pdf",
     "actors": [
+      "G0032",
       "G1052"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G0032"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -7876,8 +8104,12 @@
     "url": "https://www.ic3.gov/CSA/2025/250729.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e5fe074eecf1ac2d0d650c535ba09b284b9315c0.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G1015"
+    ],
+    "actors_from_title": [
+      "G1015"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -7978,9 +8210,12 @@
       "G0092",
       "alpha-spider",
       "ransomhub",
+      "shadowsyndicate",
       "vice-spider"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "shadowsyndicate"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2023-34362",
@@ -8024,9 +8259,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/468806732a7e989d83fd148cbaa6eeac41dfd812.pdf",
     "actors": [
+      "G0032",
       "G1052"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G0032"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8061,8 +8299,12 @@
     "url": "https://www.sonatype.com/hubfs/White_Papers/How-North-Korea-Backed-Lazarus-Group-is-Weaponizing-Open-Source-Whitepaper.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/83aec13b004b5e29828d01dd8cc9deb720f85a5a.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0032"
+    ],
+    "actors_from_title": [
+      "G0032"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8097,8 +8339,12 @@
     "url": "https://www.bitsight.com/blog/toxicpanda-android-banking-malware-2025-study",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/15879bafe597979ff8fb78bba47d075c48f23381.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "toxic-panda"
+    ],
+    "actors_from_title": [
+      "toxic-panda"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8383,8 +8629,12 @@
     "url": "https://www.sygnia.co/blog/fire-ant-a-deep-dive-into-hypervisor-level-espionage/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/712d50a4fba826d692e7b2587e09eeb22372e4a3.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0129"
+    ],
+    "actors_from_title": [
+      "G0129"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2022-1388",
@@ -8482,9 +8732,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/86f7df69edbfa116604f92728d37c435cefefc12.pdf",
     "actors": [
-      "G1017"
+      "G1017",
+      "G1045"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G1045"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -8501,8 +8754,12 @@
     "url": "https://www.seqrite.com/blog/operation-cargotalon-ung0901-targets-russian-aerospace-defense-sector-using-eaglet-implant/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ca4da019c7f1c6d3e2bb8bf876cbf1e41f020bb1.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "ung0901"
+    ],
+    "actors_from_title": [
+      "ung0901"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -8550,8 +8807,12 @@
     "url": "https://rewterz.com/threat-advisory/apt-ung0002-expands-cyber-espionage-campaigns-across-asia-active-iocs",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e7de273bb8909c7ebc218f095072d305af6fc4bb.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "ung0002"
+    ],
+    "actors_from_title": [
+      "ung0002"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9122,8 +9383,12 @@
     "url": "https://www.seqrite.com/blog/ung0002-espionage-campaigns-south-asia/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b46dc03afdc84aaf35f9d364fa7636547e22c462.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "ung0002"
+    ],
+    "actors_from_title": [
+      "ung0002"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -9310,8 +9575,12 @@
     "url": "https://www.authentic8.com/blog/cyber-intel-brief-nighteagle-apt-ai-deepfakes-spnego-flaw",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/cdfaf37f45face1ed7d14916dbd061b1893f8963.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "nighteagle"
+    ],
+    "actors_from_title": [
+      "nighteagle"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2014-3931",
@@ -9337,8 +9606,12 @@
     "url": "https://www.ibm.com/think/x-force/hive0145-back-in-german-inboxes-with-strela-stealer",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/46f7701738004eb887395460266978cf31cec181.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "hive-0145"
+    ],
+    "actors_from_title": [
+      "hive-0145"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9391,8 +9664,12 @@
     "url": "https://cybersecuritynews.com/nighteagle-apt-exploiting-0-days/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7635422f39a4f0df30a2ef6af1344c16a6b32b2a.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "nighteagle"
+    ],
+    "actors_from_title": [
+      "nighteagle"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9409,8 +9686,12 @@
     "url": "https://meterpreter.org/anssi-exposes-houken-china-linked-apt-exploiting-ivanti-csa-zero-days-deploying-linux-rootkits/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/dec88ee829910d71dc2b8f03cf4e62f0936837a6.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "houken"
+    ],
+    "actors_from_title": [
+      "houken"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2024-8190",
@@ -9451,8 +9732,12 @@
     "url": "https://thehackernews.com/2025/07/nighteagle-apt-exploits-microsoft.html",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/21a2263bdae97fd13a0343a95a636c38396ccf02.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "nighteagle"
+    ],
+    "actors_from_title": [
+      "nighteagle"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -9473,9 +9758,12 @@
       "G0008",
       "G0045",
       "G0050",
-      "G0093"
+      "G0093",
+      "G1015"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G1015"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2015-2291",
@@ -9742,8 +10030,12 @@
     "url": "https://www.microsoft.com/en-us/security/blog/2025/06/30/jasper-sleet-north-korean-remote-it-workers-evolving-tactics-to-infiltrate-organizations/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3ed830709d642d67b2c99b7743cd8c0abd9e8352.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G1052"
+    ],
+    "actors_from_title": [
+      "G1052"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10011,8 +10303,12 @@
     "url": "https://research.checkpoint.com/2025/iranian-educated-manticore-targets-leading-tech-academics",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/88e6c0507028884b56f837182b43f2648f5f0083.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0059"
+    ],
+    "actors_from_title": [
+      "G0059"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10254,8 +10550,12 @@
     "url": "https://go.recordedfuture.com/hubfs/reports/cta-2025-0623.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c606a5ff18f5bd32a46b6aaa8158da5fc299a303.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G1008"
+    ],
+    "actors_from_title": [
+      "G1008"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10387,8 +10687,12 @@
     "url": "https://www.huntress.com/blog/inside-bluenoroff-web3-intrusion-analysis",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/11fcd89425219e6f04a62fc062c9284bbb39ac82.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0082"
+    ],
+    "actors_from_title": [
+      "G0082"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10473,8 +10777,12 @@
     "url": "https://redcanary.com/blog/threat-intelligence/mocha-manakin-nodejs-backdoor/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/8228bb6af437f81c8240f10bee7bd5be550f1329.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "mocha-manakin"
+    ],
+    "actors_from_title": [
+      "mocha-manakin"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10618,8 +10926,12 @@
     "url": "https://harfanglab.io/insidethelab/sadfuture-xdspy-latest-evolution/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/61f1279ef3d940a7d4dd3b8944d4eacd249772a1.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "xdspy"
+    ],
+    "actors_from_title": [
+      "xdspy"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -10711,9 +11023,12 @@
       "G0129",
       "G0143",
       "earth-baxia",
+      "team46",
       "tianwu"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "team46"
+    ],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -11235,8 +11550,12 @@
     "url": "https://reliaquest.com/blog/scattered-spider-cyber-attacks-using-phishing-social-engineering-2025/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/cb17cfd4d3c6aa3d991a3d61cbaf8ceb9586447a.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G1015"
+    ],
+    "actors_from_title": [
+      "G1015"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -11254,9 +11573,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e93801d881b30930f09b885a17eb3462d1d3f099.pdf",
     "actors": [
-      "G0049"
+      "G0049",
+      "bladedfeline"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "bladedfeline"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -11395,9 +11717,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/bc1a2aa8d98b28bcc30405c86d384c875024ac8b.pdf",
     "actors": [
+      "G0032",
       "G1052"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G0032"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -11716,9 +12041,12 @@
       "G0129",
       "G0143",
       "earth-baxia",
+      "earth-lamia",
       "tianwu"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "earth-lamia"
+    ],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -11855,8 +12183,12 @@
     "url": "https://www.microsoft.com/en-us/security/blog/2025/05/27/new-russia-affiliated-actor-void-blizzard-targets-critical-sectors-for-espionage/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/c766091a4be705cc8d3fbbc362e955e3858984f9.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "void-blizzard"
+    ],
+    "actors_from_title": [
+      "void-blizzard"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12002,8 +12334,12 @@
     "url": "https://blog.talosintelligence.com/uat-6382-exploits-cityworks-vulnerability/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/6152483e59b406af1acbe7fab823da7da3b426e3.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "uat-6382"
+    ],
+    "actors_from_title": [
+      "uat-6382"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-0944",
@@ -12089,8 +12425,12 @@
     "url": "https://blog.sekoia.io/vicioustrap-infiltrate-control-lure-turning-edge-devices-into-honeypots-en-masse/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a4dc1d3aeb49ea619f5aa971eb6cb5461f5e8910.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "vicioustrap"
+    ],
+    "actors_from_title": [
+      "vicioustrap"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2023-20118"
@@ -12594,8 +12934,12 @@
     "url": "https://www.defense.gouv.fr/actualites/storm-1516-dessous-dune-operation-dinfluence-russe",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/02dbf35b325f6710792d5bd4945a54857af38828.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "storm-1516"
+    ],
+    "actors_from_title": [
+      "storm-1516"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12648,8 +12992,12 @@
     "url": "https://www.proofpoint.com/us/blog/threat-insight/ta406-pivots-front",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/02247521d3bc55b6eaf4e921f7fd5b75dc328187.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0094"
+    ],
+    "actors_from_title": [
+      "G0094"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -12666,8 +13014,12 @@
     "url": "https://www.trendmicro.com/en_us/research/25/e/earth-ammit.html",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/22b9507eb5bdf5edf59ddd5be0900a5619908126.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "tidrone"
+    ],
+    "actors_from_title": [
+      "tidrone"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13121,8 +13473,12 @@
     "url": "https://www.sgdsn.gouv.fr/publications/analyse-du-mode-operatoire-informationnel-russe-storm-1516",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/71c11e20f0be0689a60358d783109c0e9b4ef604.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "storm-1516"
+    ],
+    "actors_from_title": [
+      "storm-1516"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13162,8 +13518,12 @@
     "url": "https://hunt.io/blog/apt36-clickfix-campaign-indian-ministry-of-defence",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/30563a73c58fbb3046b695ddfe2197be912f81cf.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0134"
+    ],
+    "actors_from_title": [
+      "G0134"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13368,8 +13728,12 @@
     "url": "https://www.welivesecurity.com/en/eset-research/thewizards-apt-group-slaac-spoofing-adversary-in-the-middle-attacks/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5a7cea0a838c40b821978a2db79d18a732f0345c.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "thewizards"
+    ],
+    "actors_from_title": [
+      "thewizards"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -13574,9 +13938,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/7ef23fd4ec87acdbeba339a54da29e5648dc7948.pdf",
     "actors": [
-      "G1020"
+      "G1020",
+      "tag-124"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "tag-124"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -13790,8 +14157,12 @@
     "url": "https://www.trendmicro.com/en_us/research/25/d/earth-kurma-apt-campaign.html",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ec8f819146307c99d9a2abf00349ac9e4e30bba3.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "earth-kurma"
+    ],
+    "actors_from_title": [
+      "earth-kurma"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14403,8 +14774,12 @@
     "url": "https://blog.trailofbits.com/2025/04/17/mitigating-elusive-comet-zoom-remote-control-attacks/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/118c154c5e3d0ccfa0093055d8dcc54ff41bd9f7.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "elusive-comet"
+    ],
+    "actors_from_title": [
+      "elusive-comet"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -14441,8 +14816,12 @@
     "url": "https://securelist.com/mysterysnail-new-version/116226/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a93b36d97bb842373a1cfc5c7a3077636ba73d31.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "ironhusky"
+    ],
+    "actors_from_title": [
+      "ironhusky"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2021-40449"
@@ -14880,8 +15259,12 @@
     "url": "https://securelist.com/goffee-apt-new-attacks/116139/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b5909a0e0f4d20ff2b6ff59e1a098b7619a114ca.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "goffee"
+    ],
+    "actors_from_title": [
+      "goffee"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15301,9 +15684,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a522d2101053a161a47393d1eac37385ef77c9a4.pdf",
     "actors": [
+      "G0032",
       "G1052"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G0032"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -15375,8 +15761,12 @@
     "url": "https://socprime.com/blog/detect-uac-0219-attacks-against-ukrainian-state-bodies",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/0b5c0825a53d5adf56cf604114a2a0061b148062.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "uac-0219"
+    ],
+    "actors_from_title": [
+      "uac-0219"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15393,8 +15783,12 @@
     "url": "https://www.silentpush.com/blog/poisonseed/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/83249a05d1701c3293c5c1633fa466b8f9f4d668.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "poisonseed"
+    ],
+    "actors_from_title": [
+      "poisonseed"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15530,9 +15924,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e7a8afe336429efa2b249023bdeed038a84302c2.pdf",
     "actors": [
+      "G0119",
       "ransomhub"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G0119"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -15881,9 +16278,12 @@
       "G0129",
       "G0143",
       "earth-baxia",
+      "hollowquill",
       "tianwu"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "hollowquill"
+    ],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -15929,10 +16329,13 @@
       "G0102",
       "G0129",
       "G0143",
+      "earth-alux",
       "earth-baxia",
       "tianwu"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "earth-alux"
+    ],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -15990,9 +16393,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ee014dd867eed637d08c84509af57fe141d58c21.pdf",
     "actors": [
+      "G0032",
       "G1052"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G0032"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -16011,9 +16417,12 @@
     "archive_url": "https://archive.orkl.eu/48253f3e8272d2450377931f927e76cc9cea55db.pdf",
     "actors": [
       "G0034",
-      "larva-208"
+      "larva-208",
+      "water-gamayun"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "water-gamayun"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-26633"
@@ -16217,8 +16626,12 @@
     "url": "https://labs.k7computing.com/index.php/inside-kimsukys-latest-cyberattack-analyzing-malicious-scripts-and-payloads/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/0c64582643fe90dacdb8ed76a4724a523907621e.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0094"
+    ],
+    "actors_from_title": [
+      "G0094"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -16256,8 +16669,12 @@
     "url": "https://securelist.com/operation-forumtroll/115989/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3d93cbbcdf97ec223d5c791ed4c7f0fb0ee26f1e.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "operation-forumtroll"
+    ],
+    "actors_from_title": [
+      "operation-forumtroll"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2025-2783"
@@ -16473,9 +16890,12 @@
       "G0008",
       "G0045",
       "G0050",
-      "G0093"
+      "G0093",
+      "G1017"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G1017"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -16500,10 +16920,13 @@
       "G0131",
       "G1006",
       "dagger-panda",
+      "fishmedley",
       "webworm",
       "wet-panda"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "fishmedley"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -17231,12 +17654,15 @@
       "G0045",
       "G0064",
       "G0078",
+      "G0099",
       "G0134",
       "G0143",
       "G1006",
       "uac-0050"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G0099"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2024-43451"
@@ -17357,8 +17783,12 @@
     "url": "https://idanmalihi.com/dragonforce-ransomware-unveiling-its-tactics-and-impact/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e827bc10b2f874326b6262202cb248a3a2ee58ed.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "dragonforce"
+    ],
+    "actors_from_title": [
+      "dragonforce"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17375,8 +17805,12 @@
     "url": "https://cybershafarat.com/2025/03/10/dienet-and-shiite_harvest-claimed-responsibility-for-disabling-ten-significant-iraqi-websites/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/0a96d30f5a43b60ec17b6f63c112ecd36a4e5be7.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "dienet"
+    ],
+    "actors_from_title": [
+      "dienet"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -17393,8 +17827,12 @@
     "url": "https://socket.dev/blog/lazarus-strikes-npm-again-with-a-new-wave-of-malicious-packages",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/5a761631ccb4e063d1ef272238faf829f3d67180.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0032"
+    ],
+    "actors_from_title": [
+      "G0032"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -17558,9 +17996,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a471cf867c5d619585167646c146c7fd73f312b0.pdf",
     "actors": [
-      "G0034"
+      "G0034",
+      "larva-208"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "larva-208"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -17777,9 +18218,12 @@
       "G0040",
       "G0045",
       "G0064",
-      "G0078"
+      "G0078",
+      "G0094"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G0094"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -17999,8 +18443,12 @@
     "url": "https://unit42.paloaltonetworks.com/javaghost-cloud-phishing/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/12f59324adc5bd9c8ac41a3092db5f4a153f4c8c.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "javaghost"
+    ],
+    "actors_from_title": [
+      "javaghost"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -18144,8 +18592,12 @@
     "url": "https://asec.ahnlab.com/en/86535/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/1936e910e230f3531a0088bda6dd5b8cb768b9af.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0094"
+    ],
+    "actors_from_title": [
+      "G0094"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2019-0708"
@@ -18391,8 +18843,12 @@
     "url": "https://www.sentinelone.com/labs/ghostwriter-new-campaign-targets-ukrainian-government-and-belarusian-opposition/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/20e756348ab1001b08a049d046bfa64d572b6368.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "ghostwriter"
+    ],
+    "actors_from_title": [
+      "ghostwriter"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -18932,8 +19388,12 @@
     "url": "https://www.redhotcyber.com/en/post/linkc-ransomware-the-new-cybercriminal-group-targeting-artificial-intelligence-data/#google_vignette",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/cec5d8d5b9cd2ed53b40f1a250aaa668cdf5042f.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "linkc-pub"
+    ],
+    "actors_from_title": [
+      "linkc-pub"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19109,8 +19569,12 @@
     "url": "https://www.inversecos.com/2025/02/an-inside-look-at-nsa-equation-group.html",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/e57298055c00603d5e76069271d8721d61bbecfd.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0020"
+    ],
+    "actors_from_title": [
+      "G0020"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19165,8 +19629,12 @@
     "url": "https://www.microsoft.com/en-us/security/blog/2025/02/13/storm-2372-conducts-device-code-phishing-campaign/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/0a3c05618b9a3176a1923973b71b8770cb844281.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "storm-2372"
+    ],
+    "actors_from_title": [
+      "storm-2372"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19183,8 +19651,12 @@
     "url": "https://www.elastic.co/security-labs/fragile-web-ref7707",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/2f85c223c0a47f87a182fb85f751701bcdebbc8a.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "ref7707"
+    ],
+    "actors_from_title": [
+      "ref7707"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19317,8 +19789,12 @@
     "url": "https://www.recordedfuture.com/research/redmike-salt-typhoon-exploits-vulnerable-devices",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/b0aed098cb73b1580de661355d3863fed3fe2f99.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G1045"
+    ],
+    "actors_from_title": [
+      "G1045"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2023-20198",
@@ -19584,8 +20060,12 @@
     "url": "https://go.recordedfuture.com/hubfs/reports/cta-cn-2025-0213.pdf",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/d793c8e7b0c76a65352059bfa72605d048af8909.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G1045"
+    ],
+    "actors_from_title": [
+      "G1045"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2023-20198",
@@ -19687,8 +20167,12 @@
     "url": "https://securityonline.info/sandworm-apt-exploits-trojanized-kms-tools-to-target-ukrainian-users-in-cyber-espionage-campaign/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/ae416540f6bc8a09dae9656b297141580b9f515b.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0034"
+    ],
+    "actors_from_title": [
+      "G0034"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -19971,8 +20455,12 @@
     "url": "https://hunt.io/blog/greenspot-apt-targets-163com-fake-downloads-spoofing",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f55ecb9f75f3f5085a76148ceda9d96db5818c97.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "greenspot"
+    ],
+    "actors_from_title": [
+      "greenspot"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20195,10 +20683,13 @@
       "G0064",
       "G0078",
       "G1020",
+      "tag-124",
       "uac-0050",
       "vice-spider"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "tag-124"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -20252,13 +20743,16 @@
       "apt20",
       "apt21",
       "calypso",
+      "cl-sta-0048",
       "earth-baxia",
       "hurricane-panda",
       "slime29",
       "tianwu",
       "void-arachne"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "cl-sta-0048"
+    ],
     "actor_names_unresolved": [
       "Winnti Umbrella"
     ],
@@ -20328,9 +20822,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/fe8791279ae52236d3c9b8bc1361f02bf712c217.pdf",
     "actors": [
+      "G0032",
       "G1052"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G0032"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -20499,8 +20996,12 @@
     "url": "https://www.cloudsek.com/blog/pivoting-from-paytool-tracking-various-frauds-and-e-crime-targeting-canada",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/de20240a54e4a4d8dcc1a3d4c7e5102726269ada.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "paytool"
+    ],
+    "actors_from_title": [
+      "paytool"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20539,9 +21040,12 @@
     "archive_url": "https://archive.orkl.eu/2e7f21a7335ce963482ec9dbf8e2a39ad0dcf1c7.pdf",
     "actors": [
       "G1046",
+      "gold-rebellion",
       "mallard-spider"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "gold-rebellion"
+    ],
     "actor_names_unresolved": [],
     "cves": [
       "CVE-2017-0199",
@@ -20565,8 +21069,12 @@
     "url": "https://asec.ahnlab.com/en/85942/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/37d087169d2bd363bc461552f900cf1b1f854864.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0138"
+    ],
+    "actors_from_title": [
+      "G0138"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20657,8 +21165,12 @@
     "url": "https://cybershafarat.com/2025/01/22/darkgaboon-targets-russian-finserv/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/558f5a37d7ec0de7dcebe7e44ecf2143011d0424.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "darkgaboon"
+    ],
+    "actors_from_title": [
+      "darkgaboon"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -20675,8 +21187,12 @@
     "url": "https://www.welivesecurity.com/en/eset-research/plushdaemon-compromises-supply-chain-korean-vpn-service/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/f7375857d8f83da003dfb0c89c351886a8ff453d.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "plushdaemon"
+    ],
+    "actors_from_title": [
+      "plushdaemon"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [
@@ -20745,8 +21261,14 @@
     "url": "https://medium.com/@knownsec404team/love-and-hate-under-war-the-gamacopy-organization-which-imitates-the-russian-gamaredon-uses-560ba5e633fa?source=rss-f1efd6b74751------2",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/0bc0b74957b1994a572dfdfc00213a5f17b53ebc.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "G0047",
+      "gamacopy"
+    ],
+    "actors_from_title": [
+      "G0047",
+      "gamacopy"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -21009,9 +21531,12 @@
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/a2f93627151b2f4861d95ccc169e793a69bf5114.pdf",
     "actors": [
+      "G0032",
       "G1052"
     ],
-    "actors_from_title": [],
+    "actors_from_title": [
+      "G0032"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -21112,8 +21637,12 @@
     "url": "https://habr.com/ru/companies/f_a_c_c_t/news/873762/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/da55acbd5c41b91182fcfc928e21088699231e48.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "angry-likho"
+    ],
+    "actors_from_title": [
+      "angry-likho"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -21246,8 +21775,12 @@
     "url": "https://research.checkpoint.com/2025/funksec-alleged-top-ransomware-group-powered-by-ai/",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/3d21ee038a509724bab0bc79ccf51c7223d87e93.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "funksec"
+    ],
+    "actors_from_title": [
+      "funksec"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],
@@ -21472,8 +22005,12 @@
     "url": "https://www.ahnlab.com/en/contents/content-center/35891",
     "url_ok": null,
     "archive_url": "https://archive.orkl.eu/fd6ccd5997c47fda6e6994bc252cefca1c9c980e.pdf",
-    "actors": [],
-    "actors_from_title": [],
+    "actors": [
+      "operation-shadow-force"
+    ],
+    "actors_from_title": [
+      "operation-shadow-force"
+    ],
     "actor_names_unresolved": [],
     "cves": [],
     "techniques": [],

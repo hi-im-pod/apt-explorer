@@ -35,7 +35,56 @@
     }
   ],
   "techniques_documented": [],
-  "techniques_reported": [],
+  "techniques_reported": [
+    {
+      "id": "T1005",
+      "count": 1
+    },
+    {
+      "id": "T1027",
+      "count": 1
+    },
+    {
+      "id": "T1041",
+      "count": 1
+    },
+    {
+      "id": "T1059.001",
+      "count": 1
+    },
+    {
+      "id": "T1071.001",
+      "count": 1
+    },
+    {
+      "id": "T1082",
+      "count": 1
+    },
+    {
+      "id": "T1210",
+      "count": 1
+    },
+    {
+      "id": "T1213",
+      "count": 1
+    },
+    {
+      "id": "T1219",
+      "count": 1
+    },
+    {
+      "id": "T1555.003",
+      "count": 1
+    },
+    {
+      "id": "T1567.002",
+      "count": 1
+    },
+    {
+      "id": "T1608.004",
+      "count": 1
+    }
+  ],
   "cves": [
     {
       "cve": "CVE-2025-26633",
@@ -46,7 +95,7 @@
   "timeline": [
     {
       "quarter": "2025-Q1",
-      "count": 1
+      "count": 2
     },
     {
       "quarter": "2025-Q3",
@@ -55,7 +104,8 @@
   ],
   "reports": [
     "64dbadc11ad09f69cfda9acdaf942f414885245c",
-    "48253f3e8272d2450377931f927e76cc9cea55db"
+    "48253f3e8272d2450377931f927e76cc9cea55db",
+    "a471cf867c5d619585167646c146c7fd73f312b0"
   ],
   "conflicts": [],
   "evidence_count": 2

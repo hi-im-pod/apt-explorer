@@ -153,8 +153,17 @@
   "techniques_documented": [],
   "techniques_reported": [],
   "cves": [],
-  "timeline": [],
-  "reports": [],
+  "timeline": [
+    {
+      "quarter": "2016-Q3",
+      "count": 3
+    }
+  ],
+  "reports": [
+    "480bcdd3385ad90c8ee08cc53c15d1a5ae8b0424",
+    "9fe27fefac95ea4f1c6381b378eb71fdd3a59024",
+    "af5dd679089f08578dec583d29160f3e5b3e99f9"
+  ],
   "conflicts": [],
   "evidence_count": 2
 }

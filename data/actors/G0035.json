@@ -196,7 +196,17 @@
   ],
   "cves": [
     {
+      "cve": "CVE-2010-2883",
+      "kev": true,
+      "ransomware": false
+    },
+    {
       "cve": "CVE-2011-0611",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2011-3544",
       "kev": true,
       "ransomware": false
     },
@@ -206,12 +216,57 @@
       "ransomware": true
     },
     {
+      "cve": "CVE-2012-1889",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2012-3174",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2012-4681",
+      "kev": true,
+      "ransomware": true
+    },
+    {
       "cve": "CVE-2012-4792",
       "kev": true,
       "ransomware": false
     },
     {
+      "cve": "CVE-2012-5076",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2013-0422",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2013-0431",
+      "kev": true,
+      "ransomware": true
+    },
+    {
       "cve": "CVE-2013-1347",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2013-1488",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2013-1690",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2013-2423",
       "kev": true,
       "ransomware": false
     },
@@ -278,11 +333,15 @@
     },
     {
       "quarter": "2014-Q3",
-      "count": 1
+      "count": 3
     },
     {
       "quarter": "2014-Q4",
       "count": 1
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 2
     },
     {
       "quarter": "2017-Q3",
@@ -290,11 +349,15 @@
     },
     {
       "quarter": "2017-Q4",
-      "count": 3
+      "count": 4
     },
     {
       "quarter": "2018-Q2",
-      "count": 3
+      "count": 5
+    },
+    {
+      "quarter": "2018-Q4",
+      "count": 1
     },
     {
       "quarter": "2019-Q1",
@@ -302,14 +365,18 @@
     },
     {
       "quarter": "2019-Q3",
-      "count": 1
+      "count": 2
     },
     {
       "quarter": "2020-Q4",
-      "count": 1
+      "count": 4
     },
     {
       "quarter": "2021-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2021-Q4",
       "count": 1
     },
     {
@@ -326,12 +393,14 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 7
+      "count": 9
     }
   ],
   "reports": [
     "2067d2d81952779ccdc33d518f18a94dfeec42c2",
+    "453f773602a8eeaaf6a98597fd041c3d477a982e",
     "4a75f35efddfd81eef0b999a8c71456e4c07f6bb",
+    "4fbb639c2f6545c0e7d763c2784f126f888d191b",
     "56f04a8a7bd6c924ba03ad6b1e3da546a791d1f8",
     "5869df71429177668242a41b4e07130c227fff2d",
     "63da8f5b387b0442d383ddef78069685c0f93717",
@@ -343,19 +412,32 @@
     "4bd0778aea2c9268cd7ffba520223691878b2ef8",
     "7fa852e194f6a7edc5e0f6c9f11c83fc675ace68",
     "6a9fc02917bdf17fdcac63437535b93de39db703",
+    "81092128a0ebdb72fe2d1095d4d20fac87c1918f",
     "ee71c95db39979df6e22f91bd2689b838f97761f",
     "b143a751da2ad41cf33660a2551643834c7c97ed",
+    "fe7bb98f901334c108e5b15201f33f0f838104db",
+    "c208b888ba98c14b654d8017989cd3936aaa7cd6",
+    "2b82f47413c2974f39985b647c7db9c5dfea927d",
+    "d77522bf7f79e6cf75571016418af1ca44d36c21",
     "e4772882fe35af3650068b0665a2d12c24999e51",
     "694c995bd92d815da556578c273f4e4d542dac7e",
+    "ff45f1bbf9e967317f673c04bbd72a1ba9a839fb",
     "dbc9026e9f8f76b9cac91b86dd97780f81d8e9ae",
     "059fd3de304083e79ca083605aff7cf58d9b17cb",
     "1d065e765e8733b8edc7709ebb8339a890abb149",
+    "3a0864fedc8fb041ebb7836eccdae581b6359a17",
+    "70cd520c9b5860acb9e27cb19ad0b1270687d688",
     "8a146c79ec045eee3b72971c2285b63f28ec4407",
+    "172ff47fda6e10a99b8cef6032ca100192532f60",
     "3e8197de6b5d3ee28900addba58d37693ab48c35",
     "6d7205824e9b3f398aa2e42e87d9e6416f925cac",
     "29e1e27c9564c0a7b52481295a83b1b8482393dc",
     "c7d082f04cb0d613c04517d0d6dec2d76a866c6b",
+    "03e1643df625d4bfd2958bdc0f0600a3ee0705ed",
+    "ab820cad6a954c3d8e296aad0c04d392c6ab610d",
     "paper:ICS_Havex_backdoors",
+    "142d4447504e30012d98fea16831f2363c62c5ca",
+    "a53ce340535461cc92e274f7c5bfb0d8653d5087",
     "paper:EB-YetiJuly2014-Public",
     "paper:Dragonfly_Threat_Against_Western_Energy_Suppliers"
   ],

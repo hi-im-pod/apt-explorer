@@ -61,7 +61,72 @@
     "T1685",
     "T1686"
   ],
-  "techniques_reported": [],
+  "techniques_reported": [
+    {
+      "id": "T1018",
+      "count": 1
+    },
+    {
+      "id": "T1021.004",
+      "count": 1
+    },
+    {
+      "id": "T1027.013",
+      "count": 1
+    },
+    {
+      "id": "T1036.003",
+      "count": 1
+    },
+    {
+      "id": "T1036.005",
+      "count": 1
+    },
+    {
+      "id": "T1046",
+      "count": 1
+    },
+    {
+      "id": "T1049",
+      "count": 1
+    },
+    {
+      "id": "T1057",
+      "count": 1
+    },
+    {
+      "id": "T1059.001",
+      "count": 1
+    },
+    {
+      "id": "T1059.008",
+      "count": 1
+    },
+    {
+      "id": "T1068",
+      "count": 1
+    },
+    {
+      "id": "T1070.004",
+      "count": 1
+    },
+    {
+      "id": "T1078.003",
+      "count": 1
+    },
+    {
+      "id": "T1090.001",
+      "count": 1
+    },
+    {
+      "id": "T1570",
+      "count": 1
+    },
+    {
+      "id": "T1574.006",
+      "count": 1
+    }
+  ],
   "cves": [
     {
       "cve": "CVE-2024-20399",
@@ -72,15 +137,17 @@
   "timeline": [
     {
       "quarter": "2024-Q2",
-      "count": 1
+      "count": 2
     },
     {
       "quarter": "2026-Q2",
-      "count": 1
+      "count": 2
     }
   ],
   "reports": [
+    "3a145d688741497dc1618330863a7fc8519af976",
     "8cce2d674351f14e9873ecd3f6ca2210e6dd68e0",
+    "f7ece8e2fcdf3adeaa01c3c4ce3254dab3bbc13f",
     "cf51163a42693d321ec54fbde193a7c243a0b976"
   ],
   "conflicts": [],

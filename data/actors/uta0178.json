@@ -60,11 +60,35 @@
   "techniques_documented": [],
   "techniques_reported": [
     {
+      "id": "T1041",
+      "count": 4
+    },
+    {
       "id": "T1071.001",
+      "count": 4
+    },
+    {
+      "id": "T1190",
       "count": 3
     },
     {
-      "id": "T1041",
+      "id": "T1505.003",
+      "count": 3
+    },
+    {
+      "id": "T1021.004",
+      "count": 2
+    },
+    {
+      "id": "T1070.004",
+      "count": 2
+    },
+    {
+      "id": "T1071.004",
+      "count": 2
+    },
+    {
+      "id": "T1078",
       "count": 2
     },
     {
@@ -72,11 +96,27 @@
       "count": 2
     },
     {
-      "id": "T1505.003",
+      "id": "T1572",
       "count": 2
     },
     {
+      "id": "T1003",
+      "count": 1
+    },
+    {
       "id": "T1003.003",
+      "count": 1
+    },
+    {
+      "id": "T1005",
+      "count": 1
+    },
+    {
+      "id": "T1007",
+      "count": 1
+    },
+    {
+      "id": "T1020",
       "count": 1
     },
     {
@@ -84,7 +124,7 @@
       "count": 1
     },
     {
-      "id": "T1021.004",
+      "id": "T1027",
       "count": 1
     },
     {
@@ -96,23 +136,43 @@
       "count": 1
     },
     {
+      "id": "T1036.008",
+      "count": 1
+    },
+    {
       "id": "T1037",
       "count": 1
     },
     {
-      "id": "T1070.004",
+      "id": "T1039",
+      "count": 1
+    },
+    {
+      "id": "T1046",
+      "count": 1
+    },
+    {
+      "id": "T1055.002",
+      "count": 1
+    },
+    {
+      "id": "T1056.003",
+      "count": 1
+    },
+    {
+      "id": "T1057",
+      "count": 1
+    },
+    {
+      "id": "T1059",
+      "count": 1
+    },
+    {
+      "id": "T1069.002",
       "count": 1
     },
     {
       "id": "T1070.006",
-      "count": 1
-    },
-    {
-      "id": "T1071.004",
-      "count": 1
-    },
-    {
-      "id": "T1078",
       "count": 1
     },
     {
@@ -152,10 +212,6 @@
       "count": 1
     },
     {
-      "id": "T1190",
-      "count": 1
-    },
-    {
       "id": "T1213",
       "count": 1
     },
@@ -164,7 +220,15 @@
       "count": 1
     },
     {
+      "id": "T1518.001",
+      "count": 1
+    },
+    {
       "id": "T1530",
+      "count": 1
+    },
+    {
+      "id": "T1547",
       "count": 1
     },
     {
@@ -176,15 +240,23 @@
       "count": 1
     },
     {
+      "id": "T1552.001",
+      "count": 1
+    },
+    {
+      "id": "T1555",
+      "count": 1
+    },
+    {
+      "id": "T1556.002",
+      "count": 1
+    },
+    {
       "id": "T1560.001",
       "count": 1
     },
     {
       "id": "T1564.006",
-      "count": 1
-    },
-    {
-      "id": "T1572",
       "count": 1
     },
     {
@@ -237,6 +309,11 @@
       "ransomware": true
     },
     {
+      "cve": "CVE-2023-21887",
+      "kev": false,
+      "ransomware": null
+    },
+    {
       "cve": "CVE-2023-34048",
       "kev": true,
       "ransomware": false
@@ -265,6 +342,11 @@
       "cve": "CVE-2024-38812",
       "kev": true,
       "ransomware": false
+    },
+    {
+      "cve": "CVE-2025-22457",
+      "kev": true,
+      "ransomware": true
     },
     {
       "cve": "CVE-2025-41430",
@@ -462,9 +544,17 @@
     {
       "quarter": "2026-Q1",
       "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 4
     }
   ],
   "reports": [
+    "0655891aaac49b3f56b9cbbb49343a1e1dc938f9",
+    "fdaec515f3b87dca9740fb55f5dfb1de73671ea0",
+    "5e4265dd669616098452e14fdeca1693ef5ca863",
+    "f2fa42021428a4b5bd46b302d2c9a3e36b974301",
     "2847d66d5679ee28e006b3eb2a330eebdd20bdcb",
     "173af10e6832559c4e2d9cb6b7c5258a4d342369",
     "1eaaa225d4b6c5ff7bfcda6eb005e19623d271ef",

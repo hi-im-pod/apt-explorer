@@ -55,7 +55,108 @@
     }
   ],
   "techniques_documented": [],
-  "techniques_reported": [],
+  "techniques_reported": [
+    {
+      "id": "T1003",
+      "count": 1
+    },
+    {
+      "id": "T1020",
+      "count": 1
+    },
+    {
+      "id": "T1036",
+      "count": 1
+    },
+    {
+      "id": "T1040",
+      "count": 1
+    },
+    {
+      "id": "T1048",
+      "count": 1
+    },
+    {
+      "id": "T1053",
+      "count": 1
+    },
+    {
+      "id": "T1072",
+      "count": 1
+    },
+    {
+      "id": "T1078",
+      "count": 1
+    },
+    {
+      "id": "T1083",
+      "count": 1
+    },
+    {
+      "id": "T1098",
+      "count": 1
+    },
+    {
+      "id": "T1133",
+      "count": 1
+    },
+    {
+      "id": "T1212",
+      "count": 1
+    },
+    {
+      "id": "T1222",
+      "count": 1
+    },
+    {
+      "id": "T1482",
+      "count": 1
+    },
+    {
+      "id": "T1484",
+      "count": 1
+    },
+    {
+      "id": "T1486",
+      "count": 1
+    },
+    {
+      "id": "T1490",
+      "count": 1
+    },
+    {
+      "id": "T1528",
+      "count": 1
+    },
+    {
+      "id": "T1537",
+      "count": 1
+    },
+    {
+      "id": "T1555",
+      "count": 1
+    },
+    {
+      "id": "T1558",
+      "count": 1
+    },
+    {
+      "id": "T1586",
+      "count": 1
+    },
+    {
+      "id": "T1590",
+      "count": 1
+    },
+    {
+      "id": "T1592",
+      "count": 1
+    },
+    {
+      "id": "T1615",
+      "count": 1
+    }
+  ],
   "cves": [
     {
       "cve": "CVE-2016-0099",
@@ -325,7 +426,7 @@
     },
     {
       "quarter": "2022-Q1",
-      "count": 10
+      "count": 11
     },
     {
       "quarter": "2022-Q2",
@@ -345,7 +446,7 @@
     },
     {
       "quarter": "2023-Q2",
-      "count": 3
+      "count": 4
     },
     {
       "quarter": "2023-Q3",
@@ -382,9 +483,23 @@
     {
       "quarter": "2025-Q4",
       "count": 2
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 10
     }
   ],
   "reports": [
+    "03066a6b00d5e76c7ce11bca7a48557a79104b51",
+    "0b0631f7236fe1b181166fd3d6e2b90f3ecc632d",
+    "2b273a663877327c116b256bd92af5f2e853b427",
+    "35121a8bc81af727d629e4c4b071ddcf4f340b90",
+    "41fd5536e9c346b97ad8a18075e1d47fb52397d6",
+    "52d23f4a4569aabef7567c7a3fbba4265f5d080c",
+    "709785bd47268e1c63c794e8f6fc8b00105ec37d",
+    "83b8baca84640f43cec20e56be7926e32f8e6328",
+    "d083ae9412a7f2727825d3e1c0f8915d8d55aeaa",
+    "ed106fd7579c1bdddd10817c8cf779a4c91b064b",
     "766f3167d1b570fc5b0005e9268412836c330c51",
     "f38787c00c0da4deeeccbe57f37fbccc5ba42046",
     "c0b6b55f4177ff960648364581fcf125ad3a6cd4",
@@ -406,6 +521,7 @@
     "704436a5f8a23e3db290d023fccb90675e090955",
     "5a517ee054fb55d3c33f85e80cdd793a482389ca",
     "3141e9c74c5c86e8a290f65cc0cd897d797f0537",
+    "6ff62bfc13012bf5c78b7385487d40100544f217",
     "baf3b5161a5ecf87950144af8e9996437f940b1b",
     "c7537abb3de8b03040c12f781c62092851b273aa",
     "928eec9e4a9544b5135ba6a1d867e1f52e64d54b",
@@ -441,6 +557,7 @@
     "297af91a116a3dff40bd590bea729249beaf4cfc",
     "bcde816e9a9e0f0138fbee6b52fc2b83ba6198b7",
     "0b4264f483705c0e46a03d2f0cfa8ba5f1cf426e",
+    "34a7b5dce9cdb9aa8235f0d06846b2661c2f40a2",
     "523fb5166581a9eaf546153772abe03507916591",
     "919b7f01281b02ca2c200526a2936bae53fff786",
     "db62e5b6318018aa00b26e84624555cdb5cbc844",

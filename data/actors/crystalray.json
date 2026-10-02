@@ -20,9 +20,22 @@
   "malware": [],
   "techniques_documented": [],
   "techniques_reported": [],
-  "cves": [],
-  "timeline": [],
-  "reports": [],
+  "cves": [
+    {
+      "cve": "CVE-2022-44877",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2024-Q3",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "b1d46f20d7b5eb37bc038dc7e026b8b2c441b5ef"
+  ],
   "conflicts": [],
   "evidence_count": 1
 }

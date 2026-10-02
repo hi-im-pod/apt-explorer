@@ -63,8 +63,23 @@
   "techniques_documented": [],
   "techniques_reported": [],
   "cves": [],
-  "timeline": [],
-  "reports": [],
+  "timeline": [
+    {
+      "quarter": "2021-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 4
+    }
+  ],
+  "reports": [
+    "24bfc0bd84b749a02aad32efbb39b93961f81ef9",
+    "2ca5bfcec3b3bad0899f1867f723a30b5f953f08",
+    "3ea81da38f9681a56f7a66a0451c19f8345c05fd",
+    "d3ca78a24c642b9c6213c0b7cdb139f27e859037",
+    "090e260d5e758520cc90b0f5f177c349d384cba9"
+  ],
   "conflicts": [],
   "evidence_count": 2
 }

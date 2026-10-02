@@ -71,17 +71,17 @@ export const SOURCE_LABELS: Readonly<Record<SourceKey, SourceLabel>> = {
 	talos: {
 		name: 'Cisco Talos blog',
 		short: 'Talos',
-		role: 'Titles, dates and links for Talos research posts.'
+		role: 'Titles, dates and links for Talos research posts, and the names a post says are one actor.'
 	},
 	eset: {
 		name: 'ESET WeLiveSecurity blog',
 		short: 'ESET',
-		role: 'Titles, dates and links for ESET blog posts.'
+		role: 'Titles, dates and links for ESET blog posts, and the names a post says are one actor.'
 	},
 	microsoftblog: {
 		name: 'Microsoft Security blog',
 		short: 'MS Security',
-		role: 'Titles, dates and links for Microsoft Security blog posts.'
+		role: 'Titles, dates and links for Microsoft Security blog posts, and the names a post says are one actor.'
 	}
 };
 

@@ -359,9 +359,29 @@
   "malware": [],
   "techniques_documented": [],
   "techniques_reported": [],
-  "cves": [],
-  "timeline": [],
-  "reports": [],
+  "cves": [
+    {
+      "cve": "CVE-2012-0507",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2013-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "acb87ce03e22ded232cafbbb677afe5724362370",
+    "0c27ccc1c091068776e0048135e12664335410da",
+    "57a17587785f54a103ea970277bd7c4cc179a82c",
+    "89ed77f357900447e1b4062f82a3716a896cc55d"
+  ],
   "conflicts": [],
   "evidence_count": 9
 }

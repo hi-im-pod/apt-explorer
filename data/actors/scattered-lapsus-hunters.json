@@ -26,10 +26,113 @@
   },
   "malware": [],
   "techniques_documented": [],
-  "techniques_reported": [],
-  "cves": [],
-  "timeline": [],
-  "reports": [],
+  "techniques_reported": [
+    {
+      "id": "T1566.004",
+      "count": 2
+    },
+    {
+      "id": "T1003.003",
+      "count": 1
+    },
+    {
+      "id": "T1046",
+      "count": 1
+    },
+    {
+      "id": "T1078.002",
+      "count": 1
+    },
+    {
+      "id": "T1087",
+      "count": 1
+    },
+    {
+      "id": "T1114.003",
+      "count": 1
+    },
+    {
+      "id": "T1134",
+      "count": 1
+    },
+    {
+      "id": "T1190",
+      "count": 1
+    },
+    {
+      "id": "T1219",
+      "count": 1
+    },
+    {
+      "id": "T1486",
+      "count": 1
+    },
+    {
+      "id": "T1528",
+      "count": 1
+    },
+    {
+      "id": "T1552.005",
+      "count": 1
+    },
+    {
+      "id": "T1555.003",
+      "count": 1
+    },
+    {
+      "id": "T1567.002",
+      "count": 1
+    },
+    {
+      "id": "T1589.002",
+      "count": 1
+    },
+    {
+      "id": "T1593",
+      "count": 1
+    },
+    {
+      "id": "T1621",
+      "count": 1
+    },
+    {
+      "id": "T1650",
+      "count": 1
+    },
+    {
+      "id": "T1657",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2021-35464",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2025-61882",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2025-Q4",
+      "count": 4
+    },
+    {
+      "quarter": "2026-Q3",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "ac9694d06dcf68c33b8159ad5a2b39ae89740c33",
+    "0882a35561cf45bfc3aaa61bed233ad64eef8806",
+    "6a7fbb5bbccc65506bd2aa9751f68b1ad1dc8f0a",
+    "6ea59b62458520febeb62152f791c51227c19eb5",
+    "a90dd5fe9bc1d7b3990d2d5a888acdca60ca1d3d"
+  ],
   "conflicts": [],
   "evidence_count": 1
 }

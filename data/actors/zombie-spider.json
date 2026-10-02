@@ -36,9 +36,29 @@
   "malware": [],
   "techniques_documented": [],
   "techniques_reported": [],
-  "cves": [],
-  "timeline": [],
-  "reports": [],
+  "cves": [
+    {
+      "cve": "CVE-2021-22941",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2017-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2018-Q4",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "9228ae6e910d31d589dba9c5b69e37464366d3a3",
+    "e62786aff45ba93211980d281b071acf1e753fdb",
+    "20f847f16302a24b9cca6a90fce1d15d40154771",
+    "4db151fc6c4225a194eb413c8f5e2810a6c909c2"
+  ],
   "conflicts": [],
   "evidence_count": 2
 }

@@ -1091,7 +1091,7 @@
     },
     {
       "quarter": "2017-Q3",
-      "count": 2
+      "count": 4
     },
     {
       "quarter": "2017-Q4",
@@ -1103,7 +1103,7 @@
     },
     {
       "quarter": "2018-Q2",
-      "count": 3
+      "count": 6
     },
     {
       "quarter": "2018-Q3",
@@ -1123,11 +1123,11 @@
     },
     {
       "quarter": "2019-Q3",
-      "count": 8
+      "count": 9
     },
     {
       "quarter": "2019-Q4",
-      "count": 5
+      "count": 9
     },
     {
       "quarter": "2020-Q1",
@@ -1135,11 +1135,11 @@
     },
     {
       "quarter": "2020-Q2",
-      "count": 20
+      "count": 22
     },
     {
       "quarter": "2020-Q3",
-      "count": 9
+      "count": 10
     },
     {
       "quarter": "2020-Q4",
@@ -1187,7 +1187,7 @@
     },
     {
       "quarter": "2023-Q3",
-      "count": 5
+      "count": 6
     },
     {
       "quarter": "2023-Q4",
@@ -1231,7 +1231,7 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 7
+      "count": 10
     },
     {
       "quarter": "2026-Q3",
@@ -1245,9 +1245,12 @@
     "1914d07949e371f5649f869e11154120e5b36d33",
     "12ddded018fdbc6e44aa3f309673b51eac04fd42",
     "569f2e517010664cc011396549a81584c1724009",
+    "79b409ff89cac3c2a42c0cfc025bf4233ea870f1",
     "8aca84a099d3677ed953bbaec4343d41cc6724f1",
     "fc88f4052b7fc9bda472f445f6d022cc92880914",
+    "fd9610a78c34d9d27f4511be6b241a48f3d80c8f",
     "fe52dee64e719ea763f6e8b485eb690cd77c5290",
+    "ff2cb89a90d5ca4888d4162c02360608ffa37484",
     "388f8ac136cabd8b60e368cf95692d8d300a1a09",
     "efb1874613efb4270f22dcb824fe31db4bc0f4c2",
     "2671c81a0abcba09a92bbed1eedb58daf4159c80",
@@ -1307,6 +1310,7 @@
     "bc4aba6b0cc36c914ac83997cf606b3845da2de5",
     "2db4ea110469ef23b8f48ef14d3fa27dfa8a3c70",
     "e68ad84619f586d584bddc54d882b4cbeeff8026",
+    "c488938ea7b762e51b69155870f965bfd5dfab1d",
     "ecd7f6900f8dbbfcf62ca63e795c7d0f3e34c1f2",
     "c4b81ca18d218af107d691f307544036d4a1129b",
     "68874734dab2879e315c4966a5b624b698de6023",
@@ -1441,12 +1445,14 @@
     "7fa0d59cbc905439b45b74e60cdbbc4a47911590",
     "18d9bae2981f45046835347429f8a07088dd7887",
     "dd0a1e1b0314fa785ca2087c6e0cf11641b7842e",
+    "fc36e63eb93b6144c1e552da5bc971659992b1cc",
     "134b2837b1707c360e954b20c282612c868ee589",
     "32b93358605116386f5d03bfb85d4dede4f88f8b",
     "8523f13281f31e2c6b8a51b7f56268100a533c69",
     "ab1df7a863ab2afef82e1e0862fe0b89e1f7cd97",
     "ac19774ed6c058539688022bec12b0a20c2780c1",
     "89f7fb7b421848e7da6961809778cbdb65fd8a58",
+    "451fb6f8eebabe10244732a506a36d3c538c6fb9",
     "5aa3c1e9c8647fa4e3b9df306a6c98a86bbf47a7",
     "paper:%23ThreatThursday%20-%20APT33",
     "0f0e69c44de1efcd93891f15686a37532b493c73",
@@ -1455,6 +1461,7 @@
     "09880d9d16b8c3259eb26f8500bda62d4d536746",
     "1a0adbc6007772407524862a3cbb6940baa2aa16",
     "37bdd4d6b8f3440a0346c3def3d9bcd8e3dc74bd",
+    "a613cc8be22ae762c78be9c4d2940f200dc18f0e",
     "paper:ThreatConnect%20Research%20Roundup%20Possible%20APT33%20Infrastructure",
     "ee489051339c5335907d0a3fc5f543146f987509",
     "00dfe361fd126b0fe55052ce2471be468f910333",
@@ -1476,9 +1483,13 @@
     "1ccd9bed77a597e46da58c0c6c8bd2daba7f633c",
     "16465a466d5cd7a015e7132e3ca7f57f8ea059f2",
     "5af7b3313dafaf307421e6de17add21c894cb59c",
+    "8e451f6ced373bd4baac2b49100ce126dba0c96a",
+    "ba2bec9c9b7f15f39f3ad147d1a86cb39c28fd95",
+    "2a3216919a06478a3b127ce59182ec9c46fa534f",
     "paper:PoshC2%20(specifically%20as%20used%20by%20APT33)",
     "b14ef9e1273ebad88eb0ed1e744d577a95a220d6",
     "paper:REWTERZ%20THREAT%20ALERT%20-%20IRANIAN%20APT%20USES%20JOB%20SCAMS%20TO%20LURE%20TARGETS",
+    "fe8df78646bee14a74f2f88f76bdda52a611f8b6",
     "c928da21de2c44c41f4ec52f07867cbd28564586",
     "c8213a40e71e8447106d010c417e6ca62ab4032c",
     "09e383b509c553ec6a6f664345bb85d4d3ba51ca",
@@ -1486,6 +1497,7 @@
     "4fed8ba3f26469443a731b3df535e9d3425625dd",
     "485364e4a9e693f2f77fae32baff8cde0d2854e9",
     "3caa5f517805597225acde7d525f8018bdb3b1a2",
+    "a75b65c33652c889c1de6a9c96832ea0a5789ca6",
     "c6dbfb6ed8117fbff14d6193e728380d97958f4d",
     "366a9e4a628c45618f0766d75351b31da7c0180e",
     "de735ed34de84f6101fb2a90f36d69f0fd90ba6e",
@@ -1505,14 +1517,19 @@
     "8d2dfecda96a023dc8204c6347fcaa176cdedf9c",
     "f7aa6ab1c5f0c699e10b98535e53aa364a360a0e",
     "05be21807dcb0d03b9f6ebab924d51f852c1ab95",
+    "94246e717b16be52cc510d1c1defb06c90fc9f67",
     "4b7cd07ad68ff8bde356ee84ea22b0e918899684",
     "3c51fec0e28825a56586d1e67042537980f59219",
+    "7438f34aa5769a574b0bb8607daade87245f6bf3",
+    "3893d8fe2940bb18b0d401d35d8babfb04ffa408",
     "25221e2891e8ccb3477fc6dac5c610eda1e9259c",
     "e20d4a86631d905166dcf39d903bcc1e4920b58b",
     "23c9e5a2d6944095ff966c4a3ebab8d480228585",
     "ef95281fe837e37b7614b192f2d084f9824ce4f0",
+    "d1323c088c32daf55157cbc98653bbbbb6e082e7",
     "1c8fcda6344f74a8b148f92ba86838bb0d12e221",
     "a39f0d00e020ea4eb9e104a3aeed959c01bf8306",
+    "e94e1a0570ccfc60e25ac501c8264ca3b0af0b19",
     "66cf09da9784ced60820933ed72dbeda210f8d54",
     "62318114dc658c48a61870c4062fd75a860f4f62",
     "3d0a73d4f1d46b52a86cac5bbc42561f2e89eb32",

@@ -40,8 +40,25 @@
   "techniques_documented": [],
   "techniques_reported": [],
   "cves": [],
-  "timeline": [],
-  "reports": [],
+  "timeline": [
+    {
+      "quarter": "2024-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2025-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q3",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "3aa765dbf41e64092ba662cecc2f46bbb4c50b38",
+    "15879bafe597979ff8fb78bba47d075c48f23381",
+    "2d8a568a2cb330a93f07c54b7fbc5871221e83fb"
+  ],
   "conflicts": [],
   "evidence_count": 2
 }

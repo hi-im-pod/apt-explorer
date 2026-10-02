@@ -208,11 +208,11 @@
   ],
   "techniques_reported": [
     {
-      "id": "T1012",
-      "count": 2
+      "id": "T1059.001",
+      "count": 3
     },
     {
-      "id": "T1059.001",
+      "id": "T1012",
       "count": 2
     },
     {
@@ -262,6 +262,22 @@
     {
       "id": "T1584.004",
       "count": 2
+    },
+    {
+      "id": "T1055.012",
+      "count": 1
+    },
+    {
+      "id": "T1204.002",
+      "count": 1
+    },
+    {
+      "id": "T1547.001",
+      "count": 1
+    },
+    {
+      "id": "T1566",
+      "count": 1
     }
   ],
   "cves": [
@@ -368,6 +384,10 @@
   ],
   "timeline": [
     {
+      "quarter": "2019-Q1",
+      "count": 1
+    },
+    {
       "quarter": "2019-Q2",
       "count": 1
     },
@@ -377,7 +397,7 @@
     },
     {
       "quarter": "2020-Q1",
-      "count": 4
+      "count": 5
     },
     {
       "quarter": "2020-Q4",
@@ -393,7 +413,7 @@
     },
     {
       "quarter": "2021-Q3",
-      "count": 3
+      "count": 7
     },
     {
       "quarter": "2021-Q4",
@@ -405,7 +425,7 @@
     },
     {
       "quarter": "2022-Q2",
-      "count": 2
+      "count": 3
     },
     {
       "quarter": "2022-Q4",
@@ -413,11 +433,19 @@
     },
     {
       "quarter": "2023-Q1",
-      "count": 3
+      "count": 5
+    },
+    {
+      "quarter": "2023-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q3",
+      "count": 1
     },
     {
       "quarter": "2025-Q1",
-      "count": 1
+      "count": 2
     },
     {
       "quarter": "2025-Q3",
@@ -429,27 +457,41 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 3
+      "count": 7
     }
   ],
   "reports": [
     "44d0012ed7e23b8adb4e2ffa363b8277b1c05414",
+    "595664701f4cf78f3a37fc1d41aaf41d8d0f7759",
     "560b0c22ba82252a8e1d75ed12936f7522ba8e37",
+    "8bd6cdfa8881cffed1fc6a47e5209c9b0848f4ab",
+    "bc1137ca21f3e152cb17a50db37392918313cb6a",
     "c1030d1d6faff27debe60ba517e4fa2ff1205304",
+    "e74df3dc3ba26f75f5d446defc5ca79e3230f1c4",
     "48b25595644b5faa2f836bfae0ba8f53854eb844",
     "ba28e9414078c889952e5f33706d74ff2e7184f9",
     "ddfb075f6b359d1ee826fda08c1afd1b8bce8d4f",
+    "0df1518059b88e4fa815acd97325f2d03319cac8",
     "6443e6d70d7f834d28ebd54745fadb7ba6a297b8",
+    "67a7e63baf71300341926bcebb9745fa9d716cc1",
+    "5e1d8f90ff100844c70bc6c663ffe26771881cd7",
     "994eb3ba7123e757a12ef19cd953409e74b15f8a",
+    "007e0129347fec461e4591b03298dcd7ceec468e",
     "669282e93ad3ee2f09ca00538a9e9f9d474dcb9b",
     "3a904da819b8adb107998f6408249cf29ce950cb",
+    "b84df3f110b07ff5fc57cff1f79e5b4df1cd0c87",
     "53018c3a9f322d09d671c055d98114529192cd55",
+    "015c5fb594cad6ba83f2c1691aad72c1946a658a",
     "99e54e66074025c4dea47b6712ab2d5763d0f66f",
     "d54753e8b515e67dbdf189ba014b71ebc9849c47",
     "paper:Infographic%20APTs%20in%20South%20America",
     "434bfe8feea363bbccfa107c9d24e6a5a5a756f2",
+    "2e715005ca1bc480ffaf2a75a4bfc1651c3fb015",
     "2db1b4e539d976c33c386626df178737c7d40adb",
+    "03bc7507f355b09c52a886ea2870316695525e22",
     "28d4c998f5da43f7fe9d35f6388b8a5369d8390f",
+    "2c8bd3dcb92bb13b4fa4cf53cf08f4688ed326b9",
+    "85df5f9b0f2f65f78fb75d817e66cfa96a886e21",
     "bcecea6cd429761694a5866c86664e167a247da8",
     "68886576280e56f78d2df6457ef73c3650064c7b",
     "fd3346482845f4f83f74b8443cd8f1b639e310a1",
@@ -457,9 +499,11 @@
     "d6b452fe46682f1bd964eb8cae720076bf30c592",
     "86441ca8925bf1fdd2e9cf23babe553c9b363a2e",
     "1f097e1b50bb5227f9b0ed011a710921de81288a",
+    "755569c59a99f1de2550462435799f25e8c42d34",
     "9a3463eb36070962f90fbc723b37dbb15eed0331",
     "4f13d213b76574f359cc6f4e63f1360ff84958f9",
-    "6b6ee89a082f34b86b232978f48589b8adc06d62"
+    "6b6ee89a082f34b86b232978f48589b8adc06d62",
+    "e92cedebb135ec0a3c3eb63be47e1b1ac7684868"
   ],
   "conflicts": [],
   "evidence_count": 8

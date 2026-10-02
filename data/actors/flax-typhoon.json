@@ -139,6 +139,11 @@
   "techniques_reported": [],
   "cves": [
     {
+      "cve": "CVE-2016-5195",
+      "kev": true,
+      "ransomware": false
+    },
+    {
       "cve": "CVE-2024-21887",
       "kev": true,
       "ransomware": true
@@ -146,14 +151,30 @@
   ],
   "timeline": [
     {
+      "quarter": "2023-Q3",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q2",
+      "count": 2
+    },
+    {
       "quarter": "2024-Q3",
       "count": 3
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
     }
   ],
   "reports": [
+    "afe5f7586724e910d78e496524789a9a9bd47398",
     "647f96407652f95296a7a4ccd10ca9e06d205953",
     "ac3a9fd8bb0161bfaef2e5999feba9235c984899",
-    "ee9ef33464b87e53e9f8406fc537f089694f8656"
+    "ee9ef33464b87e53e9f8406fc537f089694f8656",
+    "33526bc385294f1ad7de8971b4a9505b2a2f2fa0",
+    "a2d3ef91cb6d483217f3b92a70f657caa28ecf28",
+    "f4bbeb07fbee225d3e8281e9cf41f592cf708def"
   ],
   "conflicts": [],
   "evidence_count": 10

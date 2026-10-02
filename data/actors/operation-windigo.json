@@ -30,8 +30,22 @@
   "techniques_documented": [],
   "techniques_reported": [],
   "cves": [],
-  "timeline": [],
-  "reports": [],
+  "timeline": [
+    {
+      "quarter": "2014-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2014-Q4",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "1a62a822de00eba4e3feb79d471e2e74267b953c",
+    "832ad655efdd4d98120e3f8af1be608933474359",
+    "18d4dd5f95289e67238fff8aa36f8fa02e553fb0",
+    "be650b427bd84290c506052adcb6626ae682688a"
+  ],
   "conflicts": [],
   "evidence_count": 0
 }

@@ -187,15 +187,111 @@
   "techniques_documented": [],
   "techniques_reported": [
     {
+      "id": "T1071.001",
+      "count": 4
+    },
+    {
+      "id": "T1113",
+      "count": 3
+    },
+    {
+      "id": "T1546.015",
+      "count": 3
+    },
+    {
+      "id": "T1555.003",
+      "count": 3
+    },
+    {
       "id": "T1560",
+      "count": 3
+    },
+    {
+      "id": "T1005",
+      "count": 2
+    },
+    {
+      "id": "T1021",
+      "count": 2
+    },
+    {
+      "id": "T1041",
+      "count": 2
+    },
+    {
+      "id": "T1053.005",
+      "count": 2
+    },
+    {
+      "id": "T1087",
+      "count": 2
+    },
+    {
+      "id": "T1114.001",
+      "count": 2
+    },
+    {
+      "id": "T1185",
+      "count": 2
+    },
+    {
+      "id": "T1189",
+      "count": 2
+    },
+    {
+      "id": "T1480",
+      "count": 2
+    },
+    {
+      "id": "T1518",
+      "count": 2
+    },
+    {
+      "id": "T1547.001",
+      "count": 2
+    },
+    {
+      "id": "T1552.001",
+      "count": 2
+    },
+    {
+      "id": "T1573.002",
+      "count": 2
+    },
+    {
+      "id": "T1583",
+      "count": 2
+    },
+    {
+      "id": "T1587.001",
+      "count": 2
+    },
+    {
+      "id": "T1587.004",
+      "count": 2
+    },
+    {
+      "id": "T1588.005",
+      "count": 2
+    },
+    {
+      "id": "T1588.006",
+      "count": 2
+    },
+    {
+      "id": "T1608",
+      "count": 2
+    },
+    {
+      "id": "T1614",
+      "count": 2
+    },
+    {
+      "id": "T1657",
       "count": 2
     },
     {
       "id": "T1003",
-      "count": 1
-    },
-    {
-      "id": "T1005",
       "count": 1
     },
     {
@@ -207,11 +303,19 @@
       "count": 1
     },
     {
-      "id": "T1021",
+      "id": "T1027.001",
+      "count": 1
+    },
+    {
+      "id": "T1027.002",
       "count": 1
     },
     {
       "id": "T1027.007",
+      "count": 1
+    },
+    {
+      "id": "T1027.011",
       "count": 1
     },
     {
@@ -223,15 +327,15 @@
       "count": 1
     },
     {
-      "id": "T1041",
+      "id": "T1059.007",
+      "count": 1
+    },
+    {
+      "id": "T1068",
       "count": 1
     },
     {
       "id": "T1069",
-      "count": 1
-    },
-    {
-      "id": "T1071.001",
       "count": 1
     },
     {
@@ -243,15 +347,7 @@
       "count": 1
     },
     {
-      "id": "T1087",
-      "count": 1
-    },
-    {
-      "id": "T1113",
-      "count": 1
-    },
-    {
-      "id": "T1114.001",
+      "id": "T1112",
       "count": 1
     },
     {
@@ -259,15 +355,11 @@
       "count": 1
     },
     {
-      "id": "T1185",
-      "count": 1
-    },
-    {
       "id": "T1204.002",
       "count": 1
     },
     {
-      "id": "T1480",
+      "id": "T1219",
       "count": 1
     },
     {
@@ -279,23 +371,11 @@
       "count": 1
     },
     {
-      "id": "T1518",
+      "id": "T1553.002",
       "count": 1
     },
     {
-      "id": "T1546.015",
-      "count": 1
-    },
-    {
-      "id": "T1547.001",
-      "count": 1
-    },
-    {
-      "id": "T1552.001",
-      "count": 1
-    },
-    {
-      "id": "T1555.003",
+      "id": "T1565",
       "count": 1
     },
     {
@@ -303,47 +383,50 @@
       "count": 1
     },
     {
+      "id": "T1566.002",
+      "count": 1
+    },
+    {
+      "id": "T1571",
+      "count": 1
+    },
+    {
       "id": "T1572",
       "count": 1
     },
     {
-      "id": "T1573.002",
+      "id": "T1574.001",
       "count": 1
     },
     {
-      "id": "T1583",
+      "id": "T1583.008",
       "count": 1
     },
     {
-      "id": "T1587.001",
+      "id": "T1588.003",
       "count": 1
     },
     {
-      "id": "T1587.004",
-      "count": 1
-    },
-    {
-      "id": "T1588.005",
-      "count": 1
-    },
-    {
-      "id": "T1588.006",
-      "count": 1
-    },
-    {
-      "id": "T1608",
-      "count": 1
-    },
-    {
-      "id": "T1614",
-      "count": 1
-    },
-    {
-      "id": "T1657",
+      "id": "T1622",
       "count": 1
     }
   ],
   "cves": [
+    {
+      "cve": "CVE-2018-6065",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-1472",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2022-24521",
+      "kev": true,
+      "ransomware": true
+    },
     {
       "cve": "CVE-2023-36884",
       "kev": true,
@@ -373,10 +456,34 @@
   "timeline": [
     {
       "quarter": "2022-Q1",
+      "count": 3
+    },
+    {
+      "quarter": "2022-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q4",
+      "count": 3
+    },
+    {
+      "quarter": "2023-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2023-Q3",
       "count": 1
     },
     {
       "quarter": "2023-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q3",
       "count": 1
     },
     {
@@ -389,15 +496,41 @@
     },
     {
       "quarter": "2025-Q3",
-      "count": 1
+      "count": 2
+    },
+    {
+      "quarter": "2025-Q4",
+      "count": 2
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 3
     }
   ],
   "reports": [
+    "16925d5f2485b87f407352792b3551f14acab19b",
+    "18f0b50c0651fbcca086d2a1154c5e0af48d9ca5",
+    "c1c7ef970ad7ca554dff52032de9da5e427ee4e7",
+    "5b4b5c1a287061d4f811c12fa91e34b0cd1009b5",
+    "756478188a674ba930328c7c03f8ddf420bdc321",
+    "1005335d2b1f6beb11591d6d0d1ab9eaa0921a3c",
     "7a1ea30380521aeac4a7fee1a19be78e5e75875a",
     "cca22a54236837206616d5d0a6f25388b23c25bd",
     "a398676fe283fb830f072ac459612abd9191c35b",
+    "353219416037a7d696f24672037c80518463ac24",
     "dcee2773b27c942311cd132eaa8b0c7151ff1042",
-    "5c61980e67a35be135305a23a49801e89fa14780"
+    "00e9f84b155ca36b956f8afb9f01b637ce890885",
+    "17bdc60e1fa40052b03ec7410e00b1d1bfbee9d4",
+    "d63686c40eaa5b36fbf41d02e63678f3159f4d10",
+    "10a00e1e75a3b5102f14ef9e89c4e6bee85d2d6e",
+    "d6178c8c86d3dac48ddf678e2abf3d3235d91bad",
+    "94a10e563eb909f1f30b9d63c5321763112d76df",
+    "3cb1d7711e359fd5fd81b6ac187c03dc7bf0dde0",
+    "e6f76326307511f14dd12cd4e709a376bf191b6e",
+    "97d56a7fe645bf9914b5547b5efa6f3ef3234ac0",
+    "5c61980e67a35be135305a23a49801e89fa14780",
+    "60a41f8b7fb11640cf59fc3b94a1b82709c0d766",
+    "cfd830cabe2d70bf833d4901551feb2e08979f56"
   ],
   "conflicts": [],
   "evidence_count": 16

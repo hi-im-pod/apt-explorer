@@ -34,9 +34,80 @@
   "malware": [],
   "techniques_documented": [],
   "techniques_reported": [],
-  "cves": [],
-  "timeline": [],
-  "reports": [],
+  "cves": [
+    {
+      "cve": "CVE-2016-0545",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2017-7504",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2019-19781",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-1472",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-14750",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2020-14882",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2021-22205",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-22941",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-26084",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-44228",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2021-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2023-Q1",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "4ccfa7f390952235e6b2597e67fd40f4fcf36c72",
+    "6ae8c2791bb604905b3eff540f5efb126d2a455a",
+    "02b130b39932f65685cc11073f77d902f9a79228",
+    "7c50cf1ca0b5c172eb3762ecc09631891b807544",
+    "139cc895f32d47164b1b03cbe333ca16171532e0",
+    "c7504368013945d2c874b29857a4c274719dddcd"
+  ],
   "conflicts": [],
   "evidence_count": 3
 }

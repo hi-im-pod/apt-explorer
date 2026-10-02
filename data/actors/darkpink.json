@@ -97,16 +97,79 @@
   },
   "malware": [],
   "techniques_documented": [],
-  "techniques_reported": [],
+  "techniques_reported": [
+    {
+      "id": "T1027.006",
+      "count": 1
+    },
+    {
+      "id": "T1036.007",
+      "count": 1
+    },
+    {
+      "id": "T1059.001",
+      "count": 1
+    },
+    {
+      "id": "T1102.002",
+      "count": 1
+    },
+    {
+      "id": "T1127.001",
+      "count": 1
+    },
+    {
+      "id": "T1140",
+      "count": 1
+    },
+    {
+      "id": "T1204",
+      "count": 1
+    },
+    {
+      "id": "T1547",
+      "count": 1
+    },
+    {
+      "id": "T1547.004",
+      "count": 1
+    },
+    {
+      "id": "T1555.003",
+      "count": 1
+    },
+    {
+      "id": "T1566.001",
+      "count": 1
+    }
+  ],
   "cves": [],
   "timeline": [
     {
       "quarter": "2023-Q1",
+      "count": 4
+    },
+    {
+      "quarter": "2023-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q1",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
       "count": 1
     }
   ],
   "reports": [
-    "e5c9ee752a09cc290bd5bd6c40b9c14241586ff7"
+    "12669999d61a6f37c95c79ffe7c041e87480c03d",
+    "4d3fa4294df4b901a26c2f9bdbcae7c3be9f244a",
+    "06a5539bcd70e3a9fafa4e2dfd13b2df57305d4d",
+    "90691651551071549e1e83391c1f6a560edddceb",
+    "bbd0cc80aab5bc184ffea6f01d3e8393213b7e20",
+    "e5c9ee752a09cc290bd5bd6c40b9c14241586ff7",
+    "ecc44c1803892dc2a4d04590c41c1245fff5e536"
   ],
   "conflicts": [],
   "evidence_count": 4

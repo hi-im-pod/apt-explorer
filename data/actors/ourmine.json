@@ -70,8 +70,28 @@
   "techniques_documented": [],
   "techniques_reported": [],
   "cves": [],
-  "timeline": [],
-  "reports": [],
+  "timeline": [
+    {
+      "quarter": "2017-Q1",
+      "count": 2
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "128a5a48ead4e2a2a0c9ccaae3eba6a085d7fa4d",
+    "c05c4e70d112897eb22a84894010fb1ae6c2665a",
+    "5e77f7e3acbd7f88fc6376686a4b586f8b04dc49",
+    "c598373749c702e7123437a9724577da4f328838",
+    "92c48c045c0c9b0ab41e76e9bcde6d9c1b968eb4",
+    "d2348130c0a081b4ccccd5235269519941cd15af"
+  ],
   "conflicts": [],
   "evidence_count": 2
 }

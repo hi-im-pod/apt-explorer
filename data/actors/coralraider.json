@@ -124,6 +124,10 @@
   "cves": [],
   "timeline": [
     {
+      "quarter": "2024-Q2",
+      "count": 1
+    },
+    {
       "quarter": "2024-Q4",
       "count": 1
     },
@@ -134,14 +138,20 @@
     {
       "quarter": "2026-Q1",
       "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
     }
   ],
   "reports": [
+    "9edceade033b74d51fe0b0e662da1d8611089096",
     "fa3401b142064266fb1df4e1d00ce170ecf76a3f",
     "b18b0874f0eacfd76bea2929b07851cef72fa705",
     "8c54fbe83589f4eee3a9eb635b3b0f1c12e56353",
     "f52328658aaa2ae927a9d84a47ebdae3ebe9591b",
-    "64e16f591b24f7e10e085aa69fa0ef345daf2e37"
+    "64e16f591b24f7e10e085aa69fa0ef345daf2e37",
+    "6df8b2e94ad02106b09c89465f6fb0f8f535b247"
   ],
   "conflicts": [],
   "evidence_count": 2

@@ -27,9 +27,23 @@
   "malware": [],
   "techniques_documented": [],
   "techniques_reported": [],
-  "cves": [],
-  "timeline": [],
-  "reports": [],
+  "cves": [
+    {
+      "cve": "CVE-2017-5487",
+      "kev": false,
+      "ransomware": null
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2023-Q3",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "a4cdfb3fbe272b50626878eb03906e6b6e4dbd73",
+    "8110bdf25195cb7f2e0f7f651ef0ea6444c24ef1"
+  ],
   "conflicts": [],
   "evidence_count": 2
 }

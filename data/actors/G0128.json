@@ -640,6 +640,11 @@
       "ransomware": false
     },
     {
+      "cve": "CVE-2017-0038",
+      "kev": false,
+      "ransomware": null
+    },
+    {
       "cve": "CVE-2017-0199",
       "kev": true,
       "ransomware": true
@@ -1033,7 +1038,7 @@
     },
     {
       "quarter": "2020-Q2",
-      "count": 5
+      "count": 6
     },
     {
       "quarter": "2020-Q3",
@@ -1041,23 +1046,23 @@
     },
     {
       "quarter": "2020-Q4",
-      "count": 7
+      "count": 8
     },
     {
       "quarter": "2021-Q1",
-      "count": 11
+      "count": 14
     },
     {
       "quarter": "2021-Q2",
-      "count": 4
-    },
-    {
-      "quarter": "2021-Q3",
       "count": 6
     },
     {
+      "quarter": "2021-Q3",
+      "count": 8
+    },
+    {
       "quarter": "2021-Q4",
-      "count": 4
+      "count": 6
     },
     {
       "quarter": "2022-Q1",
@@ -1069,7 +1074,7 @@
     },
     {
       "quarter": "2022-Q3",
-      "count": 8
+      "count": 9
     },
     {
       "quarter": "2022-Q4",
@@ -1105,7 +1110,7 @@
     },
     {
       "quarter": "2024-Q4",
-      "count": 1
+      "count": 2
     },
     {
       "quarter": "2025-Q1",
@@ -1125,15 +1130,19 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 5
+      "count": 9
     }
   ],
   "reports": [
+    "372f2b2afaec02f4b8eb5c0841a4457f711ab4e3",
     "5caa3af9facac2e25b868e6afb482d156eacad78",
     "827d84c8046d4315615f2ddcde516ca5deaae7f5",
+    "bf7cbbfa87400f63d0832d317f90596a3fc1ae31",
     "d975b8d1e008be23684b727df57bc61c2c36853b",
     "db0c34fc010514830667727cff3549183fa4c4ad",
+    "e7d8900175b2242db25ed76688908a1ada7aad59",
     "eb6e11ffef59ee30e7066039fd7bc435b1e03ca6",
+    "f9dae9fb231a7756ff86f9f57ed587000239f07b",
     "fa350b6bf21be8af393d235d0a815caae5f5802d",
     "760e14c40a2f98f490e90f5dc8564faed8876f60",
     "b37836d031ce99e6f0a41bafb30ba9a6badeb8a6",
@@ -1146,6 +1155,7 @@
     "04d462641c3db5730e12904d07829ec064027122",
     "27435162fcdf840cacfaff2315cc9752341132de",
     "4d9fd22f28ca3def3da224d97d4bd1409de3208c",
+    "69da93358b078f82fdd678f6f9dbcefdf31d3347",
     "14ccf501b56705b6b411ae35b3ed5cc4f10f98f2",
     "29646bd71e8daa952efa40cfb3836392f68d7a4b",
     "aed0ac6f04dadb7af3e3186d6a8173a3bd372ec1",
@@ -1193,6 +1203,7 @@
     "ebebc6910795eff746182e7b9f1070896f3c14c6",
     "12ace14e9dfca1adafff6eda46eb2b0d449f6114",
     "9db285382e591a59b15c507062e3c59ff08c3e2e",
+    "b2b0c0723741edd8fadabdf9577e30cf81cf1e0e",
     "c23f5a16e0c9d8e1cc24ba947efd40fc29a2009b",
     "18c269d1eaa29438861255b754cdf766df09110a",
     "4fe59cae0c926223d1a78696ba3e5dc1781277b1",
@@ -1216,26 +1227,35 @@
     "f26af09a17755077943af2874a229d5226fef82a",
     "a10fdbb00164a28f7e97989a6ad86edb5f89751d",
     "5f9c7afb1a194085da42eea82c7560f2a6033de5",
+    "d7265b257b9898ebcb178ceb0553245a93679a1d",
     "79d3f827458e1a269c0ce006fda644028779533d",
     "81fb34c3572f674828bfd37782c86f6841830ae9",
+    "ed539342decbac5303eee1a54547ea4e5024709a",
     "ccdbcbf9b76c8ee17ce0000dd743abae605af27c",
     "paper:4%20Chinese%20APT%20Groups%20Identified%20Targeting%20Mail%20Server%20of%20Afghan%20Telecommunications%20Firm%20Roshan",
     "c941673a6db00af57b7c88da9c06352e35a23992",
     "1ba7f6230882e997e4b64861a2904ec29969f401",
+    "836d38706da0649008cfec7363adb8afdd865e65",
+    "584898cd3bd0e8bd8e44f4af2c148f3d5c6f64df",
     "bb5145f5085fdff3b36b59741897749e6310a05b",
     "041c19a96f26e1fd67c8c15b1d82797ee5659f14",
     "214bf6c0da676d094fb6f0ea1d536a20ecc9df80",
+    "9566904a54d301fe649c504d05f182f38c4431e6",
+    "c56640272e4fcc4a62e43be8532627f0f109c350",
     "1ef105f6522d7b71a6681d382f1160bbd1566fc7",
     "cf37c4acb01e95ad7bbbd9e088caf6bc5c268f42",
     "fdc41832cf63ccbc10f3926d003f1af756935215",
     "afbdece55f3c92223b9e8259f93129d6c91ba9c0",
     "e64887a1f356882c048e65c4cc1fa999b1ed0b62",
+    "08dd557738f0430ded07066d3cdc1152b9a74205",
+    "a81b23b3de9a69cce8c90d6efe761f13d528e404",
     "fac1b6bd2567479aaa03a7dde4069bb2f4470bfb",
     "255a4321e5fdaf8d1f88f8efec947a7b0e674947",
     "fe88cf32c0db9cf5d15f3202c19793ccb5045fbb",
     "2d98a214de7a8a280ebe92a6883684593e3d33d3",
     "5818ed3d18bc11b0a6fbd7613de5185cfd733ebd",
     "98742dcad26eb4051bba977be4fe8bd6c6b140b1",
+    "a91aeaf86bcc6fc64069c58680ab96c99a9bf0b0",
     "766ade2464cac7d393f1d1164cb40ec725b78d6b",
     "c41bf56a5a401306ba768fc3ad24f2e1bc801de5",
     "5d0c88a18fbbde84bbb2a7dfd71668318c7c2227",
@@ -1245,6 +1265,7 @@
     "38b1693a956655c20c89fd655befeeb258db93a7",
     "b3a184923b1f56374141c53be2b1655f893bfa0c",
     "aeeec3e82bad1f1e8973a715f3c9dc737edb92f0",
+    "426d64ad09acb97d491d45c4403776c405b9dd3d",
     "paper:APT-31%20leverages%20COVID-19%20vaccine%20theme%20and%20abuses%20legitimate%20online%20services",
     "d102ce4482891dc313c02fa6d7888f1054deba28",
     "ef66b368a288b8f74739f0fd36f54c8c7b11730c",
@@ -1258,6 +1279,7 @@
     "f1b4fe6f07e32aa7dc2d63e14cf07c2704b0d4e8",
     "6a8db29acedce8aa2a50c3c0f210b403c6bc0085",
     "3f653faebd179cd80f6cf9900894d675d733f1eb",
+    "94cc0fbbf4202dde3380554a9217d93909bb181a",
     "07abf8d563b06610e15d6e277748aedee6c310d2",
     "6414a4f78cf5ce842d11dca9429ebafc9da64a18",
     "8237747eb96c9e5e85032aef65037b335ecb8ae1",

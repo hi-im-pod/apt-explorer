@@ -133,8 +133,52 @@
   "techniques_documented": [],
   "techniques_reported": [],
   "cves": [],
-  "timeline": [],
-  "reports": [],
+  "timeline": [
+    {
+      "quarter": "2021-Q3",
+      "count": 5
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2022-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2022-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 13
+    }
+  ],
+  "reports": [
+    "16b12ee14e139216808ea84c2a0b604667ac32e7",
+    "19b8d5d3d0f74d0a0be88e3656fda09e6c863f7b",
+    "29dfcbad8519e3d3f33b22015b250f7a72cd1f87",
+    "4c4066b96e07e98c093316d8009d44f4c7946883",
+    "030a5e90ecc95bb32fc93433af213501d13c32e6",
+    "168d3392b62fb7cb28c79147d87f8a108ca28dd9",
+    "4f772f4c85ba559a4a3796fb6b0c4c83e8ac6bac",
+    "924d22c7e51d91138130dfd3ca9673feec9a5c06",
+    "c90d0ca180cc6ba0a63f17e46ac1236d2778d5ff",
+    "cedf99d4fe7d986989f40dc67cb8598d28e92333",
+    "1c6766ae5324f63d5a43fad47cb57187a8cb1793",
+    "2f57317f46ac518f2f477131ae106c955066372e",
+    "c00f3ba314c0a856cc72c7fddaa53cd35c66bb1a",
+    "653622fa74580c274fae0a57da6e2ef01c81ac3b",
+    "616164eda78b538b211f102831547edb513440bc",
+    "b840b1638aa6e06527cbe25cb9bb03dcc6987e44",
+    "2911236b4731472a63693a30c44911f361530b25",
+    "b066804450ffee1fb429ff0084fad2bf88177a19",
+    "e7867fa6d79b5a70a94fad96c667a9893a8cdd4b",
+    "f52640c062172089acd0d97a03198cb7a05b8a5c",
+    "f2b86f7a04bd514ff701ab9ff8d39daa09c55c15",
+    "0f8c7270cd1d7531f72f4f4725759758ad522355"
+  ],
   "conflicts": [],
   "evidence_count": 6
 }

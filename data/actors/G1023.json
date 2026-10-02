@@ -470,6 +470,21 @@
   ],
   "cves": [
     {
+      "cve": "CVE-2018-15982",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-8174",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2020-1938",
+      "kev": true,
+      "ransomware": false
+    },
+    {
       "cve": "CVE-2021-20021",
       "kev": true,
       "ransomware": true
@@ -487,12 +502,20 @@
   ],
   "timeline": [
     {
+      "quarter": "2019-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2020-Q1",
+      "count": 1
+    },
+    {
       "quarter": "2021-Q2",
       "count": 1
     },
     {
       "quarter": "2021-Q3",
-      "count": 1
+      "count": 3
     },
     {
       "quarter": "2022-Q3",
@@ -503,22 +526,34 @@
       "count": 1
     },
     {
+      "quarter": "2023-Q1",
+      "count": 1
+    },
+    {
       "quarter": "2024-Q2",
       "count": 1
     },
     {
       "quarter": "2026-Q2",
-      "count": 2
+      "count": 5
     }
   ],
   "reports": [
     "2e1f557e18c735ef48576df8ad89e8d7f5f07be2",
+    "4576e8e80161c543241bfa6d2794826b1d7718f5",
     "7c76cb2a670f26b9777a59ae652fc6cab21bef8d",
+    "8d41bb3caafc4cfc1d102712d3550e7b748077ba",
+    "c879df7cdc1f61895d26336a5683726818d11043",
     "2f216e48c38ecae2666eff49ba1caa808e3bc4ef",
+    "18ab8e1f7d4751c8f914d773dbc03e0490548f59",
     "398a6fe21e83f09c3d32e8655c319efc4fd75bb0",
     "0e5fd723ebe89368ea4239c6e24a3127315101ba",
+    "362dc8dce2e5f54302893c8245f5d74ac05de4a4",
+    "f17f791f37074c55ae72461d80b055ce84a01167",
     "paper:Juniper%20Breach%20Mystery%20Starts%20to%20Clear%20With%20New%20Details%20on%20Hackers%20and%20U.S.%20Role%20(APT5)",
-    "paper:Check%20Your%20Pulse%20Suspected%20APT%20Actors%20Leverage%20Authentication%20Bypass%20Techniques%20and%20Pulse%20Secure%20Zero-Day"
+    "paper:Check%20Your%20Pulse%20Suspected%20APT%20Actors%20Leverage%20Authentication%20Bypass%20Techniques%20and%20Pulse%20Secure%20Zero-Day",
+    "9fafe6bd3615077295cfb7cc07059df42e187c14",
+    "d40d2d658c9a78ed4b25d789a42315b3135ddd56"
   ],
   "conflicts": [],
   "evidence_count": 35

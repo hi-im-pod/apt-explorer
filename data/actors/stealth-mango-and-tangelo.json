@@ -30,8 +30,17 @@
   "techniques_documented": [],
   "techniques_reported": [],
   "cves": [],
-  "timeline": [],
-  "reports": [],
+  "timeline": [
+    {
+      "quarter": "2018-Q2",
+      "count": 3
+    }
+  ],
+  "reports": [
+    "217c1c9c9845ee6820e939fde18f80c7d61493a9",
+    "418d4ce8ce717e64a6a1251c6661fb1662dcb4e6",
+    "21f75f584df130b0d4571707b4100ca4c7e25d1d"
+  ],
   "conflicts": [],
   "evidence_count": 1
 }

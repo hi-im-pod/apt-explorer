@@ -27,6 +27,11 @@
       "ransomware": true
     },
     {
+      "cve": "CVE-2013-3906",
+      "kev": true,
+      "ransomware": false
+    },
+    {
       "cve": "CVE-2014-1761",
       "kev": true,
       "ransomware": false
@@ -40,11 +45,13 @@
   "timeline": [
     {
       "quarter": "2022-Q1",
-      "count": 1
+      "count": 3
     }
   ],
   "reports": [
-    "892e3677718b44d08c8b95f63867c55215931363"
+    "5342194f9c24792d6dea583a91b4cc8638d7df08",
+    "892e3677718b44d08c8b95f63867c55215931363",
+    "9d193f30bcb7ec9d9db51ba3190be5ee92a05c23"
   ],
   "conflicts": [],
   "evidence_count": 1

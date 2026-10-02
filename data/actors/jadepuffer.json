@@ -6,7 +6,14 @@
       "value": "JadePuffer",
       "sources": [
         "misp",
-        "malpedia"
+        "malpedia",
+        "microsoftblog"
+      ]
+    },
+    {
+      "value": "Storm-3168",
+      "sources": [
+        "microsoftblog"
       ]
     }
   ],
@@ -19,10 +26,117 @@
   },
   "malware": [],
   "techniques_documented": [],
-  "techniques_reported": [],
-  "cves": [],
-  "timeline": [],
-  "reports": [],
+  "techniques_reported": [
+    {
+      "id": "T1005",
+      "count": 1
+    },
+    {
+      "id": "T1016",
+      "count": 1
+    },
+    {
+      "id": "T1021",
+      "count": 1
+    },
+    {
+      "id": "T1041",
+      "count": 1
+    },
+    {
+      "id": "T1046",
+      "count": 1
+    },
+    {
+      "id": "T1053.003",
+      "count": 1
+    },
+    {
+      "id": "T1057",
+      "count": 1
+    },
+    {
+      "id": "T1059.006",
+      "count": 1
+    },
+    {
+      "id": "T1070.004",
+      "count": 1
+    },
+    {
+      "id": "T1071.001",
+      "count": 1
+    },
+    {
+      "id": "T1082",
+      "count": 1
+    },
+    {
+      "id": "T1083",
+      "count": 1
+    },
+    {
+      "id": "T1136",
+      "count": 1
+    },
+    {
+      "id": "T1190",
+      "count": 1
+    },
+    {
+      "id": "T1485",
+      "count": 1
+    },
+    {
+      "id": "T1486",
+      "count": 1
+    },
+    {
+      "id": "T1490",
+      "count": 1
+    },
+    {
+      "id": "T1530",
+      "count": 1
+    },
+    {
+      "id": "T1552.001",
+      "count": 1
+    },
+    {
+      "id": "T1555",
+      "count": 1
+    },
+    {
+      "id": "T1595",
+      "count": 1
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2021-29441",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2025-3248",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2026-Q3",
+      "count": 5
+    }
+  ],
+  "reports": [
+    "microsoftblog:en-us-security-blog-2026-09-25-storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals",
+    "7c7286d1321abdec063faa3d48b7474c90a24166",
+    "7f33449f4c10ddf31660abbc251815c21ee997d7",
+    "8d8edb7e72073a55033eda21f092ac20a8096af9",
+    "a6cac33e41c7ace86203dc081707810cbb8acf52"
+  ],
   "conflicts": [],
-  "evidence_count": 1
+  "evidence_count": 2
 }

@@ -518,3 +518,55 @@ def test_report_urls_reads_the_shards_and_skips_the_index(tmp_path):
     (reports / "undated.json").write_text(json.dumps([{"url": "https://a.example/y"}]), encoding="utf-8")
     (reports / "index.json").write_text(json.dumps({"total": 3, "years": {"2024": 2}}), encoding="utf-8")
     assert cli.report_urls(tmp_path) == ["https://a.example/y", "https://b.example/x"]
+
+
+# run(): name pairs from vendor posts
+
+class FakeBlog(Fake):
+    """A vendor blog whose posts state name pairs, as FeedConnector.pairs() returns them."""
+
+    def __init__(self, name, found, policy="derived-only"):
+        super().__init__(name, policy=policy)
+        self.found = found
+
+    def pairs(self, store):
+        return [{"link": f"https://blog.example.test/{i}/", "names": list(names), "retrieved_at": SNAP}
+                for i, names in enumerate(self.found)]
+
+
+def built(tmp_path, store, **blog):
+    out = tmp_path / "data"
+    cli.run(out, store, connectors(**blog), generated_at=NOW)
+    return out, json.loads((out / "actors" / "G0007.json").read_text(encoding="utf-8"))
+
+
+def alias_values(doc):
+    return [a["value"] for a in doc["aliases"]]
+
+
+def test_a_vendor_pair_with_a_published_actor_adds_the_other_name_as_an_alias(tmp_path, store):
+    out, doc = built(tmp_path, store, microsoftblog=FakeBlog("microsoftblog", [("Storm-9999", "APT28")]))
+    assert "Storm-9999" in alias_values(doc) and doc["name"] == "APT28"
+    alias = next(a for a in doc["aliases"] if a["value"] == "Storm-9999")
+    assert alias["sources"] == ["microsoftblog"]
+    assert [a["id"] for a in json.loads((out / "actors" / "index.json").read_text(encoding="utf-8"))] == ["G0007"]
+
+
+def test_a_vendor_pair_is_not_used_when_the_source_may_not_show_facts(tmp_path, store):
+    _, doc = built(tmp_path, store, microsoftblog=FakeBlog("microsoftblog", [("Storm-9999", "APT28")], policy="link-only"))
+    assert "Storm-9999" not in alias_values(doc)
+
+
+def test_a_pair_that_would_join_two_actors_is_refused(tmp_path, store):
+    made = bundles()
+    made["misp"] = SourceBundle(source="misp", actors=[*made["misp"].actors, ActorRecord(
+        source="misp", source_id="u2", name="Nightjar", retrieved_at=SNAP)])
+    out, doc = built(tmp_path, store, misp=Fake("misp", made["misp"]),
+                     microsoftblog=FakeBlog("microsoftblog", [("Nightjar", "APT28")]))
+    assert "Nightjar" not in alias_values(doc)
+    assert len(json.loads((out / "actors" / "index.json").read_text(encoding="utf-8"))) == 2
+
+
+def test_a_pair_of_two_unknown_names_makes_no_actor_without_a_cluster_id(tmp_path, store):
+    out, _ = built(tmp_path, store, microsoftblog=FakeBlog("microsoftblog", [("Newcomer", "Otherthing")]))
+    assert [a["id"] for a in json.loads((out / "actors" / "index.json").read_text(encoding="utf-8"))] == ["G0007"]

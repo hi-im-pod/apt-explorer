@@ -59,9 +59,87 @@
   "malware": [],
   "techniques_documented": [],
   "techniques_reported": [],
-  "cves": [],
-  "timeline": [],
-  "reports": [],
+  "cves": [
+    {
+      "cve": "CVE-2010-3962",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2014-1776",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2017-0143",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2019-0703",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2014-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2016-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2016-Q4",
+      "count": 3
+    },
+    {
+      "quarter": "2017-Q2",
+      "count": 5
+    },
+    {
+      "quarter": "2017-Q3",
+      "count": 4
+    },
+    {
+      "quarter": "2018-Q4",
+      "count": 1
+    },
+    {
+      "quarter": "2019-Q2",
+      "count": 3
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 3
+    }
+  ],
+  "reports": [
+    "cc8a8134664541c3006bc77eafd6c670f5dd8760",
+    "daa90bd7ea3a3a6b26a47c906152749c6610144e",
+    "ffb0f848d0ef357a1544b5d3caf2177f7f74e419",
+    "44314872aa39608f2ef48872a89f4ed0cfca9331",
+    "ad7c4675b78eb3238978c0a5cb0e848975fcf8ae",
+    "cc79d68f7bbad680581f53cc4a797e27ff7f2d6d",
+    "e0e24015e1791320e5e81cd74aa57d88d4f5ef08",
+    "b16f9617fca09ba4300b14f623059186d2f7bf6f",
+    "d46c9ce8a12364ef5087e697e1b266d0421bb2d2",
+    "2bb2c5c809a8eefce7c9e517cb4ca2cf0dccfdbc",
+    "3fd5fa40d1a759c67c48598a2da3bcfbd131a182",
+    "9a480e605fc0ae39325273e3060e2b457855091f",
+    "0e67b734ee9f8e86bffc8f3d4dc1c0cc16484520",
+    "e3e8a7166412a321cb093eaf34f613f65bf5754c",
+    "2864867f450ddfadd79fc57866a8dbe41ef01cd9",
+    "6573b4ec603c6899b1713dcd1a23a1cbadb54fc9",
+    "48d1f57dd69e00fed9e42f8693f5e13b8e47c7a5",
+    "98ac086c38006cc26fb72fc272bbceb70e9fa9a1",
+    "caa826b498c4545245fda4a1118c361ad54ac38b",
+    "2cef49ad8fd69f4cd178c7d2d95057a6094b8813",
+    "8692deb88e1c5fb19fb710e9124315028369c42c",
+    "88654f3accec4e2ce5dd66588265caaa4bae2f55",
+    "accdb52d0ecc05baad66350f58fa71f22bd0349e"
+  ],
   "conflicts": [],
   "evidence_count": 4
 }

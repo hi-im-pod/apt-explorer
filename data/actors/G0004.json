@@ -864,6 +864,16 @@
       "ransomware": null
     },
     {
+      "cve": "CVE-2010-2883",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2010-3333",
+      "kev": true,
+      "ransomware": false
+    },
+    {
       "cve": "CVE-2010-3915",
       "kev": false,
       "ransomware": null
@@ -890,6 +900,11 @@
     },
     {
       "cve": "CVE-2012-0158",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2012-4681",
       "kev": true,
       "ransomware": true
     },
@@ -1346,12 +1361,20 @@
   ],
   "timeline": [
     {
+      "quarter": "2012-Q1",
+      "count": 2
+    },
+    {
       "quarter": "2013-Q1",
       "count": 2
     },
     {
-      "quarter": "2013-Q4",
+      "quarter": "2013-Q3",
       "count": 1
+    },
+    {
+      "quarter": "2013-Q4",
+      "count": 3
     },
     {
       "quarter": "2015-Q3",
@@ -1359,7 +1382,7 @@
     },
     {
       "quarter": "2016-Q2",
-      "count": 3
+      "count": 6
     },
     {
       "quarter": "2016-Q3",
@@ -1375,7 +1398,7 @@
     },
     {
       "quarter": "2018-Q1",
-      "count": 6
+      "count": 9
     },
     {
       "quarter": "2018-Q2",
@@ -1395,11 +1418,11 @@
     },
     {
       "quarter": "2019-Q3",
-      "count": 3
+      "count": 4
     },
     {
       "quarter": "2019-Q4",
-      "count": 6
+      "count": 7
     },
     {
       "quarter": "2020-Q1",
@@ -1407,7 +1430,7 @@
     },
     {
       "quarter": "2020-Q2",
-      "count": 4
+      "count": 6
     },
     {
       "quarter": "2020-Q3",
@@ -1431,7 +1454,7 @@
     },
     {
       "quarter": "2021-Q4",
-      "count": 3
+      "count": 7
     },
     {
       "quarter": "2022-Q1",
@@ -1451,7 +1474,7 @@
     },
     {
       "quarter": "2023-Q1",
-      "count": 8
+      "count": 10
     },
     {
       "quarter": "2023-Q2",
@@ -1475,7 +1498,7 @@
     },
     {
       "quarter": "2024-Q3",
-      "count": 3
+      "count": 4
     },
     {
       "quarter": "2024-Q4",
@@ -1503,14 +1526,21 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 4
+      "count": 6
+    },
+    {
+      "quarter": "2026-Q3",
+      "count": 1
     }
   ],
   "reports": [
+    "d0ecf1b8d3d79e6cde6293d109bf4d801f56dadb",
+    "33a8d6923a829d27239ee108abe643ee5140214f",
     "5caa3af9facac2e25b868e6afb482d156eacad78",
     "758e5f41dc1203e3605da370241191371a450245",
     "827d84c8046d4315615f2ddcde516ca5deaae7f5",
     "d975b8d1e008be23684b727df57bc61c2c36853b",
+    "e3f5f0ff36f1407c4b41fc83488862cfb8059f1f",
     "fa350b6bf21be8af393d235d0a815caae5f5802d",
     "760e14c40a2f98f490e90f5dc8564faed8876f60",
     "b37836d031ce99e6f0a41bafb30ba9a6badeb8a6",
@@ -1529,6 +1559,7 @@
     "14ccf501b56705b6b411ae35b3ed5cc4f10f98f2",
     "29646bd71e8daa952efa40cfb3836392f68d7a4b",
     "aed0ac6f04dadb7af3e3186d6a8173a3bd372ec1",
+    "a286340cef58cdd129fb86c14c8eca6170995eb8",
     "27e828990aa128b2413f8977d47ff28dae5bb354",
     "cf51163a42693d321ec54fbde193a7c243a0b976",
     "2a016643f1a539e03bc88fc5a4500904d83f32ac",
@@ -1558,6 +1589,8 @@
     "1d9b1a3eb8c513e274c6a63038d98e1216c92ae1",
     "b5235b49985c0f2cc4619a126d53372bb5e697ad",
     "072d5d465b4ae498548381127a085f176924a7b9",
+    "689ab0ff0ca52e104721e086aab3508e2ff1d8d9",
+    "cde037dfa55fb4ef61e2d3f016a3f2121226b2be",
     "7d02ef9cad25f39740047409a8919205cd98a00f",
     "a0002020dd5651bfeb5f8d3092a81eb2d6df39c2",
     "78ebceb419f4894413e88ff6e2e9505cd42b8624",
@@ -1593,8 +1626,12 @@
     "4e85d4f9f237cd518220c7f797ad312513a1c9ad",
     "f26af09a17755077943af2874a229d5226fef82a",
     "a10fdbb00164a28f7e97989a6ad86edb5f89751d",
+    "1c54051c1f1655accc9223bb0cf9575c6f21c47f",
+    "2b161923da57c96d2d66d7e1527bf024e8864c19",
+    "3438a0eb3c6702fcb54ebb873549d62bbcc775eb",
     "45dd34f0f32290f6e20cf1d1d8a8a34b0739bb89",
     "79d3f827458e1a269c0ce006fda644028779533d",
+    "ddfb15789f85f984c2e0790f6d22df517f7d4298",
     "ccdbcbf9b76c8ee17ce0000dd743abae605af27c",
     "paper:4%20Chinese%20APT%20Groups%20Identified%20Targeting%20Mail%20Server%20of%20Afghan%20Telecommunications%20Firm%20Roshan",
     "c941673a6db00af57b7c88da9c06352e35a23992",
@@ -1631,6 +1668,8 @@
     "6a8db29acedce8aa2a50c3c0f210b403c6bc0085",
     "07abf8d563b06610e15d6e277748aedee6c310d2",
     "8237747eb96c9e5e85032aef65037b335ecb8ae1",
+    "b2960938fa9e99613d211c440e2ee48c55c5648f",
+    "ace67155072f674a2ef9db48cb61b9041378872b",
     "d80f86c66aa249e18316d38215c3a92671ebcc15",
     "e87b05f20ef33f02be1c02a25f10630522686344",
     "e2634f0395353cffdb76c3cd8472c821dcc65828",
@@ -1644,11 +1683,13 @@
     "3d7721eeaf864f9e6c49847c78630685ba49e78e",
     "938a0ac8cbd4415ece8db4acf6fcba6217b1cfce",
     "8c9252f924326d9fa21ab27dc14dbf34d3ed8f5f",
+    "52adf6c891caa6771bee89e45ae58db2dfbf96aa",
     "paper:APT15",
     "4fd3db0442ae7fd5633ebdd008040734e6d8e068",
     "6eb91b46cb6e98fe6f9e4b542d243da97352459f",
     "0b5437fe20425d9f32ec0d022331d45067bf00f3",
     "11705abd12aab0530ba47942bb493b5ddb600cfe",
+    "325237af74ab96ac14a4c7abc37d9458991737ba",
     "358d09240838bd7382a6ee58371630ba664417f3",
     "530c04eb6369ec8a5f433e970deaea34b79d0570",
     "7960be96f5038b5a44680ccb0c7e2598615ed7c6",
@@ -1657,9 +1698,12 @@
     "89540497d08e70e4a9400ca3f0594d37bbd188ab",
     "30247dcb727eaa945d77ffc1f1daf9304691a849",
     "ca1583533d1d3f1e95986c97bf401f17e3e236fd",
+    "8e5296c83ec8859d08aa8a03db4761e8b492949a",
     "paper:Royal%20APT%20-%20APT15%20Repository",
+    "2ce1536757accf7b76da6cc2900300e702ac7f3a",
     "575387ef16724c2727b65c2db13d71c9d8884541",
     "3de01836586fa9b94c0ab55e84ad715b2af4aa3c",
+    "d5889e533ff64deace5b09915315bbae4fba34ba",
     "fab157576b157fe23c7217721029a186b7e2082f",
     "f4024179748d1abc9e6bfe6e2f0536fc42003b91",
     "713132cb020bd00fba7e6a97fdec10757fce7e50",
@@ -1669,13 +1713,21 @@
     "dbb37b1a14f59614ff5764adc6813452847410a0",
     "7a4063cf9f0ab09042c47cf4b0a410ec1ba47d82",
     "ff43b11fe41fc57beca4d67230f1545eb86259b6",
+    "2c09f13be3c035ec932d6c91366f61f7f1320f72",
+    "035c0ea63f2c61bc7a69834a3f86940e689d1d82",
+    "0e1cf5613556c88e3edc62da9313943f41fbfcd9",
     "1e35d9d3a1792cd2574378631fe779ac7f15b7eb",
     "d31c752ecc9b9369d410b5689060365bcbb65a42",
     "0a0c97b21075f4588f10503ae1c26a4685e061d1",
     "37584381a0a0c2d566b8ce13965ffa7226cdaa71",
+    "7cd0d1416c5a11ac14d3de477bf39fdcb63fe6fa",
     "ec25ee798aa2b93c4e0074c77a1730625d516715",
+    "b670b7a7904baded891a4c6e7afe692998989668",
+    "cfd4451a15223fdf667285b12a8829a4b409495a",
     "875abf02dad2a434d708e495ffc8afe4b2500aae",
-    "24bd1e9d9c67263a2a65c017545634f004dcbfc8"
+    "24bd1e9d9c67263a2a65c017545634f004dcbfc8",
+    "2aa0c72710b35ded4be6e68095efc37bdf3ef5ca",
+    "967398f7cd0d4f0f5d68becbdc3bd5814d7d0700"
   ],
   "conflicts": [],
   "evidence_count": 52

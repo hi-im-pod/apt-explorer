@@ -676,6 +676,10 @@
       "count": 3
     },
     {
+      "id": "T1547.001",
+      "count": 3
+    },
+    {
       "id": "T1566.001",
       "count": 3
     },
@@ -688,15 +692,15 @@
       "count": 2
     },
     {
+      "id": "T1059.003",
+      "count": 2
+    },
+    {
       "id": "T1059.005",
       "count": 2
     },
     {
       "id": "T1083",
-      "count": 2
-    },
-    {
-      "id": "T1547.001",
       "count": 2
     },
     {
@@ -748,6 +752,10 @@
       "count": 1
     },
     {
+      "id": "T1037.001",
+      "count": 1
+    },
+    {
       "id": "T1048.003",
       "count": 1
     },
@@ -765,10 +773,6 @@
     },
     {
       "id": "T1057",
-      "count": 1
-    },
-    {
-      "id": "T1059.003",
       "count": 1
     },
     {
@@ -998,6 +1002,11 @@
       "ransomware": false
     },
     {
+      "cve": "CVE-2017-11882",
+      "kev": true,
+      "ransomware": true
+    },
+    {
       "cve": "CVE-2018-0798",
       "kev": true,
       "ransomware": false
@@ -1031,6 +1040,11 @@
       "cve": "CVE-2018-8373",
       "kev": true,
       "ransomware": false
+    },
+    {
+      "cve": "CVE-2019-0708",
+      "kev": true,
+      "ransomware": true
     },
     {
       "cve": "CVE-2019-11510",
@@ -1191,6 +1205,10 @@
   "timeline": [
     {
       "quarter": "2013-Q3",
+      "count": 2
+    },
+    {
+      "quarter": "2014-Q3",
       "count": 1
     },
     {
@@ -1215,7 +1233,7 @@
     },
     {
       "quarter": "2020-Q1",
-      "count": 7
+      "count": 11
     },
     {
       "quarter": "2020-Q2",
@@ -1223,11 +1241,11 @@
     },
     {
       "quarter": "2020-Q3",
-      "count": 2
+      "count": 3
     },
     {
       "quarter": "2020-Q4",
-      "count": 5
+      "count": 6
     },
     {
       "quarter": "2021-Q1",
@@ -1235,19 +1253,19 @@
     },
     {
       "quarter": "2021-Q2",
-      "count": 3
+      "count": 5
     },
     {
       "quarter": "2021-Q3",
-      "count": 3
+      "count": 8
     },
     {
       "quarter": "2021-Q4",
-      "count": 7
+      "count": 12
     },
     {
       "quarter": "2022-Q1",
-      "count": 4
+      "count": 9
     },
     {
       "quarter": "2022-Q2",
@@ -1255,19 +1273,19 @@
     },
     {
       "quarter": "2022-Q3",
-      "count": 5
+      "count": 8
     },
     {
       "quarter": "2022-Q4",
-      "count": 3
+      "count": 4
     },
     {
       "quarter": "2023-Q1",
-      "count": 2
+      "count": 8
     },
     {
       "quarter": "2023-Q2",
-      "count": 7
+      "count": 11
     },
     {
       "quarter": "2023-Q4",
@@ -1279,6 +1297,10 @@
     },
     {
       "quarter": "2024-Q2",
+      "count": 3
+    },
+    {
+      "quarter": "2024-Q3",
       "count": 1
     },
     {
@@ -1287,11 +1309,11 @@
     },
     {
       "quarter": "2025-Q1",
-      "count": 1
+      "count": 4
     },
     {
       "quarter": "2025-Q2",
-      "count": 3
+      "count": 4
     },
     {
       "quarter": "2025-Q3",
@@ -1299,7 +1321,7 @@
     },
     {
       "quarter": "2025-Q4",
-      "count": 1
+      "count": 2
     },
     {
       "quarter": "2026-Q1",
@@ -1307,34 +1329,70 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 13
+      "count": 41
     }
   ],
   "reports": [
     "27c08e0a03e65cea5d3652ff2168aaf8dd9657f9",
     "37114c033cf4dc4e27f0631d4af9be712dbea44b",
     "02e61990f3e053afd9e6aaa3b1a6fd466e46fbd3",
+    "01228cb87ab39e3423f08332803aba9c4bd1816f",
+    "02b2b5a5ba770ab4e41775d8be3ab57aae0bafc2",
     "0d7da12eddee96833e2f96b3d6071675a0597b5c",
+    "12b60d2b609ddf272cdb833f2492d40c20b0ec90",
+    "13b07a8aa7ec97800abd13eb430c71e29c67cf57",
+    "32d74fbb81b1a6b50934dad65d9e0da3713af03b",
     "3bae8faded2e02e7e831134465ba2bf8a5333235",
+    "574c7416c0e2cc4b17834e8531a4abf1b29d8478",
+    "60308c22e4126b2bd0c1a695ad7d88e3f50c6325",
+    "67bdf2b2c8b53204d5535a5b26bdced50e8493a5",
     "6a149beeef56782834f952a0cf306faa8e276419",
+    "6ccfbc9ad488bd5ec5718a6958d59f1a36b5fe22",
     "75b020ebaaa61cb3d0cdf5e1ccde43e641b51af8",
+    "7e5bcc9b5ab7d25c428cd5a1b662f926bd1b3cb7",
+    "7e8e8ab47cddc9cc08e44bb46f777914b90667dd",
+    "814d59d765b5a92f67b9d87a41b69058a343d9f0",
+    "834c70e868674c305eb608c505b0d9ca42c1a145",
     "8cd8841bca878595b459ade5e9631e2680af7b4d",
     "96c33e1d3d8de4196531a4464882df6de2b74813",
+    "9bdf708857dae3e138f081204a05f539587a1522",
+    "9c1d7e0ef17c685e48f4cd36f12abb92a0f19025",
+    "a8edf171df1c5a7c53a0812f9f2391c3dbfa890a",
+    "b0e7651c9dc7d3825d0e9091ff7070e8f6462fcf",
+    "b75e71acd40f14db201d8f0b5e69b976bd6bd15b",
+    "bcbedbd41093a081a75f4eb8d766fdda92d0496b",
     "c070c2a38373f0f5fcb121bbc87f1a02c338d144",
+    "c156f8abf1bf45701c8278bcad86f33351c22bbf",
     "c33f08a01beea3e0643036832df322ca316c52ff",
+    "caaade8e958f475a8c96eb0435e58fd1d62af489",
+    "cef46a746c6ba178df7a2bbf0a4d0140b3e78070",
     "d26d8922c61bebfffae3f7e08e34fca8b8523e68",
+    "d5f36a2fd75153f708adea4baee7d155aa6e09ae",
+    "e1e4ece35966716b85875d61061630533c71b79b",
+    "e5e33736f1937d64cb7f137c0bf19c01456836e3",
+    "eaa275adc32aa1dd605ae180a54eccc6aedaa420",
+    "f40864fa3082851351ddf5e46cbd7f93c212305e",
     "f4dac62fc8a7a4a54e2a67b897151836d2dffaa8",
+    "f81925c3c07bed117f722677f30006cc7cc29aec",
     "56357662a440b7e183247380dc5a4094dffc4645",
     "762f6e186379f4b8a883f12417edad6f5855459c",
+    "34399febaf90cde2f9df7aca450dda1c7f81d75c",
     "0ee14bd188922afd7aa56b2bced2e8ce344ecd61",
     "5ad493b7216e907980c75eb0208b6a3ddf74cb12",
     "db51b31b644745b07989dd5366fbab9883dad4c6",
     "18032ae044b392569267518a697d982f10106f73",
     "c466fa3de547d8802b9dc8dd4e433bb790a36178",
+    "02247521d3bc55b6eaf4e921f7fd5b75dc328187",
     "ce1c9aed40cb251890cac05f24f7bff10ee03d94",
+    "0c64582643fe90dacdb8ed76a4724a523907621e",
+    "693f5d20edcb1115fce6af1d1ba0c4681f4e0c31",
+    "1936e910e230f3531a0088bda6dd5b8cb768b9af",
     "d7efaadd97ce3dcbbaabda8652cd1ce4467f3b1c",
     "7a32ad3d82104f02dd3de99833fdb3d2201b5ef5",
+    "e7b0c58d5edbceec368828861b3c47da045e681f",
+    "ce8f234c7f931dbe1f9378e9cb75184c063f19dd",
     "e8feee3a8be0dcffa6430a826b5193269142b10f",
+    "0df5f38edcf6c2af12fd18bdf8dafdab72a4472b",
     "4627cdec29f790bceeefa9e4a8ed5621784b24e0",
     "21ca33d4c54765a98ec61387615fe1f18c72c3b4",
     "5ca2916b428ae5afa16a19c9bf451a3c2bbb2ce9",
@@ -1343,56 +1401,93 @@
     "a224702fbdf785b482d562117dddf5d4fd848208",
     "99e86909ea744d3d394aceada2db1519b3e52fd5",
     "a0837f6d022a8f7b8e50ab7d001645a181a82f0d",
+    "4d9d291c498822bdff7d0f388e6667ed167c043c",
+    "0731570b0255d1da2c600299db4eb521b08b30e9",
     "29987ea26f94f2b09cccb3274c02cd96b822c915",
     "a55bce1b78a4e0b12a68df701fb97b65189ad579",
+    "4e080eea739ac0466154ff3ee1bc18fe3b3516c1",
     "b34d56654548ccdd3b99ba53dfdffceede3d1735",
+    "4823f43c701b63eb854a54f7b9149742d1de45d1",
     "c2ca2a64788473881893fb6dcedc72df4a567794",
     "paper:APT43%20An%20investigation%20into%20the%20North%20Korean%20group's%20cybercrime%20operations",
     "3b51dd0d519a7d20d673a466c79a291d8abda18d",
     "d4329111a540825e6c5cc9a546d0702f07bef35b",
+    "0493059a618c8e90a47ab84777093b070e695dfb",
+    "2784512216dd84491b6b006670858696b18fcda1",
+    "876473bb96c566bcd42081adc142ab8dd02545ae",
+    "42e64ef541e3b330470343b914ca26fc8fc1538c",
+    "9c687defd710faa5423578403bc6d1d342d9e00b",
+    "2a898c93521392c341fe11c7855e070ddb9607d0",
     "1dee7a6195d27712adf1cf29121fcfcdbb070942",
     "0f21a5b2466bb133651b7524820cf3bf0f968de5",
+    "b91ed17b5bb1064877273dadd48bcde4ba926a32",
     "f47cabf491ff1a3e54b07989853f77a10f662934",
     "paper:Rewterz%20Threat%20Alert%20-%20KONNI%20APT%20Group%20-%20Active%20IOCs",
     "d024ba07693e90631f56e0ccf049775a082516ca",
+    "263cf9bd0bc4d8e05d22905bbe47df79eebca485",
+    "874967256d6a24f653c372f602e58db7ced176f6",
     "1138d174099e24eea4d84a44a1586e953c1a3cdd",
+    "48545b77d52b8dfd9257336c09c139d1c4e5dce9",
     "7558a8942a7a3b6a31ed61a0da636e489f5287dc",
     "d0d666177b14b04a9202863e5b062a0e5936b161",
     "9029565e76ac67fc9125c9d84096a566e4bd48ae",
     "f9b285ccb48d71c153b1a6025cde00f1425c86e9",
+    "f517a9839388fd410b07ff3002343bcea176f9ad",
     "e523d1625e8b6aa299ff32e9ef5e94326f61544e",
     "fdf53fac0af9cced76179fb1b9df0ce009952e36",
+    "0c9440082ceee97956d66b6bc145114777a3ae7f",
+    "74a8e4d2e0035e88c9c163c1b32640262793cdac",
     "964ad2434f2954786c6abcd25062835cfa1f8489",
+    "dcc463dd94e44aeb2a5eb6da4e20a2c26d30afe9",
+    "3cef77aed2d0be3eeacd1f63d421ece2656f7a93",
     "9a4bfa953645a026d375321eef37b893847d80ad",
+    "3e5825f4dd32839e66007895319dd13f51c6137b",
     "4730e151de6ac586d54ee0268bdbcf6bd214bbe2",
     "7f1705015b2a3bc32ac9e8b2d8230c73a944b970",
     "6df8cf1bd9dca91d1715ad47a6ffb72df618f336",
+    "8c9231d1d2386b94e57e315840f3bcd06ad94dfe",
     "9b0f4bbb3f0258b6bccef43be37e95125b747904",
     "c82daccabcec899576a907eb50887435845a67d3",
     "d36c0090c55ce07243f99f35e316863a217255a9",
+    "11e10b8d201fc0304f9acb15238e5511c66569ba",
+    "1fd4927f3c1a4f30b71b59adb0e80b1e0e0827ac",
     "a62b253b92cf71a474705fb056a8078a1a8aac7f",
+    "d8c9d0a2267be22ea0044f3bc77de74f161499e5",
     "c841f7990ca05b306eef5c9edf1fbcb344abbea6",
+    "2c0373a3e9f626d12348299feb0b677643502739",
     "9327fb3746782368434192779e9c71bf63d20361",
     "d238c72f7d4f1584fd683b7c3b68590f5e6fee7a",
+    "5eaecb3c083149d0ea33b06a6d6a621325350bba",
+    "316c905f29052f8d1e77ac8cb5817e6ff4de64b3",
+    "b5e6321601208675ee04e68badcdc49bbae2a78f",
+    "fbaeeb24a509704733d77d55a001af841bcdddba",
+    "2c521656d88a772b62194fd418e3290294825a72",
     "8bd1406a89129c25d41ce00d02bcd18dd88c62b2",
     "74bea251b6451b3ec1e21396645bdc41e45858cf",
+    "bd6c69527a864c5776ab22601c2639966bfd6755",
     "d2bcc2a4f465236490a03be015fefc1f496f78bf",
     "fe88cf32c0db9cf5d15f3202c19793ccb5045fbb",
     "49771bc1edb9909094591a8eba699192760771e7",
     "0182c2057b3d11c9c373511602ae2764d1bc1396",
     "cd314c1718815e83244d59a0754cf30dd0edf70f",
+    "37df15216975203b5c838086c913c4113f5b038d",
     "5ed4f9c96a95bab2e3097e06c62cc894324d18c3",
     "e9982868ab5e1049d2681d5f26b52b6d3cfc90aa",
     "052b7ca5936790e7f589583cd30e9ceb3d8a040c",
+    "056f9ae4567e1de01c11aa92c01568620d56d824",
     "46fec9b1f86e12e382db3526a90944e831407591",
     "742c783578c5461b8f2caa921dcc5a39c7f976d5",
     "paper:How%20Cyber%20Adversaries%20are%20Adapting%20to%20Exploit%20the%20Global%20Pandemic",
+    "89261aa74b30d0298e919e3b32c48daba9e825a9",
     "fbf7266e80d36d2762ba1a1e682820b5a1f54a40",
     "2be079b1f1a1c3d242fa788b9cb123e1cd52c9b8",
+    "86401629e0fcad7332b2d72a3999223d3d866b11",
+    "8e86a8e42850633203460343ac87a0b4448f3a2e",
     "d10075655b5f584e586132a414d8bbcacdd13f48",
     "fed84094f8bd8822542b76820b569235ff6cd98a",
     "79e7ff150be9c0d28ed50f410f2a3d682e172898",
     "fc29ba5080306e4fe1b09b15979c236e78fb947a",
+    "097708754fcf2c406d877d5f90ddf9b943d24a40",
     "d8f96e02ff55ad0bdc63ff38d37089c6752dc63b",
     "5d8e4805df7d3e684b77fe78e539c96f4ef89d2d",
     "22aa97fbe1774e71f2aca9357996022211cf9d81",
@@ -1401,7 +1496,9 @@
     "6c988b6799aaffcc4fa411bc2b375c22ae4bc190",
     "c83ac0b0a007d8cd4a030133253604e4d51cb9d5",
     "d0ab1a3bc6366979519254173709d347ff3e43a3",
-    "c5bbe09a6d3ada643082681cc44f6583f166aa71"
+    "64f98d4c515e31f68c6e7fdf442753a6af8c0bee",
+    "c5bbe09a6d3ada643082681cc44f6583f166aa71",
+    "cea240bf3c483f330a26156a27549192f4ae052e"
   ],
   "conflicts": [],
   "evidence_count": 48

@@ -1073,6 +1073,11 @@
   ],
   "cves": [
     {
+      "cve": "CVE-2017-0199",
+      "kev": true,
+      "ransomware": true
+    },
+    {
       "cve": "CVE-2017-11882",
       "kev": true,
       "ransomware": true
@@ -1178,6 +1183,11 @@
       "ransomware": true
     },
     {
+      "cve": "CVE-2023-3519",
+      "kev": true,
+      "ransomware": true
+    },
+    {
       "cve": "CVE-2023-36884",
       "kev": true,
       "ransomware": true
@@ -1263,6 +1273,11 @@
       "ransomware": true
     },
     {
+      "cve": "CVE-2024-27564",
+      "kev": false,
+      "ransomware": null
+    },
+    {
       "cve": "CVE-2024-3400",
       "kev": true,
       "ransomware": true
@@ -1273,12 +1288,27 @@
       "ransomware": true
     },
     {
+      "cve": "CVE-2024-4577",
+      "kev": true,
+      "ransomware": true
+    },
+    {
       "cve": "CVE-2024-47575",
       "kev": true,
       "ransomware": false
     },
     {
       "cve": "CVE-2024-9474",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2025-24813",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2025-49704",
       "kev": true,
       "ransomware": true
     },
@@ -1327,7 +1357,7 @@
     },
     {
       "quarter": "2025-Q1",
-      "count": 14
+      "count": 15
     },
     {
       "quarter": "2025-Q2",
@@ -1365,6 +1395,7 @@
     "d75f5d4fd9b5e6b28be2351193138c2e449f95cb",
     "85bc8992c6e30f3420a14d18e477242505872058",
     "112187b03b33e6e8e537b80e95b66b1f0262ed25",
+    "2e7f21a7335ce963482ec9dbf8e2a39ad0dcf1c7",
     "497cf305c68c976b0f8288753816fdabde0c35ae",
     "dd86612e87e7413ae7e537afcf44d4c9283cc5d4",
     "2c84786d03a17afeb8e76ba55449ad285045ba8c",

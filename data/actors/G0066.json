@@ -84,16 +84,63 @@
     "T1566.002"
   ],
   "techniques_reported": [],
-  "cves": [],
+  "cves": [
+    {
+      "cve": "CVE-2010-0249",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2011-0609",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2011-0611",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2011-2110",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2012-0779",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2012-1535",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2012-1875",
+      "kev": false,
+      "ransomware": null
+    },
+    {
+      "cve": "CVE-2012-1889",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
   "timeline": [
     {
+      "quarter": "2012-Q3",
+      "count": 1
+    },
+    {
       "quarter": "2026-Q2",
-      "count": 2
+      "count": 3
     }
   ],
   "reports": [
+    "57320fe25634e4be00de00cdc22c7bd947205685",
     "666ef1d8ca3ef0d5574ca60615263941534f6fe0",
-    "e32efa4dfa8b308196da1ca9bf53b2f4a3bf5bab"
+    "e32efa4dfa8b308196da1ca9bf53b2f4a3bf5bab",
+    "ce7a662c0f822536e6beff4856f701d28137c8e1"
   ],
   "conflicts": [],
   "evidence_count": 0

@@ -133,6 +133,14 @@
   "techniques_documented": [],
   "techniques_reported": [
     {
+      "id": "T1059.001",
+      "count": 2
+    },
+    {
+      "id": "T1204.002",
+      "count": 2
+    },
+    {
       "id": "T1007",
       "count": 1
     },
@@ -149,7 +157,23 @@
       "count": 1
     },
     {
+      "id": "T1027",
+      "count": 1
+    },
+    {
+      "id": "T1036",
+      "count": 1
+    },
+    {
+      "id": "T1041",
+      "count": 1
+    },
+    {
       "id": "T1046",
+      "count": 1
+    },
+    {
+      "id": "T1053.005",
       "count": 1
     },
     {
@@ -157,7 +181,7 @@
       "count": 1
     },
     {
-      "id": "T1059.001",
+      "id": "T1071",
       "count": 1
     },
     {
@@ -173,7 +197,15 @@
       "count": 1
     },
     {
-      "id": "T1204.002",
+      "id": "T1095",
+      "count": 1
+    },
+    {
+      "id": "T1106",
+      "count": 1
+    },
+    {
+      "id": "T1204.001",
       "count": 1
     },
     {
@@ -189,28 +221,76 @@
       "count": 1
     },
     {
+      "id": "T1566.001",
+      "count": 1
+    },
+    {
       "id": "T1567.002",
       "count": 1
     },
     {
       "id": "T1589.002",
       "count": 1
+    },
+    {
+      "id": "T1590",
+      "count": 1
+    },
+    {
+      "id": "T1590.005",
+      "count": 1
+    },
+    {
+      "id": "T1595",
+      "count": 1
     }
   ],
-  "cves": [],
+  "cves": [
+    {
+      "cve": "CVE-2018-7600",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2018-7602",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2021-34527",
+      "kev": true,
+      "ransomware": true
+    },
+    {
+      "cve": "CVE-2024-27956",
+      "kev": false,
+      "ransomware": null
+    }
+  ],
   "timeline": [
+    {
+      "quarter": "2023-Q4",
+      "count": 1
+    },
     {
       "quarter": "2025-Q1",
       "count": 1
     },
     {
-      "quarter": "2025-Q4",
+      "quarter": "2025-Q3",
       "count": 1
+    },
+    {
+      "quarter": "2025-Q4",
+      "count": 2
     }
   ],
   "reports": [
+    "eaaa3e7dd6533ddaffd83ca50d6a994ef7ee1e07",
     "e95ee1309360759482c515f00491c6b9fec388ad",
-    "225d3d7ed6d7f8800671e95afeaa1f2d82994af9"
+    "d9badf5186a32d32b5796f3838d4202bf3ea32ac",
+    "225d3d7ed6d7f8800671e95afeaa1f2d82994af9",
+    "17ec872ca374ca2d0b51255ff10c0bf6b602fd4f"
   ],
   "conflicts": [],
   "evidence_count": 10

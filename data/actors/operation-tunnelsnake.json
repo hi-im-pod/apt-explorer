@@ -29,9 +29,29 @@
   "malware": [],
   "techniques_documented": [],
   "techniques_reported": [],
-  "cves": [],
-  "timeline": [],
-  "reports": [],
+  "cves": [
+    {
+      "cve": "CVE-2017-7269",
+      "kev": true,
+      "ransomware": false
+    }
+  ],
+  "timeline": [
+    {
+      "quarter": "2021-Q2",
+      "count": 3
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 1
+    }
+  ],
+  "reports": [
+    "d6f61566e19a308db87f5b9447dacfb947213c90",
+    "4b06da80d998f2b02afb361cbecf02c1b9c62ce8",
+    "9e7437521629a60326ac81fa9d13670dc7e3e60c",
+    "dd595315281e6fa0d10da6fb419a5f74ee3d2648"
+  ],
   "conflicts": [],
   "evidence_count": 0
 }

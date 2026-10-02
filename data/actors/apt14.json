@@ -185,8 +185,16 @@
   "techniques_documented": [],
   "techniques_reported": [],
   "cves": [],
-  "timeline": [],
-  "reports": [],
+  "timeline": [
+    {
+      "quarter": "2013-Q1",
+      "count": 2
+    }
+  ],
+  "reports": [
+    "2fff1d11f374eea49d0a278c78e480ceeb843e1a",
+    "756ff771df78ef39676c133c2f09485d1ce1af86"
+  ],
   "conflicts": [],
   "evidence_count": 8
 }

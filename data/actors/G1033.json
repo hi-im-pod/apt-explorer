@@ -757,6 +757,30 @@
   ],
   "techniques_reported": [
     {
+      "id": "T1566.001",
+      "count": 2
+    },
+    {
+      "id": "T1027.006",
+      "count": 1
+    },
+    {
+      "id": "T1027.013",
+      "count": 1
+    },
+    {
+      "id": "T1059.005",
+      "count": 1
+    },
+    {
+      "id": "T1059.007",
+      "count": 1
+    },
+    {
+      "id": "T1071.001",
+      "count": 1
+    },
+    {
       "id": "T1078",
       "count": 1
     },
@@ -769,7 +793,15 @@
       "count": 1
     },
     {
+      "id": "T1204.002",
+      "count": 1
+    },
+    {
       "id": "T1539",
+      "count": 1
+    },
+    {
+      "id": "T1547.001",
       "count": 1
     },
     {
@@ -777,11 +809,11 @@
       "count": 1
     },
     {
-      "id": "T1566.001",
+      "id": "T1566.002",
       "count": 1
     },
     {
-      "id": "T1566.002",
+      "id": "T1568.001",
       "count": 1
     },
     {
@@ -973,6 +1005,10 @@
   ],
   "timeline": [
     {
+      "quarter": "2016-Q2",
+      "count": 1
+    },
+    {
       "quarter": "2017-Q2",
       "count": 1
     },
@@ -986,7 +1022,7 @@
     },
     {
       "quarter": "2019-Q1",
-      "count": 3
+      "count": 4
     },
     {
       "quarter": "2019-Q2",
@@ -1009,20 +1045,36 @@
       "count": 1
     },
     {
+      "quarter": "2022-Q3",
+      "count": 3
+    },
+    {
       "quarter": "2022-Q4",
-      "count": 2
+      "count": 7
     },
     {
       "quarter": "2023-Q1",
-      "count": 1
+      "count": 2
+    },
+    {
+      "quarter": "2023-Q3",
+      "count": 2
     },
     {
       "quarter": "2023-Q4",
-      "count": 1
+      "count": 2
     },
     {
       "quarter": "2024-Q1",
       "count": 1
+    },
+    {
+      "quarter": "2024-Q2",
+      "count": 1
+    },
+    {
+      "quarter": "2024-Q4",
+      "count": 3
     },
     {
       "quarter": "2025-Q1",
@@ -1042,7 +1094,7 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 2
+      "count": 3
     },
     {
       "quarter": "2026-Q3",
@@ -1053,15 +1105,32 @@
     "microsoftblog:en-us-security-blog-2026-09-29-star-blizzard-refines-phishing-and-malware-delivery-with-the-redflick-technique",
     "b43bfe5a12e60a06af2425f490f3582e434586f6",
     "b9c7e4e5c0cb806df2ebd71e84952a0a4e1b99af",
+    "fcba815454d0282f48aaf21b34142be95baf3328",
     "3ccb7a0119dd03a4e70172c3fa63522d76201996",
     "3d980b6df91d2d6b6f909111f07c0f5bba05c9b6",
     "d8bb807b5b8dbc34a151daa220f3620aa74abc8e",
     "30a65e451d50f9aeb0fb79c99564643ca19af4cc",
+    "ecbfde3412fcea9767d4791e873f06f3d4a390be",
+    "3dfcd84139c79c91d321fa977ac88e3b726a202f",
+    "f0546ec2e9e158109af47344e63199e1a9423ff6",
+    "5e035edd2dda31dae34f6aaf26bd4aeae93c6013",
     "376d8ca8645a8cae8bf2f979e02a7d86ba3bc756",
     "7faa0cff1e6fc7881b39b8f16e820dfbe9248b2e",
+    "e86532fd2b8e24081dddaf2891562459153ac1b9",
+    "4327200896b233b2e8d62b33d99929f7d96ffb72",
+    "e0ad33227ea2b3fdaf0eef11ee69cdcb62793b25",
     "7e23d7bd9766f4fcb482fdeb5e35d30cbe739cd7",
+    "76564fa1d9277080d25027f198e56be0547048ae",
+    "0cfe94663a46c1324ee181a3182ef8cf615f8fc9",
     "7ffa8cc48d900c15e6ac08b104610f82011496c5",
+    "3760599c9f2b0ecbfba14e3253794a7e538e196a",
+    "65876280d12c53161d6dccc051679b5181c4d939",
     "9c2e050959ee0d8e7e979b09b0d9674e2277cd15",
+    "ca71d44a9109d6fa5cd4a2f05fda233177e5e216",
+    "d4203eb3a8937c20f04a1b9f8c241e18bee47b53",
+    "598a7591e161a15c63b4594debf55359ca8c3036",
+    "f713f1bd000011bf9b94d45422d3af997c36c790",
+    "6d96c56b3170a7edbd2b85d0cd1ee19b3987733f",
     "6191785c9b36d5909ad58692193c3c12d302b00d",
     "24b089f66141a590b8d2b32cff928f14e3a0d550",
     "paper:Karkoff%202020%20a%20new%20APT34%20espionage%20operation%20involves%20Lebanon%20Government",
@@ -1074,12 +1143,14 @@
     "paper:APT34%20webmask%20project",
     "fa738be5d10521d4f90279de7ab0c3000544c539",
     "90270207dfbccfbc3021fd7849807fdf1630d909",
+    "dc3f44c1c114ae276a58334ffaee829b0d978ba2",
     "320a7e4a9ea4342714019222c85f4d034bf46e79",
     "c030c982ce185522473555c673920bf08fd5453e",
     "106f7d512f587c56cc68c378918113454fbc6fce",
     "5217218444c642545031eaaabe9a0dd0f8dc4644",
     "7dcaea7c97091bd953bfb58e83ee329c92ba04d6",
-    "749fcb8711afe06402e0a97903bfe2b4073bacc6"
+    "749fcb8711afe06402e0a97903bfe2b4073bacc6",
+    "d47b628929b8f39d0e7f0c68ef2d0016732d26ec"
   ],
   "conflicts": [],
   "evidence_count": 61

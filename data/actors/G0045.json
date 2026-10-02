@@ -626,7 +626,7 @@
     },
     {
       "id": "T1053.005",
-      "count": 12
+      "count": 13
     },
     {
       "id": "T1057",
@@ -645,11 +645,11 @@
       "count": 11
     },
     {
-      "id": "T1105",
-      "count": 10
+      "id": "T1140",
+      "count": 11
     },
     {
-      "id": "T1140",
+      "id": "T1105",
       "count": 10
     },
     {
@@ -677,11 +677,23 @@
       "count": 7
     },
     {
+      "id": "T1047",
+      "count": 7
+    },
+    {
+      "id": "T1190",
+      "count": 7
+    },
+    {
       "id": "T1219",
       "count": 7
     },
     {
-      "id": "T1047",
+      "id": "T1055",
+      "count": 6
+    },
+    {
+      "id": "T1112",
       "count": 6
     },
     {
@@ -693,7 +705,7 @@
       "count": 6
     },
     {
-      "id": "T1190",
+      "id": "T1543.003",
       "count": 6
     },
     {
@@ -721,15 +733,15 @@
       "count": 5
     },
     {
-      "id": "T1055",
-      "count": 5
-    },
-    {
       "id": "T1068",
       "count": 5
     },
     {
-      "id": "T1112",
+      "id": "T1070.004",
+      "count": 5
+    },
+    {
+      "id": "T1071",
       "count": 5
     },
     {
@@ -737,7 +749,7 @@
       "count": 5
     },
     {
-      "id": "T1543.003",
+      "id": "T1566",
       "count": 5
     },
     {
@@ -769,14 +781,6 @@
       "count": 4
     },
     {
-      "id": "T1070.004",
-      "count": 4
-    },
-    {
-      "id": "T1071",
-      "count": 4
-    },
-    {
       "id": "T1078",
       "count": 4
     },
@@ -802,10 +806,6 @@
     },
     {
       "id": "T1482",
-      "count": 4
-    },
-    {
-      "id": "T1566",
       "count": 4
     },
     {
@@ -893,7 +893,15 @@
       "count": 3
     },
     {
+      "id": "T1569.002",
+      "count": 3
+    },
+    {
       "id": "T1570",
+      "count": 3
+    },
+    {
+      "id": "T1573",
       "count": 3
     },
     {
@@ -906,6 +914,10 @@
     },
     {
       "id": "T1620",
+      "count": 3
+    },
+    {
+      "id": "T1622",
       "count": 3
     },
     {
@@ -965,6 +977,10 @@
       "count": 2
     },
     {
+      "id": "T1070.006",
+      "count": 2
+    },
+    {
       "id": "T1071.004",
       "count": 2
     },
@@ -1002,6 +1018,10 @@
     },
     {
       "id": "T1119",
+      "count": 2
+    },
+    {
+      "id": "T1127.001",
       "count": 2
     },
     {
@@ -1045,6 +1065,10 @@
       "count": 2
     },
     {
+      "id": "T1546.003",
+      "count": 2
+    },
+    {
       "id": "T1548",
       "count": 2
     },
@@ -1065,15 +1089,11 @@
       "count": 2
     },
     {
-      "id": "T1569.002",
+      "id": "T1568.002",
       "count": 2
     },
     {
       "id": "T1571",
-      "count": 2
-    },
-    {
-      "id": "T1573",
       "count": 2
     },
     {
@@ -1130,10 +1150,6 @@
     },
     {
       "id": "T1608.006",
-      "count": 2
-    },
-    {
-      "id": "T1622",
       "count": 2
     },
     {
@@ -1273,10 +1289,6 @@
       "count": 1
     },
     {
-      "id": "T1070.006",
-      "count": 1
-    },
-    {
       "id": "T1074",
       "count": 1
     },
@@ -1370,10 +1382,6 @@
     },
     {
       "id": "T1125",
-      "count": 1
-    },
-    {
-      "id": "T1127.001",
       "count": 1
     },
     {
@@ -1545,10 +1553,6 @@
       "count": 1
     },
     {
-      "id": "T1546.003",
-      "count": 1
-    },
-    {
       "id": "T1546.004",
       "count": 1
     },
@@ -1678,10 +1682,6 @@
     },
     {
       "id": "T1567.002",
-      "count": 1
-    },
-    {
-      "id": "T1568.002",
       "count": 1
     },
     {
@@ -3374,11 +3374,11 @@
     },
     {
       "quarter": "2017-Q1",
-      "count": 6
+      "count": 11
     },
     {
       "quarter": "2017-Q2",
-      "count": 9
+      "count": 12
     },
     {
       "quarter": "2017-Q3",
@@ -3394,27 +3394,27 @@
     },
     {
       "quarter": "2018-Q2",
-      "count": 7
+      "count": 8
     },
     {
       "quarter": "2018-Q3",
-      "count": 11
+      "count": 19
     },
     {
       "quarter": "2018-Q4",
-      "count": 4
+      "count": 5
     },
     {
       "quarter": "2019-Q1",
-      "count": 11
+      "count": 12
     },
     {
       "quarter": "2019-Q2",
-      "count": 16
+      "count": 18
     },
     {
       "quarter": "2019-Q3",
-      "count": 3
+      "count": 4
     },
     {
       "quarter": "2019-Q4",
@@ -3426,7 +3426,7 @@
     },
     {
       "quarter": "2020-Q2",
-      "count": 26
+      "count": 28
     },
     {
       "quarter": "2020-Q3",
@@ -3438,7 +3438,7 @@
     },
     {
       "quarter": "2021-Q1",
-      "count": 54
+      "count": 55
     },
     {
       "quarter": "2021-Q2",
@@ -3450,7 +3450,7 @@
     },
     {
       "quarter": "2021-Q4",
-      "count": 59
+      "count": 60
     },
     {
       "quarter": "2022-Q1",
@@ -3458,7 +3458,7 @@
     },
     {
       "quarter": "2022-Q2",
-      "count": 81
+      "count": 82
     },
     {
       "quarter": "2022-Q3",
@@ -3466,7 +3466,7 @@
     },
     {
       "quarter": "2022-Q4",
-      "count": 21
+      "count": 25
     },
     {
       "quarter": "2023-Q1",
@@ -3486,7 +3486,7 @@
     },
     {
       "quarter": "2024-Q1",
-      "count": 12
+      "count": 13
     },
     {
       "quarter": "2024-Q2",
@@ -3522,7 +3522,7 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 18
+      "count": 27
     },
     {
       "quarter": "2026-Q3",
@@ -3536,18 +3536,27 @@
     "cfdb3d32d6a31891c317b4412de451d8e41c7b68",
     "8736bfc596170b3a53c7e07be7ea4a297bd469fc",
     "baaf5323f2119a31de412d8652004b4b0b1ee5ba",
+    "0e8e81080408d5ed3ca222ee4cbdf58eaea64f9c",
     "044f17d2b0b222b8bf06787200d521bc2ac26d86",
     "2714442444754db767799b8702e99df7327c5556",
+    "094f083d74b39fca931e8ec97dbef1a46089c4af",
     "0ad712c3e42d3065da15afdd2078d4f6f6e07268",
+    "0b9cbbe9338f13b5e1bfe97b8e4015e44ba5a810",
     "1f97c6b7e1ee62dcb786ab14c98d47761812226d",
     "3cf5f2386a4dec0167f430cbfa55778f8aa34c95",
     "4d7c33d258005594fb3a00e24cafb1195e13bcb9",
     "5caa3af9facac2e25b868e6afb482d156eacad78",
+    "5f321ee88807fdd546eb3f0fb17b344f6fe616b1",
+    "63625b200d142f718e346d3ef146ac15ea371ca8",
     "748f9be92f6186781f2f4882175bb2cf773e518c",
     "7ebe87146d492bcc5403dc80e26c230457c6a507",
     "827d84c8046d4315615f2ddcde516ca5deaae7f5",
+    "8650ac0202915f2af72aa84517bb97d4e556f911",
+    "8e839c51a4baa5be107f6e70bd2a9cbfbfcbaeb2",
     "91f205ec2b0e19eb9e1b2a0006019960d1868e5a",
     "92abe5d1c8459ef534f3795f7f137a40c58314a3",
+    "b21cf4cc90c3a92422499cf878b2876522f16233",
+    "b9c0ae0729e3c60ae81b48604499f84a6a8ffbe3",
     "d975b8d1e008be23684b727df57bc61c2c36853b",
     "e6f9047c696ca88a8516eb34501e08ce57e0b106",
     "fe52dee64e719ea763f6e8b485eb690cd77c5290",
@@ -3666,6 +3675,7 @@
     "0a4e2f1f417516c70cb0e5003ec074fb46552b22",
     "13fbda3b22d681da2ad497e91dbd798d20c2dbcb",
     "47ed28849959714f322ab7b3d74aecc6c2c8ae51",
+    "bcf3c65090d3ee31cb5a7fd3e0d3d0a05459003c",
     "c028e4266d59d61d9e0a85bd74c86de9dea12c5a",
     "3d93ac448b14cae40f1618032b985a74b6b179c0",
     "c44c2ca0d048f9d27f63a5c5307de4fbae38a13c",
@@ -3761,7 +3771,11 @@
     "c801695128ac2fc981656d32de5b8b0b7677da8f",
     "06b68c70fac490a7473249ef7783a595177782db",
     "84df6b30a57466410de82fe41c9ac6cc9b71d1b3",
+    "3550ebcedee6700bbde8e84f82fb704982bd4073",
+    "38a429205afc55ac815c00dcc34a062668ef66e6",
+    "6e127606768e4691439bb48b8b38349913ad1b7a",
     "75cf431cccabd159d3b6473070faca535cd3d44a",
+    "7a46988edb1f450e2eb116b1479008ef4ad8bc01",
     "f6cff6d784e3e436b59bb2eaa5e26feca32c3823",
     "325471781a0efd42a1f32340e1a5c2915b23580f",
     "85ea67fc685f34e1487c63195477d80264fa4e19",
@@ -3903,6 +3917,7 @@
     "a94e6463300a5a4f60c724638f5bbe7cce2a31e7",
     "231bd20dd9f470e63459ec19332e7797a09d86f8",
     "90d9486494be850c4071ab9f1de9e6dfb9b2bff7",
+    "a2b01b3ddabee06de787283f4e9a54021c96e714",
     "a562f6a1e42f9ed51072c09c830ec9e8b02af609",
     "a0f919f969560658ffb04947c186714754fef6f5",
     "c4cdd952e7f7cba9fb4acfce16ce851fa9b471d9",
@@ -4016,6 +4031,7 @@
     "eec7ee68fe17b336e17f8f9dd42a0e71a7b7833e",
     "38530a13d65d312f4fe10342975a8c5316cce5f7",
     "76edc1baa22f2f216e0827690af356075b15735c",
+    "b222c031cfe8e14d895b2893019d448cac58bc4b",
     "c0393872503ae1635cd0914f1a12604ef97b03dc",
     "6f17c07e8e831ad775ff64aae4636f23ca933d3e",
     "02a8ed2336769d8ebecccba920cdc90ae3237a0a",
@@ -4195,6 +4211,7 @@
     "3b0a8dba7617b2fa6343cbb37abff55ac3cde595",
     "025d817f8987c48eabd3548f89554f47abb5bbd9",
     "349099020900d3186c5c28f63a46351b6f9639b8",
+    "42da0553f984992fca55238adb710a7a8c081816",
     "0e33812cdd6028a00c42ed1694cc246f40e3d2fb",
     "1fb493f4fac7f782729f6d2667eb5aded32eddd6",
     "2d98a214de7a8a280ebe92a6883684593e3d33d3",
@@ -4325,9 +4342,11 @@
     "paper:Iranian%20Chafer%20APT%20Targeted%20Air%20Transportation%20and%20Government%20in%20Kuwait%20and%20Saudi%20Arabia",
     "2dffc3e2cf175bc15ffba805a6e869f40dfd36a1",
     "16c40c38294e6214024cb00abbc841af3c7bf539",
+    "7609dbc9465f87edd068da170174ebe47da24018",
     "e87b05f20ef33f02be1c02a25f10630522686344",
     "288a29e0be4811baff8c1b2a8dcf9c2b84ff6499",
     "0881fa9501ccad08b2c215a75de1081d31536937",
+    "03c57228e99df9e0536038c7fe3bf74f77fd4377",
     "9c44b54afa829d13b0da0689fc654f1e304b3e09",
     "fa061e1e56d557b53bd1b364d594842f9d9242bf",
     "paper:Catching%20APT41%20exploiting%20a%20zero-day%20vulnerability",
@@ -4371,6 +4390,7 @@
     "4fd3db0442ae7fd5633ebdd008040734e6d8e068",
     "6eb91b46cb6e98fe6f9e4b542d243da97352459f",
     "72fd9c6eb05ac339aace5c8771b6da7ef8de688b",
+    "6ae6923748844d1fbb0a08d07d6bcb1112122796",
     "61ac8f21bfe03ac9d3446a71584a92a9a8da0730",
     "9c06013fd519169a0ae86c69438b59f7fb848bd9",
     "71083d94086c266f9a5ddb48deb74ab91308a85d",
@@ -4378,9 +4398,11 @@
     "1b22d34782cd0151a5d776f27352589c2df3ad7a",
     "65d6629d404ee56e787d34e1220ebb9fc59e3733",
     "7e9929588c3d98ab8c8e98e72ecbd58dceed9116",
+    "ef1b72f9a33951efea5a65809bb7a768983c883e",
     "paper:An%20APT%20Blueprint%20Gaining%20New%20Visibility%20into%20Financial%20Threats",
     "530c04eb6369ec8a5f433e970deaea34b79d0570",
     "7960be96f5038b5a44680ccb0c7e2598615ed7c6",
+    "883f029818c765f82699541478354bad89911a86",
     "fe7fcff34a36daaf1e988c0f20d828109848738f",
     "130bedbf6c33e32735d9e5081e80957508c0f376",
     "4b75f585b8ff8f6c826fb2d2cac3bfd52b633c01",
@@ -4398,17 +4420,27 @@
     "e8da32324db0d8ffd0eefdaf2b3e68ed75920bd4",
     "0cfc49eacece7037e8bad568e7ea993816fb2b62",
     "06cd0e5cf1092f8950dd6736f684ad5d4c9c4d63",
+    "87f5158d77ea898b705d34760578696818ed5ad8",
     "5fc8f0edc719046ed5a8e9f4c7654e808c07c705",
     "68a8f729972e4da9b02ec3b6de47893ad9eec2e8",
+    "6bbccebbdf3f209517e249a7c7c7b33691405589",
     "fb43ff546455506c41067543baf645a7b61a3fd8",
     "03b44872d273ab9d1dc4e6dd8817b248c175f65c",
     "b8a1f025fec78996380d3e1045fea11c877610e2",
     "6a34208ac703c1fb4633ba448fb78bc79eb3ae19",
     "d756a710363dff192c32481266645104a903305c",
+    "cd622003433b7744a621fc95a1902e3df81c3059",
+    "637c9421fd02d9548fc9cf5678d0bfc882db8b58",
     "a02d39a656c7302043fd6d16720c472dd8604daa",
+    "eeb7abd3cf832a9b7e81b2c94732f1e51eff68af",
     "paper:Who%20is%20Mr%20An,%20and%20was%20he%20working%20for%20APT10",
     "0e7109f06710132f6e6db736a9628fd394412204",
+    "3a252430bcb61f4ad5e4065f398046be8d4a0171",
+    "b2cb1371b273c9a75d94981e085a194e8c663ff3",
     "ba6f0382399628d54a9a44d5ca868890d2e10645",
+    "84820125228da08475d3c83550353a8b1d3f8771",
+    "cda5364037f9b0a96a4c6d23a8079a9189379122",
+    "6db364bac56841bb19f92f92a0f2269934d7afa8",
     "paper:More%20on%20Huaying%20Haitai%20and%20Laoying%20Baichaun,%20the%20companies%20associated%20with%20APT10.%20Is%20there%20a%20state%20connection",
     "e15f7532efb0ef38750132b7300d5b0e8c8960b6",
     "8d2dfecda96a023dc8204c6347fcaa176cdedf9c",
@@ -4421,6 +4453,7 @@
     "84419dc1e56b82b8ff79db2f7519b2b51785bab3",
     "ca1583533d1d3f1e95986c97bf401f17e3e236fd",
     "3521306f97b7e1656871b6e95ef9d02d72be1d0f",
+    "ca851ce01b6f9c123af07bd5c41d267b5f0c49ce",
     "c58538b894e29ea2cf2947132505c031114b1da5",
     "0bcf0659c8c36fb16af983d686f77f1a9742e217",
     "575387ef16724c2727b65c2db13d71c9d8884541",
@@ -4440,16 +4473,24 @@
     "6fc906897c5820e13db9717e4f62cbfd1dea8e75",
     "a4d255a5acc56a1f8203364db0f65d781328a1af",
     "7bc7b4099f30921a875a42212f83e8db60f23142",
+    "59466f1e18b50db65f9f2c9fcf380dc4bfddd944",
     "730434022203015a57c697880774ef7fbf27ad09",
     "b461983db09c505f986e3136f01a97015b591315",
+    "21fa3482e808cc32ef762131560c8889b1bb641e",
+    "363c1f74cffd26d777fc13bc99276a8874da4828",
     "4082ecd0d6b73061fc12d099d0b1b257b3d6a71d",
     "dbb37b1a14f59614ff5764adc6813452847410a0",
     "f82df51b447c9252907376c217a68f91a9e884f2",
     "c38b1d51363d56d47ee4794f35f8e1e665403dfd",
     "c39670484716e0b383b6063e792a1112e9f05240",
+    "eeba6bed9a01db3c222e37438c5ea519eee7d617",
+    "62d2eb6112d88baf0b14302e12e31425265ccb74",
     "9f7d09b8b39b52d6b82229bb194887ca33df6b95",
+    "d347596f6131e4fc7d947171026a3bf903bc78d4",
+    "fd6b01e83e768a576de15304790fde3a16e894fe",
     "31eea2eaa2085493a85ed0147e5cadebaaf11c04",
     "a4647ed4280e38c131c19afd52fdac7ce1ecf445",
+    "23c75188146e109ca9f7eb31607643a3a6f32079",
     "d11b6bc14f14ffa97c664bf0b3c34d581d043db4",
     "45fa8fc6430e5231bccfd20416ceb9329046709c",
     "7a4063cf9f0ab09042c47cf4b0a410ec1ba47d82",

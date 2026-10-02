@@ -130,12 +130,28 @@
       "count": 2
     },
     {
+      "id": "T1059.003",
+      "count": 2
+    },
+    {
+      "id": "T1140",
+      "count": 2
+    },
+    {
+      "id": "T1566.002",
+      "count": 2
+    },
+    {
       "id": "T1583.001",
       "count": 2
     },
     {
       "id": "T1583.004",
       "count": 2
+    },
+    {
+      "id": "T1001",
+      "count": 1
     },
     {
       "id": "T1003.001",
@@ -162,6 +178,26 @@
       "count": 1
     },
     {
+      "id": "T1027.002",
+      "count": 1
+    },
+    {
+      "id": "T1027.009",
+      "count": 1
+    },
+    {
+      "id": "T1027.012",
+      "count": 1
+    },
+    {
+      "id": "T1036.007",
+      "count": 1
+    },
+    {
+      "id": "T1041",
+      "count": 1
+    },
+    {
       "id": "T1055.012",
       "count": 1
     },
@@ -170,7 +206,7 @@
       "count": 1
     },
     {
-      "id": "T1059.003",
+      "id": "T1059.007",
       "count": 1
     },
     {
@@ -190,6 +226,10 @@
       "count": 1
     },
     {
+      "id": "T1083",
+      "count": 1
+    },
+    {
       "id": "T1087.001",
       "count": 1
     },
@@ -206,7 +246,19 @@
       "count": 1
     },
     {
-      "id": "T1140",
+      "id": "T1132",
+      "count": 1
+    },
+    {
+      "id": "T1202",
+      "count": 1
+    },
+    {
+      "id": "T1204.001",
+      "count": 1
+    },
+    {
+      "id": "T1204.002",
       "count": 1
     },
     {
@@ -222,7 +274,11 @@
       "count": 1
     },
     {
-      "id": "T1566.002",
+      "id": "T1564.001",
+      "count": 1
+    },
+    {
+      "id": "T1573",
       "count": 1
     },
     {
@@ -235,6 +291,10 @@
     },
     {
       "id": "T1574",
+      "count": 1
+    },
+    {
+      "id": "T1574.001",
       "count": 1
     },
     {
@@ -592,12 +652,42 @@
       "ransomware": true
     },
     {
+      "cve": "CVE-2024-21338",
+      "kev": true,
+      "ransomware": true
+    },
+    {
       "cve": "CVE-2024-24919",
       "kev": true,
       "ransomware": true
     },
     {
+      "cve": "CVE-2024-38106",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2024-38193",
+      "kev": true,
+      "ransomware": false
+    },
+    {
       "cve": "CVE-2024-43451",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2024-4947",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2024-5274",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2024-7971",
       "kev": true,
       "ransomware": false
     },
@@ -673,7 +763,7 @@
     },
     {
       "quarter": "2021-Q3",
-      "count": 13
+      "count": 14
     },
     {
       "quarter": "2021-Q4",
@@ -681,7 +771,7 @@
     },
     {
       "quarter": "2022-Q1",
-      "count": 6
+      "count": 7
     },
     {
       "quarter": "2022-Q2",
@@ -689,7 +779,7 @@
     },
     {
       "quarter": "2022-Q3",
-      "count": 6
+      "count": 8
     },
     {
       "quarter": "2022-Q4",
@@ -709,7 +799,7 @@
     },
     {
       "quarter": "2023-Q4",
-      "count": 6
+      "count": 7
     },
     {
       "quarter": "2024-Q1",
@@ -717,11 +807,11 @@
     },
     {
       "quarter": "2024-Q2",
-      "count": 2
+      "count": 3
     },
     {
       "quarter": "2024-Q3",
-      "count": 4
+      "count": 5
     },
     {
       "quarter": "2025-Q1",
@@ -745,7 +835,7 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 4
+      "count": 6
     },
     {
       "quarter": "2026-Q3",
@@ -756,6 +846,8 @@
     "5ac892de5893e31aa9af699a2d232851010722a8",
     "eset:en-eset-research-fishmongers-arsenal-upgraded-sprysocks-windows",
     "1995be502eeb600a49c43e00f0f7aa636aca9526",
+    "1b987710b618a9a415bf3f24e672b9bf0ddb8854",
+    "1ebd01e16b288909131a7586aba88f4f63b15680",
     "1fbc10dde6f8afd41b8e439120d9d29882eda30c",
     "8aca84a099d3677ed953bbaec4343d41cc6724f1",
     "d1edb2ace176011add7b095752c0f3d61a16bfbb",
@@ -774,9 +866,11 @@
     "d46ca97249f49dd39e6c7989805583a6f3a5b2ae",
     "c2ed014ae31e2740cab0f1758d1d83ddb1665a0f",
     "73cb5e24f764de563ef1349ecd4db2ffaed1546d",
+    "59f6074eedfe0f5dcb0c6e4054b6baaac0568587",
     "4aae586f805eadc005befccff33c83b025c72eaa",
     "8c5f458c42dacd87e817aa0fd3fa9583dc27fbfc",
     "633e2ecf2b9f5976d9b82d32856e15812a9a9dd0",
+    "b4d343eb91e0322bbc47a70802803e89bfaf7379",
     "812fab2a9498760768de019c8e75848af55663d3",
     "1fca8044e90d64caed80b8a16fab8749dbc8168e",
     "8c264c6278b7eb0f8754db671d114e050f46919b",
@@ -788,6 +882,7 @@
     "e9fc4059394ac436de965b38531ce89ea2a385eb",
     "e591d90cf45dc65dbc048be0b9b69b21c6722cc9",
     "b117ca28f926374fc3348056f7c5f57285c595f9",
+    "72e92d5958587ee021ccbe493d333846d0a7c177",
     "9bf3403619f510dda21eaa7772597599bbf683d1",
     "bc4aba6b0cc36c914ac83997cf606b3845da2de5",
     "1de3a164e749588e37d184d082447e8ce765702f",
@@ -814,6 +909,8 @@
     "e634dbb50bdeebb07d4b95670c20db80376fe526",
     "3a39a0c99f1c8759d3a2abfe8183362b5cd5b782",
     "cc96a2d3bcd049bd15566a0ed75d8d962817f847",
+    "abd18754ed0d38c359d340d503c1154716bb048b",
+    "f8eff5569f73e75ceffbed168ac8bf7f7b8db816",
     "c23f5a16e0c9d8e1cc24ba947efd40fc29a2009b",
     "61cd4a8b611dcdeb19277d2eef72ce2463cd1f3d",
     "20050eb56a7e9ae7822224694f46580fe4f77d47",
@@ -827,6 +924,7 @@
     "42dd3066cb18ccc0b7893f675f97d8e0ccbe563d",
     "e23b7a6e0c210aa2e92ad779c5dded5962f19b89",
     "b70ce7aa5495414f0cb55bc1a945a4b0dae20cbb",
+    "870bca331eac48550c2b19d5e931cf673abe8d9b",
     "c0ad619c2a45c6587da13b39cc29a4a09b1de841",
     "e3a7c8074629b1dbf0f8e9d666b2ffb541c08be6",
     "32343e29daac413e21a72ed25decf3be28f7c0e2",
@@ -847,6 +945,7 @@
     "7fbca866e5513eb9ed74ab3ec01187451b5e3f7c",
     "9b0936b1e3b43ea3afe57dce26d6dbd5dc56d6bc",
     "9a7681627db52bec9bac3e8add912bb8ed80fff7",
+    "253d1d1205d5b6a58c8513104935e738a0c1a256",
     "f60b2e94afa2bfd6d74ee3bead51e58cf71df69c",
     "e36dbe737ae2961dc9db8b0ee7bee70c3d9356a3",
     "3357eab141359b8f253e39c38da102ca81f52fc4",

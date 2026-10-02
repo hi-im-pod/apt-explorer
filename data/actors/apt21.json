@@ -429,6 +429,11 @@
       "ransomware": null
     },
     {
+      "cve": "CVE-2010-3333",
+      "kev": true,
+      "ransomware": false
+    },
+    {
       "cve": "CVE-2010-3915",
       "kev": false,
       "ransomware": null
@@ -900,7 +905,15 @@
       "count": 2
     },
     {
+      "quarter": "2013-Q2",
+      "count": 5
+    },
+    {
       "quarter": "2014-Q3",
+      "count": 3
+    },
+    {
+      "quarter": "2014-Q4",
       "count": 1
     },
     {
@@ -908,12 +921,16 @@
       "count": 2
     },
     {
+      "quarter": "2016-Q1",
+      "count": 3
+    },
+    {
       "quarter": "2016-Q2",
       "count": 1
     },
     {
       "quarter": "2016-Q3",
-      "count": 2
+      "count": 6
     },
     {
       "quarter": "2017-Q2",
@@ -965,7 +982,7 @@
     },
     {
       "quarter": "2020-Q4",
-      "count": 6
+      "count": 7
     },
     {
       "quarter": "2021-Q1",
@@ -1049,13 +1066,15 @@
     },
     {
       "quarter": "2026-Q2",
-      "count": 3
+      "count": 5
     }
   ],
   "reports": [
     "5caa3af9facac2e25b868e6afb482d156eacad78",
     "827d84c8046d4315615f2ddcde516ca5deaae7f5",
+    "aef25918bf6be274004a92a5e1b627e9337c5a14",
     "d975b8d1e008be23684b727df57bc61c2c36853b",
+    "fd2cb0faee209d33862c110200501ef8879a5cde",
     "fa350b6bf21be8af393d235d0a815caae5f5802d",
     "760e14c40a2f98f490e90f5dc8564faed8876f60",
     "b37836d031ce99e6f0a41bafb30ba9a6badeb8a6",
@@ -1155,6 +1174,7 @@
     "0d6e2cd5a8c62b5a04344af2b6a6999932c5ab2c",
     "70c02fd43a57f19248ffe7c3eef394da1b25204a",
     "090fd0b5c914d3c45a59a1af8f24b5a31a56af77",
+    "c586e990a738f00ec6fac744b3d823df9d4d7aaf",
     "38b1693a956655c20c89fd655befeeb258db93a7",
     "b3a184923b1f56374141c53be2b1655f893bfa0c",
     "aeeec3e82bad1f1e8973a715f3c9dc737edb92f0",
@@ -1197,11 +1217,26 @@
     "7bc7b4099f30921a875a42212f83e8db60f23142",
     "dbb37b1a14f59614ff5764adc6813452847410a0",
     "7a4063cf9f0ab09042c47cf4b0a410ec1ba47d82",
+    "a1b9d5a178a30f272b3f420a9b2263eac2c73e35",
+    "c931257dcbda322fa1a28021d3454b1110aec308",
+    "0b9c3d5ae5571e69f15743020fdf7ac70b2b5365",
     "a31580ef3c9b4d305cf87e3ba851017713122bdc",
+    "d647ecd9a694447bc8ee9096f425ba29d93f7fb7",
     "ff43b11fe41fc57beca4d67230f1545eb86259b6",
+    "1cd7c6502a22702e4e05e1708ce2662534cb3e32",
+    "acc9346b5fa03d201fb8e10850a1b185088f1221",
+    "fc09c97722173fcf0a45553676ecca2cb3a738d2",
     "0a0c97b21075f4588f10503ae1c26a4685e061d1",
     "37584381a0a0c2d566b8ce13965ffa7226cdaa71",
+    "c264921f168c1cf344cd493d10aeebf92f80fb0c",
+    "08a6aa1759d1977b77b7ce128f9913fbb274b15a",
+    "859aa0160d51f6ffa825a3c2cd22a6fcffde6d25",
     "paper:NetTraveler_Makeover_10th_Birthday",
+    "4fd06d33aa1a087709277eb71d204e2fbf8b9243",
+    "679141963cda8d5e36d3c906ced09fab77e6cfd0",
+    "724a4ab0bbcf68f3dcf79fd2e31739418181b222",
+    "954abe72265caf8354e5c09eeeb45c01485a0e44",
+    "f9524e08c18c3093b9c6fd51d9408dd85ddbd7ef",
     "875abf02dad2a434d708e495ffc8afe4b2500aae",
     "24bd1e9d9c67263a2a65c017545634f004dcbfc8"
   ],

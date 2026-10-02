@@ -91,7 +91,64 @@
     "T1685.006",
     "T1686"
   ],
-  "techniques_reported": [],
+  "techniques_reported": [
+    {
+      "id": "T1021",
+      "count": 3
+    },
+    {
+      "id": "T1036",
+      "count": 3
+    },
+    {
+      "id": "T1190",
+      "count": 3
+    },
+    {
+      "id": "T1018",
+      "count": 2
+    },
+    {
+      "id": "T1046",
+      "count": 2
+    },
+    {
+      "id": "T1057",
+      "count": 2
+    },
+    {
+      "id": "T1071",
+      "count": 2
+    },
+    {
+      "id": "T1078",
+      "count": 2
+    },
+    {
+      "id": "T1110",
+      "count": 2
+    },
+    {
+      "id": "T1132",
+      "count": 2
+    },
+    {
+      "id": "T1496",
+      "count": 2
+    },
+    {
+      "id": "T1049",
+      "count": 1
+    },
+    {
+      "id": "T1055",
+      "count": 1
+    },
+    {
+      "id": "T1140",
+      "count": 1
+    }
+  ],
   "cves": [
     {
       "cve": "CVE-2016-3088",
@@ -132,15 +189,15 @@
   "timeline": [
     {
       "quarter": "2018-Q3",
-      "count": 1
+      "count": 2
     },
     {
       "quarter": "2019-Q1",
-      "count": 3
+      "count": 5
     },
     {
       "quarter": "2019-Q2",
-      "count": 3
+      "count": 6
     },
     {
       "quarter": "2019-Q3",
@@ -148,19 +205,41 @@
     },
     {
       "quarter": "2021-Q1",
-      "count": 1
+      "count": 2
+    },
+    {
+      "quarter": "2021-Q2",
+      "count": 2
+    },
+    {
+      "quarter": "2026-Q2",
+      "count": 5
     }
   ],
   "reports": [
+    "238a0dc2d7c417664d146b73a4ade9718a20edbe",
+    "4928fa0de00872d0114965c35883fc447edbbb74",
+    "56180159314949b2e90170af26a62b33bc972ea9",
+    "792c873b87d42b65631625e67338e7a1f53e94a2",
+    "939b3f78473a8b4c171ef36ae3e74817db77a8e3",
+    "3418dd81fa8625f5538ea3f9f53f8194b50e4b17",
+    "9d59d6eb3c440d2db6aaff4af2486d29e6d6dcc9",
     "7c9e77a1b35fc58925a2c8a7a52eb0a48b7f9b68",
+    "cfd45384f984c7dc7316e7c683888e81a31eb1dd",
     "97f8b6eebbb7aad3bff6f1346f019467999b6f6a",
     "2f720cf793ed13ecc893e1aeb5879063b762bbcd",
+    "8b1e8d3cdcd1dd87dd0224aca0205cf8adba0c20",
+    "4d59fa33e1d603576324f2a5f4a6a6e5c663f29c",
+    "e2b435b9d39be5ae766eeea3f703284602b6a4ae",
     "3e18f65597ac9fb99c1fd9e56a9728f97f94111a",
     "ea884579ea655fbf0fbf7484c51ddb8aeb944e46",
     "3922d6284d2b5b34fdc4e9ce031a20db716034b8",
+    "9682ffb26883f4faf7f2a09cf2e41159bfe3f105",
+    "2afea07680c022b478e2343cc32add7b526c3f0c",
     "878dfa6ec75c711215f74a8761c62bd1fbbcf130",
     "f7cac6233d494a238366b323fc702dbb15cfe334",
-    "5bfa6c81cade4718f48e54c815b58b969684514e"
+    "5bfa6c81cade4718f48e54c815b58b969684514e",
+    "ea4efa0b1384a283a4c2b33d6f2a90fbce54d2d3"
   ],
   "conflicts": [],
   "evidence_count": 5

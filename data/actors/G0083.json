@@ -56,14 +56,25 @@
     "T1657"
   ],
   "techniques_reported": [],
-  "cves": [],
+  "cves": [
+    {
+      "cve": "CVE-2017-11882",
+      "kev": true,
+      "ransomware": true
+    }
+  ],
   "timeline": [
     {
       "quarter": "2016-Q4",
       "count": 1
+    },
+    {
+      "quarter": "2021-Q4",
+      "count": 1
     }
   ],
   "reports": [
+    "a5c390c58bd4be4aa35aa96fc86d8b271297438c",
     "939b0144c6c6ba359af7aaf7b4bee8fa83e519f1"
   ],
   "conflicts": [],

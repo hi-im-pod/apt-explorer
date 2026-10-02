@@ -689,10 +689,14 @@
   "techniques_reported": [
     {
       "id": "T1071.001",
-      "count": 12
+      "count": 13
     },
     {
       "id": "T1082",
+      "count": 12
+    },
+    {
+      "id": "T1053.005",
       "count": 11
     },
     {
@@ -700,15 +704,15 @@
       "count": 11
     },
     {
-      "id": "T1053.005",
+      "id": "T1057",
       "count": 10
     },
     {
-      "id": "T1057",
-      "count": 9
+      "id": "T1204.002",
+      "count": 10
     },
     {
-      "id": "T1204.002",
+      "id": "T1547.001",
       "count": 9
     },
     {
@@ -724,11 +728,23 @@
       "count": 8
     },
     {
-      "id": "T1547.001",
+      "id": "T1083",
+      "count": 8
+    },
+    {
+      "id": "T1140",
       "count": 8
     },
     {
       "id": "T1005",
+      "count": 7
+    },
+    {
+      "id": "T1016",
+      "count": 7
+    },
+    {
+      "id": "T1036.005",
       "count": 7
     },
     {
@@ -740,19 +756,11 @@
       "count": 7
     },
     {
-      "id": "T1083",
+      "id": "T1573.001",
       "count": 7
     },
     {
-      "id": "T1140",
-      "count": 7
-    },
-    {
-      "id": "T1016",
-      "count": 6
-    },
-    {
-      "id": "T1036.005",
+      "id": "T1033",
       "count": 6
     },
     {
@@ -760,11 +768,7 @@
       "count": 6
     },
     {
-      "id": "T1573.001",
-      "count": 6
-    },
-    {
-      "id": "T1033",
+      "id": "T1049",
       "count": 5
     },
     {
@@ -776,12 +780,28 @@
       "count": 5
     },
     {
+      "id": "T1518.001",
+      "count": 5
+    },
+    {
       "id": "T1560.001",
+      "count": 5
+    },
+    {
+      "id": "T1566.002",
       "count": 5
     },
     {
       "id": "T1574.001",
       "count": 5
+    },
+    {
+      "id": "T1587.001",
+      "count": 5
+    },
+    {
+      "id": "T1018",
+      "count": 4
     },
     {
       "id": "T1036",
@@ -792,11 +812,15 @@
       "count": 4
     },
     {
-      "id": "T1049",
+      "id": "T1059",
       "count": 4
     },
     {
-      "id": "T1059",
+      "id": "T1068",
+      "count": 4
+    },
+    {
+      "id": "T1069.002",
       "count": 4
     },
     {
@@ -804,15 +828,11 @@
       "count": 4
     },
     {
+      "id": "T1087.002",
+      "count": 4
+    },
+    {
       "id": "T1482",
-      "count": 4
-    },
-    {
-      "id": "T1518.001",
-      "count": 4
-    },
-    {
-      "id": "T1566.002",
       "count": 4
     },
     {
@@ -824,7 +844,7 @@
       "count": 4
     },
     {
-      "id": "T1587.001",
+      "id": "T1608.001",
       "count": 4
     },
     {
@@ -840,7 +860,7 @@
       "count": 3
     },
     {
-      "id": "T1018",
+      "id": "T1016.001",
       "count": 3
     },
     {
@@ -849,6 +869,10 @@
     },
     {
       "id": "T1046",
+      "count": 3
+    },
+    {
+      "id": "T1048",
       "count": 3
     },
     {
@@ -868,11 +892,7 @@
       "count": 3
     },
     {
-      "id": "T1068",
-      "count": 3
-    },
-    {
-      "id": "T1069.002",
+      "id": "T1069.001",
       "count": 3
     },
     {
@@ -884,11 +904,19 @@
       "count": 3
     },
     {
-      "id": "T1087.002",
+      "id": "T1090.001",
       "count": 3
     },
     {
-      "id": "T1090.001",
+      "id": "T1091",
+      "count": 3
+    },
+    {
+      "id": "T1095",
+      "count": 3
+    },
+    {
+      "id": "T1104",
       "count": 3
     },
     {
@@ -913,6 +941,10 @@
     },
     {
       "id": "T1190",
+      "count": 3
+    },
+    {
+      "id": "T1204.001",
       "count": 3
     },
     {
@@ -948,10 +980,6 @@
       "count": 3
     },
     {
-      "id": "T1608.001",
-      "count": 3
-    },
-    {
       "id": "T1620",
       "count": 3
     },
@@ -964,10 +992,6 @@
       "count": 2
     },
     {
-      "id": "T1016.001",
-      "count": 2
-    },
-    {
       "id": "T1021.001",
       "count": 2
     },
@@ -977,10 +1001,6 @@
     },
     {
       "id": "T1039",
-      "count": 2
-    },
-    {
-      "id": "T1048",
       "count": 2
     },
     {
@@ -997,10 +1017,6 @@
     },
     {
       "id": "T1059.007",
-      "count": 2
-    },
-    {
-      "id": "T1069.001",
       "count": 2
     },
     {
@@ -1024,14 +1040,6 @@
       "count": 2
     },
     {
-      "id": "T1091",
-      "count": 2
-    },
-    {
-      "id": "T1095",
-      "count": 2
-    },
-    {
       "id": "T1098",
       "count": 2
     },
@@ -1045,10 +1053,6 @@
     },
     {
       "id": "T1102.002",
-      "count": 2
-    },
-    {
-      "id": "T1104",
       "count": 2
     },
     {
@@ -1072,15 +1076,15 @@
       "count": 2
     },
     {
+      "id": "T1134",
+      "count": 2
+    },
+    {
       "id": "T1136",
       "count": 2
     },
     {
       "id": "T1204",
-      "count": 2
-    },
-    {
-      "id": "T1204.001",
       "count": 2
     },
     {
@@ -1180,6 +1184,18 @@
       "count": 2
     },
     {
+      "id": "T1583.004",
+      "count": 2
+    },
+    {
+      "id": "T1585.002",
+      "count": 2
+    },
+    {
+      "id": "T1588.002",
+      "count": 2
+    },
+    {
       "id": "T1590",
       "count": 2
     },
@@ -1221,6 +1237,10 @@
     },
     {
       "id": "T1010",
+      "count": 1
+    },
+    {
+      "id": "T1016.002",
       "count": 1
     },
     {
@@ -1413,10 +1433,6 @@
     },
     {
       "id": "T1132.002",
-      "count": 1
-    },
-    {
-      "id": "T1134",
       "count": 1
     },
     {
@@ -1692,10 +1708,6 @@
       "count": 1
     },
     {
-      "id": "T1583.004",
-      "count": 1
-    },
-    {
       "id": "T1583.006",
       "count": 1
     },
@@ -1709,10 +1721,6 @@
     },
     {
       "id": "T1585",
-      "count": 1
-    },
-    {
-      "id": "T1585.002",
       "count": 1
     },
     {
@@ -1733,10 +1741,6 @@
     },
     {
       "id": "T1588",
-      "count": 1
-    },
-    {
-      "id": "T1588.002",
       "count": 1
     },
     {
@@ -2589,6 +2593,11 @@
       "ransomware": false
     },
     {
+      "cve": "CVE-2021-22941",
+      "kev": true,
+      "ransomware": true
+    },
+    {
       "cve": "CVE-2021-26084",
       "kev": true,
       "ransomware": true
@@ -2759,6 +2768,11 @@
       "ransomware": null
     },
     {
+      "cve": "CVE-2022-1388",
+      "kev": true,
+      "ransomware": true
+    },
+    {
       "cve": "CVE-2022-21587",
       "kev": true,
       "ransomware": true
@@ -2894,6 +2908,11 @@
       "ransomware": true
     },
     {
+      "cve": "CVE-2023-20867",
+      "kev": true,
+      "ransomware": false
+    },
+    {
       "cve": "CVE-2023-21746",
       "kev": false,
       "ransomware": null
@@ -2925,6 +2944,11 @@
     },
     {
       "cve": "CVE-2023-32315",
+      "kev": true,
+      "ransomware": false
+    },
+    {
+      "cve": "CVE-2023-34048",
       "kev": true,
       "ransomware": false
     },
@@ -3111,7 +3135,7 @@
     },
     {
       "quarter": "2018-Q2",
-      "count": 6
+      "count": 7
     },
     {
       "quarter": "2018-Q3",
@@ -3135,35 +3159,35 @@
     },
     {
       "quarter": "2019-Q4",
-      "count": 14
+      "count": 16
     },
     {
       "quarter": "2020-Q1",
-      "count": 19
+      "count": 21
     },
     {
       "quarter": "2020-Q2",
-      "count": 12
+      "count": 14
     },
     {
       "quarter": "2020-Q3",
-      "count": 24
+      "count": 26
     },
     {
       "quarter": "2020-Q4",
-      "count": 37
+      "count": 38
     },
     {
       "quarter": "2021-Q1",
-      "count": 48
+      "count": 49
     },
     {
       "quarter": "2021-Q2",
-      "count": 59
+      "count": 62
     },
     {
       "quarter": "2021-Q3",
-      "count": 66
+      "count": 67
     },
     {
       "quarter": "2021-Q4",
@@ -3171,27 +3195,27 @@
     },
     {
       "quarter": "2022-Q1",
-      "count": 63
+      "count": 68
     },
     {
       "quarter": "2022-Q2",
-      "count": 69
+      "count": 74
     },
     {
       "quarter": "2022-Q3",
-      "count": 48
+      "count": 49
     },
     {
       "quarter": "2022-Q4",
-      "count": 22
+      "count": 28
     },
     {
       "quarter": "2023-Q1",
-      "count": 24
+      "count": 26
     },
     {
       "quarter": "2023-Q2",
-      "count": 12
+      "count": 13
     },
     {
       "quarter": "2023-Q3",
@@ -3227,7 +3251,7 @@
     },
     {
       "quarter": "2025-Q3",
-      "count": 10
+      "count": 11
     },
     {
       "quarter": "2025-Q4",
@@ -3235,38 +3259,47 @@
     },
     {
       "quarter": "2026-Q1",
-      "count": 7
+      "count": 8
     },
     {
       "quarter": "2026-Q2",
-      "count": 25
+      "count": 33
     },
     {
       "quarter": "2026-Q3",
-      "count": 1
+      "count": 2
     }
   ],
   "reports": [
+    "272c37b62b58b7c5a01f15d85ac9f5bf8b13f8e4",
     "22dfb11cd0b74a4884d7cf861cc715154e41c1fd",
     "05fccd36402697dc8b45a6526d60823574f4bc71",
     "044f17d2b0b222b8bf06787200d521bc2ac26d86",
     "686bac46078e19168d7e4dd36920f65088622bbc",
     "27c08e0a03e65cea5d3652ff2168aaf8dd9657f9",
     "3434003b39057dce2a171f8f276f0bc26d53f2d5",
+    "7eb952f516e8ae42c164190e12c8083d815dc328",
+    "1399399e1e36cc093bb1abae7e381f6604508a02",
+    "3147b2bafa116a04f17fc5819854a115fed4a96d",
     "32b9eb688143c2276ecbf88aac04e4ccd252db0f",
     "32f122fdedf28f1b781ce02d6b13c154bb7a6140",
     "4d929df9c3cf31d50cc8782ff5fcf6450b0385b9",
     "4e05ba5c588a654d3049bdb58ac763ec077de1b6",
     "5caa3af9facac2e25b868e6afb482d156eacad78",
+    "60d3c7bb3a48469b0dfee6ab60478d55b5aee52f",
+    "7204d73d38e67f901fd36a55aa51c2717920143f",
     "748f9be92f6186781f2f4882175bb2cf773e518c",
     "7ebe87146d492bcc5403dc80e26c230457c6a507",
     "827d84c8046d4315615f2ddcde516ca5deaae7f5",
+    "84643357e0af1c36f3f4d3b36971f12f4883d149",
     "899504636d213931ae5c69e06cabc932ba85025f",
     "8e6669c0b3a18b1ce1a9891e9d18924a1a69e84f",
     "91f205ec2b0e19eb9e1b2a0006019960d1868e5a",
     "9fdf30470699a4f4119bcbff25841aaa6a9633ee",
+    "ac6eb2297b269291b1b2d8ebdb84f784afa2a164",
     "b5163fedaa03cd59f8742afac4a95c27cdf9fd9c",
     "bd27ca83cc69535d856a5af8db9e8bf003eb26a1",
+    "c3f99bbc2c63b32eb9f5007406ab819545daf499",
     "c7b97c6f04613f6b58495874253d1928dfa64fc5",
     "d08e3c026f47ba60d151e46961e6091f009bff9d",
     "d975b8d1e008be23684b727df57bc61c2c36853b",
@@ -3279,6 +3312,7 @@
     "b4e81b0030179d385af7e38ed98cb26c162b67b4",
     "43d5bc8cc6248cfd43889c677e7cdb1cf023a624",
     "b267388b7d4445f5a107626959a8fd1c5f55b43e",
+    "bfddf153fee35967f9007b06edff9b24d2929bb2",
     "58485027624a66649290bc762408564d788759c3",
     "b37836d031ce99e6f0a41bafb30ba9a6badeb8a6",
     "e11de2daab7b971af5fe4b7e9a4c964df3342c87",
@@ -3293,6 +3327,7 @@
     "538ad2302d4482df77017d7e238edf804a25085e",
     "d9badf5186a32d32b5796f3838d4202bf3ea32ac",
     "1d99b0c4abc685cc00c9ef8e811c6abbb24795c3",
+    "712d50a4fba826d692e7b2587e09eeb22372e4a3",
     "25d53c88b04f5a5155c19e9c1d76ddebca29a1f3",
     "433713025f7e2cab3a3a72a0a4624064f9873bf9",
     "da9ad35f01ce1e207f4bfff4b3a53190e4fedb8e",
@@ -3419,6 +3454,7 @@
     "9cf1b38d9ce10a3a2b12c924ee45c66bf7bb861a",
     "96b349492a25c6149912b81dab44e1f3daac8463",
     "3e7325eb01e03f4900ec94cf132dc300a5564542",
+    "af1f9ad811741c6a2394d5f1a5a499872e0091e6",
     "8ef50b3946a56f51b3d2f77bf9161ff4b46ab6a5",
     "e25605de7a1dc8dc0a65e83fbfe534dde031c1fe",
     "45ac66f4ab05c43bc5128377779e6673eace06cf",
@@ -3429,6 +3465,8 @@
     "fde68c48764877cbd2d667deaa47f7d00e42a691",
     "78d3f455cfc86abc0f5f2ad1346eeca512ab5f39",
     "6503b8318c081cae088bf9040e0e8463d13d17d1",
+    "f9dc47847698fb913f004b17525a16d37a7c711c",
+    "6654a5811b00cac10749dd6881f73239881d4674",
     "9c04a68e7ec7dcb995bf90bd920fdf35837400a3",
     "a315b44bfa8879deee5d9ee550e6bdf1516c6258",
     "5f7171abec35459c94572648af8628190b9c973e",
@@ -3448,14 +3486,19 @@
     "7d02ef9cad25f39740047409a8919205cd98a00f",
     "0d37b69929b89e39661baf14219fbb32b15a0625",
     "a0002020dd5651bfeb5f8d3092a81eb2d6df39c2",
+    "f5529a2813f540bd74a2c33f1a4302a5c0df35a8",
     "78ebceb419f4894413e88ff6e2e9505cd42b8624",
     "7cb24cc595c3aca655b66d961c523a915af58560",
     "1460844da0d4a71e4f8aff5a4f7c3a5d70efb5d7",
+    "20abcd71b5293e4c97768dd337b4260a88efcc7c",
+    "80dbf6d243b38adbb4ce7def6df0f58b4cbd9771",
     "a6ce26a1f0d840ffe57d86d14b83da2d80c227cf",
     "f36b089b9ec23f9a1c328ef4592dd1c28f220f48",
     "30e7dbb6ac8ad7bd0b1ee2da0ff6e4e4b4cc5250",
+    "ab65ae230a5bafabcfd9c1e86860534613bf6530",
     "df3419b829a5823c1ced56bcb5ba2251ba9af7de",
     "6d9d67d93fa7cc83fe150bac08003047e53d9096",
+    "1200b4c9c647d011daf63702e399272eb4a8e245",
     "21ce0b996b27bd40f94971faee43958135aefcd1",
     "2ff25a4d2dc113f6abc23fde1a0f46d57c7911dd",
     "c801695128ac2fc981656d32de5b8b0b7677da8f",
@@ -3465,6 +3508,7 @@
     "325471781a0efd42a1f32340e1a5c2915b23580f",
     "85ea67fc685f34e1487c63195477d80264fa4e19",
     "743814c804450067041e2596ceeffcb16d3158c2",
+    "081d4a2b113bfcdcd80b9de6b0975312caaabdbf",
     "314c39ce253f68d062df9f0d9d641527da672101",
     "389d529c64799c785f09b5eee33416671a7d58d3",
     "8002a481ae477a283086842e197b2826b81695c3",
@@ -3479,6 +3523,7 @@
     "ebebc6910795eff746182e7b9f1070896f3c14c6",
     "0903ff6d3b598d56dc8806ebcbd48aa27a1f5df4",
     "12ace14e9dfca1adafff6eda46eb2b0d449f6114",
+    "20f460af6ff7b7078bfa6a12f27bf3dad18ef3c9",
     "1611678ae4b80b56d640dede90033844f845ed8a",
     "e6d375bd05d229e438325e037a01deee59ee0e8f",
     "0ae9dce5cb63a04500fad9166c24597516323daf",
@@ -3534,6 +3579,7 @@
     "a8c815f4d386e3f721362269349def2b12027177",
     "18c269d1eaa29438861255b754cdf766df09110a",
     "14d355125e71a053843f322f3bf107519301499c",
+    "26bc80cbc13a18ae4c9adf61578c431d8fe6f845",
     "4fe59cae0c926223d1a78696ba3e5dc1781277b1",
     "8fe50793a044c312dbc634319865b897ef30a732",
     "e5b26f225f2364dc23ac772d1447c108899f343e",
@@ -3542,6 +3588,7 @@
     "61cd4a8b611dcdeb19277d2eef72ce2463cd1f3d",
     "884b505ca23c48bf3d3db4e70c557ed286ad8676",
     "1820c13e296fe1851fc14dae94a71288015f6690",
+    "9f57b345740588ac3769383ddc70ab3fe8abea8c",
     "26b82a79ffa9a63bab0526e0dd2cec604d4def2c",
     "5c71309c596a65e8e8066e44d9edba2cb53d9f57",
     "d4d77600fefb201941b4a54013fae7885be04061",
@@ -3555,15 +3602,18 @@
     "226052594643cda9e109ecd3499a3027933a60c2",
     "90ae4f4477f524a113b3dd4e3662aa2a9d2267b5",
     "5e6364d8cd7bb4c9a2bc13f52603176fe89b2888",
+    "9d49305e27251be6285e97ddb7f1bd2489689fd2",
     "8e558b8ca58d746cbb2b0eece371821e256be8fe",
     "374665e2e8ee8f7d5ae19e3741eeb0d5660fc565",
     "bd80423ed49e1a45eb34e4d6f36bba460aee9e45",
     "d2e86ebc2b883824ec38db0b5d558d53dea6b0ff",
     "1f0926c83c7bda4395e15bc4d0700a983731c229",
+    "53fb1eb722f649fde8498fb61743cd3c68bb9d14",
     "5dfc005642eb3fd62f17d40b42fd03ae7e9e578b",
     "b45de8d63022ea122afc44724424c9e866b909a6",
     "275f377e78b3547467560b13fe13c85a79695841",
     "453d139f93c44025a55eb04233d11d36c750dd07",
+    "5865e5b6cbfb7a5cd89591f9f252fa14e68299c7",
     "681ab6a539dfc853591c4259019738f573eeac84",
     "8a1d66455b304913f385a3ce7e6c23e7060211b2",
     "adee2a89211ea37f2d04649c1ae892a58bc19463",
@@ -3592,11 +3642,14 @@
     "cc65fac49d2b42618b3799cec854e6006489b310",
     "0546a9e8eb733520f2c251997ff5874a82261a80",
     "0212c8de598a3b685a5f5f80189d6c4a8e3c113d",
+    "23a57becae5c82af2b4aeaddd9f9d52f21425b88",
     "55a3b0736af4982e50f9b47ecc345b0d3a09c455",
     "1257d424954d4d3ac997e4195b6f2cba60663b37",
+    "472857e6fea930d3ccf3b52f03948847b41c652b",
     "551dbf96ed7bedc5778b2bd0f0e873c14a7e842b",
     "7bfe65ba003636a177953a29a307265d58434db7",
     "c659b44a020fb13843950889b8c5c57569dca489",
+    "d948c5fdf7f2afac5523a4d00c26ff1305dc462e",
     "1a2fc564255d77feec8d8b5050f62c43637eaa64",
     "aaf7d59ff3499b6a8c078bc790143342f906cb75",
     "af5e0bcf348a25cb90ed04971c7e039290db7236",
@@ -3613,8 +3666,10 @@
     "890cab7bcb83a5da54b9053a9279979e7b33d313",
     "4e85d4f9f237cd518220c7f797ad312513a1c9ad",
     "5b984bbed623c6fb862952fb0f8fd70eb9aff4f0",
+    "5c3acd2a1686ec86016ec087b27a5e5b01b39a52",
     "72f4250b1be6865d35b791cb8e8dc32da3afc451",
     "cba4918a039ac19c5340c399f8828ee819275303",
+    "e2ffc4f50fd588b8522d5f5a5979b96ce1e36d73",
     "54405331989e039f84527c7cd5d0f121ca54081a",
     "78dca40a65171320d01fabb3160ece81b44f27ef",
     "e478bd6e38438d4097a5c51be36921bd01da95d5",
@@ -3749,6 +3804,7 @@
     "742607b5902b16a84a818c26fa5c7919d7642639",
     "bb5145f5085fdff3b36b59741897749e6310a05b",
     "caed0a2d00650cfa0866c314ad3ad12dd9f86138",
+    "f5ae1a893051e639243bb2b095cc8b11a4474eef",
     "a953c983ef09ac3b82dbcc2a84a42b2383dea487",
     "db7ee71024da34e6fc1dfd15bb349163e4c6bc2a",
     "214bf6c0da676d094fb6f0ea1d536a20ecc9df80",
@@ -3777,6 +3833,7 @@
     "913f0063d12fcf2caea5ff7b9757f2e093d7a1d3",
     "a9c4c67a8b0ee1573b20b31467145049d39216b5",
     "70cb67abeca8116b4097aa5b7f23ee01f5626d6f",
+    "16d64402742b866e7c337bc9220427bebf950d16",
     "62b31028930669c8edb852457314ad2aa6b3a521",
     "cf37c4acb01e95ad7bbbd9e088caf6bc5c268f42",
     "0ba1f2de8fff45674c76ba94ef6f45916cb02838",
@@ -3787,12 +3844,14 @@
     "869ab188815fe6d4962a2d2935809d2e790f09c2",
     "e67ab1f6dc798d88e9947c24ecc68db3ed8416a4",
     "7a4d55ba7c4bdceba35f43f74eba1342786cbeea",
+    "d944dec64a068c804d3aab5e6fef0af9f2d608c3",
     "9270422bab8c6e6c6fb74cf4b1ba3a69880d18d3",
     "685e2b7ffa3c2450821745ea0d5f2323aa581275",
     "acf4c7e7f7deb1eccdc172177d43cc03a28ef8b7",
     "e1af2b17027d82cbea216389244844fe09357988",
     "1791d2ba76643cf9bdbac3843208be89e444963a",
     "1fae779c2312f7b0a9ef1ce8ddf683e8bb65bc46",
+    "1aaee33449d882f29f48b4c40a9f7dba1a33a0ee",
     "8cc77c6b486915100ab1d22920d4487849a8f0fa",
     "fdc41832cf63ccbc10f3926d003f1af756935215",
     "6b3fabc2a265e3f5f5078f66c5964385839580eb",
@@ -3869,6 +3928,7 @@
     "22a337a7e2a698b3935b38a27b5fe1eeac6b1f7f",
     "2d38e7aa53d6e42d5d8663a4b34ddadfced07b75",
     "0bbb3afedc09baea5110858ddf7f090a05cac070",
+    "cc9e65b5b9b543ee4c47de1229f7b438f2905f66",
     "d74502c80d9e80b76f1dd20df703a4001d7a6a0a",
     "2483e82a22ac9f871cd62ad39f7b83c99371d517",
     "950d3da71bd4edca5d4c666e8fe673ffb9624a3f",
@@ -3889,6 +3949,7 @@
     "b36eef5d7f7b4ed6fccb282f8bcc2dcd062ef074",
     "eea6ef271c53563d5e71d31d047c026ff1c35ebc",
     "38b1693a956655c20c89fd655befeeb258db93a7",
+    "4a633a739853aa6d01a416a465b7127f1d0d2218",
     "b3a184923b1f56374141c53be2b1655f893bfa0c",
     "efe77708bf35a911b07e019db06745486a29b89e",
     "0ce540c2d1bd86cd34a82fe8bde1d282e4d51957",
@@ -3930,8 +3991,10 @@
     "paper:cta-2020-0728",
     "7e5436a96c5443aabe0d8cccfe494e4517aa42b0",
     "436af4e7eecd2267f8eabe8460562ff0d6ee7fd1",
+    "4b5db316be6f7cb9d6fdf033f32f2e6a3c45a79c",
     "f1b4fe6f07e32aa7dc2d63e14cf07c2704b0d4e8",
     "2f8eef5a57271a957206b2a4c60a03bdba48748f",
+    "7478afc530439a2011c628bfd06db1c8db9b49ca",
     "6a8db29acedce8aa2a50c3c0f210b403c6bc0085",
     "b3138c6d8a810687db785d314a9318501146f7a4",
     "ed6e3a7a09ebe123f19899f7c1635887fbe1bdec",
@@ -3941,12 +4004,15 @@
     "bcbb1e874d4937ff924e6503e0e2c50e07f91906",
     "07abf8d563b06610e15d6e277748aedee6c310d2",
     "8237747eb96c9e5e85032aef65037b335ecb8ae1",
+    "d48ff517b5cdcae4a0e277affe9bb9ddad5d85cd",
+    "9955ce789bfba2984d59232dc13186351bbe6523",
     "e87b05f20ef33f02be1c02a25f10630522686344",
     "288a29e0be4811baff8c1b2a8dcf9c2b84ff6499",
     "fa061e1e56d557b53bd1b364d594842f9d9242bf",
     "paper:Catching%20APT41%20exploiting%20a%20zero-day%20vulnerability",
     "39f4cb9983c03009b6c7199e164d992a0b1e0f1f",
     "839ec43bad148e45eb95f642171f08c26aa92e7e",
+    "1d683b6ae94088f43839e829fe152541c195f1cd",
     "2b606304def5433d1e843fec05d79602d80c9ac1",
     "e2634f0395353cffdb76c3cd8472c821dcc65828",
     "fbd3f0da04889c02840ec637d7f4b017caa172b2",
@@ -3956,6 +4022,7 @@
     "4c0557257d8151dfe1719524c0d1eb9c6dfe620c",
     "fed84094f8bd8822542b76820b569235ff6cd98a",
     "24b089f66141a590b8d2b32cff928f14e3a0d550",
+    "4df7cdcd195e483420d7444fe502063585495128",
     "f2a5e4513007b5ab01a805e078256f5e8d10dbc2",
     "66b9cfec0e4d2abfe6e503c74e3a6e8ec219c7ec",
     "ab2c0ce2f1476cf0d37c66d886c9239de04131d0",
@@ -3964,6 +4031,7 @@
     "67ed982fef7800a433d55e59ffe9e0da74cad52b",
     "b7f822d02be9d514969b28cb01b3e6ee8e543e44",
     "f130f98ce44559c0328409c1be9db6c0663c1520",
+    "12da05cb0989f4baf1040bbb2c3b1276278009ee",
     "1a37382df05d162c04564b538f7bd0229f1f8e7e",
     "5007fb82a883c1ba9b478e5e613d028a4538c5b0",
     "e2a5ff7e5beea32042a46bdf69cdc96792d1ea6d",
@@ -3975,6 +4043,7 @@
     "8c9252f924326d9fa21ab27dc14dbf34d3ed8f5f",
     "d7541e81aea48ec49932896620416f0dd9f9dfde",
     "0c794545e8fa5eba2e1e806d9817b85ea12cdd88",
+    "0c971aaafe63d47ef6d6aade9c6e5859486fffdb",
     "38acbad8aff8c9b4f21349dcd6a3e2fe44b2e9bf",
     "4fd3db0442ae7fd5633ebdd008040734e6d8e068",
     "6eb91b46cb6e98fe6f9e4b542d243da97352459f",
@@ -4001,6 +4070,7 @@
     "89540497d08e70e4a9400ca3f0594d37bbd188ab",
     "411a7ffe8c11fbe9edd49575bcf4e94270e3b7be",
     "863ca91a974ccc51fe9d50980e01c1e24029f2d5",
+    "e19b51ef24c22ea3f8ae486c6fca5add8c9a3394",
     "1c8e61b3f0589bbbbbc85b0e94bbfe4c9ddbe11f",
     "84419dc1e56b82b8ff79db2f7519b2b51785bab3",
     "ca1583533d1d3f1e95986c97bf401f17e3e236fd",
