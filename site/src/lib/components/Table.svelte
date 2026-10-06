@@ -11,6 +11,7 @@
 	row indexes and count stay true to the whole list.
 -->
 <script lang="ts">
+	import { base } from '$app/paths';
 	import type { ExploreRow } from '$lib/search';
 	import { sourceLabel } from '$lib/data/labels';
 	import { formatDate } from '$lib/format';
@@ -39,13 +40,13 @@
 	/** At most this many actor chips; the rest are counted. */
 	const MAX_CHIPS = 3;
 
-	function chips(row: ExploreRow): { names: string[]; more: number } {
+	function chips(row: ExploreRow): { actors: { id: string; name: string }[]; more: number } {
 		const ids =
 			actorFilter && row.actors.includes(actorFilter)
 				? [actorFilter, ...row.actors.filter((a) => a !== actorFilter)]
 				: row.actors;
-		const names = ids.slice(0, MAX_CHIPS).map((id) => actorNames.get(id) ?? id);
-		return { names, more: Math.max(0, ids.length - MAX_CHIPS) };
+		const actors = ids.slice(0, MAX_CHIPS).map((id) => ({ id, name: actorNames.get(id) ?? id }));
+		return { actors, more: Math.max(0, ids.length - MAX_CHIPS) };
 	}
 
 	function sources(row: ExploreRow): string {
@@ -103,9 +104,9 @@
 					<a href={hrefFor(row)} onclick={(e) => click(e, row)}>{row.title}</a>
 				</span>
 				<span class="actors" role="cell">
-					{#if c.names.length}
+					{#if c.actors.length}
 						<ul>
-							{#each c.names as name (name)}<li>{name}</li>{/each}
+							{#each c.actors as a (a.id)}<li><a href="{base}/actors/{a.id}/">{a.name}</a></li>{/each}
 							{#if c.more}<li class="more">+{c.more} more</li>{/if}
 						</ul>
 					{:else}
@@ -279,7 +280,6 @@
 	.actors li {
 		flex: none;
 		max-width: 100%;
-		padding: 0.0625rem 0.5rem;
 		border-radius: 999px;
 		background: var(--accent-soft);
 		color: var(--text);
@@ -294,11 +294,31 @@
 		background: var(--surface);
 	}
 
+	/* Above the title link, which stretches over the row. */
+	.actors li a {
+		position: relative;
+		z-index: 1;
+		display: block;
+		padding: 0.0625rem 0.5rem;
+		color: inherit;
+		text-decoration: none;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.actors li a:hover {
+		text-decoration: underline;
+	}
+
+	.actors li a:focus-visible {
+		outline-offset: -2px;
+	}
+
 	.actors li.more,
 	.row.selected .actors li.more {
 		background: none;
 		color: var(--text-muted);
-		padding-inline: 0.125rem;
+		padding: 0.0625rem 0.125rem;
 	}
 
 	.none {

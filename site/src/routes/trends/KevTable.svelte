@@ -126,13 +126,13 @@
 					</span>
 					<span class="actors" role="cell">
 						<ul>
-							{#each first as id (id)}<li>{name(id)}</li>{/each}
+							{#each first as id (id)}<li><a href="{base}/actors/{id}/">{name(id)}</a></li>{/each}
 						</ul>
 						{#if rest.length}
 							<details>
 								<summary>{rest.length} more</summary>
 								<ul>
-									{#each rest as id (id)}<li>{name(id)}</li>{/each}
+									{#each rest as id (id)}<li><a href="{base}/actors/{id}/">{name(id)}</a></li>{/each}
 								</ul>
 							</details>
 						{/if}
@@ -265,6 +265,15 @@
 
 	.body .row:hover li {
 		background: var(--surface);
+	}
+
+	li a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	li a:hover {
+		text-decoration: underline;
 	}
 
 	details {

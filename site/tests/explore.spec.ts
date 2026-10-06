@@ -153,6 +153,15 @@ test('an actor and start date in the URL show only that actor from that date', a
 	await expect(page.getByLabel('From', { exact: true })).toHaveValue('2024-01-01');
 });
 
+test('an actor chip in the table links to that actor, and the link opens the profile', async ({ page }) => {
+	await open(page, '?actor=G0007&from=2024-01-01&size=100');
+	const chip = bodyRows(page).first().getByRole('listitem').filter({ hasText: /^APT28$/ }).getByRole('link');
+	await expect(chip).toHaveAttribute('href', '/apt-explorer/actors/G0007/');
+	await chip.click();
+	await expect(page).toHaveURL(/\/actors\/G0007\/$/);
+	await expect(page.getByRole('heading', { level: 1 })).toHaveText(nameOf('G0007'));
+});
+
 test('clicking a row sets ?report= and opens the panel with the original and archive links', async ({ page }) => {
 	const r = reportById(ORKL_DEAD);
 	await open(page, byTitle(ORKL_DEAD));

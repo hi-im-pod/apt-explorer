@@ -460,13 +460,26 @@ for (const vp of [
 	});
 }
 
+test('an actor chip in the KEV table links to that actor, and the link opens the profile', async ({ page }) => {
+	await page.setViewportSize({ width: 1280, height: 900 });
+	await open(page);
+	const chip = section(page, 'kev_actor_links').getByRole('row').nth(1).getByRole('listitem').first().getByRole('link');
+	const href = await chip.getAttribute('href');
+	const id = href?.match(/^\/apt-explorer\/actors\/([^/]+)\/$/)?.[1];
+	expect(id, `${href} is an actor page link`).toBeTruthy();
+	const name = (await chip.innerText()).trim();
+	await chip.click();
+	await expect(page).toHaveURL(new RegExp(`/actors/${id}/$`));
+	await expect(page.getByRole('heading', { level: 1 })).toHaveText(name);
+});
+
 test('each KEV row shows its EPSS score, and the sort puts the highest score first', async ({ page }) => {
 	await page.setViewportSize({ width: 1280, height: 900 });
 	await open(page);
 	const box = section(page, 'kev_actor_links');
 	await expect(box.getByRole('columnheader', { name: /EPSS/ })).toBeVisible();
 	const first = box.getByRole('row').nth(1);
-	const cve = (await first.getByRole('link').innerText()).trim();
+	const cve = (await first.getByRole('link').first().innerText()).trim();
 	const score = epssOf(cve);
 	if (score === null) await expect(first).toContainText('Not scored');
 	else await expect(first).toContainText(percentOf(score));
@@ -474,7 +487,7 @@ test('each KEV row shows its EPSS score, and the sort puts the highest score fir
 	await box.getByLabel('Sort by').selectOption('epss');
 	await expect(box.getByText(`Rows 1 to 25 of ${trends.kev_actor_links.length}`, { exact: true })).toBeVisible();
 	const top = trends.kev_actor_links.map((l) => epssOf(l.cve) ?? -1).sort((a, b) => b - a)[0];
-	const sortedFirst = (await box.getByRole('row').nth(1).getByRole('link').innerText()).trim();
+	const sortedFirst = (await box.getByRole('row').nth(1).getByRole('link').first().innerText()).trim();
 	expect(epssOf(sortedFirst)).toBe(top);
 	await noHorizontalScroll(page);
 });
