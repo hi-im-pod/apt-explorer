@@ -403,6 +403,31 @@ test('reporting activity shows the most reported actors by name', async ({ page 
 	await expect(chart(page, 'reporting_activity').locator('svg text', { hasText: nameOf(top) })).toHaveCount(1);
 });
 
+test('a chart label opens that actor, in the reporting activity and technique charts', async ({ page }) => {
+	await page.setViewportSize({ width: 1280, height: 900 });
+	for (const key of ['reporting_activity', 'reported_vs_documented'] as const) {
+		await open(page);
+		const label = chart(page, key).locator('svg a').first();
+		await label.scrollIntoViewIfNeeded();
+		// Plot writes the link as xlink:href.
+		const href = await label.evaluate((e) => (e as SVGAElement).href.baseVal);
+		const id = href?.match(/^\/apt-explorer\/actors\/([^/]+)\/$/)?.[1];
+		expect(id, `${key}: ${href} is an actor page link`).toBeTruthy();
+		await label.click();
+		await expect(page).toHaveURL(new RegExp(`/actors/${id}/$`));
+		await expect(page.getByRole('heading', { level: 1 })).toHaveText(nameOf(id!));
+	}
+});
+
+test('an actor in the newly documented list opens that actor', async ({ page }) => {
+	await open(page);
+	const a = trends.new_actors[0];
+	const link = section(page, 'new_actors').getByRole('list').first().getByRole('link', { name: nameOf(a.actor), exact: true });
+	await expect(link).toHaveAttribute('href', `/apt-explorer/actors/${a.actor}/`);
+	await link.click();
+	await expect(page).toHaveURL(new RegExp(`/actors/${a.actor}/$`));
+});
+
 /** Every row of the paginated KEV table, read one page at a time. */
 async function kevRows(page: Page): Promise<string[]> {
 	const box = section(page, 'kev_actor_links');

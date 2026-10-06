@@ -165,6 +165,11 @@
 		overflow: hidden;
 	}
 
+	.plot :global(svg a:hover text),
+	.plot :global(svg a:focus-visible text) {
+		text-decoration: underline;
+	}
+
 	.plot :global(svg) {
 		display: block;
 		max-width: 100%;

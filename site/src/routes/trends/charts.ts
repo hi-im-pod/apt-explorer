@@ -16,6 +16,7 @@
  *   each chart's table, so the tooltip is never the only way to read them.
  */
 import * as Plot from '@observablehq/plot';
+import { base as basePath } from '$app/paths';
 import type { ChartContext } from '$lib/components/Chart.svelte';
 import { formatCount, formatDate } from '$lib/format';
 import type { Activity, KevPoint, MonthCount, TechniqueBar } from './series';
@@ -255,6 +256,7 @@ export function activityChart(a: Activity, names: Record<string, string>) {
 					x: from,
 					textAnchor: 'start',
 					text: name,
+					href: (d: string) => `${basePath}/actors/${d}/`,
 					fill: ctx.text,
 					fontSize: 12,
 					fontWeight: 600,
@@ -403,6 +405,7 @@ export function techniqueChart(bars: TechniqueBar[], names: Record<string, strin
 					y: 'actor',
 					x: 0,
 					text: name,
+					href: (b: TechniqueBar) => `${basePath}/actors/${b.actor}/`,
 					textAnchor: 'start',
 					dy: -9,
 					fill: ctx.text,

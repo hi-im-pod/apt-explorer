@@ -12,6 +12,7 @@
 	built on another branch.
 -->
 <script lang="ts">
+	import { base } from '$app/paths';
 	import Chart from '$lib/components/Chart.svelte';
 	import type { KevActorLink } from '$lib/data/types';
 	import { sourceLabel } from '$lib/data/labels';
@@ -128,7 +129,7 @@
 					<tbody>
 						{#each activityRows as p (`${p.actor} ${p.quarter}`)}
 							<tr>
-								<td>{name(p.actor)}</td>
+								<td><a href="{base}/actors/{p.actor}/">{name(p.actor)}</a></td>
 								<td>{quarterName(p.quarter)}</td>
 								<td class="num">{formatCount(p.count)}</td>
 								<td class="num">{formatCount(p.prev)}</td>
@@ -151,7 +152,7 @@
 			<ul class="new-actors">
 				{#each newActors as a (a.actor)}
 					<li>
-						<span class="actor">{name(a.actor)}</span>
+						<span class="actor"><a href="{base}/actors/{a.actor}/">{name(a.actor)}</a></span>
 						<span class="meta"
 							>First seen <time datetime={a.first_seen}>{formatDate(a.first_seen)}</time>, {basisText(
 								a.basis
@@ -257,7 +258,7 @@
 					<tbody>
 						{#each techniques as b (b.actor)}
 							<tr>
-								<td>{name(b.actor)}</td>
+								<td><a href="{base}/actors/{b.actor}/">{name(b.actor)}</a></td>
 								<td class="num">{formatCount(b.overlap)}</td>
 								<td class="data">{b.ids.length ? b.ids.join(', ') : 'none'}</td>
 							</tr>
