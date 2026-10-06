@@ -1,0 +1,985 @@
+{
+ "7132fa8920490fd6f33a464f7018fbd0baffb43b": {
+  "victim_countries": [
+   "PK"
+  ],
+  "target_sectors": [
+   "defense"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1189",
+   "T1566.001"
+  ]
+ },
+ "3e45a371a5d1ada49c0e193372e3e1fe12191049": {
+  "victim_countries": [
+   "US"
+  ],
+  "target_sectors": [
+   "defense"
+  ],
+  "individuals_targeted": false,
+  "initial_access": []
+ },
+ "99f8d948b133c10f03dc642ffdefc72ec6ef4cf5": {
+  "victim_countries": [],
+  "target_sectors": [],
+  "individuals_targeted": true,
+  "initial_access": [
+   "T1566.002",
+   "T1566.003"
+  ]
+ },
+ "ee0ebdcf2454d62dc23d604c472d3112a57274c6": {
+  "victim_countries": [
+   "US"
+  ],
+  "target_sectors": [
+   "commercial",
+   "education",
+   "financial-services",
+   "retail",
+   "technology",
+   "transportation"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1566.001"
+  ]
+ },
+ "dd16552805b96e7cafc27d7edcd05e15014e4091": {
+  "victim_countries": [
+   "JP",
+   "KR"
+  ],
+  "target_sectors": [
+   "defense",
+   "government-national"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1566.001"
+  ]
+ },
+ "63d59610f60df26243e333a3b55f0b24e4b277ce": {
+  "victim_countries": [
+   "AL",
+   "AM",
+   "CY",
+   "EG",
+   "IQ",
+   "JO",
+   "LB",
+   "LY",
+   "SA",
+   "SE",
+   "SY",
+   "US"
+  ],
+  "target_sectors": [
+   "defense",
+   "energy",
+   "government-national",
+   "non-profit",
+   "technology",
+   "telecommunications"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1078",
+   "T1133",
+   "T1190",
+   "T1566.001"
+  ]
+ },
+ "e31ec8645ecd065f317e9b6ac0f0e83849c1ecc9": {
+  "victim_countries": [
+   "CL",
+   "PK",
+   "PL"
+  ],
+  "target_sectors": [
+   "financial-services"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1078",
+   "T1190",
+   "T1566.001",
+   "T1566.002"
+  ]
+ },
+ "6fa5641b366ea3cb82097902227cd9a6c2682607": {
+  "victim_countries": [
+   "US"
+  ],
+  "target_sectors": [
+   "defense"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1566.002",
+   "T1566.003"
+  ]
+ },
+ "61a5eb27ef3e633be66583c127de39fe19be7fb8": {
+  "victim_countries": [
+   "UA",
+   "US"
+  ],
+  "target_sectors": [
+   "communications",
+   "defense",
+   "energy",
+   "government-national",
+   "healthcare",
+   "telecommunications"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1078",
+   "T1133",
+   "T1190",
+   "T1195",
+   "T1566.001",
+   "T1566.002"
+  ]
+ },
+ "279686f1f47cd4e182910601931d8cb66b41ae84": {
+  "victim_countries": [
+   "AE",
+   "AL",
+   "IL",
+   "IQ",
+   "JO",
+   "KW",
+   "OM",
+   "SA",
+   "TM"
+  ],
+  "target_sectors": [
+   "communications",
+   "defense",
+   "financial-services",
+   "government-national",
+   "non-profit",
+   "technology"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1190",
+   "T1195",
+   "T1199"
+  ]
+ },
+ "6d83deba61a70b59ad085ba18539057a9bbfba62": {
+  "victim_countries": [
+   "CN",
+   "RU",
+   "UA",
+   "US"
+  ],
+  "target_sectors": [
+   "defense",
+   "energy",
+   "government",
+   "telecommunications"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1190",
+   "T1566"
+  ]
+ },
+ "38fa23b9506b2f598d4d5564e61d0e51a5d58a38": {
+  "victim_countries": [
+   "GB",
+   "KR",
+   "PK"
+  ],
+  "target_sectors": [
+   "education",
+   "energy",
+   "transportation"
+  ],
+  "individuals_targeted": false,
+  "initial_access": []
+ },
+ "80a3f2c1c1f9dec104874cb59b14207f35e806bc": {
+  "victim_countries": [
+   "ES",
+   "GB",
+   "HR",
+   "IT",
+   "JP",
+   "PL"
+  ],
+  "target_sectors": [
+   "financial-services"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1566.001"
+  ]
+ },
+ "8fa264721c32e66ec94ceb77645c22edbffc9259": {
+  "victim_countries": [
+   "AE",
+   "PS",
+   "QA",
+   "SA"
+  ],
+  "target_sectors": [
+   "communications",
+   "energy",
+   "government-national",
+   "non-profit"
+  ],
+  "individuals_targeted": true,
+  "initial_access": [
+   "T1190",
+   "T1566.001"
+  ]
+ },
+ "3aa1366f97a1345531af82567897baeef7624dd3": {
+  "victim_countries": [
+   "AE",
+   "AR",
+   "AT",
+   "BR",
+   "CA",
+   "CL",
+   "ES",
+   "FR",
+   "GB",
+   "HR",
+   "IL",
+   "IN",
+   "LS",
+   "LV",
+   "PK",
+   "PL",
+   "PT",
+   "RO",
+   "RS",
+   "UA",
+   "ZA"
+  ],
+  "target_sectors": [
+   "agriculture",
+   "construction",
+   "education",
+   "government",
+   "healthcare",
+   "hospitality-leisure",
+   "manufacturing",
+   "non-profit",
+   "retail",
+   "technology"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1190",
+   "T1566"
+  ]
+ },
+ "ce6de200409d558d88c026c9ab087ed1c836db28": {
+  "victim_countries": [],
+  "target_sectors": [],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1190",
+   "T1566.001"
+  ]
+ },
+ "84838de308f10054250e737881e8882ed3115a9e": {
+  "victim_countries": [
+   "AF"
+  ],
+  "target_sectors": [
+   "non-profit"
+  ],
+  "individuals_targeted": true,
+  "initial_access": [
+   "T1566.001"
+  ]
+ },
+ "47b5872e770ab60fbb0567c160ebd2fd71de9d5a": {
+  "victim_countries": [
+   "DE",
+   "US"
+  ],
+  "target_sectors": [
+   "commercial",
+   "defense"
+  ],
+  "individuals_targeted": true,
+  "initial_access": [
+   "T1566.001"
+  ]
+ },
+ "bdbe3c5510aab146d327e72ab50768503021175b": {
+  "victim_countries": [
+   "KR"
+  ],
+  "target_sectors": [
+   "chemical",
+   "defense"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1199"
+  ]
+ },
+ "0b57681534b8f5cb21ca7bc51e5658350c44c2bb": {
+  "victim_countries": [
+   "IL"
+  ],
+  "target_sectors": [
+   "education",
+   "technology"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1190"
+  ]
+ },
+ "f9e86e04d2b5c8a28ec4e69ec9f8ea15c46892ad": {
+  "victim_countries": [
+   "IQ"
+  ],
+  "target_sectors": [
+   "defense",
+   "financial-services",
+   "government-national",
+   "non-profit",
+   "telecommunications"
+  ],
+  "individuals_targeted": true,
+  "initial_access": [
+   "T1078",
+   "T1190"
+  ]
+ },
+ "82255ad9b0682b0a091f92d129c0aefd5b7d96cd": {
+  "victim_countries": [
+   "AE",
+   "CA",
+   "GB",
+   "US",
+   "ZA"
+  ],
+  "target_sectors": [
+   "communications",
+   "defense",
+   "financial-services",
+   "government-national",
+   "non-profit"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1566.001",
+   "T1566.002"
+  ]
+ },
+ "d611ca60c87498c89b450dda0f06a3cffebe53ae": {
+  "victim_countries": [
+   "US"
+  ],
+  "target_sectors": [
+   "commercial"
+  ],
+  "individuals_targeted": false,
+  "initial_access": []
+ },
+ "798348eb3a5019929eab49cafd36e67617970b78": {
+  "victim_countries": [
+   "CA"
+  ],
+  "target_sectors": [
+   "non-profit"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1566"
+  ]
+ },
+ "2373a41ce9dd7c86d4491d978fddf887d9a1fc87": {
+  "victim_countries": [
+   "KZ",
+   "VN"
+  ],
+  "target_sectors": [
+   "communications",
+   "energy"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1566.001"
+  ]
+ },
+ "93a54e05256a696ca20d04ad96cac47ff217fe46": {
+  "victim_countries": [
+   "RU",
+   "UA"
+  ],
+  "target_sectors": [
+   "financial-services",
+   "government-national"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1566.001"
+  ]
+ },
+ "cf105922040421377abdd120f6ba2b9772fdd40d": {
+  "victim_countries": [
+   "HK"
+  ],
+  "target_sectors": [],
+  "individuals_targeted": true,
+  "initial_access": [
+   "T1189",
+   "T1566.003"
+  ]
+ },
+ "a4d6f4b61271e4b5b7d4796d39ebae5b8b7e1728": {
+  "victim_countries": [
+   "MM",
+   "PH"
+  ],
+  "target_sectors": [
+   "government-national"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1091",
+   "T1566.002"
+  ]
+ },
+ "be31a634d4139e6223c50cc18cc69916ba585475": {
+  "victim_countries": [
+   "KR"
+  ],
+  "target_sectors": [
+   "chemical",
+   "technology"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1189",
+   "T1566.002"
+  ]
+ },
+ "e8a83611d700dbc67bff004984b05714471b00c4": {
+  "victim_countries": [
+   "IL",
+   "PS"
+  ],
+  "target_sectors": [
+   "defense",
+   "government-national"
+  ],
+  "individuals_targeted": true,
+  "initial_access": [
+   "T1566.001",
+   "T1566.002"
+  ]
+ },
+ "34c2b718869354a588ee602f41be77e553346c5d": {
+  "victim_countries": [
+   "CN"
+  ],
+  "target_sectors": [
+   "communications",
+   "government-national",
+   "non-profit"
+  ],
+  "individuals_targeted": true,
+  "initial_access": [
+   "T1566.001",
+   "T1566.002"
+  ]
+ },
+ "c5c082e9545293bfa698428f08e12219e23bc33f": {
+  "victim_countries": [
+   "BY",
+   "RU",
+   "UA"
+  ],
+  "target_sectors": [
+   "government-national"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1566.002"
+  ]
+ },
+ "af70e2e4750a95aa3748fc15e3c1fb92f1b47e29": {
+  "victim_countries": [],
+  "target_sectors": [
+   "technology"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1133",
+   "T1190"
+  ]
+ },
+ "a6c62ce04ae30424f380773023950d94455fc349": {
+  "victim_countries": [
+   "PL"
+  ],
+  "target_sectors": [
+   "financial-services"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1189"
+  ]
+ },
+ "0e7109f06710132f6e6db736a9628fd394412204": {
+  "victim_countries": [
+   "JP",
+   "KP",
+   "RU"
+  ],
+  "target_sectors": [
+   "defense",
+   "government-national",
+   "healthcare",
+   "technology",
+   "telecommunications"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1566.001"
+  ]
+ },
+ "d043d2ce37e8e5a249f59e30eb2608801a3a3f30": {
+  "victim_countries": [
+   "IN"
+  ],
+  "target_sectors": [
+   "energy"
+  ],
+  "individuals_targeted": false,
+  "initial_access": []
+ },
+ "4dd82280ab1b8286e7a15a6712d8aa51cea5717e": {
+  "victim_countries": [
+   "KR"
+  ],
+  "target_sectors": [
+   "commercial"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1189"
+  ]
+ },
+ "f577c784cc04ad513072b1b02e4d3c9f9399c10a": {
+  "victim_countries": [
+   "KR"
+  ],
+  "target_sectors": [
+   "technology"
+  ],
+  "individuals_targeted": true,
+  "initial_access": [
+   "T1566.001"
+  ]
+ },
+ "2bdc78b3bc56515322135f0dc78c058db89ef411": {
+  "victim_countries": [],
+  "target_sectors": [
+   "defense"
+  ],
+  "individuals_targeted": true,
+  "initial_access": [
+   "T1566.001"
+  ]
+ },
+ "12f3a174311f611263f75c3b1d62f69b11c53560": {
+  "victim_countries": [
+   "GB",
+   "US"
+  ],
+  "target_sectors": [
+   "government-national",
+   "non-profit",
+   "technology"
+  ],
+  "individuals_targeted": true,
+  "initial_access": [
+   "T1566.001",
+   "T1566.002"
+  ]
+ },
+ "5ec4826b8168e8dbbfe26a5e60123b3009770978": {
+  "victim_countries": [],
+  "target_sectors": [
+   "healthcare"
+  ],
+  "individuals_targeted": false,
+  "initial_access": []
+ },
+ "980ab92472c6de302ade77423ce09abe58a258bc": {
+  "victim_countries": [],
+  "target_sectors": [],
+  "individuals_targeted": false,
+  "initial_access": []
+ },
+ "0387df8bdfbe771ec7ee80715c58afac76266a0e": {
+  "victim_countries": [
+   "BD",
+   "PH"
+  ],
+  "target_sectors": [
+   "financial-services"
+  ],
+  "individuals_targeted": false,
+  "initial_access": []
+ },
+ "7c7567206d222546376079a19c07b615d9538cf3": {
+  "victim_countries": [
+   "RU",
+   "UA"
+  ],
+  "target_sectors": [
+   "energy",
+   "financial-services",
+   "government"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1566.001",
+   "T1566.002"
+  ]
+ },
+ "b4e7f944cadd35119444c6c346a5ab01023bfd43": {
+  "victim_countries": [
+   "KR"
+  ],
+  "target_sectors": [
+   "commercial"
+  ],
+  "individuals_targeted": true,
+  "initial_access": [
+   "T1190",
+   "T1199",
+   "T1566.001"
+  ]
+ },
+ "d1eece026635773310f0aa00e05898db7853dab0": {
+  "victim_countries": [
+   "AE",
+   "BH",
+   "EG",
+   "IL",
+   "IQ",
+   "JO",
+   "KW",
+   "LB",
+   "OM",
+   "PS",
+   "QA",
+   "SA",
+   "SY",
+   "YE"
+  ],
+  "target_sectors": [
+   "government-national"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1566.001"
+  ]
+ },
+ "d9e41bb3cd7ad22a358930b9eb53495e4409803a": {
+  "victim_countries": [],
+  "target_sectors": [
+   "technology"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1190"
+  ]
+ },
+ "01d5f589f56547de69752f135d32c6723a4b3055": {
+  "victim_countries": [
+   "PH"
+  ],
+  "target_sectors": [
+   "commercial",
+   "energy",
+   "financial-services",
+   "government-national",
+   "telecommunications"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1189",
+   "T1190",
+   "T1199",
+   "T1566.001",
+   "T1566.002"
+  ]
+ },
+ "0bfb2a4fa07e33858de806790cc846d66c3e3a24": {
+  "victim_countries": [
+   "FR",
+   "GB",
+   "IL",
+   "IQ",
+   "IR",
+   "SA",
+   "US"
+  ],
+  "target_sectors": [
+   "communications",
+   "defense",
+   "education",
+   "government-national",
+   "non-profit",
+   "technology"
+  ],
+  "individuals_targeted": true,
+  "initial_access": [
+   "T1133",
+   "T1189",
+   "T1190",
+   "T1199",
+   "T1566.001",
+   "T1566.002",
+   "T1566.003"
+  ]
+ },
+ "a224702fbdf785b482d562117dddf5d4fd848208": {
+  "victim_countries": [
+   "KR"
+  ],
+  "target_sectors": [
+   "communications",
+   "defense",
+   "education",
+   "government-national",
+   "non-profit"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1566.001",
+   "T1566.002"
+  ]
+ },
+ "51e8e24162c94d68637f8252ea6e8f5707b52a23": {
+  "victim_countries": [
+   "FR",
+   "US"
+  ],
+  "target_sectors": [
+   "defense",
+   "technology"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1189"
+  ]
+ },
+ "4da43deb6f7dede89080d4b4adaae53a2c371aa5": {
+  "victim_countries": [
+   "AM",
+   "AT",
+   "AU",
+   "AZ",
+   "BE",
+   "BO",
+   "BW",
+   "CH",
+   "CL",
+   "DE",
+   "DK",
+   "EC",
+   "EE",
+   "ES",
+   "FI",
+   "FR",
+   "GB",
+   "GE",
+   "GW",
+   "HK",
+   "HU",
+   "ID",
+   "IN",
+   "JM",
+   "KW",
+   "KZ",
+   "RO",
+   "RS",
+   "TM",
+   "UA",
+   "US",
+   "UY",
+   "ZA"
+  ],
+  "target_sectors": [
+   "agriculture",
+   "communications",
+   "construction",
+   "defense",
+   "education",
+   "energy",
+   "government-national",
+   "healthcare",
+   "hospitality-leisure",
+   "manufacturing",
+   "non-profit",
+   "retail",
+   "technology",
+   "transportation"
+  ],
+  "individuals_targeted": true,
+  "initial_access": [
+   "T1189"
+  ]
+ },
+ "8fdd96ab4d0e95802cac838cb8221b93da24d1f2": {
+  "victim_countries": [
+   "BG",
+   "CZ",
+   "EE",
+   "HR",
+   "HU",
+   "LT",
+   "LV",
+   "PL",
+   "RO",
+   "SI",
+   "SK"
+  ],
+  "target_sectors": [
+   "government-national"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1566.001"
+  ]
+ },
+ "0178e27080b23876bfb01077a5662af1192788d0": {
+  "victim_countries": [
+   "JP",
+   "TW"
+  ],
+  "target_sectors": [
+   "communications",
+   "technology"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1195"
+  ]
+ },
+ "8742755080062ec87eb6ae0059fd7925cde83a9b": {
+  "victim_countries": [
+   "AE",
+   "JP",
+   "KR",
+   "VN"
+  ],
+  "target_sectors": [
+   "commercial",
+   "communications",
+   "defense",
+   "education",
+   "government-national",
+   "non-profit",
+   "technology"
+  ],
+  "individuals_targeted": true,
+  "initial_access": [
+   "T1189",
+   "T1190",
+   "T1566.001",
+   "T1566.002"
+  ]
+ },
+ "49745a6ffd7b522f125c3fd57068a6071f3ddb98": {
+  "victim_countries": [
+   "BD",
+   "CA",
+   "RU",
+   "US"
+  ],
+  "target_sectors": [
+   "defense",
+   "education",
+   "financial-services",
+   "government-national",
+   "healthcare",
+   "technology"
+  ],
+  "individuals_targeted": true,
+  "initial_access": [
+   "T1078",
+   "T1133",
+   "T1189",
+   "T1190",
+   "T1199",
+   "T1566.001",
+   "T1566.002"
+  ]
+ },
+ "75609cca39e6bd39390f11e23753c951fd5f0f7e": {
+  "victim_countries": [
+   "IL"
+  ],
+  "target_sectors": [
+   "defense"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1566.001"
+  ]
+ },
+ "5f9c7afb1a194085da42eea82c7560f2a6033de5": {
+  "victim_countries": [],
+  "target_sectors": [],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1133",
+   "T1190"
+  ]
+ },
+ "79e53e7eb70a53b090b71972594fee41eeb40523": {
+  "victim_countries": [
+   "JO"
+  ],
+  "target_sectors": [
+   "government-national"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1566.001"
+  ]
+ },
+ "669282e93ad3ee2f09ca00538a9e9f9d474dcb9b": {
+  "victim_countries": [
+   "CL",
+   "CO",
+   "EC",
+   "ES"
+  ],
+  "target_sectors": [
+   "communications",
+   "defense",
+   "financial-services",
+   "government-national",
+   "healthcare"
+  ],
+  "individuals_targeted": false,
+  "initial_access": [
+   "T1566.001"
+  ]
+ }
+}

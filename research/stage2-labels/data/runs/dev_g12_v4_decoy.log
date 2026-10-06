@@ -1,0 +1,40 @@
+retry 7132fa8920490fd6f33a464f7018fbd0baffb43b URLError <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a
+retry 7132fa8920490fd6f33a464f7018fbd0baffb43b URLError <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a
+1 elapsed 43
+retry 99f8d948b133c10f03dc642ffdefc72ec6ef4cf5 URLError <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a
+retry 99f8d948b133c10f03dc642ffdefc72ec6ef4cf5 URLError <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a
+2 elapsed 88
+retry dd16552805b96e7cafc27d7edcd05e15014e4091 URLError <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a
+3 elapsed 134
+4 elapsed 142
+5 elapsed 152
+retry 6d83deba61a70b59ad085ba18539057a9bbfba62 JSONDecodeError Unterminated string starting at: line 3 column 1440 (char 1478)
+retry 6d83deba61a70b59ad085ba18539057a9bbfba62 JSONDecodeError Unterminated string starting at: line 3 column 2830 (char 2868)
+6 elapsed 215
+7 elapsed 222
+retry 3aa1366f97a1345531af82567897baeef7624dd3 JSONDecodeError Expecting value: line 87 column 1 (char 1521)
+8 elapsed 249
+9 elapsed 254
+10 elapsed 260
+11 elapsed 267
+12 elapsed 273
+13 elapsed 279
+14 elapsed 287
+15 elapsed 294
+16 elapsed 306
+17 elapsed 312
+18 elapsed 320
+retry 4dd82280ab1b8286e7a15a6712d8aa51cea5717e JSONDecodeError Unterminated string starting at: line 1 column 748 (char 747)
+19 elapsed 332
+20 elapsed 341
+21 elapsed 346
+22 elapsed 352
+23 elapsed 365
+24 elapsed 372
+25 elapsed 384
+26 elapsed 391
+27 elapsed 397
+28 elapsed 405
+29 elapsed 413
+30 elapsed 424
+done 30 failed 3 elapsed 425

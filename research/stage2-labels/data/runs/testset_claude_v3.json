@@ -1,0 +1,896 @@
+{
+ "meta": {
+  "labeller": "claude-opus-5-5 in session",
+  "rules": "v3",
+  "revised_from": "testset_claude_v1.jsonl"
+ },
+ "labels": {
+  "7132fa8920490fd6f33a464f7018fbd0baffb43b": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "PK"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "defense"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566"
+   ],
+   "note": "Pakistani military targets; delivery only speculated (email or web)"
+  },
+  "3e45a371a5d1ada49c0e193372e3e1fe12191049": {
+   "report_type": "malware-analysis",
+   "victim_countries": [
+    "US"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "defense"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [],
+   "note": "IoC appendix; US defense contractors; no access method"
+  },
+  "99f8d948b133c10f03dc642ffdefc72ec6ef4cf5": {
+   "report_type": "malware-analysis",
+   "victim_countries": [],
+   "victim_regions": [
+    "Worldwide"
+   ],
+   "target_sectors": [],
+   "individuals_targeted": true,
+   "initial_access": [
+    "T1566.003"
+   ],
+   "note": "Pegasus; targets individuals, no countries in text; link sent by SMS/social message"
+  },
+  "ee0ebdcf2454d62dc23d604c472d3112a57274c6": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "US"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "financial-services",
+    "insurance"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001"
+   ],
+   "note": "FIN7 SEC-filing lures, US financial orgs, malicious documents by email"
+  },
+  "dd16552805b96e7cafc27d7edcd05e15014e4091": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "JP",
+    "KR"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "defense",
+    "government"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1091"
+   ],
+   "note": "Tick; South Korean secure USB (defense maker, used by military/government); delivery unknown, USB for air-gapped"
+  },
+  "63d59610f60df26243e333a3b55f0b24e4b277ce": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "AM",
+    "SA",
+    "SE"
+   ],
+   "victim_regions": [
+    "Middle East",
+    "Northern Africa"
+   ],
+   "target_sectors": [
+    "government-national",
+    "energy",
+    "telecommunications",
+    "technology"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1078",
+    "T1133",
+    "T1190",
+    "T1566"
+   ],
+   "note": "Sea Turtle; MENA region not expanded; named SE (NetNod, Cafax), SA, AM registrar; exploits, spearphish, harvested VPN creds"
+  },
+  "e31ec8645ecd065f317e9b6ac0f0e83849c1ecc9": {
+   "report_type": "survey",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": [],
+   "note": "Intel 471 meta-analysis of others' reporting; named incidents are recaps; HARD CASE: analysis reports"
+  },
+  "6fa5641b366ea3cb82097902227cd9a6c2682607": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "US"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "defense",
+    "aerospace"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.002",
+    "T1566.003"
+   ],
+   "note": "TA456 Marcella persona via social media then OneDrive link email; US defense industrial base"
+  },
+  "61a5eb27ef3e633be66583c127de39fe19be7fb8": {
+   "report_type": "advisory",
+   "victim_countries": [
+    "US"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "defense",
+    "healthcare",
+    "energy",
+    "telecommunications",
+    "government"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1078",
+    "T1190",
+    "T1195",
+    "T1566"
+   ],
+   "note": "CISA overview advisory of Russian threats to US CI; HARD CASE: general advisory, much is recap"
+  },
+  "279686f1f47cd4e182910601931d8cb66b41ae84": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "AL"
+   ],
+   "victim_regions": [
+    "Middle East"
+   ],
+   "target_sectors": [
+    "government",
+    "defense",
+    "telecommunications",
+    "technology",
+    "financial-services",
+    "non-profit"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [],
+   "note": "Scarred Manticore; Middle East region not expanded; Albania government intrusion covered; access to public servers but method not stated"
+  },
+  "6d83deba61a70b59ad085ba18539057a9bbfba62": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "VN"
+   ],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": true,
+   "initial_access": [
+    "T1566"
+   ],
+   "note": "Vietnam APT targeting political dissidents; victim country and delivery not stated"
+  },
+  "38fa23b9506b2f598d4d5564e61d0e51a5d58a38": {
+   "report_type": "news",
+   "victim_countries": [
+    "GB",
+    "IL",
+    "KR",
+    "PK"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "energy",
+    "education",
+    "transportation"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [],
+   "note": "Ali Baba/OpCleaver news piece; UK power-industry engineering firm, Israeli university, KR/PK transport via Cylance"
+  },
+  "80a3f2c1c1f9dec104874cb59b14207f35e806bc": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "ES",
+    "JP"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "financial-services"
+   ],
+   "individuals_targeted": true,
+   "initial_access": [
+    "T1566.001"
+   ],
+   "note": "URLZone banking trojan vs Japanese bank customers (and Spain); mass malspam with attachment; GUIDELINE GAP: mass spam vs spearphishing"
+  },
+  "8fa264721c32e66ec94ceb77645c22edbffc9259": {
+   "report_type": "campaign",
+   "victim_countries": [],
+   "victim_regions": [
+    "Middle East",
+    "Northern Africa"
+   ],
+   "target_sectors": [
+    "government-national",
+    "energy",
+    "communications"
+   ],
+   "individuals_targeted": true,
+   "initial_access": [
+    "T1566.001",
+    "T1566.002"
+   ],
+   "note": "Gaza Cybergang; MENA region only; lures about Qatar/Palestine excluded; email attachments and links"
+  },
+  "3aa1366f97a1345531af82567897baeef7624dd3": {
+   "report_type": "malware-analysis",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566"
+   ],
+   "note": "MuddyWater; Indian banking lure only suggests targets (speculative); delivery not stated"
+  },
+  "ce6de200409d558d88c026c9ab087ed1c836db28": {
+   "report_type": "malware-analysis",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566"
+   ],
+   "note": "Bitter malware analysis; .pk site is infrastructure; delivery of document not stated"
+  },
+  "84838de308f10054250e737881e8882ed3115a9e": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "AF"
+   ],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001"
+   ],
+   "note": "Sidewinder copycat vs Afghanistan; spear phishing document/RAR"
+  },
+  "47b5872e770ab60fbb0567c160ebd2fd71de9d5a": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "US"
+   ],
+   "victim_regions": [
+    "Europe"
+   ],
+   "target_sectors": [
+    "defense"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566"
+   ],
+   "note": "Lazarus job lures; US and Europe (region); defense contractors; company names in lures are lure content; delivery not stated"
+  },
+  "bdbe3c5510aab146d327e72ab50768503021175b": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "KR"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "defense"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [],
+   "note": "Lazarus via INITECH; 47 Korean companies incl defense (Korea implied by vendor/software, not stated: HARD CASE implicit country)"
+  },
+  "0b57681534b8f5cb21ca7bc51e5658350c44c2bb": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "IL"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "education",
+    "technology"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1190"
+   ],
+   "note": "Agrius; Israeli higher education and tech; exploited internet-facing web servers"
+  },
+  "f9e86e04d2b5c8a28ec4e69ec9f8ea15c46892ad": {
+   "report_type": "campaign",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [
+    "non-profit"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [],
+   "note": "Deep Panda in think tanks and human-rights orgs; country not stated; webshell foothold, initial method not stated"
+  },
+  "82255ad9b0682b0a091f92d129c0aefd5b7d96cd": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "AE",
+    "CA",
+    "US"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "financial-services",
+    "government"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566"
+   ],
+   "note": "Sofacy prepositioned phishing domains impersonating CBI UAE, Bank of America, TD Canada, UN; Commerzbank only 'possibly'"
+  },
+  "d611ca60c87498c89b450dda0f06a3cffebe53ae": {
+   "report_type": "malware-analysis",
+   "victim_countries": [
+    "US"
+   ],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": [],
+   "note": "IHEATE targets users in the US; background on IXESHE excluded"
+  },
+  "798348eb3a5019929eab49cafd36e67617970b78": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "CA"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "non-profit"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566"
+   ],
+   "note": "APT28 vs WADA (Montreal); lookalike domains, phishing assessed; HARD CASE: international org location"
+  },
+  "2373a41ce9dd7c86d4491d978fddf887d9a1fc87": {
+   "report_type": "malware-analysis",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [
+    "energy",
+    "telecommunications"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566"
+   ],
+   "note": "Goblin Panda RTF dropper; sectors inferred from C2 domain names; KZ is sample-submission (excluded); delivery not stated"
+  },
+  "93a54e05256a696ca20d04ad96cac47ff217fe46": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "UA"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "government"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566"
+   ],
+   "note": "Buhtrap espionage vs government; Ukrainian decoy is lure content; malicious docs, channel not stated: GUIDELINE QUESTION doc with unstated channel"
+  },
+  "cf105922040421377abdd120f6ba2b9772fdd40d": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "HK"
+   ],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": true,
+   "initial_access": [
+    "T1189",
+    "T1566.003"
+   ],
+   "note": "LightSpy; HK users via watering hole and forum iframes; APK via Telegram/Instagram"
+  },
+  "a4d6f4b61271e4b5b7d4796d39ebae5b8b7e1728": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "MM",
+    "PH"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "government"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1091",
+    "T1566.002"
+   ],
+   "note": "LuminousMoth; spearphish Dropbox link, then USB spreading"
+  },
+  "be31a634d4139e6223c50cc18cc69916ba585475": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "KR"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "chemical",
+    "technology"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566"
+   ],
+   "note": "Lazarus Dream Job vs South Korean chemical and IT; HTM 'likely' email link or web download: two alternatives, not labelled"
+  },
+  "e8a83611d700dbc67bff004984b05714471b00c4": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "PS"
+   ],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566"
+   ],
+   "note": "Gaza Cybergang Pierogi++ vs Palestinian entities; Bearded Barbie (Israel) is linkage analysis of an older campaign; delivery not stated"
+  },
+  "34c2b718869354a588ee602f41be77e553346c5d": {
+   "report_type": "campaign",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [
+    "non-profit",
+    "communications",
+    "government-national"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001"
+   ],
+   "note": "USENIX study of emails to World Uyghur Congress; also NED, NYT, US embassies; malicious attachments"
+  },
+  "c5c082e9545293bfa698428f08e12219e23bc33f": {
+   "report_type": "campaign",
+   "victim_countries": [],
+   "victim_regions": [
+    "Eastern Europe"
+   ],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.002"
+   ],
+   "note": "Sednit with Hacking Team Flash exploit; eastern European institutions (region); spearphish URL to exploit kit"
+  },
+  "af70e2e4750a95aa3748fc15e3c1fb92f1b47e29": {
+   "report_type": "news",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [
+    "technology",
+    "hospitality-leisure",
+    "retail"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1190"
+   ],
+   "note": "Oracle MICROS breach via portal file-upload; POS customers in hospitality and retail; credential abuse only theorized"
+  },
+  "a6c62ce04ae30424f380773023950d94455fc349": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "PL"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "financial-services"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1189"
+   ],
+   "note": "Polish banks via watering hole on regulator KNF site"
+  },
+  "0e7109f06710132f6e6db736a9628fd394412204": {
+   "report_type": "attribution",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": [],
+   "note": "IntrusionTruth/CrowdStrike attribution piece on Stone Panda; victim mentions are actor background: HARD CASE attribution reports"
+  },
+  "d043d2ce37e8e5a249f59e30eb2608801a3a3f30": {
+   "report_type": "news",
+   "victim_countries": [
+    "IN"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "nuclear"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [],
+   "note": "Kudankulam nuclear plant DTrack sample; delivery not stated"
+  },
+  "4dd82280ab1b8286e7a15a6712d8aa51cea5717e": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "KR"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "commercial"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [],
+   "note": "Operation PowerFall IE zero-day against a South Korean company (industry not named); how the script was delivered is not stated"
+  },
+  "f577c784cc04ad513072b1b02e4d3c9f9399c10a": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "KR"
+   ],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001"
+   ],
+   "note": "Lazarus BMP-embedded HTA via phishing email with macro document targeting South Korea"
+  },
+  "2bdc78b3bc56515322135f0dc78c058db89ef411": {
+   "report_type": "campaign",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [
+    "defense"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001"
+   ],
+   "note": "Lazarus Lockheed Martin job lures, defense industry; Lockheed/US is lure content; spearphishing with macro docs"
+  },
+  "12f3a174311f611263f75c3b1d62f69b11c53560": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "GB"
+   ],
+   "victim_regions": [
+    "Northern America",
+    "Europe"
+   ],
+   "target_sectors": [
+    "government-national",
+    "commercial"
+   ],
+   "individuals_targeted": true,
+   "initial_access": [],
+   "note": "TA499 prank-call email campaigns vs N. American/European officials, CEOs, celebrities; UK cabinet named; no intrusion, so no initial access"
+  },
+  "5ec4826b8168e8dbbfe26a5e60123b3009770978": {
+   "report_type": "news",
+   "victim_countries": [
+    "US"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "healthcare"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [],
+   "note": "APT18 Community Health Systems breach; US implied by SEC/HIPAA (implicit country); method not disclosed"
+  },
+  "980ab92472c6de302ade77423ce09abe58a258bc": {
+   "report_type": "methodology",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": [],
+   "note": "Recorded Future RAT-controller enumeration methodology; no victims"
+  },
+  "0387df8bdfbe771ec7ee80715c58afac76266a0e": {
+   "report_type": "malware-analysis",
+   "victim_countries": [
+    "BD"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "financial-services"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [],
+   "note": "Bangladesh Bank SWIFT heist tooling; Philippines only as destination of funds; implant method unknown"
+  },
+  "7c7567206d222546376079a19c07b615d9538cf3": {
+   "report_type": "malware-analysis",
+   "victim_countries": [
+    "UA"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "government"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566"
+   ],
+   "note": "Gamaredon toolset; individuals likely in Ukrainian government; Armageddon is background; delivery vector not stated in the read portion"
+  },
+  "b4e7f944cadd35119444c6c346a5ab01023bfd43": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "KR"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "entertainment"
+   ],
+   "individuals_targeted": true,
+   "initial_access": [
+    "T1189",
+    "T1195",
+    "T1566.002"
+   ],
+   "note": "ASEC quarterly (Korean): GandCrab via exploit kit sites and resume-link spam to HR; Red Gambler vs gambling-game users via trojanized utility installers on official sites and PC-bang management servers"
+  },
+  "d1eece026635773310f0aa00e05898db7853dab0": {
+   "report_type": "malware-analysis",
+   "victim_countries": [],
+   "victim_regions": [
+    "Middle East"
+   ],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566"
+   ],
+   "note": "DarkHydrus Arabic-lure Excel macros; Middle East region only; delivery not stated; government interest is cited background"
+  },
+  "d9e41bb3cd7ad22a358930b9eb53495e4409803a": {
+   "report_type": "campaign",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1190"
+   ],
+   "note": "Blue Mockingbird miners via Telerik UI exploit"
+  },
+  "01d5f589f56547de69752f135d32c6723a4b3055": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "PH"
+   ],
+   "victim_regions": [
+    "Middle East",
+    "South-eastern Asia"
+   ],
+   "target_sectors": [
+    "entertainment",
+    "government",
+    "financial-services",
+    "telecommunications",
+    "energy"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [],
+   "note": "Iron Tiger: Philippine gambling company plus observed government, bank, telecom, energy targets in Middle East/SE Asia (regions); vector not confirmed"
+  },
+  "0bfb2a4fa07e33858de806790cc846d66c3e3a24": {
+   "report_type": "survey",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": [],
+   "note": "Insikt survey of Iranian social engineering across many campaigns: HARD CASE meta-report"
+  },
+  "a224702fbdf785b482d562117dddf5d4fd848208": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "KR"
+   ],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001",
+    "T1566.002"
+   ],
+   "note": "Kimsuky LNK via spearphish attachments or links; Korean lures and AV checks imply KR (implicit country); sector list is group background"
+  },
+  "51e8e24162c94d68637f8252ea6e8f5707b52a23": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "FR"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "aerospace",
+    "defense"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1189"
+   ],
+   "note": "French aerospace-focused SWC (GIFAS lookalike, Safran DNS); VFW attack is a different actor"
+  },
+  "4da43deb6f7dede89080d4b4adaae53a2c371aa5": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "RU",
+    "US"
+   ],
+   "victim_regions": [
+    "Europe"
+   ],
+   "target_sectors": [
+    "government",
+    "commercial"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1189"
+   ],
+   "note": "WITCHCOVEN profiling via 100+ compromised sites; likely targets US/European officials and executives, focus on Russian organisations (Europe region not expanded)"
+  },
+  "8fdd96ab4d0e95802cac838cb8221b93da24d1f2": {
+   "report_type": "campaign",
+   "victim_countries": [],
+   "victim_regions": [
+    "Eastern Europe"
+   ],
+   "target_sectors": [
+    "government"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001"
+   ],
+   "note": "SBDH toolkit vs government and public institutions in Central/Eastern Europe (region); phishing email attachment"
+  },
+  "0178e27080b23876bfb01077a5662af1192788d0": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "JP",
+    "TW"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "technology",
+    "telecommunications"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1195"
+   ],
+   "note": "CCleaner supply-chain second stage vs tech and telecom firms; named domains cht.com.tw and nec.co.jp"
+  },
+  "8742755080062ec87eb6ae0059fd7925cde83a9b": {
+   "report_type": "actor-profile",
+   "victim_countries": [
+    "JP",
+    "KR",
+    "VN"
+   ],
+   "victim_regions": [
+    "Middle East"
+   ],
+   "target_sectors": [
+    "government",
+    "defense",
+    "communications",
+    "chemical",
+    "manufacturing",
+    "aerospace",
+    "automotive",
+    "healthcare",
+    "financial-services",
+    "telecommunications"
+   ],
+   "individuals_targeted": true,
+   "initial_access": [
+    "T1189",
+    "T1566.001"
+   ],
+   "note": "APT37 report: South Korea plus Japan, Vietnam, Middle East (region); human-rights individuals; spearphish attachments and SWC; torrent-distributed trojanized app left unlabelled"
+  },
+  "49745a6ffd7b522f125c3fd57068a6071f3ddb98": {
+   "report_type": "survey",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": [],
+   "note": "Positive Technologies quarterly statistics; no specific campaign: HARD CASE statistical report"
+  },
+  "75609cca39e6bd39390f11e23753c951fd5f0f7e": {
+   "report_type": "methodology",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": [],
+   "note": "Team Cymru AridViper infrastructure pivot; CV document likely delivered by phishing; Israeli military is group background"
+  },
+  "5f9c7afb1a194085da42eea82c7560f2a6033de5": {
+   "report_type": "malware-analysis",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": [],
+   "note": "APT31 SoWaT router implant analysis; no victims named"
+  },
+  "79e53e7eb70a53b090b71972594fee41eeb40523": {
+   "report_type": "malware-analysis",
+   "victim_countries": [
+    "JO"
+   ],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001"
+   ],
+   "note": "APT34 Saitama via spearphish Excel attachment; Jordan ministry logo is lure content: HARD CASE lure vs victim"
+  },
+  "669282e93ad3ee2f09ca00538a9e9f9d474dcb9b": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "CL",
+    "CO",
+    "EC",
+    "ES"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "healthcare",
+    "financial-services",
+    "emergency-services",
+    "government-national"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001",
+    "T1566.002"
+   ],
+   "note": "Blind Eagle DIAN lures vs Colombian health, finance, law enforcement, immigration; also EC, CL, ES campaigns; PDF attachment and link"
+  }
+ }
+}

@@ -1,0 +1,670 @@
+{
+ "meta": {
+  "cmd": "run",
+  "model": "gemma4:12b",
+  "prompt": "v3",
+  "variant": "ground",
+  "ctx": 16384,
+  "maxch": 40000,
+  "predict": 8000,
+  "think": true,
+  "split": "dev",
+  "out": "research/stage2-labels/data/runs/dev_g12_v3_ground_think8k.json",
+  "started": "2026-10-07T03:24:21",
+  "elapsed_seconds": 2496,
+  "failed": 11
+ },
+ "labels": {
+  "7132fa8920490fd6f33a464f7018fbd0baffb43b": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "PK"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "defense"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566"
+   ]
+  },
+  "99f8d948b133c10f03dc642ffdefc72ec6ef4cf5": {
+   "report_type": "malware-analysis",
+   "victim_countries": [],
+   "victim_regions": [
+    "Worldwide"
+   ],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.002",
+    "T1566.003"
+   ]
+  },
+  "dd16552805b96e7cafc27d7edcd05e15014e4091": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "JP",
+    "KR"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "defense"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001"
+   ]
+  },
+  "e31ec8645ecd065f317e9b6ac0f0e83849c1ecc9": {
+   "report_type": "attribution",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": []
+  },
+  "61a5eb27ef3e633be66583c127de39fe19be7fb8": {
+   "report_type": "advisory",
+   "victim_countries": [
+    "UA"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "communications",
+    "defense",
+    "energy",
+    "government",
+    "healthcare"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1190",
+    "T1195",
+    "T1566"
+   ]
+  },
+  "6d83deba61a70b59ad085ba18539057a9bbfba62": null,
+  "80a3f2c1c1f9dec104874cb59b14207f35e806bc": null,
+  "3aa1366f97a1345531af82567897baeef7624dd3": {
+   "report_type": "malware-analysis",
+   "victim_countries": [
+    "IN"
+   ],
+   "victim_regions": [
+    "Africa",
+    "Asia",
+    "Europe",
+    "Middle East",
+    "Northern America"
+   ],
+   "target_sectors": [
+    "agriculture",
+    "construction",
+    "education",
+    "financial-services",
+    "government",
+    "healthcare",
+    "hospitality-leisure",
+    "non-profit",
+    "retail",
+    "technology"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1190",
+    "T1566"
+   ]
+  },
+  "84838de308f10054250e737881e8882ed3115a9e": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "AF",
+    "IN"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "education"
+   ],
+   "individuals_targeted": true,
+   "initial_access": [
+    "T1566.001"
+   ]
+  },
+  "bdbe3c5510aab146d327e72ab50768503021175b": {
+   "report_type": "campaign",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [
+    "defense"
+   ],
+   "individuals_targeted": false,
+   "initial_access": []
+  },
+  "f9e86e04d2b5c8a28ec4e69ec9f8ea15c46892ad": {
+   "report_type": "campaign",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [
+    "non-profit"
+   ],
+   "individuals_targeted": true,
+   "initial_access": []
+  },
+  "d611ca60c87498c89b450dda0f06a3cffebe53ae": null,
+  "2373a41ce9dd7c86d4491d978fddf887d9a1fc87": null,
+  "cf105922040421377abdd120f6ba2b9772fdd40d": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "HK"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "non-profit"
+   ],
+   "individuals_targeted": true,
+   "initial_access": [
+    "T1189"
+   ]
+  },
+  "be31a634d4139e6223c50cc18cc69916ba585475": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "KR"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "technology"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566"
+   ]
+  },
+  "34c2b718869354a588ee602f41be77e553346c5d": null,
+  "af70e2e4750a95aa3748fc15e3c1fb92f1b47e29": null,
+  "0e7109f06710132f6e6db736a9628fd394412204": {
+   "report_type": "attribution",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": []
+  },
+  "4dd82280ab1b8286e7a15a6712d8aa51cea5717e": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "KR"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "commercial"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566"
+   ]
+  },
+  "2bdc78b3bc56515322135f0dc78c058db89ef411": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "US"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "defense"
+   ],
+   "individuals_targeted": true,
+   "initial_access": [
+    "T1566.001"
+   ]
+  },
+  "5ec4826b8168e8dbbfe26a5e60123b3009770978": null,
+  "0387df8bdfbe771ec7ee80715c58afac76266a0e": {
+   "report_type": "malware-analysis",
+   "victim_countries": [
+    "BD"
+   ],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": []
+  },
+  "b4e7f944cadd35119444c6c346a5ab01023bfd43": null,
+  "d9e41bb3cd7ad22a358930b9eb53495e4409803a": {
+   "report_type": "campaign",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1190"
+   ]
+  },
+  "0bfb2a4fa07e33858de806790cc846d66c3e3a24": null,
+  "51e8e24162c94d68637f8252ea6e8f5707b52a23": null,
+  "8fdd96ab4d0e95802cac838cb8221b93da24d1f2": {
+   "report_type": "malware-analysis",
+   "victim_countries": [],
+   "victim_regions": [
+    "Central America",
+    "Eastern Europe"
+   ],
+   "target_sectors": [
+    "government",
+    "government-national"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001"
+   ]
+  },
+  "8742755080062ec87eb6ae0059fd7925cde83a9b": null,
+  "75609cca39e6bd39390f11e23753c951fd5f0f7e": {
+   "report_type": "malware-analysis",
+   "victim_countries": [
+    "IL"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "defense"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001"
+   ]
+  },
+  "79e53e7eb70a53b090b71972594fee41eeb40523": {
+   "report_type": "malware-analysis",
+   "victim_countries": [
+    "JO"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "government-national"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001"
+   ]
+  }
+ },
+ "raw": {
+  "7132fa8920490fd6f33a464f7018fbd0baffb43b": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "Pakistan"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "defense"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566"
+   ]
+  },
+  "99f8d948b133c10f03dc642ffdefc72ec6ef4cf5": {
+   "report_type": "malware-analysis",
+   "victim_countries": [],
+   "victim_regions": [
+    "Worldwide"
+   ],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.002",
+    "T1566.003"
+   ]
+  },
+  "dd16552805b96e7cafc27d7edcd05e15014e4091": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "South Korea",
+    "Japan"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "defense"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001"
+   ]
+  },
+  "e31ec8645ecd065f317e9b6ac0f0e83849c1ecc9": {
+   "report_type": "attribution",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": []
+  },
+  "61a5eb27ef3e633be66583c127de39fe19be7fb8": {
+   "report_type": "advisory",
+   "victim_countries": [
+    "United States",
+    "Ukraine"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "defense",
+    "healthcare",
+    "energy",
+    "communications",
+    "government"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566",
+    "T1190",
+    "T1195"
+   ]
+  },
+  "3aa1366f97a1345531af82567897baeef7624dd3": {
+   "report_type": "malware-analysis",
+   "victim_countries": [
+    "South Africa",
+    "India",
+    "United Kingdom",
+    "Romania",
+    "Israel",
+    "Canada",
+    "Brazil",
+    "Austria",
+    "Pakistan",
+    "Spain",
+    "France",
+    "Germany",
+    "Poland"
+   ],
+   "victim_regions": [
+    "Africa",
+    "Asia",
+    "Europe",
+    "Northern America",
+    "Middle East"
+   ],
+   "target_sectors": [
+    "education",
+    "government",
+    "healthcare",
+    "retail",
+    "technology",
+    "non-profit",
+    "hospitality-leisure",
+    "construction",
+    "agriculture",
+    "financial-services"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1190",
+    "T1566"
+   ]
+  },
+  "84838de308f10054250e737881e8882ed3115a9e": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "Afghanistan",
+    "India"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "education"
+   ],
+   "individuals_targeted": true,
+   "initial_access": [
+    "T1566.001"
+   ]
+  },
+  "bdbe3c5510aab146d327e72ab50768503021175b": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "South Korea"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "defense"
+   ],
+   "individuals_targeted": false,
+   "initial_access": []
+  },
+  "f9e86e04d2b5c8a28ec4e69ec9f8ea15c46892ad": {
+   "report_type": "campaign",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [
+    "non-profit"
+   ],
+   "individuals_targeted": true,
+   "initial_access": []
+  },
+  "cf105922040421377abdd120f6ba2b9772fdd40d": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "Hong Kong"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "non-profit"
+   ],
+   "individuals_targeted": true,
+   "initial_access": [
+    "T1189"
+   ]
+  },
+  "be31a634d4139e6223c50cc18cc69916ba585475": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "South Korea"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "technology"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566"
+   ]
+  },
+  "0e7109f06710132f6e6db736a9628fd394412204": {
+   "report_type": "attribution",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": []
+  },
+  "4dd82280ab1b8286e7a15a6712d8aa51cea5717e": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "South Korea"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "commercial"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566"
+   ]
+  },
+  "2bdc78b3bc56515322135f0dc78c058db89ef411": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "United States"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "defense"
+   ],
+   "individuals_targeted": true,
+   "initial_access": [
+    "T1566.001"
+   ]
+  },
+  "0387df8bdfbe771ec7ee80715c58afac76266a0e": {
+   "report_type": "malware-analysis",
+   "victim_countries": [
+    "Bangladesh"
+   ],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": []
+  },
+  "d9e41bb3cd7ad22a358930b9eb53495e4409803a": {
+   "report_type": "campaign",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1190"
+   ]
+  },
+  "8fdd96ab4d0e95802cac838cb8221b93da24d1f2": {
+   "report_type": "malware-analysis",
+   "victim_countries": [],
+   "victim_regions": [
+    "Central America",
+    "Eastern Europe"
+   ],
+   "target_sectors": [
+    "government-national",
+    "government"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001"
+   ]
+  },
+  "75609cca39e6bd39390f11e23753c951fd5f0f7e": {
+   "report_type": "malware-analysis",
+   "victim_countries": [
+    "Israel"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "defense"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001"
+   ]
+  },
+  "79e53e7eb70a53b090b71972594fee41eeb40523": {
+   "report_type": "malware-analysis",
+   "victim_countries": [
+    "Jordan"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "government-national"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001"
+   ]
+  }
+ },
+ "timing": {
+  "7132fa8920490fd6f33a464f7018fbd0baffb43b": {
+   "seconds": 35.9,
+   "prompt_tokens": 6244,
+   "output_tokens": 1880
+  },
+  "99f8d948b133c10f03dc642ffdefc72ec6ef4cf5": {
+   "seconds": 35.4,
+   "prompt_tokens": 13027,
+   "output_tokens": 2927
+  },
+  "dd16552805b96e7cafc27d7edcd05e15014e4091": {
+   "seconds": 29.4,
+   "prompt_tokens": 5840,
+   "output_tokens": 2573
+  },
+  "e31ec8645ecd065f317e9b6ac0f0e83849c1ecc9": {
+   "seconds": 43.2,
+   "prompt_tokens": 7009,
+   "output_tokens": 4219
+  },
+  "61a5eb27ef3e633be66583c127de39fe19be7fb8": {
+   "seconds": 63.7,
+   "prompt_tokens": 8098,
+   "output_tokens": 6642
+  },
+  "3aa1366f97a1345531af82567897baeef7624dd3": {
+   "seconds": 23.2,
+   "prompt_tokens": 8195,
+   "output_tokens": 1517
+  },
+  "84838de308f10054250e737881e8882ed3115a9e": {
+   "seconds": 23.9,
+   "prompt_tokens": 3271,
+   "output_tokens": 2227
+  },
+  "bdbe3c5510aab146d327e72ab50768503021175b": {
+   "seconds": 28.9,
+   "prompt_tokens": 3663,
+   "output_tokens": 2766
+  },
+  "f9e86e04d2b5c8a28ec4e69ec9f8ea15c46892ad": {
+   "seconds": 27.5,
+   "prompt_tokens": 5039,
+   "output_tokens": 2753
+  },
+  "cf105922040421377abdd120f6ba2b9772fdd40d": {
+   "seconds": 20.8,
+   "prompt_tokens": 7155,
+   "output_tokens": 1737
+  },
+  "be31a634d4139e6223c50cc18cc69916ba585475": {
+   "seconds": 26.8,
+   "prompt_tokens": 6171,
+   "output_tokens": 2523
+  },
+  "0e7109f06710132f6e6db736a9628fd394412204": {
+   "seconds": 28.6,
+   "prompt_tokens": 5106,
+   "output_tokens": 2648
+  },
+  "4dd82280ab1b8286e7a15a6712d8aa51cea5717e": {
+   "seconds": 16.9,
+   "prompt_tokens": 6192,
+   "output_tokens": 1445
+  },
+  "2bdc78b3bc56515322135f0dc78c058db89ef411": {
+   "seconds": 15.0,
+   "prompt_tokens": 6675,
+   "output_tokens": 1449
+  },
+  "0387df8bdfbe771ec7ee80715c58afac76266a0e": {
+   "seconds": 40.6,
+   "prompt_tokens": 4444,
+   "output_tokens": 3942
+  },
+  "d9e41bb3cd7ad22a358930b9eb53495e4409803a": {
+   "seconds": 11.1,
+   "prompt_tokens": 7055,
+   "output_tokens": 767
+  },
+  "8fdd96ab4d0e95802cac838cb8221b93da24d1f2": {
+   "seconds": 18.7,
+   "prompt_tokens": 2441,
+   "output_tokens": 1913
+  },
+  "75609cca39e6bd39390f11e23753c951fd5f0f7e": {
+   "seconds": 13.3,
+   "prompt_tokens": 6885,
+   "output_tokens": 932
+  },
+  "79e53e7eb70a53b090b71972594fee41eeb40523": {
+   "seconds": 17.3,
+   "prompt_tokens": 13892,
+   "output_tokens": 1095
+  }
+ }
+}

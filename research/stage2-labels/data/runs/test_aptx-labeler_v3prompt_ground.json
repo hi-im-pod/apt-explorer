@@ -1,0 +1,1133 @@
+{
+ "meta": {
+  "cmd": "run",
+  "model": "aptx-labeler",
+  "prompt": "v3",
+  "variant": "ground",
+  "ctx": 16384,
+  "maxch": 40000,
+  "predict": 500,
+  "think": false,
+  "split": "test",
+  "out": "research/stage2-labels/data/runs/test_aptx-labeler_v3prompt_ground.json",
+  "started": "2026-10-07T04:11:13",
+  "elapsed_seconds": 275,
+  "failed": 4
+ },
+ "labels": {
+  "3e45a371a5d1ada49c0e193372e3e1fe12191049": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "US"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "defense"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1078",
+    "T1091",
+    "T1133",
+    "T1189",
+    "T1190",
+    "T1195",
+    "T1199",
+    "T1200",
+    "T1566.001",
+    "T1659",
+    "T1669"
+   ]
+  },
+  "ee0ebdcf2454d62dc23d604c472d3112a57274c6": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "US"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "education",
+    "financial-services",
+    "retail",
+    "technology",
+    "transportation"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001"
+   ]
+  },
+  "63d59610f60df26243e333a3b55f0b24e4b277ce": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "AL",
+    "AM",
+    "CY",
+    "EG",
+    "IQ",
+    "JO",
+    "LB",
+    "LY",
+    "SA",
+    "SE",
+    "SY",
+    "US"
+   ],
+   "victim_regions": [
+    "Middle East",
+    "Northern Africa"
+   ],
+   "target_sectors": [
+    "energy",
+    "government-national",
+    "technology",
+    "telecommunications"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1190",
+    "T1566.001"
+   ]
+  },
+  "6fa5641b366ea3cb82097902227cd9a6c2682607": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "US"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "defense"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001",
+    "T1566.002"
+   ]
+  },
+  "279686f1f47cd4e182910601931d8cb66b41ae84": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "AE",
+    "AL",
+    "IL",
+    "IQ",
+    "JO",
+    "KW",
+    "OM",
+    "SA"
+   ],
+   "victim_regions": [
+    "Middle East"
+   ],
+   "target_sectors": [
+    "communications",
+    "defense",
+    "financial-services",
+    "government-national",
+    "non-profit",
+    "technology"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1190",
+    "T1199"
+   ]
+  },
+  "38fa23b9506b2f598d4d5564e61d0e51a5d58a38": {
+   "report_type": "actor-profile",
+   "victim_countries": [
+    "IL",
+    "KR",
+    "PK"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "education",
+    "energy",
+    "transportation"
+   ],
+   "individuals_targeted": false,
+   "initial_access": []
+  },
+  "8fa264721c32e66ec94ceb77645c22edbffc9259": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "AE",
+    "PS",
+    "QA",
+    "SA"
+   ],
+   "victim_regions": [
+    "Middle East",
+    "Northern Africa"
+   ],
+   "target_sectors": [
+    "communications",
+    "energy",
+    "government-national",
+    "non-profit"
+   ],
+   "individuals_targeted": true,
+   "initial_access": [
+    "T1190",
+    "T1566.001"
+   ]
+  },
+  "ce6de200409d558d88c026c9ab087ed1c836db28": null,
+  "47b5872e770ab60fbb0567c160ebd2fd71de9d5a": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "DE"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "defense"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001",
+    "T1566.002"
+   ]
+  },
+  "0b57681534b8f5cb21ca7bc51e5658350c44c2bb": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "IL"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "education",
+    "technology"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1190"
+   ]
+  },
+  "82255ad9b0682b0a091f92d129c0aefd5b7d96cd": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "AE",
+    "CA",
+    "US"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "communications",
+    "defense",
+    "financial-services",
+    "government-national",
+    "non-profit"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001",
+    "T1566.002"
+   ]
+  },
+  "798348eb3a5019929eab49cafd36e67617970b78": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "CA"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "non-profit"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001",
+    "T1566.002"
+   ]
+  },
+  "93a54e05256a696ca20d04ad96cac47ff217fe46": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "RU",
+    "UA"
+   ],
+   "victim_regions": [
+    "Central Asia",
+    "Eastern Europe"
+   ],
+   "target_sectors": [
+    "financial-services",
+    "government-national"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1200",
+    "T1566.001"
+   ]
+  },
+  "a4d6f4b61271e4b5b7d4796d39ebae5b8b7e1728": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "MM",
+    "PH"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "government-national"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1091",
+    "T1566.001"
+   ]
+  },
+  "e8a83611d700dbc67bff004984b05714471b00c4": {
+   "report_type": "actor-profile",
+   "victim_countries": [
+    "IL",
+    "PS"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "communications",
+    "defense",
+    "government-national"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001",
+    "T1566.002"
+   ]
+  },
+  "c5c082e9545293bfa698428f08e12219e23bc33f": {
+   "report_type": "campaign",
+   "victim_countries": [],
+   "victim_regions": [
+    "Eastern Europe"
+   ],
+   "target_sectors": [
+    "government-national"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1189",
+    "T1566.002"
+   ]
+  },
+  "a6c62ce04ae30424f380773023950d94455fc349": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "PL"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "financial-services"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1189",
+    "T1190"
+   ]
+  },
+  "d043d2ce37e8e5a249f59e30eb2608801a3a3f30": {
+   "report_type": "malware-analysis",
+   "victim_countries": [
+    "IN"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "energy"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1190"
+   ]
+  },
+  "f577c784cc04ad513072b1b02e4d3c9f9399c10a": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "KR"
+   ],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001",
+    "T1566.002"
+   ]
+  },
+  "12f3a174311f611263f75c3b1d62f69b11c53560": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "US"
+   ],
+   "victim_regions": [
+    "Northern Europe"
+   ],
+   "target_sectors": [
+    "government-national",
+    "non-profit",
+    "technology"
+   ],
+   "individuals_targeted": true,
+   "initial_access": [
+    "T1566.001",
+    "T1566.002"
+   ]
+  },
+  "980ab92472c6de302ade77423ce09abe58a258bc": {
+   "report_type": "methodology",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": []
+  },
+  "7c7567206d222546376079a19c07b615d9538cf3": null,
+  "d1eece026635773310f0aa00e05898db7853dab0": null,
+  "01d5f589f56547de69752f135d32c6723a4b3055": null,
+  "a224702fbdf785b482d562117dddf5d4fd848208": {
+   "report_type": "malware-analysis",
+   "victim_countries": [
+    "KR"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "communications",
+    "defense",
+    "education",
+    "government-national"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001",
+    "T1566.002"
+   ]
+  },
+  "4da43deb6f7dede89080d4b4adaae53a2c371aa5": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "AM",
+    "AT",
+    "AU",
+    "AZ",
+    "BO",
+    "BW",
+    "CH",
+    "CL",
+    "DE",
+    "DK",
+    "EC",
+    "EE",
+    "ES",
+    "FI",
+    "FR",
+    "GE",
+    "GW",
+    "HK",
+    "HU",
+    "ID",
+    "IN",
+    "JM",
+    "KW",
+    "KZ",
+    "RO",
+    "RS",
+    "TM",
+    "UA",
+    "US",
+    "UY",
+    "ZA"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "communications",
+    "defense",
+    "education",
+    "energy",
+    "government-national",
+    "non-profit",
+    "technology"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1189"
+   ]
+  },
+  "0178e27080b23876bfb01077a5662af1192788d0": {
+   "report_type": "campaign",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [
+    "communications",
+    "technology"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1195"
+   ]
+  },
+  "49745a6ffd7b522f125c3fd57068a6071f3ddb98": {
+   "report_type": "survey",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": []
+  },
+  "5f9c7afb1a194085da42eea82c7560f2a6033de5": {
+   "report_type": "malware-analysis",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": []
+  },
+  "669282e93ad3ee2f09ca00538a9e9f9d474dcb9b": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "CL",
+    "CO",
+    "EC",
+    "ES"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "communications",
+    "defense",
+    "financial-services",
+    "government-national",
+    "healthcare"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001"
+   ]
+  }
+ },
+ "raw": {
+  "3e45a371a5d1ada49c0e193372e3e1fe12191049": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "United States"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "defense"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001",
+    "T1190",
+    "T1133",
+    "T1078",
+    "T1189",
+    "T1195",
+    "T1199",
+    "T1091",
+    "T1200",
+    "T1659",
+    "T1669"
+   ]
+  },
+  "ee0ebdcf2454d62dc23d604c472d3112a57274c6": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "United States"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "financial-services",
+    "transportation",
+    "retail",
+    "education",
+    "technology",
+    "commercial"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001"
+   ]
+  },
+  "63d59610f60df26243e333a3b55f0b24e4b277ce": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "Albania",
+    "Iraq",
+    "Egypt",
+    "Jordan",
+    "Cyprus",
+    "Libya",
+    "Syria",
+    "Sweden",
+    "Armenia",
+    "United States",
+    "Lebanon",
+    "Saudi Arabia"
+   ],
+   "victim_regions": [
+    "Middle East",
+    "Northern Africa"
+   ],
+   "target_sectors": [
+    "government-national",
+    "energy",
+    "telecommunications",
+    "technology"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1190",
+    "T1566.001"
+   ]
+  },
+  "6fa5641b366ea3cb82097902227cd9a6c2682607": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "United States"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "defense"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001",
+    "T1566.002"
+   ]
+  },
+  "279686f1f47cd4e182910601931d8cb66b41ae84": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "Saudi Arabia",
+    "United Arab Emirates",
+    "Jordan",
+    "Kuwait",
+    "Oman",
+    "Iraq",
+    "Israel",
+    "Albania",
+    "Turkmenistan"
+   ],
+   "victim_regions": [
+    "Middle East"
+   ],
+   "target_sectors": [
+    "government-national",
+    "defense",
+    "communications",
+    "financial-services",
+    "non-profit",
+    "technology"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1190",
+    "T1199"
+   ]
+  },
+  "38fa23b9506b2f598d4d5564e61d0e51a5d58a38": {
+   "report_type": "actor-profile",
+   "victim_countries": [
+    "United Kingdom",
+    "South Korea",
+    "Pakistan",
+    "Israel"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "energy",
+    "education",
+    "transportation"
+   ],
+   "individuals_targeted": false,
+   "initial_access": []
+  },
+  "8fa264721c32e66ec94ceb77645c22edbffc9259": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "Saudi Arabia",
+    "Qatar",
+    "United Arab Emirates",
+    "Palestine"
+   ],
+   "victim_regions": [
+    "Middle East",
+    "Northern Africa"
+   ],
+   "target_sectors": [
+    "government-national",
+    "energy",
+    "communications",
+    "non-profit"
+   ],
+   "individuals_targeted": true,
+   "initial_access": [
+    "T1566.001",
+    "T1190"
+   ]
+  },
+  "47b5872e770ab60fbb0567c160ebd2fd71de9d5a": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "United States",
+    "Germany"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "defense",
+    "commercial"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001",
+    "T1566.002"
+   ]
+  },
+  "0b57681534b8f5cb21ca7bc51e5658350c44c2bb": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "Israel"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "education",
+    "technology"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1190"
+   ]
+  },
+  "82255ad9b0682b0a091f92d129c0aefd5b7d96cd": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "United Arab Emirates",
+    "United States",
+    "Canada",
+    "United Kingdom",
+    "South Africa",
+    "Germany"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "financial-services",
+    "government-national",
+    "defense",
+    "communications",
+    "non-profit"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001",
+    "T1566.002"
+   ]
+  },
+  "798348eb3a5019929eab49cafd36e67617970b78": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "Canada"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "non-profit"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001",
+    "T1566.002"
+   ]
+  },
+  "93a54e05256a696ca20d04ad96cac47ff217fe46": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "Russia",
+    "Ukraine"
+   ],
+   "victim_regions": [
+    "Eastern Europe",
+    "Central Asia"
+   ],
+   "target_sectors": [
+    "government-national",
+    "financial-services"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001",
+    "T1200"
+   ]
+  },
+  "a4d6f4b61271e4b5b7d4796d39ebae5b8b7e1728": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "Myanmar",
+    "Philippines"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "government-national"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001",
+    "T1091"
+   ]
+  },
+  "e8a83611d700dbc67bff004984b05714471b00c4": {
+   "report_type": "actor-profile",
+   "victim_countries": [
+    "Israel",
+    "Palestine"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "government-national",
+    "defense",
+    "communications"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001",
+    "T1566.002"
+   ]
+  },
+  "c5c082e9545293bfa698428f08e12219e23bc33f": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "Russia",
+    "Ukraine",
+    "Belarus"
+   ],
+   "victim_regions": [
+    "Eastern Europe"
+   ],
+   "target_sectors": [
+    "government-national"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.002",
+    "T1189"
+   ]
+  },
+  "a6c62ce04ae30424f380773023950d94455fc349": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "Poland"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "financial-services"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1189",
+    "T1190"
+   ]
+  },
+  "d043d2ce37e8e5a249f59e30eb2608801a3a3f30": {
+   "report_type": "malware-analysis",
+   "victim_countries": [
+    "India"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "energy"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1190"
+   ]
+  },
+  "f577c784cc04ad513072b1b02e4d3c9f9399c10a": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "South Korea"
+   ],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001",
+    "T1566.002"
+   ]
+  },
+  "12f3a174311f611263f75c3b1d62f69b11c53560": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "United States",
+    "United Kingdom"
+   ],
+   "victim_regions": [
+    "Northern Europe"
+   ],
+   "target_sectors": [
+    "government-national",
+    "technology",
+    "non-profit"
+   ],
+   "individuals_targeted": true,
+   "initial_access": [
+    "T1566.001",
+    "T1566.002"
+   ]
+  },
+  "980ab92472c6de302ade77423ce09abe58a258bc": {
+   "report_type": "methodology",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": []
+  },
+  "a224702fbdf785b482d562117dddf5d4fd848208": {
+   "report_type": "malware-analysis",
+   "victim_countries": [
+    "South Korea"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "government-national",
+    "defense",
+    "communications",
+    "education"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001",
+    "T1566.002"
+   ]
+  },
+  "4da43deb6f7dede89080d4b4adaae53a2c371aa5": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "United States",
+    "France",
+    "Spain",
+    "Finland",
+    "Hungary",
+    "Estonia",
+    "Serbia",
+    "Ukraine",
+    "Romania",
+    "South Africa",
+    "Botswana",
+    "Germany",
+    "Switzerland",
+    "Denmark",
+    "Austria",
+    "Uruguay",
+    "Chile",
+    "Bolivia",
+    "Ecuador",
+    "Jamaica",
+    "Armenia",
+    "Georgia",
+    "Kazakhstan",
+    "Turkmenistan",
+    "Azerbaijan",
+    "Kuwait",
+    "Hong Kong",
+    "Indonesia",
+    "Australia",
+    "India",
+    "Guinea-Bissau"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "government-national",
+    "defense",
+    "communications",
+    "non-profit",
+    "education",
+    "energy",
+    "technology"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1189"
+   ]
+  },
+  "0178e27080b23876bfb01077a5662af1192788d0": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "Taiwan",
+    "Japan"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "technology",
+    "communications"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1195"
+   ]
+  },
+  "49745a6ffd7b522f125c3fd57068a6071f3ddb98": {
+   "report_type": "survey",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": []
+  },
+  "5f9c7afb1a194085da42eea82c7560f2a6033de5": {
+   "report_type": "malware-analysis",
+   "victim_countries": [],
+   "victim_regions": [],
+   "target_sectors": [],
+   "individuals_targeted": false,
+   "initial_access": []
+  },
+  "669282e93ad3ee2f09ca00538a9e9f9d474dcb9b": {
+   "report_type": "campaign",
+   "victim_countries": [
+    "Colombia",
+    "Ecuador",
+    "Chile",
+    "Spain"
+   ],
+   "victim_regions": [],
+   "target_sectors": [
+    "government-national",
+    "financial-services",
+    "healthcare",
+    "defense",
+    "communications"
+   ],
+   "individuals_targeted": false,
+   "initial_access": [
+    "T1566.001"
+   ]
+  }
+ },
+ "timing": {
+  "3e45a371a5d1ada49c0e193372e3e1fe12191049": {
+   "seconds": 5.7,
+   "prompt_tokens": 8295,
+   "output_tokens": 125
+  },
+  "ee0ebdcf2454d62dc23d604c472d3112a57274c6": {
+   "seconds": 2.7,
+   "prompt_tokens": 2232,
+   "output_tokens": 73
+  },
+  "63d59610f60df26243e333a3b55f0b24e4b277ce": {
+   "seconds": 7.6,
+   "prompt_tokens": 7044,
+   "output_tokens": 122
+  },
+  "6fa5641b366ea3cb82097902227cd9a6c2682607": {
+   "seconds": 4.4,
+   "prompt_tokens": 5861,
+   "output_tokens": 66
+  },
+  "279686f1f47cd4e182910601931d8cb66b41ae84": {
+   "seconds": 7.4,
+   "prompt_tokens": 11318,
+   "output_tokens": 115
+  },
+  "38fa23b9506b2f598d4d5564e61d0e51a5d58a38": {
+   "seconds": 2.8,
+   "prompt_tokens": 1864,
+   "output_tokens": 65
+  },
+  "8fa264721c32e66ec94ceb77645c22edbffc9259": {
+   "seconds": 6.7,
+   "prompt_tokens": 9924,
+   "output_tokens": 97
+  },
+  "47b5872e770ab60fbb0567c160ebd2fd71de9d5a": {
+   "seconds": 5.2,
+   "prompt_tokens": 6488,
+   "output_tokens": 72
+  },
+  "0b57681534b8f5cb21ca7bc51e5658350c44c2bb": {
+   "seconds": 6.4,
+   "prompt_tokens": 11540,
+   "output_tokens": 53
+  },
+  "82255ad9b0682b0a091f92d129c0aefd5b7d96cd": {
+   "seconds": 6.5,
+   "prompt_tokens": 6819,
+   "output_tokens": 103
+  },
+  "798348eb3a5019929eab49cafd36e67617970b78": {
+   "seconds": 2.4,
+   "prompt_tokens": 1832,
+   "output_tokens": 67
+  },
+  "93a54e05256a696ca20d04ad96cac47ff217fe46": {
+   "seconds": 3.8,
+   "prompt_tokens": 4578,
+   "output_tokens": 78
+  },
+  "a4d6f4b61271e4b5b7d4796d39ebae5b8b7e1728": {
+   "seconds": 4.7,
+   "prompt_tokens": 7679,
+   "output_tokens": 66
+  },
+  "e8a83611d700dbc67bff004984b05714471b00c4": {
+   "seconds": 4.2,
+   "prompt_tokens": 5814,
+   "output_tokens": 79
+  },
+  "c5c082e9545293bfa698428f08e12219e23bc33f": {
+   "seconds": 2.8,
+   "prompt_tokens": 2444,
+   "output_tokens": 72
+  },
+  "a6c62ce04ae30424f380773023950d94455fc349": {
+   "seconds": 3.1,
+   "prompt_tokens": 3622,
+   "output_tokens": 59
+  },
+  "d043d2ce37e8e5a249f59e30eb2608801a3a3f30": {
+   "seconds": 3.5,
+   "prompt_tokens": 4643,
+   "output_tokens": 53
+  },
+  "f577c784cc04ad513072b1b02e4d3c9f9399c10a": {
+   "seconds": 3.3,
+   "prompt_tokens": 4169,
+   "output_tokens": 64
+  },
+  "12f3a174311f611263f75c3b1d62f69b11c53560": {
+   "seconds": 4.2,
+   "prompt_tokens": 4199,
+   "output_tokens": 84
+  },
+  "980ab92472c6de302ade77423ce09abe58a258bc": {
+   "seconds": 4.0,
+   "prompt_tokens": 6681,
+   "output_tokens": 42
+  },
+  "a224702fbdf785b482d562117dddf5d4fd848208": {
+   "seconds": 5.5,
+   "prompt_tokens": 9127,
+   "output_tokens": 80
+  },
+  "4da43deb6f7dede89080d4b4adaae53a2c371aa5": {
+   "seconds": 6.9,
+   "prompt_tokens": 10399,
+   "output_tokens": 184
+  },
+  "0178e27080b23876bfb01077a5662af1192788d0": {
+   "seconds": 3.9,
+   "prompt_tokens": 6127,
+   "output_tokens": 56
+  },
+  "49745a6ffd7b522f125c3fd57068a6071f3ddb98": {
+   "seconds": 5.7,
+   "prompt_tokens": 10769,
+   "output_tokens": 41
+  },
+  "5f9c7afb1a194085da42eea82c7560f2a6033de5": {
+   "seconds": 4.7,
+   "prompt_tokens": 8126,
+   "output_tokens": 44
+  },
+  "669282e93ad3ee2f09ca00538a9e9f9d474dcb9b": {
+   "seconds": 5.4,
+   "prompt_tokens": 7890,
+   "output_tokens": 81
+  }
+ }
+}

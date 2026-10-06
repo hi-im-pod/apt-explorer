@@ -1,0 +1,662 @@
+[
+ {
+  "id": "7132fa8920490fd6f33a464f7018fbd0baffb43b",
+  "title": "Snake In The Grass: Python-based Malware Used For Targeted Attacks",
+  "year": "2014",
+  "publisher": "Bluecoat",
+  "paper": {
+   "Victim_country": "",
+   "Target_sector": "Government and Defense Agencies",
+   "Attack_vector": "Spear Phishing, Malicious Documents"
+  }
+ },
+ {
+  "id": "3e45a371a5d1ada49c0e193372e3e1fe12191049",
+  "title": "Operation Iron Tiger Appendix",
+  "year": "2015",
+  "publisher": "Trend Micro",
+  "paper": {
+   "Victim_country": "US",
+   "Target_sector": "Government and Defense Agencies",
+   "Attack_vector": ""
+  }
+ },
+ {
+  "id": "99f8d948b133c10f03dc642ffdefc72ec6ef4cf5",
+  "title": "lookout-pegasus-technical-analysis",
+  "year": "2016",
+  "publisher": "Lookout",
+  "paper": {
+   "Victim_country": "",
+   "Target_sector": "",
+   "Attack_vector": "Phishing"
+  }
+ },
+ {
+  "id": "ee0ebdcf2454d62dc23d604c472d3112a57274c6",
+  "title": "FIN7 Spear Phishing Campaign Targets Personnel Involved in SEC Filings",
+  "year": "2017",
+  "publisher": "FireEye",
+  "paper": {
+   "Victim_country": "US",
+   "Target_sector": "Corporations and Businesses, Financial Institutions, Education and Research Institutions",
+   "Attack_vector": "Spear Phishing, Malicious Documents"
+  }
+ },
+ {
+  "id": "dd16552805b96e7cafc27d7edcd05e15014e4091",
+  "title": "Tick Group Weaponized Secure USB Drives to Target Air-Gapped Critical Systems",
+  "year": "2018",
+  "publisher": "Palo Alto",
+  "paper": {
+   "Victim_country": "JP, KR",
+   "Target_sector": "Government and Defense Agencies, Critical Infrastructure",
+   "Attack_vector": "Social Engineering, Removable Media"
+  }
+ },
+ {
+  "id": "63d59610f60df26243e333a3b55f0b24e4b277ce",
+  "title": "DNS Hijacking Abuses Trust In Core Internet Service",
+  "year": "2019",
+  "publisher": "Cisco",
+  "paper": {
+   "Victim_country": "AE, AL, IQ",
+   "Target_sector": "Government and Defense Agencies, Energy and Utilities",
+   "Attack_vector": "Exploit Vulnerability, Spear Phishing"
+  }
+ },
+ {
+  "id": "e31ec8645ecd065f317e9b6ac0f0e83849c1ecc9",
+  "title": "Partners in crime_ North Koreans and elite Russian-speaking cybercriminals - Intel 471",
+  "year": "2020",
+  "publisher": "Intel 471",
+  "paper": {
+   "Victim_country": "",
+   "Target_sector": "Financial Institutions",
+   "Attack_vector": "Phishing, Social Engineering, Malicious Documents"
+  }
+ },
+ {
+  "id": "6fa5641b366ea3cb82097902227cd9a6c2682607",
+  "title": "I Knew You Were Trouble_ TA456 Targets Defense Contractor with Alluring Social Media Persona _ Proofpoint US",
+  "year": "2021",
+  "publisher": "Proofpoint",
+  "paper": {
+   "Victim_country": "US",
+   "Target_sector": "Corporations and Businesses, Government and Defense Agencies",
+   "Attack_vector": "Social Engineering, Malicious Documents"
+  }
+ },
+ {
+  "id": "61a5eb27ef3e633be66583c127de39fe19be7fb8",
+  "title": "Understanding and Mitigating Russian State-Sponsored Cyber Threats to U.S. Critical Infrastructure",
+  "year": "2022",
+  "publisher": "cisa",
+  "paper": {
+   "Victim_country": "UA, US",
+   "Target_sector": "Government and Defense Agencies, Healthcare, Energy and Utilities, Critical Infrastructure",
+   "Attack_vector": "Exploit Vulnerability, Credential Reuse"
+  }
+ },
+ {
+  "id": "279686f1f47cd4e182910601931d8cb66b41ae84",
+  "title": "From Albania to the Middle East_ The Scarred Manticore is Listening - Check Point Research",
+  "year": "2023",
+  "publisher": "Check Point",
+  "paper": {
+   "Victim_country": "AE, IL, IQ, JO, KW, OM, QA, SA, TR",
+   "Target_sector": "Government and Defense Agencies, Corporations and Businesses, Cloud/IoT Services, Financial Institutions, Non-Governmental Organizations (NGOs) and Nonprofits",
+   "Attack_vector": ""
+  }
+ },
+ {
+  "id": "6d83deba61a70b59ad085ba18539057a9bbfba62",
+  "title": "Another country-sponsored #malware: Vietnam APT Campaign",
+  "year": "2014",
+  "publisher": "Malware Must Die!",
+  "paper": {
+   "Victim_country": "HK, MN",
+   "Target_sector": "Individuals, Media and Entertainment Companies",
+   "Attack_vector": ""
+  }
+ },
+ {
+  "id": "38fa23b9506b2f598d4d5564e61d0e51a5d58a38",
+  "title": "Ali Baba, the APT group from the Middle East",
+  "year": "2015",
+  "publisher": "SecurityAffairs",
+  "paper": {
+   "Victim_country": "GB, KR, PK",
+   "Target_sector": "Energy and Utilities, Critical Infrastructure",
+   "Attack_vector": ""
+  }
+ },
+ {
+  "id": "80a3f2c1c1f9dec104874cb59b14207f35e806bc",
+  "title": "Organized Cybercrime Big in Japan: URLZone Now on the Scene",
+  "year": "2016",
+  "publisher": "IBM",
+  "paper": {
+   "Victim_country": "JP",
+   "Target_sector": "Financial Institutions",
+   "Attack_vector": "Phishing, Malicious Documents"
+  }
+ },
+ {
+  "id": "8fa264721c32e66ec94ceb77645c22edbffc9259",
+  "title": "Gaza Cybergang - updated activity in 2017_ - Securelist",
+  "year": "2017",
+  "publisher": "Kaspersky",
+  "paper": {
+   "Victim_country": "",
+   "Target_sector": "Government and Defense Agencies, Energy and Utilities, Media and Entertainment Companies",
+   "Attack_vector": "Spear Phishing, Malicious Documents"
+  }
+ },
+ {
+  "id": "3aa1366f97a1345531af82567897baeef7624dd3",
+  "title": "MuddyWater's Recent Activity",
+  "year": "2018",
+  "publisher": "Palo Alto",
+  "paper": {
+   "Victim_country": "",
+   "Target_sector": "Financial Institutions",
+   "Attack_vector": "Malicious Documents"
+  }
+ },
+ {
+  "id": "ce6de200409d558d88c026c9ab087ed1c836db28",
+  "title": "Bitter_APT_Malware_analysis",
+  "year": "2019",
+  "publisher": "Microsoft",
+  "paper": {
+   "Victim_country": "",
+   "Target_sector": "",
+   "Attack_vector": "Malicious Documents"
+  }
+ },
+ {
+  "id": "84838de308f10054250e737881e8882ed3115a9e",
+  "title": "Copy cat of APT Sidewinder _. In tweeter this weekend,@Timele9527… _ by Sebdraven _ Medium",
+  "year": "2020",
+  "publisher": "Google",
+  "paper": {
+   "Victim_country": "AF, PK",
+   "Target_sector": "Government and Defense Agencies, Education and Research Institutions",
+   "Attack_vector": "Spear Phishing, Malicious Documents, Watering Hole"
+  }
+ },
+ {
+  "id": "47b5872e770ab60fbb0567c160ebd2fd71de9d5a",
+  "title": "Lazarus campaign TTPs and evolution _ AT&T Alien Labs",
+  "year": "2021",
+  "publisher": "AT&T Alien Labs",
+  "paper": {
+   "Victim_country": "US",
+   "Target_sector": "Corporations and Businesses, Manufacturing",
+   "Attack_vector": "Spear Phishing, Malicious Documents"
+  }
+ },
+ {
+  "id": "bdbe3c5510aab146d327e72ab50768503021175b",
+  "title": "Lazarus attack group that exploits the INITECH process",
+  "year": "2022",
+  "publisher": "Ahnlab",
+  "paper": {
+   "Victim_country": "",
+   "Target_sector": "Corporations and Businesses, Critical Infrastructure",
+   "Attack_vector": "Watering Hole"
+  }
+ },
+ {
+  "id": "0b57681534b8f5cb21ca7bc51e5658350c44c2bb",
+  "title": "Agonizing Serpens (Aka Agrius) Targeting the Israeli Higher Education and Tech Sectors",
+  "year": "2023",
+  "publisher": "Palo Alto",
+  "paper": {
+   "Victim_country": "IL",
+   "Target_sector": "Education and Research Institutions, Corporations and Businesses",
+   "Attack_vector": "Exploit Vulnerability"
+  }
+ },
+ {
+  "id": "f9e86e04d2b5c8a28ec4e69ec9f8ea15c46892ad",
+  "title": "Deep in Thought_ Chinese Targeting of National Security Think Tanks »",
+  "year": "2014",
+  "publisher": "CrowdStrike",
+  "paper": {
+   "Victim_country": "CN, IQ, IR, RU",
+   "Target_sector": "Non-Governmental Organizations (NGOs) and Nonprofits, Education and Research Institutions",
+   "Attack_vector": "Credential Reuse"
+  }
+ },
+ {
+  "id": "82255ad9b0682b0a091f92d129c0aefd5b7d96cd",
+  "title": "R9b_FSOFACY_0",
+  "year": "2015",
+  "publisher": "root9B",
+  "paper": {
+   "Victim_country": "",
+   "Target_sector": "Government and Defense Agencies, Financial Institutions, Media and Entertainment Companies",
+   "Attack_vector": "Spear Phishing"
+  }
+ },
+ {
+  "id": "d611ca60c87498c89b450dda0f06a3cffebe53ae",
+  "title": "IXESHE Derivative IHEATE Targets Users in America",
+  "year": "2016",
+  "publisher": "Trend Micro",
+  "paper": {
+   "Victim_country": "DE, US",
+   "Target_sector": "Government and Defense Agencies, Corporations and Businesses, Manufacturing, Media and Entertainment Companies",
+   "Attack_vector": "Malicious Documents"
+  }
+ },
+ {
+  "id": "798348eb3a5019929eab49cafd36e67617970b78",
+  "title": "A Pretty Dope Story About Bears: Early Indicators of Continued World Anti-Doping Agency (WADA) Targeting",
+  "year": "2017",
+  "publisher": "tr1adx",
+  "paper": {
+   "Victim_country": "CA",
+   "Target_sector": "Education and Research Institutions",
+   "Attack_vector": "Phishing"
+  }
+ },
+ {
+  "id": "2373a41ce9dd7c86d4491d978fddf887d9a1fc87",
+  "title": "Goblin Panda changes the dropper and reuses the old infrastructure",
+  "year": "2018",
+  "publisher": "Symantec",
+  "paper": {
+   "Victim_country": "KZ, RU",
+   "Target_sector": "Energy and Utilities, Critical Infrastructure",
+   "Attack_vector": "Exploit Vulnerability, Malicious Documents"
+  }
+ },
+ {
+  "id": "93a54e05256a696ca20d04ad96cac47ff217fe46",
+  "title": "Buhtrap group uses zero‑day in latest espionage campaigns",
+  "year": "2019",
+  "publisher": "ESET",
+  "paper": {
+   "Victim_country": "",
+   "Target_sector": "Government and Defense Agencies, Corporations and Businesses, Financial Institutions",
+   "Attack_vector": "Exploit Vulnerability"
+  }
+ },
+ {
+  "id": "cf105922040421377abdd120f6ba2b9772fdd40d",
+  "title": "iOS exploit chain deploys “LightSpy” feature-rich malware _ Securelist",
+  "year": "2020",
+  "publisher": "Kaspersky",
+  "paper": {
+   "Victim_country": "HK",
+   "Target_sector": "Corporations and Businesses",
+   "Attack_vector": "Watering Hole"
+  }
+ },
+ {
+  "id": "a4d6f4b61271e4b5b7d4796d39ebae5b8b7e1728",
+  "title": "LuminousMoth APT: Sweeping attacks for the chosen few",
+  "year": "2021",
+  "publisher": "Kaspersky",
+  "paper": {
+   "Victim_country": "MM, PH",
+   "Target_sector": "Government and Defense Agencies",
+   "Attack_vector": "Spear Phishing, Removable Media"
+  }
+ },
+ {
+  "id": "be31a634d4139e6223c50cc18cc69916ba585475",
+  "title": "Lazarus Targets Chemical Sector",
+  "year": "2022",
+  "publisher": "Symantec",
+  "paper": {
+   "Victim_country": "KR",
+   "Target_sector": "Corporations and Businesses, Government and Defense Agencies, Education and Research Institutions",
+   "Attack_vector": "Malicious Documents"
+  }
+ },
+ {
+  "id": "e8a83611d700dbc67bff004984b05714471b00c4",
+  "title": "Gaza Cybergang Unified Front Targeting Hamas Opposition",
+  "year": "2023",
+  "publisher": "Sentinelone",
+  "paper": {
+   "Victim_country": "IL, PS",
+   "Target_sector": "Government and Defense Agencies, Education and Research Institutions",
+   "Attack_vector": "Malicious Documents"
+  }
+ },
+ {
+  "id": "34c2b718869354a588ee602f41be77e553346c5d",
+  "title": "sec14-paper-blond",
+  "year": "2014",
+  "publisher": "Symantec",
+  "paper": {
+   "Victim_country": "",
+   "Target_sector": "Critical Infrastructure, Corporations and Businesses, Media and Entertainment Companies, Non-Governmental Organizations (NGOs) and Nonprofits, Education and Research Institutions",
+   "Attack_vector": "Spear Phishing, Watering Hole, Social Engineering, Malicious Documents"
+  }
+ },
+ {
+  "id": "c5c082e9545293bfa698428f08e12219e23bc33f",
+  "title": "Sednit APT Group Meets Hacking Team",
+  "year": "2015",
+  "publisher": "ESET",
+  "paper": {
+   "Victim_country": "",
+   "Target_sector": "Education and Research Institutions",
+   "Attack_vector": "Spear Phishing"
+  }
+ },
+ {
+  "id": "af70e2e4750a95aa3748fc15e3c1fb92f1b47e29",
+  "title": "Visa Alert and Update on the Oracle Breach",
+  "year": "2016",
+  "publisher": "Brian Krebs",
+  "paper": {
+   "Victim_country": "",
+   "Target_sector": "Corporations and Businesses, Financial Institutions",
+   "Attack_vector": "Exploit Vulnerability"
+  }
+ },
+ {
+  "id": "a6c62ce04ae30424f380773023950d94455fc349",
+  "title": "Technical analysis of recent attacks against Polish banks – BadCyber",
+  "year": "2017",
+  "publisher": "Symantec",
+  "paper": {
+   "Victim_country": "PL",
+   "Target_sector": "Financial Institutions",
+   "Attack_vector": "Watering Hole, Exploit Vulnerability"
+  }
+ },
+ {
+  "id": "0e7109f06710132f6e6db736a9628fd394412204",
+  "title": "Two Birds, One STONE PANDA",
+  "year": "2018",
+  "publisher": "IntrusionTruth",
+  "paper": {
+   "Victim_country": "",
+   "Target_sector": "Government and Defense Agencies, Corporations and Businesses, Healthcare",
+   "Attack_vector": ""
+  }
+ },
+ {
+  "id": "d043d2ce37e8e5a249f59e30eb2608801a3a3f30",
+  "title": "Is Lazarus_APT38 Targeting Critical Infrastructures _ – Marco Ramilli Web Corner",
+  "year": "2019",
+  "publisher": "FireEye",
+  "paper": {
+   "Victim_country": "",
+   "Target_sector": "Financial Institutions, Media and Entertainment Companies",
+   "Attack_vector": ""
+  }
+ },
+ {
+  "id": "4dd82280ab1b8286e7a15a6712d8aa51cea5717e",
+  "title": "Internet Explorer and Windows zero-day exploits used in Operation PowerFall _ Securelist",
+  "year": "2020",
+  "publisher": "Kaspersky",
+  "paper": {
+   "Victim_country": "",
+   "Target_sector": "Corporations and Businesses",
+   "Attack_vector": "Exploit Vulnerability"
+  }
+ },
+ {
+  "id": "f577c784cc04ad513072b1b02e4d3c9f9399c10a",
+  "title": "2021.04.19.Lazarus_APT_conceals_malicious_code_within_BMP_image_to_drop_its_RAT",
+  "year": "2021",
+  "publisher": "Microsoft",
+  "paper": {
+   "Victim_country": "JP, KR, US",
+   "Target_sector": "",
+   "Attack_vector": "Spear Phishing, Malicious Documents"
+  }
+ },
+ {
+  "id": "2bdc78b3bc56515322135f0dc78c058db89ef411",
+  "title": "North Korea's Lazarus APT leverages Windows Update client, GitHub in latest campaign _ Malwarebytes Labs",
+  "year": "2022",
+  "publisher": "Malwarebytes",
+  "paper": {
+   "Victim_country": "",
+   "Target_sector": "Government and Defense Agencies",
+   "Attack_vector": "Malicious Documents"
+  }
+ },
+ {
+  "id": "12f3a174311f611263f75c3b1d62f69b11c53560",
+  "title": "Don't Answer That! Russia-Aligned TA499 Beleaguers Targets with Video Call Requests",
+  "year": "2023",
+  "publisher": "Proofpoint",
+  "paper": {
+   "Victim_country": "",
+   "Target_sector": "Government and Defense Agencies, Corporations and Businesses, Individuals",
+   "Attack_vector": "Spear Phishing, Social Engineering"
+  }
+ },
+ {
+  "id": "5ec4826b8168e8dbbfe26a5e60123b3009770978",
+  "title": "APT Gang Branches Out to Medical Espionage in Community Health Breach",
+  "year": "2014",
+  "publisher": "ThreatPost",
+  "paper": {
+   "Victim_country": "",
+   "Target_sector": "Healthcare",
+   "Attack_vector": ""
+  }
+ },
+ {
+  "id": "980ab92472c6de302ade77423ce09abe58a258bc",
+  "title": "threat-identification",
+  "year": "2015",
+  "publisher": "Recorded Future",
+  "paper": {
+   "Victim_country": "",
+   "Target_sector": "Corporations and Businesses, Individuals",
+   "Attack_vector": ""
+  }
+ },
+ {
+  "id": "0387df8bdfbe771ec7ee80715c58afac76266a0e",
+  "title": "Two Bytes to $951M",
+  "year": "2016",
+  "publisher": "BAE Systems",
+  "paper": {
+   "Victim_country": "",
+   "Target_sector": "Financial Institutions",
+   "Attack_vector": ""
+  }
+ },
+ {
+  "id": "7c7567206d222546376079a19c07b615d9538cf3",
+  "title": "The Gamaredon Group Toolset Evolution - Palo Alto Networks Blog",
+  "year": "2017",
+  "publisher": "Palo Alto",
+  "paper": {
+   "Victim_country": "UA",
+   "Target_sector": "Government and Defense Agencies, Individuals",
+   "Attack_vector": "Drive-by Download"
+  }
+ },
+ {
+  "id": "b4e7f944cadd35119444c6c346a5ab01023bfd43",
+  "title": "[KR]_ASEC_REPORT_vol.91",
+  "year": "2018",
+  "publisher": "AhnLab",
+  "paper": {
+   "Victim_country": "",
+   "Target_sector": "Corporations and Businesses, Individuals, Media and Entertainment Companies",
+   "Attack_vector": "Spear Phishing, Malicious Documents, Drive-by Download"
+  }
+ },
+ {
+  "id": "d1eece026635773310f0aa00e05898db7853dab0",
+  "title": "darkhydruns-group-against-middle-east-en",
+  "year": "2019",
+  "publisher": "360",
+  "paper": {
+   "Victim_country": "",
+   "Target_sector": "Government and Defense Agencies",
+   "Attack_vector": "Malicious Documents"
+  }
+ },
+ {
+  "id": "d9e41bb3cd7ad22a358930b9eb53495e4409803a",
+  "title": "Blue Mockingbird activity mines Monero cryptocurrency",
+  "year": "2020",
+  "publisher": "Red Canary",
+  "paper": {
+   "Victim_country": "",
+   "Target_sector": "Corporations and Businesses",
+   "Attack_vector": "Exploit Vulnerability"
+  }
+ },
+ {
+  "id": "01d5f589f56547de69752f135d32c6723a4b3055",
+  "title": "Iron Tiger APT Updates Toolkit With Evolved SysUpdate Malware",
+  "year": "2021",
+  "publisher": "SecureWorks",
+  "paper": {
+   "Victim_country": "",
+   "Target_sector": "Government and Defense Agencies, Financial Institutions, Energy and Utilities, Non-Governmental Organizations (NGOs) and Nonprofits",
+   "Attack_vector": "Exploit Vulnerability, Malicious Documents, Watering Hole"
+  }
+ },
+ {
+  "id": "0bfb2a4fa07e33858de806790cc846d66c3e3a24",
+  "title": "Social Engineering Remains Key Tradecraft for Iranian APTs",
+  "year": "2022",
+  "publisher": "Insikt Group®",
+  "paper": {
+   "Victim_country": "IL, US",
+   "Target_sector": "Government and Defense Agencies, Corporations and Businesses, Individuals",
+   "Attack_vector": "Spear Phishing, Social Engineering, Malicious Documents"
+  }
+ },
+ {
+  "id": "a224702fbdf785b482d562117dddf5d4fd848208",
+  "title": "Kimsuky Group Uses AutoIt to Create Malware (RftRAT, Amadey)",
+  "year": "2023",
+  "publisher": "Ahnlab",
+  "paper": {
+   "Victim_country": "KR",
+   "Target_sector": "Government and Defense Agencies, Education and Research Institutions, Media and Entertainment Companies",
+   "Attack_vector": "Spear Phishing"
+  }
+ },
+ {
+  "id": "51e8e24162c94d68637f8252ea6e8f5707b52a23",
+  "title": "The French Connection: French Aerospace-Focused CVE-2014-0322 Attack Shares Similarities with 2012 Capstone Turbine Activity",
+  "year": "2014",
+  "publisher": "Crowdstrike",
+  "paper": {
+   "Victim_country": "FR, US",
+   "Target_sector": "Corporations and Businesses, Manufacturing, Critical Infrastructure",
+   "Attack_vector": "Exploit Vulnerability, Watering Hole"
+  }
+ },
+ {
+  "id": "4da43deb6f7dede89080d4b4adaae53a2c371aa5",
+  "title": "rpt-witchcoven",
+  "year": "2015",
+  "publisher": "FireEye",
+  "paper": {
+   "Victim_country": "AM, AT, AU, AZ, BE, BO, BW, CH, CL, DE, DK, EC, EE, ES, FI, FR, GB, GE, GW, HK, HU, ID, IN, JM, KW, KZ, RO, RS, TM, UA, US, UY, ZA",
+   "Target_sector": "Government and Defense Agencies, Corporations and Businesses, Energy and Utilities, Education and Research Institutions, Media and Entertainment Companies, Non-Governmental Organizations (NGOs) and Nonprofits, Individuals",
+   "Attack_vector": "Spear Phishing, Watering Hole"
+  }
+ },
+ {
+  "id": "8fdd96ab4d0e95802cac838cb8221b93da24d1f2",
+  "title": "Espionage toolkit targeting Central and Eastern Europe uncovered",
+  "year": "2016",
+  "publisher": "ESET",
+  "paper": {
+   "Victim_country": "",
+   "Target_sector": "Government and Defense Agencies",
+   "Attack_vector": "Phishing, Malicious Documents"
+  }
+ },
+ {
+  "id": "0178e27080b23876bfb01077a5662af1192788d0",
+  "title": "Additional information regarding the recent CCleaner APT security incident",
+  "year": "2017",
+  "publisher": "Avast",
+  "paper": {
+   "Victim_country": "CN, IN, RU",
+   "Target_sector": "Corporations and Businesses, Critical Infrastructure",
+   "Attack_vector": ""
+  }
+ },
+ {
+  "id": "8742755080062ec87eb6ae0059fd7925cde83a9b",
+  "title": "APT37 (Reaper): The Overlooked North Korean Actor",
+  "year": "2018",
+  "publisher": "FireEye",
+  "paper": {
+   "Victim_country": "JP, KR, VN",
+   "Target_sector": "Government and Defense Agencies, Corporations and Businesses, Financial Institutions, Healthcare, Manufacturing, Media and Entertainment Companies, Non-Governmental Organizations (NGOs) and Nonprofits, Individuals",
+   "Attack_vector": "Spear Phishing, Watering Hole, Social Engineering"
+  }
+ },
+ {
+  "id": "49745a6ffd7b522f125c3fd57068a6071f3ddb98",
+  "title": "Cybersecurity-threatscape-2019-Q2-eng",
+  "year": "2019",
+  "publisher": "Positive Technologies",
+  "paper": {
+   "Victim_country": "",
+   "Target_sector": "Government and Defense Agencies, Corporations and Businesses, Financial Institutions, Healthcare, Education and Research Institutions, Cloud/IoT Services, Individuals",
+   "Attack_vector": "Social Engineering, Exploit Vulnerability"
+  }
+ },
+ {
+  "id": "75609cca39e6bd39390f11e23753c951fd5f0f7e",
+  "title": "Mapping out AridViper Infrastructure Using Augury’s Malware Module – Team Cymru",
+  "year": "2020",
+  "publisher": "Team Cymru",
+  "paper": {
+   "Victim_country": "IL",
+   "Target_sector": "Government and Defense Agencies",
+   "Attack_vector": "Malicious Documents, Phishing"
+  }
+ },
+ {
+  "id": "5f9c7afb1a194085da42eea82c7560f2a6033de5",
+  "title": "A Deep Dive Into SoWaT: APT31’s Multifunctional Router Implant",
+  "year": "2021",
+  "publisher": "imp0rtp3 blog",
+  "paper": {
+   "Victim_country": "",
+   "Target_sector": "Government and Defense Agencies",
+   "Attack_vector": ""
+  }
+ },
+ {
+  "id": "79e53e7eb70a53b090b71972594fee41eeb40523",
+  "title": "APT34 - Saitama Agent",
+  "year": "2022",
+  "publisher": "XJunior",
+  "paper": {
+   "Victim_country": "",
+   "Target_sector": "",
+   "Attack_vector": "Spear Phishing, Malicious Documents"
+  }
+ },
+ {
+  "id": "669282e93ad3ee2f09ca00538a9e9f9d474dcb9b",
+  "title": "Blind Eagle Deploys Fake UUE Files and Fsociety to Target Colombia",
+  "year": "2023",
+  "publisher": "Blackberry",
+  "paper": {
+   "Victim_country": "CL, CO, EC, ES",
+   "Target_sector": "Government and Defense Agencies, Financial Institutions, Healthcare",
+   "Attack_vector": "Spear Phishing"
+  }
+ }
+]
