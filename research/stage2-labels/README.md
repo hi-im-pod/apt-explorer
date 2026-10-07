@@ -191,6 +191,24 @@ On the held-out half, Gemma with grounding leads on location, regions and sector
 
 **A derived model behaves differently.** We built `aptx-labeler` from gemma4:12b with a Modelfile, first with the v3 prompt baked in as `SYSTEM`, then with only the parameters (`temperature 0`, `num_ctx 16384`, `num_predict 500`). In every variant it matched the base model on only 8 of 30 reports, failed to produce valid JSON on 4, and scored lower (composite 0.652 on 26 reports, against 0.669 on 30). Sending the prompt per request did not change this. The derived model kept the base model's renderer, parser and draft model, and both ran on the same loaded runner. We did not isolate the cause. The deployed setup therefore uses the base model with the prompt and settings sent in each request, which is exactly the configuration we measured, and the derived model was removed.
 
+### 7.8 Comparison with the CCS '25 pipeline
+
+**What the paper reports.** The CCS '25 authors extracted these fields with GPT-4-Turbo and checked its answers by hand on about 120 reports [1, Tables 4 and 5]: victim country P 0.88, R 0.86, F1 0.86; target sector P 0.82, R 0.89, F1 0.85; attack vector P 0.89, R 0.77, F1 0.83. Their questions carried no exclusion rules ("Which countries are being targeted?"), sectors and vectors were forced into 12 categories each [1, Table 9], and a false positive was an attribute "not present in the report". That is a presence check, not a role check: a country the report names as the attacker's or as a lure topic is present, so it would not count against the model.
+
+**Why those numbers cannot be compared with ours directly.** Our reference is a different labeller (Claude, not a human), our rules are stricter (victims only, no region expansion, no attacker or lure countries), and our vocabularies are finer (34 sectors and 15 techniques against 12 and 12).
+
+**A like-for-like comparison.** The paper's released labels are GPT-4-Turbo's output, and the test set carries them. We scored them, and our models, against the same reference on the same reports, after mapping our labels up to the paper's categories (`code/compare_paper.py`, `data/paper_comparison.json`).
+
+| System (59 reports; reference Claude v3, paper categories) | Countries P / R / F1 | Sectors P / R / F1 | Vectors P / R / F1 |
+|---|---|---|---|
+| CCS '25 released labels (GPT-4-Turbo) | 0.34 / 0.59 / 0.43 | 0.49 / 0.77 / 0.60 | 0.66 / 0.89 / 0.76 |
+| gemma4:12b, v3 + grounding | 0.38 / 0.80 / 0.52 | 0.56 / 0.84 / 0.67 | 0.67 / 0.89 / 0.76 |
+| qwen3.5:35b, v3 | 0.30 / 0.88 / 0.44 | 0.60 / 0.60 / 0.60 | 0.80 / 0.87 / 0.84 |
+
+On the held-out half alone (30 reports) the order is the same: the paper's labels score 0.39, 0.61 and 0.76, Gemma 0.47, 0.70 and 0.84.
+
+**Reading this.** Under our rules, a local 12B model on a consumer GPU matches or exceeds the paper's GPT-4-Turbo output on all three fields. The comparison favours our models in one respect that matters: they were prompted with the rules the reference follows, and GPT-4-Turbo was not. What it shows is that our pipeline follows our stricter definition better than theirs does, not that it is more accurate than GPT-4-Turbo in general. The paper's labels have low country recall (0.59) as well as low precision (0.34): they miss victim countries the reference records, often ones implied by specific evidence, and list others that are not victims. Every system, ours included, still lists more countries than the reference (2.0 to 2.8 a report against 0.95), which is the main remaining error.
+
 ## 8. What Went Wrong, and What We Missed
 
 We list every problem found during the study, including our own mistakes, because each one changes how the numbers should be read.
