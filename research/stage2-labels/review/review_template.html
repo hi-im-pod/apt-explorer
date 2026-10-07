@@ -1,0 +1,347 @@
+<title>Stage 2 Label Adjudication</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mona+Sans:wdth,wght@75..125,300..800&family=Martian+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a report list on the left, one review sheet on the right; the list folds into a picker on phones. */
+:root {
+  --paper: #F6F5F8; --surface: #FFFFFF; --ink: #1B1722; --muted: #5A5468; --line: #DDD9E3;
+  --accent: #A3245E; --accent-soft: #F6E3EC; --agree: #1D6674; --agree-soft: #DCEDEF;
+  --dispute: #9A4A08; --dispute-soft: #FBEBD8; --danger: #A1262B;
+  --display: "Mona Sans", "Segoe UI", system-ui, sans-serif;
+  --body: "Mona Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "Martian Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --paper: #141118; --surface: #1D1922; --ink: #EDEAF1; --muted: #A79FB3; --line: #35303F;
+  --accent: #E46E9F; --accent-soft: #3B1F2D; --agree: #67C0CB; --agree-soft: #153139;
+  --dispute: #F2A350; --dispute-soft: #3A2714; --danger: #F07A7E; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --paper: #141118; --surface: #1D1922; --ink: #EDEAF1; --muted: #A79FB3; --line: #35303F;
+  --accent: #E46E9F; --accent-soft: #3B1F2D; --agree: #67C0CB; --agree-soft: #153139;
+  --dispute: #F2A350; --dispute-soft: #3A2714; --danger: #F07A7E; color-scheme: dark }
+* { box-sizing: border-box }
+html, body { height: 100% }
+body { background: var(--paper); color: var(--ink); font: 400 15px/1.5 var(--body); padding-inline: 16px; padding-block: 0 }
+button, select, textarea { font: inherit; color: inherit }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+.app { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 320px minmax(0, 1fr); gap: 24px; padding-block: 20px 48px }
+header.top { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px 24px }
+h1 { font: 700 26px/1.1 var(--display); font-stretch: 112%; letter-spacing: -0.01em; margin: 0; text-wrap: balance }
+.sub { color: var(--muted); margin: 4px 0 0; max-width: 62ch }
+.progress { min-width: 220px; flex: 0 1 320px }
+.progress .num { font: 500 13px/1.2 var(--mono); font-variant-numeric: tabular-nums; display: flex; justify-content: space-between }
+.bar { height: 6px; background: var(--line); border-radius: 3px; margin-top: 6px; overflow: hidden }
+.bar > span { display: block; height: 100%; background: var(--agree); width: 0; transition: width .3s }
+.banner { grid-column: 1 / -1; border: 1px solid var(--dispute); background: var(--dispute-soft); padding: 10px 14px; border-radius: 6px }
+/* List */
+aside { min-width: 0 }
+.filters { display: flex; gap: 6px; margin-bottom: 10px; flex-wrap: wrap }
+.filters button { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 4px 12px; cursor: pointer; font-size: 13px }
+.filters button[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); font-weight: 600 }
+ol.list { list-style: none; margin: 0; padding: 0; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); max-height: calc(100vh - 170px); overflow-y: auto }
+ol.list li + li { border-top: 1px solid var(--line) }
+ol.list button { all: unset; box-sizing: border-box; width: 100%; display: grid; grid-template-columns: 28px minmax(0, 1fr) auto; gap: 8px; padding: 9px 12px; cursor: pointer }
+ol.list button:hover { background: var(--paper) }
+ol.list button[aria-current="true"] { background: var(--accent-soft) }
+ol.list button:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px }
+.ln { font: 500 12px/1.6 var(--mono); color: var(--muted); font-variant-numeric: tabular-nums }
+.lt { font-size: 13.5px; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden }
+.lm { font-size: 12px; color: var(--muted) }
+.state { align-self: start; font: 500 11px/1.7 var(--mono); padding: 0 6px; border-radius: 4px; white-space: nowrap }
+.state.done { color: var(--agree); background: var(--agree-soft) }
+.state.todo { color: var(--dispute); background: var(--dispute-soft) }
+.picker { display: none; gap: 8px; align-items: center }
+.picker select { flex: 1; min-width: 0; padding: 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface) }
+/* Sheet */
+main { min-width: 0 }
+.sheet { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 22px 24px }
+.meta { display: flex; flex-wrap: wrap; gap: 6px 14px; color: var(--muted); font-size: 13px; align-items: center }
+.meta .tag { font: 500 11px/1.8 var(--mono); border: 1px solid var(--line); border-radius: 4px; padding: 0 6px }
+h2 { font: 650 21px/1.25 var(--display); font-stretch: 104%; margin: 8px 0 10px; text-wrap: balance }
+.links { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-bottom: 6px }
+.links a { color: var(--accent); font-weight: 600; text-decoration: underline; text-underline-offset: 3px }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12.5px; color: var(--muted); margin: 14px 0 4px }
+.legend b { font: 500 11px/1 var(--mono); display: inline-grid; place-items: center; width: 18px; height: 18px; border-radius: 4px; background: var(--ink); color: var(--surface); margin-right: 4px }
+section.field { border-top: 1px solid var(--line); padding-top: 16px; margin-top: 16px }
+section.field h3 { font: 650 15px/1.3 var(--display); font-stretch: 108%; margin: 0 }
+.rule { color: var(--muted); font-size: 13px; margin: 3px 0 10px; max-width: 72ch }
+.chips { display: flex; flex-wrap: wrap; gap: 8px }
+.chip { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); background: var(--surface); border-radius: 8px; padding: 6px 10px; cursor: pointer; text-align: left; max-width: 100% }
+.chip:hover { border-color: var(--muted) }
+.chip[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft) }
+.chip .tick { width: 16px; height: 16px; border-radius: 4px; border: 1.5px solid var(--muted); display: grid; place-items: center; flex: none }
+.chip[aria-pressed="true"] .tick { background: var(--accent); border-color: var(--accent) }
+.chip[aria-pressed="true"] .tick::after { content: ""; width: 8px; height: 4px; border: solid var(--surface); border-width: 0 0 2px 2px; transform: rotate(-45deg) translate(1px, -1px) }
+.chip .nm { min-width: 0 }
+.chip code { font: 500 11px var(--mono); color: var(--muted) }
+.who { display: inline-flex; gap: 2px; flex: none }
+.who i { font: 500 10px/1 var(--mono); font-style: normal; width: 16px; height: 16px; display: grid; place-items: center; border-radius: 3px; border: 1px solid var(--line); color: var(--muted) }
+.who i.on { background: var(--ink); border-color: var(--ink); color: var(--surface) }
+.agree { font: 500 10.5px/1.6 var(--mono); padding: 0 5px; border-radius: 3px; flex: none }
+.agree.all { color: var(--agree); background: var(--agree-soft) }
+.agree.some { color: var(--dispute); background: var(--dispute-soft) }
+.agree.you { color: var(--accent); background: var(--accent-soft) }
+.add { margin-top: 10px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap }
+.add select { max-width: 100%; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); font-size: 13px }
+.add label { font-size: 13px; color: var(--muted) }
+.empty { color: var(--muted); font-size: 13px; font-style: italic }
+details.ctx { margin-top: 18px; border-top: 1px solid var(--line); padding-top: 12px; font-size: 13.5px }
+details.ctx summary { cursor: pointer; color: var(--muted); font-weight: 600 }
+details.ctx dl { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 4px 14px; margin: 10px 0 0 }
+details.ctx dt { color: var(--muted) }
+details.ctx dd { margin: 0 }
+textarea { width: 100%; min-height: 70px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); padding: 8px 10px; resize: vertical }
+.actions { position: sticky; bottom: 0; margin-top: 18px; padding-block: 12px calc(12px + env(safe-area-inset-bottom, 0px)); background: var(--surface); border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 10px; align-items: center }
+.btn { border: 1px solid var(--line); background: var(--surface); border-radius: 7px; padding: 8px 14px; cursor: pointer; font-weight: 600 }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--surface) }
+.btn:disabled { opacity: .5; cursor: not-allowed }
+.status { font-size: 13px; color: var(--muted); margin-left: auto }
+.status.saved { color: var(--agree) }
+.status.dirty { color: var(--dispute) }
+.status.err { color: var(--danger) }
+@media (max-width: 860px) {
+  .app { grid-template-columns: minmax(0, 1fr) }
+  aside ol.list, aside .filters { display: none }
+  .picker { display: flex }
+  .sheet { padding: 16px }
+}
+@media (prefers-reduced-motion: reduce) { .bar > span { transition: none } }
+</style>
+
+<div class="app">
+  <header class="top">
+    <div>
+      <h1>Stage 2 Label Adjudication</h1>
+      <p class="sub">Decide the reference labels for the 60 test reports. Labels at least two labellers chose start selected; untick what is wrong, add what is missing, then save.</p>
+    </div>
+    <div class="progress" aria-live="polite">
+      <div class="num"><span id="pDone">0 of 60 decided</span><span id="pPct">0%</span></div>
+      <div class="bar"><span id="pBar"></span></div>
+    </div>
+  </header>
+  <div class="banner" id="banner" hidden></div>
+  <aside>
+    <div class="filters" role="group" aria-label="Show">
+      <button type="button" data-f="todo" aria-pressed="true">To decide</button>
+      <button type="button" data-f="done" aria-pressed="false">Decided</button>
+      <button type="button" data-f="all" aria-pressed="false">All</button>
+    </div>
+    <ol class="list" id="list" aria-label="Reports"></ol>
+    <div class="picker">
+      <button type="button" class="btn" id="mPrev" aria-label="Previous report">Prev</button>
+      <select id="mPick" aria-label="Choose a report"></select>
+      <button type="button" class="btn" id="mNext" aria-label="Next report">Next</button>
+    </div>
+  </aside>
+  <main><div class="sheet" id="sheet"></div></main>
+</div>
+
+<script>
+const DATA = /*__DATA__*/null;
+const V = DATA.vocab, R = DATA.reports;
+const IA = Object.fromEntries(V.ia);
+const WHO = [['claude', 'C', 'Claude'], ['gemma', 'G', 'Gemma 12B'], ['qwen', 'Q', 'Qwen 35B']];
+const LIST_FIELDS = [
+  { key: 'victim_countries', title: 'Victim countries', rule: 'Countries where victims are located: named, or shown by specific evidence such as local-language lures for a local audience, country-only software, or a country-only regulator. Never the attacker, infrastructure, vendor, sample-upload or lure-topic country.', name: c => V.countries[c] || c, code: true, options: () => Object.keys(V.countries) },
+  { key: 'victim_regions', title: 'Victim regions', rule: 'Only when the report places victims in a region and names no country for them. Never expand a region into countries.', name: x => x, options: () => V.regions },
+  { key: 'target_sectors', title: 'Target sectors', rule: 'STIX 2.1 sectors. Use the most specific value; commercial only when no industry is named. Not for private individuals.', name: x => x, options: () => V.sectors },
+  { key: 'initial_access', title: 'Initial access', rule: 'How the attackers first got in. A malicious document or file that reached victims by an unstated channel is T1566. No later stages.', name: x => IA[x] || x, code: true, options: () => V.ia.map(a => a[0]) },
+];
+const SKIP = new Set(['attribution', 'survey', 'methodology']);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const clone = o => JSON.parse(JSON.stringify(o));
+
+let decisions = {}, cur = 0, draft = null, dirty = false, filter = 'todo', db = null, dbState = 'connecting', saving = false;
+
+function votes(r, key) {
+  const m = new Map();
+  for (const [w] of WHO) for (const v of (r.labels[w]?.[key] || [])) { if (!m.has(v)) m.set(v, new Set()); m.get(v).add(w); }
+  return m;
+}
+function singleVotes(r, key) {
+  const m = new Map();
+  for (const [w] of WHO) { const l = r.labels[w]; if (!l) continue; const v = l[key]; if (!m.has(v)) m.set(v, new Set()); m.get(v).add(w); }
+  return m;
+}
+function proposal(r) {
+  const p = {};
+  for (const f of LIST_FIELDS) p[f.key] = [...votes(r, f.key)].filter(([, s]) => s.size >= 2).map(([v]) => v).sort();
+  const tv = [...singleVotes(r, 'report_type')].sort((a, b) => b[1].size - a[1].size);
+  p.report_type = tv.length && tv[0][1].size >= 2 ? tv[0][0] : r.labels.claude.report_type;
+  const iv = [...singleVotes(r, 'individuals_targeted')].sort((a, b) => b[1].size - a[1].size);
+  p.individuals_targeted = iv.length ? !!iv[0][0] : false;
+  p.note = '';
+  return p;
+}
+function disputes(r) {
+  let n = 0;
+  const lab = WHO.filter(([w]) => r.labels[w]).length;
+  for (const f of LIST_FIELDS) for (const [, s] of votes(r, f.key)) if (s.size < lab) n++;
+  if (singleVotes(r, 'report_type').size > 1) n++;
+  if (singleVotes(r, 'individuals_targeted').size > 1) n++;
+  return n;
+}
+function startDraft() {
+  const r = R[cur], d = decisions[r.id];
+  draft = d ? { report_type: d.report_type, individuals_targeted: !!d.individuals_targeted, note: d.note || '',
+    ...Object.fromEntries(LIST_FIELDS.map(f => [f.key, [...(d[f.key] || [])]])) } : proposal(r);
+  dirty = false;
+}
+function visible() {
+  return R.map((r, i) => i).filter(i => filter === 'all' || (filter === 'done') === !!decisions[R[i].id]);
+}
+function renderProgress() {
+  const n = R.filter(r => decisions[r.id]).length;
+  document.getElementById('pDone').textContent = `${n} of ${R.length} decided`;
+  document.getElementById('pPct').textContent = `${Math.round(100 * n / R.length)}%`;
+  document.getElementById('pBar').style.width = `${100 * n / R.length}%`;
+}
+function renderList() {
+  const ol = document.getElementById('list'), vis = visible();
+  ol.innerHTML = vis.length ? vis.map(i => {
+    const r = R[i], done = !!decisions[r.id];
+    return `<li><button type="button" data-i="${i}" aria-current="${i === cur}">
+      <span class="ln">${String(r.n).padStart(2, '0')}</span>
+      <span><span class="lt">${esc(r.title)}</span><span class="lm">${esc(r.year)}, ${esc(r.publisher)}</span></span>
+      <span class="state ${done ? 'done' : 'todo'}">${done ? 'done' : disputes(r) + ' open'}</span></button></li>`;
+  }).join('') : `<li style="padding:14px;color:var(--muted);font-size:13px">${filter === 'done' ? 'Nothing decided yet. Save a report and it appears here.' : 'Every report is decided.'}</li>`;
+  const pick = document.getElementById('mPick');
+  pick.innerHTML = R.map((r, i) => `<option value="${i}" ${i === cur ? 'selected' : ''}>${String(r.n).padStart(2, '0')} ${decisions[r.id] ? '(done) ' : ''}${esc(r.title.slice(0, 60))}</option>`).join('');
+  renderProgress();
+}
+function whoTags(set) {
+  return `<span class="who" aria-label="Chosen by ${WHO.filter(([w]) => set.has(w)).map(x => x[2]).join(', ') || 'nobody'}">${WHO.map(([w, l, n]) => `<i class="${set.has(w) ? 'on' : ''}" title="${n}">${l}</i>`).join('')}</span>`;
+}
+function agreeTag(set, total) {
+  if (set.size === 0) return '<span class="agree you">added by you</span>';
+  return set.size === total ? '<span class="agree all">all agree</span>' : `<span class="agree some">${set.size} of ${total}</span>`;
+}
+function renderSheet() {
+  const r = R[cur], total = WHO.filter(([w]) => r.labels[w]).length, d = decisions[r.id];
+  const typeVotes = singleVotes(r, 'report_type'), indVotes = singleVotes(r, 'individuals_targeted');
+  const skip = SKIP.has(draft.report_type);
+  const field = f => {
+    const vm = votes(r, f.key);
+    const vals = [...new Set([...vm.keys(), ...draft[f.key]])].sort((a, b) => (vm.get(b)?.size || 0) - (vm.get(a)?.size || 0) || f.name(a).localeCompare(f.name(b)));
+    const chips = vals.map(v => {
+      const s = vm.get(v) || new Set(), on = draft[f.key].includes(v);
+      return `<button type="button" class="chip" data-k="${f.key}" data-v="${esc(v)}" aria-pressed="${on}"><span class="tick"></span><span class="nm">${esc(f.name(v))}${f.code ? ` <code>${esc(v)}</code>` : ''}</span>${whoTags(s)}${agreeTag(s, total)}</button>`;
+    }).join('');
+    const opts = f.options().filter(v => !vals.includes(v));
+    return `<section class="field"><h3>${f.title}</h3><p class="rule">${f.rule}</p>
+      <div class="chips">${chips || '<span class="empty">No labeller chose any. Add one below if the report supports it.</span>'}</div>
+      <div class="add"><label for="add-${f.key}">Add</label><select id="add-${f.key}" data-add="${f.key}"><option value="">Choose a value</option>${opts.map(v => `<option value="${esc(v)}">${esc(f.name(v))}${f.code ? ' (' + esc(v) + ')' : ''}</option>`).join('')}</select></div></section>`;
+  };
+  const single = (key, title, rule, values, name) => {
+    const vm = key === 'report_type' ? typeVotes : indVotes;
+    return `<section class="field"><h3>${title}</h3><p class="rule">${rule}</p><div class="chips" role="radiogroup" aria-label="${title}">${values.map(v => {
+      const s = vm.get(v) || new Set(), on = draft[key] === v;
+      return `<button type="button" class="chip" role="radio" data-one="${key}" data-v="${esc(String(v))}" aria-pressed="${on}" aria-checked="${on}"><span class="tick"></span><span class="nm">${esc(name(v))}</span>${s.size ? whoTags(s) + agreeTag(s, total) : ''}</button>`;
+    }).join('')}</div></section>`;
+  };
+  const p = r.paper;
+  document.getElementById('sheet').innerHTML = `
+    <div class="meta"><span class="tag">#${String(r.n).padStart(2, '0')}</span><span class="tag">${r.split === 'dev' ? 'development half' : 'held-out test half'}</span><span>${esc(r.year)}</span><span>${esc(r.publisher)}</span>${d ? '<span class="tag" style="color:var(--agree)">decided</span>' : ''}</div>
+    <h2>${esc(r.title)}</h2>
+    <div class="links">${r.archive ? `<a href="${esc(r.archive)}" target="_blank" rel="noopener noreferrer">Open the ORKL copy (PDF)</a>` : ''}${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">Open the original</a>` : ''}</div>
+    <div class="legend"><span><b>C</b>Claude</span><span><b>G</b>Gemma 12B</span><span><b>Q</b>Qwen 35B</span><span>Filled letter: that labeller chose the value.</span></div>
+    ${single('report_type', 'Report type', 'Attribution, survey and methodology reports get no other labels.', V.types, x => x)}
+    ${skip ? '<p class="rule" style="margin-top:12px">This type carries no victim or initial-access labels; anything selected below is dropped when you save.</p>' : ''}
+    ${LIST_FIELDS.map(field).join('')}
+    ${single('individuals_targeted', 'Individuals targeted', 'Private people targeted as people (activists, dissidents, the public). Employees phished to reach their employer do not count.', [true, false], v => v ? 'Yes' : 'No')}
+    <section class="field"><h3><label for="note">Note</label></h3><p class="rule">Why you changed something, or a rule that needs fixing. Optional.</p><textarea id="note" placeholder="For example: Korea is implied only by the vendor, not by the report">${esc(draft.note)}</textarea></section>
+    <details class="ctx"><summary>Context: Claude's note and the CCS '25 labels</summary><dl>
+      <dt>Claude's note</dt><dd>${esc(r.note) || '<span class="empty">none</span>'}</dd>
+      <dt>CCS '25 countries</dt><dd>${esc(p.Victim_country) || '<span class="empty">none</span>'}</dd>
+      <dt>CCS '25 sectors</dt><dd>${esc(p.Target_sector) || '<span class="empty">none</span>'}</dd>
+      <dt>CCS '25 vectors</dt><dd>${esc(p.Attack_vector) || '<span class="empty">none</span>'}</dd></dl></details>
+    <div class="actions">
+      <button type="button" class="btn" id="prev">Previous</button>
+      <button type="button" class="btn" id="save">Save</button>
+      <button type="button" class="btn primary" id="saveNext">Save and go to next</button>
+      <span class="status" id="status" role="status"></span>
+    </div>`;
+  setStatus();
+}
+function setStatus(msg, cls) {
+  const el = document.getElementById('status'); if (!el) return;
+  if (msg) { el.textContent = msg; el.className = 'status ' + (cls || ''); return; }
+  const d = decisions[R[cur].id];
+  if (dirty) { el.textContent = 'Changed, not saved'; el.className = 'status dirty'; }
+  else if (d) { el.textContent = 'Saved'; el.className = 'status saved'; }
+  else { el.textContent = 'Proposal, not saved yet'; el.className = 'status'; }
+  for (const id of ['save', 'saveNext']) { const b = document.getElementById(id); if (b) b.disabled = dbState === 'off' || saving; }
+}
+function go(i) {
+  if (i < 0 || i >= R.length) return;
+  cur = i; startDraft(); renderList(); renderSheet();
+  const sh = document.getElementById('sheet'); if (sh.getBoundingClientRect().top < 0) sh.scrollIntoView({ block: 'start' });
+}
+function nextUndecided() {
+  for (let k = 1; k <= R.length; k++) { const i = (cur + k) % R.length; if (!decisions[R[i].id]) return i; }
+  return Math.min(cur + 1, R.length - 1);
+}
+async function save(andNext) {
+  if (!db || saving) return;
+  const r = R[cur];
+  draft.note = document.getElementById('note').value.trim();
+  const body = { report_id: r.id, n: r.n, split: r.split, rules: 'v3', report_type: draft.report_type, note: draft.note, decided_at: new Date().toISOString() };
+  const skip = SKIP.has(draft.report_type);
+  for (const f of LIST_FIELDS) body[f.key] = skip ? [] : [...draft[f.key]].sort();
+  body.individuals_targeted = skip ? false : !!draft.individuals_targeted;
+  saving = true; setStatus('Saving...');
+  try {
+    await db.collection('decisions').doc(r.id).set(body);
+    decisions[r.id] = body; dirty = false; saving = false;
+    if (andNext) go(nextUndecided()); else { renderList(); renderSheet(); }
+  } catch (e) {
+    saving = false;
+    setStatus(e?.code === 'invalid_argument' ? 'Not saved: this view cannot write decisions.' : `Not saved (${e?.code || 'error'}). Try again.`, 'err');
+  }
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  if (b.dataset.i !== undefined) return go(+b.dataset.i);
+  if (b.dataset.f) { filter = b.dataset.f; document.querySelectorAll('.filters button').forEach(x => x.setAttribute('aria-pressed', x === b)); return renderList(); }
+  if (b.dataset.k) { const a = draft[b.dataset.k], v = b.dataset.v; const j = a.indexOf(v); j >= 0 ? a.splice(j, 1) : a.push(v); dirty = true; draft.note = document.getElementById('note').value; return renderSheet(); }
+  if (b.dataset.one) { const k = b.dataset.one; draft[k] = k === 'individuals_targeted' ? b.dataset.v === 'true' : b.dataset.v; dirty = true; draft.note = document.getElementById('note').value; return renderSheet(); }
+  if (b.id === 'prev' || b.id === 'mPrev') return go(cur - 1);
+  if (b.id === 'mNext') return go(cur + 1);
+  if (b.id === 'save') return save(false);
+  if (b.id === 'saveNext') return save(true);
+});
+document.addEventListener('change', e => {
+  const t = e.target;
+  if (t.dataset.add && t.value) { draft[t.dataset.add].push(t.value); dirty = true; draft.note = document.getElementById('note').value; renderSheet(); document.getElementById('add-' + t.dataset.add)?.focus(); }
+  if (t.id === 'mPick') go(+t.value);
+});
+document.addEventListener('input', e => { if (e.target.id === 'note') { dirty = true; setStatus(); } });
+document.addEventListener('keydown', e => {
+  if (e.target.closest('textarea, select, input')) return;
+  if (e.key === 'ArrowRight') go(cur + 1);
+  if (e.key === 'ArrowLeft') go(cur - 1);
+});
+
+startDraft(); renderList(); renderSheet();
+
+(async () => {
+  db = window.claude ? await window.claude.use('db') : null;
+  const banner = document.getElementById('banner');
+  if (!db) {
+    dbState = 'off';
+    banner.textContent = 'Saving is not available in this view. Open the page on claude.ai while signed in to save decisions; you can still review here.';
+    banner.hidden = false; setStatus(); return;
+  }
+  dbState = 'ready'; setStatus();
+  db.collection('decisions').onSnapshot(snap => {
+    decisions = {};
+    for (const d of snap.docs) if (d.exists) decisions[d.id] = d.data();
+    if (!dirty && !saving) startDraft();
+    renderList(); if (!dirty && !saving) renderSheet(); else renderProgress();
+  }, err => {
+    banner.textContent = `Saved decisions could not be loaded (${err.code}). Reload the page to try again.`;
+    banner.hidden = false;
+  });
+})();
+</script>
