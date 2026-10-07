@@ -271,7 +271,7 @@ python research/stage2-labels/code/harness.py score --pred run.json --ref resear
 python research/stage2-labels/code/rescore_all.py
 ```
 
-Prompts: `prompts/std-v1.txt` (Section 7.4), `prompts/v3.txt` and `prompts/v4.txt` (Section 7.6), and `prompts/v3.1.txt` (v3 plus the campaign tie-breaker agreed during adjudication; not yet measured); the spike prompts v1 and v2 are inline in `code/legacy/spike_mem.py` and `code/legacy/spike_v2.py`. `code/legacy/` holds the exact scripts used for the spikes, with local paths replaced by environment variables. `data/spike/` holds their outputs (labels only), `data/runs/` every test-set run with per-report timing and token counts, and `data/scores.json` every score.
+Prompts: `prompts/std-v1.txt` (Section 7.4), `prompts/v3.txt` and `prompts/v4.txt` (Section 7.6), `prompts/v3.1.txt` (v3 plus the campaign tie-breaker agreed during adjudication) and `prompts/v3.2.txt` (v3.1 with an unstated-channel malicious document recorded as T1566.001); neither is measured yet; the spike prompts v1 and v2 are inline in `code/legacy/spike_mem.py` and `code/legacy/spike_v2.py`. `code/legacy/` holds the exact scripts used for the spikes, with local paths replaced by environment variables. `data/spike/` holds their outputs (labels only), `data/runs/` every test-set run with per-report timing and token counts, and `data/scores.json` every score.
 
 ## References
 

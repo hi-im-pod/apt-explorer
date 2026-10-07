@@ -146,7 +146,7 @@ const LIST_FIELDS = [
   { key: 'victim_countries', title: 'Victim countries', rule: 'Countries where victims are located: named, or shown by specific evidence such as local-language lures for a local audience, country-only software, or a country-only regulator. Never the attacker, infrastructure, vendor, sample-upload or lure-topic country.', name: c => V.countries[c] || c, code: true, options: () => Object.keys(V.countries) },
   { key: 'victim_regions', title: 'Victim regions', rule: 'Only when the report places victims in a region and names no country for them. Never expand a region into countries.', name: x => x, options: () => V.regions },
   { key: 'target_sectors', title: 'Target sectors', rule: 'STIX 2.1 sectors. Use the most specific value; commercial only when no industry is named. Not for private individuals.', name: x => x, options: () => V.sectors },
-  { key: 'initial_access', title: 'Initial access', rule: 'How the attackers first got in. A malicious document or file that reached victims by an unstated channel is T1566. No later stages.', name: x => IA[x] || x, code: true, options: () => V.ia.map(a => a[0]) },
+  { key: 'initial_access', title: 'Initial access', rule: 'How the attackers first got in. A malicious document that reached victims by an unstated channel is T1566.001; T1566 only when phishing is stated without its channel and no document is involved. No later stages.', name: x => IA[x] || x, code: true, options: () => V.ia.map(a => a[0]) },
 ];
 const SKIP = new Set(['attribution', 'survey', 'methodology']);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));

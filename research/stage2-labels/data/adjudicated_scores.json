@@ -1,0 +1,185 @@
+{
+ "Claude (v3)": {
+  "reports": 30,
+  "victim_countries": {
+   "precision": 0.939,
+   "recall": 0.508,
+   "f1": 0.66,
+   "tp": 31,
+   "fp": 2,
+   "fn": 30
+  },
+  "victim_regions": {
+   "precision": 0.857,
+   "recall": 0.75,
+   "f1": 0.8,
+   "tp": 6,
+   "fp": 1,
+   "fn": 2
+  },
+  "target_sectors": {
+   "precision": 0.932,
+   "recall": 0.621,
+   "f1": 0.745,
+   "tp": 41,
+   "fp": 3,
+   "fn": 25
+  },
+  "target_sectors_parent": {
+   "precision": 0.955,
+   "recall": 0.689,
+   "f1": 0.8,
+   "tp": 42,
+   "fp": 2,
+   "fn": 19
+  },
+  "initial_access": {
+   "precision": 0.606,
+   "recall": 0.571,
+   "f1": 0.588,
+   "tp": 20,
+   "fp": 13,
+   "fn": 15
+  },
+  "initial_access_parent": {
+   "precision": 0.871,
+   "recall": 0.931,
+   "f1": 0.9,
+   "tp": 27,
+   "fp": 4,
+   "fn": 2
+  },
+  "location": {
+   "precision": 0.925,
+   "recall": 0.536,
+   "f1": 0.679,
+   "tp": 37,
+   "fp": 3,
+   "fn": 32
+  },
+  "report_type_accuracy": 0.9,
+  "individuals_accuracy": 0.933
+ },
+ "gemma4:12b v3 + grounding": {
+  "reports": 29,
+  "victim_countries": {
+   "precision": 0.917,
+   "recall": 0.917,
+   "f1": 0.917,
+   "tp": 55,
+   "fp": 5,
+   "fn": 5
+  },
+  "victim_regions": {
+   "precision": 0.615,
+   "recall": 1.0,
+   "f1": 0.762,
+   "tp": 8,
+   "fp": 5,
+   "fn": 0
+  },
+  "target_sectors": {
+   "precision": 0.864,
+   "recall": 0.864,
+   "f1": 0.864,
+   "tp": 57,
+   "fp": 9,
+   "fn": 9
+  },
+  "target_sectors_parent": {
+   "precision": 0.864,
+   "recall": 0.934,
+   "f1": 0.898,
+   "tp": 57,
+   "fp": 9,
+   "fn": 4
+  },
+  "initial_access": {
+   "precision": 0.743,
+   "recall": 0.765,
+   "f1": 0.754,
+   "tp": 26,
+   "fp": 9,
+   "fn": 8
+  },
+  "initial_access_parent": {
+   "precision": 0.758,
+   "recall": 0.893,
+   "f1": 0.82,
+   "tp": 25,
+   "fp": 8,
+   "fn": 3
+  },
+  "location": {
+   "precision": 0.863,
+   "recall": 0.926,
+   "f1": 0.894,
+   "tp": 63,
+   "fp": 10,
+   "fn": 5
+  },
+  "report_type_accuracy": 0.897,
+  "individuals_accuracy": 0.966
+ },
+ "qwen3.5:35b v3": {
+  "reports": 30,
+  "victim_countries": {
+   "precision": 0.927,
+   "recall": 0.836,
+   "f1": 0.879,
+   "tp": 51,
+   "fp": 4,
+   "fn": 10
+  },
+  "victim_regions": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "tp": 0,
+   "fp": 0,
+   "fn": 8
+  },
+  "target_sectors": {
+   "precision": 0.885,
+   "recall": 0.697,
+   "f1": 0.78,
+   "tp": 46,
+   "fp": 6,
+   "fn": 20
+  },
+  "target_sectors_parent": {
+   "precision": 0.885,
+   "recall": 0.754,
+   "f1": 0.814,
+   "tp": 46,
+   "fp": 6,
+   "fn": 15
+  },
+  "initial_access": {
+   "precision": 0.733,
+   "recall": 0.629,
+   "f1": 0.677,
+   "tp": 22,
+   "fp": 8,
+   "fn": 13
+  },
+  "initial_access_parent": {
+   "precision": 0.793,
+   "recall": 0.793,
+   "f1": 0.793,
+   "tp": 23,
+   "fp": 6,
+   "fn": 6
+  },
+  "location": {
+   "precision": 0.927,
+   "recall": 0.739,
+   "f1": 0.823,
+   "tp": 51,
+   "fp": 4,
+   "fn": 18
+  },
+  "report_type_accuracy": 0.733,
+  "individuals_accuracy": 0.933
+ }
+}
