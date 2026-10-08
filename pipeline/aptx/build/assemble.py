@@ -721,10 +721,13 @@ def _date(group: list[ReportRecord], today: str) -> tuple[str | None, str]:
         # quarter that have not happened. Undated is the honest label.
         if day and r.date_basis in _BASIS_RANK and day <= today:
             candidates.append((_BASIS_RANK[r.date_basis], day, r.date_basis))
-    # Any source's copy of the address can date the report, whichever source supplied it.
+    # Any source's copy of the address can date the report, whichever source supplied it. A report
+    # cannot appear after ORKL added it, so an ingest date bounds these as it does in resolve_report_date.
+    ingested = [d for r in group if r.date_basis == "orkl-ingest" and (d := parse_date(r.published))]
+    latest = min(ingested + [today])
     for r in group:
         for basis, day in (("url-date", url_date(r.url)), ("wayback-capture", wayback_date(r.url))):
-            if day and day <= today:
+            if day and day <= latest:
                 candidates.append((_BASIS_RANK[basis], day, basis))
     if not candidates:
         return None, "unknown"

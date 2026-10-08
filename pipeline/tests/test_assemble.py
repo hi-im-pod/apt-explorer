@@ -1127,3 +1127,9 @@ def test_a_publisher_has_one_spelling_and_a_blank_one_comes_from_the_publishers_
                       R("orkl", "3", "Mirrored", MIRROR, "2025-01-02"))
     assert [report_by_title(payload, t)["organisation"] for t in ("Spelled", "Hosted", "Mirrored")] == [
         "CrowdStrike", "Kaspersky", None]
+
+
+def test_an_address_date_after_the_ingest_date_does_not_date_the_report():
+    orkl = R("orkl", "1", "Later address", "https://ex.org/2025/08/01/post", "2025-05-01", basis="orkl-ingest")
+    row = report_by_title(_linked(orkl), "Later address")
+    assert (row["published"], row["date_basis"]) == ("2025-05-01", "orkl-ingest")
