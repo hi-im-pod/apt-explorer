@@ -285,3 +285,21 @@ def test_a_report_linked_to_too_many_actors_is_left_out_of_trends():
     counted = {r["actor"] for r in out["reporting_activity"] if r["count"]}
     assert counted == set(fewer)
     assert {r["actor"] for r in out["reported_vs_documented"]} <= set(fewer)
+
+
+def test_an_old_untrusted_report_still_rules_an_actor_out_of_new():
+    old = R("2020-03-01", ["G0001"]) | {"date_basis": "orkl-ingest"}
+    recent = R("2026-06-01", ["G0001"]) | {"date_basis": "url-date"}
+    assert run([old, recent])["new_actors"] == []
+
+
+def test_an_old_report_with_too_many_actors_still_rules_an_actor_out_of_new():
+    from aptx.build.trends import MAX_ACTORS_PER_REPORT
+    many = ["G0001"] + [f"G9{n:03d}" for n in range(MAX_ACTORS_PER_REPORT)]
+    out = run([R("2019-03-01", many, rid="a"), R("2026-06-01", ["G0001"], rid="b")], {"G0001": []})
+    assert out["new_actors"] == []
+
+
+def test_a_recent_trusted_report_still_makes_an_actor_new():
+    out = run([R("2026-06-01", ["G0001"]) | {"date_basis": "url-date"}])
+    assert out["new_actors"] == [{"actor": "G0001", "first_seen": "2026-06-01", "basis": "report"}]

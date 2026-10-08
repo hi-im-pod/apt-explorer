@@ -129,6 +129,9 @@ def compute(reports: list[dict], *, documented: dict[str, list[str]], vulns: lis
 
     # A report dated after the build is a bad date, not news, so it counts for
     # nothing. An undated report has no quarter to belong to.
+    # Every dated, actor-linked report, trusted or not. It only ever rules an actor out of "new".
+    any_date = [(r, d) for r in reports if r.get("published") and r.get("actors")
+                and (d := _day(r["published"])) <= today]
     dated = [(r, _day(r["published"])) for r in reports
              if r.get("published") and r.get("date_basis") not in UNTRUSTED_DATE_BASES]
     dated = [(r, d) for r, d in dated if d <= today and 0 < len(r.get("actors") or ()) < MAX_ACTORS_PER_REPORT]
@@ -138,7 +141,7 @@ def compute(reports: list[dict], *, documented: dict[str, list[str]], vulns: lis
         "window_start": window_start,
         "generated_at": generated_at,
         "reporting_activity": _reporting_activity(dated, published, start, today),
-        "new_actors": _new_actors(dated, published, first_seen_claims, today),
+        "new_actors": _new_actors(dated, published, first_seen_claims, today, any_date),
         "kev_monthly": _kev_monthly(vulns, start, today),
         "kev_actor_links": _kev_actor_links(recent, vulns),
         "reported_vs_documented": _reported_vs_documented(recent, documented),
@@ -172,8 +175,11 @@ def _reporting_activity(dated, published, start: date, today: date) -> list[dict
             for actor, q in sorted(keys) if q >= first_quarter]
 
 
-def _new_actors(dated, published, claims, today: date) -> list[dict]:
+def _new_actors(dated, published, claims, today: date, any_date=()) -> list[dict]:
     cutoff = today - timedelta(days=NEW_ACTOR_DAYS)
+    # A report left out of the counts still shows the actor was known by its date: an ingest date or a
+    # capture is an upper bound. So an older one rules an actor out, though it cannot make one new.
+    known_before = {a for r, d in any_date if d < cutoff for a in r["actors"]}
     seen: dict[str, list[tuple[str, str]]] = defaultdict(list)
     for actor, pairs in claims.items():
         if actor in published:
@@ -191,7 +197,7 @@ def _new_actors(dated, published, claims, today: date) -> list[dict]:
         # actor new when a source has known of it for years. Ties keep the source
         # key that sorts first, so the basis is the same on every build.
         first, basis = min(seen[actor])
-        if _day(first) >= cutoff:
+        if _day(first) >= cutoff and actor not in known_before:
             out.append({"actor": actor, "first_seen": first, "basis": basis})
     return out
 
