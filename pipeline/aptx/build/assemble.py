@@ -76,6 +76,7 @@ from aptx.build.countries import country_name, iso2
 from aptx.build.notice import SOURCE_INFO, SOURCE_ORDER, render_notice, require_year, source_attribution
 from aptx.build.report_index import build_reports_index
 from aptx.core.dates import URL_OVERRIDES_LIBRARY_DAYS, parse_date, url_date, wayback_date
+from aptx.core.report_titles import clean_title
 from aptx.core.models import ActorRecord, CampaignRecord, ReportRecord, SourceBundle, VulnRecord
 from aptx.core.urls import norm_url
 from aptx.resolve import title_terms, titles
@@ -643,7 +644,8 @@ def _report(group: list[ReportRecord], policies, malpedia_links, group_links, re
     if archive == url:
         archive = None
 
-    titled_by = next(((r, t) for r in group if (t := _tidy(r.title))), None)
+    # A file name, placeholder or error page is no title, so the next copy's title or the address is used.
+    titled_by = next(((r, t) for r in group if (t := clean_title(r.title))), None)
     title = titled_by[1] if titled_by else url
     if title is None:
         return None

@@ -1092,3 +1092,11 @@ def test_last_reported_ignores_ingest_dates():
                       R("orkl", "2", "Dated", "https://ex.org/d", "2025-01-02"))
     entry = next(e for e in payload["actors/index.json"] if e["id"] == "G0007")
     assert entry["last_reported"] == "2025-01-02"
+
+
+def test_a_placeholder_or_error_title_gives_way_to_the_address():
+    payload = _linked(R("orkl", "1", "PowerPoint Presentation", "https://ex.org/a", "2025-01-02"),
+                      R("orkl", "2", "404: This page could not be found.", "https://ex.org/b", "2025-01-02"),
+                      R("orkl", "3", "Microsoft Word - Real Name.docx", "https://ex.org/c", "2025-01-02"))
+    assert sorted(r["title"] for r in all_report_rows(payload)) == ["Real Name", "https://ex.org/a",
+                                                                    "https://ex.org/b"]
