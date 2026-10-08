@@ -66,3 +66,14 @@ def test_the_domain_prefix_is_read_for_the_publisher():
 def test_a_title_is_read_from_the_address_only_when_it_has_words(url, title):
     from aptx.core.report_titles import title_from_url
     assert title_from_url(url) == title
+
+
+@pytest.mark.parametrize("raw, shown", [
+    ("LIFARS- Lazarus .pdf", "LIFARS- Lazarus"),
+    ("Russian State-Sponsored and Criminal Cyber .pdf", "Russian State-Sponsored and Criminal Cyber"),
+    ("Microsoft Word -  Spaced .docx", "Spaced"),
+    ("Report%20Name%20.pdf", "Report Name"),
+])
+def test_a_tidied_title_never_starts_or_ends_with_a_space(raw, shown):
+    # The writer refuses a title with a space at either end, so one such title stops the whole build.
+    assert clean_title(raw) == shown

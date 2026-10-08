@@ -59,8 +59,9 @@ def clean_title(title: str | None) -> str | None:
     # "Anunak_APT_against_financial_institutions". One underscore is kept, because malware names
     # such as BKDR_SARHUST.A are written that way.
     if " " not in text and (file_name or text.count("_") >= 3):
-        text = " ".join(text.replace("_", " ").split())
-    return text or None
+        text = text.replace("_", " ")
+    # Removing a prefix or an extension can leave a space at either end: "LIFARS- Lazarus .pdf".
+    return " ".join(text.split()) or None
 
 
 # A path segment that is only an ID, a date part or a language code says nothing about the report.
