@@ -336,6 +336,9 @@
 			the table can filter and search on them. Actors come from the sources named above, or from a
 			title or text that names them, and CVE and technique IDs are matched in the report text. The
 			link-only rule allows this because the project works out those identifiers itself.
+			Two checks remove matches that cannot belong to the report. A CVE numbered more than a year
+			after the report's date is dropped, because a CVE takes the year it was reserved. When a
+			report's link now leads to an error page, nothing is read from that page.
 		</p>
 	{/if}
 	<h3>Actors named in a title</h3>

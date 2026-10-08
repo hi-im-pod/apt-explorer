@@ -767,7 +767,7 @@ def test_url_ok_comes_from_the_link_check_by_normalized_url():
 
 
 def test_technique_ids_outside_attack_are_dropped_from_reports():
-    paper = B("paper", reports=[R("paper", "a.pdf", "Techniques", "https://ex.org/p", "2019-05-01",
+    paper = B("paper", reports=[R("paper", "a.pdf", "Techniques", "https://ex.org/p", "2021-12-15",
                                   techniques=["T1059", "T9999", "T1566.002", "T1566.999"],
                                   cves=["cve-2021-44228", "CVE-2021-44228", "not-a-cve"])])
     row = report_by_title(run(*WORLD(paper=paper)), "Techniques")
@@ -1100,3 +1100,22 @@ def test_a_placeholder_or_error_title_gives_way_to_the_address():
                       R("orkl", "3", "Microsoft Word - Real Name.docx", "https://ex.org/c", "2025-01-02"))
     assert sorted(r["title"] for r in all_report_rows(payload)) == ["Real Name", "https://ex.org/a",
                                                                     "https://ex.org/b"]
+
+
+def test_a_cve_numbered_more_than_a_year_after_the_report_is_dropped():
+    paper = B("paper", reports=[R("paper", "a.pdf", "Old post", "https://ex.org/p", "2015-05-01",
+                                  cves=["CVE-2015-0001", "CVE-2016-0002", "CVE-2021-44228"])])
+    assert report_by_title(run(*WORLD(paper=paper)), "Old post")["cves"] == ["CVE-2015-0001", "CVE-2016-0002"]
+
+
+def test_an_undated_report_keeps_its_cves():
+    paper = B("paper", reports=[R("paper", "a.pdf", "Undated", "https://ex.org/p", cves=["CVE-2021-44228"])])
+    assert report_by_title(run(*WORLD(paper=paper)), "Undated")["cves"] == ["CVE-2021-44228"]
+
+
+def test_nothing_is_read_from_the_text_behind_an_error_page():
+    mentions = [NameMention(name="fancy bear", count=5, first=3)]
+    orkl = _texted(mentions, title="404: This page could not be found.", cves=["CVE-2025-0001"],
+                   techniques=["T1059"])
+    row = next(r for r in all_report_rows(run(*WORLD(orkl=orkl))) if r["url"] == "https://ex.org/x1")
+    assert (row["title"], row["actors"], row["cves"], row["techniques"]) == ("https://ex.org/x1", [], [], [])

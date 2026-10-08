@@ -76,7 +76,7 @@ from aptx.build.countries import country_name, iso2
 from aptx.build.notice import SOURCE_INFO, SOURCE_ORDER, render_notice, require_year, source_attribution
 from aptx.build.report_index import build_reports_index
 from aptx.core.dates import URL_OVERRIDES_LIBRARY_DAYS, parse_date, url_date, wayback_date
-from aptx.core.report_titles import clean_title
+from aptx.core.report_titles import clean_title, is_error_page
 from aptx.core.models import ActorRecord, CampaignRecord, ReportRecord, SourceBundle, VulnRecord
 from aptx.core.urls import norm_url
 from aptx.resolve import title_terms, titles
@@ -111,6 +111,9 @@ TEXT_OPENING_WORDS = 300
 _GENERATED_AT = re.compile(r"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z")
 _URL = re.compile(r"https?://\S+")
 _CVE = re.compile(r"CVE-[0-9]{4}-[0-9]{4,7}")
+# A CVE is numbered in the year it is reserved, so a report can cite one from the next year at most.
+# A later one came from page furniture or from the page a dead link now leads to.
+CVE_YEARS_AFTER_REPORT = 1
 _TECHNIQUE = re.compile(r"T[0-9]{4}(\.[0-9]{3})?")
 _GROUP_ID = re.compile(r"G[0-9]{4}")
 _SHA1 = re.compile(r"[0-9a-f]{40}")
@@ -664,7 +667,9 @@ def _report(group: list[ReportRecord], policies, malpedia_links, group_links, re
     readable = bool(titled_by and titled_by[0].source in title_sources)
     named = matcher.match(title) & published_ids if readable else set()
     from_title = sorted(named - set(actors))
-    in_text = _named_in_text(group, matcher, published_ids)
+    # The text behind an error-page title is the error page, so nothing read from it describes the report.
+    read = [r for r in group if not (r.source in TEXT_MATCH_SOURCES and is_error_page(r.title))]
+    in_text = _named_in_text(read, matcher, published_ids)
     from_text = sorted(in_text - set(actors) - named)
     return _Report(
         id=report_id, title=title, published=published, basis=basis,
@@ -672,9 +677,14 @@ def _report(group: list[ReportRecord], policies, malpedia_links, group_links, re
         url=url, url_ok=checked.get(norm_url(url)) if url else None, archive_url=archive,
         actors=sorted(set(actors) | named | in_text), actors_from_title=from_title, actors_from_text=from_text,
         unresolved=unresolved,
-        cves=sorted({c for r in group for v in r.cves if _CVE.fullmatch(c := v.strip().upper())}),
-        techniques=sorted({t for r in group for t in r.techniques if t in valid_techniques}),
+        cves=sorted({c for r in read for v in r.cves
+                     if _CVE.fullmatch(c := v.strip().upper()) and _cve_possible(c, published)}),
+        techniques=sorted({t for r in read for t in r.techniques if t in valid_techniques}),
         sources=sorted({r.source for r in group}, key=_ORD.get), title_readable=readable)
+
+
+def _cve_possible(cve: str, published: str | None) -> bool:
+    return published is None or int(cve[4:8]) <= int(published[:4]) + CVE_YEARS_AFTER_REPORT
 
 
 def _named_in_text(group: list[ReportRecord], matcher: titles.TitleMatcher, published_ids: set[str]) -> set[str]:
