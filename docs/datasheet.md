@@ -158,7 +158,7 @@ Further limits:
 
 **How a release is frozen.** The weekly build deploys without committing data, so a release is cut by hand:
 
-1. Pick a successful build run and download its data artifact into `data/`, replacing the committed copy: `gh run download <run> -n data -D data`.
+1. Pick a successful build run and replace the committed `data/` with its data artifact, from the repository root: `rm -rf data && gh run download <run> -n data -D data`. The artifact includes `NOTICE.md` and `slugs.json`.
 2. Freeze it: `python -m aptx.freeze --data ../data --version vX.Y.Z --commit <the run's commit> --run <run> --out ../releases/vX.Y.Z` from `pipeline/`. The command refuses a tree the pipeline would not publish.
 3. Commit `data/` and `releases/vX.Y.Z/`, tag the commit `vX.Y.Z`, and publish a GitHub release. With the Zenodo integration switched on, Zenodo archives the release and mints a version DOI; `.zenodo.json` supplies its metadata.
 4. Check the release with `sha256sum -c releases/vX.Y.Z/SHA256SUMS` from the repository root.
