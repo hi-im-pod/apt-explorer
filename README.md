@@ -84,6 +84,10 @@ Because ETDA and Malpedia are share-alike, the files in `data/` are offered unde
 
 Reports belong to their authors. The site never re-hosts a report's text or PDF.
 
+## Citing This Dataset
+
+The live site and `data/` change every week, so research should cite a frozen release by its version DOI. `CITATION.cff` gives the citation, and [docs/datasheet.md](docs/datasheet.md) documents what the data contains, where each field comes from, its known errors, and how a release is frozen. Each release's `releases/<version>/MANIFEST.json` names the commit and build behind it and the SHA-256 of every file. Work that uses the CCS '25 reports or labels should also cite that dataset (see Credit).
+
 ## Credit
 
 This project builds on the work of Yuldoshkhujaev, Jeon, Kim, Nikiforakis and Koo, *A Decade-long Landscape of Advanced Persistent Threats: Longitudinal Analysis and Global Trends*, published at the 2025 ACM SIGSAC Conference on Computer and Communications Security (CCS '25). The preprint is on [arXiv (2509.07457)](https://arxiv.org/abs/2509.07457). The first author is a colleague in my lab, and I am grateful for the dataset.

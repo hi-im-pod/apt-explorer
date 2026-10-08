@@ -1,0 +1,37 @@
+{
+  "title": "APT Explorer: A Merged, Provenance-Tracked Dataset of APT Actors and Reports",
+  "upload_type": "dataset",
+  "description": "<p>APT Explorer merges advanced persistent threat (APT) actor records from MITRE ATT&amp;CK, the MISP galaxy, ETDA Threat Group Cards and Malpedia, and links them to public threat reports from the CCS '25 lab dataset, ORKL, Malpedia's library, The DFIR Report and three vendor blogs. Every report records the basis of its date, and every actor merge keeps its evidence.</p><p>This release archives one frozen build. The data in <code>data/</code> is offered under CC BY-NC-SA 4.0 and the code under the MIT License. <code>releases/&lt;version&gt;/MANIFEST.json</code> names the commit and workflow run that built the data and lists the SHA-256 of every file, and <code>docs/datasheet.md</code> documents composition, provenance and known errors. No report text or PDF is included; reports are linked, never re-hosted.</p>",
+  "creators": [
+    {
+      "name": "Ennis, Garrett",
+      "affiliation": "SecAI Lab, Sungkyunkwan University"
+    }
+  ],
+  "license": "cc-by-nc-sa-4.0",
+  "access_right": "open",
+  "keywords": [
+    "advanced persistent threat",
+    "cyber threat intelligence",
+    "threat actor attribution",
+    "MITRE ATT&CK",
+    "dataset"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.16869733",
+      "relation": "isDerivedFrom",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "10.1145/3719027.3765085",
+      "relation": "references",
+      "resource_type": "publication-conferencepaper"
+    },
+    {
+      "identifier": "https://github.com/hi-im-pod/apt-explorer",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ]
+}

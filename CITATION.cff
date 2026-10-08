@@ -1,0 +1,79 @@
+cff-version: 1.2.0
+message: >-
+  If you use this dataset, cite the frozen release you used by its version DOI, not the live site,
+  which is rebuilt every week. Also cite the CCS '25 dataset it derives from, listed under references.
+type: dataset
+title: "APT Explorer: A Merged, Provenance-Tracked Dataset of APT Actors and Reports"
+abstract: >-
+  APT Explorer merges advanced persistent threat (APT) actor records from MITRE ATT&CK, the MISP
+  galaxy, ETDA Threat Group Cards and Malpedia, and links them to public threat reports from the
+  CCS '25 lab dataset, ORKL, Malpedia's library, The DFIR Report and three vendor blogs. Every
+  report records the basis of its date, and every actor merge keeps its evidence. The data in data/
+  is a derived dataset; docs/datasheet.md documents its composition, provenance and known errors.
+authors:
+  - family-names: Ennis
+    given-names: Garrett
+    affiliation: "SecAI Lab, Sungkyunkwan University"
+repository-code: "https://github.com/hi-im-pod/apt-explorer"
+url: "https://hi-im-pod.github.io/apt-explorer/"
+license:
+  - CC-BY-NC-SA-4.0
+  - MIT
+keywords:
+  - advanced persistent threat
+  - cyber threat intelligence
+  - threat actor attribution
+  - MITRE ATT&CK
+  - dataset
+references:
+  - type: conference-paper
+    title: "A Decade-long Landscape of Advanced Persistent Threats: Longitudinal Analysis and Global Trends"
+    authors:
+      - family-names: Yuldoshkhujaev
+        given-names: Shakhzod
+      - family-names: Jeon
+        given-names: Mijin
+      - family-names: Kim
+        given-names: Doowon
+      - family-names: Nikiforakis
+        given-names: Nick
+      - family-names: Koo
+        given-names: Hyungjoon
+    collection-title: "Proceedings of the 2025 ACM SIGSAC Conference on Computer and Communications Security (CCS '25)"
+    publisher:
+      name: Association for Computing Machinery
+    year: 2025
+    doi: 10.1145/3719027.3765085
+  - type: data
+    title: "Dataset for A Decade-long Landscape of Advanced Persistent Threats"
+    authors:
+      - family-names: Yuldoshkhujaev
+        given-names: Shakhzod
+      - family-names: Jeon
+        given-names: Mijin
+      - family-names: Kim
+        given-names: Doowon
+      - family-names: Nikiforakis
+        given-names: Nick
+      - family-names: Koo
+        given-names: Hyungjoon
+    publisher:
+      name: Zenodo
+    year: 2025
+    doi: 10.5281/zenodo.16869733
+    license: CC-BY-4.0
+  - type: article
+    title: "Malpedia: A Collaborative Effort to Inventorize the Malware Landscape"
+    authors:
+      - family-names: Plohmann
+        given-names: Daniel
+      - family-names: Clauss
+        given-names: Martin
+      - family-names: Enders
+        given-names: Steffen
+      - family-names: Padilla
+        given-names: Elmar
+    journal: "The Journal on Cybercrime & Digital Investigations"
+    volume: 3
+    issue: 1
+    year: 2018
