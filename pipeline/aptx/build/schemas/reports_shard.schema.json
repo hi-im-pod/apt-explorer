@@ -26,7 +26,8 @@
         "actor_names_unresolved",
         "cves",
         "techniques",
-        "sources"
+        "sources",
+        "merged_ids"
       ],
       "properties": {
         "id": {
@@ -117,6 +118,14 @@
           },
           "uniqueItems": true,
           "minItems": 1
+        },
+        "merged_ids": {
+          "description": "IDs this report had before copies of it with the same title and close dates were joined. A link that uses one of them still finds the report.",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/reportId"
+          },
+          "uniqueItems": true
         }
       },
       "allOf": [

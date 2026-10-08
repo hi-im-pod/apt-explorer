@@ -122,6 +122,14 @@ def _check_value(file, schema, pointer, node, ts_type, decls, tagged, where) -> 
         _check_value(file, schema, f"{pointer}/items", node["items"], base[:-2], decls, tagged, where)
         return
     assert not base.endswith("[]"), f"{where}: TypeScript has an array, the schema does not"
+    if "object" in types and "properties" not in node and isinstance(node.get("additionalProperties"), dict):
+        # A map with free keys, such as the index's aliases, is a Record of string keys.
+        record = re.fullmatch(r"Record<\s*(\w+)\s*,\s*(.+)>", base)
+        assert record, f"{where}: the schema has a map, TypeScript has {ts_type}"
+        assert record.group(1) in _string_aliases(decls), f"{where}: {record.group(1)} for a map key"
+        _check_value(file, schema, f"{pointer}/additionalProperties", node["additionalProperties"],
+                     record.group(2), decls, tagged, where)
+        return
     if _is_object(node) or _is_enum(node):
         want = tagged.get(f"{file}#{pointer}")
         assert want is not None, f"{where}: no TypeScript type is tagged {file}#{pointer}"

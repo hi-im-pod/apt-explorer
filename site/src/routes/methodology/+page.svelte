@@ -314,6 +314,17 @@
 		names a known vendor. In the lab dataset, a vendor's blog named in the title, such as "The Naikon
 		APT - Securelist", decides the publisher before the dataset's own source column.
 	</p>
+	<p>
+		Two records that share no address are taken as copies of one report when their titles match
+		after tidying, the title has at least 20 characters, and their dates are no more than 14 days
+		apart. The copies become one report. A link that uses a copy's old ID still opens it.
+	</p>
+	<p>
+		Some pages carry the site's name where the report's title belongs, such as "Secure
+		Communications Blog" on BlackBerry's posts. When four or more pages on one site share a
+		title, the site shows a title read from each page's address instead, and never joins those
+		pages as copies.
+	</p>
 	<p class="section-note">
 		Many ORKL records give a mirror address and no publisher address, and the pipeline does not
 		yet look one up.

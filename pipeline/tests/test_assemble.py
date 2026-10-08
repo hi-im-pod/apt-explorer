@@ -609,7 +609,7 @@ def test_a_report_whose_title_is_only_its_link_is_not_a_term_title():
 
 
 def test_without_a_labelled_set_there_are_no_terms():
-    orkl = B("orkl", reports=[R("orkl", str(i), "Zorklo Stealer spreads", f"https://pub{i}.org/o", "2025-06-01")
+    orkl = B("orkl", reports=[R("orkl", str(i), f"Zorklo Stealer spreads, wave {i}", f"https://pub{i}.org/o", "2025-06-01")
                               for i in range(4)])
     doc = run(*WORLD(orkl=orkl))["terms.json"]
     assert doc["terms"] == [] and doc["titles_read"] == 4
@@ -1146,3 +1146,32 @@ def test_a_lab_rows_title_overrides_its_source_column_and_orkl_keeps_only_known_
     assert [report_by_title(payload, t)["organisation"]
             for t in ("The Naikon APT - Securelist", "Plain title", "Person", "Vendor")] == [
         "Kaspersky", "FireEye", None, "CrowdStrike"]
+
+
+# Copies of one report joined by title
+
+def test_copies_with_one_title_and_close_dates_become_one_report_that_keeps_the_old_id():
+    a, b = "a" * 40, "b" * 40
+    payload = _linked(R("orkl", "1", "Agent.btz - A Threat That Hit Pentagon", "https://one.ex/x", "2008-11-30", sha1=b),
+                      R("orkl", "2", "Agent.btz: a threat that hit Pentagon", "https://two.ex/y", "2008-12-05", sha1=a))
+    rows = [r for r in all_report_rows(payload) if "Pentagon" in r["title"]]
+    assert [(r["id"], r["merged_ids"]) for r in rows] == [(a, [b])]
+    index = payload["reports/index.json"]
+    assert index["aliases"] == {b[:index["id_len"]]: a[:index["id_len"]]}
+
+
+def test_copies_far_apart_in_time_or_with_a_short_title_stay_apart():
+    payload = _linked(R("orkl", "1", "Agent.btz - A Threat That Hit Pentagon", "https://one.ex/x", "2008-11-30"),
+                      R("orkl", "2", "Agent.btz - A Threat That Hit Pentagon", "https://two.ex/y", "2009-03-01"),
+                      R("orkl", "3", "Diavol ransomware", "https://one.ex/d", "2021-07-01"),
+                      R("orkl", "4", "Diavol ransomware", "https://two.ex/d", "2021-07-01"))
+    assert sorted(r["title"] for r in all_report_rows(payload)).count("Diavol ransomware") == 2
+    assert all(r["merged_ids"] == [] for r in all_report_rows(payload))
+    assert payload["reports/index.json"]["aliases"] == {}
+
+
+def test_a_sites_name_used_as_a_title_is_replaced_by_one_from_the_address():
+    pages = [R("orkl", str(n), "Secure Communications Blog", f"https://blogs.ex.com/en/2019/07/{slug}", "2019-07-0" + str(n + 1))
+             for n, slug in enumerate(["threat-spotlight-sodinokibi", "petya-and-mischa", "a-new-loader", "12345"])]
+    titles = sorted(r["title"] for r in all_report_rows(_linked(*pages)))
+    assert titles == ["A new loader", "Petya and mischa", "Secure Communications Blog", "Threat spotlight sodinokibi"]

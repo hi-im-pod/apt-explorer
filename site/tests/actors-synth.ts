@@ -75,7 +75,8 @@ export function synthReports(): Report[] {
 			actor_names_unresolved: [],
 			cves: [],
 			techniques: [],
-			sources: ['orkl']
+			sources: ['orkl'],
+			merged_ids: []
 		});
 	}
 	return out;

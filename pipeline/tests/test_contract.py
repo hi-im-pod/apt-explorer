@@ -127,6 +127,9 @@ def test_schema_is_draft_2020_12_and_every_object_is_closed(name):
     for pointer, node in _walk(schema):
         if node.get("type") != "object":
             continue
+        if "properties" not in node and isinstance(node.get("additionalProperties"), dict):
+            # A map with free keys, such as the index's aliases: its values are checked instead.
+            continue
         # additionalProperties: false catches an added or misspelled field, and
         # requiring every property catches a dropped one. The pipeline writes
         # null for a missing value rather than leaving the key out, so the site
@@ -155,7 +158,7 @@ def _report(**changes):
     report = {"id": "0" * 40, "title": "A report", "published": "2024-05-01",
               "date_basis": "orkl-ingest", "organisation": None, "url": "https://example.org/a",
               "url_ok": None, "archive_url": None, "actors": [], "actors_from_title": [], "actors_from_text": [], "actor_names_unresolved": [],
-              "cves": [], "techniques": [], "sources": ["orkl"]}
+              "cves": [], "techniques": [], "sources": ["orkl"], "merged_ids": []}
     report.update(changes)
     return report
 

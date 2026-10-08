@@ -10,7 +10,8 @@
     "total",
     "tables",
     "kev",
-    "columns"
+    "columns",
+    "aliases"
   ],
   "properties": {
     "built_at": {
@@ -179,6 +180,13 @@
             "$ref": "#/$defs/positions"
           }
         }
+      }
+    },
+    "aliases": {
+      "description": "An ID a report had before copies were joined, mapped to its ID now, both in the id column's form.",
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/indexId"
       }
     }
   },

@@ -236,17 +236,21 @@ export function facets(rows: ExploreRow[]): { sources: string[]; publishers: str
  * a longer prefix from a link saved under another build, or a shorter prefix
  * from a link saved when fewer characters told reports apart. A shorter
  * prefix finds a report only when it names exactly one, because guessing
- * would open the wrong report.
+ * would open the wrong report. An id a report had before copies of it were
+ * joined is looked up in `aliases`, so an old link still opens it.
  */
 export function rowLookup(
 	rows: ExploreRow[],
-	idLen: number
+	idLen: number,
+	aliases: Readonly<Record<string, string>> = {}
 ): (kind: 'report' | 'campaign', id: string) => ExploreRow | null {
 	const byKey = new Map(rows.map((r) => [r.key, r]));
 	return (kind, id) => {
 		if (kind === 'campaign') return byKey.get(`campaign:${id}`) ?? null;
 		const exact = byKey.get(`report:${indexForm(id, idLen)}`);
 		if (exact) return exact;
+		const merged = aliases[indexForm(id, idLen)];
+		if (merged) return byKey.get(`report:${merged}`) ?? null;
 		if (!/^[0-9a-f]{6,}$/.test(id) || id.length >= idLen) return null;
 		let found: ExploreRow | null = null;
 		for (const r of rows) {

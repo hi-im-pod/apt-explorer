@@ -30,6 +30,7 @@ function report(over: Partial<Report> & { id: string }): Report {
 		cves: [],
 		techniques: [],
 		sources: ['dfir'],
+		merged_ids: [],
 		...over
 	};
 }

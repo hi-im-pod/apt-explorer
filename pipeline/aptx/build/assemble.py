@@ -78,7 +78,7 @@ from aptx.build.report_index import build_reports_index
 from aptx.core.dates import URL_OVERRIDES_LIBRARY_DAYS, parse_date, url_date, wayback_date
 from aptx.core.models import ActorRecord, CampaignRecord, ReportRecord, SourceBundle, VulnRecord
 from aptx.core.publishers import canonical_publisher, known_publisher, publisher_for_url, publisher_in_title
-from aptx.core.report_titles import clean_title, is_error_page
+from aptx.core.report_titles import clean_title, is_error_page, title_from_url
 from aptx.core.urls import norm_url
 from aptx.resolve import title_terms, titles
 from aptx.resolve.names import norm
@@ -112,6 +112,14 @@ TEXT_OPENING_WORDS = 300
 _GENERATED_AT = re.compile(r"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z")
 _URL = re.compile(r"https?://\S+")
 _CVE = re.compile(r"CVE-[0-9]{4}-[0-9]{4,7}")
+# Two copies of one report that share no address or digest are joined when their titles match after
+# tidying, the title is at least this long, and their dates are this close. A short title such as
+# "Diavol ransomware" is used by several vendors for different posts, so it never joins anything.
+MERGE_MIN_TITLE_CHARS = 20
+MERGE_MAX_DAYS = 14
+# A title this many pages on one host share is the site's name, not a report's: "Secure Communications
+# Blog" on 94 BlackBerry posts. It never joins copies, and the report is titled from its address instead.
+SITE_NAME_PAGES = 4
 # A CVE is numbered in the year it is reserved, so a report can cite one from the next year at most.
 # A later one came from page furniture or from the page a dead link now leads to.
 CVE_YEARS_AFTER_REPORT = 1
@@ -526,6 +534,8 @@ class _Report:
     sources: list[str]
     # True when the title came from a source whose titles may be read (see TITLE_MATCH_SOURCES).
     title_readable: bool = False
+    # The IDs this report had before copies of it were joined by title, so old links still find it.
+    merged_ids: list[str] = field(default_factory=list)
 
     @property
     def trend_date(self) -> str | None:
@@ -545,7 +555,7 @@ class _Report:
             "archive_url": self.archive_url, "actors": sorted(self.actors),
             "actors_from_title": self.actors_from_title, "actors_from_text": self.actors_from_text,
             "actor_names_unresolved": self.unresolved, "cves": self.cves, "techniques": self.techniques,
-            "sources": self.sources,
+            "sources": self.sources, "merged_ids": self.merged_ids,
         }
 
 
@@ -589,29 +599,92 @@ def _merge_reports(by_source, policies, facts, registry, published_ids, link_sta
             i = parent[i]
         return i
 
+    def union(a: int, b: int) -> None:
+        a, b = find(a), find(b)
+        if a != b:
+            parent[max(a, b)] = min(a, b)
+
     owner: dict[tuple, int] = {}
     for i, r in enumerate(records):
         for key in _keys(r):
             if key in owner:
-                a, b = find(i), find(owner[key])
-                if a != b:
-                    parent[max(a, b)] = min(a, b)
+                union(i, owner[key])
             else:
                 owner[key] = i
+    # The ID each report would have had without the title join, kept so its old links still resolve.
+    before: dict[int, list[ReportRecord]] = defaultdict(list)
+    for i, r in enumerate(records):
+        before[find(i)].append(r)
+    old_id = {i: _report_id(before[find(i)]) for i in range(len(records))}
+    site_names = _site_names(records)
+    for a, b in _title_copies(records, site_names):
+        union(a, b)
     groups: dict[int, list[ReportRecord]] = defaultdict(list)
+    old_ids: dict[int, set[str]] = defaultdict(set)
     for i, r in enumerate(records):
         groups[find(i)].append(r)
+        old_ids[find(i)].add(old_id[i])
 
     checked = {norm_url(k): v for k, v in link_status.items() if isinstance(v, bool)}
     malpedia_links = _malpedia_links(facts, policies)
     group_links = _group_links(facts, policies)
     out = []
-    for group in groups.values():
+    for root, group in groups.items():
         report = _report(group, policies, malpedia_links, group_links, registry, published_ids, checked, today,
                          valid_techniques, titled)
         if report:
+            report.merged_ids = sorted(old_ids[root] - {report.id})
+            if _title_key(report.title) in site_names and (named := title_from_url(report.url)):
+                # The address names the post better than the site does. It is not the publisher's title,
+                # so it is not read for actor names or title terms.
+                report.title, report.title_readable = named, False
             out.append(report)
     return sorted(out, key=lambda r: r.id)
+
+
+def _title_key(title: str | None) -> str:
+    """A title as copies are compared: tidied, lower case, punctuation as spaces."""
+    return " ".join(re.sub(r"[\W_]+", " ", (clean_title(title) or "").casefold()).split())
+
+
+def _host(url: str | None) -> str:
+    return norm_url(url).split("/", 1)[0] if url else ""
+
+
+def _site_names(records: list[ReportRecord]) -> set[str]:
+    """Title keys that SITE_NAME_PAGES or more different addresses on one host share."""
+    pages: dict[tuple[str, str], set[str]] = defaultdict(set)
+    for r in records:
+        if (url := _valid_url(r.url)) and (key := _title_key(r.title)):
+            pages[(key, _host(url))].add(norm_url(url))
+    return {key for (key, _), urls in pages.items() if len(urls) >= SITE_NAME_PAGES}
+
+
+def _title_copies(records: list[ReportRecord], site_names: set[str]) -> list[tuple[int, int]]:
+    """Pairs of records that are copies of one report by title and date (see MERGE_MIN_TITLE_CHARS)."""
+    by_title: dict[str, list[tuple[str, int]]] = defaultdict(list)
+    for i, r in enumerate(records):
+        key = _title_key(r.title)
+        if len(key) >= MERGE_MIN_TITLE_CHARS and key not in site_names and (day := parse_date(r.published)):
+            by_title[key].append((day, i))
+    pairs = []
+    for copies in by_title.values():
+        copies.sort()
+        # Each copy joins the one dated just before it, so a run of close dates becomes one report.
+        for (earlier, a), (later, b) in zip(copies, copies[1:]):
+            if (datetime.fromisoformat(later) - datetime.fromisoformat(earlier)).days <= MERGE_MAX_DAYS:
+                pairs.append((a, b))
+    return pairs
+
+
+def _report_id(group: list[ReportRecord]) -> str:
+    """The smallest SHA-1 any copy carries, else the first source's own ID."""
+    sha1s = sorted({s for r in group if _SHA1.fullmatch(s := (r.sha1 or "").strip().lower())})
+    if sha1s:
+        return sha1s[0]
+    # Whitespace is percent-encoded because a report ID may contain none.
+    first = min(group, key=lambda r: (_ORD[r.source], r.source_id))
+    return first.source + ":" + _WHITESPACE.sub(lambda m: "%%%02X" % ord(m.group()), first.source_id)
 
 
 def _malpedia_links(facts: BuildFacts, policies) -> dict[str, list[str]]:
@@ -653,13 +726,7 @@ def _report(group: list[ReportRecord], policies, malpedia_links, group_links, re
     title = titled_by[1] if titled_by else url
     if title is None:
         return None
-    sha1s = sorted({s for r in group if _SHA1.fullmatch(s := (r.sha1 or "").strip().lower())})
-    if sha1s:
-        report_id = sha1s[0]
-    else:
-        # Whitespace is percent-encoded because a report ID may contain none.
-        first = min(group, key=lambda r: (_ORD[r.source], r.source_id))
-        report_id = first.source + ":" + _WHITESPACE.sub(lambda m: "%%%02X" % ord(m.group()), first.source_id)
+    report_id = _report_id(group)
 
     published, basis = _date(group, today)
     actors, unresolved = _attach(group, urls, policies, malpedia_links, group_links, registry, published_ids)

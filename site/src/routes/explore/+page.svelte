@@ -84,7 +84,7 @@
 			actors = [...data.actors].sort((a, b) => a.name.localeCompare(b.name, 'en'));
 			kevCves = kevCvesOf(data.index);
 			rows = toRows(data.index, data.campaigns, data.actors);
-			find = rowLookup(rows, idLen);
+			find = rowLookup(rows, idLen, data.index.aliases);
 			phase = 'ready';
 		} catch {
 			offline = typeof navigator !== 'undefined' && navigator.onLine === false;

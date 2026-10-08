@@ -256,6 +256,8 @@ export interface Report {
 	cves: CveId[];
 	techniques: TechniqueId[];
 	sources: SourceKey[];
+	/** IDs the report had before copies of it were joined by title. Links that use them still find it. */
+	merged_ids: ReportId[];
 }
 
 /**
@@ -330,6 +332,8 @@ export interface ReportsIndex {
 	/** Positions in tables.cves of the CVEs in the KEV catalogue. */
 	kev: number[];
 	columns: ReportsIndexColumns;
+	/** An ID a report had before copies were joined, to its ID now, both as the id column stores them. */
+	aliases: Record<IndexId, IndexId>;
 }
 
 // ---------------------------------------------------------------------------

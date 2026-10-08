@@ -22,8 +22,10 @@ for f in glob.glob(str(REPO / 'data/reports/*.json')):
     if f.endswith('index.json'):
         continue
     for r in json.load(open(f, encoding='utf-8')):
-        if r['id'] in ids:
-            links[r['id']] = {'url': r.get('url'), 'archive': r.get('archive_url')}
+        # A test-set report joined with a copy of it may now sit under the copy's ID.
+        for rid in [r['id'], *r.get('merged_ids', [])]:
+            if rid in ids:
+                links[rid] = {'url': r.get('url'), 'archive': r.get('archive_url')}
 
 claude_raw = json.load(open(ROOT / 'data/runs/testset_claude_v3.json', encoding='utf-8'))['labels']
 named = json.load(open(ROOT / 'data/runs/testset_named_countries.json', encoding='utf-8'))

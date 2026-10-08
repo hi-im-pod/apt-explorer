@@ -105,6 +105,7 @@ export function withExtraRows(base: ReportsIndex, extras: Extra[], builtAt = bas
 		total: rows.length,
 		tables,
 		kev: base.kev,
+		aliases: {},
 		columns: {
 			id: rows.map((r) => r.id),
 			title: rows.map((r) => r.title),

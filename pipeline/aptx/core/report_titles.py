@@ -6,7 +6,7 @@ leads to. That gives "Microsoft Word - TR62.doc", "PowerPoint Presentation" or
 that reads as a sentence is left alone, so "404 Keylogger Campaigns" keeps its name.
 """
 import re
-from urllib.parse import unquote
+from urllib.parse import unquote, urlsplit
 
 # Prefixes an application or a desktop file system writes in front of the file name.
 _APP_PREFIX = re.compile(r"^Microsoft (?:Word|PowerPoint|Excel) - ", re.I)
@@ -61,3 +61,31 @@ def clean_title(title: str | None) -> str | None:
     if " " not in text and (file_name or text.count("_") >= 3):
         text = " ".join(text.replace("_", " ").split())
     return text or None
+
+
+# A path segment that is only an ID, a date part or a language code says nothing about the report.
+_NO_WORDS = re.compile(r"^(?:[0-9]+|[a-z]{2}(?:[-_][a-z]{2})?|index|default|article|post|blog|news)$", re.I)
+_WORD = re.compile(r"[A-Za-z]{2,}")
+# Medium and some CMSs end a slug with a post ID: "...-for-proactive-detection-34055a017e56".
+_TRAILING_ID = re.compile(r"[-_](?=[0-9a-f]*[0-9])[0-9a-f]{8,}$", re.I)
+
+
+def title_from_url(url: str | None) -> str | None:
+    """A title read from the address's last meaningful path segment, or None.
+
+    "https://blogs.blackberry.com/en/2019/07/threat-spotlight-sodinokibi" gives
+    "Threat spotlight sodinokibi". A segment needs two words or more, so an article number or
+    "showcard.cgi" gives nothing.
+    """
+    path = urlsplit(url or "").path
+    for segment in reversed([unquote(p) for p in path.split("/") if p]):
+        segment = _DOC_EXTENSION.sub("", re.sub(r"\.(?:html?|php|aspx?|cgi)$", "", segment, flags=re.I))
+        segment = _TRAILING_ID.sub("", segment)
+        if _NO_WORDS.match(segment):
+            continue
+        words = " ".join(re.split(r"[-_+\s]+", segment)).strip()
+        # A hash or an ID is not a name, even when its letters happen to make two "words".
+        if len(_WORD.findall(words)) < 2 or re.fullmatch(r"[0-9a-f]{16,}", segment, re.I):
+            return None
+        return words[0].upper() + words[1:]
+    return None

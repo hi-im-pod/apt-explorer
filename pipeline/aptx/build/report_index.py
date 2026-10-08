@@ -70,7 +70,11 @@ def build_reports_index(reports: Iterable[Mapping], *, kev_cves: Iterable[str], 
     ids = [r["id"] for r in rows]
     if len(set(ids)) != len(ids):
         raise ValueError("a report id appears more than once, so the index cannot address it")
-    id_len = _id_len(ids)
+    merged = {old: r["id"] for r in rows for old in r.get("merged_ids", [])}
+    if set(merged) & set(ids):
+        raise ValueError("a merged report id is also a live report id")
+    # Old IDs are cut the same way, so they must stay unique too.
+    id_len = _id_len(ids + sorted(merged))
 
     sources = _by_frequency(s for r in rows for s in r["sources"])
     organisations = _by_frequency(r["organisation"] for r in rows if r["organisation"] is not None)
@@ -89,6 +93,7 @@ def build_reports_index(reports: Iterable[Mapping], *, kev_cves: Iterable[str], 
         "tables": {"sources": sources, "organisations": organisations, "actors": actors, "cves": cves,
                    "techniques": techniques},
         "kev": sorted(at["cves"][c] for c in cves if c in kev),
+        "aliases": {short_id(old, id_len): short_id(new, id_len) for old, new in sorted(merged.items())},
         "columns": {
             "id": [short_id(r["id"], id_len) for r in rows],
             "title": [r["title"] for r in rows],

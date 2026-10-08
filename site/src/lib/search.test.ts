@@ -388,6 +388,14 @@ describe('rowLookup', () => {
 		expect(find('report', B)?.title).toBe('B');
 	});
 
+	it('finds a merged report by the id it had before copies were joined', () => {
+		const OLD = 'ff00ee11dd22cc33bb44aa5599887766554433ff';
+		const merged = rowLookup(sha, 8, { [OLD.slice(0, 8)]: A.slice(0, 8) });
+		expect(merged('report', OLD)?.title).toBe('A');
+		expect(merged('report', OLD.slice(0, 8))?.title).toBe('A');
+		expect(find('report', OLD)).toBeNull();
+	});
+
 	it('finds a report by a longer prefix from a link saved under another build', () => {
 		expect(find('report', A.slice(0, 12))?.title).toBe('A');
 	});

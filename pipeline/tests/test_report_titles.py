@@ -51,3 +51,18 @@ def test_the_domain_prefix_is_read_for_the_publisher():
     assert title_domain("securelist.com-The Icefog APT") == "securelist.com"
     assert title_domain("blog.truesec.com-Collaboration between FIN7 and RYUK") == "blog.truesec.com"
     assert title_domain("The Icefog APT") is None
+
+
+@pytest.mark.parametrize("url, title", [
+    ("https://blogs.blackberry.com/en/2019/07/threat-spotlight-sodinokibi", "Threat spotlight sodinokibi"),
+    ("https://posts.specterops.io/introducing-venator-a-macos-tool-34055a017e56", "Introducing venator a macos tool"),
+    ("https://www.cylance.com/en_us/blog/threat-spotlight-locky-ransomware.html", "Threat spotlight locky ransomware"),
+    ("https://usa.kaspersky.com/blog/sas-2023-research/29254/", "Sas 2023 research"),
+    ("https://cert.gov.ua/article/2807", None),
+    ("https://apt.etda.or.th/cgi-bin/showcard.cgi?u=1", None),
+    ("https://www.hybrid-analysis.com/sample/dfc56a704b5e031f3b0d2d0ea1d06f9157758ad950483b44ac4b77d33293cb38", None),
+    (None, None),
+])
+def test_a_title_is_read_from_the_address_only_when_it_has_words(url, title):
+    from aptx.core.report_titles import title_from_url
+    assert title_from_url(url) == title
