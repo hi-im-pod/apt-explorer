@@ -304,6 +304,13 @@
 			unconfirmed link, it says no original is confirmed.
 		</li>
 	</ol>
+	<p>
+		The publisher shown for a report is the name a source gives, spelled one way for each publisher,
+		so Crowdstrike and CrowdStrike are one name. When no source names a publisher, the site takes
+		one from the report's original address, but only when the address is on a site the publisher
+		runs itself, such as securelist.com for Kaspersky. A copy, a file host or a blog platform names
+		nobody, so such a report has no publisher.
+	</p>
 	<p class="section-note">
 		Many ORKL records give a mirror address and no publisher address, and the pipeline does not
 		yet look one up.

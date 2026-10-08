@@ -76,8 +76,9 @@ from aptx.build.countries import country_name, iso2
 from aptx.build.notice import SOURCE_INFO, SOURCE_ORDER, render_notice, require_year, source_attribution
 from aptx.build.report_index import build_reports_index
 from aptx.core.dates import URL_OVERRIDES_LIBRARY_DAYS, parse_date, url_date, wayback_date
-from aptx.core.report_titles import clean_title, is_error_page
 from aptx.core.models import ActorRecord, CampaignRecord, ReportRecord, SourceBundle, VulnRecord
+from aptx.core.publishers import canonical_publisher, publisher_for_url
+from aptx.core.report_titles import clean_title, is_error_page
 from aptx.core.urls import norm_url
 from aptx.resolve import title_terms, titles
 from aptx.resolve.names import norm
@@ -673,7 +674,9 @@ def _report(group: list[ReportRecord], policies, malpedia_links, group_links, re
     from_text = sorted(in_text - set(actors) - named)
     return _Report(
         id=report_id, title=title, published=published, basis=basis,
-        organisation=next((o for r in group if (o := _tidy(r.organisation))), None),
+        # A blank publisher is filled only from an original address on a site the publisher runs.
+        organisation=next((o for r in group if (o := canonical_publisher(r.organisation))), None)
+        or (publisher_for_url(originals[0]) if originals else None),
         url=url, url_ok=checked.get(norm_url(url)) if url else None, archive_url=archive,
         actors=sorted(set(actors) | named | in_text), actors_from_title=from_title, actors_from_text=from_text,
         unresolved=unresolved,

@@ -1119,3 +1119,11 @@ def test_nothing_is_read_from_the_text_behind_an_error_page():
                    techniques=["T1059"])
     row = next(r for r in all_report_rows(run(*WORLD(orkl=orkl))) if r["url"] == "https://ex.org/x1")
     assert (row["title"], row["actors"], row["cves"], row["techniques"]) == ("https://ex.org/x1", [], [], [])
+
+
+def test_a_publisher_has_one_spelling_and_a_blank_one_comes_from_the_publishers_own_site():
+    payload = _linked(R("orkl", "1", "Spelled", "https://ex.org/a", "2025-01-02", organisation="Crowdstrike"),
+                      R("orkl", "2", "Hosted", "https://securelist.com/x/", "2025-01-02"),
+                      R("orkl", "3", "Mirrored", MIRROR, "2025-01-02"))
+    assert [report_by_title(payload, t)["organisation"] for t in ("Spelled", "Hosted", "Mirrored")] == [
+        "CrowdStrike", "Kaspersky", None]
