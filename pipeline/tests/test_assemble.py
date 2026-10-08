@@ -1192,3 +1192,13 @@ def test_a_publishers_own_feed_is_never_overridden_by_a_title():
     dfir = B("dfir", reports=[R("dfir", "d1", "Notes on a Securelist post", "https://thedfirreport.com/x/",
                                 "2025-01-02", organisation="The DFIR Report")])
     assert report_by_title(run(*WORLD(dfir=dfir)), "Notes on a Securelist post")["organisation"] == "The DFIR Report"
+
+
+def test_a_copy_joined_by_a_shared_address_keeps_its_own_id_as_well():
+    url = "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections/raw/master/2014/a.pdf"
+    paper = B("paper", reports=[R("paper", "Anunak_APT", "Anunak_APT_against_financial_institutions", url,
+                                  "2014-12-22")])
+    orkl = B("orkl", reports=[R("orkl", "o1", "Anunak: APT Against Financial Institutions", url, "2018-05-22",
+                                sha1="c" * 40)])
+    rows = [r for r in all_report_rows(run(*WORLD(paper=paper, orkl=orkl))) if r["url"] == url]
+    assert [(r["id"], r["merged_ids"]) for r in rows] == [("c" * 40, ["paper:Anunak_APT"])]

@@ -623,7 +623,9 @@ def _merge_reports(by_source, policies, facts, registry, published_ids, link_sta
     old_ids: dict[int, set[str]] = defaultdict(set)
     for i, r in enumerate(records):
         groups[find(i)].append(r)
-        old_ids[find(i)].add(old_id[i])
+        # Every ID a copy would have on its own resolves too, so a copy joined by a shared address or
+        # digest, as when ORKL gains a paper's mirror link, keeps its old link as well.
+        old_ids[find(i)].update((old_id[i], _report_id([r])))
 
     checked = {norm_url(k): v for k, v in link_status.items() if isinstance(v, bool)}
     malpedia_links = _malpedia_links(facts, policies)
