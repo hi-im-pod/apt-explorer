@@ -16,12 +16,13 @@
 	The classification lives in $lib/links.
 
 	A link-only row (ORKL, whose terms are pending) takes only its title,
-	date and links from the source. Its actors, CVEs and techniques are
+	date, links and publisher from the source, and the publisher only when
+	it is a known vendor. Its actors, CVEs and techniques are
 	shown too, because the table filters and searches on them and a panel
 	that hid them would disagree with the list that opened it. They are not
 	ORKL's own data: the pipeline links actors through Malpedia, ATT&CK and
 	the paper, and finds CVE and technique IDs by matching the report text.
-	The publisher and the names that matched no actor stay hidden.
+	The names that matched no actor stay hidden.
 
 	Actors are shown in three groups. A tagged actor was named by a source's
 	own data. An actor "named in the title" was found by matching the title
@@ -137,12 +138,10 @@
 							>{:else}Undated{/if}
 					</dd>
 				</div>
-				{#if !row.linkOnly}
-					<div>
-						<dt>Publisher</dt>
-						<dd>{row.organisation ?? 'not reported'}</dd>
-					</div>
-				{/if}
+				<div>
+					<dt>Publisher</dt>
+					<dd>{row.organisation ?? 'not reported'}</dd>
+				</div>
 				<div>
 					<dt>{row.sources.length > 1 ? 'Sources' : 'Source'}</dt>
 					<dd>{row.sources.map((s) => sourceLabel(s).name).join(', ')}</dd>
@@ -262,7 +261,8 @@
 			{#if row.linkOnly}
 				<p class="policy">
 					{sourceLabel('orkl').name} is a link-only source while its terms are confirmed, so it
-					supplies only the report's title, date and links. This project added the actors, CVEs and
+					supplies only the report's title, date, links and, when it names a known vendor, the
+					publisher. This project added the actors, CVEs and
 					techniques above. Actors come from Malpedia, MITRE ATT&CK, the paper or a title that names
 					them, never from ORKL's tags. CVE and technique IDs are matched in the report text.
 					<a href="{base}/about/#publish-link-only">What link-only means</a>

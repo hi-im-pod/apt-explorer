@@ -430,7 +430,7 @@ test('a report with no original URL offers the archive copy', async ({ page }) =
 	await expect(dialog).toContainText(/no original publisher link is known/i);
 });
 
-test('an ORKL report shows its title, date and links, and no publisher', async ({ page }) => {
+test('an ORKL report shows its title, date, links and the publisher the pipeline settled on', async ({ page }) => {
 	const r = reportById(ORKL_LIVE);
 	await open(page, `?report=${ORKL_LIVE}`);
 	const dialog = panel(page);
@@ -441,7 +441,9 @@ test('an ORKL report shows its title, date and links, and no publisher', async (
 	await expect(links).toHaveCount(2);
 	await expect(links.first()).toHaveAttribute('href', r.url!);
 	await expect(links.nth(1)).toHaveAttribute('href', r.archive_url!);
-	await expect(dialog.getByText('Publisher', { exact: true })).toHaveCount(0);
+	await expect(dialog.getByText('Publisher', { exact: true })).toHaveCount(1);
+	if (r.organisation) await expect(dialog).toContainText(r.organisation);
+	else await expect(dialog).toContainText('not reported');
 	await expect(dialog).toContainText(/link-only/i);
 });
 
@@ -571,13 +573,11 @@ test('source, publisher, CVE and technique filters narrow the rows', async ({ pa
 		.toBe(dated.filter((r) => withTech(r.techniques)).length + campaigns.filter((c) => withTech(c.techniques)).length);
 });
 
-test('the publisher list leaves out ORKL publishers', async ({ page }) => {
+test('the publisher list names every publisher, ORKL rows included', async ({ page }) => {
 	await open(page);
 	const options = await page.getByLabel('Publisher', { exact: true }).locator('option').allInnerTexts();
-	const nonOrkl = new Set(
-		reports.filter((r) => !r.sources.includes('orkl') && r.organisation).map((r) => r.organisation!)
-	);
-	expect(options.slice(1).sort()).toEqual([...nonOrkl].sort());
+	const all = new Set(reports.filter((r) => r.organisation).map((r) => r.organisation!));
+	expect(options.slice(1).sort()).toEqual([...all].sort());
 });
 
 test('a filter in the URL and a clear leave no history entries behind', async ({ page }) => {

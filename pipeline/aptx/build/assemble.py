@@ -77,7 +77,7 @@ from aptx.build.notice import SOURCE_INFO, SOURCE_ORDER, render_notice, require_
 from aptx.build.report_index import build_reports_index
 from aptx.core.dates import URL_OVERRIDES_LIBRARY_DAYS, parse_date, url_date, wayback_date
 from aptx.core.models import ActorRecord, CampaignRecord, ReportRecord, SourceBundle, VulnRecord
-from aptx.core.publishers import canonical_publisher, publisher_for_url
+from aptx.core.publishers import canonical_publisher, known_publisher, publisher_for_url, publisher_in_title
 from aptx.core.report_titles import clean_title, is_error_page
 from aptx.core.urls import norm_url
 from aptx.resolve import title_terms, titles
@@ -675,7 +675,7 @@ def _report(group: list[ReportRecord], policies, malpedia_links, group_links, re
     return _Report(
         id=report_id, title=title, published=published, basis=basis,
         # A blank publisher is filled only from an original address on a site the publisher runs.
-        organisation=next((o for r in group if (o := canonical_publisher(r.organisation))), None)
+        organisation=next((o for r in group if (o := _publisher(r))), None)
         or (publisher_for_url(originals[0]) if originals else None),
         url=url, url_ok=checked.get(norm_url(url)) if url else None, archive_url=archive,
         actors=sorted(set(actors) | named | in_text), actors_from_title=from_title, actors_from_text=from_text,
@@ -684,6 +684,18 @@ def _report(group: list[ReportRecord], policies, malpedia_links, group_links, re
                      if _CVE.fullmatch(c := v.strip().upper()) and _cve_possible(c, published)}),
         techniques=sorted({t for r in read for t in r.techniques if t in valid_techniques}),
         sources=sorted({r.source for r in group}, key=_ORD.get), title_readable=readable)
+
+
+def _publisher(r: ReportRecord) -> str | None:
+    """The publisher one record gives, in its canonical spelling."""
+    if r.source == "paper":
+        # The lab dataset's Source column is often another vendor than the one whose blog the title
+        # names ("The Naikon APT - Securelist" under FireEye), so the title decides when it names one.
+        return publisher_in_title(r.title) or canonical_publisher(r.organisation)
+    if r.source == "orkl":
+        # ORKL's authors field also holds people's names and stray words, so only a known vendor is kept.
+        return known_publisher(r.organisation)
+    return canonical_publisher(r.organisation)
 
 
 def _cve_possible(cve: str, published: str | None) -> bool:

@@ -230,19 +230,18 @@ describe('toRows', () => {
 		expect([...kevCves(index)].sort()).toEqual(['CVE-2021-44228', 'CVE-2023-23397']);
 	});
 
-	it('drops the publisher of an ORKL row, which is link-only', () => {
-		// ORKL's terms are pending, so the site shows only a report's title,
-		// date and links. Clearing the field here means no table cell, filter
-		// or search result can reveal it either.
+	it('keeps the publisher the pipeline settled on for an ORKL row', () => {
+		// The pipeline keeps only a known vendor from ORKL's authors, or names the
+		// publisher whose own site the link is on, so the row can show it.
 		const [orkl] = toRows(
 			makeIndex([report({ id: 'orkl-1', sources: ['orkl'], organisation: 'Northwind Threat Research' })]),
 			[],
 			actors
 		);
 		expect(orkl.linkOnly).toBe(true);
-		expect(orkl.organisation).toBeNull();
-		expect(applyFilters([orkl], { q: 'northwind' })).toEqual([]);
-		expect(applyFilters([orkl], { org: 'Northwind Threat Research' })).toEqual([]);
+		expect(orkl.organisation).toBe('Northwind Threat Research');
+		expect(applyFilters([orkl], { q: 'northwind' })).toEqual([orkl]);
+		expect(applyFilters([orkl], { org: 'Northwind Threat Research' })).toEqual([orkl]);
 	});
 
 	it('reads a row with several sources from the bit mask', () => {
@@ -253,7 +252,7 @@ describe('toRows', () => {
 });
 
 describe('facets', () => {
-	it('lists sources and publishers, and leaves out the publisher of a link-only row', () => {
+	it('lists sources and publishers, a link-only row included', () => {
 		const all = toRows(
 			makeIndex([
 				report({ id: 'r-1', organisation: 'Harbor CERT', sources: ['dfir'] }),
@@ -262,7 +261,10 @@ describe('facets', () => {
 			[campaign({ id: 'C1' })],
 			[]
 		);
-		expect(facets(all)).toEqual({ sources: ['attack', 'dfir', 'orkl'], publishers: ['Harbor CERT'] });
+		expect(facets(all)).toEqual({
+			sources: ['attack', 'dfir', 'orkl'],
+			publishers: ['Harbor CERT', 'Northwind Threat Research']
+		});
 	});
 });
 

@@ -31,7 +31,10 @@ export interface ExploreRow {
 	date: string | null;
 	/** A campaign's last sighting. Null for a report, or for a campaign with no end yet. */
 	end: string | null;
-	/** Null for a link-only row, whatever the data says. */
+	/**
+	 * The publisher the pipeline settled on. For an ORKL row it is a known vendor or the
+	 * publisher whose own site the link is on, never ORKL's raw authors field.
+	 */
 	organisation: string | null;
 	actors: string[];
 	/** The part of actors that only the title names. Empty for a campaign. */
@@ -138,7 +141,7 @@ export function toRows(index: ReportsIndex, campaigns: Campaign[], actors: Actor
 		const sources = sourcesFor(columns.sources[i]);
 		const linkOnly = sources.some((s) => LINK_ONLY_ROW_SOURCES.has(s));
 		const org = columns.organisation[i];
-		const organisation = linkOnly || org == null ? null : tables.organisations[org];
+		const organisation = org == null ? null : tables.organisations[org];
 		const cves = columns.cves[i].map((p) => tables.cves[p]);
 		const techniques = columns.techniques[i].map((p) => tables.techniques[p]);
 		const actorPositions = columns.actors[i];

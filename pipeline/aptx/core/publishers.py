@@ -14,45 +14,50 @@ from urllib.parse import urlsplit
 # Key (letters and digits, lower case) to the canonical name.
 _CANONICAL = {
     "ahnlab": "AhnLab", "ahnlabinc": "AhnLab",
-    "alienvault": "AlienVault",
+    "airbus": "Airbus", "alienvault": "AlienVault", "antiycert": "Antiy", "arbor": "Arbor Networks",
+    "arbornetworks": "Arbor Networks", "baesystems": "BAE Systems", "bitdefender": "Bitdefender",
     "blackberry": "BlackBerry",
     "certua": "CERT-UA",
     "checkpoint": "Check Point",
-    "cisa": "CISA",
+    "cisa": "CISA", "uscert": "CISA", "cisco": "Cisco", "circl": "CIRCL", "citizenlab": "Citizen Lab",
     "ciscotalos": "Cisco Talos",
     "clearsky": "ClearSky",
     "crowdstrike": "CrowdStrike",
-    "cyble": "Cyble",
-    "deepinstinct": "Deep Instinct",
+    "cyble": "Cyble", "cybereason": "Cybereason", "cylance": "Cylance",
+    "deepinstinct": "Deep Instinct", "dellsecureworks": "Secureworks", "doctorwebltd": "Doctor Web",
+    "drweb": "Doctor Web", "dragos": "Dragos",
     "eset": "ESET", "esetresearch": "ESET",
     "estsecurity": "ESTsecurity",
-    "fireeye": "FireEye",
+    "fidelis": "Fidelis", "fireeye": "FireEye", "forcepoint": "Forcepoint",
+    "fsecure": "F-Secure", "fsecurecorporation": "F-Secure",
     "fortinet": "Fortinet",
     "foxit": "Fox-IT",
     "gdata": "G DATA",
-    "groupib": "Group-IB",
+    "groupib": "Group-IB", "idefense": "iDefense", "insiktgroup": "Recorded Future",
+    "insiktgroupbyrecordedfuture": "Recorded Future", "intezer": "Intezer", "isightpartners": "iSight Partners",
+    "jpcert": "JPCERT/CC", "lockheedmartin": "Lockheed Martin", "lookout": "Lookout",
     "intrusiontruth": "Intrusion Truth",
     "kaspersky": "Kaspersky", "kasperskylab": "Kaspersky",
-    "malwarebytes": "Malwarebytes",
+    "malwarebytes": "Malwarebytes", "mcafee": "McAfee",
     "mandiant": "Mandiant",
     "microsoft": "Microsoft", "microsoftsecurity": "Microsoft",
-    "nccgroup": "NCC Group",
+    "nccgroup": "NCC Group", "ncsc": "NCSC", "netresec": "Netresec", "novetta": "Novetta",
     "nsfocus": "NSFOCUS",
     "paloalto": "Palo Alto Networks", "paloaltonetworks": "Palo Alto Networks",
-    "proofpoint": "Proofpoint",
+    "pandalabs": "Panda Security", "proofpoint": "Proofpoint", "pwc": "PwC",
     "qianxin": "QiAnXin",
-    "recordedfuture": "Recorded Future",
+    "rapid7": "Rapid7", "recordedfuture": "Recorded Future", "rsa": "RSA",
     "root9b": "root9B",
     "secureworks": "Secureworks",
-    "sentinelone": "SentinelOne",
+    "sentinelone": "SentinelOne", "sophos": "Sophos", "symantec": "Symantec",
     "stairwell": "Stairwell",
     "teamt5": "TeamT5",
     "telsy": "Telsy",
     "thedfirreport": "The DFIR Report",
-    "threatpost": "Threatpost",
+    "threatconnect": "ThreatConnect", "threatpost": "Threatpost",
     "trendmicro": "Trend Micro", "trendmicroincorporated": "Trend Micro",
     "vincss": "VinCSS",
-    "zscaler": "Zscaler",
+    "volexity": "Volexity", "zscaler": "Zscaler", "zscalerthreatlabz": "Zscaler",
 }
 
 # A host, or the domain it ends in, to the publisher that runs it.
@@ -109,3 +114,41 @@ def publisher_for_url(url: str | None) -> str | None:
             return HOSTS[host]
         host = host.partition(".")[2]
     return None
+
+
+# Every name the tables above can give: the publishers this project knows.
+KNOWN = frozenset(_CANONICAL.values()) | frozenset(HOSTS.values())
+
+# A vendor's own blog or site named in a title, as the lab corpus files many papers:
+# "The Naikon APT - Securelist", "ESET-LoJax", "...TrendLabs Security Intelligence Blog".
+# Letters on neither side, so "_Securelist_2020" matches but a longer word does not.
+_IN_TITLE = (
+    (re.compile(r"(?<![a-z])securelist(?![a-z])", re.I), "Kaspersky"),
+    (re.compile(r"(?<![a-z])welivesecurity(?![a-z])", re.I), "ESET"),
+    (re.compile(r"^ESET(?![a-z])", re.I), "ESET"),
+    (re.compile(r"(?<![a-z])trendlabs(?![a-z])", re.I), "Trend Micro"),
+    (re.compile(r"(?<![a-z])talos intelligence(?![a-z])", re.I), "Cisco Talos"),
+    (re.compile(r"(?<![a-z])the citizen lab(?![a-z])", re.I), "Citizen Lab"),
+    (re.compile(r"[-_ ]clearsky$", re.I), "ClearSky"),
+    (re.compile(r"(?<![a-z])unit ?42(?![0-9])", re.I), "Palo Alto Networks"),
+)
+_DOMAIN_PREFIX = re.compile(r"^((?:[a-z0-9-]+\.)+[a-z]{2,})-(?=[A-Za-z0-9])")
+
+
+def known_publisher(name: str | None) -> str | None:
+    """The canonical name when it is a publisher this project knows, else None.
+
+    ORKL's authors field holds vendors, but also people's names and stray words such as "Appendix",
+    so only a known name is kept from it.
+    """
+    name = canonical_publisher(name)
+    return name if name in KNOWN else None
+
+
+def publisher_in_title(title: str | None) -> str | None:
+    """The publisher a title names as its own site or blog, or None."""
+    title = " ".join((title or "").split())
+    if m := _DOMAIN_PREFIX.match(title):
+        if name := publisher_for_url("https://" + m.group(1)):
+            return name
+    return next((name for pattern, name in _IN_TITLE if pattern.search(title)), None)

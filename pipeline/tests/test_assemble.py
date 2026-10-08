@@ -1133,3 +1133,16 @@ def test_an_address_date_after_the_ingest_date_does_not_date_the_report():
     orkl = R("orkl", "1", "Later address", "https://ex.org/2025/08/01/post", "2025-05-01", basis="orkl-ingest")
     row = report_by_title(_linked(orkl), "Later address")
     assert (row["published"], row["date_basis"]) == ("2025-05-01", "orkl-ingest")
+
+
+def test_a_lab_rows_title_overrides_its_source_column_and_orkl_keeps_only_known_vendors():
+    paper = B("paper", reports=[R("paper", "a.pdf", "The Naikon APT - Securelist", "https://ex.org/p", "2015-05-14",
+                                  organisation="FireEye"),
+                                R("paper", "b.pdf", "Plain title", "https://ex.org/q", "2015-05-14",
+                                  organisation="Fireeye")])
+    orkl = B("orkl", reports=[R("orkl", "1", "Person", "https://ex.org/a", "2025-01-02", organisation="Doug Pearson"),
+                              R("orkl", "2", "Vendor", "https://ex.org/b", "2025-01-02", organisation="Crowdstrike")])
+    payload = run(*WORLD(paper=paper, orkl=orkl))
+    assert [report_by_title(payload, t)["organisation"]
+            for t in ("The Naikon APT - Securelist", "Plain title", "Person", "Vendor")] == [
+        "Kaspersky", "FireEye", None, "CrowdStrike"]

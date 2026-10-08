@@ -117,8 +117,8 @@
 	const actorNames = $derived(new Map(actors.map((a) => [a.id, a.name])));
 	const facet = $derived(facets(rows));
 	const sources = $derived(facet.sources);
-	// Link-only rows have no publisher by the time they are rows, so ORKL's
-	// publishers never reach this list.
+	// An ORKL row's publisher is a known vendor or the owner of the linked site,
+	// never ORKL's raw authors field (see the pipeline's publishers module).
 	const publishers = $derived(facet.publishers);
 
 	/** What ?report= or ?campaign= asks for. The row is looked up among all rows, not only the shown ones. */

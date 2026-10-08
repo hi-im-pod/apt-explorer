@@ -309,7 +309,10 @@
 		so Crowdstrike and CrowdStrike are one name. When no source names a publisher, the site takes
 		one from the report's original address, but only when the address is on a site the publisher
 		runs itself, such as securelist.com for Kaspersky. A copy, a file host or a blog platform names
-		nobody, so such a report has no publisher.
+		nobody, so such a report has no publisher. ORKL gives a report's authors, which are sometimes
+		a vendor and sometimes a person's name or a stray word, so the site keeps that field only when it
+		names a known vendor. In the lab dataset, a vendor's blog named in the title, such as "The Naikon
+		APT - Securelist", decides the publisher before the dataset's own source column.
 	</p>
 	<p class="section-note">
 		Many ORKL records give a mirror address and no publisher address, and the pipeline does not
