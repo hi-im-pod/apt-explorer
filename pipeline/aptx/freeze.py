@@ -73,7 +73,10 @@ def composition(payload: dict) -> dict:
         "reports_with_actor_from_text": has("actors_from_text"),
         "reports_with_cve": has("cves"),
         "reports_with_technique": has("techniques"),
-        "reports_with_technique_from_paper": sum(bool(r["techniques"]) and "paper" in r["sources"] for r in reports),
+        # The published data does not say which copy gave each ID, so this counts reports that have a
+        # lab copy and any technique ID, which may include IDs found in ORKL's copy of the text.
+        "reports_with_technique_and_lab_copy": sum(bool(r["techniques"]) and "paper" in r["sources"]
+                                                   for r in reports),
         "reports_with_100_or_more_techniques": sum(len(r["techniques"]) >= 100 for r in reports),
         "reports_with_15_or_more_actors": sum(len(r["actors"]) >= 15 for r in reports),
         "reports_merged_from_copies": sum(bool(r["merged_ids"]) for r in reports),

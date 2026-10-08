@@ -1,0 +1,4 @@
+# Published data and frozen releases are checksummed byte for byte, so git must never convert their
+# line endings on checkout; otherwise `sha256sum -c releases/<version>/SHA256SUMS` fails on Windows.
+data/** -text
+releases/** -text

@@ -10,7 +10,7 @@ Cite a frozen release by its version DOI, never the live site. Also cite the CCS
 
 **Who created it, and who funded it?** Garrett Ennis, a master's student in the SecAI Lab at Sungkyunkwan University, built it as a personal, non-commercial project. It has no funding, sponsor or commercial use.
 
-**Relationship disclosure.** The CCS '25 dataset comes from the same lab. Its first author is a labmate, and the lab's director is a co-author. APT Explorer is the author's own work and has not been peer reviewed. The CCS '25 authors did not review it.
+**Relationship disclosure.** The CCS '25 dataset comes from the same lab. Its first author is a labmate, and the lab's director is a co-author. APT Explorer is the author's own work and has not been peer reviewed.
 
 ## Composition
 
@@ -52,7 +52,7 @@ Almost every report has an ORKL copy. ORKL's permission request was still pendin
 
 **Is the dataset a sample?** It is not a complete record of APT reporting. It holds what ORKL, Malpedia, the lab dataset and four feeds index, which favours English-language reports from large vendors.
 
-**Does it contain personal or confidential data?** No. Every record comes from public sources. Actor names are names of threat groups. A few publisher values are the names of report authors, as printed on public reports.
+**Does it contain personal or confidential data?** No. Every record comes from public sources. Actor names are names of threat groups. Some publisher values taken from the lab dataset name a personal blog or a researcher's GitHub account, as the reports themselves do.
 
 ## Per-Field Provenance
 
@@ -72,10 +72,10 @@ Each report records which sources supplied it (`sources`). The table gives, for 
 | `actors_from_text` | Matching ORKL's text in memory | A name used twice, or once in the first 300 words for a multi-word name or one with a digit |
 | `actor_names_unresolved` | The lab dataset's actor names that match no actor | Kept verbatim |
 | `cves` | The lab dataset's labels and CVE IDs written in the text | A CVE numbered more than a year after the report's date is dropped; nothing is read from an error page |
-| `techniques` | The lab dataset's labels (158 reports) and technique IDs written in the text (the rest) | Only IDs in the current ATT&CK release are kept |
+| `techniques` | The lab dataset's labels and technique IDs written in the report text | Only IDs in the current ATT&CK release are kept. The published data does not record which source gave each ID |
 | `sources` | The pipeline | Every source that lists the report |
 
-**Technique IDs are what the publisher wrote, not what the attack used.** Outside the 158 lab-labelled reports, a technique ID is present because the report's own text contains it, such as "T1566.001" in a mapping table. The pipeline infers no technique from prose. An ID may appear in detection guidance, an appendix or a general overview without describing the attack, and reports that never print IDs have none. Recall is low, and the set favours vendors that publish ATT&CK tables.
+**Technique IDs are what the publisher wrote, not what the attack used.** The lab dataset gives technique labels for 175 of its 1,509 reports [2], and 156 of those keep at least one ID that is still in the current ATT&CK release; retired IDs are dropped. In the 2026-10-08 build, 158 reports have both a lab copy and technique IDs, and their IDs can combine the lab's labels with IDs found in ORKL's copy of the text. For every other report, a technique ID is present because the report's own text contains it, such as "T1566.001" in a mapping table. The pipeline infers no technique from prose. An ID may appear in detection guidance, an appendix or a general overview without describing the attack, and reports that never print IDs have none. Recall is low, and the set favours vendors that publish ATT&CK tables.
 
 ## Date Bases
 
