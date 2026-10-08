@@ -337,6 +337,9 @@
 			ORKL tags its reports with actor names. While ORKL is link-only, the site
 			never shows those tags and never links a report to an actor on the strength of a tag alone. A
 			report is linked to an actor only through Malpedia, ATT&CK references or the paper's data.
+			Malpedia links a report through the malware family it covers. When more than three actors use
+			that family, as with PlugX or ShadowPad, the report says nothing about most of them, so Malpedia
+			links it to none.
 		</p>
 		<p>
 			The actors, CVEs and techniques listed for an ORKL report were added by this project, and

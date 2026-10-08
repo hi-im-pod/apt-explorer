@@ -354,3 +354,17 @@ def test_empty_payloads_save_nothing(tmp_path, fast_http, ids, bib):
     with pytest.raises(ValueError):
         MalpediaConnector().fetch(s)
     assert s.latest_date("malpedia") is None
+
+
+def test_a_family_many_actors_share_links_its_reports_to_none_of_them(tmp_path):
+    from aptx.sources.malpedia import MAX_FAMILY_ACTORS
+    s = SnapshotStore(tmp_path)
+    shared = [f"Crew {n}" for n in range(MAX_FAMILY_ACTORS + 1)]
+    _save(s, "families.json", {
+        "win.plugx": {"common_name": "PlugX", "attribution": shared, "urls": ["https://ex.org/plugx-campaign"]},
+        "win.small": {"common_name": "Small", "attribution": shared[:MAX_FAMILY_ACTORS],
+                      "urls": ["https://ex.org/small"]}})
+    _save(s, "library.bib", "")
+    links = report_links(s)
+    assert norm_url("https://ex.org/plugx-campaign") not in links
+    assert links[norm_url("https://ex.org/small")] == sorted(shared[:MAX_FAMILY_ACTORS])

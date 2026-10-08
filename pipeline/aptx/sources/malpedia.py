@@ -159,6 +159,11 @@ def library_dates(store: SnapshotStore) -> dict[str, str]:
     return dates
 
 
+# A family attributed to more actors than this is a shared tool, such as PlugX or ShadowPad. A post about
+# one campaign that uses it says nothing about the other users, so its reports link to none of them.
+MAX_FAMILY_ACTORS = 3
+
+
 def report_links(store: SnapshotStore) -> dict[str, list[str]]:
     """Map norm_url(report url) to the sorted actor names Malpedia attributes it to.
 
@@ -167,7 +172,8 @@ def report_links(store: SnapshotStore) -> dict[str, list[str]]:
     reports is linked to the family's `attribution` names. The names stay
     verbatim, because about 70 of them, such as "APT 29", are not any actor's
     display name, and the resolver, not this connector, decides which actor a
-    name means. A family with no attribution links nothing.
+    name means. A family with no attribution, or attributed to more than
+    MAX_FAMILY_ACTORS names, links nothing.
     """
     families = _load(store, FAMILIES) or {}
     library = _library(store)
@@ -176,7 +182,7 @@ def report_links(store: SnapshotStore) -> dict[str, list[str]]:
         if not isinstance(family, dict):
             continue
         names = _labels(family.get("attribution"))
-        if not names:
+        if not names or len(names) > MAX_FAMILY_ACTORS:
             continue
         urls = list(family.get("urls") or [])
         for key in family.get("library_entries") or []:
