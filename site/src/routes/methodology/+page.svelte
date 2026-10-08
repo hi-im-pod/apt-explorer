@@ -316,8 +316,9 @@
 	</p>
 	<p>
 		Two records that share no address are taken as copies of one report when their titles match
-		after tidying, the title has at least 20 characters, and their dates are no more than 14 days
-		apart. The copies become one report. A link that uses a copy's old ID still opens it.
+		after tidying, the title has at least 20 characters, and each copy is dated no more than 14 days
+		after the one before it. The copies become one report. A link that uses a copy's old ID still
+		opens it.
 	</p>
 	<p>
 		Some pages carry the site's name where the report's title belongs, such as "Secure
@@ -351,9 +352,6 @@
 			ORKL tags its reports with actor names. While ORKL is link-only, the site
 			never shows those tags and never links a report to an actor on the strength of a tag alone. A
 			report is linked to an actor only through Malpedia, ATT&CK references or the paper's data.
-			Malpedia links a report through the malware family it covers. When more than three actors use
-			that family, as with PlugX or ShadowPad, the report says nothing about most of them, so Malpedia
-			links it to none.
 		</p>
 		<p>
 			The actors, CVEs and techniques listed for an ORKL report were added by this project, and
@@ -365,6 +363,11 @@
 			report's link now leads to an error page, nothing is read from that page.
 		</p>
 	{/if}
+	<p>
+		Malpedia ties a report to the actors it attributes the report's malware family to. When more
+		than three actors use that family, as with PlugX or ShadowPad, a report on one campaign says
+		nothing about the others, so the site links that report to none of them through Malpedia.
+	</p>
 	<h3>Actors named in a title</h3>
 	<p>
 		The site keeps no post text from the Microsoft, Talos and ESET blogs, The DFIR Report or ORKL.
