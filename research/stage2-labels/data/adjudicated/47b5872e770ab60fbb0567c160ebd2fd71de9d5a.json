@@ -1,0 +1,21 @@
+{
+  "decided_at": "2026-10-07T05:55:59.115Z",
+  "individuals_targeted": false,
+  "initial_access": [
+    "T1566.001"
+  ],
+  "n": 18,
+  "note": "This is a case where there isn't a specific victim country its just stating that U.S and European Job seekers have been targeted. The majority of the focus is on Germany. It's also somewhere between a campaign and an actor profile.",
+  "report_id": "47b5872e770ab60fbb0567c160ebd2fd71de9d5a",
+  "report_type": "campaign",
+  "rules": "v3",
+  "split": "test",
+  "target_sectors": [
+    "defense",
+    "technology"
+  ],
+  "victim_countries": [
+    "DE"
+  ],
+  "victim_regions": []
+}

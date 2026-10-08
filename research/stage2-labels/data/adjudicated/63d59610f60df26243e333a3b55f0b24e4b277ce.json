@@ -1,0 +1,42 @@
+{
+  "decided_at": "2026-10-07T03:52:27.589Z",
+  "individuals_targeted": false,
+  "initial_access": [
+    "T1190",
+    "T1566.001"
+  ],
+  "n": 6,
+  "note": "The article has a chart and table with iocs by country and mentions that spearphishing is a way in.",
+  "report_id": "63d59610f60df26243e333a3b55f0b24e4b277ce",
+  "report_type": "campaign",
+  "rules": "v3",
+  "split": "test",
+  "target_sectors": [
+    "communications",
+    "defense",
+    "energy",
+    "government-national",
+    "non-profit",
+    "technology",
+    "telecommunications"
+  ],
+  "victim_countries": [
+    "AE",
+    "AL",
+    "AM",
+    "CY",
+    "EG",
+    "IQ",
+    "JO",
+    "LB",
+    "LY",
+    "SE",
+    "SY",
+    "TR",
+    "US"
+  ],
+  "victim_regions": [
+    "Middle East",
+    "Northern Africa"
+  ]
+}

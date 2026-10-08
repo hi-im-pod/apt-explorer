@@ -1,0 +1,23 @@
+{
+  "decided_at": "2026-10-07T07:43:52.341Z",
+  "individuals_targeted": true,
+  "initial_access": [
+    "T1566.001"
+  ],
+  "n": 31,
+  "note": "",
+  "report_id": "34c2b718869354a588ee602f41be77e553346c5d",
+  "report_type": "campaign",
+  "rules": "v3",
+  "split": "dev",
+  "target_sectors": [
+    "communications",
+    "education",
+    "government-national",
+    "non-profit"
+  ],
+  "victim_countries": [
+    "CN"
+  ],
+  "victim_regions": []
+}

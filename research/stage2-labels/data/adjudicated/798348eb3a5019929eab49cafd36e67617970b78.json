@@ -1,0 +1,20 @@
+{
+  "decided_at": "2026-10-07T07:11:53.194Z",
+  "individuals_targeted": false,
+  "initial_access": [
+    "T1566"
+  ],
+  "n": 24,
+  "note": "",
+  "report_id": "798348eb3a5019929eab49cafd36e67617970b78",
+  "report_type": "campaign",
+  "rules": "v3",
+  "split": "test",
+  "target_sectors": [
+    "non-profit"
+  ],
+  "victim_countries": [
+    "CA"
+  ],
+  "victim_regions": []
+}

@@ -1,0 +1,20 @@
+{
+  "decided_at": "2026-10-07T07:54:36.060Z",
+  "individuals_targeted": false,
+  "initial_access": [
+    "T1189"
+  ],
+  "n": 37,
+  "note": "",
+  "report_id": "4dd82280ab1b8286e7a15a6712d8aa51cea5717e",
+  "report_type": "campaign",
+  "rules": "v3",
+  "split": "dev",
+  "target_sectors": [
+    "commercial"
+  ],
+  "victim_countries": [
+    "KR"
+  ],
+  "victim_regions": []
+}

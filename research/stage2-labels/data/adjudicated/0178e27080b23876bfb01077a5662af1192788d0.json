@@ -1,0 +1,19 @@
+{
+  "decided_at": "2026-10-08T06:46:17.836Z",
+  "individuals_targeted": false,
+  "initial_access": [
+    "T1195"
+  ],
+  "n": 54,
+  "note": "",
+  "report_id": "0178e27080b23876bfb01077a5662af1192788d0",
+  "report_type": "campaign",
+  "rules": "v3",
+  "split": "test",
+  "target_sectors": [
+    "communications",
+    "technology"
+  ],
+  "victim_countries": [],
+  "victim_regions": []
+}

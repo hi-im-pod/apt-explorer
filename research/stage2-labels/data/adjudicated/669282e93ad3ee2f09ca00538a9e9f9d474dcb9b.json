@@ -1,0 +1,27 @@
+{
+  "decided_at": "2026-10-08T06:47:23.035Z",
+  "individuals_targeted": false,
+  "initial_access": [
+    "T1566.001"
+  ],
+  "n": 60,
+  "note": "",
+  "report_id": "669282e93ad3ee2f09ca00538a9e9f9d474dcb9b",
+  "report_type": "campaign",
+  "rules": "v3",
+  "split": "test",
+  "target_sectors": [
+    "communications",
+    "defense",
+    "financial-services",
+    "government-national",
+    "healthcare"
+  ],
+  "victim_countries": [
+    "CL",
+    "CO",
+    "EC",
+    "ES"
+  ],
+  "victim_regions": []
+}

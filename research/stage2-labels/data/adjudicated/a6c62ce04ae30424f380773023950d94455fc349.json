@@ -1,0 +1,20 @@
+{
+  "decided_at": "2026-10-07T07:47:17.992Z",
+  "individuals_targeted": false,
+  "initial_access": [
+    "T1189"
+  ],
+  "n": 34,
+  "note": "",
+  "report_id": "a6c62ce04ae30424f380773023950d94455fc349",
+  "report_type": "campaign",
+  "rules": "v3",
+  "split": "test",
+  "target_sectors": [
+    "financial-services"
+  ],
+  "victim_countries": [
+    "PL"
+  ],
+  "victim_regions": []
+}

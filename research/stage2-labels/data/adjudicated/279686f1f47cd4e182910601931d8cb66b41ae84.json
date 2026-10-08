@@ -1,0 +1,34 @@
+{
+  "decided_at": "2026-10-07T04:41:51.169Z",
+  "individuals_targeted": false,
+  "initial_access": [],
+  "n": 10,
+  "note": "The report names the observed victims' countries: Saudi Arabia, the United Arab Emirates, Jordan, Kuwait, Oman, Iraq and Israel. [Paraphrased from the owner's note, which quoted the report.]",
+  "report_id": "279686f1f47cd4e182910601931d8cb66b41ae84",
+  "report_type": "campaign",
+  "rules": "v3",
+  "split": "test",
+  "target_sectors": [
+    "communications",
+    "defense",
+    "financial-services",
+    "government",
+    "government-national",
+    "non-profit",
+    "technology",
+    "telecommunications"
+  ],
+  "victim_countries": [
+    "AE",
+    "AL",
+    "IL",
+    "IQ",
+    "JO",
+    "KW",
+    "OM",
+    "SA"
+  ],
+  "victim_regions": [
+    "Middle East"
+  ]
+}

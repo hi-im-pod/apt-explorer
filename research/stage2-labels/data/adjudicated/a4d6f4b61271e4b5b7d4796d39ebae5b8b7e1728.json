@@ -1,0 +1,24 @@
+{
+  "decided_at": "2026-10-07T07:26:27.122Z",
+  "individuals_targeted": false,
+  "initial_access": [
+    "T1091",
+    "T1566.001",
+    "T1566.002"
+  ],
+  "n": 28,
+  "note": "",
+  "report_id": "a4d6f4b61271e4b5b7d4796d39ebae5b8b7e1728",
+  "report_type": "campaign",
+  "rules": "v3",
+  "split": "test",
+  "target_sectors": [
+    "government",
+    "government-national"
+  ],
+  "victim_countries": [
+    "MM",
+    "PH"
+  ],
+  "victim_regions": []
+}

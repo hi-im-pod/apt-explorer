@@ -1,0 +1,19 @@
+{
+  "decided_at": "2026-10-07T07:25:24.654Z",
+  "individuals_targeted": true,
+  "initial_access": [
+    "T1189",
+    "T1566.003"
+  ],
+  "n": 27,
+  "note": "The report says its authors cannot see every way the actor spreads. Earlier campaigns reached individuals through direct messages on social networks and through forum posts linking to exploit pages, and this report adds Telegram channels and Instagram posts. [Paraphrased from the owner's note, which quoted the report.]",
+  "report_id": "cf105922040421377abdd120f6ba2b9772fdd40d",
+  "report_type": "campaign",
+  "rules": "v3",
+  "split": "dev",
+  "target_sectors": [],
+  "victim_countries": [
+    "HK"
+  ],
+  "victim_regions": []
+}

@@ -1,0 +1,29 @@
+{
+  "decided_at": "2026-10-07T05:20:03.836Z",
+  "individuals_targeted": true,
+  "initial_access": [
+    "T1566.001",
+    "T1566.002"
+  ],
+  "n": 14,
+  "note": "Spearphishing/normal phishing as links and attachments.",
+  "report_id": "8fa264721c32e66ec94ceb77645c22edbffc9259",
+  "report_type": "campaign",
+  "rules": "v3",
+  "split": "test",
+  "target_sectors": [
+    "communications",
+    "energy",
+    "government-national",
+    "non-profit"
+  ],
+  "victim_countries": [
+    "AE",
+    "QA",
+    "SA"
+  ],
+  "victim_regions": [
+    "Middle East",
+    "Northern Africa"
+  ]
+}

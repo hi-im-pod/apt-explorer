@@ -1,0 +1,18 @@
+{
+  "decided_at": "2026-10-07T08:00:54.023Z",
+  "individuals_targeted": false,
+  "initial_access": [],
+  "n": 41,
+  "note": "Community health systems is targeted which is an American organization.",
+  "report_id": "5ec4826b8168e8dbbfe26a5e60123b3009770978",
+  "report_type": "news",
+  "rules": "v3",
+  "split": "dev",
+  "target_sectors": [
+    "healthcare"
+  ],
+  "victim_countries": [
+    "US"
+  ],
+  "victim_regions": []
+}

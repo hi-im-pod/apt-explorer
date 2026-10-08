@@ -1,0 +1,22 @@
+{
+  "decided_at": "2026-10-08T06:46:01.892Z",
+  "individuals_targeted": false,
+  "initial_access": [
+    "T1566.001"
+  ],
+  "n": 53,
+  "note": "",
+  "report_id": "8fdd96ab4d0e95802cac838cb8221b93da24d1f2",
+  "report_type": "malware-analysis",
+  "rules": "v3",
+  "split": "dev",
+  "target_sectors": [
+    "government",
+    "government-national"
+  ],
+  "victim_countries": [],
+  "victim_regions": [
+    "Central America",
+    "Eastern Europe"
+  ]
+}

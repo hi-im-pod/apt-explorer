@@ -1,0 +1,25 @@
+{
+  "decided_at": "2026-10-08T06:39:16.556Z",
+  "individuals_targeted": false,
+  "initial_access": [
+    "T1566.001",
+    "T1566.002"
+  ],
+  "n": 50,
+  "note": "",
+  "report_id": "a224702fbdf785b482d562117dddf5d4fd848208",
+  "report_type": "campaign",
+  "rules": "v3",
+  "split": "test",
+  "target_sectors": [
+    "communications",
+    "defense",
+    "education",
+    "government-national",
+    "technology"
+  ],
+  "victim_countries": [
+    "KR"
+  ],
+  "victim_regions": []
+}

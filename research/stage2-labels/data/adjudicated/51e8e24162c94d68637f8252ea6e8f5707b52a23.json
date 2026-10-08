@@ -1,0 +1,21 @@
+{
+  "decided_at": "2026-10-08T06:45:21.939Z",
+  "individuals_targeted": false,
+  "initial_access": [
+    "T1189"
+  ],
+  "n": 51,
+  "note": "",
+  "report_id": "51e8e24162c94d68637f8252ea6e8f5707b52a23",
+  "report_type": "campaign",
+  "rules": "v3",
+  "split": "dev",
+  "target_sectors": [
+    "defense",
+    "technology"
+  ],
+  "victim_countries": [
+    "FR"
+  ],
+  "victim_regions": []
+}

@@ -1,0 +1,35 @@
+{
+  "decided_at": "2026-10-08T06:46:33.526Z",
+  "individuals_targeted": true,
+  "initial_access": [
+    "T1189",
+    "T1190",
+    "T1566.001"
+  ],
+  "n": 55,
+  "note": "",
+  "report_id": "8742755080062ec87eb6ae0059fd7925cde83a9b",
+  "report_type": "actor-profile",
+  "rules": "v3",
+  "split": "dev",
+  "target_sectors": [
+    "aerospace",
+    "automotive",
+    "communications",
+    "defense",
+    "education",
+    "government-national",
+    "healthcare",
+    "manufacturing",
+    "non-profit",
+    "technology"
+  ],
+  "victim_countries": [
+    "JP",
+    "KR",
+    "VN"
+  ],
+  "victim_regions": [
+    "Middle East"
+  ]
+}

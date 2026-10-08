@@ -1,0 +1,20 @@
+{
+  "decided_at": "2026-10-07T07:46:36.194Z",
+  "individuals_targeted": false,
+  "initial_access": [
+    "T1190"
+  ],
+  "n": 33,
+  "note": "",
+  "report_id": "af70e2e4750a95aa3748fc15e3c1fb92f1b47e29",
+  "report_type": "campaign",
+  "rules": "v3",
+  "split": "dev",
+  "target_sectors": [
+    "hospitality-leisure",
+    "retail",
+    "technology"
+  ],
+  "victim_countries": [],
+  "victim_regions": []
+}

@@ -1,0 +1,25 @@
+{
+  "decided_at": "2026-10-08T06:14:46.357Z",
+  "individuals_targeted": true,
+  "initial_access": [
+    "T1133",
+    "T1189",
+    "T1190",
+    "T1195",
+    "T1566.001",
+    "T1566.002"
+  ],
+  "n": 45,
+  "note": "This is a report in Korean, I evaluated the figures and determined that all proposed attack vectors were used, however there is a strong usage of spearphishing and exploiting public facing apps.",
+  "report_id": "b4e7f944cadd35119444c6c346a5ab01023bfd43",
+  "report_type": "campaign",
+  "rules": "v3",
+  "split": "dev",
+  "target_sectors": [
+    "entertainment"
+  ],
+  "victim_countries": [
+    "KR"
+  ],
+  "victim_regions": []
+}

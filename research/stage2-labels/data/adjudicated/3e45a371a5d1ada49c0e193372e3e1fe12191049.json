@@ -1,0 +1,18 @@
+{
+  "decided_at": "2026-10-07T03:15:10.739Z",
+  "individuals_targeted": false,
+  "initial_access": [],
+  "n": 2,
+  "note": "This report is an appendix for a larger report that acts as a campaign, within this report there is malware anlysis and detection rules but the report mentions the bigger campaign paper multiple times.",
+  "report_id": "3e45a371a5d1ada49c0e193372e3e1fe12191049",
+  "report_type": "campaign",
+  "rules": "v3",
+  "split": "test",
+  "target_sectors": [
+    "defense"
+  ],
+  "victim_countries": [
+    "US"
+  ],
+  "victim_regions": []
+}

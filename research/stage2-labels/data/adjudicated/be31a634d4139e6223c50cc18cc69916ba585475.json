@@ -1,0 +1,23 @@
+{
+  "decided_at": "2026-10-07T07:27:29.837Z",
+  "individuals_targeted": false,
+  "initial_access": [
+    "T1189",
+    "T1566.001",
+    "T1566.002"
+  ],
+  "n": 29,
+  "note": "",
+  "report_id": "be31a634d4139e6223c50cc18cc69916ba585475",
+  "report_type": "campaign",
+  "rules": "v3",
+  "split": "dev",
+  "target_sectors": [
+    "chemical",
+    "technology"
+  ],
+  "victim_countries": [
+    "KR"
+  ],
+  "victim_regions": []
+}

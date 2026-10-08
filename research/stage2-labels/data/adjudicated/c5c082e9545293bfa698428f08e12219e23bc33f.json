@@ -1,0 +1,20 @@
+{
+  "decided_at": "2026-10-07T07:45:12.214Z",
+  "individuals_targeted": false,
+  "initial_access": [
+    "T1566.002"
+  ],
+  "n": 32,
+  "note": "",
+  "report_id": "c5c082e9545293bfa698428f08e12219e23bc33f",
+  "report_type": "campaign",
+  "rules": "v3",
+  "split": "test",
+  "target_sectors": [
+    "government-national"
+  ],
+  "victim_countries": [],
+  "victim_regions": [
+    "Eastern Europe"
+  ]
+}

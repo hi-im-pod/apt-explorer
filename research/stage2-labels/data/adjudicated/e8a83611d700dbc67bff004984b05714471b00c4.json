@@ -1,0 +1,24 @@
+{
+  "decided_at": "2026-10-07T07:32:30.759Z",
+  "individuals_targeted": false,
+  "initial_access": [
+    "T1566.001",
+    "T1566.002"
+  ],
+  "n": 30,
+  "note": "I would consider this closer to a campaign than an actor profile but really it sits somewhere in the middle, detailing new findings and a historical context.",
+  "report_id": "e8a83611d700dbc67bff004984b05714471b00c4",
+  "report_type": "campaign",
+  "rules": "v3",
+  "split": "test",
+  "target_sectors": [
+    "communications",
+    "defense",
+    "government-national"
+  ],
+  "victim_countries": [
+    "IL",
+    "PS"
+  ],
+  "victim_regions": []
+}

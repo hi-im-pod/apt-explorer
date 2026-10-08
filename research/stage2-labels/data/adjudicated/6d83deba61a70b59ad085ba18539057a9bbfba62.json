@@ -1,0 +1,18 @@
+{
+  "decided_at": "2026-10-07T05:01:21.580Z",
+  "individuals_targeted": true,
+  "initial_access": [
+    "T1566"
+  ],
+  "n": 11,
+  "note": "",
+  "report_id": "6d83deba61a70b59ad085ba18539057a9bbfba62",
+  "report_type": "campaign",
+  "rules": "v3",
+  "split": "dev",
+  "target_sectors": [],
+  "victim_countries": [
+    "VN"
+  ],
+  "victim_regions": []
+}

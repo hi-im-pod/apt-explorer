@@ -1,0 +1,23 @@
+{
+  "decided_at": "2026-10-07T05:16:00.463Z",
+  "individuals_targeted": false,
+  "initial_access": [],
+  "n": 12,
+  "note": "",
+  "report_id": "38fa23b9506b2f598d4d5564e61d0e51a5d58a38",
+  "report_type": "news",
+  "rules": "v3",
+  "split": "test",
+  "target_sectors": [
+    "education",
+    "energy",
+    "transportation"
+  ],
+  "victim_countries": [
+    "GB",
+    "IL",
+    "KR",
+    "PK"
+  ],
+  "victim_regions": []
+}

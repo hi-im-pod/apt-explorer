@@ -1,0 +1,20 @@
+{
+  "decided_at": "2026-10-08T06:47:14.665Z",
+  "individuals_targeted": false,
+  "initial_access": [
+    "T1566.001"
+  ],
+  "n": 59,
+  "note": "",
+  "report_id": "79e53e7eb70a53b090b71972594fee41eeb40523",
+  "report_type": "malware-analysis",
+  "rules": "v3",
+  "split": "dev",
+  "target_sectors": [
+    "government-national"
+  ],
+  "victim_countries": [
+    "JO"
+  ],
+  "victim_regions": []
+}

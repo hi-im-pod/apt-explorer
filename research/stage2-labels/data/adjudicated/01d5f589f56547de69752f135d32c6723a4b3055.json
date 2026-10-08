@@ -1,0 +1,33 @@
+{
+  "decided_at": "2026-10-08T06:28:06.064Z",
+  "individuals_targeted": false,
+  "initial_access": [
+    "T1133",
+    "T1190",
+    "T1199",
+    "T1566.001",
+    "T1566.002"
+  ],
+  "n": 48,
+  "note": "This one is hard to judge for inital access all all methods are viable ways depending on the target, since this is more of a malware analysis campaign style paper really it only talks about running the installer once its on a system. I would not value this highly for initial access.",
+  "report_id": "01d5f589f56547de69752f135d32c6723a4b3055",
+  "report_type": "campaign",
+  "rules": "v3",
+  "split": "test",
+  "target_sectors": [
+    "energy",
+    "entertainment",
+    "financial-services",
+    "government",
+    "government-national",
+    "telecommunications"
+  ],
+  "victim_countries": [
+    "PH"
+  ],
+  "victim_regions": [
+    "Asia",
+    "Middle East",
+    "South-eastern Asia"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "decided_at": "2026-10-07T07:23:43.431Z",
+  "individuals_targeted": false,
+  "initial_access": [
+    "T1566.001"
+  ],
+  "n": 26,
+  "note": "The article talks about how the group normally worked in russia but have been expanding to eastern europe and central asia.",
+  "report_id": "93a54e05256a696ca20d04ad96cac47ff217fe46",
+  "report_type": "campaign",
+  "rules": "v3",
+  "split": "test",
+  "target_sectors": [
+    "financial-services",
+    "government",
+    "government-national"
+  ],
+  "victim_countries": [
+    "RU",
+    "UA"
+  ],
+  "victim_regions": [
+    "Central Asia",
+    "Eastern Europe"
+  ]
+}

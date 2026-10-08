@@ -1,0 +1,23 @@
+{
+  "decided_at": "2026-10-07T03:40:12.797Z",
+  "individuals_targeted": false,
+  "initial_access": [
+    "T1091",
+    "T1566.001"
+  ],
+  "n": 5,
+  "note": "The report mentions south korea and japan being targeted moving it more towards a campaign. The method involves both a removable media device and tricking the user into running a program off the removable media, it disguises itslef like a legitimate program.",
+  "report_id": "dd16552805b96e7cafc27d7edcd05e15014e4091",
+  "report_type": "campaign",
+  "rules": "v3",
+  "split": "dev",
+  "target_sectors": [
+    "defense",
+    "government-national"
+  ],
+  "victim_countries": [
+    "JP",
+    "KR"
+  ],
+  "victim_regions": []
+}

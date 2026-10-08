@@ -1,0 +1,31 @@
+{
+  "decided_at": "2026-10-07T06:48:31.282Z",
+  "individuals_targeted": false,
+  "initial_access": [
+    "T1566",
+    "T1566.001"
+  ],
+  "n": 22,
+  "note": "",
+  "report_id": "82255ad9b0682b0a091f92d129c0aefd5b7d96cd",
+  "report_type": "campaign",
+  "rules": "v3",
+  "split": "test",
+  "target_sectors": [
+    "communications",
+    "defense",
+    "financial-services",
+    "government",
+    "government-national"
+  ],
+  "victim_countries": [
+    "AE",
+    "CA",
+    "EE",
+    "GE",
+    "NG",
+    "UA",
+    "US"
+  ],
+  "victim_regions": []
+}

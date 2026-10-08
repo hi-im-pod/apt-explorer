@@ -1,0 +1,18 @@
+{
+  "decided_at": "2026-10-07T08:04:31.398Z",
+  "individuals_targeted": false,
+  "initial_access": [],
+  "n": 43,
+  "note": "Bangladesh banks were targeted. Initial access was not produced.",
+  "report_id": "0387df8bdfbe771ec7ee80715c58afac76266a0e",
+  "report_type": "malware-analysis",
+  "rules": "v3",
+  "split": "dev",
+  "target_sectors": [
+    "financial-services"
+  ],
+  "victim_countries": [
+    "BD"
+  ],
+  "victim_regions": []
+}

@@ -1,0 +1,18 @@
+{
+  "decided_at": "2026-10-07T05:44:36.532Z",
+  "individuals_targeted": false,
+  "initial_access": [
+    "T1566.001"
+  ],
+  "n": 17,
+  "note": "This is more of an investigation than a campaign and mostly just talks about the malware, hard to say this a worthwhile report for an actor.",
+  "report_id": "84838de308f10054250e737881e8882ed3115a9e",
+  "report_type": "malware-analysis",
+  "rules": "v3",
+  "split": "dev",
+  "target_sectors": [],
+  "victim_countries": [
+    "AF"
+  ],
+  "victim_regions": []
+}

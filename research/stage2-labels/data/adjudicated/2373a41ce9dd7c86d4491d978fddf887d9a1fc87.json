@@ -1,0 +1,22 @@
+{
+  "decided_at": "2026-10-07T07:14:41.544Z",
+  "individuals_targeted": false,
+  "initial_access": [
+    "T1566.001"
+  ],
+  "n": 25,
+  "note": "",
+  "report_id": "2373a41ce9dd7c86d4491d978fddf887d9a1fc87",
+  "report_type": "malware-analysis",
+  "rules": "v3",
+  "split": "dev",
+  "target_sectors": [
+    "communications",
+    "energy",
+    "telecommunications"
+  ],
+  "victim_countries": [
+    "KZ"
+  ],
+  "victim_regions": []
+}

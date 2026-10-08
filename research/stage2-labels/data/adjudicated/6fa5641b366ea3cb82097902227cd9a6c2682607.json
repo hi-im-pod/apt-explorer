@@ -1,0 +1,21 @@
+{
+  "decided_at": "2026-10-07T04:15:49.550Z",
+  "individuals_targeted": false,
+  "initial_access": [
+    "T1566.002",
+    "T1566.003"
+  ],
+  "n": 8,
+  "note": "",
+  "report_id": "6fa5641b366ea3cb82097902227cd9a6c2682607",
+  "report_type": "campaign",
+  "rules": "v3",
+  "split": "test",
+  "target_sectors": [
+    "defense"
+  ],
+  "victim_countries": [
+    "US"
+  ],
+  "victim_regions": []
+}

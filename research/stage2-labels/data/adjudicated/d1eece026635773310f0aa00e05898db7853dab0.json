@@ -1,0 +1,18 @@
+{
+  "decided_at": "2026-10-08T06:17:33.364Z",
+  "individuals_targeted": false,
+  "initial_access": [
+    "T1566.001"
+  ],
+  "n": 46,
+  "note": "Give points for both campaign and malware analysis under our rules, this is mainly a malware analysis but mentions what the threat actor is and what region they are targeting.",
+  "report_id": "d1eece026635773310f0aa00e05898db7853dab0",
+  "report_type": "malware-analysis",
+  "rules": "v3",
+  "split": "test",
+  "target_sectors": [],
+  "victim_countries": [],
+  "victim_regions": [
+    "Middle East"
+  ]
+}

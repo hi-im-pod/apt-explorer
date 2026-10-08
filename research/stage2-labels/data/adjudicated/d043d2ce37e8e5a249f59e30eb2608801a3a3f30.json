@@ -1,0 +1,19 @@
+{
+  "decided_at": "2026-10-07T07:51:56.186Z",
+  "individuals_targeted": false,
+  "initial_access": [],
+  "n": 36,
+  "note": "Mixture of malware analysis and news",
+  "report_id": "d043d2ce37e8e5a249f59e30eb2608801a3a3f30",
+  "report_type": "malware-analysis",
+  "rules": "v3",
+  "split": "test",
+  "target_sectors": [
+    "energy",
+    "nuclear"
+  ],
+  "victim_countries": [
+    "IN"
+  ],
+  "victim_regions": []
+}

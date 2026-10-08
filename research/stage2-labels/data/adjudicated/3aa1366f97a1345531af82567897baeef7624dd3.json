@@ -1,0 +1,18 @@
+{
+  "decided_at": "2026-10-07T05:23:01.015Z",
+  "individuals_targeted": false,
+  "initial_access": [
+    "T1566"
+  ],
+  "n": 15,
+  "note": "This is mostly a malware analysis with an assumption based on the crafted emails that India is a target, other targets or regions could exist but not specified.",
+  "report_id": "3aa1366f97a1345531af82567897baeef7624dd3",
+  "report_type": "malware-analysis",
+  "rules": "v3",
+  "split": "dev",
+  "target_sectors": [],
+  "victim_countries": [
+    "IN"
+  ],
+  "victim_regions": []
+}

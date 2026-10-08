@@ -1,0 +1,28 @@
+{
+  "decided_at": "2026-10-07T04:22:39.460Z",
+  "individuals_targeted": false,
+  "initial_access": [
+    "T1190",
+    "T1195"
+  ],
+  "n": 9,
+  "note": "Some of the other inital access methods may be used however in this advisory only 1190 and 1195 were stated. There was a rider that said that the attack vectors and avenues change often, so this data is less important than the general advisory data and accompanied cves.",
+  "report_id": "61a5eb27ef3e633be66583c127de39fe19be7fb8",
+  "report_type": "advisory",
+  "rules": "v3",
+  "split": "dev",
+  "target_sectors": [
+    "communications",
+    "defense",
+    "energy",
+    "government",
+    "government-national",
+    "healthcare",
+    "technology",
+    "telecommunications"
+  ],
+  "victim_countries": [
+    "US"
+  ],
+  "victim_regions": []
+}

@@ -4,7 +4,7 @@ Status: working paper, 2026-10-07. Results in Section 7.6 and the recommendation
 
 ## Abstract
 
-APT Explorer links threat intelligence reports to the actors they describe, but it cannot yet say who a report's victims were or how the attackers got in. We study whether a language model running on one consumer GPU can extract four facts per report: victim countries (or regions), target sectors, whether private individuals were targeted, and the initial-access technique. We first measured a hosted model (Claude Haiku 4.5) against the per-report labels released with the CCS '25 APT dataset [1] and found that model F1 stalls between 0.65 and 0.74 for every prompt we tried. Two prompts agreed with each other at about the same level as each agreed with the labels, which shows that the reference labels, not the model, set the ceiling. We therefore replaced the paper's three ad hoc label lists with published standards (MITRE ATT&CK Initial Access [2], the STIX 2.1 industry-sector vocabulary [3] and UN M49 regions [4]) and written rules. Against the paper's labels mapped onto the new scheme, the hosted model rose to 0.82 (countries), 0.73 (sectors) and 0.84 (initial access), and a local mixture-of-experts model reached 0.80, 0.63 and 0.83. On a 60-report test set labelled independently by two local models and by Claude, the local models agreed with each other far more than with Claude; the gap traced to rules the models did not follow (expanding regions into countries, listing attacker countries) and to rule choices that the project owner then settled. We report the label system, the test harness, every run, and the threats to validity, including what we got wrong along the way.
+APT Explorer links threat intelligence reports to the actors they describe, but it cannot yet say who a report's victims were or how the attackers got in. We study whether a language model running on one consumer GPU can extract four facts per report: victim countries (or regions), target sectors, whether private individuals were targeted, and the initial-access technique. We first measured a hosted model (Claude Haiku 4.5) against the per-report labels released with the CCS '25 APT dataset [1] and found that model F1 stalls between 0.65 and 0.74 for every prompt we tried. Two prompts agreed with each other at about the same level as each agreed with the labels, which shows that the reference labels, not the model, set the ceiling. We therefore replaced the paper's three ad hoc label lists with published standards (MITRE ATT&CK Initial Access [2], the STIX 2.1 industry-sector vocabulary [3] and UN M49 regions [4]) and written rules. Against the paper's labels mapped onto the new scheme, the hosted model rose to 0.82 (countries), 0.73 (sectors) and 0.84 (initial access), and a local mixture-of-experts model reached 0.80, 0.63 and 0.83. On a 60-report test set labelled independently by two local models and by Claude, the local models agreed with each other far more than with Claude; the gap traced to rules the models did not follow (expanding regions into countries, listing attacker countries) and to rule choices that the project owner then settled. After the owner adjudicated all 60 reports, the local 12B model scored highest on every field (location F1 0.92, sectors 0.92, initial access 0.91 against the adjudicated labels), above Claude and above the paper's released labels. The review page proposed the models' majority answer, so these figures are an upper bound. We report the label system, the test harness, every run, and the threats to validity, including what we got wrong along the way.
 
 ## 1. Introduction
 
@@ -183,7 +183,7 @@ Findings on the development half:
 | qwen3.5:35b, v3 + grounding | 0.46 | 0.26 | 0.43 | 0.54 | **0.84** | **0.80** | 0.97 | 0.650 | 12.1 |
 | qwen3.5:35b, v3 | 0.36 | 0.26 | 0.35 | 0.54 | 0.84 | 0.80 | 0.97 | 0.631 | 12.1 |
 
-On the held-out half, Gemma with grounding leads on location, regions and sectors, qwen on initial access and report type, and Gemma is 2.5 times faster. The composite gap (0.019) is within the noise of 30 reports (Section 8, item 11), so the case for Gemma rests on speed and on matching qwen elsewhere, not on a clear accuracy lead. Country F1 near 0.47 against Claude remains the weakest result, and adjudication (Section 10) will show how much of that is the reference rather than the model.
+On the held-out half, Gemma with grounding leads on location, regions and sectors, qwen on initial access and report type, and Gemma is 2.5 times faster. The composite gap (0.019) is within the noise of 30 reports (Section 8, item 11), so the case for Gemma rests on speed and on matching qwen elsewhere, not on a clear accuracy lead. Country F1 near 0.47 against Claude remains the weakest result. Adjudication (Section 7.9) shows that most of it was the reference rather than the model.
 
 ### 7.7 Reproducibility and a Modelfile anomaly
 
@@ -209,6 +209,24 @@ On the held-out half alone (30 reports) the order is the same: the paper's label
 
 **Reading this.** Under our rules, a local 12B model on a consumer GPU matches or exceeds the paper's GPT-4-Turbo output on all three fields. The comparison favours our models in one respect that matters: they were prompted with the rules the reference follows, and GPT-4-Turbo was not. What it shows is that our pipeline follows our stricter definition better than theirs does, not that it is more accurate than GPT-4-Turbo in general. The paper's labels have low country recall (0.59) as well as low precision (0.34): they miss victim countries the reference records, often ones implied by specific evidence, and list others that are not victims. Every system, ours included, still lists more countries than the reference (2.0 to 2.8 a report against 0.95), which is the main remaining error.
 
+### 7.9 The adjudicated reference (60 reports)
+
+**Procedure.** The project owner adjudicated all 60 test-set reports on 7 and 8 October 2026 under the v3 rules, with the two rules agreed during adjudication: a report that describes who was targeted is a campaign even when most of it analyses malware (v3.1), and a malicious document that reached victims by an unstated channel is T1566.001 (v3.2). For each report, a review page linked the original and ORKL's archived copy and showed each labeller's choice for every field (`review/`). It proposed, as the starting value of each field, the values that at least two of the three labellers chose. The owner read the report and changed at least one field on 31 of the 60 reports. The decisions are in `data/adjudicated/`, and `code/score_adjudicated.py` scores against them.
+
+| Labeller (60 reports, adjudicated reference) | Countries F1 | Location F1 | Sectors F1 (parent) | Initial access F1 (parent) | Report type accuracy |
+|---|---|---|---|---|---|
+| Claude (v3) | 0.58 | 0.62 | 0.71 | 0.79 | 0.85 |
+| gemma4:12b, v3 + grounding | 0.94 | 0.92 | 0.92 | 0.91 | 0.88 |
+| qwen3.5:35b, v3 | 0.71 | 0.66 | 0.73 | 0.75 | 0.67 |
+
+On the held-out half alone (30 reports), the composite of Section 6.4 is 0.924 for Gemma, 0.765 for qwen and 0.742 for Claude. On the development half it is 0.872, 0.649 and 0.783.
+
+Mapped up to the paper's categories, against the same reference, the CCS '25 released labels score 0.71 (countries), 0.66 (sectors) and 0.75 (vectors). Gemma scores 0.94, 0.93 and 0.91, qwen 0.71, 0.73 and 0.81, and Claude 0.58, 0.75 and 0.83.
+
+**Reading this.** Gemma with grounding is the most accurate labeller on every field, which confirms the choice in Section 9. Claude's reference was weakest on location. It read a truncated, prose-only rendering of each report (Section 8, item 7) and missed victim countries that the full report gives in a table or chart. On one survey report, the owner added 30 countries from a table, probably in a part of the report that Claude's truncated rendering left out. Most of the country gap in Sections 7.5 and 7.6 was therefore the reference's error, not the models'.
+
+**The main threat: the proposal anchored the decisions.** The review page started each field from the models' majority. Gemma and qwen agree with each other far more than either agrees with Claude (Section 7.5), so the majority was usually Gemma's answer. The owner kept the proposed value unchanged for 50 of 60 country lists, 40 of 60 sector lists, 45 of 60 initial-access lists and 53 of 60 report types. These scores therefore measure agreement with a human-corrected majority, not with labels made blind. Gemma's lead over Claude and over the paper's labels is probably overstated. Its lead over qwen is less affected, because qwen's answers entered the same majorities. Two further limits apply: one annotator made every decision, so no inter-annotator agreement can be reported, and micro-averaged country F1 is dominated by the few reports that list many countries.
+
 ## 8. What Went Wrong, and What We Missed
 
 We list every problem found during the study, including our own mistakes, because each one changes how the numbers should be read.
@@ -220,7 +238,7 @@ We list every problem found during the study, including our own mistakes, becaus
 5. **Unconstrained arrays ran away.** Free-text country strings ran until the output limit, producing broken JSON; a `num_predict` cap and enumerations fixed it.
 6. **Off-vocabulary labels from the hosted model.** Forced tool calls did not enforce enumerations; Haiku returned 58 sector labels outside the list on 200 reports. Dropping them raised its sector F1 from 0.65 to 0.70, so Section 7.1 understates it.
 7. **Inconsistent text length.** Haiku saw 60,000 characters, local models 40,000, and Claude a prose-only rendering of 14,000 to 24,000 characters. Long reports may name victims late; this favours Haiku in Section 7.2 and penalises Claude's reference.
-8. **The reference is one AI labeller.** The test-set reference is Claude's labels, not a human's. Claude also drafted the guidelines, so the reference may share the guidelines' blind spots. Agreement with Claude is not accuracy.
+8. **The reference is one AI labeller.** The test-set reference is Claude's labels, not a human's. Claude also drafted the guidelines, so the reference may share the guidelines' blind spots. Agreement with Claude is not accuracy. Adjudication (Section 7.9) confirmed the concern: Claude's country labels were the weakest of the three labellers.
 9. **Hardware detection in llmfit.** llmfit ran on a different PC (GTX 1660 Super) with memory overridden, so its speed estimates use the wrong memory bandwidth.
 10. **Leakage into the development of v3.** The v3 rules were written after reading all 60 test-set reports and the models' v1 outputs on them. Scores on the test half therefore measure rule-following on reports that shaped the rules. A fresh test set is needed for a clean estimate (Section 10).
 11. **Small samples.** With 30 reports per half, scores swing between halves: qwen3.5 scored countries 0.79 on the development half and 0.44 over all 60. Differences under about 0.1 F1 are within noise.
@@ -231,6 +249,7 @@ We list every problem found during the study, including our own mistakes, becaus
 16. **Data cost.** Model downloads (about 60 GB in total) used a large share of the host's mobile data cap. We did not test `qwen3.6:35b` (22.6 GB) for that reason.
 17. **Period and language.** All test reports are from 2014 to 2023 and almost all in English. Accuracy on 2024 to 2026 reports, and on Korean, Chinese or Russian reports, is unmeasured.
 18. **The paper's labels were never released with their guidelines.** Our mapping (Section 4) is our interpretation, so Section 7.4 compares schemes, not just models.
+19. **The adjudication was not blind.** The review page proposed the models' majority answer for each field, and the owner kept it unchanged on most fields (Section 7.9). We should have shown the labellers' answers only after a first, blind pass. The scores in Section 7.9 are an upper bound for Gemma.
 
 ## 9. Recommendation and Deployment
 
@@ -255,7 +274,7 @@ We list every problem found during the study, including our own mistakes, becaus
 
 ## 10. Limitations and Next Steps
 
-- **Adjudication.** The project owner adjudicates the test-set disagreements; scores are then recomputed against the adjudicated reference.
+- **A blind second annotation.** Done once, the adjudication still anchored on the models' majority (Section 7.9). A second annotator should label a sample of about 24 reports with no labeller answers shown, so that agreement (Cohen's kappa) can be reported and the anchoring measured.
 - **A fresh, untouched test set.** About 60 reports from 2024 to 2026, labelled under v3 before any further tuning, to remove the leakage in Section 8, item 10.
 - **The Modelfile anomaly.** Find out why a derived model diverges from its base (Section 7.7), for example by testing without the draft model.
 - **Related work.** Survey language-model CTI extraction and position this study against it.
@@ -269,6 +288,7 @@ From the repository root, with `OLLAMA_HOST` pointing at an Ollama server that h
 python research/stage2-labels/code/harness.py run --model gemma4:12b --prompt v3 --variant ground --split all --out run.json
 python research/stage2-labels/code/harness.py score --pred run.json --ref research/stage2-labels/data/runs/testset_claude_v3.json --split test
 python research/stage2-labels/code/rescore_all.py
+python research/stage2-labels/code/score_adjudicated.py research/stage2-labels/data/adjudicated
 ```
 
 Prompts: `prompts/std-v1.txt` (Section 7.4), `prompts/v3.txt` and `prompts/v4.txt` (Section 7.6), `prompts/v3.1.txt` (v3 plus the campaign tie-breaker agreed during adjudication) and `prompts/v3.2.txt` (v3.1 with an unstated-channel malicious document recorded as T1566.001); neither is measured yet; the spike prompts v1 and v2 are inline in `code/legacy/spike_mem.py` and `code/legacy/spike_v2.py`. `code/legacy/` holds the exact scripts used for the spikes, with local paths replaced by environment variables. `data/spike/` holds their outputs (labels only), `data/runs/` every test-set run with per-report timing and token counts, and `data/scores.json` every score.

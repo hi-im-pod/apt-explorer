@@ -1,0 +1,24 @@
+{
+  "decided_at": "2026-10-07T03:28:52.420Z",
+  "individuals_targeted": false,
+  "initial_access": [
+    "T1566.001"
+  ],
+  "n": 4,
+  "note": "",
+  "report_id": "ee0ebdcf2454d62dc23d604c472d3112a57274c6",
+  "report_type": "campaign",
+  "rules": "v3",
+  "split": "test",
+  "target_sectors": [
+    "education",
+    "financial-services",
+    "retail",
+    "technology",
+    "transportation"
+  ],
+  "victim_countries": [
+    "US"
+  ],
+  "victim_regions": []
+}

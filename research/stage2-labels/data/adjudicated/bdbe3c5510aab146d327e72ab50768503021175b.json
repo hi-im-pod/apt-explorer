@@ -1,0 +1,18 @@
+{
+  "decided_at": "2026-10-07T05:59:03.174Z",
+  "individuals_targeted": false,
+  "initial_access": [],
+  "n": 19,
+  "note": "Chemical sector is mentioned in the article but references a previous blog post from a few days before. There is no talk of initial access but instead talks about code injection.",
+  "report_id": "bdbe3c5510aab146d327e72ab50768503021175b",
+  "report_type": "campaign",
+  "rules": "v3",
+  "split": "dev",
+  "target_sectors": [
+    "defense"
+  ],
+  "victim_countries": [
+    "KR"
+  ],
+  "victim_regions": []
+}

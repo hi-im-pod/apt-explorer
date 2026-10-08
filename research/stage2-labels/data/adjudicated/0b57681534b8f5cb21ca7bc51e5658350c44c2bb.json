@@ -1,0 +1,21 @@
+{
+  "decided_at": "2026-10-07T06:11:01.902Z",
+  "individuals_targeted": false,
+  "initial_access": [
+    "T1190"
+  ],
+  "n": 20,
+  "note": "",
+  "report_id": "0b57681534b8f5cb21ca7bc51e5658350c44c2bb",
+  "report_type": "campaign",
+  "rules": "v3",
+  "split": "test",
+  "target_sectors": [
+    "education",
+    "technology"
+  ],
+  "victim_countries": [
+    "IL"
+  ],
+  "victim_regions": []
+}

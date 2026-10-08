@@ -1,0 +1,24 @@
+{
+  "decided_at": "2026-10-07T07:59:03.887Z",
+  "individuals_targeted": true,
+  "initial_access": [
+    "T1566",
+    "T1566.004"
+  ],
+  "n": 40,
+  "note": "malicious actors send emails to targets asking them to join an interview and then bait them into saying statements that paint them in a bad light.",
+  "report_id": "12f3a174311f611263f75c3b1d62f69b11c53560",
+  "report_type": "actor-profile",
+  "rules": "v3",
+  "split": "test",
+  "target_sectors": [
+    "government-national",
+    "non-profit",
+    "technology"
+  ],
+  "victim_countries": [],
+  "victim_regions": [
+    "Europe",
+    "Northern America"
+  ]
+}
