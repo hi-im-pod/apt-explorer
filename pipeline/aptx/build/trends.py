@@ -25,6 +25,10 @@ NEW_ACTOR_DAYS = 365
 # reports on 2026-04-06, the day of one bulk import, so counting them made that quarter look like a surge.
 # A Wayback capture is the same kind of evidence: a recent capture of an old page is not recent reporting.
 UNTRUSTED_DATE_BASES = frozenset({"orkl-ingest", "wayback-capture"})
+# A report linked to this many actors says little about any one of them. Most are posts about a tool many
+# actors share, which Malpedia links to every actor that uses it, and a few are yearly roundups. In the
+# 2026-10 build, 51 such reports carried 1,051 of the 2,377 actor links in the trend window.
+MAX_ACTORS_PER_REPORT = 15
 
 _GENERATED_AT = re.compile(r"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z")
 
@@ -51,8 +55,10 @@ def notes(window_start: str) -> dict[str, str]:
     return {
         "reporting_activity": (
             "Reports per quarter that are linked to at least one resolved actor, from the report sources "
-            "only. Dated reports only: a report dated only by when ORKL added it or when the Wayback Machine saved "
-            "it is left out, because that is not when it was published. Each quarter is compared with the same quarter a year earlier."),
+            "only. Dated reports only: a report dated only by when ORKL added it or when the Wayback Machine "
+            "saved it is left out, because that is not when it was published. A report linked to "
+            f"{MAX_ACTORS_PER_REPORT} or more actors is left out too, because it says little about any one of "
+            "them. Each quarter is compared with the same quarter a year earlier."),
         "new_actors": (
             f"Actors whose earliest date in any published source falls within {NEW_ACTOR_DAYS} days of this "
             f"build. A source that gives only a year counts only when that whole year falls inside the period."),
@@ -60,10 +66,12 @@ def notes(window_start: str) -> dict[str, str]:
             "CVEs CISA added to the KEV catalog each month, and how many KEV marks as known ransomware use."),
         "kev_actor_links": (
             f"KEV CVEs named in reports from {window_start} on that are also linked to a resolved actor. "
-            f"A shared report, not an attribution."),
+            f"A shared report, not an attribution. Reports linked to {MAX_ACTORS_PER_REPORT} or more actors "
+            f"are left out."),
         "reported_vs_documented": (
             f"Technique IDs found in an actor's reports from {window_start} on, compared with the techniques "
-            f"ATT&CK documents for that actor."),
+            f"ATT&CK documents for that actor. Reports linked to {MAX_ACTORS_PER_REPORT} or more actors are "
+            f"left out."),
         "source_health": (
             "Each source's newest good snapshot and record count. Stale means this build's fetch failed and "
             "the previous snapshot was used."),
@@ -123,7 +131,7 @@ def compute(reports: list[dict], *, documented: dict[str, list[str]], vulns: lis
     # nothing. An undated report has no quarter to belong to.
     dated = [(r, _day(r["published"])) for r in reports
              if r.get("published") and r.get("date_basis") not in UNTRUSTED_DATE_BASES]
-    dated = [(r, d) for r, d in dated if d <= today and r.get("actors")]
+    dated = [(r, d) for r, d in dated if d <= today and 0 < len(r.get("actors") or ()) < MAX_ACTORS_PER_REPORT]
     recent = [(r, d) for r, d in dated if d >= start]
 
     return {

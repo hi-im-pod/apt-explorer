@@ -274,3 +274,14 @@ def test_an_actor_seen_only_in_ingest_dated_reports_is_not_new():
 def test_a_report_dated_only_by_a_wayback_capture_is_left_out_of_trends():
     captured = R("2025-04-01", ["G0001"]) | {"date_basis": "wayback-capture"}
     assert run([captured])["reporting_activity"] == []
+
+
+def test_a_report_linked_to_too_many_actors_is_left_out_of_trends():
+    from aptx.build.trends import MAX_ACTORS_PER_REPORT
+    many = [f"G{n:04d}" for n in range(1, MAX_ACTORS_PER_REPORT + 1)]
+    fewer = many[:-1]
+    documented = {a: [] for a in many}
+    out = run([R("2025-04-01", many, ["T1105"], rid="a"), R("2025-04-02", fewer, ["T1105"], rid="b")], documented)
+    counted = {r["actor"] for r in out["reporting_activity"] if r["count"]}
+    assert counted == set(fewer)
+    assert {r["actor"] for r in out["reported_vs_documented"]} <= set(fewer)
