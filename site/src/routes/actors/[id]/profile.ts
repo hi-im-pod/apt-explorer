@@ -158,7 +158,9 @@ export function undatedCount(actor: Actor): number {
 export const DATE_BASIS_LABELS: Readonly<Record<DateBasis, string>> = {
 	'malpedia-library': 'Malpedia library date',
 	'title-date': 'date in the title',
+	'url-date': 'date in the address',
 	'file-metadata': 'file creation date',
+	'wayback-capture': 'date the Wayback Machine saved it',
 	'orkl-ingest': 'date ORKL added it',
 	publisher: "publisher's date",
 	paper: "date in the CCS '25 data",

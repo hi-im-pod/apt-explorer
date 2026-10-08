@@ -228,16 +228,29 @@
 		usable date wins.
 	</p>
 	<ol class="steps">
-		<li>The Malpedia library date recorded for the report's URL (<code>malpedia-library</code>).</li>
+		<li>
+			The Malpedia library date recorded for the report's URL (<code>malpedia-library</code>), unless the
+			URL itself carries a date at least a year later. Then the library has the year wrong and the URL's
+			date is used.
+		</li>
 		<li>
 			The date at the start of the report's title (<code>title-date</code>). Some collections file a
 			paper as "2014-11-14 - Title". The site uses that date when it is not later than the day ORKL
 			added the report, and it removes the date from the title it shows.
 		</li>
+		<li>
+			The date in the report's URL, as in <code>/2021/05/31/</code> (<code>url-date</code>). A date in an
+			upload or media folder is skipped, because that is when a file was uploaded.
+		</li>
 		<li>The file creation date stored in the report itself (<code>file-metadata</code>).</li>
 		<li>
+			The day the Wayback Machine saved the page, when the report is linked through it
+			(<code>wayback-capture</code>). The report existed by then, so the true date is no later.
+		</li>
+		<li>
 			The date ORKL added the report to its collection (<code>orkl-ingest</code>). This is when ORKL
-			saw the report, not when it was published, so it can be later than the true date.
+			saw the report, not when it was published, so it can be years later than the true date. The site
+			shows it, but leaves these reports out of trends, actor timelines and the list of new actors.
 		</li>
 	</ol>
 	<p>

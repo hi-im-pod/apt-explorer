@@ -75,7 +75,7 @@ from aptx.build import guesses, slugs, terms, trends
 from aptx.build.countries import country_name, iso2
 from aptx.build.notice import SOURCE_INFO, SOURCE_ORDER, render_notice, require_year, source_attribution
 from aptx.build.report_index import build_reports_index
-from aptx.core.dates import parse_date
+from aptx.core.dates import URL_OVERRIDES_LIBRARY_DAYS, parse_date, url_date, wayback_date
 from aptx.core.models import ActorRecord, CampaignRecord, ReportRecord, SourceBundle, VulnRecord
 from aptx.core.urls import norm_url
 from aptx.resolve import title_terms, titles
@@ -125,7 +125,8 @@ MAX_UNRESOLVED_NAMES = 200
 _REPORT_PRIORITY = {"dfir": 0, "talos": 0, "eset": 0, "microsoftblog": 0, "orkl": 1, "paper": 2}
 
 # Which date wins when records of one report disagree, best evidence first.
-_BASIS_RANK = {"publisher": 0, "malpedia-library": 1, "paper": 2, "title-date": 3, "file-metadata": 4, "orkl-ingest": 5}
+_BASIS_RANK = {"publisher": 0, "malpedia-library": 1, "paper": 2, "title-date": 3, "url-date": 4, "file-metadata": 5,
+               "wayback-capture": 6, "orkl-ingest": 7}
 
 
 @dataclass(frozen=True)
@@ -236,8 +237,8 @@ def assemble(bundles, registry: Registry, policies: Mapping[str, str], link_stat
         {p.id: _display_name(p.members) for p in shown},
         {key for key, policy in policies.items() if policy in _SHOWS_FACTS}, reports)
     payload["trends.json"] = trends.compute(
-        [{"id": r.id, "published": r.published, "actors": r.actors, "techniques": r.techniques, "cves": r.cves}
-         for r in reports if r.trendable],
+        [{"id": r.id, "published": r.published, "date_basis": r.basis, "actors": r.actors,
+          "techniques": r.techniques, "cves": r.cves} for r in reports if r.trendable],
         documented={a: doc["techniques_documented"] for a, doc in actor_docs.items()},
         vulns=vulns, first_seen_claims=dict(claims), source_health=health, generated_at=generated_at)
     payload["build.json"] = {
@@ -434,8 +435,10 @@ def _actor(p: _Published, reports: list["_Report"], kev: dict[str, dict], valid_
 
     mine = [r for r in reports if p.id in r.actors]
     mine.sort(key=lambda r: (r.published is None, _negated(r.published or ""), r.id))
-    quarters = Counter(_quarter(r.published) for r in mine if r.published)
-    reported = Counter(t for r in mine if r.trendable and r.published and r.published >= window_start
+    # A date that is only when ORKL added the report says nothing about when it appeared, so it
+    # does not place the report on the timeline or in the recent window (see trends.UNTRUSTED_DATE_BASES).
+    quarters = Counter(_quarter(r.published) for r in mine if r.trend_date)
+    reported = Counter(t for r in mine if r.trendable and r.trend_date and r.trend_date >= window_start
                        for t in r.techniques)
     cves = sorted({c for r in mine for c in r.cves})
 
@@ -464,7 +467,8 @@ def _actor(p: _Published, reports: list["_Report"], kev: dict[str, dict], valid_
     # True when a vendor's cluster ID in a title is all there is: no source lists the actor and no post
     # has tied the ID to a name.
     doc["cluster_only"] = all(m.source_id.startswith(CLUSTER_ONLY_PREFIX) for m in members)
-    dates = [r.published for r in mine if r.published]
+    # An ingest date says when ORKL saw a report, not when it appeared, so it cannot be "last reported".
+    dates = [r.trend_date for r in mine if r.trend_date]
     entry = {
         "id": p.id,
         "name": name,
@@ -517,6 +521,11 @@ class _Report:
     sources: list[str]
     # True when the title came from a source whose titles may be read (see TITLE_MATCH_SOURCES).
     title_readable: bool = False
+
+    @property
+    def trend_date(self) -> str | None:
+        """The date when it says when the report appeared, else None (see trends.UNTRUSTED_DATE_BASES)."""
+        return None if self.basis in trends.UNTRUSTED_DATE_BASES else self.published
 
     @property
     def trendable(self) -> bool:
@@ -697,9 +706,19 @@ def _date(group: list[ReportRecord], today: str) -> tuple[str | None, str]:
         # quarter that have not happened. Undated is the honest label.
         if day and r.date_basis in _BASIS_RANK and day <= today:
             candidates.append((_BASIS_RANK[r.date_basis], day, r.date_basis))
+    # Any source's copy of the address can date the report, whichever source supplied it.
+    for r in group:
+        for basis, day in (("url-date", url_date(r.url)), ("wayback-capture", wayback_date(r.url))):
+            if day and day <= today:
+                candidates.append((_BASIS_RANK[basis], day, basis))
     if not candidates:
         return None, "unknown"
-    _, day, basis = min(candidates)
+    rank, day, basis = min(candidates)
+    in_url = min((d for _, d, b in candidates if b == "url-date"), default=None)
+    if basis == "malpedia-library" and in_url and (
+            datetime.fromisoformat(in_url) - datetime.fromisoformat(day)).days >= URL_OVERRIDES_LIBRARY_DAYS:
+        # The library has the year wrong: the report's own address says it appeared much later.
+        return in_url, "url-date"
     return day, basis
 
 

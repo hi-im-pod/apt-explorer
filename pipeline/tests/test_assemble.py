@@ -1061,3 +1061,34 @@ def test_a_registry_resolved_with_the_wrong_visible_sources_is_refused():
     registry = resolve(list(misp.actors), [])
     with pytest.raises(ValueError, match="visible sources"):
         assemble([misp], registry, {**POLICIES, "misp": "evidence-only"}, generated_at=NOW, facts=FACTS)
+
+
+# Report dates: the address and the ingest fallback
+
+def test_a_report_dated_only_by_ingest_is_shown_but_stays_out_of_the_timeline():
+    payload = _linked(R("orkl", "1", "Ingested", "https://ex.org/i", "2025-05-01", basis="orkl-ingest"))
+    row = report_by_title(payload, "Ingested")
+    assert (row["published"], row["date_basis"]) == ("2025-05-01", "orkl-ingest")
+    assert payload["actors/G0007.json"]["timeline"] == []
+    assert payload["trends.json"]["reporting_activity"] == []
+
+
+def test_the_address_of_any_copy_can_date_a_report():
+    orkl = R("orkl", "1", "Addressed", "https://ex.org/2024/03/05/post", "2025-05-01", basis="orkl-ingest")
+    payload = _linked(orkl)
+    row = report_by_title(payload, "Addressed")
+    assert (row["published"], row["date_basis"]) == ("2024-03-05", "url-date")
+    assert payload["actors/G0007.json"]["timeline"] == [{"quarter": "2024-Q1", "count": 1}]
+
+
+def test_a_library_date_a_year_before_the_address_gives_way_to_the_address():
+    orkl = R("orkl", "1", "Wrong year", "https://ex.org/2024/03/05/post", "2023-03-05")
+    row = report_by_title(_linked(orkl), "Wrong year")
+    assert (row["published"], row["date_basis"]) == ("2024-03-05", "url-date")
+
+
+def test_last_reported_ignores_ingest_dates():
+    payload = _linked(R("orkl", "1", "Ingested", "https://ex.org/i", "2026-04-06", basis="orkl-ingest"),
+                      R("orkl", "2", "Dated", "https://ex.org/d", "2025-01-02"))
+    entry = next(e for e in payload["actors/index.json"] if e["id"] == "G0007")
+    assert entry["last_reported"] == "2025-01-02"

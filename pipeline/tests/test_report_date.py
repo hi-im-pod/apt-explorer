@@ -72,3 +72,63 @@ def test_a_title_date_after_ingest_is_not_trusted():
 def test_a_doubled_prefix_is_removed_in_full():
     # Four 2017 and 2021 papers are filed as "DATE - DATE - Title".
     assert split_title_date("2017-06-12 - 2017-06-12 - LOKI BOT MALSPAM") == ("LOKI BOT MALSPAM", "2017-06-12")
+
+
+# A blog post's address often carries its date. Upload folders do not, because a file can be
+# uploaded long after the report it belongs to.
+
+def test_a_blog_style_address_gives_its_date():
+    from aptx.core.dates import url_date
+    assert url_date("https://blog.example.com/2021/05/31/apt-thing/") == "2021-05-31"
+    assert url_date("https://example.com/research/2019/11/slug") == "2019-11-01"
+    assert url_date("https://example.com/2019/11") == "2019-11-01"
+
+
+def test_an_address_without_a_real_date_gives_none():
+    from aptx.core.dates import url_date
+    for url in (None, "", "https://example.com/a/b", "https://example.com/2019/13/slug",
+                "https://example.com/1985/01/slug", "https://example.com/v2019/05/x",
+                "https://example.com/report-2019-05.pdf"):
+        assert url_date(url) is None, url
+
+
+def test_an_upload_folder_date_is_not_a_publication_date():
+    from aptx.core.dates import url_date
+    assert url_date("https://example.com/wp-content/uploads/2022/03/report.pdf") is None
+    assert url_date("https://example.com/media/2022/03/report.pdf") is None
+
+
+def test_a_wayback_address_gives_its_capture_day_and_the_wrapped_address_its_own_date():
+    from aptx.core.dates import url_date, wayback_date
+    url = "https://web.archive.org/web/20160304120000/http://example.com/2015/07/02/slug/"
+    assert wayback_date(url) == "2016-03-04"
+    assert url_date(url) == "2015-07-02"
+    assert wayback_date("https://example.com/2015/07/02/slug/") is None
+    assert url_date("https://web.archive.org/web/20160304120000id_/http://example.com/a") is None
+
+
+def test_the_address_date_beats_file_metadata_but_not_the_title_date():
+    url = "https://example.com/2021/05/31/slug"
+    assert resolve_report_date([url], {}, "2022-01-01", "2023-01-01") == ("2021-05-31", "url-date")
+    assert resolve_report_date([url], {}, None, "2023-01-01", "2021-05-20") == ("2021-05-20", "title-date")
+
+
+def test_an_address_date_after_ingest_is_not_trusted():
+    url = "https://example.com/2024/05/31/slug"
+    assert resolve_report_date([url], {}, None, "2023-01-01") == ("2023-01-01", "orkl-ingest")
+
+
+def test_a_library_date_a_year_or_more_before_the_address_date_is_a_wrong_year():
+    url = "https://example.com/2021/05/31/slug"
+    assert resolve_report_date([url], {"example.com/2021/05/31/slug": "2020-05-31"}, None, None) == (
+        "2021-05-31", "url-date")
+    # Inside a year the library is trusted: a copy can appear a little before the post's own date.
+    assert resolve_report_date([url], {"example.com/2021/05/31/slug": "2020-06-01"}, None, None) == (
+        "2020-06-01", "malpedia-library")
+
+
+def test_a_wayback_capture_is_used_only_before_the_ingest_fallback():
+    url = "https://web.archive.org/web/20160304/http://example.com/a"
+    assert resolve_report_date([url], {}, "2015-01-01", "2023-01-01") == ("2015-01-01", "file-metadata")
+    assert resolve_report_date([url], {}, None, "2023-01-01") == ("2016-03-04", "wayback-capture")
+    assert resolve_report_date([url], {}, None, "2015-01-01") == ("2015-01-01", "orkl-ingest")

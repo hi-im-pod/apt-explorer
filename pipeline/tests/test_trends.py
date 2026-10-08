@@ -257,3 +257,15 @@ def test_generated_at_defaults_to_now_in_the_schema_form():
 def test_a_generated_at_that_is_not_a_utc_timestamp_is_refused(bad):
     with pytest.raises(ValueError, match="generated_at"):
         compute([], documented={}, vulns=[], first_seen_claims={}, source_health=[], generated_at=bad)
+
+
+def test_a_report_dated_only_by_ingest_is_left_out_of_trends():
+    ingest = R("2025-04-01", ["G0001"], rid="orkl:x") | {"date_basis": "orkl-ingest"}
+    known = R("2025-04-02", ["G0001"], rid="orkl:y") | {"date_basis": "url-date"}
+    out = run([ingest, known])
+    assert [(r["quarter"], r["count"]) for r in out["reporting_activity"] if r["count"]] == [("2025-Q2", 1)]
+
+
+def test_an_actor_seen_only_in_ingest_dated_reports_is_not_new():
+    ingest = R("2026-04-06", ["G0001"]) | {"date_basis": "orkl-ingest"}
+    assert run([ingest], claims={})["new_actors"] == []

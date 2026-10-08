@@ -21,6 +21,10 @@ WINDOW_MONTHS = 24
 # "New" means first seen within this many days of the build.
 NEW_ACTOR_DAYS = 365
 
+# Date bases that say when a source saw a report, not when it appeared. ORKL's ingest date put 5,083
+# reports on 2026-04-06, the day of one bulk import, so counting them made that quarter look like a surge.
+UNTRUSTED_DATE_BASES = frozenset({"orkl-ingest"})
+
 _GENERATED_AT = re.compile(r"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z")
 
 
@@ -46,7 +50,8 @@ def notes(window_start: str) -> dict[str, str]:
     return {
         "reporting_activity": (
             "Reports per quarter that are linked to at least one resolved actor, from the report sources "
-            "only. Dated reports only. Each quarter is compared with the same quarter a year earlier."),
+            "only. Dated reports only: a report dated only by when ORKL added it is left out, because that is "
+            "not when it was published. Each quarter is compared with the same quarter a year earlier."),
         "new_actors": (
             f"Actors whose earliest date in any published source falls within {NEW_ACTOR_DAYS} days of this "
             f"build. A source that gives only a year counts only when that whole year falls inside the period."),
@@ -88,7 +93,8 @@ def compute(reports: list[dict], *, documented: dict[str, list[str]], vulns: lis
     """Build the trends.json document.
 
     reports: the published reports as {"id", "published" (YYYY-MM-DD or None),
-        "actors" (actor ids), "techniques", "cves"}.
+        "date_basis", "actors" (actor ids), "techniques", "cves"}. A report whose basis is
+        in UNTRUSTED_DATE_BASES counts as undated here.
     documented: every published actor id mapped to the techniques ATT&CK
         documents for it, [] for an actor ATT&CK does not track. Its keys are the
         actors that have a file, and rows for any other actor are dropped so the
@@ -114,7 +120,8 @@ def compute(reports: list[dict], *, documented: dict[str, list[str]], vulns: lis
 
     # A report dated after the build is a bad date, not news, so it counts for
     # nothing. An undated report has no quarter to belong to.
-    dated = [(r, _day(r["published"])) for r in reports if r.get("published")]
+    dated = [(r, _day(r["published"])) for r in reports
+             if r.get("published") and r.get("date_basis") not in UNTRUSTED_DATE_BASES]
     dated = [(r, d) for r, d in dated if d <= today and r.get("actors")]
     recent = [(r, d) for r, d in dated if d >= start]
 
