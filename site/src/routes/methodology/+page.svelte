@@ -311,8 +311,9 @@
 		runs itself, such as securelist.com for Kaspersky. A copy, a file host or a blog platform names
 		nobody, so such a report has no publisher. ORKL gives a report's authors, which are sometimes
 		a vendor and sometimes a person's name or a stray word, so the site keeps that field only when it
-		names a known vendor. In the lab dataset, a vendor's blog named in the title, such as "The Naikon
-		APT - Securelist", decides the publisher before the dataset's own source column.
+		names a known vendor. A vendor's blog named in any copy's title, such as "The Naikon APT -
+		Securelist", decides the publisher before the lab dataset's source column or ORKL's authors, which
+		often name another vendor. Only a publisher's own feed, such as The DFIR Report's, outranks it.
 	</p>
 	<p>
 		Two records that share no address are taken as copies of one report when their titles match

@@ -1175,3 +1175,20 @@ def test_a_sites_name_used_as_a_title_is_replaced_by_one_from_the_address():
              for n, slug in enumerate(["threat-spotlight-sodinokibi", "petya-and-mischa", "a-new-loader", "12345"])]
     titles = sorted(r["title"] for r in all_report_rows(_linked(*pages)))
     assert titles == ["A new loader", "Petya and mischa", "Secure Communications Blog", "Threat spotlight sodinokibi"]
+
+
+def test_a_vendor_blog_named_in_any_copys_title_beats_both_copies_publisher_fields():
+    url = "https://ex.org/chessmaster"
+    orkl = B("orkl", reports=[R("orkl", "1", "ChessMaster Adds Updated Tools to Its Arsenal", url, "2018-03-29",
+                                organisation="ESET")])
+    paper = B("paper", reports=[R("paper", "c.pdf",
+                                  "ChessMaster Adds Updated Tools to Its Arsenal - TrendLabs Security Intelligence Blog",
+                                  url, "2018-03-29", organisation="ESET")])
+    rows = [r for r in all_report_rows(run(*WORLD(orkl=orkl, paper=paper))) if r["url"] == url]
+    assert [r["organisation"] for r in rows] == ["Trend Micro"]
+
+
+def test_a_publishers_own_feed_is_never_overridden_by_a_title():
+    dfir = B("dfir", reports=[R("dfir", "d1", "Notes on a Securelist post", "https://thedfirreport.com/x/",
+                                "2025-01-02", organisation="The DFIR Report")])
+    assert report_by_title(run(*WORLD(dfir=dfir)), "Notes on a Securelist post")["organisation"] == "The DFIR Report"

@@ -741,9 +741,7 @@ def _report(group: list[ReportRecord], policies, malpedia_links, group_links, re
     from_text = sorted(in_text - set(actors) - named)
     return _Report(
         id=report_id, title=title, published=published, basis=basis,
-        # A blank publisher is filled only from an original address on a site the publisher runs.
-        organisation=next((o for r in group if (o := _publisher(r))), None)
-        or (publisher_for_url(originals[0]) if originals else None),
+        organisation=_organisation(group, originals),
         url=url, url_ok=checked.get(norm_url(url)) if url else None, archive_url=archive,
         actors=sorted(set(actors) | named | in_text), actors_from_title=from_title, actors_from_text=from_text,
         unresolved=unresolved,
@@ -753,12 +751,27 @@ def _report(group: list[ReportRecord], policies, malpedia_links, group_links, re
         sources=sorted({r.source for r in group}, key=_ORD.get), title_readable=readable)
 
 
+# Sources that are one publisher's own feed, so the publisher they give is certain.
+FEED_SOURCES = frozenset({"dfir", "talos", "eset", "microsoftblog"})
+
+
+def _organisation(group: list[ReportRecord], originals: list[str]) -> str | None:
+    """The report's publisher: its own feed, then a vendor blog any copy's title names, then the copies' fields.
+
+    The lab dataset's Source column is often another vendor than the one whose blog the title names
+    ("The Naikon APT - Securelist" under FireEye), and ORKL's authors field repeats the same mistake for
+    the same papers, so a title that names a vendor's blog decides before either field. A blank publisher
+    is filled last, and only from an original address on a site the publisher runs.
+    """
+    feeds = [o for r in group if r.source in FEED_SOURCES and (o := canonical_publisher(r.organisation))]
+    named = [v for r in group if (v := publisher_in_title(r.title))]
+    given = [o for r in group if (o := _publisher(r))]
+    hosted = [publisher_for_url(originals[0])] if originals else []
+    return next((o for o in feeds + named + given + hosted if o), None)
+
+
 def _publisher(r: ReportRecord) -> str | None:
-    """The publisher one record gives, in its canonical spelling."""
-    if r.source == "paper":
-        # The lab dataset's Source column is often another vendor than the one whose blog the title
-        # names ("The Naikon APT - Securelist" under FireEye), so the title decides when it names one.
-        return publisher_in_title(r.title) or canonical_publisher(r.organisation)
+    """The publisher one record's own field gives, in its canonical spelling."""
     if r.source == "orkl":
         # ORKL's authors field also holds people's names and stray words, so only a known vendor is kept.
         return known_publisher(r.organisation)
