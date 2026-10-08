@@ -23,7 +23,8 @@ NEW_ACTOR_DAYS = 365
 
 # Date bases that say when a source saw a report, not when it appeared. ORKL's ingest date put 5,083
 # reports on 2026-04-06, the day of one bulk import, so counting them made that quarter look like a surge.
-UNTRUSTED_DATE_BASES = frozenset({"orkl-ingest"})
+# A Wayback capture is the same kind of evidence: a recent capture of an old page is not recent reporting.
+UNTRUSTED_DATE_BASES = frozenset({"orkl-ingest", "wayback-capture"})
 
 _GENERATED_AT = re.compile(r"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z")
 
@@ -50,8 +51,8 @@ def notes(window_start: str) -> dict[str, str]:
     return {
         "reporting_activity": (
             "Reports per quarter that are linked to at least one resolved actor, from the report sources "
-            "only. Dated reports only: a report dated only by when ORKL added it is left out, because that is "
-            "not when it was published. Each quarter is compared with the same quarter a year earlier."),
+            "only. Dated reports only: a report dated only by when ORKL added it or when the Wayback Machine saved "
+            "it is left out, because that is not when it was published. Each quarter is compared with the same quarter a year earlier."),
         "new_actors": (
             f"Actors whose earliest date in any published source falls within {NEW_ACTOR_DAYS} days of this "
             f"build. A source that gives only a year counts only when that whole year falls inside the period."),

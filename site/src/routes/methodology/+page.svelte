@@ -245,7 +245,8 @@
 		<li>The file creation date stored in the report itself (<code>file-metadata</code>).</li>
 		<li>
 			The day the Wayback Machine saved the page, when the report is linked through it
-			(<code>wayback-capture</code>). The report existed by then, so the true date is no later.
+			(<code>wayback-capture</code>). The report existed by then, so the true date is no later. Like the
+			next rule, this date is shown but left out of trends, actor timelines and the list of new actors.
 		</li>
 		<li>
 			The date ORKL added the report to its collection (<code>orkl-ingest</code>). This is when ORKL

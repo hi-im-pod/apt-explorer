@@ -269,3 +269,8 @@ def test_a_report_dated_only_by_ingest_is_left_out_of_trends():
 def test_an_actor_seen_only_in_ingest_dated_reports_is_not_new():
     ingest = R("2026-04-06", ["G0001"]) | {"date_basis": "orkl-ingest"}
     assert run([ingest], claims={})["new_actors"] == []
+
+
+def test_a_report_dated_only_by_a_wayback_capture_is_left_out_of_trends():
+    captured = R("2025-04-01", ["G0001"]) | {"date_basis": "wayback-capture"}
+    assert run([captured])["reporting_activity"] == []
