@@ -127,19 +127,22 @@ def compute(reports: list[dict], *, documented: dict[str, list[str]], vulns: lis
     start = _day(window_start)
     published = set(documented)
 
-    # A report dated after the build is a bad date, not news, so it counts for
-    # nothing. An undated report has no quarter to belong to.
     # Every dated, actor-linked report, trusted or not. It only ever rules an actor out of "new".
     any_date = [(r, d) for r in reports if r.get("published") and r.get("actors")
                 and (d := _day(r["published"])) <= today]
-    dated = [(r, _day(r["published"])) for r in reports
-             if r.get("published") and r.get("date_basis") not in UNTRUSTED_DATE_BASES]
-    dated = [(r, d) for r, d in dated if d <= today and 0 < len(r.get("actors") or ()) < MAX_ACTORS_PER_REPORT]
+    # A report dated after the build is a bad date, not news, so it counts for
+    # nothing. An undated report has no quarter to belong to.
+    trusted = [(r, _day(r["published"])) for r in reports
+               if r.get("published") and r.get("date_basis") not in UNTRUSTED_DATE_BASES]
+    trusted = [(r, d) for r, d in trusted if d <= today and r.get("actors")]
+    dated = [(r, d) for r, d in trusted if len(r["actors"]) < MAX_ACTORS_PER_REPORT]
     recent = [(r, d) for r, d in dated if d >= start]
+    many = sum(d >= start and len(r["actors"]) >= MAX_ACTORS_PER_REPORT for r, d in trusted)
 
     return {
         "window_start": window_start,
         "generated_at": generated_at,
+        "many_actor_reports": {"reports": many, "min_actors": MAX_ACTORS_PER_REPORT},
         "reporting_activity": _reporting_activity(dated, published, start, today),
         "new_actors": _new_actors(dated, published, first_seen_claims, today, any_date),
         "kev_monthly": _kev_monthly(vulns, start, today),

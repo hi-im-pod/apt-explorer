@@ -303,3 +303,11 @@ def test_an_old_report_with_too_many_actors_still_rules_an_actor_out_of_new():
 def test_a_recent_trusted_report_still_makes_an_actor_new():
     out = run([R("2026-06-01", ["G0001"]) | {"date_basis": "url-date"}])
     assert out["new_actors"] == [{"actor": "G0001", "first_seen": "2026-06-01", "basis": "report"}]
+
+
+def test_the_reports_left_out_for_too_many_actors_are_counted():
+    from aptx.build.trends import MAX_ACTORS_PER_REPORT
+    many = [f"G{n:04d}" for n in range(1, MAX_ACTORS_PER_REPORT + 1)]
+    out = run([R("2025-04-01", many, rid="a"), R("2023-04-01", many, rid="old"), R("2025-04-02", many[:2], rid="b")],
+              {a: [] for a in many})
+    assert out["many_actor_reports"] == {"reports": 1, "min_actors": MAX_ACTORS_PER_REPORT}

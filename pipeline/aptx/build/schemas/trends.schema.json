@@ -7,6 +7,7 @@
   "required": [
     "window_start",
     "generated_at",
+    "many_actor_reports",
     "reporting_activity",
     "new_actors",
     "kev_monthly",
@@ -22,6 +23,27 @@
     },
     "generated_at": {
       "$ref": "#/$defs/dateTime"
+    },
+    "many_actor_reports": {
+      "description": "Reports in the window left out of every per-actor count because they link to min_actors actors or more.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reports",
+        "min_actors"
+      ],
+      "properties": {
+        "reports": {
+          "description": "How many such reports the window holds.",
+          "type": "integer",
+          "minimum": 0
+        },
+        "min_actors": {
+          "description": "The number of linked actors from which a report is left out.",
+          "type": "integer",
+          "minimum": 1
+        }
+      }
     },
     "reporting_activity": {
       "description": "Reports per actor per quarter, with the year-earlier count.",

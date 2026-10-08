@@ -615,12 +615,22 @@ export interface TrendNotes {
 }
 
 /**
+ * Reports in the window left out of every per-actor count because they link to too many actors.
+ * @schema trends.schema.json#/properties/many_actor_reports
+ */
+export interface ManyActorReports {
+	reports: number;
+	min_actors: number;
+}
+
+/**
  * The whole of trends.json. Every series starts at window_start.
  * @schema trends.schema.json#
  */
 export interface Trends {
 	window_start: IsoDate;
 	generated_at: IsoDateTime;
+	many_actor_reports: ManyActorReports;
 	reporting_activity: ReportingActivityRow[];
 	new_actors: NewActor[];
 	kev_monthly: KevMonth[];

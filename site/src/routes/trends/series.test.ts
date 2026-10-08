@@ -15,6 +15,7 @@ function trends(over: Partial<Trends>): Trends {
 	return {
 		window_start: '2024-01-01',
 		generated_at: '2025-02-10T03:00:00Z',
+		many_actor_reports: { reports: 0, min_actors: 15 },
 		reporting_activity: [],
 		new_actors: [],
 		kev_monthly: [],

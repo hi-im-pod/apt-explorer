@@ -143,6 +143,13 @@
 		<p class="empty">No dated report in this window is linked to an actor yet.</p>
 		<p class="note">{t.notes.reporting_activity}</p>
 	{/if}
+	{#if t.many_actor_reports.reports > 0}
+		<p class="note left-out">
+			and {formatCount(t.many_actor_reports.reports)} more {t.many_actor_reports.reports === 1
+				? 'report'
+				: 'reports'} linked to {t.many_actor_reports.min_actors} or more actors, not counted here
+		</p>
+	{/if}
 </section>
 
 <section id="new-actors" aria-labelledby="h-new-actors">

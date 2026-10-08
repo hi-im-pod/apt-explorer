@@ -747,3 +747,19 @@ test('the explore page loads without console errors', async ({ page }) => {
 	await page.waitForLoadState('networkidle');
 	expect(errors).toEqual([]);
 });
+
+test('a report with many actors shows the first 15 and opens the rest on request', async ({ page }) => {
+	const r = reports.find(
+		(x) => x.actors.filter((a) => !x.actors_from_title.includes(a) && !x.actors_from_text.includes(a)).length > 15
+	);
+	test.skip(!r, 'no report in this build links more than 15 tagged actors');
+	const tagged = r!.actors.filter((a) => !r!.actors_from_title.includes(a) && !r!.actors_from_text.includes(a));
+	await open(page, `?report=${short(r!.id)}`);
+	const group = panel(page).locator('section[aria-labelledby="panel-actors"]');
+	await expect(group.locator('.chips li')).toHaveCount(15);
+	const more = group.getByRole('button', { name: `and ${tagged.length - 15} more actors` });
+	await expect(more).toBeVisible();
+	await more.click();
+	await expect(group.locator('.chips li')).toHaveCount(tagged.length);
+	await expect(more).toHaveCount(0);
+});

@@ -662,3 +662,14 @@ test('a tap shows a tooltip, stays after the finger lifts, and a tap elsewhere c
 	await expect(tip).toBeHidden();
 	await ctx.close();
 });
+
+test('the reports left out for linking too many actors are counted under reporting activity', async ({ page }) => {
+	await page.goto(TRENDS);
+	const line = section(page, 'reporting_activity').locator('.left-out');
+	const { reports: n, min_actors: min } = trends.many_actor_reports;
+	if (n === 0) {
+		await expect(line).toHaveCount(0);
+		return;
+	}
+	await expect(line).toHaveText(new RegExp(`and ${n.toLocaleString('en-US')} more reports? linked to ${min} or more actors`));
+});

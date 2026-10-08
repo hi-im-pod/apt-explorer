@@ -69,6 +69,11 @@
 	let dialog: HTMLDialogElement;
 	let heading = $state<HTMLHeadingElement>();
 
+	/** At most this many tagged actor chips at first; a report on a widely shared tool can carry dozens. */
+	const PANEL_ACTORS = 15;
+	/** The row whose full actor list was asked for, so opening another report starts short again. */
+	let allActorsFor = $state<string | null>(null);
+
 	/** The report's links in the order a visitor should try them, with a note on what they are. */
 	const linkInfo = $derived(report ? describeLinks(report) : null);
 
@@ -195,12 +200,18 @@
 				</li>
 			{/snippet}
 			{@const tagged = row.actors.filter((id) => !row.actorsFromTitle.includes(id) && !row.actorsFromText.includes(id))}
+			{@const shownTagged = allActorsFor === row.key ? tagged : tagged.slice(0, PANEL_ACTORS)}
 			{#if tagged.length}
 				<section aria-labelledby="panel-actors">
 					<h3 id="panel-actors">Actors</h3>
 					<ul class="chips">
-						{#each tagged as id (id)}{@render actorChip(id)}{/each}
+						{#each shownTagged as id (id)}{@render actorChip(id)}{/each}
 					</ul>
+					{#if shownTagged.length < tagged.length}
+						<button type="button" class="more-actors" onclick={() => (allActorsFor = row.key)}>
+							and {tagged.length - shownTagged.length} more actors
+						</button>
+					{/if}
 				</section>
 			{/if}
 			{#if row.actorsFromTitle.length}
@@ -551,6 +562,23 @@
 		padding: 0.125rem 0.625rem;
 		border-radius: 999px;
 		background: var(--accent-soft);
+	}
+
+	.more-actors {
+		margin: 0.5rem 0 0;
+		padding: 0;
+		border: 0;
+		background: none;
+		color: var(--accent);
+		font: inherit;
+		font-size: 0.8125rem;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	.more-actors:focus-visible {
+		outline: 2px solid var(--focus);
+		outline-offset: 2px;
 	}
 
 	.hint {
